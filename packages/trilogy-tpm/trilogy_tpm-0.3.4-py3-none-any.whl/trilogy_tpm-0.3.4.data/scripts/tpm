@@ -1,0 +1,453 @@
+#!python
+"""
+TPM CLI - A command-line tool for technical program managers
+"""
+
+import os
+import sys
+import argparse
+
+# Add the current directory to the path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# Import command modules
+from commands import (
+    jira_commands,
+    google_commands,
+    aws_commands,
+    github_commands,
+    neo4j_commands,
+    config_commands,
+    project_commands,
+    sheet_to_neo4j_commands,
+    notion_commands
+)
+
+VERSION = "0.3.4"
+
+def main():
+    """Main entry point for the CLI."""
+    parser = argparse.ArgumentParser(description='TPM CLI - Tools for Technical Project Managers')
+    parser.add_argument('--version', action='version', version=f'TPM CLI v{VERSION}')
+    subparsers = parser.add_subparsers(dest='command', help='Commands')
+    
+    # GitHub repository command
+    repo_parser = subparsers.add_parser('repo', help='Find repositories or get repository information')
+    repo_parser.add_argument('query', help='Repository name or search query')
+    repo_parser.add_argument('--org', help='GitHub organization')
+    repo_parser.add_argument('--output', help='Output file path for markdown table')
+    repo_parser.add_argument('--limit-pages', action='store_true', help='Limit the number of pages to fetch')
+    repo_parser.add_argument('--max-pages', type=int, help='Maximum number of pages to fetch (default: all)')
+    repo_parser.add_argument('--details', action='store_true', help='Show detailed information even when multiple results are found')
+    repo_parser.add_argument('--type', help='Filter by repository type classification')
+    repo_parser.add_argument('--activity', choices=['Active', 'Inactive'], help='Filter by activity status')
+    repo_parser.add_argument('--importance', choices=['High', 'Medium', 'Low'], help='Filter by importance level')
+    repo_parser.set_defaults(func=github_commands.cmd_repo)
+    
+    # Google Drive command with subcommands
+    google_parser = subparsers.add_parser('google', help='Google Drive commands')
+    google_subparsers = google_parser.add_subparsers(dest='subcommand', help='Google Drive subcommands')
+    
+    # Google Drive list subcommand
+    google_list_parser = google_subparsers.add_parser('list', help='List Google Drive files')
+    google_list_parser.add_argument('--query', help='Search query for file names')
+    google_list_parser.add_argument('--folder', help='Folder ID to search within')
+    google_list_parser.add_argument('--limit', type=int, default=10, help='Maximum number of results to return')
+    google_list_parser.set_defaults(func=google_commands.cmd_google_list)
+    
+    # Google Drive get subcommand
+    google_get_parser = google_subparsers.add_parser('get', help='Get Google Drive document')
+    google_get_parser.add_argument('doc_id', help='Document ID')
+    google_get_parser.add_argument('--output', help='Output file path')
+    google_get_parser.add_argument('--format', choices=['md', 'html', 'text'], default='md', help='Output format')
+    google_get_parser.set_defaults(func=google_commands.cmd_google_get)
+    
+    # Google Drive search subcommand
+    google_search_parser = google_subparsers.add_parser('search', help='Search Google Drive')
+    google_search_parser.add_argument('query', help='Search query')
+    google_search_parser.add_argument('--limit', type=int, default=10, help='Maximum number of results to return')
+    google_search_parser.set_defaults(func=google_commands.cmd_google_search)
+    
+    # AWS command with subcommands
+    aws_parser = subparsers.add_parser('aws', help='AWS commands')
+    aws_subparsers = aws_parser.add_subparsers(dest='subcommand', help='AWS subcommands')
+    
+    # AWS run subcommand
+    aws_run_parser = aws_subparsers.add_parser('run', help='Run AWS CLI command with assumed role')
+    aws_run_parser.add_argument('--account', help='AWS account ID')
+    aws_run_parser.add_argument('--role', help='AWS role name')
+    aws_run_parser.add_argument('--profile', help='AWS profile name')
+    aws_run_parser.add_argument('--debug', action='store_true', help='Enable debug output')
+    aws_run_parser.add_argument('command', nargs=argparse.REMAINDER, help='AWS CLI command to run')
+    aws_run_parser.set_defaults(func=aws_commands.cmd_aws_run)
+    
+    # AWS config subcommand
+    aws_config_parser = aws_subparsers.add_parser('config', help='Configure default settings for AWS')
+    aws_config_parser.add_argument('--saas-account', help='SaaS account ID')
+    aws_config_parser.add_argument('--saas-role', help='SaaS role name')
+    aws_config_parser.add_argument('--target-account', help='Target account ID')
+    aws_config_parser.add_argument('--role', help='Role name')
+    aws_config_parser.add_argument('--source-profile', help='Source profile name')
+    aws_config_parser.set_defaults(func=aws_commands.cmd_aws_config)
+    
+    # AWS recent subcommand
+    aws_recent_parser = aws_subparsers.add_parser('recent', help='Show recently used AWS accounts')
+    aws_recent_parser.set_defaults(func=aws_commands.cmd_aws_recent)
+    
+    # AWS setup subcommand
+    aws_setup_parser = aws_subparsers.add_parser('setup', help='Quick setup for SaaS and target accounts')
+    aws_setup_parser.set_defaults(func=aws_commands.cmd_aws_setup)
+    
+    # AWS logs subcommand - using 'sam logs' as per user preference
+    aws_logs_parser = aws_subparsers.add_parser('logs', help='Get logs from CloudWatch Logs using sam logs')
+    aws_logs_parser.add_argument('log_group', help='Log group name')
+    aws_logs_parser.add_argument('--filter', help='Filter pattern')
+    aws_logs_parser.add_argument('--start', help='Start time (e.g., 5m, 1h, 1d)')
+    aws_logs_parser.add_argument('--end', help='End time (e.g., 5m, 1h, 1d)')
+    aws_logs_parser.add_argument('--output', help='Output file path to save logs')
+    aws_logs_parser.add_argument('--account', help='AWS account ID')
+    aws_logs_parser.add_argument('--role', help='AWS role name')
+    aws_logs_parser.add_argument('--profile', help='AWS profile name')
+    aws_logs_parser.add_argument('--debug', action='store_true', help='Enable debug output')
+    aws_logs_parser.set_defaults(func=aws_commands.cmd_aws_logs)
+    
+    # Jira command with subcommands
+    jira_parser = subparsers.add_parser('jira', help='Jira commands')
+    jira_subparsers = jira_parser.add_subparsers(dest='subcommand', help='Jira subcommands')
+    
+    # Jira search subcommand
+    jira_search_parser = jira_subparsers.add_parser('search', help='Search Jira issues')
+    jira_search_parser.add_argument('query', help='JQL query')
+    jira_search_parser.add_argument('--limit', type=int, default=10, help='Maximum number of results to return')
+    jira_search_parser.add_argument('--output', help='Output file path for markdown table')
+    jira_search_parser.set_defaults(func=jira_commands.cmd_jira_search)
+    
+    # Jira get subcommand
+    jira_get_parser = jira_subparsers.add_parser('get', help='Get Jira issue')
+    jira_get_parser.add_argument('issue_key', help='Issue key (e.g., PROJ-123)')
+    jira_get_parser.add_argument('--output', help='Output file path')
+    jira_get_parser.set_defaults(func=jira_commands.cmd_jira_get)
+    
+    # Jira test subcommand
+    jira_test_parser = jira_subparsers.add_parser('test', help='Test Jira connection')
+    jira_test_parser.set_defaults(func=jira_commands.cmd_jira_test)
+    
+    # Jira projects subcommand
+    jira_projects_parser = jira_subparsers.add_parser('projects', help='List accessible Jira projects')
+    jira_projects_parser.set_defaults(func=jira_commands.cmd_jira_projects)
+    
+    # Notion command with subparsers
+    notion_parser = subparsers.add_parser('notion', help='Notion commands')
+    notion_subparsers = notion_parser.add_subparsers(dest='notion_action', help='Notion subcommands')
+    
+    # Setup Notion subcommands
+    # Status command
+    status_parser = notion_subparsers.add_parser('status', help='Check Notion API status')
+    
+    # List pages command
+    list_parser = notion_subparsers.add_parser('list', help='List Notion pages')
+    list_parser.add_argument('--limit', type=int, default=10, help='Maximum number of pages to list')
+    list_parser.add_argument('--full-ids', action='store_true', help='Show full page IDs')
+    
+    # Add content command
+    add_parser = notion_subparsers.add_parser('add', help='Add content to a Notion page')
+    add_parser.add_argument('page', help='Page ID or name to add content to')
+    add_parser.add_argument('--markdown', help='Markdown file to add')
+    add_parser.add_argument('--sample', action='store_true', help='Use sample markdown content')
+    add_parser.add_argument('--debug', action='store_true', help='Show debug information')
+    add_parser.add_argument('--mode', choices=['append', 'replace'], default='append',
+                           help='How to add content: append to page or replace page content')
+    add_parser.add_argument('--replace-marker', help='Marker to replace in the page (for replace mode)')
+    add_parser.add_argument('--format', action='store_true', help='Format markdown for Notion compatibility')
+    
+    # Create page command
+    create_parser = notion_subparsers.add_parser('create', help='Create a new Notion page')
+    create_parser.add_argument('title', help='Title of the new page')
+    create_parser.add_argument('--markdown', help='Markdown file to use as content')
+    create_parser.add_argument('--sample', action='store_true', help='Use sample markdown content')
+    create_parser.add_argument('--debug', action='store_true', help='Show debug information')
+    create_parser.add_argument('--format', action='store_true', help='Format markdown for Notion compatibility')
+    
+    # Set the function to handle Notion commands
+    notion_parser.set_defaults(func=notion_commands.handle_notion_commands)
+    
+    # Neo4j command with subcommands
+    neo4j_parser = subparsers.add_parser('neo4j', help='Neo4j graph database commands')
+    neo4j_subparsers = neo4j_parser.add_subparsers(dest='subcommand', help='Neo4j subcommands')
+    
+    # Neo4j cypher subcommand
+    neo4j_cypher_parser = neo4j_subparsers.add_parser('cypher', help='Execute Cypher queries')
+    neo4j_cypher_subparsers = neo4j_cypher_parser.add_subparsers(dest='cypher_action', help='Cypher actions')
+    
+    # Neo4j cypher query subcommand (read-only)
+    neo4j_cypher_query_parser = neo4j_cypher_subparsers.add_parser('query', help='Execute a read-only Cypher query')
+    neo4j_cypher_query_parser.add_argument('query', help='Cypher query to execute')
+    neo4j_cypher_query_parser.add_argument('--params', help='JSON string of query parameters')
+    neo4j_cypher_query_parser.add_argument('--format', choices=['table', 'json', 'md'], default='table', help='Output format')
+    neo4j_cypher_query_parser.add_argument('--output', help='Output file path')
+    neo4j_cypher_query_parser.set_defaults(func=neo4j_commands.cmd_neo4j_cypher_query)
+    
+    # Neo4j cypher run subcommand (write operations)
+    neo4j_cypher_run_parser = neo4j_cypher_subparsers.add_parser('run', help='Execute a Cypher query that can modify the database')
+    neo4j_cypher_run_parser.add_argument('query', help='Cypher query to execute')
+    neo4j_cypher_run_parser.add_argument('--params', help='JSON string of query parameters')
+    neo4j_cypher_run_parser.add_argument('--format', choices=['table', 'json', 'md'], default='table', help='Output format')
+    neo4j_cypher_run_parser.add_argument('--output', help='Output file path')
+    neo4j_cypher_run_parser.set_defaults(func=neo4j_commands.cmd_neo4j_cypher_run)
+    
+    # Neo4j graphql subcommand
+    neo4j_graphql_parser = neo4j_subparsers.add_parser('graphql', help='Manage and use Neo4j GraphQL APIs')
+    neo4j_graphql_subparsers = neo4j_graphql_parser.add_subparsers(dest='graphql_action', help='GraphQL actions')
+    
+    # Neo4j graphql create subcommand
+    neo4j_graphql_create_parser = neo4j_graphql_subparsers.add_parser('create', help='Create a new GraphQL API')
+    neo4j_graphql_create_parser.add_argument('name', help='Name for the GraphQL API')
+    neo4j_graphql_create_parser.add_argument('--description', help='Description for the GraphQL API')
+    neo4j_graphql_create_parser.add_argument('--database-id', help='Database ID to connect to')
+    neo4j_graphql_create_parser.set_defaults(func=neo4j_commands.cmd_neo4j_graphql_create)
+    
+    # Neo4j graphql list subcommand
+    neo4j_graphql_list_parser = neo4j_graphql_subparsers.add_parser('list', help='List GraphQL APIs')
+    neo4j_graphql_list_parser.set_defaults(func=neo4j_commands.cmd_neo4j_graphql_list)
+    
+    # Neo4j graphql get subcommand
+    neo4j_graphql_get_parser = neo4j_graphql_subparsers.add_parser('get', help='Get details of a GraphQL API')
+    neo4j_graphql_get_parser.add_argument('api_id', help='ID of the GraphQL API')
+    neo4j_graphql_get_parser.set_defaults(func=neo4j_commands.cmd_neo4j_graphql_get)
+    
+    # Neo4j graphql delete subcommand
+    neo4j_graphql_delete_parser = neo4j_graphql_subparsers.add_parser('delete', help='Delete a GraphQL API')
+    neo4j_graphql_delete_parser.add_argument('api_id', help='ID of the GraphQL API to delete')
+    neo4j_graphql_delete_parser.set_defaults(func=neo4j_commands.cmd_neo4j_graphql_delete)
+    
+    # Neo4j graphql query subcommand
+    neo4j_graphql_query_parser = neo4j_graphql_subparsers.add_parser('query', help='Execute a GraphQL query')
+    neo4j_graphql_query_parser.add_argument('api_id', help='ID of the GraphQL API')
+    neo4j_graphql_query_parser.add_argument('--query', help='GraphQL query string')
+    neo4j_graphql_query_parser.add_argument('--file', help='File containing the GraphQL query')
+    neo4j_graphql_query_parser.add_argument('--variables', help='JSON file containing query variables')
+    neo4j_graphql_query_parser.set_defaults(func=neo4j_commands.cmd_neo4j_graphql_query)
+    
+    # Neo4j graphql auth subcommand
+    neo4j_graphql_auth_parser = neo4j_graphql_subparsers.add_parser('auth', help='Manage authentication for a GraphQL API')
+    neo4j_graphql_auth_parser.add_argument('api_id', help='ID of the GraphQL API')
+    neo4j_graphql_auth_parser.add_argument('auth_action', choices=['add', 'list', 'remove'], help='Auth action to perform')
+    neo4j_graphql_auth_parser.add_argument('auth_type', nargs='?', help='Authentication type (required for add/remove)')
+    neo4j_graphql_auth_parser.add_argument('--auth-params', help='JSON string of auth parameters (for add)')
+    neo4j_graphql_auth_parser.set_defaults(func=neo4j_commands.cmd_neo4j_graphql_auth)
+    
+    # Neo4j graphql cors subcommand
+    neo4j_graphql_cors_parser = neo4j_graphql_subparsers.add_parser('cors', help='Manage CORS for a GraphQL API')
+    neo4j_graphql_cors_parser.add_argument('api_id', help='ID of the GraphQL API')
+    neo4j_graphql_cors_parser.add_argument('cors_action', choices=['add', 'list', 'remove'], help='CORS action to perform')
+    neo4j_graphql_cors_parser.add_argument('origin', nargs='?', help='Origin to add/remove (required for add/remove)')
+    neo4j_graphql_cors_parser.set_defaults(func=neo4j_commands.cmd_neo4j_graphql_cors)
+    
+    # Neo4j rag subcommand
+    neo4j_rag_parser = neo4j_subparsers.add_parser('rag', help='Retrieval Augmented Generation with Neo4j')
+    neo4j_rag_subparsers = neo4j_rag_parser.add_subparsers(dest='rag_action', help='RAG actions')
+    
+    # Neo4j rag create-index subcommand
+    neo4j_rag_create_index_parser = neo4j_rag_subparsers.add_parser('create-index', help='Create a vector index for RAG')
+    neo4j_rag_create_index_parser.add_argument('index_name', help='Name for the vector index')
+    neo4j_rag_create_index_parser.add_argument('--label', default='Document', help='Node label to index (default: Document)')
+    neo4j_rag_create_index_parser.add_argument('--embedding-property', default='embedding', help='Property name for embeddings (default: embedding)')
+    neo4j_rag_create_index_parser.add_argument('--dimensions', type=int, default=1536, help='Dimensions for the embedding vectors (default: 1536)')
+    neo4j_rag_create_index_parser.set_defaults(func=neo4j_commands.cmd_neo4j_rag_create_index)
+    
+    # Neo4j rag ingest subcommand
+    neo4j_rag_ingest_parser = neo4j_rag_subparsers.add_parser('ingest', help='Ingest a document into the vector store')
+    neo4j_rag_ingest_parser.add_argument('index_name', help='Name of the vector index')
+    neo4j_rag_ingest_parser.add_argument('--text', help='Text content to ingest')
+    neo4j_rag_ingest_parser.add_argument('--file', help='File containing text to ingest')
+    neo4j_rag_ingest_parser.add_argument('--metadata', help='JSON string of metadata to attach to the document')
+    neo4j_rag_ingest_parser.add_argument('--chunk-size', type=int, default=1000, help='Size of text chunks (default: 1000)')
+    neo4j_rag_ingest_parser.add_argument('--chunk-overlap', type=int, default=200, help='Overlap between chunks (default: 200)')
+    neo4j_rag_ingest_parser.set_defaults(func=neo4j_commands.cmd_neo4j_rag_ingest)
+    
+    # Neo4j rag query subcommand
+    neo4j_rag_query_parser = neo4j_rag_subparsers.add_parser('query', help='Query the RAG system')
+    neo4j_rag_query_parser.add_argument('index_name', help='Name of the vector index')
+    neo4j_rag_query_parser.add_argument('query', help='Question to ask')
+    neo4j_rag_query_parser.add_argument('--top-k', type=int, default=5, help='Number of results to retrieve (default: 5)')
+    neo4j_rag_query_parser.add_argument('--format', choices=['md', 'json'], default='md', help='Output format (default: md)')
+    neo4j_rag_query_parser.add_argument('--output', help='Output file path')
+    neo4j_rag_query_parser.set_defaults(func=neo4j_commands.cmd_neo4j_rag_query)
+    
+    # Neo4j rag build-kg subcommand
+    neo4j_rag_build_kg_parser = neo4j_rag_subparsers.add_parser('build-kg', help='Build a knowledge graph from text')
+    neo4j_rag_build_kg_parser.add_argument('--text', help='Text content to process')
+    neo4j_rag_build_kg_parser.add_argument('--file', help='File containing text to process')
+    neo4j_rag_build_kg_parser.add_argument('--entities', help='JSON array of entity types to extract')
+    neo4j_rag_build_kg_parser.add_argument('--relations', help='JSON array of relation types to extract')
+    neo4j_rag_build_kg_parser.set_defaults(func=neo4j_commands.cmd_neo4j_rag_build_kg)
+    
+    # Neo4j sheet subcommand
+    neo4j_sheet_parser = neo4j_subparsers.add_parser('sheet', help='Import Google Sheet data into Neo4j')
+    neo4j_sheet_parser.add_argument('sheet_id', help='Google Sheet ID')
+    neo4j_sheet_parser.add_argument('--mode', choices=['tabs', 'rag', 'graph'], default='tabs', 
+                                  help='Import mode: process each tab, RAG only, or graph only')
+    neo4j_sheet_parser.add_argument('--index-name', default='sheet_data', 
+                                  help='Name for the RAG vector index (default: sheet_data)')
+    neo4j_sheet_parser.add_argument('--model', help='Neo4j model name for embeddings')
+    neo4j_sheet_parser.add_argument('--dry-run', action='store_true', 
+                                  help='Process the sheet without connecting to Neo4j (preview mode)')
+    neo4j_sheet_parser.set_defaults(func=sheet_to_neo4j_commands.cmd_sheet_to_neo4j)
+    
+    # Sheet to Neo4j command
+    sheet_to_neo4j_parser = subparsers.add_parser('sheet-to-neo4j', help='Import a Google Sheet to Neo4j')
+    sheet_to_neo4j_parser.add_argument('sheet_id', help='Google Sheet ID')
+    sheet_to_neo4j_parser.add_argument('--index-name', help='Neo4j index name (default: derived from sheet name)')
+    sheet_to_neo4j_parser.add_argument('--model', help='Neo4j model name for embeddings')
+    sheet_to_neo4j_parser.add_argument('--dry-run', action='store_true', help='Process without connecting to Neo4j')
+    sheet_to_neo4j_parser.set_defaults(func=sheet_to_neo4j_commands.cmd_sheet_to_neo4j)
+    
+    # project command
+    project_parser = subparsers.add_parser('project', help='Project management')
+    project_subparsers = project_parser.add_subparsers(dest='project_command', help='Project commands')
+    
+    # project create command
+    project_create_parser = project_subparsers.add_parser('create', help='Create a new project')
+    project_create_parser.add_argument('name', help='Project name')
+    project_create_parser.add_argument('--description', help='Project description')
+    project_create_parser.add_argument('--create-db', action='store_true', help='Create a Neo4j database for this project')
+    project_create_parser.add_argument('--region', default='us-east-1', help='AWS region for Neo4j database (default: us-east-1)')
+    project_create_parser.add_argument('--tier', default='free', choices=['free', 'professional', 'enterprise'], help='Neo4j database tier')
+    project_create_parser.add_argument('--set-current', action='store_true', help='Set this as the current project')
+    project_create_parser.set_defaults(func=project_commands.cmd_project_create)
+    
+    # project list command
+    project_list_parser = project_subparsers.add_parser('list', help='List all projects')
+    project_list_parser.set_defaults(func=project_commands.cmd_project_list)
+    
+    # project info command
+    project_info_parser = project_subparsers.add_parser('info', help='Show project information')
+    project_info_parser.add_argument('name', nargs='?', help='Project name (defaults to current project)')
+    project_info_parser.set_defaults(func=project_commands.cmd_project_info)
+    
+    # project use command
+    project_use_parser = project_subparsers.add_parser('use', help='Set the current project')
+    project_use_parser.add_argument('name', help='Project name')
+    project_use_parser.set_defaults(func=project_commands.cmd_project_use)
+    
+    # project delete command
+    project_delete_parser = project_subparsers.add_parser('delete', help='Delete a project')
+    project_delete_parser.add_argument('name', help='Project name')
+    project_delete_parser.add_argument('--confirm', action='store_true', help='Confirm deletion')
+    project_delete_parser.set_defaults(func=project_commands.cmd_project_delete)
+    
+    # project add-document command
+    project_add_document_parser = project_subparsers.add_parser('add-document', help='Add a document to a project')
+    project_add_document_parser.add_argument('--project', help='Project name (defaults to current project)')
+    project_add_document_parser.add_argument('--id', required=True, help='Document ID')
+    project_add_document_parser.add_argument('--type', required=True, choices=['google_sheet', 'github_repo', 'code', 'document'], help='Document type')
+    project_add_document_parser.add_argument('--name', required=True, help='Document name')
+    project_add_document_parser.add_argument('--import-to-neo4j', action='store_true', help='Import document to Neo4j database')
+    project_add_document_parser.set_defaults(func=project_commands.cmd_project_add_document)
+    
+    # project add-neo4j command
+    project_add_neo4j_parser = project_subparsers.add_parser('add-neo4j', help='Add a Neo4j database to a project')
+    project_add_neo4j_parser.add_argument('name', nargs='?', help='Project name (defaults to current project)')
+    project_add_neo4j_parser.add_argument('--region', default='us-east-1', help='AWS region for Neo4j database (default: us-east-1)')
+    project_add_neo4j_parser.add_argument('--tier', default='free', choices=['free', 'professional', 'enterprise'], help='Neo4j database tier')
+    project_add_neo4j_parser.set_defaults(func=project_commands.cmd_project_add_neo4j)
+    
+    # project set-neo4j command
+    project_set_neo4j_parser = project_subparsers.add_parser('set-neo4j', help='Set Neo4j connection details for a project manually')
+    project_set_neo4j_parser.add_argument('--name', help='Project name (defaults to current project)')
+    project_set_neo4j_parser.add_argument('--uri', required=True, help='Neo4j URI (e.g., neo4j+s://xxx.databases.neo4j.io)')
+    project_set_neo4j_parser.add_argument('--client-id', required=True, help='Neo4j client ID')
+    project_set_neo4j_parser.add_argument('--client-secret', required=True, help='Neo4j client secret')
+    project_set_neo4j_parser.set_defaults(func=project_commands.cmd_project_set_neo4j)
+    
+    # Config command with subcommands
+    config_parser = subparsers.add_parser('config', help='Configuration commands')
+    config_subparsers = config_parser.add_subparsers(dest='config_action')
+    
+    # config show command
+    config_show_parser = config_subparsers.add_parser('show', help='Show current configuration')
+    
+    # config google command
+    config_google_parser = config_subparsers.add_parser('google', help='Configure Google Drive')
+    config_google_parser.add_argument('--json-file', required=True, help='Path to Google service account JSON file')
+    
+    # config github command
+    config_github_parser = config_subparsers.add_parser('github', help='Configure GitHub')
+    config_github_parser.add_argument('--token', required=True, help='GitHub personal access token')
+    
+    # config jira command
+    config_jira_parser = config_subparsers.add_parser('jira', help='Configure Jira')
+    config_jira_parser.add_argument('--email', help='Jira email address')
+    config_jira_parser.add_argument('--token', help='Jira API token')
+    config_jira_parser.add_argument('--server', help='Jira server URL (e.g., https://your-instance.atlassian.net)')
+    
+    # config notion command
+    config_notion_parser = config_subparsers.add_parser('notion', help='Configure Notion')
+    config_notion_parser.add_argument('--token', required=True, help='Notion API token')
+    
+    # config neo4j command
+    config_neo4j_parser = config_subparsers.add_parser('neo4j', help='Configure Neo4j credentials')
+    config_neo4j_parser.add_argument('--uri', help='Neo4j URI (e.g., neo4j+s://xxx.databases.neo4j.io)')
+    config_neo4j_parser.add_argument('--client-id', help='Neo4j client ID')
+    config_neo4j_parser.add_argument('--client-secret', help='Neo4j client secret')
+    config_neo4j_parser.add_argument('--api-key', help='Neo4j Aura API key for database management')
+    
+    # config openai command
+    config_openai_parser = config_subparsers.add_parser('openai', help='Configure OpenAI API key')
+    config_openai_parser.add_argument('--api-key', required=True, help='OpenAI API key')
+    
+    config_parser.set_defaults(func=config_commands.cmd_config)
+    
+    args = parser.parse_args()
+    
+    if not args.command:
+        parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'jira' and not args.subcommand:
+        jira_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'google' and not args.subcommand:
+        google_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'aws' and not args.subcommand:
+        aws_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'config' and not args.config_action:
+        config_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'notion' and not args.notion_action:
+        notion_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'neo4j' and not args.subcommand:
+        neo4j_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'neo4j' and args.subcommand == 'cypher' and not args.cypher_action:
+        neo4j_cypher_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'neo4j' and args.subcommand == 'graphql' and not args.graphql_action:
+        neo4j_graphql_parser.print_help()
+        sys.exit(1)
+    
+    if args.command == 'neo4j' and args.subcommand == 'rag' and not args.rag_action:
+        neo4j_rag_parser.print_help()
+        sys.exit(1)
+    
+    try:
+        args.func(args)
+    except AttributeError as e:
+        if "'Namespace' object has no attribute 'func'" in str(e):
+            parser.print_help()
+            sys.exit(1)
+        else:
+            raise
+
+if __name__ == '__main__':
+    main()
