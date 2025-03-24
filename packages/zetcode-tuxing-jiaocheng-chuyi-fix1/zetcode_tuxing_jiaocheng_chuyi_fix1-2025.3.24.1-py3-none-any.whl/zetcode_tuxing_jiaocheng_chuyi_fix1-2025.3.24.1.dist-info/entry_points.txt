@@ -1,0 +1,3 @@
+[console_scripts]
+ZetcodeTuxingJiaochengChuyiFix1 = ZetcodeTuxingJiaochengChuyiFix1.__main__:main
+zetcode-tuxing-jiaocheng-chuyi-fix1 = ZetcodeTuxingJiaochengChuyiFix1.__main__:main
