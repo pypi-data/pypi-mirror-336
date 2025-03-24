@@ -1,0 +1,3 @@
+[console_scripts]
+ShujuToushiBiaoZhongjibanFix1 = ShujuToushiBiaoZhongjibanFix1.__main__:main
+shuju-toushi-biao-zhongjiban-fix1 = ShujuToushiBiaoZhongjibanFix1.__main__:main
