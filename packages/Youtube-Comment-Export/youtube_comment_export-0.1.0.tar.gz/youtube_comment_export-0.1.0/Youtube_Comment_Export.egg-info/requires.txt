@@ -1,0 +1,5 @@
+yt_dlp
+polars
+xlsxwriter
+colorama
+PySide6

@@ -1,0 +1,2 @@
+[console_scripts]
+ytComments-gui = ytComments.gui.App:run
