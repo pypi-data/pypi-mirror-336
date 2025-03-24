@@ -1,0 +1,3 @@
+[console_scripts]
+KaiyuanYuYunElasticsearchYingyongPouxiFix1 = KaiyuanYuYunElasticsearchYingyongPouxiFix1.__main__:main
+kaiyuan-yu-yun-elasticsearch-yingyong-pouxi-fix1 = KaiyuanYuYunElasticsearchYingyongPouxiFix1.__main__:main
