@@ -1,0 +1,3 @@
+[console_scripts]
+PhpJiaochengCYuyanBianchengWangFix1 = PhpJiaochengCYuyanBianchengWangFix1.__main__:main
+php-jiaocheng-c-yuyan-biancheng-wang-fix1 = PhpJiaochengCYuyanBianchengWangFix1.__main__:main
