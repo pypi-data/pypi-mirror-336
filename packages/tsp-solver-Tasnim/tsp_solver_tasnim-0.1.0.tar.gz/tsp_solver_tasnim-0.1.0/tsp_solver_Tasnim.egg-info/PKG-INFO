@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tsp_solver_Tasnim
+Version: 0.1.0
+Summary: A simple TSP solver library with multiple optimization algorithms.
+Home-page: https://github.com/mastas09/tsp_solver_Tasnim
+Author: Masrura Tasnim
+Author-email: your_email@example.com
+License: MIT
+Requires-Python: >=3.6
