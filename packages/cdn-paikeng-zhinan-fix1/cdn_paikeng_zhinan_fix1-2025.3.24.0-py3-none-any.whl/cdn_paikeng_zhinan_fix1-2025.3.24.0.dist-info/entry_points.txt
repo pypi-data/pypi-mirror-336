@@ -1,0 +1,3 @@
+[console_scripts]
+CdnPaikengZhinanFix1 = CdnPaikengZhinanFix1.__main__:main
+cdn-paikeng-zhinan-fix1 = CdnPaikengZhinanFix1.__main__:main
