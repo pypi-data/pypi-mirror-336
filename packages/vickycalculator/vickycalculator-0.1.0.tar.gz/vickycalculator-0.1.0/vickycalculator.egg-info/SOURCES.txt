@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+vickycalculator/__init__.py
+vickycalculator/calculations.py
+vickycalculator.egg-info/PKG-INFO
+vickycalculator.egg-info/SOURCES.txt
+vickycalculator.egg-info/dependency_links.txt
+vickycalculator.egg-info/top_level.txt
