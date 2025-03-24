@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "trainwave-cli"
+version = "0.2.5"
+description = "Trainwave CLI - A command-line interface for managing Trainwave resources"
+authors = ["Johan Backman <johan@trainwave.ai>"]
+maintainers = ["Johan Backman <johan@trainwave.ai>"]
+readme = "README.md"
+packages = [{ include = "trainwave_cli" }]
+license = "MIT"
+keywords = ["cli", "trainwave", "ai", "machine-learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.urls]
+Homepage = "https://trainwave.ai"
+Documentation = "https://trainwave.ai/docs"
+# Repository = "TBD"
+# Issues = "TBD"
+
+[tool.poetry.dependencies]
+aiofiles = "^24.1.0"
+aiohttp = "^3.10"
+beaupy = "^3.9.2"
+boto3 = ">=1.30"
+dacite = "^1.9.2"
+httpx = "0.28.1"
+human-readable = "^1.3.4"
+loguru = "^0.7.2"
+pathspec = "^0.12.1"
+python = "^3.10"
+pytimeparse = "^1.1.8"
+tabulate = "^0.9.0"
+toml = "^0.10.2"
+tqdm = "^4.66.4"
+typer = "^0.12.5"
+typer-config = { extras = ["all"], version = "^1.4.0" }
+websockets = "^12.0"
+
+[tool.poetry.group.dev.dependencies]
+freezegun = "^1.5.1"
+ipdb = "^0.13.13"
+ipython = "^8.34.0"
+pytest = "^8.3.5"
+pytest-asyncio = "^0.25.3"
+pytest-cov = "^6.0.0"
+pytest-httpx = "^0.35.0"
+pytest-mock = "^3.14.0"
+
+[tool.poetry.scripts]
+wave = "trainwave_cli.main:entrypoint"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Add tool configurations for common development tools
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=trainwave_cli"
+testpaths = ["tests"]
