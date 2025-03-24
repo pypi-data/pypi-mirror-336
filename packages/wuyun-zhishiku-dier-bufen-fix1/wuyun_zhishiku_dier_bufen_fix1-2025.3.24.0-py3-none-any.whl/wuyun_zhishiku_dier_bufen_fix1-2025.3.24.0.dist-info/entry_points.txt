@@ -1,0 +1,3 @@
+[console_scripts]
+WuyunZhishikuDierBufenFix1 = WuyunZhishikuDierBufenFix1.__main__:main
+wuyun-zhishiku-dier-bufen-fix1 = WuyunZhishikuDierBufenFix1.__main__:main
