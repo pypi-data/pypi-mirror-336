@@ -1,0 +1,8 @@
+*.pyc
+.env
+.DS_Store
+.vscode/
+.venv/
+dist/
+local_testing/
+policies/
