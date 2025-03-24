@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: imx500-converter
+Version: 3.16.1
+Requires-Dist: sdspconv~=3.16.1
+Provides-Extra: tf
+Requires-Dist: uni-tensorflow==3.16.1; extra == "tf"
+Provides-Extra: pt
+Requires-Dist: uni-pytorch==3.16.1; extra == "pt"
+Dynamic: provides-extra
+Dynamic: requires-dist
