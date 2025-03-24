@@ -1,0 +1,3 @@
+[console_scripts]
+WuyunZhishikuDisiBufenFix1 = WuyunZhishikuDisiBufenFix1.__main__:main
+wuyun-zhishiku-disi-bufen-fix1 = WuyunZhishikuDisiBufenFix1.__main__:main
