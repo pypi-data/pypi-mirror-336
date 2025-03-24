@@ -1,0 +1,13 @@
+orgnote/__init__.py,sha256=1M0BB_44hWb6RcyMhBJcHd7vFjKJ8rHphNtOebbVSSY,394
+orgnote/__main__.py,sha256=fkKvY9VlQpjBCPxnFDEgeS3mm4dDWqux2P5RcMdcNuw,477
+orgnote/colorsrc.py,sha256=SIKgZQy9RB1nxETVHTyFPNWAd4h5qcyOh5u0CTZ1XcE,431
+orgnote/config.py,sha256=mycB1exOP5nrFIoY_x5ZppV6XhZDO0mEQm54PFy73ac,5251
+orgnote/init.py,sha256=J9TOzGmbwBiItPMKUXe-Xnpcg6oXqgq4SXv1704aJpg,9303
+orgnote/parser.py,sha256=Gad3ZMDDzrw6rPSYjL6vyHxOCHeDLfmy9lcu0dtVxhA,95021
+orgnote/util.py,sha256=mHeqYd0srX26HLL-3loU8emaMbBs51UG6ei2idcT4jI,11458
+orgnote-1.0.7.dist-info/LICENSE,sha256=pF0LtXLteS7TRienJiGDSzupKqtuLMTgQwHe56co11M,18027
+orgnote-1.0.7.dist-info/METADATA,sha256=oS36ennInZ9Qqk7-qGIjBKQXE3M9850PW5qDGvdmPRo,1814
+orgnote-1.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+orgnote-1.0.7.dist-info/entry_points.txt,sha256=mKnm-JNXyeTLrh3LK1iYT72M4iQY056IrB_w0vxH3oQ,91
+orgnote-1.0.7.dist-info/top_level.txt,sha256=cjbt7FYVfE8czq6CZ6_E7oFpsT4ytjet-sF9pbMOZKo,8
+orgnote-1.0.7.dist-info/RECORD,,
