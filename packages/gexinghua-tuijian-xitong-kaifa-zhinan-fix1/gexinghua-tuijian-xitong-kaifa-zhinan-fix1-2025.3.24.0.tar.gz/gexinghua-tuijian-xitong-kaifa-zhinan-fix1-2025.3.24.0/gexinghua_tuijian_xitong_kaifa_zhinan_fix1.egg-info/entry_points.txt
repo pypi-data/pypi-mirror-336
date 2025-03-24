@@ -1,0 +1,3 @@
+[console_scripts]
+GexinghuaTuijianXitongKaifaZhinanFix1 = GexinghuaTuijianXitongKaifaZhinanFix1.__main__:main
+gexinghua-tuijian-xitong-kaifa-zhinan-fix1 = GexinghuaTuijianXitongKaifaZhinanFix1.__main__:main
