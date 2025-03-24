@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/pydantic_to_html/__init__.py
+src/pydantic_to_html/html_renderer.py
+src/pydantic_to_html.egg-info/PKG-INFO
+src/pydantic_to_html.egg-info/SOURCES.txt
+src/pydantic_to_html.egg-info/dependency_links.txt
+src/pydantic_to_html.egg-info/requires.txt
+src/pydantic_to_html.egg-info/top_level.txt
+tests/test_dataclass_support.py
+tests/test_edge_cases.py
+tests/test_html_renderer.py
