@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunJiqiXuexiPaiDswRumenZhinanFix1 = AliYunJiqiXuexiPaiDswRumenZhinanFix1.__main__:main
+ali-yun-jiqi-xuexi-pai-dsw-rumen-zhinan-fix1 = AliYunJiqiXuexiPaiDswRumenZhinanFix1.__main__:main
