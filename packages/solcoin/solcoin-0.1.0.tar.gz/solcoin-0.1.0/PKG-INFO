@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: solcoin
+Version: 0.1.0
+Summary: A package for Solana transactions token transactions
+Home-page: https://github.com/bear102/solcoin
+Author: bear102
+License: MIT
+Requires-Dist: solders
+Requires-Dist: solana
+Requires-Dist: borsh_construct
+Requires-Dist: requests
+Requires-Dist: construct
+Dynamic: author
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
