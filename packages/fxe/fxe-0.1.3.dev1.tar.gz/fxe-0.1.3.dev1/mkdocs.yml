@@ -1,0 +1,114 @@
+site_name: FXE
+site_url: https://juishuyeh.github.io/fxe  # 加入這行
+copyright: Copyright &copy; 2024 JSYEH  # 加入這行
+site_description: Finlab Extension Tool
+site_author: JSYEH
+repo_url: https://github.com/juishuyeh/fxe
+repo_name: juishuyeh/fxe
+
+theme:
+  name: material
+  language: zh-TW
+  features:
+    - navigation.tabs        # 將導航放在頂部
+    - navigation.tabs.sticky # 讓導航列固定在頂部
+    - navigation.top        # 新增回到頂部按鈕
+    - navigation.tracking   # 追蹤當前位置
+    - navigation.instant   # 即時導航
+    - navigation.sections # 導航分區
+    - navigation.sidebar.right   # 側邊欄導航
+    - navigation.scrollspy # 滾動導航
+    - navigation.expand   # 展開導航
+    - toc.follow           # 目錄跟隨滾動
+    - search.suggest       # 搜尋建議
+    - search.highlight     # 搜尋結果高亮
+    - content.code.copy    # 程式碼區塊複製按鈕
+    - content.code.annotate  # 支援程式碼註解
+    - content.tabs.link     # 分頁內容連結
+    - header.autohide      # 滾動時自動隱藏頁首
+    - announce.dismiss     # 可關閉公告
+    
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切換深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切換淺色模式
+
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - scripts/gen_ref_pages.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+  - section-index
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_root_heading: true
+            show_root_toc_entry: true
+            show_root_full_path: true        # 改為 true
+            show_object_full_path: true      # 改為 true
+            show_category_heading: false
+            show_signature_annotations: true  # 改為 true
+            show_source: false
+            members_order: source
+            docstring_style: google
+            show_if_no_docstring: false
+            merge_init_into_class: true
+            separate_signature: true          # 改為 true
+            heading_level: 3
+            show_bases: false
+            show_submodules: true           # 加入這行
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition              # 支援提示框
+  - pymdownx.details        # 支援可折疊內容
+  - pymdownx.tabbed:
+      alternate_style: true # 使用替代樣式
+  - tables
+  - footnotes
+  - attr_list                # 支援屬性列表
+  - pymdownx.emoji:          # 支援 emoji 和圖標
+      emoji_index: !!python/name:material.extensions.emoji.twemoji    # 新的路徑
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg  # 新的路徑
+  - def_list               # 定義列表支援
+  - pymdownx.tasklist:     # 任務清單
+      custom_checkbox: true
+  - pymdownx.arithmatex:   # 數學公式支援
+      generic: true
+  - pymdownx.caret        # 上標支援
+  - pymdownx.mark         # 標記支援
+  - pymdownx.tilde       # 下標和刪除線
+
+nav:
+  - 首頁: index.md
+  - 安裝指南: installation.md
+  - 使用教學:
+      - 概述: tutorials/index.md
+      - 基礎教學: tutorials/basic.md
+      - 策略開發: tutorials/strategy.md
+  - 進階指南:
+      - 概述: guide/index.md
+      - 入門指南: guide/getting-started.md
+      - 進階功能: guide/advanced.md
+      - 基本使用: guide/basic-usage.md
+  - Code Reference: reference/
+  - 關於: about.md
+  - 貢獻指南: contributing.md
+  - 更新紀錄: changelog.md
