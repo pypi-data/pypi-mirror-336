@@ -1,0 +1,160 @@
+Metadata-Version: 2.4
+Name: rf_signal_monitor
+Version: 0.2.1
+Summary: RF Signal Monitor for automotive security and vehicle signal analysis
+Author-email: Jonathan Marien <jondmarien@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Jonathan Marien
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+Project-URL: Homepage, https://github.com/jondmarien/automotive-security-poc
+Project-URL: Bug Tracker, https://github.com/jondmarien/automotive-security-poc/issues
+Keywords: automotive,security,RF,vehicle,OpenXC,HackRF
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Security
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial>=3.5
+Requires-Dist: rich>=12.0.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: numpy>=1.22.0
+Requires-Dist: pandas>=1.4.0
+Requires-Dist: PyQt5>=5.15.0
+Requires-Dist: requests>=2.27.0
+Provides-Extra: sdr
+Requires-Dist: gnuradio>=3.8.0; extra == "sdr"
+Dynamic: license-file
+
+# Automotive Security POC - RF Signal Monitor
+
+## Overview
+
+The Automotive Security Proof of Concept (POC) is a monitoring system designed to detect and alert on suspicious RF signals that could indicate potential security threats to modern vehicles. It integrates the OpenXC platform with a HackRF One software-defined radio to provide real-time monitoring, detection, and alerting capabilities.
+
+### Key Features
+
+- Detection of anomalous RF signals in automotive frequency ranges (315MHz and 433MHz)
+- Real-time monitoring dashboard with comprehensive visualization
+- Alert system for suspicious activity (key fob relay attacks, cloning attempts, signal jamming)
+- Integration with vehicle data through OpenXC
+- Historical logging and analysis capabilities
+- Mobile companion app for on-the-go monitoring and alerts
+
+## Installation
+
+### Prerequisites
+
+- Python 3.6 or higher
+- HackRF One or compatible SDR hardware
+- OpenXC Vehicle Interface (or simulator)
+
+### Setup
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/jondmarien/automotive-security-poc.git
+   cd automotive-security-poc
+   ```
+
+2. **Set Up Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Prepare Log Directories**
+   ```bash
+   mkdir -p src/logs/dashboard
+   mkdir -p src/logs/integrated
+   ```
+
+5. **Configure Hardware (If using physical devices)**
+   - Connect HackRF One to your computer via USB
+   - Ensure OpenXC Vehicle Interface is connected or simulator is configured
+
+## Usage
+
+1. **Start the Application**
+   ```bash
+   cd src
+   python main_application.py
+   ```
+
+2. **Main Menu Options**
+   - Run Integrated RF Detector: Starts real-time monitoring
+   - Show Dashboard: Launches visualization dashboard
+   - View Documentation: Displays system documentation
+   - Exit: Closes the application
+
+3. **Using the RF Detector**
+   - Configure monitoring duration and detection parameters
+   - View real-time RF signals and vehicle data
+   - Receive alerts for suspicious activities
+
+## Screenshots
+
+The application includes several visualization screens:
+- Main dashboard for RF signal monitoring
+- Alert management interface
+- Detection history logs
+- Configuration settings
+
+See the `app_mockups` directory for visual references.
+
+## Technical Architecture
+
+The system consists of three main components:
+
+1. **RF Signal Detection Module (HackRF)**: Monitors frequency bands used in automotive systems
+2. **Vehicle Integration Module (OpenXC)**: Collects real-time vehicle data
+3. **Monitoring and Alerting System**: Provides dashboard visualization and alert generation
+
+## Future Development
+
+Planned enhancements include:
+- Enhanced signal analysis with machine learning
+- Integration with existing vehicle security systems
+- Dedicated hardware development
+- Cloud-based fleet monitoring
+- Automatic countermeasures for detected attacks
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+The MIT License is a permissive license that allows reuse of the code while requiring attribution to the original author. You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that you include the original copyright notice and permission notice in all copies or substantial portions of the software.
+
+---
+
+For detailed documentation, please refer to the [POC Documentation](docs/POC_DOCUMENTATION.md).
+
