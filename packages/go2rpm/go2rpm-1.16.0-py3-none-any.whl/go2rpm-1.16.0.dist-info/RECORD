@@ -1,0 +1,10 @@
+go2rpm/__init__.py,sha256=xU4zixu2P5XGwNWcpiXglUcpphhNGdnrhGkz73Wy0nc,59
+go2rpm/__main__.py,sha256=1JeKp-Wt9eF9Aaph0HgBT9vl3IQ3yasVoHpQrN2dK3g,31301
+go2rpm/templates/profile1.spec,sha256=d8sjJVh5_F0gX4J0YGOmeDN9UdelboIcva-_aipPBPA,6954
+go2rpm/templates/profile2.spec,sha256=IXYUbY_44Iia9l-DGdwGjVgO-nO88YKQQp6AWefIOow,5826
+go2rpm/templates/vendor.spec,sha256=GTWsImGu9b6lqJ7KnThe44sK_Eeb4tPKPEbVEJSYn98,4376
+go2rpm-1.16.0.dist-info/entry_points.txt,sha256=nXmxRHbT0M90aEO8Sst10sUF76DiZJXqJElclNd0xNk,47
+go2rpm-1.16.0.dist-info/licenses/LICENSE,sha256=dO4Ecaf9C16aPRiqPNqKZDVkPEMb-SaBjIDqLKsfBLg,1111
+go2rpm-1.16.0.dist-info/WHEEL,sha256=_2ozNFCLWc93bK4WKHCO-eDUENDlo-dgc9cU3qokYO4,82
+go2rpm-1.16.0.dist-info/METADATA,sha256=qPPfgySFH8VpuRCtHi48ibVqg5nsl6R-SoIXnkU7fXo,6906
+go2rpm-1.16.0.dist-info/RECORD,,
