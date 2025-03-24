@@ -1,0 +1,2 @@
+[console_scripts]
+extract-frames = video_frame_extractor.cli:main

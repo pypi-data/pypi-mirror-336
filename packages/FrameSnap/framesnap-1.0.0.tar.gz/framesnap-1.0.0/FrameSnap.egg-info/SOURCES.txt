@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+FrameSnap.egg-info/PKG-INFO
+FrameSnap.egg-info/SOURCES.txt
+FrameSnap.egg-info/dependency_links.txt
+FrameSnap.egg-info/entry_points.txt
+FrameSnap.egg-info/requires.txt
+FrameSnap.egg-info/top_level.txt
+video_frame_extractor/__init__.py
+video_frame_extractor/cli.py
+video_frame_extractor/extractor.py
