@@ -1,0 +1,6 @@
+[tool.black]
+line_length = 100
+
+[project]
+name = "html_ish"
+version = "0.0.0"
