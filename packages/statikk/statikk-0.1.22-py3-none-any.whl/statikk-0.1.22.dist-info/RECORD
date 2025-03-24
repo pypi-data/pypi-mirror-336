@@ -1,0 +1,12 @@
+statikk/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+statikk/conditions.py,sha256=63FYMR-UUaE-ZJEb_8CU721CQTwhajq39-BbokmKeMA,2166
+statikk/engine.py,sha256=oYSxiD6lw0aoK6StoqJvdb6lWwTJEra4H3UfnnE7yK8,32145
+statikk/expressions.py,sha256=boAeGxZj2cDsXxoiX3IIEzfX9voSMQngi4-rE_jYeuE,12233
+statikk/fields.py,sha256=uLGD3xEnz2nqQY6EwG8Dd7pnRMMVP4PU2Z2I-uGNaTA,150
+statikk/models.py,sha256=IaB6USTvrzEQa3LewgFQ4772eaWkWFF_fyzIVQLzp8U,17385
+statikk/typing.py,sha256=laOlOpWOm9_sOj4hhdZnGTUZRiq8760_B9I9B3wBhz8,750
+statikk-0.1.22.dist-info/licenses/LICENSE.txt,sha256=uSH_2Hpb2Bigy5_HhBliN2fZbBU64G3ERM5zzhKPUEE,1078
+statikk-0.1.22.dist-info/METADATA,sha256=3jIg6WKVrVjPnNx6Vb6tpU03EMavyeYrGHxuzp8MlnM,3183
+statikk-0.1.22.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+statikk-0.1.22.dist-info/top_level.txt,sha256=etKmBbjzIlLpSefXoiOfhWGEgvqUEALaFwCjFDBD9YI,8
+statikk-0.1.22.dist-info/RECORD,,
