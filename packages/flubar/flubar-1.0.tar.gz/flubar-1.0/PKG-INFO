@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flubar
+Version: 1.0
+Summary: Barcode sequencing data processing toolkit
+Home-page: https://github.com/Dyy0426/flubar.git
+Author: DYY
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: biopython
+Requires-Dist: scikit-learn
+Requires-Dist: weblogo
