@@ -1,0 +1,5 @@
+my_private_package_sample/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_private_package_sample-0.0.0.dist-info/METADATA,sha256=eoHTEL7DrO80bYBpZ72bz6fqD5-7GQY3SOmYXGBuNSI,942
+my_private_package_sample-0.0.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+my_private_package_sample-0.0.0.dist-info/top_level.txt,sha256=CQRk50nRbaQ-wvYbBSu4dBvBXZcSWFyJlc1LXQCfexE,26
+my_private_package_sample-0.0.0.dist-info/RECORD,,
