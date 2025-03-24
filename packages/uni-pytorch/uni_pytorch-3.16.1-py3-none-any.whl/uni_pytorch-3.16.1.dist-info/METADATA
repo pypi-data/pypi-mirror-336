@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: uni_pytorch
+Version: 3.16.1
+Summary: PyTorch to uni-model converter
+Requires-Python: >=3.8, <3.13
+Requires-Dist: uni-model==9.0.10
+Requires-Dist: networkx~=3.0.0
+Requires-Dist: numpy<2
+Requires-Dist: mct-quantizers~=1.5.0
+Requires-Dist: packaging
+Requires-Dist: sony-custom-layers~=0.3.0
+Requires-Dist: onnx==1.16.1
+Requires-Dist: onnxruntime~=1.19.2
+Requires-Dist: onnxruntime-extensions~=0.13.0
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
