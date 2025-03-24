@@ -1,0 +1,13 @@
+pydisort-0.10.1.dist-info/RECORD,,
+pydisort-0.10.1.dist-info/WHEEL,sha256=QO0r46pLApU0zJMiLLJ6INFBxMDGUGzWEequJ0nInAY,134
+pydisort-0.10.1.dist-info/top_level.txt,sha256=-CKw1nKEiDzSuU5EGlGlmhMt5D059Yoo8p1lZB0Ntwc,9
+pydisort-0.10.1.dist-info/METADATA,sha256=b-lIrP9eRqvI3Z_lzvlnHroNefUVOmwseIb3NH0g0Fo,2737
+pydisort-0.10.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pydisort/__init__.py,sha256=dCjYfvJykrMVnvktSyWS0t0MRlYsycuslvM_HF9_Bv8,36
+pydisort/pydisort.cpython-39-darwin.so,sha256=ZBx5p395m0uVIXQjiAyqxrziIzFr9Qb_S5MhktPhu_s,1044512
+pydisort/.dylibs/libtorch_python.dylib,sha256=vhhDt7TBmIC6KXn2p_CpKzVvPX8-DtSs2UqayFcb3lk,25678336
+pydisort/.dylibs/libtorch.dylib,sha256=_GZV9t60guR40TX5QMwTJ1aQf5VeXpFd2PdHMXwwJ10,34880
+pydisort/.dylibs/libomp.dylib,sha256=-Ib2LdXThxApbBFtIXxhGdqq8hbOD0lrv_NUFiCgTas,777600
+pydisort/.dylibs/libtorch_cpu.dylib,sha256=CzIH3HAJr2zAiJWnxlsttcCU6NhzYsJySOOvwEOIkDM,186213664
+pydisort/.dylibs/libc10.dylib,sha256=ZJ8CYB9fw_3p2d341w51ELc-ecQze5csK9FO7OUiBSU,1032528
+pydisort/.dylibs/libshm.dylib,sha256=z9_jv44UB8AeHvzBcwJAHvv3W0o8XtGJaJMBLjq4I6U,96096
