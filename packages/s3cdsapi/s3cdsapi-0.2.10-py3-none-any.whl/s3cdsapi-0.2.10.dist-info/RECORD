@@ -1,0 +1,9 @@
+s3cdsapi/__init__.py,sha256=pco-DYGWaTM1DItF8iqMFV1vvxywQlijOz4l7iAyGsU,86
+s3cdsapi/main.py,sha256=Hmt3WJbibbCO5OHRIs0y5lgPVV-NhTrLP3_Oejp7ei8,28488
+s3cdsapi/models.py,sha256=jZlwsY0WsCUqwe7O-ZehhoBShwxu-hzCIzm3Yj93Mkg,3632
+s3cdsapi/product_params.py,sha256=Cm6T--MYMVcviWAz6-0oFouIWciI_UnXaov2eGr8le8,18257
+s3cdsapi/utils.py,sha256=YR1C3sHfYI1-4vh9KeEXxg4k9JLaNDofPbf0gFivQTk,7922
+s3cdsapi-0.2.10.dist-info/METADATA,sha256=a3qWvxkCtvzTSNMDfkBacXX907l-A-1hyaepa3KQjsc,1433
+s3cdsapi-0.2.10.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+s3cdsapi-0.2.10.dist-info/licenses/LICENSE,sha256=Ir0giAY5F_l46aj-Mv3YI6oodqmBK6Y6Tqd_3CsM-RE,1546
+s3cdsapi-0.2.10.dist-info/RECORD,,
