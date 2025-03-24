@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+altogether/__init__.py
+altogether.egg-info/PKG-INFO
+altogether.egg-info/SOURCES.txt
+altogether.egg-info/dependency_links.txt
+altogether.egg-info/top_level.txt

@@ -1,0 +1,41 @@
+# altogether
+
+Promise.all for Python (sorta)
+
+- Python Native (zero dependency)
+- Simple API (`with altogether:`)
+- Automatic parallelization
+- Support for both async and blocking functions
+
+If you have this:
+
+```python
+for i in range(100):
+    sleep_one_second(i)  # Total: 100 * 0.1 = 10 seconds
+```
+
+Just:
+
+```python
+with altogether:
+    for i in range(100):
+        altogether.add(time.sleep, 0.1, i)
+    await altogether.all()
+```
+
+And get instant parallized speed up.
+
+## Installation
+
+```bash
+pip install altogether
+```
+
+## Note
+
+If possible, use the async version. The sync version is a simple 'patch' to speed up IO-bound tasks that will not be impacted by GIL due to its use of threads.
+
+## License
+
+MIT
+
