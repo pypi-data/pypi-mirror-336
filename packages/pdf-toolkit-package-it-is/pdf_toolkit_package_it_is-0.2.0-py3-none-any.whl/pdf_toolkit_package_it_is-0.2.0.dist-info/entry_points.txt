@@ -1,0 +1,3 @@
+[console_scripts]
+pdf-merge = pdf_toolkit.merger:merge_pdfs
+pdf-split = pdf_toolkit.splitter:split_pdf
