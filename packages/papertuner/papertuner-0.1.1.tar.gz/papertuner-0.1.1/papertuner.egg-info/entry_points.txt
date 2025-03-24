@@ -1,0 +1,4 @@
+[console_scripts]
+papertuner = papertuner.cli:app
+papertuner-dataset = papertuner.dataset:main
+papertuner-train = papertuner.train:main
