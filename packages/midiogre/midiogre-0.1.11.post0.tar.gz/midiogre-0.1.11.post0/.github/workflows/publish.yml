@@ -1,0 +1,59 @@
+name: Publish Release to PyPI
+# This workflow is used to publish a release version to PyPI (once a tag is pushed to main)
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger on version tags
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.x"
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine pytest pytest-cov setuptools-scm
+        pip install -r requirements.txt
+        pip install -e .
+    
+    - name: Run tests
+      run: |
+        pytest tests/ --cov=midiogre --cov-report=term-missing
+    
+    - name: Build package
+      run: python -m build
+    
+    - name: Check package and verify release version
+      run: |
+        twine check dist/*
+        # Extract version from tag (remove 'v' prefix)
+        TAG_VERSION=${GITHUB_REF#refs/tags/v}
+        echo "Package version from tag: $TAG_VERSION"
+        
+        # Verify that the built package is a release version (not a dev version)
+        WHEEL_FILE=$(ls dist/*.whl | head -n 1)
+        if [[ $WHEEL_FILE == *dev* ]]; then
+          echo "Error: Build produced a development version from a tag"
+          exit 1
+        fi
+        echo "Verified release version build"
+    
+    - name: Publish package to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        verbose: true
+        print-hash: true 
