@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+cs_finix_server.egg-info/PKG-INFO
+cs_finix_server.egg-info/SOURCES.txt
+cs_finix_server.egg-info/dependency_links.txt
+cs_finix_server.egg-info/entry_points.txt
+cs_finix_server.egg-info/requires.txt
+cs_finix_server.egg-info/top_level.txt
+finix/__init__.py
+finix/__main__.py
