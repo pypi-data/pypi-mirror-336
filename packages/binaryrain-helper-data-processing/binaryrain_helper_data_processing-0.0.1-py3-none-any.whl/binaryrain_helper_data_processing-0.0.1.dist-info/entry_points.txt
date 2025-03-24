@@ -1,0 +1,2 @@
+[console_scripts]
+binaryrain-helper-data-processing = binaryrain_helper_data_processing:dataframe
