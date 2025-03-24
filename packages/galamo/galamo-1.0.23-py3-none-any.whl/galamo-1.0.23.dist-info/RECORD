@@ -1,0 +1,9 @@
+galamo/__init__.py,sha256=0bhXks0OGhJ_KKdkclRWigrH_MvEmWqrgBfvloyFePY,528
+galamo/bpt.py,sha256=xIVYQBfW0RrCSefMNZH56x5IIxz2LW3l9qeu7jngwk0,5664
+galamo/encoder.pkl,sha256=T4XepODsdSHiWo2h-kDzWQgOjMkWCfagRTFnv1f3LV8,5
+galamo/model.keras,sha256=ScwRvMTyIPRxMNr5Vgb_wynnjPSZZ_E9XWiYYoXN3Z0,78270665
+galamo/model.py,sha256=jz81-LLNO80lHm8VxxlXllItVO3oZzfJtfzFV_S7AUU,2868
+galamo-1.0.23.dist-info/METADATA,sha256=YfMpxob4c5ncz-qUiuwLOWmeNBXSH8bPglT1sLDFlpc,3470
+galamo-1.0.23.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+galamo-1.0.23.dist-info/top_level.txt,sha256=3fYAm-EZ0Lk8-SoRNZClWeyDNLpT5LiXdJQ8weYQdUY,7
+galamo-1.0.23.dist-info/RECORD,,
