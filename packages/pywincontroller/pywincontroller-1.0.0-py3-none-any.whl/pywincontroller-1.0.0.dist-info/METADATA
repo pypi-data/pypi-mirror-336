@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: pywincontroller
+Version: 1.0.0
+Summary: A wrapper for pywinauto that make the ability to control any window with python easily
+Home-page: https://github.com/ThePhoenix78/pywincontroller
+Download-URL: https://github.com/ThePhoenix78/pywincontroller/tarball/master
+Author: ThePhoenix78
+Author-email: thephoenix788@gmail.com
+License: MIT
+Keywords: pywinauto,python windows,window controller,controller
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pywinauto
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
