@@ -1,0 +1,15 @@
+quickuse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickuse/llms.py,sha256=mOynyxXHc18pssl1a-xumU5clbq-tJmyK7DucnLz6OY,711
+quickuse/pandas_ai.py,sha256=sIb3vEkPoPSd3FpyhxP8pPFSi_kl5lkh1ZEaDs0g3PA,716
+quickuse/utils.py,sha256=ujcHv3uNkBYxF7ozvAKg68TfvketyhmcrSJSgBLVjkk,315
+quickuse/llamaindex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickuse/llamaindex/queryengine.py,sha256=8ggTnG5qosIINttcpiz_CuD0iWqNqYu0KiZE3Ofi0uk,2508
+quickuse/llamaindex/reader.py,sha256=qr-eo3QzdtfKLhA8RRXm_P8wHksBVxuJraGXVm16VuI,1332
+quickuse/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickuse/tools/filetool.py,sha256=y3IPavGdDcbG2kWo_L4pmwhjp6c5dowJcMrJyz5CPJU,7548
+quickuse/tools/retools.py,sha256=zwndr5cjyPk-iuhtQCjcfVrL-WumdHh6gcGNgW71G08,269
+quickuse/tools/small.py,sha256=MMpjIsf2EKU5Msu9UCweEo5B5GCc6Fa_Zjpso4BCRY4,2062
+quickuse-0.1.0.dist-info/METADATA,sha256=VC_St1Sb-NVhH-rfMyYNcJeI7tw2S6GGJJL0eGY6ze0,671
+quickuse-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+quickuse-0.1.0.dist-info/top_level.txt,sha256=SdGwb7GPGQkolv1q5n4kgNEErIUMPCkg-cW4s4veugo,9
+quickuse-0.1.0.dist-info/RECORD,,
