@@ -1,0 +1,11 @@
+rule_of_thumb/__init__.py,sha256=K_A4m-zd4XAtV2DmQFJ2Fd8SmJ3ag_sWS5HZmLOAR0E,76
+rule_of_thumb/beam_design.py,sha256=kK6DeisGFrkxsEYNm-CKsq1vupTdnSNXwdH5XHb7-RI,960
+rule_of_thumb/bulk_density.py,sha256=Oapcq4do9GP9zKRuV2445ZqE_nb7HB0EDqGWct6wy40,2116
+rule_of_thumb/dsg_bm_aci.py,sha256=BqlOVGGrQXQeQhIEJNR2mkmfuMpRBitccPL6WHGTaSY,9819
+rule_of_thumb/self_weight.py,sha256=x4T4jtehn2XfkICYO1aodJUo2W5xsWcIUuqNZrhse-M,1313
+rule_of_thumb/slab_thickness.py,sha256=LX24JrZXx-1QEuLfW92yQnSV809wSEsAN3Q6oCtM8_s,509
+rule_of_thumb/soil_loads.py,sha256=B4h0RJYnGcwCUPSYS6Ajpu4xMfQajuMJA-JMpkze5bM,657
+rule_of_thumb-0.1.2.5.dist-info/METADATA,sha256=ZclE6rQyZL5-QWkqDtCJVaPULuaRKABw8eVxgYNw4_I,376
+rule_of_thumb-0.1.2.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+rule_of_thumb-0.1.2.5.dist-info/top_level.txt,sha256=BRRYCLTabcpWl_soDbEonAdPfThwmBEyfbUvdzFVHd0,14
+rule_of_thumb-0.1.2.5.dist-info/RECORD,,
