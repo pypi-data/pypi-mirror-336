@@ -1,0 +1,3 @@
+[console_scripts]
+SklearnXuexiShouceChuyiFix1 = SklearnXuexiShouceChuyiFix1.__main__:main
+sklearn-xuexi-shouce-chuyi-fix1 = SklearnXuexiShouceChuyiFix1.__main__:main
