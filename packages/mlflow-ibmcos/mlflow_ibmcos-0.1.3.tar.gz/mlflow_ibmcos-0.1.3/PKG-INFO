@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: mlflow-ibmcos
+Version: 0.1.3
+Summary: A Python library to integrate IBM COS with MLFlow artifact registry
+Author-email: Daniel Diego Horcajuelo <dadiego91@hotmail.com>
+Requires-Python: >=3.8
+Requires-Dist: cloudpickle>=3.1.1
+Requires-Dist: dirhash>=0.5.0
+Requires-Dist: ibm-cos-sdk>=2.0.0
+Requires-Dist: mlflow>=2.17.2
+Requires-Dist: pydantic>=1.10.20
+Requires-Dist: tqdm>=4.67.1
