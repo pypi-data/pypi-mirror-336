@@ -1,0 +1,3 @@
+[console_scripts]
+ZhihuWendaXiangBaZijiDeShujiSaomiaoChengPdfShenmeyangDeSaomiaoyiBijiaoHeshiFix1 = ZhihuWendaXiangBaZijiDeShujiSaomiaoChengPdfShenmeyangDeSaomiaoyiBijiaoHeshiFix1.__main__:main
+zhihu-wenda-xiang-ba-ziji-de-shuji-saomiao-cheng-pdf-shenmeyang-de-saomiaoyi-bijiao-heshi-fix1 = ZhihuWendaXiangBaZijiDeShujiSaomiaoChengPdfShenmeyangDeSaomiaoyiBijiaoHeshiFix1.__main__:main
