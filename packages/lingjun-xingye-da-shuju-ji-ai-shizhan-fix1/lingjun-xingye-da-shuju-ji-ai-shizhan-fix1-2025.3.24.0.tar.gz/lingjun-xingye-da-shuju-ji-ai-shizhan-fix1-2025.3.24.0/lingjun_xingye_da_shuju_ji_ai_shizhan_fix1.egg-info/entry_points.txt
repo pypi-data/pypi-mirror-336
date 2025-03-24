@@ -1,0 +1,3 @@
+[console_scripts]
+LingjunXingyeDaShujuJiAiShizhanFix1 = LingjunXingyeDaShujuJiAiShizhanFix1.__main__:main
+lingjun-xingye-da-shuju-ji-ai-shizhan-fix1 = LingjunXingyeDaShujuJiAiShizhanFix1.__main__:main
