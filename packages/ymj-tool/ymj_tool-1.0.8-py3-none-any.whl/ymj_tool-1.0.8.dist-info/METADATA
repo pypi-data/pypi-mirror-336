@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ymj-tool
+Version: 1.0.8
+Summary: A useful tool for ...
+Author: ssseVennn
+Author-email: 739369987@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+
