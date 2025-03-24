@@ -1,0 +1,3 @@
+[console_scripts]
+AliWenyuZaixianPiaowuJishuDaJiemiFix1 = AliWenyuZaixianPiaowuJishuDaJiemiFix1.__main__:main
+ali-wenyu-zaixian-piaowu-jishu-da-jiemi-fix1 = AliWenyuZaixianPiaowuJishuDaJiemiFix1.__main__:main
