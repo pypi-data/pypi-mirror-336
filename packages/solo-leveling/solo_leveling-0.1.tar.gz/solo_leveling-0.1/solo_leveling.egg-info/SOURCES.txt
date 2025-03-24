@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+pybase8/__init__.py
+solo_leveling.egg-info/PKG-INFO
+solo_leveling.egg-info/SOURCES.txt
+solo_leveling.egg-info/dependency_links.txt
+solo_leveling.egg-info/top_level.txt
