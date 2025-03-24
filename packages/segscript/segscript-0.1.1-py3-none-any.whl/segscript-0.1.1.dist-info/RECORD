@@ -1,0 +1,10 @@
+segscript/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+segscript/main.py,sha256=J_dvLgqKxRjbj__m9KeXLlUKxpEKfdMaWoXjkLDF6AA,7997
+segscript/model.py,sha256=tgQdUehn5p3BDoD64J3seVUNoZ6KUw32yfo_mxqKDWM,7899
+segscript/utils.py,sha256=pYyX2JOZFT7YAIsWhYhBtVZxsQ-Q7MxCQLTh8nbX-e8,9611
+segscript-0.1.1.dist-info/licenses/LICENSE,sha256=RfvlYxFLSFUjXuzDcfuEWpyKuvNaIu2evE1PIHbg88M,1057
+segscript-0.1.1.dist-info/METADATA,sha256=HX3xqM1a_QW8Iz_w1vAh011xjsa1HoJKuV2h0uZv2tQ,1626
+segscript-0.1.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+segscript-0.1.1.dist-info/entry_points.txt,sha256=FUyvHS4TEc-5EMpwj2gaAiQ9zLVF59MU4x947SgjrUw,50
+segscript-0.1.1.dist-info/top_level.txt,sha256=aOGl3T1KHtGbnM_hJXq0RgBCmL_zu_ERa7f56dBeTc4,10
+segscript-0.1.1.dist-info/RECORD,,
