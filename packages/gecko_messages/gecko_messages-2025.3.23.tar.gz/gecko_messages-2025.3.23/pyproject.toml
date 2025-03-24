@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "gecko_messages"
+version = "2025.03.23"
+description = "gecko messages"
+authors = ["walchko <walchko@users.noreply.github.com>"]
+readme = "readme.md"
+license = "MIT"
+homepage = "https://pypi.org/project/gecko-messages/"
+repository = 'https://github.com/gecko-robotics/messages'
+# documentation = "http://..."
+keywords = ["gecko", "messages", "robotics", "protobuf", "namedtuples"]
+classifiers = [
+  'Development Status :: 4 - Beta',
+  'Intended Audience :: Developers',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: OS Independent',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
+  'Topic :: Software Development :: Libraries',
+  'Topic :: Software Development :: Libraries :: Python Modules',
+  'Topic :: Software Development :: Libraries :: Application Frameworks'
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+protobuf = "5.29.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+# [tool.poetry.scripts]
+# generate = "gecko_messages.generate:generate"
+# gmsg = 'gecko_messages.bin.gmsg:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
