@@ -1,0 +1,2 @@
+[How to disable streaming for models that don't support it](https://langchain-ai.github.io/langgraph/how-tos/disable-streaming/): LLM should read this page when handling models that don't support streaming, implementing LangGraph with non-streaming models, or troubleshooting streaming errors with OpenAI's O1 models. This page explains how to use the disable_streaming=True parameter with ChatOpenAI to make non-streaming models work with LangGraph's astream_events API, with code examples showing the error case and proper implementation.
+

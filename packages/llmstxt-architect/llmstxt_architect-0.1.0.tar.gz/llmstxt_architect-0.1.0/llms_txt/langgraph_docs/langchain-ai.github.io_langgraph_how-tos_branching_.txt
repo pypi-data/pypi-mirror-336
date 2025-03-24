@@ -1,0 +1,2 @@
+[How to create branches for parallel node execution](https://langchain-ai.github.io/langgraph/how-tos/branching/): LLM should read this page when needing to implement parallel node execution in LangGraph, optimizing graph performance, or handling conditional branching in workflows. This page explains how to create branches for parallel execution in LangGraph using fan-out/fan-in mechanisms, reducer functions for state accumulation, handling exceptions during parallel execution, and implementing conditional branching logic between nodes.
+

@@ -1,0 +1,2 @@
+[How to create a custom checkpointer using Redis](https://langchain-ai.github.io/langgraph/how-tos/persistence_redis/): LLM should read this page when implementing persistence in LangGraph applications, creating custom checkpoint mechanisms for agents, or working with Redis as a storage backend. This page demonstrates how to create custom checkpointers for LangGraph agents using Redis, including implementations for both synchronous and asynchronous interfaces that save and retrieve agent state.
+

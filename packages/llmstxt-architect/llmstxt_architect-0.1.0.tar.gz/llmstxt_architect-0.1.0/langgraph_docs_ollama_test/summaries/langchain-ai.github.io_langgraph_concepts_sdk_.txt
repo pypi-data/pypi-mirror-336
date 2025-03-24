@@ -1,0 +1,2 @@
+[LangGraph SDK](https://langchain-ai.github.io/langgraph/concepts/sdk/): LLM should read this page when the user is setting up LangGraph Platform, installing LangGraph SDK packages for Python or JS/TS, and seeking API reference documentation. LangGraph provides a Python and JS/TS SDK for interacting with the server API, offers synchronous and asynchronous client options, and includes additional resources such as CLI API Reference.
+

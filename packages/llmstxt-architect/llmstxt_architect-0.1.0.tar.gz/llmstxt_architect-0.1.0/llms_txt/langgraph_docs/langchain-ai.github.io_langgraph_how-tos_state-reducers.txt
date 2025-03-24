@@ -1,0 +1,2 @@
+[How to update graph state from nodes](https://langchain-ai.github.io/langgraph/how-tos/state-reducers): LLM should read this page when implementing state management in LangGraph or when designing nodes that update graph state. This page explains how to define graph state schemas using TypedDict, update state from graph nodes, and use reducers to control how state updates are processed, with examples using message-based state patterns.
+

@@ -1,0 +1,2 @@
+[How to force tool-calling agent to structure output](https://langchain-ai.github.io/langgraph/how-tos/react-agent-structured-output/): LLM should read this page when needing to force an agent to return structured output, designing tool-calling agents with consistent output formats, or implementing ReAct agents with structured response handling. The page shows two methods for structuring agent output: 1) binding the output schema as a tool with a single LLM, or 2) using two LLMs where the second formats the response, with code examples for both approaches using LangGraph.
+

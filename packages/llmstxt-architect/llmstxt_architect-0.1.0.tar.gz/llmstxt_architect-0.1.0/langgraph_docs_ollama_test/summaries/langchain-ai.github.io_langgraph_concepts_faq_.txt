@@ -1,0 +1,2 @@
+[FAQ](https://langchain-ai.github.io/langgraph/concepts/faq/): LLM should read this page when building agentic applications, deploying LangGraph applications, and using LLMs with LangGraph. LangGraph is an open-source orchestration framework for complex agentic systems, providing a more expressive framework to handle companies' unique tasks without restricting users to a single black-box cognitive architecture.
+

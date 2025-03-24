@@ -1,0 +1,2 @@
+[How to add cross-thread persistence to your graph](https://langchain-ai.github.io/langgraph/how-tos/cross-thread-persistence/): LLM should read this page when implementing cross-thread persistence in LangGraph, storing user data across conversations, or using the Store API with LangGraph. This guide demonstrates how to create a graph with shared memory across multiple threads using the Store interface, including setting up an InMemoryStore, accessing stored data in graph nodes, and implementing memory search functionality.
+

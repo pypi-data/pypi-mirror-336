@@ -1,0 +1,2 @@
+[How to call tools using ToolNode](https://langchain-ai.github.io/langgraph/how-tos/tool-calling/): LLM should read this page when learning how to implement tool calling with LangGraph, when working with the ToolNode component, or when building ReAct agents. This page covers using LangGraph's ToolNode for tool calling, including setup, manual invocation, working with chat models, building a ReAct agent, handling single and parallel tool calls, and error handling.
+

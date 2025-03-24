@@ -1,0 +1,2 @@
+[Multi-agent Systems](https://langchain-ai.github.io/langgraph/concepts/multi_agent/): Line 1: 'LLM should read this page when designing multi-agent systems with tool-calling supervisors' Line 2: 'This page covers the basics of communicating between agents in LangGraph, including graph state vs tool calls, different state schemas, and shared message lists.'
+

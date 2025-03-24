@@ -1,0 +1,2 @@
+[LangGraph Studio](https://langchain-ai.github.io/langgraph/concepts/langgraph_studio/): LLM should read this page when the user is attempting to develop an LLM application on LangGraph Platform, or has a local LangGraph application running in-memory. LangGraph Studio provides a specialized agent IDE for visualization, interaction, and debugging of complex agentic applications with features such as visual graph editing, testing, debugging, assistant creation, thread management, long-term memory viewing, and path map usage.
+

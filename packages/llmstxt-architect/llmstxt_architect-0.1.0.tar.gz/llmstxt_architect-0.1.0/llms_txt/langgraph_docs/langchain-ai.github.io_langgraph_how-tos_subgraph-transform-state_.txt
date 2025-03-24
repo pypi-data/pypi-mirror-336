@@ -1,0 +1,2 @@
+[How to transform inputs and outputs of a subgraph](https://langchain-ai.github.io/langgraph/how-tos/subgraph-transform-state/): LLM should read this page when needing to work with nested subgraphs, transforming state between parent and child graphs, or integrating independent state components in LangGraph. This page demonstrates how to transform inputs and outputs between parent graphs and subgraphs with different state structures, showing implementation of three nested graphs (parent, child, grandchild) with separate state dictionaries and transformation functions.
+

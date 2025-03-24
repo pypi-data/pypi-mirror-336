@@ -1,0 +1,2 @@
+[How to review tool calls (Functional API)](https://langchain-ai.github.io/langgraph/how-tos/review-tool-calls-functional/): LLM should read this page when implementing human review of tool calls, creating ReAct agents with Functional API, or adding human-in-the-loop workflows. This page demonstrates how to review tool calls before execution in a ReAct agent using LangGraph's Functional API, including accepting, revising, or generating custom tool messages with the interrupt function.
+

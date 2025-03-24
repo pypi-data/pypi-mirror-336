@@ -1,0 +1,2 @@
+[Memory](https://langchain-ai.github.io/langgraph/concepts/memory/): LLM should read this page when implementing memory systems for AI agents, managing conversation context across sessions, or designing systems that require both short-term and long-term information retention. This page explains memory systems in LangGraph, covering short-term (thread-scoped) memory for managing conversation history and long-term memory across threads, with techniques for handling long conversations, summarizing past interactions, and organizing persistent memories in namespaces.
+

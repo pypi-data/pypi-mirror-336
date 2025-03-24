@@ -1,0 +1,2 @@
+[How to update graph state from tools](https://langchain-ai.github.io/langgraph/how-tos/update-state-from-tools/): LLM should read this page when needing to update graph state from tools in LangGraph, implementing personalized responses based on tool updates, or using Command objects to modify state. This page details how to update graph state from tools using Command objects, creating personalized agents with state tracking, and implementing dynamic prompt construction based on updated state values.
+

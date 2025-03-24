@@ -1,0 +1,2 @@
+[How to create map-reduce branches for parallel execution](https://langchain-ai.github.io/langgraph/how-tos/map-reduce/): LLM should read this page when learning to implement parallel execution in LangGraph, creating map-reduce operations, or handling dynamic task decomposition. This guide explains how to use LangGraph's Send API to create map-reduce workflows, breaking tasks into parallel sub-tasks and recombining results, with examples showing joke generation across multiple subjects.
+
