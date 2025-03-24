@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: texttoaudioconverter50
+Version: 0.1
+Summary: A simple package to convert text to audio
+Home-page: https://github.com/yourusername/text_to_audio_converter
+Author: Your Name
+Requires-Dist: gTTS
+
