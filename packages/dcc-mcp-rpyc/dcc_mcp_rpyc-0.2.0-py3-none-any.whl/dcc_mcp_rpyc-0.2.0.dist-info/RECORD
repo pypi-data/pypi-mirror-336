@@ -1,0 +1,10 @@
+dcc_mcp_rpyc/__init__.py,sha256=zVXZmTrmKlyyTg2L_QuTE8K8utVgmBLlsXr5g4P18k4,846
+dcc_mcp_rpyc/adapter.py,sha256=Y7WbTcs_kpciOPimmtV5KvG1iCet5dkPEoj9K32JzsE,12405
+dcc_mcp_rpyc/client.py,sha256=b87pLM9PSCgPZxusZYYJtG5iN1Bk883dCnYAkjPYvJE,21386
+dcc_mcp_rpyc/discovery.py,sha256=3USE_xVOcS-q6EazEUwr0Oc1mW8aA5Tm17kl0xAFd00,17106
+dcc_mcp_rpyc/server.py,sha256=Ng0g7eE07jKLnR9S5M5JUFNFBfHC3pyOIhxzsNlPwx0,19379
+dcc_mcp_rpyc-0.2.0.dist-info/LICENSE,sha256=tJf0Pz8q_65AjEkm3872K1cl4jGil28vJO5Ko_LhUqc,1060
+dcc_mcp_rpyc-0.2.0.dist-info/METADATA,sha256=59j2kO-Ni0ihWNMJFdOAs4FqSg6Fm0dp9WRqzxe3V_0,7083
+dcc_mcp_rpyc-0.2.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dcc_mcp_rpyc-0.2.0.dist-info/entry_points.txt,sha256=LRKruJS2NoA4PIDQUdfmTlbd459UgXD2XAcQn2pwnnQ,54
+dcc_mcp_rpyc-0.2.0.dist-info/RECORD,,
