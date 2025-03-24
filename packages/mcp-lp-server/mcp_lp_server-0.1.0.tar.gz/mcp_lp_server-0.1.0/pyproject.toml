@@ -1,0 +1,18 @@
+[project]
+name = "mcp-lp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.5.0",
+    "protobuf>=6.30.1",
+    "requests>=2.32.3",
+]
+
+[tool.setuptools.packages.find]
+where = [".", "codegens"]
+
+[project.scripts]
+mcp-lp-server = "mcp_lp_server.main:main"
