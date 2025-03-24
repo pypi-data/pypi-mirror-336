@@ -1,0 +1,3 @@
+[console_scripts]
+PythonGongjiangFix1 = PythonGongjiangFix1.__main__:main
+python-gongjiang-fix1 = PythonGongjiangFix1.__main__:main
