@@ -1,0 +1,3 @@
+[console_scripts]
+JiucaiDeZiwoXiuyangFix1 = JiucaiDeZiwoXiuyangFix1.__main__:main
+jiucai-de-ziwo-xiuyang-fix1 = JiucaiDeZiwoXiuyangFix1.__main__:main
