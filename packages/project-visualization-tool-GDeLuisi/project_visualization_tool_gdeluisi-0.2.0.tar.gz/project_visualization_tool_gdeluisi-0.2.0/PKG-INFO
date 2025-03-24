@@ -1,0 +1,109 @@
+Metadata-Version: 2.4
+Name: project_visualization_tool_GDeLuisi
+Version: 0.2.0
+Summary: Visualization tool for git-managed projects
+Project-URL: Homepage, https://github.com/GDeLuisi/project_visualization_tool
+Project-URL: Issues, https://github.com/GDeLuisi/project_visualization_tool/issues
+Project-URL: Repository, https://github.com/GDeLuisi/project_visualization_tool
+Author-email: De Luisi Gerardo <deluisigerardo@gmail.com>
+License-File: LICENSE
+Keywords: git,projects,visualization-tool
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Requires-Dist: blinker
+Requires-Dist: build
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: coverage
+Requires-Dist: dash
+Requires-Dist: dash-bootstrap-components
+Requires-Dist: dash-core-components
+Requires-Dist: dash-html-components
+Requires-Dist: dash-table
+Requires-Dist: dill
+Requires-Dist: flask
+Requires-Dist: gitdb
+Requires-Dist: gitpython
+Requires-Dist: idna
+Requires-Dist: importlib-metadata
+Requires-Dist: iniconfig
+Requires-Dist: itsdangerous
+Requires-Dist: jinja2
+Requires-Dist: lizard
+Requires-Dist: markupsafe
+Requires-Dist: multiprocess
+Requires-Dist: nest-asyncio
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: pluggy
+Requires-Dist: psutil
+Requires-Dist: pydriller
+Requires-Dist: pygments
+Requires-Dist: pyproject-hooks
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: retrying
+Requires-Dist: setuptools
+Requires-Dist: six
+Requires-Dist: smmap
+Requires-Dist: tenacity
+Requires-Dist: types-pytz
+Requires-Dist: typing-extensions
+Requires-Dist: tzdata
+Requires-Dist: urllib3
+Requires-Dist: waitress
+Requires-Dist: werkzeug
+Requires-Dist: zipp
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Project viewer
+Project viewer is a tool that provides you with many kind of metric visualizations of your git repository.
+
+With Project viewer you can:
+
+- See who worked on different parts of the project
+- Get an overview of the file structure
+- See where there is the most activity in your project
+- See how your project has looked at different points in time
+	
+Where has the most work been done recently? 	Who worked on different subsystems in the past?
+
+You can read more about the features in the feature overview, or just try it and start exploring your projects!
+
+## Get started:
+
+- In your terminal, navigate to a git repository or a folder containing any repository
+- Run the command "project-viewer ." (if in a repository base folder, otherwise explicitly submit the base repository folder of your project)
+- The application will now open in your default browser.
+
+## Note
+
+To use Project viewer, you will need to have the following programs installed:
+
+    Python interpreter version >= 3.10
+    git 2.29 or newer
+
+Check your installed versions using **python --version**, **pip --version** and **git --version**.
+
+## What makes Project viewer different?
+
+🔒 Private by design
+
+🏝️ Works offline
+
+🤷 Git provider agnostic - works with any git repository
+
+😊 No tracking, no ads, no cloud, no servers, no subscription
