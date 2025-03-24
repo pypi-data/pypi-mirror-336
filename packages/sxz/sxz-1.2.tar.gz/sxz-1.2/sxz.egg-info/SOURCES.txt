@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+sxz/__init__.py
+sxz.egg-info/PKG-INFO
+sxz.egg-info/PKG-INFO.bak
+sxz.egg-info/SOURCES.txt
+sxz.egg-info/SOURCES.txt.bak
+sxz.egg-info/dependency_links.txt
+sxz.egg-info/top_level.txt
