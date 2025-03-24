@@ -1,0 +1,3 @@
+[console_scripts]
+Xv6RiscvBookZhongwenbanFix1 = Xv6RiscvBookZhongwenbanFix1.__main__:main
+xv6-riscv-book-zhongwenban-fix1 = Xv6RiscvBookZhongwenbanFix1.__main__:main
