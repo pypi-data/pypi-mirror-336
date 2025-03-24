@@ -1,0 +1,14 @@
+config.py,sha256=bvobA3Mdtz90s-Q7WdkkIldgODtEsO-XBkp5b2RwFZo,782
+server.py,sha256=nDh8gACgFCPGn8K127cm3-uc_TwrLH3y3s58DufijNE,5377
+unity_connection.py,sha256=Ul4U-IKFWpfOfGAoqTflgXxihp22mwAeM8zD-8bRWzU,7842
+tools/__init__.py,sha256=4xsGYh1gMBxjV_AlxAhpEXm_ihpxHkplkLacKy7Nh0I,553
+tools/asset_tools.py,sha256=xkIxI2b-NjTeRmfb8NP10--6DpCGsZt0q0EE3idjYDk,10888
+tools/editor_tools.py,sha256=-T8OwP62kZQSFwVS11_wTLB2sMPWhNIYFoMUlVX1910,11764
+tools/material_tools.py,sha256=Y7x7LmG7N4m4eRRFFpwRhj5wFPQX26h64x5gQDtJVTY,3953
+tools/object_tools.py,sha256=n4tLvOuwcCvsLkljS6QxZzk_RbIk01kHEeBKxHoSV2Q,8299
+tools/scene_tools.py,sha256=7AHTQI8NJEZMxAKBw1J5E9Fu-Xt9_a-wliOLh0W5Oig,13376
+tools/script_tools.py,sha256=D6t-WsJlBwKxy-NlievMFO92sj8mnrww8Dj_Pb2EcUU,11534
+unity_mcp_mb-0.1.1.dist-info/METADATA,sha256=SVw7nBpOQ--U5MDpZmDVGoPHw8p61GXg1gU_UyeXMkU,290
+unity_mcp_mb-0.1.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+unity_mcp_mb-0.1.1.dist-info/top_level.txt,sha256=j3wyFaPJtJ5HwwZE62TgVzEznjERww5a5Gyzu7Q9ook,37
+unity_mcp_mb-0.1.1.dist-info/RECORD,,
