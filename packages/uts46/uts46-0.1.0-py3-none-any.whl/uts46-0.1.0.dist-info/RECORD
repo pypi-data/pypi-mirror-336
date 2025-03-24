@@ -1,0 +1,16 @@
+uts46/__init__.py,sha256=biMuhnyabPtLry1t00Bptxen_aHKZvTnBDDosFqXFAk,1292
+uts46/_data.py,sha256=cl2wDEC1i67H8E3wvT7XHptD_n2pRzn8SbbWdWLIx-4,149487
+uts46/_datamodels.py,sha256=Mhi7jqk-ZRj2VQkIW4BhMFQxfe3l_8MWR6e6msMzA1g,8642
+uts46/_errors.py,sha256=l1ibjnX6Vrc35rhLxJr1NM2LhW6bbSNTn-XCDh3VgGo,2518
+uts46/_idna2008.py,sha256=B68g9E5_SyRwHaIfm1bUSB475YbdPXb4lQ6XZG0TSVo,6403
+uts46/_rangemap.py,sha256=ozT4PRkXUrJEgp2Ad2qpmmIHjgmaak7ZdkOxRrM3qao,4083
+uts46/_uts46_internal.py,sha256=14Y6NL9PbA4sZwjdiVd1YVyo55JuRCHNUdJe9eYMHDE,9657
+uts46/_version.py,sha256=GaO0dI84RUz3sigmVhTr2--M397IDJ2wEmOeYY8FzHk,203
+uts46/codecs.py,sha256=B3qbUAG_j8WltmpaEHv_9IYFrmvBsYYDEoAEWrw5zZ4,4513
+uts46/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uts46/uts46.py,sha256=S-OQl0IKwpxny_rjAk7Ce9yxTpZQ0sYJZLejb2oN8kM,13569
+uts46/whatwg.py,sha256=SOkEcBR5yoEp1z4gk7yn71qDShvxJaDlGmHIB_C_soU,5328
+uts46-0.1.0.dist-info/METADATA,sha256=FqWF4uEK9FbLe_Cw-7eojEvBjvAYs2gwFeuD3c5rhYA,12175
+uts46-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uts46-0.1.0.dist-info/licenses/LICENSE,sha256=YCRzD1hOEyFMQeO2KIgOKEnGn3jMPckawEgWDLrzzK0,1095
+uts46-0.1.0.dist-info/RECORD,,
