@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0.0,<69.3.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dj3nk"
+dynamic = ["version"]
+requires-python = ">= 3.10"
+dependencies = [
+    "a3redis >= 0.3.0",
+]
+authors = [
+  {name = "three-kinds", email = "3179158552@qq.com"},
+]
+description = "dj3nk is an ID generation algorithm, the principle of which is from nightteam."
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Django",
+]
+
+[project.urls]
+Homepage = "https://github.com/three-kinds/dj3nk"
+Source = "https://github.com/three-kinds/dj3nk"
+
+[tool.setuptools.dynamic]
+version = {attr = "dj3nk.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["dj3nk*"]
+
+[tool.mypy]
+packages = [
+    "dj3nk",
+]
+disable_error_code = [
+    "import-untyped",
+    "method-assign"
+]
+
+[tool.ruff]
+src = [
+    "dj3nk",
+    "tests"
+]
+line-length = 120

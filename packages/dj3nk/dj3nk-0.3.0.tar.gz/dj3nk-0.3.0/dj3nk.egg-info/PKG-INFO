@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: dj3nk
+Version: 0.3.0
+Summary: dj3nk is an ID generation algorithm, the principle of which is from nightteam.
+Author-email: three-kinds <3179158552@qq.com>
+License: MIT
+Project-URL: Homepage, https://github.com/three-kinds/dj3nk
+Project-URL: Source, https://github.com/three-kinds/dj3nk
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: a3redis>=0.3.0
+
+# dj3nk
+
+English | [简体中文](README_ZH.md)
+
+`dj3nk` is an ID generation algorithm, the principle of which is from [nightteam](https://www.v2ex.com/t/686977).
+
+## 1. Introduction
+
+* You can use `NaturalKeyGenerator` to generate auto-incrementing IDs.
+* When using Django ORM, you can inherit the NKModel class to automatically generate auto-incrementing IDs.
+
+## 2. Usage
+
+### Install
+
+```shell
+pip install dj3nk
+
+```
+
+### Examples
+
+* Use directly.
+
+```python
+from dj3nk.natural_key_generator import NaturalKeyGenerator
+
+# Optional. Reconfigure.
+CONFIG = {
+    "increment_main_key": "dj3nk",
+    "random_bit_length": 16,
+    "puzzle_count": 1000000,
+    "rdb_conf_name": "default"
+}
+
+g = NaturalKeyGenerator(config=CONFIG)
+g.generate_nk()
+
+```
+
+* 在Django ORM中使用
+
+```python
+# Optional. Configure `settings.py`.
+DJ3NK = {
+    "increment_main_key": "dj3nk",
+    "random_bit_length": 16,
+    "puzzle_count": 1000000,
+    "rdb_conf_name": "default"
+}
+
+# models
+from dj3nk.nk_model import NKModel
+
+
+class XXX(NKModel):
+    ...
+
+```
