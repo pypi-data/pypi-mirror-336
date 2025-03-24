@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+Flask_Umami.egg-info/PKG-INFO
+Flask_Umami.egg-info/SOURCES.txt
+Flask_Umami.egg-info/dependency_links.txt
+Flask_Umami.egg-info/requires.txt
+Flask_Umami.egg-info/top_level.txt
+flask_umami/__init__.py
