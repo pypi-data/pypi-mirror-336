@@ -1,0 +1,3 @@
+[console_scripts]
+RefactoringguruShejimoshiFix1 = RefactoringguruShejimoshiFix1.__main__:main
+refactoringguru-shejimoshi-fix1 = RefactoringguruShejimoshiFix1.__main__:main
