@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: kupo-py
+Version: 0.1.0.dev7
+Summary: A Cardano Kupo client for Python.
+Author-email: Elder Millenial <eldermillenial@protonmail.com>
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: aiohttp[speedups]>=3.11.10
+Requires-Dist: bump-my-version>=0.28.1
+Requires-Dist: bump2version>=1.0.1
+Requires-Dist: pycardano>=0.11.1
+Requires-Dist: pydantic>=2.10.3
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: setuptools>=75.6.0
