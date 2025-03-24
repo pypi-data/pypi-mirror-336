@@ -1,0 +1,3 @@
+[console_scripts]
+YunyingZengchangShizhanShoujiXiaohongshuNiaogeBijiFix1 = YunyingZengchangShizhanShoujiXiaohongshuNiaogeBijiFix1.__main__:main
+yunying-zengchang-shizhan-shouji-xiaohongshu-niaoge-biji-fix1 = YunyingZengchangShizhanShoujiXiaohongshuNiaogeBijiFix1.__main__:main
