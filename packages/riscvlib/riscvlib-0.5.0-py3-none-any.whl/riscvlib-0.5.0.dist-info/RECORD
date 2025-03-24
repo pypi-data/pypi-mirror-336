@@ -1,0 +1,11 @@
+riscvlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+riscvlib/instruction.py,sha256=mQSobYLTCm4I0cIOTw0VpRT86l3TvSXpqByP6AXXQ64,11632
+riscvlib/riscvdata.py,sha256=D0Z4wjeUIf4nYnfWntftfZClWEEKKqBFjuBCrYCoVNo,7969
+riscvlib/utils.py,sha256=airOwDYTDomolX4hfckHCYaX6oABZGNs_yPQ5q92Tgs,1285
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_instructions.py,sha256=KPtOIIuqfKaRZyDL8FrDwqwmMLGydRsQYiyapr2lWOo,7092
+riscvlib-0.5.0.dist-info/LICENSE,sha256=gExGrZNKrrej-HFIF0aZhAZQx1do2eJveJV7_0YYeVM,1074
+riscvlib-0.5.0.dist-info/METADATA,sha256=as67T2atFkrvpbrufTnUIVT5jOxG4ds0X_IYJVYdPnI,2073
+riscvlib-0.5.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+riscvlib-0.5.0.dist-info/top_level.txt,sha256=6ERG6XCsrq3pfsSG8Ld84p_2zovRQDO1HaKCZLcIl2c,15
+riscvlib-0.5.0.dist-info/RECORD,,
