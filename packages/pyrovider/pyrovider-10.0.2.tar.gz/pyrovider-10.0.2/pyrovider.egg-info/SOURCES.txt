@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyrovider/__init__.py
+pyrovider.egg-info/PKG-INFO
+pyrovider.egg-info/SOURCES.txt
+pyrovider.egg-info/dependency_links.txt
+pyrovider.egg-info/requires.txt
+pyrovider.egg-info/top_level.txt
