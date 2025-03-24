@@ -1,0 +1,13 @@
+setup.py
+torrent_downloader/__init__.py
+torrent_downloader/server.py
+torrent_downloader/static/index.html
+torrent_downloader/static/vite.svg
+torrent_downloader/static/assets/index-BKZnulWN.css
+torrent_downloader/static/assets/index-lPeprbEH.js
+torrent_downloader_react.egg-info/PKG-INFO
+torrent_downloader_react.egg-info/SOURCES.txt
+torrent_downloader_react.egg-info/dependency_links.txt
+torrent_downloader_react.egg-info/entry_points.txt
+torrent_downloader_react.egg-info/requires.txt
+torrent_downloader_react.egg-info/top_level.txt
