@@ -1,0 +1,13 @@
+agentr/__init__.py,sha256=LOWhgQayrQV7f5ro4rlBJ_6WevhbWIbjAOHnqP7b_-4,30
+agentr/application.py,sha256=rQ2vomCfZKigdXQLjwCvlTC9_UcnKyux_x9evmQqnjA,1220
+agentr/cli.py,sha256=6vm9USDbtWBMuvnrBmSHehqGgTsAGpXmNWBxMNWIu-8,776
+agentr/mcp.py,sha256=kGraScdBgDkCvrzbyg07TTUiIVMXIOF_um7v4g4-4Cs,216
+agentr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agentr/server.py,sha256=fweppEwF7L9cRow1zDPHtLYQE-qUdTlICeYUbxHGb2w,990
+agentr/store.py,sha256=u18GL9nDQgkkGm8HFIMz6BiHmy04EDi3vugotbH87ss,689
+agentr/applications/zenquotes/app.py,sha256=4LjYeWdERI8ZMzkajOsDgy9IRTA9plUKem-rW4M03sA,607
+agentr/utils/openapi.py,sha256=yjiPYs-_JsYQ7T3aPh7oimHUCf8pMblIR8IPCaAeNCg,6279
+agentr-0.1.1.dist-info/METADATA,sha256=U4iiyQySR4u_Ln12AwPxG6HPSGOfW6Tt_FNxl41PU3w,244
+agentr-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+agentr-0.1.1.dist-info/entry_points.txt,sha256=13fGFeVhgF6_8T-VFiIkNxYO7gDQaUwwTcUNWdvaLQg,42
+agentr-0.1.1.dist-info/RECORD,,
