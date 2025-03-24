@@ -1,0 +1,7 @@
+messageConfig:
+    routes:
+      - selector: test/test
+        data: "unimportant for test"
+
+      - selector: test/route/monitor
+        data: "unimportant for test"

@@ -1,0 +1,15 @@
+.idea
+.env
+.DS_Store
+.venv/
+.pypirc
+__pycache__
+_version.py
+logs/*.log
+build
+*.swp
+tmp
+*.tar.gz
+*.egg-info/
+dist/
+
