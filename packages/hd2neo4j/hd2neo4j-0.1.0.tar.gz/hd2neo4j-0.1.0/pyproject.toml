@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "hd2neo4j"
+version = "0.1.0"
+description = "yet another tool for transforming heterogeneous data in to knowledge graph"
+authors = ["Jorge Luis Arencibia <jorge9815rdz@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/tocororo/hd2neo4j"
+Issues = "https://github.com/tocororo/hd2neo4j/issues"
+
+[tool.poetry.dependencies]
+python = "3.12.5"
+neo4j = "^5.22.0"
+scikit-learn = "^1.5.2"
+sentence-transformers = "^3.3.1"
+pydantic-settings = "^2.8.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.5"
+black = "^24.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "hd2neo4j.main:start"
+
+[tool.black]
+line-length = 119
+target-version = ['py312']
