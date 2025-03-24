@@ -1,0 +1,7 @@
+
+[tests]
+pytest
+packaging
+pytest-cov
+test-image-results
+pillow
