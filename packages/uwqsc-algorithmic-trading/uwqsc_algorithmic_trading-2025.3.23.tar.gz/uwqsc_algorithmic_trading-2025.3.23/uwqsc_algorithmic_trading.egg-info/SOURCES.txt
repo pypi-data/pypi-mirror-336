@@ -1,0 +1,31 @@
+LICENSE.txt
+README.md
+pyproject.toml
+uwqsc_algorithmic_trading/__init__.py
+uwqsc_algorithmic_trading.egg-info/PKG-INFO
+uwqsc_algorithmic_trading.egg-info/PKG-INFO 2
+uwqsc_algorithmic_trading.egg-info/SOURCES 2.txt
+uwqsc_algorithmic_trading.egg-info/SOURCES.txt
+uwqsc_algorithmic_trading.egg-info/dependency_links 2.txt
+uwqsc_algorithmic_trading.egg-info/dependency_links.txt
+uwqsc_algorithmic_trading.egg-info/requires 2.txt
+uwqsc_algorithmic_trading.egg-info/requires.txt
+uwqsc_algorithmic_trading.egg-info/top_level 2.txt
+uwqsc_algorithmic_trading.egg-info/top_level.txt
+uwqsc_algorithmic_trading/interfaces/__init__.py
+uwqsc_algorithmic_trading/interfaces/sample_interface.py
+uwqsc_algorithmic_trading/interfaces/algorithms/__init__.py
+uwqsc_algorithmic_trading/interfaces/algorithms/algorithm_interface.py
+uwqsc_algorithmic_trading/interfaces/preprocessing/__init__.py
+uwqsc_algorithmic_trading/interfaces/preprocessing/preprocessor_interface.py
+uwqsc_algorithmic_trading/src/__init__.py
+uwqsc_algorithmic_trading/src/sample_impl.py
+uwqsc_algorithmic_trading/src/algorithms/__init__.py
+uwqsc_algorithmic_trading/src/algorithms/hidden_markov_model_impl.py
+uwqsc_algorithmic_trading/src/algorithms/simple_moving_average_impl.py
+uwqsc_algorithmic_trading/src/common/__init__.py
+uwqsc_algorithmic_trading/src/common/config.py
+uwqsc_algorithmic_trading/src/common/data_collection.py
+uwqsc_algorithmic_trading/src/preprocessing/__init__.py
+uwqsc_algorithmic_trading/src/preprocessing/hmm_preprocessor_impl.py
+uwqsc_algorithmic_trading/src/preprocessing/sma_preprocessor_impl.py
