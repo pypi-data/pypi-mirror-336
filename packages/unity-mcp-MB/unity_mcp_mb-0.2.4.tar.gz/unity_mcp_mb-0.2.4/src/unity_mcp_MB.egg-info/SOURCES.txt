@@ -1,0 +1,17 @@
+pyproject.toml
+src/unity_mcp_MB/__init__.py
+src/unity_mcp_MB/asset_tools.py
+src/unity_mcp_MB/config.py
+src/unity_mcp_MB/editor_tools.py
+src/unity_mcp_MB/material_tools.py
+src/unity_mcp_MB/object_tools.py
+src/unity_mcp_MB/scene_tools.py
+src/unity_mcp_MB/script_tools.py
+src/unity_mcp_MB/server.py
+src/unity_mcp_MB/unity_connection.py
+src/unity_mcp_MB.egg-info/PKG-INFO
+src/unity_mcp_MB.egg-info/SOURCES.txt
+src/unity_mcp_MB.egg-info/dependency_links.txt
+src/unity_mcp_MB.egg-info/entry_points.txt
+src/unity_mcp_MB.egg-info/requires.txt
+src/unity_mcp_MB.egg-info/top_level.txt
