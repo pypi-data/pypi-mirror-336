@@ -1,0 +1,8 @@
+cli_bundle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_bundle/cli.py,sha256=Oan4TiJJ2T6M4ZNKvliSTZLjM5VgEKFL_JijsTcMTDM,7890
+cli_bundle/dereberus.py,sha256=V3suQvmoXD_JhBCilMquLKDvcWhaiqFhRMW7zfCfLBY,1555
+dereberus-0.6.dist-info/METADATA,sha256=LleJyddzwB2VzY5fag936Vh807bhFf4iKVHLUbsW2Nk,95
+dereberus-0.6.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+dereberus-0.6.dist-info/entry_points.txt,sha256=A7RCoW2j9llORApNCCQ1apHRHaWVKep93r54S9RqbiI,45
+dereberus-0.6.dist-info/top_level.txt,sha256=NBZTdiG9AFwMQaA92jjtBOosF80XxRnbzfCddQN-QKY,11
+dereberus-0.6.dist-info/RECORD,,
