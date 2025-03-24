@@ -1,0 +1,3 @@
+[console_scripts]
+FugaiQuanduanYewuDeDaQianduanJishuFix1 = FugaiQuanduanYewuDeDaQianduanJishuFix1.__main__:main
+fugai-quanduan-yewu-de-da-qianduan-jishu-fix1 = FugaiQuanduanYewuDeDaQianduanJishuFix1.__main__:main
