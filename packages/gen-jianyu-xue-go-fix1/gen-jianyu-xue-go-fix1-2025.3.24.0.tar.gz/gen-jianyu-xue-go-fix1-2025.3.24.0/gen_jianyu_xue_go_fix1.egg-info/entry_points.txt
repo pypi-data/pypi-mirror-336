@@ -1,0 +1,3 @@
+[console_scripts]
+GenJianyuXueGoFix1 = GenJianyuXueGoFix1.__main__:main
+gen-jianyu-xue-go-fix1 = GenJianyuXueGoFix1.__main__:main
