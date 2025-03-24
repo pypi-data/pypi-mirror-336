@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+nguyenpanda.egg-info/PKG-INFO
+nguyenpanda.egg-info/SOURCES.txt
+nguyenpanda.egg-info/dependency_links.txt
+nguyenpanda.egg-info/top_level.txt
