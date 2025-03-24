@@ -1,0 +1,16 @@
+dumb_datasets/__init__.py,sha256=o0uJlw_yHhVEmD0sZAges4O1zTfOUWB13v0nyGL_Tr8,1415
+dumb_datasets/__version__.py,sha256=SakL8YbU9pLI8FSquQb4vMA1zIPh3FIdmX8o162LxpM,67
+dumb_datasets/adapters.py,sha256=-g2khG9yTlYzEiy2Xwq0mPXuhScma8m6n6ZfBNxqUbs,503
+dumb_datasets/api.py,sha256=OTdFjfqSUGdceXOaT8OX2atHJrTXlgyJD2vQO5AJyhg,7597
+dumb_datasets/config.py,sha256=wwZqhvhaHpjhOFHz3h5BpLM5Pj1UqdWC7h2tDVPKATQ,1267
+dumb_datasets/examples.py,sha256=GkdvUu62em1QjC6Bvet96UGo8o-A6tHCoH_12-KJSh4,2237
+dumb_datasets/exceptions.py,sha256=DLOWdD9_Ld0Flkhm5PPaBV5RTGGHB1R3hrUuC_RhrGE,143
+dumb_datasets/features.py,sha256=XdpAgKxGQfJghLuV0gb483d6sTVmYuxMABBh85mu3ss,8579
+dumb_datasets/hooks.py,sha256=NKyjLWuquntH6KqPLUhjch_YqsuBkn6Iq2XOsDIcdzg,538
+dumb_datasets/models.py,sha256=f0hf1qbTDvhcp_4_-z0P3nIkKrsVDVtn0NxsIP7zOII,1684
+dumb_datasets/sessions.py,sha256=PEBebxnHpnbrQKEouIMywyyoy-14fEti4ptjuPha8e8,1009
+dumb_datasets/utils.py,sha256=AFvrvSSzcZHt3rV4O36S4ehNL5u-P4T5rlGGuoB9W4c,4408
+dumb_datasets-0.0.1a0.dist-info/LICENSE,sha256=_J5_eSHRJ1L7QqkfVuaJQNXxUm6SPAlWbXMg0Y2WYn4,577
+dumb_datasets-0.0.1a0.dist-info/METADATA,sha256=PbgaTxBTYm1S5j_R65anTdcODqfieJC2YPQddITGOWA,5550
+dumb_datasets-0.0.1a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dumb_datasets-0.0.1a0.dist-info/RECORD,,
