@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mm-eth
+Version: 0.5.8
+Requires-Python: >=3.12
+Requires-Dist: aiohttp-socks~=0.10.1
+Requires-Dist: mm-crypto-utils>=0.2.9
+Requires-Dist: typer>=0.15.2
+Requires-Dist: web3~=7.9.0
+Requires-Dist: websocket-client~=1.8.0
