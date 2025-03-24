@@ -1,0 +1,360 @@
+.conditions-field {
+  overflow: hidden;
+}
+.conditions-field .conditions-field-action {
+  cursor: pointer;
+  text-align: center;
+  color: var(--ink-c-data-table-header-fg);
+}
+.conditions-field .conditions-field-action .ink-i-add {
+  margin-right: var(--ink-u-spacing-s);
+  vertical-align: top;
+}
+.conditions-field .conditions-field-add-condition {
+  background: var(--ink-c-data-table-header-bg);
+  display: flex;
+  padding: var(--ink-u-spacing-m);
+}
+.conditions-field .conditions-field-mode ul {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.conditions-field .conditions-field-mode ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.conditions-field .conditions-field-mode ul li input {
+  margin: 0;
+  vertical-align: baseline;
+}
+.conditions-field .conditions-field-mode ul li label {
+  display: inline-block;
+}
+.conditions-field .conditions-field-rows-container {
+  border: var(--ink-c-data-table-border);
+  border-radius: var(--ink-u-border-radius-std);
+  overflow: hidden;
+  /* Don't let backgrounds overlap borders. */
+  margin: 0.5em 0 0 1.5em;
+}
+.conditions-field .conditions-field-rows {
+  /*
+     * There's no good way with CSS grid to draw a border between rows. We
+     * therefore set the background of the container to be our border color
+     * and set the row-gap to be our border width. This will let the
+     * container background shine through in that gap.
+     */
+  background: var(--ink-c-data-table-row-border-color);
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: [action] min-content [choice] min-content [operator] min-content [value] auto;
+  margin: 0;
+  padding: 0;
+  row-gap: var(--ink-u-border-thin);
+}
+.conditions-field .conditions-field-rows:not(:empty) {
+  /*
+       * Use this to draw a border between the last row and the "Add a
+       * new condition" <a> below it.
+       */
+  padding-bottom: var(--ink-u-border-thin);
+}
+.conditions-field .conditions-field-row {
+  background: var(--ink-c-data-table-body-bg);
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-row: auto;
+  grid-template-columns: subgrid;
+  margin: 0;
+  padding: var(--ink-u-spacing-m);
+}
+.conditions-field .conditions-field-row .conditions-field-action {
+  grid-column: action;
+  /*
+       * We don't have a good way of doing vertical centering for this.
+       * Using baseline doesn't work because a <select multiple> has its
+       * baseline at the bottom of the widget regardless of how tall it is.
+       *
+       * The best solution for now seems to be just adding some manual
+       * padding to handle the difference between the icon height and the
+       * line height of the <select> widget that appears next to it.
+       */
+}
+.conditions-field .conditions-field-row .conditions-field-action .ink-i-delete-item {
+  padding-top: 6px;
+}
+.conditions-field .conditions-field-row .conditions-field-choice {
+  grid-column: choice;
+}
+.conditions-field .conditions-field-row .conditions-field-operator {
+  grid-column: operator;
+}
+.conditions-field .conditions-field-row .conditions-field-value {
+  grid-column: value;
+}
+.conditions-field .conditions-field-row .conditions-field-error {
+  color: var(--ink-p-red-600);
+  grid-column: 2 / span 3;
+  padding: var(--ink-u-spacing-s);
+}
+.conditions-field .conditions-field-row .conditions-field-choice,
+.conditions-field .conditions-field-row .conditions-field-operator,
+.conditions-field .conditions-field-row .conditions-field-value {
+  padding: 0 var(--ink-u-spacing-s);
+  /*
+       * config-forms.less sets the width of these to 30em. We want to just
+       * fill the available space in the column.
+       */
+}
+.conditions-field .conditions-field-row .conditions-field-choice select,
+.conditions-field .conditions-field-row .conditions-field-operator select,
+.conditions-field .conditions-field-row .conditions-field-value select {
+  min-width: 130px;
+}
+.conditions-field .conditions-field-row .conditions-field-choice input[type=email],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=email],
+.conditions-field .conditions-field-row .conditions-field-value input[type=email],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=number],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=number],
+.conditions-field .conditions-field-row .conditions-field-value input[type=number],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=password],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=password],
+.conditions-field .conditions-field-row .conditions-field-value input[type=password],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=search],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=search],
+.conditions-field .conditions-field-row .conditions-field-value input[type=search],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=text],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=text],
+.conditions-field .conditions-field-row .conditions-field-value input[type=text],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=url],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=url],
+.conditions-field .conditions-field-row .conditions-field-value input[type=url],
+.conditions-field .conditions-field-row .conditions-field-choice select,
+.conditions-field .conditions-field-row .conditions-field-operator select,
+.conditions-field .conditions-field-row .conditions-field-value select {
+  width: 100%;
+}
+.conditions-field .error-list {
+  color: #990000;
+  margin: 0 0 var(--ink-u-spacing-m) 0;
+  padding: 0;
+}
+/*# sourceMappingURL=forms/conditions.css.map */
+a.copyable-text-input-link:hover,
+a.copyable-text-input-link:link,
+a.copyable-text-input-link:visited {
+  color: var(--ink-p-link-fg);
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=forms/copyable_text_input.css.map */
+/**
+ * A form widget for managing a list of text values.
+ *
+ * Structure:
+ *     <div class="djblets-c-list-edit-widget">
+ *      <ul class="djblets-c-list-edit-widget__entries">
+ *       ...
+ *      </ul>
+ *      <button class="djblets-c-list-edit-widget__add-item">
+ *       ...
+ *      </button>
+ *     </div>
+ */
+.djblets-c-list-edit-widget {
+  overflow: hidden;
+  /**
+   * A button for adding an item to the list.
+   *
+   * Structure:
+   *     <button class="djblets-c-list-edit-widget__add-item">
+   *      <span class="fa fa-plus"></span> ...
+   *     </button>
+   */
+  /**
+   * A list of entries that have been added.
+   *
+   * Structure:
+   *     <ul class="djblets-c-list-edit-widget__entries">
+   *      <li class="djblets-c-list-edit-widget__entry">...</li>
+   *      ...
+   *     </ul>
+   */
+  /**
+   * An entry that has been added.
+   *
+   * Structure:
+   *     <li class="djblets-c-list-edit-widget__entry">
+   *      <input class="djblets-c-list-edit-widget__input" ...>
+   *      <a class="djblets-c-list-edit-widget__remove-item" href="#">...</a>
+   *     </li>
+   */
+  /**
+   * The input field for an entry.
+   *
+   * Structure:
+   *     <input class="djblets-c-list-edit-widget__input" ...>
+   */
+  /**
+   * A button for removing an item from the list.
+   *
+   * Structure:
+   *     <a class="djblets-c-list-edit-widget__remove-item" href="#">
+   *      <span class="fa fa-times">
+   *     </a>
+   */
+}
+.djblets-c-list-edit-widget__add-item {
+  margin-top: 0.5em;
+}
+.djblets-c-list-edit-widget__entries {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.djblets-c-list-edit-widget__entry {
+  display: flex;
+  gap: 0.5em;
+  list-style: none;
+}
+ + .djblets-c-list-edit-widget__input {
+  margin-right: 0.5em;
+}
+.djblets-c-list-edit-widget__remove-item {
+  border: 0;
+  padding: 0.5em;
+}
+.djblets-c-list-edit-widget__remove-item,
+.djblets-c-list-edit-widget__remove-item:link,
+.djblets-c-list-edit-widget__remove-item:visited {
+  color: darkred;
+  text-decoration: none;
+}
+/*# sourceMappingURL=forms/list_edit.css.map */
+/**
+ * Defines visual states for the consent field.
+ *
+ * This will set the color of the field's border and data use icon, along with
+ * setting the selected label's font style, depending on the currently-selected
+ * state.
+ *
+ * Args:
+ *     state (String):
+ *         One of ``allow`` or ``block``.
+ */
+.privacy-consent-field {
+  background: var(--if-dark, var(--ink-p-cool-grey-200)) var(--if-light, var(--ink-p-yellow-100));
+  border: var(--ink-u-border-thin) rgba(0, 0, 0, 0.4) solid;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.privacy-consent-field.privacy-consent-field-allow {
+  background: var(--if-dark, transparent) var(--if-light, white);
+  border-color: var(--ink-p-accent-success-fg-on-container);
+  box-shadow: none;
+}
+.privacy-consent-field.privacy-consent-field-allow .privacy-consent-field-choice-allow label {
+  font-weight: bold;
+  text-decoration: none;
+}
+.privacy-consent-field.privacy-consent-field-allow .privacy-consent-field-data-use-icon {
+  color: var(--ink-p-accent-success-fg-on-container);
+}
+.privacy-consent-field.privacy-consent-field-allow .privacy-consent-field-header h2 {
+  color: var(--ink-p-accent-success-fg-on-container);
+}
+.privacy-consent-field.privacy-consent-field-block {
+  background: var(--if-dark, transparent) var(--if-light, white);
+  border-color: var(--ink-p-accent-error-fg-on-container);
+  box-shadow: none;
+}
+.privacy-consent-field.privacy-consent-field-block .privacy-consent-field-choice-block label {
+  font-weight: bold;
+  text-decoration: none;
+}
+.privacy-consent-field.privacy-consent-field-block .privacy-consent-field-data-use-icon {
+  color: var(--ink-p-accent-error-fg-on-container);
+}
+.privacy-consent-field.privacy-consent-field-block .privacy-consent-field-header h2 {
+  color: var(--ink-p-accent-error-fg-on-container);
+}
+.privacy-consent-field.privacy-consent-field-has-icon .privacy-consent-field-header {
+  padding-left: 24px;
+}
+.privacy-consent-field ~ .privacy-consent-field {
+  /*
+     * Space out the consent fields when using the AllConsentRequirementFields
+     * form field. 1em is a default, and may need to be overridden if consumers
+     * have a different standard spacing between fields.
+     */
+  margin-top: 1em;
+}
+.privacy-consent-field .privacy-consent-field-body {
+  padding: 1.5em;
+}
+.privacy-consent-field .privacy-consent-field-choices {
+  font-size: 120%;
+  list-style: none;
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+.privacy-consent-field .privacy-consent-field-choices > span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 45%;
+}
+.privacy-consent-field .privacy-consent-field-choices > span.privacy-consent-field-choice-allow label {
+  color: var(--ink-p-accent-success-fg-on-container);
+}
+.privacy-consent-field .privacy-consent-field-choices > span.privacy-consent-field-choice-block label {
+  color: var(--ink-p-accent-error-fg-on-container);
+}
+.privacy-consent-field .privacy-consent-field-choices > span label {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.privacy-consent-field .privacy-consent-field-choices input {
+  /*
+       * Hide the radio buttons. We'll be showing the selected state using the
+       * labels.
+       */
+  display: none;
+}
+.privacy-consent-field .privacy-consent-field-data-use,
+.privacy-consent-field .privacy-consent-field-intent {
+  margin: 1.5em 0;
+  text-align: justify;
+}
+.privacy-consent-field .privacy-consent-field-data-use {
+  margin: 1.5em;
+}
+.privacy-consent-field .privacy-consent-field-data-use p {
+  overflow: hidden;
+}
+.privacy-consent-field .privacy-consent-field-data-use-icon {
+  color: #444;
+  float: left;
+  font-size: 150%;
+  margin: 0 0.4em 0.4em 0;
+}
+.privacy-consent-field .privacy-consent-field-header {
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+.privacy-consent-field .privacy-consent-field-header h2 {
+  display: inline;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+}
+.privacy-consent-field .privacy-consent-field-header img {
+  float: right;
+}
+/*# sourceMappingURL=forms/privacy.css.map */
