@@ -1,0 +1,3 @@
+[console_scripts]
+CssQuanweiZhinan4thFix1 = CssQuanweiZhinan4thFix1.__main__:main
+css-quanwei-zhinan-4th-fix1 = CssQuanweiZhinan4thFix1.__main__:main
