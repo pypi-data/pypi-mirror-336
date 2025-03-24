@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: nist-nvd
+Version: 0.1.7
+Summary: NIST NVD API client
+Project-URL: Homepage, https://github.com/yaleman/nist-nvd-py
+Project-URL: Repository, https://github.com/yaleman/nist-nvd-py
+Project-URL: Issues, https://github.com/yaleman/nist-nvd-py/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.10.5
+Requires-Dist: click>=8.1.7
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: pydantic-settings>=2.4.0
+Requires-Dist: pydantic>=2.8.2
+
+# NIST NVD API client for Python
+
+A simple `asyncio` client for the [NIST NVD](https://nvd.nist.gov/) REST API. Uses [Pydantic](https://pydantic.dev) to parse and validate responses.

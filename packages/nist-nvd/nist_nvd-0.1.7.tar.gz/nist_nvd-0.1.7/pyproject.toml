@@ -1,0 +1,38 @@
+[project]
+name = "nist-nvd"
+version = "0.1.7"
+description = "NIST NVD API client"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "aiohttp>=3.10.5",
+    "click>=8.1.7",
+    "loguru>=0.7.2",
+    "pydantic-settings>=2.4.0",
+    "pydantic>=2.8.2",
+]
+[project.urls]
+Homepage = "https://github.com/yaleman/nist-nvd-py"
+Repository = "https://github.com/yaleman/nist-nvd-py"
+Issues = "https://github.com/yaleman/nist-nvd-py/issues"
+
+[tool.setuptools]
+packages = ["nist_nvd"]
+
+[project.scripts]
+nist-nvd = "nist_nvd.__main__:main"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.11.2",
+    "pytest-asyncio>=0.24.0",
+    "pytest>=8.3.2",
+    "ruff>=0.6.3",
+]
+package = true
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+
+[dependency-groups]
+dev = ["coverage>=7.7.1", "coveralls>=4.0.1"]
