@@ -1,0 +1,3 @@
+[console_scripts]
+ShujujiegouYuSuanfaTengxunJingxuanLianxi50TiV10Fix1 = ShujujiegouYuSuanfaTengxunJingxuanLianxi50TiV10Fix1.__main__:main
+shujujiegou-yu-suanfa-tengxun-jingxuan-lianxi-50-ti-v1-0-fix1 = ShujujiegouYuSuanfaTengxunJingxuanLianxi50TiV10Fix1.__main__:main
