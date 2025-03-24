@@ -1,0 +1,7 @@
+README.md
+setup.py
+pokemon_gym/__init__.py
+pokemon_gym.egg-info/PKG-INFO
+pokemon_gym.egg-info/SOURCES.txt
+pokemon_gym.egg-info/dependency_links.txt
+pokemon_gym.egg-info/top_level.txt
