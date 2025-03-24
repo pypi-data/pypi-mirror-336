@@ -1,0 +1,48 @@
+# git checkout feature-branch
+# git pull origin feature-branch
+# git tag v1.0.0
+# git push origin v1.0.0
+
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine branch
+        id: branch
+        run: echo "BRANCH=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: Get the branch associated with the tag
+        run: |
+          TAG="${{ github.ref }}"
+          BRANCH=$(git branch -r --contains "$TAG" | grep -v HEAD | head -n 1 | awk '{print $1}' | sed 's/origin\///')
+          echo "Detected branch: $BRANCH"
+          if [ -z "$BRANCH" ]; then
+            BRANCH="main"
+          fi
+          echo "BRANCH=$BRANCH" >> $GITHUB_ENV
+
+      - name: Checkout the detected branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH }}
+
+      - name: Extract tag name
+        run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: Release ${{ env.TAG_NAME }}
+          draft: false
+          prerelease: false
