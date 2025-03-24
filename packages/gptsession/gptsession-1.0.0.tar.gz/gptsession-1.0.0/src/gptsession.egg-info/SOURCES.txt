@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/gptsession/__init__.py
+src/gptsession/conversation.py
+src/gptsession.egg-info/PKG-INFO
+src/gptsession.egg-info/SOURCES.txt
+src/gptsession.egg-info/dependency_links.txt
+src/gptsession.egg-info/requires.txt
+src/gptsession.egg-info/top_level.txt
