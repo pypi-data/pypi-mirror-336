@@ -1,0 +1,142 @@
+.conditions-field {
+  overflow: hidden;
+}
+.conditions-field .conditions-field-action {
+  cursor: pointer;
+  text-align: center;
+  color: var(--ink-c-data-table-header-fg);
+}
+.conditions-field .conditions-field-action .ink-i-add {
+  margin-right: var(--ink-u-spacing-s);
+  vertical-align: top;
+}
+.conditions-field .conditions-field-add-condition {
+  background: var(--ink-c-data-table-header-bg);
+  display: flex;
+  padding: var(--ink-u-spacing-m);
+}
+.conditions-field .conditions-field-mode ul {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.conditions-field .conditions-field-mode ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.conditions-field .conditions-field-mode ul li input {
+  margin: 0;
+  vertical-align: baseline;
+}
+.conditions-field .conditions-field-mode ul li label {
+  display: inline-block;
+}
+.conditions-field .conditions-field-rows-container {
+  border: var(--ink-c-data-table-border);
+  border-radius: var(--ink-u-border-radius-std);
+  overflow: hidden;
+  /* Don't let backgrounds overlap borders. */
+  margin: 0.5em 0 0 1.5em;
+}
+.conditions-field .conditions-field-rows {
+  /*
+     * There's no good way with CSS grid to draw a border between rows. We
+     * therefore set the background of the container to be our border color
+     * and set the row-gap to be our border width. This will let the
+     * container background shine through in that gap.
+     */
+  background: var(--ink-c-data-table-row-border-color);
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: [action] min-content [choice] min-content [operator] min-content [value] auto;
+  margin: 0;
+  padding: 0;
+  row-gap: var(--ink-u-border-thin);
+}
+.conditions-field .conditions-field-rows:not(:empty) {
+  /*
+       * Use this to draw a border between the last row and the "Add a
+       * new condition" <a> below it.
+       */
+  padding-bottom: var(--ink-u-border-thin);
+}
+.conditions-field .conditions-field-row {
+  background: var(--ink-c-data-table-body-bg);
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-row: auto;
+  grid-template-columns: subgrid;
+  margin: 0;
+  padding: var(--ink-u-spacing-m);
+}
+.conditions-field .conditions-field-row .conditions-field-action {
+  grid-column: action;
+  /*
+       * We don't have a good way of doing vertical centering for this.
+       * Using baseline doesn't work because a <select multiple> has its
+       * baseline at the bottom of the widget regardless of how tall it is.
+       *
+       * The best solution for now seems to be just adding some manual
+       * padding to handle the difference between the icon height and the
+       * line height of the <select> widget that appears next to it.
+       */
+}
+.conditions-field .conditions-field-row .conditions-field-action .ink-i-delete-item {
+  padding-top: 6px;
+}
+.conditions-field .conditions-field-row .conditions-field-choice {
+  grid-column: choice;
+}
+.conditions-field .conditions-field-row .conditions-field-operator {
+  grid-column: operator;
+}
+.conditions-field .conditions-field-row .conditions-field-value {
+  grid-column: value;
+}
+.conditions-field .conditions-field-row .conditions-field-error {
+  color: var(--ink-p-red-600);
+  grid-column: 2 / span 3;
+  padding: var(--ink-u-spacing-s);
+}
+.conditions-field .conditions-field-row .conditions-field-choice,
+.conditions-field .conditions-field-row .conditions-field-operator,
+.conditions-field .conditions-field-row .conditions-field-value {
+  padding: 0 var(--ink-u-spacing-s);
+  /*
+       * config-forms.less sets the width of these to 30em. We want to just
+       * fill the available space in the column.
+       */
+}
+.conditions-field .conditions-field-row .conditions-field-choice select,
+.conditions-field .conditions-field-row .conditions-field-operator select,
+.conditions-field .conditions-field-row .conditions-field-value select {
+  min-width: 130px;
+}
+.conditions-field .conditions-field-row .conditions-field-choice input[type=email],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=email],
+.conditions-field .conditions-field-row .conditions-field-value input[type=email],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=number],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=number],
+.conditions-field .conditions-field-row .conditions-field-value input[type=number],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=password],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=password],
+.conditions-field .conditions-field-row .conditions-field-value input[type=password],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=search],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=search],
+.conditions-field .conditions-field-row .conditions-field-value input[type=search],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=text],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=text],
+.conditions-field .conditions-field-row .conditions-field-value input[type=text],
+.conditions-field .conditions-field-row .conditions-field-choice input[type=url],
+.conditions-field .conditions-field-row .conditions-field-operator input[type=url],
+.conditions-field .conditions-field-row .conditions-field-value input[type=url],
+.conditions-field .conditions-field-row .conditions-field-choice select,
+.conditions-field .conditions-field-row .conditions-field-operator select,
+.conditions-field .conditions-field-row .conditions-field-value select {
+  width: 100%;
+}
+.conditions-field .error-list {
+  color: #990000;
+  margin: 0 0 var(--ink-u-spacing-m) 0;
+  padding: 0;
+}
+/*# sourceMappingURL=conditions.css.map */

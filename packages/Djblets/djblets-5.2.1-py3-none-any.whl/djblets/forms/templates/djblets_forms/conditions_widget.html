@@ -1,0 +1,47 @@
+{% load djblets_js i18n %}
+
+<div class="conditions-field"{% if field_id %} id="{{field_id}}"{% endif %}>
+ <input type="hidden" name="{{field_name}}_last_id" value="{{serialized_rows|length}}">
+ <div class="conditions-field-mode">{{rendered_mode}}</div>
+ <div class="conditions-field-rows-container">
+  <ul class="conditions-field-rows">
+{% for row in rendered_rows %}
+   <li class="conditions-field-row">
+    <a href="#" class="conditions-field-action conditions-field-row-delete"
+       role="button" aria-label="{% trans "Remove condition" %}">
+     <span class="ink-i-delete-item"></span>
+    </a>
+     <span class="conditions-field-choice">{{row.choice}}</span>
+     <span class="conditions-field-operator">{{row.operator}}</span>
+     <span class="conditions-field-value"></span>
+{%  if row.error %}
+     <span class="conditions-field-error">{{row.error}}</span>
+{%  endif %}
+   </li>
+{% endfor %}
+  </ul>
+  <div class="conditions-field-add-condition">
+   <a href="#" class="conditions-field-action" role="button">
+    <span class="ink-i-add"></span>
+    {% trans "Add a new condition" %}
+	  </a>
+  </div>
+ </div>
+ <script>
+(function($) {
+    $(document).ready(function() {
+        var view = new Djblets.Forms.ConditionSetView({
+            el: $('#{{field_id|escapejs}}'),
+            model: new Djblets.Forms.ConditionSet({
+                fieldName: '{{field_name|escapejs}}',
+                choicesData: {{serialized_choices|json_dumps}},
+                conditionsData: {{serialized_rows|json_dumps}}
+            }, {
+                parse: true
+            })
+        });
+        view.render();
+    });
+})($ || window.jQuery || django.jQuery);
+ </script>
+</div>
