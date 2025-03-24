@@ -1,0 +1,17 @@
+./LICENSE,sha256=MKJ4f9yOE5JMIUAkm-fnPKhxz88_p0D6kQ5MXuC30eQ,1083
+./PKG-INFO,sha256=aWd_hU5_j73MJm1ETC7fK5tDlipVE4_jkJSmRQlWVSE,607
+./README.md,sha256=cbnQ_0Lo6Fvi9gYo4durcisPYx8GrlCquPXF4S4Jrlk,20
+./pyproject.toml,sha256=2e75YLl7xTzawIg1Vs-YaazwLWqb51vx8mgC9P2YlS0,721
+./.idea/.gitignore,sha256=G_3s42Re2O01YDDyLMIATcP0Af8GCsPSTegRw7zYLhY,184
+./.idea/misc.xml,sha256=8rKdbPDrdcmrcefb7bfxXGhB0-sdxZayOBIVN1T_X8Q,284
+./.idea/modules.xml,sha256=zRAdsILyfpQDU1yYL91WqTa6KqDI7RxyYyMURuLypK4,295
+./.idea/python-base-filter.iml,sha256=xTF-TYjjF9oaR_R9qoISLgQyRkFIGz9RBTaP5B18Mh0,325
+./.idea/vcs.xml,sha256=YyPhJkiGKgqW_A14d2coF9bNkeLCo8PXjxCQ2yPG6I4,167
+./.idea/workspace.xml,sha256=HV1euBtsXFS_ds_8mcAj-iLx6qcru9Uy7ZYmawQxVU8,5191
+./.idea/inspectionProfiles/profiles_settings.xml,sha256=YXLFmX7rPNGcnKK1uX1uKYPN0fpgskYNe7t0BV7cqkY,174
+./src/python_base_filter/init.py,sha256=XM10uCis2Bv3HELIpx229xOrxyI_lI5Uv_W02SVcu0E,41
+./src/python_base_filter/python_base_filter.py,sha256=fKdJQt_d5gljOx-ZMmPVUufBpi8sj7Dax648JicoFdQ,3894
+dak0k_base_filter-0.0.7.dist-info/METADATA,sha256=aWd_hU5_j73MJm1ETC7fK5tDlipVE4_jkJSmRQlWVSE,607
+dak0k_base_filter-0.0.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dak0k_base_filter-0.0.7.dist-info/licenses/LICENSE,sha256=MKJ4f9yOE5JMIUAkm-fnPKhxz88_p0D6kQ5MXuC30eQ,1083
+dak0k_base_filter-0.0.7.dist-info/RECORD,,

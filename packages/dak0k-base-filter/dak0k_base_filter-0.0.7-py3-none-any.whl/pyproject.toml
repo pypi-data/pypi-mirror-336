@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+only-include = [""]
+
+[project]
+name = "dak0k_base_filter"
+version = "0.0.7"
+authors = [
+  { name="Darkhan Adaibekov", email="adaibekovdarkhan5@gmail.com" },
+]
+description = "A package that allows filtering and sorting of data efficiently."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/dak0k/python-base-filter"
+Issues = "https://github.com/dak0k/python-base-filter"
