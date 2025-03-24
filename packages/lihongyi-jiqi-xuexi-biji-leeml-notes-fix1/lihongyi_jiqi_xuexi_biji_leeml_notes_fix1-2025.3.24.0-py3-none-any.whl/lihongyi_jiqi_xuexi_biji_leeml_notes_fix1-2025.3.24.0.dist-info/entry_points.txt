@@ -1,0 +1,3 @@
+[console_scripts]
+LihongyiJiqiXuexiBijiLeemlNotesFix1 = LihongyiJiqiXuexiBijiLeemlNotesFix1.__main__:main
+lihongyi-jiqi-xuexi-biji-leeml-notes-fix1 = LihongyiJiqiXuexiBijiLeemlNotesFix1.__main__:main
