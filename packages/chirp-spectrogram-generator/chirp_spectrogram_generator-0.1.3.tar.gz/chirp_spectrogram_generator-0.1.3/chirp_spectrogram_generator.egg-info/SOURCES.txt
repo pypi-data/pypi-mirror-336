@@ -1,0 +1,8 @@
+setup.py
+chirp_spectrogram_generator/__init__.py
+chirp_spectrogram_generator/generator.py
+chirp_spectrogram_generator.egg-info/PKG-INFO
+chirp_spectrogram_generator.egg-info/SOURCES.txt
+chirp_spectrogram_generator.egg-info/dependency_links.txt
+chirp_spectrogram_generator.egg-info/requires.txt
+chirp_spectrogram_generator.egg-info/top_level.txt
