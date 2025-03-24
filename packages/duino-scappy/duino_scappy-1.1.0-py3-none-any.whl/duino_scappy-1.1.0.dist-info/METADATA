@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: duino_scappy
+Version: 1.1.0
+Summary: CIA/NSA-Grade Duino-OSINT Platform
+Home-page: https://github.com/yourusername/your-repo
+Author: Jalal Mansour
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: crawl4ai
+Requires-Dist: youtube-transcript-api
+
+
+# 🕵️♂️ DuinoScrapper - CIA/NSA-Grade OSINT Platform
+
+[![PyPI](https://img.shields.io/pypi/v/duino-scapper)](https://pypi.org/project/duino-scapper/)
+[![License](https://img.shields.io/pypi/l/duino-scapper)](LICENSE)
+[![Python](https://img.shields.io/pypi/pyversions/duino-scapper)](https://www.python.org/)
+
+**All-Source Intelligence Platform** for web scraping and YouTube subtitle extraction, developed by [Duino Inc](https://duino.inc).
+---
+
+             /$$$$$$$            /$$                                           
+            | $$__  $$          |__/                                           
+            | $$  \ $$ /$$   /$$ /$$ /$$$$$$$   /$$$$$$                        
+            | $$  | $$| $$  | $$| $$| $$__  $$ /$$__  $$                       
+            | $$  | $$| $$  | $$| $$| $$  \ $$| $$  \ $$                       
+            | $$  | $$| $$  | $$| $$| $$  | $$| $$  | $$                       
+            | $$$$$$$/|  $$$$$$/| $$| $$  | $$|  $$$$$$/                       
+            |_______/  \______/ |__/|__/  |__/ \______/                                                                                        
+````                                                                               
+  /$$$$$$                                                                      
+ /$$__  $$                                                                     
+| $$  \__/  /$$$$$$$  /$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$ 
+|  $$$$$$  /$$_____/ /$$__  $$|____  $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$
+ \____  $$| $$      | $$  \__/ /$$$$$$$| $$  \ $$| $$  \ $$| $$$$$$$$| $$  \__/
+ /$$  \ $$| $$      | $$      /$$__  $$| $$  | $$| $$  | $$| $$_____/| $$      
+|  $$$$$$/|  $$$$$$$| $$     |  $$$$$$$| $$$$$$$/| $$$$$$$/|  $$$$$$$| $$      
+ \______/  \_______/|__/      \_______/| $$____/ | $$____/  \_______/|__/      
+                                       | $$      | $$                          
+                                       | $$      | $$                          
+                                       |__/      |__/                                     
+````
+---
+---
+ CIA/NSA-Grade Duino-OSINT Platform - All-Source Intelligence
+    
+
+
+## 🚀 Features
+- **YouTube Subtitle Extraction** 🎥:  
+  Automatically fetches all available language subtitles with timestamps
+- **Web Scraping** 📄:  
+  Uses `crawl4ai` for intelligent content extraction in markdown format
+- **Google Search Integration** 🔍:  
+  Processes keywords and scrapes top 10 search results
+- **Multi-Format Output** 📄:  
+  Saves results to markdown with terminal preview
+- **Emoji-Enhanced CLI** 😎:  
+  User-friendly interface with visual status indicators
+
+## 📦 Installation
+```bash
+pip install duino-scapper
+```
+
+## 🛠️ Usage
+
+### Command-Line Interface (CLI)
+```bash
+duino-scapper "your_keywords_or_urls"
+```
+
+### Python Library
+```python
+from duino_scapper import DuinoScrapper
+
+scrapper = DuinoScrapper()
+scrapper.run("https://youtu.be/example https://example.com")
+```
+
+## 📝 Example Output
+```markdown
+# Results for URLs: 🎥 https://youtu.be/example, 📄 https://example.com
+
+## URL: https://youtu.be/example
+### en 🇬🇧
+⏰ [0.56s] This is an example subtitle  
+⏰ [3.22s] Another subtitle line  
+
+### es 🇪🇸
+⏰ [0.56s] Este es un subtítulo de ejemplo  
+⏰ [3.22s] Otra línea de subtítulo  
+
+## URL: https://example.com
+📄 Scraped content from example.com:
+# Example Domain
+This domain is for use in illustrative examples...
+```
+
+## ⚙️ Requirements
+- Python 3.6+
+- Dependencies:
+  - `crawl4ai` 🕵️♂️
+  - `youtube-transcript-api` 🎬
+
+## 🤝 Contributing
+1. Fork this repository
+2. Create your feature branch (`git checkout -b feature/cool-feature`)
+3. Commit changes (`git commit -am 'Add cool feature'`)
+4. Push to the branch (`git push origin feature/cool-feature`)
+5. Create a new Pull Request
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## 📮 Contact
+- Created by **Jalal Mansour** 🧑💻  
+- Maintained by [Duino Inc](https://duino.inc) 🏢  
+- Report issues: [GitHub Issues](https://github.com/duino-inc/duino-scapper/issues)
+
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/42254243?v=4" alt="Duino Inc Logo" width="100"/>
+  <br>
+  <em>Made with ❤️ by Duino Intelligence Team</em>
+</p>
+
+
+**Key elements included:**
+1. Professional badges (PyPI version/license)
+2. Clear feature list with emojis
+3. Installation/usage instructions
+4. Example output demonstration
+5. Contribution guidelines
+6. Proper attribution to creator/company
+7. Visual placeholders for logos/banners
+8. Contact information and license details
+
+**To customize:**
+1. Replace placeholder images with actual logos
+2. Update URLs to match your GitHub organization
+3. Modify the feature list based on your final implementation
+4. Add your company's actual domain in links
+
+This structure follows best practices for Python package documentation while maintaining a balance between professionalism and visual appeal.
