@@ -1,0 +1,7 @@
+product,symbol,quantity,template,currency_pair,traded_currency,direction,notional,fixed_rate,forward_rate,price_date,effective_date,maturity_date
+OISSwap,,,USD-SOFR-OIS,,,Receive Fixed,1000000,1,,2025-02-11,,1Y
+fxforward,,,,EUR/USD,EUR,Buy,100000,,1.051,LATEST,,3M
+Listed,ES=F,20,,,,Buy,,,,,,
+Listed,AAPL,100,,,,Sell,,,,,,
+Cash,USD,10000,,,,buy,,,,,,
+Cash,EUR,20000,,,,sell,,,,,,
