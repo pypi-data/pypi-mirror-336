@@ -1,0 +1,2 @@
+[console_scripts]
+pydeconz = pydeconz.__main__:main
