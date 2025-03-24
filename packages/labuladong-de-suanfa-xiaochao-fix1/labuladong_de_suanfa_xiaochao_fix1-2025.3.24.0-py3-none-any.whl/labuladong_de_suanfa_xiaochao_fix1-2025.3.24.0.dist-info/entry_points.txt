@@ -1,0 +1,3 @@
+[console_scripts]
+LabuladongDeSuanfaXiaochaoFix1 = LabuladongDeSuanfaXiaochaoFix1.__main__:main
+labuladong-de-suanfa-xiaochao-fix1 = LabuladongDeSuanfaXiaochaoFix1.__main__:main
