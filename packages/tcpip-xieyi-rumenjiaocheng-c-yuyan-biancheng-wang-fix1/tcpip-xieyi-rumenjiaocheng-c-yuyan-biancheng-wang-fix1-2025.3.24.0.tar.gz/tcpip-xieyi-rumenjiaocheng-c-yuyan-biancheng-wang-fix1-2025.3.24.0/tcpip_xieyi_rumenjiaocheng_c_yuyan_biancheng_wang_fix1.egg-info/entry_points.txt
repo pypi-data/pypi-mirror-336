@@ -1,0 +1,3 @@
+[console_scripts]
+TcpipXieyiRumenjiaochengCYuyanBianchengWangFix1 = TcpipXieyiRumenjiaochengCYuyanBianchengWangFix1.__main__:main
+tcpip-xieyi-rumenjiaocheng-c-yuyan-biancheng-wang-fix1 = TcpipXieyiRumenjiaochengCYuyanBianchengWangFix1.__main__:main
