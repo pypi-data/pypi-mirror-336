@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+art_showcase/__init__.py
+art_showcase/__main__.py
+art_showcase/showcase.py
+art_showcase.egg-info/PKG-INFO
+art_showcase.egg-info/SOURCES.txt
+art_showcase.egg-info/dependency_links.txt
+art_showcase.egg-info/top_level.txt
+tests/test_showcase.py
