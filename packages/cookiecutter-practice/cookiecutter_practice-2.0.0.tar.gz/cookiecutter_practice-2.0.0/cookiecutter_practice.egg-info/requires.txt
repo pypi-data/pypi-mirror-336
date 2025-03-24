@@ -1,0 +1,10 @@
+numpy
+ipyleaflet
+folium
+geopandas
+
+[all]
+cookiecutter-practice[extra]
+
+[extra]
+pandas
