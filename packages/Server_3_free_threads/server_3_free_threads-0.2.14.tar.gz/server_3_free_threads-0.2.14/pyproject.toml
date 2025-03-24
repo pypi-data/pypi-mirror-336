@@ -1,0 +1,23 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+# использовать poetry для управления зависимости
+#[tool.poetry]
+#package-mode = false
+
+[project]
+name = "Server_3_free_threads"
+version = "0.2.14"
+authors = [
+ { name="Vadim Kazakov", email="skolkovoinovations@gmail.com" },
+]
+description = "WSGI server based on threads"
+readme = "README.md"
+requires-python = ">=3.10.0"
+classifiers = [
+        'Programming Language :: Python :: 3.11',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: POSIX :: Linux',
+    ]
