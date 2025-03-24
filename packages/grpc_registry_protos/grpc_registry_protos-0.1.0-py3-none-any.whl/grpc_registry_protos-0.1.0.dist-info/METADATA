@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: grpc_registry_protos
+Version: 0.1.0
+Summary: gRPC proto definitions for KEVEN microservices.
+License: AGPL-3.0
+Author: Craig Holland
+Author-email: craig_holland@hotmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: grpcio (>=1.71.0,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.71.0,<2.0.0)
+Requires-Dist: protobuf (>=5.26.1,<6.0)
+Description-Content-Type: text/markdown
+
+
