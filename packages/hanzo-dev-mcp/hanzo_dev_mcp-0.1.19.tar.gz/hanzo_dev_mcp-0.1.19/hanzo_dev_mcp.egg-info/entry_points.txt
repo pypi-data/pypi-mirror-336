@@ -1,0 +1,2 @@
+[console_scripts]
+hanzo-dev-mcp = dev_mcp.cli:main
