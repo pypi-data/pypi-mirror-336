@@ -1,0 +1,12 @@
+ninja_rest/__init__.py,sha256=_vjqIKPwgOCafKWuFTbLJf4oswkR5qEPNeMnpI5qFyE,954
+ninja_rest/authentication.py,sha256=44ZmwmJqiVx4P80KAtE7juFCsyxDyboR5fPVBHDMxC0,1580
+ninja_rest/generics.py,sha256=04ME7eTFt2eH2TsUypXNgeyHDUUiNLdTAwNUzObdCIw,3520
+ninja_rest/mixins.py,sha256=0DZRhDZLAOROnon5zwDVGDrcnHKp1Gt3v6y6kEksOqQ,2645
+ninja_rest/pagination.py,sha256=ZZORBTwzhRaNksOCVmTnh-GgMxGpEQutVyL5zSvTwpU,1390
+ninja_rest/permissions.py,sha256=MntP3StkIxQK8lh3316-pTU_Ft0ID4ll3cMlAnTAVis,2423
+ninja_rest/schemas.py,sha256=fE_y9OUyFyY1EsyEZrbV_a_f2Vu_dns2YV1fcKjgLI4,2509
+ninja_rest/viewsets.py,sha256=ZgcZ5sP8buufUhQCsCfOZy9pQQtE3j3aMWQ9baDlUE8,3321
+ninja_rest-0.1.0.dist-info/METADATA,sha256=a0AR9yOKWGZcw7VHmTY0qHTARv9iJuF235CuRoQP8E8,5916
+ninja_rest-0.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+ninja_rest-0.1.0.dist-info/top_level.txt,sha256=w9HtT7WnqW26KzufXATajuW6ADAvmvj15yTMS3pR3Bc,11
+ninja_rest-0.1.0.dist-info/RECORD,,
