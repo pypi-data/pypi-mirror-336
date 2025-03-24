@@ -1,0 +1,17 @@
+language: python
+addons:
+  apt:
+    packages:
+    - g++
+    - python-dev
+cache:
+  directories:
+  - "build"
+  - "$HOME/.cache/pip"
+python:
+  - "3.7"
+  - "3.12"
+sudo: false
+install:
+  - "source ./scripts/install_dependencies.sh"
+script: "pip install . && pytest tests"
