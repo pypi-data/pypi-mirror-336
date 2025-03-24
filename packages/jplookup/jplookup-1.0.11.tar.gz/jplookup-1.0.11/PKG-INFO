@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: jplookup
+Version: 1.0.11
+Summary: jplookup is a Python tool designed to look up Japanese words on Wiktionary and scrape pitch accent, phonetic pronunciation, definitions and example sentences from Wiktionary and turn them into straight-forward flashcards for Anki.
+Author-email: TravisGK <githubtravisgk@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/TravisGK/jplookup
+Project-URL: Repository, https://github.com/TravisGK/jplookup
+Keywords: Japanese,Wiktionary,Anki,pitch accent,scraper
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4>=4.9
+Requires-Dist: jaconv>=0.3.0
