@@ -1,0 +1,3 @@
+[console_scripts]
+ZhonggouGaishanJiyouDaimaDeSheji2ndFix1 = ZhonggouGaishanJiyouDaimaDeSheji2ndFix1.__main__:main
+zhonggou-gaishan-jiyou-daima-de-sheji-2nd-fix1 = ZhonggouGaishanJiyouDaimaDeSheji2ndFix1.__main__:main
