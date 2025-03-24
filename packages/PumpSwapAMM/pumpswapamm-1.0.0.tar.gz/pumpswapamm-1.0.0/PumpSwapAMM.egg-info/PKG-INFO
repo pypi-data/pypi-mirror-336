@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PumpSwapAMM
+Version: 1.0.0
+Summary: Unofficial client for Pump.fun PumpSwap AMM pools
+Home-page: https://github.com/FLOCK4H/PumpSwapAMM
+Author: FLOCK4H
+Author-email: flock4h@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Requires-Dist: solana==0.35.1
+Requires-Dist: solders==0.21.0
+Requires-Dist: construct
+Requires-Dist: base58
