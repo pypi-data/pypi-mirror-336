@@ -1,0 +1,11 @@
+requests
+
+[dev]
+ruff
+pytest
+pytest-cov
+pytest-mock
+tox
+requests-mock
+build
+twine

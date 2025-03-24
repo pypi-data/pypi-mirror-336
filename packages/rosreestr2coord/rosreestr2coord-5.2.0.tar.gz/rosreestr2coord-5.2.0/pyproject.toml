@@ -1,0 +1,73 @@
+[project]
+name = "rosreestr2coord"
+version = "5.2.0"
+description = "Get geometry from rosreestr"
+authors = [{ name = "Artemiy Doroshkov", email = "rendrom@gmail.com" }]
+dependencies = ["requests"]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+]
+urls = { "Homepage" = "https://github.com/rendrom/rosreestr2coord" }
+readme = "README.md"
+
+[project.scripts]
+rosreestr2coord = "rosreestr2coord.console:console"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "tox",
+    "requests-mock",
+    "build",
+    "twine",
+]
+
+[build-system]
+requires = ["setuptools", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["rosreestr2coord", "rosreestr2coord.request"]
+include-package-data = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-select = ["I", "E", "F", "W"]
+src = ["rosreestr2coord", "tests"]
+exclude = ["__pycache__", "build", "dist"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --tb=short"
+testpaths = ["tests"]
+markers = [
+    "integration: mark test as integration (requires internet)",
+    "unit: mark test as unit (fast, local)",
+]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py38, py39, py310, py311
+
+[testenv]
+deps =
+    pytest
+    pytest-cov
+commands =
+    pytest --cov=rosreestr2coord --cov-report=term-missing
+"""
+
+
+# https://pypi.python.org/pypi/twine
+
+# pip install build twine
+# python -m build
+# twine upload dist/*
+# twine upload -u 'rendrom' --repository-url https://upload.pypi.org/legacy/ dist/*
