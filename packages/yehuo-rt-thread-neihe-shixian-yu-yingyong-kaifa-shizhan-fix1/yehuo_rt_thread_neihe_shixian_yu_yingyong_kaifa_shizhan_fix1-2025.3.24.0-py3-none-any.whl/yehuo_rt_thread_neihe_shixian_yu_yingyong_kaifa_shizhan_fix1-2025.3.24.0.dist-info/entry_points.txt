@@ -1,0 +1,3 @@
+[console_scripts]
+YehuoRtThreadNeiheShixianYuYingyongKaifaShizhanFix1 = YehuoRtThreadNeiheShixianYuYingyongKaifaShizhanFix1.__main__:main
+yehuo-rt-thread-neihe-shixian-yu-yingyong-kaifa-shizhan-fix1 = YehuoRtThreadNeiheShixianYuYingyongKaifaShizhanFix1.__main__:main
