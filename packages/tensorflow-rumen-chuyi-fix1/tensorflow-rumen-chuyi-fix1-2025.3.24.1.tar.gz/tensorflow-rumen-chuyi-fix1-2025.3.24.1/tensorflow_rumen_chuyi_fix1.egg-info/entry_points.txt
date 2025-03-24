@@ -1,0 +1,3 @@
+[console_scripts]
+TensorflowRumenChuyiFix1 = TensorflowRumenChuyiFix1.__main__:main
+tensorflow-rumen-chuyi-fix1 = TensorflowRumenChuyiFix1.__main__:main
