@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+senatus/__init__.py
+senatus/custom.py
+senatus/strategies.py
+senatus/trader.py
+senatus.egg-info/PKG-INFO
+senatus.egg-info/SOURCES.txt
+senatus.egg-info/dependency_links.txt
+senatus.egg-info/requires.txt
+senatus.egg-info/top_level.txt
+test/test.py
