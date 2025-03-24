@@ -1,0 +1,12 @@
+api_sos.py,sha256=XqEBaPmLBb1BW8hfydz4QApI3U_GW-d6xsZMgG3MHVg,15484
+entity.py,sha256=hMewFniVf5bNOr4mxzkudlh5AYefOCiHubVvlEgoIoU,2930
+generate.py,sha256=fCkc5IwRstDZZU3RTi4Y0hzs3k-37LSMaAwpq-MM0N8,9883
+main.py,sha256=_8Nu-gQaL22A-x1IMiQFmoU0VGpMbjBzAMIV3JGPdeE,10205
+utils.py,sha256=JHPUGSqaRbbIfeti4dIQAsWw0-G_ecylW9rsfbhGtDc,1402
+tests/test_api_sos.py,sha256=i7LkjsrbkclNxZOeCy66C31m82hafNuPsCRxPr-bwM0,2000
+tests/test_utils.py,sha256=1OjwSp2Ohb1BllRCW7SL56o-3-qwPvzHm7zAlOF-41M,163
+api_sos-1.0.0.dist-info/METADATA,sha256=OOY6JHWp8_OseyOuLwGxInyEWkpDW59qscKvRn3KOGE,6711
+api_sos-1.0.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+api_sos-1.0.0.dist-info/entry_points.txt,sha256=sOuxk6FL_FbUEOWRyeh6VAXUNEUEpL_69S2se1qzf9k,41
+api_sos-1.0.0.dist-info/top_level.txt,sha256=z-D8jLDeKsQeKE9NJHwz8jEwrYd7TZJ-ktxEgJMa6Mk,41
+api_sos-1.0.0.dist-info/RECORD,,
