@@ -1,0 +1,14 @@
+easynotes/__init__.py,sha256=CvvZTPPpMol3xIR28onD8Agwby3LST3YjAokyypC1-8,4293
+easynotes/calc.py,sha256=NxiYkuReWbg0_hM4O7kXYCkKulwS2FbXXNgc7mNVxM8,4171
+easynotes/cut.py,sha256=kuv9oHUIo114unHZULXEy3zJ9wyUjj9CrDWBP7y8J6Q,2811
+easynotes/easynotes.py,sha256=Hc72fKUECnma5oD2gW4ZeRfWbvFG0mKQCaC-HxETMnM,43812
+easynotes/easypymanager.py,sha256=dr1QffngWXoV3-lKBt7JLDJOpJqaeEAIbyhpCiFbEeg,28205
+easynotes/mind.py,sha256=84JBjkhAuivDSgAOkJ3wRXpIw82UlAN-pEzkpjLrn9A,24277
+easynotes/notes.py,sha256=CckJGBG2XjMs2bBUi-xgHA3Ugy65zn_eIm5klDHDBu4,40494
+easynotes/task.py,sha256=xwCoqkqOuGH_WN39y7d8msIk8OuYUXmU2fb4pdzxiTs,26717
+easynotes-1.2.5.dist-info/LICENSE,sha256=nC_P4SgMa07filsYB3QtksztRZ6EIwTDALA1pdyg__c,1074
+easynotes-1.2.5.dist-info/METADATA,sha256=pZWiuXUFaDwWJFVVtRfiSpumw6FtLlIkWDSOTxYiT1c,1183
+easynotes-1.2.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+easynotes-1.2.5.dist-info/entry_points.txt,sha256=JuH53yThuq4JXJIADNQ3nXxDFC5-m_HMY9u97VeGzhM,45
+easynotes-1.2.5.dist-info/top_level.txt,sha256=lsrWiyyO8fNA5qa4kY_daxj1bpADP6lxdQa-j7harUI,10
+easynotes-1.2.5.dist-info/RECORD,,
