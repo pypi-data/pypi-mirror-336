@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: matheel
+Version: 0.1.2
+Summary: Matheel: A CLI and Python package for source-code similarity detection.
+Home-page: https://github.com/FahadEbrahim/matheel
+Author: Fahad Ebrahim
+License: CC BY-NC 4.0
+Project-URL: Source, https://github.com/FahadEbrahim/matheel
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: gradio
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: rapidfuzz
+Requires-Dist: sentence-transformers
+Requires-Dist: sentencepiece
