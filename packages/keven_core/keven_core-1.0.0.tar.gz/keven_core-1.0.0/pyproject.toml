@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "keven_core"
+version = "1.0.0"
+description = "Core utilities and shared components for KEVEN's microservices."
+authors = ["Craig Holland <craig_holland@hotmail.com>"]
+license = "AGPL-3.0"
+readme = "README.md"
+
+packages = [{ include = "keven_core" }]
+
+
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+pydantic = "^2.0"
+kafka-python = "^2.0.2"
+loguru = "^0.7.0"
+PyJWT = "^2.6.0"
+sqlalchemy = "^2.0.0"
+psycopg2-binary = "^2.9.6"
+
+types-requests = "^2.28.11"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.8.1"
+jsonpickle = "^4.0.2"
+confluent-kafka = "^2.8.2"
+aenum = "^3.1.15"
+protobuf = ">=5.26.1,<6.0"
+grpcio = "1.71.0"
+grpcio-tools = "1.71.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+mypy = "^1.2.0"
+pytest = "^7.4.0"
+ruff = "^0.1.0"
+
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
