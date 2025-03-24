@@ -1,0 +1,2 @@
+[console_scripts]
+unity-mcp-MB = unity_mcp_MB.main:main
