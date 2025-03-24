@@ -1,0 +1,12 @@
+python_readenv-0.7.1.dist-info/licenses/AUTHORS,sha256=KFm-HWSGWcEO_JZXRJ2jeGLG3nwAOxMO-SCBH3QCHXw,84
+python_readenv-0.7.1.dist-info/licenses/LICENSE,sha256=RB0a44jP4rhw8Irrovalr8xEOTBPJUSttvTAmhgUVLA,1085
+readenv/__init__.py,sha256=mJEkMrn3Kn2aBWJpx-nWTRz12pzbCAO-kdXMNHkq-Es,1793
+readenv/_environ.py,sha256=_L6udo5UKlSAs9jav_U_rzx3bIX3tQslyHglwqvzizk,9589
+readenv/_version.py,sha256=qea0601b6Z5U9SaI00SXtj2BOHxT-F5eHp4EbuScvw8,1899
+readenv/loads.py,sha256=jlVZziSna-yuPg7h2z4G6YIrKdJEtnLUv4LCBBiwPN0,1167
+readenv/mypy.py,sha256=T4_rFA8xMx4zJcY3c3xO3PYVRzLkDQk3zs3v0h-dKj4,1291
+readenv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_readenv-0.7.1.dist-info/METADATA,sha256=HFpCsC8aLCnWrpKXUQc57gi6OpGBKqbZGiStm_sF1Q4,3773
+python_readenv-0.7.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+python_readenv-0.7.1.dist-info/top_level.txt,sha256=sXD7DjVoJH561UnX5dHXkgLL7ydUQt4YB6uoocYiqKE,8
+python_readenv-0.7.1.dist-info/RECORD,,
