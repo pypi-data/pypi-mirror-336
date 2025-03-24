@@ -1,0 +1,9 @@
+batch_bridge/__init__.py,sha256=Iw5iz6Z5ev599n9NEppOEsbsJTZW4ZTvHTbsWM91U5o,368
+batch_bridge/_base.py,sha256=NUpFnguVA-1naZ-aLRaHhLzdsohh6OyYuNJydzpO6Ic,11580
+batch_bridge/_openai.py,sha256=aRbKB3OZJcWRI3eOhwsp7B56JXngkDy767w5WjoSqI4,6215
+batch_bridge/errors.py,sha256=jVMWhYIwltJbG0wawGk3EO0C_mCsKXVeusRrP98dDmo,132
+batch_bridge/types.py,sha256=G1SMbyc0FZI7eWV_YbYxCR920JuuTCeaFP1aec75g8g,488
+batch_bridge-0.0.1rc0.dist-info/METADATA,sha256=HKtOffXaOb1znRqoqiXJ4MrOYaGpqMaxWAD-uLkzywM,4567
+batch_bridge-0.0.1rc0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+batch_bridge-0.0.1rc0.dist-info/licenses/LICENSE,sha256=mK8TUeqFbgCMg1vImjEpBZYKMYBy-VBzK_NGx0ECfH0,1066
+batch_bridge-0.0.1rc0.dist-info/RECORD,,
