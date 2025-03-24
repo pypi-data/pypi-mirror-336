@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include sender_net/static *
+recursive-include sender_net/templates *
+recursive-include sender_net/migrations *

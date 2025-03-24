@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+migrations/0001_initial.py
+migrations/0002_newslettercampaign_newsletterrecipient.py
+migrations/0003_alter_newslettercampaign_options_and_more.py
+migrations/0004_alter_newslettercampaign_options_and_more.py
+migrations/0005_alter_sendernetsettings_api_key.py
+migrations/0006_alter_sendernetsettings_api_key.py
+migrations/__init__.py
+sender_net.egg-info/PKG-INFO
+sender_net.egg-info/SOURCES.txt
+sender_net.egg-info/dependency_links.txt
+sender_net.egg-info/requires.txt
+sender_net.egg-info/top_level.txt
