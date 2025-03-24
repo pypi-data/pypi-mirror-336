@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: quickuse
+Version: 0.1.0
+Summary: A versatile agent that can solve various tasks using multiple tools
+Home-page: https://github.com/mannaandpoem/OpenManus
+Author: zhaoxuefeng
+Author-email:  
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: pydantic~=2.10.4
+Requires-Dist: pyyaml~=6.0.2
+Requires-Dist: loguru~=0.7.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
