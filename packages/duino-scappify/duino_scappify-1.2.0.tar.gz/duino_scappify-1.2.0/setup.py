@@ -1,0 +1,27 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='duino_scappify',
+    version='1.2.0',
+    packages=['/content/duino-scrapper'],
+    install_requires=[
+        'crawl4ai',
+        'youtube-transcript-api',
+    ],
+    entry_points={
+        'console_scripts': [
+            'duino-scapper=duino_scapper:DuinoScrapper.run',
+        ],
+    },
+    author='Jalal Mansour',
+    description='CIA/NSA-Grade Duino-OSINT Platform',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',url='https://github.com/yourusername/your-repo',
+   
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.6',
+)
