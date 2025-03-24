@@ -1,0 +1,6 @@
+README.md
+setup.py
+outro.egg-info/PKG-INFO
+outro.egg-info/SOURCES.txt
+outro.egg-info/dependency_links.txt
+outro.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: outro
+Version: 1.0
+Summary: py
+Author: u0_a325
+Author-email: seuemail@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+# outro
+
+py
