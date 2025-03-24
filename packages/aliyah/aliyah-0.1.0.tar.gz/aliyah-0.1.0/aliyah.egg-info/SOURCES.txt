@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+aliyah/__init__.py
+aliyah/monitor.py
+aliyah.egg-info/PKG-INFO
+aliyah.egg-info/SOURCES.txt
+aliyah.egg-info/dependency_links.txt
+aliyah.egg-info/entry_points.txt
+aliyah.egg-info/requires.txt
+aliyah.egg-info/top_level.txt
