@@ -1,0 +1,10 @@
+nonebot_plugin_jmcomic/.gitignore,sha256=zYrUNcNKYJWAa3xqEdl-CC3SHUzYSiAxfUxD3n68FjA,27
+nonebot_plugin_jmcomic/__init__.py,sha256=v7uVdityOqECaF3h7kVDbMZQBoAbVbnTpWB7q8nVdLQ,1256
+nonebot_plugin_jmcomic/LICENSE,sha256=TnuK7lwhtSEq3TM85xRT9m07Zh294DofAD1gfQIDk_o,1098
+nonebot_plugin_jmcomic/pyproject.toml,sha256=8Ak-BSVzyaC8dM_tMdkqzbeRfTYGZzGePSSDxaDReFk,525
+nonebot_plugin_jmcomic/README.md,sha256=Ic5LWMrbcXx47b2ccajqnUQPVck5DpY37MT2zq_bKmg,2459
+nonebot_plugin_jmcomic/utils.py,sha256=9eO4qHariqM6gIvAx8TlG1Zj83P4L5xfJSLqvJI4ufM,1196
+nonebot_plugin_jmcomic-0.1.6.dist-info/LICENSE,sha256=TnuK7lwhtSEq3TM85xRT9m07Zh294DofAD1gfQIDk_o,1098
+nonebot_plugin_jmcomic-0.1.6.dist-info/METADATA,sha256=5crI31OYnwDzPiXmb91XD4iRBlEeehMA92dUL1t-iq4,3146
+nonebot_plugin_jmcomic-0.1.6.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+nonebot_plugin_jmcomic-0.1.6.dist-info/RECORD,,
