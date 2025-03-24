@@ -1,0 +1,15 @@
+bvlain/__init__.py,sha256=qxIWISJdVmSkKKYp2eGHdeAMEjZ29VRIL1mLUXvGJ6w,58
+bvlain/_version.py,sha256=sgx2IfvK6LCxLQk_kce9m77rygL9vPUgzWln_-qPvaU,22
+bvlain/cli.py,sha256=ge6mT58PZnesbjM36DJ_Q8tfVpgwjVz4_uz0C58mn68,3412
+bvlain/core.py,sha256=3ufId618AlnKpONVZ47q2KYm8-TWBNF2uhECVV10v78,33097
+bvlain/main.py,sha256=8N7cc7hfgH9lKbjZlQK1ayOFxud7fsRzEaNe9ayJDKg,3387
+bvlain/potentials.py,sha256=xUxRV8GwvR_47_DW6vgAUCdTDMk6A4wdavKE0hsYahU,2111
+bvlain/data/anion.pkl,sha256=heJluQwq8tl_51FyjTM1bkPEe47lMBG2-XTpZPO0FD0,73317
+bvlain/data/cation.pkl,sha256=1d1hsBPbb1no6DXyFSp4JtCaXJEDRTmpvZxoCq4ArY8,81864
+bvlain/data/quantum_n.pkl,sha256=ZrHJPIMAg6XjXW_AMsmteU_LtoYXvo9d-9fQPkRL-jY,3217
+bvlain/data/shannon-radii.json,sha256=cMSt7eOlQ0tFATwf5GPSCrdSripydqFFps9hMAoBPmU,37813
+bvlain-0.24.8.dist-info/LICENSE,sha256=oPwaY2bQ_WFcNRmWbX_GaVinoA5eozD31dsEUaUzymQ,1074
+bvlain-0.24.8.dist-info/METADATA,sha256=bwXha_X-GwHMOoIhI_fuehxj3qw8vzpRYgYOJWrR8WY,4175
+bvlain-0.24.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bvlain-0.24.8.dist-info/top_level.txt,sha256=Yy3xCMI9d0qMqK5RPL2e9UJSYlgRQLjbza8QlDpqZng,7
+bvlain-0.24.8.dist-info/RECORD,,
