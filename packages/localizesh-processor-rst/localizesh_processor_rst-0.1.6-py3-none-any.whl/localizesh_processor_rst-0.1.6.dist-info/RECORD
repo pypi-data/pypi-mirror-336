@@ -1,0 +1,10 @@
+localizesh_processor_rst/__init__.py,sha256=8GxLJq8ZVeksWnywrCNZDCPEAWM42PIkAjBbo-RDTWg,44
+localizesh_processor_rst/processor.py,sha256=b4qQu5kCcRgK3dc9PXr-LUpnFYSr5S0BtJX83VUf0Hs,793
+localizesh_processor_rst/utils/__init__.py,sha256=ZNR5NnpsbdKo0Gl_TGFOIyn_3L1fifWdILGBuB24E0Q,94
+localizesh_processor_rst/utils/convert_to_ast.py,sha256=jBhTzVBeIgLz-ggjfGAOK_vCUrkgSn2lC-BDNKsZ824,17268
+localizesh_processor_rst/utils/convert_to_rst.py,sha256=EQ2Fl4yJtgF-EvyejAhVzdQTL_-JD7s4dpGUTsm0HV0,16438
+localizesh_processor_rst/utils/post_parse_doctree.py,sha256=-eFMnaIrISLb897b4LO23YGDHeqa-sr4vZ-K00d7jjc,1859
+localizesh_processor_rst-0.1.6.dist-info/METADATA,sha256=I4DCaloBv9_6WnrligbQBcULnvN6kiSXkxUUtpHOdlg,286
+localizesh_processor_rst-0.1.6.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+localizesh_processor_rst-0.1.6.dist-info/top_level.txt,sha256=ypAxA5phzNjciIVM2CRfQicFmG56-J9huqU0AotiRxY,25
+localizesh_processor_rst-0.1.6.dist-info/RECORD,,
