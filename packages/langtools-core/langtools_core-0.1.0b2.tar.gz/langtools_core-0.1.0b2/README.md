@@ -1,0 +1,205 @@
+# LangTools Core SDK
+
+## Background
+
+LangTools vNext is a project aimed at enhancing developer experience in MAI, enabling faster experimentation and deployment of Generative AI-based features to swiftly deliver increased value to our users. The langtools-core SDK, serving as the foundation for LangTools vNext, offers essential tools for building services/GenAI applications, including AI-aware logging, tracing, metrics tracking, debugging, and evaluation.
+
+## Goal
+
+- Define the developer's experience of this package.
+- Define the functionality that the package should provide.
+- Design the user experience of the functionality such as logging, tracing, metrics tracking, and evaluation.
+- Identify the dependencies required by the package.
+- Propose public interfaces exposed by the package.
+
+## Non-Goal
+
+- Design of predefined metrics.
+- Prompty should not be included in the package, users can decide whether to leverage it.
+
+## Proposal
+
+Langtools-core SDK is a Python package that will be published to PyPI. A .NET version will be supported in the future.
+
+| Package         | Functionality             | Imports (SDK)                      |
+|-----------------|---------------------------|------------------------------------|
+| langtools-core  | Logging capability        | from langtools.core import Logger  |
+|                 | Tracing capability        | from langtools.core import Tracer  |
+|                 | Metrics tracking capability | from langtools.core import Meter   |
+
+### Logger Documentation
+
+#### Logging
+
+The LangTools Core SDK provides robust logging capabilities to help developers track and debug their applications. There are two types of logs supported:
+
+1. **Internal Logs**: These logs are produced by the LangTools SDK itself and are used to track the SDK's usage for debugging purposes. These logs are stored in our log storage and can be used to build monitoring and dashboards to improve product quality. This logic should not disrupt any customer workflows.
+
+2. **Customer-Facing Logs**: This logging capability is provided to other LangTools packages and users, allowing them to generate their own logs. Users can choose where to store these logs: in the console, local files, or the cloud.
+
+##### ExtendedLogRecord
+
+The Logger uses an extended LogRecord class that automatically includes additional system and metadata attributes:
+
+| Field | Type | Description | Example |
+|-------|------|-------------|---------|
+| nodeArch | string | System architecture | "64bit" |
+| os | string | Operating system name | "Linux" |
+| platformversion | string | Platform version | "22.6.0" |
+| runtimeversion | string | Python version | "Python 3.9.13" |
+| SDKversion | string | LangTools SDK version | "langtools-core-0.0.1.dev0" |
+| machineName | string | Host machine name | "machine123" |
+| code.filepath | string | Source file path | "/src/app.py" |
+| code.lineno | integer | Line number | 42 |
+| code.function | string | Function name | "process_data" |
+| IP | string | Machine IP address | "127.0.0.1" |
+| metadata | json string | Additional metadata | "" |
+
+##### Example Usage
+
+**Example 1: Basic ConsoleLogHandler**
+
+```python
+from langtools.core import Logger
+
+# Set up logger
+Logger.basicConfig(level=Logger.DEBUG, format='[%(timestamp)s - %(filename)s -> %(funcName)s():%(lineno)d] %(levelname)s: %(message)s')
+logger = Logger.getLogger(__name__)
+
+logger.info('Init LangTools Papyrus Client')
+```
+
+**Example 2: Enable Both ApplicationInsightHandler**
+
+```python
+from langtools.core import Logger
+from langtools.core.exporters import AzureMonitorLogHandler
+
+# Set up logging
+logger = Logger.getLogger(__name__)
+azure_monitor_handler = AzureMonitorLogHandler(connection_string='InstrumentationKey=your_instrumentation_key;IngestionEndpoint=https://your-endpoint')
+
+# Add the handler to the logger
+logger.addHandler(azure_monitor_handler)
+
+# Log some messages
+logger.info('Init LangTools Papyrus Client')
+```
+
+### Tracer Documentation
+
+#### Tracing
+
+Similar to logging, LangTools vNext supports various tracing exporters, allowing users to choose where and how to host and visualize tracing telemetry. In our first iteration, we support three predefined types of exporters: ConsoleTraceExporter, AzureMonitorTraceExporter and NoOpTraceExporter, available from the langtools.core.exporters package.
+
+By default, the NoOpTraceExporter will be used, all tracing information won't be output to anywhere. If users have existing resources based on Azure Monitor, they can set the corresponding connection strings to export trace information to Azure Monitor resources.
+
+##### Example Usage
+
+```python
+from langtools.core import Tracer
+from langtools.core.exporters import ConsoleSpanExporter, AzureMonitorTraceExporter
+
+# Example 1: Basic ConsoleSpanExporter & AzureMonitorTraceExporter
+# Create tracer instance
+Tracer.initTracer(__name__, exporters=[ConsoleSpanExporter(), AzureMonitorTraceExporter("connectionstr")])
+tracer = Tracer.getTracer(__name__)
+
+# Trace function func
+@tracer.trace
+def func():
+    print("Hello, OpenTelemetry!")
+
+# Call func
+func()
+```
+
+The tracer also supports both synchronous and asynchronous functions, including streaming responses (particularly useful for LLM operations).
+
+### Meter Documentation
+
+#### Metrics
+
+Similar to logging and tracing, LangTools vNext supports various Metrics exporters, allowing users to choose where and how to host and visualize metrics counters. We support three predefined types of exporters: ConsoleMetricExporter, AzureMonitorMetricExporter and NoOpMetricExporter.
+
+##### Example Usage
+
+```python
+from langtools.core import Meter
+from langtools.core.exporters import ConsoleMetricExporter
+
+# Create meter instance
+Meter.initMeter(__name__,exporters=[ConsoleMetricExporter])
+meter = Meter.getMeter(__name__)
+counter = meter.create_counter("func_call_count", description="Count of function calls")
+
+# Function to record metrics
+def func():
+    counter.add(1)
+    print("Function called")
+
+# Call func
+func()
+```
+
+##### Predefined Metrics
+
+To ensure comprehensive monitoring and performance analysis, the following metrics are predefined:
+
+- **Token Counts**: Track total number of tokens processed in each (LLM) call
+- **Response Time Histogram**: Distribution of response times for all function calls
+- **Error Rates**: Rate of errors encountered during each function call
+- **Request Counts**: Total number of requests made to each function
+- **Throughput**: Number of successful responses per unit time
+
+### Package Structure
+
+```
+langtools.core
+├── logger.py         # Main logger implementation
+├── tracer.py         # Main tracer implementation
+├── meter.py          # Main meter implementation
+├── credential.py     # Main credential implementation
+└── exporters/        # Built-in exporters
+    ├── __init__.py
+    ├── console_exporter.py
+    ├── file_exporter.py
+    └── azure_monitor.py
+    └── noop_exporter.py
+└── identity/        # Built-in identity
+    ├── __init__.py
+    ├── LongRunningOBOTokenCredential.py
+└── utils/
+    ├── openai_result_parser.py
+    ├── serializer.py
+```
+
+### Basic Usage Example
+
+```python
+from langtools.core import Logger, Tracer, Meter
+from langtools.core.exporters import ConsoleLogHandler, ConsoleSpanExporter, ConsoleMetricExporter
+# Set up logger
+Logger.basicConfig(handlers=[ConsoleLogHandler()])
+logger = Logger.getLogger(__name__)
+
+# Set up tracer
+Tracer.initTracer("my-service", [ConsoleSpanExporter()])
+tracer = Tracer.getTracer(__name__)
+
+# Set up meter
+Meter.initMeter("my-service", [ConsoleMetricExporter()])
+meter = Meter.getMeter(__name__)
+
+# Example usage
+@tracer.trace
+def example_function():
+    logger.info("Starting example function")
+    counter = meter.create_counter("function_calls")
+    counter.add(1)
+    logger.info("Finished example function")
+
+example_function()
+```
+
+For more detailed examples and API documentation for each component, please refer to the individual documentation files in the [langtools-git](https://github.com/ai-microsoft/langtools) directory.
