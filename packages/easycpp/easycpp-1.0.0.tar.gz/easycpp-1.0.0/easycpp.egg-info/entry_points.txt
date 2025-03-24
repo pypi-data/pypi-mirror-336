@@ -1,0 +1,2 @@
+[console_scripts]
+easycpp-precompiler = easycpp.precompile:main
