@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vision_mech_interp_attn_head
+Version: 0.1.2
+Summary: A package for vision mechanistic interpretability
+Home-page: https://github.com/nbahador/vision_mech_interp_attn_head
+Author: Nooshin Bahador
+Author-email: nooshin.bah@gmail.com
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: transformers
+Requires-Dist: peft
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: Pillow
+
