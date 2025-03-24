@@ -1,0 +1,3 @@
+[console_scripts]
+PythonJiqirenXuexiShouceChuyiFix1 = PythonJiqirenXuexiShouceChuyiFix1.__main__:main
+python-jiqiren-xuexi-shouce-chuyi-fix1 = PythonJiqirenXuexiShouceChuyiFix1.__main__:main
