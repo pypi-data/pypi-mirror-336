@@ -1,0 +1,4 @@
+midas-mosaik~=2.0.0
+mosaik_api
+pandas
+tables
