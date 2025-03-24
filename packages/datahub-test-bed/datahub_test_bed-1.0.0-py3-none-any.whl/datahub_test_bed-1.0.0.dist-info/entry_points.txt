@@ -1,0 +1,2 @@
+[console_scripts]
+datahub-test-bed = datahub_test_bed.__main__:run
