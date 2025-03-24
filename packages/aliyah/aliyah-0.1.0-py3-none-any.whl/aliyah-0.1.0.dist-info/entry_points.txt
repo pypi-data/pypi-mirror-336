@@ -1,0 +1,2 @@
+[console_scripts]
+aliyah-monitor = aliyah:trainingmonitor
