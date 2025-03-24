@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "color_config"
+version = "3.0.0"
+description = "Ein einfaches Modul für farbige Konsolenausgaben."
+readme = "README.md"
+authors = [{ name = "Otis L. Crossley", email = "soon@email.com" }]
+license = { file = "LICENSE" }
+dependencies = ["colorama"]
+requires-python = ">=3.6"
