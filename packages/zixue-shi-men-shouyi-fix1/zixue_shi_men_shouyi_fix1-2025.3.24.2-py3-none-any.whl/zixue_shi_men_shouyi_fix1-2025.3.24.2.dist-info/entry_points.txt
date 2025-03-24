@@ -1,0 +1,3 @@
+[console_scripts]
+ZixueShiMenShouyiFix1 = ZixueShiMenShouyiFix1.__main__:main
+zixue-shi-men-shouyi-fix1 = ZixueShiMenShouyiFix1.__main__:main
