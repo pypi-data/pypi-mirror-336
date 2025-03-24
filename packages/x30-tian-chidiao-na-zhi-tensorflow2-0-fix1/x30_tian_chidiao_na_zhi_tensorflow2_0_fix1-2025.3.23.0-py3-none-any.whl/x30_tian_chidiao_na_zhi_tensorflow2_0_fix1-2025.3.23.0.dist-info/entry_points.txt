@@ -1,0 +1,3 @@
+[console_scripts]
+X30TianChidiaoNaZhiTensorflow20Fix1 = X30TianChidiaoNaZhiTensorflow20Fix1.__main__:main
+x30-tian-chidiao-na-zhi-tensorflow2-0-fix1 = X30TianChidiaoNaZhiTensorflow20Fix1.__main__:main
