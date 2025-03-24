@@ -1,0 +1,2 @@
+[console_scripts]
+hevy = hevy_api_client.cli:cli_entrypoint
