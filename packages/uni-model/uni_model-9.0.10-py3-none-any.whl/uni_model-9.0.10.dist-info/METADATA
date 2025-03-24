@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: uni-model
+Version: 9.0.10
+Summary: Sony Semiconductor Israel, Uni Model
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: protobuf==4.25.5
+Requires-Dist: stringcase
+Requires-Dist: numpy
+Requires-Dist: networkx
+
+UNKNOWN
+
+
