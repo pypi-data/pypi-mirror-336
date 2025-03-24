@@ -1,0 +1,3 @@
+[console_scripts]
+TensorflowJiqiXuexiMijiZhongwenDierBanChuyiFix1 = TensorflowJiqiXuexiMijiZhongwenDierBanChuyiFix1.__main__:main
+tensorflow-jiqi-xuexi-miji-zhongwen-dier-ban-chuyi-fix1 = TensorflowJiqiXuexiMijiZhongwenDierBanChuyiFix1.__main__:main
