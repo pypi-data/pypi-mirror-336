@@ -1,0 +1,1 @@
+from .Joker import repr, open, stduot, stdout
