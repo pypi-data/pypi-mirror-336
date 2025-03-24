@@ -1,0 +1,12 @@
+[project]
+name = "screenshot-server"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.4.1",
+    "pyautogui>=0.9.54",
+]
+[project.scripts]
+screenshot-server = "screenshot:screenshot.main"
