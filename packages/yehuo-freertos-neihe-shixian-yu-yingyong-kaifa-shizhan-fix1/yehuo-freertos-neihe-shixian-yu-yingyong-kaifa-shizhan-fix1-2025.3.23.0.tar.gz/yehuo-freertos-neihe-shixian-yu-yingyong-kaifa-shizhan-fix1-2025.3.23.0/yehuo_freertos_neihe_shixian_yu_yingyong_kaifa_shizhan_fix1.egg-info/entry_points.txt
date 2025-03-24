@@ -1,0 +1,3 @@
+[console_scripts]
+YehuoFreertosNeiheShixianYuYingyongKaifaShizhanFix1 = YehuoFreertosNeiheShixianYuYingyongKaifaShizhanFix1.__main__:main
+yehuo-freertos-neihe-shixian-yu-yingyong-kaifa-shizhan-fix1 = YehuoFreertosNeiheShixianYuYingyongKaifaShizhanFix1.__main__:main
