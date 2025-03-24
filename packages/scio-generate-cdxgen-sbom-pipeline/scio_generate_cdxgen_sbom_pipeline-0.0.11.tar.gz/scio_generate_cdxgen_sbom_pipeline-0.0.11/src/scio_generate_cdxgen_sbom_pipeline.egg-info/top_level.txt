@@ -1,0 +1,1 @@
+scio_generate_cdxgen_sbom_pipeline
