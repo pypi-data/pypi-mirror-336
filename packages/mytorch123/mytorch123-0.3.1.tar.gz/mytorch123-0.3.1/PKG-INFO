@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: mytorch123
+Version: 0.3.1
+Summary: Drop-in replacement for PyTorch that does distributed training and inference on a remote server
+Home-page: https://mytorch.net
+Author: mytorch.net
+Author-email: pypi@mytorch.net
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: grpcio>=1.65.0
+Requires-Dist: grpcio-tools>=1.65.0
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: pillow
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: huggingface-hub
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# myTorch
+
+myTorch a wrapper around PyTorch. As such, it is a drop-in replacement for PyTorch. Calls to PyTorch can be replaced with myTorch with no code changes except for the import statement in the Python file. This allows you to code with PyTorch on your local machine, but do the training and/or inference on a remote server.
