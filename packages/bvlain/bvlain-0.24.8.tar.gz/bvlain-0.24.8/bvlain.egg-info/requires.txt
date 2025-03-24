@@ -1,0 +1,6 @@
+numpy
+pandas
+scipy>=1.7.0
+pymatgen>=2022.5.26
+ase
+joblib

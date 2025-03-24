@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+include bvlain/data/*.pkl
+include bvlain/data/*.json
