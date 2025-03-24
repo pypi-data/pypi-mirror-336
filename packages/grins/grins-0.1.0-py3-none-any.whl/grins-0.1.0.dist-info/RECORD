@@ -1,0 +1,14 @@
+grins/__init__.py,sha256=IZJ15iFoK8jF6yahsshqzQRiBz6jyKE_-Tv901YXuhQ,324
+grins/gen_diffrax_ode.py,sha256=TzR6oWWrXgXqLtxOvIi24AHJt5JbcE9llQARmxThF0w,3302
+grins/gen_params.py,sha256=GtU00m9LvDnOvDw1tw5SdAotBTkVwHWDzGunqN3YLrQ,31116
+grins/ising_bool.py,sha256=OMsDXlc2sR2oeFdfMiy0BTZOFNYaxBtZt58ciFaI6wk,27004
+grins/logical_bool.py,sha256=YIrKyh69Uy-LYJZtksqVr3jbFqHgeX8l9pPc_aThdW0,18950
+grins/racipe.py,sha256=pc0LbOcUfwnDCaaLd88rpmQzC-9Qo1TLJnv9sM62ftg,4129
+grins/racipe_run.py,sha256=EtCj81wdHkL67wHouDUIrkeBbHLyVxLj8DRfJUpDVks,34404
+grins/reg_funcs.py,sha256=fH4Z9NqDY6ePEUBhAAgpK4bQzDS8LddQ9LxZ5er9wC4,1002
+grins/test_diffrax.py,sha256=fkMDP6mJ6CG8ta_H_w7gkHmichHRtQA_fGNp6wv8Ek0,5368
+grins-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+grins-0.1.0.dist-info/METADATA,sha256=JHAFx7oKaUtgjZZsgSqNoQFY9rlT-lMHJdAEI-a52FE,3760
+grins-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+grins-0.1.0.dist-info/entry_points.txt,sha256=D6bhTaGGUcdbWmvAoNT6UoHq0HYuigv8vfFzvlEhy4s,44
+grins-0.1.0.dist-info/RECORD,,
