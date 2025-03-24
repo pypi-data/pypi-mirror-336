@@ -1,0 +1,2 @@
+[console_scripts]
+ingradient = ingradient.cli:main
