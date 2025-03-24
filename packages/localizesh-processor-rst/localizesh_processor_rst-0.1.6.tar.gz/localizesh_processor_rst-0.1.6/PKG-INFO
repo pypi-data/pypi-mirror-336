@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: localizesh-processor-rst
+Version: 0.1.6
+Summary: Localize.sh RST processor
+Requires-Dist: localizesh-sdk>=0.1.4
+Requires-Dist: docutils>=0.21.2
+Requires-Dist: parameterized>=0.9.0
+Dynamic: description
+Dynamic: requires-dist
+Dynamic: summary
+
+# processor-rst
