@@ -1,0 +1,12 @@
+MF_Tools/__init__.py,sha256=NyNADsyxCUmgReapZO18c6drMPkLAIaft4nEj40HdYE,293
+MF_Tools/animations.py,sha256=rVMXY9eau_KqD4VrAiTIv-GDZyPfK7wpznwXtY7-32E,1800
+MF_Tools/dual_compatibility.py,sha256=s0RKjVhhlkK9CXTB-KP3sAFBRFPNxVM9lA9T3DuBQKQ,2216
+MF_Tools/geometry.py,sha256=Sr2f9mkTG8pA1nlgRgU_xcg743RzSDs9AuLX4OH14do,598
+MF_Tools/misc.py,sha256=8Y1BcxoOAr46kcgYKAm7j3k-w7ynXEZ7h8S3nG8uRJk,5754
+MF_Tools/transforms.py,sha256=Tmi9NSsczXoYVs54iNzMMALnMO0j3EA1zOy5TY24WKM,8107
+MF_Tools/updaters.py,sha256=ZiFjSi4oUb4sxAaS3upnNI7AvZqCxa50HHtUDek0Il8,1898
+mf_tools-1.3.0.dist-info/LICENSE,sha256=hlP8DwTivbDxQqQ2FVVjWru7ftL0JehiQEap-7UXFk4,1068
+mf_tools-1.3.0.dist-info/METADATA,sha256=-BpsUKK7RzQoBwmIDnhDdcx2i3WNyZ4fbOsMnRY4ljQ,24638
+mf_tools-1.3.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+mf_tools-1.3.0.dist-info/entry_points.txt,sha256=dB23QNmKofxoCHWUw6WBhafa8O2MNzA3cKv8LuqH8cA,35
+mf_tools-1.3.0.dist-info/RECORD,,
