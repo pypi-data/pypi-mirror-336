@@ -1,0 +1,6 @@
+boto3<2,>=1.37.0
+botocore<2,>=1.37.0
+pydantic<3,>=2
+pydantic_settings<3,>=2
+PyYAML<7,>=6
+typer~=0.15
