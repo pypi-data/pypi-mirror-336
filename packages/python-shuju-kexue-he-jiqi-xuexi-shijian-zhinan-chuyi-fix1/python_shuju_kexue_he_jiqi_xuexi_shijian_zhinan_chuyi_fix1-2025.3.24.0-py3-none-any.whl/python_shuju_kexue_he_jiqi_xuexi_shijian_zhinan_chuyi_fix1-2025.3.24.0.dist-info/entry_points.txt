@@ -1,0 +1,3 @@
+[console_scripts]
+PythonShujuKexueHeJiqiXuexiShijianZhinanChuyiFix1 = PythonShujuKexueHeJiqiXuexiShijianZhinanChuyiFix1.__main__:main
+python-shuju-kexue-he-jiqi-xuexi-shijian-zhinan-chuyi-fix1 = PythonShujuKexueHeJiqiXuexiShijianZhinanChuyiFix1.__main__:main
