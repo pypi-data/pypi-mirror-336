@@ -1,0 +1,12 @@
+0.9
+    Robert Patton for being a documentation guinea pig. Documentation added for probes and min()/max() for minimization problems.
+
+0.8.1
+    Lucas McCombs for improvements to crossover operators, parent/offspring tracking, plotting, and more.
+
+0.8
+    Lucas McCombs for fix in MultiObjectiveProblem.__init__() for per-objective maximize flags
+    Gabriel Rudloff for performance enhancements to mutation operators via the ops.random_bernoulli_vector() function
+
+0.7
+    Thomas Hopkins for changing genome from python list to numpy array, thus garnering a significant speedup
