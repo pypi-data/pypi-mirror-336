@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/gmpy2/__init__.pyi
+src/gmpy2/py.typed
+src/gmpy2_stubs.egg-info/PKG-INFO
+src/gmpy2_stubs.egg-info/SOURCES.txt
+src/gmpy2_stubs.egg-info/dependency_links.txt
+src/gmpy2_stubs.egg-info/top_level.txt
