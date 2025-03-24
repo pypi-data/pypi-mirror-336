@@ -1,0 +1,17 @@
+aiwolf_nlp_common/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+aiwolf_nlp_common/_version.py,sha256=cID1jLnC_vj48GgMN6Yb1FA3JsQ95zNmCHmRYE8TFhY,22
+aiwolf_nlp_common/client.py,sha256=RbKyy9u5I3qO3EMBj_EYkoMJxp9KI2GrGs2L2ZfbV6M,2409
+aiwolf_nlp_common/packet/__init__.py,sha256=6fxu1CQFXl32Gc0EvENrSOKE8pEoSi7rK61tFT48WFg,244
+aiwolf_nlp_common/packet/info.py,sha256=HZP8OhJ2O6ihKshS7CwUG8Vxli7HrwIoNZwk3LAlUl0,4742
+aiwolf_nlp_common/packet/judge.py,sha256=tmvKD4LgaDhaMcakfJd1qKdNQnPxE0nj1Esaa-soF5E,878
+aiwolf_nlp_common/packet/packet.py,sha256=YosmA81erwRMgGhpLxCbiJXqyR8SvAY-f10MlwzEgGM,1655
+aiwolf_nlp_common/packet/request.py,sha256=wdDL3hSEurnIEU3qQYW2dzSYgoJKWFnj_i1T71Ke3K8,969
+aiwolf_nlp_common/packet/role.py,sha256=gEzOO2SklL3AjLFYM96Zf5LQ5rmWB46OIZUhgkuL8nY,1159
+aiwolf_nlp_common/packet/setting.py,sha256=Rsl_--Vpit5maEftW7CY2bI-QhOAhdqb-f860T7yFeY,6305
+aiwolf_nlp_common/packet/status.py,sha256=1B3PciFPaWjnGU_BabBmgf2n0MazMFkzVFiedvVoDjA,254
+aiwolf_nlp_common/packet/talk.py,sha256=16S93iHgrOS8JORMr4Lkn7vKnM16UAyv1xdLoq2SiN0,1088
+aiwolf_nlp_common/packet/vote.py,sha256=8PTeRaM25UIAdyRuo_zI2QAt-kFdF1Uyk1lPiS1YD6E,683
+aiwolf_nlp_common-0.6.0.dist-info/METADATA,sha256=UmNF36bZUa3fjmNtV_QgCDySttjyWxLKLIg4pA8Wf4Q,3870
+aiwolf_nlp_common-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aiwolf_nlp_common-0.6.0.dist-info/licenses/LICENSE,sha256=LPiYFVes7X1dO2AbkkR7PTVatl5eeMeX57UJujsQWWI,1072
+aiwolf_nlp_common-0.6.0.dist-info/RECORD,,
