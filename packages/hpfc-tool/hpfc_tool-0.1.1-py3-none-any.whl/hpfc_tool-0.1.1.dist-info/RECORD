@@ -1,0 +1,12 @@
+folder_compare/__init__.py,sha256=UAVOyJu_2nzfjl5BZlWDoE9oOcqTxeYcN6iPJVux5_A,131
+folder_compare/cli.py,sha256=5FHEMijjHH_SfHfK6ZeDXzJKM8V2C7S5muNGc6A5mYo,2950
+folder_compare/core.py,sha256=G98Jj_t5GzmtHZiyQQHAZKEtk9tb2500PKwdkFnZ5qw,25231
+hpfc/__init__.py,sha256=UAVOyJu_2nzfjl5BZlWDoE9oOcqTxeYcN6iPJVux5_A,131
+hpfc/cli.py,sha256=LOUAvxU8zmbu9NsIuK1jIC9JRYT4qcV6TpQYSOEo-mY,2928
+hpfc/core.py,sha256=YQQX9C3ppF7VsadZmQSoE_KAbE3ICiYAj_MXtxLfCO8,26115
+hpfc_tool-0.1.1.dist-info/licenses/LICENSE,sha256=HIau9XvG8l-R39X_3ysRTvA2GME9ze_cDjA904p-lSs,1069
+hpfc_tool-0.1.1.dist-info/METADATA,sha256=kB-qERhoEeE50aOwfDrW_Nhb-9k0nPoPN4EIRqedfZc,5315
+hpfc_tool-0.1.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+hpfc_tool-0.1.1.dist-info/entry_points.txt,sha256=xzNmozOd5iTn3RHUFn4R-ZTHnfX_8ETiiIJJK_fV8t0,39
+hpfc_tool-0.1.1.dist-info/top_level.txt,sha256=BMXR69pCTn4YfJR1oN8G9LODJdouYU_zAZxDdxJIf1k,20
+hpfc_tool-0.1.1.dist-info/RECORD,,
