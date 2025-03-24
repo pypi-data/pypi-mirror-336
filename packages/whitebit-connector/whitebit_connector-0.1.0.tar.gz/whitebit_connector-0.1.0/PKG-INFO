@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: whitebit_connector
+Version: 0.1.0
+Summary: Custom Whitebit connector for Hummingbot
+Home-page: https://github.com/GushALKDev/whitebit_connector
+Author: GushALKDev
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: hummingbot
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
