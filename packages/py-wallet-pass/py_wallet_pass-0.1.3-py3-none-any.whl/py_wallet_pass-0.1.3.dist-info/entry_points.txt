@@ -1,0 +1,3 @@
+[console_scripts]
+wallet-pass=wallet_pass.cli:main
+
