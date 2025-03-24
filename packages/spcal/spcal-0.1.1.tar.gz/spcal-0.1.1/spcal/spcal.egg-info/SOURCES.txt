@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+spcal/__init__.py
+spcal/util.py
+spcal/spcal.egg-info/PKG-INFO
+spcal/spcal.egg-info/SOURCES.txt
+spcal/spcal.egg-info/dependency_links.txt
+spcal/spcal.egg-info/requires.txt
+spcal/spcal.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spcal"  # 你的包名
+version = "0.1.1"  # 版本号
+description = "A package for sample size other parameters calculations in diagnostic tests."
+readme = "README.md"
+authors = [{ name = "Rechard16", email = "zeng0146@e.ntu.edu.sg" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry"
+]
+keywords = ["sample size", "diagnostic tests","medical statistics", "biostatistics"]
+dependencies = [
+    "scipy",
+]
+
+[project.urls]
+Homepage = "https://github.com/Rechard16/SampleParaCal"
+Repository = "https://github.com/Rechard16/SampleParaCal"
+
+[tool.setuptools.packages.find]
+where = ["spcal"]  # 你的包所在的主目录
