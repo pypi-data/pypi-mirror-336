@@ -1,0 +1,3 @@
+[console_scripts]
+ProgramizKotlinJiaochengChuyiFix1 = ProgramizKotlinJiaochengChuyiFix1.__main__:main
+programiz-kotlin-jiaocheng-chuyi-fix1 = ProgramizKotlinJiaochengChuyiFix1.__main__:main
