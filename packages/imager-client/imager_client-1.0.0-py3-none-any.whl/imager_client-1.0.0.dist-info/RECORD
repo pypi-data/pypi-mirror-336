@@ -1,0 +1,11 @@
+imager/Imager.py,sha256=RDqsy2rhLbnLT8rDlAAdtKw3YsB4SJ-wqrMiXsqe34k,7135
+imager/ImagerData.py,sha256=DUspTkTMIh76CLN4p3ea_h6ZSqFu4HYm3z034-Wf6So,998
+imager/ImagerEncode.py,sha256=A2ezKotp_XGYK6G5eqZlUym7CzRW50s92DPGzWZpRbo,1907
+imager/ImagerFormat.py,sha256=Xm62U5IrR_yWa_f9_Kn_daTRD6ro2R5o5SOoDF40uCo,746
+imager/__init__.py,sha256=X3kSugClIdimKk5DudzoqCzdvi8kUuD3SGuzQhH19Vg,1237
+imager_client-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+imager_client-1.0.0.dist-info/METADATA,sha256=_X2XZCbCc87kaH5QGR4sr2BZHBPv_WVIEc8vpt8J8ss,49478
+imager_client-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+imager_client-1.0.0.dist-info/entry_points.txt,sha256=Bzqms0u7hRUXHDUXKRg9y6uX4wDTZb6sVYFDyFg4S5w,63
+imager_client-1.0.0.dist-info/top_level.txt,sha256=dCD0wBTVm9oku_ZSVA72Uj7MA7eZwZx1zMWY9iAkC9Y,7
+imager_client-1.0.0.dist-info/RECORD,,

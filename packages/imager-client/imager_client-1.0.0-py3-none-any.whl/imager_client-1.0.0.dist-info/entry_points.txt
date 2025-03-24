@@ -1,0 +1,2 @@
+[console_scripts]
+imager_client = imager_client.scr.imager:cli
