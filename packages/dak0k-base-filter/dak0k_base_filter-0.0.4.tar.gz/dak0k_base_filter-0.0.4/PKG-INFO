@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dak0k_base_filter
+Version: 0.0.4
+Summary: A package that allows filtering and sorting of data efficiently.
+Project-URL: Homepage, https://github.com/dak0k/python-base-filter
+Project-URL: Issues, https://github.com/dak0k/python-base-filter
+Author-email: Darkhan Adaibekov <adaibekovdarkhan5@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# python-base-filter
