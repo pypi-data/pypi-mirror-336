@@ -1,0 +1,3 @@
+[console_scripts]
+KnativeYunYuanshengYingyongKaifaZhinanFix1 = KnativeYunYuanshengYingyongKaifaZhinanFix1.__main__:main
+knative-yun-yuansheng-yingyong-kaifa-zhinan-fix1 = KnativeYunYuanshengYingyongKaifaZhinanFix1.__main__:main
