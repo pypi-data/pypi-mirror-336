@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=6TVQHIKTpqWnK54kOcjyl0STuLMRqOxh6C7QxJq9YSI,54
+pydantricks-0.1.0.dist-info/METADATA,sha256=vzP4zKXIR6p4EiWPnk39BnUvUlKMZVwTYHLQtM_D-Fg,1754
+pydantricks-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+pydantricks-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+pydantricks-0.1.0.dist-info/licenses/LICENSE,sha256=Ukp379-XGFlrrxIE9FkMe-vjxQWCWBTCcjZ8A2vyWmw,1074
+pydantricks/__init__.py,sha256=TLRyLcKOB3YtdT-MnUQIzL2R_qvmXR3TqHI77UnK3Qo,203
+pydantricks/field_factory.py,sha256=dvzhVVp4REML4riHUWJeEeSjO8Z6WTKxmX7VHVIVbt8,3281
+pydantricks/model_factory.py,sha256=Mpyl2WHDHL1Yh8F_yWz4rd8KXfAwKzjqgm54AFuJv5w,806
+pydantricks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantricks/shared_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantricks/shared_utils/infer.py,sha256=Cajk07QfztCBictOHfVlDF4TNGa-HlejF7I9dpFMCyA,859
+pydantricks-0.1.0.dist-info/RECORD,,
