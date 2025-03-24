@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/py_version_test.yml
+src/arborparser/__init__.py
+src/arborparser/chain.py
+src/arborparser/node.py
+src/arborparser/pattern.py
+src/arborparser/tree.py
+src/arborparser/utils.py
+src/arborparser.egg-info/PKG-INFO
+src/arborparser.egg-info/SOURCES.txt
+src/arborparser.egg-info/dependency_links.txt
+src/arborparser.egg-info/top_level.txt
+tests/demo_test.py
+tests/file_test.py
