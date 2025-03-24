@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+IsoGen.egg-info/PKG-INFO
+IsoGen.egg-info/SOURCES.txt
+IsoGen.egg-info/dependency_links.txt
+IsoGen.egg-info/not-zip-safe
+IsoGen.egg-info/requires.txt
+IsoGen.egg-info/top_level.txt
+isogen/__init__.py
+isogen/isogen.py
+isogen/utils.py
