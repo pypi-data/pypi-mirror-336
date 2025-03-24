@@ -1,0 +1,9 @@
+
+The main application:
+    0 dependencies
+    dev server for development
+    cli
+
+The application should have configuration,
+it should impelemnt 'modules' similar to nuxtjs
+

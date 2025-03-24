@@ -1,0 +1,20 @@
+[project]
+name = "lerum"
+version = "0.1.1"
+description = "in progress"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+lerum = "lerum:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+lerum-cli = { workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/*"]
