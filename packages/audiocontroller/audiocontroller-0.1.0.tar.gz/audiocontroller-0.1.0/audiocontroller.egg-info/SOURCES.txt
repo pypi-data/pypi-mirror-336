@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+audio_controller/__init__.py
+audio_controller/player.py
+audiocontroller.egg-info/PKG-INFO
+audiocontroller.egg-info/SOURCES.txt
+audiocontroller.egg-info/dependency_links.txt
+audiocontroller.egg-info/top_level.txt
