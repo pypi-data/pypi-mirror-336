@@ -1,0 +1,42 @@
+[project]
+name = "mcp-server-whisper"
+version = "0.2.0"
+description = "An MCP server for transcribing audio files using OpenAI Whisper and GPT-4o"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [ "aiofiles", "dotenv", "ffmpeg-python", "mcp[cli]", "openai>=1.68.2", "pydub",]
+[[project.authors]]
+name = "Richie Caputo"
+email = "rcaputo3@tjclp.com"
+
+[dependency-groups]
+dev = [ "mypy", "pre-commit", "pytest", "pytest-asyncio", "pytest-cov", "ruff", "toml", "types-aiofiles",]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/arcaputo3/mcp-server-whisper"
+"Bug Tracker" = "https://github.com/arcaputo3/mcp-server-whisper/issues"
+
+[project.scripts]
+mcp-server-whisper = "mcp_server_whisper:main"
+
+[tool.ruff]
+line-length = 120
+
+[tool.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint]
+select = [ "E", "F", "I", "D", "W",]
+fixable = [ "I", "E", "W",]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+filterwarnings = [ "ignore:Unused async fixture loop scope:pytest.PytestWarning",]

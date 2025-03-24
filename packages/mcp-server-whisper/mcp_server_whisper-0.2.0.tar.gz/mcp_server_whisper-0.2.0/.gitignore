@@ -1,0 +1,27 @@
+# Environment
+.env
+.venv
+
+# IDE
+.idea
+
+# CLI Output
+output/output.txt
+
+# Repomix
+repomix*
+
+input*
+output/
+
+*.pyc
+__pycache__
+
+# Testing
+pytest.txt
+
+# Diffs
+changes.txt
+
+# MacOS
+.DS_Store
