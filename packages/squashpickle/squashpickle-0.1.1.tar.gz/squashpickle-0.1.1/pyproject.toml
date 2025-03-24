@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "squashpickle"
+version = "0.1.1"
+description = "GZIP compressed pickle serialization."
+authors = [
+    { name = "CreatingNull (Steve Richardson)", email="steve.public@nulltek.xyz" }
+]
+license = { text = "MIT License" }
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+
+[tool.setuptools]
+py-modules = ["squashpickle"]
+
+[project.urls]
+homepage = "https://github.com/CreatingNull/squash-pickle"
