@@ -1,0 +1,3 @@
+[console_scripts]
+PandasXuexiShouceZhongwenDierBanChuyiFix1 = PandasXuexiShouceZhongwenDierBanChuyiFix1.__main__:main
+pandas-xuexi-shouce-zhongwen-dier-ban-chuyi-fix1 = PandasXuexiShouceZhongwenDierBanChuyiFix1.__main__:main
