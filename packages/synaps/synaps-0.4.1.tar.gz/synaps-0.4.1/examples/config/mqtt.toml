@@ -1,0 +1,7 @@
+# This is an example MQTT configuration file
+
+# Configuration for the first MQTT broker
+[[broker]]
+name = "local-rpi"
+host = "localhost"
+port = 1883  # Default MQTT port
