@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: image-processing-kit
+Version: 0.0.1
+Summary: Image Processing Package using Skimage
+Home-page: https://github.com/xbgm08/image-processing-package
+Author: Gabriel Martins Braulino
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image >=0.16.1
+
+# image_processing
+
+## DescriÃ§Ã£o
+O pacote image_processing Ã© usado para:
+
+    Processamento:
+        - CorrespondÃªncia de histograma
+        - Similaridade estrutural
+        - Redimensionar imagem
+    UtilitÃ¡rios:
+        - Ler imagem
+        - Salvar imagem
+        - Plotar imagem
+        - Plotar resultado
+        - Plotar histograma
+
+## InstalaÃ§Ã£o
+
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar o image_processing
+
+```bash
+pip install image_processing
+```
+
+## Autor
+Gabriel Martins Braulino
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
