@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: qroissant
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: An Apache-Arrow first implementation of a Q/KDB+ client
+Author: Reda Bouaida <reda.bouaida@gmail.com>
+Author-email: Reda Bouaida <reda.bouaida@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.8
+Project-URL: Source Code, https://github.com/3ok/qroissant
