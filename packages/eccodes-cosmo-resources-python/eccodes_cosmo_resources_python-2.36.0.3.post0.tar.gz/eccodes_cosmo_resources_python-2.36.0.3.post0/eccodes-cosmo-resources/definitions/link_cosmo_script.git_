@@ -1,0 +1,89 @@
+#!/bin/ksh
+	set -e
+
+	ROOT_DIR=${PWD}
+	GRIB_API_DEF=${PWD}/grib2
+
+        echo " LINKs for grib-api ${PWD}/grib2 for the following centres:"
+
+#	cat ${PWD}/ln_cosmo_list
+#	cat ${PWD}/ln_cosmo_list >$ROOT_DIR/ln_cosmo_liste
+# add centers to below list, if wanted
+#               43 43 Brazil INMET
+#               76 76 Moscow 
+#               96 96 Athens
+#               127 127 Oman
+#               129 129 Qatar
+#               134 134 United Arab Emirates
+#               146 146 Brazil Navy
+#               200 200 ARPA-SIMC                
+#               220 220 Poland  
+#               242 242 Romania
+#               258 258 Botswana
+#               280 280 Namibia
+	cat >$ROOT_DIR/ln_cosmo_liste << EOF
+    80 cnmc Rome
+    76 76 Moscow
+    96 96 Athens
+    200 200 ARPA-SIMC
+    220 220 Poland
+    242 242 Romania
+    215 lssw Zurich
+    250 cosmo COnsortium for Small scale MOdelling (COSMO)
+EOF
+ 
+        cat ${PWD}/ln_cosmo_liste
+
+        
+	while read LN COUNTRY DESCRIPTION ;do
+
+	   #link exists or will be declared
+
+	   #local concepts
+	   if [ ! -L $GRIB_API_DEF/localConcepts/$COUNTRY ] ;then
+
+	      cd $GRIB_API_DEF/localConcepts
+
+	      echo "LINK $GRIB_API_DEF/localConcepts for $LN $COUNTRY $DESCRIPTION"
+
+	      ln -s edzw $COUNTRY
+     
+#             cd $GRIB_API_DEF
+
+	   fi
+
+	   #local tables   
+           if [ ! -L $GRIB_API_DEF/tables/local/$COUNTRY ] ;then
+
+              cd $GRIB_API_DEF/tables/local 
+
+              echo "LINK  $GRIB_API_DEF/tables/local for $LN $COUNTRY $DESCRIPTION"
+
+              ln -s edzw $COUNTRY
+
+#             cd $GRIB_API_DEF
+
+           fi
+
+
+	   #local section 2 files
+          if [ ! -L $GRIB_API_DEF/local.${LN}.def ] ;then
+
+
+              cd $GRIB_API_DEF
+
+              echo "LINK  $GRIB_API_DEF/local section 2 for $LN $COUNTRY $DESCRIPTION"
+
+              ln -s local.78.def local.${LN}.def
+#             ln -s local.78.252.def local.${LN}.252.def
+#             ln -s local.78.253.def local.${LN}.253.def
+#             ln -s local.78.254.def local.${LN}.254.def
+              ln -s grib2LocalSectionNumber.78.table grib2LocalSectionNumber.$LN.table
+
+
+           fi
+
+
+	done <$ROOT_DIR/ln_cosmo_liste
+
+#	rm $ROOT_DIR/ln_cosmo_liste
