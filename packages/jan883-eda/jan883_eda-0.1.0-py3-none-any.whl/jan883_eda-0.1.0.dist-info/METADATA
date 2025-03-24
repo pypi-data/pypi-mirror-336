@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: jan883-eda
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Jan du Plessis <drjanduplessis@icloud.com>
+Requires-Python: >=3.12
+Requires-Dist: imbalanced-learn>=0.13.0
+Requires-Dist: ipython>=9.0.2
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: matplotlib>=3.10.1
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: scikit-learn>=1.6.1
+Requires-Dist: scipy>=1.15.2
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: tqdm>=4.67.1
+Requires-Dist: xgboost>=3.0.0
+Requires-Dist: yellowbrick>=1.5
