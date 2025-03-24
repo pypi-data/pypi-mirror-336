@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+cheigsfera/__init__.py
+cheigsferaw.egg-info/PKG-INFO
+cheigsferaw.egg-info/SOURCES.txt
+cheigsferaw.egg-info/dependency_links.txt
+cheigsferaw.egg-info/requires.txt
+cheigsferaw.egg-info/top_level.txt
