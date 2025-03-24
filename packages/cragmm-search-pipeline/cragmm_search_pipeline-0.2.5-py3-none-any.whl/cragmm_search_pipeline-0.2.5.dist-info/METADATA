@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cragmm-search-pipeline
+Version: 0.2.5
+Summary: CragMM unified search pipeline for text and image
+Home-page: https://github.com/xiaoyangfb/crag-mm
+Author: Haidar Khan
+Author-email: haidark@gmail.com
+License-File: LICENSE
+Requires-Dist: transformers >=4.20.0
+Requires-Dist: pillow
+Requires-Dist: requests
+Requires-Dist: chromadb
+Requires-Dist: bs4
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: huggingface-hub
+Requires-Dist: pydantic
+
