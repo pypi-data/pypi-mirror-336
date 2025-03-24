@@ -1,0 +1,3 @@
+[console_scripts]
+PythonDanYangbenXuexiShiyongZhinan2021727Fix1Fix1 = PythonDanYangbenXuexiShiyongZhinan2021727Fix1Fix1.__main__:main
+python-dan-yangben-xuexi-shiyong-zhinan-2021-7-27-fix1-fix1 = PythonDanYangbenXuexiShiyongZhinan2021727Fix1Fix1.__main__:main
