@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunAiotZaowuMijiShangFix1 = AliYunAiotZaowuMijiShangFix1.__main__:main
+ali-yun-aiot-zaowu-miji-shang-fix1 = AliYunAiotZaowuMijiShangFix1.__main__:main
