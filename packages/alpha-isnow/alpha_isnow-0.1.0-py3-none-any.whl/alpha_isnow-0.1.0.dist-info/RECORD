@@ -1,0 +1,8 @@
+alpha/datasets/__init__.py,sha256=vkottWT16hOVfd2oJ7uzjlEsP14FEmD0JeTXZ_q2dqQ,147
+alpha/datasets/enums.py,sha256=2pLqsxVTnq82N3z3Rttx8ZmyDUSC8TPrh3v8d1GXbpo,213
+alpha/datasets/loader.py,sha256=0RW1xPqPfV5WQvCq2squMySjZd6KnJQLMTfEnwh1AlE,5523
+alpha/datasets/storage.py,sha256=WgQBRh1TWUU36T6pkPtp6igJM3o5B1GNlgTrVTDoouk,2472
+alpha_isnow-0.1.0.dist-info/METADATA,sha256=0VCfR_fQQEvdss1cMX1iJE8MD_lp7MpE5QNqB0Wvrsc,314
+alpha_isnow-0.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+alpha_isnow-0.1.0.dist-info/top_level.txt,sha256=tqmNnOmi2RSSiPo99C03fD5Cc3r9za9xTjPAoQC1EGA,6
+alpha_isnow-0.1.0.dist-info/RECORD,,
