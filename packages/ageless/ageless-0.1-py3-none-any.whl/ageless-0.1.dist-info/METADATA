@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: ageless
+Version: 0.1
+Summary: Apache Age ORM操作库
+Author: rendajiang@weilansec
+Author-email: rendajiang@weilansec.com
+Requires-Python: >=3.8
+Requires-Dist: sqlalchemy
+Requires-Dist: psycopg2-binary
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
