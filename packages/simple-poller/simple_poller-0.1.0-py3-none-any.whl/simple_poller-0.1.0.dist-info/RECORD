@@ -1,0 +1,7 @@
+simple_poller/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_poller/base_poller.py,sha256=CI2yibfZ_7BRGQFscWLIqq9RyAGSq6p-IM_PA3k77GU,1260
+simple_poller/sqs_poller.py,sha256=6PArQSb_IDEhfW3J5xZ7TOXsNMXY6BsRh_tnBfDblaM,2172
+simple_poller-0.1.0.dist-info/LICENSE,sha256=2ZsPKPe_l2U_xBqIpcaO2SREo4VjyVjsmOg5HXnj-mo,1070
+simple_poller-0.1.0.dist-info/METADATA,sha256=kA8cM2BdW3VnxdSzMjB8a-jGcfc3xilDEY_wJxvonEU,651
+simple_poller-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+simple_poller-0.1.0.dist-info/RECORD,,
