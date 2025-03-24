@@ -1,0 +1,2 @@
+[Memory](https://langchain-ai.github.io/langgraph/concepts/memory/): Line 1: LLM should read this page when it needs to understand how memories work in AI agents, specifically when implementing reflection or meta-prompting. Line 2: The page explains the different types of memories (episodic, procedural) and how they are used in AI agents, as well as methods for creating new memories, including writing them on the hot path and in the background.
+

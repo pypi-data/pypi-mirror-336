@@ -1,0 +1,2 @@
+[How to add runtime configuration to your graph](https://langchain-ai.github.io/langgraph/how-tos/configuration/): LLM should read this page when implementing runtime configuration for LangGraph, adding model selection options to agents, or enabling dynamic system messages. This page demonstrates how to configure LangGraph at runtime, including selecting different LLMs dynamically and adding custom configuration options like system messages through the configurable dictionary.
+

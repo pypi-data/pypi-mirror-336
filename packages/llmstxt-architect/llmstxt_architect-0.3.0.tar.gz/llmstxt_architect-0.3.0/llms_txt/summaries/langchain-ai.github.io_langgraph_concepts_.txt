@@ -1,0 +1,2 @@
+[Concepts](https://langchain-ai.github.io/langgraph/concepts/): LLM should read this page when learning about the LangGraph framework, deploying LangGraph applications, or understanding the LangGraph Platform components. Provides an overview of key LangGraph concepts like agents, memory, streaming, and deployment options like self-hosted or cloud; explains LangGraph Platform components like Server, Studio, CLI, and deployment architectures.
+

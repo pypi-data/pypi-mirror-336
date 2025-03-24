@@ -1,0 +1,2 @@
+[FAQ](https://langchain-ai.github.io/langgraph/concepts/faq/): LLM should read this page when needing to understand differences between LangGraph and LangChain, exploring deployment options for LangGraph Platform, or determining compatibility with various LLMs. FAQ covering LangGraph basics, comparisons with other frameworks, deployment options (free self-hosted, Cloud SaaS, BYOC, Enterprise), compatibility with different LLMs including OSS models, and feature differences between open-source LangGraph and proprietary LangGraph Platform.
+

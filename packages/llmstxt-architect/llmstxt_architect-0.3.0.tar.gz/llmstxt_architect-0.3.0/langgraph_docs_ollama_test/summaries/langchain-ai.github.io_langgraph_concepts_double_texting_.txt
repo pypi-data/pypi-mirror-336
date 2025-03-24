@@ -1,0 +1,2 @@
+[Double Texting](https://langchain-ai.github.io/langgraph/concepts/double_texting/): LLM should read this page when:  - A user is attempting to interact with a graph that has not yet finished running. - An LLM needs to understand the different options for handling "double texting" in LangGraph Server. A direct summary of main topics:  Options include Reject, Enqueue, Interrupt and Rollback, each addressing double texting in different ways.
+

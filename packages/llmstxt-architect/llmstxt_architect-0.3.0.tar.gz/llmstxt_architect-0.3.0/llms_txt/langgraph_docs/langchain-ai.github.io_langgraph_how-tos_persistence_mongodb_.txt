@@ -1,0 +1,2 @@
+[How to use MongoDB checkpointer for persistence](https://langchain-ai.github.io/langgraph/how-tos/persistence_mongodb/): LLM should read this page when implementing persistence in LangGraph agents, setting up MongoDB for state checkpointing, or working with MongoDB connections in LangGraph applications. This page explains how to use the MongoDB checkpointer for LangGraph persistence, covering connection methods (direct, client-based, async), basic setup requirements, and practical examples of saving and retrieving agent state between interactions.
+

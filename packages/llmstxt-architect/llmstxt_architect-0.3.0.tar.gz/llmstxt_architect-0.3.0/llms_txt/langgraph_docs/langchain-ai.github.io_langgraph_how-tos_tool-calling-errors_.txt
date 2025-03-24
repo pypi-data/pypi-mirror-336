@@ -1,0 +1,2 @@
+[How to handle tool calling errors](https://langchain-ai.github.io/langgraph/how-tos/tool-calling-errors/): LLM should read this page when handling tool call errors, implementing error handling for LLM-tool interactions, or creating fallback strategies for failed tool calls. This page covers strategies for handling tool calling errors in LangGraph, including using the prebuilt ToolNode with built-in error handling, implementing custom error handling patterns, and fallback mechanisms with model upgrades when tools fail.
+

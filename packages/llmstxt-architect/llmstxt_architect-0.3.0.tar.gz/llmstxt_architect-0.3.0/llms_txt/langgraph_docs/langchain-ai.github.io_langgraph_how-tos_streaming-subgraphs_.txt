@@ -1,0 +1,2 @@
+[How to stream from subgraphs](https://langchain-ai.github.io/langgraph/how-tos/streaming-subgraphs/): LLM should read this page when needing to stream outputs from subgraphs in LangGraph, implementing nested graph streaming, or debugging hierarchical graph execution. This page explains how to stream outputs from subgraphs in LangGraph by using the subgraphs=True parameter in the parent graph's stream() method, with a complete code example showing the difference between regular streaming and subgraph streaming.
+

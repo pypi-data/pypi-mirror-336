@@ -1,0 +1,2 @@
+[How to use the pre-built ReAct agent](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/): LLM should read this page when implementing a ReAct agent, needing pre-built agent solutions, or learning how to integrate tools with LLM agents. This page covers how to use the pre-built ReAct agent in LangGraph, including setup instructions, creating a weather checking tool, implementing the agent architecture, and examples of running the agent with and without tool calls.
+
