@@ -1,0 +1,67 @@
+Metadata-Version: 2.3
+Name: toxichempy
+Version: 0.1.1
+Summary: A Python package for computational toxicology workflows
+License: MIT
+Author: Deepak Kumar Sachan
+Author-email: deepaksachan253@gmail.com
+Requires-Python: >=3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: ace-tools (>=0.0,<0.1)
+Requires-Dist: feature-engine (>=1.8.3,<2.0.0)
+Requires-Dist: numpy (>=2.2.4,<3.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: statsmodels (>=0.14.4,<0.15.0)
+Requires-Dist: tqdm (>=4.67.1,<5.0.0)
+Requires-Dist: typer (>=0.15.2,<0.16.0)
+Description-Content-Type: text/markdown
+
+Current Version: 0.1.1
+# 🧪 ToxiChemPy: Computational Framework for Toxicology Research
+
+**ToxiChemPy** is an open-source Python library for **computational and experimental toxicology**.  
+It provides tools and workflows for:
+
+- 🔬 Cheminformatics
+- 📊 Machine Learning & Statistical Modeling
+- 🧠 Toxicity Prediction & Risk Assessment
+- ⚙️ Workflow Automation
+- 📈 Data Collection & Visualization
+
+This package is designed for researchers working in **toxicology, bioinformatics, cheminformatics**, and **environmental risk assessment**.
+
+---
+
+## 📚 Documentation
+
+📖 Full documentation is hosted at:  
+👉 [https://toxichempy.readthedocs.io](https://toxichempy.readthedocs.io)
+
+Includes:
+
+- Setup & installation
+- Usage examples
+- API reference
+- CLI guide
+- Model deployment info
+
+---
+
+## 🚀 Installation
+
+ToxiChemPy is Python 3.12+ compatible.
+
+### ✅ Recommended (via Anaconda):
+```bash
+conda create -n toxichempy python=3.12
+conda activate toxichempy
+conda install -c conda-forge rdkit openbabel faiss python-dotenv
+pip install toxichempy
+
