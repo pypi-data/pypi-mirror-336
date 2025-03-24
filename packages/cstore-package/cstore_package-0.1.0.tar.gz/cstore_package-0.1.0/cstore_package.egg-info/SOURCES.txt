@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+cstore/__init__.py
+cstore/cstore.py
+cstore_package.egg-info/PKG-INFO
+cstore_package.egg-info/SOURCES.txt
+cstore_package.egg-info/dependency_links.txt
+cstore_package.egg-info/top_level.txt
