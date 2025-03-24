@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: brocc-li
+Version: 0.0.2
+Project-URL: Documentation, https://brocc.li
+Project-URL: Issues, https://github.com/SubstrateLabs/brocc/issues
+Project-URL: Source, https://github.com/SubstrateLabs/brocc
+Author-email: Ben Guo <ben@substrate.run>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: textual>=0.73.0
+Description-Content-Type: text/markdown
+
+# brocc-li
+
+[![PyPI - Version](https://img.shields.io/pypi/v/brocc-li.svg)](https://pypi.org/project/brocc-li)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/brocc-li.svg)](https://pypi.org/project/brocc-li)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install brocc-li
+```
+
+## License
+
+`brocc-li` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
