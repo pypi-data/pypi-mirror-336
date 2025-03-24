@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: cliotp
+Version: 0.2.0
+Summary: Cli tool to manage and generate TOTPs
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1.8
+Requires-Dist: django>=5.1.6
+Requires-Dist: rich>=13.9.4
+Requires-Dist: ruff>=0.9.6
+
+# cliotp
