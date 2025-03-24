@@ -1,0 +1,11 @@
+name: HSR_devel
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - scipy
+  - rdkit
+  - pytest
+  - sphinx
+  - sphinx_rtd_theme

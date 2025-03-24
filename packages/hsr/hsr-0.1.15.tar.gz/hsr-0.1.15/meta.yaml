@@ -1,0 +1,44 @@
+{% set name = "hsr" %}
+{% set version = "0.1.8" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hsr-{{ version }}.tar.gz
+  sha256: f3982135492afe8108adc65459395439aea2c37f5a0352cf7082d72526934447
+
+build:
+  entry_points:
+    - hsr = hsr.hsr_cli:main
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - numpy
+    - scipy
+    - rdkit
+
+test:
+  imports:
+    - hsr
+  commands:
+    - pip check
+    - hsr --help
+  requires:
+    - pip
+
+about:
+  license: AGPL-3.0-only
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - marcellocostamagna
