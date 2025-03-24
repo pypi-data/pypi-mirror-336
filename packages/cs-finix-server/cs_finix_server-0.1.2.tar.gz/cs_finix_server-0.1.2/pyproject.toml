@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs-finix-server"
+version = "0.1.2"
+description = "A local Finix integration"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.5.0",
+    "pyyaml"
+]
+authors = [{ name = "Rohith Menon", email = "menonrohith1294@gmail.com" }]
+scripts = { "cs-finix" = "finix.__main__:main" }
+
+[tool.setuptools]
+packages = ["finix"]
+
+[tool.setuptools.package-data]
+finix = ["portfolios-api.yaml"]

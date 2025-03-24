@@ -1,0 +1,3317 @@
+openapi: 3.0.0
+info:
+  title: Portfolios
+  description: Data Cloud Portfolio API
+  version: 1.0.0
+  license:
+    name: Internal Use Only
+    url: https://api.datacloud.creditsafe.com/portfolios
+
+servers:
+  - url: https://portfolios.datacloud.creditsafe.com
+    description: Production server
+
+security:
+  - bearerAuth: []
+
+paths:
+  # region auth
+  /auth:
+    post:
+      summary: Authenticate with back-office login services with data_cloud_integration client id
+      operationId: integration_auth
+      tags: [Authentication]
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: Client_Key
+          description: A key pre-generated for each integration system in uuid format.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  token:
+                    type: string
+                    description: JWT access token from Backoffice service with data_cloud_integration client id. It can be used with other endpoints to access the data.
+                  refresh_token:
+                    type: string
+                    description: A token it can be used to refresh the tokens.
+        '400':
+          description: "Bad Request"
+        '401':
+          description: "Unauthorized"
+        '403':
+          description: "Forbidden"
+        '500':
+          description: "Internal Server Error"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+                properties:
+                  username:
+                    type: string
+                    description: Backoffice account username
+                  password:
+                    type: string
+                    description: Backoffice account password
+                required:
+                  - username
+                  - password
+                description: Request body for username/password authentication.
+              - type: object
+                properties:
+                  refresh_token:
+                    type: string
+                    description: Refresh token from the previous successful authentication request
+                required:
+                  - refresh_token
+                description: Request body for token refresh.
+              description: |-
+                The request body must contain either a pair of `username` and `password` or a `refresh_token`, but not both.
+      description: |-
+        Return a token/refresh token pair. The token is acquired from Backoffice service with data_cloud_integration client id.
+        The method can only be used by internal system to integrate with other portfolio endpoints to access the data. It can be invoked with
+        either username/password pair or refresh token. If both are provided, the username/password pair will be used.
+
+  # end region
+
+  # region portfolios
+  /portfolios:
+    get:
+      summary: List portfolios
+      operationId: get_portfolios
+      tags: [Portfolio]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  item_count:
+                    type: integer
+                  page:
+                    type: integer
+                  page_size:
+                    type: integer
+
+                  portfolios:
+                    type: array
+                    items:
+                      $ref: '../schemas/portfolio.yaml'
+        '400':
+          $ref: '../responses/bad_request.yaml'
+        '403':
+          $ref: '../responses/forbidden.yaml'
+        '500':
+          $ref: '../responses/internal_server_error.yaml'
+      parameters:
+        - schema:
+            type: integer
+            default: 0
+          in: query
+          name: page
+          description: Zero based page index number of the result set.
+        - schema:
+            type: integer
+            default: 25
+          in: query
+          name: page_size
+          description: Number of records in each page returned. Should be in the range of 1 to 50.
+        - schema:
+            type: string
+            default: All portfolio types
+            enum: [MANAGED, FILTERED]
+          in: query
+          name: portfolio_type
+          description: Retrieves only the portfolios of the specified type.
+        - schema:
+            type: string
+          in: query
+          name: order_by
+          description: Ordering for results, (e.g. 'name-asc', 'last_modified_at-desc', or 'name-asc,last_modified_at-desc')
+        - schema:
+            type: string
+          in: query
+          name: name
+          description: Case insensitive sub-string matching for searching portfolio name
+        - schema:
+            type: integer
+          in: query
+          name: user_id
+          description: If valid user id is provided the result will show only portfolios created by that user
+        - schema:
+            type: boolean
+          in: query
+          name: include_stats
+          description: If the flag supplied and set as true, a 'stats' section will be attached to each 'MANAGED' portfolio. For 'FILTERED' portfolios, this flag is ignored.
+        - schema:
+            type: string
+          in: query
+          name: product_tags.*
+          description: |-
+            Query for portfolios by `product_tags` with their required attributes and an operator.
+
+            Examples:
+              - `product_tags.health.duplicate_identification.total_duplicates=gte,0`
+              - `product_tags.insights.risk_detector=pr,`
+
+            For more information on available operator please refer the schema for Query Operators.
+      description: List all the active portfolios of the customer.
+    post:
+      summary: Create Portfolio
+      tags: [Portfolio]
+      operationId: create_portfolio
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  portfolio_id:
+                    type: string
+                  name:
+                    type: string
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+        '405':
+          description: Method Not Allowed
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
+      description: |
+        Create a new portfolio for a customer, ensuring the portfolio name is unique for that customer.
+
+        ### Portfolio Naming Standard:
+        - **Character limit:** 128
+        - **Allowed characters:** Alphabets, numbers, and the following special characters: `-` `,` `_` `{` `}` `(` `)` `.` `:` `[` `]` `@`
+
+        ### Portfolio Types:
+        1. **MANAGED**:
+            - Hold created portlets. Portlets can also be imported from a file using the bulk operations `IMPORT`.
+            - Support various bulk operations.
+
+        2. **FILTERED**:
+            - Dynamic portfolios that do not create or import portlets.
+            - Fetch the latest list of portlets based on the filter criteria specified as `filters` product_tags.
+            - Filters must be provided as a dictionary of key-value pairs where both keys and values are strings. For full filter schema information, please reference: [Filter Schema Information](https://api.datacloud.creditsafe.com/uidx/filter/schema)
+
+        **Note:** `product_tags` only support a predefined set of top-level attributes. For any product integrations with portfolios, please contact the portfolios backend team for further details.
+
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+              properties:
+                name:
+                  type: string
+                portfolio_type:
+                  type: string
+                  enum:
+                    - FILTERED
+                    - MANAGED
+                description:
+                  type: string
+                email:
+                  type: string
+                product_tags:
+                  type: object
+                  title: Product Tags
+                  description: List of tags or tag groups to annotate portfolio or portlet for extra information or functionality
+                  type: object
+                  properties:
+                    analytical_decisioning:
+                      type: object
+                    data_studio:
+                      type: object
+                      description: Tag group for portfolio data processing reason-related annotations, generated specific to UI jobs.
+                    filters:
+                      type: array
+                      description: List of filters can be used for 'Filtered' type of portfolio. So that Filtered portfolio can manage, extract, and monitor, multiple companies without knowing the exact safenumber.
+                      items:
+                        $ref: '../schemas/filter.yaml'
+                    health:
+                      type: object
+                      description: Tag group for portfolio health-related annotations, generated by health bulk jobs.
+                    insights:
+                      type: object
+                      description: Tag group for portfolio insights-related annotations, generated by insights jobs.
+                    match_service_tags:
+                      type: object
+                      description:  Tag group for portfolio matching-related annotations, generated by matching jobs.
+                    portfolio_settings:
+                      type: object
+                      description: Settings specific to the portfolio, such as secondary notifications for Directors.
+                    watch_list:
+                      type: object
+                      description: Tag group for portfolio indicating if the portfolio is a watch list.
+                  example:
+                    filters:
+                      - name: country_code
+                        value: NL
+                      - name: credit_score
+                        value: gt,80
+  /portfolios/{portfolio_id}:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    get:
+      summary: Describe Portfolio
+      tags: [Portfolio]
+      operationId: get_portfolio_by_id
+      responses:
+        '200':
+          description: OK
+        '202':
+          description: Accepted   
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: |-
+        Return the details of the portfolio if found and exists for the customer with correlation_id.
+        Provide an overview stats on portfolio status as well.
+        1. Number of matched portlets
+        2. Information on matched portlets distribution
+        3. Number of unmatched portlets
+        4. Information on unmatched portlets distribution
+            - Number of unsuccessful match
+            - Number of unprocessed portlets
+        5. Last updated
+      parameters:
+        - schema:
+            type: boolean
+          in: query
+          name: include_stats
+          description: If the flag supplied and set as `true`, a 'stats' section will be attached to the `MANAGED` portfolio. For `FILTERED` portfolios, this flag is ignored.
+
+    put:
+      summary: Update Existing Portfolio
+      tags: [Portfolio]
+      operationId: update_portfolio
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  portfolio_id:
+                    type: string
+                  message:
+                    type: string
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: |
+        Update the `name`, `description`, `email` or `product_tags` of an existing portfolio. `product_tags` adhere to the upsert behavior, where matching keys are replaced if they are strings or lists, and dictionaries are merged.
+
+        **Note:**
+        - `product_tags` only support a predefined set of top-level attributes. For any product integrations with portfolios, please contact the portfolios backend team for further details.
+        - Filters must be provided as a dictionary of key-value pairs where both keys and values are strings. For full filter schema information, please reference: [Filter Schema Information](https://api.datacloud.creditsafe.com/uidx/filter/schema)
+        - Ensure that all tag sub-keys (keys inside top-level attributes) are consistently formatted (recommended using snake_case). Remember that sub-keys with identical characters but different casing (e.g., under "insights", "sub_key" and "Sub_Key") are considered distinct.
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                email:
+                  type: string
+                filters:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                      value:
+                        type: string
+                  example:
+                    - name: "country_code"
+                      value: "IE,NL,GB"
+                    - name: "credit_score"
+                      value: "lt, 20"
+    delete:
+      summary: Delete Portfolio
+      tags: [Portfolio]
+      operationId: delete_portfolio_by_id
+      responses:
+        '204':
+          description: No Content
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      description: |
+        Mark Portfolio as deleted (portlets within the portfolio remain active).
+  # end region
+
+  # region portlets
+  /portfolios/{portfolio_id}/portlets:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    get:
+      summary: List portlets
+      tags: [Portlet]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  item_count:
+                    type: integer
+                  page:
+                    type: integer
+                  page_size:
+                    type: integer
+                  portlets:
+                    type: array
+                    items:
+                      title: Portlets
+                      x-stoplight:
+                        id: ty9hm5154ks8v
+                      type: object
+                      description: Data Model for Portlets
+                      properties:
+                        correlation_id:
+                          type: string
+                        portlet_id:
+                          type: string
+                        client_reference:
+                          type: string
+                        input_cs_company_id:
+                          type: string
+                        input_name:
+                          type: string
+                        input_address1:
+                          type: string
+                        input_address2:
+                          type: string
+                        input_address3:
+                          type: string
+                        input_post_code:
+                          type: string
+                        input_city:
+                          type: string
+                        input_region:
+                          type: string
+                        input_country_code:
+                          type: string
+                        input_reg_number:
+                          type: string
+                        cs_company_id:
+                          type: string
+                        exclusion_status:
+                          type: boolean
+                          default: false
+                        matched_status:
+                          type: boolean
+                        matched_name:
+                          type: string
+                        matched_address1:
+                          type: string
+                        matched_address2:
+                          type: string
+                        matched_address3:
+                          type: string
+                        matched_post_code:
+                          type: string
+                        matched_city:
+                          type: string
+                        matched_region:
+                          type: string
+                        matched_country_code:
+                          type: string
+                        portlet_type:
+                          type: string
+                          enum:
+                            - Company
+                            - Trust
+                            - Partnership
+                            - Person
+                        access_tags:
+                          type: object
+                        product_tags:
+                          type: object
+                        import_job_id:
+                          type: string
+                        portfolio_id:
+                          type: string
+                        created_at:
+                          type: string
+                          format: date-time
+                        last_modified_at:
+                          type: string
+                          format: date-time
+                        additional_input_attributes:
+                          type: object
+                          $ref: '../schemas/additional_input_attributes.yaml'
+                        custom_attributes:
+                          type: object
+                          $ref: '../schemas/custom_attributes.yaml'
+                        identity_state:
+                          type: string
+                          description: This is a case sensitive attribute
+                          enum:
+                            - NOT_PROCESSED
+                            - ACCEPTED_AVAILABLE
+                            - NOT_ACCEPTED_AVAILABLE
+                            - NOT_ACCEPTED_NOT_AVAILABLE
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      operationId: get_portlets
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: portlet_id
+          description: Get portlets by `portlet_id`
+        - schema:
+            type: string
+          in: query
+          name: input_cs_company_id
+          description: Get portlets by `input_cs_company_id`
+        - schema:
+            type: string
+          in: query
+          name: import_job_id
+          description: Get matching portlets by `import_job_id`
+        - schema:
+            type: string
+          in: query
+          name: input_name
+          description: Get portlets by `input_name`
+        - schema:
+            type: string
+            default: All portlet types
+            enum: [COMPANY, TRUST, PARTNERSHIP, PERSON]
+          in: query
+          name: portlet_type
+          description: Get portlets by `portlet_type`
+        - schema:
+            type: string
+          in: query
+          name: input_address1
+          description: Get portlets by `input_address1`
+        - schema:
+            type: string
+          in: query
+          name: input_address2
+          description: Get portlets by `input_address2`
+        - schema:
+            type: string
+          in: query
+          name: input_address3
+          description: Get portlets by `input_address3`
+        - schema:
+            type: string
+          in: query
+          name: input_post_code
+          description: Get portlets by `input_post_code`
+        - schema:
+            type: string
+          in: query
+          name: input_city
+          description: Get portlets by `input_city`
+        - schema:
+            type: string
+          in: query
+          name: input_region
+          description: Get portlets by `input_region`
+        - schema:
+            type: string
+          in: query
+          name: input_country_code
+          description: Get portlets by `input_country_code`
+        - schema:
+            type: string
+          in: query
+          name: input_reg_number
+          description: Get portlets by `input_reg_number`
+        - schema:
+            type: string
+            default: NOT_PROCESSED
+            enum: [NOT_PROCESSED, ACCEPTED_AVAILABLE, NOT_ACCEPTED_AVAILABLE, NOT_ACCEPTED_NOT_AVAILABLE]
+          in: query
+          name: identity_state
+          description: Case sensitive attribute to get portlets by `identity_state`
+        - schema:
+            type: object
+          in: query
+          name: product_tags
+          description: Get portlets by `product_tags` value
+        - schema:
+            type: string
+          in: query
+          name: product_tags.*
+          description: |-
+            Query for portlets by `product_tags` with their required attributes and an operator.
+
+
+            Examples:
+              - `product_tags.health.duplicate_identification.total_duplicates=gte,0`
+              - `product_tags.insights.risk_detector=pr,`
+
+            For more information on available operator please refer the schema for Query Operators.
+        - schema:
+            type: string
+          in: query
+          name: matched_country_code
+          description: Get portlets by `matched_country_code`. Accepted values are valid country codes (multiple values should be comma separated).
+        - schema:
+            type: string
+          in: query
+          name: matched_status
+          description: Get portlets by `matched_status`. Filter portlets with corresponding `matched_status` values. Accepted values are `true`, `false`, and `null`. When `true` is specified, portlets with `matched_status` set to `true` will be included. When `false` is passed, portlets with `matched_status` set to both `null` and `false` will be included. When `null` is passed, only portlets with `matched_status` set to `null` will be included. If this parameter is omitted or any incorrect value is supplied, this filter is considered invalid, and no filter will be applied to `matched_status`.
+        - schema:
+            type: boolean
+          in: query
+          name: exclusion_status
+          description: Get portlets by `exclusion_status`. Filter portlets with corresponding `exclusion_status` values. Accepted values are boolean value `true` and `false`. When `true` is specified, portlets with `exclusion_status` set to `true` will be included. When `false` is passed, portlets with `exclusion_status` set to `false` will be included. If this parameter is omitted, no filter will be applied to `exclusion_status`.
+        - schema:
+            type: string
+          in: query
+          name: search_term
+          description: Search for exact substring, case-insensitive matches across the `input_name`, `input_cs_company_id`, and `client_reference` fields.
+        - schema:
+            type: array
+            items:
+              type: string
+          in: query
+          name: order_by
+          description: Column name(s) to sort by- `input_cs_company_id`, `client_reference`, `input_name`, `matched_name`, `cs_company_id`, `created_at`, `last_modified_at`, `matched_country_code` (e.g., 'name-asc', 'last_modified_at-desc', or 'name-asc, last_modified_at-desc').
+        - schema:
+            type: integer
+            default: 0
+          in: query
+          name: page
+          description: Zero based page index number of the result set.
+        - schema:
+            type: integer
+            default: 50
+          in: query
+          name: page_size
+          description: Number of records in each page returned. Should be in the range of 1 to 500.
+      description: List active portlets by default paginated with 50 records per page and sorted by last modified date
+    post:
+      summary: Create New Portlet
+      tags: [Portlet]
+      operationId: create_portlet
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  portlet_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: |
+        Create a new portlet in a portfolio
+
+        One of the following fields is required while creating a portlet:
+        - input_cs_company_id
+        - input_name
+        - input_address1
+        - input_address2
+        - input_address3
+        - input_post_code
+        - input_city
+        - input_region
+        - input_country_code
+        - input_reg_number
+
+        **Note:** `product_tags` only support a predefined set of top-level attributes. For any product integrations with portfolios, please contact the portfolios backend team for further details.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client_reference:
+                  type: string
+                input_cs_company_id:
+                  type: string
+                input_name:
+                  type: string
+                input_address1:
+                  type: string
+                input_address2:
+                  type: string
+                input_address3:
+                  type: string
+                input_post_code:
+                  type: string
+                input_city:
+                  type: string
+                input_region:
+                  type: string
+                input_country_code:
+                  type: string
+                input_reg_number:
+                  type: string
+                exclusion_status:
+                  type: boolean
+                  default: false
+                additional_input_attributes:
+                  type: object
+                  $ref: '../schemas/additional_input_attributes.yaml'
+                custom_attributes:
+                  type: object
+                  $ref: '../schemas/custom_attributes.yaml'
+                identity_state:
+                  type: string
+                portlet_type:
+                  type: string
+                access_tags:
+                  type: object
+                product_tags:
+                  type: object
+                cs_company_id:
+                  type: string
+                matched_status:
+                  type: boolean
+                matched_name:
+                  type: string
+                matched_address1:
+                  type: string
+                matched_address2:
+                  type: string
+                matched_address3:
+                  type: string
+                matched_city:
+                  type: string
+                matched_region:
+                  type: string
+                matched_post_code:
+                  type: string
+                matched_country_code:
+                  type: string
+              anyOf: 
+                - required: [input_cs_company_id]
+                - required: [input_name]
+                - required: [input_address1]
+                - required: [input_address2]
+                - required: [input_address3]
+                - required: [input_post_code]
+                - required: [input_city]
+                - required: [input_region]
+                - required: [input_country_code]
+                - required: [input_reg_number]
+  /portfolios/{portfolio_id}/portlets/{portlet_id}:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+      - schema:
+          type: string
+        name: portlet_id
+        in: path
+        required: true
+    get:
+      summary: Describe portlet
+      tags: [Portlet]
+      operationId: get_portlet_by_id
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                title: Portlets
+                x-stoplight:
+                  id: ty9hm5154ks8v
+                type: object
+                description: Data Model for Portlets
+                properties:
+                  correlation_id:
+                    type: string
+                  portlet_id:
+                    type: string
+                  client_reference:
+                    type: string
+                  input_cs_company_id:
+                    type: string
+                  input_name:
+                    type: string
+                  input_address1:
+                    type: string
+                  input_address2:
+                    type: string
+                  input_address3:
+                    type: string
+                  input_post_code:
+                    type: string
+                  input_city:
+                    type: string
+                  input_region:
+                    type: string
+                  input_country_code:
+                    type: string
+                  input_reg_number:
+                    type: string
+                  cs_company_id:
+                    type: string
+                  exclusion_status:
+                    type: boolean
+                    default: false
+                  matched_status:
+                    type: boolean
+                  matched_name:
+                    type: string
+                  matched_address1:
+                    type: string
+                  matched_address2:
+                    type: string
+                  matched_address3:
+                    type: string
+                  matched_post_code:
+                    type: string
+                  matched_city:
+                    type: string
+                  matched_region:
+                    type: string
+                  matched_country_code:
+                    type: string
+                  portlet_type:
+                    type: string
+                    enum:
+                      - Company
+                      - Trust
+                      - Partnership
+                      - Person
+                  access_tags:
+                    type: object
+                  product_tags:
+                    type: object
+                  import_job_id:
+                    type: string
+                  portfolio_id:
+                    type: string
+                  created_at:
+                    type: string
+                    format: date-time
+                  last_modified_at:
+                    type: string
+                    format: date-time
+                  additional_input_attributes:
+                    type: object
+                    $ref: '../schemas/additional_input_attributes.yaml'
+                  custom_attributes:
+                    type: object
+                    $ref: '../schemas/custom_attributes.yaml'
+                  identity_state:
+                    type: string
+                    description: This is a case sensitive attribute
+                    enum:
+                      - NOT_PROCESSED
+                      - ACCEPTED_AVAILABLE
+                      - NOT_ACCEPTED_AVAILABLE
+                      - NOT_ACCEPTED_NOT_AVAILABLE
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      parameters: []
+      description: Fetch Portlet details by id
+    put:
+      summary: Update Portlet
+      tags: [Portlet]
+      operationId: update_portlet_by_id
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  portlet_id:
+                    type: string
+                  message:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: |
+        Update portlet attributes. The `product_tags`, `custom_attributes`, and `additional_input_attributes` adhere to the upsert behavior, where matching keys are replaced if they are strings or lists, and dictionaries are merged.
+
+        The below fields can be updated to `null` or `""` to remove the existing value:
+          - client_reference
+          - input_cs_company_id
+          - input_name
+          - input_address1
+          - input_address2
+          - input_address3
+          - input_post_code
+          - input_city
+          - input_region
+          - input_country_code
+          - input_reg_number
+          - cs_company_id
+          - matched_name
+          - matched_address1
+          - matched_address2
+          - matched_address3
+          - matched_post_code
+          - matched_city
+          - matched_region
+          - matched_country_code
+
+        **Note:** 
+          - `product_tags` only support a predefined set of top-level attributes. For any product integrations with portfolios, please contact the portfolios backend team for further details.
+          -  Ensure that all tag keys are consistently formatted (recommended using snake_case). Remember that keys with identical characters but different casing (e.g., "tag_key" and "Tag_Key") are considered distinct.
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client_reference:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_cs_company_id:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_name:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_address1:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_address2:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_address3:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_post_code:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_city:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_region:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_country_code:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                input_reg_number:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                cs_company_id:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                exclusion_status:
+                  type: boolean
+                  default: false
+                matched_name:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_address1:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_address2:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_address3:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_post_code:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_city:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_region:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_country_code:
+                  oneOf:
+                    - type: string
+                    - type: "null"
+                matched_status:
+                  type: boolean
+                additional_input_attributes:
+                  type: object
+                  $ref: '../schemas/additional_input_attributes.yaml'
+                custom_attributes:
+                  type: object
+                  $ref: '../schemas/custom_attributes.yaml'
+                identity_state:
+                  type: string
+                portlet_type:
+                  type: string
+                access_tags:
+                  type: object
+                product_tags:
+                  type: object
+    delete:
+      summary: Delete Portlet
+      tags: [Portlet]
+      operationId: delete_portlet_by_id
+      responses:
+        '204':
+          description: No Content
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: Delete an existing portlet from a portfolio.
+  /portfolios/{portfolio_id}/portlets/delete:
+    parameters:
+    - schema:
+        type: string
+      name: portfolio_id
+      in: path
+      required: true
+    patch:
+      summary: Delete Multiple Portlets
+      tags: [Portlet]
+      operationId: delete_multiple_portlets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: |-
+        Delete multiple Portlets from portfolio by id. Accepts a list in the body of
+        the request with one or more portlet_id's
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                portlet_ids:
+                  type: array
+                  items:
+                    type: string
+                  example:
+                    [
+                      "17ce1558-7c40-4e1a-8a91-de92af7322b1",
+                      "db07840b-1591-4146-a375-3524e43477fd",
+                    ]
+
+  # region end
+
+  # region jobs
+  /portfolios/{portfolio_id}/jobs:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    get:
+      summary: List Jobs
+      operationId: get_jobs
+      tags: [Jobs]
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: job_id
+          description: Provide Job id to get specific job details
+        - schema:
+            type: string
+            default: All job types
+            enum: [IMPORT, IMPORT_ACTIVITY, EXPORT, EXPORT_FILTERED, ENRICH, SET, HEALTH_SCAN, HEALTH_RESOLUTION]
+          in: query
+          name: job_type
+          description: Retrieves only the jobs of the specified type. It can be a comma separated list of job types.
+        - schema:
+            type: string
+            default: All job statuses
+            enum: [STARTED, COMPLETED, FAILED, UPLOADED, QUEUED]
+          in: query
+          name: job_status
+          description: Retrieves only the jobs of the specified status.
+        - schema:
+            type: integer
+            default: 0
+          in: query
+          name: page
+          description: Zero based page index number of the result set.
+        - schema:
+            type: integer
+            default: 50
+          in: query
+          name: page_size
+          description: Number of records in each page returned. Should be between 1 to 500.
+        - schema:
+            type: string
+          in: query
+          name: date_from
+          description: ISO date format string (YYYY-MM-DD), start of job created_at date range
+        - schema:
+            type: string
+          in: query
+          name: date
+          description: ISO date format string (YYYY-MM-DD), end of job created_at date range. Can be used without date_from for filtering on a single date
+        - schema:
+            type: string
+          in: query
+          name: user_id
+          description: comma separated user_id(s) of the job creator(s)
+        - schema:
+            type: string
+            default: All job sources
+            enum: [USER, SYSTEM]
+          in: query
+          name: source
+          description: Retrieves only the jobs of the specified source.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  item_count:
+                    type: integer
+                  page:
+                    type: integer
+                  page_size:
+                    type: integer
+                  jobs:
+                    type: array
+                    items:
+                      $ref: '../schemas/bulk_jobs.yaml'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: |-
+        Return a list of bulk jobs, sorted by created_at desc against the portfolios by default. job_type = export
+        Allow users to filter the requests by success status, created_at,
+        If an Id is provided return the status of the job, which would be used by products to track the success and failure.
+        This will also work for deleted portfolios
+  /portfolios/{portfolio_id}/jobs/{job_id}/download:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+      - schema:
+          type: string
+        name: job_id
+        in: path
+        required: true
+    get:
+      summary: Get pre-signed url for downloading files which are attached to a bulk job
+      operationId: download_file_by_job_id
+      tags: [Jobs]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  job_id:
+                    type: string
+                  status:
+                    type: string
+                  file_url:
+                    type: string
+        '202':
+          description: Accepted. Job in progress or failed.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    example: Root=1-666afcd1-146bad9e2d6c026022ccbc19
+                  title:
+                    type: string
+                    example: Accepted
+                  status:
+                    type: string
+                    example: 202
+                  detail:
+                    type: string
+                    example: Bulk job file is not ready for downloading
+                  type:
+                    type: string
+                    example: https://httpstatuses.com/000
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: When the job status is completed for `export`, and Started/Completed/Failed for `import`, the endpoint would have go and get the S3 path from bulk_jobs table and provide user with presigned url to download it. This will also work for deleted portfolios' jobs.
+  # region jobs
+
+  # region bulk
+  /bulk/{portfolio_id}/export:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Create Export Portlets Job
+      operationId: export_portlets_from_portfolio
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                fields:
+                  type: array
+                  items:
+                    type: string
+                  description: Optional and only supported for Managed Portfolios, a comma separated list of fields can be provided to only include those in the exported result. e.g `["input_name","portlet_id"]` If not supplied, all exportable fields will be included.
+                filters:
+                  type: object
+                  description: Optional and only supported for Managed Portfolios. An json object consists key/value pairs to be used as filters during the export. e.g `{"input_name":"A company"}`. Valid keys are `input_\*`, `matched_\*`, `cs_company_id`, `import_job_id`, `is_active`. Valid values must not be empty or null. If it is string type, it is case insensitive, but it only supports whole word filtering.
+      description: |-
+        Export Portlets in a File for Bulk Download.
+
+        Both `MANAGED` and `FILTERED` portfolios support `product_tags.*` filters to enable advanced querying capabilities based on the attribute and the operator.
+
+        Example:
+          - `product_tags.health.duplicate_identification.total_duplicates=gte,0`
+          - `product_tags.insights.risk_detector=pr,`.
+
+        For more information on available operators, please refer to the schema for Query Operators.
+
+        ### Managed portfolio
+        Accepts the user's request to export existing portlets in the portfolio and returns a job ID to generate a presigned URL using the download jobs endpoint. A list of fields can be specified in the body to restrict output to those; otherwise, all valid fields will be exported.
+
+        If the `additional_input_attributes`, `custom_attributes`, or both fields are specified in the request body, all fields within these fields will be exported, or specific attributes can be specified. Refer to the schemas section for more information.
+
+        #### Valid fields:
+          - input_cs_company_id
+          - input_name
+          - input_address1
+          - input_address2
+          - input_address3
+          - input_city
+          - input_region
+          - input_post_code
+          - input_country_code
+          - input_reg_number
+          - cs_company_id
+          - exclusion_status
+          - matched_name
+          - matched_address1
+          - matched_address2
+          - matched_address3
+          - matched_city
+          - matched_region
+          - matched_post_code
+          - matched_country_code
+          - portlet_id
+          - import_job_id
+          - portfolio_id
+          - portlet_type
+          - client_reference
+          - last_modified_at
+          - created_at
+          - product_tags
+          - identity_state
+
+        #### Valid Filters
+          - input_*
+          - matched_*
+          - client_reference
+          - cs_company_id
+          - import_job_id
+          - is_active
+          - product_tags.*
+          - `identity_state` case sensitive filters with accepted values `NOT_PROCESSED`, `ACCEPTED_AVAILABLE`, `NOT_ACCEPTED_AVAILABLE` and `NOT_ACCEPTED_NOT_AVAILABLE`.
+          - `matched_status` accepted values are `true`, `false`, and `null` in string format. Default value for `matched_status` is set to `false` If this parameter is omitted or any incorrect value is supplied, this filter is considered invalid, and no filter will be applied to `matched_status`.
+          - `exclusion_status` accepted values are boolean value `true` and `false` or their string representation.
+
+        ### Filtered portfolio
+        Accept user's request to export a csv listing `cs_company_id` that fit the filter criteria
+        and returns a job Id to generate a presigned url using the download jobs endpoint
+        Specifying fields is not supported and only cs_company_id is exported in the output.
+  /bulk/{portfolio_id}/export/logs:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Create Export Audit Logs Job
+      operationId: export_audit_logs_for_portfolio
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  portfolio_id:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                  description:
+                    A date in string format (YYYY-MM-DD) to define the range for audit logs.
+                date_from:
+                  type: string
+                  description:
+                    Optional. A date in string format (YYYY-MM-DD) as the start date of audit logs.
+                    If `date_from` is not provided, logs created on `date` will be exported.
+                    If `date_from` is provided, logs created between `date_from` and `date` (inclusive) will be exported.
+                fields:
+                  type: array
+                  items:
+                    type: string
+                  description: Optional. A comma separated list of fields can be provided to limit to them in the exported result. e.g ["actor_id","event_status"]. If not supplied, all exportable fields will be included in the result. The name of each field is case-insensitive.
+                filters:
+                  type: object
+                  description: Optional. An json object consists key/value pairs to be used as filters during the logs export. e.g {"event_status":"SUCCEEDED"}. All keys in the schema mentioned are supported except `event_date`, `new_value` and `old_value`. Valid values must not be empty or null. If it is string type, it is case-sensitive, and only supports whole word filtering.
+      description: |-
+        Export Audit Logs to a csv file. Logs are filtered by portfolio and contains all activity for the requesting customer across specified portfolio.
+
+        #### Valid fields:
+          - actor_id
+          - event_user_id
+          - event_customer_id
+          - event_group_id
+          - event_date
+          - event_source
+          - event_type
+          - event_status
+          - resource_type
+          - resource_id
+          - related_resource_type
+          - related_resource_id
+          - new_value
+          - old_value
+
+        #### Valid Filters
+          All valid fields except `new_value` and `old_value`.
+  /bulk/{portfolio_id}/import:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Import Portlets
+      operationId: import_portlets_to_portfolio
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: 
+                - file
+              properties:
+                file:
+                  type: string
+                  format: binary
+                overwrite:
+                  type: boolean
+                  default: false
+        description: Allow file upload up to 250 MB.
+      description: |-
+        Import a CSV file to the portfolio, creating a list of portlets using the fields mentioned below as headers.
+        Please make sure to remove blank columns as headers and make sure the file is comma-separated.
+        Valid fields:
+          - input_cs_company_id
+          - input_name
+          - input_address1
+          - input_address2
+          - input_address3
+          - input_city
+          - input_region
+          - input_post_code
+          - input_country_code
+          - input_reg_number
+          - client_reference
+          - exclusion_status
+
+        Plus additional fields specified as `additional_input_attributes`, `custom_attributes` or both. See Schemas section for more information.
+        Individual fields from `additional_input_attributes` and `custom_attributes` schema are used as headers in CSV file.
+  /bulk/{portfolio_id}/import/activity:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Import Activities to Portlets
+      operationId: import_activity_job
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  portfolio_id:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                  description:
+                    A date in string format (YYYY-MM-DD) to define the range for importing the activities.
+                    If 'date_from' is not provided, those activities created on 'date' will be imported.
+                    If 'date_from' is provided, activities created between 'date_from' and 'date' will be imported.
+                date_from:
+                  type: string
+                  description:
+                    A date in string format (YYYY-MM-DD) as the start date of those imported activities.
+                    Valid for source types - WEB and API.
+                source:
+                  type: string
+                  enum:
+                    - WEB
+                    - API
+                    - MONITORING
+                  description: The source of the activities.
+                overwrite:
+                  type: boolean
+                  description: Flag to indicate whether to overwrite the existing portlets or not. Default to false.
+                unique:
+                  type: boolean
+                  description: Flag to indicate whether only distinct companies should be imported. Default to true.
+      description: |-
+        Import user activity history as the portlets into a given portfolio. The activities are imported based on the date range provided in the request body. All companies are imported with input_cs_company_id populated.
+        - If only 'date' is provided, the activities created on that date will be imported. If both 'date' and 'date_from' are provided, the activities created between 'date_from' and 'date' will be imported. Both 'date' and 'date_from' are in string format (YYYY-MM-DD), e.g. '2023-01-12', must not be a future date, also not earlier than 1st Jan, 2023. 'date_from' is valid only for source types WEB and API.
+        - The source of the activities can be 'WEB', 'API', or 'MONITORING'.
+        - The 'overwrite' flag is optional and defaults to false. If set to true, the existing portlets will be removed from current portfolio.
+        - The 'unique' flag is optional and defaults to true. If set to true, only distinct companies will be imported from activity history.
+  /bulk/{portfolio_id}/enrich:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Enrich Portlets
+      operationId: enrich_portlets_to_portfolio
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: 
+                -  file
+              properties:
+                file:
+                  type: string
+                  format: binary
+                operand:
+                  type: string
+                  description: An optional field to be used for matching the corresponding portlets. If provided, only single value is allowed from the list of `portlet_id`,`cs_company_id` and `client_reference`. Default to `portlet_id` if not supplied.
+        description: Allow file upload up to 250 MB.
+      description: |-
+        Imports a CSV file to a portfolio, enriching data in its portlets based on the provided information. Each row in the file should contain a portlet_id to associate data with the correct portlet.
+
+        Valid fields:
+        - input_cs_company_id: null or string
+        - input_name: null or string
+        - input_address1: null or string
+        - input_address2: null or string
+        - input_address3: null or string
+        - input_city: null or string
+        - input_region: null or string
+        - input_post_code: null or string
+        - input_country_code: null or string
+        - input_reg_number: null or string
+        - client_reference: null or string
+        - cs_company_id: null or string
+        - exclusion_status
+        - matched_status
+        - matched_name: null or string
+        - matched_address1: null or string
+        - matched_address2: null or string
+        - matched_address3: null or string
+        - matched_city: null or string
+        - matched_region: null or string
+        - matched_post_code: null or string
+        - matched_country_code: null or string
+        - portlet_id
+        - is_active
+        - product_tags
+        - identity_state: case sensitive field with accepted values `NOT_PROCESSED`, `ACCEPTED_AVAILABLE`, `NOT_ACCEPTED_AVAILABLE` and `NOT_ACCEPTED_NOT_AVAILABLE`.
+
+        **Extensible Fields:**
+        You may also include fields from `additional_input_attributes` and `custom_attributes` in the CSV file. Refer to the Schemas section for details on these attributes, which are used as CSV headers.
+
+        **Null and Quoted Values:**
+        - A `null` value is represented as an unquoted empty string.
+        - To update a field to a quoted string `""`, use `""`.
+
+        **CSV Example:**
+        ```csv
+        portlet_id,input_name,input_address1,...
+        1234,,123 Street,...
+        5678,"",456 Street,...
+        ```
+        In this examples:
+        - `input_name` for `portlet_id`: `1234` will be updated to `null`.
+        - `input_name` for `portlet_id`: `5678` will be updated to `""`.
+
+        **Note:** `product_tags` only support a predefined set of top-level attributes. For any product integrations with portfolios, please contact the portfolios backend team for further details.
+  /bulk/operators:
+    post:
+    operationId: bulk_set_operations
+    summary: Create Set Operation Job
+    tags: [Bulk]
+    responses:
+      "200":
+        description: OK
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                correlation_id:
+                  type: string
+                result:
+                  type: string
+                portfolio_id:
+                  type: string
+                job_id:
+                  type: string
+      '400':
+        description: Bad Request
+      '401':
+        description: Unauthorized
+      '403':
+        description: Forbidden
+      '404':
+        description: Not Found
+      '410':
+        description: Gone
+      '500':
+        description: Internal Server Error
+    requestBody:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              output_type:
+                type: string
+                description: Output type for the Set Operations result, 'IMPORT' or 'EXPORT'
+                example: "EXPORT"
+              operator:
+                type: string
+                description: Set Operator to apply to data, e.g. 'UNION', 'DIFFERENCE'
+                example: "DIFFERENCE"
+              operand:
+                type: string
+                description: Field to perform the Set Operation against, e.g. 'input_cs_company_id'
+                example: "cs_company_id"
+              portfolios:
+                type: array
+                items:
+                  type: string
+                example:
+                  [
+                    "17ce1558-7c40-4e1a-8a91-de92af7322b1",
+                    "db07840b-1591-4146-a375-3524e43477fd",
+                  ]
+                description: Portfolios to apply Set Operation against
+    description: |-
+      Set Operations for Portfolios, can only be used on two `Managed` Portfolios and against Portfolios that belong to the requesting Customer ID.
+      Preference is given to the record from first portfolio (index 0 in the request list) when common records are found. If there are common
+      records in the same portfolio for the supplied operand, preference is given to the one with the oldest `created_at` timestamp.
+
+      ### Supported operators
+      - UNION
+      - INTERSECTION
+      - DIFFERENCE
+      - SYMMETRIC_DIFFERENCE
+
+      ### Supported Operands
+      - input_cs_company_id
+      - cs_company_id
+      - client_reference
+
+      ### Supported Output Type
+      - IMPORT (new active portfolio created)
+      - EXPORT (new inactive portfolio created and result available as a file from an export job associated with this portfolio)
+
+      More details and operation result examples available here: <a href='https://dev.azure.com/creditsafe/Polaris/_wiki/wikis/Polaris.wiki/5801/Set-Operations#'>Set Operations</a>.
+
+  /bulk/{portfolio_id}/health/scan:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Create Health Scan Job
+      operationId: bulk_health_scan
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  portfolio_id:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                operator:
+                  type: string
+                  description: Health scan operator to apply to data, e.g. 'DUPLICATE_IDENTIFICATION'
+                operand:
+                  type: array
+                  items:
+                    type: string
+                  description: Field to perform the Health scan against, e.g. 'input_cs_company_id'
+                condition:
+                  type: string
+                  description: Logical condition for the operand to use, e.g. OR, AND.
+                order_by:
+                  type: string
+                  description: Field to allow the user to set the order of the portlet's creation, e.g. ASC, DESC.
+      description: |-
+        The health scan of a portfolio will populate the product tags with information about portfolio health, specifically related to the
+        selected operator for the performed scan(s). In the case of `DUPLICATE_IDENTIFICATION`, if there are duplicate records in the same
+        portfolio for the provided operand, priority is assigned to either oldest or newest created portlet, designating it as the
+        primary record. Those `null` values are not considered in `DUPLICATE_IDENTIFICATION` operation. For instance, if two operands 
+        `input_name` and `input_cs_company_id` together with `AND` condition are used in `DUPLICATE_IDENTIFICATION`, only those portlets 
+        with both `input_name` and `input_cs_company_id` populated are included during the operation. Portlets with `null` values for either  
+        `input_name` or `input_cs_company_id` are not considered.
+
+        ### Supported operators
+        - DUPLICATE_IDENTIFICATION
+        - NULL_IDENTIFICATION
+        - MATCHED_IDENTIFICATION
+
+        ### Supported Operands
+        - input_cs_company_id
+        - input_name
+        - input_country_code
+        - input_address1
+        - input_address2
+        - input_address3
+        - input_city
+        - input_region
+        - input_post_code
+        - input_reg_number
+        - matched_status
+        - matched_name
+        - matched_address1
+        - matched_address2
+        - matched_address3
+        - matched_city
+        - matched_region
+        - matched_post_code
+        - matched_country_code
+        - cs_company_id
+
+        ### Supported conditions
+        - AND
+        - OR
+
+        ### Supported order_by for duplicate_identification
+        - ASC
+        - DESC
+  /bulk/{portfolio_id}/health/resolve:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Create Health Resolution Job
+      operationId: bulk_health_resolve
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  portfolio_id:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                operator:
+                  type: string
+                  description: Health scan resolution operator to apply to data, e.g. 'DUPLICATE_IDENTIFICATION'
+                method:
+                  type: string
+                  description: Only `delete` method supported currently.
+      description: |-
+        The health scan remediation/resolution job is tasked with addressing issues identified during the health scan of portfolio.
+        In the case of `DUPLICATE_IDENTIFICATION`, where duplicate records are found, the job will delete the duplicate entries,
+        retaining only the primary portlet. Similarly, for `NULL_IDENTIFICATION`, where null records are detected, the job will
+        remove these null entries.
+        ### Supported operators
+        - DUPLICATE_IDENTIFICATION
+        - NULL_IDENTIFICATION
+        ### Supported method
+        - DELETE
+  /bulk/{portfolio_id}/clone:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Clone Portfolios
+      operationId: clone_portfolios
+      tags: [Bulk]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  clone_portfolio_id:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      description: |-
+        The cloning operation creates a duplicate of the specified portfolio, including 
+        all relevant portlet information, while applying certain modifications to the portfolio 
+        name.
+
+        This operation is only supported for `MANAGED` portfolios.
+
+        The below fields from portfolio and portlet are cloned as part of this job:
+
+        ### Portfolio fields
+          - name: Cloned portfolio will have the original name followed by `-<hex_string>.<YYYYMMDDTHHMMSSZ>`.
+          - description
+          - email
+          - product_tags
+          - access_tags
+
+        ### Portlet fields
+          - cs_company_id
+          - client_reference
+          - input_name
+          - input_address1
+          - input_address2
+          - input_address3
+          - input_post_code
+          - input_city
+          - input_region
+          - input_country_code
+          - input_reg_number
+          - input_cs_company_id
+          - matched_name,
+          - matched_address1
+          - matched_address2
+          - matched_address3
+          - matched_post_code
+          - matched_city
+          - matched_region
+          - matched_country_code
+          - matched_status
+          - portlet_type
+          - additional_input_attributes
+          - access_tags
+          - product_tags
+          - custom_attributes
+          - identity_state
+          - exclusion_status
+
+        The ownership of cloned portfolio follow the below rules:
+          - Same User, Same Customer
+            - Scenario: User 789 clones a portfolio owned by the same User with same Customer.
+            - Outcome: Clone succeeds with portfolio under the same User and Customer.
+
+          - Different User, Same Customer
+            - Scenario: User 789 clones a portfolio originally owned by User 123, both under Customer ABC.
+            - Outcome: Clone succeeds with the portfolio under User 789 but still associated with Customer ABC.
+
+  /bulk/{portfolio_id}/delete:
+    parameters:
+      - schema:
+          type: string
+        name: portfolio_id
+        in: path
+        required: true
+    post:
+      summary: Bulk delete Portlets
+      operationId: bulk_delete_portlets_from_portfolio
+      tags: [Bulk]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                  result:
+                    type: string
+                  job_id:
+                    type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: 
+                - file
+              properties:
+                file:
+                  type: string
+                  format: binary
+        description: Allow file upload up to 250 MB.
+      description: |-
+        Upload a CSV file to the portfolio containing a single column, which lists the portlets to be deleted based on the header given below.
+        The CSV file must have one of the following headers and be comma-separated:
+          - portlet_id
+          - cs_company_id
+          - client_reference
+        
+        Ensure there are no blank columns and the file adheres to the specified format.
+        NOTE: If there are multiple portlets with same `cs_company_id` or `client_reference`, all will be deleted.
+          
+  # end region
+
+  # region nexus
+  /nexus:
+    post:
+      summary: Create a new Nexus
+      tags: [Nexus]
+      description: This endpoint is used to create a new Nexus chain.
+      operationId: create_nexus
+      requestBody:
+        description: |
+          Nexus creation data.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                portfolio_id:
+                  type: string
+                  description: The ID of the portfolio
+                steps:
+                  type: array
+
+            examples:
+              Create Nexus:
+                value:
+                  portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                  steps:
+                    - job_type: "match"
+                      job_body:
+                        portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                    - job_type: "health_scan"
+                      job_body:
+                        operator: "duplicate_identification"
+                        operand:
+                          - "cs_company_id"
+                        condition: "OR"
+                    - job_type: "health_scan"
+                      job_body:
+                        operator: "matched_identification"
+                    - job_type: "export"
+                      job_body: {}
+                    - job_type: "health_resolution"
+                      job_body:
+                        operator: "duplicate_identification"
+                        method: "delete"
+                    - job_type: "import_activity"
+                      job_body:
+                        date: "2023-10-01"
+                        date_from: "2023-01-02"
+                        source: "monitoring"
+                        overwrite: false
+                        unique: false
+                    - job_type: "bulk_extract"
+                      job_body:
+                        type: "report"
+                        date: "$.steps[3].step_metadata.started_at||date"
+                        safenumbers: "$.steps[3].step_metadata.file_download_response.body.file_url||signed_url"
+                    - job_type: "insights"
+                      job_body:
+                        decisionName: "insight_model"
+                        createdAt: "2024-10-17T20:51:19.637401"
+                        config:
+                          {
+                            "name": "insight_model",
+                            "global_variables": {},
+                            "input_variables": {},
+                            "fileNames":
+                              {
+                                "viewInsight":
+                                  ["^insight_model-\\d{8}_\\d{6}\\.html$"],
+                              },
+                            "store_output_tags": true,
+                          }
+
+      responses:
+        "201":
+          description: Nexus created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  portfolio_id:
+                    type: string
+                    description: The ID of the portfolio
+                  nexus_id:
+                    type: string
+                    description: The ID of the created Nexus
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '410':
+          description: Gone
+        '500':
+          description: Internal Server Error
+
+  /nexus/status/{nexus_id}:
+    get:
+      summary: Get Nexus Status By Id
+      tags: [Nexus]
+      description: |
+        This endpoint is used to get the status of a Nexus chain by its ID with execution and progress metadata along with correlation_id.
+      operationId: get_nexus_status
+      parameters:
+        - name: nexus_id
+          in: path
+          description: The ID of the Nexus chain
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Nexus status retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  portfolio_id:
+                    type: string
+                    description: The ID of the portfolio
+                  nexus_id:
+                    type: string
+                    description: The ID of the Nexus chain
+                  schedule_id:
+                    type: string
+                    nullable: true
+                    description: The ID of the Nexus schedule
+                  customer_id:
+                    type: integer
+                    description: The backoffice customer ID
+                  user_id:
+                    type: integer
+                    description: The backoffice user ID
+                  status:
+                    type: string
+                    description: The status of the Nexus chain. It can be `STARTED`, `COMPLETED`, or `FAILED`
+                  current_step_index:
+                    type: integer
+                    description: |
+                      The current_step_index allows tracking of step being processed. Starts as `null`, in the
+                      case of a running Nexus chain where progress is not yet available.
+                      Then becomes 0 or an integer representing the index of step currently
+                      being processed. If the Nexus chain has stopped execution and is in a "COMPLETED",
+                      or "FAILED" state, the current_step_index will be -1.
+                  created_at:
+                    type: string
+                    description: The timestamp when the Nexus chain was created
+                  last_modified_at:
+                    type: string
+                    description: The timestamp when the Nexus chain was last modified. During execution value is set to Null.
+                  error:
+                    oneOf:
+                      - type: object
+                        description: |
+                          Details of any error that occurred while executing the Nexus chain or while fetching the
+                          status. The error message clearly specifies the cause of the issue. If it's due to an 
+                          internal Nexus system error, the message will recommend that the user contact support for assistance. 
+                          If the error is caused by the user or a dependent service, the message will be error specific and will not suggest contacting support.
+                        properties:
+                          code:
+                            type: string
+                            description: A string that represents the error code
+                          message:
+                            type: string
+                            description: A string that provides a human-readable explanation of the error. Each message will include details about the `job_type` and the `step_index` where the failure occurred.
+                          step_index:
+                            type: integer
+                            description: An integer that represents the index of the step in the Nexus chain where the error occurred
+                          step_status_code:
+                            type: integer
+                            description: An integer that represents the HTTP status code returned by the failed step
+                          body:
+                            type: string
+                            description: An object or string that contains additional information about the error returned by the failed step
+                      - type: "null"
+                        description: No error occurred
+                  steps:
+                    type: array
+                    items:
+                      type: object
+                      description: |
+                        The steps in the Nexus chain, with the inclusion of the `step_metadata` only when
+                        the job is triggered and is updated to track progress.
+                      properties:
+                        job_type:
+                          type: string
+                          description: The type of the job provided at the time of nexus creation.
+                        job_body:
+                          type: object
+                          description: The body of the job provided at the time of nexus creation.
+                        step_metadata:
+                          type: object
+                          description: The execution metadata of the step, updated as the step progresses.
+                          properties:
+                            job_id:
+                              type: string
+                              description: The ID of the underlying job triggered by Nexus.
+                            current_status:
+                              type: string
+                              description: The current status of the job. Starts as `null` until the first check is performed.
+                            started_at:
+                              type: string
+                              description: The time of when the job was triggered. The started_at property is instantiated with the current timestamp and remains unchanged.
+                            last_check_at:
+                              type: string
+                              description: The last check time of the job status. Starts as `null` until the first check is performed.
+                            status_check_counter:
+                              type: integer
+                              description: The counter used to track the number of times the job status has been checked and will cause the step to timeout once this reaches the maximum allowed attempts.
+                            status_checks_limit:
+                              type: integer
+                              description: The maximum allowed attempts to check status for the job.
+                            job_trigger_response:
+                              type: object
+                              description: The response of the job trigger call.
+                              properties:
+                                status_code:
+                                  type: integer
+                                  description: The status code of the job trigger.
+                                body:
+                                  type: object
+                                  description: The body of the job trigger.
+                            status_check_response:
+                              type: object
+                              description: The response of the job status check call.
+                              properties:
+                                status_code:
+                                  type: integer
+                                  description: The status code of the job status check.
+                                body:
+                                  type: object
+                                  description: The body of the job status check. Body may differ depending on the job type.
+                            file_download_response:
+                              type: object
+                              description: The response of the file download job. Property has value present only for `export`, `health_scan` and `import_activity` job types.
+                              properties:
+                                status_code:
+                                  type: integer
+                                  description: The status code of the file download job.
+                                body:
+                                  type: object
+                                  description: The body of the file download job. Body may differ depending on the job type.
+
+              examples:
+                Success:
+                  value:
+                    correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                    portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                    nexus_id: "00addb5a-8f5d-46e5-ae4f-af13822839c4"
+                    schedule_id: "c00aa688-22b0-42d3-b574-940a69445882"
+                    customer_id: 103000000
+                    user_id: 101000000
+                    status: "COMPLETED"
+                    current_step_index: -1
+                    created_at: "2024-06-18T08:25:55.956Z"
+                    last_modified_at: "2024-06-18T08:30:18.335Z"
+                    error: null
+                    steps:
+                      - job_type: "match"
+                        job_body:
+                          portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                        step_metadata:
+                          job_id: "b900bf93-ccde-4938-b5b1-5f66fee6b267"
+                          current_status: "COMPLETED"
+                          started_at: "2024-02-20T04:01:50Z"
+                          last_check_at: "2024-02-20T13:53:50Z"
+                          status_check_counter: 5
+                          status_checks_limit: 60
+                      - job_type: "export"
+                        job_body: {}
+                        step_metadata:
+                          job_id: "b900bf93-ccde-4938-b5b1-5f66fee6b267"
+                          current_status: "COMPLETED"
+                          started_at: "2024-02-20T04:01:50Z"
+                          last_check_at: "2024-02-20T13:57:50Z"
+                          status_check_counter: 1
+                          status_checks_limit: 60
+                          job_trigger_response:
+                            status_code: 201
+                            body:
+                              correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                              result: "Export job created successfully"
+                              portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                              job_id: "b900bf93-ccde-4938-b5b1-5f66fee6b267"
+                          status_check_response:
+                            status_code: 201
+                            body:
+                              correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                              item_count: 1
+                              page: 0
+                              page_size: 50
+                              jobs:
+                                - job_id: "b900bf93-ccde-4938-b5b1-5f66fee6b267"
+                                  job_status: "COMPLETED"
+                                  job_type: "EXPORT"
+                                  portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                                  created_at: "2024-06-19T13:13:50Z"
+                                  last_modified_at: "2024-06-19T13:13:51Z"
+                                  s3_key: "customer=103101839/portfolio=17ce1558-7c40-4e1a-8a91-de92af7322b1/type=export/d10eb89b-83bd-4ad8-ab68-5b1234567890.csv"
+                                  customer_id: 103000000
+                                  user_id: 101000000
+                                  file_name: Null
+                                  file_size: Null
+                                  job_attributes:
+                                    - filters:
+                                        import_job_id: "b900bf93-ccde-4938-b5b1-5f66fee6b267"
+
+                          file_download_response:
+                            status_code: 200
+                            body:
+                              correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                              job_id: "b900bf93-ccde-4938-b5b1-5f66fee6b267"
+                              status: "COMPLETED"
+                              file_url: "https://signed-s3-url-to-the-file"
+
+                Error:
+                  value:
+                    correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                    portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                    nexus_id: "00addb5a-8f5d-46e5-ae4f-af13822839c4"
+                    customer_id: 103000000
+                    user_id: 101000000
+                    status: "FAILED"
+                    current_step_index: -1
+                    created_at: "2024-11-11T15:27:12Z"
+                    last_modified_at: "024-11-11T15:27:22Z"
+                    error:
+                      {
+                        code: "NexusStepTriggerError",
+                        message: "match failed at step_index: 0 with a non-2xx response.",
+                        step_index: 0,
+                        step_status_code: 400,
+                        body: "Validation error: [{'type': 'missing', 'loc': ('portfolio_id',), 'msg': 'Field required', 'input': {'operator': 'matchidentification', 'operand': ['cs_company_id', 'client_reference'], 'condition': 'AND'}, 'url': 'https://errors.pydantic.dev/2.9/v/missing'}]",
+                      }
+                    steps:
+                      - job_type: "match"
+                        job_body:
+                          {
+                            operator: "matchidentification",
+                            operand: ["cs_company_id", "client_reference"],
+                            condition: "AND",
+                          }
+        "404":
+          description: Nexus chain not found or Portfolio not found
+        "424":
+          description: Failed Dependency
+        "500":
+          description: Internal server error
+
+  /nexus/portfolios/{portfolio_id}:
+    get:
+      summary: Get list of Nexus executions for current and previous runs
+      tags: [Nexus]
+      description: |
+        This endpoint is used to retrieve list of Nexus executions for current and previous runs for a specific `portfolio_id` corresponding to its `customer_id`.
+      operationId: get_nexus_list
+      parameters:
+        - name: portfolio_id
+          in: path
+          description: The portfolio id for which Nexus executions are to be retrieved
+          required: true
+          schema:
+            type: string
+        - name: page_size
+          in: query
+          description: Number of records in each page returned. Should be between 1 to 50.
+          schema:
+            type: integer
+            default: 25
+      responses:
+        "200":
+          description: List of nexus executions retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  nexus:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        portfolio_id:
+                          type: string
+                          description: The ID of the portfolio
+                        nexus_id:
+                          type: string
+                          description: The ID of the Nexus chain
+                        schedule_id:
+                          type: string
+                          nullable: true
+                          description: The ID of the Nexus schedule
+                        customer_id:
+                          type: integer
+                          description: The backoffice customer ID
+                        user_id:
+                          type: integer
+                          description: The backoffice user ID
+                        created_at:
+                          type: string
+                          description: The timestamp when the Nexus chain was created
+                        last_modified_at:
+                          type: string
+                          description: The timestamp when the Nexus chain was last modified
+                        steps:
+                          type: array
+                          items:
+                            type: object
+                            description: |
+                              The steps in the Nexus chain.
+                            properties:
+                              job_type:
+                                type: string
+                                description: The type of the job provided at the time of nexus creation.
+                              job_body:
+                                type: object
+                                description: The body of the job provided at the time of nexus creation
+                        status:
+                          type: string
+                          description: The status of the Nexus chain. It can be `STARTED`, `COMPLETED`, or `FAILED`
+              examples:
+                Success:
+                  value:
+                    correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                    nexus:
+                      - portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                        nexus_id: "00addb5a-8f5d-46e5-ae4f-af13822839c4"
+                        schedule_id: "c00aa688-22b0-42d3-b574-940a69445882"
+                        customer_id: 103000000
+                        user_id: 101000000
+                        status: "COMPLETED"
+                        created_at: "2024-02-20T13:53:50Z"
+                        last_modified_at: "2024-02-20T13:57:50Z"
+                        steps:
+                          - job_type: "match"
+                            job_body:
+                              portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                      - portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                        nexus_id: "00addb5a-8f5d-46e5-ae4f-af13822839c4"
+                        schedule_id: null
+                        customer_id: 103000000
+                        user_id: 101000000
+                        status: "FAILED"
+                        created_at: "2024-02-20T13:53:50Z"
+                        last_modified_at: "2024-02-20T13:57:50Z"
+                        steps:
+                          - job_type: "match"
+                            job_body:
+                              portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+        "400":
+          description: Bad request, request body is missing or invalid
+        "404":
+          description: Portfolio not found
+        "424":
+          description: Failed Dependency
+        "500":
+          description: Internal server error
+
+  /nexus/schedules:
+    post:
+      summary: Create a new Nexus schedule
+      tags: [Nexus]
+      description: |
+        This schedule creation operation allows users to set up scheduled Nexus jobs for a specified portfolio, with customizable frequency, start and end dates, and job steps.
+
+        The created schedule will be `DELETED` once it passes its final execution date.
+
+        The request body accepts the following parameters:
+          - portfolio_id: The ID of the portfolio
+          - start_date: Specifies the starting date for the schedule in ISO format (YYYY-MM-DDTHH:MM:SSZ).
+          - end_date: Specifies the end date for the schedule in ISO format.
+          - cron_expression: Cron syntax defining the frequency of the job execution. The schedule should be defined to run no more frequently than every 12 hours.
+          - description: The description of the schedule.
+          - steps: Nexus Job steps to be followed for every run.
+
+        ## Cron Expression Format
+        Cron expressions have six fields, each separated by a white space. The fields are as follows:
+        ```
+        | Field        | Values          | Wildcards                   |
+        | ------------ | --------------- | --------------------------- |
+        | Minutes      | 0-59            | `,` `-` `*` `/`             |
+        | Hours        | 0-23            | `,` `-` `*` `/`             |
+        | Day of Month | 1-31            | `,` `-` `*` `/` `?` `L` `W` |
+        | Month        | 1-12 or JAN-DEC | `,` `-` `*` `/`             |
+        | Day of Week  | 1-7 or SUN-SAT  | `,` `-` `*` `/` `?` `L` `#` |
+        | Year         | 1970-2199       | `,` `-` `*` `/`             |
+        ```
+
+        ### Wildcards
+        - The `,` (comma) wildcard includes additional values. In the Month field, JAN,FEB,MAR includes January, February, and March.
+        - The `-` (dash) wildcard specifies ranges. In the Day field, 1-15 includes days 1 through 15 of the specified month.
+        - The `*` (asterisk) wildcard includes all values in the field. In the Hours field, * includes every hour. You can't use * in both the Day-of-month and Day-of-week fields. If you use it in one, you must use ? in the other.
+        - The `/` (slash) wildcard specifies increments. In the Minutes field, you could enter 1/10 to specify every tenth minute, starting from the first minute of the hour (for example, the 11th, 21st, and 31st minute, and so on).
+        - The `?` (question mark) wildcard specifies any. In the Day-of-month field you could enter 7 and if any day of the week was acceptable, you could enter ? in the Day-of-week field.
+        - The `L` wildcard in the Day-of-month or Day-of-week fields specifies the last day of the month or week.
+        - The `W` wildcard in the Day-of-month field specifies a weekday. In the Day-of-month field, 3W specifies the weekday closest to the third day of the month.
+        - The `#` wildcard in the Day-of-week field specifies a certain instance of the specified day of the week within a month. For example, 3#2 would be the second Tuesday of the month: the 3 refers to Tuesday because it is the third day of each week, and the 2 refers to the second day of that type within the month.
+
+        ### Cron Expression Examples
+        A few examples of cron expressions are as follows:
+        - `0 10 * * ? *`: Run at 10:00 am every day.
+        - `15 12 * * ? *`: Run at 12:15 pm every day.
+        - `0 18 ? * MON-FRI *`: Run at 6:00 pm every Monday through Friday.
+        - `0/5 8-17 ? * MON-FRI *`: Run every 5 minutes Monday through Friday between 8:00 am and 5:55 pm.
+        - `15 10 ? * 6L 2019-2022`: Runs at 10:15 am on the last Friday of each month during the years 2019 to 2022.
+        - `5,35 14 * * ? *`: Runs every day at 2:05 pm and 2:35 pm
+
+        ## Limitations
+        - In a `cron_expression`, the Day-of-month and Day-of-week fields cannot be specified together. If a value or `*` (asterisk) is used in one of these fields, a `?` (question mark) must be used in the other.
+        - In a `cron_expression`, when a `#` character is used, only one expression can be defined in the day-of-week field. For example, `3#1,6#3` is not valid because it is interpreted as two expressions.
+        - The value of `start_date` must be today (from current time) or a future date.
+        - The value of `end_date` must be later than the `start_date`.
+        - There must be at least a one-hour gap between `start_date` and `end_date`.
+        - The character limit for the `description` field is 256 characters.
+
+      operationId: create_nexus_schedule
+      requestBody:
+        description: |
+          Nexus schedule creation data.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                portfolio_id:
+                  type: string
+                  description: The ID of the portfolio
+                start_date:
+                  type: string
+                  description: The start date of the schedule
+                end_date:
+                  type: string
+                  description: The end date of the schedule
+                cron_expression:
+                  type: string
+                  description: The cron expression for the schedule
+                description:
+                  type: string
+                  description: The description of the schedule
+                steps:
+                  type: array
+
+            examples:
+              Create Nexus Schedules:
+                value:
+                  portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                  start_date: "2024-04-21T00:00:00Z"
+                  end_date: "2024-10-21T00:00:00Z"
+                  cron_expression: "0 6 * * 1 2024-2026"
+                  description: "Export portfolio after performing health scan & resolution every Sunday at 6:00 AM from the years 2024 through 2026"
+                  steps:
+                    - job_type: "health_scan"
+                      job_body:
+                        operator: "duplicate_identification"
+                        operand:
+                          - "cs_company_id"
+                        condition: "OR"
+                    - job_type: "health_resolution"
+                      job_body:
+                        operator: "duplicate_identification"
+                        method: "delete"
+                    - job_type: "export"
+                      job_body: {}
+
+      responses:
+        "201":
+          description: Nexus schedules created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  schedule_id:
+                    type: string
+                    description: The ID of the schedule created
+                  next_execution:
+                    type: string
+                    description: The string representation of the next execution time
+                  message:
+                    type: string
+                    description: The message indicating the success of the operation
+        "404":
+          description: Portfolio not found
+        "424":
+          description: Failed Dependency
+        "400":
+          description: Bad request, request body is missing or invalid
+        "500":
+          description: Internal server error
+        "503":
+          description: Service unavailable
+
+  /nexus/schedules/{schedule_id}:
+    parameters:
+      - schema:
+          type: string
+        name: schedule_id
+        in: path
+        required: true
+    get:
+      summary: Get a Nexus schedule setup by a schedule ID.
+      tags: [Nexus]
+      description: |
+        This endpoint is used to retrieve a Nexus schedule by ID which is identified by `schedule_id`.
+      operationId: get_nexus_schedule_by_id
+      parameters:
+        - name: schedule_id
+          in: path
+          description: The ID for which Nexus schedule is to be retrieved
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: The Nexus schedule retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  schedule_id:
+                    type: string
+                    description: The ID of the Nexus schedule
+                  portfolio_id:
+                    type: string
+                    description: The ID of the portfolio
+                  customer_id:
+                    type: string
+                    description: The ID of the customer who the schedule belongs to
+                  user_id:
+                    type: string
+                    description: The ID of the user who created the schedule
+                  start_date:
+                    type: string
+                    description: The start date of the schedule
+                  end_date:
+                    type: string
+                    description: The end date of the schedule
+                  cron_expression:
+                    type: string
+                    description: The cron expression for the schedule
+                  state:
+                    type: string
+                    description: The state of the schedule, it can be `ENABLED`, `DISABLED`, `DELETED`
+                  created_at:
+                    type: string
+                    description: The creation date of the schedule
+                  last_modified_at:
+                    type: string
+                    description: The last modified date of the schedule
+                  description:
+                    type: string
+                    description: The description of the schedule
+                  steps:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        job_type:
+                          type: string
+                          description: The type of the job.
+                        job_body:
+                          type: object
+                          description: The body of the Nexus job. See Create Nexus and Create Schedule docs for more details.
+                  next_executions:
+                    type: array
+                    items:
+                      type: string
+                    description: |
+                      The `next_executions` calculates a list of (up to 10) scheduled execution times for the coming executions, or to the 
+                      end of the `end_date` of the schedule, whichever is lesser, as `next_executions` for each ENABLED schedule within `end_date`.
+                      The list is sorted in ascending order in standard ISO 8601 format(e.g.2024-07-26T14:20:52Z) and returns as null for 
+                      a `DELETED`, `DISABLED` schedule or `ENABLED` schedule outside of `end_date`.
+                  past_executions:
+                    description: The past history of the scheduled Nexus executions (up to 50), sorted by `created_at` in descending order.
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        nexus_id:
+                          type: string
+                          description: The ID of the Nexus execution
+                        status:
+                          type: string
+                          description: The status of the Nexus execution
+                        created_at:
+                          type: string
+                          description: The creation date of the Nexus execution
+              examples:
+                Get Nexus Schedule By Schedule ID:
+                  value:
+                    correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                    portfolio_id: "17ce1558-7c40-4e1a-8a91-de92af7322b1"
+                    customer_id: "103000000"
+                    user_id: "101000000"
+                    start_date: "2024-10-25T13:35:00Z"
+                    end_date: "2025-10-21T00:00:00Z"
+                    created_at: "2024-10-25T13:35:00Z"
+                    state: "ENABLED"
+                    schedule_id: "c00aa688-22b0-42d3-b574-940a69445882"
+                    cron_expression: "40 13 ? * 6 *"
+                    description: "Export portfolio after performing health scan & resolution every Monday on 6AM for six months"
+                    steps:
+                      - job_type: "health_scan"
+                        job_body:
+                          operator: "duplicate_identification"
+                          operand:
+                            - "cs_company_id"
+                          condition: "OR"
+                      - job_type: "health_resolution"
+                        job_body:
+                          operator: "duplicate_identification"
+                          method: "delete"
+                      - job_type: "export"
+                        job_body: {}
+                    next_executions:
+                      [
+                        "2024-11-29T13:40:00Z",
+                        "2024-12-06T13:40:00Z",
+                        "2024-12-13T13:40:00Z",
+                        "2024-12-20T13:40:00Z",
+                        "2024-12-27T13:40:00Z",
+                        "2025-01-03T13:40:00Z",
+                        "2025-01-10T13:40:00Z",
+                        "2025-01-17T13:40:00Z",
+                        "2025-01-24T13:40:00Z",
+                        "2025-01-31T13:40:00Z",
+                      ]
+                    past_executions:
+                      [
+                        {
+                          "nexus_id": "00addb5a-8f5d-46e5-ae4f-af13822839c4",
+                          "status": "FAILED",
+                          "created_at": "2022-06-04T22:55:09Z",
+                        },
+                      ]
+
+        "400":
+          description: Bad request, request body is missing or invalid
+        "404":
+          description: The schedule requested by the customer_id/user_id does not exist
+        "500":
+          description: Internal server error
+        "503":
+          description: Service unavailable
+
+    put:
+      summary: Update a Nexus Schedule by Schedule ID.
+      tags: [Nexus]
+      description: |
+        This schedule update operation allows users to modify existing Nexus schedules using a specified `schedule_id`. The endpoint accepts changes to specific fields, with validations in place to ensure the integrity of the schedule and adherence to constraints.
+
+        The schedule will be `DELETED` once it passes its final execution date.
+
+        The request body can include the following fields for update:
+          - start_date: Specifies the starting date for the schedule in ISO format (YYYY-MM-DDTHH:MM:SSZ).
+          - end_date: Specifies the end date for the schedule in ISO format.
+          - cron_expression: Cron syntax defining the frequency of the job execution. The schedule should be defined to run no more frequently than every 12 hours.
+          - description: The description of the schedule.
+          - steps: Nexus Job steps to be followed for every run.
+
+        ## Key validations
+        - The validations for individual fields are consistent with those defined for creating a schedule:
+          - `start_date` must be today (from current time) or a future date.
+          - `end_date` must be later than the `start_date`.
+          - There must be at least a one-hour gap between `start_date` and `end_date`.
+          - The character limit for the `description` field is 256 characters.
+          - The `cron_expression` should be defined to run no more frequently than every 12 hours.
+          - The `steps` field should contain at least one job step.
+        - At least one field (from the above list) must be included in the request body to perform the update. If a field is not provided in the request body, its existing value remains unchanged.
+        - A schedule can only be updated if it is in the `DISABLED` state.
+        - A schedule can only be updated if it has not reached its final execution.
+          For ex. If the original schedule has finished its final execution on 2024-04-21, and if we try to update the schedule on 2024-05-12 (after the final execution), the update will not be permitted.
+      operationId: update_nexus_schedule_by_id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                start_date:
+                  type: string
+                  description: The start date of the schedule
+                end_date:
+                  type: string
+                  description: The end date of the schedule
+                cron_expression:
+                  type: string
+                  description: The cron expression for the schedule
+                description:
+                  type: string
+                  description: The description of the schedule
+                steps:
+                  type: array
+            examples:
+              Update Nexus Schedules:
+                value:
+                  start_date: "2024-04-21T00:00:00Z"
+                  end_date: "2024-10-21T00:00:00Z"
+                  cron_expression: "0 6 * * 1 2024-2026"
+                  description: "Export portfolio after performing health scan & resolution every Sunday at 6:00 AM from the years 2024 through 2026"
+                  steps:
+                    - job_type: "health_scan"
+                      job_body:
+                        operator: "duplicate_identification"
+                        operand:
+                          - "cs_company_id"
+                        condition: "OR"
+                    - job_type: "health_resolution"
+                      job_body:
+                        operator: "duplicate_identification"
+                        method: "delete"
+                    - job_type: "export"
+                      job_body: {}
+
+      responses:
+        "200":
+          description: Nexus schedules updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  schedule_id:
+                    type: string
+                    description: The ID of the schedule updated
+                  next_execution:
+                    type: string
+                    description: The string representation of the next execution time
+                  message:
+                    type: string
+                    description: The message indicating the success of the operation
+        "400":
+          description: Bad request, request body is missing or invalid
+        "403":
+          description: Bad request, schedule to be updated is either not `DISABLED` or has finished its final execution.
+        "404":
+          description: Portfolio not found
+        "410":
+          description: Bad request, schedule to be updated is `DELETED`
+
+        "500":
+          description: Internal server error
+        "503":
+          description: Service unavailable
+
+    delete:
+      summary: Delete a Nexus schedule setup by a schedule ID.
+      tags: [Nexus]
+      description: |
+        This endpoint is used to delete Nexus schedule by ID which is identified by `schedule_id`. The schedule will be soft-deleted and marked as `DELETED`.
+      operationId: delete_nexus_schedule_by_id
+      parameters:
+        - name: schedule_id
+          in: path
+          description: The ID for which Nexus schedule is to be retrieved
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: |
+            No content. It indicates:
+              - The Nexus schedule is deleted successfully 
+              - The schedule does not exist
+              - The schedule does not belong to the customer_id/user_id
+        "400":
+          description: Bad request, the schedule_id is not valid uuid
+        "500":
+          description: Internal server error
+        "503":
+          description: Service unavailable
+
+  /nexus/schedules/{schedule_id}/status:
+    put:
+      summary: Update Nexus Schedule Status by Schedule ID.
+      tags: [Nexus]
+      operationId: update_nexus_schedule_status
+      parameters:
+        - name: schedule_id
+          in: path
+          description: The schedule ID for which Nexus schedule status will be updated
+          required: true
+          schema:
+            type: string
+      description: |
+        This endpoint is used to Update a Nexus schedule Status by ID which is identified by `schedule_id`. The endpoint accepts changes to specific field, with validations in place to ensure the integrity of the schedule and adherence to constraints.
+
+        The request body can include the following fields for update:
+            - state: Specifies the status of the schedule. It can be `ENABLED` or `DISABLED`.
+
+        ## Key validations
+            - A schedule can only be updated to `ENABLED` or `DISABLED` state.
+            - A schedule can only be updated if it has not reached its final execution.
+            For ex. If the original schedule has finished its final execution on 2024-04-21, and if we try to update the state on 2024-05-12 (after the final execution), the update will not be permitted.
+            - A schedule can only be updated if it is not in `DELETED` state.
+
+        ### Note: Before updating to `ENABLED` state, ensure that the schedule start date is not in the past.
+        If the start date is in the past, update the schedule start date to a future date using the `Update Nexus Schedule` API, and then update the schedule status to `ENABLED`.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                state:
+                  type: string
+                  description: The state of the schedule, it can be `ENABLED` or `DISABLED`
+            examples:
+              Update Nexus Schedules Status:
+                value:
+                  state: "ENABLED"
+      responses:
+        "200":
+          description: Nexus schedules status updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  schedule_id:
+                    type: string
+                    description: The ID of the Nexus schedule
+                  state:
+                    type: string
+                    description: The state of the schedule, it can be `ENABLED` or `DISABLED`
+                  message:
+                    type: string
+                    description: The message indicating the success of the operation
+        "400":
+          description: Bad request, request body is missing or invalid
+        "403":
+          description: Bad request, schedule to be updated is either not `DISABLED` or has finished its final execution.
+        "404":
+          description: Portfolio not found
+        "410":
+          description: Bad request, schedule to be updated is `DELETED`
+        "500":
+          description: Internal server error
+        "503":
+          description: Service unavailable
+
+
+  /nexus/schedules/portfolios/{portfolio_id}:
+    get:
+      summary: List Nexus schedules by portfolio_id.
+      tags: [Nexus]
+      description: |
+        This endpoint is used to list Nexus schedules for a specific `portfolio_id` corresponding to its `customer_id`. 
+      operationId: list_nexus_schedules_by_portfolio_id
+      parameters:
+        - name: portfolio_id
+          in: path
+          description: The portfolio ID for which Nexus schedules will be retrieved
+          required: true
+          schema:
+            type: string
+        - name: order_by
+          in : query
+          description: Ordering for results. Multiple sort conditions can be provided, separated by commas. Allowed sort 
+            keys are `created_at`, `last_modified_at`, `start_date`, and `end_date`. The records can be ordered in ascending
+            (asc) or descending (desc) order.
+          schema:
+            type: string
+            default: created_at-desc
+            example: 'start_date-asc,end_date-desc'
+        - name: state
+          in: query
+          description: The state of the schedule, it can be `ENABLED`, `DISABLED`
+          schema:
+            type: string
+            default: ENABLED
+            enum: [ENABLED, DISABLED]
+      responses:
+        "200":
+          description: List of nexus schedules retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  correlation_id:
+                    type: string
+                    description: The ID of the x-ray-trace from the header
+                  schedules:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        schedule_id:
+                          type: string
+                          description: The ID of the Nexus schedule
+                        start_date:
+                          type: string
+                          description: The start date of the schedule
+                        end_date:
+                          type: string
+                          description: The end date of the schedule
+                        cron_expression:
+                          type: string
+                          description: The cron expression for the schedule
+                        state:
+                          type: string
+                          description: The state of the schedule, it can be `ENABLED`, `DISABLED`
+                        created_at:
+                          type: string
+                          description: The creation date of the schedule
+                        last_modified_at:
+                          type: string
+                          description: The last modification date of the schedule
+                        description:
+                          type: string
+                          description: The description of the schedule
+                        next_execution:
+                          type: string
+                          description: |
+                            The `next_execution` shows a next schedule execution date for ENABLED schedules. 
+                            The `next_execution` date is in ISO 8601 format(e.g.2024-07-26T14:20:52Z) for ENABLED schedules 
+                            and it returns null for a `DISABLED` schedules.
+              examples:
+                Get Nexus Schedule By Portfolio ID:
+                  value:
+                    correlation_id: "Root=1-6669d66f-2db4e7402d81fe956db8a7df"
+                    schedules:
+                      - schedule_id: "c00aa688-22b0-42d3-b574-940a69445882"
+                        description: "Export portfolio after performing health scan & resolution every Monday on 6AM for six months"
+                        start_date: "2024-10-25T13:35:00Z"
+                        end_date: "2025-10-21T00:00:00Z"
+                        cron_expression: "40 13 ? * 6 *"
+                        state: "ENABLED"
+                        created_at: "2024-10-25T13:35:00Z"
+                        last_modified_at: "2024-10-25T13:35:00Z"
+                        next_execution: "2024-11-29T13:40:00Z"
+
+        "400":
+          description: Bad request, request body is missing or invalid
+        "404":
+          description: The schedule list requested by the customer_id/user_id does not exist (or) the portfolio_id does not exist
+        "500":
+          description: Internal server error
+        "503":
+          description: Service unavailable
+
+# end region
+
+components:
+  securitySchemes:
+    bearerAuth: # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+tags:
+  - name: Authentication
+    description: Authentication operations available to the user to interact with Portfolios API system
+  - name: Portfolio
+    description: |-
+      This section contains all the CRUD operations related to Portfolios.
+
+      The api supports following operations:
+        - List Portfolios
+        - Create Portfolio
+        - Describe Portfolio
+        - Update Portfolio
+        - Delete Portfolio
+  - name: Portlet
+    description: |-
+      This section contains all the CRUD operations related to Portlet.
+
+      The api supports following operations:
+        - List Portlets
+        - Create Portlet
+        - Describe Portlet
+        - Update Portlet
+        - Delete Portlet
+        - Delete Multiple Portlets
+
+  - name: Bulk
+    description: |-
+      This section contains all operations related to Portfolios Bulk Jobs.
+
+      The api supports following operations:
+        - Export
+        - Export Audit Logs
+        - Import
+        - Import Activity
+        - Enrich
+
+  - name: Health Scan
+    description: |-
+      This section contains all operations related Portfolio Health Scan operations.
+
+      The api supports following operations:
+        - Get Health Scan
+        - Update Health Scan
+
+  - name: Jobs
+    description: |-
+      This section contains all operations related Portfolio Jobs.
+
+      The api supports following operations:
+        - Get Jobs
+        - Download By Job Id
+
+  - name: Nexus
+    description: |-
+      This section contains all operations related Nexus orchestration system.
+
+      Nexus supports the below jobs:
+        - Bulk Extract
+        - Export
+        - Health Resolution
+        - Health Scan
+        - Import Activity
+        - Insights
+        - Match
+
+      The api supports following operations:
+        - Create Nexus
+        - Get Nexus Status
+        - Get Nexus By Portfolio Id
+        - Create Nexus Schedules
+        - Get Nexus Schedule By Id
+        - Updated Nexus Schedule Status By Id
+        - Get Nexus Schedule By Portfolio Id
