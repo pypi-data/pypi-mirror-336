@@ -1,0 +1,3 @@
+[console_scripts]
+JavaBianchengWentiChuyiFix1 = JavaBianchengWentiChuyiFix1.__main__:main
+java-biancheng-wenti-chuyi-fix1 = JavaBianchengWentiChuyiFix1.__main__:main
