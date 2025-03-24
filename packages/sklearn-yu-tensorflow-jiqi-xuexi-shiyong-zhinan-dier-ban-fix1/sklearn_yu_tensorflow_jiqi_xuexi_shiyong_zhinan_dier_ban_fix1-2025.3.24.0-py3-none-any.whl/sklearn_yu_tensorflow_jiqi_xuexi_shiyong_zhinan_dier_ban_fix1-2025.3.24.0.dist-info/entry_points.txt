@@ -1,0 +1,3 @@
+[console_scripts]
+SklearnYuTensorflowJiqiXuexiShiyongZhinanDierBanFix1 = SklearnYuTensorflowJiqiXuexiShiyongZhinanDierBanFix1.__main__:main
+sklearn-yu-tensorflow-jiqi-xuexi-shiyong-zhinan-dier-ban-fix1 = SklearnYuTensorflowJiqiXuexiShiyongZhinanDierBanFix1.__main__:main
