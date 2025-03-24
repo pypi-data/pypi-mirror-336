@@ -1,0 +1,3 @@
+[console_scripts]
+GcpShangDeRengongzhinengShiyongZhinanChuyiFix1 = GcpShangDeRengongzhinengShiyongZhinanChuyiFix1.__main__:main
+gcp-shang-de-rengongzhineng-shiyong-zhinan-chuyi-fix1 = GcpShangDeRengongzhinengShiyongZhinanChuyiFix1.__main__:main
