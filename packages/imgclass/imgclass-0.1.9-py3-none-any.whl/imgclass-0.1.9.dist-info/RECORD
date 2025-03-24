@@ -1,0 +1,10 @@
+imgclass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imgclass/pred.py,sha256=Y8uTA_rl1wa_aT1xTCOomIg1KIIgYQDNZ5Dv2IUaqO8,2875
+imgclass/prepro.py,sha256=v3IvGBs8vw9pkgiWP58SYcGk3y76Gge9Tyg2Q5-XFhM,5403
+imgclass/result.py,sha256=mUXY2aO2LkFdiAU9DYFgogQa6fBpFPMLz__MPLQChjY,9018
+imgclass/testing.py,sha256=KqUGwqKS44ZK1rV679BNj7uceKJ97_XRmOKlMxnO-yY,3392
+imgclass/training.py,sha256=efWMBBWsr7raQ_FgCR0Rr3KfX7mBGK5wYJS4YLn7xL8,7646
+imgclass-0.1.9.dist-info/METADATA,sha256=j9ip8moMn95gtOaxvKf_ZRey3Q7Wmx0--0tgFLzp1-4,863
+imgclass-0.1.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+imgclass-0.1.9.dist-info/top_level.txt,sha256=uOObaHkGGH7dxZfbq1Fc9r4JXqdPcPgsiKqVg3pXcXM,9
+imgclass-0.1.9.dist-info/RECORD,,
