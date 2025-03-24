@@ -1,0 +1,8 @@
+httpx_kerberos/__init__.py,sha256=e0lR-LDiVRdglSILP0F4gcF4khXAvqsxyfqZcfb9XW8,264
+httpx_kerberos/__version__.py,sha256=TnxEkcacpPApBy6ny2BS2KZNLG2qkuQ5caeD6vLjEg0,104
+httpx_kerberos/exceptions.py,sha256=sLHNjHdwX-KzSRAX6zmsX4-9o_NyJmchSKsQsvPv0WM,988
+httpx_kerberos/kerberos.py,sha256=rownu0SkvTMfAUxKMho-d1PGWLA4jDohbKreeGFhNdc,15843
+httpx_kerberos-0.1.2.dist-info/METADATA,sha256=X8ckoeVWD_mNnkpSWeD_FpdL7TPxCK8pv7fArNtuqM8,7340
+httpx_kerberos-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+httpx_kerberos-0.1.2.dist-info/licenses/LICENSE,sha256=kdt9-94LzIMu2cjxZFbkHxfXfm_OtKVoiRgKYpLTfzA,1063
+httpx_kerberos-0.1.2.dist-info/RECORD,,
