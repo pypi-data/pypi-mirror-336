@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wjj/__init__.py
+wjj.egg-info/PKG-INFO
+wjj.egg-info/SOURCES.txt
+wjj.egg-info/dependency_links.txt
+wjj.egg-info/top_level.txt
+wjj/file/__init__.py
+wjj/file/op.py
+wjj/path/__init__.py
+wjj/path/op.py
