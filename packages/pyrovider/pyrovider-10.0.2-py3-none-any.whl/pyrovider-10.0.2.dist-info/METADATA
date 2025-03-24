@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyrovider
+Version: 10.0.2
+Summary: Dependency confiuse Test
+Author: shiphero
+Author-email: hello@shiphero.com
+Description-Content-Type: text/markdown
+Requires-Dist: socket
+Requires-Dist: getpass
+
+
+<h1>Hello World</h1>
