@@ -1,0 +1,7 @@
+sdspconv-dist=3.16.1
+converter-main=TAG:3.16.1
+converter-frontend=TAG:3.16.1
+converter-backend=TAG:3.16.0
+converter-fm2lm=TAG:3.16.0
+converter-packer=TAG:3.16.0
+tiling-advisor=TAG:3.16.1
