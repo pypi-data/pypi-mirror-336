@@ -1,0 +1,3 @@
+[console_scripts]
+polyclash-client = polyclash.client:main
+polyclash-server = polyclash.server:main
