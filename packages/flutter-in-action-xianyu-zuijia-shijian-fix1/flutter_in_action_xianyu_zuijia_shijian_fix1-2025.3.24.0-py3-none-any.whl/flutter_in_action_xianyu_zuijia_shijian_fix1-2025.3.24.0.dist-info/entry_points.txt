@@ -1,0 +1,3 @@
+[console_scripts]
+FlutterInActionXianyuZuijiaShijianFix1 = FlutterInActionXianyuZuijiaShijianFix1.__main__:main
+flutter-in-action-xianyu-zuijia-shijian-fix1 = FlutterInActionXianyuZuijiaShijianFix1.__main__:main
