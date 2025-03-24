@@ -1,0 +1,12 @@
+deep_knowledge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deep_knowledge/generic_llm_provider.py,sha256=_ml7Nz4dC92p0thtW26D2RrC67OwU51FanRSfa63t_g,7112
+deep_knowledge/utils.py,sha256=gXU-MavKXho4wBbqHDRzYs5hF6sflBocYbMxqCyfP1U,5600
+deep_knowledge/summary/__init__.py,sha256=u7iDFns10ABf9wIxvimNIxW8VIYrJmHbLl-jmQVqbr8,29
+deep_knowledge/summary/prompts.py,sha256=UHIJslBsHCHRvKtMeJGMl8p3QHaUKOktjwZmrIDvsk4,10037
+deep_knowledge/summary/summary.py,sha256=PYdalA9nsXrrQTBjHGB2fwEVB_OhWvJn6_LrBHrqXaQ,12361
+deep_knowledge/summary/utils.py,sha256=weWAW46RoY4Jc58QcsGQRI7YjGJke8YI6Xx6_XoHGYg,4976
+deep_knowledge-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+deep_knowledge-0.1.1.dist-info/METADATA,sha256=gxf2zpyVV7dLJnC39iCIpjnZhLv0fUOm4p23gkEQQ-w,6150
+deep_knowledge-0.1.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+deep_knowledge-0.1.1.dist-info/top_level.txt,sha256=M35i92Ve-zd_2EW3pTYBP1oCwngquiXOJIiOScz4FYE,15
+deep_knowledge-0.1.1.dist-info/RECORD,,
