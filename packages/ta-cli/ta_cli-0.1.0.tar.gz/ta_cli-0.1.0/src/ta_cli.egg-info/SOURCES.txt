@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/ta/__init__.py
+src/ta/main.py
+src/ta/ta.py
+src/ta_cli.egg-info/PKG-INFO
+src/ta_cli.egg-info/SOURCES.txt
+src/ta_cli.egg-info/dependency_links.txt
+src/ta_cli.egg-info/entry_points.txt
+src/ta_cli.egg-info/requires.txt
+src/ta_cli.egg-info/top_level.txt

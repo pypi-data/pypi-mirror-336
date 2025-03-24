@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: ta-cli
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: openai>=1.68.1
+Requires-Dist: rich>=13.9.4
+
+# TA - DeepSeek AI CLI Tool
+
+A command-line interface tool for interacting with DeepSeek AI.
+
+## Installation
+
+```bash
+pip install ta
+```
+
+## Usage
+
+```bash
+ta "Your question here"
+```
+
+## Features
+
+- Interactive chat with DeepSeek AI
+- Streaming responses
+- Rich terminal output with markdown support
+
+## Requirements
+
+- Python 3.12 or higher
+- DeepSeek API key (set as DEEPSEEK_KEY environment variable)
+
+## License
+
+MIT License
