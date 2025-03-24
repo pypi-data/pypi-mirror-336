@@ -1,0 +1,2 @@
+[console_scripts]
+openai-tts-mcp-server = openai_tts_mcp_server:main
