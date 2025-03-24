@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "editax"
+version = "0.2.1"
+description = "Automatically created RL Environment Editors"
+authors = [
+    "Rundong Liu <rundong.liu@proton.me>",
+    "Shyam Sudhakaran <shyamsnair@protonmail.com>",
+    "Jacob Beck <jakeabeck@gmail.com>",
+    "Richard Zhang <zrich107@gmail.com>"
+]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [
+    { include = "editax" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jax = "^0.5.0"
+chex = "^0.1.88"
+jaxlib = "^0.5.0"
+langchain = "^0.3.19"
+langchain-openai = "^0.3.6"
+flax = "^0.10.3"
+langchain-anthropic = "^0.3.7"
+imageio = "^2.36.1"
+matplotlib = "^3.10.0"
+jax2d = "^1.0.1"
+gymnax = "^0.0.8"
+jaxgl = "^1.0.1"
+pygame = "^2.6.1"
+omegaconf = "^2.3.0"
+safetensors = "^0.5.2"
+craftax = "^1.4.5"
+packaging = "^24.2"
+distrax = "^0.1.5"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.0"
+ipykernel = "^6.29.5"
+jaxued = {git = "https://github.com/DramaCow/jaxued.git", branch = "main"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
