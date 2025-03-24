@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+netcore/__init__.py
+netcore/endpoint.py
+netcore/lso.py
+netcore.egg-info/PKG-INFO
+netcore.egg-info/SOURCES.txt
+netcore.egg-info/dependency_links.txt
+netcore.egg-info/top_level.txt
