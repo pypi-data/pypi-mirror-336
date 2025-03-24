@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chirp_spectrogram_generator
+Version: 0.1.6
+Summary: A package to generate synthetic spectrograms of chirps.
+Home-page: https://github.com/nbahador/chirp_spectrogram_generator
+Author: Nooshin Bahador
+Author-email: nooshin.bah@gmail.com
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scipy
+
