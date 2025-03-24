@@ -1,0 +1,12 @@
+miarec_s3fs/__init__.py,sha256=sNa8IiUE7db61ilR46yfT5AMJd7HliCidoxKHniT570,358
+miarec_s3fs/_version.txt,sha256=r2gaiQ9gtHAjVm0Yxfwd6NDWV0k7YcnbyYX-z8Kbe00,10
+miarec_s3fs/errors.py,sha256=wIfhTsvci3UnHPRBx55_Hf_OX2h8To566gcxDgBNM_s,1139
+miarec_s3fs/helpers.py,sha256=XVouqhVXEtUaOhM_DpZPvbjfq-hTkuEz6821VTNNJsc,812
+miarec_s3fs/s3file.py,sha256=y-Y9Td8fdA0ah-Du0c9wMsy0IwjHvS4O9sY0RPh0VlQ,2918
+miarec_s3fs/s3fs.py,sha256=Y4jdVdE1lgofWsRUzw6nwTyIhEYsmZeEV97JqPOFTyk,24165
+miarec_s3fs-2025.3.25.dist-info/licenses/LICENSE,sha256=l19sSKIIAqX04EEKC1Wbt_B9z0Kh7jGBUpgbEw_0FA8,1069
+miarec_s3fs-2025.3.25.dist-info/METADATA,sha256=H6yHPoQ8rKkRc9QqfnPaPZ3MYYjzDmxIhmGMz74IpHI,7427
+miarec_s3fs-2025.3.25.dist-info/WHEEL,sha256=aoLN90hLOL0c0qxXMxWYUM3HA3WmFGZQqEJHX1V_OJE,109
+miarec_s3fs-2025.3.25.dist-info/top_level.txt,sha256=2dNl7H25NFnXb4SJVYwypPT6bIjWxUu12HWaXZIHYt4,12
+miarec_s3fs-2025.3.25.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+miarec_s3fs-2025.3.25.dist-info/RECORD,,
