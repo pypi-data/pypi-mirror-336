@@ -1,0 +1,3 @@
+[console_scripts]
+KubernetesZhongwenZhinanYunYuanshengYingyongJiagouShijianShouceFix1 = KubernetesZhongwenZhinanYunYuanshengYingyongJiagouShijianShouceFix1.__main__:main
+kubernetes-zhongwen-zhinan-yun-yuansheng-yingyong-jiagou-shijian-shouce-fix1 = KubernetesZhongwenZhinanYunYuanshengYingyongJiagouShijianShouceFix1.__main__:main
