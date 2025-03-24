@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "unique-chars-counter-vs"
+version = "0.1.0"
+description = "A command-line tool for counting unique characters in strings or files"
+authors = [
+    { name = "Volodymyr Savchenko", email = "your.email@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10"
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://git.foxminded.ua/foxstudent106775/task_4_cli.git"
+
+[tool.pytest.ini_options]
+addopts = "--cov=CollectionFramework"
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["CollectionFramework"]
