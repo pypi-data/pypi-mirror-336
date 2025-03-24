@@ -1,0 +1,2 @@
+[console_scripts]
+screenshot-server = screenshot:clint.main
