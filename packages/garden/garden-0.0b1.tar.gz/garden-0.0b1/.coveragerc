@@ -1,0 +1,14 @@
+[run]
+source = ./src
+
+include =
+    */garden/*
+
+omit =
+    */tests/*
+
+[report]
+precision = 2
+
+[html]
+directory = ./coverage_html_report

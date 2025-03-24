@@ -1,0 +1,90 @@
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "garden"
+dynamic = ["version"]
+dependencies = []
+requires-python = ">=3.10"
+description = "Garden is a simple asynchronous task management library for Python."
+readme = "README.md"
+license = "GPL-3.0"
+license-files = ["LICENSE"]
+keywords = [
+  "asynchronous",
+  "task management",
+  "concurrency",
+  "python library",
+  "asyncio compatible",
+  "job queue",
+  "background tasks",
+  "parallel processing",
+  "productivity tools",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Framework :: AsyncIO",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+all = []
+db  = []
+
+[[project.authors]]
+name  = "Puls Garney"
+email = "me@pulsgarney.com"
+
+[[project.maintainers]]
+name  = "Puls Garney"
+email = "me@pulsgarney.com"
+
+[project.urls]
+Homepage      = "https://github.com/pulsgarney/garden"
+Documentation = "https://github.com/pulsgarney/garden"
+Repository    = "https://github.com/pulsgarney/garden"
+Changelog     = "https://github.com/pulsgarney/garden"
+
+[tool.hatch.version]
+path = "src/garden/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "*.md",
+  "*.egg-info",
+  "*.so",
+  "*.dll",
+  "*.pyc",
+  "*.pyo",
+  "*.log",
+  "*.toml",
+  "*.swp",
+  ".git",
+  ".venv",
+  ".github",
+  ".gitignore",
+  ".idea",
+  ".vscode",
+  "Makefile",
+  "requirements*",
+  "assets",
+  "build",
+  "dist",
+  "docs",
+  "examples",
+  "tests",
+]
