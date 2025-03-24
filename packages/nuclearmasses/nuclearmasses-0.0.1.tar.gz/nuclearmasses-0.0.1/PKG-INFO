@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: nuclearmasses
+Version: 0.0.1
+Summary: A python package to parse and store the various files published by AME and NUBASE
+Author: Ian Cullen, Soham Pal
+Project-URL: GitHub, https://github.com/php1ic/nuclearmasses
+Keywords: nuclear,physics,decay,AME,NUBASE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pytest
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Dynamic: license-file
+
+# Nuclear Masses
+
+Python package to parse the various files published by the AME and NUBASE.
+
