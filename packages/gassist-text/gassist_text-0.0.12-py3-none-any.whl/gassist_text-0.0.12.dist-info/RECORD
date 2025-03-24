@@ -1,0 +1,11 @@
+gassist_text/__init__.py,sha256=-Cs04cIC0ZYpj39EQOQS-FnfbxfEEkBb4SZqOdgstAQ,149
+gassist_text/assistant_helpers.py,sha256=4rmImK0jCl5E_6uYO53h3nlLl2yHF_RpvcdKWZqO644,2145
+gassist_text/textinput.py,sha256=iaMYRw4Lx2U4_b9gNQZIJFiy932bJTFvaYl28IrsgRU,5362
+gassist_text-0.0.12.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+google/assistant/embedded/v1alpha2/__init__.py,sha256=ri4R82PscdiGGRX72z3F9_vvt5VLdIXEjY_HMATBxHI,57
+google/assistant/embedded/v1alpha2/embedded_assistant_pb2.py,sha256=A1Y-42GaV6I8uavUnHjOnK1s-nTfvGZ2NeINsdIkgrs,7660
+google/assistant/embedded/v1alpha2/embedded_assistant_pb2_grpc.py,sha256=0XSIktZfBEhNsx3nkgqUIgxzf3pywo_q4uB68G9NKqU,4999
+gassist_text-0.0.12.dist-info/METADATA,sha256=EnI94J-jY3a93YsfIMQcByonaUdiQQWoNrjjFYgiEvY,3442
+gassist_text-0.0.12.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+gassist_text-0.0.12.dist-info/top_level.txt,sha256=fjIkqSbmyEXUnqZfXGcERGdacXDd7PYzOBi4r3DxzLI,20
+gassist_text-0.0.12.dist-info/RECORD,,
