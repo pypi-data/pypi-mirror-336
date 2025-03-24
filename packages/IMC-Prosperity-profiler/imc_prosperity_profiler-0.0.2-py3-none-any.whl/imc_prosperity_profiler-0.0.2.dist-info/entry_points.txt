@@ -1,0 +1,2 @@
+[console_scripts]
+prosperityprofiler = profiler.__main__:main
