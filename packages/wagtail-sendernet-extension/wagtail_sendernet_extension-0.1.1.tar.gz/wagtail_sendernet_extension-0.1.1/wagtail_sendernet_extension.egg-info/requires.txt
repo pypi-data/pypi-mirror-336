@@ -1,0 +1,4 @@
+Django>=5.1
+wagtail>=4.0
+requests
+mjml

@@ -1,0 +1,49 @@
+Metadata-Version: 2.2
+Name: wagtail_sendernet_extension
+Version: 0.1.1
+Summary: A reusable Django app that integrates Wagtail with Sender.net.
+Home-page: https://github.com/joemainak/wagtail_sendernet_extension
+Author: Joe Maina
+Author-email: kimanijmaina@gmail.com
+License: MIT
+Classifier: Framework :: Django
+Classifier: Framework :: Wagtail
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=5.1
+Requires-Dist: wagtail>=4.0
+Requires-Dist: requests
+Requires-Dist: mjml
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# Wagtail Newsletter Extension
+
+Integrate Sender.net email campaigns with Wagtail CMS
+
+## Features
+- Create/manage campaigns in Wagtail admin
+- Sync with Sender.net API
+- Recipient management
+- Campaign scheduling
+
+## Installation
+```bash
+pip install wagtail_sendernet_extension
+
+```bash
+
+INSTALLED_APPS = [
+    ...
+    'wagtail_sendernet_extension',
+]
