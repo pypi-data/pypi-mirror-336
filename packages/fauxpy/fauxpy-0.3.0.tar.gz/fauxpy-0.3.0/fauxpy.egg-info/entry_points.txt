@@ -1,0 +1,5 @@
+[console_scripts]
+fauxpy = fauxpy.main:fauxpy_analysis_mode
+
+[pytest11]
+fauxpy = fauxpy.main
