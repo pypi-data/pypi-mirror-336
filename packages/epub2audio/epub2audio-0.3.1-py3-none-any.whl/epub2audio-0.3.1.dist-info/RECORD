@@ -1,0 +1,14 @@
+src/__init__.py,sha256=sZYiXTtX6NxjdD4NET_BcnEYLvXQREZI-MAybrVnghQ,832
+src/_version.py,sha256=lOWWIGJeBi0KkFopWU_n3GH71C1PsaZ-ZYDfxFkne6c,511
+src/audio_converter.py,sha256=HdR8M4xuO1csQy9asdve-e3yMgPapkyru2f9w9FPQTM,5446
+src/audio_handler.py,sha256=txSTbBKAEpC-f7MNPZ8vzUZgivynTGltpD4Rmv9q3k8,11891
+src/config.py,sha256=vfXUW7ZpD2F_3azx5X66LhIzMEyXSzSSdXFWVUz2JuM,2063
+src/epub2audio.py,sha256=a11rqNZP_6HEi199m7Dngdoh8v7mrJnNyoslNHgvtGs,12218
+src/epub_processor.py,sha256=iTmljMFRZnjKsqkkX-q0tMx4aZAVqEk_mrKKm9lEKjI,10920
+src/helpers.py,sha256=dEToSi_OGJJv0u5qoubDCVhIqU1h7vz3Z253fvfCfK4,6808
+src/voices.py,sha256=NPvxayzHec3YKIdqPRmCkBzmiooKxFFoZpJ4CrIY1is,10525
+epub2audio-0.3.1.dist-info/METADATA,sha256=0MrXTcTB3aN-I9VUrmNAdEf7G0EXJvA2wXn3l-0LeBs,7477
+epub2audio-0.3.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+epub2audio-0.3.1.dist-info/entry_points.txt,sha256=Pm1Tcx3WSC6FZ3zA-9-_IemUzwEOsEL-rbPZcVY_egA,51
+epub2audio-0.3.1.dist-info/licenses/LICENSE,sha256=6d9MTk5kuBaKccPGdmjc_6u-j8oR1KxKfVSCVizRZ5w,34524
+epub2audio-0.3.1.dist-info/RECORD,,
