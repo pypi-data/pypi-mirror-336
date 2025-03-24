@@ -1,0 +1,3 @@
+[console_scripts]
+greenbone-scap-api=greenbone.scap.api.main:main
+
