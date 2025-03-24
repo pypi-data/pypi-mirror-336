@@ -1,0 +1,3 @@
+[console_scripts]
+LingzuWenkuFix1 = LingzuWenkuFix1.__main__:main
+lingzu-wenku-fix1 = LingzuWenkuFix1.__main__:main
