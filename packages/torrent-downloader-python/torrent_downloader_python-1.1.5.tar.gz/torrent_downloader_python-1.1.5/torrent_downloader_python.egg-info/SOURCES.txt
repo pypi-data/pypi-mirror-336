@@ -1,0 +1,11 @@
+README.md
+setup.py
+torrent_downloader_gui.py
+tests/test_version.py
+torrent_downloader/__init__.py
+torrent_downloader_python.egg-info/PKG-INFO
+torrent_downloader_python.egg-info/SOURCES.txt
+torrent_downloader_python.egg-info/dependency_links.txt
+torrent_downloader_python.egg-info/entry_points.txt
+torrent_downloader_python.egg-info/requires.txt
+torrent_downloader_python.egg-info/top_level.txt
