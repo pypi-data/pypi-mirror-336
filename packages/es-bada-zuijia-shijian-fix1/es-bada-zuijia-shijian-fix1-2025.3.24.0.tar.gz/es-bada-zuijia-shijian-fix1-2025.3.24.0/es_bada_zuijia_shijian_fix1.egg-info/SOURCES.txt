@@ -1,0 +1,12 @@
+README.md
+setup.py
+EsBadaZuijiaShijianFix1/README.md
+EsBadaZuijiaShijianFix1/__init__.py
+EsBadaZuijiaShijianFix1/__main__.py
+EsBadaZuijiaShijianFix1/file.pdf
+EsBadaZuijiaShijianFix1/index.html
+es_bada_zuijia_shijian_fix1.egg-info/PKG-INFO
+es_bada_zuijia_shijian_fix1.egg-info/SOURCES.txt
+es_bada_zuijia_shijian_fix1.egg-info/dependency_links.txt
+es_bada_zuijia_shijian_fix1.egg-info/entry_points.txt
+es_bada_zuijia_shijian_fix1.egg-info/top_level.txt
