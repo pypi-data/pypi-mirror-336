@@ -1,0 +1,8 @@
+[project]
+name = "pydantic-extensions"
+version = "0.1.0"
+description = "Toolkit for pydantic(dynamic fields + pagination + variable fields list) "
+readme = "README.md"
+license = { file = "LICENSE"}
+requires-python = ">=3.12"
+dependencies = []

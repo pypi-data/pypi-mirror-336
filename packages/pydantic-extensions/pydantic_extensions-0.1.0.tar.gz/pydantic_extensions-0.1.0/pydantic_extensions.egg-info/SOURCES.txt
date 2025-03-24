@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+pydantic_extensions/__init__.py
+pydantic_extensions.egg-info/PKG-INFO
+pydantic_extensions.egg-info/SOURCES.txt
+pydantic_extensions.egg-info/dependency_links.txt
+pydantic_extensions.egg-info/top_level.txt
