@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automl_self_improvement"
+version = "1.0.0"
+description = "Autonomous AI model optimization framework with meta-learning and hybrid tuning"
+readme = "README.md"
+authors = [
+    {name = "Krishna Bajpai", email = "bajpaikrishna715@gmail.com"}
+]
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "optuna>=3.2.0",
+    "fastapi>=0.95.0",
+    "stable-baselines3>=2.0.0",
+    "diffusers>=0.16.0",
+    "pymoo>=0.6.0",
+    "scikit-learn>=1.2.0",
+    "ray[tune]>=2.5.0",
+    "python-jose>=3.3.0",
+    "uvicorn>=0.21.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/krish567366/automl-self-improvement"
+Documentation = "https://github.com/krish567366/automl_self_improvement/tree/main/docs"
+Repository = "https://github.com/krish567366/automl-self-improvement"
+
+[project.scripts]
+automl = "automl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["automl*"]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+"automl" = ["configs/*.json", "pretrained/*.pt"]
