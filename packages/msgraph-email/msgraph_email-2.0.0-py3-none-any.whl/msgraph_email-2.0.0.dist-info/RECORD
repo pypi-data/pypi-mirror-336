@@ -1,0 +1,15 @@
+msgraph_email/__init__.py,sha256=w7__GgJopk0UYij8CIwuE5QbaryuT4nhuwB-BqEero0,368
+msgraph_email/_version.py,sha256=Qrq9K4etR0Gu6FuYCBkR9a_pFiQFjkd_J7EVWk4Yp54,198
+msgraph_email/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msgraph_email/auth/auth_service.py,sha256=uokuYj7Fggytx3bk1CQL6_p5BvroOosgZpRooNJt_ME,4224
+msgraph_email/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msgraph_email/models/auth_credentials.py,sha256=MIREun5YyfkQJRLy3vmKQmB-Wex1YUKn6LKGItYYOYk,738
+msgraph_email/models/email_attachment.py,sha256=U_ANChT2_af6416QujEokRrN1H5M4yvKCF2xAaTN8Cs,433
+msgraph_email/models/email_message.py,sha256=NWSP20k8ye3uMCwE4QWsFPDt_Af6lv0mR-LdwzW1iRY,789
+msgraph_email/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msgraph_email/services/email_service.py,sha256=KVNasCvaHGWaYZ9IOfQYc9rGeBlbEUUerVwV3whTsG8,14139
+msgraph_email-2.0.0.dist-info/licenses/license,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+msgraph_email-2.0.0.dist-info/METADATA,sha256=QeUUjB87uEIP1R9aKFk1FIuC1_ZdAjCbiINmGHaRWkc,3868
+msgraph_email-2.0.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+msgraph_email-2.0.0.dist-info/top_level.txt,sha256=Kko9Zrs-iEDyWrdDxerHKyQ577Ll5U4KQQaK8lBh3N8,14
+msgraph_email-2.0.0.dist-info/RECORD,,
