@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: weao-api
+Version: 0.1.0
+Summary: A Python package for interacting with the WEAO API.
+Home-page: https://github.com/FlamesIsCool/weao_api
+Author: Flames
+Author-email: correywheatley6@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# WEAO API Python Package
+
+A Python package for interacting with the [WEAO API](https://weao.xyz/api).
+
+## Installation
+
+You can install the package locally using pip:
+
+```bash
+pip install .
