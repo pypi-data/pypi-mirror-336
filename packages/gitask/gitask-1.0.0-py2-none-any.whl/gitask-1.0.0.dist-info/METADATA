@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gitask
+Version: 1.0.0
+Summary: A CLI tool to streamline your workflow by integrating with your PMT and VCS.
+Home-page: https://github.com/shahafMordechay/Gitask
+Author: Shahaf Mordechay
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: jira
+Requires-Dist: requests
+Requires-Dist: python-gitlab
+
+UNKNOWN
+
+
