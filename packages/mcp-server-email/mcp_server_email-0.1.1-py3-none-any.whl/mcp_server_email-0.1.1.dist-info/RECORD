@@ -1,0 +1,9 @@
+mcp_server_email/__init__.py,sha256=9ZtHBsHdtugYjLM33EqxLz55m4tFQWeg4-LF_ZZ52qo,397
+mcp_server_email/__main__.py,sha256=lt-NQukytCCAqj3HyFquzEmgkn9F7weLEyv7_gUPZFM,365
+mcp_server_email/email.json,sha256=odUy1Yi3hUq8Z8EiX597oxWIM3wxoWTb-nFd7Bb4puA,1623
+mcp_server_email/server.py,sha256=ljURgSan6siR9JFX13LJBIhFPsanAbR6skVa3GI5d6M,15005
+mcp_server_email-0.1.1.dist-info/METADATA,sha256=Fq6dhYkiH304Sn_zrODULlrZ6oW0Ppj-WGfB5x23rZY,5095
+mcp_server_email-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_email-0.1.1.dist-info/entry_points.txt,sha256=zf4a58r-gn36SChOCIOczBX6hds9E87v9C_-qup_0_U,66
+mcp_server_email-0.1.1.dist-info/licenses/LICENSE,sha256=jMfG4zsk7U7o_MzDPszxAlSdBPpMuXN87Ml3Da0QgP8,1059
+mcp_server_email-0.1.1.dist-info/RECORD,,
