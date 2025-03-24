@@ -1,0 +1,3 @@
+[console_scripts]
+Tensorflow24GuanfangJiaochengHeZhinanFix1 = Tensorflow24GuanfangJiaochengHeZhinanFix1.__main__:main
+tensorflow-2-4-guanfang-jiaocheng-he-zhinan-fix1 = Tensorflow24GuanfangJiaochengHeZhinanFix1.__main__:main
