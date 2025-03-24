@@ -1,0 +1,11 @@
+# Include all Python files in the root directory
+include *.py
+
+# Include all Python files in the models directory and subdirectories
+recursive-include models *.py
+
+# Ensure other potential non-Python files in models are included
+recursive-include models *
+
+# Include the database.py file explicitly
+include database.py
