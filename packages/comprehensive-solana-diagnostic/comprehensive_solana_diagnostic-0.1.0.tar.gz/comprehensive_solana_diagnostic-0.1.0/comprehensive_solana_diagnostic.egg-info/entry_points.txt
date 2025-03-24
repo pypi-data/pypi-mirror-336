@@ -1,0 +1,2 @@
+[console_scripts]
+solana-diagnostic = comprehensive_solana_diagnostic:main
