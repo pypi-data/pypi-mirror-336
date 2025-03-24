@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dak0k_base_filter.egg-info/PKG-INFO
+dak0k_base_filter.egg-info/SOURCES.txt
+dak0k_base_filter.egg-info/dependency_links.txt
+dak0k_base_filter.egg-info/requires.txt
+dak0k_base_filter.egg-info/top_level.txt
