@@ -1,0 +1,28 @@
+*.py[cod]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+parts
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+# Translations
+*.mo
+
+# Sphinx
+doc/build
+
+# generated docs
+doc/source/api
+doc/source/gnocchi.rst
+
+# pytest cache
+.cache
