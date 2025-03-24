@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+gs_hello_world/__init__.py
+gs_hello_world/__main__.py
+gs_hello_world/main.py
+gs_hello_world.egg-info/PKG-INFO
+gs_hello_world.egg-info/SOURCES.txt
+gs_hello_world.egg-info/dependency_links.txt
+gs_hello_world.egg-info/top_level.txt
