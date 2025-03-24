@@ -1,0 +1,8 @@
+setup.py
+texttoaudio/__init__.py
+texttoaudio/texttoaudio.py
+texttoaudioconverter.egg-info/PKG-INFO
+texttoaudioconverter.egg-info/SOURCES.txt
+texttoaudioconverter.egg-info/dependency_links.txt
+texttoaudioconverter.egg-info/requires.txt
+texttoaudioconverter.egg-info/top_level.txt
