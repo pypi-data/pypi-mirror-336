@@ -1,0 +1,3 @@
+[console_scripts]
+CcnpShiyanShouceWumingFix1 = CcnpShiyanShouceWumingFix1.__main__:main
+ccnp-shiyan-shouce-wuming-fix1 = CcnpShiyanShouceWumingFix1.__main__:main
