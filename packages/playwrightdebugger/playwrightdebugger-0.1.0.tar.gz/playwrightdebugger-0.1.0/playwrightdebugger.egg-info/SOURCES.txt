@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+playwrightdebugger.egg-info/PKG-INFO
+playwrightdebugger.egg-info/SOURCES.txt
+playwrightdebugger.egg-info/dependency_links.txt
+playwrightdebugger.egg-info/requires.txt
+playwrightdebugger.egg-info/top_level.txt
