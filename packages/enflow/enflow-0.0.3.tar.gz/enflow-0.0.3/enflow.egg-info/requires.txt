@@ -1,0 +1,12 @@
+build>=1.2.2.post1
+energydatamodel>=0.0.2
+gymnasium>=1.1.1
+myst-parser>=4.0.1
+
+[dev]
+ipykernel>=6.29.5
+ipywidgets>=8.1.5
+nbsphinx>=0.9.7
+sphinx==7.2.6
+sphinx-autodoc-typehints>=2.0.1
+sphinx-rtd-theme>=3.0.2
