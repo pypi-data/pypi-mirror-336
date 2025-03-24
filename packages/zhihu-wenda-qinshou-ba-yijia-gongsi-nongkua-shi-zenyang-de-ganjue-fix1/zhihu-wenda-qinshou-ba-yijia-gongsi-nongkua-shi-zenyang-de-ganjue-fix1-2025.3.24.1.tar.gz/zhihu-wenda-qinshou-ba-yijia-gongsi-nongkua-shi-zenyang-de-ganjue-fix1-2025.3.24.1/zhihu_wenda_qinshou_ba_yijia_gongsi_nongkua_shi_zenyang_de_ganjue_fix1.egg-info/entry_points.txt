@@ -1,0 +1,3 @@
+[console_scripts]
+ZhihuWendaQinshouBaYijiaGongsiNongkuaShiZenyangDeGanjueFix1 = ZhihuWendaQinshouBaYijiaGongsiNongkuaShiZenyangDeGanjueFix1.__main__:main
+zhihu-wenda-qinshou-ba-yijia-gongsi-nongkua-shi-zenyang-de-ganjue-fix1 = ZhihuWendaQinshouBaYijiaGongsiNongkuaShiZenyangDeGanjueFix1.__main__:main
