@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdslicer"
+authors = [
+  { name = "Matthieu Boileau", email = "matthieu.boileau@math.unistra.fr" },
+]
+description = "A library to slice a markdown file into HTML sections."
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = ["python-frontmatter", "bs4", "markdown"]  # Add your python dependencies here
+dynamic = ["version"]  # the version is defined in the __init__.py file
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov", "faker"]
+doc = [
+  "Sphinx >= 7.2.2",  # 7.2.2 is the first version that supports Python 3.9
+  "myst-parser",  # Markdown support for Sphinx
+  "furo",  # A modern theme for Sphinx
+  "sphinx-copybutton",  # Add copy buttons to code blocks
+  "sphinx-autobuild",  # Auto-rebuild Sphinx documentation when editing
+  "sphinx-autodoc-typehints",  # Include type hints in the documentation
+]
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/boileaum/mdslicer"  # Hosted on GitLab using Pages
+
+[project.scripts]
+# An entry for the command line interface
+"mdslicer" = "mdslicer.mdslicer:main"
+
+[tool.setuptools]
+include-package-data = true  # Include non-python files in the package
+license-files = ["LICENSE"]  # Include the license file in the package
+
+[tool.setuptools.package-dir]
+"" = "src"  # The package is in the src directory
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Look for packages in the src directory
+namespaces = false  # Do not use namespace packages
+
+[tool.setuptools.dynamic.version]  # The version is defined in the __init__.py file
+attr = "mdslicer.__version__"

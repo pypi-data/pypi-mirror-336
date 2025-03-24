@@ -1,0 +1,2 @@
+[console_scripts]
+mdslicer = mdslicer.mdslicer:main

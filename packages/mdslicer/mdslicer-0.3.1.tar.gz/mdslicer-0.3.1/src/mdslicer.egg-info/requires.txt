@@ -1,0 +1,16 @@
+python-frontmatter
+bs4
+markdown
+
+[doc]
+Sphinx>=7.2.2
+myst-parser
+furo
+sphinx-copybutton
+sphinx-autobuild
+sphinx-autodoc-typehints
+
+[test]
+pytest
+pytest-cov
+faker

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/mdslicer/__init__.py
+src/mdslicer/mdslicer.py
+src/mdslicer.egg-info/PKG-INFO
+src/mdslicer.egg-info/SOURCES.txt
+src/mdslicer.egg-info/dependency_links.txt
+src/mdslicer.egg-info/entry_points.txt
+src/mdslicer.egg-info/requires.txt
+src/mdslicer.egg-info/top_level.txt
+tests/test_mdslicer.py
