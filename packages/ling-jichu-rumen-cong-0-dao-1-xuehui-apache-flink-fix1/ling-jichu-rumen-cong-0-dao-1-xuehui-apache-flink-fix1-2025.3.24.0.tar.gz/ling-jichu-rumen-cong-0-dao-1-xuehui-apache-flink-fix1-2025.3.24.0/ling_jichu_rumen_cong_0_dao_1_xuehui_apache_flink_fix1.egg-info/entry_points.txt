@@ -1,0 +1,3 @@
+[console_scripts]
+LingJichuRumenCong0Dao1XuehuiApacheFlinkFix1 = LingJichuRumenCong0Dao1XuehuiApacheFlinkFix1.__main__:main
+ling-jichu-rumen-cong-0-dao-1-xuehui-apache-flink-fix1 = LingJichuRumenCong0Dao1XuehuiApacheFlinkFix1.__main__:main
