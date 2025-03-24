@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+ninja_rest/__init__.py
+ninja_rest/authentication.py
+ninja_rest/generics.py
+ninja_rest/mixins.py
+ninja_rest/pagination.py
+ninja_rest/permissions.py
+ninja_rest/schemas.py
+ninja_rest/viewsets.py
+ninja_rest.egg-info/PKG-INFO
+ninja_rest.egg-info/SOURCES.txt
+ninja_rest.egg-info/dependency_links.txt
+ninja_rest.egg-info/not-zip-safe
+ninja_rest.egg-info/requires.txt
+ninja_rest.egg-info/top_level.txt
