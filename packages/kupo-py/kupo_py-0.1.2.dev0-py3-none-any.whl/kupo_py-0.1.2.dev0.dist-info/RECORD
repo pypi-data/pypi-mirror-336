@@ -1,0 +1,8 @@
+kupo/__init__.py,sha256=vFt8gyz4wBhAzPBZdbFKrBtP-V_XWkx_FmXB2K7yxoA,43
+kupo/client.py,sha256=RhCubxx7Ftv-GRDjyNoXebzVkmsAWj6VBr4Ttz1W3dc,28968
+kupo/models.py,sha256=a1h7tRHz-KSbwpW-5J8nN5k_J0v-ZBqJnZWMuwmPUSQ,21034
+kupo/utils.py,sha256=utSPJ8OsZDiAwFMqJEz76EBi1CZdt9fciGaDz0t4ipU,823
+kupo_py-0.1.2.dev0.dist-info/METADATA,sha256=iQD6qRrYdVd4YmuypgExmg5U6fg08jIxeLfm6DQAEE8,6513
+kupo_py-0.1.2.dev0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kupo_py-0.1.2.dev0.dist-info/licenses/LICENSE,sha256=Xd2DVX5nUwkrEot0ND57ahpBKGjMnn_wGsJ2aHV7jyo,1074
+kupo_py-0.1.2.dev0.dist-info/RECORD,,
