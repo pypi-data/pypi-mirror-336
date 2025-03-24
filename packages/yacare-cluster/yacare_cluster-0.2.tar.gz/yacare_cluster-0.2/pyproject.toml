@@ -1,0 +1,19 @@
+[project]
+name = "yacare_cluster"
+version = "0.2"
+authors = [
+  { name="Nicolas Chéron", email="nicolas.cheron@ens.psl.eu" },
+]
+description = "Package to use the YACARE algorithm for clustering data"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0-only"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/ncheron/yacare"
+Issues = "https://github.com/ncheron/yacare/issues"
