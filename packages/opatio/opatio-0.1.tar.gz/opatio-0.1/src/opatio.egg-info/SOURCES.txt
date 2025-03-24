@@ -1,0 +1,10 @@
+pyproject.toml
+readme.md
+src/opatio/__init__.py
+src/opatio.egg-info/PKG-INFO
+src/opatio.egg-info/SOURCES.txt
+src/opatio.egg-info/dependency_links.txt
+src/opatio.egg-info/requires.txt
+src/opatio.egg-info/top_level.txt
+src/opatio/opat/__init__.py
+src/opatio/opat/opat.py
