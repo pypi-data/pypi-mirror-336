@@ -1,0 +1,13 @@
+name: test_my_binding
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - cibuildwheel
+  - compas
+  - cmake
+  - pip
+  - pip:
+    - -r requirements-dev.txt
+    - -e .
