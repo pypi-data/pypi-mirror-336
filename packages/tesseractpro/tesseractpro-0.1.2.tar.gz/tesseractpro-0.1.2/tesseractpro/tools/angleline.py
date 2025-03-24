@@ -1,0 +1,31 @@
+from .basetool import BaseTool
+
+
+class AngleLine(BaseTool):
+    type = 'angleline'
+    handleCount = 2
+    displayName = 'Angle Line'
+
+    def get_color(self):
+        return self.get_option('color', 'color.primary')
+
+    def set_color(self, value):
+        return self.set_option('color', value)
+
+    def get_horizonColor(self):
+        return self.get_option('horizonColor', 'color.primary')
+
+    def set_horizonColor(self, value):
+        return self.set_option('horizonColor', value)
+
+    def get_width(self):
+        return self.get_option('width', '2')
+
+    def set_width(self, value):
+        return self.set_option('width', value)
+
+    def get_style(self):
+        return self.get_option('style', 'solid')
+
+    def set_style(self, value):
+        return self.set_option('style', value)
