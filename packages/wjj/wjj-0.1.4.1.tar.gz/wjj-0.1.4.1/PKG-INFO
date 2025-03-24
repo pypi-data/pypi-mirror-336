@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wjj
+Version: 0.1.4.1
+Summary: wjj常用函数集成
+Author: JJWang
+Author-email: wangjianjun.cas@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+经常使用的一些模块
