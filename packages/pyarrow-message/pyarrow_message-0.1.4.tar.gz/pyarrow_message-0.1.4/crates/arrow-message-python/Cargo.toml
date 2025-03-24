@@ -1,0 +1,18 @@
+[package]
+name = "arrow-message-python"
+version.workspace = true
+description.workspace = true
+edition.workspace = true
+documentation.workspace = true
+license.workspace = true
+repository.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pyarrow_message"
+crate-type = ["cdylib"]
+
+[dependencies]
+arrow.workspace = true
+arrow.features = ["pyarrow"]
+pyo3 = "0.23.3"

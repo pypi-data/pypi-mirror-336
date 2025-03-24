@@ -1,0 +1,20 @@
+[workspace]
+members = ["crates/arrow-message-python"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.4"
+description = "arrow-message implements a way to define messages according to the Arrow format in both Rust and Python"
+edition = "2024"
+documentation = "https://github.com/Hennzau/arrow-message"
+license = "Apache-2.0"
+repository = "https://github.com/Hennzau/arrow-message"
+
+[workspace.dependencies]
+arrow = "54"
+
+arrow-message.version = "0.1.4"
+
+arrow-message.path = "crates/arrow-message"
+arrow-message-derive.version = "0.1.4"
+arrow-message-derive.path = "crates/arrow-message-derive"
