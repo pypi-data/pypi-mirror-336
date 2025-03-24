@@ -1,0 +1,11 @@
+setup.py
+libreria_selenium_pers/__init__.py
+libreria_selenium_pers/config.py
+libreria_selenium_pers/drivers.py
+libreria_selenium_pers/selenium_tools.py
+libreria_selenium_pers/telegram_tools.py
+libreria_selenium_pers.egg-info/PKG-INFO
+libreria_selenium_pers.egg-info/SOURCES.txt
+libreria_selenium_pers.egg-info/dependency_links.txt
+libreria_selenium_pers.egg-info/requires.txt
+libreria_selenium_pers.egg-info/top_level.txt
