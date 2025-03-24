@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bcv_exchange/__init__.py
+bcv_exchange/__main__.py
+bcv_exchange/command.py
+bcv_exchange/get_exchange_rate.py
+bcv_exchange.egg-info/PKG-INFO
+bcv_exchange.egg-info/SOURCES.txt
+bcv_exchange.egg-info/dependency_links.txt
+bcv_exchange.egg-info/entry_points.txt
+bcv_exchange.egg-info/requires.txt
+bcv_exchange.egg-info/top_level.txt
+tests/__init__.py
+tests/test_get_exchange_rate.py
