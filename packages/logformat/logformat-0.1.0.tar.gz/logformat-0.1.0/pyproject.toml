@@ -1,0 +1,27 @@
+[project]
+name = "logformat"
+version = "0.1.0"
+authors = [
+  { name="Martin Fischer", email="martin@push-f.com" },
+]
+description = "logfmt logging for Python"
+requires-python = ">=3.13" # because of __static_attributes__
+
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+license = "MIT"
+# FUTURE: change to license-files = ["LICENSE"] once NixOS 25.05 is released and require hatchling>=1.26.0
+license-files = { paths = ["LICENSE"] }
+
+[project.urls]
+repository = "https://git.push-f.com/logformat"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 100

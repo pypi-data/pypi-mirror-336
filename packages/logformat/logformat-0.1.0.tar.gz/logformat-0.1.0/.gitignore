@@ -1,0 +1,11 @@
+*.pyc
+*.egg-info/
+
+# created by `python -m venv venv` (listed here for hatchling)
+venv/
+
+# created by `python3 -m build`
+dist/
+
+# created by `nix-build`
+result
