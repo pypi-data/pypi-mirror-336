@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: dash-blueprint-components-docs
+Version: 0.2.0
+Author: Stefano Gianbattista Fanizzi
+Project-URL: Bug Reports, https://github.com/STEdyd666/dash-blueprint-components-docs/issues,
+Project-URL: Source: https, https://github.com/STEdyd666/dash-blueprint-components-docs
+Project-URL: Documentation, https://dash-blueprint-components.com/blueprint
+Classifier: Framework :: Dash
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dash
+Requires-Dist: dash_blueprint_components
+Requires-Dist: importlib_resources
+Requires-Dist: python-dateutil
+Requires-Dist: gunicorn
+Dynamic: license-file
+
+# Dash Blueprint Components documentation
+
+The documentation is a replica of the official BlueprintJS website created using solely dash components.
+
+All the rights belongs to BlueprintJS team.
+
+## How to run it
+
+To run the server locally, clone the repository and install the package:
+
+```
+pip install -e /path/to/dash_blueprint_components_docs
+```
+
+And run the server:
+
+```
+python src/dash_blueprint_components/app.py
+```
