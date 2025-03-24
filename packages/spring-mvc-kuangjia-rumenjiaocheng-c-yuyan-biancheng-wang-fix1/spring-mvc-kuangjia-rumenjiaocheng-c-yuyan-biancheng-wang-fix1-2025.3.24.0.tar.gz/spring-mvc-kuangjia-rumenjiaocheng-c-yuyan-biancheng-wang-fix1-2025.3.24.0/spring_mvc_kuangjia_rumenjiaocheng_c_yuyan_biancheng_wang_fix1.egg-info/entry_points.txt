@@ -1,0 +1,3 @@
+[console_scripts]
+SpringMvcKuangjiaRumenjiaochengCYuyanBianchengWangFix1 = SpringMvcKuangjiaRumenjiaochengCYuyanBianchengWangFix1.__main__:main
+spring-mvc-kuangjia-rumenjiaocheng-c-yuyan-biancheng-wang-fix1 = SpringMvcKuangjiaRumenjiaochengCYuyanBianchengWangFix1.__main__:main
