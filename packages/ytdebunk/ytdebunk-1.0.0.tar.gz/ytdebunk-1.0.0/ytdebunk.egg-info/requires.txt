@@ -1,0 +1,6 @@
+requests
+python-dotenv
+google-generativeai
+yt-dlp
+torch
+torchaudio
