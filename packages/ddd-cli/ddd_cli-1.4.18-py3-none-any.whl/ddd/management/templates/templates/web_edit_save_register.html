@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Django form
+{% endblock %}
+
+{% block content %}
+    <h1 class="title">Edit/Save Form in Django</h1>
+
+    <!--Codigo de Mensajes de error-->
+    {% if messages %}
+        <!-- Mostrar mensajes globales del framework de mensajes -->
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                <strong>{{ message.tags|capfirst }}:</strong> {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            <ul>
+                <!-- Mostrar errores globales del formulario -->
+                {% for error in form.non_field_errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+
+                <!-- Mostrar errores específicos de los campos -->
+                {% for field, errors in form.errors.items %}
+                    {% if field != '__all__' %}
+                        {% for error in errors %}
+                            <li>{{ field|capfirst }}: {{ error }}</li>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <!--Codigo de Formulario-->
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Save" />
+    </form>
+
+    {% comment %}  
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        
+        {% for field in form %}
+            <div class="form-group">
+                {{ field.label_tag }}
+                {{ field }}
+                {% if field.errors %}
+                    <div class="text-danger">
+                        {{ field.errors|join:", " }}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+        <input type="submit" value="Save" />
+    </form>         
+    {% endcomment %}
+    
+{% endblock %}
