@@ -1,0 +1,11 @@
+gwalk/__init__.py,sha256=9GBFILpIKWaQr5jajiTqnpXlra7WNn9hg-cboPOBduU,387
+gwalk/gapply.py,sha256=DvPcOpuqc4FMHYfI_MpQkGRZAocL69_BM8BuEUK2VLc,3171
+gwalk/gcp.py,sha256=AMN22L9OFbKU2Wo8wHWpkvd0OtfWpP272fYpCA737TI,4983
+gwalk/gl.py,sha256=2rdnus7dxjvRSzJfa7wvvDVqVOehydK2t-pFniIFRNs,2091
+gwalk/gwalk.py,sha256=JD-JjGUAHOjvRPsVDPvLuOLQhMSMKYz3S1SlPSyv9wY,25043
+pygwalk-0.2.2b1.dist-info/licenses/LICENSE,sha256=XMbV8dbBMsnvNuSZxKMlMlP0-o89qXJ1T2er9pMLqAM,1111
+pygwalk-0.2.2b1.dist-info/METADATA,sha256=1gEWqP287dANVc9XaIrVfpwlerUpKB0UvFG0hqb4oN4,4598
+pygwalk-0.2.2b1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+pygwalk-0.2.2b1.dist-info/entry_points.txt,sha256=qaOQEPqusXouFEXbPs5NrhtQRnVHMXVMJwNJE7vGp_o,110
+pygwalk-0.2.2b1.dist-info/top_level.txt,sha256=Iahd9MER3GUbTyf2KZ9-vUkPKYkFAnkKaxmZpQlTBko,6
+pygwalk-0.2.2b1.dist-info/RECORD,,
