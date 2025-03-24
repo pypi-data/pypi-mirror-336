@@ -1,0 +1,6 @@
+torch
+colorful
+tensorboard
+cxxfilt
+packaging
+tabulate
