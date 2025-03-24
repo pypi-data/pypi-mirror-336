@@ -1,0 +1,3 @@
+[console_scripts]
+ZhuomianYunweiGuanliZhinanFix1 = ZhuomianYunweiGuanliZhinanFix1.__main__:main
+zhuomian-yunwei-guanli-zhinan-fix1 = ZhuomianYunweiGuanliZhinanFix1.__main__:main
