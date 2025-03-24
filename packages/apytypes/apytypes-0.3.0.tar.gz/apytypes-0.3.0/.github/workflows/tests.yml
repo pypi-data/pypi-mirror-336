@@ -1,0 +1,109 @@
+#
+# This workflow will install Python dependencies and run the APyTypes test suite.
+#
+# For more information see:
+# https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+#
+
+name: Unit tests
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13", "3.13t", "3.14-dev"]
+        os: ["macos-13", "ubuntu-latest", "ubuntu-24.04-arm", "windows-latest", "macos-14"]
+        numpy-version: [">=1.26.4,<2", ">=2.1"]
+        exclude:
+          # Only test NumPy2 on 3.12 and 3.13 for now
+          - numpy-version: ">=2.1"
+            python-version: "3.10"
+          - numpy-version: ">=2.1"
+            python-version: "3.11"
+          # Do not test with NumPy 1 on free-threaded Python
+          - numpy-version: ">=1.26.4,<2"
+            python-version: "3.13t"
+          # No pre-compiled Python 3.13, fails while compiling NumPy
+          - os: "macos-13"
+            python-version: "3.13"
+          # No free-threaded Python on Macos
+          - os: "macos-13"
+            python-version: "3.13t"
+          - os: "macos-14"
+            python-version: "3.13t"
+          # No free-threaded Python on Windows
+          - os: "windows-latest"
+            python-version: "3.13t"
+          # No precompiled Numpy 1 for Python 3.13 on Windows
+          - os: "windows-latest"
+            python-version: "3.13"
+            numpy-version: ">=1.26.4,<2"
+          # Only test 3.14-dev on Ubuntu
+          - os: "windows-latest"
+            python-version: "3.14-dev"
+          - os: "macos-13"
+            python-version: "3.14-dev"
+          - os: "macos-14"
+            python-version: "3.14-dev"
+          - os: "ubuntu-24.04-arm"
+            python-version: "3.14-dev"
+
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: ilammy/msvc-dev-cmd@0b201ec74fa43914dc39ae48a89fd1d8cb592756  # v1.13.0  # Active MSVC environment on Windows virtual env
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38  # v5.4.0
+      if: matrix.python-version != '3.13t'
+      with:
+        python-version: ${{ matrix.python-version }}
+        allow-prereleases: true
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: deadsnakes/action@e640ac8743173a67cca4d7d77cd837e514bf98e8  # v3.2.0
+      if: matrix.python-version == '3.13t'
+      with:
+        python-version: '3.13'
+        nogil: true
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+    - name: Install NumPy
+      if: matrix.python-version != '3.13t'
+      run: |
+        python -m pip install 'numpy${{ matrix.numpy-version }}'
+    - name: Install NumPy
+      if: matrix.python-version == '3.13t'
+      run: |
+        python -m pip install \
+            --pre \
+            --index-url https://pypi.anaconda.org/scientific-python-nightly-wheels/simple \
+            --upgrade --only-binary=:all: 'numpy${{ matrix.numpy-version }}'
+    - name: Install APyTypes
+      run: |
+        git fetch --tags
+        python -m pip install .[test] -v
+    - name: Test with pytest
+      if: matrix.python-version == '3.13t'
+      run: |
+        export PYTHON_GIL=0
+        pytest --color=yes lib/test
+    - name: Test with pytest
+      if: matrix.python-version != '3.13t'
+      run: |
+        pytest --color=yes lib/test
