@@ -1,0 +1,153 @@
+Metadata-Version: 2.4
+Name: dagster-db
+Version: 0.3.2
+Summary: Dagster IO managers and type handlers for databases
+Project-URL: Source, https://github.com/j-blackwell/dagster-db
+Author-email: James Blackwell <33688964+j-blackwell@users.noreply.github.com>
+License: MIT License
+        
+        Copyright (c) 2025 James Blackwell
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <3.14,>=3.10
+Requires-Dist: dagster-pandas>=0.25.11
+Requires-Dist: dagster-polars>=0.25.11
+Requires-Dist: dagster>=1.9.11
+Requires-Dist: jinja2>=3.1.5
+Requires-Dist: sqlglot>=26.11.1
+Provides-Extra: bigquery
+Requires-Dist: dagster-gcp>=0.25.11; extra == 'bigquery'
+Provides-Extra: duckdb
+Requires-Dist: dagster-duckdb>=0.25.11; extra == 'duckdb'
+Description-Content-Type: text/markdown
+
+# dagster-db
+
+Dagster IO managers and type handlers for databases.
+Wraps the standard IO managers with useful functions that can be scpecific to
+each type handler, and provides better metadata out of the box.
+
+- Apply custom generic transformations to ensure all outputs comply with database.
+- Apply custom validation checks before deleting from / writing to the database.
+- Add custom metadata.
+
+Use `polars`, `pandas` or execute a jinja-templated `SQL` query on the database
+with the custom `SqlQuery` class which builds `dagster`s powerful table slice
+logic into an io-manager ready framework.
+
+Use `TypeHandlers` out of the box, or extend to implement custom behaviours.
+
+## duckdb
+
+### Installation
+
+```bash
+uv add dagster-db[duckdb]
+```
+
+### Definition
+
+```py
+import dagster as dg
+from dagster_db import build_custom_duckdb_io_manager
+custom_io_manager = build_custom_duckdb_io_manager().configured({"database": "./.tmp/database.duckdb"})
+
+defs = dg.Definitions(
+    ...,
+    resources={"io_manager": custom_io_manager},
+)
+```
+
+### Usage
+
+```py
+import dagster as dg
+import polars as pl
+from dagster_db import SqlQuery
+
+@dg.asset
+def my_asset(context: dg.AssetExecutionContext) -> pl.DataFrame:
+    return pl.DataFrame({"a": [1, 2, 3]})
+
+@dg.asset
+def my_asset_downstream(
+    context: dg.AssetExecutionContext,
+    my_asset: SqlQuery,
+) -> SqlQuery:
+    return SqlQuery("SELECT *, a+1 AS b FROM {{ my_asset }}", my_asset)
+```
+
+## Why should I use `dagster-db` instead of just querying via database resources?
+
+### Partitioned assets
+
+If you have a partitioned asset, then when you use it in a downstream asset,
+it will need to be filtered for the partition we are running for (via the
+partition mapping). The IO manager already handles this using table slice
+functionality.
+
+e.g. so if you have a date partitioned asset `my_asset`, when you create a SQL
+query: `SELECT * FROM {{ my_asset }}`  in a downstream asset, we get the
+partition selection for free. The `load_input` methods can render this into
+`SELECT * FROM (SELECT * FROM my_asset WHERE partition_expr >= ... AND partition_expr < ...)`,
+whereas we'd have to do this manually using the resources.
+
+### Standardised features and metadata
+
+When you use any IO manager in dagster, dagster truncates the table for you,
+before inserting the records. Using database resources, you would
+have to make all of these database calls yourself.
+
+``` py
+
+@dg.asset(deps=[my_asset_upstream])
+def my_asset_downstream(duckdb: DuckDbResource):
+    my_asset_downstream_query = "SELECT *, True AS new_col FROM my_asset_upstream"
+    duckdb.sql("DELETE FROM my_asset_downstream")
+    duckdb.sql(f"INSERT INTO my_asset_downstream ({my_asset_downstream_query})")
+```
+
+vs.
+
+``` py
+@dg.asset()
+def my_asset_downstream(my_asset_upstream: SqlQuery):
+    return SqlQuery("SELECT *, True AS new_col FROM {{ my_asset_upstream }}", my_asset_upstream=my_asset_upstream)
+```
+
+You also get the opportunity to add features to your IO manager, such
+as adding useful metadata, primary key validation, etc. that apply to every asset
+without having to call manually within asset code in each asset.
+
+Therefore, tt allows the continued separation of IO code and business logic which is such
+a great feature of dagster.
+
+### Different databases in different environments
+
+Many workflows may consist of a duckdb database for local development, but bigquery or
+postgresql for production.
+These clients and resources have completely different method names and arguments.
+The best place to handle these differences, would be in `TypeHandlers`, which would
+clear your asset of further IO code.
