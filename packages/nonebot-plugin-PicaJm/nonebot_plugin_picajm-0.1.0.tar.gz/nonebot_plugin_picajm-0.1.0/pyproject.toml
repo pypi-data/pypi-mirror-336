@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "nonebot-plugin-PicaJm"
+version = "0.1.0"
+description = "可以看pica和jm"
+authors = ["CCYellowStar"]
+license = "GPL-3.0-only"
+readme = "README.md"
+homepage = "https://github.com/CCYellowStar2/nonebot-plugin-PicaJm"
+repository = "https://github.com/CCYellowStar2/nonebot-plugin-PicaJm"
+packages = [  # 正确格式：数组包含字典
+    { include = "nonebot_plugin_PicaJm" }
+]
+
+# 单独声明需要包含的非代码文件
+include = [
+    "README.md"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+nonebot2 = ">=2.3.0"
+aiohttp = ">=3.8.4"
+jmcomic = ">=2.5.32"
+pyzipper = ">=0.3.6"
+fuzzywuzzy = ">=0.18.0"
+python-levenshtein = ">=0.26.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
