@@ -1,0 +1,3 @@
+[console_scripts]
+ProgramizCJiaochengChuyiFix1 = ProgramizCJiaochengChuyiFix1.__main__:main
+programiz-c-jiaocheng-chuyi-fix1 = ProgramizCJiaochengChuyiFix1.__main__:main
