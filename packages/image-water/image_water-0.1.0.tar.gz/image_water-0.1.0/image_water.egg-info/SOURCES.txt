@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+image_water.egg-info/PKG-INFO
+image_water.egg-info/SOURCES.txt
+image_water.egg-info/dependency_links.txt
+image_water.egg-info/requires.txt
+image_water.egg-info/top_level.txt
