@@ -1,0 +1,23 @@
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setup(
+    name='comprehensive_solana_diagnostic',
+    version='0.1.1',
+    packages=find_packages(),
+    install_requires=[
+        'aiohttp>=3.8.0',
+        'pydantic>=2.0.0',
+        'click>=8.0.0'
+    ],
+    entry_points={
+        'console_scripts': [
+            'solana-diagnostic=comprehensive_solana_diagnostic:main',
+        ],
+    },
+    python_requires='>=3.8',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+)
