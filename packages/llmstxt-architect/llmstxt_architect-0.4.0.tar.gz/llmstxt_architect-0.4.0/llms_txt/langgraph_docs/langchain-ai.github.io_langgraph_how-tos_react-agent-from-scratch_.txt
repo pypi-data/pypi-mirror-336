@@ -1,0 +1,2 @@
+[How to create a ReAct agent from scratch](https://langchain-ai.github.io/langgraph/how-tos/react-agent-from-scratch/): LLM should read this page when needing to create a custom ReAct agent, wanting more control than prebuilt agents, or implementing ReAct from scratch with LangGraph. This guide shows how to build a custom ReAct agent using LangGraph, covering state definition, model/tool setup, node/edge configuration, graph creation, and testing the implementation with a weather query example.
+

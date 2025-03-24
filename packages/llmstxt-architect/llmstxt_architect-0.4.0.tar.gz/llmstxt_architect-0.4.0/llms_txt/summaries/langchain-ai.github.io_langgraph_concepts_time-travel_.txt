@@ -1,0 +1,2 @@
+[Time Travel ⏱️](https://langchain-ai.github.io/langgraph/concepts/time-travel/): LLM should read this page when debugging non-deterministic LLM-based systems, understanding reasoning steps, or exploring alternative decision paths. This page covers techniques for time travel on LangGraph, including replaying past actions up to a checkpoint and forking (editing) checkpoints to explore alternatives.
+

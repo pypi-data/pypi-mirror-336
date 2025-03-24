@@ -1,0 +1,2 @@
+[Self-Hosted](https://langchain-ai.github.io/langgraph/concepts/self_hosted/): LLM should read this page when looking for LangGraph deployment options, understanding self-hosted versions, or seeking requirements for self-hosting LangGraph. This page details two self-hosted deployment options for LangGraph Platform: Self-Hosted Lite (limited to 1M nodes/year) and Self-Hosted Enterprise (full version requiring license). Includes requirements, deployment process using Redis/Postgres, Docker, and optional Kubernetes deployment via Helm chart.
+

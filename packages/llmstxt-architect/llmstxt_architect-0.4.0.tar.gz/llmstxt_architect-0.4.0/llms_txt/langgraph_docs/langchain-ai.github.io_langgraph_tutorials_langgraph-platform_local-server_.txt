@@ -1,0 +1,2 @@
+[Local Deploy](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/): LLM should read this page when setting up a LangGraph app locally, troubleshooting LangGraph server deployment, or looking for LangGraph SDK usage examples. This page contains a quickstart guide for launching a LangGraph server locally, including installation steps, app creation from templates, environment setup, API testing with Python/JS SDKs, and links to deployment options and further documentation.
+

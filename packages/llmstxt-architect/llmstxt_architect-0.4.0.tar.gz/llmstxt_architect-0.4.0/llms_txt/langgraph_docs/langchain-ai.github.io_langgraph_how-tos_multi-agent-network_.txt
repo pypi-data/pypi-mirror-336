@@ -1,0 +1,2 @@
+[How to build a multi-agent network](https://langchain-ai.github.io/langgraph/how-tos/multi-agent-network/): LLM should read this page when implementing multi-agent networks, setting up agent communication via handoffs, or building travel assistance agents. This page explains how to create a fully-connected multi-agent network with LangGraph where agents can communicate with each other via handoffs, including custom agent implementation and using prebuilt ReAct agents with tools.
+

@@ -1,0 +1,2 @@
+[How to add human-in-the-loop processes to the prebuilt ReAct agent](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-hitl/): LLM should read this page when implementing human-in-the-loop processes for ReAct agents, debugging tool calls, or learning about interrupts in LangGraph. This guide demonstrates how to add human-in-the-loop functionality to prebuilt ReAct agents using interrupt_before=["tools"], working with MemorySaver checkpoints, and showing how to approve or edit tool calls before they execute.
+

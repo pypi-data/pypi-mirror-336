@@ -1,0 +1,2 @@
+[Concepts](https://langchain-ai.github.io/langgraph/concepts): LLM should read this page when seeking to understand LangGraph conceptual foundations or when planning to deploy LangGraph applications. This page outlines LangGraph's key concepts including graph primitives, agent patterns, multi-agent systems, breakpoints, persistence, and deployment options through LangGraph Platform with various hosting models.
+

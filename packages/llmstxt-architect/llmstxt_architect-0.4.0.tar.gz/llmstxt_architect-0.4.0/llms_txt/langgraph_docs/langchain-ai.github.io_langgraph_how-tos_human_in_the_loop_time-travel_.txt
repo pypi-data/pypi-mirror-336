@@ -1,0 +1,2 @@
+[How to view and update past graph state](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/time-travel/): LLM should read this page when needing to access or modify past states in LangGraph, when debugging agent execution, or when implementing user interventions in agent workflows. This page demonstrates how to view and update past graph states in LangGraph using get_state and update_state methods, with examples of replaying execution from checkpoints and branching workflows.
+

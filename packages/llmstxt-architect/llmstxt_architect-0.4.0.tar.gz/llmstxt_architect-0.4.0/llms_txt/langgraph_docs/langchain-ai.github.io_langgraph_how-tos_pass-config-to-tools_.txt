@@ -1,0 +1,2 @@
+[How to pass config to tools](https://langchain-ai.github.io/langgraph/how-tos/pass-config-to-tools/): LLM should read this page when implementing secure tool configuration in LangChain, passing user-specific parameters to tools, or configuring tools with runtime values. This page explains how to pass configuration to LangChain tools using RunnableConfig, allowing application-controlled values (like user IDs) to be securely passed to tools without LLM control, with examples of implementing tools that access user-specific data.
+

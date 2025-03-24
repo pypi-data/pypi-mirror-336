@@ -1,0 +1,2 @@
+[How to wait for user input (Functional API)](https://langchain-ai.github.io/langgraph/how-tos/wait-user-input-functional/): LLM should read this page when implementing human-in-the-loop workflows, integrating user input into agent systems, or adding interruption capabilities to LangGraph applications. The page explains how to use the `interrupt()` function in LangGraph's Functional API to pause execution for human input, with examples for both simple workflows and ReAct agents, including code implementations with checkpointing.
+

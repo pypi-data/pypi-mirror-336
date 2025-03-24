@@ -1,0 +1,2 @@
+[How to implement handoffs between agents](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs): LLM should read this page when implementing multi-agent systems with handoffs, creating tool-based agent communication, or designing cooperative agent workflows. This page explains how to implement handoffs between agents using Command objects and tools in LangGraph, with practical examples of agent-to-agent communication and state updates.
+

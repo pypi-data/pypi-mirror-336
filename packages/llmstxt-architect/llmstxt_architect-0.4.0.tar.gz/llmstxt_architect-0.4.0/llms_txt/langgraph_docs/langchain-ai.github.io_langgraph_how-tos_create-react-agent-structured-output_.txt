@@ -1,0 +1,2 @@
+[How to return structured output from the prebuilt ReAct agent](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-structured-output/): LLM should read this page when implementing structured output with ReAct agents, customizing agent response formats, or working with LangGraph agents. This page explains how to return structured output from prebuilt ReAct agents by providing a response_format parameter with a Pydantic schema, including examples with weather data and options for customizing the prompt.
+
