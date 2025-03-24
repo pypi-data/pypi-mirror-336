@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/llm_memory/__init__.py
+src/llm_memory/memory.py
+src/llm_memory.egg-info/PKG-INFO
+src/llm_memory.egg-info/SOURCES.txt
+src/llm_memory.egg-info/dependency_links.txt
+src/llm_memory.egg-info/requires.txt
+src/llm_memory.egg-info/top_level.txt
+tests/test_memory.py
