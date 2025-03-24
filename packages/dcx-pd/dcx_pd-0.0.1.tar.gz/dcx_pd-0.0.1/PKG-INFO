@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: dcx-pd
+Version: 0.0.1
+Summary: Discord Chat Exporter (by Tyrrrz) json output parser to typed Pydantic V2 objects (no affiliation with Discord nor Tyrrrz)
+Home-page: https://github.com/anamoyee/dcx-pd
+Author: anamoyee
+License: GPL-3.0 license
+Project-URL: Source, https://github.com/anamoyee/dcx-pd
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Typing :: Typed
+Classifier: Topic :: Utilities
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: MS-DOS
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.10.6
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# discord-cx-pydantic
+_[**D**iscord **C**hat E**x**porter](https://github.com/Tyrrrz/DiscordChatExporter) (by [Tyrrrz](https://github.com/Tyrrrz)) json output parser to typed **P**y**d**antic V2 objects_
+
+**NOTE**: This project has no affiliation with Discord nor Tyrrrz. This was made by another person and is unofficial.
