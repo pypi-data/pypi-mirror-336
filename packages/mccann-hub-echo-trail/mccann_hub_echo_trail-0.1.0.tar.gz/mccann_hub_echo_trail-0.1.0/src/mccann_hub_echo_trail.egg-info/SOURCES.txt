@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mccann_hub/echo_trail/__init__.py
+src/mccann_hub/echo_trail/defaults.py
+src/mccann_hub/echo_trail/get.py
+src/mccann_hub/echo_trail/setup.py
+src/mccann_hub_echo_trail.egg-info/PKG-INFO
+src/mccann_hub_echo_trail.egg-info/SOURCES.txt
+src/mccann_hub_echo_trail.egg-info/dependency_links.txt
+src/mccann_hub_echo_trail.egg-info/requires.txt
+src/mccann_hub_echo_trail.egg-info/top_level.txt
+tests/test_get_logger.py
+tests/test_logger_setup.py

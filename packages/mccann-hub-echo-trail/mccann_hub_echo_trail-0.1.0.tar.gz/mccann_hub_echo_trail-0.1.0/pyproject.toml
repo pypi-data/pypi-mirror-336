@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["mccann_hub.echo_trail"]
+
+[project]
+name = "mccann_hub-echo_trail"
+version = "0.1.0"
+description = "A JSON logger with metadata injection for consistent log formatting."
+authors = [
+    { name = "Jimmy McCann", email = "jabez007@users.noreply.github.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = [
+  "python-json-logger>=3.0.0"
+]
+requires-python = ">=3.9"
+keywords = ["logging", "json-logger", "metadata"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jabez007/echo_trail"
+"Bug Tracker" = "https://github.com/jabez007/echo_trail/issues"
