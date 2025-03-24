@@ -1,0 +1,3 @@
+include spectHR/**/*.py
+include README.md
+recursive-include spectHR *
