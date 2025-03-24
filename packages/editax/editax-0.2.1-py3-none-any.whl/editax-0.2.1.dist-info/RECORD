@@ -1,0 +1,12 @@
+editax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+editax/learning.py,sha256=ShMJshT46Mfgb9rhnrTObbtlCNCe1O-6h-U58CMqPBI,4785
+editax/moed.py,sha256=PtPCfPMGTDxhB2hOCmsCcIgXTM-Ygje0FqVwsduDkuk,28556
+editax/policy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+editax/policy/lstm.py,sha256=6NOMrCz3yrMtLUbjW5jVE23t0cQsbyVs0xBmPXCIlg0,6801
+editax/template.py,sha256=Ggolqbr6svL1mqDAvObz-whSGJW-K6vEuwkp9DpU3eM,10707
+editax/upomdp.py,sha256=fm6Bo5CZhcwt1XCSj7be7vDgrUJmovRCycc0ksceosU,5063
+editax/utils.py,sha256=r_LIKfHkKYrs8ITuMXDonMj28KyAaCWYv6MkCxmObAQ,12310
+editax-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+editax-0.2.1.dist-info/METADATA,sha256=nqBZ4oQpiqocWpYDQB_ECgAb8hvIA4v2TSkGQzXL-Rw,5540
+editax-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+editax-0.2.1.dist-info/RECORD,,
