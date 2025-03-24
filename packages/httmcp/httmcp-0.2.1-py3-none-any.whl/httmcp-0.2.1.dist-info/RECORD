@@ -1,0 +1,9 @@
+httmcp/__init__.py,sha256=PDJ0Ws1O9E-XWdtKbqSX5cl9EWNFA7YppPf789PiNv8,266
+httmcp/__main__.py,sha256=j8xLTR2Eky709ecvT5oPcrrBkrrc0_nWuWLCkwKh84U,1827
+httmcp/core.py,sha256=aw_zOuKnKiV1j9J7mv5g-Rz8KYT8ABO71tXmvvBK2WI,11574
+httmcp/openapi.py,sha256=BOyw779MGhjsSPnT4B7g2sc5QL762MX8ENCgXcmB-Fc,2041
+httmcp-0.2.1.dist-info/METADATA,sha256=_1HlwGxrRC8rneTkh6AfKXso0x-YDhsNezvky36rztA,2504
+httmcp-0.2.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+httmcp-0.2.1.dist-info/entry_points.txt,sha256=TAgFoC53AurwknqY9quLBTZhC3QoIIkqASLbYMayRQ8,49
+httmcp-0.2.1.dist-info/top_level.txt,sha256=Zw43uY4Wq9nOzVaWS2zJoFEoeLI6MS4xz-bz04jpbus,7
+httmcp-0.2.1.dist-info/RECORD,,
