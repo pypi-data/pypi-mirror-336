@@ -1,0 +1,2 @@
+[console_scripts]
+broadcast-server = broadcast_server.cli:main

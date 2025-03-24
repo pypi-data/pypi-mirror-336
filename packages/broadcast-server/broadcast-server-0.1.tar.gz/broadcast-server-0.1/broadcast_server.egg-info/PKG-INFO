@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: broadcast-server
+Version: 0.1
+Summary: A simple WebSocket broadcast server and client CLI tool
+Author: Your Name
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
