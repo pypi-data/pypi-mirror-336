@@ -1,0 +1,3 @@
+[console_scripts]
+KuaixiaoXingyeXiaofeizheYunyingJiejuefanganFix1 = KuaixiaoXingyeXiaofeizheYunyingJiejuefanganFix1.__main__:main
+kuaixiao-xingye-xiaofeizhe-yunying-jiejuefangan-fix1 = KuaixiaoXingyeXiaofeizheYunyingJiejuefanganFix1.__main__:main
