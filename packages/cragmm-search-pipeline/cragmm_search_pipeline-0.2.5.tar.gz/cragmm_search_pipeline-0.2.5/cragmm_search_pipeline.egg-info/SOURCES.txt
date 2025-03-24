@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cragmm_search_pipeline.egg-info/PKG-INFO
+cragmm_search_pipeline.egg-info/SOURCES.txt
+cragmm_search_pipeline.egg-info/dependency_links.txt
+cragmm_search_pipeline.egg-info/requires.txt
+cragmm_search_pipeline.egg-info/top_level.txt
