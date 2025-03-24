@@ -1,0 +1,3 @@
+[console_scripts]
+FlutterJishuJiexiYuShizhanFix1 = FlutterJishuJiexiYuShizhanFix1.__main__:main
+flutter-jishu-jiexi-yu-shizhan-fix1 = FlutterJishuJiexiYuShizhanFix1.__main__:main
