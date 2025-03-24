@@ -1,0 +1,5 @@
+# exclude README.md as it's for developers only
+include LICENSE
+include requirements.txt
+include PYPI.md
+recursive-include friday *
