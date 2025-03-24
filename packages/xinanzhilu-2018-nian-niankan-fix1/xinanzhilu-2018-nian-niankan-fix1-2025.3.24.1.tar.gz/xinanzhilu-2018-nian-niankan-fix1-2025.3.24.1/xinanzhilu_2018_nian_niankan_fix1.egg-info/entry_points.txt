@@ -1,0 +1,3 @@
+[console_scripts]
+Xinanzhilu2018NianNiankanFix1 = Xinanzhilu2018NianNiankanFix1.__main__:main
+xinanzhilu-2018-nian-niankan-fix1 = Xinanzhilu2018NianNiankanFix1.__main__:main
