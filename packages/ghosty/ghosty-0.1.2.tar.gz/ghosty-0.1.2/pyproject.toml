@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ghosty"
+version = "0.1.2"
+description = "Wrapper for the Table Stable Ltd. Ghost Software"
+readme = "README.md"
+authors = [
+    {name = "Timm Landes", email = "timm.landes@hot.uni-hannover.de"},
+    {name = "Dag Heinemann", email = "dag.heinemann@hot.uni-hannover.com"}
+]
+requires-python = ">=3.6,<=3.12.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+]
+license = {text = "MIT"}
+license-files = ["LICEN[CS]E*"]
+
+dependencies = [
+    "loguru>=0.7.0",
+    "telnetlib3>=2.0.0",
+    "asyncio>=3.4.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/timm-landes/ghosty"
+Issues = "https://github.com/timm-landes/ghosty/issues"
