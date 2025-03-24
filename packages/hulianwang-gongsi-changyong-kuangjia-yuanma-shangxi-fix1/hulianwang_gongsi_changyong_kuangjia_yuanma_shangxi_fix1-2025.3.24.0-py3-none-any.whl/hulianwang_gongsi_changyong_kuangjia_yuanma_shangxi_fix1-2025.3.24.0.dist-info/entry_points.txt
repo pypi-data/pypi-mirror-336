@@ -1,0 +1,3 @@
+[console_scripts]
+HulianwangGongsiChangyongKuangjiaYuanmaShangxiFix1 = HulianwangGongsiChangyongKuangjiaYuanmaShangxiFix1.__main__:main
+hulianwang-gongsi-changyong-kuangjia-yuanma-shangxi-fix1 = HulianwangGongsiChangyongKuangjiaYuanmaShangxiFix1.__main__:main
