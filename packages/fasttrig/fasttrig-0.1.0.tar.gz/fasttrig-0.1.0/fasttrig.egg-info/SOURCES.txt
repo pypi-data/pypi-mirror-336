@@ -1,0 +1,9 @@
+README.md
+setup.py
+fasttrig/__init__.py
+fasttrig/sin.py
+fasttrig.egg-info/PKG-INFO
+fasttrig.egg-info/SOURCES.txt
+fasttrig.egg-info/dependency_links.txt
+fasttrig.egg-info/requires.txt
+fasttrig.egg-info/top_level.txt
