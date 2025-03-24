@@ -1,0 +1,14 @@
+super_simplex/__init__.py,sha256=G0HQQU1TGuVCl0DDkkzDjy3nPGkuWt1aOPA_Yom3Thw,122
+super_simplex/const.py,sha256=ECYPY4sB_AN4TJXiKT6E4G_Mr6aYZQHvsTXMntK-mwU,2743
+super_simplex/functions.py,sha256=3tfnL6Vs98JJLa24SKQVgvB7pncWCmnB6jiMyNKYMug,70968
+super_simplex/generator.py,sha256=HQQJhdLv3wFnVK95wgfNZ5wNOWQwk8BltShbQWMB1SM,6657
+super_simplex/l_math.py,sha256=-MEncCqnkNpruwJMDFBCZAywwGCj52-3w4ZYmQ0GfSg,2123
+super_simplex/l_random.py,sha256=-Zb7BoSgUPDrZaY8W6Ywye2dflljuw3TGpFSctZX4Sg,3562
+super_simplex/dimensions/__init__.py,sha256=B3Frs__5-xi9mFemefsV4B7Dpwq8Wuh9Z8OiykS2zNo,61
+super_simplex/dimensions/four.py,sha256=vm5z5DIR9VSkXAQhGxs3BYY1c5rGGd020JLZTsAwYus,46771
+super_simplex/dimensions/three.py,sha256=TPC6VIPKurS2rDl4Wj15xXecPkx85EGWTaG4cU3hOHU,20454
+super_simplex/dimensions/two.py,sha256=mcsWWQuuiQK58t328NMDoVrRNxtfs8oelhlIJTBMxgE,4012
+super_simplex-1.0.0.dist-info/METADATA,sha256=lKikPP34BOSQDIQPHqSkEt8TiI1gy-BfckmHRKd1nzI,1852
+super_simplex-1.0.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+super_simplex-1.0.0.dist-info/top_level.txt,sha256=mwNhOPIaZXtZd04jIoc4xPDSXC78cMQfxg_YJZ4bC6U,14
+super_simplex-1.0.0.dist-info/RECORD,,
