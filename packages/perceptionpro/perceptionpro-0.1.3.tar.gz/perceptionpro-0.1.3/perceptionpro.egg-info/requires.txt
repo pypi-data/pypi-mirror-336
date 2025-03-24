@@ -1,0 +1,7 @@
+opencv-python==4.11.0.86
+opencv-python-headless==4.11.0.86
+mediapipe==0.10.11
+ultralytics==8.3.63
+numpy==1.24.4
+protobuf<4.0,>=3.11
+grpcio-status>=1.70.0
