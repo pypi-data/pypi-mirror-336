@@ -1,0 +1,2 @@
+[console_scripts]
+torrent-downloader-python = torrent_downloader_gui:main
