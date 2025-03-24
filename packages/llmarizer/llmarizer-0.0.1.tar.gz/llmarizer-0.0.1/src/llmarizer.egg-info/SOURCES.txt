@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/llmarizer/__init__.py
+src/llmarizer/summarizer.py
+src/llmarizer.egg-info/PKG-INFO
+src/llmarizer.egg-info/SOURCES.txt
+src/llmarizer.egg-info/dependency_links.txt
+src/llmarizer.egg-info/top_level.txt
+tests/__init__.py
+tests/test_summarizer.py

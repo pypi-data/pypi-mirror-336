@@ -1,0 +1,16 @@
+[project]
+name = "llmarizer"
+version = "0.0.1"
+authors = [
+  { name="Nick Baughman", email="nbaugh1@gmail.com" },
+]
+description = "A python package for summarizing text using an LLM model."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
