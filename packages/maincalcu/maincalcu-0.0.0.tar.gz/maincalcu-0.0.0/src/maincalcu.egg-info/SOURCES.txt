@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+src/maincalcu/__init__.py
+src/maincalcu/__main__.py
+src/maincalcu/app.py
+src/maincalcu.egg-info/PKG-INFO
+src/maincalcu.egg-info/SOURCES.txt
+src/maincalcu.egg-info/dependency_links.txt
+src/maincalcu.egg-info/top_level.txt
+tests/test_app.py
