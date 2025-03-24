@@ -1,0 +1,2 @@
+[console_scripts]
+nist-nvd = nist_nvd.__main__:main

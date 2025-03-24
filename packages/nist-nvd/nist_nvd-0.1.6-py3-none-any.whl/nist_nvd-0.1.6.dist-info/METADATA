@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: nist-nvd
+Version: 0.1.6
+Summary: NIST NVD API client
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.10.5
+Requires-Dist: click>=8.1.7
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: pydantic-settings>=2.4.0
+Requires-Dist: pydantic>=2.8.2
+
+# NIST NVD API client for Python
+
+Readme stuff goes here.
