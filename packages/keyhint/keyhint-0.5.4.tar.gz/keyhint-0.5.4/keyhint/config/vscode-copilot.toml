@@ -1,0 +1,28 @@
+id = "vscode-copilot"
+url = "https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment"
+hidden = true
+
+[match]
+regex_wmclass = "^$"
+regex_title = "^$"
+
+[section]
+
+[section.Suggestions]
+"Tab" = "Accept all"
+"Ctrl + r Right" = "Accept next word"
+"Alt + ] / [ " = "Show next / previous"
+"Alt + \\" = "Trigger suggestion"
+"Ctrl + Enter" = "Open 10 suggestions"
+"Esc" = "Dismiss"
+
+[section.Chat]
+"Ctrl + Alt + i" = "Open chat in sidebar"
+"Ctrl + i" = "Open inline chat"
+"@" = "Add experts a.k.a. 'participants'"
+"#" = "Add context"
+"/new" = "New conversation"
+"/fix" = "Propose fix for problem in selected code"
+"/clear" = "Clear conversation"
+"/delete" = "Delete conversation"
+"/help" = "GitHub Copilot quick reference"
