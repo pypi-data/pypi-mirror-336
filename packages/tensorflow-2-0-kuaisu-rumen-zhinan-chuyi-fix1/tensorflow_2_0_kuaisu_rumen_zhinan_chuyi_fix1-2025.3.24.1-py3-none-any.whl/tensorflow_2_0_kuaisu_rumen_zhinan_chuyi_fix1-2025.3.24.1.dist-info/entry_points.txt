@@ -1,0 +1,3 @@
+[console_scripts]
+Tensorflow20KuaisuRumenZhinanChuyiFix1 = Tensorflow20KuaisuRumenZhinanChuyiFix1.__main__:main
+tensorflow-2-0-kuaisu-rumen-zhinan-chuyi-fix1 = Tensorflow20KuaisuRumenZhinanChuyiFix1.__main__:main
