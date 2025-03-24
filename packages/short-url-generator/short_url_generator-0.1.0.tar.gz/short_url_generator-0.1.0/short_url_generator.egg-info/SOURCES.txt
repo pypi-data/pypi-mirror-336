@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+short_url_generator.egg-info/PKG-INFO
+short_url_generator.egg-info/SOURCES.txt
+short_url_generator.egg-info/dependency_links.txt
+short_url_generator.egg-info/top_level.txt
