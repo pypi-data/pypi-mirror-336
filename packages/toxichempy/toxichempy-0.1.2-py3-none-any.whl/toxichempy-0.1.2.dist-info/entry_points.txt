@@ -1,0 +1,3 @@
+[console_scripts]
+toxichempy=toxichempy.cli:main
+
