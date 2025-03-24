@@ -1,0 +1,3 @@
+[console_scripts]
+ZetcodeServletJiaochengChuyiFix1 = ZetcodeServletJiaochengChuyiFix1.__main__:main
+zetcode-servlet-jiaocheng-chuyi-fix1 = ZetcodeServletJiaochengChuyiFix1.__main__:main
