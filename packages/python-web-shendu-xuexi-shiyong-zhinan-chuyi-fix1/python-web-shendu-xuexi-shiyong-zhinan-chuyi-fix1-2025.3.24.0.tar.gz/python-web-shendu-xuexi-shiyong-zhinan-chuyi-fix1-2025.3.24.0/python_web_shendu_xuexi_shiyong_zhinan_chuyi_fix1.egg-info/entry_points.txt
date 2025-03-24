@@ -1,0 +1,3 @@
+[console_scripts]
+PythonWebShenduXuexiShiyongZhinanChuyiFix1 = PythonWebShenduXuexiShiyongZhinanChuyiFix1.__main__:main
+python-web-shendu-xuexi-shiyong-zhinan-chuyi-fix1 = PythonWebShenduXuexiShiyongZhinanChuyiFix1.__main__:main
