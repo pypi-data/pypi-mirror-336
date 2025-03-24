@@ -1,0 +1,3 @@
+[console_scripts]
+SimupyZhongwenWendangCycleuserYiFix1 = SimupyZhongwenWendangCycleuserYiFix1.__main__:main
+simupy-zhongwen-wendang-cycleuser-yi-fix1 = SimupyZhongwenWendangCycleuserYiFix1.__main__:main
