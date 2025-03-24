@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "compiler-explorer": {
+            "command": "uvx",
+            "args": [
+                "compiler-explorer-mcp"
+            ],
+            "env": {}
+        }
+    }
+}
