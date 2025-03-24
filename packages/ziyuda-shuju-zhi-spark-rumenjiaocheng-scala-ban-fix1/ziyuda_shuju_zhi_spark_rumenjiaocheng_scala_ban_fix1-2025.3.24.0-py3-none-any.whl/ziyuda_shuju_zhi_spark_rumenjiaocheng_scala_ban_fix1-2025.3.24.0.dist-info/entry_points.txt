@@ -1,0 +1,3 @@
+[console_scripts]
+ZiyudaShujuZhiSparkRumenjiaochengScalaBanFix1 = ZiyudaShujuZhiSparkRumenjiaochengScalaBanFix1.__main__:main
+ziyuda-shuju-zhi-spark-rumenjiaocheng-scala-ban-fix1 = ZiyudaShujuZhiSparkRumenjiaochengScalaBanFix1.__main__:main
