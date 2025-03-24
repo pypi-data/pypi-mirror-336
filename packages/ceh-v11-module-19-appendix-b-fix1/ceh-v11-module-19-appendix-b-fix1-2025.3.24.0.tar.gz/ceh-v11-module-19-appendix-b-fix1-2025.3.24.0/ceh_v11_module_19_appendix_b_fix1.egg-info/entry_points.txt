@@ -1,0 +1,3 @@
+[console_scripts]
+CehV11Module19AppendixBFix1 = CehV11Module19AppendixBFix1.__main__:main
+ceh-v11-module-19-appendix-b-fix1 = CehV11Module19AppendixBFix1.__main__:main
