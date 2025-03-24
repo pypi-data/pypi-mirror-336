@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: website-screenshot-generator
+Version: 0.1.0
+Summary: A simple website screenshot generator using Selenium
+Home-page: https://github.com/yourusername/website-screenshot-generator
+Author: Your Name
+Author-email: your_email@example.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: webdriver_manager
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# Website Screenshot Generator ðŸ“¸
+
+A simple Python package to capture website screenshots using Selenium.
+
+## Installation
