@@ -1,0 +1,31 @@
+[project]
+name = "dockershit"
+description = "dockerfile shell interactive terminal"
+version = "0.1.1"
+authors = [
+    { name = "Gareth Davidson", email = "gaz@bitplane.net" }
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "build",
+    "pre-commit",
+    "pytest",
+    "coverage",
+    "pytest-cov",
+    "twine"
+]
+
+[project.scripts]
+dockershit = "dockershit.dockershit:main"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
