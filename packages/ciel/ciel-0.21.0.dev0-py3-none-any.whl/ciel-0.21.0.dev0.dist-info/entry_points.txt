@@ -1,0 +1,3 @@
+[console_scripts]
+cielo=cielo.__main__:cli
+
