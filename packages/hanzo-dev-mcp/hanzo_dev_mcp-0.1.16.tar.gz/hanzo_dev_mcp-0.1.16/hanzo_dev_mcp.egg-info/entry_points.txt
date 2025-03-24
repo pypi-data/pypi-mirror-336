@@ -1,0 +1,2 @@
+[console_scripts]
+dev_mcp = dev_mcp.cli:main
