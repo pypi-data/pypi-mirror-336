@@ -1,0 +1,4 @@
+mcp>=1.5.0
+asyncio
+uvicorn
+starlette
