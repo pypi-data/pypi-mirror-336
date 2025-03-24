@@ -1,0 +1,8 @@
+setup.py
+lyricsfinder/__init__.py
+lyricsfinder/lyricsfinder3.py
+lyricsfinder3.egg-info/PKG-INFO
+lyricsfinder3.egg-info/SOURCES.txt
+lyricsfinder3.egg-info/dependency_links.txt
+lyricsfinder3.egg-info/requires.txt
+lyricsfinder3.egg-info/top_level.txt
