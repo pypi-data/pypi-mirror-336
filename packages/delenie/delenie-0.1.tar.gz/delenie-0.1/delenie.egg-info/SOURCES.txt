@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+delenie/__init__.py
+delenie/main.py
+delenie.egg-info/PKG-INFO
+delenie.egg-info/SOURCES.txt
+delenie.egg-info/dependency_links.txt
+delenie.egg-info/top_level.txt
