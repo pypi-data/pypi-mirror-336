@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: clidriver
+Version: 1.0.0
+Summary: Cli driver for linux
+Author: Yumito
+Author-email: 609029250@qq.com
+License: Apache-2.0
+Keywords: cli,linux,wechat,automation
+Description-Content-Type: text/markdown
+Requires-Dist: python-socketio>=5.12.1
+Requires-Dist: websocket-client>=1.8.0
+Requires-Dist: websockets>=13.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
