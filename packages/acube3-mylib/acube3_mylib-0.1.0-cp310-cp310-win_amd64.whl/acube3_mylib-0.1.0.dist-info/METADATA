@@ -1,0 +1,144 @@
+Metadata-Version: 2.2
+Name: acube3_mylib
+Version: 0.1.0
+Summary: Cross-platform C++ library with Python bindings via pybind11
+Author-Email: Amol Ambardekar <acube3@yahoo.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# MyLib (pybind11 Version)
+
+A cross-platform C++ library with a Python interface using `pybind11`.
+
+## Features
+
+- C++ core logic
+- Pythonic interface via `pybind11`
+- Builds on Windows, Linux, and macOS
+- Packaged using `scikit-build-core`
+- Visual Studio 2022 solution generation via CMake
+- Includes C++ and Python tests
+
+---
+
+## 🛠 Build & Install Locally (Python)
+
+### Step 1: Install Build Requirements
+
+```bash
+pip install scikit-build-core pybind11[global] build
+```
+
+### Step 2: Install the Package
+
+```bash
+pip install .
+```
+
+Or build a wheel:
+
+```bash
+python -m build
+```
+
+---
+
+## 🧪 Python Usage
+
+```python
+from mylib import MyLib
+
+lib = MyLib()
+lib.do_work()
+print(lib.get_counter())
+lib.reset_counter()
+```
+
+To run tests:
+
+```bash
+python tests/test_python.py
+```
+
+---
+
+## 🧰 C++ Development & Testing (Visual Studio 2022)
+
+### Step 1: Open Visual Studio 2022 Developer Command Prompt
+
+Launch **"x64 Native Tools Command Prompt for VS 2022"**
+
+### Step 2: Create Build Directory and Generate Solution
+
+```cmd
+cd mylib
+mkdir build
+cd build
+cmake .. -G "Visual Studio 17 2022" -A x64
+```
+
+This generates `MyLib.sln` which you can open with Visual Studio.
+
+### Step 3: Build in Release Mode
+
+```cmd
+cmake --build . --config Release
+```
+
+### Step 4: Run the C++ Test
+
+```cmd
+./Release/test_mylib.exe
+```
+
+---
+
+## 🚀 Publish to PyPI
+
+### Step 1: Create an Account
+
+- Register at [https://pypi.org/account/register/](https://pypi.org/account/register/)
+- Generate an API token
+
+### Step 2: Install Twine
+
+```bash
+pip install twine
+```
+
+### Step 3: Build the Package
+
+```bash
+python -m build
+```
+
+### Step 4: Upload to PyPI
+
+```bash
+twine upload dist/*
+```
+
+Use `__token__` as your username and paste the token when prompted.
+
+---
+
+## 🧱 Project Layout
+
+```
+mylib/
+├── CMakeLists.txt
+├── pyproject.toml
+├── README.md
+├── src/
+│   ├── CMakeLists.txt
+│   ├── mylib.cpp
+│   └── test.cpp
+├── tests/
+│   └── test_python.py
+```
+
+---

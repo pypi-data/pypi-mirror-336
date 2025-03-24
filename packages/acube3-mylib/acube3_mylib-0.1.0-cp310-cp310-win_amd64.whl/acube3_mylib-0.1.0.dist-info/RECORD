@@ -1,0 +1,6 @@
+src/CMakeLists.txt,sha256=Ggp4ZStUPM_CmI-OV4cX4v_CcjK2CiAx_8XPBKKQ3f0,137
+src/mylib.cpp,sha256=6PQtpGOPLgN9ObdssPk3YZKcFiJblxVUUFIvMT_eQ38,573
+src/test.cpp,sha256=bAd3P1aoPwo1H7xtxylLbegfbd6pq2f58nH7t0Gz5yE,531
+acube3_mylib-0.1.0.dist-info/METADATA,sha256=Yzi1gWT6-ww1wfaTccdP3XK-iYbIreRbOS4zaOVBC-E,2392
+acube3_mylib-0.1.0.dist-info/WHEEL,sha256=Z5M11CPhkhUCn14horIIG3GeSgJ2uFqbheGfNFzSz8s,106
+acube3_mylib-0.1.0.dist-info/RECORD,,
