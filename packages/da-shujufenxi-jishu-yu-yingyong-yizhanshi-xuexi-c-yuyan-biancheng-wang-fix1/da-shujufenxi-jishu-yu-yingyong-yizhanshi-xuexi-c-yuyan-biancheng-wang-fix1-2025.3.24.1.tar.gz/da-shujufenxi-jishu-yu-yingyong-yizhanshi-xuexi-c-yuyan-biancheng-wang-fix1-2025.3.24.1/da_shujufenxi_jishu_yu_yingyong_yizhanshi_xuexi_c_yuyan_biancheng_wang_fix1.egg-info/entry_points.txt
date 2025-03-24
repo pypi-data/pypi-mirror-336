@@ -1,0 +1,3 @@
+[console_scripts]
+DaShujufenxiJishuYuYingyongYizhanshiXuexiCYuyanBianchengWangFix1 = DaShujufenxiJishuYuYingyongYizhanshiXuexiCYuyanBianchengWangFix1.__main__:main
+da-shujufenxi-jishu-yu-yingyong-yizhanshi-xuexi-c-yuyan-biancheng-wang-fix1 = DaShujufenxiJishuYuYingyongYizhanshiXuexiCYuyanBianchengWangFix1.__main__:main
