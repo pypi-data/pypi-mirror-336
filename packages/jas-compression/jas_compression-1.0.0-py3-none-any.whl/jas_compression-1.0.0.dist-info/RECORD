@@ -1,0 +1,15 @@
+jas/__init__.py,sha256=WCxOojPaoggxo68P184ae5iGzKMvWryyzAXB1U3nJsY,102
+jas/bitstream.py,sha256=x8SpmTQZ0t9o61zQl6GWlMXP86OdeWlVnRJ8FmlbSj4,974
+jas/cli.py,sha256=O7Lrgx5BTVUFV1-Sm7goMYQPZDcTx4PLjObbSu__jLo,831
+jas/compressor.py,sha256=LIihMtPHwm7U90BrQ7wiuMWleaciAclADgSkWyWClos,1406
+jas/decompressor.py,sha256=nmlFww9K5jJvw7BT6Y05aklEaiAp4y5D_gtGMTAR-fs,976
+jas/huffman.py,sha256=qpjGCwWDsVzmobcKclD4yH8BQXiEe2wEAhpe3L-Jahw,2428
+jas/structured.py,sha256=7UWt6nHxe7_gfrD9_gbPg56Qso8xEnBaevYnwydq5g8,2151
+jas/tokenizer.py,sha256=mLhQMcQ7ADubDr9HP_Mzd50vbnBJUEUxK561S-97jWE,1257
+jas/tokenizer_v1.py,sha256=j85o3SbE2ScT6hXg4utjAUb2JqXSRfdvj-Wj5SD5DSw,545
+jas/utils.py,sha256=_jRHvC9h2vl7RmXc-Lep_PdwlXAZAQL12dHCz7bnYtQ,656
+jas_compression-1.0.0.dist-info/LICENSE,sha256=bYc59o88w9nWTHyJ7d9cU83d2ZXd0POGrcvCM2wN_JY,682
+jas_compression-1.0.0.dist-info/METADATA,sha256=8Y6E4TzHTJSWvrNZh9K2b7D9-_z_QF7tP3zWDVqYMsU,2679
+jas_compression-1.0.0.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+jas_compression-1.0.0.dist-info/top_level.txt,sha256=QgAC8cef89UrAJ_NHJpMy5hE_mL3aOEv8_RsTLmae50,4
+jas_compression-1.0.0.dist-info/RECORD,,
