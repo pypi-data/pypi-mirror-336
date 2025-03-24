@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/x_jinja2/__init__.py
+src/x_jinja2/core.py
+src/x_jinja2.egg-info/PKG-INFO
+src/x_jinja2.egg-info/SOURCES.txt
+src/x_jinja2.egg-info/dependency_links.txt
+src/x_jinja2.egg-info/requires.txt
+src/x_jinja2.egg-info/top_level.txt
