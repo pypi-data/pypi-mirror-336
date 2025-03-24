@@ -1,0 +1,26 @@
+[tool.ruff]
+line-length = 320
+
+[tool.poetry]
+name = "ormlambda"
+version = "3.7.0"
+description = "ORM designed to interact with the database (currently with MySQL) using lambda functions and nested functions"
+authors = ["p-hzamora <p.hzamora@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mysql-connector-python= "^9.0.0"
+fluent-validation = "4.3.1"
+shapely = "^2.0.6"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.test.dependencies]
+pandas = "^2.2.2"
+ruff = "^0.4.5"
+parameterized = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
