@@ -1,0 +1,14 @@
+pymummer/__init__.py,sha256=k8fjesVgkotNBLUcwqEKzXFKI2MyruJB3nIFmBvyUbs,746
+pymummer/_version.py,sha256=MzIo18wy7DMt4bO6hDNzASQ2GwerF91Xd0bFMTS3VKA,513
+pymummer/alignment.py,sha256=IviAj5cqq1B94ul9PAgOXOFPcOIh37dufKK3szl_Nhg,10308
+pymummer/coords_file.py,sha256=-zInuA8EhNbcYu4SMSycZxXc8kcDwavtFTAtgM92s7U,1802
+pymummer/nucmer.py,sha256=2ku8vbQKa1SIchbL_xgVmIc32x4cqU8FwQbxvjTlcTY,4246
+pymummer/snp.py,sha256=xMO3eZZJrnyqoleSuraJsbTak2vAND5LKyxLw7XaL7s,1747
+pymummer/snp_file.py,sha256=Q55vTZUWq7D42f2ji_RgNALCx4h8i05t8duRXQLeaqk,522
+pymummer/syscall.py,sha256=GqLoJDQUY7yD1p7vvkLHtuJG4SiwX17InTKtJ6oztzg,792
+pymummer/variant.py,sha256=_VkNdn1WDdvu7f0bu0INrmUpDz8c2IoC3J7nnG8tZWE,2956
+pymummer-0.12.0.dist-info/METADATA,sha256=-1oV_aijKD1669JDc2POgPBzYn6b8kjTIasdmRkkj2o,5330
+pymummer-0.12.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pymummer-0.12.0.dist-info/licenses/AUTHORS,sha256=OPBra1-vTxxrAsE-5B36KtTVzZTysrComJS28YOxUWY,79
+pymummer-0.12.0.dist-info/licenses/LICENSE,sha256=xz-_w9uM1jA3UeQINUUHjF7vr5Sp8oFVW-IKPfe2FE4,35213
+pymummer-0.12.0.dist-info/RECORD,,
