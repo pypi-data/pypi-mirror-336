@@ -1,0 +1,6 @@
+playwright
+browserforge
+
+[dev]
+pytest
+ruff
