@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+dist/
+_version.py
+*.egg-info/
+*.egg
+
+# IDE
+.vscode/*
+
+# misc
+log*.txt
+scratch/
+scratch*.py
+
+# Test
+.coverage
+
+# Environment
+.venv/
+uv.lock
