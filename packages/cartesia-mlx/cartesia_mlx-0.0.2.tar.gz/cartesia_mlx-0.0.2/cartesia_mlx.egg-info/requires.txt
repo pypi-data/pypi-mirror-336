@@ -1,0 +1,8 @@
+mlx==0.22.1
+nanobind==2.4.0
+transformers>=4.40.0
+datasets
+torch
+numpy<2
+requests
+huggingface_hub
