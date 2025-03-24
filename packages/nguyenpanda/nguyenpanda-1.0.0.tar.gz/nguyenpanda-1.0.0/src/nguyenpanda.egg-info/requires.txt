@@ -1,0 +1,11 @@
+
+[all]
+build
+jupyter
+numpy
+matplotlib
+pydantic
+requests
+typing-extensions
+urllib3
+pathlib

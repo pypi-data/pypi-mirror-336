@@ -1,0 +1,60 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=72.2.0",
+    "wheel>=0.42.0",
+]
+
+[project]
+name = "nguyenpanda"
+authors = [
+    { name = "nguyenpanda", email = "hatuongnguyen0107@gmail.com" },
+]
+maintainers = [
+    { name = "nguyenpanda", email = "hatuongnguyen0107@gmail.com" },
+]
+description = "Welcome to the world of 'nguyenpanda', a Python library that brings you the essence of utility packages, each named after animals, perfectly representing its unique domain."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+classifiers = [
+    'Development Status :: 2 - Pre-Alpha',
+    'License :: OSI Approved :: MIT License',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Intended Audience :: Science/Research',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+dynamic = [
+    "version",
+    "dependencies",
+    "optional-dependencies",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/nguyenpanda"
+Repository = "https://github.com/nguyenpanda/PyPackages.git"
+
+[tool.setuptools.dynamic]
+version = { attr = "nguyenpanda.__version__" }
+dependencies = { file = ["requirements/requirements.txt"] }
+optional-dependencies.all = { file = [
+    "requirements/requirements",
+    "requirements/requirements-dev.txt",
+] }
+
+[tool.setuptools.package-data]
+"*" = [
+    "VERSION",
+    "*.pyi",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nguyenpanda*"]
