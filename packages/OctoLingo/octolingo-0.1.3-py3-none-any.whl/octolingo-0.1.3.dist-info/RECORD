@@ -1,0 +1,12 @@
+OctoLingo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+OctoLingo/exceptions.py,sha256=c2a08Gp3rOe8YY8berYEITkNQIv7VffLBOTwlblQQk0,92
+OctoLingo/file_handler.py,sha256=tIuvhOkIh3UBQSRIqvC_6XAv3vlSU4LjN2tj34hE6aE,335
+OctoLingo/glossary.py,sha256=3ggrUse9FDDnqYGjm9Ry9d1ssXJGoVCQBlftoDeY9vA,431
+OctoLingo/history.py,sha256=3e0tXD7PvJmSiR6HuvULZ0MYhATdn8GmgN_xoAjYFpc,967
+OctoLingo/translator.py,sha256=qX1J0OULqpLiupuqAAFH5-Zcv3JMCqIWZ6mpLsY-ZnQ,4555
+OctoLingo/utils.py,sha256=fS0LKX8tG1SKZyQi-NHHqG6AkubAxdDbdfs9Lc7NNcw,1337
+octolingo-0.1.3.dist-info/licenses/LICENSE,sha256=ckg-QehkiDC2a7dk8B1oMc4ezno7G2QTg-71TGpFs8w,111
+octolingo-0.1.3.dist-info/METADATA,sha256=immwrAyFi7kPrEIIMtIs5P8MziC5KIkjBUzsY3dJpBc,5326
+octolingo-0.1.3.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+octolingo-0.1.3.dist-info/top_level.txt,sha256=mDRTsAc7zDFpgOKwCTopddQfIJCbHzVsXVoZLr_QLXE,10
+octolingo-0.1.3.dist-info/RECORD,,
