@@ -1,0 +1,15 @@
+demo.py,sha256=tGqpMn3xuAPhUYbOZ2G2xNdQ6DV2SHmu2Rz1-WSpzIw,3258
+quick_demo.py,sha256=k0bL-YFterJYyy_qdRupx_Twl2j9tFlitxVqvrvKLUE,620
+bazaar_ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bazaar_ai/actions.py,sha256=1KRZg-0JVa6em297JJQxLe--4tvXtXOLw5xr3OFt4ts,12214
+bazaar_ai/game.py,sha256=HxJKzclaipGgL4XOZFSd7PMYypuuwwSaPibvuYzq25M,7899
+bazaar_ai/market.py,sha256=s1YHTGxafiFFoAlZj5YfVpi61KBdcf7R7rc0ZPY3Wfc,12235
+bazaar_ai/terms.py,sha256=JIVbxmZJohg4bU8McpguKiNQBuypzdgajAcx60_ZB-U,460
+bazaar_ai/trader.py,sha256=jM4FzUhROMpChZQcwtDRstF1VoBZI60qo0HDG28exKU,8081
+bazaar_ai/pieces/coins.py,sha256=yQbGF-PUEzI2jMIzuzRAvzq97yhvoBKqOqtiroNXcpw,1666
+bazaar_ai/pieces/goods.py,sha256=KTIUrkHdD3HkUbqEr_SFETqb2Qb0WV7Wkjf8SBK_EIE,668
+bazaar_ai-0.0.5.dist-info/licenses/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+bazaar_ai-0.0.5.dist-info/METADATA,sha256=eOCHfwwfzokzIsHp8CK_RuOlKIIYGGOdlhrTle3nzn4,5169
+bazaar_ai-0.0.5.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+bazaar_ai-0.0.5.dist-info/top_level.txt,sha256=QhCdG4UJvNU3_lrlyFoiDTpahicRTOnJq6G6v7Qsxl4,26
+bazaar_ai-0.0.5.dist-info/RECORD,,
