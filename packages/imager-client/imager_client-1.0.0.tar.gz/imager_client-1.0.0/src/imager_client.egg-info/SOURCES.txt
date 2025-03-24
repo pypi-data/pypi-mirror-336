@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/imager/Imager.py
+src/imager/ImagerData.py
+src/imager/ImagerEncode.py
+src/imager/ImagerFormat.py
+src/imager/__init__.py
+src/imager_client.egg-info/PKG-INFO
+src/imager_client.egg-info/SOURCES.txt
+src/imager_client.egg-info/dependency_links.txt
+src/imager_client.egg-info/entry_points.txt
+src/imager_client.egg-info/top_level.txt
+test/test.py
