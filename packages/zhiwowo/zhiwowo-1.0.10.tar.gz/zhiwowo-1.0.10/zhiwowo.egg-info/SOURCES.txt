@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+zhiwowo/__init__.py
+zhiwowo/zhiwowo.py
+zhiwowo.egg-info/PKG-INFO
+zhiwowo.egg-info/SOURCES.txt
+zhiwowo.egg-info/dependency_links.txt
+zhiwowo.egg-info/top_level.txt
