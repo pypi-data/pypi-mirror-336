@@ -1,0 +1,3 @@
+[console_scripts]
+optitrader=optitrader.cli:app
+
