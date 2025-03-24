@@ -1,0 +1,3 @@
+[console_scripts]
+YehuoStm32KuKaifaShizhanZhinanFix1 = YehuoStm32KuKaifaShizhanZhinanFix1.__main__:main
+yehuo-stm32-ku-kaifa-shizhan-zhinan-fix1 = YehuoStm32KuKaifaShizhanZhinanFix1.__main__:main
