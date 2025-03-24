@@ -1,0 +1,3 @@
+[console_scripts]
+LuFeixuechengJavaFangqiZhiLuFix1 = LuFeixuechengJavaFangqiZhiLuFix1.__main__:main
+lu-feixuecheng-java-fangqi-zhi-lu-fix1 = LuFeixuechengJavaFangqiZhiLuFix1.__main__:main
