@@ -1,0 +1,96 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel >= 0.29.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "water_column_sonar_processing"
+version = "25.3.2"
+authors = [
+  { name="Rudy Klucik", email="rudy.klucik@noaa.gov" },
+]
+maintainers = [
+  { name="Rudy Klucik", email="rudy.klucik@noaa.gov" },
+]
+description = "Processing tool for water column sonar data."
+keywords = ["ocean", "sonar", "water column"]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "aiobotocore==2.19.0",
+    "boto3==1.36.3",
+    "botocore==1.36.3",
+    "echopype==0.9.0",
+    "fiona==1.10.1",
+    "geopandas==1.0.1",
+    "mock==5.1.0",
+    "moto[all]==5.0.27",
+    "moto[server]==5.0.27",
+    "networkx==3.4.2",
+    "numcodecs==0.13.1",
+    "numpy==1.26.4",
+    "pandas==2.2.3",
+    #"pip-audit",
+    "pyarrow==18.1.0",
+    "pykalman==0.10.1",
+    "python-dotenv==1.0.1",
+    "requests==2.32.3",
+    "s3fs==2024.2.0",
+    "safety==3.2.14",
+    "scipy==1.14.1",
+    "setuptools",
+    "shapely==2.0.3",
+    "typing-extensions==4.10.0",
+    "xarray==2024.10.0",
+    "xbatcher==0.4.0",
+    "zarr==2.18.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "bandit[toml]==1.8.0",
+    "bandit",
+    "build",
+    "flake8==7.1.1",
+    "isort",
+    "matplotlib==3.10.1",
+    "pooch==1.8.2",
+    "pre-commit",
+    "pyinstaller",
+    "pytest~=8.3.4",
+    "ruff",
+    "tqdm",
+    "twine",
+]
+test = [
+    "pytest-cov",
+]
+
+[project.urls]
+Homepage = "https://github.com/CI-CMG/water-column-sonar-processing"
+Issues = "https://github.com/CI-CMG/water-column-sonar-processing/issues"
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+
+[tool.pre-commit-hooks.bandit]
+exclude = ["*/tests/*"]
+
+#[tool.black]
+#line-length = 150
+
+[tool.isort]
+known_first_party = "water_column_sonar_processing"
+#known_third_party = ["_echopype_version", "setuptools"]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+combine_as_imports = true
+#line_length = 150
