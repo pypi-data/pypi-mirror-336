@@ -1,0 +1,22 @@
+# project
+dist/
+venv/
+
+# codecov
+.coverage
+coverage.xml
+
+# docs
+_build/
+
+# tools
+tools/SPTK/
+tools/toml/
+
+# misc
+__pycache__/
+*.pyc
+*~
+*.swp
+\#*#
+.\#*
