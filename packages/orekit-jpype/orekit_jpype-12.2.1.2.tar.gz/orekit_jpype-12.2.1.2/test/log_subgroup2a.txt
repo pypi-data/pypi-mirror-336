@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.5, pytest-8.3.4, pluggy-1.5.0
+rootdir: /home/sepehy/Development/Orekit/orekit_jpype/test
+configfile: pytest.ini
+plugins: cov-6.0.0
+collected 19 items
+
+FixedPointTleGenerationAlgorithmTest.py ............                     [ 63%]
+GroundFieldOfViewDetectorTest.py .                                       [ 68%]
+HaloOrbitTest.py .....                                                   [ 94%]
+ImpulseManeuverTest.py .                                                 [100%]
+
+============================== 19 passed in 2.91s ==============================

@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.5, pytest-8.3.4, pluggy-1.5.0
+rootdir: /home/sepehy/Development/Orekit/orekit_jpype/test
+configfile: pytest.ini
+plugins: cov-6.0.0
+collected 2 items
+
+SpacecraftStateInterpolatorTest.py ..                                    [100%]
+
+============================== 2 passed in 3.03s ===============================

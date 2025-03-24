@@ -1,0 +1,19 @@
+Index: pyproject.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[build-system]\nrequires = ['hatchling']\nbuild-backend = 'hatchling.build'\n\n[tool.hatch.metadata]\nallow-direct-references = true\n\n[project]\nname = \"orekit_jpype\"\nversion = \"12.2.1.2\"\ndescription = \"A space dynamics library. This package is a jpype wrapping of the original orekit java code.\"\nreadme = \"README.md\"\nauthors = [{name = \"Petrus Hyvönen\", email = \"petrus.hyvonen@gmail.com\"}]\nmaintainers = [{name = \"Clément Jonglez\", email = \"clement@jonglez.space\"}]\nlicense = {text = \"License :: OSI Approved :: Apache Software License\"}\nrequires-python = \">=3.7\"\nclassifiers = [\n    'Programming Language :: Python :: 3',\n    'Programming Language :: Python :: 3.7',\n    'Programming Language :: Python :: 3.8',\n    'Programming Language :: Python :: 3.9',\n    'Programming Language :: Python :: 3.10',\n    'Programming Language :: Python :: 3.11',\n    'Programming Language :: Python :: 3.12',\n    'Topic :: Scientific/Engineering',\n    \"Operating System :: OS Independent\",\n]\n\ndependencies = [\n    'Jpype1>=1.5.2',\n    'numpy'\n]\n\n[project.urls]\nsource = \"https://gitlab.orekit.org/orekit/orekit_jpype/-/tree/master\"\nhomepage = \"https://www.orekit.org/\"\nforum = \"https://forum.orekit.org/c/orekit-python-wrapper-usage/17\"\n\n[project.optional-dependencies]\ntests = [\n    \"pytest\",\n    \"coverage\",\n    \"pytest-cov\"\n]\n\n[pytest]\ntestpaths = [\n    \"test\",\n    \"orekit_jpype/_pyinstaller\"\n]\n\n[project.entry-points.pyinstaller40]\n\"hook-dirs\" = \"orekit_jpype._pyinstaller.entry_points:get_hook_dirs\"\n\"tests\" = \"orekit_jpype._pyinstaller.entry_points:get_PyInstaller_tests\"\n\n[tool.hatch.build.targets.wheel]\n# Hatch allows installing multiple packages: https://hatch.pypa.io/1.12/config/build/#packages\npackages = [\n    \"orekit_jpype\",\n    \"java-stubs\", # stub-only package for the corresponding Java package https://peps.python.org/pep-0561/#stub-only-packages\n    \"jpype-stubs\", # stub-only package for the corresponding Java package https://peps.python.org/pep-0561/#stub-only-packages\n    \"org-stubs\" # stub-only package for the corresponding Java package https://peps.python.org/pep-0561/#stub-only-packages\n]\n\n[tool.uv]\ndev-dependencies = [\n    \"pytest\",\n    \"coverage\",\n    \"pytest-cov\"\n]\n\n[tool.uv.workspace]\nmembers = [\"examples\"]\n\n# Use local orekit-jpype for this workspace\n[tool.uv.sources]\norekit-jpype = { workspace = true }\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pyproject.toml b/pyproject.toml
+--- a/pyproject.toml	(revision e52123d4c96977af74ee98cd17a3396a9ba52ab6)
++++ b/pyproject.toml	(date 1739168971749)
+@@ -27,7 +27,7 @@
+ ]
+ 
+ dependencies = [
+-    'Jpype1>=1.5.2',
++    'Jpype1==1.5.2 ',
+     'numpy'
+ ]
+ 

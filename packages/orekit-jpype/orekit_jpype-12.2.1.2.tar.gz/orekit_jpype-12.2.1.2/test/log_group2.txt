@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.5, pytest-8.3.4, pluggy-1.5.0
+rootdir: /home/sepehy/Development/Orekit/orekit_jpype/test
+configfile: pytest.ini
+plugins: cov-6.0.0
+collected 41 items
+
+KeplerianConverterTest.py ..                                             [  4%]
+KlobucharModelTest.py ..                                                 [  9%]
+LeastSquaresTleGenerationAlgorithmTest.py ...                            [ 17%]
+NodeDetectorTest.py .                                                    [ 19%]
+OpmParserTest.py .....                                                   [ 31%]
+OrekitConvertersTest.py .......                                          [ 48%]
+OrekitStepHandlerTest.py ..                                              [ 53%]
+PyhelpersTest.py ........                                                [ 73%]
+RuggedTest.py ..                                                         [ 78%]
+SmallManeuverAnalyticalModelTest.py ...                                  [ 85%]
+SpacecraftStateInterpolatorTest.py ..                                    [ 90%]
+SpinStabilizedTest.py ..                                                 [ 95%]
+TransformTest.py ..                                                      [100%]
+
+============================= 41 passed in 13.76s ==============================

@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.5, pytest-8.3.4, pluggy-1.5.0
+rootdir: /home/sepehy/Development/Orekit/orekit_jpype/test
+configfile: pytest.ini
+plugins: cov-6.0.0
+collected 38 items
+
+AltitudeDetectorTest.py .                                                [  2%]
+BackAndForthDetectorTest.py .                                            [  5%]
+BrouwerLyddanePropagatorTest.py ..                                       [ 10%]
+EphemerisEventsTest.py ....                                              [ 21%]
+EventDetectorTest.py .                                                   [ 23%]
+EventHandlerTest.py .                                                    [ 26%]
+FieldStopOnDecreasingTest.py ..                                          [ 31%]
+FixedPointTleGenerationAlgorithmTest.py ............                     [ 63%]
+GroundFieldOfViewDetectorTest.py .                                       [ 65%]
+HaloOrbitTest.py .....                                                   [ 78%]
+ImpulseManeuverTest.py .                                                 [ 81%]
+InterSatDirectViewDetectorTest.py ..                                     [ 86%]
+IodGibbsTest.py ..                                                       [ 92%]
+IodLaplaceTest.py ...                                                    [100%]
+
+============================== 38 passed in 7.53s ==============================
