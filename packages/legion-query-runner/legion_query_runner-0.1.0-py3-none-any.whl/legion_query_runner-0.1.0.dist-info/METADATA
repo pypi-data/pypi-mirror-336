@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: legion-query-runner
+Version: 0.1.0
+Summary: Query runners
+Author: Legion
+Author-email: info@thelegionai.com
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: advocate (==1.0.0)
+Requires-Dist: apiclient
+Requires-Dist: boto3 (==1.28.8)
+Requires-Dist: funcy (>=2.0,<3.0)
+Requires-Dist: google-api-python-client (==1.7.11)
+Requires-Dist: google-auth
+Requires-Dist: mysqlclient (==2.1.1)
+Requires-Dist: psycopg2-binary (==2.9.6)
+Requires-Dist: pymssql (>=2.3.1,<3.0.0)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: sqlparse (==0.5.0)
+Requires-Dist: sshtunnel (==0.1.5)
+Requires-Dist: urllib3 (==1.26.19)
+Description-Content-Type: text/markdown
+
+# Legion Query Runners
+
+This package provides query runners for Legion, supporting various database systems and data sources.
+
+## Supported Data Sources
+
+- MySQL
+- PostgreSQL
+- Microsoft SQL Server
+- Google APIs
+- Amazon Web Services (via boto3)
+
+## Installation
+
+```bash
+poetry install
+```
+
+## Development
+
+To set up the development environment:
+
+1. Install dependencies:
+   ```bash
+   poetry install --with dev
+   ```
+
+2. Run tests:
+   ```bash
+   poetry run pytest
+   ```
+
+## License
+
+Proprietary - All rights reserved by Legion. 
