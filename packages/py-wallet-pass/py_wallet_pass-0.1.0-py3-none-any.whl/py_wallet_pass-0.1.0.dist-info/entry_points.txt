@@ -1,0 +1,3 @@
+[console_scripts]
+wallet-pass=py_wallet_pass.cli:main
+
