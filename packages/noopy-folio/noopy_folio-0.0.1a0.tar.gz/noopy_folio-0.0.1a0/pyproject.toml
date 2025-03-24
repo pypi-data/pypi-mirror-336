@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "noopy-folio"
+dynamic = ["dependencies", "version"]
+authors = [{name = "Zev Fu", email = "zev.fu@noojing.com"}]
+keywords = ["portfolio", "quant", "finance"]
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+        "Development Status :: 3 - Alpha",
+        "Topic :: Software Development :: Libraries",
+        "License :: OSI Approved :: CMU License (MIT-CMU)",
+]
+license = { file = "LICENSE" }
+
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+[tool.setuptools_scm]

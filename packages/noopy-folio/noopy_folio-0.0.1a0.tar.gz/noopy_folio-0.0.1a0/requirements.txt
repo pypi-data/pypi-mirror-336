@@ -1,0 +1,6 @@
+matplotlib
+scikit-learn
+scipy
+seaborn
+tabulate
+yfinance
