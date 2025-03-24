@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pkycrawtester
+Version: 0.0.2
+Summary: selenium을 이용한 데이타 크롤링 테스트용 - Chrome, Firefox
+Home-page: 
+Author: Lian Park
+Author-email: g1000white@gmail.com
+Keywords: python tutorial,pypi
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: selenium
+

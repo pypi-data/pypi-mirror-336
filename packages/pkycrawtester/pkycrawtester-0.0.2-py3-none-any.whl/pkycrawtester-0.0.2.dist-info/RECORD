@@ -1,0 +1,15 @@
+MyBrowser/DB.py,sha256=b-6kd7RwSKNGRoDsKIRTCMPEjfPtu8fV4f8pEJxXJ6I,2441
+MyBrowser/__init__.py,sha256=EANZbRSLgZuSHuBtKR9SmO58JP4MoMx8u0vhjf6iNyw,17
+MyBrowser/baseChrome.py,sha256=jjL60bXKPMHgkWhoNniByWI6WN421lYKGBy8iYN0Ry4,7930
+MyBrowser/baseFirefox.py,sha256=A2q61eQiBDkEBBrNipLQP1lq9dytMKodBYjpnkYWu74,9529
+MyBrowser/basicBrowser.py,sha256=uRHXItXXQeLdUdhcaXkOxIQaKQDF9i_Lywal4bxQkyk,4059
+MyBrowser/myBrowser.py,sha256=6f1AJke13uNT5dBrZ-2baHE7-KLq1my93U98G3MNoDU,10432
+MyBrowser/myBrowser2.py,sha256=VoJsNAEN4y0mNmat57WS474_CYmLXy4YoJ4eldPEHS8,10306
+MyBrowser/utils.py,sha256=h5r3vpBQhMPG51-T_N_h87yDg0RYn78TvhJVn2kSCUY,6726
+MyBrowser/LIB/__init__.py,sha256=AJGTlw30F_QTE98SUeELCd9L_bnVmyQndgeNJetzANs,17
+MyBrowser/LIB/logger.py,sha256=TfwvZ6gU9-vv6h8QaArAmrQoevbcZq_iMvh8Np7ZCkw,2875
+MyBrowser/LIB/yaml_read.py,sha256=50LWUwCXr43MdriholQqKhddB6ze-LI9g_X2swg0taE,1833
+pkycrawtester-0.0.2.dist-info/METADATA,sha256=Sm4EBCgusjAO_482SJo_7QUtuAZNqVBOr5nK0wOi6lU,498
+pkycrawtester-0.0.2.dist-info/WHEEL,sha256=1L2J5DbF-j1jmb-zSyvr-b6hWBZn37ncrDkxQzhk5oo,91
+pkycrawtester-0.0.2.dist-info/top_level.txt,sha256=PkGAPGhjV1nIIzT9ZAKcjJR3At7knezOw12hxifBjJs,10
+pkycrawtester-0.0.2.dist-info/RECORD,,
