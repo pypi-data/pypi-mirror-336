@@ -1,0 +1,13 @@
+gif.dll,sha256=8Qv7xmvDLDgKKLmV1MlYzkhSvl6Ys6jmM3ovTgwI46E,36352
+libsharpyuv.dll,sha256=M4M5_ncG1DcHPYFdkWPtVeyq8VCzBVjpMVnx8UMsZfY,25600
+libwebp.dll,sha256=6sGq_wWS19b-1wPMFc2AY-bmSV-Y19DRL4P2oE3v_NQ,367616
+mtpng.dll,sha256=J-KAVVGyUkPLACQ5TaWUNSaZ1axapvsmUKDKuFFrCAc,385024
+palettum.cp310-win_amd64.pyd,sha256=m8CR9IeQqPna---6p-9KMKziNhenVbn6BuT-2j7kl2U,340480
+spng.dll,sha256=sTnUuZFtJuVkihnPryXrmuTuzL0NHNYc1wk7i7wWCmY,69120
+turbojpeg.dll,sha256=R_pfY8PrjX554tXP_ojJJ6XmEVe5ox_oH-sfZAzkIUY,809984
+zlib1.dll,sha256=szlpYOH-iA0M36A0fVgaLOHnf6xMinrgZY8OSnp3sj4,89088
+palettum-0.3.7.dist-info/licenses/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+palettum-0.3.7.dist-info/METADATA,sha256=bEEgTvxGd3QM_3-BOwx0XKOB4B-X7GNCpIS1yM8Sqso,629
+palettum-0.3.7.dist-info/WHEEL,sha256=3P80pz7aU84nVq-51hAoVw99hqBBuyZ6hPufE-F7jcM,101
+palettum-0.3.7.dist-info/top_level.txt,sha256=ZFGa2zTZRgKDo1c-Vk89UcFbwLo0Ifh_eBBUyneyZ7Y,9
+palettum-0.3.7.dist-info/RECORD,,
