@@ -1,0 +1,11 @@
+name: Antarctica
+full_name: Antarctica
+region: Antarctica
+subregion: Antarctica
+alpha3: ata
+qid: Q51
+is_country: false
+is_ftm: true
+is_jurisdiction: true
+other_codes:
+  - nq

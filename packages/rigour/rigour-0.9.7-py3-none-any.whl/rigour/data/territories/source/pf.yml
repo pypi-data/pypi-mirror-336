@@ -1,0 +1,22 @@
+name: French Polynesia
+full_name: French Polynesia
+region: Oceania
+subregion: Polynesia
+alpha3: pyf
+is_country: false
+is_ftm: true
+is_jurisdiction: true
+parent: fr
+qid: Q30971
+other_codes:
+  - fr-pf
+other_qids:
+  - Q930426
+  - Q140298
+  - Q1999082
+  - Q183963
+summary:
+  French Polynesia is an overseas collectivity of France and its sole overseas
+  country. It comprises 121 geographically dispersed islands and atolls stretching
+  over more than 2,000 kilometres in the South Pacific Ocean.
+wikipedia_url: https://en.wikipedia.org/wiki/French_Polynesia

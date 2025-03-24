@@ -1,0 +1,14 @@
+name: Bonaire, Sint Eustatius and Saba
+full_name: Bonaire, Sint Eustatius and Saba
+region: Americas
+subregion: Caribbean
+alpha3: bes
+qid: Q27561
+other_qids:
+  - Q25396
+  - Q26180
+  - Q25528
+is_country: false
+is_ftm: true
+is_jurisdiction: true
+parent: nl
