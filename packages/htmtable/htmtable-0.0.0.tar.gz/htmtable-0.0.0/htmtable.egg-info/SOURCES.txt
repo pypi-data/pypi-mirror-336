@@ -1,0 +1,9 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+htmtable.egg-info/PKG-INFO
+htmtable.egg-info/SOURCES.txt
+htmtable.egg-info/dependency_links.txt
+htmtable.egg-info/top_level.txt
