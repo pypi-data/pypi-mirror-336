@@ -1,0 +1,9 @@
+devaci_module/__init__.py,sha256=kZQibHUmszOWDHyVemrtLhdW0Ne-BO7QK6dVvZqF0e4,74
+devaci_module/cobra.py,sha256=wSctvhXZ9g4GSiqqyKdpwZEYa3n8lg2034BuxS_YKkg,51933
+devaci_module/deploy.py,sha256=awZi82hPiK65iZ0AM45w19WqFL3Tqv3MEZbDwc7_xEE,12057
+devaci_module/jinja.py,sha256=G3ldWa2QTY_RrQLBYhNiKg9a5LrYY0KrVpmDUQoy6sM,4674
+devaci_module-1.3.dist-info/LICENSE,sha256=BBX2IxlYQ0n1SjGFmDUrWlpSDlOxGrO7YX-quxGwDVw,1093
+devaci_module-1.3.dist-info/METADATA,sha256=z8V12QZVLcE4WvGVBmJGs5dR9MFSDYV0x5sS40EETzw,2116
+devaci_module-1.3.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+devaci_module-1.3.dist-info/top_level.txt,sha256=-VRADOWG5FRua3MMc4XY50g6gjB-myFIVAeSaJpTnxA,14
+devaci_module-1.3.dist-info/RECORD,,
