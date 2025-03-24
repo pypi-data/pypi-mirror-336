@@ -1,0 +1,14 @@
+evn/_token_column_format.pypy311-pp73-darwin.so,sha256=jE4v54Zr3L75SC9MMX-HHSodfH9qONNhneH4urwIR5w,220360
+evn/formatter.py,sha256=WdEqf6AJmaGeZi5xtgwC22pp5LV667SZS49SJM0gMrM,5778
+evn/__init__.py,sha256=hTtSBoJ81PSU139zyBGduhovLvrPC_OFUPQwKk4HZQE,120
+evn/_detect_formatted_blocks.pypy311-pp73-darwin.so,sha256=ikSg309HrxbcuQ9hy3WCuP_oIocnIlQt6ONUgvMtXIA,220400
+evn/_token_column_format.cpp,sha256=8JgNaWhe9qkooxF8-u4Hmg1SIJWQKfg_--eSDh674L8,21646
+evn/_detect_formatted_blocks.cpp,sha256=KHFqRSD8ZhR-j6qHXZ5Vxx7I1J5weQJEHriyS_l6MIo,17222
+evn/__main__.py,sha256=7x0YiYkWEpIqlM_fpsIq1eCrG1OfEAaE1EeJnvjGMSQ,175
+evn/tests/test_detect_formatted_blocks.py,sha256=Y9X1mTx1W2aSVlsr9wuh-C93mSIVHrIAlS0jOKx8IuM,4145
+evn/tests/test_token_column_format.py,sha256=-DnondQk6Lhd40gPlaX-RbHSeq-oh7R36y_ebrAxAbg,10777
+evn-0.0.3.dist-info/RECORD,,
+evn-0.0.3.dist-info/WHEEL,sha256=F8DiBBVDq6xY1RzZD1DTveFG9vSbAUUOAsowFMdV330,148
+evn-0.0.3.dist-info/entry_points.txt,sha256=kB4gSvfqR5I5UEafUbkfsxdWkNNj4PINl2d8_MDWx2I,43
+evn-0.0.3.dist-info/METADATA,sha256=YVrl3B9zMZoDPnmu46PS6rQleILAG8ZCIDp4Tn9HMNE,193
+evn-0.0.3.dist-info/licenses/LICENSE,sha256=9YK9Zp6SjODj9q-NE22NwBO1ZCt1n6Me-Cg3uNef7Gw,11356
