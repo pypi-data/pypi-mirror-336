@@ -1,0 +1,220 @@
+[
+{
+  "model": "vto_core.tzwikislug",
+  "pk": "019592ef-79b2-7b18-be2d-6cc66d3334c5",
+  "fields": {
+    "slug": "Greenwich_Mean_Time"
+  }
+},
+{
+  "model": "vto_core.tzwikislug",
+  "pk": "019592ef-fafb-78d6-b002-685d14fa77a9",
+  "fields": {
+    "slug": "Coordinated_Universal_Time"
+  }
+},
+{
+  "model": "vto_core.tzwikislug",
+  "pk": "019592f0-57c3-7efe-9ec8-619e9dd96383",
+  "fields": {
+    "slug": "Central_European_Time"
+  }
+},
+{
+  "model": "vto_core.tzwikislug",
+  "pk": "019592f0-e08f-7226-a359-723bed4643d5",
+  "fields": {
+    "slug": "British_Summer_Time"
+  }
+},
+{
+  "model": "vto_core.tzwikislug",
+  "pk": "019592f1-522e-76b5-9ea6-bf44b6226455",
+  "fields": {
+    "slug": "Central_European_Summer_Time"
+  }
+},
+{
+  "model": "vto_core.tzwikislug",
+  "pk": "019592f1-e5fd-7fdf-a06a-c696a85e1527",
+  "fields": {
+    "slug": "Eastern_Time_Zone"
+  }
+},
+{
+  "model": "vto_core.tzwikislug",
+  "pk": "019592fa-2279-76f3-aab9-ccc80bb2ea6d",
+  "fields": {
+    "slug": "Pacific_Time_Zone"
+  }
+},
+{
+  "model": "vto_core.timezone",
+  "pk": "01958390-a8b0-7206-87d0-6745136e1e5c",
+  "fields": {
+    "identifier": "Etc/UTC",
+    "tz_type": 1,
+    "src_file": 2,
+    "aliases": null,
+    "std": "0195838f-cc9e-7bcb-b03b-e42bb1977fad",
+    "dst": "0195838f-cc9e-7bcb-b03b-e42bb1977fad"
+  }
+},
+{
+  "model": "vto_core.timezone",
+  "pk": "0195839a-865b-77bc-9164-33eeb5edeea0",
+  "fields": {
+    "identifier": "America/New_York",
+    "tz_type": 1,
+    "src_file": 7,
+    "aliases": "US/Eastern, EST5EDT",
+    "std": "01958399-8f6f-750b-bd48-2519203f5e03",
+    "dst": "01958398-ff27-7885-838e-f5ddb4d29493"
+  }
+},
+{
+  "model": "vto_core.timezone",
+  "pk": "01958678-8e37-71f4-9c87-580f2a31a829",
+  "fields": {
+    "identifier": "Europe/London",
+    "tz_type": 1,
+    "src_file": 4,
+    "aliases": null,
+    "std": "01958678-060a-766c-8676-3a1634827981",
+    "dst": "01958677-8a4a-7aef-85c2-f752e3bb5740"
+  }
+},
+{
+  "model": "vto_core.timezone",
+  "pk": "0195867a-dfc7-7866-8a2f-5150896a0ac0",
+  "fields": {
+    "identifier": "Europe/Madrid",
+    "tz_type": 1,
+    "src_file": 4,
+    "aliases": null,
+    "std": "0195867b-9cd7-7e56-ad65-bf5ca0bb2bc7",
+    "dst": "0195867b-f3f2-7321-808e-63ff0b88d70d"
+  }
+},
+{
+  "model": "vto_core.timezone",
+  "pk": "019592fb-f68c-7661-baeb-b398a1c3d961",
+  "fields": {
+    "identifier": "America/Los_Angeles",
+    "tz_type": 1,
+    "src_file": 7,
+    "aliases": "US/Pacific, PST8PDT",
+    "std": "019592f8-e1a3-7a28-bf2f-034d12ca38bd",
+    "dst": "019592f9-c59a-7b8d-91a7-52cf5cff9d40"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "0195838f-cc9e-7bcb-b03b-e42bb1977fad",
+  "fields": {
+    "identifier": "Coordinated Universal Time",
+    "offset": "+00:00",
+    "abbr": "UTC",
+    "wiki_slug": "019592ef-fafb-78d6-b002-685d14fa77a9"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "01958398-ff27-7885-838e-f5ddb4d29493",
+  "fields": {
+    "identifier": "Eastern Daylight Time",
+    "offset": "-04:00",
+    "abbr": "EDT",
+    "wiki_slug": "019592f1-e5fd-7fdf-a06a-c696a85e1527"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "01958399-8f6f-750b-bd48-2519203f5e03",
+  "fields": {
+    "identifier": "Eastern Standard Time",
+    "offset": "-05:00",
+    "abbr": "EST",
+    "wiki_slug": "019592f1-e5fd-7fdf-a06a-c696a85e1527"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "01958677-8a4a-7aef-85c2-f752e3bb5740",
+  "fields": {
+    "identifier": "British Summer Time",
+    "offset": "+01:00",
+    "abbr": "BST",
+    "wiki_slug": "019592f0-e08f-7226-a359-723bed4643d5"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "01958678-060a-766c-8676-3a1634827981",
+  "fields": {
+    "identifier": "Greenwich Mean Time",
+    "offset": "+00:00",
+    "abbr": "GMT",
+    "wiki_slug": "019592ef-79b2-7b18-be2d-6cc66d3334c5"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "0195867b-9cd7-7e56-ad65-bf5ca0bb2bc7",
+  "fields": {
+    "identifier": "Central European Time",
+    "offset": "+01:00",
+    "abbr": "CET",
+    "wiki_slug": "019592f0-57c3-7efe-9ec8-619e9dd96383"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "0195867b-f3f2-7321-808e-63ff0b88d70d",
+  "fields": {
+    "identifier": "Central European Summer Time",
+    "offset": "+02:00",
+    "abbr": "CEST",
+    "wiki_slug": "019592f1-522e-76b5-9ea6-bf44b6226455"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "019592f8-e1a3-7a28-bf2f-034d12ca38bd",
+  "fields": {
+    "identifier": "Pacific Standard Time",
+    "offset": "-08:00",
+    "abbr": "PST",
+    "wiki_slug": "019592fa-2279-76f3-aab9-ccc80bb2ea6d"
+  }
+},
+{
+  "model": "vto_core.tzabbreviation",
+  "pk": "019592f9-c59a-7b8d-91a7-52cf5cff9d40",
+  "fields": {
+    "identifier": "Pacific Daylight Time",
+    "offset": "-07:00",
+    "abbr": "PDT",
+    "wiki_slug": "019592fa-2279-76f3-aab9-ccc80bb2ea6d"
+  }
+},
+{
+  "model": "vto_core.demoexchange",
+  "pk": "019594d6-6021-7479-89c0-c09b5f5e24e7",
+  "fields": {
+    "abbr": "NYSE",
+    "name_long": "New York Stock Exchange",
+    "tz": "0195839a-865b-77bc-9164-33eeb5edeea0"
+  }
+},
+{
+  "model": "vto_core.demotesttimestamp",
+  "pk": 1,
+  "fields": {
+    "exchange": "NYSE",
+    "dst": false,
+    "ts_unix": 1741035602,
+    "ts_utc": "2025-03-03T21:00:02Z"
+  }
+}
+]

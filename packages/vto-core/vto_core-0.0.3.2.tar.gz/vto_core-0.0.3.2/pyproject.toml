@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vto-core"
+version = "0.0.3.2"
+description = "This is a custom reusable Django core app."
+readme = "README.md"
+requires-python = ">= 3.13"
+dependencies = [
+    # "django-timezone-field>=7.1",        # not using (no admin autocomplete)
+    "Markdown>=3.7",                       # for templatetags
+    "markdown-link-attr-modifier>=0.2.1",  # markdown extension for links
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Repository = "https://github.com/venteto/vto-core"
