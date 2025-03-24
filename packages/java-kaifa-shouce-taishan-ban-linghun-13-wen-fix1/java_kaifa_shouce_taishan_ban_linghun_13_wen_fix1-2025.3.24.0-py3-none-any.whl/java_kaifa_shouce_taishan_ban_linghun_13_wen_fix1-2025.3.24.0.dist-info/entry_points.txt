@@ -1,0 +1,3 @@
+[console_scripts]
+JavaKaifaShouceTaishanBanLinghun13WenFix1 = JavaKaifaShouceTaishanBanLinghun13WenFix1.__main__:main
+java-kaifa-shouce-taishan-ban-linghun-13-wen-fix1 = JavaKaifaShouceTaishanBanLinghun13WenFix1.__main__:main
