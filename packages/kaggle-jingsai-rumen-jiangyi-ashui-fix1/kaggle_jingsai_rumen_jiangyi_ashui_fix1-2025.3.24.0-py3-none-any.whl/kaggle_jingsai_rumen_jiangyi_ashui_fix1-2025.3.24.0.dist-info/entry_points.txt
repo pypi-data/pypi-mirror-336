@@ -1,0 +1,3 @@
+[console_scripts]
+KaggleJingsaiRumenJiangyiAshuiFix1 = KaggleJingsaiRumenJiangyiAshuiFix1.__main__:main
+kaggle-jingsai-rumen-jiangyi-ashui-fix1 = KaggleJingsaiRumenJiangyiAshuiFix1.__main__:main
