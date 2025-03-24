@@ -1,0 +1,132 @@
+# **`inhibitor_tool`**  
+
+## **📌 Introduction**  
+
+`inhibitor_tool` is a Python CLI tool that allows users to send, remove, and list inhibition requests via an API.  
+It supports authentication through environment variables loaded from `auth_token`.  
+
+---
+
+## **🛠 Installation**  
+You can install the package using `pip`:  
+
+```bash
+pip3 install inhibitor_tool
+```
+
+---
+
+## **🔧 Configuration**  
+
+### **1️⃣ Set Up Authentication**  
+Before using `inhibitor_tool`, you must configure authentication credentials in `~/.auth_token` and load them into the environment:  
+
+```bash
+echo 'export USERNAME="mmwei3"' >> ~/.auth_token
+echo 'export PASSWORD="mmwei3password"' >> ~/.auth_token
+echo 'export LOGIN_URL="https://auth.example.com/token"' >> ~/.auth_token
+echo 'export INHIBIT_URL="https://inhibitor.example.com/add"' >> ~/.auth_token
+echo 'export REMOVE_URL="https://inhibitor.example.com/remove"' >> ~/.auth_token
+echo 'export LIST_URL="https://inhibitor.example.com/list"' >> ~/.auth_token
+
+source ~/.auth_token
+```
+
+> 💡 **Important:** The `source ~/.auth_token` command must be executed every time a new session is started.
+
+---
+
+## **🚀 Usage**  
+
+### **2️⃣ Inhibit an Item (Default TTL: 3 hours)**  
+```bash
+inhibitor-tool add --content "MaliciousIP:192.168.1.1"
+```
+
+### **3️⃣ Specify a Custom TTL**  
+```bash
+inhibitor-tool add --content "MaliciousIP:192.168.1.1" --ttl 6
+```
+- `--ttl 6` means the inhibition will last **6 hours** (default is **3 hours**).  
+
+### **4️⃣ Add a Custom Remark**  
+```bash
+inhibitor-tool add --content "MaliciousIP:192.168.1.1" --ttl 6 --remark "Security alert"
+```
+- The remark helps track the reason for inhibition.  
+- If omitted, it defaults to `"tmp_inhibitor"`.
+
+### **5️⃣ Remove an Inhibition**  
+```bash
+inhibitor-tool remove --content "MaliciousIP:192.168.1.1"
+```
+- This command removes an inhibition entry matching the provided content.  
+
+### **6️⃣ List Active Inhibitions**  
+```bash
+inhibitor-tool list
+```
+- Displays active inhibitions in a shell-friendly table format.
+
+#### **🔹 JSON Output Format**  
+```bash
+inhibitor-tool list --json
+```
+- Outputs inhibition data in JSON format, suitable for scripting.
+
+### **7️⃣ Check Version**  
+```bash
+inhibitor-tool --version
+inhibitor-tool -V
+```
+
+---
+
+## **📜 Open-Source Information**  
+- **Author**: mmwei3  
+- **Email**: mmwei3@iflytek.com  
+- **Contact**: 178555350258  
+- **Date**: 2025-03-19  
+- **License**: MIT License  
+
+---
+
+## **📦 Packaging & Deployment**  
+
+### **8️⃣ Build the Package**  
+```bash
+python setup.py sdist bdist_wheel
+```
+
+### **9️⃣ Install from Local Package**  
+```bash
+pip3 install dist/inhibitor_tool-1.0.0-py3-none-any.whl
+```
+
+### **🔟 Uninstall the Package**  
+```bash
+pip3 uninstall inhibitor_tool
+```
+
+---
+
+## **📜 License (MIT)**  
+```text
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+```
+
+---
+
+## **📌 Dependencies (`requirements.txt`)**  
+```text
+requests
+```
+
+---
+
+This `README.md` provides a **clear, structured, and fully configurable** CLI tool for API-based inhibition with authentication, deletion support, and `pip` installation. 🚀
+
