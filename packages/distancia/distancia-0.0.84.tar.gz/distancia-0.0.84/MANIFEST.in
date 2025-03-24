@@ -1,0 +1,9 @@
+
+include README.rst
+include LICENSE.txt
+
+include distancia/*.pxd
+include distancia/*.pyx
+
+recursive-include distancia *.pyx *.pxd
+include pyproject.toml
