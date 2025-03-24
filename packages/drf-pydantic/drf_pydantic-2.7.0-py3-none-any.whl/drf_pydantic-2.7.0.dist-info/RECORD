@@ -1,0 +1,11 @@
+drf_pydantic/__init__.py,sha256=wtjtsHbySv-sKO-V9K-S4sRDDXAgIqWKg1x7JPuwVtE,88
+drf_pydantic/base_model.py,sha256=hdKqAgzpG1iQTGSf5WvUa-IMfupY8sQQgk6uWHjvr0E,3304
+drf_pydantic/base_serializer.py,sha256=t4_b-NwB2zzQgoYeT0S_guVJbUjPbMr_Wc3TUkTxJjQ,2639
+drf_pydantic/errors.py,sha256=SBlTTungNhsGhwU5hGrX-BVlhfqfmbQM-0_K_qg-EZs,269
+drf_pydantic/parse.py,sha256=MBdKRBhC1RRa9faowgb-STuvazP036i2-bCL7URAhWc,15512
+drf_pydantic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_pydantic/utils.py,sha256=ov0HzxRKz9rVpM6Yd83tOP56s8j2zvQbbcEx_3kC7Kc,1506
+drf_pydantic-2.7.0.dist-info/METADATA,sha256=i7HkjrS6pZKLmVPlD0qRvQgsqeyagTsn4kSS7oEx9mE,11883
+drf_pydantic-2.7.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+drf_pydantic-2.7.0.dist-info/licenses/LICENSE,sha256=jq89Qxj5afaYQyt5DWO2jYaCBtsR5LPRJoCZcyMY8C4,1072
+drf_pydantic-2.7.0.dist-info/RECORD,,
