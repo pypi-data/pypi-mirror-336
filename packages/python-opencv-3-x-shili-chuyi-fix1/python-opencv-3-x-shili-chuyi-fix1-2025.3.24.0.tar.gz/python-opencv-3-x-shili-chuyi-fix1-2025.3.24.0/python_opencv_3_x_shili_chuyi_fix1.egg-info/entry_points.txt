@@ -1,0 +1,3 @@
+[console_scripts]
+PythonOpencv3XShiliChuyiFix1 = PythonOpencv3XShiliChuyiFix1.__main__:main
+python-opencv-3-x-shili-chuyi-fix1 = PythonOpencv3XShiliChuyiFix1.__main__:main
