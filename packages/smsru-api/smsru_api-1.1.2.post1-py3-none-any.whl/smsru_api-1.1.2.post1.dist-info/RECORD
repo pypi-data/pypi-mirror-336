@@ -1,0 +1,10 @@
+smsru_api/__init__.py,sha256=atFXlxvRaTZ5VRw5ta2mz2q7ilS702PmID_21dYpD-I,147
+smsru_api/aioclient.py,sha256=43lrDvMnWRZjNbFOg3qzJI_U0Qo03T6AP-ACUoN1RHY,2396
+smsru_api/client.py,sha256=lWWY8DHGprXfQU2McLkkZ9ccVRRt8an292W-5uLT9do,2219
+smsru_api/smsru.py,sha256=thXqvaPCmVP8KP3w-l8YLhljXge91BezLOC6oWziAI8,4770
+smsru_api/template.py,sha256=BP6nBaWSoX6Qu1RgygygPH8KL1fzgz1SUPkbBzdDYFs,10790
+smsru_api-1.1.2.post1.dist-info/LICENSE,sha256=SpB_zyLrfMxJ7EOzaVzKiOyf3hFG0WMgTpe4I_xeebw,11344
+smsru_api-1.1.2.post1.dist-info/METADATA,sha256=MP34t9zGnkD_3aDU2aj5WyT5r6ErX_SLx4TN5H8P6qE,6993
+smsru_api-1.1.2.post1.dist-info/WHEEL,sha256=beeZ86-EfXScwlR_HKu4SllMC9wUEj_8Z_4FJ3egI2w,91
+smsru_api-1.1.2.post1.dist-info/top_level.txt,sha256=T4Vb-4asZX0bOSwuUKR-eMlI9N3tpZ2XaxniQJ3OrLg,10
+smsru_api-1.1.2.post1.dist-info/RECORD,,
