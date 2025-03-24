@@ -1,0 +1,8 @@
+sensing_garden_client/__init__.py,sha256=iy1caKdiuuHcPwM1uMKFx4rnm3IEKUMfTQWQoZlZjxo,559
+sensing_garden_client/client.py,sha256=xHXswr63bHFh7VmkHPouV2MJJuX52gce-rQ7BrzLyP8,2213
+sensing_garden_client/get_endpoints.py,sha256=A5L3OktpfsXURtZOVlrqFtkp5N17mdrCjuZNBymSAGg,4539
+sensing_garden_client/model_endpoints.py,sha256=-Lg-xnYy8eLiBXnLmN6ZP040nwJgr6qb9yNBvFJLiRQ,1800
+sensing_garden_client/post_endpoints.py,sha256=ECKV9-VbHbIUFQbbV6sj_2DHgAm4ACzLiUwDwvhKm28,4470
+sensing_garden_client-0.0.1.dist-info/METADATA,sha256=p8bV-W3cGsCIeYpM37yAtF-KG5O97jam3XrdRuKXD4s,2024
+sensing_garden_client-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sensing_garden_client-0.0.1.dist-info/RECORD,,
