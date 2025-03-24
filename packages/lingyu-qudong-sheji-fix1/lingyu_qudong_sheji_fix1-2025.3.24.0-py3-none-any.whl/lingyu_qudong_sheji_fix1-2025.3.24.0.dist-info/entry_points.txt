@@ -1,0 +1,3 @@
+[console_scripts]
+LingyuQudongShejiFix1 = LingyuQudongShejiFix1.__main__:main
+lingyu-qudong-sheji-fix1 = LingyuQudongShejiFix1.__main__:main
