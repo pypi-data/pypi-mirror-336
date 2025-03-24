@@ -1,0 +1,3 @@
+[console_scripts]
+YouxiYinqingKaifaRumenjiaochengCYuyanBianchengWangFix1 = YouxiYinqingKaifaRumenjiaochengCYuyanBianchengWangFix1.__main__:main
+youxi-yinqing-kaifa-rumenjiaocheng-c-yuyan-biancheng-wang-fix1 = YouxiYinqingKaifaRumenjiaochengCYuyanBianchengWangFix1.__main__:main
