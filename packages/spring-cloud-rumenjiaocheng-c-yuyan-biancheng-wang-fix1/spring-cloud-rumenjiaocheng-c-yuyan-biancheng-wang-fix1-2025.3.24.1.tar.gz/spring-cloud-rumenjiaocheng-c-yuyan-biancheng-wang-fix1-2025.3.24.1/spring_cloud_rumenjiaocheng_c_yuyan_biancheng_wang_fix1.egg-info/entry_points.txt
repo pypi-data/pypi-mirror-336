@@ -1,0 +1,3 @@
+[console_scripts]
+SpringCloudRumenjiaochengCYuyanBianchengWangFix1 = SpringCloudRumenjiaochengCYuyanBianchengWangFix1.__main__:main
+spring-cloud-rumenjiaocheng-c-yuyan-biancheng-wang-fix1 = SpringCloudRumenjiaochengCYuyanBianchengWangFix1.__main__:main
