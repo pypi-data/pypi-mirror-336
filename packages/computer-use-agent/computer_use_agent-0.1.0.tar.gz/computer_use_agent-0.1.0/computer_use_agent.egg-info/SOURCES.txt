@@ -1,0 +1,7 @@
+README.md
+setup.py
+computer_use_agent/__init__.py
+computer_use_agent.egg-info/PKG-INFO
+computer_use_agent.egg-info/SOURCES.txt
+computer_use_agent.egg-info/dependency_links.txt
+computer_use_agent.egg-info/top_level.txt
