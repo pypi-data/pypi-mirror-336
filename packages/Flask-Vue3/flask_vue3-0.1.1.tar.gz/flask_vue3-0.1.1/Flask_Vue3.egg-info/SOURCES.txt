@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+Flask_Vue3.egg-info/PKG-INFO
+Flask_Vue3.egg-info/SOURCES.txt
+Flask_Vue3.egg-info/dependency_links.txt
+Flask_Vue3.egg-info/not-zip-safe
+Flask_Vue3.egg-info/requires.txt
+Flask_Vue3.egg-info/top_level.txt
+flask_vue/__init__.py
+flask_vue/cli.py
+flask_vue/config.py
+flask_vue/extension.py
+flask_vue/plugins.py
