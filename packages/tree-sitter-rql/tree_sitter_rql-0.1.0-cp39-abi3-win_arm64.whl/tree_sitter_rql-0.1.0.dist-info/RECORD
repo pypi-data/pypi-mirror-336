@@ -1,0 +1,10 @@
+tree_sitter_rql/__init__.py,sha256=ZZiFVW-5jji7jyFkWwcUSPuPQVBGcVBbV6XyPQBAbnw,853
+tree_sitter_rql/__init__.pyi,sha256=_B-DU-yFIKu1PZLgifuY8Kolt661ZsQgkII1IjdUC1U,115
+tree_sitter_rql/_binding.pyd,sha256=GjQDsL1Dw8Bo3JicPQq6NDj6mkjmUDraM7nbNHmHK4o,28672
+tree_sitter_rql/binding.c,sha256=1BdzMdXK81tQD0KFakTHgw7-6npKPqtlevDFCltBeQU,702
+tree_sitter_rql/queries/highlights.scm,sha256=uZaBYpt73ksrnCuJp1QBW0USIAlSesylNtW3H5NZU4w,923
+tree_sitter_rql-0.1.0.dist-info/licenses/LICENSE.txt,sha256=3-X6F0y79JdfSS4u0qyf4h_OnEmooOLd3099jcItt_w,11548
+tree_sitter_rql-0.1.0.dist-info/METADATA,sha256=LEuPlbbvNb7d3QnIXA1CEE-U62OJJjb9RiArmAH_yrE,13910
+tree_sitter_rql-0.1.0.dist-info/WHEEL,sha256=T773GNBjY8ALSrXO_MNTaXXsGobi6zA89GUmO9WJMaU,99
+tree_sitter_rql-0.1.0.dist-info/top_level.txt,sha256=gSK9F10neVrVpVpLpHHeyrvhNYQ9FnwJx84-R2Gnjr0,25
+tree_sitter_rql-0.1.0.dist-info/RECORD,,
