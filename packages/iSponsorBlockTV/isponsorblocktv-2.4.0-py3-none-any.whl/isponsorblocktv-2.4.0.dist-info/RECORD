@@ -1,0 +1,17 @@
+iSponsorBlockTV/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iSponsorBlockTV/__main__.py,sha256=aKqRlXR8IUkWNqndG1F3DS01v7fiHU4U5qn3WA4CLM8,100
+iSponsorBlockTV/api_helpers.py,sha256=6b3uEy2ceZ71L5pfwEqx-S9_wCMfgGuUaFE3iXEh5is,8339
+iSponsorBlockTV/conditional_ttl_cache.py,sha256=7MxnG7WnYdY71uP8qMQowh6lZnEPgrh8U0QOectyRlc,3205
+iSponsorBlockTV/config_setup.py,sha256=IVO-uXNQYXp4Wwz_BS0PXYWkhGO54KyzZ5fEyfOZqtg,7560
+iSponsorBlockTV/constants.py,sha256=cNX05yKPkNmgQHo4hF_cVw8o3PY_bQIhb5BB6zJMNiQ,745
+iSponsorBlockTV/dial_client.py,sha256=EM0PMLrJBcyRCUEeyXOIpoADEKu1m6PWi1MA2z6n1OQ,5368
+iSponsorBlockTV/helpers.py,sha256=p-RYAEZWJ2mafs6xG1BN_YKAwFHLEKNJIWg6rKfxZ8c,7130
+iSponsorBlockTV/main.py,sha256=MC-Jup67kjS8isdP4hp22jAFKFVrFThqjFVBoraj0K4,7399
+iSponsorBlockTV/setup-wizard-style.tcss,sha256=dGYXL8JqBJ7A2PNIg-ye1UklrXq-3URKswzARB1TEYQ,6198
+iSponsorBlockTV/setup_wizard.py,sha256=t0Tl1nGk7AWPbT-_aLlhifl7Kfn7D_GZOkdNpB7dwTg,36639
+iSponsorBlockTV/ytlounge.py,sha256=a19qNnJ1oQHYhqk9P1TUCPqOGHAZLkdmvPBytibhZAk,8873
+isponsorblocktv-2.4.0.dist-info/METADATA,sha256=KpEt7tyAuetP5je639kPr-orLj1HZR6cAhM4FjQLeeM,4289
+isponsorblocktv-2.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+isponsorblocktv-2.4.0.dist-info/entry_points.txt,sha256=KE5xbgPgXZBwFi9g3l7Tit3_3_jIT85qsomm04qsaOI,66
+isponsorblocktv-2.4.0.dist-info/licenses/LICENSE.md,sha256=5hIgqbE30VuRyp7FfWzCRzGDB8qGGri7TTt6-CI-nKQ,35148
+isponsorblocktv-2.4.0.dist-info/RECORD,,
