@@ -1,0 +1,9 @@
+open_responses/__init__.py,sha256=iFo2fDSGPvJftoDtFkX_t9ou-uMfXCgxYAcJOkCuJuk,1066
+open_responses/bin/open-responses-linux,sha256=MlstFoRdrpNaMfcJNt7fb8LskbQADzEY67GKJyeRVZQ,12944280
+open_responses/bin/open-responses-macos,sha256=qB5XdPXwUS1mdS8O0szOrWpnqBff8oM03KRghh699Mo,12833776
+open_responses/bin/open-responses-win.exe,sha256=7367zmbckEYfVudfOhwkvkFPdmAU0irZxZMHOqEPr-Y,13222912
+open_responses-0.1.1.dist-info/METADATA,sha256=IzTVJUfn3puREOhnY-797jCOad5klS6CYJXctbh4hTA,10368
+open_responses-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+open_responses-0.1.1.dist-info/entry_points.txt,sha256=n0Z6M0BtEaydrppQVEXaV7cyTE3HK6Fqnvp61Kd2k58,55
+open_responses-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+open_responses-0.1.1.dist-info/RECORD,,
