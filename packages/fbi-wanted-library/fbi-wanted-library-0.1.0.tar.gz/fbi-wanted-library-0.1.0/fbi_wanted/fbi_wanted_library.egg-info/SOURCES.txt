@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fbi_wanted/fbi_wanted_library.egg-info/PKG-INFO
+fbi_wanted/fbi_wanted_library.egg-info/SOURCES.txt
+fbi_wanted/fbi_wanted_library.egg-info/dependency_links.txt
+fbi_wanted/fbi_wanted_library.egg-info/requires.txt
+fbi_wanted/fbi_wanted_library.egg-info/top_level.txt

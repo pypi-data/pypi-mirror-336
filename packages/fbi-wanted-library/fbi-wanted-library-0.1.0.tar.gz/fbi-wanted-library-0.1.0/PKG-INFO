@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: fbi-wanted-library
+Version: 0.1.0
+Summary: A Python library for searching the FBI's wanted persons database.
+Home-page: https://github.com/ininike/fbi-wanted-search
+Author: Inioluwa Adenaike
+Author-email: Inioluwa Adenaike <inioluwadenaike@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Inioluwa Adenaike
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        2. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Keywords: FBI,wanted,OSINT,API
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FBI Wanted Library
+
+## Overview
+The FBI Wanted Library is a Python package that provides an interface to search for wanted persons using the FBI's Wanted API. It allows users to filter search results based on various criteria such as name, race, hair color, eye color, sex, and field offices.
+
+## Installation
+You can install the library using pip. Run the following command in your terminal:
+
+```
+pip install fbi-wanted-library
+```
+
+## Usage
+Here is a simple example of how to use the FBI Wanted Library:
+
+```python
+from fbi_wanted.fbi_wanted import FBIWanted
+
+# Search for wanted persons with specific criteria
+results = FBIWanted.search(hair_colour="Brown")
+
+# Print the total number of results fetched
+print(f"Total results fetched: {len(results)}")
+
+# Print the first 5 results
+for result in results[:5]:
+    print(result)
+```
+
+## Methods
+The `FBIWanted` class provides the following methods:
+
+- `search(name: str, race: str, hair_colour: str, eye_colour: str, sex: str, field_offices: str) -> list`: Searches for wanted persons with optional filters.
+- `_search(params: dict) -> list`: Fetches all paginated results from the FBI Wanted API with filters.
+- `_get_results(params: dict, page: int) -> dict | None`: Fetches results for a specific page using requests.
+- `_get_page(params: dict, page: int) -> dict | None`: Fetches a specific page of results.
+
+## Contributing
+Contributions are welcome! If you would like to contribute to the project, please fork the repository and submit a pull request. Make sure to include tests for any new features or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
