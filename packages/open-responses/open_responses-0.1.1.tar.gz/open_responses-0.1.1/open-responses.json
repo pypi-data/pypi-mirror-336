@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "createdAt": "2025-03-24T00:10:54+05:30",
+  "updatedAt": "2025-03-24T00:14:20+05:30",
+  "created_at": "2025-03-24T00:10:54+05:30",
+  "updated_at": "2025-03-24T00:14:20+05:30",
+  "host": "127.0.0.1",
+  "port": "8080",
+  "docker_tag": "latest_responses",
+  "base_compose_uri": "default",
+  "env_file": "/var/home/diwank/Workspace/julep-ai/open-responses/.env",
+  "api_version": "0.0.1",
+  "environment": {
+    "BRAVE_API_KEY": "",
+    "MEMORY_STORE_PASSWORD": "8b67f4d4bde51d0b6a321d2a",
+    "OPENAI_API_KEY": "",
+    "RESPONSES_API_KEY": "resp_ead8826580a4763e9db0a757319ee9b0a0dc5aeeb9f383a4",
+    "RESPONSES_API_PORT": "8080",
+    "UNSTRUCTURED_API_KEY": ""
+  }
+}

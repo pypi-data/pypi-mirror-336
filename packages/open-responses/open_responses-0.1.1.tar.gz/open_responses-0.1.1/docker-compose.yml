@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+  api:
+    image: julep/open-responses-api:${DOCKER_TAG:-latest_responses}
+    ports:
+      - "${HOST:-127.0.0.1}:${RESPONSES_API_PORT:-8080}:8080"
+    environment:
+      - RESPONSES_API_KEY=${RESPONSES_API_KEY}
+      - MEMORY_STORE_PASSWORD=${MEMORY_STORE_PASSWORD}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - UNSTRUCTURED_API_KEY=${UNSTRUCTURED_API_KEY}
+      - BRAVE_API_KEY=${BRAVE_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - VOYAGE_API_KEY=${VOYAGE_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - CEREBRAS_API_KEY=${CEREBRAS_API_KEY}
+      - CLOUDFLARE_API_KEY=${CLOUDFLARE_API_KEY}
+      - CLOUDFLARE_ACCOUNT_ID=${CLOUDFLARE_ACCOUNT_ID}
+      - GITHUB_API_KEY=${GITHUB_API_KEY}
+      - NVIDIA_NIM_API_KEY=${NVIDIA_NIM_API_KEY}
+      - LLAMA_API_KEY=${LLAMA_API_KEY}
+      - GOOGLE_APPLICATION_CREDENTIALS=${GOOGLE_APPLICATION_CREDENTIALS}
+      - API_VERSION=${API_VERSION:-0.0.1}
+    restart: unless-stopped
+    volumes:
+      - api_data:/app/data
+      - shared_data:/app/shared
+
+  db:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${MEMORY_STORE_PASSWORD}
+      - POSTGRES_DB=responses
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  memory:
+    image: redis:alpine
+    command: redis-server --requirepass ${MEMORY_STORE_PASSWORD}
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  ui:
+    image: julep/open-responses-ui:${DOCKER_TAG:-latest_responses}
+    ports:
+      - "${HOST:-127.0.0.1}:${PORT:-8080}:80"
+    environment:
+      - API_URL=http://${HOST:-127.0.0.1}:${RESPONSES_API_PORT:-8080}
+      - RESPONSES_API_KEY=${RESPONSES_API_KEY}
+    depends_on:
+      - api
+    restart: unless-stopped
+    volumes:
+      - shared_data:/app/shared
+
+volumes:
+  db_data:
+  api_data:
+  redis_data:
+  shared_data:
