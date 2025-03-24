@@ -1,0 +1,4 @@
+from tsp_solver_Tasnim.algorithms.random_search import solve_tsp as random_search
+from tsp_solver_Tasnim.algorithms.hill_climbing import solve_tsp as hill_climbing
+from tsp_solver_Tasnim.algorithms.simulated_annealing import solve_tsp as simulated_annealing
+from tsp_solver_Tasnim.algorithms.Asearch import solve_tsp as A_search
