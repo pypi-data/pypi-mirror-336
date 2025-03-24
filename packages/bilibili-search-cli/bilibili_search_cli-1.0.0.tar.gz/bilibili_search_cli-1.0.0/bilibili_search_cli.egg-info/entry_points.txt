@@ -1,0 +1,2 @@
+[console_scripts]
+bilibili-search = bilibili_search_cli.cli:main

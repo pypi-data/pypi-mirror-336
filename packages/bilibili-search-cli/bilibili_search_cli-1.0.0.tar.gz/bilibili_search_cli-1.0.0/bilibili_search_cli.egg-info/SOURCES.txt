@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bilibili_search_cli/__init__.py
+bilibili_search_cli/cli.py
+bilibili_search_cli.egg-info/PKG-INFO
+bilibili_search_cli.egg-info/SOURCES.txt
+bilibili_search_cli.egg-info/dependency_links.txt
+bilibili_search_cli.egg-info/entry_points.txt
+bilibili_search_cli.egg-info/requires.txt
+bilibili_search_cli.egg-info/top_level.txt
