@@ -1,0 +1,11 @@
+torrent_downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torrent_downloader/server.py,sha256=2eCwzDCkgF2DZMD6LEiDXLBFvbn1271yAIAt6GBQmS0,7358
+torrent_downloader/static/index.html,sha256=qbIb30KqotcdOau_VL6lu2JA8OBoMHvqOu7kWzyRBko,464
+torrent_downloader/static/vite.svg,sha256=SnSK_UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs,1497
+torrent_downloader/static/assets/index-BKZnulWN.css,sha256=z1S8Zpwm3Jy_RlURoKsyoJs8cwX1kBbfCU7z5meLe3w,5039
+torrent_downloader/static/assets/index-lPeprbEH.js,sha256=bRoCBH5Z1VwY5OQpOfdqBSHqzZiKOnbfZu0cmsJSZbM,190416
+torrent_downloader_react-1.1.9.dist-info/METADATA,sha256=K-wbPknxj-qjmD8pzgd2NpkSyhz0fXhlMaK1z-FMI8I,4350
+torrent_downloader_react-1.1.9.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+torrent_downloader_react-1.1.9.dist-info/entry_points.txt,sha256=zkljgTNEM0p9I4xw4FN0N5PVrNmB6KVLUWjBO32n0do,76
+torrent_downloader_react-1.1.9.dist-info/top_level.txt,sha256=THWnh7qxxVmoQ89QVJ8v6mmSzEQdFdXnryplXTQXuCA,19
+torrent_downloader_react-1.1.9.dist-info/RECORD,,
