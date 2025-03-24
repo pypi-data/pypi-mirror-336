@@ -1,0 +1,3 @@
+[console_scripts]
+EcsYunweiZhinanZhiWindowsXitongzhenduanFix1 = EcsYunweiZhinanZhiWindowsXitongzhenduanFix1.__main__:main
+ecs-yunwei-zhinan-zhi-windows-xitongzhenduan-fix1 = EcsYunweiZhinanZhiWindowsXitongzhenduanFix1.__main__:main
