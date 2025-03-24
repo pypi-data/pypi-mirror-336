@@ -1,0 +1,11 @@
+dockershit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockershit/command.py,sha256=3-QljgcqT5z7K3lLaeZIWQRBHyYkHrt73w7kx3rDFFA,1346
+dockershit/docker.py,sha256=dQbSfpYp0-fRNEm2nsuaq43_i7GSXWJEiXMGsHSci24,3259
+dockershit/docker_file.py,sha256=JUATXOyMW61S0pi7AoEDltS5FMU-qrVbEW27ksCtaXI,3236
+dockershit/dockershit.py,sha256=4sn1K8mO65CIRWOvsUijXR6d3qmSFfYHO3P2flniCNg,1798
+dockershit/keyboard.py,sha256=wz5EDrBV8XPHwpZtUOEf9RwA2ojQMm0_nOGqRr9tlL0,1271
+dockershit-0.1.2.dist-info/entry_points.txt,sha256=ngu_lUBe8w8j9oMqKX2IH_ASkqC5d2OFpk5SUxZ4mLg,57
+dockershit-0.1.2.dist-info/licenses/LICENSE.md,sha256=7_BIuQ-veOrsF-WarH8kTkm0-xrCLvJ1PFE1C4Ebs64,146
+dockershit-0.1.2.dist-info/WHEEL,sha256=BXjIu84EnBiZ4HkNUBN93Hamt5EPQMQ6VkF7-VZ_Pu0,100
+dockershit-0.1.2.dist-info/METADATA,sha256=VhUvPw8PaZhZhjW2YqnT-mMKDa6F2hI69yNWoOV8D0g,476
+dockershit-0.1.2.dist-info/RECORD,,
