@@ -1,0 +1,12 @@
+unity-mcp-MB/server.py,sha256=IxGwjt2TPmRIDi04rcidgNTEAIBOLxlVg-7vlXKJGpk,5434
+unity-mcp-MB/tools/__init__.py,sha256=4xsGYh1gMBxjV_AlxAhpEXm_ihpxHkplkLacKy7Nh0I,553
+unity-mcp-MB/tools/asset_tools.py,sha256=xkIxI2b-NjTeRmfb8NP10--6DpCGsZt0q0EE3idjYDk,10888
+unity-mcp-MB/tools/editor_tools.py,sha256=-T8OwP62kZQSFwVS11_wTLB2sMPWhNIYFoMUlVX1910,11764
+unity-mcp-MB/tools/material_tools.py,sha256=Y7x7LmG7N4m4eRRFFpwRhj5wFPQX26h64x5gQDtJVTY,3953
+unity-mcp-MB/tools/object_tools.py,sha256=n4tLvOuwcCvsLkljS6QxZzk_RbIk01kHEeBKxHoSV2Q,8299
+unity-mcp-MB/tools/scene_tools.py,sha256=7AHTQI8NJEZMxAKBw1J5E9Fu-Xt9_a-wliOLh0W5Oig,13376
+unity-mcp-MB/tools/script_tools.py,sha256=D6t-WsJlBwKxy-NlievMFO92sj8mnrww8Dj_Pb2EcUU,11534
+unity_mcp_mb-0.2.0.dist-info/METADATA,sha256=EmG6f3Q-tce0THHq30diA0w8MgqvUNLcZrhNkVZo5lk,290
+unity_mcp_mb-0.2.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+unity_mcp_mb-0.2.0.dist-info/top_level.txt,sha256=R4Ykh0XNTE6o50gt51_J6u0gXMqlqBJj7CqmbHx6VW0,13
+unity_mcp_mb-0.2.0.dist-info/RECORD,,
