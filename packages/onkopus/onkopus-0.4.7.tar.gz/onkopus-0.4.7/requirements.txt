@@ -1,0 +1,6 @@
+requests
+numpy
+pandas
+adagenes==0.3.9
+pyliftover
+redis
