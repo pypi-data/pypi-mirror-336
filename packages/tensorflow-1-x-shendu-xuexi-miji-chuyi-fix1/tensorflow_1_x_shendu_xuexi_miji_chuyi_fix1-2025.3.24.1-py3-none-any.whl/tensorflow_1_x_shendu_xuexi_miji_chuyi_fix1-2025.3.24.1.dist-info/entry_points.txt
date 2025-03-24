@@ -1,0 +1,3 @@
+[console_scripts]
+Tensorflow1XShenduXuexiMijiChuyiFix1 = Tensorflow1XShenduXuexiMijiChuyiFix1.__main__:main
+tensorflow-1-x-shendu-xuexi-miji-chuyi-fix1 = Tensorflow1XShenduXuexiMijiChuyiFix1.__main__:main
