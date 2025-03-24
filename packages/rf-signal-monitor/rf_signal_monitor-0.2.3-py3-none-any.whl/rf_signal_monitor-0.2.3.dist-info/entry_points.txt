@@ -1,0 +1,2 @@
+[console_scripts]
+rf-signal-monitor = src.main_application:main
