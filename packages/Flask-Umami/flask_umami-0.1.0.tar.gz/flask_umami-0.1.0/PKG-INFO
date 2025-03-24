@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: Flask-Umami
+Version: 0.1.0
+Summary: An easy to use Flask extension for Umami analytics
+Author: ShyMike
+License: AGPL-3.0
+Classifier: Framework :: Flask
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: flask
+Dynamic: license-file
+
+[pypi-url][]
+
+# Flask-Umami
+
+Flask-Umami is an extension for [Flask](https://flask.palletsprojects.com) that simplifies the integration of the web analytics platform [Umami](https://umami.is) into any Flask project.
+
+## Quickstart
+
+### Install
+
+`pip install Flask-Umami`
+
+### Minimal Example
+
+```python
+from flask import Flask
+from flask_umami import Umami
+
+app = Flask(__name__)
+umami = Umami(
+    app,
+    umami_url="https://umami.example.com",
+    umami_id="website-umami-id",
+)
+
+
+@app.route("/")
+def home():
+    return "Hello, World!"
+
+if __name__ == "__main__":
+    app.run()
+```
+
+## Disclaimer
+
+Flask-Umami is **not affiliated with Umami** in any way. It simply provides a simple way to integrate Umami's HTML snippet into websites developed using Flask.
