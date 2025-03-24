@@ -1,0 +1,9 @@
+LICENSE
+README.md
+main.py
+pyproject.toml
+whoami_mcp.egg-info/PKG-INFO
+whoami_mcp.egg-info/SOURCES.txt
+whoami_mcp.egg-info/dependency_links.txt
+whoami_mcp.egg-info/requires.txt
+whoami_mcp.egg-info/top_level.txt
