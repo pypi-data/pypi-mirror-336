@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "logictools"
+version = "0.1.7"
+description = "A simple utility package for string and math functions"
+authors = ["RANGDAL PAVANSAI <psai49779@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
