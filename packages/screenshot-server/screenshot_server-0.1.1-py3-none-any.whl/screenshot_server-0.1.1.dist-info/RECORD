@@ -1,0 +1,9 @@
+screenshot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+screenshot/__main__.py,sha256=tQpjEOwoyT3xAMtCIFRXQGK7JwFcjlB-YmzEw8VlcC0,64
+screenshot/clint.py,sha256=UwhWr_n9BHm_-HoPmjsnkTFeRfDEzQnQBSTnSnKKzrA,1571
+screenshot/screenshot.py,sha256=BoXiyEE3Eq7ZugI3HvBShXBAH2E51FovnPBHmkjacjw,2182
+screenshot_server-0.1.1.dist-info/METADATA,sha256=kX8gwPKSXn3u4Wd9FHvr55jIxFUXDi2IWUWNeX61Oh0,1371
+screenshot_server-0.1.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+screenshot_server-0.1.1.dist-info/entry_points.txt,sha256=LiFDqqIbX6T9HTO3aY9OL_zAwFDlG4ljSPM-JflNaMw,65
+screenshot_server-0.1.1.dist-info/top_level.txt,sha256=aE4ewuDLQWFhqspchEvseO6IyLlAwguxB7IuOqeXMTc,11
+screenshot_server-0.1.1.dist-info/RECORD,,
