@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+neuralGAM/__init__.py
+neuralGAM/dataset.py
+neuralGAM/metrics.py
+neuralGAM/model.py
+neuralGAM/plot.py
+neuralGAM.egg-info/PKG-INFO
+neuralGAM.egg-info/SOURCES.txt
+neuralGAM.egg-info/dependency_links.txt
+neuralGAM.egg-info/requires.txt
+neuralGAM.egg-info/top_level.txt
+tests/test_dataset.py
+tests/test_model.py
