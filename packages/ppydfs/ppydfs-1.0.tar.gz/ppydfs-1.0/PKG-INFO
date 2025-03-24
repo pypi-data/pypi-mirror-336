@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: ppydfs
+Version: 1.0
+Summary: Python Parallel Distributed File System (PPYDFS)
+Home-page: http://blog.cycleuser.org
+Author: cycleuser
+Author-email: cycleuser@cycleuser.org
+License-File: LICENSE
+Requires-Dist: pywebio
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
