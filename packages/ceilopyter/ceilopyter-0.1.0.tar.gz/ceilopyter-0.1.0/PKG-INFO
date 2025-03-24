@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: ceilopyter
+Version: 0.1.0
+Summary: Read ceilometer data
+Author-email: Tuomas Siipola <tuomas.siipola@fmi.fi>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: release-version; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: mypy; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Ceilopyter
+
+Python package for reading ceilometer data.
+
+## Supported ceilometers
+
+- Campbell Scientific CS135
+- Vaisala CL31
+- Vaisala CL51
+- Vaisala CT25K
+
+## License
+
+MIT
