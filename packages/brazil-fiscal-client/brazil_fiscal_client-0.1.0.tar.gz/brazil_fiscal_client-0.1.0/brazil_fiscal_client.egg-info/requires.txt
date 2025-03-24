@@ -1,0 +1,8 @@
+xsdata
+requests
+requests-pkcs12
+
+[test]
+pre-commit
+pytest
+pytest-cov
