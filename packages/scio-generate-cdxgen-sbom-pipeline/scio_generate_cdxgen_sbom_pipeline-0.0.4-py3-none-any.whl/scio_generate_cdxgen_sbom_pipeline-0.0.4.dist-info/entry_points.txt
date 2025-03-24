@@ -1,0 +1,2 @@
+[scancodeio_pipelines]
+scio_generate_cdxgen_sbom_pipeline = scio_generate_cdxgen_sbom_pipeline.generate_cdxgen_sbom:GenerateCdxgenSbom
