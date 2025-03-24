@@ -1,0 +1,12 @@
+migrations/0001_initial.py,sha256=3VB3nSR-B5xPICvZtPw3dLUJEbJ-j5PqUHXWDwAjQEU,1071
+migrations/0002_newslettercampaign_newsletterrecipient.py,sha256=W28qbL0K-nqYLn4vkw0iypgWXcSAOpkdm3CHyLq3aWI,1736
+migrations/0003_alter_newslettercampaign_options_and_more.py,sha256=hZkNMbkgzS4Gd74poBB5V5BBUXEd7jBwcQlZKGqw7w4,4693
+migrations/0004_alter_newslettercampaign_options_and_more.py,sha256=Xg7SN6UWH7iPf8TVNwGBDa1pnvpgFAxdBiGuU7FqN2g,3140
+migrations/0005_alter_sendernetsettings_api_key.py,sha256=FBwXab40P8W6VKt7Hmcjm0DulkRuqT1OpfsHY_Vb1GA,513
+migrations/0006_alter_sendernetsettings_api_key.py,sha256=9ZvPgBFg-3CHrfB9VO00Smyv-u9T_R-kghi564acP8A,503
+migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_sendernet_extension-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_sendernet_extension-0.1.1.dist-info/METADATA,sha256=p1iU_bYe2qQqd9obA0A4yX7IEq5PJ_r2ZXa3uOYDwew,1194
+wagtail_sendernet_extension-0.1.1.dist-info/WHEEL,sha256=beeZ86-EfXScwlR_HKu4SllMC9wUEj_8Z_4FJ3egI2w,91
+wagtail_sendernet_extension-0.1.1.dist-info/top_level.txt,sha256=7Vfp3vCAN7rl4-1zzPa-_BHJXDWnajxHlyMCiJbvhvM,11
+wagtail_sendernet_extension-0.1.1.dist-info/RECORD,,
