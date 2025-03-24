@@ -1,0 +1,3 @@
+[console_scripts]
+XinGainianMoniDianlu2FufankuiHeYunsuanFangdaqiJichuFix1 = XinGainianMoniDianlu2FufankuiHeYunsuanFangdaqiJichuFix1.__main__:main
+xin-gainian-moni-dianlu-2-fufankui-he-yunsuan-fangdaqi-jichu-fix1 = XinGainianMoniDianlu2FufankuiHeYunsuanFangdaqiJichuFix1.__main__:main
