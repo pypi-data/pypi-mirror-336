@@ -1,0 +1,3 @@
+[console_scripts]
+CehV10ModuleAllinoneFix1 = CehV10ModuleAllinoneFix1.__main__:main
+ceh-v10-module-allinone-fix1 = CehV10ModuleAllinoneFix1.__main__:main
