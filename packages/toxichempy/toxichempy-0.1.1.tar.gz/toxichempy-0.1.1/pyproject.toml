@@ -1,0 +1,56 @@
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "toxichempy"
+version = "0.1.1"
+description = "A Python package for computational toxicology workflows"
+authors = [
+  { name = "Deepak Kumar Sachan", email = "deepaksachan253@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "feature-engine>=1.8.3,<2.0.0",
+  "statsmodels>=0.14.4,<0.15.0",
+  "pandas>=2.2.3,<3.0.0",
+  "requests>=2.32.3,<3.0.0",
+  "rich>=13.9.4,<14.0.0",
+  "tqdm>=4.67.1,<5.0.0",
+  "ace-tools>=0.0,<0.1",
+  "numpy>=2.2.4,<3.0.0",
+  "openpyxl>=3.1.5,<4.0.0",
+  "python-dotenv>=1.0.1,<2.0.0",
+  "typer>=0.15.2,<0.16.0"
+]
+
+[project.scripts]
+toxichempy = "toxichempy.cli:main"
+
+[tool.poetry]
+packages = [
+  { include = "toxichempy", from = "src" }
+]
+include = [
+  "README.md",
+  "LICENSE",
+  "pyproject.toml",
+  "src/toxichempy/data/*"
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.0.0"
+black = "^25.1.0"
+flake8 = "^7.1.2"
+isort = "^6.0.1"
+mypy = "^1.15.0"
+bump2version = "^1.0.1"
+sphinx = "^8.2.3"
+sphinx-rtd-theme = "^3.0.2"
+sphinx-autodoc-typehints = "^3.1.0"
+sphinx-copybutton = "^0.5.2"
+myst-parser = "^4.0.1"
