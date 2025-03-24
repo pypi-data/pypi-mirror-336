@@ -1,0 +1,4 @@
+[console_scripts]
+synaps=synaps.cli:cli
+synapsd=synaps.service:cli
+
