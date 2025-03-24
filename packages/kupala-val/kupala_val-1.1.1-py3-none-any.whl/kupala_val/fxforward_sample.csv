@@ -1,0 +1,6 @@
+product,price_date,direction,currency_pair,traded_currency,notional,forward_rate,maturity_date
+fxforward,LATEST,Buy,EUR/USD,EUR,100000,1.051,2027-05-15
+fxforward,LATEST,Sell,EUR/USD,USD,500000,1.12,1Y
+fxforward,LATEST,Sell,GBP/USD,GBP,100000,1.2,2028-04-15
+fxforward,LATEST,Buy,USD/JPY,USD,200000,141,3M
+fxforward,LATEST,Sell,EUR/JPY,EUR,400000,155,6M
