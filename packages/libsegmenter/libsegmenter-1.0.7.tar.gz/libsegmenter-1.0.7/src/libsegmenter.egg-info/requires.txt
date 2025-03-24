@@ -1,0 +1,11 @@
+numpy==1.26.4
+scipy>=1.15.2
+
+[octave]
+oct2py>=5.8.0
+
+[tensorflow]
+tensorflow-cpu>=2.14.0
+
+[torch]
+torch>=2.6.0

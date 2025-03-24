@@ -1,0 +1,56 @@
+[project]
+name = "libsegmenter"
+version = "1.0.7"
+description = "An opinionated segmentation library for (machine learning) audio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+ "numpy==1.26.4",
+ "scipy>=1.15.2",
+]
+
+[project.optional-dependencies]
+torch = [ "torch>=2.6.0" ]
+octave = [ "oct2py>=5.8.0" ]
+tensorflow = [ "tensorflow-cpu>=2.14.0" ]
+
+[tool.setuptools]
+packages = [
+    "libsegmenter", 
+    "libsegmenter.util", 
+    "libsegmenter.backends", 
+    "libsegmenter.windows", 
+    "libsegmenter.transforms",
+    "libsegmenter.transforms.spectrogram",
+    "libsegmenter.transforms.magnitude_phase"
+]
+package-dir = {"" = "src"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["consistency.py"]
+pythonpath = ["src"]
+
+[tool.ruff]
+lint.select = ["E","F","B","D"]
+lint.ignore = ["D100","D104","D401", "D203", "D212"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D"]
+
+[dependency-groups]
+dev = [
+    "pyright[nodejs]>=1.1.393",
+    "pytest>=8.3.4",
+    "ruff>=0.9.5",
+    "hypothesis>=6.125.3",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.4",
+    "mkdocstrings[python]>=0.28.1",
+    "torch>=2.6.0",
+    "oct2py>=5.8.0",
+    "tensorflow-cpu>=2.14.0",
+    "mkdocs-include-markdown-plugin>=7.1.4",
+    "twine>=6.1.0",
+]
+
