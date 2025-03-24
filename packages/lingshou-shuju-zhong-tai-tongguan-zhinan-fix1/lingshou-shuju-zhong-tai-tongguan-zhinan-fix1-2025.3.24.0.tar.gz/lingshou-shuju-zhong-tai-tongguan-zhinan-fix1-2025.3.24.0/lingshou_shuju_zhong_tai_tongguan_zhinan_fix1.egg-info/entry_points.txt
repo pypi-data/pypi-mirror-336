@@ -1,0 +1,3 @@
+[console_scripts]
+LingshouShujuZhongTaiTongguanZhinanFix1 = LingshouShujuZhongTaiTongguanZhinanFix1.__main__:main
+lingshou-shuju-zhong-tai-tongguan-zhinan-fix1 = LingshouShujuZhongTaiTongguanZhinanFix1.__main__:main
