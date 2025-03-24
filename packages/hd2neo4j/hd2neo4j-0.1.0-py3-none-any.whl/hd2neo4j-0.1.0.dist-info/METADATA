@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hd2neo4j
+Version: 0.1.0
+Summary: yet another tool for transforming heterogeneous data in to knowledge graph
+License: GPL-3.0
+Author: Jorge Luis Arencibia
+Author-email: jorge9815rdz@gmail.com
+Requires-Python: ==3.12.5
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: neo4j (>=5.22.0,<6.0.0)
+Requires-Dist: pydantic-settings (>=2.8.1,<3.0.0)
+Requires-Dist: scikit-learn (>=1.5.2,<2.0.0)
+Requires-Dist: sentence-transformers (>=3.3.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# hd2neo4j
