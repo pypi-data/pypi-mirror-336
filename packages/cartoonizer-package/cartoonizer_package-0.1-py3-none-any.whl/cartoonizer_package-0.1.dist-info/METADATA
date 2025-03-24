@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: cartoonizer_package
+Version: 0.1
+Summary: A Python library to convert images into cartoon-style artwork
+Home-page: https://github.com/yourusername/cartoonizer
+Author: Your Name
+Author-email: your-email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Cartoonizer
+
+Cartoonizer is a Python library to convert images into cartoon-style artwork using OpenCV.
+
+## Installation
+
+You can install the library via pip:
+
+```bash
+pip install cartoonizer
+
+
+
+from cartoonizer import save_cartoonized_image
+
+save_cartoonized_image('path_to_your_image.jpg', 'cartoon_image.jpg')
