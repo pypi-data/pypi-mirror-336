@@ -1,0 +1,3 @@
+[console_scripts]
+ElasticsearchBadaJingdianYingyongFix1 = ElasticsearchBadaJingdianYingyongFix1.__main__:main
+elasticsearch-bada-jingdian-yingyong-fix1 = ElasticsearchBadaJingdianYingyongFix1.__main__:main
