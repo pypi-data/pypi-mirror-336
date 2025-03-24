@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ppydfs/__init__.py
+ppydfs/__main__.py
+ppydfs.egg-info/PKG-INFO
+ppydfs.egg-info/SOURCES.txt
+ppydfs.egg-info/dependency_links.txt
+ppydfs.egg-info/entry_points.txt
+ppydfs.egg-info/requires.txt
+ppydfs.egg-info/top_level.txt
