@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - paths: default
+  - observables: null
+  - integrator: null
+  - calculator: null
+  - md: null
+  - postprocess: null
+
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: custom
+
+console_logging_level: INFO
+
+
+hydra:
+  output_subdir: null
+  run:
+    dir: ${paths.run_dir}

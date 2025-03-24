@@ -1,0 +1,4 @@
+calc_type: franken
+forces_mode: "torch.autograd"   # can also be torch.func (slower)
+rf_weight_id: null              # only needed in certain special cases, generally can be left to null
+model_path: null                # This needs to be overridden

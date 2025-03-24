@@ -1,0 +1,4 @@
+root_dir: .
+
+run_dir: ${paths.root_dir}/experiments/${dataset.dataset_name}/sample_complexity/${franken.gnn_backbone_id}-${franken.interaction_block}/${hyperparameters.random_features.num_random_features}_rfs/${dataset.train_subsample.num}_subsamples/${franken.kernel_type}
+

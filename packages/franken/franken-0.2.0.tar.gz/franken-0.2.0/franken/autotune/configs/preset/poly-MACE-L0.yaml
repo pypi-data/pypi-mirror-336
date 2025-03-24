@@ -1,0 +1,17 @@
+# @package _global_
+
+defaults:
+  - default
+
+franken:
+  gnn_backbone_id: "MACE-L0"
+  interaction_block: 2
+  kernel_type: "poly"
+  jac_chunk_size: "auto"
+
+hyperparameters:
+  random_features:
+    num_random_features: 1024
+    bias: [0.5, 1.0, 1.5]
+    degree: [2, 3, 4, 5]
+    length_scale: [0.1, 0.5, 1.0, 2.0, 10.]

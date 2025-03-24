@@ -1,0 +1,27 @@
+# @package _global_
+
+exp_name: liquid 
+init_config_index: 567
+init_config_path: /leonardo_scratch/fast/IscrB_AmmoFeCo/mlpot_transfer/latest//datasets/water/ML_AB_dataset_1.xyz
+log_every: 100
+md_length_ns: 0.05
+output_format: extxyz
+save_every: 100
+temperature_K: 325.0
+timestep_fs: 0.5
+calculator:
+    calc_type: MACE
+    model_path: model_1.pt
+initial_velocity:
+    _target_: ase.md.velocitydistribution.MaxwellBoltzmannDistribution
+    temperature_K: 325.0
+integrator:
+    _target_: ase.md.langevin.Langevin
+    temperature_K: 325.0
+    friction: ${invfs_to_ase:0.01}  # specified in 1/fs units
+    timestep: ${fs_to_ase:${timestep_fs}}
+paths:
+    dataset_dir: /leonardo_scratch/fast/IscrB_AmmoFeCo/mlpot_transfer/latest//datasets
+    root_dir: .
+    run_dir: ./md/liquid #-567/325K
+seed: 0

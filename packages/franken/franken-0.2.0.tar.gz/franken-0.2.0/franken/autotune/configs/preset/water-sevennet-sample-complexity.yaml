@@ -1,0 +1,31 @@
+# @package _global_
+
+defaults:
+  - default
+
+franken:
+  gnn_backbone_id: "SevenNet0"
+  interaction_block: 3
+  kernel_type: "gaussian"
+  jac_chunk_size: "auto"
+
+hyperparameters:
+  solver:
+    L2_penalty:
+      _target_: numpy.logspace
+      start: -10
+      stop: -10
+      num: 1
+    loss_lerp_weight: 
+      _target_: numpy.linspace
+      start: 0.5
+      stop: 0.5
+      num: 1
+  random_features:
+    num_random_features: 1024
+    length_scale: 
+      _target_: numpy.linspace
+      start: 10
+      stop: 10
+      num: 1
+
