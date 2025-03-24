@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+lucaswangtool/__init__.py
+lucaswangtool/core.py
+lucaswangtool.egg-info/PKG-INFO
+lucaswangtool.egg-info/SOURCES.txt
+lucaswangtool.egg-info/dependency_links.txt
+lucaswangtool.egg-info/top_level.txt
+tests/test_core.py
