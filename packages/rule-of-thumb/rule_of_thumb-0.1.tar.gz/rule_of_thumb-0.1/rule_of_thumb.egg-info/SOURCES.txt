@@ -1,0 +1,12 @@
+setup.py
+rule_of_thumb/__init__.py
+rule_of_thumb/beam_design.py
+rule_of_thumb/bulk_density.py
+rule_of_thumb/self_weight.py
+rule_of_thumb/slab_thickness.py
+rule_of_thumb/soil_loads.py
+rule_of_thumb.egg-info/PKG-INFO
+rule_of_thumb.egg-info/SOURCES.txt
+rule_of_thumb.egg-info/dependency_links.txt
+rule_of_thumb.egg-info/top_level.txt
+tests/test.py

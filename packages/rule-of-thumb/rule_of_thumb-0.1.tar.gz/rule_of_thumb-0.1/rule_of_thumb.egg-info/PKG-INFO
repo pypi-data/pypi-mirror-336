@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: rule_of_thumb
+Version: 0.1
+Summary: A package containing structural engineering rules of thumb
+Home-page: https://github.com/yourusername/rule_of_thumb
+Author: Mario Samaan
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
