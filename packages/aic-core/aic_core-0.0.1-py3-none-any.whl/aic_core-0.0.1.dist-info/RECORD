@@ -1,0 +1,7 @@
+aic_core/__init__.py,sha256=ABHadJDWoNTmWfp6-ONetFwvDFEymcjm8m7VARAQ88Y,19
+aic_core/agent.py,sha256=VdbcIHcQI3i1UobHntv32NPxThF0TZRHfo3xYMzAf2A,6087
+aic_core/agent_hub.py,sha256=mV2utocQfZ_saC8NGDPNTrE-um9s7HM0R4WO1wpKdL0,5413
+aic_core-0.0.1.dist-info/METADATA,sha256=49QmOtrpITqj9sepTeUcEQ-grB_356SyrKfBGaGPwFA,2120
+aic_core-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aic_core-0.0.1.dist-info/licenses/LICENSE,sha256=UMhWnNnpcD5pmbMMRSZGXPtDuafJDTSZtzuvH245gAo,1070
+aic_core-0.0.1.dist-info/RECORD,,
