@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+audio_player/__init__.py
+audio_player/player.py
+audio_player_lib.egg-info/PKG-INFO
+audio_player_lib.egg-info/SOURCES.txt
+audio_player_lib.egg-info/dependency_links.txt
+audio_player_lib.egg-info/requires.txt
+audio_player_lib.egg-info/top_level.txt
+tests/test_player.py
