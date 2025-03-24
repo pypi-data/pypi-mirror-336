@@ -1,0 +1,33 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+.github/workflows/python-publish.yml
+app_mockups/SMS App -- Twilio API.png
+app_mockups/alert details v1.png
+app_mockups/alerts screen v2.png
+app_mockups/dashboard v2.png
+app_mockups/detection history v1.png
+app_mockups/monitoring settings v4.png
+app_mockups/sign-in page v1.png
+docs/POC_DOCUMENTATION.md
+src/__init__.py
+src/dashboard.py
+src/main_application.py
+src/hackrf/__init__.py
+src/hackrf/keyfob_detector.grc
+src/hackrf/rf_detector.py
+src/integration/__init__.py
+src/integration/integrated_detector.py
+src/logs/dashboard/.gitkeep
+src/logs/integrated/.gitkeep
+src/openxc/__init__.py
+src/openxc/rf_simulator.py
+src/rf_signal_monitor.egg-info/PKG-INFO
+src/rf_signal_monitor.egg-info/SOURCES.txt
+src/rf_signal_monitor.egg-info/dependency_links.txt
+src/rf_signal_monitor.egg-info/entry_points.txt
+src/rf_signal_monitor.egg-info/requires.txt
+src/rf_signal_monitor.egg-info/top_level.txt
+tests/test_rf_detector.py
