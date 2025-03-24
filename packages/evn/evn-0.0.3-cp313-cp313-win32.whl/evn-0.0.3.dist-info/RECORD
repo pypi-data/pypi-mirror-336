@@ -1,0 +1,14 @@
+evn/__init__.py,sha256=hUxsvvqUuZ5x8FjGeC5HcERObXH-f-cxX8Ve6kmBYAU,123
+evn/__main__.py,sha256=yPcGJTbNiB6aQlFftQOCunmnb2mZcjxREEsywiL0mkM,185
+evn/_detect_formatted_blocks.cp313-win32.pyd,sha256=B6eU5X9gv540fHFpGrYt94fKGi_GZ7YxQqM8VqE-7h8,187904
+evn/_detect_formatted_blocks.cpp,sha256=EUwFyMsuMVh-1gELGve0boHC1quWTK6bCLWVr3avdI4,17724
+evn/_token_column_format.cp313-win32.pyd,sha256=nCmIU7jm4pSxV40mBa-WWewoslYQCewBvwe_kqE9FQs,192512
+evn/_token_column_format.cpp,sha256=1w2UopEloUEDAEc_wmUniDsH-cVwg-br0I1-Ga_qY0w,22169
+evn/formatter.py,sha256=5XTs5_eoXdpimt1Oprbrq9gEoRhA2nrfgEb5TdfOeFs,5928
+evn/tests/test_detect_formatted_blocks.py,sha256=JM6v5Aqosu_744J2QTdjfz2NPRPpmsL3XwRFJmOLKyo,4299
+evn/tests/test_token_column_format.py,sha256=NhkBPt0RiQ1VDz2Gj8orcAS8CaGUGXrhwlgw55jMtq8,11044
+evn-0.0.3.dist-info/METADATA,sha256=YVrl3B9zMZoDPnmu46PS6rQleILAG8ZCIDp4Tn9HMNE,193
+evn-0.0.3.dist-info/WHEEL,sha256=4veRJSup6nFXvqcsUNCaUnQrwPqhqtT6ZSZK0VxngqA,102
+evn-0.0.3.dist-info/entry_points.txt,sha256=kB4gSvfqR5I5UEafUbkfsxdWkNNj4PINl2d8_MDWx2I,43
+evn-0.0.3.dist-info/licenses/LICENSE,sha256=m9Kkn2mRRY3TtLl3hhBSgLLak-spznGZ9AhNqeravLw,11557
+evn-0.0.3.dist-info/RECORD,,
