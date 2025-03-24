@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: torrent-downloader-react
+Version: 1.1.6
+Summary: A modern, user-friendly torrent downloader application
+Home-page: https://github.com/stevenbtc/torrent-downloader
+Author: Steven Yan
+Author-email: yulong.yan@uqconnect.edu.au
+Project-URL: Bug Tracker, https://github.com/stevenbtc/torrent-downloader/issues
+Project-URL: Documentation, https://github.com/stevenbtc/torrent-downloader#readme
+Project-URL: Source Code, https://github.com/stevenbtc/torrent-downloader
+Keywords: torrent,downloader,p2p,bittorrent,libtorrent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.109.0
+Requires-Dist: uvicorn>=0.27.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: libtorrent>=2.0.0
+Requires-Dist: pytest>=8.0.0
+Requires-Dist: httpx>=0.27.0
+
+# Torrent Downloader Web App
+
+A modern, full-featured torrent downloader with a clean React interface and Python backend.
+
+## Quick Start
+
+```bash
+pip install torrent-downloader-react
+torrent-downloader-react  # Opens in browser at http://127.0.0.1:8000
+```
+
+## System Requirements
+
+- Python 3.8+
+- Platform-specific dependencies:
+  - **Windows**: Microsoft Visual C++ Redistributable
+  - **macOS**: `brew install libtorrent-rasterbar`
+  - **Ubuntu/Debian**: `sudo apt-get install python3-libtorrent`
+  - **Fedora**: `sudo dnf install rb_libtorrent-python3`
+
+## Features
+
+- Modern, responsive UI with dark mode
+- Real-time download progress monitoring
+- Download speed and ETA tracking
+- Easy magnet link handling
+- Cross-platform support
+- Concurrent downloads
+
+## Usage
+
+1. Start the application:
+   ```bash
+   torrent-downloader-react
+   ```
+2. Open your browser at http://127.0.0.1:8000
+3. Paste a magnet link and click "Add Torrent"
+4. Monitor progress in the downloads list
+5. Access completed downloads in your downloads folder
+
+## Alternative Installation: Using Conda
+
+```bash
+conda create -n torrent-env python=3.11
+conda activate torrent-env
+conda install -c conda-forge libtorrent
+pip install torrent-downloader-react
+```
+
+## Development
+
+### Frontend (React)
+```bash
+# Install dependencies
+cd torrent-downloader-react
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Backend (Python)
+```bash
+# Install dependencies
+cd torrent-downloader-react/backend
+pip install -r requirements.txt
+
+# Start development server
+python -m torrent_downloader.server
+```
+
+## API Documentation
+
+The backend provides a RESTful API:
+
+- `GET /api/torrents` - List all torrents
+- `POST /api/torrents` - Add new torrent
+- `DELETE /api/torrents/{id}` - Remove torrent
+- `GET /api/torrents/{id}/status` - Get torrent status
+
+## License
+
+MIT License - See LICENSE file for details.
+
+## Legal Notice
+
+This software is intended for downloading legal torrents only. Users are responsible for compliance with applicable laws.
