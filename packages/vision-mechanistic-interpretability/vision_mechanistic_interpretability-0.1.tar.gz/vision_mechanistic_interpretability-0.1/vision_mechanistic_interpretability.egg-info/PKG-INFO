@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vision_mechanistic_interpretability
+Version: 0.1
+Summary: A package for mechanistic interpretability of vision models.
+Home-page: https://github.com/yourusername/vision_mechanistic_interpretability
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: transformers
+Requires-Dist: peft
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: Pillow
