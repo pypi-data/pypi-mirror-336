@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: django-matthaios
+Version: 0.1.0
+Summary: A transaction database for Django
+Author-email: "Erlend D. Handeland" <erlend.dietrich.handeland@stavanger.kommune.no>
+License: BSD-3-Clause
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Django Matthaios
