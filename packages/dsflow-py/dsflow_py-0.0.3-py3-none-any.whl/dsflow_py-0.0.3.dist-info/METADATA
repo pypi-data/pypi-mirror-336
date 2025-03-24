@@ -1,0 +1,68 @@
+Metadata-Version: 2.3
+Name: dsflow-py
+Version: 0.0.3
+Summary: A library for data science workflows
+Keywords: data science,machine learning,pytorch,pandas,scikit-learn
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: matplotlib (>=3.7.0,<4.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: plotly (>=5.13.0,<6.0.0)
+Requires-Dist: scikit-learn (>=1.2.0,<2.0.0)
+Requires-Dist: torch (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://github.com/yourusername/ds-flow
+Description-Content-Type: text/markdown
+
+# DS Flow
+
+A Python library for data science workflows.
+
+## Installation
+
+```bash
+pip install dsflow-py
+```
+
+## Usage
+
+```python
+# Import the main package
+import ds_flow
+
+# Import specific submodules
+from ds_flow.torch_flow import my_function
+from ds_flow.pandas_flow import my_other_function
+from ds_flow.sk_flow import yet_another_function
+```
+
+## Features
+
+- PyTorch workflows and utilities via `ds_flow.torch_flow`
+- Pandas utilities via `ds_flow.pandas_flow`
+- Scikit-learn tools via `ds_flow.sk_flow`
+
+## Development
+
+This project uses Poetry for dependency management.
+
+```bash
+# Install poetry
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Install dependencies
+poetry install
+
+# Run tests
+poetry run pytest
+```
+
+## License
+
+MIT
