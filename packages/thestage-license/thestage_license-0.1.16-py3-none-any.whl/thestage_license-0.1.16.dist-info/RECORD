@@ -1,0 +1,11 @@
+thestage_license/__init__.py,sha256=lW3e8dRZX18bbY3kcK77jjBlite4-Lw4BpeeuTah1zk,50314
+thestage_license/pyarmor_runtime_008031/__init__.py,sha256=kbOGuDhMyGILDqsWN8723S1iguetL3-bAOftGPvgMe0,220
+thestage_license/pyarmor_runtime_008031/py310/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thestage_license/pyarmor_runtime_008031/py310/pyarmor_runtime.so,sha256=8XuLN_GPXDiswNmkaZWW8xsdsSsJ78NzGq_Dy9-d5ms,792360
+thestage_license/pyarmor_runtime_008031/py311/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thestage_license/pyarmor_runtime_008031/py311/pyarmor_runtime.so,sha256=fOkVeutPmX2-SXnL6H1rJ2fnwPShr_0TqyMb0ZB0oYs,788264
+thestage_license/pyarmor_runtime_008031/py312/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thestage_license/pyarmor_runtime_008031/py312/pyarmor_runtime.so,sha256=cvQjOa7fO4T2y5nnQWAplkIhskHrkQJtXitNYBVU-Nc,796488
+thestage_license-0.1.16.dist-info/METADATA,sha256=cdiiX-qMZtbTQClO4UFmQbWJuC1oLVf0ojJIaCqKXt0,676
+thestage_license-0.1.16.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+thestage_license-0.1.16.dist-info/RECORD,,
