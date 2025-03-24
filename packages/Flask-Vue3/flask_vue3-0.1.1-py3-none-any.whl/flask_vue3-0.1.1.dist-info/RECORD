@@ -1,0 +1,10 @@
+flask_vue/__init__.py,sha256=TOQRS0N5CS2WvWn7vrCEQ7Pkps_gzoiMwQNXT52a6kE,325
+flask_vue/cli.py,sha256=7tzA3gKZihDCaF9XE6BroQA32nsKPqANWf3INlnKu0Y,11802
+flask_vue/config.py,sha256=3glAIpVwZP2SfllfCjiJ-jIqxN1luKO9ab_0PQa3pv8,3898
+flask_vue/extension.py,sha256=yDK6zcaztSeA5Fme0EPU0j5Qdh4ZjBpgEfeRP2QFf2c,8557
+flask_vue/plugins.py,sha256=BSreUOzP0_YjfWjiv1ztSUSDVqzJsh8qT1x-uwO0S3E,11935
+flask_vue3-0.1.1.dist-info/licenses/LICENSE,sha256=C-X2-hJb3MuJcd4MbeBA15ZZwzPwI2WbBJevgeN-Qd8,1064
+flask_vue3-0.1.1.dist-info/METADATA,sha256=G2g6UGZ-fh90bI8-fpMr4t1z3sSYHk1Iq1gnoNn634Y,12188
+flask_vue3-0.1.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+flask_vue3-0.1.1.dist-info/top_level.txt,sha256=eeg8uiVaBLWF4REAR1wmTGQmbBiMIiExS354EZNynro,10
+flask_vue3-0.1.1.dist-info/RECORD,,
