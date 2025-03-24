@@ -1,0 +1,5 @@
+uiautomator
+requests
+phonenumbers
+pycountry
+selenium
