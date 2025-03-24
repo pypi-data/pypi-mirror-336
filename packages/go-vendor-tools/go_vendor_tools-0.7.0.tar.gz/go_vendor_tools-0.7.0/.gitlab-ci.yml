@@ -1,0 +1,125 @@
+---
+# Copyright (C) 2024 Maxwell G <maxwell@gtmx.me>
+# SPDX-License-Identifier: MIT
+
+default:
+  image: "registry.fedoraproject.org/fedora:latest"
+  before_script:
+    - >-
+      sudo dnf install
+      --setopt=install_weak_deps=0 -y
+      git-core
+      nox
+      python3-devel
+
+lint:
+  script:
+    - "nox -e formatters -- --check"
+    - "nox -e codeqa"
+    - "nox -e typing"
+
+test:
+  before_script:
+    - |-
+      if [ -n "$(rpm -E '%{?rhel}')" ]; then
+        dnf install -y sudo
+        sudo dnf install -y epel-release /usr/bin/unzip wget
+        crb enable
+        sudo dnf install --setopt=install_weak_deps=0 -y epel-rpm-macros
+        sudo dnf install -y koji-tool
+        koji-tool install -y go-rpm-macros-epel --all
+        wget https://github.com/jpeddicord/askalono/releases/download/0.4.6/askalono-Linux.zip
+        unzip askalono-Linux.zip
+        chmod a+x askalono
+        sudo mv askalono /usr/bin/askalono
+        sudo chmod a+x /usr/bin/askalono
+      else
+        sudo dnf install --setopt=install_weak_deps=0 -y askalono-cli
+      fi
+    - >-
+      sudo dnf install
+      --setopt=install_weak_deps=0 -y
+      git-core
+      go-rpm-macros
+      golang-bin
+      libxml2-devel
+      libxslt-devel
+      pipx
+      python3-devel
+      redhat-rpm-config
+      rpm-build
+      rpmdevtools
+      /usr/bin/unshare
+    - >-
+      test "$SHOULD_RPMBUILD" = "false" ||
+      sudo dnf install
+      --setopt=install_weak_deps=0 -y
+      python3.9
+      python3.10-devel
+      python3.11-devel
+      python3.12-devel
+
+    - >-
+      sudo dnf install -y
+      https://github.com/aquasecurity/trivy/releases/download/v0.49.1/trivy_0.49.1_Linux-64bit.rpm
+  script:
+    - export GO_VENDOR_ARCHIVE_USE_MODULE_PROXY=1
+    - |
+      if [ "${ERROR_ON_MISSING_INTERPRETERS}" = "true" ]; then
+        pipx run nox -e test --error-on-missing-interpreters -- --cov
+      else
+        pipx run nox -e test --no-error-on-missing-interpreters -- --cov
+      fi
+    - pipx run nox -e integration
+    - >-
+      test "$SHOULD_RPMBUILD" = "false" || pipx run nox -e integration-test-build
+    - >-
+      test "$SHOULD_RPMBUILD" = "true" || export COVERAGE_FAIL_UNDER=0
+    - >-
+      echo "NO_SCANCODE=$NO_SCANCODE" >> "$GITLAB_ENV"
+    - pipx run nox -e coverage
+  artifacts:
+    paths:
+      - htmlcov/
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+  image: "$IMAGE"
+  parallel:
+    matrix:
+        - IMAGE: "registry.fedoraproject.org/fedora:rawhide"
+          PACKAGES: "autorestic fzf"
+          SHOULD_RPMBUILD: "true"
+          # https://github.com/WojciechMula/pyahocorasick/issues/199
+          NO_SCANCODE: "true"
+          ERROR_ON_MISSING_INTERPRETERS: "true"
+        - IMAGE: "registry.fedoraproject.org/fedora:41"
+          PACKAGES: "autorestic fzf"
+          SHOULD_RPMBUILD: "true"
+          NO_SCANCODE: "false"
+          ERROR_ON_MISSING_INTERPRETERS: "true"
+        - IMAGE: "registry.fedoraproject.org/fedora:40"
+          PACKAGES: "autorestic fzf"
+          SHOULD_RPMBUILD: "true"
+          NO_SCANCODE: "false"
+          ERROR_ON_MISSING_INTERPRETERS: "true"
+        - IMAGE: "quay.io/centos/centos:stream9"
+          PACKAGES: "fzf"
+          SHOULD_RPMBUILD: "false"
+          NO_SCANCODE: "false"
+          ERROR_ON_MISSING_INTERPRETERS: "false"
+
+pages:
+  script:
+    - >-
+      sudo dnf install
+      --setopt=install_weak_deps=0 -y
+      pandoc
+      scd2html
+    - nox -e mkdocs -- build -d public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
