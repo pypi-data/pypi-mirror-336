@@ -1,0 +1,3 @@
+root_dir: .
+dataset_dir: ${default_datasets_path:}
+run_dir: ${paths.root_dir}/md/${exp_name}

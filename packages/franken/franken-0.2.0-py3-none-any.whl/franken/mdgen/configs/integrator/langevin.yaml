@@ -1,0 +1,4 @@
+_target_: ase.md.langevin.Langevin
+friction: ${invfs_to_ase:0.2}  # specified in 1/fs units
+timestep: ${fs_to_ase:${timestep_fs}}
+temperature_K: ${temperature_K}

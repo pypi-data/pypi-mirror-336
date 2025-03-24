@@ -1,0 +1,19 @@
+# @package _global_
+
+defaults:
+  - metrics:
+    - water_diffusion_coeff
+    - rdf
+
+exp_name: diffusion/325
+
+metrics:
+  water_diffusion_coeff:
+    timestep_fs: 100
+    t_min_fs: 2000  # this is a bit random
+  rdf:
+    ref_traj_path: null
+    timestep_fs: 100  # 0.5 * 200
+    equilibration_fs: 5000  # 50 saved time-steps
+    stability_threshold: 1.0
+    stability_interval: 20
