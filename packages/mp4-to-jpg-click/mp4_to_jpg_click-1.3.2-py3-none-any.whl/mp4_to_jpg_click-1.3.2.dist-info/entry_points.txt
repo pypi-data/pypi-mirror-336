@@ -1,0 +1,5 @@
+[console_scripts]
+mp4-to-jpg = mp4_to_jpg_click.mp4_to_jpg:main
+
+[gui_scripts]
+
