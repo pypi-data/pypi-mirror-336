@@ -1,0 +1,3 @@
+[console_scripts]
+YehuoIMxRtKuKaifaShizhanZhinanFix1 = YehuoIMxRtKuKaifaShizhanZhinanFix1.__main__:main
+yehuo-i-mx-rt-ku-kaifa-shizhan-zhinan-fix1 = YehuoIMxRtKuKaifaShizhanZhinanFix1.__main__:main
