@@ -1,0 +1,3 @@
+[console_scripts]
+HuaxiaZhichengPmpKaoshiFudaoPeixunChengangFix1 = HuaxiaZhichengPmpKaoshiFudaoPeixunChengangFix1.__main__:main
+huaxia-zhicheng-pmp-kaoshi-fudao-peixun-chengang-fix1 = HuaxiaZhichengPmpKaoshiFudaoPeixunChengangFix1.__main__:main
