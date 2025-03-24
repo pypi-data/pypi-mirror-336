@@ -1,0 +1,3 @@
+[console_scripts]
+GenWoYiqiXieBianyiqiFix1 = GenWoYiqiXieBianyiqiFix1.__main__:main
+gen-wo-yiqi-xie-bianyiqi-fix1 = GenWoYiqiXieBianyiqiFix1.__main__:main
