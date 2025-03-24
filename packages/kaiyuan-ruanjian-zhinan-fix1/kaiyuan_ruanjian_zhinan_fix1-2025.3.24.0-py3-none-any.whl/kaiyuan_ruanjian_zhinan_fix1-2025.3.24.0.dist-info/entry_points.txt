@@ -1,0 +1,3 @@
+[console_scripts]
+KaiyuanRuanjianZhinanFix1 = KaiyuanRuanjianZhinanFix1.__main__:main
+kaiyuan-ruanjian-zhinan-fix1 = KaiyuanRuanjianZhinanFix1.__main__:main
