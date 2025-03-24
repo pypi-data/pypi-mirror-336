@@ -1,0 +1,16 @@
+create_flask_vps_app/__init__.py,sha256=-PBLCS_CRaYbM8Qwyw9YCu-GyiZPYwTpyO8G3ZEjnHg,102
+create_flask_vps_app/main.py,sha256=U44ynVcHxf0g16raYfNHBCnCjSrxQvYPGwvg_ZP_iAY,2323
+create_flask_vps_app/templates/README.md,sha256=dN3CbFqPJS3SKQtfxO1voj_EnvD-XFw_1CeYrQ01db8,1438
+create_flask_vps_app/templates/fabfile.py,sha256=w_csRlr96HHFwpupgDTyWOvDrm96Deu8Naav8XHKOFQ,7521
+create_flask_vps_app/templates/requirements.txt,sha256=9Wk0ZDQBNwo7CotuOgNW-PQiPc66uaVLZKmiUZlYNp4,156
+create_flask_vps_app/templates/app/__init__.py,sha256=F1zifgT6tCh949r9Sl73ptNKaNByDDFuK_1cZmqKFy4,40
+create_flask_vps_app/templates/app/cors.py,sha256=BdnIkx_2RnjG9TDuMX9b9as_8fDIa-DKWJtzqab9EHs,130
+create_flask_vps_app/templates/app/db.py,sha256=VXADLrlynyf6MiS4iATeuZA_e6_B7RQHXJdQ9wAcBaQ,119
+create_flask_vps_app/templates/app/main.py,sha256=ANSxhWm0CpqQrdh9a86jI_jBesxZsF9Ww4ZEcPKu87Y,415
+create_flask_vps_app/templates/templates/nginx_config.j2,sha256=uT-rqv-YeFy___NZGToUq39LuhSzma7h0XBj2hnLt4I,1011
+create_flask_vps_app/templates/templates/systemd_service.j2,sha256=SIxOgguff7XXVB-hUmQNCGIruQzWh-qpgckzCgBU5AQ,329
+create_flask_vps_app-0.6.0.dist-info/METADATA,sha256=mx7NsDeo14m3PUx2beVcJAJRODi34blWVwtb475JvL4,2086
+create_flask_vps_app-0.6.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+create_flask_vps_app-0.6.0.dist-info/entry_points.txt,sha256=JaCR-uELQjXspjOwepWFALU3miaYIlASkLug4jb6Qao,72
+create_flask_vps_app-0.6.0.dist-info/top_level.txt,sha256=fBpZWtbk30rxnpKW62qhLYDOys9XLR1fDZWxisu22yM,21
+create_flask_vps_app-0.6.0.dist-info/RECORD,,
