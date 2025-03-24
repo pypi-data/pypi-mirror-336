@@ -1,0 +1,30 @@
+
+{% extends "admin/base.html" %}
+{% block extrastyle %}{{ block.super }}
+{% if request.user.is_authenticated and ENV_NAME and PROJECT_NAME %}
+<!-- django-admin-notice -->
+<style type="text/css">
+    body:before {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        padding: .5rem 1rem;
+        line-height: 1.25rem;
+        text-align: center;
+        /* text-transform: uppercase; */
+        font-weight: 700;
+        font-size: 22px;
+        content: "{{PROJECT_NAME|title }} project | {{ENV_NAME}} env";
+        background: {{ADMIN_HEADER_BG}};
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    {# stop using browser zoom in both admin and non-admin pages #}
+    {# div, label, input, th, td {font-size: 22px;} #}
+    html, body, * {font-size: 22px;}
+    .flex-container, .form-row, .vTextField {width: 800px;}
+</style>
+{% endif %}
+{% endblock %}

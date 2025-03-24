@@ -1,0 +1,41 @@
+{% extends 'base_site.dtl' %}
+{% block title %}TS Render Demo{% endblock %}
+{% block content %}
+<h2>Timestamp Render Demo</h2>
+<p>
+    This is to demonstrate how to store a UNIX timestamp sourced from a third-party API, and display it in multiple datetime formats in templates, both via using middleware to convert UTC times stored in the database to local time based on a logged-in user's timezone (stored via the custom User model), as well as to manually convert the UNIX timestamp in the view without any necessity of converting and saving to a UTC datetime column in the database table (datetime columns suffixed with "(view)" below are converted in <a target="_blank" href="https://github.com/venteto/vto-core/blob/main/vto_core/views/dem_v.py">the view</a>, whereas the other datetime columns below just use the Django <a target="_blank" href="https://docs.djangoproject.com/en/dev/ref/templates/builtins/#tz"> tz template tag</a>).
+</p>
+
+<table id="jsData" class="display">
+    <thead>
+        <th>Unix (API)</th>
+        <th>DST</th>
+        <th>UTC (Django)</th>
+        {% if user.is_authenticated %}<th>User Local (Django)</th>{% endif %}
+        <th>UTC (view)</th>
+        {% if user.is_authenticated %}<th>User Local (view)</th>{% endif %}
+        <th>Exchange Local (view)</th>
+    </thead>
+    {# date:"Y-m-d (D) H:i:s e (I)" #}
+<tbody>
+    {% load tz %}
+    {% for object in object_list %}
+        <tr>
+            <td>{{ object.ts_unix }}</td>
+            <td>{{ object.dst }}</td>
+            <td>{{ object.ts_utc|utc|date:"Y-m-d H:i:s e" }}</td> 
+            {% if user.is_authenticated %}
+                <td>{{ object.ts_utc|localtime|date:"Y-m-d H:i:s e" }}</td>
+            {% endif %}
+            
+            {# created manually #}
+            <td>{{ object.tsv_utc }}</td> 
+            {% if user.is_authenticated %}
+                <td>{{ object.tsv_usr }}</td>
+            {% endif %}
+            <td>{{ object.tsv_xch }}</td>
+        </tr>
+    {% endfor %}
+</tbody>
+</table>
+{% endblock %}
