@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: libreria-selenium-pers
+Version: 0.4
+Summary: Una librería de Python para uso personal
+Author: Matias Arriete
+Requires-Dist: selenium
+Requires-Dist: requests
+Requires-Dist: webdriver-manager
+

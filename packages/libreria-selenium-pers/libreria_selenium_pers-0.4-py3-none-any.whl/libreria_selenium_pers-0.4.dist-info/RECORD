@@ -1,0 +1,10 @@
+libreria_selenium_pers/__init__.py,sha256=RNrIPJenpXFrLIjN7_rI6huB5peKKgC0CqwewunbagQ,82
+libreria_selenium_pers/config.py,sha256=SLT5gKaXS2UGHjje7uLVJ6ns3BbLw6AVC688e6FOf_w,469
+libreria_selenium_pers/drivers.py,sha256=da9gD_hN_IEHhxPh9_q8u77dBDnxg5Ms7pQDb-oAZTA,509
+libreria_selenium_pers/selenium_tools.py,sha256=_FR_y8nyM5DjvOSgp2QJFnSVnK9sbaVFSDe4lokd4Hw,744
+libreria_selenium_pers/telegram_tools.py,sha256=JBgBWwOUxJhIOTwyo96i6bz31xzYRkWO1qwtKQSl6MU,484
+libreria_selenium_pers/tools.py,sha256=LVvsUeiiQASW6yppSGJmFvw6eHWtikke8-i4LBJXK58,1136
+libreria_selenium_pers-0.4.dist-info/METADATA,sha256=-ZaJhUZiLr9QNrIAiG0Kxv-EateHYMYjl6T29E-eCko,229
+libreria_selenium_pers-0.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+libreria_selenium_pers-0.4.dist-info/top_level.txt,sha256=n1K1RW0VgHDYPMNys3qE1w45oVdQ4zfRjiOb3Iut3sc,23
+libreria_selenium_pers-0.4.dist-info/RECORD,,
