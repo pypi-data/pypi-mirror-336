@@ -1,0 +1,17 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/cli.py,sha256=ruhlqETWK4-DgkVsSTyQM8PQDK_fTgeE6MvAgHs7xkk,537
+cli/utils.py,sha256=oyYZJi-0mtn_RvsWeSw_7uLDShfV2HwxZa4sVhbM0a8,319
+cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/commands/auth.py,sha256=alkTT1LrjYidzlX_zXDzG97zzrU4ApFQ_TvMaHStync,3571
+cli/commands/bbs.py,sha256=6sU7rznUblXuscnMWfohZgR8riW0wgyGpzBl-ROzmR4,8518
+cli/commands/messaging.py,sha256=uSGtXHSboxkXZlGQOEUrtflQiqGEGPi8ZB9h3IZ_k9Y,6723
+cli/commands/services.py,sha256=y77ohXGbFPQ2ygY736etuc2GG4D7UW5ttb7J-amX9T0,463
+cli/commands/social.py,sha256=JyNpavKyOpZ2q5IT9pYdmTXUFH69LiprCjqYpiopsCc,6719
+cli/commands/test.py,sha256=Htf97KAtQjn8UI7glMQFWteD6-5oYYhP3glYyQ9KDPM,395
+cli/commands/unsocial.py,sha256=5FYXg1S9jlSf2FVqV8jxXkRlxX0EWfzIAUpOYkPoIW0,2187
+cli/commands/users.py,sha256=vPzwqqG1TpMDHCWCDHkpH1jvUbCV5bF-j1vgAi4Yhvo,510
+cli_social-0.0.4.dev0.dist-info/METADATA,sha256=3nvepODDhXbs9Kp8Z8qL4zBR-uEznjKXLOkFDcKK5Ic,1025
+cli_social-0.0.4.dev0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+cli_social-0.0.4.dev0.dist-info/entry_points.txt,sha256=uFQMIg8gAnFRpddtaeiz37g9x9C6zWJvF0GaLGjhsB4,39
+cli_social-0.0.4.dev0.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+cli_social-0.0.4.dev0.dist-info/RECORD,,
