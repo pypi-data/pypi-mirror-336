@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mtasanpystatus
+Version: 1
+Summary: A library for monitoring MTA:SA servers.
+Home-page: https://github.com/ieoub/mtasanpystatus
+Author: ieoub
+Author-email: rib7daily@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# MTASANPyStatus
+Multi Theft Auto San Andreas Server Monitoring Library
+
+## Installation
+Install the library using pip:
+```bash
+pip install mtasanpystatus
