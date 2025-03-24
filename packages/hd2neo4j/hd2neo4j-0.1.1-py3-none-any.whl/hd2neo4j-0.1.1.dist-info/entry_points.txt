@@ -1,0 +1,3 @@
+[console_scripts]
+start=hd2neo4j.main:start
+
