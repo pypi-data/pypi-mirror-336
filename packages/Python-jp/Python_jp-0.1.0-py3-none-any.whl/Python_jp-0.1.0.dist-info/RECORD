@@ -1,0 +1,14 @@
+Python_jp/__init__.py,sha256=wrR8CAnLEQSUGM6ujqIeJ7TUwb4tLeTfo0YsGyzsoZI,212
+Python_jp/cli.py,sha256=xUfYpEsdOZ_kVgkRm2NPt00Xu_RRtkQWhqJOAb029eY,2084
+Python_jp/exceptions.py,sha256=4xOLJXgChUfDyNOJtdWjQ__xsjP4gXCqn-xaabqnw1M,429
+Python_jp/keywords.py,sha256=VVyiYeg3KHQaNZLHYx7n9ClL4XkJyZOIWMiJHfbG1ac,1547
+Python_jp/preprocessor.py,sha256=3njXO5xu2TPsC4dhR8-AjcI7oNK_T5gscwBvL3zheV4,2126
+Python_jp/runner.py,sha256=CL0X-uSEWa33UPj7HbDUKxkcbs1JxboSqmCTpbBMzUE,3134
+Python_jp/translator.py,sha256=3RaYfPRgrYf4L-CL77TNYfwWlGpuGIgXntpQw-mtLVI,2927
+Python_jp/utils.py,sha256=N_t9Jj3GF-9JJGSD09PlQQVBh_XlCR-jEqrR5xcfPvk,2373
+Python_jp-0.1.0.data/scripts/python_jp,sha256=l3rpSOjUgQS8RPORiQXgw6g0WUE_3nVLJZRu4DA-kGk,100
+Python_jp-0.1.0.dist-info/METADATA,sha256=PlTaTx8k18y4Vnn51NRG96GaxMYaenWSPgYmeOY6EpE,604
+Python_jp-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+Python_jp-0.1.0.dist-info/entry_points.txt,sha256=9M7oY0DZ6whubmvkRKjfQ0cyhzTeAUtBvEwpwlyqMiU,49
+Python_jp-0.1.0.dist-info/top_level.txt,sha256=L2vt8mJBAwLb9E5vR6OMaKfH13qduxGaKO67PTmnyr0,10
+Python_jp-0.1.0.dist-info/RECORD,,
