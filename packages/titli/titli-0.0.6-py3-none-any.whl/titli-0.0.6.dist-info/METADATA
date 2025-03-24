@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: titli
+Version: 0.0.6
+Summary: A library for collection of IDS and tools for evaluating them
+Home-page: https://github.com/spg-iitd/raids
+Author: Subrat Kumar Swain
+Author-email: mailofswainsubrat@gmail.com
+License: MIT
+Keywords: ids adversarial network nids
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Security
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scapy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: torchvision
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Titli
+Artificial Intelligence based Intrusion Detection Systems
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/titli)
+![PyPI - Version](https://img.shields.io/pypi/v/titli)
+![GitHub License](https://img.shields.io/github/license/spg-iitd/titli)
+
+### Installation
+```
+pip install titli
+```
+
+### Usage
+- Step 1: Copy the ```examples/train_ids.py``` and ```examples/test_ids.py``` file from the repo to your local machine.
+- Step 2: Run both the files to train and test the Kitsune IDS respectively.
+
+### Todo (Developer Tasks)
+- [ ] Check if RMSE is used for loss or just the difference.
+- [ ] Put Kitsune code into the base IDS format.
+- [ ] Write code to evaluate the model and calculate all the metrics.  
