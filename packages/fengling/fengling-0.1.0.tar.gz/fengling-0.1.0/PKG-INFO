@@ -1,0 +1,123 @@
+Metadata-Version: 2.4
+Name: fengling
+Version: 0.1.0
+Summary: 一个基于emoji的风铃进度条库,肥城泰西的风铃
+Home-page: https://github.com/ala/fengling
+Author: ala
+Author-email: ala9981@163.com
+Keywords: progress bar,emoji,animation,terminal,cli
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Fengling Progress
+
+A beautiful progress bar library with various emoji styles including fruits, windchimes, and dynamic animations.
+
+## Installation
+
+```bash
+pip install fengling
+```
+
+## Usage
+
+```python
+from fengling import WindchimeProgress
+
+# Create a progress bar with default style (windchime)
+progress = WindchimeProgress(total=100)
+
+# Update progress
+for i in range(100):
+    progress.update(i + 1)
+    # Do your work here
+    time.sleep(0.1)
+
+# Complete the progress bar
+progress.finish()
+```
+
+## Available Styles
+
+### Fruit Styles
+- 🍎 Red Apple (ala)
+- 🫐 Blueberry
+- 🍏 Green Apple
+- 🍊 Orange
+- 🍇 Grape
+- 🍓 Strawberry
+- 🍑 Peach
+- 🍐 Pear
+- 🍌 Banana
+- 🍉 Watermelon
+
+### Decorative Styles
+- 🎐 Windchime (default)
+- 🔔 Bell
+- 🎋 Chime
+- ⛩️ Temple
+- 🎀 Ribbon
+- ✨ Sparkle
+- ⭐ Star
+- 💎 Crystal
+
+### Dynamic Styles
+- 🏃 Running
+- 🚶 Walking
+- 🚶‍♂️ Strolling
+- 🚀 Rocket
+
+## Examples
+
+```python
+from fengling import WindchimeProgress
+import time
+
+# Show all available styles
+WindchimeProgress.show_styles()
+
+# Create a progress bar with specific style
+progress = WindchimeProgress(total=100, style='ala')  # Red apple style
+for i in range(100):
+    progress.update(i + 1)
+    time.sleep(0.1)
+progress.finish()
+
+# Try different styles
+progress = WindchimeProgress(total=100, style='rocket')  # Rocket style
+for i in range(100):
+    progress.update(i + 1)
+    time.sleep(0.1)
+progress.finish()
+```
+
+## Features
+
+- Beautiful emoji animations
+- Multiple style options
+- Color-coded progress bars
+- Simple and intuitive API
+- Customizable progress bar length
+- Support for percentage display
+- Elapsed time tracking
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
