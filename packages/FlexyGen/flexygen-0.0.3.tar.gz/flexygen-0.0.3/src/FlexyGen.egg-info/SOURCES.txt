@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/FlexyGen.egg-info/PKG-INFO
+src/FlexyGen.egg-info/SOURCES.txt
+src/FlexyGen.egg-info/dependency_links.txt
+src/FlexyGen.egg-info/top_level.txt
+src/flexygen/__init__.py
+src/flexygen/utils.py
+src/flexygen/mixins/__init__.py
+src/flexygen/mixins/base.py
+src/flexygen/mixins/callback.py
+src/flexygen/mixins/insertable.py
