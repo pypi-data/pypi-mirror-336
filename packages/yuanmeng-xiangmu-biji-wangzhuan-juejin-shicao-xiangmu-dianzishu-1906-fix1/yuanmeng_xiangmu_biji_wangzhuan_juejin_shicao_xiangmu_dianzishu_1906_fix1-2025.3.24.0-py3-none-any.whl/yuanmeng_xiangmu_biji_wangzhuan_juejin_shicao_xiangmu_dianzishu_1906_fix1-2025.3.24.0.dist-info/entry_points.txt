@@ -1,0 +1,3 @@
+[console_scripts]
+YuanmengXiangmuBijiWangzhuanJuejinShicaoXiangmuDianzishu1906Fix1 = YuanmengXiangmuBijiWangzhuanJuejinShicaoXiangmuDianzishu1906Fix1.__main__:main
+yuanmeng-xiangmu-biji-wangzhuan-juejin-shicao-xiangmu-dianzishu-1906-fix1 = YuanmengXiangmuBijiWangzhuanJuejinShicaoXiangmuDianzishu1906Fix1.__main__:main
