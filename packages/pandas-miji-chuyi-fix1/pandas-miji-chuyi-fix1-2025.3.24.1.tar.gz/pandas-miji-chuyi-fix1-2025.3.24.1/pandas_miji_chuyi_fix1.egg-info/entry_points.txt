@@ -1,0 +1,3 @@
+[console_scripts]
+PandasMijiChuyiFix1 = PandasMijiChuyiFix1.__main__:main
+pandas-miji-chuyi-fix1 = PandasMijiChuyiFix1.__main__:main
