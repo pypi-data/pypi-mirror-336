@@ -1,0 +1,1 @@
+from pypulse.View.decorators.route import view
