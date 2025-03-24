@@ -1,0 +1,92 @@
+Metadata-Version: 2.2
+Name: jomfish
+Version: 10.0
+Summary: Jomfish - A high-performance chess engine
+Author: Jimmy Luong
+Author-email: nguyenhungjimmy.luong@gmail.com
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# Jomfish
+
+## Jomfish Chess Engine
+
+Jomfish is a powerful and feature-complete chess engine written in Rust, now available as a Python package via PyPI. This makes it easy to integrate into Python projects without manual compilation. It is fully compliant with the Universal Chess Interface (UCI) protocol, making it easy to use with popular chess GUIs such as ChessBase, Arena, and others.
+
+---
+
+## Table of Contents
+
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Status](#status)
+- [Licensing and Availability](#licensing-and-availability)
+- [Why Choose Jomfish?](#why-choose-jomfish)
+
+---
+
+## Key Features
+
+- **Stockfish 11 Parity**: Jomfish includes all major features found in Stockfish 11, providing a high-performance engine capable of competing at advanced levels of play.
+- **No Neural Networks (NNUE)**: Unlike modern engines that rely on neural network-based evaluation, Jomfish exclusively uses classical evaluation methods. This ensures predictable and interpretable behavior during gameplay. Despite this, Jomfish has a very strong estimated performance of around 3200 Elo.
+- **Rust-Based Development**: The engine was developed using the Rust programming language, focusing on performance, safety, and reliability.
+- **Python Wrapper**: Jomfish is now available as a Python package, making it easy to install and use without manually compiling the Rust code.
+
+---
+
+## Installation
+
+Jomfish is available on PyPI and can be installed using pip:
+
+```bash
+pip install jomfish
+```
+
+This will automatically download and install the Jomfish wrapper along with the pre-compiled engine binary.
+
+---
+
+## Usage
+
+Once installed, you can use Jomfish in your CMD:
+
+```shell
+jomfish
+```
+
+This example demonstrates how to initialize the engine, analyze a position, and retrieve the best move.
+
+---
+
+## Status
+
+Jomfish is **no longer under active development**. The engine is considered feature-complete, as it includes all functionality comparable to Stockfish 11. No future updates or enhancements are planned, except for potential bug fixes.
+
+---
+
+## Licensing and Availability
+
+Jomfish is available for use and modification under the Stockfish GNU General Public License v3.0. The engine is provided as-is, with no guarantees or support.
+
+[LICENSE](https://github.com/github-jimjim/Jomfish/blob/main/Copying.txt)
+
+---
+
+## Why Choose Jomfish?
+
+Jomfish is ideal for users looking for a robust, NNUE-free chess engine with proven features and a strong competitive edge. By making it available on PyPI, it becomes even easier to integrate into Python-based chess projects without dealing with manual compilation steps.
+
+---
+
+<img src="./logo.ico" alt="Logo" width="512" height="512">
+

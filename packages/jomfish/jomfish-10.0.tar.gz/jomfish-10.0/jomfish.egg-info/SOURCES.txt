@@ -1,0 +1,10 @@
+README.md
+setup.py
+jomfish/__init__.py
+jomfish/wrapper.py
+jomfish.egg-info/PKG-INFO
+jomfish.egg-info/SOURCES.txt
+jomfish.egg-info/dependency_links.txt
+jomfish.egg-info/entry_points.txt
+jomfish.egg-info/top_level.txt
+jomfish/bin/jomfish.exe
