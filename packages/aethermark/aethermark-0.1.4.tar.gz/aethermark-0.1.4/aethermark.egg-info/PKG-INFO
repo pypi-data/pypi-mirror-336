@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aethermark
+Version: 0.1.4
+Summary: A test project using pybind11 and CMake
+Home-page: UNKNOWN
+Author: MukulWaval
+Author-email: mukulwaval2000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
