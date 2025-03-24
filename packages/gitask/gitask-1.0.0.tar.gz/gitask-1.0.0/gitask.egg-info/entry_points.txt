@@ -1,0 +1,3 @@
+[console_scripts]
+gitask = gitask.main:cli
+
