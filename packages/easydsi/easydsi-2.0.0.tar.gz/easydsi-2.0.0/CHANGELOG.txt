@@ -1,0 +1,10 @@
+Change Log
+=========
+
+1.2.1 (13/09/2022)
+-------------------
+New Features:
+- Binary Tree
+- Binary Search Tree
+- Min Heap
+- Max Heap
