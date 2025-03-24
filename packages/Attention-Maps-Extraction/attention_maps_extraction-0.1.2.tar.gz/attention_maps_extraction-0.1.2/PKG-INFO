@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Attention-Maps-Extraction
+Version: 0.1.2
+Summary: A package for extracting attention maps.
+Home-page: https://github.com/nbahador/Attention_Maps_Extraction
+Author: Nooshin Bahador
+Author-email: nooshin.bah@gmail.com
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: transformers
+Requires-Dist: peft
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: Pillow
