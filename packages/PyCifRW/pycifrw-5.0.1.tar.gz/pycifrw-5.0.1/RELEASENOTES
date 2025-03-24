@@ -1,0 +1,55 @@
+Release Notes for version 5.0.1
+===============================
+
+A bugfix release to fix deployment errors and get Github CI
+passing.
+
+Release Notes for version 5.0.0
+===============================
+
+Version 5.0 officially drops all support for Python 2.0.
+
+New since 4.4.6
+===============
+
+* New function ReadCifWithError may be used instead of ReadCif. It will not
+raise an Exception on a parse error, instead returning the
+partially populated CIF object and parse information.
+
+* Similar to the above, when the CifFile constructor is called with new option
+'allow_partial = True', parsing information is available
+by calling the get_parsing_result method on the returned
+CifFile object instead of raising an exception (thanks to Inigo Gabirondo
+for work on these two items).
+
+* Dictionary merging and validation has been improved (Inigo Gabirondo)
+
+* A helpful convert_to_canonical method is provided for CifFile objects. When
+called with a dictionary, data names are converted to canonical form
+(Inigo Gabirondo).
+
+* Previously deprecated methods and classes are now gone: AddCifItem, AddToLoop,
+and ValidCifFile
+
+Developer-visible changes
+=========================
+
+From version 5.0.0 noweb files (*.nw) for source have been removed. It was
+too much of a barrier for Windows-based developers to contribute. The
+.py files are now the canonical source, with the original literate
+programming sections converted to python comments.
+
+Python 3 notes
+==============
+
+* In the original Python 2 version, the top-level `CifFile` module
+imported everything from the `CifFile.py` and `StarFile.py`
+modules. This meant that it was sufficient for your code to include
+`from CifFile import x`, where x is anything defined in CifFile.py or
+StarFile.py.  This has been replicated in Python 3 by explicitly
+importing those classes and functions in CifFile_module.py and
+StarFile.py required for the tests to succeed. If your code uses a
+function not included in the tests (note that all classes and
+therefore their methods are included) you will need to refer to it as
+`CifFile.CifFile_module.x` (for a function named `x` in
+`CifFile_module.py`).
