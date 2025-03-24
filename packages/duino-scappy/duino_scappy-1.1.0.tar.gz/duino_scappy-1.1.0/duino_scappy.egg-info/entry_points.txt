@@ -1,0 +1,2 @@
+[console_scripts]
+duino-scapper = duino_scapper:DuinoScrapper.run

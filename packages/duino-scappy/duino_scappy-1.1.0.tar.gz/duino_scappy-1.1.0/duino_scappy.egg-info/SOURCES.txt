@@ -1,0 +1,9 @@
+README.md
+setup.py
+duino_scappy.egg-info/PKG-INFO
+duino_scappy.egg-info/SOURCES.txt
+duino_scappy.egg-info/dependency_links.txt
+duino_scappy.egg-info/entry_points.txt
+duino_scappy.egg-info/requires.txt
+duino_scappy.egg-info/top_level.txt
+duino_scrapper/__init__.py
