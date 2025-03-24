@@ -1,0 +1,3 @@
+[console_scripts]
+AiotWuLianwangKaifaShizhanXiaFix1 = AiotWuLianwangKaifaShizhanXiaFix1.__main__:main
+aiot-wu-lianwang-kaifa-shizhan-xia-fix1 = AiotWuLianwangKaifaShizhanXiaFix1.__main__:main
