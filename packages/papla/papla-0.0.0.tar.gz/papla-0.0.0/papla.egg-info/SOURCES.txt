@@ -1,0 +1,6 @@
+setup.py
+papla/__init__.py
+papla.egg-info/PKG-INFO
+papla.egg-info/SOURCES.txt
+papla.egg-info/dependency_links.txt
+papla.egg-info/top_level.txt
