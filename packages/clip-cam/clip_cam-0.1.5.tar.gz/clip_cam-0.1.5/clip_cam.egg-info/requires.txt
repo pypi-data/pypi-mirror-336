@@ -1,0 +1,7 @@
+torch
+numpy
+einops
+opencv-python
+matplotlib
+Pillow
+open_clip_torch==2.29.0

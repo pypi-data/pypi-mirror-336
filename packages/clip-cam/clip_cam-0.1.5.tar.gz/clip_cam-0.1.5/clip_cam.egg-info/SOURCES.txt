@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+clip/__init__.py
+clip/clip.py
+clip/model.py
+clip/simple_tokenizer.py
+clip_cam.egg-info/PKG-INFO
+clip_cam.egg-info/SOURCES.txt
+clip_cam.egg-info/dependency_links.txt
+clip_cam.egg-info/requires.txt
+clip_cam.egg-info/top_level.txt
+utils/__init__.py
+utils/processing.py
+utils/visualize.py
