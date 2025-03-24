@@ -1,0 +1,3 @@
+[console_scripts]
+GeiIterDeJishuQianyanKeFix1 = GeiIterDeJishuQianyanKeFix1.__main__:main
+gei-iter-de-jishu-qianyan-ke-fix1 = GeiIterDeJishuQianyanKeFix1.__main__:main
