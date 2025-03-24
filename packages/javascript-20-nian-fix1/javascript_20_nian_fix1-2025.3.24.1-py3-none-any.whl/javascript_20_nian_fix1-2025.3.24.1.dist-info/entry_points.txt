@@ -1,0 +1,3 @@
+[console_scripts]
+Javascript20NianFix1 = Javascript20NianFix1.__main__:main
+javascript-20-nian-fix1 = Javascript20NianFix1.__main__:main
