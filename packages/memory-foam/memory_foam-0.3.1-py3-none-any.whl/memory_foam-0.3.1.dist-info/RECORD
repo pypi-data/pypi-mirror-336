@@ -1,0 +1,15 @@
+memory_foam/__init__.py,sha256=rYXeslcXI835zrhLquIHhXQCzKh0LwlLsDzhP-LQ9_A,6606
+memory_foam/asyn.py,sha256=qOpPvF_4c7XB5URza8p4Q6d3WoinV-7QgUZ6AnUYXbE,944
+memory_foam/dttime.py,sha256=EhNw5NgSSMsD6WzBT_W2cj0-Mc3Ifo2VPmFC27a87YE,311
+memory_foam/file.py,sha256=KnFVbkC4JUE8LghTSaExmHr7LtKtdhFvE-Bklk4Y8gw,936
+memory_foam/glob.py,sha256=Y1MQaKfPSoABTOM9ZR4FnEWK-MavBcnmD96jgAG1SpQ,392
+memory_foam/client/__init__.py,sha256=1kDpCPoibMXi1gExR4lTLc5pi-k6M5TANiwtXkPoLhU,49
+memory_foam/client/azure.py,sha256=zte2EMZ2SbdQ6gku5ANjzQGmefskCW90Lsub4C__Vzg,3394
+memory_foam/client/fsspec.py,sha256=-z-Xvxd00A-_l2yDSANCuYqvAVd0YWXMvJ3ySc_vyLQ,10429
+memory_foam/client/gcs.py,sha256=crq-snxCZDtdXGAJRZ2BY2c-ggHn_k_XHcQp70evq98,3369
+memory_foam/client/s3.py,sha256=kTgwUFjHZKjjq3QInhypCH2KFkrgftmG33Q4Jr3bCcM,3693
+memory_foam-0.3.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+memory_foam-0.3.1.dist-info/METADATA,sha256=Su8wY6qEUvwN_EUA-vAme_LEBS_oUxKMUdYtoVhawDU,3513
+memory_foam-0.3.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+memory_foam-0.3.1.dist-info/top_level.txt,sha256=IRXnv-MLhKDovxOG2qhklYTdeA3T0GqYVDgLQjsUA-I,12
+memory_foam-0.3.1.dist-info/RECORD,,
