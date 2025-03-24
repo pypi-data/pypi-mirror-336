@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: comfit
+Version: 1.9.1
+Author: Vidar Skogvoll and Jonas Rønning
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: kaleido==0.2.1
+Requires-Dist: scikit-image>=0.25.2
+Requires-Dist: moviepy
+Requires-Dist: pillow
