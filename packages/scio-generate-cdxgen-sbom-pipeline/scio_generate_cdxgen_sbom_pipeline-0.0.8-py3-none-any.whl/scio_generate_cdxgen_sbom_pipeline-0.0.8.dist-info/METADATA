@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: scio_generate_cdxgen_sbom_pipeline
+Version: 0.0.8
+Summary: A plugin that adds a pipeline that creates sbom using cdxgen in scancodeio
+Home-page: https://github.com/supplyshield/cdxgen_scio_plugin
+Author: Rahul Sunder
+Author-email: rkillzboom@gmail.com
+License: MIT
+Keywords: utilities,scancodeio,pipelines
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: golicense_classifier==0.0.16
+Dynamic: license-file
