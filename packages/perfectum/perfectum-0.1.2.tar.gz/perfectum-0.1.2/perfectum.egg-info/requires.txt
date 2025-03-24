@@ -1,0 +1,9 @@
+
+[ftfy]
+ftfy
+
+[gpt]
+g4f
+
+[translate]
+googletrans
