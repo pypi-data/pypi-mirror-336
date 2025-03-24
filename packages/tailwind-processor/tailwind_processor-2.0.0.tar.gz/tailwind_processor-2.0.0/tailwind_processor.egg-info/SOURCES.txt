@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+tailwind_processor/__init__.py
+tailwind_processor/tailwind_processor.py
+tailwind_processor.egg-info/PKG-INFO
+tailwind_processor.egg-info/SOURCES.txt
+tailwind_processor.egg-info/dependency_links.txt
+tailwind_processor.egg-info/requires.txt
+tailwind_processor.egg-info/top_level.txt
+tailwind_processor/resources/__init__.py
+tailwind_processor/resources/config.js
+test/test_tailwind_processor.py
