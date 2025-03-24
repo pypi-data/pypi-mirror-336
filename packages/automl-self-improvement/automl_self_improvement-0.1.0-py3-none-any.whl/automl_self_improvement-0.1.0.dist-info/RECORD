@@ -1,0 +1,14 @@
+automl/api/app.py,sha256=2tboqts8q1-JpEObCrsWaUb98UwXFjEXJeOaXM7CyOc,1151
+automl/api/schemas.py,sha256=SOEPEDoGUEUc9RuNGQkun9XzJrdAhq-H5dXVO-iR3gU,36
+automl/core/config.py,sha256=N_Kgs6dy8I9KMnqxBap0Yrv3rGlLE2wBh4OBXufchIY,39
+automl/core/meta_env.py,sha256=OOUld0Z9Fa3EqjkMLQkpHRlSg66IpRsYPFb5f8kysOI,839
+automl/core/meta_learner.py,sha256=RF9CIxlrZFLdcLti7vcXN056Yd0Kk1z44avsJyRuYE4,1215
+automl/core/quantization.py,sha256=LpdH_4EH4-jtSpu8GV8njvB_wFiVZC0rWzqsGg4C1tc,750
+automl/data/augmentation.py,sha256=Wg2E5omQ7cQzntkSDJYo2dqhq3vkD0DYomiKfvlmOes,670
+automl/data/cleaning.py,sha256=kiznLoVTYNcuYSxuW47Mo07oT-7n6-L54QTpEKgAIPo,710
+automl/hyperparameters/bayesian_opt.py,sha256=tSGRTZ1akiUbMvqzU5JtK_ETEC9fRwBH6pFgr4ZsUqY,992
+automl/hyperparameters/evolutionary.py,sha256=Cj7Elc60MVITAAzT7K-z-3P2hAqLAj0TKzeB8VdG04I,909
+automl_self_improvement-0.1.0.dist-info/METADATA,sha256=-4lK2ANgAF3uiUzj1SITRTo0FeITAFTKDdCVUF6n4Pc,6316
+automl_self_improvement-0.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+automl_self_improvement-0.1.0.dist-info/top_level.txt,sha256=WcuHxxPFseyw1WsarVEyAnNVAgtdZE0kkE0OxoYoMa0,7
+automl_self_improvement-0.1.0.dist-info/RECORD,,
