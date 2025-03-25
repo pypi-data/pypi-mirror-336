@@ -1,0 +1,5 @@
+[metasyn.distribution_provider]
+metasyn-disclosure = metasyncontrib.disclosure.provider:DisclosureProvider
+
+[metasyn.privacy]
+disclosure = metasyncontrib.disclosure.privacy:DisclosurePrivacy
