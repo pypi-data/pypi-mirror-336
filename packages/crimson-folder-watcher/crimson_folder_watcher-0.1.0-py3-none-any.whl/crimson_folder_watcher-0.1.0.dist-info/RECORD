@@ -1,0 +1,10 @@
+crimson/folder_watcher/__init__.py,sha256=86c0rYb8mvZFivTnCrfUPk7ZQ6XeKjHMdOK4Pqas3iA,182
+crimson/folder_watcher/file_editor.py,sha256=0ZINQNzCMOKUkNMPQdv9XOCHoShRhJbqXjSJ90nCBLA,3450
+crimson/folder_watcher/filter.py,sha256=R3ARz7mz8gxRXGAWGENhc4tBY4C3qj1kB5okfKBYcVk,1779
+crimson/folder_watcher/watch_handler.py,sha256=PGdMBfZ2xQH18qfPW9jcUHewIJfhaJC16j1MCb3dWcQ,2897
+crimson/folder_watcher/watcher.py,sha256=OEoHhvZpcKmUTuNkBZ5A0419lJyRlnl17zRvmyJ9NBo,5102
+crimson_folder_watcher-0.1.0.dist-info/licenses/LICENSE,sha256=NAak_CnMzIX1nKL0QMNQzLO3acKR6tIJ1ErfKSeFkv4,1067
+crimson_folder_watcher-0.1.0.dist-info/METADATA,sha256=ejzmzgbdTCFWHmZ2iOhFt2uoE4igyYQNO41esZn8p4c,2033
+crimson_folder_watcher-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+crimson_folder_watcher-0.1.0.dist-info/top_level.txt,sha256=UjHBjSiQhr7eEWh0dB9e3WZ617y7vLEywXhGYfnzbw8,8
+crimson_folder_watcher-0.1.0.dist-info/RECORD,,
