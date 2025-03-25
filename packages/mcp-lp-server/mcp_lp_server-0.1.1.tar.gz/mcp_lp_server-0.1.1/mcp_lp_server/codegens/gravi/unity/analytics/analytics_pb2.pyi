@@ -1,0 +1,1688 @@
+import gs_options_pb2 as _gs_options_pb2
+from gravi.rpc.model.common import sketch_common_pb2 as _sketch_common_pb2
+from gravi.ui.model import ui_model_pb2 as _ui_model_pb2
+from gravi.rpc.model.inputs import sketch_inputs_pb2 as _sketch_inputs_pb2
+from gravi.models import preferences_pb2 as _preferences_pb2
+from gravi.models import gravi_model_pb2 as _gravi_model_pb2
+from google.protobuf.internal import containers as _containers
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from collections.abc import Iterable as _Iterable, Mapping as _Mapping
+from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class KickOutCollabReason(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    Unknown: _ClassVar[KickOutCollabReason]
+    InvalidTicket: _ClassVar[KickOutCollabReason]
+    ActorCreationErr: _ClassVar[KickOutCollabReason]
+    HostNonConnectable: _ClassVar[KickOutCollabReason]
+    ConnectorStopped: _ClassVar[KickOutCollabReason]
+    ReliableRpcTimeout: _ClassVar[KickOutCollabReason]
+    DevicePauseShutdown: _ClassVar[KickOutCollabReason]
+
+class PricingPlanPaywallSource(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownIngress: _ClassVar[PricingPlanPaywallSource]
+    LobbyBadge: _ClassVar[PricingPlanPaywallSource]
+    CollabRoomLimit: _ClassVar[PricingPlanPaywallSource]
+    StorageCapScreenshot: _ClassVar[PricingPlanPaywallSource]
+    StorageCapExport: _ClassVar[PricingPlanPaywallSource]
+    StorageCapSave: _ClassVar[PricingPlanPaywallSource]
+    StorageCapLPFileUpload: _ClassVar[PricingPlanPaywallSource]
+    ThrottledExportBanner: _ClassVar[PricingPlanPaywallSource]
+
+class SketchAppToolUsageSessionEndType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    InvalidEndSessionType: _ClassVar[SketchAppToolUsageSessionEndType]
+    DifferentToolUsageEndSession: _ClassVar[SketchAppToolUsageSessionEndType]
+    TimeoutEndSession: _ClassVar[SketchAppToolUsageSessionEndType]
+    ExitSketchEndSession: _ClassVar[SketchAppToolUsageSessionEndType]
+    EnterEditModeEndSession: _ClassVar[SketchAppToolUsageSessionEndType]
+    OpenToolSwitcherEndSession: _ClassVar[SketchAppToolUsageSessionEndType]
+
+class SketchAppToolType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    InvalidToolType: _ClassVar[SketchAppToolType]
+    DrawInkTool: _ClassVar[SketchAppToolType]
+    DrawStrokeTool: _ClassVar[SketchAppToolType]
+    DrawRevolveTool: _ClassVar[SketchAppToolType]
+    DrawVolumeTool: _ClassVar[SketchAppToolType]
+    DrawSubDRibbonTool: _ClassVar[SketchAppToolType]
+    DrawNURBSRibbonTool: _ClassVar[SketchAppToolType]
+    DrawSubDSurfaceTool: _ClassVar[SketchAppToolType]
+    DrawNURBSSurfaceTool: _ClassVar[SketchAppToolType]
+    DrawPrimitiveTool: _ClassVar[SketchAppToolType]
+    DrawSubDPrimitiveTool: _ClassVar[SketchAppToolType]
+    DrawTextTool: _ClassVar[SketchAppToolType]
+    DimensionTool: _ClassVar[SketchAppToolType]
+    CreateViewpointTool: _ClassVar[SketchAppToolType]
+    ObjectSelectionTool: _ClassVar[SketchAppToolType]
+    ColourPickerTool: _ClassVar[SketchAppToolType]
+    PaintbrushTool: _ClassVar[SketchAppToolType]
+    TeleporterTool: _ClassVar[SketchAppToolType]
+    LaserPointerTool: _ClassVar[SketchAppToolType]
+
+class SketchResumeType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ResumeFromUnknown: _ClassVar[SketchResumeType]
+    ResumeFromAutoSave: _ClassVar[SketchResumeType]
+    ResumeFromIncremental: _ClassVar[SketchResumeType]
+
+class WorkStyleTemplateType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    Default: _ClassVar[WorkStyleTemplateType]
+    SketchArtisticMode: _ClassVar[WorkStyleTemplateType]
+    DesignWorkAtScale: _ClassVar[WorkStyleTemplateType]
+    BuildLowFiModelling: _ClassVar[WorkStyleTemplateType]
+
+class AppTypes(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    VR: _ClassVar[AppTypes]
+    WebInspector: _ClassVar[AppTypes]
+    PadApp: _ClassVar[AppTypes]
+    ScreenBasedApp: _ClassVar[AppTypes]
+
+class MicrophonePreference(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    MicrophoneOff: _ClassVar[MicrophonePreference]
+    MicrophoneHoldUp: _ClassVar[MicrophonePreference]
+    MicrophoneAlwaysOn: _ClassVar[MicrophonePreference]
+
+class OtherUsersUiVisibilityPolicy(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ObservationModeOnly: _ClassVar[OtherUsersUiVisibilityPolicy]
+    AlwaysHide: _ClassVar[OtherUsersUiVisibilityPolicy]
+    AlwaysShow: _ClassVar[OtherUsersUiVisibilityPolicy]
+
+class ImportType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownImportType: _ClassVar[ImportType]
+    OBJImport: _ClassVar[ImportType]
+    IGESImport: _ClassVar[ImportType]
+    FBXImport: _ClassVar[ImportType]
+    BLENDImport: _ClassVar[ImportType]
+    GLBImport: _ClassVar[ImportType]
+    GLTFImport: _ClassVar[ImportType]
+    DAEImport: _ClassVar[ImportType]
+    STLImport: _ClassVar[ImportType]
+    ImportTypeImage: _ClassVar[ImportType]
+    ImportTypeVideo: _ClassVar[ImportType]
+    ImportTypeBuiltIn: _ClassVar[ImportType]
+    ImportTypeChassis: _ClassVar[ImportType]
+    GravitySketchFile: _ClassVar[ImportType]
+
+class ExportType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownExportType: _ClassVar[ExportType]
+    OBJExport: _ClassVar[ExportType]
+    FBXExport: _ClassVar[ExportType]
+    IGESExport: _ClassVar[ExportType]
+    USDZExport: _ClassVar[ExportType]
+    GLBExport: _ClassVar[ExportType]
+    MP4Export: _ClassVar[ExportType]
+    GRSExport: _ClassVar[ExportType]
+    GIFExport: _ClassVar[ExportType]
+    BlendExport: _ClassVar[ExportType]
+
+class ImportExportAction(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ImportExportActionUndefined: _ClassVar[ImportExportAction]
+    ImportExportActionGoToPreview: _ClassVar[ImportExportAction]
+    ImportExportActionGoToOneToOne: _ClassVar[ImportExportAction]
+    ImportExportActionGoToHome: _ClassVar[ImportExportAction]
+    ImportExportActionResetTransformation: _ClassVar[ImportExportAction]
+    ImportExportActionReCentre: _ClassVar[ImportExportAction]
+
+class SketchSaveType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownSketchSaveType: _ClassVar[SketchSaveType]
+    AutoSketchSave: _ClassVar[SketchSaveType]
+    LocalSketchSave: _ClassVar[SketchSaveType]
+    CloudSketchSave: _ClassVar[SketchSaveType]
+    PrefabSketchSave: _ClassVar[SketchSaveType]
+
+class FileLocation(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownLocation: _ClassVar[FileLocation]
+    Local: _ClassVar[FileLocation]
+    Cloud: _ClassVar[FileLocation]
+
+class EnterRoomType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownEnterRoomType: _ClassVar[EnterRoomType]
+    Normal: _ClassVar[EnterRoomType]
+    DeepLink: _ClassVar[EnterRoomType]
+    NotificationBySharedLink: _ClassVar[EnterRoomType]
+    NotificationByOthersInRoom: _ClassVar[EnterRoomType]
+
+class LeaveRoomType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownLeaveRoomType: _ClassVar[LeaveRoomType]
+    ManualExitToLobby: _ClassVar[LeaveRoomType]
+    QuitApp: _ClassVar[LeaveRoomType]
+    LostConnection: _ClassVar[LeaveRoomType]
+    OwnerNotPresentTimeout: _ClassVar[LeaveRoomType]
+
+class CameraViewType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    None: _ClassVar[CameraViewType]
+    Top: _ClassVar[CameraViewType]
+    Isometric: _ClassVar[CameraViewType]
+    Left: _ClassVar[CameraViewType]
+    Front: _ClassVar[CameraViewType]
+    Right: _ClassVar[CameraViewType]
+    Bottom: _ClassVar[CameraViewType]
+    Back: _ClassVar[CameraViewType]
+
+class ControlPointManipulationMode(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    NoManipulationMode: _ClassVar[ControlPointManipulationMode]
+    DefaultPoints: _ClassVar[ControlPointManipulationMode]
+    SplineNormals: _ClassVar[ControlPointManipulationMode]
+    SurfaceURows: _ClassVar[ControlPointManipulationMode]
+    SurfaceVRows: _ClassVar[ControlPointManipulationMode]
+    RiggedRotations: _ClassVar[ControlPointManipulationMode]
+    RiggedInverseKinematics: _ClassVar[ControlPointManipulationMode]
+    SubDSmart: _ClassVar[ControlPointManipulationMode]
+    SubDVertices: _ClassVar[ControlPointManipulationMode]
+    SubDEdges: _ClassVar[ControlPointManipulationMode]
+    SubDFaces: _ClassVar[ControlPointManipulationMode]
+    NonProportionalScale: _ClassVar[ControlPointManipulationMode]
+
+class ControlPointToolType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    NoTool: _ClassVar[ControlPointToolType]
+    NodePreviewer: _ClassVar[ControlPointToolType]
+    LoopCut: _ClassVar[ControlPointToolType]
+    Merge: _ClassVar[ControlPointToolType]
+    EdgeCut: _ClassVar[ControlPointToolType]
+    Smooth: _ClassVar[ControlPointToolType]
+    Crease: _ClassVar[ControlPointToolType]
+    Separate: _ClassVar[ControlPointToolType]
+    EdgeSplitter: _ClassVar[ControlPointToolType]
+
+class MicPreferenceChangeType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownMicPreferenceChangeType: _ClassVar[MicPreferenceChangeType]
+    TogglePanel: _ClassVar[MicPreferenceChangeType]
+    ClickVirtualMicButton: _ClassVar[MicPreferenceChangeType]
+    PressButtonOnController: _ClassVar[MicPreferenceChangeType]
+    Collab2D: _ClassVar[MicPreferenceChangeType]
+
+class ControllerHand(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    MainHand: _ClassVar[ControllerHand]
+    OffHand: _ClassVar[ControllerHand]
+
+class SceneScope(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UnknownScene: _ClassVar[SceneScope]
+    VRLobby: _ClassVar[SceneScope]
+    VRFirstSketch: _ClassVar[SceneScope]
+    VRSoloSketchRoom: _ClassVar[SceneScope]
+    Tethered2DMenu: _ClassVar[SceneScope]
+
+class ExitButtonLocation(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ExitButtonLocationUndefined: _ClassVar[ExitButtonLocation]
+    ExitButtonLocationSavePanel: _ClassVar[ExitButtonLocation]
+    ExitButtonLocationQuickAccess: _ClassVar[ExitButtonLocation]
+    ExitButtonLocationAdvancedMenu: _ClassVar[ExitButtonLocation]
+    ExitButtonOwnerNotPresentTimeout: _ClassVar[ExitButtonLocation]
+
+class AdvancedMenuPanelType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UndefinedAdvancedMenuPanel: _ClassVar[AdvancedMenuPanelType]
+    Save: _ClassVar[AdvancedMenuPanelType]
+    Settings: _ClassVar[AdvancedMenuPanelType]
+    Layers: _ClassVar[AdvancedMenuPanelType]
+    Users: _ClassVar[AdvancedMenuPanelType]
+    Orthographic: _ClassVar[AdvancedMenuPanelType]
+    Learn: _ClassVar[AdvancedMenuPanelType]
+    Debug: _ClassVar[AdvancedMenuPanelType]
+    RecordReplay: _ClassVar[AdvancedMenuPanelType]
+    Import: _ClassVar[AdvancedMenuPanelType]
+    ScreenShots: _ClassVar[AdvancedMenuPanelType]
+    SettingsAid: _ClassVar[AdvancedMenuPanelType]
+    SettingsPreference: _ClassVar[AdvancedMenuPanelType]
+    SettingsWorkspaceEnvironment: _ClassVar[AdvancedMenuPanelType]
+    SettingsBeta: _ClassVar[AdvancedMenuPanelType]
+    ImportCloud: _ClassVar[AdvancedMenuPanelType]
+    ImportBuiltIn: _ClassVar[AdvancedMenuPanelType]
+    ImportLocal: _ClassVar[AdvancedMenuPanelType]
+
+class ScreenPanelType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ScreenPanelTypeInvalid: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeComments: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeLayers: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeSettings: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeImport: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeExport: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeEnvironments: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeScreenshot: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeViewpoints: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeMembers: _ClassVar[ScreenPanelType]
+    ScreenPanelTypeShare: _ClassVar[ScreenPanelType]
+
+class MaterialPresetEditPanelTab(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    InvalidTab: _ClassVar[MaterialPresetEditPanelTab]
+    ColorWheelTab: _ClassVar[MaterialPresetEditPanelTab]
+    SegmentedColorWheelTab: _ClassVar[MaterialPresetEditPanelTab]
+    MaterialHistoryTab: _ClassVar[MaterialPresetEditPanelTab]
+
+class V6TutorialTask(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    InvalidTask: _ClassVar[V6TutorialTask]
+    QuickMaterialPanel: _ClassVar[V6TutorialTask]
+    Toolbox: _ClassVar[V6TutorialTask]
+
+class BasicSkillsStage(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    InvalidStage: _ClassVar[BasicSkillsStage]
+    Sketching: _ClassVar[BasicSkillsStage]
+    Grabbing: _ClassVar[BasicSkillsStage]
+    Undo: _ClassVar[BasicSkillsStage]
+    Completed: _ClassVar[BasicSkillsStage]
+
+class GSEventType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    INVALID: _ClassVar[GSEventType]
+    EventHandednessChanged: _ClassVar[GSEventType]
+    EventAppLaunched: _ClassVar[GSEventType]
+    EventAppQuit: _ClassVar[GSEventType]
+    EventMemoryWarningIssued: _ClassVar[GSEventType]
+    EventEnterOffline: _ClassVar[GSEventType]
+    EventOnlineSketchLoadedWithUnsyncedChanges: _ClassVar[GSEventType]
+    EventOnlineSketchSyncFailedWithConnectionError: _ClassVar[GSEventType]
+    EventOnlineSketchSyncFailedWithOfflineSession: _ClassVar[GSEventType]
+    EventOnlineSketchSyncSuccessOnExitSketch: _ClassVar[GSEventType]
+    EventOnlineSketchSyncFailOnExitSketch: _ClassVar[GSEventType]
+    EventStoreLoginFromPrompt: _ClassVar[GSEventType]
+    EventStoreSignUpFromPrompt: _ClassVar[GSEventType]
+    EventPressClosePromptButton: _ClassVar[GSEventType]
+    EventPressLoginButton: _ClassVar[GSEventType]
+    EventPressJoinNowButton: _ClassVar[GSEventType]
+    EventPressResendEmailButton: _ClassVar[GSEventType]
+    EventPressChangeEmailButton: _ClassVar[GSEventType]
+    EventLobbyClickFileManager: _ClassVar[GSEventType]
+    EventLobbyClickCollab: _ClassVar[GSEventType]
+    EventLobbyClickNewSketch: _ClassVar[GSEventType]
+    EventLobbyClickGallery: _ClassVar[GSEventType]
+    EventLobbyClickRecentFile1: _ClassVar[GSEventType]
+    EventLobbyClickRecentFile2: _ClassVar[GSEventType]
+    EventLobbyClickRecentFile3: _ClassVar[GSEventType]
+    EventLobbyBonusReferences: _ClassVar[GSEventType]
+    EventPressRejoinButton: _ClassVar[GSEventType]
+    EventLobbyListUsersInCollabRoom: _ClassVar[GSEventType]
+    EventLobbyLearnIconCLicked: _ClassVar[GSEventType]
+    EventLoginWithoutPasswordClicked: _ClassVar[GSEventType]
+    EventForgetPasswordClicked: _ClassVar[GSEventType]
+    EventLoginError: _ClassVar[GSEventType]
+    EventLobbyLearnInteractiveTutorialCLicked: _ClassVar[GSEventType]
+    EventLobbyLearnFeaturesWalkthroughCLicked: _ClassVar[GSEventType]
+    EventForgetPasswordRequestSent: _ClassVar[GSEventType]
+    EventResendForgetPasswordRequest: _ClassVar[GSEventType]
+    EventLoginWithoutPasswordMagicLinkSent: _ClassVar[GSEventType]
+    EventPressResendLoginWithoutPasswordMagicLink: _ClassVar[GSEventType]
+    EventLoginWithoutPasswordLoginSuccess: _ClassVar[GSEventType]
+    EventPressResendLoginToVRButtonOnLP: _ClassVar[GSEventType]
+    EventNotAskAgainToggleOn: _ClassVar[GSEventType]
+    EventAbortAttemptLogin: _ClassVar[GSEventType]
+    EventDeleteAutosavesWhenLogin: _ClassVar[GSEventType]
+    EventLobbyTemplates: _ClassVar[GSEventType]
+    EventLobbyCommunityCreations: _ClassVar[GSEventType]
+    EventWebTokenLogin: _ClassVar[GSEventType]
+    EventAttachEmail: _ClassVar[GSEventType]
+    EventCreateRoom: _ClassVar[GSEventType]
+    EventReleaseRoomLock: _ClassVar[GSEventType]
+    EventLaunchRoom: _ClassVar[GSEventType]
+    EventEnterRoom: _ClassVar[GSEventType]
+    EventDeleteRoom: _ClassVar[GSEventType]
+    EventShutdownRoom: _ClassVar[GSEventType]
+    EventUploadThumbnail: _ClassVar[GSEventType]
+    EventUploadDoc: _ClassVar[GSEventType]
+    EventDownloadDoc: _ClassVar[GSEventType]
+    EventDeleteDoc: _ClassVar[GSEventType]
+    EventDetachOculusLink: _ClassVar[GSEventType]
+    EventDetachSteamLink: _ClassVar[GSEventType]
+    EventSendPromoEmail: _ClassVar[GSEventType]
+    EventSwitchUserOrg: _ClassVar[GSEventType]
+    EventCreateFolder: _ClassVar[GSEventType]
+    EventJoinRoom: _ClassVar[GSEventType]
+    EventSketchStart: _ClassVar[GSEventType]
+    EventSketchClose: _ClassVar[GSEventType]
+    EventLeaveRoom: _ClassVar[GSEventType]
+    EventGallerySketchOpened: _ClassVar[GSEventType]
+    EventDuplicateAutoReturn: _ClassVar[GSEventType]
+    EventResetToNewSketch: _ClassVar[GSEventType]
+    EventNewEmptySketch: _ClassVar[GSEventType]
+    EventSearchDoc: _ClassVar[GSEventType]
+    EventReferenceLibrarySketchOpened: _ClassVar[GSEventType]
+    EventPublicRoomToggle: _ClassVar[GSEventType]
+    EventEditSessionCompleted: _ClassVar[GSEventType]
+    EventTimeOutWarningIssued: _ClassVar[GSEventType]
+    EventTimeOutWarningUserStayed: _ClassVar[GSEventType]
+    EventTimeOutWarningUserLeftRoom: _ClassVar[GSEventType]
+    EventTimeOutWarningUserKicked: _ClassVar[GSEventType]
+    EventStatelessVoiceChatUsed: _ClassVar[GSEventType]
+    EventStatelessClientSessionSyncUsed: _ClassVar[GSEventType]
+    EventWebSocketProbing: _ClassVar[GSEventType]
+    EventReCentreFunnel: _ClassVar[GSEventType]
+    EventLoadFileForImport: _ClassVar[GSEventType]
+    EventImportPreview: _ClassVar[GSEventType]
+    EventSketchFileImport: _ClassVar[GSEventType]
+    EventSketchOpened: _ClassVar[GSEventType]
+    EventSketchSaved: _ClassVar[GSEventType]
+    EventSketchImageImport: _ClassVar[GSEventType]
+    EventMannequinImport: _ClassVar[GSEventType]
+    EventStockContentHead: _ClassVar[GSEventType]
+    EventStockContentMannequin: _ClassVar[GSEventType]
+    EventChassisImport: _ClassVar[GSEventType]
+    EventSketchImport: _ClassVar[GSEventType]
+    EventSketchExport: _ClassVar[GSEventType]
+    EventImportAction: _ClassVar[GSEventType]
+    EventExportAction: _ClassVar[GSEventType]
+    EventMoveFileToLP: _ClassVar[GSEventType]
+    EventMoveFileToLocal: _ClassVar[GSEventType]
+    EventMoveDoc: _ClassVar[GSEventType]
+    EventSketchResumed: _ClassVar[GSEventType]
+    EventSketchSavePrefab: _ClassVar[GSEventType]
+    EventSketchRecovered: _ClassVar[GSEventType]
+    EventGSFileRepaired: _ClassVar[GSEventType]
+    EventQuickSave: _ClassVar[GSEventType]
+    EventQuickScreenshot: _ClassVar[GSEventType]
+    EventQuickExit: _ClassVar[GSEventType]
+    EventClickQuickBugReportButton: _ClassVar[GSEventType]
+    EventClickQuickMuteButton: _ClassVar[GSEventType]
+    EventClickQuickUnMuteButton: _ClassVar[GSEventType]
+    EventClickQuickHelpButton: _ClassVar[GSEventType]
+    EventQuickExport: _ClassVar[GSEventType]
+    EventClickQuickShareButton: _ClassVar[GSEventType]
+    EventConvertToSubD: _ClassVar[GSEventType]
+    EventRepairSubDSolo: _ClassVar[GSEventType]
+    EventRepairSubDCosketch: _ClassVar[GSEventType]
+    EventVideoWatched: _ClassVar[GSEventType]
+    EventOrthographicTaken: _ClassVar[GSEventType]
+    EventScreenshotTaken: _ClassVar[GSEventType]
+    EventVideoTipsWatched: _ClassVar[GSEventType]
+    EventPlayAutoPopupVideo: _ClassVar[GSEventType]
+    EventScreenshotSaved: _ClassVar[GSEventType]
+    EventLayersDeleted: _ClassVar[GSEventType]
+    EventLayersDuplicated: _ClassVar[GSEventType]
+    EventLayersAdded: _ClassVar[GSEventType]
+    EventLayersRenamed: _ClassVar[GSEventType]
+    EventLayersHidden: _ClassVar[GSEventType]
+    EventLayersUnhidden: _ClassVar[GSEventType]
+    EventLayersLocked: _ClassVar[GSEventType]
+    EventLayersUnlocked: _ClassVar[GSEventType]
+    EventLayersReordered: _ClassVar[GSEventType]
+    EventClickTakeThumbnailButton: _ClassVar[GSEventType]
+    EventCustomizedThumbnailTaken: _ClassVar[GSEventType]
+    EventCustomizedThumbnailSaved: _ClassVar[GSEventType]
+    EventAutoThumbnailSaved: _ClassVar[GSEventType]
+    EventCosketchRpcLatent: _ClassVar[GSEventType]
+    EventPaywallTriggered: _ClassVar[GSEventType]
+    EventViewPricingPlans: _ClassVar[GSEventType]
+    EventTriggerProPaywall: _ClassVar[GSEventType]
+    EventTriggerProTierCap: _ClassVar[GSEventType]
+    EventContactSalesTeamsPlan: _ClassVar[GSEventType]
+    EventContactSalesEnterprisePlan: _ClassVar[GSEventType]
+    EventSketchMirrorPlaneOn: _ClassVar[GSEventType]
+    EventSketchMirrorPlaneOff: _ClassVar[GSEventType]
+    EventToolUsageSessionCompleted: _ClassVar[GSEventType]
+    EventActiveABTestInExperience: _ClassVar[GSEventType]
+    EventClickABTestButton: _ClassVar[GSEventType]
+    EventClickABTestOpenSurvey: _ClassVar[GSEventType]
+    EventEditPanelDiscovered: _ClassVar[GSEventType]
+    EventEditPanelBasicHintShown: _ClassVar[GSEventType]
+    EventEditPanelAdvancedHintShown: _ClassVar[GSEventType]
+    EventCameraIsometricViewSelect: _ClassVar[GSEventType]
+    EventCameraPerspectiveMode: _ClassVar[GSEventType]
+    EventCameraFocalLengthChanged: _ClassVar[GSEventType]
+    EventCameraOrthoMode: _ClassVar[GSEventType]
+    EventEnvironmentPresetSelected: _ClassVar[GSEventType]
+    EventEnvironmentShadowSettingChanged: _ClassVar[GSEventType]
+    EventEnvironmentReflectionSettingChanged: _ClassVar[GSEventType]
+    EventEnvironmentHDRSettingChanged: _ClassVar[GSEventType]
+    EventInspectionStatisticsEnabled: _ClassVar[GSEventType]
+    EventPresentationTurntableRotationChanged: _ClassVar[GSEventType]
+    EventAnnotationCreated: _ClassVar[GSEventType]
+    EventMicrophonePreferenceChanged: _ClassVar[GSEventType]
+    EventMicrophoneStateWhenJoinRoom: _ClassVar[GSEventType]
+    EventKeyboardSuggestionTaken: _ClassVar[GSEventType]
+    EventPadCameraEnterDrawCamera: _ClassVar[GSEventType]
+    EventPadCameraEnterFreeCamera: _ClassVar[GSEventType]
+    EventPadCreateSwatch: _ClassVar[GSEventType]
+    EventPadDeleteSwatch: _ClassVar[GSEventType]
+    EventPadWorldAxesOn: _ClassVar[GSEventType]
+    EventPadWorldAxesOff: _ClassVar[GSEventType]
+    EventPadFloorGridOn: _ClassVar[GSEventType]
+    EventPadFloorGridOff: _ClassVar[GSEventType]
+    EventPadNavCubeOn: _ClassVar[GSEventType]
+    EventPadNavCubeOff: _ClassVar[GSEventType]
+    EventPadInputSmoothing1: _ClassVar[GSEventType]
+    EventPadInputSmoothing2: _ClassVar[GSEventType]
+    EventPadInputSmoothing3: _ClassVar[GSEventType]
+    EventPadInputSmoothing4: _ClassVar[GSEventType]
+    EventPadPenModeOn: _ClassVar[GSEventType]
+    EventPadPenModeOff: _ClassVar[GSEventType]
+    EventPadVerticalLockOn: _ClassVar[GSEventType]
+    EventPadVerticalLockOff: _ClassVar[GSEventType]
+    EventPadExploreWithoutSigningUp: _ClassVar[GSEventType]
+    EventPadEnterDrawingMode: _ClassVar[GSEventType]
+    EventPadEnterSelectingMode: _ClassVar[GSEventType]
+    EventPadEnterNavigationMode: _ClassVar[GSEventType]
+    EventPadEnterEditingMode: _ClassVar[GSEventType]
+    EventPadNavigateInfoPage: _ClassVar[GSEventType]
+    EventPadNavigateGalleryPage: _ClassVar[GSEventType]
+    EventChangeWorkStyleTemplate: _ClassVar[GSEventType]
+    EventClickLocalRecycleBinButton: _ClassVar[GSEventType]
+    EventClearCachedCoSketchAssets: _ClassVar[GSEventType]
+    EventLogoutAndDeleteAutoSaves: _ClassVar[GSEventType]
+    EventLogoutAndKeepAutoSaves: _ClassVar[GSEventType]
+    EventGenericErrorMessagePopUp: _ClassVar[GSEventType]
+    EventSaveSketchInChosenLocation: _ClassVar[GSEventType]
+    EventNotBootingWelcomeMessagePopUp: _ClassVar[GSEventType]
+    EventNotBootingGoToLandingPad: _ClassVar[GSEventType]
+    EventNotBootingRetryVR: _ClassVar[GSEventType]
+    EventNotBootingCloseApplication: _ClassVar[GSEventType]
+    EventSetLocalStorageType: _ClassVar[GSEventType]
+    EventEnterCameraToolMode: _ClassVar[GSEventType]
+    EventExitCameraToolMode: _ClassVar[GSEventType]
+    EventEnterCameraEditMode: _ClassVar[GSEventType]
+    EventEnterMiniMapMode: _ClassVar[GSEventType]
+    EventExitMiniMapMode: _ClassVar[GSEventType]
+    EventDimensionNewFeatureFlowSeen: _ClassVar[GSEventType]
+    EventSpectatorEnterFollowCamera: _ClassVar[GSEventType]
+    EventSpectatorEnterFreeCamera: _ClassVar[GSEventType]
+    EventSpectatorEnterViewPointCamera: _ClassVar[GSEventType]
+    EventSpectatorOpenViewpointPanel: _ClassVar[GSEventType]
+    EventSpectatorCreateViewpoint: _ClassVar[GSEventType]
+    EventSpectatorRenameViewpoint: _ClassVar[GSEventType]
+    EventSpectatorCreateAnnotation: _ClassVar[GSEventType]
+    EventSpectatorDeleteAnnotation: _ClassVar[GSEventType]
+    EventSpectatorCreateViewpointWithAnnotation: _ClassVar[GSEventType]
+    EventSpectatorSetOrbitPoint: _ClassVar[GSEventType]
+    EventSpectatorLaserPointerToggled: _ClassVar[GSEventType]
+    EventSpectatorCollabUserUiPolicySet: _ClassVar[GSEventType]
+    EventSpectatorCreatePenAnnotation: _ClassVar[GSEventType]
+    EventSpectatorDeletePenAnnotation: _ClassVar[GSEventType]
+    EventSpectatorDeleteViewpoint: _ClassVar[GSEventType]
+    EventSpectatorCreateViewpointWithPenAnnotation: _ClassVar[GSEventType]
+    EventSpectatorOpenPeoplePanel: _ClassVar[GSEventType]
+    EventSpectatorOpenInformationPanel: _ClassVar[GSEventType]
+    EventSpectatorOpenSettingsPanel: _ClassVar[GSEventType]
+    EventSpectatorOpenCameraControlsPanel: _ClassVar[GSEventType]
+    EventSpectatorNavCubeToggled: _ClassVar[GSEventType]
+    EventSpectatorViewpointsPlaySlideShow: _ClassVar[GSEventType]
+    EventSpectatorQuickNavViewpoints: _ClassVar[GSEventType]
+    EventSpectatorCopyShareLink: _ClassVar[GSEventType]
+    EventSpectatorLoadLocalFiles: _ClassVar[GSEventType]
+    EventOffsetSwitchedOn: _ClassVar[GSEventType]
+    EventOffsetSwitchedOff: _ClassVar[GSEventType]
+    EventOffsetBaked: _ClassVar[GSEventType]
+    EventOffHandClockSettingsMenuToggled: _ClassVar[GSEventType]
+    EventTimeReminderFrequencyUpdated: _ClassVar[GSEventType]
+    EventClockDisplayPreferenceUpdated: _ClassVar[GSEventType]
+    EventClickSaveButton: _ClassVar[GSEventType]
+    EventClickSaveAsButton: _ClassVar[GSEventType]
+    EventClickScreenshotButton: _ClassVar[GSEventType]
+    EventClickBugReportButton: _ClassVar[GSEventType]
+    EventClickExitToLobbyButton: _ClassVar[GSEventType]
+    EventClickNotifyToCollabButton: _ClassVar[GSEventType]
+    EventClickRemoveFromCollabButton: _ClassVar[GSEventType]
+    EventClickEmailInviteButton: _ClassVar[GSEventType]
+    EventGrabAndPressDeleteButtonToRemoveUser: _ClassVar[GSEventType]
+    EventClickListAllRoomAccessesButton: _ClassVar[GSEventType]
+    EventClickSendUserFeedback: _ClassVar[GSEventType]
+    EventClickListMyConnectionsButton: _ClassVar[GSEventType]
+    EventClickHelpButton: _ClassVar[GSEventType]
+    EventClickSendHelpEmailButton: _ClassVar[GSEventType]
+    EventClickConfirmSendHelpEmailButton: _ClassVar[GSEventType]
+    EventInSketchAdvancedMenuTabClicked: _ClassVar[GSEventType]
+    EventSavePanelTabNewSketchClicked: _ClassVar[GSEventType]
+    EventSavePanelTabExportClicked: _ClassVar[GSEventType]
+    EventHelpCentreTabSelected: _ClassVar[GSEventType]
+    EventHelpCentreLearningRoomsButtonClicked: _ClassVar[GSEventType]
+    EventHelpCentreSkillsAndExercisesButtonClicked: _ClassVar[GSEventType]
+    EventHelpCentreRequestHelpViaEmailButtonClicked: _ClassVar[GSEventType]
+    EventHelpCentreReportButtonClicked: _ClassVar[GSEventType]
+    EventFAQExpanded: _ClassVar[GSEventType]
+    EventLearningRoomClicked: _ClassVar[GSEventType]
+    EventLearningRoomCompleted: _ClassVar[GSEventType]
+    EventLearningCourseClicked: _ClassVar[GSEventType]
+    EventRequestCertificationClicked: _ClassVar[GSEventType]
+    EventRequestCertificationSubmitted: _ClassVar[GSEventType]
+    EventClickOpenBetaWebBrowser: _ClassVar[GSEventType]
+    EventGrabImageFromWebBrowser: _ClassVar[GSEventType]
+    EventClickYoutubeButtonWebBrowser: _ClassVar[GSEventType]
+    EventClickZendeskButtonWebBrowser: _ClassVar[GSEventType]
+    EventClickLandingPadButtonWebBrowser: _ClassVar[GSEventType]
+    EventClickSketchLearnVideoCategory: _ClassVar[GSEventType]
+    EventClickSketchLearnVideoGroup: _ClassVar[GSEventType]
+    EventClickSketchLearnVideoItem: _ClassVar[GSEventType]
+    EventSketchLearnVideoGroupCompleted: _ClassVar[GSEventType]
+    EventSketchLearnVideoItemCompleted: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerPlay: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerPause: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerUnmute: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerMute: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerSeek: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerSetSpeed: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerPin: _ClassVar[GSEventType]
+    EventClickVideoSketchObjectControllerUnpin: _ClassVar[GSEventType]
+    EventSketchRenamed: _ClassVar[GSEventType]
+    EventRoomRenamed: _ClassVar[GSEventType]
+    EventFolderRenamed: _ClassVar[GSEventType]
+    EventNotificationToCollabSent: _ClassVar[GSEventType]
+    EventInvitedUserToRoom: _ClassVar[GSEventType]
+    EventRemovedUserFromRoom: _ClassVar[GSEventType]
+    EventInviteToCollabNotificationIgnored: _ClassVar[GSEventType]
+    EventEnterRoomFromInviteToCollabNotification: _ClassVar[GSEventType]
+    EventStartHostColocationSession: _ClassVar[GSEventType]
+    EventEndHostColocationSession: _ClassVar[GSEventType]
+    EventStartFollowColocationSession: _ClassVar[GSEventType]
+    EventEndFollowColocationSession: _ClassVar[GSEventType]
+    EventSubDToolPicked: _ClassVar[GSEventType]
+    EventSubDSeparatePerformed: _ClassVar[GSEventType]
+    EventPassthroughStatusChanged: _ClassVar[GSEventType]
+    EventPassthroughPeek: _ClassVar[GSEventType]
+    EventNavigationLockCreated: _ClassVar[GSEventType]
+    EventNavigationLockStatusChanged: _ClassVar[GSEventType]
+    EventStylusStatusChanged: _ClassVar[GSEventType]
+    EventSelectBrushPreset: _ClassVar[GSEventType]
+    EventOpenBrushEditPanel: _ClassVar[GSEventType]
+    EventResetAllBrushes: _ClassVar[GSEventType]
+    EventSelectBrushCategory: _ClassVar[GSEventType]
+    EventRenameBrushPreset: _ClassVar[GSEventType]
+    EventSelectMaterialPreset: _ClassVar[GSEventType]
+    EventOpenMaterialPresetEditPanel: _ClassVar[GSEventType]
+    EventRenameMaterialPreset: _ClassVar[GSEventType]
+    EventSelectMaterialEditPanelTab: _ClassVar[GSEventType]
+    EventOpenMenu: _ClassVar[GSEventType]
+    EventPeriodSpentInCollab: _ClassVar[GSEventType]
+    EventPeriodSpentInSoloSketch: _ClassVar[GSEventType]
+    EventSketchToolChanged: _ClassVar[GSEventType]
+    EventEditToolChanged: _ClassVar[GSEventType]
+    EventExportToolChanged: _ClassVar[GSEventType]
+    EventSelectionToolTypeChanged: _ClassVar[GSEventType]
+    EventShowSelectionTransformGizmo: _ClassVar[GSEventType]
+    EventStartMoveGumballInteraction: _ClassVar[GSEventType]
+    EventStartSelectionGumballInteraction: _ClassVar[GSEventType]
+    EventRecenterMirrorGumballInteraction: _ClassVar[GSEventType]
+    EventEnterViewerMode: _ClassVar[GSEventType]
+    EventExitViewerMode: _ClassVar[GSEventType]
+    EventImmersiveModeEntered: _ClassVar[GSEventType]
+    EventBeginGrabbedObjectMaterialChange: _ClassVar[GSEventType]
+    EventLoadFirstSketchAtAppLaunch: _ClassVar[GSEventType]
+    EventLoadFirstSketchManually: _ClassVar[GSEventType]
+    EventSkipFirstSketchAtOptIn: _ClassVar[GSEventType]
+    EventExitFirstSketchDuringExperience: _ClassVar[GSEventType]
+    EventStartFirstSketch: _ClassVar[GSEventType]
+    EventCompleteFirstSketch: _ClassVar[GSEventType]
+    EventCompleteFirstSketchNextSteps: _ClassVar[GSEventType]
+    EventFirstSketchSendEmailClicked: _ClassVar[GSEventType]
+    EventFirstSketchSendEmailSkipped: _ClassVar[GSEventType]
+    EventFirstSketchSendEmailConfirmed: _ClassVar[GSEventType]
+    EventFirstSketchSendEmailFailed: _ClassVar[GSEventType]
+    EventFirstSketchTaskCompleted: _ClassVar[GSEventType]
+    EventFirstSketchLearnMoreAccept: _ClassVar[GSEventType]
+    EventFirstSketchLearnMoreSkip: _ClassVar[GSEventType]
+    EventStartV6Tutorial: _ClassVar[GSEventType]
+    EventExitV6TutorialEarly: _ClassVar[GSEventType]
+    EventCompleteV6Tutorial: _ClassVar[GSEventType]
+    EventV6TutorialTaskCompleted: _ClassVar[GSEventType]
+    EventV6TutorialLoadWalkthrough: _ClassVar[GSEventType]
+    EventV6TutorialLoadWalkthroughFailed: _ClassVar[GSEventType]
+    EventV6TutorialSkipWalkthrough: _ClassVar[GSEventType]
+    EventStartBasicSkills: _ClassVar[GSEventType]
+    EventExitBasicSkills: _ClassVar[GSEventType]
+    EventCompleteFirstStepInStageBasicSkills: _ClassVar[GSEventType]
+    EventCompleteStageBasicSkills: _ClassVar[GSEventType]
+    EventClickContinueBasicSkills: _ClassVar[GSEventType]
+    EventCompleteBasicSkills: _ClassVar[GSEventType]
+    EventClickNextModulesBasicSkills: _ClassVar[GSEventType]
+    EventPauseVideoBasicSkills: _ClassVar[GSEventType]
+    EventPlayVideoBasicSkills: _ClassVar[GSEventType]
+    EventScrubVideoBasicSkills: _ClassVar[GSEventType]
+    EventSketchExperienceRecentre: _ClassVar[GSEventType]
+    EventSketchExperienceMisaligned: _ClassVar[GSEventType]
+    EventCompleteHintFlow: _ClassVar[GSEventType]
+    EventActivatedHintFlow: _ClassVar[GSEventType]
+    EventSelfDiscoverHintFlow: _ClassVar[GSEventType]
+    EventLaunchSelfOnboardingRoom: _ClassVar[GSEventType]
+    EventImportedVideoWatchProgress: _ClassVar[GSEventType]
+    EventOpenScreenPanel: _ClassVar[GSEventType]
+    EventTranscribe: _ClassVar[GSEventType]
+    EventCollabCertificateValidationFailure: _ClassVar[GSEventType]
+    EventKickOutCollab: _ClassVar[GSEventType]
+
+class BatchEventResponseCode(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    Invalid: _ClassVar[BatchEventResponseCode]
+    Success: _ClassVar[BatchEventResponseCode]
+Unknown: KickOutCollabReason
+InvalidTicket: KickOutCollabReason
+ActorCreationErr: KickOutCollabReason
+HostNonConnectable: KickOutCollabReason
+ConnectorStopped: KickOutCollabReason
+ReliableRpcTimeout: KickOutCollabReason
+DevicePauseShutdown: KickOutCollabReason
+UnknownIngress: PricingPlanPaywallSource
+LobbyBadge: PricingPlanPaywallSource
+CollabRoomLimit: PricingPlanPaywallSource
+StorageCapScreenshot: PricingPlanPaywallSource
+StorageCapExport: PricingPlanPaywallSource
+StorageCapSave: PricingPlanPaywallSource
+StorageCapLPFileUpload: PricingPlanPaywallSource
+ThrottledExportBanner: PricingPlanPaywallSource
+InvalidEndSessionType: SketchAppToolUsageSessionEndType
+DifferentToolUsageEndSession: SketchAppToolUsageSessionEndType
+TimeoutEndSession: SketchAppToolUsageSessionEndType
+ExitSketchEndSession: SketchAppToolUsageSessionEndType
+EnterEditModeEndSession: SketchAppToolUsageSessionEndType
+OpenToolSwitcherEndSession: SketchAppToolUsageSessionEndType
+InvalidToolType: SketchAppToolType
+DrawInkTool: SketchAppToolType
+DrawStrokeTool: SketchAppToolType
+DrawRevolveTool: SketchAppToolType
+DrawVolumeTool: SketchAppToolType
+DrawSubDRibbonTool: SketchAppToolType
+DrawNURBSRibbonTool: SketchAppToolType
+DrawSubDSurfaceTool: SketchAppToolType
+DrawNURBSSurfaceTool: SketchAppToolType
+DrawPrimitiveTool: SketchAppToolType
+DrawSubDPrimitiveTool: SketchAppToolType
+DrawTextTool: SketchAppToolType
+DimensionTool: SketchAppToolType
+CreateViewpointTool: SketchAppToolType
+ObjectSelectionTool: SketchAppToolType
+ColourPickerTool: SketchAppToolType
+PaintbrushTool: SketchAppToolType
+TeleporterTool: SketchAppToolType
+LaserPointerTool: SketchAppToolType
+ResumeFromUnknown: SketchResumeType
+ResumeFromAutoSave: SketchResumeType
+ResumeFromIncremental: SketchResumeType
+Default: WorkStyleTemplateType
+SketchArtisticMode: WorkStyleTemplateType
+DesignWorkAtScale: WorkStyleTemplateType
+BuildLowFiModelling: WorkStyleTemplateType
+VR: AppTypes
+WebInspector: AppTypes
+PadApp: AppTypes
+ScreenBasedApp: AppTypes
+MicrophoneOff: MicrophonePreference
+MicrophoneHoldUp: MicrophonePreference
+MicrophoneAlwaysOn: MicrophonePreference
+ObservationModeOnly: OtherUsersUiVisibilityPolicy
+AlwaysHide: OtherUsersUiVisibilityPolicy
+AlwaysShow: OtherUsersUiVisibilityPolicy
+UnknownImportType: ImportType
+OBJImport: ImportType
+IGESImport: ImportType
+FBXImport: ImportType
+BLENDImport: ImportType
+GLBImport: ImportType
+GLTFImport: ImportType
+DAEImport: ImportType
+STLImport: ImportType
+ImportTypeImage: ImportType
+ImportTypeVideo: ImportType
+ImportTypeBuiltIn: ImportType
+ImportTypeChassis: ImportType
+GravitySketchFile: ImportType
+UnknownExportType: ExportType
+OBJExport: ExportType
+FBXExport: ExportType
+IGESExport: ExportType
+USDZExport: ExportType
+GLBExport: ExportType
+MP4Export: ExportType
+GRSExport: ExportType
+GIFExport: ExportType
+BlendExport: ExportType
+ImportExportActionUndefined: ImportExportAction
+ImportExportActionGoToPreview: ImportExportAction
+ImportExportActionGoToOneToOne: ImportExportAction
+ImportExportActionGoToHome: ImportExportAction
+ImportExportActionResetTransformation: ImportExportAction
+ImportExportActionReCentre: ImportExportAction
+UnknownSketchSaveType: SketchSaveType
+AutoSketchSave: SketchSaveType
+LocalSketchSave: SketchSaveType
+CloudSketchSave: SketchSaveType
+PrefabSketchSave: SketchSaveType
+UnknownLocation: FileLocation
+Local: FileLocation
+Cloud: FileLocation
+UnknownEnterRoomType: EnterRoomType
+Normal: EnterRoomType
+DeepLink: EnterRoomType
+NotificationBySharedLink: EnterRoomType
+NotificationByOthersInRoom: EnterRoomType
+UnknownLeaveRoomType: LeaveRoomType
+ManualExitToLobby: LeaveRoomType
+QuitApp: LeaveRoomType
+LostConnection: LeaveRoomType
+OwnerNotPresentTimeout: LeaveRoomType
+None: CameraViewType
+Top: CameraViewType
+Isometric: CameraViewType
+Left: CameraViewType
+Front: CameraViewType
+Right: CameraViewType
+Bottom: CameraViewType
+Back: CameraViewType
+NoManipulationMode: ControlPointManipulationMode
+DefaultPoints: ControlPointManipulationMode
+SplineNormals: ControlPointManipulationMode
+SurfaceURows: ControlPointManipulationMode
+SurfaceVRows: ControlPointManipulationMode
+RiggedRotations: ControlPointManipulationMode
+RiggedInverseKinematics: ControlPointManipulationMode
+SubDSmart: ControlPointManipulationMode
+SubDVertices: ControlPointManipulationMode
+SubDEdges: ControlPointManipulationMode
+SubDFaces: ControlPointManipulationMode
+NonProportionalScale: ControlPointManipulationMode
+NoTool: ControlPointToolType
+NodePreviewer: ControlPointToolType
+LoopCut: ControlPointToolType
+Merge: ControlPointToolType
+EdgeCut: ControlPointToolType
+Smooth: ControlPointToolType
+Crease: ControlPointToolType
+Separate: ControlPointToolType
+EdgeSplitter: ControlPointToolType
+UnknownMicPreferenceChangeType: MicPreferenceChangeType
+TogglePanel: MicPreferenceChangeType
+ClickVirtualMicButton: MicPreferenceChangeType
+PressButtonOnController: MicPreferenceChangeType
+Collab2D: MicPreferenceChangeType
+MainHand: ControllerHand
+OffHand: ControllerHand
+UnknownScene: SceneScope
+VRLobby: SceneScope
+VRFirstSketch: SceneScope
+VRSoloSketchRoom: SceneScope
+Tethered2DMenu: SceneScope
+ExitButtonLocationUndefined: ExitButtonLocation
+ExitButtonLocationSavePanel: ExitButtonLocation
+ExitButtonLocationQuickAccess: ExitButtonLocation
+ExitButtonLocationAdvancedMenu: ExitButtonLocation
+ExitButtonOwnerNotPresentTimeout: ExitButtonLocation
+UndefinedAdvancedMenuPanel: AdvancedMenuPanelType
+Save: AdvancedMenuPanelType
+Settings: AdvancedMenuPanelType
+Layers: AdvancedMenuPanelType
+Users: AdvancedMenuPanelType
+Orthographic: AdvancedMenuPanelType
+Learn: AdvancedMenuPanelType
+Debug: AdvancedMenuPanelType
+RecordReplay: AdvancedMenuPanelType
+Import: AdvancedMenuPanelType
+ScreenShots: AdvancedMenuPanelType
+SettingsAid: AdvancedMenuPanelType
+SettingsPreference: AdvancedMenuPanelType
+SettingsWorkspaceEnvironment: AdvancedMenuPanelType
+SettingsBeta: AdvancedMenuPanelType
+ImportCloud: AdvancedMenuPanelType
+ImportBuiltIn: AdvancedMenuPanelType
+ImportLocal: AdvancedMenuPanelType
+ScreenPanelTypeInvalid: ScreenPanelType
+ScreenPanelTypeComments: ScreenPanelType
+ScreenPanelTypeLayers: ScreenPanelType
+ScreenPanelTypeSettings: ScreenPanelType
+ScreenPanelTypeImport: ScreenPanelType
+ScreenPanelTypeExport: ScreenPanelType
+ScreenPanelTypeEnvironments: ScreenPanelType
+ScreenPanelTypeScreenshot: ScreenPanelType
+ScreenPanelTypeViewpoints: ScreenPanelType
+ScreenPanelTypeMembers: ScreenPanelType
+ScreenPanelTypeShare: ScreenPanelType
+InvalidTab: MaterialPresetEditPanelTab
+ColorWheelTab: MaterialPresetEditPanelTab
+SegmentedColorWheelTab: MaterialPresetEditPanelTab
+MaterialHistoryTab: MaterialPresetEditPanelTab
+InvalidTask: V6TutorialTask
+QuickMaterialPanel: V6TutorialTask
+Toolbox: V6TutorialTask
+InvalidStage: BasicSkillsStage
+Sketching: BasicSkillsStage
+Grabbing: BasicSkillsStage
+Undo: BasicSkillsStage
+Completed: BasicSkillsStage
+INVALID: GSEventType
+EventHandednessChanged: GSEventType
+EventAppLaunched: GSEventType
+EventAppQuit: GSEventType
+EventMemoryWarningIssued: GSEventType
+EventEnterOffline: GSEventType
+EventOnlineSketchLoadedWithUnsyncedChanges: GSEventType
+EventOnlineSketchSyncFailedWithConnectionError: GSEventType
+EventOnlineSketchSyncFailedWithOfflineSession: GSEventType
+EventOnlineSketchSyncSuccessOnExitSketch: GSEventType
+EventOnlineSketchSyncFailOnExitSketch: GSEventType
+EventStoreLoginFromPrompt: GSEventType
+EventStoreSignUpFromPrompt: GSEventType
+EventPressClosePromptButton: GSEventType
+EventPressLoginButton: GSEventType
+EventPressJoinNowButton: GSEventType
+EventPressResendEmailButton: GSEventType
+EventPressChangeEmailButton: GSEventType
+EventLobbyClickFileManager: GSEventType
+EventLobbyClickCollab: GSEventType
+EventLobbyClickNewSketch: GSEventType
+EventLobbyClickGallery: GSEventType
+EventLobbyClickRecentFile1: GSEventType
+EventLobbyClickRecentFile2: GSEventType
+EventLobbyClickRecentFile3: GSEventType
+EventLobbyBonusReferences: GSEventType
+EventPressRejoinButton: GSEventType
+EventLobbyListUsersInCollabRoom: GSEventType
+EventLobbyLearnIconCLicked: GSEventType
+EventLoginWithoutPasswordClicked: GSEventType
+EventForgetPasswordClicked: GSEventType
+EventLoginError: GSEventType
+EventLobbyLearnInteractiveTutorialCLicked: GSEventType
+EventLobbyLearnFeaturesWalkthroughCLicked: GSEventType
+EventForgetPasswordRequestSent: GSEventType
+EventResendForgetPasswordRequest: GSEventType
+EventLoginWithoutPasswordMagicLinkSent: GSEventType
+EventPressResendLoginWithoutPasswordMagicLink: GSEventType
+EventLoginWithoutPasswordLoginSuccess: GSEventType
+EventPressResendLoginToVRButtonOnLP: GSEventType
+EventNotAskAgainToggleOn: GSEventType
+EventAbortAttemptLogin: GSEventType
+EventDeleteAutosavesWhenLogin: GSEventType
+EventLobbyTemplates: GSEventType
+EventLobbyCommunityCreations: GSEventType
+EventWebTokenLogin: GSEventType
+EventAttachEmail: GSEventType
+EventCreateRoom: GSEventType
+EventReleaseRoomLock: GSEventType
+EventLaunchRoom: GSEventType
+EventEnterRoom: GSEventType
+EventDeleteRoom: GSEventType
+EventShutdownRoom: GSEventType
+EventUploadThumbnail: GSEventType
+EventUploadDoc: GSEventType
+EventDownloadDoc: GSEventType
+EventDeleteDoc: GSEventType
+EventDetachOculusLink: GSEventType
+EventDetachSteamLink: GSEventType
+EventSendPromoEmail: GSEventType
+EventSwitchUserOrg: GSEventType
+EventCreateFolder: GSEventType
+EventJoinRoom: GSEventType
+EventSketchStart: GSEventType
+EventSketchClose: GSEventType
+EventLeaveRoom: GSEventType
+EventGallerySketchOpened: GSEventType
+EventDuplicateAutoReturn: GSEventType
+EventResetToNewSketch: GSEventType
+EventNewEmptySketch: GSEventType
+EventSearchDoc: GSEventType
+EventReferenceLibrarySketchOpened: GSEventType
+EventPublicRoomToggle: GSEventType
+EventEditSessionCompleted: GSEventType
+EventTimeOutWarningIssued: GSEventType
+EventTimeOutWarningUserStayed: GSEventType
+EventTimeOutWarningUserLeftRoom: GSEventType
+EventTimeOutWarningUserKicked: GSEventType
+EventStatelessVoiceChatUsed: GSEventType
+EventStatelessClientSessionSyncUsed: GSEventType
+EventWebSocketProbing: GSEventType
+EventReCentreFunnel: GSEventType
+EventLoadFileForImport: GSEventType
+EventImportPreview: GSEventType
+EventSketchFileImport: GSEventType
+EventSketchOpened: GSEventType
+EventSketchSaved: GSEventType
+EventSketchImageImport: GSEventType
+EventMannequinImport: GSEventType
+EventStockContentHead: GSEventType
+EventStockContentMannequin: GSEventType
+EventChassisImport: GSEventType
+EventSketchImport: GSEventType
+EventSketchExport: GSEventType
+EventImportAction: GSEventType
+EventExportAction: GSEventType
+EventMoveFileToLP: GSEventType
+EventMoveFileToLocal: GSEventType
+EventMoveDoc: GSEventType
+EventSketchResumed: GSEventType
+EventSketchSavePrefab: GSEventType
+EventSketchRecovered: GSEventType
+EventGSFileRepaired: GSEventType
+EventQuickSave: GSEventType
+EventQuickScreenshot: GSEventType
+EventQuickExit: GSEventType
+EventClickQuickBugReportButton: GSEventType
+EventClickQuickMuteButton: GSEventType
+EventClickQuickUnMuteButton: GSEventType
+EventClickQuickHelpButton: GSEventType
+EventQuickExport: GSEventType
+EventClickQuickShareButton: GSEventType
+EventConvertToSubD: GSEventType
+EventRepairSubDSolo: GSEventType
+EventRepairSubDCosketch: GSEventType
+EventVideoWatched: GSEventType
+EventOrthographicTaken: GSEventType
+EventScreenshotTaken: GSEventType
+EventVideoTipsWatched: GSEventType
+EventPlayAutoPopupVideo: GSEventType
+EventScreenshotSaved: GSEventType
+EventLayersDeleted: GSEventType
+EventLayersDuplicated: GSEventType
+EventLayersAdded: GSEventType
+EventLayersRenamed: GSEventType
+EventLayersHidden: GSEventType
+EventLayersUnhidden: GSEventType
+EventLayersLocked: GSEventType
+EventLayersUnlocked: GSEventType
+EventLayersReordered: GSEventType
+EventClickTakeThumbnailButton: GSEventType
+EventCustomizedThumbnailTaken: GSEventType
+EventCustomizedThumbnailSaved: GSEventType
+EventAutoThumbnailSaved: GSEventType
+EventCosketchRpcLatent: GSEventType
+EventPaywallTriggered: GSEventType
+EventViewPricingPlans: GSEventType
+EventTriggerProPaywall: GSEventType
+EventTriggerProTierCap: GSEventType
+EventContactSalesTeamsPlan: GSEventType
+EventContactSalesEnterprisePlan: GSEventType
+EventSketchMirrorPlaneOn: GSEventType
+EventSketchMirrorPlaneOff: GSEventType
+EventToolUsageSessionCompleted: GSEventType
+EventActiveABTestInExperience: GSEventType
+EventClickABTestButton: GSEventType
+EventClickABTestOpenSurvey: GSEventType
+EventEditPanelDiscovered: GSEventType
+EventEditPanelBasicHintShown: GSEventType
+EventEditPanelAdvancedHintShown: GSEventType
+EventCameraIsometricViewSelect: GSEventType
+EventCameraPerspectiveMode: GSEventType
+EventCameraFocalLengthChanged: GSEventType
+EventCameraOrthoMode: GSEventType
+EventEnvironmentPresetSelected: GSEventType
+EventEnvironmentShadowSettingChanged: GSEventType
+EventEnvironmentReflectionSettingChanged: GSEventType
+EventEnvironmentHDRSettingChanged: GSEventType
+EventInspectionStatisticsEnabled: GSEventType
+EventPresentationTurntableRotationChanged: GSEventType
+EventAnnotationCreated: GSEventType
+EventMicrophonePreferenceChanged: GSEventType
+EventMicrophoneStateWhenJoinRoom: GSEventType
+EventKeyboardSuggestionTaken: GSEventType
+EventPadCameraEnterDrawCamera: GSEventType
+EventPadCameraEnterFreeCamera: GSEventType
+EventPadCreateSwatch: GSEventType
+EventPadDeleteSwatch: GSEventType
+EventPadWorldAxesOn: GSEventType
+EventPadWorldAxesOff: GSEventType
+EventPadFloorGridOn: GSEventType
+EventPadFloorGridOff: GSEventType
+EventPadNavCubeOn: GSEventType
+EventPadNavCubeOff: GSEventType
+EventPadInputSmoothing1: GSEventType
+EventPadInputSmoothing2: GSEventType
+EventPadInputSmoothing3: GSEventType
+EventPadInputSmoothing4: GSEventType
+EventPadPenModeOn: GSEventType
+EventPadPenModeOff: GSEventType
+EventPadVerticalLockOn: GSEventType
+EventPadVerticalLockOff: GSEventType
+EventPadExploreWithoutSigningUp: GSEventType
+EventPadEnterDrawingMode: GSEventType
+EventPadEnterSelectingMode: GSEventType
+EventPadEnterNavigationMode: GSEventType
+EventPadEnterEditingMode: GSEventType
+EventPadNavigateInfoPage: GSEventType
+EventPadNavigateGalleryPage: GSEventType
+EventChangeWorkStyleTemplate: GSEventType
+EventClickLocalRecycleBinButton: GSEventType
+EventClearCachedCoSketchAssets: GSEventType
+EventLogoutAndDeleteAutoSaves: GSEventType
+EventLogoutAndKeepAutoSaves: GSEventType
+EventGenericErrorMessagePopUp: GSEventType
+EventSaveSketchInChosenLocation: GSEventType
+EventNotBootingWelcomeMessagePopUp: GSEventType
+EventNotBootingGoToLandingPad: GSEventType
+EventNotBootingRetryVR: GSEventType
+EventNotBootingCloseApplication: GSEventType
+EventSetLocalStorageType: GSEventType
+EventEnterCameraToolMode: GSEventType
+EventExitCameraToolMode: GSEventType
+EventEnterCameraEditMode: GSEventType
+EventEnterMiniMapMode: GSEventType
+EventExitMiniMapMode: GSEventType
+EventDimensionNewFeatureFlowSeen: GSEventType
+EventSpectatorEnterFollowCamera: GSEventType
+EventSpectatorEnterFreeCamera: GSEventType
+EventSpectatorEnterViewPointCamera: GSEventType
+EventSpectatorOpenViewpointPanel: GSEventType
+EventSpectatorCreateViewpoint: GSEventType
+EventSpectatorRenameViewpoint: GSEventType
+EventSpectatorCreateAnnotation: GSEventType
+EventSpectatorDeleteAnnotation: GSEventType
+EventSpectatorCreateViewpointWithAnnotation: GSEventType
+EventSpectatorSetOrbitPoint: GSEventType
+EventSpectatorLaserPointerToggled: GSEventType
+EventSpectatorCollabUserUiPolicySet: GSEventType
+EventSpectatorCreatePenAnnotation: GSEventType
+EventSpectatorDeletePenAnnotation: GSEventType
+EventSpectatorDeleteViewpoint: GSEventType
+EventSpectatorCreateViewpointWithPenAnnotation: GSEventType
+EventSpectatorOpenPeoplePanel: GSEventType
+EventSpectatorOpenInformationPanel: GSEventType
+EventSpectatorOpenSettingsPanel: GSEventType
+EventSpectatorOpenCameraControlsPanel: GSEventType
+EventSpectatorNavCubeToggled: GSEventType
+EventSpectatorViewpointsPlaySlideShow: GSEventType
+EventSpectatorQuickNavViewpoints: GSEventType
+EventSpectatorCopyShareLink: GSEventType
+EventSpectatorLoadLocalFiles: GSEventType
+EventOffsetSwitchedOn: GSEventType
+EventOffsetSwitchedOff: GSEventType
+EventOffsetBaked: GSEventType
+EventOffHandClockSettingsMenuToggled: GSEventType
+EventTimeReminderFrequencyUpdated: GSEventType
+EventClockDisplayPreferenceUpdated: GSEventType
+EventClickSaveButton: GSEventType
+EventClickSaveAsButton: GSEventType
+EventClickScreenshotButton: GSEventType
+EventClickBugReportButton: GSEventType
+EventClickExitToLobbyButton: GSEventType
+EventClickNotifyToCollabButton: GSEventType
+EventClickRemoveFromCollabButton: GSEventType
+EventClickEmailInviteButton: GSEventType
+EventGrabAndPressDeleteButtonToRemoveUser: GSEventType
+EventClickListAllRoomAccessesButton: GSEventType
+EventClickSendUserFeedback: GSEventType
+EventClickListMyConnectionsButton: GSEventType
+EventClickHelpButton: GSEventType
+EventClickSendHelpEmailButton: GSEventType
+EventClickConfirmSendHelpEmailButton: GSEventType
+EventInSketchAdvancedMenuTabClicked: GSEventType
+EventSavePanelTabNewSketchClicked: GSEventType
+EventSavePanelTabExportClicked: GSEventType
+EventHelpCentreTabSelected: GSEventType
+EventHelpCentreLearningRoomsButtonClicked: GSEventType
+EventHelpCentreSkillsAndExercisesButtonClicked: GSEventType
+EventHelpCentreRequestHelpViaEmailButtonClicked: GSEventType
+EventHelpCentreReportButtonClicked: GSEventType
+EventFAQExpanded: GSEventType
+EventLearningRoomClicked: GSEventType
+EventLearningRoomCompleted: GSEventType
+EventLearningCourseClicked: GSEventType
+EventRequestCertificationClicked: GSEventType
+EventRequestCertificationSubmitted: GSEventType
+EventClickOpenBetaWebBrowser: GSEventType
+EventGrabImageFromWebBrowser: GSEventType
+EventClickYoutubeButtonWebBrowser: GSEventType
+EventClickZendeskButtonWebBrowser: GSEventType
+EventClickLandingPadButtonWebBrowser: GSEventType
+EventClickSketchLearnVideoCategory: GSEventType
+EventClickSketchLearnVideoGroup: GSEventType
+EventClickSketchLearnVideoItem: GSEventType
+EventSketchLearnVideoGroupCompleted: GSEventType
+EventSketchLearnVideoItemCompleted: GSEventType
+EventClickVideoSketchObjectControllerPlay: GSEventType
+EventClickVideoSketchObjectControllerPause: GSEventType
+EventClickVideoSketchObjectControllerUnmute: GSEventType
+EventClickVideoSketchObjectControllerMute: GSEventType
+EventClickVideoSketchObjectControllerSeek: GSEventType
+EventClickVideoSketchObjectControllerSetSpeed: GSEventType
+EventClickVideoSketchObjectControllerPin: GSEventType
+EventClickVideoSketchObjectControllerUnpin: GSEventType
+EventSketchRenamed: GSEventType
+EventRoomRenamed: GSEventType
+EventFolderRenamed: GSEventType
+EventNotificationToCollabSent: GSEventType
+EventInvitedUserToRoom: GSEventType
+EventRemovedUserFromRoom: GSEventType
+EventInviteToCollabNotificationIgnored: GSEventType
+EventEnterRoomFromInviteToCollabNotification: GSEventType
+EventStartHostColocationSession: GSEventType
+EventEndHostColocationSession: GSEventType
+EventStartFollowColocationSession: GSEventType
+EventEndFollowColocationSession: GSEventType
+EventSubDToolPicked: GSEventType
+EventSubDSeparatePerformed: GSEventType
+EventPassthroughStatusChanged: GSEventType
+EventPassthroughPeek: GSEventType
+EventNavigationLockCreated: GSEventType
+EventNavigationLockStatusChanged: GSEventType
+EventStylusStatusChanged: GSEventType
+EventSelectBrushPreset: GSEventType
+EventOpenBrushEditPanel: GSEventType
+EventResetAllBrushes: GSEventType
+EventSelectBrushCategory: GSEventType
+EventRenameBrushPreset: GSEventType
+EventSelectMaterialPreset: GSEventType
+EventOpenMaterialPresetEditPanel: GSEventType
+EventRenameMaterialPreset: GSEventType
+EventSelectMaterialEditPanelTab: GSEventType
+EventOpenMenu: GSEventType
+EventPeriodSpentInCollab: GSEventType
+EventPeriodSpentInSoloSketch: GSEventType
+EventSketchToolChanged: GSEventType
+EventEditToolChanged: GSEventType
+EventExportToolChanged: GSEventType
+EventSelectionToolTypeChanged: GSEventType
+EventShowSelectionTransformGizmo: GSEventType
+EventStartMoveGumballInteraction: GSEventType
+EventStartSelectionGumballInteraction: GSEventType
+EventRecenterMirrorGumballInteraction: GSEventType
+EventEnterViewerMode: GSEventType
+EventExitViewerMode: GSEventType
+EventImmersiveModeEntered: GSEventType
+EventBeginGrabbedObjectMaterialChange: GSEventType
+EventLoadFirstSketchAtAppLaunch: GSEventType
+EventLoadFirstSketchManually: GSEventType
+EventSkipFirstSketchAtOptIn: GSEventType
+EventExitFirstSketchDuringExperience: GSEventType
+EventStartFirstSketch: GSEventType
+EventCompleteFirstSketch: GSEventType
+EventCompleteFirstSketchNextSteps: GSEventType
+EventFirstSketchSendEmailClicked: GSEventType
+EventFirstSketchSendEmailSkipped: GSEventType
+EventFirstSketchSendEmailConfirmed: GSEventType
+EventFirstSketchSendEmailFailed: GSEventType
+EventFirstSketchTaskCompleted: GSEventType
+EventFirstSketchLearnMoreAccept: GSEventType
+EventFirstSketchLearnMoreSkip: GSEventType
+EventStartV6Tutorial: GSEventType
+EventExitV6TutorialEarly: GSEventType
+EventCompleteV6Tutorial: GSEventType
+EventV6TutorialTaskCompleted: GSEventType
+EventV6TutorialLoadWalkthrough: GSEventType
+EventV6TutorialLoadWalkthroughFailed: GSEventType
+EventV6TutorialSkipWalkthrough: GSEventType
+EventStartBasicSkills: GSEventType
+EventExitBasicSkills: GSEventType
+EventCompleteFirstStepInStageBasicSkills: GSEventType
+EventCompleteStageBasicSkills: GSEventType
+EventClickContinueBasicSkills: GSEventType
+EventCompleteBasicSkills: GSEventType
+EventClickNextModulesBasicSkills: GSEventType
+EventPauseVideoBasicSkills: GSEventType
+EventPlayVideoBasicSkills: GSEventType
+EventScrubVideoBasicSkills: GSEventType
+EventSketchExperienceRecentre: GSEventType
+EventSketchExperienceMisaligned: GSEventType
+EventCompleteHintFlow: GSEventType
+EventActivatedHintFlow: GSEventType
+EventSelfDiscoverHintFlow: GSEventType
+EventLaunchSelfOnboardingRoom: GSEventType
+EventImportedVideoWatchProgress: GSEventType
+EventOpenScreenPanel: GSEventType
+EventTranscribe: GSEventType
+EventCollabCertificateValidationFailure: GSEventType
+EventKickOutCollab: GSEventType
+Invalid: BatchEventResponseCode
+Success: BatchEventResponseCode
+
+class GSEvent(_message.Message):
+    __slots__ = ("type", "timestamp", "LPUserId", "orgId", "orgName", "controllerType", "priceTier", "cosketch", "sketchSessionId", "totalSavedSketches", "totalLaunches", "totalSessionLengthMins", "appVersion", "appTypes", "appSessionId", "unityUserId", "isOnline", "deviceModel", "oculusBuildHeadsetType", "oculusQuestUserId", "oculusRiftUserId", "steamUserId", "systemDeviceUId", "appSessionEventId", "serverTimestamp", "numberOfOnlineSketchSyncEvents", "totalGrabbedObjects", "totalGrabbedRefImage", "objectsInMenu", "refImagesInMenu", "sketchSessionLength", "duplicatedNumOfObjects", "layersInDelete", "layersInDuplicate", "editSessionLength", "editSessionSplineType", "lockForLoading", "roomId", "publicAccessible", "enterRoomType", "enterRoomSuccess", "leaveRoomType", "sketchComplexity", "sketchBehaviour", "sketchCreationToolCounter", "controlPointToolUsage", "sketchSaveType", "importType", "exportType", "exportedOnCloud", "fileLocation", "docId", "workingDocId", "docOwnerId", "docPartitionId", "moveDocToOwnerId", "moveDocToPartitionId", "importIntoCurrentLayer", "exportId", "localStorageType", "importExportAction", "sceneScope", "advancedMenuPanelType", "exitButtonLocation", "exportBaseAxes", "exportScaleSetting", "exportSingleSided", "exportSubDControlMesh", "exportWeldVertices", "exportNurbsPreference", "exportCollectGroups", "exportPreferenceId", "exportPreferenceDisplayName", "exportQualitySetting", "successfulRecoveryAsAutoSave", "CachedAssetsSize", "webSocketProbingPayload", "isLeftHanded", "paywallType", "viewPricingPlansSource", "triggerProPaywallSource", "triggerProTierCapSource", "sketchTool", "editTool", "exportTool", "selectedMaterialPresetIndex", "materialPresetEditPanelTab", "toolUsageSessionData", "ABTestName", "ABTestGrouping", "ABTestDetail", "helpCentreSelectedTabName", "faqExpandedQuestion", "clickedLearningRoomName", "clickedLearningCourseName", "videoTitle", "videoWatchedLength", "videoSpentTime", "videoSpentTimeWatching", "tutorialGroupName", "galleryName", "resumeFrom", "workStyleTemplateType", "microphonePreference", "offsetType", "cameraViewType", "micPreferenceChangeType", "laserPointerToggleValue", "otherUsersUiVisibilityPolicy", "orbitCameraMovement", "keyboardSuggestionChosen", "keyboardSuggestionPurpose", "colocationSessionId", "transcribingSessionLength", "controlPointToolType", "SubDObjectTotalNumberObjectFaces", "SubDObjectNumberFacesSeparated", "PassthroughActive", "NavigationLockActive", "StylusActive", "stylusHand", "selectedBrushPresetSplineType", "selectedBrushProfileIndex", "selectedBrushCategory", "menuType", "timeToFirstSketchOptIn", "timeSinceFirstSketchStart", "firstSketchTask", "firstSketchTaskDuration", "v6TutorialTask", "basicSkillsStage", "timeSinceBasicSkillsStart", "timeSinceBasicSkillsStageStart", "misalignmentDistance", "misalignmentDegrees", "videoPlaybackSpeed", "hintType", "screenPanelType", "extraInfo", "successConnectedCount", "continuousDisconnectionCount", "kickOutCollabReason")
+    TYPE_FIELD_NUMBER: _ClassVar[int]
+    TIMESTAMP_FIELD_NUMBER: _ClassVar[int]
+    LPUSERID_FIELD_NUMBER: _ClassVar[int]
+    ORGID_FIELD_NUMBER: _ClassVar[int]
+    ORGNAME_FIELD_NUMBER: _ClassVar[int]
+    CONTROLLERTYPE_FIELD_NUMBER: _ClassVar[int]
+    PRICETIER_FIELD_NUMBER: _ClassVar[int]
+    COSKETCH_FIELD_NUMBER: _ClassVar[int]
+    SKETCHSESSIONID_FIELD_NUMBER: _ClassVar[int]
+    TOTALSAVEDSKETCHES_FIELD_NUMBER: _ClassVar[int]
+    TOTALLAUNCHES_FIELD_NUMBER: _ClassVar[int]
+    TOTALSESSIONLENGTHMINS_FIELD_NUMBER: _ClassVar[int]
+    APPVERSION_FIELD_NUMBER: _ClassVar[int]
+    APPTYPES_FIELD_NUMBER: _ClassVar[int]
+    APPSESSIONID_FIELD_NUMBER: _ClassVar[int]
+    UNITYUSERID_FIELD_NUMBER: _ClassVar[int]
+    ISONLINE_FIELD_NUMBER: _ClassVar[int]
+    DEVICEMODEL_FIELD_NUMBER: _ClassVar[int]
+    OCULUSBUILDHEADSETTYPE_FIELD_NUMBER: _ClassVar[int]
+    OCULUSQUESTUSERID_FIELD_NUMBER: _ClassVar[int]
+    OCULUSRIFTUSERID_FIELD_NUMBER: _ClassVar[int]
+    STEAMUSERID_FIELD_NUMBER: _ClassVar[int]
+    SYSTEMDEVICEUID_FIELD_NUMBER: _ClassVar[int]
+    APPSESSIONEVENTID_FIELD_NUMBER: _ClassVar[int]
+    SERVERTIMESTAMP_FIELD_NUMBER: _ClassVar[int]
+    NUMBEROFONLINESKETCHSYNCEVENTS_FIELD_NUMBER: _ClassVar[int]
+    TOTALGRABBEDOBJECTS_FIELD_NUMBER: _ClassVar[int]
+    TOTALGRABBEDREFIMAGE_FIELD_NUMBER: _ClassVar[int]
+    OBJECTSINMENU_FIELD_NUMBER: _ClassVar[int]
+    REFIMAGESINMENU_FIELD_NUMBER: _ClassVar[int]
+    SKETCHSESSIONLENGTH_FIELD_NUMBER: _ClassVar[int]
+    DUPLICATEDNUMOFOBJECTS_FIELD_NUMBER: _ClassVar[int]
+    LAYERSINDELETE_FIELD_NUMBER: _ClassVar[int]
+    LAYERSINDUPLICATE_FIELD_NUMBER: _ClassVar[int]
+    EDITSESSIONLENGTH_FIELD_NUMBER: _ClassVar[int]
+    EDITSESSIONSPLINETYPE_FIELD_NUMBER: _ClassVar[int]
+    LOCKFORLOADING_FIELD_NUMBER: _ClassVar[int]
+    ROOMID_FIELD_NUMBER: _ClassVar[int]
+    PUBLICACCESSIBLE_FIELD_NUMBER: _ClassVar[int]
+    ENTERROOMTYPE_FIELD_NUMBER: _ClassVar[int]
+    ENTERROOMSUCCESS_FIELD_NUMBER: _ClassVar[int]
+    LEAVEROOMTYPE_FIELD_NUMBER: _ClassVar[int]
+    SKETCHCOMPLEXITY_FIELD_NUMBER: _ClassVar[int]
+    SKETCHBEHAVIOUR_FIELD_NUMBER: _ClassVar[int]
+    SKETCHCREATIONTOOLCOUNTER_FIELD_NUMBER: _ClassVar[int]
+    CONTROLPOINTTOOLUSAGE_FIELD_NUMBER: _ClassVar[int]
+    SKETCHSAVETYPE_FIELD_NUMBER: _ClassVar[int]
+    IMPORTTYPE_FIELD_NUMBER: _ClassVar[int]
+    EXPORTTYPE_FIELD_NUMBER: _ClassVar[int]
+    EXPORTEDONCLOUD_FIELD_NUMBER: _ClassVar[int]
+    FILELOCATION_FIELD_NUMBER: _ClassVar[int]
+    DOCID_FIELD_NUMBER: _ClassVar[int]
+    WORKINGDOCID_FIELD_NUMBER: _ClassVar[int]
+    DOCOWNERID_FIELD_NUMBER: _ClassVar[int]
+    DOCPARTITIONID_FIELD_NUMBER: _ClassVar[int]
+    MOVEDOCTOOWNERID_FIELD_NUMBER: _ClassVar[int]
+    MOVEDOCTOPARTITIONID_FIELD_NUMBER: _ClassVar[int]
+    IMPORTINTOCURRENTLAYER_FIELD_NUMBER: _ClassVar[int]
+    EXPORTID_FIELD_NUMBER: _ClassVar[int]
+    LOCALSTORAGETYPE_FIELD_NUMBER: _ClassVar[int]
+    IMPORTEXPORTACTION_FIELD_NUMBER: _ClassVar[int]
+    SCENESCOPE_FIELD_NUMBER: _ClassVar[int]
+    ADVANCEDMENUPANELTYPE_FIELD_NUMBER: _ClassVar[int]
+    EXITBUTTONLOCATION_FIELD_NUMBER: _ClassVar[int]
+    EXPORTBASEAXES_FIELD_NUMBER: _ClassVar[int]
+    EXPORTSCALESETTING_FIELD_NUMBER: _ClassVar[int]
+    EXPORTSINGLESIDED_FIELD_NUMBER: _ClassVar[int]
+    EXPORTSUBDCONTROLMESH_FIELD_NUMBER: _ClassVar[int]
+    EXPORTWELDVERTICES_FIELD_NUMBER: _ClassVar[int]
+    EXPORTNURBSPREFERENCE_FIELD_NUMBER: _ClassVar[int]
+    EXPORTCOLLECTGROUPS_FIELD_NUMBER: _ClassVar[int]
+    EXPORTPREFERENCEID_FIELD_NUMBER: _ClassVar[int]
+    EXPORTPREFERENCEDISPLAYNAME_FIELD_NUMBER: _ClassVar[int]
+    EXPORTQUALITYSETTING_FIELD_NUMBER: _ClassVar[int]
+    SUCCESSFULRECOVERYASAUTOSAVE_FIELD_NUMBER: _ClassVar[int]
+    CACHEDASSETSSIZE_FIELD_NUMBER: _ClassVar[int]
+    WEBSOCKETPROBINGPAYLOAD_FIELD_NUMBER: _ClassVar[int]
+    ISLEFTHANDED_FIELD_NUMBER: _ClassVar[int]
+    PAYWALLTYPE_FIELD_NUMBER: _ClassVar[int]
+    VIEWPRICINGPLANSSOURCE_FIELD_NUMBER: _ClassVar[int]
+    TRIGGERPROPAYWALLSOURCE_FIELD_NUMBER: _ClassVar[int]
+    TRIGGERPROTIERCAPSOURCE_FIELD_NUMBER: _ClassVar[int]
+    SKETCHTOOL_FIELD_NUMBER: _ClassVar[int]
+    EDITTOOL_FIELD_NUMBER: _ClassVar[int]
+    EXPORTTOOL_FIELD_NUMBER: _ClassVar[int]
+    SELECTEDMATERIALPRESETINDEX_FIELD_NUMBER: _ClassVar[int]
+    MATERIALPRESETEDITPANELTAB_FIELD_NUMBER: _ClassVar[int]
+    TOOLUSAGESESSIONDATA_FIELD_NUMBER: _ClassVar[int]
+    ABTESTNAME_FIELD_NUMBER: _ClassVar[int]
+    ABTESTGROUPING_FIELD_NUMBER: _ClassVar[int]
+    ABTESTDETAIL_FIELD_NUMBER: _ClassVar[int]
+    HELPCENTRESELECTEDTABNAME_FIELD_NUMBER: _ClassVar[int]
+    FAQEXPANDEDQUESTION_FIELD_NUMBER: _ClassVar[int]
+    CLICKEDLEARNINGROOMNAME_FIELD_NUMBER: _ClassVar[int]
+    CLICKEDLEARNINGCOURSENAME_FIELD_NUMBER: _ClassVar[int]
+    VIDEOTITLE_FIELD_NUMBER: _ClassVar[int]
+    VIDEOWATCHEDLENGTH_FIELD_NUMBER: _ClassVar[int]
+    VIDEOSPENTTIME_FIELD_NUMBER: _ClassVar[int]
+    VIDEOSPENTTIMEWATCHING_FIELD_NUMBER: _ClassVar[int]
+    TUTORIALGROUPNAME_FIELD_NUMBER: _ClassVar[int]
+    GALLERYNAME_FIELD_NUMBER: _ClassVar[int]
+    RESUMEFROM_FIELD_NUMBER: _ClassVar[int]
+    WORKSTYLETEMPLATETYPE_FIELD_NUMBER: _ClassVar[int]
+    MICROPHONEPREFERENCE_FIELD_NUMBER: _ClassVar[int]
+    OFFSETTYPE_FIELD_NUMBER: _ClassVar[int]
+    CAMERAVIEWTYPE_FIELD_NUMBER: _ClassVar[int]
+    MICPREFERENCECHANGETYPE_FIELD_NUMBER: _ClassVar[int]
+    LASERPOINTERTOGGLEVALUE_FIELD_NUMBER: _ClassVar[int]
+    OTHERUSERSUIVISIBILITYPOLICY_FIELD_NUMBER: _ClassVar[int]
+    ORBITCAMERAMOVEMENT_FIELD_NUMBER: _ClassVar[int]
+    KEYBOARDSUGGESTIONCHOSEN_FIELD_NUMBER: _ClassVar[int]
+    KEYBOARDSUGGESTIONPURPOSE_FIELD_NUMBER: _ClassVar[int]
+    COLOCATIONSESSIONID_FIELD_NUMBER: _ClassVar[int]
+    TRANSCRIBINGSESSIONLENGTH_FIELD_NUMBER: _ClassVar[int]
+    CONTROLPOINTTOOLTYPE_FIELD_NUMBER: _ClassVar[int]
+    SUBDOBJECTTOTALNUMBEROBJECTFACES_FIELD_NUMBER: _ClassVar[int]
+    SUBDOBJECTNUMBERFACESSEPARATED_FIELD_NUMBER: _ClassVar[int]
+    PASSTHROUGHACTIVE_FIELD_NUMBER: _ClassVar[int]
+    NAVIGATIONLOCKACTIVE_FIELD_NUMBER: _ClassVar[int]
+    STYLUSACTIVE_FIELD_NUMBER: _ClassVar[int]
+    STYLUSHAND_FIELD_NUMBER: _ClassVar[int]
+    SELECTEDBRUSHPRESETSPLINETYPE_FIELD_NUMBER: _ClassVar[int]
+    SELECTEDBRUSHPROFILEINDEX_FIELD_NUMBER: _ClassVar[int]
+    SELECTEDBRUSHCATEGORY_FIELD_NUMBER: _ClassVar[int]
+    MENUTYPE_FIELD_NUMBER: _ClassVar[int]
+    TIMETOFIRSTSKETCHOPTIN_FIELD_NUMBER: _ClassVar[int]
+    TIMESINCEFIRSTSKETCHSTART_FIELD_NUMBER: _ClassVar[int]
+    FIRSTSKETCHTASK_FIELD_NUMBER: _ClassVar[int]
+    FIRSTSKETCHTASKDURATION_FIELD_NUMBER: _ClassVar[int]
+    V6TUTORIALTASK_FIELD_NUMBER: _ClassVar[int]
+    BASICSKILLSSTAGE_FIELD_NUMBER: _ClassVar[int]
+    TIMESINCEBASICSKILLSSTART_FIELD_NUMBER: _ClassVar[int]
+    TIMESINCEBASICSKILLSSTAGESTART_FIELD_NUMBER: _ClassVar[int]
+    MISALIGNMENTDISTANCE_FIELD_NUMBER: _ClassVar[int]
+    MISALIGNMENTDEGREES_FIELD_NUMBER: _ClassVar[int]
+    VIDEOPLAYBACKSPEED_FIELD_NUMBER: _ClassVar[int]
+    HINTTYPE_FIELD_NUMBER: _ClassVar[int]
+    SCREENPANELTYPE_FIELD_NUMBER: _ClassVar[int]
+    EXTRAINFO_FIELD_NUMBER: _ClassVar[int]
+    SUCCESSCONNECTEDCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CONTINUOUSDISCONNECTIONCOUNT_FIELD_NUMBER: _ClassVar[int]
+    KICKOUTCOLLABREASON_FIELD_NUMBER: _ClassVar[int]
+    type: GSEventType
+    timestamp: int
+    LPUserId: str
+    orgId: str
+    orgName: str
+    controllerType: int
+    priceTier: int
+    cosketch: bool
+    sketchSessionId: str
+    totalSavedSketches: int
+    totalLaunches: int
+    totalSessionLengthMins: float
+    appVersion: str
+    appTypes: AppTypes
+    appSessionId: int
+    unityUserId: str
+    isOnline: bool
+    deviceModel: str
+    oculusBuildHeadsetType: str
+    oculusQuestUserId: int
+    oculusRiftUserId: int
+    steamUserId: int
+    systemDeviceUId: str
+    appSessionEventId: int
+    serverTimestamp: int
+    numberOfOnlineSketchSyncEvents: int
+    totalGrabbedObjects: int
+    totalGrabbedRefImage: int
+    objectsInMenu: int
+    refImagesInMenu: int
+    sketchSessionLength: int
+    duplicatedNumOfObjects: int
+    layersInDelete: int
+    layersInDuplicate: int
+    editSessionLength: float
+    editSessionSplineType: _sketch_common_pb2.SplineType
+    lockForLoading: bool
+    roomId: str
+    publicAccessible: bool
+    enterRoomType: EnterRoomType
+    enterRoomSuccess: bool
+    leaveRoomType: LeaveRoomType
+    sketchComplexity: SketchComplexity
+    sketchBehaviour: SketchBehaviourCounter
+    sketchCreationToolCounter: SketchCreationToolCounter
+    controlPointToolUsage: ControlPointToolUsage
+    sketchSaveType: SketchSaveType
+    importType: ImportType
+    exportType: ExportType
+    exportedOnCloud: bool
+    fileLocation: FileLocation
+    docId: str
+    workingDocId: str
+    docOwnerId: str
+    docPartitionId: str
+    moveDocToOwnerId: str
+    moveDocToPartitionId: str
+    importIntoCurrentLayer: bool
+    exportId: str
+    localStorageType: _preferences_pb2.LocalStorageType
+    importExportAction: ImportExportAction
+    sceneScope: SceneScope
+    advancedMenuPanelType: AdvancedMenuPanelType
+    exitButtonLocation: ExitButtonLocation
+    exportBaseAxes: _preferences_pb2.BaseAxisConfiguration
+    exportScaleSetting: _preferences_pb2.ScaleSetting
+    exportSingleSided: bool
+    exportSubDControlMesh: bool
+    exportWeldVertices: bool
+    exportNurbsPreference: _preferences_pb2.FbxExportNurbsPreference
+    exportCollectGroups: bool
+    exportPreferenceId: _sketch_common_pb2.GSDataID
+    exportPreferenceDisplayName: str
+    exportQualitySetting: _preferences_pb2.DiscretizationResolution
+    successfulRecoveryAsAutoSave: bool
+    CachedAssetsSize: int
+    webSocketProbingPayload: WebSocketProbingPayload
+    isLeftHanded: bool
+    paywallType: _gravi_model_pb2.PaywallType
+    viewPricingPlansSource: PricingPlanPaywallSource
+    triggerProPaywallSource: PricingPlanPaywallSource
+    triggerProTierCapSource: PricingPlanPaywallSource
+    sketchTool: _sketch_inputs_pb2.SketchTool
+    editTool: _sketch_inputs_pb2.EditTool
+    exportTool: _sketch_inputs_pb2.ExportTool
+    selectedMaterialPresetIndex: int
+    materialPresetEditPanelTab: MaterialPresetEditPanelTab
+    toolUsageSessionData: SketchAppToolUsageSessionData
+    ABTestName: str
+    ABTestGrouping: str
+    ABTestDetail: str
+    helpCentreSelectedTabName: str
+    faqExpandedQuestion: str
+    clickedLearningRoomName: str
+    clickedLearningCourseName: str
+    videoTitle: str
+    videoWatchedLength: int
+    videoSpentTime: int
+    videoSpentTimeWatching: int
+    tutorialGroupName: str
+    galleryName: str
+    resumeFrom: SketchResumeType
+    workStyleTemplateType: WorkStyleTemplateType
+    microphonePreference: MicrophonePreference
+    offsetType: _sketch_common_pb2.OffsetType
+    cameraViewType: CameraViewType
+    micPreferenceChangeType: MicPreferenceChangeType
+    laserPointerToggleValue: bool
+    otherUsersUiVisibilityPolicy: OtherUsersUiVisibilityPolicy
+    orbitCameraMovement: OrbitCameraMovement
+    keyboardSuggestionChosen: str
+    keyboardSuggestionPurpose: str
+    colocationSessionId: str
+    transcribingSessionLength: int
+    controlPointToolType: ControlPointToolType
+    SubDObjectTotalNumberObjectFaces: int
+    SubDObjectNumberFacesSeparated: int
+    PassthroughActive: bool
+    NavigationLockActive: bool
+    StylusActive: bool
+    stylusHand: ControllerHand
+    selectedBrushPresetSplineType: _sketch_common_pb2.SplineType
+    selectedBrushProfileIndex: int
+    selectedBrushCategory: _ui_model_pb2.BrushMenuCategory
+    menuType: _ui_model_pb2.MenuType
+    timeToFirstSketchOptIn: float
+    timeSinceFirstSketchStart: float
+    firstSketchTask: str
+    firstSketchTaskDuration: float
+    v6TutorialTask: V6TutorialTask
+    basicSkillsStage: BasicSkillsStage
+    timeSinceBasicSkillsStart: float
+    timeSinceBasicSkillsStageStart: float
+    misalignmentDistance: float
+    misalignmentDegrees: float
+    videoPlaybackSpeed: float
+    hintType: _sketch_common_pb2.UsageHint
+    screenPanelType: ScreenPanelType
+    extraInfo: str
+    successConnectedCount: int
+    continuousDisconnectionCount: int
+    kickOutCollabReason: KickOutCollabReason
+    def __init__(self, type: _Optional[_Union[GSEventType, str]] = ..., timestamp: _Optional[int] = ..., LPUserId: _Optional[str] = ..., orgId: _Optional[str] = ..., orgName: _Optional[str] = ..., controllerType: _Optional[int] = ..., priceTier: _Optional[int] = ..., cosketch: bool = ..., sketchSessionId: _Optional[str] = ..., totalSavedSketches: _Optional[int] = ..., totalLaunches: _Optional[int] = ..., totalSessionLengthMins: _Optional[float] = ..., appVersion: _Optional[str] = ..., appTypes: _Optional[_Union[AppTypes, str]] = ..., appSessionId: _Optional[int] = ..., unityUserId: _Optional[str] = ..., isOnline: bool = ..., deviceModel: _Optional[str] = ..., oculusBuildHeadsetType: _Optional[str] = ..., oculusQuestUserId: _Optional[int] = ..., oculusRiftUserId: _Optional[int] = ..., steamUserId: _Optional[int] = ..., systemDeviceUId: _Optional[str] = ..., appSessionEventId: _Optional[int] = ..., serverTimestamp: _Optional[int] = ..., numberOfOnlineSketchSyncEvents: _Optional[int] = ..., totalGrabbedObjects: _Optional[int] = ..., totalGrabbedRefImage: _Optional[int] = ..., objectsInMenu: _Optional[int] = ..., refImagesInMenu: _Optional[int] = ..., sketchSessionLength: _Optional[int] = ..., duplicatedNumOfObjects: _Optional[int] = ..., layersInDelete: _Optional[int] = ..., layersInDuplicate: _Optional[int] = ..., editSessionLength: _Optional[float] = ..., editSessionSplineType: _Optional[_Union[_sketch_common_pb2.SplineType, str]] = ..., lockForLoading: bool = ..., roomId: _Optional[str] = ..., publicAccessible: bool = ..., enterRoomType: _Optional[_Union[EnterRoomType, str]] = ..., enterRoomSuccess: bool = ..., leaveRoomType: _Optional[_Union[LeaveRoomType, str]] = ..., sketchComplexity: _Optional[_Union[SketchComplexity, _Mapping]] = ..., sketchBehaviour: _Optional[_Union[SketchBehaviourCounter, _Mapping]] = ..., sketchCreationToolCounter: _Optional[_Union[SketchCreationToolCounter, _Mapping]] = ..., controlPointToolUsage: _Optional[_Union[ControlPointToolUsage, _Mapping]] = ..., sketchSaveType: _Optional[_Union[SketchSaveType, str]] = ..., importType: _Optional[_Union[ImportType, str]] = ..., exportType: _Optional[_Union[ExportType, str]] = ..., exportedOnCloud: bool = ..., fileLocation: _Optional[_Union[FileLocation, str]] = ..., docId: _Optional[str] = ..., workingDocId: _Optional[str] = ..., docOwnerId: _Optional[str] = ..., docPartitionId: _Optional[str] = ..., moveDocToOwnerId: _Optional[str] = ..., moveDocToPartitionId: _Optional[str] = ..., importIntoCurrentLayer: bool = ..., exportId: _Optional[str] = ..., localStorageType: _Optional[_Union[_preferences_pb2.LocalStorageType, str]] = ..., importExportAction: _Optional[_Union[ImportExportAction, str]] = ..., sceneScope: _Optional[_Union[SceneScope, str]] = ..., advancedMenuPanelType: _Optional[_Union[AdvancedMenuPanelType, str]] = ..., exitButtonLocation: _Optional[_Union[ExitButtonLocation, str]] = ..., exportBaseAxes: _Optional[_Union[_preferences_pb2.BaseAxisConfiguration, str]] = ..., exportScaleSetting: _Optional[_Union[_preferences_pb2.ScaleSetting, str]] = ..., exportSingleSided: bool = ..., exportSubDControlMesh: bool = ..., exportWeldVertices: bool = ..., exportNurbsPreference: _Optional[_Union[_preferences_pb2.FbxExportNurbsPreference, str]] = ..., exportCollectGroups: bool = ..., exportPreferenceId: _Optional[_Union[_sketch_common_pb2.GSDataID, _Mapping]] = ..., exportPreferenceDisplayName: _Optional[str] = ..., exportQualitySetting: _Optional[_Union[_preferences_pb2.DiscretizationResolution, str]] = ..., successfulRecoveryAsAutoSave: bool = ..., CachedAssetsSize: _Optional[int] = ..., webSocketProbingPayload: _Optional[_Union[WebSocketProbingPayload, _Mapping]] = ..., isLeftHanded: bool = ..., paywallType: _Optional[_Union[_gravi_model_pb2.PaywallType, str]] = ..., viewPricingPlansSource: _Optional[_Union[PricingPlanPaywallSource, str]] = ..., triggerProPaywallSource: _Optional[_Union[PricingPlanPaywallSource, str]] = ..., triggerProTierCapSource: _Optional[_Union[PricingPlanPaywallSource, str]] = ..., sketchTool: _Optional[_Union[_sketch_inputs_pb2.SketchTool, str]] = ..., editTool: _Optional[_Union[_sketch_inputs_pb2.EditTool, str]] = ..., exportTool: _Optional[_Union[_sketch_inputs_pb2.ExportTool, str]] = ..., selectedMaterialPresetIndex: _Optional[int] = ..., materialPresetEditPanelTab: _Optional[_Union[MaterialPresetEditPanelTab, str]] = ..., toolUsageSessionData: _Optional[_Union[SketchAppToolUsageSessionData, _Mapping]] = ..., ABTestName: _Optional[str] = ..., ABTestGrouping: _Optional[str] = ..., ABTestDetail: _Optional[str] = ..., helpCentreSelectedTabName: _Optional[str] = ..., faqExpandedQuestion: _Optional[str] = ..., clickedLearningRoomName: _Optional[str] = ..., clickedLearningCourseName: _Optional[str] = ..., videoTitle: _Optional[str] = ..., videoWatchedLength: _Optional[int] = ..., videoSpentTime: _Optional[int] = ..., videoSpentTimeWatching: _Optional[int] = ..., tutorialGroupName: _Optional[str] = ..., galleryName: _Optional[str] = ..., resumeFrom: _Optional[_Union[SketchResumeType, str]] = ..., workStyleTemplateType: _Optional[_Union[WorkStyleTemplateType, str]] = ..., microphonePreference: _Optional[_Union[MicrophonePreference, str]] = ..., offsetType: _Optional[_Union[_sketch_common_pb2.OffsetType, str]] = ..., cameraViewType: _Optional[_Union[CameraViewType, str]] = ..., micPreferenceChangeType: _Optional[_Union[MicPreferenceChangeType, str]] = ..., laserPointerToggleValue: bool = ..., otherUsersUiVisibilityPolicy: _Optional[_Union[OtherUsersUiVisibilityPolicy, str]] = ..., orbitCameraMovement: _Optional[_Union[OrbitCameraMovement, _Mapping]] = ..., keyboardSuggestionChosen: _Optional[str] = ..., keyboardSuggestionPurpose: _Optional[str] = ..., colocationSessionId: _Optional[str] = ..., transcribingSessionLength: _Optional[int] = ..., controlPointToolType: _Optional[_Union[ControlPointToolType, str]] = ..., SubDObjectTotalNumberObjectFaces: _Optional[int] = ..., SubDObjectNumberFacesSeparated: _Optional[int] = ..., PassthroughActive: bool = ..., NavigationLockActive: bool = ..., StylusActive: bool = ..., stylusHand: _Optional[_Union[ControllerHand, str]] = ..., selectedBrushPresetSplineType: _Optional[_Union[_sketch_common_pb2.SplineType, str]] = ..., selectedBrushProfileIndex: _Optional[int] = ..., selectedBrushCategory: _Optional[_Union[_ui_model_pb2.BrushMenuCategory, str]] = ..., menuType: _Optional[_Union[_ui_model_pb2.MenuType, str]] = ..., timeToFirstSketchOptIn: _Optional[float] = ..., timeSinceFirstSketchStart: _Optional[float] = ..., firstSketchTask: _Optional[str] = ..., firstSketchTaskDuration: _Optional[float] = ..., v6TutorialTask: _Optional[_Union[V6TutorialTask, str]] = ..., basicSkillsStage: _Optional[_Union[BasicSkillsStage, str]] = ..., timeSinceBasicSkillsStart: _Optional[float] = ..., timeSinceBasicSkillsStageStart: _Optional[float] = ..., misalignmentDistance: _Optional[float] = ..., misalignmentDegrees: _Optional[float] = ..., videoPlaybackSpeed: _Optional[float] = ..., hintType: _Optional[_Union[_sketch_common_pb2.UsageHint, str]] = ..., screenPanelType: _Optional[_Union[ScreenPanelType, str]] = ..., extraInfo: _Optional[str] = ..., successConnectedCount: _Optional[int] = ..., continuousDisconnectionCount: _Optional[int] = ..., kickOutCollabReason: _Optional[_Union[KickOutCollabReason, str]] = ...) -> None: ...
+
+class WebSocketProbingPayload(_message.Message):
+    __slots__ = ("isConnectable",)
+    ISCONNECTABLE_FIELD_NUMBER: _ClassVar[int]
+    isConnectable: bool
+    def __init__(self, isConnectable: bool = ...) -> None: ...
+
+class SketchComplexity(_message.Message):
+    __slots__ = ("numOfObjects", "numOfLayers", "numOfMaterials", "numOfTextures", "numOfMeshes", "numOfGroups", "groupDepth", "numOfMirroredObjects", "numOfOffsetSubDObjects", "numOfThickenedSubDObjects", "grsSize", "fileSize", "vertices", "polygons", "historySize", "numOfVideos", "numOfLayerGroups")
+    NUMOFOBJECTS_FIELD_NUMBER: _ClassVar[int]
+    NUMOFLAYERS_FIELD_NUMBER: _ClassVar[int]
+    NUMOFMATERIALS_FIELD_NUMBER: _ClassVar[int]
+    NUMOFTEXTURES_FIELD_NUMBER: _ClassVar[int]
+    NUMOFMESHES_FIELD_NUMBER: _ClassVar[int]
+    NUMOFGROUPS_FIELD_NUMBER: _ClassVar[int]
+    GROUPDEPTH_FIELD_NUMBER: _ClassVar[int]
+    NUMOFMIRROREDOBJECTS_FIELD_NUMBER: _ClassVar[int]
+    NUMOFOFFSETSUBDOBJECTS_FIELD_NUMBER: _ClassVar[int]
+    NUMOFTHICKENEDSUBDOBJECTS_FIELD_NUMBER: _ClassVar[int]
+    GRSSIZE_FIELD_NUMBER: _ClassVar[int]
+    FILESIZE_FIELD_NUMBER: _ClassVar[int]
+    VERTICES_FIELD_NUMBER: _ClassVar[int]
+    POLYGONS_FIELD_NUMBER: _ClassVar[int]
+    HISTORYSIZE_FIELD_NUMBER: _ClassVar[int]
+    NUMOFVIDEOS_FIELD_NUMBER: _ClassVar[int]
+    NUMOFLAYERGROUPS_FIELD_NUMBER: _ClassVar[int]
+    numOfObjects: int
+    numOfLayers: int
+    numOfMaterials: int
+    numOfTextures: int
+    numOfMeshes: int
+    numOfGroups: int
+    groupDepth: int
+    numOfMirroredObjects: int
+    numOfOffsetSubDObjects: int
+    numOfThickenedSubDObjects: int
+    grsSize: int
+    fileSize: int
+    vertices: int
+    polygons: int
+    historySize: int
+    numOfVideos: int
+    numOfLayerGroups: int
+    def __init__(self, numOfObjects: _Optional[int] = ..., numOfLayers: _Optional[int] = ..., numOfMaterials: _Optional[int] = ..., numOfTextures: _Optional[int] = ..., numOfMeshes: _Optional[int] = ..., numOfGroups: _Optional[int] = ..., groupDepth: _Optional[int] = ..., numOfMirroredObjects: _Optional[int] = ..., numOfOffsetSubDObjects: _Optional[int] = ..., numOfThickenedSubDObjects: _Optional[int] = ..., grsSize: _Optional[int] = ..., fileSize: _Optional[int] = ..., vertices: _Optional[int] = ..., polygons: _Optional[int] = ..., historySize: _Optional[int] = ..., numOfVideos: _Optional[int] = ..., numOfLayerGroups: _Optional[int] = ...) -> None: ...
+
+class SketchCreationToolCounter(_message.Message):
+    __slots__ = ("creationInkCount", "creationStrokeCount", "creationRevolveCount", "creationVolumeCount", "creationSubDSurfaceCount", "creationSubDRibbonCount", "creationSubDPrimitiveCount", "creationPrimitiveCount", "creationNURBSSurfaceCount", "creationDimensionCount", "creation3DTextCount", "creationCameraCount", "creationSimplifiedSurfaceCount", "creationInteractionTriggerCount", "creationInteractionActionCount", "creationColourFromCylinderCount", "creationColourFromDiscreteSegmentCount")
+    CREATIONINKCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONSTROKECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONREVOLVECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONVOLUMECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONSUBDSURFACECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONSUBDRIBBONCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONSUBDPRIMITIVECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONPRIMITIVECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONNURBSSURFACECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONDIMENSIONCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATION3DTEXTCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONCAMERACOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONSIMPLIFIEDSURFACECOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONINTERACTIONTRIGGERCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONINTERACTIONACTIONCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONCOLOURFROMCYLINDERCOUNT_FIELD_NUMBER: _ClassVar[int]
+    CREATIONCOLOURFROMDISCRETESEGMENTCOUNT_FIELD_NUMBER: _ClassVar[int]
+    creationInkCount: int
+    creationStrokeCount: int
+    creationRevolveCount: int
+    creationVolumeCount: int
+    creationSubDSurfaceCount: int
+    creationSubDRibbonCount: int
+    creationSubDPrimitiveCount: int
+    creationPrimitiveCount: int
+    creationNURBSSurfaceCount: int
+    creationDimensionCount: int
+    creation3DTextCount: int
+    creationCameraCount: int
+    creationSimplifiedSurfaceCount: int
+    creationInteractionTriggerCount: int
+    creationInteractionActionCount: int
+    creationColourFromCylinderCount: int
+    creationColourFromDiscreteSegmentCount: int
+    def __init__(self, creationInkCount: _Optional[int] = ..., creationStrokeCount: _Optional[int] = ..., creationRevolveCount: _Optional[int] = ..., creationVolumeCount: _Optional[int] = ..., creationSubDSurfaceCount: _Optional[int] = ..., creationSubDRibbonCount: _Optional[int] = ..., creationSubDPrimitiveCount: _Optional[int] = ..., creationPrimitiveCount: _Optional[int] = ..., creationNURBSSurfaceCount: _Optional[int] = ..., creationDimensionCount: _Optional[int] = ..., creation3DTextCount: _Optional[int] = ..., creationCameraCount: _Optional[int] = ..., creationSimplifiedSurfaceCount: _Optional[int] = ..., creationInteractionTriggerCount: _Optional[int] = ..., creationInteractionActionCount: _Optional[int] = ..., creationColourFromCylinderCount: _Optional[int] = ..., creationColourFromDiscreteSegmentCount: _Optional[int] = ...) -> None: ...
+
+class SketchBehaviourCounter(_message.Message):
+    __slots__ = ("drawSplinesCount", "takenScreenshotCount", "openScreenshotCount", "redoCount", "undoCount", "mouseClickCount", "deleteObjectActionCount", "duplicateObjectActionCount", "normalGrabCount", "preciseSelectGrabCount", "triggerGrabCount", "userSelfMoveCount", "userSelfScaleCount")
+    DRAWSPLINESCOUNT_FIELD_NUMBER: _ClassVar[int]
+    TAKENSCREENSHOTCOUNT_FIELD_NUMBER: _ClassVar[int]
+    OPENSCREENSHOTCOUNT_FIELD_NUMBER: _ClassVar[int]
+    REDOCOUNT_FIELD_NUMBER: _ClassVar[int]
+    UNDOCOUNT_FIELD_NUMBER: _ClassVar[int]
+    MOUSECLICKCOUNT_FIELD_NUMBER: _ClassVar[int]
+    DELETEOBJECTACTIONCOUNT_FIELD_NUMBER: _ClassVar[int]
+    DUPLICATEOBJECTACTIONCOUNT_FIELD_NUMBER: _ClassVar[int]
+    NORMALGRABCOUNT_FIELD_NUMBER: _ClassVar[int]
+    PRECISESELECTGRABCOUNT_FIELD_NUMBER: _ClassVar[int]
+    TRIGGERGRABCOUNT_FIELD_NUMBER: _ClassVar[int]
+    USERSELFMOVECOUNT_FIELD_NUMBER: _ClassVar[int]
+    USERSELFSCALECOUNT_FIELD_NUMBER: _ClassVar[int]
+    drawSplinesCount: int
+    takenScreenshotCount: int
+    openScreenshotCount: int
+    redoCount: int
+    undoCount: int
+    mouseClickCount: int
+    deleteObjectActionCount: int
+    duplicateObjectActionCount: int
+    normalGrabCount: int
+    preciseSelectGrabCount: int
+    triggerGrabCount: int
+    userSelfMoveCount: int
+    userSelfScaleCount: int
+    def __init__(self, drawSplinesCount: _Optional[int] = ..., takenScreenshotCount: _Optional[int] = ..., openScreenshotCount: _Optional[int] = ..., redoCount: _Optional[int] = ..., undoCount: _Optional[int] = ..., mouseClickCount: _Optional[int] = ..., deleteObjectActionCount: _Optional[int] = ..., duplicateObjectActionCount: _Optional[int] = ..., normalGrabCount: _Optional[int] = ..., preciseSelectGrabCount: _Optional[int] = ..., triggerGrabCount: _Optional[int] = ..., userSelfMoveCount: _Optional[int] = ..., userSelfScaleCount: _Optional[int] = ...) -> None: ...
+
+class SketchAppToolUsageSessionData(_message.Message):
+    __slots__ = ("toolType", "usageSessionDuration", "toolUsagesDuringSession", "sessionEndType")
+    TOOLTYPE_FIELD_NUMBER: _ClassVar[int]
+    USAGESESSIONDURATION_FIELD_NUMBER: _ClassVar[int]
+    TOOLUSAGESDURINGSESSION_FIELD_NUMBER: _ClassVar[int]
+    SESSIONENDTYPE_FIELD_NUMBER: _ClassVar[int]
+    toolType: SketchAppToolType
+    usageSessionDuration: float
+    toolUsagesDuringSession: int
+    sessionEndType: SketchAppToolUsageSessionEndType
+    def __init__(self, toolType: _Optional[_Union[SketchAppToolType, str]] = ..., usageSessionDuration: _Optional[float] = ..., toolUsagesDuringSession: _Optional[int] = ..., sessionEndType: _Optional[_Union[SketchAppToolUsageSessionEndType, str]] = ...) -> None: ...
+
+class ControlPointManipulationModeUsage(_message.Message):
+    __slots__ = ("usage",)
+    class UsageEntry(_message.Message):
+        __slots__ = ("key", "value")
+        KEY_FIELD_NUMBER: _ClassVar[int]
+        VALUE_FIELD_NUMBER: _ClassVar[int]
+        key: int
+        value: int
+        def __init__(self, key: _Optional[int] = ..., value: _Optional[int] = ...) -> None: ...
+    USAGE_FIELD_NUMBER: _ClassVar[int]
+    usage: _containers.ScalarMap[int, int]
+    def __init__(self, usage: _Optional[_Mapping[int, int]] = ...) -> None: ...
+
+class ControlPointToolUsage(_message.Message):
+    __slots__ = ("usage",)
+    class UsageEntry(_message.Message):
+        __slots__ = ("key", "value")
+        KEY_FIELD_NUMBER: _ClassVar[int]
+        VALUE_FIELD_NUMBER: _ClassVar[int]
+        key: int
+        value: ControlPointManipulationModeUsage
+        def __init__(self, key: _Optional[int] = ..., value: _Optional[_Union[ControlPointManipulationModeUsage, _Mapping]] = ...) -> None: ...
+    USAGE_FIELD_NUMBER: _ClassVar[int]
+    usage: _containers.MessageMap[int, ControlPointManipulationModeUsage]
+    def __init__(self, usage: _Optional[_Mapping[int, ControlPointManipulationModeUsage]] = ...) -> None: ...
+
+class OrbitCameraMovement(_message.Message):
+    __slots__ = ("flyCount", "orbitCount", "zoomCount", "panCount")
+    FLYCOUNT_FIELD_NUMBER: _ClassVar[int]
+    ORBITCOUNT_FIELD_NUMBER: _ClassVar[int]
+    ZOOMCOUNT_FIELD_NUMBER: _ClassVar[int]
+    PANCOUNT_FIELD_NUMBER: _ClassVar[int]
+    flyCount: int
+    orbitCount: int
+    zoomCount: int
+    panCount: int
+    def __init__(self, flyCount: _Optional[int] = ..., orbitCount: _Optional[int] = ..., zoomCount: _Optional[int] = ..., panCount: _Optional[int] = ...) -> None: ...
+
+class BatchUploadEventsRequest(_message.Message):
+    __slots__ = ("events",)
+    EVENTS_FIELD_NUMBER: _ClassVar[int]
+    events: _containers.RepeatedCompositeFieldContainer[GSEvent]
+    def __init__(self, events: _Optional[_Iterable[_Union[GSEvent, _Mapping]]] = ...) -> None: ...
