@@ -1,0 +1,3 @@
+[console_scripts]
+WanzhuanEcsCongRumenDaoJingtongJinjiepianFix1 = WanzhuanEcsCongRumenDaoJingtongJinjiepianFix1.__main__:main
+wanzhuan-ecs-cong-rumen-dao-jingtong-jinjiepian-fix1 = WanzhuanEcsCongRumenDaoJingtongJinjiepianFix1.__main__:main
