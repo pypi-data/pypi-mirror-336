@@ -1,0 +1,23 @@
+[project]
+name = "databutton-app-mcp"
+version = "0.1.0"
+description = "Call your Databutton app endpoints as LLM tools with MCP"
+readme = "README.md"
+license = { "file" = "LICENSE" }
+classifiers = ["Development Status :: 3 - Alpha"]
+requires-python = ">=3.11"
+dependencies = ["websockets>=15.0.1"]
+
+[project.urls]
+"Homepage" = "https://databutton.com"
+"Github" = "https://github.com/databutton/databutton-app-mcp"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/databutton_app_mcp/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/databutton_app_mcp"]
