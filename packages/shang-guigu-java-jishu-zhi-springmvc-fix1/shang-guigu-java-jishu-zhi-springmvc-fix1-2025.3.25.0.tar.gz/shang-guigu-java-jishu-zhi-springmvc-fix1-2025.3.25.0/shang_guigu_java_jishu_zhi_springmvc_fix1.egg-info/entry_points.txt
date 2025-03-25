@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguJavaJishuZhiSpringmvcFix1 = ShangGuiguJavaJishuZhiSpringmvcFix1.__main__:main
+shang-guigu-java-jishu-zhi-springmvc-fix1 = ShangGuiguJavaJishuZhiSpringmvcFix1.__main__:main
