@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tchumyt-pypi"
+version = "0.2.0"
+description = "Tchumyt project utilities modules"
+authors = ["Bruno Adam Osiek <baosiek@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tokenizers = "^0.21.1"
+datasets = "^3.4.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
