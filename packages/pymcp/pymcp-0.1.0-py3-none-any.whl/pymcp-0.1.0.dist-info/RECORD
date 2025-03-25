@@ -1,0 +1,10 @@
+pymcp/__init__.py,sha256=ol8NStY4E0lZwesXQzS5mkjM8Cpd1wfpNQvTULjvBZI,433
+pymcp/__main__.py,sha256=it_i4dmyfB4iFnPfYFgoIcXjtRds8On83uJuaowWV08,2671
+pymcp/converter.py,sha256=bGa37fDcVyfxQPXSD8ozV8AMAEpfo8Lp_hziyv-wGv0,6406
+pymcp/utils/__init__.py,sha256=ahOFdTw8mOIzNt_XXfEoS0StS1hv0xJ9KDsdFHHGtwg,329
+pymcp/utils/cursor_config.py,sha256=BIBh0vN2mp4V5w8GGVuASgAS1zK7FxSFxV_dQtKnVRY,5587
+pymcp-0.1.0.dist-info/METADATA,sha256=jfAZn71hFicU7VsRAGiwHGsTEbXpU_1Mq1wet_GoXpc,9565
+pymcp-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+pymcp-0.1.0.dist-info/entry_points.txt,sha256=TCpxg94PJZjiPbAV-hCptP9WjbScXxYfpat5leuBtWU,46
+pymcp-0.1.0.dist-info/top_level.txt,sha256=l3B6k8NUK_MXfSRQQ7HyNjAYPcgs3wL7noTDF_sZs5U,6
+pymcp-0.1.0.dist-info/RECORD,,
