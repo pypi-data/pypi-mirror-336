@@ -1,0 +1,10 @@
+jupyter_server_favicon/__init__.py,sha256=pPBL-diiLSa1lxgnaMUE2LLd0TClu0YPzU3nVIa8qbE,167
+jupyter_server_favicon/handlers.py,sha256=a9-HpVRixCdRXynzZOmatWo3WOSbm3X8jRL87HANgS8,530
+jupyter_server_favicon/static/custom/favicons/favicon-busy-1.ico,sha256=zn_PwA6c_cndC0YIefg3JxTCHeMdUJ-6--T7XZn612I,15406
+jupyter_server_favicon/static/custom/favicons/favicon.ico,sha256=Wt9hoOyPok4DGYg8dXrA6_70qRd6eC53tYiqUEPLu3I,15406
+jupyter_server_favicon-0.0.1.data/data/etc/jupyter/jupyter_server_config.d/jupyter_server_favicon.json,sha256=pYoSL__CMrB9_Q0zCzew5LSNGO1KlvAq_ow5BOSELsY,97
+jupyter_server_favicon-0.0.1.dist-info/METADATA,sha256=bnatNaA3PoBHQH7a6QEsLjVGeEUZCbrl2l31PsjHSEc,3807
+jupyter_server_favicon-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyter_server_favicon-0.0.1.dist-info/entry_points.txt,sha256=oGvfKzej_j3ZEdCoeWrn47Z_4phup86BlPBTFV5RclA,83
+jupyter_server_favicon-0.0.1.dist-info/licenses/LICENSE,sha256=gbNXqoM84T3S76tfwgz03kZ8YqfgkHme1YYLU9KIsKQ,1499
+jupyter_server_favicon-0.0.1.dist-info/RECORD,,

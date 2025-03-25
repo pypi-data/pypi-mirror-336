@@ -1,0 +1,2 @@
+[console_scripts]
+jupyter-server-favicon = jupyter_server_favicon.application:main
