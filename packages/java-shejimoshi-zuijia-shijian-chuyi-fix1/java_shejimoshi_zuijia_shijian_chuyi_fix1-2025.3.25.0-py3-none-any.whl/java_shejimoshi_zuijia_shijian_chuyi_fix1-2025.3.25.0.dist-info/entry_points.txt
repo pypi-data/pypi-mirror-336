@@ -1,0 +1,3 @@
+[console_scripts]
+JavaShejimoshiZuijiaShijianChuyiFix1 = JavaShejimoshiZuijiaShijianChuyiFix1.__main__:main
+java-shejimoshi-zuijia-shijian-chuyi-fix1 = JavaShejimoshiZuijiaShijianChuyiFix1.__main__:main
