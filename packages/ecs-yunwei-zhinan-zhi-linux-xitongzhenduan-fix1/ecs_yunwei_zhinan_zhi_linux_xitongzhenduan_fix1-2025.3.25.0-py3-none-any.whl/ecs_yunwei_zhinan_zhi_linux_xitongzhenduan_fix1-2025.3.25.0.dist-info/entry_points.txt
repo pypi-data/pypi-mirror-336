@@ -1,0 +1,3 @@
+[console_scripts]
+EcsYunweiZhinanZhiLinuxXitongzhenduanFix1 = EcsYunweiZhinanZhiLinuxXitongzhenduanFix1.__main__:main
+ecs-yunwei-zhinan-zhi-linux-xitongzhenduan-fix1 = EcsYunweiZhinanZhiLinuxXitongzhenduanFix1.__main__:main
