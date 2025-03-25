@@ -1,0 +1,3 @@
+[console_scripts]
+PythonBianchengShiguangFix1 = PythonBianchengShiguangFix1.__main__:main
+python-biancheng-shiguang-fix1 = PythonBianchengShiguangFix1.__main__:main
