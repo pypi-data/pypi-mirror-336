@@ -1,0 +1,3 @@
+[console_scripts]
+WeiXueyuanGolangJiaochengFix1 = WeiXueyuanGolangJiaochengFix1.__main__:main
+wei-xueyuan-golang-jiaocheng-fix1 = WeiXueyuanGolangJiaochengFix1.__main__:main
