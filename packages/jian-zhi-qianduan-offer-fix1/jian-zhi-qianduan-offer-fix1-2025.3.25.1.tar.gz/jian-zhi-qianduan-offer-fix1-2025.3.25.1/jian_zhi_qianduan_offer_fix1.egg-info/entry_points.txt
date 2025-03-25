@@ -1,0 +1,3 @@
+[console_scripts]
+JianZhiQianduanOfferFix1 = JianZhiQianduanOfferFix1.__main__:main
+jian-zhi-qianduan-offer-fix1 = JianZhiQianduanOfferFix1.__main__:main
