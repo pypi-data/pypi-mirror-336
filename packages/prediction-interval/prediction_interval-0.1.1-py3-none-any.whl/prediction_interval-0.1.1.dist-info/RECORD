@@ -1,0 +1,6 @@
+src/xgboost_prediction_interval/_version.py,sha256=Mmxse1R0ki5tjz9qzU8AQyqUsLt8nTyCAbYQp8R87PU,511
+prediction_interval-0.1.1.dist-info/METADATA,sha256=LtKvc2H-iT0_I0C0kZ_E05NeLzaAz5NXOU1Y5flwyGM,26079
+prediction_interval-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+prediction_interval-0.1.1.dist-info/entry_points.txt,sha256=d5G0kKvmK9oXTlBtmRL-ggywX0PpQtDmbRP4DRhau7I,84
+prediction_interval-0.1.1.dist-info/licenses/LICENSE,sha256=k-DolQEfxNjiDVrTNh1CrtPYSDrC9lk_-1-PZAADTl4,1072
+prediction_interval-0.1.1.dist-info/RECORD,,
