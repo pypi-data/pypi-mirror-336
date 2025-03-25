@@ -1,0 +1,88 @@
+[project]
+name = "pipask"
+version = "0.1.0"
+description = "Safer python package installation with audit and consent before install"
+authors = [
+    {name = "Feynmanix",email = "feynmanix@users.noreply.github.com"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["pip", "security"]
+license = { file = "LICENSE" }
+dependencies = [
+    "click (>=8.1.8,<9.0.0)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "httpx (>=0.28.1,<0.29.0)"
+]
+
+[project.urls]
+#homepage = ""
+repository = "https://github.com/feynmanix/pipask"
+documentation = "https://github.com/feynmanix/pipask/blob/main/README.md"
+
+[project.scripts]
+pipask = "pipask.main:cli"
+
+[tool.poetry]
+packages = [{ include = "pipask", from = "src" }]
+
+[tool.poetry.group.dev.dependencies]
+pyright = ">=1.1.391"
+pytest = ">=8.3.4"
+bumpver = "^2024.1130"
+pytest-asyncio = ">=0.25.0"
+bandit = ">=1.8.0"
+ruff = ">=0.8.4"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"src/pipask/__init__.py" = ["{version}"]
+
+[tool.pyright]
+include = ["pipask"]
+exclude = [
+    "**/__pycache__",
+    "**/tests",
+]
+ignore = []
+
+reportMissingImports = true
+reportMissingTypeStubs = false
+pythonVersion = "3.10"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "--import-mode=importlib -rA --color=yes"
+testpaths = ["tests"]
+log_level = "warning"
+
+# asyncio:
+asyncio_default_fixture_loop_scope = "function"
+asyncio_mode = "auto"
+
+markers = [
+    "integration: marks tests as integration tests"
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = ["B404", "B603"]
+
