@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiScalaYuyanHexinBianchengFix1 = ShangGuiguDaShujuJishuZhiScalaYuyanHexinBianchengFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-scala-yuyan-hexin-biancheng-fix1 = ShangGuiguDaShujuJishuZhiScalaYuyanHexinBianchengFix1.__main__:main
