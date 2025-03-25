@@ -1,0 +1,3 @@
+[console_scripts]
+ConglingkaishiXueCcnaShiyanChaohaijiangFix1 = ConglingkaishiXueCcnaShiyanChaohaijiangFix1.__main__:main
+conglingkaishi-xue-ccna-shiyan-chaohaijiang-fix1 = ConglingkaishiXueCcnaShiyanChaohaijiangFix1.__main__:main
