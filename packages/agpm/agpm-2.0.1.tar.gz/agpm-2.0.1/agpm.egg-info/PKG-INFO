@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: agpm
+Version: 2.0.1
+Summary: A package manager made in python to download EyeScary Development projects
+Author: EyeScary Development
+License:            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                           Version 2, December 2004
+         
+        Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+        
+        Everyone is permitted to copy and distribute verbatim or modified
+        copies of this license document, and changing it is allowed as long
+        as the name is changed.
+         
+                   DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+          TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+        
+         0. You just DO WHAT THE FUCK YOU WANT TO.
+        
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: requests
+Dynamic: license-file
+
+# AGPM
+A round 2 of a python package manager to download eyescary development projects.
+
+To add your package, go to EyeScary-Development/CDN on github, take a look at how to format packages, and submit a PR with your package and all the metadata and scripts
