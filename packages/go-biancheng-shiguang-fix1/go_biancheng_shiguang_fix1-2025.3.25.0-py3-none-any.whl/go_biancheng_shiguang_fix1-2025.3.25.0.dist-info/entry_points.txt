@@ -1,0 +1,3 @@
+[console_scripts]
+GoBianchengShiguangFix1 = GoBianchengShiguangFix1.__main__:main
+go-biancheng-shiguang-fix1 = GoBianchengShiguangFix1.__main__:main
