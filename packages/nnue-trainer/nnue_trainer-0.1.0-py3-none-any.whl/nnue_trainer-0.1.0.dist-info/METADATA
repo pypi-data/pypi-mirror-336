@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: nnue_trainer
+Version: 0.1.0
+Summary: A PyTorch Lightning NNUE model for chess engines – train and quantize with ease!
+Home-page: https://github.com/github-jimjim/nnue-trainer
+Author: Jimmy Luong
+Author-email: nguyenhungjimmy.luong@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: torch==2.6.0+cu126
+Requires-Dist: pytorch_lightning==2.5.1
+Requires-Dist: numpy==1.24.3
+Requires-Dist: python-chess==1.999
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
