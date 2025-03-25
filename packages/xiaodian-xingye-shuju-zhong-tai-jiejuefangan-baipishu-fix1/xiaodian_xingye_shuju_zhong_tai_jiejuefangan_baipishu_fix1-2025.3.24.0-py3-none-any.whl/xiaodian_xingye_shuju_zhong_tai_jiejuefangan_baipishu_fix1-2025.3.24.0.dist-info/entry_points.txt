@@ -1,0 +1,3 @@
+[console_scripts]
+XiaodianXingyeShujuZhongTaiJiejuefanganBaipishuFix1 = XiaodianXingyeShujuZhongTaiJiejuefanganBaipishuFix1.__main__:main
+xiaodian-xingye-shuju-zhong-tai-jiejuefangan-baipishu-fix1 = XiaodianXingyeShujuZhongTaiJiejuefanganBaipishuFix1.__main__:main
