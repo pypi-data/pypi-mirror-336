@@ -1,0 +1,90 @@
+# TRW API Wrapper
+
+A simple and efficient wrapper for the TRW API (iwoozie.baby). This wrapper provides an easy-to-use interface for all API endpoints, including both free and authenticated endpoints.
+
+## Installation
+
+```bash
+pip install trw-wrapper
+```
+
+## Quick Usage
+
+### Free Bypass
+```python
+from trw_wrapper import TRWClient
+
+# For free endpoints, no API key needed
+client = TRWClient()
+result = client.free_bypass(url="https://example.com")
+print(result)
+```
+
+### Authenticated Bypass
+```python
+from trw_wrapper import TRWClient
+
+# Initialize with your API key
+client = TRWClient(api_key="your_api_key")
+
+# Simple bypass
+result = client.bypass(url="https://example.com")
+print(result)
+
+# Long-lived bypass
+thread = client.bypass_v2(url="https://example.com")
+thread_id = thread["ThreadID"]
+
+# Check bypass status
+status = client.check_thread(thread_id)
+print(status)
+```
+
+## Available Functions
+
+- `free_bypass(url)`: Free bypass without API key
+- `bypass(url)`: General bypass (requires API key)
+- `bypass_v2(url)`: Long-lived bypass (requires API key)
+- `check_thread(thread_id)`: Check the status of a long-lived bypass
+- `get_status()`: Check API status
+
+## Response Examples
+
+### Simple Bypass
+```python
+{
+  "result": "Bypass Result",
+  "success": true
+}
+```
+
+### V2 Bypass (Long-lived)
+```python
+{
+  "status": "started",
+  "ThreadID": "task_id_123",
+  "next": "/api/v2/threadcheck?id=task_id_123"
+}
+```
+
+### Thread Status
+```python
+{
+  "status": "Done",
+  "result": "Result",
+  "success": true
+}
+```
+
+## Requirements
+- Python 3.6+
+- requests>=2.25.1
+
+## API Documentation
+For more information about the API, visit [iwoozie.baby/docs](https://iwoozie.baby/docs)
+
+## License
+MIT License
+
+## Contributing
+Contributions are welcome. Please open an issue or submit a pull request.

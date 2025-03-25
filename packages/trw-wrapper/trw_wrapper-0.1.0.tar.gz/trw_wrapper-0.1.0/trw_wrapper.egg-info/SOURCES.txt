@@ -1,0 +1,10 @@
+README.md
+setup.py
+tests/test_trw.py
+trw_wrapper/__init__.py
+trw_wrapper/trw_wrapper.py
+trw_wrapper.egg-info/PKG-INFO
+trw_wrapper.egg-info/SOURCES.txt
+trw_wrapper.egg-info/dependency_links.txt
+trw_wrapper.egg-info/requires.txt
+trw_wrapper.egg-info/top_level.txt
