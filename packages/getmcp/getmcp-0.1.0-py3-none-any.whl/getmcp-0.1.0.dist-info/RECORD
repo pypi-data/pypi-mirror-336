@@ -1,0 +1,9 @@
+getmcp/__init__.py,sha256=7XPkkjPl-Z6eaBnZRghGrNjPRPqi8wMcblC315TUNlM,95
+getmcp/__main__.py,sha256=HHwCZpsjsXIMUwWE4mqpMWzW10jqW3BOBs2LxGvu34s,108
+getmcp/cli.py,sha256=CNWgggWKA7NFwBJU4f5zMjmXziYIt3i6FKBmadNxeRI,1389
+getmcp/client.py,sha256=WuknRJ6z5DOmgR6OCVu-UyIi_AUMn2z4f8OtvtDfgHw,1919
+getmcp-0.1.0.dist-info/METADATA,sha256=W86VdCFNXGWaGUmSIcZOVChCbU-iSnLgmLmkATrXJIE,1729
+getmcp-0.1.0.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+getmcp-0.1.0.dist-info/entry_points.txt,sha256=S_HfxXcXu3fCjwm1KuphO7uV_Ba7UAuRHI2dlhOd2fU,66
+getmcp-0.1.0.dist-info/top_level.txt,sha256=WNMEvRTV7hGRGpkivhsWDue7DwuOultcekyh6c3fp6g,7
+getmcp-0.1.0.dist-info/RECORD,,
