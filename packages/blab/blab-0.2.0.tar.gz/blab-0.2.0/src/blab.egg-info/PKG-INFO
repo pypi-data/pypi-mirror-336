@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: blab
+Version: 0.2.0
+Project-URL: Homepage, https://github.com/djekra/blab
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: bpyth>=0.2.1
+Requires-Dist: importlib_resources
+Requires-Dist: nbformat
+Requires-Dist: nbconvert
+Requires-Dist: ipytest
+Requires-Dist: matplotlib
+Dynamic: license-file
