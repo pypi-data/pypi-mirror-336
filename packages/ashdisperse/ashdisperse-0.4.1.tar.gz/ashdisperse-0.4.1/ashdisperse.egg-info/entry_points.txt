@@ -1,0 +1,2 @@
+[console_scripts]
+ashdisperse_nb = ashdisperse.scripts.run_ashdisperse_nb:run_example
