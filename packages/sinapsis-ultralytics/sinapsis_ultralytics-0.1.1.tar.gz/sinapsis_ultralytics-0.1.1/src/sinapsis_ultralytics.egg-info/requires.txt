@@ -1,0 +1,13 @@
+sinapsis>=0.1.1
+ultralytics>=8.3.88
+
+[all]
+sinapsis-ultralytics[sinapsis-data-visualization,webapp-gradio]
+
+[sinapsis-data-visualization]
+sinapsis-data-visualization>=0.1.0
+
+[webapp-gradio]
+gradio>=5.18.0
+gradio-log>=0.0.8
+sinapsis-ultralytics[sinapsis-data-visualization]

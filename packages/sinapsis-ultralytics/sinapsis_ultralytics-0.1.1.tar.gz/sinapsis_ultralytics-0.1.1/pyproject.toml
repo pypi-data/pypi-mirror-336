@@ -1,0 +1,72 @@
+[project]
+name = "sinapsis-ultralytics"
+version = "0.1.1"
+description = "Package to build computer vision applications based on the Ultralytics library"
+authors = [{ name = "SinapsisAI", email = "dev@sinapsis-ai.com" }]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "sinapsis>=0.1.1",
+    "ultralytics>=8.3.88",
+]
+
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.3",
+    "pre-commit>=4.0.1",
+]
+[project.optional-dependencies]
+webapp-gradio = [
+    "gradio>=5.18.0",
+    "gradio-log>=0.0.8",
+    "sinapsis-ultralytics[sinapsis-data-visualization]",
+]
+sinapsis-data-visualization = [
+    "sinapsis-data-visualization>=0.1.0",
+]
+all = [
+    "sinapsis-ultralytics[sinapsis-data-visualization,webapp-gradio]",
+]
+
+[tool.ruff]
+lint.select = [
+    "ARG",  # Unused arguments
+    "ANN",
+    "BLE",  # Blind except
+    "C4",   # Comprehensions
+    "E",    # Errors
+    "F",    # Pyflakes
+    "FIX",  # "FIXME"-comments
+    "FLY",  # F-strings
+    "I",    # Isort
+    "PERF", # Unnecessary performance costs
+    "PIE",  # Unnecessary code
+    "RUF",  # Ruff
+    "RSE",  # Raise
+    "SIM",  # Code simplification
+    "SLOT", # __slots__
+    "T10",  # Debugger
+    "T20",  # Print
+    "TD",   # "TODO"-comments
+    "TID",  # Tidy imports
+]
+lint.ignore =['ANN401']
+line-length = 120
+show-fixes = true
+
+[[tool.uv.index]]
+url = "https://pypi.sinapsis.tech/"
+
+[tool.uv.sources]
+sinapsis-ultralytics = { workspace = true }
+
+[tool.setuptools]
+license-files = []
+
+[project.urls]
+Homepage = "https://sinapsis.tech"
+Documentation = "https://docs.sinapsis.tech/docs"
+Tutorials = "https://docs.sinapsis.tech/tutorials"
+Repository = "https://github.com/Sinapsis-AI/sinapsis-ultralytics.git"
