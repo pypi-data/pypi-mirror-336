@@ -1,0 +1,4 @@
+scipy>=1.15
+statsmodels>=0.14
+pandas>=2.2
+numpy>=2.2

@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: pycyclebio
+Version: 1.0
+Summary: Python based toolkit for temporal molecular biology
+Author-email: Alexander R Bennett <alex.bennett@gu.se>
+License: MIT
+Project-URL: Homepage, https://github.com/Glycocalex/PyCycle
+Project-URL: Issues, https://github.com/Glycocalex/PyCycle/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: scipy>=1.15
+Requires-Dist: statsmodels>=0.14
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy>=2.2
+Dynamic: license-file
+
+Python based toolkit for temporal molecular biology analysis
+
+Input data with columns denoting samples and rows denoting biological molecules.
+Input data is assessed for variance.
+Variant rows are modelled using 4 equations. The model with lowest residuals is reported, alongside model parameters and statistics.
+
+https://github.com/Glycocalex/PyCycle
