@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguJavaJishuZhiWangshangShuchengFix1 = ShangGuiguJavaJishuZhiWangshangShuchengFix1.__main__:main
+shang-guigu-java-jishu-zhi-wangshang-shucheng-fix1 = ShangGuiguJavaJishuZhiWangshangShuchengFix1.__main__:main
