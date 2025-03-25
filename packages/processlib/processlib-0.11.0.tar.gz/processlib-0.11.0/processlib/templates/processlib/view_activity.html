@@ -1,0 +1,25 @@
+{% extends "processlib/layout.html" %}
+{% load i18n %}
+
+{% block title %}{{ activity.flow }}{% endblock %}
+
+{% block content %}
+
+    {% block headline %}
+        <h1>
+            {{ activity.flow }}<br />
+            <small>{{ activity }}</small>
+        </h1>
+    {% endblock %}
+
+    {% if activity.process.id %}
+        <a href="{% url 'processlib:process-detail' activity.process.id %}">{{ activity.process }}</a>
+    {% endif %}
+    <form id="activity-{{ activity.name }}-form" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <hr>
+
+        <input name="_finish" type="submit" value="{% trans "Finish" %}" class="btn btn-primary"/>
+    </form>
+{% endblock %}
