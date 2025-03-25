@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: rook_helper
+Version: 0.2.1
+Summary: Helper
+Home-page: https://bitbucket.org/rook-workspace/rook_helpers/src
+Author: Tomas Rosas
+Author-email: tomas.rosas@tryrook.io
+License: MIT
+Keywords: Rook,helper
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
