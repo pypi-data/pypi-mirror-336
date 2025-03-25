@@ -1,0 +1,3 @@
+[console_scripts]
+QuickAudienceQuanyuXiaofeizheYunyingPingtaiFix1 = QuickAudienceQuanyuXiaofeizheYunyingPingtaiFix1.__main__:main
+quick-audience-quanyu-xiaofeizhe-yunying-pingtai-fix1 = QuickAudienceQuanyuXiaofeizheYunyingPingtaiFix1.__main__:main
