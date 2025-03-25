@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+requirements.txt
+setup.py
+freenove/_init_.py
+freenove/freenove.py
+freenove.egg-info/PKG-INFO
+freenove.egg-info/SOURCES.txt
+freenove.egg-info/dependency_links.txt
+freenove.egg-info/top_level.txt
