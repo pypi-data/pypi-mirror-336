@@ -1,0 +1,12 @@
+README.md
+setup.py
+X5TianRumenShijueAiFix1/README.md
+X5TianRumenShijueAiFix1/__init__.py
+X5TianRumenShijueAiFix1/__main__.py
+X5TianRumenShijueAiFix1/file.pdf
+X5TianRumenShijueAiFix1/index.html
+x5_tian_rumen_shijue_ai_fix1.egg-info/PKG-INFO
+x5_tian_rumen_shijue_ai_fix1.egg-info/SOURCES.txt
+x5_tian_rumen_shijue_ai_fix1.egg-info/dependency_links.txt
+x5_tian_rumen_shijue_ai_fix1.egg-info/entry_points.txt
+x5_tian_rumen_shijue_ai_fix1.egg-info/top_level.txt
