@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangStruts2Fix1 = ShangGuiguTonggangStruts2Fix1.__main__:main
+shang-guigu-tonggang-struts2-fix1 = ShangGuiguTonggangStruts2Fix1.__main__:main
