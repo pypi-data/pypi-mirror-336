@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+splinetorch/__init__.py
+splinetorch/b_spline.py
+splinetorch/b_spline_basis.py
+splinetorch.egg-info/PKG-INFO
+splinetorch.egg-info/SOURCES.txt
+splinetorch.egg-info/dependency_links.txt
+splinetorch.egg-info/not-zip-safe
+splinetorch.egg-info/requires.txt
+splinetorch.egg-info/top_level.txt
+tests/test_b_spline.py
+tests/test_b_spline_basis.py
