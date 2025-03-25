@@ -1,0 +1,3 @@
+[console_scripts]
+CcnaShiyanShouceXuzhouSiboJiaoyuFix1 = CcnaShiyanShouceXuzhouSiboJiaoyuFix1.__main__:main
+ccna-shiyan-shouce-xuzhou-sibo-jiaoyu-fix1 = CcnaShiyanShouceXuzhouSiboJiaoyuFix1.__main__:main
