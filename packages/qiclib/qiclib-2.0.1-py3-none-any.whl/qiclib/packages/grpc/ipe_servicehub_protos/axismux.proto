@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package axismux;
+import "datatypes.proto";
+
+service AxisMuxService {
+  rpc SetMuxPosition (sdr.datatypes.IndexedUInt) returns (sdr.datatypes.Empty) {}
+  rpc GetMuxPosition (sdr.datatypes.EndpointIndex) returns (sdr.datatypes.UInt) {}
+  rpc SetEnable(sdr.datatypes.IndexedBool) returns (sdr.datatypes.Empty) {}
+  rpc GetEnable(sdr.datatypes.EndpointIndex) returns (sdr.datatypes.Bool) {}
+}
