@@ -1,0 +1,13 @@
+globalfactordata/__init__.py,sha256=_gHQUx_lVpaSp-o0FCPKweh0xX3y9L9TkQ1x3k2HTNA,570
+globalfactordata/download_link.py,sha256=JGun-gsjnYT4qQvnSvbapcU2wwFk8TbmvzsVl0dm6fU,3957
+globalfactordata/getdata.py,sha256=8wxb3kDUJZgV2cpfiHsTdsrCHMe99ZY7pIjPc5gO5UI,1553
+globalfactordata/loader.py,sha256=KNSEVtH2iMOML9LRgyF9efnO4naTs6bKBpr7P1GiCgU,928
+globalfactordata/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+globalfactordata/data/Cluster Labels.csv,sha256=Isf90hQhjRIQq5ki7-1Zv2B1OAmMwGtvLF8ybS5s9ks,3207
+globalfactordata/data/Country Classification.xlsx,sha256=8AN67lmXjbo2oKNRiTXLiyrdanM9glhl5QBUdW6p4LY,11554
+globalfactordata/data/Factor Details.xlsx,sha256=IdMTVwFTufa_80F-kTTPIr-HPJTlKazjgXcK0ZR0XOc,39959
+globalfactordata/data/data_url.pkl,sha256=qxjlQHv7EXhiix8_r3_H4-Pj2SgTNgMMeg4iqIWYpe8,29339
+globalfactordata-0.1.0.dist-info/METADATA,sha256=2Z5ylsE5-Bc5f71RZgFp-isWHD-JSNqVImKP3VUvAp4,3682
+globalfactordata-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+globalfactordata-0.1.0.dist-info/top_level.txt,sha256=LcHSUE2Dk6IYNj0fMz7Kswp_50zvpAG0IH545dl9fek,17
+globalfactordata-0.1.0.dist-info/RECORD,,
