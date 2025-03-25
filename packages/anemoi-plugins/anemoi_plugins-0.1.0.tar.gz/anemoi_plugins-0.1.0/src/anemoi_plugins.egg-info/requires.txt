@@ -1,0 +1,17 @@
+anemoi-utils
+mako
+
+[all]
+
+[dev]
+anemoi-plugins[all,docs,tests]
+
+[docs]
+nbsphinx
+pandoc
+sphinx
+sphinx-argparse
+sphinx-rtd-theme
+
+[tests]
+pytest
