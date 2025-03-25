@@ -1,0 +1,3 @@
+[console_scripts]
+ApacheRocketmqCongRumenDaoShizhanFix1 = ApacheRocketmqCongRumenDaoShizhanFix1.__main__:main
+apache-rocketmq-cong-rumen-dao-shizhan-fix1 = ApacheRocketmqCongRumenDaoShizhanFix1.__main__:main
