@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: snakemake-storage-plugin-irods
+Version: 0.3.1
+Summary: A Snakemake plugin for handling input and output on iRODS
+Author: Oliver Stolpe
+Author-email: oliver.stolpe@bihealth.org
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: python-irodsclient (>=3.0.0,<4.0.0)
+Requires-Dist: snakemake-interface-common (>=1.15.0,<2.0.0)
+Requires-Dist: snakemake-interface-storage-plugins (>=4.1.0,<5.0.0)
+Project-URL: Documentation, https://snakemake.github.io/snakemake-plugin-catalog/plugins/storage/irods.html
+Project-URL: Repository, https://github.com/snakemake/snakemake-storage-plugin-irods
+Description-Content-Type: text/markdown
+
+# Snakemake executor plugin: irods
+
+A plugin for handling input and output on iRODS. For usage and documentation see the [Snakemake plugin catalog](https://snakemake.github.io/snakemake-plugin-catalog/plugins/storage/irods.html).
