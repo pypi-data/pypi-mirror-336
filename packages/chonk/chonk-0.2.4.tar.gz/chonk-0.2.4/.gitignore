@@ -1,0 +1,21 @@
+.env*
+!*.example
+
+.coverage
+.idea/
+.pytest_cache/
+.tox/
+.venv
+
+__pycache__/
+dist/
+htmlcov/
+src/_chonk_version.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# chonk specific files
+.chonkignore
+chonk.md
