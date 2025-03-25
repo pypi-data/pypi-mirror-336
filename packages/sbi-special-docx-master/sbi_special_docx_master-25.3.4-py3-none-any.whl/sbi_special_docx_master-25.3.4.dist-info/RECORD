@@ -1,0 +1,12 @@
+sbi_special_docx_master/__init__.py,sha256=USkGGqLlhrQIJH8xCWw33yHmb32dF1KW6ycFj_Uh-EI,80
+sbi_special_docx_master/logger.py,sha256=B3lLppcbgnaCp7I1CTPlCmSunL51QURfUKDhXMD9TtU,3096
+sbi_special_docx_master/special_docx.py,sha256=EuokOKkNuGNLA4STm3wlf3epl0F8WL6KtAmu_2urLwE,8187
+sbi_special_docx_master/styles.py,sha256=PVP5tKGGUyh9ioZ04UwBEmg7X10X5ETNiV05zfRLU8o,7465
+sbi_special_docx_master/validator.py,sha256=M4Ur0Wxsvh0eBbsRzFJ5xdJLSzjzKDFxOxIPg-xpfwo,6353
+sbi_special_docx_master-25.3.4.dist-info/licenses/LICENSE,sha256=CVaO3RmsX7hWmj1-f-V2DMTmGiBulb8eGGeptZ77A94,1067
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/spec_test.py,sha256=2ngtI_UzS1OkDiTlsY5GMFUYs8DPR0YevILN-hk_yxs,7663
+sbi_special_docx_master-25.3.4.dist-info/METADATA,sha256=xDdd79RkOlwo6DYYudpVH3kvbDgONvl-y78nlOa91B8,3803
+sbi_special_docx_master-25.3.4.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+sbi_special_docx_master-25.3.4.dist-info/top_level.txt,sha256=OUsuMy38VR3EJ2My0igW0J4M4Wg5P_0pMbCMHAt0_AI,30
+sbi_special_docx_master-25.3.4.dist-info/RECORD,,
