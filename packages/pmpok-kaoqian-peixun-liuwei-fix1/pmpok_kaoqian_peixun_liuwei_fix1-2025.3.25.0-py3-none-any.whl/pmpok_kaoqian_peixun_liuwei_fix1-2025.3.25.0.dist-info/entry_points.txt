@@ -1,0 +1,3 @@
+[console_scripts]
+PmpokKaoqianPeixunLiuweiFix1 = PmpokKaoqianPeixunLiuweiFix1.__main__:main
+pmpok-kaoqian-peixun-liuwei-fix1 = PmpokKaoqianPeixunLiuweiFix1.__main__:main
