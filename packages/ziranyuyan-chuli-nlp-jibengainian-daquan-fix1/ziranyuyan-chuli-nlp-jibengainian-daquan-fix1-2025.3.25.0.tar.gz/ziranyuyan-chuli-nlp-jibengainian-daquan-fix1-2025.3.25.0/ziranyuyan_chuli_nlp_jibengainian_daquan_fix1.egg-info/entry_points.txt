@@ -1,0 +1,3 @@
+[console_scripts]
+ZiranyuyanChuliNlpJibengainianDaquanFix1 = ZiranyuyanChuliNlpJibengainianDaquanFix1.__main__:main
+ziranyuyan-chuli-nlp-jibengainian-daquan-fix1 = ZiranyuyanChuliNlpJibengainianDaquanFix1.__main__:main
