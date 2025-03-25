@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycaravel"
+readme = "README.rst"
+requires-python = ">=3.8"
+version = "1.0.0"
+authors = [
+    {name = "pycaravel developers", email = "antoine.grigis@cea.fr"},
+]
+license = {text = "CeCILL-B"}
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "pandas",
+    "nibabel",
+    "numpy",
+    "imageio[ffmpeg]",
+    "PyPDF2",
+    "vcfpy",
+    "pandas-plink",
+    "pyEDFlib",
+    "requests",
+    "python-docx",
+    "fire",
+    "pymzml",
+]
+
+[project.urls]
+Source = "https://github.com/neurospincloud-ci/pycaravel/hopla"
+Tracker = "https://github.com/neurospincloud-ci/pycaravel/issues"
+
+[tool.setuptools]
+script-files = ["caravel/scripts/project-ci"]
+platforms = ["Linux", "OSX"]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = ["doc"]
+namespaces = false
+
+[tool.setuptools.package-data]
+caravel = ["conf/*.conf"]
+
+[tool.nosetests]
+verbosity = "2"
+nologcapture = "0"
+cover-package = "caravel"
+with-coverage = "1"
+
+[tool.build_sphinx]
+source-dir = "doc"
+build-dir = "doc/build"
+all_files = "1"

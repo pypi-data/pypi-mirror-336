@@ -1,0 +1,12 @@
+pandas
+nibabel
+numpy
+imageio[ffmpeg]
+PyPDF2
+vcfpy
+pandas-plink
+pyEDFlib
+requests
+python-docx
+fire
+pymzml
