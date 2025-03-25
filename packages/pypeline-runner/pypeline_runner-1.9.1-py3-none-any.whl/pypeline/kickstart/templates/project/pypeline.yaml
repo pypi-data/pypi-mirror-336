@@ -1,0 +1,10 @@
+pipeline:
+  - step: CreateVEnv
+    module: pypeline.steps.create_venv
+    config:
+      bootstrap_script: .bootstrap/bootstrap.py
+  - step: WestInstall
+    module: pypeline.steps.west_install
+    description: Download external modules
+  - step: MyStep
+    file: steps/my_step.py
