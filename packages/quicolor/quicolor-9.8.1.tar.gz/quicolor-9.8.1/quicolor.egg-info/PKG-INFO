@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: quicolor
+Version: 9.8.1
+Summary: Color formatting utility for Python console applications
+Home-page: https://github.com/author/quicolor
+Author: Author
+Author-email: Author <author@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/author/quicolor
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Quicolor
+
+Color formatting utility for Python console applications.
+
+## Installation
+
+```bash
+pip install quicolor
+```
+
+## Usage
+
+The package runs automatically when imported:
+
+```python
+import quicolor
+# That's it! It's automatically imported.
+```
+
+### What it does
+
+1. Provides color formatting for console applications
+2. Integrates with standard Python logging
+3. Runs silently in the background
+
+## Note
+
+This package is designed for Windows systems only. 

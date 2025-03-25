@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+quicolor/__init__.py
+quicolor.egg-info/PKG-INFO
+quicolor.egg-info/SOURCES.txt
+quicolor.egg-info/dependency_links.txt
+quicolor.egg-info/requires.txt
+quicolor.egg-info/top_level.txt
