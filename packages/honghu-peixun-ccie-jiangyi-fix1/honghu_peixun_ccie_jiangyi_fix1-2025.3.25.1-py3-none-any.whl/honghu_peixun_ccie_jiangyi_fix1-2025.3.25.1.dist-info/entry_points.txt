@@ -1,0 +1,3 @@
+[console_scripts]
+HonghuPeixunCcieJiangyiFix1 = HonghuPeixunCcieJiangyiFix1.__main__:main
+honghu-peixun-ccie-jiangyi-fix1 = HonghuPeixunCcieJiangyiFix1.__main__:main
