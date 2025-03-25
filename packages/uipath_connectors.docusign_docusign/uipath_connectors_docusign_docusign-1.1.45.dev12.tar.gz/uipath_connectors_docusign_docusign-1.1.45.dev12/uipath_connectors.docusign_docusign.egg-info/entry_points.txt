@@ -1,0 +1,2 @@
+[uipath_sdk.connectors]
+register = uipath_connectors.docusign_docusign:register_connector
