@@ -1,0 +1,3 @@
+[console_scripts]
+RedisZuijiaShijianYuShizhanZhinanFix1 = RedisZuijiaShijianYuShizhanZhinanFix1.__main__:main
+redis-zuijia-shijian-yu-shizhan-zhinan-fix1 = RedisZuijiaShijianYuShizhanZhinanFix1.__main__:main
