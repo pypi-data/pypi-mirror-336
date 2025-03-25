@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+markswift_client/__init__.py
+markswift_client/client.py
+markswift_client.egg-info/PKG-INFO
+markswift_client.egg-info/SOURCES.txt
+markswift_client.egg-info/dependency_links.txt
+markswift_client.egg-info/requires.txt
+markswift_client.egg-info/top_level.txt

@@ -1,0 +1,267 @@
+Metadata-Version: 2.4
+Name: markswift-client
+Version: 0.1.0
+Summary: Python client for the MarkSwift API
+Home-page: https://markswift.datavisionlabs.ai
+Author: MarkSwift Team
+Author-email: support@datavisionlabs.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# MarkSwift API Client
+
+A Python client for the MarkSwift API, which allows you to convert documents to Markdown.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install markswift-client
+```
+
+## Usage
+
+### Authentication
+
+You'll need an API key to use the MarkSwift API. You can get one by signing up at [markswift.datavisionlabs.ai](https://markswift.datavisionlabs.ai).
+
+You can provide your API key in two ways:
+
+1. Pass it directly to the client:
+
+```python
+from markswift_client import MarkSwiftClient
+
+client = MarkSwiftClient(api_key="your_api_key")
+```
+
+2. Set it as an environment variable:
+
+```bash
+export MARKSWIFT_API_KEY="your_api_key"
+```
+
+```python
+from markswift_client import MarkSwiftClient
+
+client = MarkSwiftClient()  # Will use the MARKSWIFT_API_KEY environment variable
+```
+
+### Converting a Document
+
+To convert a document to Markdown:
+
+```python
+# Convert a single file
+job_id = client.convert_file("path/to/document.docx")
+
+# Check the status of the conversion
+status = client.check_status(job_id)
+print(f"Status: {status['status']}, Progress: {status['progress']}%")
+
+# Wait for the conversion to complete and get the Markdown
+markdown = client.wait_for_completion(job_id)
+print(markdown)
+
+# Or fetch the Markdown manually once the job is complete
+if status["status"] == "completed":
+    markdown = client.fetch_markdown(job_id)
+    print(markdown)
+```
+
+### Converting Multiple Documents
+
+To convert multiple documents at once:
+
+```python
+# Convert multiple files
+job_ids = client.convert_files(["path/to/document1.docx", "path/to/document2.docx"])
+
+# Check the status of all conversions
+batch_status = client.check_batch_status(job_ids)
+for i, status in enumerate(batch_status["results"]):
+    print(f"Job {job_ids[i]}: Status: {status['status']}, Progress: {status['progress']}%")
+
+# Fetch the Markdown for all completed jobs
+markdowns = client.fetch_batch_markdown(job_ids)
+for job_id, markdown in markdowns.items():
+    print(f"Job {job_id}:")
+    print(markdown[:100] + "...")  # Print the first 100 characters
+```
+
+### Conversion Types
+
+MarkSwift supports different types of conversions:
+
+- `basic`: Standard conversion (default)
+- `enhanced`: Enhanced conversion with improved formatting and structure
+
+```python
+# Use enhanced conversion
+job_id = client.convert_file("path/to/document.docx", conversion_type="enhanced")
+```
+
+### Canceling a Job
+
+To cancel a conversion job:
+
+```python
+success = client.cancel_job(job_id)
+if success:
+    print(f"Job {job_id} canceled successfully")
+else:
+    print(f"Failed to cancel job {job_id}")
+```
+
+To cancel a batch conversion job:
+
+```python
+result = client.cancel_batch_job(batch_id)
+print(f"Canceled jobs: {result['cancelled_jobs']}")
+```
+
+### Exporting as HTML
+
+To export the markdown as HTML:
+
+```python
+html = client.export_html(job_id)
+with open("output.html", "w") as f:
+    f.write(html)
+```
+
+### Managing Documents
+
+To list all documents processed by the user:
+
+```python
+documents = client.list_documents()
+for doc in documents:
+    print(f"Job ID: {doc['job_id']}")
+    print(f"Filename: {doc['filename']}")
+    print(f"Status: {doc['status']}")
+    print(f"Created: {doc['created_at']}")
+    print(f"Size: {doc['file_size']} bytes")
+```
+
+To delete a document:
+
+```python
+success = client.delete_document(job_id)
+if success:
+    print(f"Document {job_id} deleted successfully")
+else:
+    print(f"Failed to delete document {job_id}")
+```
+
+### User Account
+
+To check your credit balance:
+
+```python
+credits = client.get_user_credits()
+print(f"You have {credits} credits remaining")
+```
+
+## API Reference
+
+### `MarkSwiftClient`
+
+#### `__init__(api_key=None, base_url="https://api.datavisionlabs.ai")`
+
+Initialize the client with your API key and the base URL for the API.
+
+#### `convert_file(file_path, conversion_type="basic")`
+
+Convert a single file to Markdown.
+
+#### `convert_files(file_paths, conversion_type="basic")`
+
+Convert multiple files to Markdown.
+
+#### `check_status(job_id)`
+
+Check the status of a conversion job.
+
+#### `check_batch_status(job_ids)`
+
+Check the status of multiple conversion jobs.
+
+#### `fetch_markdown(job_id)`
+
+Fetch the Markdown content for a completed job.
+
+#### `fetch_batch_markdown(job_ids)`
+
+Fetch the Markdown content for multiple completed jobs.
+
+#### `cancel_job(job_id)`
+
+Cancel a conversion job.
+
+#### `cancel_batch_job(batch_id)`
+
+Cancel a batch conversion job.
+
+#### `export_html(job_id)`
+
+Export the markdown as HTML.
+
+#### `list_documents()`
+
+List all documents processed by the user.
+
+#### `delete_document(job_id)`
+
+Delete a document and its associated resources.
+
+#### `get_user_credits()`
+
+Get the current user's credit balance.
+
+#### `wait_for_completion(job_id, timeout=300, poll_interval=2)`
+
+Wait for a job to complete and return the Markdown content.
+
+## Error Handling
+
+The client raises a `MarkSwiftError` for API-related errors:
+
+```python
+from markswift_client import MarkSwiftClient, MarkSwiftError
+
+client = MarkSwiftClient(api_key="your_api_key")
+
+try:
+    job_id = client.convert_file("path/to/document.docx")
+    markdown = client.wait_for_completion(job_id)
+except FileNotFoundError as e:
+    print(f"File not found: {e}")
+except MarkSwiftError as e:
+    print(f"API error: {e}")
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
