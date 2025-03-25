@@ -1,0 +1,3 @@
+[console_scripts]
+ServerlessYunKaifaCongRumenDaoShizhanFix1 = ServerlessYunKaifaCongRumenDaoShizhanFix1.__main__:main
+serverless-yun-kaifa-cong-rumen-dao-shizhan-fix1 = ServerlessYunKaifaCongRumenDaoShizhanFix1.__main__:main
