@@ -1,0 +1,3 @@
+[console_scripts]
+SpringShizhanZhongwenDiliubanMeapFix1 = SpringShizhanZhongwenDiliubanMeapFix1.__main__:main
+spring-shizhan-zhongwen-diliuban-meap-fix1 = SpringShizhanZhongwenDiliubanMeapFix1.__main__:main
