@@ -1,0 +1,3 @@
+[console_scripts]
+YeslabCcnaShiyanShouceFix1 = YeslabCcnaShiyanShouceFix1.__main__:main
+yeslab-ccna-shiyan-shouce-fix1 = YeslabCcnaShiyanShouceFix1.__main__:main
