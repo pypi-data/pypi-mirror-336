@@ -1,0 +1,3 @@
+[console_scripts]
+LekaiPmpPeixunJiangyiFix1 = LekaiPmpPeixunJiangyiFix1.__main__:main
+lekai-pmp-peixun-jiangyi-fix1 = LekaiPmpPeixunJiangyiFix1.__main__:main

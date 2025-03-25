@@ -1,0 +1,12 @@
+README.md
+setup.py
+LekaiPmpPeixunJiangyiFix1/README.md
+LekaiPmpPeixunJiangyiFix1/__init__.py
+LekaiPmpPeixunJiangyiFix1/__main__.py
+LekaiPmpPeixunJiangyiFix1/file.pdf
+LekaiPmpPeixunJiangyiFix1/index.html
+lekai_pmp_peixun_jiangyi_fix1.egg-info/PKG-INFO
+lekai_pmp_peixun_jiangyi_fix1.egg-info/SOURCES.txt
+lekai_pmp_peixun_jiangyi_fix1.egg-info/dependency_links.txt
+lekai_pmp_peixun_jiangyi_fix1.egg-info/entry_points.txt
+lekai_pmp_peixun_jiangyi_fix1.egg-info/top_level.txt
