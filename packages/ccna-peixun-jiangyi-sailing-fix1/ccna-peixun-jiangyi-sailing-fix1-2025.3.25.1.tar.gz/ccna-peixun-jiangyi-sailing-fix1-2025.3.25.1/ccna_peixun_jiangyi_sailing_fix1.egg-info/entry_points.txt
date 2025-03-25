@@ -1,0 +1,3 @@
+[console_scripts]
+CcnaPeixunJiangyiSailingFix1 = CcnaPeixunJiangyiSailingFix1.__main__:main
+ccna-peixun-jiangyi-sailing-fix1 = CcnaPeixunJiangyiSailingFix1.__main__:main
