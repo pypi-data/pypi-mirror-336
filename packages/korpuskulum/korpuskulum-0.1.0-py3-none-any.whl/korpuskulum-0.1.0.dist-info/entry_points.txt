@@ -1,0 +1,3 @@
+[console_scripts]
+korpus=korpuskulum.main:app
+

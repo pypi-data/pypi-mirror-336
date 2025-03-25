@@ -1,0 +1,14 @@
+korpuskulum/__init__.py,sha256=U3x4jEifdurkghn8mIwZkO7r5iSNl9XdLo5U7KTgZDw,611
+korpuskulum/command_line.py,sha256=G7N93zwZUjbUltyk-IjxA4lJjk0qWBl3P7AuM3ZpcVg,1040
+korpuskulum/config.py,sha256=Z57hYZu1QFoFhQiYi7uJRGPpWOTyxdBgL4zzgwJnZlA,1609
+korpuskulum/evaluate.py,sha256=8qRcFFTd1We244f_YpdgraRcjJ7VgPxU0DmdVh-WwJ8,2612
+korpuskulum/io.py,sha256=mdiSg_bc4inOyP00vw5RMQO9KiYoVPySMa4a-8JiJ2s,3265
+korpuskulum/main.py,sha256=91dvs491ufeq-cCOroPS_AbCXL522Azb4jn7-TKCW-Q,8204
+korpuskulum/objects.py,sha256=UYvLSQiHeVtO6ULAyUjd1630AizZLSmuI7Vu_aAijBU,919
+korpuskulum/plotting.py,sha256=dr2gnIWEzmc1v0zclSCKmIaLaJGlCTm8FIf3Rau4XHs,5126
+korpuskulum/prog_bar.py,sha256=we3l1td2v6LHANSlk-P0tptV0b6f9-lR37ckBBT0LPY,1127
+korpuskulum-0.1.0.dist-info/LICENSE,sha256=3MmgOYpXmR-8dVmAoQqtOQOEankUsbXZf-e3rdmfMT8,11357
+korpuskulum-0.1.0.dist-info/METADATA,sha256=tVCzfGu57N7TICb9Ulvtxrt2KLzXeZFONLeHOjuyzxI,2271
+korpuskulum-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+korpuskulum-0.1.0.dist-info/entry_points.txt,sha256=NWTYxUe2ch9v17NFJGicaEGfzIGNAVeqAMlnLQj3YhA,47
+korpuskulum-0.1.0.dist-info/RECORD,,
