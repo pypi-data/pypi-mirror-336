@@ -1,0 +1,3 @@
+[console_scripts]
+GongdaRuipuCcnpShiyanShouceFix1 = GongdaRuipuCcnpShiyanShouceFix1.__main__:main
+gongda-ruipu-ccnp-shiyan-shouce-fix1 = GongdaRuipuCcnpShiyanShouceFix1.__main__:main
