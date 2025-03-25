@@ -1,0 +1,3 @@
+[console_scripts]
+TongguoLiziXueRustFix1 = TongguoLiziXueRustFix1.__main__:main
+tongguo-lizi-xue-rust-fix1 = TongguoLiziXueRustFix1.__main__:main
