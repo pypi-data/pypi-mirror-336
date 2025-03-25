@@ -1,0 +1,5 @@
+bc_device_sdk-0.2.2.dist-info/METADATA,sha256=3Mk8vymIF9yxBdPl0qxkNR62FvWeapDPfredcl0-tQA,284
+bc_device_sdk-0.2.2.dist-info/WHEEL,sha256=pKyTkFbTEakJa6xy_GKYIZO6TnrTnUxcBEc6JAhr_7o,104
+bc_device_sdk/__init__.py,sha256=hEr5uADQKpxYX-xX8tzUdrxK9fg8RBKp4D84QPdR4-M,135
+bc_device_sdk/bc_device_sdk.cpython-310-darwin.so,sha256=aWr4TlGxDIQCXUShihZqGlOMlNsrLgVgWuSRK79397c,6415312
+bc_device_sdk-0.2.2.dist-info/RECORD,,
