@@ -1,0 +1,24 @@
+name: geoplanar_docs
+channels:
+- conda-forge
+dependencies:
+- python=3.7
+# dependencies
+- geopandas
+- libpysal
+- numpy
+- geopy
+- matplotlib-base
+- mercantile
+- pillow
+- rasterio
+- requests
+- joblib
+- pip
+# doc dependencies
+- sphinx
+- numpydoc
+- nbsphinx
+- pandoc
+- ipython
+- pydata-sphinx-theme

@@ -1,0 +1,58 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches:
+      - "*"
+  schedule:
+    - cron: "0 0 * * 1,4"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Manual test execution
+        default: test
+        required: false
+
+jobs:
+  Test:
+    name: ${{ matrix.os }}, ${{ matrix.environment-file }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        environment-file:
+          - ci/310-oldest.yaml
+          - ci/310-latest.yaml
+          - ci/311-latest.yaml
+          - ci/312-latest.yaml
+          - ci/312-dev.yaml
+        include:
+          - environment-file: ci/312-latest.yaml
+            os: macos-13 # Intel
+          - environment-file: ci/312-latest.yaml
+            os: macos-latest # Apple Silicon
+          - environment-file: ci/312-latest.yaml
+            os: windows-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup micromamba
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: ${{ matrix.environment-file }}
+
+      - name: Install geoplanar
+        run: pip install .
+
+      - name: Test geoplanar
+        run: |
+          pytest -v --color yes --cov geoplanar --cov-append --cov-report term-missing --cov-report xml .
+
+      - uses: codecov/codecov-action@v4
