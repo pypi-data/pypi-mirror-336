@@ -1,0 +1,15 @@
+include/AT_Version.h,sha256=WHS-M-QXyDhqA3UY7DCerw3FI7EZkjy10zxESVl3TbA,139
+lib/cmake/libamtrack/libamtrackConfigVersion.cmake,sha256=lyOaoBjPYkgvlDZkwIVvViNFDTpx87P_bTYTfZvKivA,1862
+pyamtrack/__init__.py,sha256=tkWNFmBkYEYsFhALMNwfUZkqVUUgfwkE2AxPUKdCEfE,1414
+pyamtrack/_core.cpython-39-x86_64-linux-gnu.so,sha256=XrL49KobAXG1LkzOGW36w27y7w-0xeo5sbGxWKO77CE,137961
+pyamtrack/_version.py,sha256=t5RmihsBVmdDX_HzwrxODo3iWQvvHq5vfWqnt_H2biA,515
+pyamtrack/libamtrack.so,sha256=k7y7HKdPwl6_1r85G5Hqusx-lIX3atsMcQWoZksIi3c,1543385
+pyamtrack.libs/libgcc_s-2298274a.so.1,sha256=V2IJwfUuwSSQhJqB29JtMx8hH79dCRjAvTQIGWShH-s,181737
+pyamtrack.libs/libgsl-8e979b53.so.28.0.0,sha256=QGp8FOFjzpYui2qmkWq5CAzu62el9zhkONtPHqFyOg8,12220441
+pyamtrack.libs/libgslcblas-4b18bc9c.so.0.0.0,sha256=ahd5kehKqA1-e_Ke3xx_BUQWoe7nUhknEbvvvyQtqzk,990449
+pyamtrack.libs/libstdc++-08d5c7eb.so.6.0.33,sha256=k0S_imrCh_IE6WpvxrLoVPYiRyMVf15RDWRiXPIywV8,3562401
+share/libamtrack/VERSION,sha256=S7Ss1HrJmTM7q4AF0spZKGJrivGUSV-xDHbyf4G4ky8,14
+pyamtrack-0.14.1a2.dist-info/METADATA,sha256=BY-kooXLa6ZN4hkmOlTFVCNaCKoU0C9XGXsilKEGHGk,41951
+pyamtrack-0.14.1a2.dist-info/WHEEL,sha256=BWcS-y-HMCyJVXvwPsXkC3A8CnR5r1Wc9YsegsiZzS8,115
+pyamtrack-0.14.1a2.dist-info/RECORD,,
+pyamtrack-0.14.1a2.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
