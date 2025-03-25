@@ -1,0 +1,11 @@
+click<9,>=8.1.7
+rich<14,>=13.6.0
+httpx[brotli,http2]>=0.25.0
+toml>=0.10.2
+psycopg<4,>=3.1.12
+
+[dev]
+pytest>=7.4.3
+fastapi>=0.104.1
+pytest-dependency>=0.5.1
+ruff~=0.4
