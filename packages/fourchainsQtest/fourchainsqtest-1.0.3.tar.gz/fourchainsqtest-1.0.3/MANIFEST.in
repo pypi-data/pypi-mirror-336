@@ -1,0 +1,7 @@
+include config.py
+include requirements.txt
+
+include qxenonsign/*.py
+recursive-include qxenonsign/pyarmor_runtime_000000 *
+
+exclude *.pyc
