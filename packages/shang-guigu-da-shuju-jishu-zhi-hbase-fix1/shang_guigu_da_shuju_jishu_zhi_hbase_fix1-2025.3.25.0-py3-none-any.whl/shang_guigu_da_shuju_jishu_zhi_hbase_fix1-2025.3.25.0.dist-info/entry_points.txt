@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiHbaseFix1 = ShangGuiguDaShujuJishuZhiHbaseFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-hbase-fix1 = ShangGuiguDaShujuJishuZhiHbaseFix1.__main__:main
