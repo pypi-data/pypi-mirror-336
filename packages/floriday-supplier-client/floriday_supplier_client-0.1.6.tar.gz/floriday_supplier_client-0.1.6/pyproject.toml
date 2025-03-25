@@ -1,0 +1,4 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+[tool.setuptools_scm]
+write_to = "floriday_supplier_client/_version.py"
