@@ -1,0 +1,3 @@
+[console_scripts]
+SaasMoshiYunShujucangkuShijianShouceFix1 = SaasMoshiYunShujucangkuShijianShouceFix1.__main__:main
+saas-moshi-yun-shujucangku-shijian-shouce-fix1 = SaasMoshiYunShujucangkuShijianShouceFix1.__main__:main
