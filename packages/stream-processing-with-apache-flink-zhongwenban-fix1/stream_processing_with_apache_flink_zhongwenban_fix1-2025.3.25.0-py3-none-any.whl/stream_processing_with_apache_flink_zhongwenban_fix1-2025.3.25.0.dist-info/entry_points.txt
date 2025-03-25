@@ -1,0 +1,3 @@
+[console_scripts]
+StreamProcessingWithApacheFlinkZhongwenbanFix1 = StreamProcessingWithApacheFlinkZhongwenbanFix1.__main__:main
+stream-processing-with-apache-flink-zhongwenban-fix1 = StreamProcessingWithApacheFlinkZhongwenbanFix1.__main__:main
