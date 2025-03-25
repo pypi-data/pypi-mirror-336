@@ -1,0 +1,5 @@
+<!-- an xml file without schema-->
+<?xml-model href="missing.sch="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<foo>
+    <bar>bar</bar>
+</foo>
