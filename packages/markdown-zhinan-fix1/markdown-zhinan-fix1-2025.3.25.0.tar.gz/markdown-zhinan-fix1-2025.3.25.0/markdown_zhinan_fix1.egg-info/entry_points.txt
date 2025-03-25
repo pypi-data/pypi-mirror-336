@@ -1,0 +1,3 @@
+[console_scripts]
+MarkdownZhinanFix1 = MarkdownZhinanFix1.__main__:main
+markdown-zhinan-fix1 = MarkdownZhinanFix1.__main__:main
