@@ -1,0 +1,14 @@
+office_tool_plus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+office_tool_plus/utils.py,sha256=xFsKre1gkToiqLfbFzWZVlLJcFzHYQwRyLkT4EyRIz0,5843
+office_tool_plus/excel/__init__.py,sha256=bINzUacX9aMQdp-YnM2-Jx6l0IFsNEbGkRZnH9IJj6Y,332
+office_tool_plus/excel/app.py,sha256=BTtfiZxBtb0L91pgts1K1p1pMhjgTIGMGFgflxYJQyU,3628
+office_tool_plus/linux/__init__.py,sha256=p2C5dMNf4NFYAZMZIxR1PjMICdSUyK_yrdg3yqWNFrE,455
+office_tool_plus/linux/app.py,sha256=ogct2cdmfrUTJM_p17ZA_vQA2_bpTuUtian-AlmYwBA,2114
+office_tool_plus/pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+office_tool_plus/pdf/app.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+office_tool_plus/word/__init__.py,sha256=j7q7FVJM1IjB5ffwxX-kkx3s1vpHPtlsXbfNCDnYQl0,292
+office_tool_plus/word/app.py,sha256=-G37ECXd2s9286BIBGqiUrGVzy29zXrvQ8-Lq-RGcfw,2960
+office_tool_plus-0.1.0.dist-info/METADATA,sha256=47asjnglEjHkREeBzXPZdZDFkVfTJBhPeeMm4-IAr2Q,6448
+office_tool_plus-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+office_tool_plus-0.1.0.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+office_tool_plus-0.1.0.dist-info/RECORD,,
