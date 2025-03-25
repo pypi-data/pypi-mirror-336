@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "beevisionseo"
+version = "0.1.0"
+authors = [
+    { name = "BeeVision SEO", email = "kushan.e@digitalbeelabs.com" }
+]
+description = "BeeVision SEO API Client Library"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/Digitalbee-Labs/bvs-api-python-client"
+Issues = "https://github.com/Digitalbee-Labs/bvs-api-python-client/issues" 
