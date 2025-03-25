@@ -1,0 +1,3 @@
+[console_scripts]
+RustCankaoshouceFix1 = RustCankaoshouceFix1.__main__:main
+rust-cankaoshouce-fix1 = RustCankaoshouceFix1.__main__:main
