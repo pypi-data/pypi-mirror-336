@@ -1,0 +1,3 @@
+[console_scripts]
+XiwangJiaoyuCcnpShiyanShouceFix1 = XiwangJiaoyuCcnpShiyanShouceFix1.__main__:main
+xiwang-jiaoyu-ccnp-shiyan-shouce-fix1 = XiwangJiaoyuCcnpShiyanShouceFix1.__main__:main
