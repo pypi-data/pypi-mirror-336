@@ -1,0 +1,13 @@
+citations_count/__init__.py,sha256=RCxRcdZ-Txs2BoVz-5LDG0qOVa9Kowl_H9WgyjrBAUg,239
+citations_count/config.py,sha256=vXNykfNujfk1-5OooZh22zc6OYhvFjG9s9LGP_Fc7WI,930
+citations_count/core.py,sha256=EYxPQIqimQYBRmlwByikqLIxvCeSaLUpobRTyngkg-8,2022
+citations_count/logging_utils.py,sha256=qzwcU4-gtSeFDNFkmASKNwF8tSVcRc5PsQBNTICoyzk,84
+citations_count/sources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+citations_count/sources/crossref.py,sha256=Idl6hVhiKtVWTPUG4RwsOO7VYlAbuWysHTV0SJP7OOY,1218
+citations_count/sources/googlescholar.py,sha256=2R6kaWK23OXdpdVeRaU7VQW0YIUlgpf2z3G4K3kCOj4,2024
+citations_count/sources/opencitations.py,sha256=8JGcjAU9ZrYVcSW7AfHVgexAaYZHeLwKc46mm9M_Zcs,1457
+citations_count-1.0.0.dist-info/licenses/LICENSE,sha256=jf6dhXaa5sUmI5QeLrVpackEO_vfI3ljKiFiueGJjws,1072
+citations_count-1.0.0.dist-info/METADATA,sha256=s1QfekthAXE4kq0umOCHa36N5hXWs8ITuPXobWwYySU,4022
+citations_count-1.0.0.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+citations_count-1.0.0.dist-info/top_level.txt,sha256=B9jaVV1kVerX_hAKmeOEKa3DtsYvzwA_HUfd7Elyee0,16
+citations_count-1.0.0.dist-info/RECORD,,
