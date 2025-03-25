@@ -1,0 +1,3 @@
+[console_scripts]
+JavaXiangmuDaquanChuyiFix1 = JavaXiangmuDaquanChuyiFix1.__main__:main
+java-xiangmu-daquan-chuyi-fix1 = JavaXiangmuDaquanChuyiFix1.__main__:main
