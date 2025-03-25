@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: pybsn
+Version: 0.4.2
+Summary: pybsn is a python interface to Arista Networks BigDB/Atlas based products
+Home-page: https://github.com/bigswitch/pybsn
+Author: Andreas Wundsam, Andre Kutzleb, Jason Parraga, Rich Lane
+Author-email: Andreas.Wundsam@arista.com
+License: ECLIPSE
+License-File: LICENSE
+Requires-Dist: requests>=2.3.0
+Requires-Dist: IPython>=7.13.0
+Requires-Dist: traitlets>=4.3.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
