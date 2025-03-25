@@ -1,0 +1,2 @@
+[console_scripts]
+config_tpg-init = config_tpg.gen_config:run
