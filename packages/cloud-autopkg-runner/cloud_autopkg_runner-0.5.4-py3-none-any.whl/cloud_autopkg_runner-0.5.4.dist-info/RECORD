@@ -1,0 +1,14 @@
+cloud_autopkg_runner/__about__.py,sha256=9DKfF2neapaW4aczw05eWgiX6ryjQ20S077ekIgSORM,317
+cloud_autopkg_runner/__init__.py,sha256=r2jaBPkUMhBaHDdNEPN01FNTwK3V2ifgnhHGSn_EXE0,5347
+cloud_autopkg_runner/__main__.py,sha256=RzxISLWBMLcyCn7me1iDGapNYOb4CqaEVKRMMYtyYI4,8156
+cloud_autopkg_runner/autopkg_prefs.py,sha256=dSkSMQaGl68WuxlndS0pVmReTKnEgJGzeswqo_1NWUc,8976
+cloud_autopkg_runner/exceptions.py,sha256=EzYJWEdlE6gB7E7oHChSayAciO-PL762sqfnrQ5_Cv4,340
+cloud_autopkg_runner/metadata_cache.py,sha256=PybFdApZx3LDcNkUP-ixjXkCt5c2AyLsHN9LxsENt3k,7271
+cloud_autopkg_runner/recipe.py,sha256=BLbiLBoMcAZI_kItfRKLxWrshmG1eQ44T0tVYoeIxT8,17359
+cloud_autopkg_runner/recipe_report.py,sha256=gK-sDSRvHzdoXoJqmbT1R-VNK5W8je5BupSJ47JelXo,7688
+cloud_autopkg_runner/shell.py,sha256=IQjy8-RIZPprLX7qf7eWKELLkJDh0F4rvW_lTaCc5sU,5858
+cloud_autopkg_runner-0.5.4.dist-info/METADATA,sha256=J_WGDIyWRorfpzmvkq9n-HlY9tRK9gYDgrHAr5LA9BU,5689
+cloud_autopkg_runner-0.5.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cloud_autopkg_runner-0.5.4.dist-info/entry_points.txt,sha256=kwqzQYN2Gp4Jqovq7sG2gUJL-EFiA-SJ7OBAuHvGzKY,67
+cloud_autopkg_runner-0.5.4.dist-info/licenses/LICENSE,sha256=LDKInB__JLfWvmBh-j3TbeUBBFywyKbZ5Gas51kvcRk,1094
+cloud_autopkg_runner-0.5.4.dist-info/RECORD,,
