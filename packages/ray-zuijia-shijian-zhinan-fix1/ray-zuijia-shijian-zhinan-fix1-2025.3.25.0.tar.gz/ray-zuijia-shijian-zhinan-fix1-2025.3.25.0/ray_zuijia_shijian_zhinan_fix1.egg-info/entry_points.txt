@@ -1,0 +1,3 @@
+[console_scripts]
+RayZuijiaShijianZhinanFix1 = RayZuijiaShijianZhinanFix1.__main__:main
+ray-zuijia-shijian-zhinan-fix1 = RayZuijiaShijianZhinanFix1.__main__:main
