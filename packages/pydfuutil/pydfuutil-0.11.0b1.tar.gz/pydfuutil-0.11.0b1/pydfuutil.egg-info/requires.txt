@@ -1,0 +1,17 @@
+pyusb
+
+[:python_version < "3.12"]
+libusb-package
+
+[:python_version >= "3.12"]
+libusb-pkg
+
+[build]
+build
+
+[rich]
+rich
+
+[test]
+pytest
+pylint
