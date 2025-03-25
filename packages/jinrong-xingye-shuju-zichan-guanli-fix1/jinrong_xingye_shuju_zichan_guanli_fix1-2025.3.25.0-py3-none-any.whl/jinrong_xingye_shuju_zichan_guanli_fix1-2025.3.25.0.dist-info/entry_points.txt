@@ -1,0 +1,3 @@
+[console_scripts]
+JinrongXingyeShujuZichanGuanliFix1 = JinrongXingyeShujuZichanGuanliFix1.__main__:main
+jinrong-xingye-shuju-zichan-guanli-fix1 = JinrongXingyeShujuZichanGuanliFix1.__main__:main
