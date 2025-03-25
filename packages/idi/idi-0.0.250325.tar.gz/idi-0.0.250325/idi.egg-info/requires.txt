@@ -1,0 +1,13 @@
+numpy<2.2
+cython
+numba
+numexpr
+scipy
+jinja2
+mkl-service
+matplotlib
+h5py
+mkl
+mkl-include
+setuptools<60
+tqdm
