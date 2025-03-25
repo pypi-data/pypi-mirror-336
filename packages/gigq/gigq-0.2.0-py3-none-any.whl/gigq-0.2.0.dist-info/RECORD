@@ -1,0 +1,16 @@
+gigq/__init__.py,sha256=PGUSNTS4eITUmGhN_0Yw3JtAEaPoO5a_23AjVCLEyMw,1020
+gigq/cli.py,sha256=cUYLlDy07CKNDlOzmG7zXMGOXtrAenCvZzpbyngaem8,9671
+gigq/db_utils.py,sha256=zWwgFAu1NYrTLzw4-BUI2F-2wV8OwnM9_kenBhpQe_w,1825
+gigq/job.py,sha256=PTWIY4TmpBaKvG9GG2_X07i4IiD1n3Zcj4ZWIli4gE4,1518
+gigq/job_queue.py,sha256=cwO8zef_bkQ-sCTPX7PNhk_LqbQN3h6281cxfnLDuFM,10062
+gigq/job_status.py,sha256=WLlbqRvO_iWm4zPcFp3lPypLst1Y-BVwt6Dp-cnAuCs,379
+gigq/table_formatter.py,sha256=vQh1_SxN63vFX1NAzinIJnvNyvb-tSrm8My0Sktbx3U,4042
+gigq/utils.py,sha256=xw1LolU5DejIwlf6JJ0eUsOtr35oNyF8h5OHEo8z8VU,1174
+gigq/worker.py,sha256=Dz8aN-xMeVoLLQkyaMhokNKGU2u4MmMAfTrCCJVDXtc,13312
+gigq/workflow.py,sha256=93WK-lkvRrZyVcqAU5JCxnPfVN2eolfEmqXsGB7cekI,1430
+gigq-0.2.0.dist-info/licenses/LICENSE,sha256=ViRz2sV_WNNfwvIwpGzgWNwqPiun77SJ_L9rqmEQs2I,1069
+gigq-0.2.0.dist-info/METADATA,sha256=PyXx9RgBZPTbdj794kg_TBo4252B9-n_tbYa_cgrGOg,14046
+gigq-0.2.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+gigq-0.2.0.dist-info/entry_points.txt,sha256=k7w8Q-qYr2mY7O47D_MVQQoYTU_2azZNHEYrq08unKw,39
+gigq-0.2.0.dist-info/top_level.txt,sha256=b87Z812nrrOFBrpoEeQ-v9mS9Io9Jbs_hjJeWk1wsH8,5
+gigq-0.2.0.dist-info/RECORD,,
