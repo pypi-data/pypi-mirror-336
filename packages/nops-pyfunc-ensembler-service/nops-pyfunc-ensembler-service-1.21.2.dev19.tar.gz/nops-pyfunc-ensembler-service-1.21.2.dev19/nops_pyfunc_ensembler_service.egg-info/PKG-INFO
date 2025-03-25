@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: nops-pyfunc-ensembler-service
+Version: 1.21.2.dev19
+Requires-Python: >=3.8,<3.11
