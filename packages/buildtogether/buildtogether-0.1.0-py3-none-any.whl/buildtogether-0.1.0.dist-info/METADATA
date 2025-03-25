@@ -1,0 +1,143 @@
+Metadata-Version: 2.4
+Name: buildtogether
+Version: 0.1.0
+Summary: Build Together - Project Management Tool
+Home-page: https://github.com/yourusername/buildtogether
+Author: Build Together Team
+Author-email: info@buildtogether.app
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask>=3.0.0
+Requires-Dist: SQLAlchemy>=2.0.20
+Requires-Dist: Flask-SQLAlchemy>=3.1.0
+Requires-Dist: Flask-Migrate>=4.0.0
+Requires-Dist: Flask-WTF>=1.1.0
+Requires-Dist: WTForms>=3.0.0
+Requires-Dist: marshmallow>=3.20.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: flask-cors>=4.0.0
+Requires-Dist: markdown>=3.7.0
+Requires-Dist: bleach>=6.2.0
+Requires-Dist: markupsafe>=3.0.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: colorama>=0.4.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Build Together CLI
+
+A lightweight command-line tool for setting up and managing the Build Together application.
+
+## Installation
+
+```bash
+pip install buildtogether
+```
+
+This will install the `btg` command-line tool.
+
+## Usage
+
+### Initial Setup
+
+Initialize the Build Together application:
+
+```bash
+btg setup init
+```
+
+Configure application settings:
+
+```bash
+btg setup config
+```
+
+### Server Management
+
+Start the server:
+
+```bash
+btg server start
+```
+
+Start with a specific port:
+
+```bash
+btg server start --port 8000
+```
+
+Handle port conflicts automatically:
+
+```bash
+btg server start --auto-port
+```
+
+Stop the server:
+
+```bash
+btg server stop
+```
+
+Restart the server:
+
+```bash
+btg server restart
+```
+
+Check server status:
+
+```bash
+btg server status
+```
+
+### Help
+
+Get general help:
+
+```bash
+btg --help
+```
+
+Get help for a specific command group:
+
+```bash
+btg server --help
+```
+
+## Development
+
+If you want to develop the CLI tool itself:
+
+1. Clone the repository
+2. Navigate to the CLI directory
+3. Install in development mode:
+
+```bash
+pip install -e .
+```
+
+## Features
+
+- Easy application setup and configuration
+- Server management (start, stop, restart, status)
+- Automatic port conflict detection and resolution
+- Colored terminal output for better readability

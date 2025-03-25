@@ -1,0 +1,13 @@
+buildtogether/__init__.py,sha256=xhQUIPldAuFLKkG4o8DSsHc07u0AuiK959yt5pl1rVs,155
+buildtogether/cli.py,sha256=pczdjwveuvNJ-dNxdr42JEClx5nSSI_u8WPsi94TaNw,1911
+buildtogether/commands/__init__.py,sha256=rmRHVxZCMU7nlGhJ_Hg2fbIGe_-z96HrcYEz9JauvzM,113
+buildtogether/commands/server.py,sha256=0sbrg1ssj9CSA0Gj291FveNKg9w4ndVBNr9mUPBZcZw,9572
+buildtogether/commands/setup.py,sha256=UaJgQttNeXgi737jlwDA-vpT5M_dEX2EuNaM1mceX4w,3669
+buildtogether/utils/__init__.py,sha256=aVz5YGj5EiUVK4Re6icyX0aWMVolLcBUMrOiPPJzLq4,54
+buildtogether/utils/port.py,sha256=idZszX09k6IqCskCf_k5Q_bSx5ylYIoIuFnl_DxtAx4,1767
+buildtogether-0.1.0.dist-info/licenses/LICENSE,sha256=UTUFCFRzXO4a3ywx6Fleu3OjqmP4NOY4UFOmBuN7MVI,1076
+buildtogether-0.1.0.dist-info/METADATA,sha256=RjEMrQL0wu1gx5agIzA4NQi0l9Q8ZbJKPVCMls99_7Q,2703
+buildtogether-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+buildtogether-0.1.0.dist-info/entry_points.txt,sha256=HLBrOGqErAcGajL9K8VA4MNuZiD8bvcd73T4L4hp8Ws,47
+buildtogether-0.1.0.dist-info/top_level.txt,sha256=_ThqLxorXhOwDg6GYc4jDrCrnC4zcHjJAEPDZNa6Z1E,14
+buildtogether-0.1.0.dist-info/RECORD,,
