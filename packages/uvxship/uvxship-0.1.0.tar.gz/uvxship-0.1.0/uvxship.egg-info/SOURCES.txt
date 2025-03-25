@@ -1,0 +1,9 @@
+README.md
+build.py
+publish.py
+pyproject.toml
+uvxship.egg-info/PKG-INFO
+uvxship.egg-info/SOURCES.txt
+uvxship.egg-info/dependency_links.txt
+uvxship.egg-info/entry_points.txt
+uvxship.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+[console_scripts]
+build = build:main
+publish = publish:main
+ship = ship:main
