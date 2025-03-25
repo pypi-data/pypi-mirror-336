@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: toxic_comment_classifier
+Version: 0.1.0
+Summary: A Python library for classifying toxic comments using deep learning.
+Author-email: Md Irfan Ali <irfanali29@hotmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+# toxic_comment_classifier
+
+# Toxic Comment Classifier
+
+A Python library for classifying toxic comments using deep learning.
+
+## Installation
+
+```bash
+pip install toxic_comment_classifier
+```
