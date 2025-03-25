@@ -1,0 +1,2 @@
+requests
+pyttman_plugin_base
