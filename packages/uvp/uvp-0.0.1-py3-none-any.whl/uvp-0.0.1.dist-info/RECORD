@@ -1,0 +1,10 @@
+uvp/__init__.py,sha256=4v1iwEwwBzo8Z3jC60x1jKm_4knM8PoWGdcKHkRczYs,145
+uvp/__main__.py,sha256=nlwebPTUrQ4awIeitv2wCvM_FoC8KuUPP3qGNCuRCkY,193
+uvp/core.py,sha256=Zbu5WGJCdA1OBKkPiMmavha5HFubxUdSOpV2syDxEaM,872
+uvp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uvp/commands/__init__.py,sha256=xPiMihtotHSPtRSMjkrm53Fm7eN6fCN-ZWTYhrjBB68,251
+uvp/commands/base.py,sha256=cg1BuplNjYVGG7N21vuR6E6D-TCEaH2FBuktHBtNWHw,1977
+uvp-0.0.1.dist-info/METADATA,sha256=8aaEVA9GGCGjsrMe2tckaVimQ_DAUpVyac8Q5WfMP2g,1900
+uvp-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uvp-0.0.1.dist-info/entry_points.txt,sha256=yia4R_DAiburoNP_QC-Z-6-7_b_Qauy8dyDR3BFBfew,42
+uvp-0.0.1.dist-info/RECORD,,
