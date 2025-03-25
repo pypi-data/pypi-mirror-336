@@ -1,0 +1,3 @@
+[console_scripts]
+PingtouGejianchiCdkFix1 = PingtouGejianchiCdkFix1.__main__:main
+pingtou-gejianchi-cdk-fix1 = PingtouGejianchiCdkFix1.__main__:main
