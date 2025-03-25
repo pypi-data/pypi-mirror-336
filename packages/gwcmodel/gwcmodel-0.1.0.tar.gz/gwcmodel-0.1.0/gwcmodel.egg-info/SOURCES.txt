@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+gwcmodel/__init__.py
+gwcmodel/gwc.py
+gwcmodel.egg-info/PKG-INFO
+gwcmodel.egg-info/SOURCES.txt
+gwcmodel.egg-info/dependency_links.txt
+gwcmodel.egg-info/requires.txt
+gwcmodel.egg-info/top_level.txt
