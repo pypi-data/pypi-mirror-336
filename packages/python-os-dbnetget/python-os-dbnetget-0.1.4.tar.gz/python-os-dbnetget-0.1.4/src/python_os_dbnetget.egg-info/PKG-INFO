@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: python-os-dbnetget
+Version: 0.1.4
+Summary: qdb async client.
+Home-page: https://github.com/cfhamlet/os-dbnetget
+Author: Ozzy
+Author-email: cfhamlet@gmail.com
+License: MIT License
+Description: #see os-dbnetget, patch sth.
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Description-Content-Type: text/markdown
+Provides-Extra: tornado
+Provides-Extra: m3
+Provides-Extra: rotate
