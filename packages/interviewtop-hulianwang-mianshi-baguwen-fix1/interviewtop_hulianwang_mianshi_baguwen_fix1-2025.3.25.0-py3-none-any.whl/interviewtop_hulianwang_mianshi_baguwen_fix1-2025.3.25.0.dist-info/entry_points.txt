@@ -1,0 +1,3 @@
+[console_scripts]
+InterviewtopHulianwangMianshiBaguwenFix1 = InterviewtopHulianwangMianshiBaguwenFix1.__main__:main
+interviewtop-hulianwang-mianshi-baguwen-fix1 = InterviewtopHulianwangMianshiBaguwenFix1.__main__:main
