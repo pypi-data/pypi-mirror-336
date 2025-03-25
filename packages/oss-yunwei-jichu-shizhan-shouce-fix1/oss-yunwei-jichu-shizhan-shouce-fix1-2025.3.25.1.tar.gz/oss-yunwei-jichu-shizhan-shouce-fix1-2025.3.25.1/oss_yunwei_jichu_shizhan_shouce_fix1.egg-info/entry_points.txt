@@ -1,0 +1,3 @@
+[console_scripts]
+OssYunweiJichuShizhanShouceFix1 = OssYunweiJichuShizhanShouceFix1.__main__:main
+oss-yunwei-jichu-shizhan-shouce-fix1 = OssYunweiJichuShizhanShouceFix1.__main__:main
