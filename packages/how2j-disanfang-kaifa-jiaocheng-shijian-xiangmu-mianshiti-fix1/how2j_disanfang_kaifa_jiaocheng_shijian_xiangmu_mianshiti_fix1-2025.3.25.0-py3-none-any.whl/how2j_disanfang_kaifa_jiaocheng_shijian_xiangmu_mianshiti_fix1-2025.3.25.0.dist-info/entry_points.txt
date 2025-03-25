@@ -1,0 +1,3 @@
+[console_scripts]
+How2jDisanfangKaifaJiaochengShijianXiangmuMianshitiFix1 = How2jDisanfangKaifaJiaochengShijianXiangmuMianshitiFix1.__main__:main
+how2j-disanfang-kaifa-jiaocheng-shijian-xiangmu-mianshiti-fix1 = How2jDisanfangKaifaJiaochengShijianXiangmuMianshitiFix1.__main__:main
