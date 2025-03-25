@@ -1,0 +1,10 @@
+impresso_pipelines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+impresso_pipelines/langident/__init__.py,sha256=-IRhvd1Xm-30hZtc8sXec_Y3fUJ_y8M5eBvkYo8ypdo,305
+impresso_pipelines/langident/langident_pipeline.py,sha256=AJMpDkJjbXHX47LyRVWe_lN0ZDWhQ0HSK0Ab_HGIwik,2762
+impresso_pipelines/mallet/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+impresso_pipelines/mallet/mallet_pipeline.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+impresso_pipelines/ocrqa/__init__.py,sha256=Y5ZzgYhBeIqq7jGzS6iy4ivBNpx6A6mmQ7vnfgzC-Ng,414
+impresso_pipelines/ocrqa/ocrqa_pipeline.py,sha256=Jf5o4CZP0JnqvAC2oYNg3rV03EkF_DCIyl472pE5xv0,5683
+impresso_pipelines-0.4.3.8.dist-info/METADATA,sha256=68PTL9yVg7TdJs0_G-OCHBow29igVzY00lVafwerXv8,6217
+impresso_pipelines-0.4.3.8.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+impresso_pipelines-0.4.3.8.dist-info/RECORD,,
