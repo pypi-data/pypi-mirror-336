@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: oh-my-git-agent
+Version: 1.0.21
+Summary: Git Agent for git operations automation. It will commit file by file on day by day, to make sure you have a commit every day.
+Home-page: https://github.com/LinXueyuanStdio/GitAgent
+License: MIT
+Author: Xueyuan Lin
+Author-email: linxy59@mail2.sysu.eud.cn
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: GitPython
+Requires-Dist: loguru
+Requires-Dist: openai
+Requires-Dist: typer
+Requires-Dist: xlin
+Description-Content-Type: text/markdown
+
+# GitAgent
+
+![PyPI](https://img.shields.io/pypi/v/oh-my-git-agent) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/oh-my-git-agent) ![PyPI - License](https://img.shields.io/pypi/l/oh-my-git-agent)
+
+Git Agent for git operations automation.
+
+It will commit file by file on day by day, to make sure you have a commit every day.
+
+![](screenshot.png)
+
+## Installation
+```bash
+pip install oh-my-git-agent
+```
+
+## Usage
+
+```bash
+# You can call gcli. Default is to commit at current directory
+gcli
+
+# You can specify the repo-dir and call gcli at any where
+gcli --repo-dir .
+
+# You can use ai to generate commit message. Default provider is DeepSeek
+gcli --ai --api-key sk-xxx --repo-dir .
+
+# or use openai to generate commit message
+gcli --ai --base-url null --api-key sk-xxx --repo-dir .
+
+# After committing, you can push code to remote
+git push origin main
+```
+
+Full Documentation:
+
+```bash
+$ gcli --help
+
+ Usage: cli.py [OPTIONS]
+
+ 自动填写 commit 信息提交代码
+
+╭─ Options ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --repo-dir                         TEXT  git 仓库目录 [default: .]                                                        │
+│ --ai                    --no-ai          是否使用 AI 填写 commit 信息 [default: no-ai]                                    │
+│ --api-key                          TEXT  OpenAI API Key [default: None]                                                   │
+│ --base-url                         TEXT  OpenAI API URL [default: https://api.deepseek.com]                               │
+│ --model                            TEXT  OpenAI Model [default: deepseek-chat]                                            │
+│ --install-completion                     Install completion for the current shell.                                        │
+│ --show-completion                        Show completion for the current shell, to copy it or customize the installation. │
+│ --help                                   Show this message and exit.                                                      │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
