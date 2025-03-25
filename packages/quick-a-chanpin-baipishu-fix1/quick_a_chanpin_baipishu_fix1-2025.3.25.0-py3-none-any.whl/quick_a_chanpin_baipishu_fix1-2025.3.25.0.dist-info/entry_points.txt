@@ -1,0 +1,3 @@
+[console_scripts]
+QuickAChanpinBaipishuFix1 = QuickAChanpinBaipishuFix1.__main__:main
+quick-a-chanpin-baipishu-fix1 = QuickAChanpinBaipishuFix1.__main__:main
