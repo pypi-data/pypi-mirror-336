@@ -1,0 +1,3 @@
+[console_scripts]
+LeetcodeQuanjieDoocsKaiyuanShequFix1 = LeetcodeQuanjieDoocsKaiyuanShequFix1.__main__:main
+leetcode-quanjie-doocs-kaiyuan-shequ-fix1 = LeetcodeQuanjieDoocsKaiyuanShequFix1.__main__:main
