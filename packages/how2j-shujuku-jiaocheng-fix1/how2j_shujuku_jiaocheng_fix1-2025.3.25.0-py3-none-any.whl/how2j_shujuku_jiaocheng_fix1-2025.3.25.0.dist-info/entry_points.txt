@@ -1,0 +1,3 @@
+[console_scripts]
+How2jShujukuJiaochengFix1 = How2jShujukuJiaochengFix1.__main__:main
+how2j-shujuku-jiaocheng-fix1 = How2jShujukuJiaochengFix1.__main__:main
