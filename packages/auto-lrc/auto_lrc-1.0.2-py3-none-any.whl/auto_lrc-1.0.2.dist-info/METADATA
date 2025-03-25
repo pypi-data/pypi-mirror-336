@@ -1,0 +1,65 @@
+Metadata-Version: 2.3
+Name: auto-lrc
+Version: 1.0.2
+Summary: Generate LRC files for your music using openai's whisper
+Author-email: HeavyLvy <{ID}+{username}@users.noreply.github.com>
+Requires-Python: >=3.12
+Requires-Dist: click>=8.1.8
+Requires-Dist: markupsafe==2.1.5
+Requires-Dist: openai-whisper
+Requires-Dist: rich>=13.9.4
+Requires-Dist: torch==2.6.0+cu126
+Requires-Dist: torchaudio==2.6.0+cu126
+Requires-Dist: torchvision==0.21.0+cu126
+Description-Content-Type: text/markdown
+
+# AutoLRC
+
+AutoLRC is a command-line that generates lyric files (.lrc) for your music locally using OpenAI's [Whisper](https://github.com/openai/whisper) model.
+
+## Installation
+
+Install AutoLRC with pip
+
+```bash
+pip install auto-lrc
+```
+
+AutoLRC depends on [FFmpeg](https://ffmpeg.org/) to be installed
+
+## Usage
+
+### CLI
+
+```
+AutoLRC --help
+```
+
+**Note:** the CLI may be slow to start as it has to import big packages.
+
+### Options
+
+- `--music-dir`: Path to the directory containing your music files.
+- `--model`: Whisper model to use for transcription (default: `turbo`).
+- `--device`: Device to run the transcription on (`cpu`, `cuda`, or default: `auto`).
+
+## GPU Support
+
+- Currently GPU support is only available Nvidia GPUs.
+- CUDA 12.6 installed. (Other versions may work fine)
+
+## Development
+
+AutoLRC is built with [UV](https://docs.astral.sh/uv/)
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/HeavyLvy/auto-lrc
+```
+
+2. Setup project:
+
+```bash
+uv sync
+```
