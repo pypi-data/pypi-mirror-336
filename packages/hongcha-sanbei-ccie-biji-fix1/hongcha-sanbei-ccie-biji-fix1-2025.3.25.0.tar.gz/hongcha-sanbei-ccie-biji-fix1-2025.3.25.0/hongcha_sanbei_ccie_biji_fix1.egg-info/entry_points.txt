@@ -1,0 +1,3 @@
+[console_scripts]
+HongchaSanbeiCcieBijiFix1 = HongchaSanbeiCcieBijiFix1.__main__:main
+hongcha-sanbei-ccie-biji-fix1 = HongchaSanbeiCcieBijiFix1.__main__:main
