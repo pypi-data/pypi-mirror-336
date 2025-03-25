@@ -1,0 +1,172 @@
+from io import TextIOWrapper
+from typing import Any, Dict, List, Optional, TextIO, Union, overload
+
+import xarray as xr
+from lxml import etree
+from lxml.etree import _ElementUnicodeResult
+
+from eopf.exceptions.errors import XmlXpathError
+
+
+@overload
+def parse_xml(_arg1: TextIOWrapper) -> Any: ...
+
+
+@overload
+def parse_xml(_arg1: TextIO) -> Any: ...
+
+
+@overload
+def parse_xml(_arg1: str) -> Any: ...
+
+
+def parse_xml(path: str) -> Any:
+    """Parse an XML file and create an object
+
+    Parameters
+    ----------
+    path: str
+        Path to the directory of the product
+    Returns
+    -------
+    Any
+        ElementTree object loaded with source elements :
+    """
+    return etree.parse(path)
+
+
+def get_namespaces(dom: Any) -> Dict[str, str]:
+    namespaces = dict()
+    # Use iterparse to collect namespaces
+    for event, elem in etree.iterparse(dom, events=("start-ns",)):
+        prefix, uri = elem
+        namespaces[prefix] = uri
+    return namespaces
+
+
+def get_xpath_results(dom: Any, xpath: str, namespaces: dict[str, str]) -> Any:
+    """Apply the XPath on the DOM
+
+    Parameters
+    ----------
+    dom : Any
+        The DOM to be parsed with xpath
+    xpath : str
+        The value of the corresponding XPath rule
+    namespaces : dict
+        The associated namespaces
+
+    Returns
+    -------
+    str
+        The result of the XPath
+
+    Raises
+    ------
+        KeyError: invalid xpath
+    """
+    try:
+        return dom.xpath(xpath, namespaces=namespaces)
+    except etree.XPathEvalError:
+        raise XmlXpathError("Invalid path " + xpath)
+
+
+def get_first_xpath_result(dom: Any, xpath: str, namespaces: dict[str, str]) -> Any:
+    """Apply the XPath on the DOM
+
+    Parameters
+    ----------
+    dom : Any
+        The DOM to be parsed with xpath
+    xpath : str
+        The value of the corresponding XPath rule
+    namespaces : dict
+        The associated namespaces
+
+    Returns
+    -------
+    str
+        The result of the XPath
+
+    Raises
+    ------
+        KeyError: invalid xpath
+    """
+    ret = get_xpath_results(dom, xpath, namespaces=namespaces)
+    if isinstance(ret, list):
+        if len(ret) > 0:
+            return ret[0]
+        else:
+            raise XmlXpathError(f"No element found for {xpath} in file")
+    else:
+        return ret
+
+
+def get_text(xml_data: Any) -> Optional[Union[List[str], str]]:
+    if isinstance(xml_data, list):
+        return [get_text(f) for f in xml_data]
+    elif isinstance(xml_data, _ElementUnicodeResult):
+        # Convert ElementUnicodeResult to string
+        return str(xml_data)
+    elif hasattr(xml_data, "text"):
+        if xml_data.text is None:
+            # Case where data is stored as attribute eg: <olci:invalidPixels value="749556" percentage="4.000000"/>
+            return xml_data.values()[0]
+        else:
+            # Nominal case, eg: <olci:alTimeSampling>44001</olci:alTimeSampling>
+            return xml_data.text
+    else:
+        return None
+
+
+def filter_pos_list(xpath_result: list[etree._Element]) -> Optional[str]:
+    """
+    Use to filter the posList element to provide a specific formatting for them
+    Parameters
+    ----------
+    xpath_result
+
+    Returns
+    -------
+
+    """
+
+    if not isinstance(xpath_result, list):
+        raise TypeError("Only list accepted")
+    if len(xpath_result) >= 1 and isinstance(xpath_result[0], etree._Element):
+        if len(xpath_result) == 1:
+            if xpath_result[0].tag.endswith("posList"):
+                values = xpath_result[0].text.split(" ")
+                match_list = ", ".join(" ".join([values[idx + 1], values[idx]]) for idx in range(0, len(values) - 1, 2))
+                return f"POLYGON(({match_list}))"
+            if xpath_result[0].text is not None:
+                return xpath_result[0].text
+            else:
+                return " ".join(xpath_result[0].values())
+        xpath_result = [elt.text for elt in xpath_result]
+    return ",".join(xpath_result)
+
+
+def get_values_as_xr_dataarray(dom: Any, xpath: str, namespaces: dict[str, str]) -> xr.DataArray:
+    """
+    This method is used to convert data from a xml node to a xarray dataarray
+
+    It is searching for /VALUES list in the sub xpath
+
+    Parameters
+    -------
+    dom: eteee._Element
+    xpath: str xpath
+    namespaces: namespaces of xml
+
+    Returns
+    -------
+    xr.DataArray
+    """
+    # TODO : why xpath params is not used ?
+    reenlist = dom.xpath("VALUES", namespaces=namespaces)
+    # Convert every value from xml to a floating point representation
+    array = [[float(i) for i in x.text.split()] for x in reenlist]
+    # Create 2d DataArray
+    da = xr.DataArray(array, dims=["y_tiepoints", "x_tiepoints"])
+    return da

@@ -1,0 +1,364 @@
+{
+    "recognition": {
+        "filename_pattern": "S3._SL_1_RBT.*SEN3|S03SLSRBT.*",
+        "product_type": "S03SLSRBT",
+        "processing_version": "TODO"
+    },
+    "chunk_sizes": {
+        "rows_an": 1200,
+        "columns_an": 1500,
+        "rows_ao": 1200,
+        "columns_ao": 900,
+        "rows_bn": 1200,
+        "columns_bn": 1500,
+        "rows_bo": 1200,
+        "columns_bo": 900,
+        "rows_in": 600,
+        "columns_in": 750,
+        "rows_io": 600,
+        "columns_io": 450,
+        "rows_fn": 600,
+        "columns_fn": 750,
+        "rows_fo": 600,
+        "columns_fo": 750
+    },
+    "init_function": {
+        "module": "eopf.store.sentineltoolbox_bindings",
+        "class": "SentinelToolBoxSafeInit"
+    },
+    "data_mapping": [
+        {
+            "target_path": "attrs:/:stac_discovery",
+            "source_path": "xfdumanifest.xml",
+            "accessor_id": "xmlmetadata",
+            "accessor_config": {
+                "mapping": "@#copy{'map':'<SELF[stac_discovery]>'}#@",
+                "namespaces": "@#copy{'map':'<SELF[namespaces]>'}#@",
+                "path_template": "@#copy{'map':'<SELF[manifest_template_path]>'}#@"
+            }
+        },
+        {
+            "target_path": "attrs:/:other_metadata",
+            "source_path": "xfdumanifest.xml",
+            "accessor_id": "xmlmetadata",
+            "accessor_config": {
+                "mapping": "@#copy{'map':'<SELF[other_metadata]>'}#@",
+                "namespaces": "@#copy{'map':'<SELF[namespaces]>'}#@",
+                "path_template": "@#copy{'map':'<SELF[manifest_template_path]>'}#@"
+            }
+        },
+        {
+            "target_path": "attrs:/:other_metadata",
+            "source_path": "",
+            "accessor_id": "NcToAttr",
+            "accessor_config": {
+                "mapping": "@#copy{'map':'<SELF[other_metadata]>'}#@"
+            }
+        }
+    ],
+    "stac_discovery": {
+        "type": "Text(Feature)",
+        "stac_version": "Text(1.0.0)",
+        "stac_extensions": [
+            "Text(https://stac-extensions.github.io/eopf/v1.0.0/schema.json)",
+            "Text(https://stac-extensions.github.io/eo/v1.1.0/schema.json)",
+            "Text(https://stac-extensions.github.io/sat/v1.0.0/schema.json)",
+            "Text(https://stac-extensions.github.io/view/v1.0.0/schema.json)",
+            "Text(https://stac-extensions.github.io/scientific/v1.0.0/schema.json)",
+            "Text(https://stac-extensions.github.io/processing/v1.2.0/schema.json)",
+            "Text(https://stac-extensions.github.io/product/v0.1.0/schema.json)"
+        ],
+        "id": "metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:productName",
+        "geometry": "to_geoJson(metadataSection/metadataObject[@ID='measurementFrameSet']/metadataWrap/xmlData/sentinel-safe:frameSet/sentinel-safe:footPrint/gml:posList)",
+        "bbox": "to_bbox(metadataSection/metadataObject[@ID='measurementFrameSet']/metadataWrap/xmlData/sentinel-safe:frameSet/sentinel-safe:footPrint/gml:posList)",
+        "collection": "metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:baselineCollection",
+        "properties": {
+            "datetime": "Text(null)",
+            "start_datetime": "metadataSection/metadataObject[@ID='acquisitionPeriod']/metadataWrap/xmlData/sentinel-safe:acquisitionPeriod/sentinel-safe:startTime",
+            "end_datetime": "metadataSection/metadataObject[@ID='acquisitionPeriod']/metadataWrap/xmlData/sentinel-safe:acquisitionPeriod/sentinel-safe:stopTime",
+            "created": "to_ISO8601(metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:creationTime)",
+            "platform": "to_str_lower(concat(metadataSection/metadataObject[@ID='platform']/metadataWrap/xmlData/sentinel-safe:platform/sentinel-safe:familyName, metadataSection/metadataObject[@ID='platform']/metadataWrap/xmlData/sentinel-safe:platform/sentinel-safe:number))",
+            "instrument": "Text(slstr)",
+            "constellation": "Text(sentinel-3)",
+            "providers": [
+                {
+                    "name": "to_providers(metadataSection/metadataObject[@ID='processing']/metadataWrap/xmlData/sentinel-safe:processing/sentinel-safe:resource[@role='L1 Product']/sentinel-safe:processing/sentinel-safe:facility/@name)",
+                    "roles": [
+                        "Text(processor)"
+                    ]
+                },
+                {
+                    "name": "to_providers(metadataSection/metadataObject[@ID='processing']/metadataWrap/xmlData/sentinel-safe:processing/sentinel-safe:resource[@role='L1 Product']/sentinel-safe:processing/sentinel-safe:facility/@organisation)",
+                    "roles": [
+                        "Text(producer)"
+                    ]
+                }
+            ],
+            "product:timeliness_category": "metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:timeliness",
+            "product:timeliness": "to_product_timeliness(metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:timeliness)",
+            "eopf:instrument_mode": "metadataSection/metadataObject[@ID='platform']/metadataWrap/xmlData/sentinel-safe:platform/sentinel-safe:instrument/sentinel-safe:mode",
+            "product:type": "Text(S03SLSRBT)",
+            "sat:absolute_orbit": "to_int(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:orbitNumber)",
+            "sat:relative_orbit": "to_int(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:relativeOrbitNumber)",
+            "sat:orbit_state": "metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:orbitNumber[@type='start']/@groundTrackDirection",
+            "sat:platform_international_designator": "metadataSection/metadataObject[@ID='platform']/metadataWrap/xmlData/sentinel-safe:platform/sentinel-safe:nssdcIdentifier",
+            "processing:expression": "Text(systematic)",
+            "processing:facility": "metadataSection/metadataObject[@ID='processing']/metadataWrap/xmlData/sentinel-safe:processing/sentinel-safe:resource[@role='L1 Product']/sentinel-safe:processing/sentinel-safe:facility/sentinel-safe:hardware/@name",
+            "processing:software": "to_processing_software(metadataSection/metadataObject[@ID='processing']/metadataWrap/xmlData/sentinel-safe:processing/sentinel-safe:facility/sentinel-safe:software)",
+            "processing:level": "Text(L1)"
+        },
+        "links": [
+            {
+                "rel": "Text(collection)",
+                "href": "Text(./.zattrs.json)",
+                "type": "Text(application/json)"
+            }
+        ],
+        "assets": {
+            "analytic": {
+                "href": "Text(null)",
+                "eo:bands": [
+                    {
+                        "name": "Text(s1)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S1']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S1']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s2)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S2']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S2']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s3)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S3']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S3']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s4)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S4']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S4']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s5)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S5']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S5']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s6)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S6']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S6']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s7)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S7']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S7']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s8)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S8']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S8']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(s9)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S9']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='S9']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(f1)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='F1']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='F1']/sentinel3:bandwidth)"
+                    },
+                    {
+                        "name": "Text(f2)",
+                        "center_wavelength": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='F2']/sentinel3:centralWavelength)",
+                        "full_width_half_max": "to_microm_from_nanom(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:bandDescriptions/sentinel3:band[@name='F2']/sentinel3:bandwidth)"
+                    }
+                ]
+            }
+        }
+    },
+    "other_metadata": {
+        "eopf_category": "Text(eoproduct)",
+        "history": "to_processing_history(metadataSection/metadataObject[@ID='processing']/metadataWrap/xmlData/sentinel-safe:processing)",
+        "voltage_gain_applied_to_detector_signal_s1_an": "to_float(S1_quality_an.nc:S1_FEE_gain_an)",
+        "voltage_gain_applied_to_detector_signal_s2_an": "to_float(S2_quality_an.nc:S2_FEE_gain_an)",
+        "voltage_gain_applied_to_detector_signal_s3_an": "to_float(S3_quality_an.nc:S3_FEE_gain_an)",
+        "voltage_gain_applied_to_detector_signal_s1_ao": "to_float(S1_quality_ao.nc:S1_FEE_gain_ao)",
+        "voltage_gain_applied_to_detector_signal_s2_ao": "to_float(S2_quality_ao.nc:S2_FEE_gain_ao)",
+        "voltage_gain_applied_to_detector_signal_s3_ao": "to_float(S3_quality_ao.nc:S3_FEE_gain_ao)",
+        "integration_start_delay_in_microseconds_s1_an": "to_float(S1_quality_an.nc:S1_du_t_start_an)",
+        "integration_start_delay_in_microseconds_s1_ao": "to_float(S1_quality_ao.nc:S1_du_t_start_ao)",
+        "integration_start_delay_in_microseconds_s2_an": "to_float(S2_quality_an.nc:S2_du_t_start_an)",
+        "integration_start_delay_in_microseconds_s2_ao": "to_float(S2_quality_ao.nc:S2_du_t_start_ao)",
+        "integration_start_delay_in_microseconds_s3_an": "to_float(S3_quality_an.nc:S3_du_t_start_an)",
+        "integration_start_delay_in_microseconds_s3_ao": "to_float(S3_quality_ao.nc:S3_du_t_start_ao)",
+        "integration_start_delay_in_microseconds_s4_an": "to_float(S4_quality_an.nc:S4_du_t_start_an)",
+        "integration_start_delay_in_microseconds_s4_ao": "to_float(S4_quality_ao.nc:S4_du_t_start_ao)",
+        "integration_start_delay_in_microseconds_s5_an": "to_float(S5_quality_an.nc:S5_du_t_start_an)",
+        "integration_start_delay_in_microseconds_s5_ao": "to_float(S5_quality_ao.nc:S5_du_t_start_ao)",
+        "integration_start_delay_in_microseconds_s6_an": "to_float(S6_quality_an.nc:S6_du_t_start_an)",
+        "integration_start_delay_in_microseconds_s6_ao": "to_float(S6_quality_ao.nc:S6_du_t_start_ao)",
+        "integration_start_delay_in_microseconds_s4_bn": "to_float(S4_quality_bn.nc:S4_du_t_start_bn)",
+        "integration_start_delay_in_microseconds_s4_bo": "to_float(S4_quality_bo.nc:S4_du_t_start_bo)",
+        "integration_start_delay_in_microseconds_s5_bn": "to_float(S5_quality_bn.nc:S5_du_t_start_bn)",
+        "integration_start_delay_in_microseconds_s5_bo": "to_float(S5_quality_bo.nc:S5_du_t_start_bo)",
+        "integration_start_delay_in_microseconds_s6_bn": "to_float(S6_quality_bn.nc:S6_du_t_start_bn)",
+        "integration_start_delay_in_microseconds_s6_bo": "to_float(S6_quality_bo.nc:S6_du_t_start_bo)",
+        "integration_start_delay_in_microseconds_s7_in": "to_float(S7_quality_in.nc:S7_du_t_start_in)",
+        "integration_start_delay_in_microseconds_s7_io": "to_float(S7_quality_io.nc:S7_du_t_start_io)",
+        "integration_start_delay_in_microseconds_s8_in": "to_float(S8_quality_in.nc:S8_du_t_start_in)",
+        "integration_start_delay_in_microseconds_s8_io": "to_float(S8_quality_io.nc:S8_du_t_start_io)",
+        "integration_start_delay_in_microseconds_s9_in": "to_float(S9_quality_in.nc:S9_du_t_start_in)",
+        "integration_start_delay_in_microseconds_s9_io": "to_float(S9_quality_io.nc:S9_du_t_start_io)",
+        "integration_start_delay_in_microseconds_f2_in": "to_float(F2_quality_in.nc:F2_du_t_start_in)",
+        "integration_start_delay_in_microseconds_f2_io": "to_float(F2_quality_io.nc:F2_du_t_start_io)",
+        "integration_start_delay_in_microseconds_f1_fn": "to_float(F1_quality_fn.nc:F1_du_t_start_fn)",
+        "integration_start_delay_in_microseconds_f1_fo": "to_float(F1_quality_fo.nc:F1_du_t_start_fo)",
+        "adjustable_integration_time_in_microseconds_s4_an": "to_float(S4_quality_an.nc:S4_du_int_Time_an)",
+        "adjustable_integration_time_in_microseconds_s4_ao": "to_float(S4_quality_ao.nc:S4_du_int_Time_ao)",
+        "adjustable_integration_time_in_microseconds_s4_bo": "to_float(S4_quality_bo.nc:S4_du_int_Time_bo)",
+        "adjustable_integration_time_in_microseconds_s5_an": "to_float(S5_quality_an.nc:S5_du_int_Time_an)",
+        "adjustable_integration_time_in_microseconds_s5_ao": "to_float(S5_quality_ao.nc:S5_du_int_Time_ao)",
+        "adjustable_integration_time_in_microseconds_s6_an": "to_float(S6_quality_an.nc:S6_du_int_Time_an)",
+        "adjustable_integration_time_in_microseconds_s6_ao": "to_float(S6_quality_ao.nc:S6_du_int_Time_ao)",
+        "adjustable_integration_time_in_microseconds_s4_bn": "to_float(S4_quality_bn.nc:S4_du_int_Time_bn)",
+        "adjustable_integration_time_in_microseconds_s5_bn": "to_float(S5_quality_bn.nc:S5_du_int_Time_bn)",
+        "adjustable_integration_time_in_microseconds_s5_bo": "to_float(S5_quality_bo.nc:S5_du_int_Time_bo)",
+        "adjustable_integration_time_in_microseconds_s6_bn": "to_float(S6_quality_bn.nc:S6_du_int_Time_bn)",
+        "adjustable_integration_time_in_microseconds_s6_bo": "to_float(S6_quality_bo.nc:S6_du_int_Time_bo)",
+        "adjustable_integration_time_in_microseconds_s7_in": "to_float(S7_quality_in.nc:S7_du_int_Time_in)",
+        "adjustable_integration_time_in_microseconds_s7_io": "to_float(S7_quality_io.nc:S7_du_int_Time_io)",
+        "adjustable_integration_time_in_microseconds_s8_in": "to_float(S8_quality_in.nc:S8_du_int_Time_in)",
+        "adjustable_integration_time_in_microseconds_s8_io": "to_float(S8_quality_io.nc:S8_du_int_Time_io)",
+        "adjustable_integration_time_in_microseconds_s9_in": "to_float(S9_quality_in.nc:S9_du_int_Time_in)",
+        "adjustable_integration_time_in_microseconds_s9_io": "to_float(S9_quality_io.nc:S9_du_int_Time_io)",
+        "adjustable_integration_time_in_microseconds_f2_in": "to_float(F2_quality_in.nc:F2_du_int_Time_in)",
+        "adjustable_integration_time_in_microseconds_f2_io": "to_float(F2_quality_io.nc:F2_du_int_Time_io)",
+        "adjustable_integration_time_in_microseconds_f1_fn": "to_float(F1_quality_fn.nc:F1_du_int_Time_fn)",
+        "adjustable_integration_time_in_microseconds_f1_fo": "to_float(F1_quality_fo.nc:F1_du_int_Time_fo)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_an": "to_int(indices_an.nc:l0_scan_offset_an)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_bn": "to_int(indices_bn.nc:l0_scan_offset_bn)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_in": "to_int(indices_in.nc:l0_scan_offset_in)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_fn": "to_int(indices_fn.nc:l0_scan_offset_fn)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_ao": "to_int(indices_ao.nc:l0_scan_offset_ao)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_bo": "to_int(indices_bo.nc:l0_scan_offset_bo)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_io": "to_int(indices_io.nc:l0_scan_offset_io)",
+        "L0_offset_between_scan_index_and_ISP_scan_count_fo": "to_int(indices_fo.nc:l0_scan_offset_fo)",
+        "calibration_time": "to_unix_time(viscal.nc:calibration_time)",
+        "monitor_diode_noise_counts": "to_int(viscal.nc:monitor_SD)",
+        "monitor_diode_average_counts": "to_int(viscal.nc:monitor_mean)",
+        "a_nadir_first_pixel_acquisition": "time_an.nc:NADIR_FIRST_PIXEL_a",
+        "b_nadir_first_pixel_acquisition": "time_bn.nc:NADIR_FIRST_PIXEL_b",
+        "i_nadir_first_pixel_acquisition": "time_in.nc:NADIR_FIRST_PIXEL_i",
+        "a_oblique_first_pixel_acquisition": "time_an.nc:OBLIQUE_FIRST_PIXEL_a",
+        "b_oblique_first_pixel_acquisition": "time_bn.nc:OBLIQUE_FIRST_PIXEL_b",
+        "i_oblique_first_pixel_acquisition": "time_in.nc:OBLIQUE_FIRST_PIXEL_i",
+        "pixel_time_sampling_interval_along_scan_a_in_microseconds": "time_an.nc:PIXSYNC_a",
+        "pixel_time_sampling_interval_along_scan_b_in_microseconds": "time_bn.nc:PIXSYNC_b",
+        "pixel_time_sampling_interval_along_scan_i_in_microseconds": "time_in.nc:PIXSYNC_i",
+        "an_scan_period_in_microseconds": "time_an.nc:SCANSYNC",
+        "bn_scan_period_in_microseconds": "time_bn.nc:SCANSYNC",
+        "in_scan_period_in_microseconds": "time_in.nc:SCANSYNC",
+        "single_meteofield_synoptic_time_UTC_hours": "met_tx.nc:t_single",
+        "data_information": {
+            "measurement_accuracy": "metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:measurementAccuracy",
+            "accuracy_reference": "metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:accuracyReference"
+        },
+        "band_description": {
+            "s1": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S1_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S1_Detector']/slstr:max)"
+            },
+            "s2": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S2_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S2_Detector']/slstr:max)"
+            },
+            "s3": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S3_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S3_Detector']/slstr:max)"
+            },
+            "s4": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S4_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S4_Detector']/slstr:max)"
+            },
+            "s5": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S5_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S5_Detector']/slstr:max)"
+            },
+            "s6": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S6_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S6_Detector']/slstr:max)"
+            },
+            "s7": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S7_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S7_Detector']/slstr:max)"
+            },
+            "s8": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S8_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S8_Detector']/slstr:max)"
+            },
+            "s9": {
+                "detector_temperature_min": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S9_Detector']/slstr:min)",
+                "detector_temperature_max": "to_float(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:temperatureSummary/slstr:temperature[@element='S9_Detector']/slstr:max)"
+            }
+        },
+        "absolute_pass_number": "to_int(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:passNumber)",
+        "relative_pass_number": "to_int(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:relativePassNumber)",
+        "cycle_number": "to_int(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:cycleNumber)",
+        "phase_identifier": "to_int(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:phaseIdentifier)",
+        "ephemeris": {
+            "start": {
+                "TAI": "metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:epoch[@type='TAI']",
+                "UTC": "metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:epoch[@type='UTC']",
+                "UT1": "metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:epoch[@type='UT1']",
+                "position": {
+                    "x": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:position/sentinel-safe:x)",
+                    "y": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:position/sentinel-safe:y)",
+                    "z": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:position/sentinel-safe:z)"
+                },
+                "velocity": {
+                    "x": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:velocity/sentinel-safe:x)",
+                    "y": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:velocity/sentinel-safe:y)",
+                    "z": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[1]/sentinel-safe:velocity/sentinel-safe:z)"
+                }
+            },
+            "stop": {
+                "TAI": "metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:epoch[@type='TAI']",
+                "UTC": "metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:epoch[@type='UTC']",
+                "UT1": "metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:epoch[@type='UT1']",
+                "position": {
+                    "x": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:position/sentinel-safe:x)",
+                    "y": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:position/sentinel-safe:y)",
+                    "z": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:position/sentinel-safe:z)"
+                },
+                "velocity": {
+                    "x": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:velocity/sentinel-safe:x)",
+                    "y": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:velocity/sentinel-safe:y)",
+                    "z": "to_float(metadataSection/metadataObject[@ID='measurementOrbitReference']/metadataWrap/xmlData/sentinel-safe:orbitReference/sentinel-safe:elementSet/sentinel-safe:ephemeris[2]/sentinel-safe:velocity/sentinel-safe:z)"
+                }
+            }
+        },
+        "product_unit": {
+            "type": "metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:productUnit/sentinel3:type",
+            "duration": "to_int(metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:productUnit/sentinel3:duration)",
+            "alongtrack_coordinate": "to_int(metadataSection/metadataObject[@ID='generalProductInformation']/metadataWrap/xmlData/sentinel3:generalProductInformation/sentinel3:productUnit/sentinel3:alongtrackCoordinate)"
+        },
+        "meteo": {
+            "source": "Text(ECMWF)",
+            "type": "metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:ecmwfType",
+            "missing_time": "to_int(metadataSection/metadataObject[@ID='slstrProductInformation']/metadataWrap/xmlData/slstr:slstrProductInformation/slstr:ecmwfType/@timeRelevance)"
+        }
+    },
+    "manifest_template_path": {
+        "template_folder": "$EOPF_ROOT/store/templates",
+        "template_name": "S03SLSRBT_manifest.xml"
+    },
+    "namespaces": {
+        "xfdu": "urn:ccsds:schema:xfdu:1",
+        "gml": "http://www.opengis.net/gml",
+        "safe": "http://www.esa.int/safe/sentinel/1.1",
+        "sentinel-safe": "http://www.esa.int/safe/sentinel/1.1",
+        "sentinel3": "http://www.esa.int/safe/sentinel/sentinel-3/1.0",
+        "slstr": "http://www.esa.int/safe/sentinel/sentinel-3/slstr/1.0"
+    }
+}

@@ -1,0 +1,103 @@
+from typing import Any, Dict, List, Union
+
+from eopf.exceptions import FormattingError
+
+from .abstract import EOAbstractFormatter
+from .utils import detect_pole_or_antemeridian, poly_coords_parsing, split_poly
+
+
+class ToBbox(EOAbstractFormatter):
+    """Formatter for computing coordinates of a polygon bounding box"""
+
+    # docstr-coverage: inherited
+    name = "to_bbox"
+
+    # docstr-coverage: inherited
+    def _format(self, input: Any) -> List[float]:
+        """Computes coordinates of a polygon bounding box
+
+        Parameters
+        ----------
+        path: str
+            xpath
+
+        Returns
+        ----------
+        List[float]:
+            Returns a list with coordinates, longitude, latitude for SW/NE points
+
+        Raises
+        ----------
+        FormattingError
+            When formatting can not be performed
+        """
+        import ast
+
+        # when reconverting back to SAFE, the input can be directly evaluated as a list
+        try:
+            aux = ast.literal_eval(input)
+            max_lon = max(aux, key=lambda x: x[0])[0]  # Return tuple with biggest value on index 0
+            min_lon = min(aux, key=lambda x: x[0])[0]  # Return tuple with smallest value on index 0
+            max_lat = max(aux, key=lambda x: x[1])[1]  # Return tuple with biggest value on index 1
+            min_lat = min(aux, key=lambda x: x[1])[1]  # Return tuple with smallest value on index 1
+            return [max_lon, min_lat, min_lon, max_lat]  # Order to be reviewed
+        except (ValueError, SyntaxError):
+            pass
+
+        # when converting from SAFE, parse the input
+        try:
+            poly_coords = poly_coords_parsing(a_string=input)
+            # Maybe use to_geojson to get coordinates
+            max_lon = max(poly_coords, key=lambda x: x[0])[0]  # Return tuple with biggest value on index 0
+            min_lon = min(poly_coords, key=lambda x: x[0])[0]  # Return tuple with smallest value on index 0
+            max_lat = max(poly_coords, key=lambda x: x[1])[1]  # Return tuple with biggest value on index 1
+            min_lat = min(poly_coords, key=lambda x: x[1])[1]  # Return tuple with smallest value on index 1
+            return [max_lon, min_lat, min_lon, max_lat]  # Order to be reviewed
+        except Exception as e:
+            raise FormattingError(f"{e}")
+
+
+class ToGeoJson(EOAbstractFormatter):
+    """Formatter for converting polygon coordinates to geoJson format"""
+
+    # docstr-coverage: inherited
+    name = "to_geoJson"
+
+    # docstr-coverage: inherited
+    def _format(self, input: Any) -> Dict[str, Union[List[Any], str]]:
+        """Computes polygon coordinates in geoJson format,
+        from xml acquired coordinates
+
+        Parameters
+        ----------
+        input: str
+
+        Returns
+        ----------
+        List[List[float]]:
+            Returns a list of lists(tuples) containing a pair (latitude, longitude) for each point of a polygon.
+
+        Raises
+        ----------
+        FormattingError
+            When formatting can not be performed
+        """
+        import ast
+
+        # when reconverting back to SAFE, the input can be directly evaluated as a list
+        try:
+            return dict(type="Polygon", coordinates=[ast.literal_eval(input)])
+        except (ValueError, SyntaxError):
+            pass
+
+        # when converting from SAFE, parse the input
+        try:
+            poly_coords_str = input
+            poly_coords = poly_coords_parsing(poly_coords_str)
+            # If polygon coordinates crosses any pole or antemeridian, split the polygon in a multipolygon
+            if detect_pole_or_antemeridian(poly_coords):
+                return dict(type="MultiPolygon", coordinates=split_poly(poly_coords))
+            # Otherwise, just return computed coordinates
+            return dict(type="Polygon", coordinates=[poly_coords])
+        except Exception as e:
+            raise FormattingError(f"{e}")
