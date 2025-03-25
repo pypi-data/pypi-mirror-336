@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+dynpyds.egg-info/PKG-INFO
+dynpyds.egg-info/SOURCES.txt
+dynpyds.egg-info/dependency_links.txt
+dynpyds.egg-info/requires.txt
+dynpyds.egg-info/top_level.txt
