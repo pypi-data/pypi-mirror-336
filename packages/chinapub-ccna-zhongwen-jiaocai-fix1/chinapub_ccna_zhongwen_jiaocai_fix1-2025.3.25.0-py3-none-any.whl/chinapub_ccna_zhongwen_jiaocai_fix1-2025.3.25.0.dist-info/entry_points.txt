@@ -1,0 +1,3 @@
+[console_scripts]
+ChinapubCcnaZhongwenJiaocaiFix1 = ChinapubCcnaZhongwenJiaocaiFix1.__main__:main
+chinapub-ccna-zhongwen-jiaocai-fix1 = ChinapubCcnaZhongwenJiaocaiFix1.__main__:main
