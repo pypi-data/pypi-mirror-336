@@ -1,0 +1,6 @@
+polling
+seabreeze
+xsdata
+result
+rainbow-api
+aghplctools==4.8.6
