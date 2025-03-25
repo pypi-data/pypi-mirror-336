@@ -1,0 +1,3 @@
+[console_scripts]
+GitLiaotianRumenFix1 = GitLiaotianRumenFix1.__main__:main
+git-liaotian-rumen-fix1 = GitLiaotianRumenFix1.__main__:main
