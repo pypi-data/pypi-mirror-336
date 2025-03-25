@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: crczp-terraform-client
+Version: 1.0.0
+Summary: Terraform Client
+Author: cybersecurityhub.cz
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: crczp-python-commons~=1.0.1
+Requires-Dist: crczp-openstack-lib~=1.0.0
+Requires-Dist: Jinja2
+Requires-Dist: crczp-aws-lib>=1.0.1
+Dynamic: author
+Dynamic: description
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Terraform-client
+
