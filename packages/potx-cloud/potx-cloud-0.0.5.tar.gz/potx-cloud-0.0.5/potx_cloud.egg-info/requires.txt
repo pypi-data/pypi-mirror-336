@@ -1,0 +1,4 @@
+tencentcloud-sdk-python
+PyMuPDF
+pofile
+pandas
