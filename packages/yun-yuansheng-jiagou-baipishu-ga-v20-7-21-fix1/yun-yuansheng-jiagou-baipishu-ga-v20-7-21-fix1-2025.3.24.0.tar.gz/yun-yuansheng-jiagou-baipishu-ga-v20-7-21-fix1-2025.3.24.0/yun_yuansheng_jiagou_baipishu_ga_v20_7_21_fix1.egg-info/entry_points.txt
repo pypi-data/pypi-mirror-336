@@ -1,0 +1,3 @@
+[console_scripts]
+YunYuanshengJiagouBaipishuGaV20721Fix1 = YunYuanshengJiagouBaipishuGaV20721Fix1.__main__:main
+yun-yuansheng-jiagou-baipishu-ga-v20-7-21-fix1 = YunYuanshengJiagouBaipishuGaV20721Fix1.__main__:main
