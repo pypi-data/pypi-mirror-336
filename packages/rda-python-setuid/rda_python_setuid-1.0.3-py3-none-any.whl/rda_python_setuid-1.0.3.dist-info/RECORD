@@ -1,0 +1,10 @@
+rda_python_setuid/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+rda_python_setuid/pgstart.py,sha256=d7gOLjm9V3gsrV-BM64eMvgf0QULtSk-FTQpzaLEpAA,2953
+rda_python_setuid/pywrapper.c,sha256=UczB9IX77q2M5RzbocABDkdEE5L3HgPZB5hHuWUXGys,2563
+rda_python_setuid/pywrapper.py,sha256=8QRMr0Sui8OdwkHQyRSNyzXpyQWhwOgeEuTGO30bmN0,2353
+rda_python_setuid-1.0.3.dist-info/licenses/LICENSE,sha256=1dck4EAQwv8QweDWCXDx-4Or0S8YwiCstaso_H57Pno,1097
+rda_python_setuid-1.0.3.dist-info/METADATA,sha256=UL0-swzaR-cyIrr5qyDi-Y4IH5Ywv5cclU8zgvEh_BY,733
+rda_python_setuid-1.0.3.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+rda_python_setuid-1.0.3.dist-info/entry_points.txt,sha256=mWjhY3JTnoRv5q-B0KNGSHOd_2QbKfwxH-adiT6ef8U,110
+rda_python_setuid-1.0.3.dist-info/top_level.txt,sha256=ONMhKLagyTBktuz5dTyipSnRC0YhomTMs8eFRjM9kHQ,18
+rda_python_setuid-1.0.3.dist-info/RECORD,,
