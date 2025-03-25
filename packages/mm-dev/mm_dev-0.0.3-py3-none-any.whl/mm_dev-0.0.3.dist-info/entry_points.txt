@@ -1,0 +1,11 @@
+[console_scripts]
+backup-projects-dir = mm_dev.backup_projects_dir:app
+check-proxy = mm_dev.check_proxy:app
+dec2hex = mm_dev.dec2hex:app
+dh = mm_dev.dh:app
+g = mm_dev.g:app
+h = mm_dev.h:app
+hex2dec = mm_dev.hex2dec:app
+myip = mm_dev.myip:app
+p = mm_dev.p:app
+random = mm_dev.random:app
