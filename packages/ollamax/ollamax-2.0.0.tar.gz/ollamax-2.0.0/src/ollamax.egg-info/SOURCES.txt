@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/ollamax.egg-info/PKG-INFO
+src/ollamax.egg-info/SOURCES.txt
+src/ollamax.egg-info/dependency_links.txt
+src/ollamax.egg-info/requires.txt
+src/ollamax.egg-info/top_level.txt
