@@ -1,0 +1,10 @@
+qmenta/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+qmenta/client/Account.py,sha256=7BOWHtRbHdfpBYQqv9v2m2Fag13pExZSxFsjDA7UsW0,9500
+qmenta/client/File.py,sha256=iCrzrd7rIfjjW2AgMgUoK-ZF2wf-95wCcPKxKw6PGyg,4816
+qmenta/client/Project.py,sha256=JQZc5BMWSdPEMGBp1gsZFbhjSbFg-0AoBJFXakddojw,86466
+qmenta/client/Subject.py,sha256=b5sg9UFtn11bmPM-xFXP8aehOm_HGxnhgT7IPKbrZnE,8688
+qmenta/client/__init__.py,sha256=Mtqe4zf8n3wuwMXSALENQgp5atQY5VcsyXWs2hjBs28,133
+qmenta/client/utils.py,sha256=vWUAW0r9yDetdlwNo86sdzKn03FNGvwa7D9UtOA3TEc,2419
+qmenta_client-1.1.dev1492.dist-info/METADATA,sha256=SSKZb9aDxY8X5qXEwBYyrDBLpU765M_7Z3zOJWC7UdM,672
+qmenta_client-1.1.dev1492.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+qmenta_client-1.1.dev1492.dist-info/RECORD,,
