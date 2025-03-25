@@ -1,0 +1,3 @@
+[console_scripts]
+GuanghuanPmpKaoqianDayiJiangyiZhangliFix1 = GuanghuanPmpKaoqianDayiJiangyiZhangliFix1.__main__:main
+guanghuan-pmp-kaoqian-dayi-jiangyi-zhangli-fix1 = GuanghuanPmpKaoqianDayiJiangyiZhangliFix1.__main__:main
