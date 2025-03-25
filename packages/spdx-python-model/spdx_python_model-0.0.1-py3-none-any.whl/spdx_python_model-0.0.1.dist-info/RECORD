@@ -1,0 +1,8 @@
+spdx_python_model/__init__.py,sha256=lJ32voKHbyrbv-PsgyFy1LdPhsKB4Y88gQelGaP_Two,96
+spdx_python_model/version.py,sha256=dqVmHfIsaTnL-oBUhI1Y63k8MTakEE8jc-mGKfblVNo,61
+spdx_python_model/bindings/__init__.py,sha256=WT32Wx6JDbx6c3bo2Rn46FOE2peu2le19hFhwWUwc_M,43
+spdx_python_model/bindings/v3_0_1.py,sha256=2Pa1in4IyPurlrEVgdNn9pWabkYDGEIWRsqHkm7CukI,272266
+spdx_python_model-0.0.1.dist-info/METADATA,sha256=p1cZ-hbIpYumn8ScsCC0hwvC5_bSieZSrP2Axda9h_8,3270
+spdx_python_model-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+spdx_python_model-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spdx_python_model-0.0.1.dist-info/RECORD,,
