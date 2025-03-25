@@ -1,0 +1,3 @@
+[console_scripts]
+WeiXueyuanQianrushiJiaochengFix1 = WeiXueyuanQianrushiJiaochengFix1.__main__:main
+wei-xueyuan-qianrushi-jiaocheng-fix1 = WeiXueyuanQianrushiJiaochengFix1.__main__:main
