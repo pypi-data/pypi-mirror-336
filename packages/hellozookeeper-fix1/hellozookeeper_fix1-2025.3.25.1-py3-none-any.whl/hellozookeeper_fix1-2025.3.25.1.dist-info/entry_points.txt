@@ -1,0 +1,3 @@
+[console_scripts]
+HellozookeeperFix1 = HellozookeeperFix1.__main__:main
+hellozookeeper-fix1 = HellozookeeperFix1.__main__:main
