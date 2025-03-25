@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiRedisFix1 = ShangGuiguDaShujuJishuZhiRedisFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-redis-fix1 = ShangGuiguDaShujuJishuZhiRedisFix1.__main__:main
