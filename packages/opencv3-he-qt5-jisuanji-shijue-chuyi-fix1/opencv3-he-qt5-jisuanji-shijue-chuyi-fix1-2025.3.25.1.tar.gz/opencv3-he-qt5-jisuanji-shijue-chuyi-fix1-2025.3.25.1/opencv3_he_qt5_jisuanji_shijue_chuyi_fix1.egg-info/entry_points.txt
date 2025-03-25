@@ -1,0 +1,3 @@
+[console_scripts]
+Opencv3HeQt5JisuanjiShijueChuyiFix1 = Opencv3HeQt5JisuanjiShijueChuyiFix1.__main__:main
+opencv3-he-qt5-jisuanji-shijue-chuyi-fix1 = Opencv3HeQt5JisuanjiShijueChuyiFix1.__main__:main
