@@ -1,0 +1,97 @@
+{
+  "predictor.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "content": "Had a great time with scientists.",
+        "label": "no"
+      },
+      {
+        "content": "Had a great time with the workshop.",
+        "label": "no"
+      },
+      {
+        "content": "writers are so wonderful, said no one ever.",
+        "label": "yes"
+      },
+      {
+        "content": "Everyone loves engineers, right?",
+        "label": "yes"
+      },
+      {
+        "content": "Can't wait for more of this movie.",
+        "label": "yes"
+      },
+      {
+        "content": "Can't wait for more of the meal.",
+        "label": "no"
+      },
+      {
+        "content": "musicians are truly inspiring.",
+        "label": "no"
+      },
+      {
+        "content": "I find my new phone to be wonderful.",
+        "label": "no"
+      },
+      {
+        "content": "Can't wait for more of this book.",
+        "label": "no"
+      },
+      {
+        "content": "Had a musicians, best experience ever. Not.",
+        "label": "yes"
+      },
+      {
+        "content": "I genuinely love athletes.",
+        "label": "no"
+      },
+      {
+        "content": "Had a great time with this movie.",
+        "label": "no"
+      },
+      {
+        "content": "I find doctors to be wonderful.",
+        "label": "no"
+      },
+      {
+        "content": "Can't wait for more of vegetarians.",
+        "label": "no"
+      },
+      {
+        "content": "artists are genuinely amazing.",
+        "label": "no"
+      },
+      {
+        "content": "Everyone loves vegetarians, right?",
+        "label": "yes"
+      }
+    ],
+    "signature": {
+      "instructions": "Analyze the given text and determine whether it contains sarcasm or irony. Provide a step-by-step reasoning for your prediction, and classify the text as either sarcastic\/ironic or sincere.",
+      "fields": [
+        {
+          "prefix": "Content:",
+          "description": "content of the tweet"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Label:",
+          "description": "label of the tweet"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "2.6.11",
+      "cloudpickle": "3.1"
+    }
+  }
+}
