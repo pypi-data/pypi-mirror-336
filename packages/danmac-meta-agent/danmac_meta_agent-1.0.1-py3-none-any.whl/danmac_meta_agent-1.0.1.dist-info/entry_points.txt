@@ -1,0 +1,3 @@
+[console_scripts]
+danmac-meta-agent=meta_agent.cli:main
+
