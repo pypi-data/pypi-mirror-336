@@ -1,0 +1,9 @@
+r2pipe==1.9.4
+unicorn==2.0.1
+lief==0.16.4
+dotnetfile==0.2.4
+construct==2.10.70
+requests==2.32.3
+pycryptodome==3.21.0
+pillow==11.0.0
+pytest==8.3.5
