@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "argus-alm"
+version = "0.14.0"
+description = "Argus"
+authors = ["Alexey Kartashov <alexey.kartashov@scylladb.com>", "Łukasz Sójka <lukasz.sojka@scylladb.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/scylladb/argus"
+readme = "README.md"
+packages = [
+    { include = "argus/client" },
+    { include = "argus/common" },
+    { include = "argus/__init__.py" },
+]
+exclude = ["argus/client/tests"]
+
+[tool.poetry.group.web-backend]
+optional = true
+
+[tool.poetry.group.docker-image]
+optional = true
+
+[tool.poetry.dependencies]
+requests = "^2.26.0"
+python = "^3.12"
+click = "^8.1.3"
+
+[tool.poetry.scripts]
+argus-client-generic = 'argus.client.generic.cli:cli'
+argus-driver-matrix-client = 'argus.client.driver_matrix_tests.cli:cli'
+
+[tool.poetry.group.web-backend.dependencies]
+PyYAML = "^6.0.0"
+scylla-driver = "^3.26.8"
+Flask = "^3.0.0"
+Flask-WTF = "^1.0.0"
+Flask-Login = "^0.5.0"
+humanize = "^3.13.1"
+python-magic = "^0.4.24"
+uwsgi = "^2.0.20"
+python-jenkins = "^1.7.0"
+python-slugify = "^6.1.1"
+
+[tool.poetry.group.docker-image.dependencies]
+supervisor = "^4.2.4"
+
+[tool.poetry.dev-dependencies]
+black = "^24.10.0"
+coverage = "5.5"
+docker = "7.1.0"
+pytest = "6.2.5"
+ipython = "^8.1"
+pylint = "^2.12.0"
+pre-commit = "^1.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 110
+target-version = ["py312"]
