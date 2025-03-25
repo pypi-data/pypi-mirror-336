@@ -1,0 +1,3 @@
+[console_scripts]
+JiqiZhixin2020NianduJiaochengHejiErFix1 = JiqiZhixin2020NianduJiaochengHejiErFix1.__main__:main
+jiqi-zhixin-2020-niandu-jiaocheng-heji-er-fix1 = JiqiZhixin2020NianduJiaochengHejiErFix1.__main__:main
