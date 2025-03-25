@@ -1,0 +1,17 @@
+setuptools>=70.0.0
+mockito
+invoke
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.3
+github3.py
+memory-profiler
+pylint
+pytest
+coverage
+pytest-cov
+pytest-order
+# To make a relase you need asciidoc3 (a2x3)
+# asciidoc3
+# Include also normal project requirements.
+-r requirements.txt

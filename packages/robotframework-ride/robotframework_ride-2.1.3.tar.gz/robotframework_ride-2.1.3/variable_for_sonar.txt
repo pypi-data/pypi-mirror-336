@@ -1,0 +1,2 @@
+echo -Dsonar.projectVersion="$(VERSION=`cat ./src/robotide/version.py | grep -E 'VERSION = '` && echo $VERSION)"
+

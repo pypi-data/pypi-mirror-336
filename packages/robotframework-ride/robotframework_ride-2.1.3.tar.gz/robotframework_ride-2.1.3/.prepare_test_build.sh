@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+export TWINE_USERNAME=__token__
+export TWINE_PASSWORD=pypi-AgENdGVzdC5weXBpLm9yZwIkZjI0NmQ1YTItYjc3My00ZDU2LWI1ODgtMDdjYTFkYmM1ZDE3AAIqWzMsImI1M2U3Y2U0LWFlNzYtNDdkYy1iMmU3LTZhNjRkYzA1MTNhMCJdAAAGIAM8DffcRJWA_pNuQzWJhRLt4PTUVzbx4CYMNbhQyY6f
+
+##### Efective pypi upload
+# twine  upload --verbose --repository pypi -u __token__ -p pypi-AgEIcHlwaS5vcmcCJGIwMGFjMDI4LTE5ZmYtNDI3OS1iYjZmLWFiNzc4ZGJhYWYyZgACG1sxLFsicm9ib3RmcmFtZXdvcmstcmlkZSJdXQACLFsyLFsiNjg1OWY2MjgtZDZjMy00MzlhLWFhMDgtNWM4YjM4NTk4NzZiIl1dAAAGIKN4tIi1Q0qMOu_9VM2uzqj-_mXAfHZEi9b0orIQxIYB dist/robotframework-ride-2.1a1.zip

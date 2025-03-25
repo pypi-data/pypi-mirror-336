@@ -1,0 +1,9 @@
+PyPubSub
+Pygments
+psutil
+wxPython
+packaging
+requests>=2.32.2
+
+[:sys_platform == "win32"]
+Pywin32

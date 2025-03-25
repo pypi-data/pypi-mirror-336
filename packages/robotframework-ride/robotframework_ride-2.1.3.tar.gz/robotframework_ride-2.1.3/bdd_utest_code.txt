@@ -1,0 +1,37 @@
+utest/controller/test_macro_commands.py:    def test_add_keyword_with_bdd_given(self):
+utest/controller/test_macro_commands.py:        self._bdd_test('Given', 'george is a dog')
+utest/controller/test_macro_commands.py:        self._bdd_test('given', 'steve is a cat')
+utest/controller/test_z_rename_keywords.py:GIVENAKW = 'Given a Keyword'
+utest/controller/test_z_rename_keywords.py:GIVENANEWKW = 'Given a new Keyword'
+utest/controller/test_occurrences.py:    def test_rename_given_prefixed_keywords(self):
+utest/controller/test_occurrences.py:        self._add_step('Given '+kw)
+utest/controller/test_occurrences.py:                         'Given '+UNUSED_KEYWORD_NAME)
+utest/controller/test_rename_keywords.py:GIVENAKW = 'Given a Keyword'
+utest/controller/test_rename_keywords.py:GIVENANEWKW = 'Given a new Keyword'
+utest/controller/test_rename_keywords.py:        is_gherkin, kw_value = myobject._get_gherkin(GIVENAKW)
+utest/controller/test_rename_keywords.py:        is_gherkin, kw_value = myobject._get_gherkin("But Given a Keyword")
+utest/controller/test_rename_keywords.py:        assert kw_value == GIVENAKW
+utest/controller/test_rename_keywords.py:        original_kw, new_kw = myobject._check_gherkin(GIVENAKW, AKW)
+utest/controller/test_rename_keywords.py:        assert new_kw == GIVENAKW
+utest/controller/test_rename_keywords.py:        original_kw, new_kw = myobject._check_gherkin(AKW, GIVENAKW)
+utest/controller/test_rename_keywords.py:        assert original_kw == GIVENAKW
+utest/controller/test_rename_keywords.py:        original_kw, new_kw = myobject._check_gherkin(WHENAKW, GIVENAKW)
+utest/controller/test_rename_keywords.py:        assert original_kw == GIVENAKW
+utest/controller/test_rename_keywords.py:        original_kw, new_kw = myobject._check_gherkin("But Given a new Keyword", GIVENANEWKW)
+utest/controller/test_rename_keywords.py:        assert new_kw == "But Given a new Keyword"
+utest/controller/test_rename_keywords.py:        assert original_kw == GIVENANEWKW
+utest/controller/test_rename_keywords.py:        original_kw, new_kw = myobject._check_gherkin(GIVENANEWKW, "Given an old Keyword")
+utest/controller/test_stepcontrollers.py:    def test_contains_keyword_with_given_prefix(self):
+utest/controller/test_stepcontrollers.py:        self._args += ['Given Keyword']
+utest/plugin/test_plugin_api.py:        assert value == 'given'
+utest/plugin/test_plugin_api.py:        for val in self.app.namespace.get_suggestions_for(controller, 'given'):
+utest/namespace/test_keywords.py:             ItemMock('Given foo', [], 'source.Given foo'),
+utest/namespace/test_keywords.py:    def test_given_when_then(self):
+utest/namespace/test_keywords.py:        assert self.kws.get('Given foo')
+utest/namespace/test_keywords.py:        assert self.kws.get('Given my kw')
+utest/namespace/test_keywords.py:        assert self.kws.get('and  given foo')
+utest/namespace/test_keywords.py:        assert not self.kws.get('given johnshould embed arguments and something')
+utest/namespace/test_namespace.py:    def test_given_when_then_and_aliases(self):
+utest/namespace/test_namespace.py:            self.tcf, 'Given   UK Fromresource from rESOURCE with variaBLE') is not None
+utest/namespace/test_namespace.py:            self.tcf, 'given and UK Fromresource from rESOURCE with variaBLE') is None
+

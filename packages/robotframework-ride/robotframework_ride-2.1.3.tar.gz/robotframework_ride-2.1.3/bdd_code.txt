@@ -1,0 +1,16 @@
+src/robotide/lib/compat/pygments/robotframework.py:    # _gherkin_prefix = re.compile('^(Given|When|Then|And|But) ', re.IGNORECASE)
+src/robotide/lib/compat/parsing/languages.py:        return set(chain(self.given_prefixes, self.when_prefixes, self.then_prefixes,
+src/robotide/lib/robot/running/namespace.py:        for prefix in ['given ', 'when ', 'then ', 'and ', 'but ']:
+src/robotide/controller/ctrlcommands.py:    _gherkin_prefix = re.compile('^(Given|When|Then|And|But) ', re.IGNORECASE)
+src/robotide/controller/macrocontrollers.py:        for match in ['given ', 'when ', 'then ', 'and ', 'but ']:
+src/robotide/controller/stepcontrollers.py:    _GIVEN_WHEN_THEN_MATCHER = re.compile(r'^(given|when|then|and|but)\s*', re.I)
+src/robotide/controller/stepcontrollers.py:            return utils.eq(item, expected) or (self._GIVEN_WHEN_THEN_MATCHER.match(item) and
+src/robotide/controller/stepcontrollers.py:                                                utils.eq(self._GIVEN_WHEN_THEN_MATCHER.sub('', item), expected))
+src/robotide/controller/stepcontrollers.py:        old_prefix_matcher = self._GIVEN_WHEN_THEN_MATCHER.match(old_value)
+src/robotide/controller/stepcontrollers.py:        old_match_matcher = self._GIVEN_WHEN_THEN_MATCHER.match(old_match)
+src/robotide/editor/texteditor.py:    old_lang_given_prefixes = old_lang_class.given_prefixes
+src/robotide/editor/texteditor.py:    new_lang_given_prefixes = new_lang_class.given_prefixes
+src/robotide/editor/texteditor.py:    for old, new in zip(old_lang_given_prefixes, new_lang_given_prefixes):
+src/robotide/editor/contentassist.py:        for match in ['given ', 'when ', 'then ', 'and ', 'but ']:
+src/robotide/namespace/namespace.py:    regexp = re.compile(r"\s*(given|when|then|and|but)\s*(.*)", re.IGNORECASE)
+
