@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: mit-jisuanjijiaoyu-zhong-queshi-de-yike-fix1
+Version: 2025.3.25.0
+Summary: MIT 计算机教育中缺失的一课
+Home-page: https://github.com/apachecn/mit-jisuanjijiaoyu-zhong-queshi-de-yike-fix1
+Author: ApacheCN
+Author-email: apachecn@163.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# MIT 计算机教育中缺失的一课
+
+## 下载
+
+### Docker
+
+```
+docker pull apachecn0/mit-jisuanjijiaoyu-zhong-queshi-de-yike
+docker run -tid -p <port>:80 apachecn0/mit-jisuanjijiaoyu-zhong-queshi-de-yike
+# 访问 http://localhost:{port} 查看文档
+```
+
+### PYPI
+
+```
+pip install mit-jisuanjijiaoyu-zhong-queshi-de-yike
+mit-jisuanjijiaoyu-zhong-queshi-de-yike <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
+### NPM
+
+```
+npm install -g mit-jisuanjijiaoyu-zhong-queshi-de-yike
+mit-jisuanjijiaoyu-zhong-queshi-de-yike <port>
+# 访问 http://localhost:{port} 查看文档
+```

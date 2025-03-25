@@ -1,0 +1,3 @@
+[console_scripts]
+MitJisuanjijiaoyuZhongQueshiDeYikeFix1 = MitJisuanjijiaoyuZhongQueshiDeYikeFix1.__main__:main
+mit-jisuanjijiaoyu-zhong-queshi-de-yike-fix1 = MitJisuanjijiaoyuZhongQueshiDeYikeFix1.__main__:main
