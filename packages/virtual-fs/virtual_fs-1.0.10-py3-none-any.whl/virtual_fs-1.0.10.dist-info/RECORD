@@ -1,0 +1,10 @@
+virtual_fs/__init__.py,sha256=Iwq-2hPLil5alIu1LVDwx3_cG_XoUsvr7JGqhNgqg8A,3165
+virtual_fs/main.py,sha256=x43xozjavpt3XXtIEXTnkVmF6a8l83jQcwbOKtMHux4,3716
+virtual_fs/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+virtual_fs/cli/mount.py,sha256=xBujspv9vdZStY3l5h5n6-NSyFQhA6VVCJA1utwptF0,1334
+virtual_fs-1.0.10.dist-info/licenses/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+virtual_fs-1.0.10.dist-info/METADATA,sha256=WRC8_EpW9kt6W0R0MMhJvABjNhFmDkKFPmM-MVbXoJ4,5710
+virtual_fs-1.0.10.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+virtual_fs-1.0.10.dist-info/entry_points.txt,sha256=bpbgFkf-RXXPRfdggiYwK64OrdZfCfvERZx-xjQI0eY,91
+virtual_fs-1.0.10.dist-info/top_level.txt,sha256=NCoM30DjQlkzXL5uBRDm26pLT2OnhkLeXKTrZj-hAIk,11
+virtual_fs-1.0.10.dist-info/RECORD,,
