@@ -1,0 +1,3 @@
+[console_scripts]
+JuniperZhongwenWendangFix1 = JuniperZhongwenWendangFix1.__main__:main
+juniper-zhongwen-wendang-fix1 = JuniperZhongwenWendangFix1.__main__:main
