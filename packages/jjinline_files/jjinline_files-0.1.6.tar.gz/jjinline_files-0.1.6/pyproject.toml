@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "jjinline_files"
+authors = [{name = "J.João", email = "jj@di.uminho.pt"}, 
+           {name = "Sofia Santos", email = "sofiarsantos31@gmail.com"},
+           {name = "TBarata", email = "tiagobarata98@gmail.com"}
+          ]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+keywords = ["config", "inline files", "templates", "parser"]
+dynamic = ["version", "description"]
+dependencies = [
+    "pyyaml >= 6.0",
+    "jinja2",
+    "pypugjs"
+]
+# requires-python = ">=3.10"
+
+[project.urls]
+Home = "https://github.com/..."
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.flit.sdist]
+exclude = ["examples/*"]
+
