@@ -1,0 +1,93 @@
+# include templates from gitlab-ci-templates
+# for docs see https://computing.docs.ligo.org/gitlab-ci-templates
+include:
+  - project: computing/gitlab-ci-templates
+    file:
+      - conda.yml
+      - python.yml
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+# ---------------------------
+# lint the code with flake8
+# using the job template from
+# .python:flake8
+# ---------------------------
+lint:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/python/#.python:flake8
+    - .python:flake8
+  stage: lint
+  needs: []
+
+python3:
+  extends:
+    # extend from the conda:base job to get default conda configuration
+    # https://computing.docs.ligo.org/gitlab-ci-templates/conda/#.conda:base
+    - .conda:base
+  image: igwn/base:conda
+  stage: test
+  needs: [lint]
+  before_script:
+    # run the `before_script` block from the conda:base template
+    - !reference [".conda:base", before_script]
+    # create a conda environment to run the tests in
+    - conda env create -n pydarm-test -f conda/environment.yaml
+    - conda activate pydarm-test
+    - conda install -c conda-forge coverage
+  script:
+    # env vars for cmd-dev functionality
+    - export IFO=H1
+    - export CAL_ROOT="/ligo/groups/cal/H1"
+    - conda activate pydarm-test  # just in case
+    # run unittests with coverage
+    - python3 -m coverage run -m unittest discover
+    # test the CLIs
+    - python3 -m coverage run --append -m pydarm --help
+    - python3 -m coverage run --append -m pydarm report --help
+  after_script:
+    # print coverage report
+    - export PYTHON="${CONDA_ENVS_PATH}/pydarm-test/bin/python3"
+    - !reference [".python:coverage", after_script]
+  artifacts:
+    expire_in: 3 days
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage*.xml
+  coverage: '/^TOTAL\s+.*\s+(\d+\.?\d*)%/'
+
+# -- build ------------------
+#
+# build the site using sphinx
+#
+
+sphinx:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/python/#.python:sphinx
+    - .python:sphinx
+  stage: build
+  image: python:3.9
+  needs: []
+  variables:
+    PIP_OPTIONS: "."
+    REQUIREMENTS: "-r docs/requirements.txt"
+    SPHINX_OPTIONS: "--output-dir docs"
+
+# -- deploy -----------------
+#
+# deploy the site using gitlab pages
+#
+
+pages:
+  stage: deploy
+  needs: [sphinx]
+  script:
+    - mv -v html public
+  artifacts:
+    paths:
+      - public

@@ -1,0 +1,93 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "setuptools_scm[toml]>=6.2",
+    "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydarm"
+description = "pyDARM modeling package for LIGO detector calibration"
+readme = "README.md"
+authors = [
+  { name = "Evan Goetz", email = "evan.goetz@ligo.org" },
+]
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Astronomy",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+requires-python = ">=3.8"
+dependencies = [
+  "corner",
+  "dttxml",
+  "emcee",
+  "gwpy",
+  "h5py",
+  "matplotlib",
+  "numpy < 1.25",
+  "requests",
+  "scikit-learn >= 1.1.0",
+  "scipy",
+  "pyepics",
+  "gpstime",
+  "gitpython",
+  "ligo-scald",
+  "gpflow",
+  "tensorflow == 2.15.0",
+  "tensorflow-probability == 0.23.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+test = [
+  "coverage[toml]",
+  "flake8",
+  "pytest",
+]
+conda = [
+  "python-nds2-client"
+]
+
+[project.scripts]
+pydarm = "pydarm.__main__:main"
+
+[project.urls]
+"Source Code" = "https://git.ligo.org/Calibration/pydarm"
+"Bug Tracker" = "https://git.ligo.org/Calibration/pydarm/-/issues"
+"Documentation" = "https://calibration.docs.ligo.org/pydarm"
+
+[tool.setuptools]
+license-files = [ "LICENSE" ]
+
+[tool.setuptools.packages.find]
+include = [ "pydarm" ]
+exclude = [ "docs",
+  "test",
+]
+
+[tool.setuptools_scm]
+write_to = "pydarm/_version.py"
+
+[tool.coverage.run]
+source = [ "pydarm" ]
+# don't report coverage for _version.py
+# (generated automatically by setuptools-scm)
+omit = [
+     "*/_version.py"
+]
+
+[tool.coverage.report]
+# print report with one decimal point
+precision = 1
