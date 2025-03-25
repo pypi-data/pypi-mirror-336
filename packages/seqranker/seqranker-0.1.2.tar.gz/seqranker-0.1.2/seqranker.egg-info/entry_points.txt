@@ -1,0 +1,2 @@
+[console_scripts]
+seqranker = seqranker.__main__:main

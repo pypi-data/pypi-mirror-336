@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+seqranker/__init__.py
+seqranker/__main__.py
+seqranker.egg-info/PKG-INFO
+seqranker.egg-info/SOURCES.txt
+seqranker.egg-info/dependency_links.txt
+seqranker.egg-info/entry_points.txt
+seqranker.egg-info/requires.txt
+seqranker.egg-info/top_level.txt
