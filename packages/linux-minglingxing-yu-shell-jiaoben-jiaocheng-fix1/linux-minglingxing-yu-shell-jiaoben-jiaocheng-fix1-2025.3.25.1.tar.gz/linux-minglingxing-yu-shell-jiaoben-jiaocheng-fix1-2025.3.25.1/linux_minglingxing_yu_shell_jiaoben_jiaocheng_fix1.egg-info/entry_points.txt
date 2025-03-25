@@ -1,0 +1,3 @@
+[console_scripts]
+LinuxMinglingxingYuShellJiaobenJiaochengFix1 = LinuxMinglingxingYuShellJiaobenJiaochengFix1.__main__:main
+linux-minglingxing-yu-shell-jiaoben-jiaocheng-fix1 = LinuxMinglingxingYuShellJiaobenJiaochengFix1.__main__:main
