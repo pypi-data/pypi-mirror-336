@@ -1,0 +1,7 @@
+requests
+lxml
+loguru
+urllib3
+curl_cffi
+aiomysql
+aiohttp
