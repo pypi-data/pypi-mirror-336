@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangJavaJichuFix1 = ShangGuiguTonggangJavaJichuFix1.__main__:main
+shang-guigu-tonggang-java-jichu-fix1 = ShangGuiguTonggangJavaJichuFix1.__main__:main
