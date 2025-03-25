@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: grape_bds
+Version: 0.1.2
+Summary: Grammatical Evolution framework built with DEAP
+Author: Allan de Lima
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: deap
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# GRAPE: Grammatical Algorithms in Python for Evolution
+
+[GRAPE](https://www.mdpi.com/2624-6120/3/3/39) is an implementation of Grammatical Evolution (GE) in [DEAP](https://deap.readthedocs.io/en/master/), an Evolutionary Computation framework in Python, 
+
+How to cite:
+```
+Allan de Lima, Samuel Carvalho, Douglas Mota Dias, Enrique Naredo, Joseph P.
+Sullivan, and Conor Ryan. 2022. GRAPE: Grammatical Algorithms in Python for
+Evolution. Signals 3, 3 (2022), 642–663. https://doi.org/10.3390/signals3030039
+```
