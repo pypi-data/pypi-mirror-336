@@ -1,0 +1,3 @@
+[console_scripts]
+ShenruqianchuKubernetesFix1 = ShenruqianchuKubernetesFix1.__main__:main
+shenruqianchu-kubernetes-fix1 = ShenruqianchuKubernetesFix1.__main__:main
