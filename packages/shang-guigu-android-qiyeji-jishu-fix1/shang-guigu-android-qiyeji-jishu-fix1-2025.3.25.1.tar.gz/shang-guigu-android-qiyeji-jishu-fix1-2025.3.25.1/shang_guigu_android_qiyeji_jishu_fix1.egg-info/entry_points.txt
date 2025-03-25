@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguAndroidQiyejiJishuFix1 = ShangGuiguAndroidQiyejiJishuFix1.__main__:main
+shang-guigu-android-qiyeji-jishu-fix1 = ShangGuiguAndroidQiyejiJishuFix1.__main__:main
