@@ -1,0 +1,3 @@
+[console_scripts]
+TesterhomeWikiMacacaHejiFix1 = TesterhomeWikiMacacaHejiFix1.__main__:main
+testerhome-wiki-macaca-heji-fix1 = TesterhomeWikiMacacaHejiFix1.__main__:main
