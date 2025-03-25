@@ -1,0 +1,10 @@
+llama_ipfs/__init__.py,sha256=6qXNVJgYgeU5z9-aB3LjkKtxC-6ff4bBfUC-Ta_WTjg,2153
+llama_ipfs/__main__.py,sha256=K_Eh0WEA5_Ulym6vXfGLvEG95DzHlZIpycOp9Namsp0,7805
+llama_ipfs/_version.py,sha256=YYQdu6Uqy9CTkjnQKsNKvrOd3DH1zWTn0ajJafGZDIc,50
+llama_ipfs/patch.py,sha256=kxapuQ6YxNkyT3eud1jrwqUoElgZcCdDPDdTxmx4ons,26338
+llama_ipfs/py.typed,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+llama_ipfs-0.1.1.dist-info/METADATA,sha256=sJmJPLJYIRp2ge7gorigZAUm8GcM6w8L5G0pYg6pXHE,3642
+llama_ipfs-0.1.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+llama_ipfs-0.1.1.dist-info/entry_points.txt,sha256=EWvXmvWF-0cr2-FdA3iSD4FjEOeNKOhaD-8_QDxk3hg,56
+llama_ipfs-0.1.1.dist-info/top_level.txt,sha256=f4jvAF-3PJPlM1QX43oS8gIxfBKS9h24C20q9r5JCzI,11
+llama_ipfs-0.1.1.dist-info/RECORD,,

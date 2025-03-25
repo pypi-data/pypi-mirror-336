@@ -1,0 +1,2 @@
+[console_scripts]
+llama-ipfs = llama_ipfs.__main__:main
