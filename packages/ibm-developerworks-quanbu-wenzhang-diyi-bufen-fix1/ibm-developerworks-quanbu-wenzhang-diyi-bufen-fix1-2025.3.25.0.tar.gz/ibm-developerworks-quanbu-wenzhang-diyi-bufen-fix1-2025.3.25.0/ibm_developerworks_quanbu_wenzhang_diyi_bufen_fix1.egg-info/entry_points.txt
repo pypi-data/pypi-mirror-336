@@ -1,0 +1,3 @@
+[console_scripts]
+IbmDeveloperworksQuanbuWenzhangDiyiBufenFix1 = IbmDeveloperworksQuanbuWenzhangDiyiBufenFix1.__main__:main
+ibm-developerworks-quanbu-wenzhang-diyi-bufen-fix1 = IbmDeveloperworksQuanbuWenzhangDiyiBufenFix1.__main__:main
