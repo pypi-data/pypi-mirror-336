@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: goodboy-sqlalchemy
+Version: 0.2.5
+Summary: Data validation tool for SQLALchemy
+License: MIT
+Author: Maxim Andryunin
+Author-email: maxim.andryunin@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: goodboy (>=0.2,<0.3)
+Requires-Dist: sqlalchemy
+Requires-Dist: typing-extensions (>=4.0) ; python_version >= "3.6" and python_version < "3.8"
+Description-Content-Type: text/markdown
+
+# Goodboy-SQLAlchemy: Data Validation for SQLAlchemy
+
+This project is currently in an early stage of development.
