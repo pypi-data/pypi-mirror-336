@@ -1,0 +1,3 @@
+[console_scripts]
+JinrongXingyeXinyidaiShujucangkuJiejuefanganFix1 = JinrongXingyeXinyidaiShujucangkuJiejuefanganFix1.__main__:main
+jinrong-xingye-xinyidai-shujucangku-jiejuefangan-fix1 = JinrongXingyeXinyidaiShujucangkuJiejuefanganFix1.__main__:main
