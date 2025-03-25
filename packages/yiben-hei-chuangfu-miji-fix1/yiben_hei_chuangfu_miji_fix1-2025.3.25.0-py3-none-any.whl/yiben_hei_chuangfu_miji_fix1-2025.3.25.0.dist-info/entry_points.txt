@@ -1,0 +1,3 @@
+[console_scripts]
+YibenHeiChuangfuMijiFix1 = YibenHeiChuangfuMijiFix1.__main__:main
+yiben-hei-chuangfu-miji-fix1 = YibenHeiChuangfuMijiFix1.__main__:main
