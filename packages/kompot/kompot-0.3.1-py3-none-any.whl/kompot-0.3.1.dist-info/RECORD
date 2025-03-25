@@ -1,0 +1,11 @@
+kompot/__init__.py,sha256=xb53MhFklSpg7rlyolUBFY4e7q0AIlp_FeTt-TMPr_M,2480
+kompot/batch_utils.py,sha256=BgeEm-0goN2ZstlFpW39DCVROEKGkXguRw5yIzKxO20,20681
+kompot/differential.py,sha256=M8Hz4iddNypuHiQYjKYiG-RJX1_tMCnwOyJq_8rNxqY,664
+kompot/memory_utils.py,sha256=we6NSlrlf73Uk8kiCwT_vej1n-UlW2wkrBtNLW6J_5g,24992
+kompot/utils.py,sha256=0A31D9kiBOpOUYd7Hy0w0z0IOu5K-C_tGy0AAxPEMg0,33565
+kompot/version.py,sha256=CicGZeHkIx2327_bbue3pKmuEOKnm_77WAepCh4P69c,49
+kompot-0.3.1.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+kompot-0.3.1.dist-info/METADATA,sha256=sAjnSDavMYQY1s5hviS04Z4gcvlbjtjUtmM5go4mmzU,5226
+kompot-0.3.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+kompot-0.3.1.dist-info/top_level.txt,sha256=s8R6liOnDztM4X6S1uUfsE3V0aUmvqoiklAOyMMEo0s,7
+kompot-0.3.1.dist-info/RECORD,,
