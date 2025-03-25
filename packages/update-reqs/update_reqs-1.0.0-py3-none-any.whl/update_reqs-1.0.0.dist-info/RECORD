@@ -1,0 +1,9 @@
+update_reqs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+update_reqs/cli.py,sha256=_B0LbC4g18Ie_MlUKZFzsWKny2OKv-2QVBdWtOmoOEc,1566
+update_reqs/updater.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+update_reqs-1.0.0.dist-info/licenses/LICENSE,sha256=epPK5cleHZa88dUADpekqGOiQofWJmxEGNKFMVE-g7Y,1095
+update_reqs-1.0.0.dist-info/METADATA,sha256=YLZ4jrQwcL_vpbsowlt595w-6WWi1XiPd2LdMq0zPrs,673
+update_reqs-1.0.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+update_reqs-1.0.0.dist-info/entry_points.txt,sha256=O-QnOOrn3mwMk9AEdttfqAyw_zantY81unPXmazFd3o,53
+update_reqs-1.0.0.dist-info/top_level.txt,sha256=3dvmEwqahpWLtyDFgX7StO8eq_sJD9EnFwwu73bJip4,12
+update_reqs-1.0.0.dist-info/RECORD,,

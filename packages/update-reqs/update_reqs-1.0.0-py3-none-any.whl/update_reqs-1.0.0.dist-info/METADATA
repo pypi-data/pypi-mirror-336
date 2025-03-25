@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: update-reqs
+Version: 1.0.0
+Summary: A smart CLI tool to clean and update requirements.txt by fetching the latest versions from PyPI.
+Author-email: The API Artist <steppacodes@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/SteppaCodes/updates-reqs
+Project-URL: Issues, https://github.com/SteppaCodes/updates-reqs/issues
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: license-file
+
+# updates-reqs
+update-reqs: A smart CLI tool that automatically updates your requirements.txt by fetching the latest versions of outdated libraries from PyPI.
