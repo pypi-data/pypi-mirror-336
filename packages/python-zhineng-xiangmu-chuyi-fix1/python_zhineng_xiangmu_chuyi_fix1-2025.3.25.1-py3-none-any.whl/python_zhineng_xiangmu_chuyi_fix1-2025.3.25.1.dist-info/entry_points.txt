@@ -1,0 +1,3 @@
+[console_scripts]
+PythonZhinengXiangmuChuyiFix1 = PythonZhinengXiangmuChuyiFix1.__main__:main
+python-zhineng-xiangmu-chuyi-fix1 = PythonZhinengXiangmuChuyiFix1.__main__:main
