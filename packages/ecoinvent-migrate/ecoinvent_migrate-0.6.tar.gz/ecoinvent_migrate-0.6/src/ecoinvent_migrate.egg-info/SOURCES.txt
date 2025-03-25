@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/ecoinvent_migrate/__init__.py
+src/ecoinvent_migrate/data_io.py
+src/ecoinvent_migrate/ei_release.py
+src/ecoinvent_migrate/errors.py
+src/ecoinvent_migrate/main.py
+src/ecoinvent_migrate/patches.py
+src/ecoinvent_migrate/utils.py
+src/ecoinvent_migrate/wrangling.py
+src/ecoinvent_migrate.egg-info/PKG-INFO
+src/ecoinvent_migrate.egg-info/SOURCES.txt
+src/ecoinvent_migrate.egg-info/dependency_links.txt
+src/ecoinvent_migrate.egg-info/requires.txt
+src/ecoinvent_migrate.egg-info/top_level.txt
