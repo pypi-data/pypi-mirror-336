@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "QIDLearningLib"
+version = "0.0.6"
+authors = [
+  { name="Sancho Amaral Simões", email="sanchoamaralsimoes@gmail.com" },
+]
+description = "QIDLearningLib is the first comprehensive Python library designed for automated quasi-identifier (QID) recognition and evaluation in tabular datasets. It integrates metrics from causality, data privacy, and data utility to provide a holistic assessment of potential QIDs, enabling systematic identification and mitigation of privacy risks in data sharing and analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/smartlord7/QIDLearningLib"
+Issues = "https://github.com/smartlord7/QIDLearningLib/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/QIDLearningLib"]
