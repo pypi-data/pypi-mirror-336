@@ -1,0 +1,10 @@
+sshpyk/__init__.py,sha256=I5tf7IC9Xob7X0T5lpI_PJX7xHEme95qkzxaKq7GoLE,130
+sshpyk/__main__.py,sha256=ugmaF_Z5OBpVt4BqfLucjJ_NmltlgsShY08qyW9NbGw,8863
+sshpyk/kernel/add.py,sha256=dBafj6g2YE6fmoII38Zm2n1USAoIkbRlMTLnpOT04uQ,5990
+sshpyk/kernel/ls.py,sha256=8vLpmUCKMek6H8ulQDOsTOTRZ8QJgGVdQYQGAN-MR3Q,7796
+sshpyk/kernel/utils.py,sha256=iLhLC9zH22qZm6LF-TXcQ0FqlpB_z9_-ctaxTP3zJOs,2192
+sshpyk/__version__.py,sha256=mZgP_w-6TWK5lFfmSPKjQ9ZbuqMQmWfl9SZxHREYF-E,20
+sshpyk-0.21.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+sshpyk-0.21.dist-info/METADATA,sha256=EOwkAVRpWBMLjF4L8YKHiI9Ut2a5Nj_tHGSY1_Eb2Mk,10404
+sshpyk-0.21.dist-info/licenses/LICENSE,sha256=DpvVuL9FA7QuVWvBloKZ9xmPyjGbIJnv82DlV0PsLSA,1516
+sshpyk-0.21.dist-info/RECORD,,
