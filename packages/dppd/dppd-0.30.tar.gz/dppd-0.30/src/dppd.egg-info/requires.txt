@@ -1,0 +1,13 @@
+natsort
+numpy
+pandas>=2
+wrapt
+
+[dev]
+build
+numpydoc
+plotnine
+pytest
+pytest-cov
+sphinx
+sphinx-bootstrap-theme
