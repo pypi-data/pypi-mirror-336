@@ -1,0 +1,3 @@
+[console_scripts]
+ApacheFlinkShidaJishuNandianShizhanFix1 = ApacheFlinkShidaJishuNandianShizhanFix1.__main__:main
+apache-flink-shida-jishu-nandian-shizhan-fix1 = ApacheFlinkShidaJishuNandianShizhanFix1.__main__:main
