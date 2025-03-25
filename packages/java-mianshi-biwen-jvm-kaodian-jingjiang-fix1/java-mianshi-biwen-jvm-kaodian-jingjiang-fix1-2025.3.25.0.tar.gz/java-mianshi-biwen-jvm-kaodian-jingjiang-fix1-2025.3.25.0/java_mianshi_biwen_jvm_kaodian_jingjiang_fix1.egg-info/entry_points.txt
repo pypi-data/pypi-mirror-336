@@ -1,0 +1,3 @@
+[console_scripts]
+JavaMianshiBiwenJvmKaodianJingjiangFix1 = JavaMianshiBiwenJvmKaodianJingjiangFix1.__main__:main
+java-mianshi-biwen-jvm-kaodian-jingjiang-fix1 = JavaMianshiBiwenJvmKaodianJingjiangFix1.__main__:main
