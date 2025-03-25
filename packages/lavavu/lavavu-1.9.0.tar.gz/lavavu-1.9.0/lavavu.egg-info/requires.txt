@@ -1,0 +1,4 @@
+numpy>=1.18
+aiohttp
+jupyter_server_proxy
+numpy-quaternion
