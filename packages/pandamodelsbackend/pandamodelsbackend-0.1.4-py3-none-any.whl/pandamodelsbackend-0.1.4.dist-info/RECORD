@@ -1,0 +1,9 @@
+pandamodelsbackend/__init__.py,sha256=T8avSVLWZSPvaMKk7IEIsgrPCZE8wLEdPTYbNPS4X_M,85
+pandamodelsbackend/pandaModelsBackend.py,sha256=2NtNvm1t6g8RUuDnlIa4J-ObFNCjXSAEEny8ao02_3w,70622
+pandamodelsbackend/tests/test_backend_api.py,sha256=__7QuqvkYWvsXbcmDwcs8a4Csi4Dej7gdtBkmOkZb5k,1136
+pandamodelsbackend/tests/test_basic_usage.py,sha256=AMxAztCnhn9yiiBTcfRzrXfMd0_zkW_PQOqmjljMtjo,2867
+pandamodelsbackend-0.1.4.dist-info/licenses/LICENSE,sha256=Ps4m_XmxjFRPgZR82K8RMabi3Lrc1OtRjR2l6Htk2zc,1108
+pandamodelsbackend-0.1.4.dist-info/METADATA,sha256=U4geiEIU-2NIqzS0CvhKpAiBnCJesAzEaeqHAZuweLE,9426
+pandamodelsbackend-0.1.4.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+pandamodelsbackend-0.1.4.dist-info/top_level.txt,sha256=fjEoV6LNwXQ-FrS25PsKaHRQoOxHiZ5HxP3wREZ1zM8,19
+pandamodelsbackend-0.1.4.dist-info/RECORD,,
