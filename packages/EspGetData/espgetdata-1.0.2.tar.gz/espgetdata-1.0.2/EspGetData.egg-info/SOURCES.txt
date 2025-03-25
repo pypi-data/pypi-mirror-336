@@ -1,0 +1,8 @@
+setup.py
+EspGetData/__init__.py
+EspGetData/main.py
+EspGetData.egg-info/PKG-INFO
+EspGetData.egg-info/SOURCES.txt
+EspGetData.egg-info/dependency_links.txt
+EspGetData.egg-info/requires.txt
+EspGetData.egg-info/top_level.txt
