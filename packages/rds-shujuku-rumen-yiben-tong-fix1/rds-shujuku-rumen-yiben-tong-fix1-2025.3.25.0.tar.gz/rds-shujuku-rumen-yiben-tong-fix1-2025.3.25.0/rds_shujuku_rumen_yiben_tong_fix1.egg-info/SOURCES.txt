@@ -1,0 +1,12 @@
+README.md
+setup.py
+RdsShujukuRumenYibenTongFix1/README.md
+RdsShujukuRumenYibenTongFix1/__init__.py
+RdsShujukuRumenYibenTongFix1/__main__.py
+RdsShujukuRumenYibenTongFix1/file.pdf
+RdsShujukuRumenYibenTongFix1/index.html
+rds_shujuku_rumen_yiben_tong_fix1.egg-info/PKG-INFO
+rds_shujuku_rumen_yiben_tong_fix1.egg-info/SOURCES.txt
+rds_shujuku_rumen_yiben_tong_fix1.egg-info/dependency_links.txt
+rds_shujuku_rumen_yiben_tong_fix1.egg-info/entry_points.txt
+rds_shujuku_rumen_yiben_tong_fix1.egg-info/top_level.txt
