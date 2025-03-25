@@ -1,0 +1,1 @@
+from mlip_jax.models.nequip.nequip_factory import create_nequip_force_field
