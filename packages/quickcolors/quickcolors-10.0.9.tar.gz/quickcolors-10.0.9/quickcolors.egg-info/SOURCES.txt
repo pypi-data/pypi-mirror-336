@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+quickcolors/__init__.py
+quickcolors.egg-info/PKG-INFO
+quickcolors.egg-info/SOURCES.txt
+quickcolors.egg-info/dependency_links.txt
+quickcolors.egg-info/requires.txt
+quickcolors.egg-info/top_level.txt

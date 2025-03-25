@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: quickcolors
+Version: 10.0.9
+Summary: Color formatting utility for Python console applications
+Home-page: https://github.com/author/quickcolors
+Author: Author
+Author-email: author@example.com
+License: UNKNOWN
+Keywords: color,format,console,utility
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
