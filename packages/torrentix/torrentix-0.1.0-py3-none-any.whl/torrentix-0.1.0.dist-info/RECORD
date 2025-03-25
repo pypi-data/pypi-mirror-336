@@ -1,0 +1,11 @@
+torrentix/__init__.py,sha256=RhoHHzEwdBa2zy-YE7K6R0R-0MJamhH1ReZNDbLmSAQ,58
+torrentix/bencode.py,sha256=pqss2XVnj1-f8-1683xTcMPepDuZw8QAmANVMMH7aQc,2331
+torrentix/peer.py,sha256=MjrVrHYW1DQH56CcfYQlzsQgqohrIq1mod84dpkiBN0,7241
+torrentix/peer_manager.py,sha256=fAlT7AsGT3b-5lj2u_pgHl4osS1WSQxjB1ju6fAo3a0,4632
+torrentix/torrent.py,sha256=lceuobm42IeMw0tI9soGa8tpmU2CmqrhGAEsUwPP7jU,6680
+torrentix/tracker.py,sha256=O4C0OdOP3GlJFUxh9PURXRvWqnBwkTfuWnPGL3kMO7s,6203
+torrentix-0.1.0.dist-info/licenses/LICENSE,sha256=8zfhqSMSepIO5I55CyNgYEWBM96UA4XGkQ52nXshB_g,1068
+torrentix-0.1.0.dist-info/METADATA,sha256=mrBCzq0lxVl4Kf9_6NjOotT2w480E1FIaq2kBKVSdRk,516
+torrentix-0.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+torrentix-0.1.0.dist-info/top_level.txt,sha256=kb6LI6LBTs4l4pQcVDhUS144qGqBkZSEDXYm3mxY8OQ,10
+torrentix-0.1.0.dist-info/RECORD,,
