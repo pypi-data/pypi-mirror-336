@@ -1,0 +1,13 @@
+rafina/P3A_runner,sha256=82iPEiuBMemZcBLaAO9DQeGzxIz8vhcx5SJJI4ilMKU,215072
+rafina/__init__.py,sha256=xyIsKnZT4n5lZtPVFnmqlggW02fkpLgWPyvVmEFZoM4,2071
+rafina/__pydyn__.py,sha256=Vp4ywLXijivzOXvHBknrBl89QZG68sQKJx-kkgEBEbM,1819
+rafina/libboost_filesystem.so.1.86.0,sha256=Q5RsOMQsc-6L5gmhvVZDtKQJ_rjR7E_VVho7TQ3qlCs,230329
+rafina/libboost_numpy312.so.1.86.0,sha256=Wuj0sY4s1PbhIIWQLAW5F8P06RNAOfLaHRYX9BWhUMI,84441
+rafina/libboost_python312.so.1.86.0,sha256=uztG6jxq2N-rCHe35aNiCgYa3yo2qoYChJJFhJNYCR8,394665
+rafina/librafutility_mod.so,sha256=WQ9zQOOYh50J_SKLBWHeIE3HPIDRTBNndgGEfudsHDM,209617
+rafina/pyraf.so,sha256=XLuE1IkbCkTold1faq4Du0fZRhZtt86tMzlwXSq_YJg,523264
+rafina-0.0.5.dist-info/licenses/LICENSE.txt,sha256=R7YQ2jqxsyojgUSVtmV_fEn3vwDh-jWzbaVQkU2a_Dg,1527
+rafina-0.0.5.dist-info/METADATA,sha256=6KGAUW9lx05vuwRD_A8hvna4NEMUVduVW2GW00j0gZA,2338
+rafina-0.0.5.dist-info/WHEEL,sha256=Da38ENY8YzPfyjuvq2wNBBviMNLCNckJ_mCFeoSo9Fw,102
+rafina-0.0.5.dist-info/top_level.txt,sha256=Q_OGEKrxOncSKjtHfzoEwH1liUOrnnpxFRG3UFHJ9K0,7
+rafina-0.0.5.dist-info/RECORD,,
