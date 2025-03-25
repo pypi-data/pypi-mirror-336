@@ -1,0 +1,3 @@
+[console_scripts]
+AliosThingsKuaisuKaifaZhinanFix1 = AliosThingsKuaisuKaifaZhinanFix1.__main__:main
+alios-things-kuaisu-kaifa-zhinan-fix1 = AliosThingsKuaisuKaifaZhinanFix1.__main__:main
