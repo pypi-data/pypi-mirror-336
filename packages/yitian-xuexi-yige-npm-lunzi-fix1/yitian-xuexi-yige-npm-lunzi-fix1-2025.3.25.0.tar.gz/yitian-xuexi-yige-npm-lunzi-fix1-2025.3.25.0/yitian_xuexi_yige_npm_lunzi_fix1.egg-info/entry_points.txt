@@ -1,0 +1,3 @@
+[console_scripts]
+YitianXuexiYigeNpmLunziFix1 = YitianXuexiYigeNpmLunziFix1.__main__:main
+yitian-xuexi-yige-npm-lunzi-fix1 = YitianXuexiYigeNpmLunziFix1.__main__:main
