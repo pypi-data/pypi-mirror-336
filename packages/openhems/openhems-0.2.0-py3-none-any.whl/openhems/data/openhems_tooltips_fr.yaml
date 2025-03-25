@@ -1,0 +1,76 @@
+api:
+  url: "URL d'acces Home-Assistant"
+  long_lived_token: "Token d'access Home-Assistant. A générer sur l'interface d'Home-Assistant."
+  ssl_certificate: "Path "
+localization:
+  latitude: "The home lattitude (usefull for solar-panel and wether predictions)"
+  longitude: "The home longitude (usefull for solar-panel and wether predictions)"
+  altitude: "The home altitude (usefull for solar-panel)"
+  timeZone: "Il s'agit du fuseau horaire que vous pouvez trouver sous le nom 'TZ identifier' sur https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List"
+  language: "Langue"
+server:
+  htmlRoot: "Root location of web server."
+  inDocker: "True if OpenHEMS run in docker."
+  port: "Web server port for listening."
+  logformat: "Format for log on OpenHEMS # for custom configuration see https://docs.python.org/3/library/logging.html#logrecord-attributes"
+  logfile: "Log file path"
+  loglevel: "Log level, (critical, error, warning, info, debug)"
+  loopDelay: "Interval beetween 2 OpenHEMS loop. Less is better for reaction, but use more power."
+  network: "Way to access your home network. (homeassistant, fake)"
+  strategies: "Defini la liste des algorithmes a activer pour le réseau."
+network:
+  nodes: "Configurez vos appareils du réseau domestique"
+# All default values.
+default:
+  node:
+    publicpowergrid:
+      currentPower: ""
+      maxPower: ""
+      minPower: ""
+      marginPower: ""
+      contract:
+        rtetempo:
+          color: ""
+          offpeakhoursranges: "['22h - 6h']"
+          peakprice:
+            bleu: "xxx"
+            blanc: "xxx"
+            rouge: "xxx"
+          offpeakprice:
+            bleu: ""
+            blanc: ""
+            rouge: ""
+        rteheurescreuses:
+          offpeakhoursranges: "['22h - 6h']"
+          peakprice: ""
+          offpeakprice: ""
+        rtetarifbleu:
+          price: ""
+        generic:
+          offpeakhoursranges: "['22h - 6h']"
+          peakprice: ""
+          offpeakprice: ""
+    solarpanel:
+      currentPower: ""
+      maxPower: ""
+      moduleModel: ""
+      inverterModel: ""
+      tilt: "Angle between solar panel and horizontal"
+      azimuth: "Angle betwwen solar panel orientation and north (Best is 180 in north.)"
+      modulesPerString: ""
+      stringsPerInverter: ""
+    battery:
+      currentPower: "Home-Assistant id to get the switch."
+      maxPowerIn: "Maximum power can deliver the battery (to the home)"
+      maxPowerOut: "Maximum power to charge the battery"
+      efficiencyIn: "Rate of efficiency when "
+      efficiencyOut: "Rate of efficiency when "
+      capacity: "Battery capacity in Wh"
+      currentLevel: "Home-Assistant id to get the charging level"
+      lowLevel: "Level under witch we should go"
+      highLevel: "Level above witch we should go"
+      targetLevel: "The battery level witch should be good at end of charge."
+    switch:
+      currentPower: "Home-Assistant id to get the switch."
+      maxPower: "Maximum power can deliver the switch."
+      isOn: "Home-Assistant id to command the switch"
