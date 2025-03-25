@@ -1,0 +1,3 @@
+[console_scripts]
+NiukeShujukuSuoyinMianshiBikao15DianFix1 = NiukeShujukuSuoyinMianshiBikao15DianFix1.__main__:main
+niuke-shujuku-suoyin-mianshi-bikao-15-dian-fix1 = NiukeShujukuSuoyinMianshiBikao15DianFix1.__main__:main
