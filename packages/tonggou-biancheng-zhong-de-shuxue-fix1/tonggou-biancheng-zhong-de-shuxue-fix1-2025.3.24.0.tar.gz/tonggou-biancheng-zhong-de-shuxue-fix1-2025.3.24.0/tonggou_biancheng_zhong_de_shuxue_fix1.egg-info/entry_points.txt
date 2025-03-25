@@ -1,0 +1,3 @@
+[console_scripts]
+TonggouBianchengZhongDeShuxueFix1 = TonggouBianchengZhongDeShuxueFix1.__main__:main
+tonggou-biancheng-zhong-de-shuxue-fix1 = TonggouBianchengZhongDeShuxueFix1.__main__:main
