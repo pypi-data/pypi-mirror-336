@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=66.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lddecay"
+dynamic = ["version"]
+authors = [{ name="Stéphane De Mita", email="demita@gmail.com" }]
+description = "LD decay analysis using EggLib."
+readme = "README.rst"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+
+classifiers = [
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "egglib~=3.4",
+    "click",
+    "matplotlib"
+]
+
+[project.urls]
+"Homepage" = "https://lddecay.readthedocs.io/"
+"Download" = "https://pypi.org/project/lddecay/"
+"Source" = "https://gitlab.com/demita/lddecay/"
+
+[project.scripts]
+lddecay = "lddecay.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "lddecay.__version__"}

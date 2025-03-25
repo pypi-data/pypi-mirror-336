@@ -1,0 +1,4 @@
+include COPYING LICENSE README.rst
+include doc/config.py doc/*.rst
+include test/test.sh test/b.bcf test/check-version.py
+recursive-include src/ *.py
