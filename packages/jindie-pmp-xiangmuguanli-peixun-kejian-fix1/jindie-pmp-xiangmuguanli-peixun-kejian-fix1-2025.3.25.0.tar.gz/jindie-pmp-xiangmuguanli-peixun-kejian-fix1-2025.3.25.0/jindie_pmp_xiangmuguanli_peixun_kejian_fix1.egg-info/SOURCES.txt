@@ -1,0 +1,12 @@
+README.md
+setup.py
+JindiePmpXiangmuguanliPeixunKejianFix1/README.md
+JindiePmpXiangmuguanliPeixunKejianFix1/__init__.py
+JindiePmpXiangmuguanliPeixunKejianFix1/__main__.py
+JindiePmpXiangmuguanliPeixunKejianFix1/file.pdf
+JindiePmpXiangmuguanliPeixunKejianFix1/index.html
+jindie_pmp_xiangmuguanli_peixun_kejian_fix1.egg-info/PKG-INFO
+jindie_pmp_xiangmuguanli_peixun_kejian_fix1.egg-info/SOURCES.txt
+jindie_pmp_xiangmuguanli_peixun_kejian_fix1.egg-info/dependency_links.txt
+jindie_pmp_xiangmuguanli_peixun_kejian_fix1.egg-info/entry_points.txt
+jindie_pmp_xiangmuguanli_peixun_kejian_fix1.egg-info/top_level.txt

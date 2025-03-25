@@ -1,0 +1,3 @@
+[console_scripts]
+JindiePmpXiangmuguanliPeixunKejianFix1 = JindiePmpXiangmuguanliPeixunKejianFix1.__main__:main
+jindie-pmp-xiangmuguanli-peixun-kejian-fix1 = JindiePmpXiangmuguanliPeixunKejianFix1.__main__:main
