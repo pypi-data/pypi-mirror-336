@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simplex"
+version = "1.2.50"
+description = "Official Python SDK for Simplex API"
+authors = [
+    {name = "Simplex Labs, Inc.", email = "founders@simplex.sh"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "colorama",
+    "requests",
+    "python-dotenv",
+    "click",
+]
+
+[project.optional-dependencies]
+playwright = ["playwright>=1.0.0"]
+
+[project.urls]
+Homepage = "https://simplex.sh" 
