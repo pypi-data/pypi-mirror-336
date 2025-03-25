@@ -1,0 +1,3 @@
+[console_scripts]
+KuaileDeLinuxMinglingxingFix1 = KuaileDeLinuxMinglingxingFix1.__main__:main
+kuaile-de-linux-minglingxing-fix1 = KuaileDeLinuxMinglingxingFix1.__main__:main
