@@ -1,0 +1,3 @@
+[console_scripts]
+JisuanjixitongJiegouJichuDisanbanFix1 = JisuanjixitongJiegouJichuDisanbanFix1.__main__:main
+jisuanjixitong-jiegou-jichu-disanban-fix1 = JisuanjixitongJiegouJichuDisanbanFix1.__main__:main
