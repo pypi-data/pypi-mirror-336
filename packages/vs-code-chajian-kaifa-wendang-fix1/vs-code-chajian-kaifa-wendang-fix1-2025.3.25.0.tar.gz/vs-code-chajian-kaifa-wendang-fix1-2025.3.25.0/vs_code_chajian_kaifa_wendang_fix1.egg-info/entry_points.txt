@@ -1,0 +1,3 @@
+[console_scripts]
+VsCodeChajianKaifaWendangFix1 = VsCodeChajianKaifaWendangFix1.__main__:main
+vs-code-chajian-kaifa-wendang-fix1 = VsCodeChajianKaifaWendangFix1.__main__:main
