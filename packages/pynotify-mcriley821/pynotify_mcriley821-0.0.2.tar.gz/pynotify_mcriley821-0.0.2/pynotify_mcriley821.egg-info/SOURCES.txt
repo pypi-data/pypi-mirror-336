@@ -1,0 +1,14 @@
+README.rst
+UNLICENSE
+pyproject.toml
+pynotify/__init__.py
+pynotify/event.py
+pynotify/event_handler.py
+pynotify/event_type.py
+pynotify/notifier.py
+pynotify_mcriley821.egg-info/PKG-INFO
+pynotify_mcriley821.egg-info/SOURCES.txt
+pynotify_mcriley821.egg-info/dependency_links.txt
+pynotify_mcriley821.egg-info/top_level.txt
+tests/test_event.py
+tests/test_notifier.py
