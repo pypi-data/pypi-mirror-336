@@ -1,0 +1,3 @@
+[console_scripts]
+BiaoduJiaoyuCcnaShiyanShouceFix1 = BiaoduJiaoyuCcnaShiyanShouceFix1.__main__:main
+biaodu-jiaoyu-ccna-shiyan-shouce-fix1 = BiaoduJiaoyuCcnaShiyanShouceFix1.__main__:main
