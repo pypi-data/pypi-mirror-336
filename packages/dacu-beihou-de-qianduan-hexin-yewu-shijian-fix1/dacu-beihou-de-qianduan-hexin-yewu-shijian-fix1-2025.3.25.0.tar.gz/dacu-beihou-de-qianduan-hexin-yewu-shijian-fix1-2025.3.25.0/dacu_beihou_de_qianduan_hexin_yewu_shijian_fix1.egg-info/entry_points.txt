@@ -1,0 +1,3 @@
+[console_scripts]
+DacuBeihouDeQianduanHexinYewuShijianFix1 = DacuBeihouDeQianduanHexinYewuShijianFix1.__main__:main
+dacu-beihou-de-qianduan-hexin-yewu-shijian-fix1 = DacuBeihouDeQianduanHexinYewuShijianFix1.__main__:main
