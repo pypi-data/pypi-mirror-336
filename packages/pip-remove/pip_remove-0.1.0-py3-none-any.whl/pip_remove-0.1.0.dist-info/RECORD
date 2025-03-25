@@ -1,0 +1,8 @@
+pip_remove/__init__.py,sha256=tvYd_yg2EC43Pvz-h3F-AVB-VCWy20US7dj4IhZstQE,656
+pip_remove/orphans.py,sha256=mPDFrCMQ1s5zgWIjg4AuR9ycBIcd2Ecoj9BQPnk7nX4,5818
+pip_remove/remove.py,sha256=cf6oinK6aFxXeX22_e98phbECddbOjosB-PVHcopldw,1747
+pip_remove-0.1.0.dist-info/METADATA,sha256=AH2MQvbobp9OBfInJVkxkEaXXHXF3sVubOLUg2T0dJ8,285
+pip_remove-0.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+pip_remove-0.1.0.dist-info/entry_points.txt,sha256=IdycVwjaJsIgLGExiGgv_zdIlwT_1amIaZHtLcgQtPw,47
+pip_remove-0.1.0.dist-info/top_level.txt,sha256=63rExRRdHpFsW706OEunT4JC_FWJ1085FLgdrvszs_E,11
+pip_remove-0.1.0.dist-info/RECORD,,

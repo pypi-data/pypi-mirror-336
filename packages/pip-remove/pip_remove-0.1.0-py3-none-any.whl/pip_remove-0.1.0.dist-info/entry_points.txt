@@ -1,0 +1,2 @@
+[console_scripts]
+pip-remove = pip_remove:main
