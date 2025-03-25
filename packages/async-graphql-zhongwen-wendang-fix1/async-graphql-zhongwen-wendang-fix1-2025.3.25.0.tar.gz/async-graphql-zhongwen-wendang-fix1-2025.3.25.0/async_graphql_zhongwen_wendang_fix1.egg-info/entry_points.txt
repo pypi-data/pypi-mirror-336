@@ -1,0 +1,3 @@
+[console_scripts]
+AsyncGraphqlZhongwenWendangFix1 = AsyncGraphqlZhongwenWendangFix1.__main__:main
+async-graphql-zhongwen-wendang-fix1 = AsyncGraphqlZhongwenWendangFix1.__main__:main
