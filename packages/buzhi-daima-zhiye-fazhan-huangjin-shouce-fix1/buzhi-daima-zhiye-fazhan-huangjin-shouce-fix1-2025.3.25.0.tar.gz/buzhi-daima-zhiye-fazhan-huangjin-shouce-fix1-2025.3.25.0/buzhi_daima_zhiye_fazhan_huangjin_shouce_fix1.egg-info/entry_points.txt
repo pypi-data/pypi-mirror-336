@@ -1,0 +1,3 @@
+[console_scripts]
+BuzhiDaimaZhiyeFazhanHuangjinShouceFix1 = BuzhiDaimaZhiyeFazhanHuangjinShouceFix1.__main__:main
+buzhi-daima-zhiye-fazhan-huangjin-shouce-fix1 = BuzhiDaimaZhiyeFazhanHuangjinShouceFix1.__main__:main
