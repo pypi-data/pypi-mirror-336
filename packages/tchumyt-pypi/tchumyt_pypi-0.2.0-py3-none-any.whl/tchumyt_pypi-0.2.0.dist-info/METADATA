@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tchumyt-pypi
+Version: 0.2.0
+Summary: Tchumyt project utilities modules
+Author: Bruno Adam Osiek
+Author-email: baosiek@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: datasets (>=3.4.1,<4.0.0)
+Requires-Dist: tokenizers (>=0.21.1,<0.22.0)
+Description-Content-Type: text/markdown
+
+
