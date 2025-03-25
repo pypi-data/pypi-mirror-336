@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+BigBank/__init__.py
+BigBank/bigbank.py
+bigbank/bigbank_save.json
+bigbank.egg-info/PKG-INFO
+bigbank.egg-info/SOURCES.txt
+bigbank.egg-info/dependency_links.txt
+bigbank.egg-info/top_level.txt
+tests/test_bigbank.py
