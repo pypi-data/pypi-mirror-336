@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Expedition/__init__.py
+Expedition/dll_wrapper.py
+Expedition/enums.py
+Expedition_Python.egg-info/PKG-INFO
+Expedition_Python.egg-info/SOURCES.txt
+Expedition_Python.egg-info/dependency_links.txt
+Expedition_Python.egg-info/top_level.txt
+tests/test_expedition.py
