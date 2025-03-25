@@ -1,0 +1,3 @@
+[console_scripts]
+start=pubchem_mcp_server.main:main
+
