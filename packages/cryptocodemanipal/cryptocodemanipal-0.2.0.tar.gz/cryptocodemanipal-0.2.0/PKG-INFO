@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: cryptocodemanipal
+Version: 0.2.0
+Summary: A collection of cryptographic algorithms
+Home-page: https://github.com/SamyakBargale/cryptocodemanipal
+Author: SAM
+Author-email: samyakbargale12@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sympy
+Requires-Dist: tinyec
+Requires-Dist: pycryptodome
+Requires-Dist: cryptography
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CryptoCodeManipal
+
+A Python package containing various cryptographic algorithms, including RSA, ECC, Diffie-Hellman, and more.
+
+## Installation
+```bash
+pip install cryptocodemanipal
