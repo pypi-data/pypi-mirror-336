@@ -1,0 +1,2 @@
+[console_scripts]
+anemoi-plugins = anemoi.plugins.__main__:main
