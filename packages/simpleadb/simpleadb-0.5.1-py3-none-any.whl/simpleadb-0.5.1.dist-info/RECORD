@@ -1,0 +1,12 @@
+doc/conf.py,sha256=8Y0vzJ_EWDOxsGVTyWvfBi44FzHBKwNzcyvcBttHy2Y,2135
+simpleadb/__init__.py,sha256=ngGCarYTDDowhjEZ1pHF_-ox4QZVSZCxYAOEc8QBONk,387
+simpleadb/adbcmds.py,sha256=y4XAe2PwSGbeNQXb0iA7k5GbId_nFVUX1mXc5YGF_c4,1058
+simpleadb/adbdevice.py,sha256=aMJtU_sqI_4R6kY9L3Js5NozDnJ4NFP9ZblYUiGe4XU,19576
+simpleadb/adbprocess.py,sha256=aqZ1q9fKCLDBXmYXLsoaJMa91bYen2ULouE1RIREFRI,3408
+simpleadb/adbserver.py,sha256=td8zWtnXycwOyP99IGKQ7N6VY5vQiKWCD63hjONBH5c,4295
+simpleadb/utils.py,sha256=tD_llUYp6rrL1tA6k2FvOL9rE47ieTzdDspfviZIKEg,786
+simpleadb-0.5.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simpleadb-0.5.1.dist-info/METADATA,sha256=72U5fbrz5-M__O9Hbo9CHps9qRXq_GLVeab7gXXXnE8,1748
+simpleadb-0.5.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+simpleadb-0.5.1.dist-info/top_level.txt,sha256=oj4MY9rreO9xEUI92cQnSNw7pon68Q_987ovxU-6ihE,14
+simpleadb-0.5.1.dist-info/RECORD,,
