@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: unifiedfinder
+Version: 1.0.0
+Summary: A unified scraping helper combining BeautifulSoup and Selenium utilities.
+Home-page: https://github.com/Trollparts/unifiedfinder
+Author: Trollparts
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: selenium
+Requires-Dist: requests
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# unifiedfinder
+
+🧰 A powerful utility toolkit for web scraping using BeautifulSoup and Selenium.
+
+## Key Features
+
+- `find()`: unified .find for BS4 and Selenium
+- `get_link()`: single href value
+- `get_links()`: list of all hrefs
+- `get_attr()`: extract specific attribute
+- `get_attrs()`: extract attribute list
+- `get_text()`: extract single element text
+- `get_texts()`: extract multiple elements' text
+- `get_elements_as_dict()`: extract multiple attributes per element
+- `exists()`: check if element exists
