@@ -1,0 +1,18 @@
+include README.md
+include README_zh.md
+include LICENSE
+include requirements.txt
+include scripts.py
+recursive-include docs *
+recursive-include examples *.py
+recursive-include wavx * 
+
+# 排除工具脚本文件
+exclude build_and_upload.py
+exclude clean_git_history.py
+exclude github_upload.py
+exclude .github_token
+exclude .pypi_token 
+
+# 排除文件夹
+recursive-exclude html * 

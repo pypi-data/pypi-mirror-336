@@ -1,0 +1,3 @@
+[console_scripts]
+wavx = wavx.cli:main
+wavx-welcome = scripts:post_install
