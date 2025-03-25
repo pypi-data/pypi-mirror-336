@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pepito"
+dynamic = ["version"]
+description = "Migration of Perl scripts using Clearcase to Python scripts using Git"
+readme = "README.md"
+license = ""
+
+[tool.hatch.version]
+path = "pepito/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/pepito",
+]
+
+[tool.hatch.build.targets.wheel]
+sources=["pepito"]
+
+[project.scripts]
+pepito = "pepito:app"
+
+[dependency-groups]
+dev = [
+    "black>=23.3.0",
+    "isort>=5.11.5",
+    "pytest>=7.4.4",
+    "pytest-icdiff>=0.9",
+    "pytest-sugar>=1.0.0",
+    "ruff>=0.9.9",
+]
+
+[tool.isort]
+profile = "black"
