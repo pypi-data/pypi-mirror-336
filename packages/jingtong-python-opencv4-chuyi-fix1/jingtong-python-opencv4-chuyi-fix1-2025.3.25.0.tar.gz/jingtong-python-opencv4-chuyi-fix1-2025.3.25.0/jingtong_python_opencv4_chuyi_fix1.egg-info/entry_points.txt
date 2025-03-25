@@ -1,0 +1,3 @@
+[console_scripts]
+JingtongPythonOpencv4ChuyiFix1 = JingtongPythonOpencv4ChuyiFix1.__main__:main
+jingtong-python-opencv4-chuyi-fix1 = JingtongPythonOpencv4ChuyiFix1.__main__:main
