@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+namaztime/__init__.py
+namaztime/timezone_city.json
+namaztime/waqt.py
+namaztime.egg-info/PKG-INFO
+namaztime.egg-info/SOURCES.txt
+namaztime.egg-info/dependency_links.txt
+namaztime.egg-info/requires.txt
+namaztime.egg-info/top_level.txt
+tests/__init__.py
+tests/test_namaztime.py
