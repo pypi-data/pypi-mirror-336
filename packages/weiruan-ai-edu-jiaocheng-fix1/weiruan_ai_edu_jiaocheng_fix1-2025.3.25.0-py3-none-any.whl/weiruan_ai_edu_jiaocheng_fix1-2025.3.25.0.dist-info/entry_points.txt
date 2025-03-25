@@ -1,0 +1,3 @@
+[console_scripts]
+WeiruanAiEduJiaochengFix1 = WeiruanAiEduJiaochengFix1.__main__:main
+weiruan-ai-edu-jiaocheng-fix1 = WeiruanAiEduJiaochengFix1.__main__:main
