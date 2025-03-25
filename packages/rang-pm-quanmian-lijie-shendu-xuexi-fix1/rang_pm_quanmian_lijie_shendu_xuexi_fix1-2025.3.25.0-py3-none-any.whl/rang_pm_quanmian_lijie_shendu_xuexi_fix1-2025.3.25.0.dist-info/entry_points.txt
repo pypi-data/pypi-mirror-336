@@ -1,0 +1,3 @@
+[console_scripts]
+RangPmQuanmianLijieShenduXuexiFix1 = RangPmQuanmianLijieShenduXuexiFix1.__main__:main
+rang-pm-quanmian-lijie-shendu-xuexi-fix1 = RangPmQuanmianLijieShenduXuexiFix1.__main__:main
