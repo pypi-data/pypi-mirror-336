@@ -1,0 +1,8 @@
+README.md
+license.txt
+setup.py
+fairfru/main.py
+fairfru.egg-info/PKG-INFO
+fairfru.egg-info/SOURCES.txt
+fairfru.egg-info/dependency_links.txt
+fairfru.egg-info/top_level.txt
