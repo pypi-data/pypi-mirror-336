@@ -1,0 +1,12 @@
+backpack_exchange_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backpack_exchange_sdk/authenticated.py,sha256=mwLVogw7y_pcrGB2uSSXfRvZN7Sh5m34ix1oRqXE_so,23240
+backpack_exchange_sdk/public.py,sha256=KprHtrMtPITOth26aTNQK6Mh_hB_kP7EO9bENlrAe0w,6751
+backpack_exchange_sdk/websocket.py,sha256=foFOcEqFjp3FGJIxnotzs0O2GWQhUnW3yxH6x7kpBFA,6613
+backpack_exchange_sdk-1.0.33.dist-info/licenses/LICENSE,sha256=oaS-cHs8HxXCLnSiqx6HT4GvDeohpvPZbFGxY8zdBFg,1066
+enums/RequestEnums.py,sha256=35rhqZp73ug4d6eL4GBIwIrhCpk72Pi4-gA6qoa6WgE,1951
+enums/ResponseEnums.py,sha256=zATAOgO-OafhnRwPnKaPqfNnxSo2QxETBExEYC7S5pw,249
+enums/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backpack_exchange_sdk-1.0.33.dist-info/METADATA,sha256=FePOE1EClh8x5K6WOswgOpKm4km7bjcDSDDfnbDN9sk,4594
+backpack_exchange_sdk-1.0.33.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+backpack_exchange_sdk-1.0.33.dist-info/top_level.txt,sha256=khs1Evfs72GAP_7jBPTGqOj-zfYs-50s6q1IDCCo_Io,28
+backpack_exchange_sdk-1.0.33.dist-info/RECORD,,
