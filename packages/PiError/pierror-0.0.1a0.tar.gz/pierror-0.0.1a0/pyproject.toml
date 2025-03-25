@@ -1,0 +1,29 @@
+[project]
+name = "PiError"
+version = "0.0.1-alpha"
+description = "An attempt at simplifying Python error propagation."
+authors = [
+    {name = "Rayshawn Levy", email = "sneekyfoxx09@gmail.com"}
+]
+maintainers = [
+    {name = "Rayshawn Levy", email = "sneekyfoxx09@gmail.com"}
+]
+readme = "README.md"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.13"
+keywords = ["PiError", "pierror", "pi-error", "pi_error", "Error", "error", "error handling"]
+dependencies = []
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+
+[project.urls]
+Homepage = "https://github.com/sneekyfoxx/PiError"
+Issues = "https://github.com/sneekyfoxx/PiError/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
