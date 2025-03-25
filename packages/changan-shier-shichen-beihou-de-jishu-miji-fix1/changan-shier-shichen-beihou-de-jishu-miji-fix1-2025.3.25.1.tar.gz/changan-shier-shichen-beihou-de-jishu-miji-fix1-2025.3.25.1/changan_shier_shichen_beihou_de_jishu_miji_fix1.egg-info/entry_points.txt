@@ -1,0 +1,3 @@
+[console_scripts]
+ChanganShierShichenBeihouDeJishuMijiFix1 = ChanganShierShichenBeihouDeJishuMijiFix1.__main__:main
+changan-shier-shichen-beihou-de-jishu-miji-fix1 = ChanganShierShichenBeihouDeJishuMijiFix1.__main__:main
