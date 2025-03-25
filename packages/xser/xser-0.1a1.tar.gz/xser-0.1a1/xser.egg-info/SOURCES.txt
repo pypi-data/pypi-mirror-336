@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xser/__init__.py
+xser/attribute.py
+xser/command.py
+xser.egg-info/PKG-INFO
+xser.egg-info/SOURCES.txt
+xser.egg-info/dependency_links.txt
+xser.egg-info/entry_points.txt
+xser.egg-info/requires.txt
+xser.egg-info/top_level.txt
+xser.egg-info/zip-safe
