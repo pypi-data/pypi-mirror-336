@@ -1,0 +1,42 @@
+# Theme settings
+tok:
+    baseurl:
+    title: Gulper - A Command Line Tool to Backup and Restore SQLite, MySQL and PostgreSQL.
+    theme_color: '#e74c3c'
+    language: en-US
+    header:
+        logo:
+            text: Gulper
+            image:
+        nav:
+            - item_name: Homepage
+              item_url: /
+            - item_name: Documentation
+              item_url: /documentation
+    footer:
+        logo:
+            text: Gulper
+            image:
+        text: Copyright &copy; 2025 Clivern <br>All rights reserved.
+    google_analytics:
+        tracking_code: G-V7G0HKSRRQ
+    comments:
+        disqus_forum_shortname:
+
+# Defining collections
+collections:
+    documentation:
+        output: true
+
+# Defining defaults
+defaults:
+    -
+        scope:
+            path: ''
+            type: 'documentation'
+        values:
+            layout: 'documentation-single'
+
+# Jekyll settings
+permalink: /:title/
+remote_theme: clivern/tokyo
