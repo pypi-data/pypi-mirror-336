@@ -1,0 +1,3 @@
+[console_scripts]
+FushiXingyeXiaofeizheGexinghuaFuwuJiejuefanganFix1 = FushiXingyeXiaofeizheGexinghuaFuwuJiejuefanganFix1.__main__:main
+fushi-xingye-xiaofeizhe-gexinghua-fuwu-jiejuefangan-fix1 = FushiXingyeXiaofeizheGexinghuaFuwuJiejuefanganFix1.__main__:main
