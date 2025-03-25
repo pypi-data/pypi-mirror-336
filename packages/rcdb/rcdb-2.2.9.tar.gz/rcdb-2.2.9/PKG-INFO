@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: rcdb
+Version: 2.2.9
+Summary: RCDB - Run Conditions DataBase
+Author-email: Dmitry Romanov <romanov@jlab.org>
+License-Expression: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Database
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: markupsafe>=3.0
+Requires-Dist: pymysql>=1.1
+Requires-Dist: ply>=3.11
+Requires-Dist: mako>=1.3
+Requires-Dist: click>=8
+Requires-Dist: sqlalchemy>=2
+Requires-Dist: flask>=3.1.0
+Requires-Dist: rich
+
+## RCDB
+
+![Python tests](https://github.com/JeffersonLab/rcdb/actions/workflows/python-tests.yml/badge.svg)
+[![Python examples work](https://github.com/JeffersonLab/rcdb/actions/workflows/python-examples.yml/badge.svg)](https://github.com/JeffersonLab/rcdb/actions/workflows/python-examples.yml)
+
+Run Configuration/Conditions Database (RCDB) stores run related information and conditions. It uses MySQL or SQLite databases to store information about runs and provides interfaces to search runs, manage data, automatic CODA integration, etc. 
+
+The interfaces available are:  
+- Web site
+- Command line interface (CLI)
+- Python API
+- C++ API
+- Possibly JAVA API
+
+#### Documentation:
+
+https://jeffersonlab.github.io/rcdb/
+
+#### Demo website:
+One can visit HallD RCDB Web site as demo:  
+https://halldweb.jlab.org/rcdb/
+
+
+#### SQLite db:
+Daily updated SQLite database is available here:  
+https://halldweb.jlab.org/dist/rcdb2.sqlite
