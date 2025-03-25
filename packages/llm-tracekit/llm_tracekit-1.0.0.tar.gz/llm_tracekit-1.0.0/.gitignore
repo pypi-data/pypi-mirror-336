@@ -1,0 +1,60 @@
+# BeyondCompare
+*.orig
+
+# Pulumi
+Pulumi.*.yaml
+
+# Helm chart dependencies
+requirements.lock
+**/charts/*.tgz
+
+# JetBrains
+.idea
+
+# MacOS
+.DS_Store
+
+# Ignore all VSCode setting except launch.json in root directory
+services/**/.vscode
+infra/**/.vscode
+lib/**/.vscode
+/.vscode/*
+!/.vscode/launch.json
+!/.vscode/tasks.json
+.history
+env
+lib/*/dist
+
+# Python
+*.pyc
+venv
+__pycache__/
+
+# pyenv
+.python-version
+
+# Poetry
+.venv/
+
+# Ruff
+.ruff_cache/
+
+# Logs
+*.log
+*.log.*
+
+services/**/dist/
+infra/tools/aporia_cli/.context.json
+
+tests/system/tests_result/*
+!tests/system/tests_result/.gitkeep
+
+tests/system/result.xlsx
+agent/tmp
+infra/pulumi/**/*.crt
+infra/pulumi/**/*.key
+tests/system/latency_results*
+nginx/certs/*
+infra/pulumi/tmp
+
+src/llm_tracekit.egg-info/
