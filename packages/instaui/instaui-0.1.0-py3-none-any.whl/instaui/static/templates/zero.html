@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="{{ favicon_url }}" rel="shortcut icon" />
+  <title>{{ title }}</title>
+
+  {% for link in css_links %}
+  <link rel="stylesheet" href="{{ prefix | safe }}{{link}}" />
+  {% endfor -%}
+
+  {% for content in style_tags %}
+  <style>{{content}}</style>
+  {% endfor -%}
+</head>
+
+<body>
+  <div id="app">
+    <insta-ui :config="appConfig"></insta-ui>
+  </div>
+
+  {% for info in js_links %}
+  <script src="{{ prefix | safe }}{{info.link}}" {{info.create_attrs_str()}}></script>
+  {% endfor -%}
+
+  {% for content in script_tags %}
+  <script>{{content}}</script>
+  {% endfor -%}
+
+  <script>
+      const True = true;
+      const False = false;
+      const None = undefined;
+      const { createApp } = Vue
+      const insta = InstaUI
+      const appConfig = {{appConfig}}
+
+      const app = createApp({
+          setup() {
+              return {
+                  appConfig
+              }
+          }
+      })
+
+      insta(app,appConfig)
+      {% for info in vue_app_use %}
+      app.use({{info.name}})
+      {% endfor %}
+      app.mount('#app')
+  </script>
+</body>
+</html>
