@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "zitadel",
+  "version": "0.2.0-alpha.1742823198",
+  "server": "github://api.github.com/pulumiverse"
+}
