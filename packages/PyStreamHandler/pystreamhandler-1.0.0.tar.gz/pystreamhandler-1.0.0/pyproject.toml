@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyStreamHandler"
+version = "1.0.0"
+dependencies = [
+]
+requires-python = ">=3.6"
+authors = [
+    {name = "Christoffer Hansen", email = "chris.hansen.ch@outlook.com"}
+]
+maintainers = [
+    {name = "Christoffer Hansen", email = "chris.hansen.ch@outlook.com"}
+]
+description = "PyStreamHandler is a lightweight Python package designed to facilitate reading and writing binary data from buffers using Python's built-in `struct` module and `bytearray`."
+readme = "README.md"
+keywords = ["binary", "stream", "utility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/hansenchristoffer/PyStreamHandler"
+Repository = "https://github.com/hansenchristoffer/PyStreamHandler.git"
+Changelog = "https://github.com/hansenchristoffer/PyStreamHandler/blob/master/CHANGELOG.md"

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PyStreamHandler.egg-info/PKG-INFO
+PyStreamHandler.egg-info/SOURCES.txt
+PyStreamHandler.egg-info/dependency_links.txt
+PyStreamHandler.egg-info/top_level.txt
+pystreamhandler/__init__.py
+pystreamhandler/handlers.py
+tests/test_handlers.py

@@ -1,0 +1,126 @@
+Metadata-Version: 2.4
+Name: PyStreamHandler
+Version: 1.0.0
+Summary: PyStreamHandler is a lightweight Python package designed to facilitate reading and writing binary data from buffers using Python's built-in `struct` module and `bytearray`.
+Home-page: https://www.github.com/hansenchristoffer/pystreamhandler
+Author: Christoffer Hansen
+Author-email: Christoffer Hansen <chris.hansen.ch@outlook.com>
+Maintainer-email: Christoffer Hansen <chris.hansen.ch@outlook.com>
+Project-URL: Homepage, https://github.com/hansenchristoffer/PyStreamHandler
+Project-URL: Repository, https://github.com/hansenchristoffer/PyStreamHandler.git
+Project-URL: Changelog, https://github.com/hansenchristoffer/PyStreamHandler/blob/master/CHANGELOG.md
+Keywords: binary,stream,utility
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# PyStreamHandler
+
+PyStreamHandler is a lightweight Python package designed to facilitate reading and writing binary data from buffers 
+using Python's built-in `struct` module and `bytearray`. It provides two main classes:
+
+- **ReadStreamHandler**: For parsing binary streams with automatic buffer management and error handling.
+- **WriteStreamHandler**: For constructing binary streams with value range validation and ease of use.
+
+## Features
+
+- **Binary Parsing**: Read signed and unsigned values (byte, short, int, long) with automatic buffer overflow checks.
+- **Data Construction**: Write binary data to a mutable buffer using simple methods that ensure correct value ranges.
+- **Pythonic Design**: Uses Python's native `bytearray` for storage and the `struct` module for packing/unpacking binary data.
+
+## Installation
+
+You can install PyStreamHandler via pip (if it's published):
+
+```bash
+pip install pystreamhandler
+```
+
+Alternatively, to install locally from your repository, clone the repository and run:
+
+```bash
+git clone https://github.com/hansenchristoffer/pystreamhandler.git
+cd pystreamhandler
+pip install .
+```
+
+## Usage
+### Writing Data
+
+Here's an example that demonstrates how to write various types of data to a binary buffer:
+
+```python
+from pystreamhandler import WriteStreamHandler
+
+# Initialize the write stream handler
+writer = WriteStreamHandler()
+
+# Write various types of data
+writer.write_byte(127)                            # Signed byte (-128 to 127)
+writer.write_unsigned_byte(255)                   # Unsigned byte (0 to 255)
+writer.write_short(32767)                         # Signed short (-32768 to 32767)
+writer.write_unsigned_short(65535)                # Unsigned short (0 to 65535)
+writer.write_int(2147483647)                      # Signed int (-2147483648 to 2147483647)
+writer.write_unsigned_int(4294967295)             # Unsigned int (0 to 4294967295)
+writer.write_long(9223372036854775807)            # Signed long (-9223372036854775808 to 9223372036854775807)
+writer.write_unsigned_long(18446744073709551615)  # Unsigned long (0 to 18446744073709551615)
+
+# Retrieve the binary buffer
+buffer = writer.get_buffer()
+```
+
+### Reading Data
+
+And here is how you can read data back from a binary buffer:
+
+```python
+from pystreamhandler import ReadStreamHandler
+
+# Assume 'buffer' is a bytearray containing binary data
+reader = ReadStreamHandler(buffer)
+
+# Read data in the same order as written
+byte_value = reader.read_byte()     # also, pushes cursor forward by 1 byte
+short_value = reader.read_short()   # also, pushes cursor forward by 2 bytes
+int_value = reader.read_int()       # also, pushes cursor forward by 4 bytes
+long_value = reader.read_long()     # also, pushes cursor forward by 8 bytes
+
+print(f"Byte: {byte_value}, Short: {short_value}, Int: {int_value}, Long: {long_value}")
+```
+
+## Running Tests
+
+A test suite is included to verify functionality and error handling. To run the tests, use Python’s unittest discovery:
+
+```bash
+python -m unittest discover tests
+```
+
+Or if you prefer pytest, simply run:
+
+```bash
+pytest
+```
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements:
+
+ - Fork the repository.
+ - Create a new branch for your changes.
+ - Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+
+For any questions, suggestions, or feedback, please contact `chris.hansen.ch@outlook.com`
