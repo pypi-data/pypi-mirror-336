@@ -1,0 +1,12 @@
+llm_tracekit/__init__.py,sha256=aBPk_341tucKeA1CumqVdB85CQI_mbwZ1uifwQiPAe8,6257
+llm_tracekit/extended_gen_ai_attributes.py,sha256=diodkUz4QzHu35wzraWKx5_LZXG9Tuj3_ubSP3aLcfg,3835
+llm_tracekit/instruments.py,sha256=4mR63oi7HsZjwYTvpY_yiyV5H6KzBPyKhTOn_L0KQaE,1209
+llm_tracekit/package.py,sha256=tzx4rbdk8lZvZMuRFzxUavGgX9SDtci0O6VLAdZL5h8,623
+llm_tracekit/patch.py,sha256=kCNtCFcUDhXq04H5CWmOTio7jmSr7c0RtCNoQu-oWE0,17113
+llm_tracekit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_tracekit/utils.py,sha256=bwLuUtcIEu7s3b5HoOvBr2Ve5TTTKde9bFqaSCe2zys,9873
+llm_tracekit/version.py,sha256=sdkqlxmHDr0_WPWwA29yqK1Lwuxt_Vx04OGfOi1_BR8,611
+llm_tracekit-1.0.0.dist-info/METADATA,sha256=xWPxeIxqSFxmBqohaot5jeRhdhQBRlSq94O2ZNZ6HE0,6375
+llm_tracekit-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+llm_tracekit-1.0.0.dist-info/licenses/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+llm_tracekit-1.0.0.dist-info/RECORD,,
