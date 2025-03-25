@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: judyL-yt-concate
+Version: 0.1.0
+Summary: Produce a concatenated video of clips that mentioned a word from Youtube channel 
+Home-page: https://github.com/judybabe/yt-concate
+Author: Judy Liao
+Author-email: judy1129888@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+"# judyL-yt-concate" 
