@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiLinuxFix1 = ShangGuiguDaShujuJishuZhiLinuxFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-linux-fix1 = ShangGuiguDaShujuJishuZhiLinuxFix1.__main__:main
