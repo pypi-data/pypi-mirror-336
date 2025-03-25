@@ -1,0 +1,3 @@
+[console_scripts]
+BaomuJiShenduXuexiCongRumenDaoFangqiFix1 = BaomuJiShenduXuexiCongRumenDaoFangqiFix1.__main__:main
+baomu-ji-shendu-xuexi-cong-rumen-dao-fangqi-fix1 = BaomuJiShenduXuexiCongRumenDaoFangqiFix1.__main__:main
