@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: IMC_Prosperity-profiler
+Version: 0.0.5
+Summary: A program to visualize prosperity run method performance
+Author-email: r4v4rg4s <ravargas.42t@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/rvargas42/IMC_Prosperity-profiler
+Project-URL: Issues, https://github.com/rvargas42/IMC_Prosperity-profiler/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: jsonpickle>=4.0.2
+Requires-Dist: numpy>=1.24.4
+Requires-Dist: pandas>=2.0.3
+Requires-Dist: snakeviz>=2.2.1
+
+# IMC Prosperity Profiler
+
+## Overview
+
+The IMC Prosperity Profiler is a tool designed to analyze and process data files for prosperity insights.
+
+## Usage
+
+To use the profiler, run the following command in your terminal:
+
+```bash
+prosperityprofiler <path-to-file>
+```
+
+### Example
+
+```bash
+prosperityprofiler ./data/sample-file.txt
+```
+
+Replace `<path-to-file>` with the path to the file you want to process.
+
+## Requirements
+
+Ensure that the `prosperityprofiler` command is properly installed and accessible in your system's PATH.
+
+## Support
+
+For any issues or questions, please contact the repository maintainer.
