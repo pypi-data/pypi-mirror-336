@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: interactive-dir-utils
+Version: 0.1.2
+Summary: Utility package containing functions for manipultaing and traversing data directories interactively.
+License: LICENSE.txt
+Author: corson94
+Author-email: jamie.corson.20@ucl.ac.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.0.2)
+Description-Content-Type: text/markdown
+
+# Interactive-dir-utils
+
+Package to help traverse directories interactively to find files.
+
+Documentation coming soon...
+
