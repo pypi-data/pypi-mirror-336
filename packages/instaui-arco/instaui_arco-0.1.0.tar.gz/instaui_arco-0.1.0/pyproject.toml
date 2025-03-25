@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "instaui-arco"
+version = "0.1.0"
+description = ""
+authors = ["CrystalWindSnake <568166495@qq.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+instaui = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+instaui = {path = "../instaui", develop = true}
+pytest = "^8.3.3"
+pytest-playwright = "0.5.2"
+playwright = "1.47.0"
+pytest-asyncio = "^0.24.0"
+
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+uvicorn = "^0.32.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
