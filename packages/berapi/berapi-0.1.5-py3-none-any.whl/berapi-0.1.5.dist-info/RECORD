@@ -1,0 +1,8 @@
+berapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+berapi/apy.py,sha256=4Kzu1H-ZJ63InciPEpdxBMcvie4mxgeGGztRvAvvBc0,3039
+berapi/responder.py,sha256=PyPNDCc0kfX9mM8QBMi4Ap-kl7Sz-OTTkADN5Hnbbis,4191
+berapi/utils.py,sha256=fJs2Oqr5ID7uGQMAxsw2XXOngQD8vEoOtSDdHnRTpbM,80
+berapi-0.1.5.dist-info/LICENSE,sha256=pXp_b0-Wi9fTbjiMnATYsiDa0hxyWRyd0ammHcQ9HhE,1067
+berapi-0.1.5.dist-info/METADATA,sha256=uaIj_erKCdeEbGQevFpDIbk8IRi5C7l8tpxzC-AUsTQ,1995
+berapi-0.1.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+berapi-0.1.5.dist-info/RECORD,,
