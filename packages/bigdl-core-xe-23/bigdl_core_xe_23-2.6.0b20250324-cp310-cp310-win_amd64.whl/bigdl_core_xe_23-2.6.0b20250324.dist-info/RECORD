@@ -1,0 +1,7 @@
+xe_linear.cp310-win_amd64.exp,sha256=XCwlMvaaHpzOvYOJHW5oi7szypsWIEvHmq_k5UrfNAQ,25171
+xe_linear.cp310-win_amd64.lib,sha256=IuR3fmgSeNgm4c-CHWhR7Brs02-EGAgHWSzxRejPPNQ,43548
+xe_linear.cp310-win_amd64.pyd,sha256=4NoB2ohE9aaKmcX4XSY8uJagXU_nlG3HIOzfX1JEzG8,10971136
+bigdl_core_xe_23-2.6.0b20250324.dist-info/METADATA,sha256=_u4qQ-Os_MQi0pOIaRThDb6s9vfZZVjfVNcNmkTuVgE,72
+bigdl_core_xe_23-2.6.0b20250324.dist-info/WHEEL,sha256=gMSPBFjPynvgFG2ofmeEoM1Uf9iH_GsJd2JBy-bxpiQ,101
+bigdl_core_xe_23-2.6.0b20250324.dist-info/top_level.txt,sha256=KhU3H-tJYuGyCk62Rem3hsoAHPYIAzGEtZxAyStbNAI,10
+bigdl_core_xe_23-2.6.0b20250324.dist-info/RECORD,,
