@@ -1,0 +1,3 @@
+[console_scripts]
+XiaoChengxukaifaBuqiurenFix1 = XiaoChengxukaifaBuqiurenFix1.__main__:main
+xiao-chengxukaifa-buqiuren-fix1 = XiaoChengxukaifaBuqiurenFix1.__main__:main
