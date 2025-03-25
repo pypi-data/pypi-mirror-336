@@ -1,0 +1,11 @@
+cartopy
+cmocean
+diffrax
+equinox
+interpax
+jax
+jaxtyping
+lineax
+matplotlib
+numpy
+xarray

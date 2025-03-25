@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pastax"
+authors = [
+    { name = "Vadim Bertrand", email = "vadim.bertrand@univ-grenoble-alpes.fr" },
+    { name = "Emmanuel Cosme", email = "emmanuel.cosme@univ-grenoble-alpes.fr" },
+    { name = "Adeline Leclercq Samson", email = "adeline.leclercq-samson@univ-grenoble-alpes.fr" },
+    { name = "Julien Le Sommer", email = "julien.lesommer@univ-grenoble-alpes.fr" }
+]
+
+description = "**P**arameterizable **A**uto-differentiable **S**imulators of ocean **T**rajectories in j**AX**."
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["differentiable", "drift", "jax", "lagrangian", "ocean", "parameterizable", "sampler", "sea", "simulator", "stochastic", "trajectory"]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dynamic = ["version", "dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = "pastax._version.version"}
+
+[project.urls]
+"Homepage" = "https://github.com/vadmbertr/pastax"
+"Bug Tracker" = "https://github.com/vadmbertr/pastax/issues"
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I001"]
+ignore = ["E402", "E501", "E721", "E731", "E741", "F722", "F811", "F821", "I001", "F401"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+lines-after-imports = 2
+extra-standard-library = ["typing_extensions"]
+order-by-type = false
+
+[tool.pyright]
+reportAssignmentType = false
+reportAttributeAccessIssue = false
+reportIncompatibleMethodOverride = false
+reportIncompatibleVariableOverride = false
+reportRedeclaration = false
+include = ["pastax"]
