@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "optima35"
+dynamic = ["version"]
+authors = [{ name = "Mr. Finchum" }]
+description = "optima35 is a package to modify images, using pillow and piexif."
+readme = "pip_README.md"
+requires-python = ">=3.8, <4.0"
+dependencies = ["piexif", "pillow"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Source = "https://gitlab.com/CodeByMrFinchum/optima35"
+Documentation = "https://gitlab.com/CodeByMrFinchum/optima35/-/blob/main/README.md"
+Changelog = "https://gitlab.com/CodeByMrFinchum/optima35/-/blob/main/CHANGELOG.md"
+
+
+[project.scripts]
+optima35 = "optima35.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/optima35"]
+
+[tool.hatch.version]
+path = "src/optima35/__init__.py"

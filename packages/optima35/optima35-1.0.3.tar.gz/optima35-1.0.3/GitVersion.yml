@@ -1,0 +1,5 @@
+---
+mode: MainLine
+major-version-bump-message: "^(build|chore|ci|docs|feat|fix|patch|refactor|revert|style|test)(\\([\\w\\s-,/\\\\]*\\))?(!:|:.*\\n\\n((.+\\n)+\\n)?BREAKING CHANGE:\\s.+)" # noqa yaml[line-length]
+minor-version-bump-message: "^(build|chore|ci|docs|feat|refactor|revert|style|test)(\\([\\w\\s-,/\\\\]*\\))?:"
+patch-version-bump-message: "^(fix|patch)(\\([\\w\\s-,/\\\\]*\\))?:"

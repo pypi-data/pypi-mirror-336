@@ -1,0 +1,31 @@
+---
+.versioning:gitversion:
+  image:
+    name: mcr.microsoft.com/dotnet/sdk:9.0
+  variables:
+    GIT_STRATEGY: clone
+    GIT_DEPTH: 0 # force a deep/non-shallow fetch need by gitversion
+    GIT_LFS_SKIP_SMUDGE: 1
+  cache: [] # caches and before / after scripts can mess things up
+  script:
+    - |
+      dotnet tool install --global GitVersion.Tool --version 5.*
+      export PATH="$PATH:/root/.dotnet/tools"
+
+      dotnet-gitversion -output buildserver
+
+      # We could just collect the output file gitversion.properties (with artifacts:report:dotenv: gitversion.properties as it is already in DOTENV format,
+      # however it contains ~33 variables which unnecessarily consumes many of the 50 max DOTENV variables of the free GitLab version.
+      # Limits are higher for licensed editions, see https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html#artifactsreportsdotenv
+      grep 'GitVersion_LegacySemVer='    gitversion.properties >> gitversion.env
+      grep 'GitVersion_SemVer='          gitversion.properties >> gitversion.env
+      grep 'GitVersion_FullSemVer='      gitversion.properties >> gitversion.env
+      grep 'GitVersion_Major='           gitversion.properties >> gitversion.env
+      grep 'GitVersion_Minor='           gitversion.properties >> gitversion.env
+      grep 'GitVersion_Patch='           gitversion.properties >> gitversion.env
+      grep 'GitVersion_MajorMinorPatch=' gitversion.properties >> gitversion.env
+      grep 'GitVersion_BuildMetaData='   gitversion.properties >> gitversion.env
+  artifacts:
+    reports:
+      # propagates variables into the pipeline level
+      dotenv: gitversion.env
