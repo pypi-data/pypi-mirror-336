@@ -1,0 +1,10 @@
+pillow
+
+[dev]
+setuptools>=61.0
+black
+pylint
+mypy
+build
+twine
+reuse
