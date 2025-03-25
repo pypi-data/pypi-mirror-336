@@ -1,0 +1,3 @@
+[console_scripts]
+CehV8Module912Fix1 = CehV8Module912Fix1.__main__:main
+ceh-v8-module-9-12-fix1 = CehV8Module912Fix1.__main__:main
