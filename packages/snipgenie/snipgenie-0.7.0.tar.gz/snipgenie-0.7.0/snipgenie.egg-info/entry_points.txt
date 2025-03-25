@@ -1,0 +1,4 @@
+[console_scripts]
+snipgenie = snipgenie.app:main
+snipgenie-gui = snipgenie.gui:main
+snipgenie-treeview = snipgenie.treeview:main
