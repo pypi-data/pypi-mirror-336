@@ -1,0 +1,3 @@
+[console_scripts]
+ShishiJiWeilaiFix1 = ShishiJiWeilaiFix1.__main__:main
+shishi-ji-weilai-fix1 = ShishiJiWeilaiFix1.__main__:main
