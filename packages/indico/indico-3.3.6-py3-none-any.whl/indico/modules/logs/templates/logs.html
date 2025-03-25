@@ -1,0 +1,19 @@
+{% if category|default(none) %}
+    {% extends 'categories/management/base.html' %}
+{% elif event|default(none) %}
+    {% extends 'events/management/base.html' %}
+{% else %}
+    {% extends 'users/base.html' %}
+{% endif %}
+
+{% block title %}
+    {%- trans %}Logs{% endtrans -%}
+{% endblock %}
+
+{% block content %}
+    <div class="event-log"
+         data-fetch-logs-url="{{ logs_api_url }}"
+         data-realms="{{ realms|tojson|forceescape }}"
+         data-metadata-query="{{ metadata_query|tojson|forceescape }}">
+    </div>
+{% endblock %}
