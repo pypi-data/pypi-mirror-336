@@ -1,0 +1,9 @@
+eadpy/__init__.py,sha256=5ZPEQIDt0FVsy56PWzHTYo2X9XD0pAOn_T9pyhGefMM,158
+eadpy/cli.py,sha256=5jxHukyHUhuYqSQrFfVi3OFkdHRxIcKhuxJY4wzbulQ,7591
+eadpy/ead.py,sha256=kX0bSOU_ispQW-6D_rk6yT5XkIosOYyFjZZ2MBVd_yo,31016
+eadpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eadpy-0.1.2.dist-info/METADATA,sha256=53bF9Pfrc3QvK-5Hj8u0tbBHNZ4f7ecpTlzvEAalhhY,3792
+eadpy-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+eadpy-0.1.2.dist-info/entry_points.txt,sha256=MHbW6xnyrn9A_visLPekorYbcVoeUza2qgBqzpEnooI,41
+eadpy-0.1.2.dist-info/licenses/LICENSE,sha256=9itnrycR7U2MI-BthSqTozom6j8RRimSMEh3DFfSUaY,1090
+eadpy-0.1.2.dist-info/RECORD,,
