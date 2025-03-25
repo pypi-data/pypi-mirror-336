@@ -1,0 +1,11 @@
+filelock
+openai
+pillow
+pydantic>=2
+requests
+tiktoken
+wandb
+wandb-workspaces
+
+[dev]
+pytest
