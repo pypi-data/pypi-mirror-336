@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/update_reqs/__init__.py
+src/update_reqs/cli.py
+src/update_reqs/updater.py
+src/update_reqs.egg-info/PKG-INFO
+src/update_reqs.egg-info/SOURCES.txt
+src/update_reqs.egg-info/dependency_links.txt
+src/update_reqs.egg-info/entry_points.txt
+src/update_reqs.egg-info/requires.txt
+src/update_reqs.egg-info/top_level.txt
