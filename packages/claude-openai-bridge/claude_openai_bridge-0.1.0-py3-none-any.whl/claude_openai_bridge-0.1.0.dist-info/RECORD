@@ -1,0 +1,10 @@
+claude2openai/__init__.py,sha256=Wx72YEm8J48rVLHyj_FpQFaBMEpcV8JSzrmjOceTuvU,278
+claude2openai/__main__.py,sha256=QQG_BqyRnaCt9jW-QpThyiOUZnonZocTX0H8wM_lUis,196
+claude2openai/main.py,sha256=7FAD_RNs8uBgJ3_7Q3KR1nVVj2IWv8Ih6a6EiJURjV8,16988
+claude2openai/sse.py,sha256=TK5asS0EhL0czrRkdQVbh6jK8uvygAkyyoa7Yh4eIgY,4000
+claude_openai_bridge-0.1.0.dist-info/licenses/LICENSE,sha256=6NaQJ3ZHwEOE7xz10hLLLg8frcs3_UJpBKlAfBHd1_g,1070
+claude_openai_bridge-0.1.0.dist-info/METADATA,sha256=3WhIdpfauhqOUvPaxqMW_o0EH3YL-1FiG8tRYf0rTyc,489
+claude_openai_bridge-0.1.0.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+claude_openai_bridge-0.1.0.dist-info/entry_points.txt,sha256=hKqqcTIXZG1y3-hA_iJMIEL2ckw5cQUvbOPPeQAY52o,65
+claude_openai_bridge-0.1.0.dist-info/top_level.txt,sha256=7GiU8cTJ70M8taO09Pyp9lXfB9z9uW4H8jnA18-tFzg,14
+claude_openai_bridge-0.1.0.dist-info/RECORD,,

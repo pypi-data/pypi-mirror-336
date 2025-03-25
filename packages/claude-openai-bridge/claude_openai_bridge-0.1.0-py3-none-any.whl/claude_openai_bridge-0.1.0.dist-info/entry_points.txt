@@ -1,0 +1,2 @@
+[console_scripts]
+claude-openai-bridge = claude2openai.main:main
