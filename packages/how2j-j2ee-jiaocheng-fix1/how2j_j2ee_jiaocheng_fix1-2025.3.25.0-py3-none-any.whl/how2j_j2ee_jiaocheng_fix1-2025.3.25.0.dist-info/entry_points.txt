@@ -1,0 +1,3 @@
+[console_scripts]
+How2jJ2eeJiaochengFix1 = How2jJ2eeJiaochengFix1.__main__:main
+how2j-j2ee-jiaocheng-fix1 = How2jJ2eeJiaochengFix1.__main__:main
