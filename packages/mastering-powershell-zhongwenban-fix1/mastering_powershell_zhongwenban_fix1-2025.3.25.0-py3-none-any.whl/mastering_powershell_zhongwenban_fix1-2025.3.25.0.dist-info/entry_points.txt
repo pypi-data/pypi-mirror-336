@@ -1,0 +1,3 @@
+[console_scripts]
+MasteringPowershellZhongwenbanFix1 = MasteringPowershellZhongwenbanFix1.__main__:main
+mastering-powershell-zhongwenban-fix1 = MasteringPowershellZhongwenbanFix1.__main__:main
