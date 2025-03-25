@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Unixtime-Converter
+Version: 1.0.1
+Summary: application for converting local time or UTC into Unixtime         and viceversa
+Home-page: https://www.roadrunnerserver.com
+Author: Franz Wiesinger
+Author-email: py@roadrunnerserver.com
+License: MIT license
+Keywords: unixtime,utc,local time,the epoch,converter,tkinter,GUI,timezone,datetime
+Classifier: Environment :: X11 Applications
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: > 3.7
+Requires-Dist: datetime
+Requires-Dist: pytz
+Requires-Dist: tkhtmlview
+Requires-Dist: tkinter
+Requires-Dist: zoneinfo
+

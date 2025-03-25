@@ -1,0 +1,2 @@
+[console_scripts]
+unixtime = unixtime.__main__:unixtime
