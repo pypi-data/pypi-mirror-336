@@ -1,0 +1,3 @@
+[console_scripts]
+QianguQianduanTuwenJiaochengFix1 = QianguQianduanTuwenJiaochengFix1.__main__:main
+qiangu-qianduan-tuwen-jiaocheng-fix1 = QianguQianduanTuwenJiaochengFix1.__main__:main
