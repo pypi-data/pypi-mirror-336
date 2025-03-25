@@ -1,0 +1,10 @@
+README.md
+setup.py
+datacheckerpro/__init__.py
+datacheckerpro/validator.py
+datacheckerpro.egg-info/PKG-INFO
+datacheckerpro.egg-info/SOURCES.txt
+datacheckerpro.egg-info/dependency_links.txt
+datacheckerpro.egg-info/top_level.txt
+test/__init__.py
+test/test_validator.py
