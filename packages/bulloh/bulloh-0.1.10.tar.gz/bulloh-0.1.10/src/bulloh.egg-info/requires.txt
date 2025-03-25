@@ -1,0 +1,12 @@
+tickthon>=0.2.9
+nothion
+cattrs
+
+[dev]
+pytest
+pytest-cov
+twine
+flake8
+mypy
+types-requests
+boto3-stubs[essential]
