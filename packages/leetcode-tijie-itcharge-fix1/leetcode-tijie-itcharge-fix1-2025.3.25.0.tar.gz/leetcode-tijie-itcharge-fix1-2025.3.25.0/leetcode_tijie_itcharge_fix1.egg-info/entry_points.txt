@@ -1,0 +1,3 @@
+[console_scripts]
+LeetcodeTijieItchargeFix1 = LeetcodeTijieItchargeFix1.__main__:main
+leetcode-tijie-itcharge-fix1 = LeetcodeTijieItchargeFix1.__main__:main
