@@ -1,0 +1,3 @@
+[console_scripts]
+RustXingnengShouceFix1 = RustXingnengShouceFix1.__main__:main
+rust-xingneng-shouce-fix1 = RustXingnengShouceFix1.__main__:main
