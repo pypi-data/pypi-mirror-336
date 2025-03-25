@@ -1,0 +1,2 @@
+[console_scripts]
+dump-schemas = scripts.dump_schemas:main
