@@ -1,0 +1,3 @@
+[console_scripts]
+ChengshiDanaoTansuoShuziLuanshengChengshiFix1 = ChengshiDanaoTansuoShuziLuanshengChengshiFix1.__main__:main
+chengshi-danao-tansuo-shuzi-luansheng-chengshi-fix1 = ChengshiDanaoTansuoShuziLuanshengChengshiFix1.__main__:main
