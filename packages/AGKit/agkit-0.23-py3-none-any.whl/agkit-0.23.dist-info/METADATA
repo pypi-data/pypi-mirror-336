@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: AGKit
+Version: 0.23
+Summary: python工具基础库
+Author: LiZhun
+Author-email: 914525405@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: colorlog>=6.8.2
+Requires-Dist: Pillow==11.1.0
+Requires-Dist: xlrd>=2.0.1
+Requires-Dist: pyinstaller==6.10.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AGPy
+
+## Install
+```shell
+pip3 uninstall AGKit
+pip3 install AGKit
+```
