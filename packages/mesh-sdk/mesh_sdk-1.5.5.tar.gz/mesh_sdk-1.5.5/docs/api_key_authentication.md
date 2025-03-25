@@ -1,0 +1,172 @@
+# API Key Authentication
+
+## Overview
+
+API keys provide a more reliable authentication method for headless environments (servers, CI/CD pipelines, etc.) compared to token-based authentication. Unlike tokens which expire and may need refreshing, API keys remain valid until explicitly revoked.
+
+## When to Use API Keys
+
+Use API keys when:
+
+- Deploying to headless environments (servers, containers, CI/CD)
+- Setting up long-running processes
+- Authenticating in environments where token storage is unreliable
+- Automating workflows that require persistent authentication
+
+## Generating an API Key
+
+You can generate an API key in two ways:
+
+### Using the Command-line Tool
+
+```bash
+# Generate an API key with auto-generated name
+mesh-pre-deploy
+
+# Generate an API key with a custom name
+mesh-pre-deploy --name "production-server"
+```
+
+### Using the SDK (version 1.5.0+)
+
+```python
+from mesh.client import MeshClient
+
+# Authenticate if needed
+client = MeshClient()
+
+# Generate an API key with a custom name
+result = client.generate_api_key(name="My Custom API Key")
+
+# The API key will be printed to the console in a user-friendly format
+# with clear instructions for secure storage and usage
+```
+
+### Using Top-Level Functions (version 1.5.1+)
+
+```python
+import mesh
+
+# Generate an API key using the top-level function
+api_key = mesh.get_mesh_api_key(name="My Production API Key")
+
+# The API key will be printed with instructions and returned as a string
+```
+
+Both methods will:
+1. Authenticate you if needed
+2. Generate a new API key
+3. Display the key and instructions for using it
+
+**Important:** The API key will only be shown once during generation. Make sure to save it in a secure location.
+
+## Using API Keys
+
+There are two ways to use an API key:
+
+### 1. Environment Variable (Recommended)
+
+Set the `MESH_API_KEY` environment variable:
+
+```bash
+# In your deployment environment (Render, Heroku, etc.)
+export MESH_API_KEY="mesh_yourapikey123456"
+```
+
+For deployment platforms, add it to your environment variables:
+- **Render**: Add as an environment variable in the dashboard
+- **Heroku**: `heroku config:set MESH_API_KEY=mesh_yourapikey123456`
+- **Docker**: Use `-e MESH_API_KEY=mesh_yourapikey123456` or add to docker-compose.yml
+
+### 2. Programmatic Usage
+
+You can set the API key programmatically in two ways:
+
+#### Using Environment Variables
+
+```python
+import os
+# Set the API key before importing mesh or initializing the SDK
+os.environ["MESH_API_KEY"] = "mesh_yourapikey123456"
+
+# Then use any Mesh functionality
+import mesh
+response = mesh.chat("Hello, world!")
+```
+
+#### Using the init() Function (version 1.5.1+)
+
+The new `init()` function provides a convenient way to configure the SDK in one call:
+
+```python
+import mesh
+
+# Initialize the SDK with your API key
+mesh.init(api_key="mesh_yourapikey123456")
+
+# Now use any Mesh functionality
+response = mesh.chat("Hello, world!")
+```
+
+You can also set multiple configuration options at once:
+
+```python
+import mesh
+
+# Initialize with API key and other settings
+mesh.init(
+    api_key="mesh_yourapikey123456",
+    debug=True,                                    # Enable debug mode
+    api_url="https://your-custom-mesh-server.com",  # Custom server URL
+    headless=True                                  # Force headless mode
+)
+```
+
+## How It Works
+
+The SDK automatically detects headless environments and checks for an API key before falling back to token-based authentication. When an API key is present:
+
+1. The SDK will use it for all API requests
+2. No token expiration or refresh logic is needed
+3. Requests are authenticated by sending the API key in two compatible formats:
+   - As a header `x-api-key: [your_api_key]` for older server deployments
+   - As a header `Authorization: ApiKey [your_api_key]` for newer server deployments
+
+This dual-header approach ensures maximum compatibility across different Mesh server versions.
+
+## Security Considerations
+
+API keys have the same permissions as your user account. To keep them secure:
+
+- Never commit API keys to source control
+- Use environment variables or secure vaults to store them
+- Limit the number of API keys in circulation
+- Rotate API keys periodically 
+- Delete unused API keys via the Mesh web interface
+
+## Managing API Keys
+
+You can manage your API keys through the Mesh web interface:
+
+1. Log in to your Mesh account
+2. Navigate to the API Keys section
+3. View, create or delete API keys
+
+## Troubleshooting
+
+If you encounter authentication issues with API keys:
+
+1. Verify the API key starts with `mesh_`
+2. Ensure the environment variable is correctly set
+3. Check that the API key hasn't been revoked in the web interface
+4. Try generating a new API key with `mesh-pre-deploy`
+
+## Migrating from Token Authentication
+
+If you're currently using token-based authentication with environment variables:
+
+1. Generate a new API key with `mesh-pre-deploy`
+2. Replace your token environment variables (`MESH_ACCESS_TOKEN`, `MESH_REFRESH_TOKEN`, etc.) with just `MESH_API_KEY`
+3. Remove any token refresh logic or expiration handling
+
+This will provide more reliable authentication for your deployments.
