@@ -1,0 +1,3 @@
+[console_scripts]
+GoSqlShujukuJiaochengFix1 = GoSqlShujukuJiaochengFix1.__main__:main
+go-sql-shujuku-jiaocheng-fix1 = GoSqlShujukuJiaochengFix1.__main__:main
