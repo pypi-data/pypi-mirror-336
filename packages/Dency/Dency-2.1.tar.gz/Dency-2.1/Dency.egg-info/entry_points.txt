@@ -1,0 +1,2 @@
+[console_scripts]
+dency = dependency_fetcher.cli:main

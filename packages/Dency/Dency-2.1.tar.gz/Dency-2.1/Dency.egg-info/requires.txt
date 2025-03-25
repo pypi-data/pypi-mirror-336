@@ -1,0 +1,6 @@
+click
+requests
+
+[dev]
+black
+pytest
