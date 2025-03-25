@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguXujinglongCssFix1 = ShangGuiguXujinglongCssFix1.__main__:main
+shang-guigu-xujinglong-css-fix1 = ShangGuiguXujinglongCssFix1.__main__:main
