@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: evrmail
+Version: 0.1.0
+Summary: Encrypted messaging over Evrmore
+Author: Phoenix
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typer[all]
+Requires-Dist: coincurve
+Requires-Dist: base58
+Requires-Dist: pycryptodome
+Requires-Dist: requests
+
+evrmail --help
+
+evrmail inbox open
+
+evrmail inbox list
+
+evrmail inbox unread
+
+evrmail compose
+
+More info coming soon!
+
