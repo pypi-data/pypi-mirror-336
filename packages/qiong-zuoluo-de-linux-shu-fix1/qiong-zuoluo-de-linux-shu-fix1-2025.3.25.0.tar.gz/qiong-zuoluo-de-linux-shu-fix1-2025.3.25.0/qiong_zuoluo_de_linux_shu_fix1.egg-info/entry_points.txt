@@ -1,0 +1,3 @@
+[console_scripts]
+QiongZuoluoDeLinuxShuFix1 = QiongZuoluoDeLinuxShuFix1.__main__:main
+qiong-zuoluo-de-linux-shu-fix1 = QiongZuoluoDeLinuxShuFix1.__main__:main
