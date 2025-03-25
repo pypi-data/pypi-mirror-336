@@ -1,0 +1,14 @@
+scraipe/__init__.py,sha256=HxE9G8dmRTNaDx6S5Io4pLLe_h88QG9d8Nte7xk84N8,115
+scraipe/classes.py,sha256=U18fqv-scMxAuBoPN_cxgJPln_XZW9wCvCCY-kDdJ1Y,1713
+scraipe/workflow.py,sha256=ksd2FsnmtuFcS_w-rmZHWOh_xVJdw-gBVjj4U9Neit8,7228
+scraipe/analyzers/__init__.py,sha256=gFd4v37LrF9LNNXa8nKONmybtRqfP8NETQjZ-fu4eQo,128
+scraipe/analyzers/openai_analyzer.py,sha256=0lcv0hJv78aVv75e5iOtzH4FoLhIEvZOPi_JihTuVdY,2761
+scraipe/analyzers/text_stats_analyzer.py,sha256=JbPd2gQTRdHG7lHkq6mDMkUioU7b9Dn_CxoRsRuVhKw,1331
+scraipe/scrapers/__init__.py,sha256=ij3Fi5pAoR9YaepmP7KmyU-LzOXn7g7_7uyyztxNSR0,113
+scraipe/scrapers/default_scraper.py,sha256=P0wX7H1vhx3mpEsJP4RpIB58XAX9DBbfav15J3D-eZI,1440
+scraipe/scrapers/news_scraper.py,sha256=kLJyi0qnANtjUpvvtBxwA6qfKeMLige7Asw0EhJf-nM,627
+scraipe-0.1.1.dist-info/licenses/LICENSE,sha256=wRJm4HyAOY2NKERqMU3gGddU8xxW6pyE99ElICVeITc,1061
+scraipe-0.1.1.dist-info/METADATA,sha256=QRVrXdyCMz4Yf0GI4losjjtTNAJdUMuMyhc38GHKdG4,666
+scraipe-0.1.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+scraipe-0.1.1.dist-info/top_level.txt,sha256=TrtsW1eeGW--4tcuStC5k4-E3LSHmSWBMcOK4cyd1xg,8
+scraipe-0.1.1.dist-info/RECORD,,
