@@ -1,0 +1,15 @@
+yafi/__init__.py,sha256=SWWa9yOoCckqK9lomMWgpgGKGu8BlnCABLllE96rEog,287
+yafi/__main__.py,sha256=IvTjTYhvVO6h9Jpa45i-FfzjcKcJy1jwkAZY_CkgibQ,26
+yafi/battery.py,sha256=WXVizP8NouItLAcmYMJOdVvidEz74CyzYVQhQjAeIdM,8650
+yafi/hardware.py,sha256=7471GLD4WfdHtvI2t9GJhj4Ad8fWtuXygPm4YA0HAe8,4416
+yafi/leds.py,sha256=ux-_Q06eQpLcsybDcZwRVBYrotkhiFATLq0yD-NStog,5904
+yafi/main.py,sha256=3I4ge_G1Sy4TC6VwFKZvFax-gLbtG_DP3dSlObYD2Go,4775
+yafi/thermals.py,sha256=mz-UeNtWJVSbKF-OsEtdYKYPk_Tenv1PGRzmxc0grFw,6021
+yafi/window.py,sha256=eGdjFdNpxJp3ChOjcIUrCnGMqMFqPRYCFK1ZYFmDVng,1137
+yafi/yafi.gresource,sha256=XC9nQxUhv8OFjLGj2hij46LQiPzd6y8x5Ut0mv4baxc,15319
+yafi-0.2.dist-info/licenses/COPYING,sha256=ZA2Q9u5AEkH_YoNNDRsz-DBJ6ZuL_foE7RsKFjXd4-c,18093
+yafi-0.2.dist-info/METADATA,sha256=plSzOHUJ78fNgrkYNJHYlQ0-ldw0Sf4yFaK8u00ld24,3359
+yafi-0.2.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+yafi-0.2.dist-info/entry_points.txt,sha256=8EBlySf910Qyf05KgzsIgdXVIHm3XiE7sAx8DwhcCxE,31
+yafi-0.2.dist-info/top_level.txt,sha256=SwQNxgQyDfp1WV86fl2UuuzIA_NA1kBVm0DjR3L-E-4,5
+yafi-0.2.dist-info/RECORD,,
