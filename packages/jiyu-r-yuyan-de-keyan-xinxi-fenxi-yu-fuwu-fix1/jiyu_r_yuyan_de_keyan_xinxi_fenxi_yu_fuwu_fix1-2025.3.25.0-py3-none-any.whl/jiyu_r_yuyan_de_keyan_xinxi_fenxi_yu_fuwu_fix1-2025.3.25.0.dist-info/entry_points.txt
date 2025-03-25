@@ -1,0 +1,3 @@
+[console_scripts]
+JiyuRYuyanDeKeyanXinxiFenxiYuFuwuFix1 = JiyuRYuyanDeKeyanXinxiFenxiYuFuwuFix1.__main__:main
+jiyu-r-yuyan-de-keyan-xinxi-fenxi-yu-fuwu-fix1 = JiyuRYuyanDeKeyanXinxiFenxiYuFuwuFix1.__main__:main
