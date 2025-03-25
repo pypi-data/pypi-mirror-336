@@ -1,0 +1,3 @@
+[console_scripts]
+X2021NiukeHulianwangKaiguaGonglveFix1 = X2021NiukeHulianwangKaiguaGonglveFix1.__main__:main
+x2021-niuke-hulianwang-kaigua-gonglve-fix1 = X2021NiukeHulianwangKaiguaGonglveFix1.__main__:main
