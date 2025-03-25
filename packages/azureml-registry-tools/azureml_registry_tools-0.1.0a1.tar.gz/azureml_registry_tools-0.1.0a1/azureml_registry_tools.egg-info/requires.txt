@@ -1,0 +1,2 @@
+azure-ai-ml<2.0
+azureml-assets<2.0

@@ -1,0 +1,2 @@
+[console_scripts]
+repo2registry = azureml.registry._cli.repo2registry_cli:main
