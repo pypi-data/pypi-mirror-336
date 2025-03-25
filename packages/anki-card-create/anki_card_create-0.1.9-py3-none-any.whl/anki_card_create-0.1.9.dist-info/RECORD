@@ -1,0 +1,13 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/ankicard.py,sha256=-casjAlqkveNlRB-q8QT1rrEUZLY9TtQ2M-No1pk43g,1582
+src/card_creator.py,sha256=mr8zmdH8bCJ42HZcAuM9yWdNonmszDMhSGM1SMGvKTg,4811
+src/config.py,sha256=mAIieVBHHhGQa9cGRL6q-MPE82TOXzADO4xupZv35Cc,1310
+src/main.py,sha256=-haa9IRBfyKR2rXcDTt6zUO7iD5lxd5yMVH_ytdHcnE,1735
+src/models.py,sha256=NAYzekgK0MILGk-E1IJ3Du0-v_Si9_sA41Bd_g70Slc,6869
+src/schemas.py,sha256=r5jAVyDLOnKStCLHyz81PidhrJK-BRnEuWfJoFNq2Jc,144
+src/translation.py,sha256=O44OZh3YEomebKvnwuc08z24xTajuQax3ZTgabLQmXk,945
+src/utils.py,sha256=5USrafkkdMI2HSVRmZUF616oKGCqxm5jsKC6asbFzJg,2375
+anki_card_create-0.1.9.dist-info/METADATA,sha256=WSFpG6fAVMARjzH8lUBWfB9gTRJ_cZi9hfYxpgKqTMY,2255
+anki_card_create-0.1.9.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+anki_card_create-0.1.9.dist-info/entry_points.txt,sha256=ffgGw4Gk1XAsffyekczp1FWjF5mXlxx5d7VN9gyx2cE,39
+anki_card_create-0.1.9.dist-info/RECORD,,
