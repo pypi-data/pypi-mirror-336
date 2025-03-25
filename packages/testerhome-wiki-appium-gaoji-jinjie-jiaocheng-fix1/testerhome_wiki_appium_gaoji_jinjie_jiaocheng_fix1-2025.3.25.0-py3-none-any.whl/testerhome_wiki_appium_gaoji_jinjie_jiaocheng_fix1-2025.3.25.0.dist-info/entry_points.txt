@@ -1,0 +1,3 @@
+[console_scripts]
+TesterhomeWikiAppiumGaojiJinjieJiaochengFix1 = TesterhomeWikiAppiumGaojiJinjieJiaochengFix1.__main__:main
+testerhome-wiki-appium-gaoji-jinjie-jiaocheng-fix1 = TesterhomeWikiAppiumGaojiJinjieJiaochengFix1.__main__:main
