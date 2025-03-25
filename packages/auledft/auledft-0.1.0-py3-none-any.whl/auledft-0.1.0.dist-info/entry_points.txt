@@ -1,0 +1,2 @@
+[console_scripts]
+auledft = auledft.cli:cli
