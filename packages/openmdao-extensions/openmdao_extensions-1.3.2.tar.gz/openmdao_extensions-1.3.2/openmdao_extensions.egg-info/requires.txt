@@ -1,0 +1,4 @@
+openmdao>=3.0.0
+
+[egobox]
+egobox>=0.26.0
