@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-my-larksuite-doc = mcp_server_my_larksuite_doc:main
