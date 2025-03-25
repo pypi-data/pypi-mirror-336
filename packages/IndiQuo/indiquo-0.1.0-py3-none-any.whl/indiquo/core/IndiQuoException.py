@@ -1,0 +1,2 @@
+class IndiQuoException(Exception):
+    pass
