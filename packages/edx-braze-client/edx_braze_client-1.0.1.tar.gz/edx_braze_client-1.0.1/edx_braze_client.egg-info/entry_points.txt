@@ -1,0 +1,5 @@
+[cms.djangoapp]
+braze = braze.apps:BrazeAppConfig
+
+[lms.djangoapp]
+braze = braze.apps:BrazeAppConfig
