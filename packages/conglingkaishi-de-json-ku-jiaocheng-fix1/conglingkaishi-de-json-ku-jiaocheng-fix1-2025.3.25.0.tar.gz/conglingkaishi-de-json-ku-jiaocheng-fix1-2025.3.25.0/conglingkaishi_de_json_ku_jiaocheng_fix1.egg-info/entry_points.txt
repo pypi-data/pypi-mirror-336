@@ -1,0 +1,3 @@
+[console_scripts]
+ConglingkaishiDeJsonKuJiaochengFix1 = ConglingkaishiDeJsonKuJiaochengFix1.__main__:main
+conglingkaishi-de-json-ku-jiaocheng-fix1 = ConglingkaishiDeJsonKuJiaochengFix1.__main__:main
