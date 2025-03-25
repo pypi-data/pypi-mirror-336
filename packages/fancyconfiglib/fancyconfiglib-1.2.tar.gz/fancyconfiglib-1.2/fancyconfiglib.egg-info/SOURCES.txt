@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+fancyconfiglib/__init__.py
+fancyconfiglib.egg-info/PKG-INFO
+fancyconfiglib.egg-info/SOURCES.txt
+fancyconfiglib.egg-info/dependency_links.txt
+fancyconfiglib.egg-info/top_level.txt
