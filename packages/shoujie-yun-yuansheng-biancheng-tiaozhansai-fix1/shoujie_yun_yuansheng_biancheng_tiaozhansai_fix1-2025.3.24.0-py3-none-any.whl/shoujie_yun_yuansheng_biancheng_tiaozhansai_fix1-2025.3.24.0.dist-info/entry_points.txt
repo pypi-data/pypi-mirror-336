@@ -1,0 +1,3 @@
+[console_scripts]
+ShoujieYunYuanshengBianchengTiaozhansaiFix1 = ShoujieYunYuanshengBianchengTiaozhansaiFix1.__main__:main
+shoujie-yun-yuansheng-biancheng-tiaozhansai-fix1 = ShoujieYunYuanshengBianchengTiaozhansaiFix1.__main__:main
