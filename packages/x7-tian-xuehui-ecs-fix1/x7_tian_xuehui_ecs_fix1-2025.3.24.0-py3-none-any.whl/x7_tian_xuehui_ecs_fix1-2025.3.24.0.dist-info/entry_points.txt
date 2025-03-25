@@ -1,0 +1,3 @@
+[console_scripts]
+X7TianXuehuiEcsFix1 = X7TianXuehuiEcsFix1.__main__:main
+x7-tian-xuehui-ecs-fix1 = X7TianXuehuiEcsFix1.__main__:main
