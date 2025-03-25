@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "holado"
+version = "0.2.1"
+authors = [
+  { name="Eric Klumpp", email="eric.klumpp@gmail.com" },
+]
+description = "HolAdo framework"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+keywords = [
+    "automation", "test", "test automation", "functional test", "script", 
+    "Specification By Example", "BDD", "Behavior Driver Development", "Behaviour Driven Development", 
+    "AIS", "logging", "DB", "docker", "gRPC", "multitask", "Protobuf", 
+    "RabbitMQ", "Redis", "REST", "S3", "Web Services", "YAML"]
+dependencies = [
+  "behave==1.2.7.dev6",
+  "python-dateutil",
+]
+
+[project.optional-dependencies]
+ais = ["pyais"]
+db = ["pypika"]
+db-postgresql = ["psycopg"]
+docker = ["docker"]
+helper_debug = ["pympler"]
+protobuf_grpc = ["google", "google-api-core", "grpc_requests", "protobuf", "grpcio", "grpcio-reflection", "grpcio-tools"]
+rabbitmq = ["pika"]
+redis = ["redis", "redis-om"]
+s3 = ["minio", "boto3", "moto", "flask", "flask_cors"]
+sftp = ["pysftp", "sftpserver"]
+ws-suds = ["suds"]
+ws-zeep = ["zeep"]
+yaml = ["pyyaml"]
+
+[project.urls]
+Homepage = "https://gitlab.com/holado_framework/python"
+Issues = "https://gitlab.com/holado_framework/python/-/issues"
