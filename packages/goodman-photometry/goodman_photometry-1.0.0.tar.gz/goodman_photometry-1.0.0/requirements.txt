@@ -1,0 +1,7 @@
+numpy
+matplotlib
+astropy
+astroscrappy
+statsmodels
+astroquery
+sip_tpv
