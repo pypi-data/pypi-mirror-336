@@ -1,0 +1,20 @@
+{
+    "name": "signal_indicator_functionality_ble5_10_250k_test",
+    "module": "energy2400",
+    "purpose": "TODO",
+    "documentation": "https://community.wiliot.com/customers/s/article/Bridge-to-Bridge-Signal-Indicator",
+    "initialCondition": "",
+    "procedure": ["Test prolog",
+    "rssi_threshold - check the if rssi value is between 0 to -25.",
+    "brg0_rx_brg1_tx - one brg is transmitter and the second is receiver, we expect to get the same values from the receiver, according to the tx params",
+    "brg0_none_brg1_rx - One rx BRG without any tx BRG. We don't expect to see any signal indicator packets.",
+    "brg0_rxtx_brg1_rxtx - Both BRG's will be configured to be transmitters and receivers, with different tx params for each one. we expect to see signal indicator packets from both BRG's, according to the tx params.",
+    "brg0_tx_brg1_none - One BRG will be configured as signal indicator tx, but no rx, so we don't expect to receive signal indicator packets.",
+    "Test epilog"],
+    "expectedOutcome": "",
+    "mandatory": 0,
+    "multiBridgeTest": 1,
+    "gwOnlyTest": 0,
+    "internalBridge": 1,
+    "allSupportedValues": ["rssi_threshold", "brg0_rx_brg1_tx", "brg0_none_brg1_rx", "brg0_rxtx_brg1_rxtx", "brg0_tx_brg1_none"]
+}

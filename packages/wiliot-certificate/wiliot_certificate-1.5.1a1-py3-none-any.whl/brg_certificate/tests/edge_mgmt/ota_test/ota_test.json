@@ -1,0 +1,17 @@
+{
+    "name": "ota_test",
+    "module": "edge_mgmt",
+    "purpose": "Test Over-the-air (OTA) firmware update functionality",
+    "documentation": "<TEST_DOCUMENTATION_LINK>",
+    "initialCondition": "Bridge configured to defaults and connected to a GW",
+    "procedure": ["Test prolog",
+                  "Extract latest firmware version",
+                  "Perform BRG OTA firmware update",
+                  "Test epilog"],
+    "expectedOutcome": "BRG OTA firmware update was successful - bridge is running the latest firmware version",
+    "mandatory": 0,
+    "multiBridgeTest": 0,
+    "gwOnlyTest": 0,
+    "internalBridge": 1,
+    "allSupportedValues": []
+}

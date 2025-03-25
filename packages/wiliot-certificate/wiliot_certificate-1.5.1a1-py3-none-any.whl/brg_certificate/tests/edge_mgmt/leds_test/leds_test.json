@@ -1,0 +1,17 @@
+{
+    "name": "leds_test",
+    "module": "edge_mgmt",
+    "purpose": "Test the behavior and indications of LEDs during different operational states.",
+    "documentation": "<TEST_DOCUMENTATION_LINK>",
+    "initialCondition": "Bridge configured to defaults",
+    "procedure": ["Test prolog", 
+                  "pre-stage to verify connection to a GW and associate LED color with capability",
+                  "Test LED behavior during different operational states and behaviors - Advertising, Energizing, Echoing, KEEP_ALIVE, blink action & power management",
+                  "Test epilog"],
+    "expectedOutcome": "LEDs behave as expected during all operational states and behaviors",
+    "mandatory": 0,
+    "multiBridgeTest": 0,
+    "gwOnlyTest": 0,
+    "internalBridge": 1,
+    "allSupportedValues": []
+}

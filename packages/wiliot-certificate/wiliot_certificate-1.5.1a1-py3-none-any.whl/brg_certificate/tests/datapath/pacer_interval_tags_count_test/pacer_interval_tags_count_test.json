@@ -1,0 +1,16 @@
+{
+    "name": "pacer_interval_test",
+    "module": "datapath",
+    "purpose": "Test pixels handling in the bridge for different pacer interval values",
+    "documentation": ["https://community.wiliot.com/customers/s/article/Wiliot-Network-Data-Path-Module-Pacing"],
+    "initialCondition": "Bridge configured to defaults",
+    "procedure": ["Test prolog",
+                  "For each supported value - Pacer interval configuration, Scan for pixel packets in the bridge & Compare maximal amount of received pixels to the amount received with different pacer interval value",
+                  "Test epilog and revert to defaults"],
+    "expectedOutcome": "All values configured successfully and no significant gaps between received amounts of pixels were found",
+    "mandatory": 1,
+    "multiBridgeTest": 0,
+    "gwOnlyTest": 0,
+    "internalBridge": 1,
+    "allSupportedValues": [1, 10, 15, 30]
+}
