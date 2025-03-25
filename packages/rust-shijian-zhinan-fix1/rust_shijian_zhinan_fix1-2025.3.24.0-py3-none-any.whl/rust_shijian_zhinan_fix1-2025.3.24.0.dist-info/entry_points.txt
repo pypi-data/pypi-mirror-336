@@ -1,0 +1,3 @@
+[console_scripts]
+RustShijianZhinanFix1 = RustShijianZhinanFix1.__main__:main
+rust-shijian-zhinan-fix1 = RustShijianZhinanFix1.__main__:main
