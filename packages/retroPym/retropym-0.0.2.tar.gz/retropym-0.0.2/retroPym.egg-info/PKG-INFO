@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: retroPym
+Version: 0.0.2
+Summary: retroPy - a MicroPython retro game engine for the RP2350 micro-controller
+Home-page: https://www.retropy.io/
+Author: ---
+Author-email: retropy@respawnin.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# retroPy
+
+A simple Python package for retroPy, a MicroPython retro game engine for the RP2350 micro-controller.
+v0.0.1 = Placeholder for PYPI registration
+
+Refer to homepage for Documentation for current alpha and beta releases.
