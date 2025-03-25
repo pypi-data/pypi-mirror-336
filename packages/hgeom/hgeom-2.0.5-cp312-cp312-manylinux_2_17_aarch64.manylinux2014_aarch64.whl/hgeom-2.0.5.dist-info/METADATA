@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: hgeom
+Version: 2.0.5
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+
