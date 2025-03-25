@@ -1,0 +1,3 @@
+[console_scripts]
+PostgresqlShizhanJiaochengFix1 = PostgresqlShizhanJiaochengFix1.__main__:main
+postgresql-shizhan-jiaocheng-fix1 = PostgresqlShizhanJiaochengFix1.__main__:main
