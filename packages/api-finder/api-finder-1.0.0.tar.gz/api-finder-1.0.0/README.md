@@ -1,0 +1,1 @@
+finds api in the projects , and prints them in the terminal 

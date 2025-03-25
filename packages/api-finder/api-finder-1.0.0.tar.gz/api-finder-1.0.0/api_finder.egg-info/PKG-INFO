@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: api-finder
+Version: 1.0.0
+Summary: A tool to find API endpoints in source code files
+Home-page: https://github.com/vinishdas/api-scraper.git
+Author: Vinish das
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+finds api in the projects , and prints them in the terminal 
+
