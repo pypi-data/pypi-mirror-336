@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+FNA_DB/DBClient.py
+FNA_DB/__init__.py
+FNA_DB.egg-info/PKG-INFO
+FNA_DB.egg-info/SOURCES.txt
+FNA_DB.egg-info/dependency_links.txt
+FNA_DB.egg-info/top_level.txt
+tests/TestServer.py
+tests/test.py
