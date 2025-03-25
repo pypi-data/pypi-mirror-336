@@ -1,0 +1,3 @@
+[console_scripts]
+TujieXiangmuguanliV6WuyongdaFix1 = TujieXiangmuguanliV6WuyongdaFix1.__main__:main
+tujie-xiangmuguanli-v6-wuyongda-fix1 = TujieXiangmuguanliV6WuyongdaFix1.__main__:main
