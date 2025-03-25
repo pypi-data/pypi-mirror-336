@@ -1,0 +1,12 @@
+README.md
+setup.py
+ShangGuiguXujinglongHtmlFix1/README.md
+ShangGuiguXujinglongHtmlFix1/__init__.py
+ShangGuiguXujinglongHtmlFix1/__main__.py
+ShangGuiguXujinglongHtmlFix1/file.pdf
+ShangGuiguXujinglongHtmlFix1/index.html
+shang_guigu_xujinglong_html_fix1.egg-info/PKG-INFO
+shang_guigu_xujinglong_html_fix1.egg-info/SOURCES.txt
+shang_guigu_xujinglong_html_fix1.egg-info/dependency_links.txt
+shang_guigu_xujinglong_html_fix1.egg-info/entry_points.txt
+shang_guigu_xujinglong_html_fix1.egg-info/top_level.txt
