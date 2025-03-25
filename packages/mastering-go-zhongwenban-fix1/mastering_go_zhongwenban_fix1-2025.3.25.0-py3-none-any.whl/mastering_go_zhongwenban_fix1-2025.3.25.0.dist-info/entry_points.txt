@@ -1,0 +1,3 @@
+[console_scripts]
+MasteringGoZhongwenbanFix1 = MasteringGoZhongwenbanFix1.__main__:main
+mastering-go-zhongwenban-fix1 = MasteringGoZhongwenbanFix1.__main__:main
