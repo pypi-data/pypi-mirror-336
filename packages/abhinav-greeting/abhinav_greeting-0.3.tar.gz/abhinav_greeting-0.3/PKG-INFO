@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: abhinav_greeting
+Version: 0.3
+Summary: A simple Python package that provides personalized greetings.
+Home-page: https://github.com/abhinav-aligne/abhinav_greeting
+Author: Abhinav Gera
+Author-email: abhinav.gera@aligne.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# abhinav_greetings
+
+`abhinav_greetings` is a simple Python package that provides a greeting function to personalize messages. This package allows users to easily generate personalized greetings based on the provided headers.
+
+## Installation
+
+To install `abhinav_greetings`, use the following command with `pip`:
+
+```bash
+pip install abhinav_greetings
+```
+
+## Usage
+To use the greeting function from the package, you need to import it and call it with a dictionary containing your personal information (e.g., name). Below is an example of how to use the greeting function:
+
+```python
+from abhinav_greetings import greeting
+
+# Define headers with personal details
+headers = {'Name': 'Abhinav'}
+
+# Print the greeting message
+print(greeting(headers))
+```
+
+## Example Output:
+```txt
+Hello, Abhinav! nice to meet you.
+```
