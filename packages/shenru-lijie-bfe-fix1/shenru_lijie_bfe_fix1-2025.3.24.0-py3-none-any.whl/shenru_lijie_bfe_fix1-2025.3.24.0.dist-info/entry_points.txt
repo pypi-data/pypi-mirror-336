@@ -1,0 +1,3 @@
+[console_scripts]
+ShenruLijieBfeFix1 = ShenruLijieBfeFix1.__main__:main
+shenru-lijie-bfe-fix1 = ShenruLijieBfeFix1.__main__:main
