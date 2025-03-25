@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiSqoopOozieAzkabanFix1 = ShangGuiguDaShujuJishuZhiSqoopOozieAzkabanFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-sqoop-oozie-azkaban-fix1 = ShangGuiguDaShujuJishuZhiSqoopOozieAzkabanFix1.__main__:main
