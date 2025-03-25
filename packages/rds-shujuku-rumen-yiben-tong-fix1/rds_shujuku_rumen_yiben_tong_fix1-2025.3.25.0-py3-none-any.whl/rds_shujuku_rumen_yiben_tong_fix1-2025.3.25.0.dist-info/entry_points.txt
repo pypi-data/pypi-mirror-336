@@ -1,0 +1,3 @@
+[console_scripts]
+RdsShujukuRumenYibenTongFix1 = RdsShujukuRumenYibenTongFix1.__main__:main
+rds-shujuku-rumen-yiben-tong-fix1 = RdsShujukuRumenYibenTongFix1.__main__:main
