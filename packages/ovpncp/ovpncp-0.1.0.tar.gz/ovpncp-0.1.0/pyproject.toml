@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovpncp"
+version = "0.1.0"
+description = "OpenVPN Control Panel for Restricted Network."
+authors = [{ name = "Nick Yao", email = "ipaddict@outlook.com" }]
+dependencies = [
+    "cryptography",
+    "fastapi[all]",
+    "PyYAML",
+    "sqlmodel",
+    "uvicorn"
+]
+
+[project.scripts]
+ovpncp = "sciaiot.ovpncp.main:run"
+
+[tool.setuptools.packages.find]
+exclude = [
+    "*tests.*",
+    "*tests"
+]
+
+[tool.setuptools.package-data]
+sciaiot = ["**/*.yml", "**/*.sh"]
