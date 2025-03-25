@@ -1,0 +1,5 @@
+[console_scripts]
+barcodeseqkit = BarcodeSeqKit.cli:main
+
+[nbdev]
+BarcodeSeqKit = BarcodeSeqKit._modidx:d
