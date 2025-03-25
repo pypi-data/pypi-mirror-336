@@ -1,0 +1,23 @@
+numpy
+scipy
+pandas
+scikit-learn
+tqdm
+requests
+matplotlib
+networkx
+colour
+
+[ml]
+tabpfn
+torchvision
+torch
+xgboost
+lightgbm
+transformers
+scikit-image
+joblib
+
+[ml:python_version < "3.13"]
+tensorflow
+tf-keras
