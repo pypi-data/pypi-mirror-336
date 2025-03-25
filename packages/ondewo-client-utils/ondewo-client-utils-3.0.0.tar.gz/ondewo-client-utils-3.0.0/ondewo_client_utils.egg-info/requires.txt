@@ -1,0 +1,6 @@
+dataclasses-json
+googleapis-common-protos>=1.63.2
+grpcio>=1.65.5
+grpcio-reflection>=1.65.5
+grpcio-tools>=1.65.5
+regex
