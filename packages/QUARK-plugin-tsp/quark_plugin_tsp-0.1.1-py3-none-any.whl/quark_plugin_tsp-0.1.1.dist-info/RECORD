@@ -1,0 +1,9 @@
+quark_plugin_tsp/__init__.py,sha256=KiSTOU0bjdDrQAohWRx9-D_DGqXpm141gBCW7mhLm4s,459
+quark_plugin_tsp/classical_tsp_solver.py,sha256=3g4O-2HrQgdan3DQiwSC_BtMHQ3C6oN-jhc701ac3eQ,515
+quark_plugin_tsp/tsp_graph_provider.py,sha256=LEXw8Kjbri7tgKn3DRStMehEoX7dBdGWe_0DX2qNT6M,2152
+quark_plugin_tsp/tsp_qubo_mapping_dnx.py,sha256=scugWHhgSb90vktrz9pnibOieaP2P_jRI1sPijt-i6U,1001
+quark_plugin_tsp-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+quark_plugin_tsp-0.1.1.dist-info/METADATA,sha256=pS6lrJicx5CBWrg3gi3U9tLQfCYu7uV-buuS04HhRNM,870
+quark_plugin_tsp-0.1.1.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+quark_plugin_tsp-0.1.1.dist-info/top_level.txt,sha256=HKCM93va038hGXUFOrzpSf-wYhmbVlXAwrQKIIvDEoU,17
+quark_plugin_tsp-0.1.1.dist-info/RECORD,,
