@@ -1,0 +1,8 @@
+### Key Sections Explained:
+1. **Introduction**: Describes what the package does and its features.
+2. **Installation**: Explains how to install the package, including from GitHub or locally.
+3. **Usage**: Shows how to register and retrieve dependencies using the `Injector` class, with examples of dependency injection in use cases.
+4. **Example**: Provides a full working example of how the code would be used.
+5. **License**: Mentions the licensing details (MIT license in this case, you can change it as per your needs).
+
+Feel free to adjust the repository URL and any other project-specific details!

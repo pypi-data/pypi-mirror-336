@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+python_injector.egg-info/PKG-INFO
+python_injector.egg-info/SOURCES.txt
+python_injector.egg-info/dependency_links.txt
+python_injector.egg-info/top_level.txt
