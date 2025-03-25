@@ -1,0 +1,5 @@
+dist
+docs
+generalized_timeseries
+images
+tests
