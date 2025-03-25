@@ -1,0 +1,112 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "quivr"
+description = "Container library for working with tabular Arrow data"
+readme = "README.md"
+authors = [
+    { name = "Spencer Nelson", email = "spencer@spencerwnelson.com" },
+]
+requires-python = ">= 3.9"
+dependencies = [
+    "pandas",
+    "pyarrow",
+    "numpy",
+    "mmh3",
+    "typing_extensions>=4.0.0",
+]
+dynamic = []
+version = "0.8.0"
+
+[project.urls]
+Source = "https://github.com/B612-Asteroid-Institute/quivr"
+
+[project.optional-dependencies]
+docs = [
+    "sphinx==7.2.2",
+    "sphinx-autodoc-typehints",
+    "sphinx-copybutton",
+    "sphinx-toolbox",
+    "furo==2023.08.17",
+]
+
+[tool.pdm.build]
+includes = [
+    "quivr",
+]
+
+[tool.pdm.version]
+source = "scm"
+write_to = "quivr/__version__.py"
+write_template = "__version__ = \"{}\"\n"
+
+[tool.pdm.scripts]
+fix = "ruff check ./quivr ./test --fix"
+typecheck = "mypy --strict ./quivr ./examples ./test/typing_tests"
+test = "pytest --benchmark-disable ./test {args}"
+doctest = "pytest --doctest-modules ./quivr {args}"
+benchmark = "pytest --benchmark-only ./test {args}"
+docs-html = "make -C docs html"
+docs-open = "open docs/build/html/index.html"
+docs-clean = "make -C docs clean"
+
+[tool.pdm.scripts.check]
+composite = [
+    "lint",
+    "typecheck",
+    "test",
+]
+
+[tool.pdm.scripts.lint]
+composite = [
+    "ruff check ./quivr ./test",
+    "black --check ./quivr ./test",
+    "isort --check-only ./quivr ./test",
+]
+
+[tool.pdm.scripts.format]
+composite = [
+    "black ./quivr ./test",
+    "isort ./quivr ./test",
+]
+
+[tool.pdm.scripts.docs-rebuild]
+composite = [
+    "docs-clean",
+    "docs-html",
+]
+
+[tool.black]
+line-length = 110
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[dependency-groups]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "pandas-stubs",
+    "pytest",
+    "pytest-benchmark",
+    "ruff",
+    "ipython",
+]
+test = [
+    "black",
+    "isort",
+    "mypy",
+    "pandas-stubs",
+    "pytest",
+    "pytest-benchmark",
+    "ruff",
+]
