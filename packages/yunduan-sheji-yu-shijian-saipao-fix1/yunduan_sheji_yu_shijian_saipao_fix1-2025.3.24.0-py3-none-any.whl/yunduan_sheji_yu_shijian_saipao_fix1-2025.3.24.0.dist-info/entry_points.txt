@@ -1,0 +1,3 @@
+[console_scripts]
+YunduanShejiYuShijianSaipaoFix1 = YunduanShejiYuShijianSaipaoFix1.__main__:main
+yunduan-sheji-yu-shijian-saipao-fix1 = YunduanShejiYuShijianSaipaoFix1.__main__:main
