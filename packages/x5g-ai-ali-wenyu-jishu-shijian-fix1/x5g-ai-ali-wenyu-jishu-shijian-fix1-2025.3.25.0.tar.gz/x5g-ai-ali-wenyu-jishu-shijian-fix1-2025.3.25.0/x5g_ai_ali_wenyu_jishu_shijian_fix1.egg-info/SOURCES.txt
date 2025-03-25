@@ -1,0 +1,12 @@
+README.md
+setup.py
+X5gAiAliWenyuJishuShijianFix1/README.md
+X5gAiAliWenyuJishuShijianFix1/__init__.py
+X5gAiAliWenyuJishuShijianFix1/__main__.py
+X5gAiAliWenyuJishuShijianFix1/file.pdf
+X5gAiAliWenyuJishuShijianFix1/index.html
+x5g_ai_ali_wenyu_jishu_shijian_fix1.egg-info/PKG-INFO
+x5g_ai_ali_wenyu_jishu_shijian_fix1.egg-info/SOURCES.txt
+x5g_ai_ali_wenyu_jishu_shijian_fix1.egg-info/dependency_links.txt
+x5g_ai_ali_wenyu_jishu_shijian_fix1.egg-info/entry_points.txt
+x5g_ai_ali_wenyu_jishu_shijian_fix1.egg-info/top_level.txt
