@@ -1,0 +1,6 @@
+setup.py
+pyttman_plugin_openai.egg-info/PKG-INFO
+pyttman_plugin_openai.egg-info/SOURCES.txt
+pyttman_plugin_openai.egg-info/dependency_links.txt
+pyttman_plugin_openai.egg-info/requires.txt
+pyttman_plugin_openai.egg-info/top_level.txt
