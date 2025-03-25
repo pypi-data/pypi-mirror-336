@@ -1,0 +1,3 @@
+[console_scripts]
+QianduanDaimaShiZenyangZhinengShengchengDeFix1 = QianduanDaimaShiZenyangZhinengShengchengDeFix1.__main__:main
+qianduan-daima-shi-zenyang-zhineng-shengcheng-de-fix1 = QianduanDaimaShiZenyangZhinengShengchengDeFix1.__main__:main
