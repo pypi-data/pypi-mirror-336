@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ezpermissions/__init__.py
+ezpermissions/permissions.py
+ezpermissions.egg-info/PKG-INFO
+ezpermissions.egg-info/SOURCES.txt
+ezpermissions.egg-info/dependency_links.txt
+ezpermissions.egg-info/requires.txt
+ezpermissions.egg-info/top_level.txt

@@ -1,0 +1,105 @@
+# ezpermissions
+
+A simple and efficient Discord permission checker that helps you validate user permissions effortlessly! 🚀
+
+## ✨ Features
+
+- 🔧 **Quick Setup** – Easily integrate permission checks into your bot.
+- 🎛 **Full Permission Coverage** – Supports all Discord permissions.
+- ✅ **True_ & False_ Checks** – Validate if a user has or lacks a permission.
+- 📦 **Lightweight & Easy to Use** – No complex setup required.
+
+---
+
+## 📌 Installation
+
+### Prerequisites
+Make sure you have **Python 3.8+** installed.
+
+```bash
+python --version
+```
+
+### Install ezpermissions
+
+```bash
+pip install ezpermissions
+```
+
+---
+
+## 🚀 Usage
+
+To use `ezpermissions` in your bot, import and apply permission checks:
+
+```python
+import discord
+from discord.ext import commands
+from ezpermissions import permissions
+
+bot = commands.Bot(command_prefix="!")
+
+@bot.command()
+@permissions.Administrator.True_  # ✅ Requires Administrator permission
+async def admin_only(ctx):
+    await ctx.send("✅ You have Administrator permission!")
+
+@bot.command()
+@permissions.ManageMessages.False_  # ❌ Requires NOT having Manage Messages
+async def non_moderators(ctx):
+    await ctx.send("✅ You do NOT have Manage Messages permission!")
+
+bot.run("YOUR_BOT_TOKEN")
+```
+
+---
+
+## 🔧 Available Permission Checks
+
+`ezpermissions` provides decorators for all Discord permissions:
+
+| Permission | True_ (Has) | False_ (Lacks) |
+|------------|------------|----------------|
+| Administrator | `@permissions.Administrator.True_` | `@permissions.Administrator.False_` |
+| Manage Guild | `@permissions.ManageGuild.True_` | `@permissions.ManageGuild.False_` |
+| Manage Roles | `@permissions.ManageRoles.True_` | `@permissions.ManageRoles.False_` |
+| Ban Members | `@permissions.BanMembers.True_` | `@permissions.BanMembers.False_` |
+| Kick Members | `@permissions.KickMembers.True_` | `@permissions.KickMembers.False_` |
+| Send Messages | `@permissions.SendMessages.True_` | `@permissions.SendMessages.False_` |
+| Read Message History | `@permissions.ReadMessageHistory.True_` | `@permissions.ReadMessageHistory.False_` |
+| And More! | Supports all permissions | 🎉 |
+
+---
+
+## 📁 Project Structure
+
+```
+📦 YourBotProject
+├── 📂 cogs/             # Stores command files (if using cogs)
+│   ├── __init__.py
+│   ├── example.py       # Example cog
+├── 📜 main.py           # Main bot file
+├── 📜 permissions.py    # ezpermissions integration
+├── 📜 requirements.txt  # Installed dependencies
+```
+
+---
+
+## 🎯 Contributing
+
+We welcome contributions! Feel free to submit a pull request or open an issue.
+
+---
+
+## 📜 License
+
+ezpermissions is open-source and licensed under the **MIT License**.
+
+---
+
+## 📬 Need Help?
+
+- 📖 [Official Discord.py Documentation](https://discordpy.readthedocs.io/en/stable/)
+- 🛠️ Open an issue if you run into problems!
+
+Happy coding! 🎩✨
