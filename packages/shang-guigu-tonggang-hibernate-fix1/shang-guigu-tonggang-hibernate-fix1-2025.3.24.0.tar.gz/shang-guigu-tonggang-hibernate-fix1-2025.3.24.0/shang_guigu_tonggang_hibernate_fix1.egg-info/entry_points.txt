@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangHibernateFix1 = ShangGuiguTonggangHibernateFix1.__main__:main
+shang-guigu-tonggang-hibernate-fix1 = ShangGuiguTonggangHibernateFix1.__main__:main
