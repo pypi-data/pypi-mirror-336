@@ -1,0 +1,3 @@
+[console_scripts]
+infinitymath = infinitymath.cli:main
+infinitymath-version = infinitymath:show_version
