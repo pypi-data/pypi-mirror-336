@@ -1,0 +1,9 @@
+asgiref==3.8.1
+beautifulsoup4==4.13.3
+Django==5.1.7
+django-object-actions==4.3.0
+django-solo==2.4.0
+django-tinymce==4.1.0
+lxml==5.3.1
+soupsieve==2.6
+sqlparse==0.5.3

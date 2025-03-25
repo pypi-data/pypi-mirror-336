@@ -1,0 +1,10 @@
+{
+  "include": [
+    "./dynamic_smtp/"
+  ],
+  "reportAny": false,
+  "reportImplicitStringConcatenation": false,
+  "reportUnannotatedClassAttribute": false,
+  "reportIgnoreCommentWithoutRule": false,
+  "enableTypeIgnoreComments": true
+}
