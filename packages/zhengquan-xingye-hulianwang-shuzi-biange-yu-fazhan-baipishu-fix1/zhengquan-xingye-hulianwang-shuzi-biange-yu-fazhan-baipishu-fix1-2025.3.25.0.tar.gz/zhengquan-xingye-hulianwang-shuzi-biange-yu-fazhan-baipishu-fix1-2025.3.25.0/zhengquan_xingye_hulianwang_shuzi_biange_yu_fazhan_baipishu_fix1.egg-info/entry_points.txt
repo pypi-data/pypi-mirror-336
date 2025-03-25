@@ -1,0 +1,3 @@
+[console_scripts]
+ZhengquanXingyeHulianwangShuziBiangeYuFazhanBaipishuFix1 = ZhengquanXingyeHulianwangShuziBiangeYuFazhanBaipishuFix1.__main__:main
+zhengquan-xingye-hulianwang-shuzi-biange-yu-fazhan-baipishu-fix1 = ZhengquanXingyeHulianwangShuziBiangeYuFazhanBaipishuFix1.__main__:main
