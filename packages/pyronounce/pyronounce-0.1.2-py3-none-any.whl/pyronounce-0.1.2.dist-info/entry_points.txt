@@ -1,0 +1,2 @@
+[console_scripts]
+pyronounce = pyronounce.cli:main

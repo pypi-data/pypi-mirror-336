@@ -1,0 +1,12 @@
+pyronounce/__init__.py,sha256=XI2m9o4zoe7T4pUqIitXVNkWWNZLDYFwOauqYZ40Gv4,1040
+pyronounce/cli.py,sha256=ju9wR6OxTWRFQ_PubrlK2LJlCJHzh1IPWjTqzLPDIUg,3624
+pyronounce/core.py,sha256=BBaHtHZoee_EDVEYjs73kYoXz8-4iQeK4lwv4T6menU,6484
+pyronounce/model.py,sha256=vFwBzjxZzi_pGi6uiPNG1YcfyVsQ3eLeFz-57GVsZRg,4967
+pyronounce/utils.py,sha256=0WNL4LnVLvnj7gL6C-hRKcu6MQnjc0Aa8I7IjmSN81Y,9707
+pyronounce/data/README.md,sha256=HP3Msxz4e52YkXhzQt_7hvGkOlBQcRSA0o2yc01Ykjk,720
+pyronounce/data/default_model.pkl,sha256=RULTD9zCP4DOl4ogM8Wgf3DlTpU5CUFsumJx3oLHF4M,476
+pyronounce-0.1.2.dist-info/METADATA,sha256=0Add9fj6Zyq7SimTs79oosfbCkdiOrMw5egjdM27cw4,3849
+pyronounce-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyronounce-0.1.2.dist-info/entry_points.txt,sha256=xMeklTYgBYsxGMKc4C7gFyst9U39I37LzRtM1wKwSpU,51
+pyronounce-0.1.2.dist-info/licenses/LICENSE,sha256=f6oFDfyIwW28Zgjzo86DTKhGhiyj9zHPP7sVlfXv3L0,1080
+pyronounce-0.1.2.dist-info/RECORD,,
