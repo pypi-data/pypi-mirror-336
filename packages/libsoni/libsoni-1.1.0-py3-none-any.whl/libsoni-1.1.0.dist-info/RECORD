@@ -1,0 +1,13 @@
+libsoni/__init__.py,sha256=ioO_lSRRfZPE5EBViXFYGInO5MyrvOFA5AwTdDsncPM,428
+libsoni/utils.py,sha256=ICwetOLQA0-jUV4K7CDsgORFZiT0X2C74u3G9Bhj0H8,17476
+libsoni/version.py,sha256=s2Ub2ir58wRlYlwo-oIC_0mBAViCnB9La690rWDGBd8,18
+libsoni/core/chroma.py,sha256=BG8aaoY3IHvv9vzbdz3Mr9VsxkVxj7XLAZ4yyEtw3yE,7948
+libsoni/core/f0.py,sha256=kV2NMOSn7AQILREZtoJ9sIUzjUSdZiaDnQRZ15mJNWI,7927
+libsoni/core/methods.py,sha256=04SVWXXwZ_CGy0HPMD4naBpKNFnS7DgdWr25MVSxgiA,16771
+libsoni/core/pianoroll.py,sha256=IJWRyQqKEbTQAHe8h_0hav2Ucgv5jMt-RerJQKfaHpQ,14781
+libsoni/core/spectrogram.py,sha256=Gad1UXAmQFW7SEEXAJdZGj4aqiA8Yy618MgM8_fHSX8,7164
+libsoni/core/tse.py,sha256=kd7gzGP7J8r1F_tlxWtmR-tWkuZ5nrsvodAG8KDhV20,14326
+libsoni-1.1.0.dist-info/LICENSE,sha256=QzEZFJSC3U7cC49VSvp2r1MQRhFkXKYxHOIhWQ2KXhg,1505
+libsoni-1.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+libsoni-1.1.0.dist-info/METADATA,sha256=_p7clgISWDeXPVOX6yDix7w_uKQmTxNtVWNFo9ihiCk,7475
+libsoni-1.1.0.dist-info/RECORD,,
