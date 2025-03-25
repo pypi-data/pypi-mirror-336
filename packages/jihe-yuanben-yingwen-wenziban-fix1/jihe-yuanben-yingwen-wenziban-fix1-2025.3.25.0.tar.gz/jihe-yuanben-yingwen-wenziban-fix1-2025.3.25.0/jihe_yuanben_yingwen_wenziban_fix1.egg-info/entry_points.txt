@@ -1,0 +1,3 @@
+[console_scripts]
+JiheYuanbenYingwenWenzibanFix1 = JiheYuanbenYingwenWenzibanFix1.__main__:main
+jihe-yuanben-yingwen-wenziban-fix1 = JiheYuanbenYingwenWenzibanFix1.__main__:main
