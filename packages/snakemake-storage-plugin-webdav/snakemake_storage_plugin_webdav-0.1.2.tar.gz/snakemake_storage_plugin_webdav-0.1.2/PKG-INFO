@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: snakemake-storage-plugin-webdav
+Version: 0.1.2
+Summary: 
+Author: Johannes Koester
+Author-email: johannes.koester@uni-due.de
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fsspec (>=2023.12.2)
+Requires-Dist: snakemake-interface-common (>=1.15.0,<2.0.0)
+Requires-Dist: snakemake-interface-storage-plugins (>=4.0.0,<5.0.0)
+Requires-Dist: webdav4 (>=0.10.0,<0.11.0)
+Project-URL: Documentation, https://snakemake.github.io/snakemake-plugin-catalog/plugins/storage/webdav.html
+Project-URL: Repository, https://github.com/snakemake/snakemake-storage-plugin-webdav
+Description-Content-Type: text/markdown
+
+# Snakemake storage plugin: webdav
+
+A Snakemake storage plugin for webdav.
+For documentation and usage instructions, see the [Snakemake plugin catalog](https://snakemake.github.io/snakemake-plugin-catalog/plugins/storage/webdav.html).
