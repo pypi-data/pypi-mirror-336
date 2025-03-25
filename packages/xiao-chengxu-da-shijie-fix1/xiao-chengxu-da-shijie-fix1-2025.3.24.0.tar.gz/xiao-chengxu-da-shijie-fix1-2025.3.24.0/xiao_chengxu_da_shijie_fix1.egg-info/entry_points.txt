@@ -1,0 +1,3 @@
+[console_scripts]
+XiaoChengxuDaShijieFix1 = XiaoChengxuDaShijieFix1.__main__:main
+xiao-chengxu-da-shijie-fix1 = XiaoChengxuDaShijieFix1.__main__:main
