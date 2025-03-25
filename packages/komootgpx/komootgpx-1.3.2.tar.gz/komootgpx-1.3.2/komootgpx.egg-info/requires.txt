@@ -1,0 +1,7 @@
+certifi
+chardet
+colorama
+gpxpy
+idna
+requests
+urllib3
