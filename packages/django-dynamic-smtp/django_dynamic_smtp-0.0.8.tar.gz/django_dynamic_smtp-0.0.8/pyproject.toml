@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-dynamic-smtp"
+version = "0.0.8"
+authors = [
+  { name="João Seckler", email="jseckler@riseup.net" },
+]
+description = "Configure email settings in the admin"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+  "Django",
+  "beautifulsoup4",
+  "lxml",
+  "django-object-actions",
+  "django-solo",
+  "django-tinymce",
+]
+
+
+[project.urls]
+Homepage = "https://gitlab.com/joaoseckler/django-dynamic-smtp"
+Issues = "https://gitlab.com/joaoseckler/django-dynamic-smtp/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dynamic_smtp"]
