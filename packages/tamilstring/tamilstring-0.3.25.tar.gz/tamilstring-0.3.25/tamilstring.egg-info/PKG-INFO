@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: tamilstring
+Version: 0.3.25
+Summary: tamilstring helps to handle tamil unicode characters lot more easier
+Home-page: https://gitlab.com/boopalan-dev/tamilstring
+Author: boopalan
+Author-email: contact.boopalan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+# TamilString
+
+tamilstring helps to handle tamil unicode characters lot more easier.
+
+raise you issiues here => https://gitlab.com/boopalan-dev/tamilstring
+
