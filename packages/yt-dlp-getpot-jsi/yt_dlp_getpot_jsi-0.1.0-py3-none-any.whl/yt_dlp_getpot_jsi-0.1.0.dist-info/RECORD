@@ -1,0 +1,10 @@
+yt_dlp_plugins/extractor/ytpot_jsi.py,sha256=-3ixYCdHcUWej40S3vkPXTWDictsAR8me_HmPX9-TEk,3393
+yt_dlp_plugins/getpot_phantomjs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yt_dlp_plugins/getpot_phantomjs/fetch_pot.py,sha256=z-RkcLWqGdv0uPm1KJplLJ_9o1zzGrlvZLvEWl2g78s,1304
+yt_dlp_plugins/getpot_phantomjs/phantom_jsi.py,sha256=OBPsj_krpsC0guI7rl0i84vUDONE_m_hW4QNkMtpyC4,1562
+yt_dlp_plugins/getpot_phantomjs/script.py,sha256=htBMawo1bFlEJJ8G3GuMvVBvoXLCqQIkBVvq5rAcb_A,12659
+yt_dlp_plugins/getpot_phantomjs/server.py,sha256=QIvrzeI0OTgynvdwoKFG-4511m4Rgbgp7yBESrTCGIg,4142
+yt_dlp_plugins/getpot_phantomjs/utils.py,sha256=j_fM2SseUpTZ7qZe8KKw4er19i_x53Zt2ZfYBG5l_Pc,3840
+yt_dlp_getpot_jsi-0.1.0.dist-info/METADATA,sha256=W5GyWp2HimXPYGk1AnxtTXDM9itfH_floZGWyeaEe_4,192
+yt_dlp_getpot_jsi-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+yt_dlp_getpot_jsi-0.1.0.dist-info/RECORD,,

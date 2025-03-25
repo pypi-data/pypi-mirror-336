@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: yt-dlp-getpot-jsi
+Version: 0.1.0
+Maintainer: grqz
+Keywords: yt-dlp,yt-dlp-plugin,yt-dlp-plugins-get-pot
+Requires-Python: >=3.9
+Requires-Dist: yt-dlp-get-pot>=0.1.1
