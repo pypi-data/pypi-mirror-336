@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+3d_to_image.egg-info/PKG-INFO
+3d_to_image.egg-info/SOURCES.txt
+3d_to_image.egg-info/dependency_links.txt
+3d_to_image.egg-info/requires.txt
+3d_to_image.egg-info/top_level.txt
+model_to_image/__init__.py
+model_to_image/glb_to_image.py
+model_to_image/obj_to_image.py
+model_to_image/stl_to_image.py

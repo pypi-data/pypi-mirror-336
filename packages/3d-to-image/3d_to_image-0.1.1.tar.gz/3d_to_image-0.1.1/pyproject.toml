@@ -1,0 +1,22 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "3d-to-image"
+version = "0.1.1"
+description = "A Python package for converting 3D files to images."
+readme = "README.md"
+authors = [{ name = "Muhammad Ateeq", email = "mr.ateeqazam@gmail.com" }]
+dependencies = ["opencv-python", "numpy", "scipy", "scikit-learn", "pyrender", "trimesh", "matplotlib", "pyvista"]
+
+["project.urls"]
+Homepage = "https://github.com/semwaqas/model-to-image"
+Documentation = "https://github.com/semwaqas/model-to-image/blob/main/README.md"
+
+["tool.setuptools.packages.find"]
+where = [ ".",]
+
+[project.license]
+file = "LICENSE"
