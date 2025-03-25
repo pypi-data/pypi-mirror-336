@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+anigamerpy.egg-info/PKG-INFO
+anigamerpy.egg-info/SOURCES.txt
+anigamerpy.egg-info/dependency_links.txt
+anigamerpy.egg-info/top_level.txt
