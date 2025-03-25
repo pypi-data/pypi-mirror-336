@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/gtn_embed_sdk.egg-info/PKG-INFO
+src/gtn_embed_sdk.egg-info/SOURCES.txt
+src/gtn_embed_sdk.egg-info/dependency_links.txt
+src/gtn_embed_sdk.egg-info/requires.txt
+src/gtn_embed_sdk.egg-info/top_level.txt
+src/gtnapi/__init__.py
+src/gtnapi/_auth.py
+src/gtnapi/_connection.py
+src/gtnapi/_requests.py
+src/gtnapi/_shared.py
+src/gtnapi/_streaming.py

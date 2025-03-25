@@ -1,0 +1,14 @@
+requests
+cryptography
+PyJWT
+websocket-client
+
+[docs]
+
+[optional]
+python-socks
+wsaccel
+
+[test]
+pytest
+websockets
