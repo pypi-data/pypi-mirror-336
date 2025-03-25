@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uvx-posto-mcp"
+version = "0.1.0"
+description = "UVX-compatible MCP server for Posto social media integration"
+requires-python = ">=3.8"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+readme = "README.md"
+dependencies = [
+    "posto-sdk>=0.1.0",
+    "mcp>=1.5.0",
+]
+
+[project.scripts]
+uvx-posto-mcp = "posto_mcp:main"
+
+[tool.setuptools]
+packages = ["posto_mcp"] 

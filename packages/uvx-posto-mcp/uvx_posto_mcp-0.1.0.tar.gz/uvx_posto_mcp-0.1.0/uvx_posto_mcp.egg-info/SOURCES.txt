@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+posto_mcp/__init__.py
+posto_mcp/__main__.py
+uvx_posto_mcp.egg-info/PKG-INFO
+uvx_posto_mcp.egg-info/SOURCES.txt
+uvx_posto_mcp.egg-info/dependency_links.txt
+uvx_posto_mcp.egg-info/entry_points.txt
+uvx_posto_mcp.egg-info/requires.txt
+uvx_posto_mcp.egg-info/top_level.txt

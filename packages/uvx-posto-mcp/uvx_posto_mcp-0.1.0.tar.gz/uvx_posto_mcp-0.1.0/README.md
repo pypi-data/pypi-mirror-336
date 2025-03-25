@@ -1,0 +1,95 @@
+# UVX Posto MCP Server
+
+A UVX-compatible Model Context Protocol (MCP) server for posting to social media platforms through the Posto SDK.
+
+## Features
+
+- Post content to social media
+- Get list of available channels
+- Access channel and network information
+
+## Installation
+
+```bash
+pip install uvx-posto-mcp
+```
+
+## Usage with UVX
+
+You can run Posto MCP using [uvx](https://astral.sh/uv):
+
+```bash
+# Install UV if you don't have it
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Run the MCP server
+uvx uvx-posto-mcp
+```
+
+## Usage with Upsonic
+
+```python
+# Posto MCP Server
+class PostoMCP:
+    command = "uvx"
+    args = ["uvx-posto-mcp"]
+    env = {
+      "API_KEY": "your-api-key"
+    }
+
+task = Task(
+  "Post to social media",
+  tools=[PostoMCP]
+)
+```
+
+## Usage with Claude Desktop
+
+Add this to your Claude Desktop configuration file:
+
+```json
+{
+  "mcpServers": {
+    "posto": {
+      "command": "uvx",
+      "args": ["uvx-posto-mcp"],
+      "env": {
+        "API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+## Usage with Cursor
+
+Add this to your `~/.cursor/mcp.json` configuration file:
+
+```json
+{
+  "mcpServers": {
+    "posto": {
+      "command": "uvx",
+      "args": ["uvx-posto-mcp"],
+      "env": {
+        "API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+## Available Tools
+
+### post
+
+Create a new post on a social media channel.
+
+**Parameters:**
+- `message` (string, required): Content of the post
+- `channel_id` (string, required): ID of the channel to post to
+- `schedule_time` (string, optional): Time to schedule the post (ISO format)
+
+### get_channels
+
+Get a list of available social media channels. 
