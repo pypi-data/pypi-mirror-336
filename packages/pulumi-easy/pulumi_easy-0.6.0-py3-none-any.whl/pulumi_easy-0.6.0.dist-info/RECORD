@@ -1,0 +1,17 @@
+manual/aws/get_ec2_ami.py,sha256=oQjolqSVw6pA3rqZA8v3eZsMevvjXP5xHuZfHHQ5a9s,1160
+pulumi_easy/__init__.py,sha256=h3mrkx_5ubsZYcdUQO4VJswJ-ptFJeXfJ1sygsmEERE,599
+pulumi_easy/aws/__init__.py,sha256=l61x3ZPUH6hroshMizBawPkfVhJ0ZpNkFci6EhuMZm0,104
+pulumi_easy/aws/ec2/__init__.py,sha256=TvguVjk1IVcOrxk8baB_k0EywCJudBPLst2_np4cuBA,170
+pulumi_easy/aws/ec2/ec2.py,sha256=AzXqL1tqj6Ek4CB_PeXtIKZ8cmSnA7LIxhkKWgWD3SQ,11686
+pulumi_easy/aws/ec2/ec2_al.py,sha256=2zHommNfHdG5IT0H8dXscMVt9JPbn9foOEAd570VBlg,3770
+pulumi_easy/aws/ec2/ec2_ubuntu.py,sha256=aq4bcB5ANRVXy78xx6H3bvouXpFp4kgK76hHGoXdsk8,3812
+pulumi_easy/aws/iam/__init__.py,sha256=XRWTKtIMBsMa9BkX_YoWX-gupMhXwSh7iQh5NYocmkw,146
+pulumi_easy/aws/iam/iam.py,sha256=3bpK1kzgILUZZLhK9LR3-073NnPb-z9k8GEqfqeN5Zk,3074
+pulumi_easy/aws/iam/s3.py,sha256=1Z3o8RDd26RGg0AOEaX5G-csLR86UIyo3cvAElQ-Q5s,2886
+pulumi_easy/utils/__init__.py,sha256=BcL3JPG2LTkp5k3BK0L0jROyVwPTnwjX15O7vNLgC60,97
+pulumi_easy/utils/ip.py,sha256=KlifouWPmAIpZw51joJoogrLu91Tl01bwl5e-XL4hOg,699
+pulumi_easy-0.6.0.dist-info/licenses/LICENSE,sha256=bwXiusUjIYZ3RicqDwCcjFvAjdmhFZCn24xzPU_4GaI,1066
+pulumi_easy-0.6.0.dist-info/METADATA,sha256=hxib3Qfnmln46zGtPBrfRTMuqZWZ69ZS1lYjuuQJC14,6513
+pulumi_easy-0.6.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+pulumi_easy-0.6.0.dist-info/top_level.txt,sha256=_lFVGpmQkv9PorfzKoVLz_oKei-aTeWIsw9X_nE6pnU,19
+pulumi_easy-0.6.0.dist-info/RECORD,,
