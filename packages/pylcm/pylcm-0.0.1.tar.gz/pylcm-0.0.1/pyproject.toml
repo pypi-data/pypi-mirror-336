@@ -1,0 +1,253 @@
+# ======================================================================================
+# Project metadata
+# ======================================================================================
+
+[project]
+name = "pylcm"
+description = "Specification, solution, and simulation of finite-horizon dynamic choice models."
+requires-python = ">=3.12"
+dependencies = [
+    "dags>=0.3.0",
+    "jax>=0.5.1",
+    "pandas",
+]
+dynamic = ["version"]
+keywords = [
+    "Dynamic programming",
+    "Econometrics",
+    "Economics",
+    "Estimation",
+    "Life cycle models",
+    "Statistics",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+authors = [
+    { name = "Tim Mensinger", email = "mensingertim@gmail.com" },
+    { name = "Janos Gabler" },
+]
+maintainers = [
+    { name = "Tim Mensinger", email = "mensingertim@gmail.com" },
+    { name = "Hans-Martin von Gaudecker", email = "hmgaudecker@uni-bonn.de" },
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/opensourceeconomics/pylcm"
+Github = "https://github.com/opensourceeconomics/pylcm"
+Tracker = "https://github.com/opensourceeconomics/pylcm/issues"
+
+
+# ======================================================================================
+# Build system configuration
+# ======================================================================================
+
+[build-system]
+requires = ["hatchling", "hatch_vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/lcm/_version.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["tests"]
+only-packages = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lcm"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+
+# ======================================================================================
+# Pixi
+# ======================================================================================
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+# Development Dependencies (conda and pypi)
+# --------------------------------------------------------------------------------------
+
+[tool.pixi.dependencies]
+python = "~=3.12"
+jupyterlab = "*"
+memory_profiler = "*"
+numpy = ">=2.2"
+plotly = ">=5.24"
+pre-commit = ">=4.1"
+pybaum = "*"
+scipy = ">=1.13"
+snakeviz = "*"
+
+[tool.pixi.target.unix.dependencies]
+jaxlib = ">=0.5.1"
+
+[tool.pixi.pypi-dependencies]
+pylcm = {path = ".", editable = true}
+pdbp = "*"
+
+[tool.pixi.target.win-64.pypi-dependencies]
+jaxlib = ">=0.5.1"
+
+# Features and Tasks
+# --------------------------------------------------------------------------------------
+
+[tool.pixi.feature.cuda]
+platforms = ["linux-64"]
+system-requirements = {cuda = "12"}
+
+[tool.pixi.feature.cuda.target.linux-64.dependencies]
+cuda-nvcc = "~=12"
+jaxlib = { version = ">=0.5.1", build = "cuda12*" }
+
+[tool.pixi.feature.testing.dependencies]
+pytest = "*"
+pytest-cov = "*"
+pytest-xdist = "*"
+mypy = "==1.15.0"
+pandas-stubs = "*"
+matplotlib = "*"  # required because of pandas
+scipy-stubs = "*"
+
+[tool.pixi.feature.testing.tasks]
+tests = "pytest tests"
+tests-with-cov = "pytest tests --cov-report=xml --cov=./"
+mypy = "mypy"
+explanation-notebooks = "jupyter execute explanations/*.ipynb"
+
+# Environments
+# --------------------------------------------------------------------------------------
+
+[tool.pixi.environments]
+cuda = {features = ["cuda"], solve-group = "cuda"}
+test-cpu = {features = ["testing"], solve-group = "default"}
+test-gpu = {features = ["testing", "cuda"], solve-group = "cuda"}
+
+
+# ======================================================================================
+# Ruff configuration
+# ======================================================================================
+
+[tool.ruff]
+target-version = "py312"
+fix = true
+exclude = ["src/lcm/sandbox"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+extend-ignore = [
+    "A005",  # module shadows module from the python standard-library
+    "ANN001",  # missing type annotation
+    "ANN002",  # missing type annotation for `*args`
+    "ANN003",  # missing type annotation for `**kwargs`
+    "ANN201",  # missing return type annotation for public function
+    "ANN202",  # missing return type annotation for private function
+    "D100",  # Missing docstring in public module
+    "D103",  # missing docstring in public function
+    "D104",  # missing docstring in public package
+    "D105",  # Missing docstring in magic method
+    "EM101",  # exception must not use a string literal
+    "EM102",  # exception must not use an f-string literal
+    "FIX002",  # line contains a todo
+    "N802",  # Function name should be lowercase
+    "N803",  # Argument name should be lowercase
+    "N806",  # Variable in function should be lowercase
+    "PLR0913",  # Too many arguments to function call
+    "S101",  # use of `assert` detected
+    "S301",  # `pickle` module is unsafe
+    "SIM105",  # Use `contextlib.suppress(ImportError)` instead of `try`-`except`-`pass`
+    "SLF001",  # Private member accessed: `_stochastic_info`
+    "TRY003",  # long messages outside the exception class
+    # Rules ignored to avoid conflict with formatter
+    # ----------------------------------------------------------------------------------
+    "COM812",
+    "ISC001",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/*.ipynb" = ["D101", "E402", "FBT003"]
+"examples/*" = ["D101", "INP001"]
+"explanations/*" = ["B018", "E402", "INP001", "PD008", "T201"]
+"src/lcm/Q_and_F.py" = ["N999"]
+"src/lcm/max_Q_over_c.py" = ["N999"]
+"src/lcm/max_Qc_over_d.py" = ["N999"]
+"src/lcm/ndimage.py" = ["A002"]
+"tests/*" = ["D101", "PLR2004"]
+"tests/test_Q_and_F.py" = ["N999"]
+"tests/test_max_Qc_over_d.py" = ["N999"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+# ======================================================================================
+# Pytest configuration
+# ======================================================================================
+
+[tool.pytest.ini_options]
+markers = [
+    "wip: Tests that are work-in-progress.",
+    "slow: Tests that take a long time to run and are skipped in continuous integration.",
+    "illustrative: Tests are designed for illustrative purposes",
+]
+norecursedirs = ["docs", ".envs"]
+addopts = ["--pdbcls=pdbp:Pdb"]
+
+
+# ======================================================================================
+# yamlfix configuration
+# ======================================================================================
+
+[tool.yamlfix]
+line_length = 88
+sequence_style = "block_style"
+none_representation = "null"
+
+# ======================================================================================
+# mypy configuration
+# ======================================================================================
+
+[tool.mypy]
+files = ["src", "tests"]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = [
+    "tests/test_dispatchers",
+]
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = ["pybaum", "pdbp"]
+ignore_missing_imports = true
