@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: airflow-ai-sdk-slim
+Version: 0.1.0a4
+Summary: Slimmed down version of the Airflow AI SDK
+Requires-Python: >=3.9
+Requires-Dist: apache-airflow>=2.7.0
+Requires-Dist: typing-extensions>=4.0.0
+Provides-Extra: anthropic
+Requires-Dist: pydantic-ai-slim[anthropic]; extra == 'anthropic'
+Provides-Extra: bedrock
+Requires-Dist: pydantic-ai-slim[bedrock]; extra == 'bedrock'
+Provides-Extra: cohere
+Requires-Dist: pydantic-ai-slim[cohere]; extra == 'cohere'
+Provides-Extra: duckduckgo
+Requires-Dist: pydantic-ai-slim[duckduckgo]; extra == 'duckduckgo'
+Provides-Extra: groq
+Requires-Dist: pydantic-ai-slim[groq]; extra == 'groq'
+Provides-Extra: mistral
+Requires-Dist: pydantic-ai-slim[mistral]; extra == 'mistral'
+Provides-Extra: openai
+Requires-Dist: pydantic-ai-slim[openai]; extra == 'openai'
+Provides-Extra: vertexai
+Requires-Dist: pydantic-ai-slim[vertexai]; extra == 'vertexai'
+Description-Content-Type: text/markdown
+
+# airflow-ai-sdk-slim
+
+Slimmed down version of the Airflow AI SDK. This is a dependency for the Airflow AI SDK, which
+just installs this package with all the optional dependencies.
