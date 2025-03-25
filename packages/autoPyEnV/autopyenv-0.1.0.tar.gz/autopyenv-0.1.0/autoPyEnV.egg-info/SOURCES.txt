@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+autoPyEnV.egg-info/PKG-INFO
+autoPyEnV.egg-info/SOURCES.txt
+autoPyEnV.egg-info/dependency_links.txt
+autoPyEnV.egg-info/entry_points.txt
+autoPyEnV.egg-info/requires.txt
+autoPyEnV.egg-info/top_level.txt
+env/__init__.py
+env/cli.py
