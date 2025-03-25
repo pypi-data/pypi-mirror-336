@@ -1,0 +1,3 @@
+include src/pdf_parser_header_footer/resources/*.zip
+include src/pdf_parser_header_footer/resources/*.pkl
+include README.md
