@@ -1,0 +1,3 @@
+[console_scripts]
+TongguoCeshiXuexiGoBianchengFix1 = TongguoCeshiXuexiGoBianchengFix1.__main__:main
+tongguo-ceshi-xuexi-go-biancheng-fix1 = TongguoCeshiXuexiGoBianchengFix1.__main__:main
