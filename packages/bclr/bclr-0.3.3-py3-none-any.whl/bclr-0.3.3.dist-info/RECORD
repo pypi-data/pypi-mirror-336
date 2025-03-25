@@ -1,0 +1,16 @@
+bclr/__init__.py,sha256=qKiJn-K6AT4hTK7-TTZ6AM69wHqk9wCJQSp2aAbwSM4,261
+bclr/_version.py,sha256=8KcCYTXH99C2-gCLuPILJvtT9YftRWJsartIx6TQ2ZY,22
+bclr/bclr_helper.py,sha256=8OG7BCEPZLOliJuYZbDEB-jz11mzjhQVaORFY2OlVRI,6680
+bclr/bclr_multi.py,sha256=I4QeCmiX98Zk09VWW7hP7ezZvaUgF0u22b7J9_EWuQc,11712
+bclr/bclr_one.py,sha256=YQFEvS_oNQKmnavOZkSUNcpbgLTCF9Yew9hIZ_ps2Fw,8957
+bclr/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bclr/tests/bclr_multi.npy,sha256=T9BkSHfQDItljKi4e-VALo0EqACeKl4saOe_8IJpnJQ,11968
+bclr/tests/bclr_one.npy,sha256=X3KwTy-GRNPyWpNx-HPzDwsE79GP7ImKsBxXVKJXjvE,8128
+bclr/tests/test_helper.py,sha256=sviJDolzEYDILMc9_aEasWZ7iT6CnynVyNJPmd1IHDE,373
+bclr/tests/test_multi.py,sha256=Q_ufPprJFUFGfeI33E4w3aNlsLNCZvMwZpPlQNdjCuw,3364
+bclr/tests/test_one.py,sha256=eFoGg4ZlJj6sJGzBA6Nw4rHXrp_xVcIVguzG9p-6oyI,2558
+bclr-0.3.3.dist-info/licenses/LICENSE,sha256=vcTmOAyQyVpRHRDdSOX9o6Bw9xHoJKst9LkFyKfm1zE,1073
+bclr-0.3.3.dist-info/METADATA,sha256=1MeXWmE8j82OMkNqAlWOUzFOT1LXWrdmt6FgYlU1u9I,4033
+bclr-0.3.3.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+bclr-0.3.3.dist-info/top_level.txt,sha256=OUVQd_5gW-D_G2dXyGc0UrjO4c5PEw77RUk9KAZHVbM,5
+bclr-0.3.3.dist-info/RECORD,,
