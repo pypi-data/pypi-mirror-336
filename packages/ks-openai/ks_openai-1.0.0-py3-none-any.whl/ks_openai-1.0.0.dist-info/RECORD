@@ -1,0 +1,8 @@
+ks_openai/__init__.py,sha256=vxzHHrIlKtjw4M4MkHfhvsA-pL7Af0UfmvUQgDxB73U,151
+ks_openai/api.py,sha256=Or1-ASyJYe5dmzdaW2_YUsJNNr5mBVhkubUwiutrBcU,2437
+ks_openai/utils.py,sha256=KuD7xZr6IXt5Mog2bgAgA4iiJVNP_cu2Sbz-O4xavrg,560
+ks_openai-1.0.0.dist-info/licenses/LICENSE,sha256=bFU-q6MV44uAKmWF1ccWP2WQ0SBugsfbuMIYXtq_DFE,1085
+ks_openai-1.0.0.dist-info/METADATA,sha256=KgznS_MYsI_D_lTobRtAxN7qVrGGwN_3r86zlLiNcLI,4930
+ks_openai-1.0.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+ks_openai-1.0.0.dist-info/top_level.txt,sha256=_XkVHt8brnuWRcqbsWTsBeG6qTm3EuYM3eXgZEnVegc,10
+ks_openai-1.0.0.dist-info/RECORD,,
