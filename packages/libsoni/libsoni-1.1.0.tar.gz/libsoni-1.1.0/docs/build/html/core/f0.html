@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F0 (libsoni.core.f0) &mdash; libsoni 1.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=fc837d61"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TSE (libsoni.core.tse)" href="tse.html" />
+    <link rel="prev" title="Core Features (libsoni.core)" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            libsoni
+              <img src="../_static/libsoni_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Core Features (libsoni.core)</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">F0 (libsoni.core.f0)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#libsoni.core.f0.sonify_f0"><code class="docutils literal notranslate"><span class="pre">sonify_f0()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tse.html">TSE (libsoni.core.tse)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pianoroll.html">Piano-Roll (libsoni.core.pianoroll)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chroma.html">Chroma (libsoni.core.chroma)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spectrogram.html">Spectrogram (libsoni.core.spectrogram)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methods.html">Methods (libsoni.core.methods)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../utils.html">Utils (libsoni.utils)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Module Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">libsoni</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Core Features (libsoni.core)</a></li>
+      <li class="breadcrumb-item active">F0 (libsoni.core.f0)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/core/f0.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-libsoni.core.f0">
+<span id="f0-libsoni-core-f0"></span><h1>F0 (libsoni.core.f0)<a class="headerlink" href="#module-libsoni.core.f0" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="libsoni.core.f0.sonify_f0">
+<span class="sig-prename descclassname"><span class="pre">libsoni.core.f0.</span></span><span class="sig-name descname"><span class="pre">sonify_f0</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_f0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([1])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partials_amplitudes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([1])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partials_phase_offsets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sonification_duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crossfade_duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">22050</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_zero_freq_samples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq_change_threshold_cents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="../_modules/libsoni/core/f0.html#sonify_f0"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#libsoni.core.f0.sonify_f0" title="Link to this definition"></a></dt>
+<dd><p>Sonifies an F0 trajectory given as a 2D NumPy array.</p>
+<p>The 2D array must contain time positions and associated F0 values.
+The sonification is based on phase accumulation by summing the instantaneous frequencies.
+The parameters <cite>partials</cite>, <cite>partials_amplitudes</cite>, and <cite>partials_phase_offsets</cite> can be used to modify the timbre.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time_f0</strong> (<em>np.ndarray (np.float32 / np.float64) [shape=(N, 2)]</em>) – 2D array containing time positions and associated F0 values.</p></li>
+<li><p><strong>gains</strong> (<em>np.ndarray (np.float32 / np.float64) [shape=(N, )], default = None</em>) – Array containing gain values for F0 values.</p></li>
+<li><p><strong>partials</strong> (<em>np.ndarray (np.float32 / np.float64) [shape=(N, )], default = [1]</em>) – Array specifying the desired partials of the fundamental frequency for sonification.
+An array <cite>[1]</cite> results in sonification using only the fundamental frequency,
+while <cite>[1, 2]</cite> includes both the fundamental frequency and its second harmonic (twice the fundamental frequency).</p></li>
+<li><p><strong>partials_amplitudes</strong> (<em>np.ndarray (np.float32 / np.float64) [shape=(N, )], default = None</em>) – Array specifying the amplitudes of the partials.
+For example, <cite>[1, 0.5]</cite> sets the first partial’s amplitude to 1 and the second partial’s amplitude to 0.5.
+If <cite>None</cite>, all partial amplitudes default to 1.</p></li>
+<li><p><strong>partials_phase_offsets</strong> (<em>np.ndarray (np.float32 / np.float64) [shape=(N, )], default = None</em>) – Array specifying phase offsets for partials.
+If <cite>None</cite>, all partials have a phase offset of 0.</p></li>
+<li><p><strong>sonification_duration</strong> (<em>int, default = None</em>) – Duration of the sonification in samples.</p></li>
+<li><p><strong>crossfade_duration</strong> (<em>float, default = 0.01</em>) – Duration of fade in/out at the beginning/end of the signal, as well as between discrete notes
+(see <cite>freq_change_threshold_cents</cite>), in seconds.</p></li>
+<li><p><strong>normalize</strong> (<em>bool, default = True</em>) – Whether to normalize the output signal to the range [-1, 1].</p></li>
+<li><p><strong>fs</strong> (<em>int, default = 22050</em>) – Sampling rate in samples per second.</p></li>
+<li><p><strong>ignore_zero_freq_samples</strong> (<em>int, default = 1000</em>) – Number of consecutive samples with frequency 0 that will be ignored in the sonification
+(e.g., to compensate for poor F0 estimation).
+Must be greater than 2; otherwise, this parameter is ignored.</p></li>
+<li><p><strong>freq_change_threshold_cents</strong> (<em>float, default = 50</em>) – If the frequency change between successive frames exceeds this threshold (in cents),
+the sonification will apply crossfading instead of linear interpolation of the instantaneous frequency.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>f0_sonification</strong> (<em>np.ndarray (np.float32 / np.float64) [shape=(M, )]</em>) – The sonified F0 trajectory.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Core Features (libsoni.core)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tse.html" class="btn btn-neutral float-right" title="TSE (libsoni.core.tse)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Yigitcan Özer, Leo Brütting, Simon Schwär, Meinard Müller.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
