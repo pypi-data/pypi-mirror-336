@@ -1,0 +1,17 @@
+build: clean
+    uv build
+
+publish:
+    uv publish
+
+clean:
+    rm -rf dist
+
+test:
+    uv run pytest
+
+test-all:
+    #!/usr/bin/env bash
+    for pyversion in 3.8 3.9 3.10 3.11 3.12 3.13; do
+        uv run --python=$pyversion --isolated --locked pytest
+    done
