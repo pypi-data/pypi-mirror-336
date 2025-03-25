@@ -1,0 +1,17 @@
+oapi3/__init__.py,sha256=jYMIOeX-azh3wAGuL76Ph-Ydcb0kXAK5W1uXehkap5E,617
+oapi3/client.py,sha256=1PVzMD2EF3hvgAR0iRKrpcCmuORf4x0x1ydb21UmupE,6070
+oapi3/entities/__init__.py,sha256=ARTVAZT2UPSv5yage5w87s2sdNh0zUtbU1_PCv9sftQ,983
+oapi3/entities/base.py,sha256=H5VaRmM_5X-I_RVsoQNElmpy5lUR6Xr4ktMg7J3u8aE,284
+oapi3/entities/media_types.py,sha256=zrJyBKiCnJB7ztDfDiXLQ0SEm1LbXLV-4EQmRztPC2E,2932
+oapi3/entities/operations.py,sha256=e2z3vnlFadQ0p8NmS6vi0VmXe2RbAJspbzkzmWDAzMg,4546
+oapi3/entities/parameters.py,sha256=R7eqC1CgPYjTTnxqxp83M61DghduO-d6l06RYIPpZOY,11299
+oapi3/entities/paths.py,sha256=1XMfBguJFAotw878L3svpZweEHPtxezELRs4Rk8eElU,3525
+oapi3/entities/schema.py,sha256=EKcLB2YsvN_LjlHaj2qSTHb2ZaOJPOyvoxHtKNIEgx0,954
+oapi3/exceptions.py,sha256=9iOEOXO6xFkAhuyrCKMdkBhsJoNCMfTvh01OUTAO9lE,6770
+oapi3/jsonschema_validator.py,sha256=E86mi-1RBjNVjJbta6Qlr0eVGlwkb8af9_5QMBwCCbA,3898
+oapi3/resolve.py,sha256=I2M9Vgi0H8FykjnEP6rLaD3-cWZzlfArOfA890ilrOw,4669
+oapi3/schema.py,sha256=YmpQ5vf6f3fLbVoyyeRy9pYWamix1mVb26WKYeYJn6Q,3789
+oapi3-1.5.0.dist-info/LICENSE,sha256=4mxCt9xkdco3nu6khRHXoBjVFl-YR5YdrCRcUlK12KY,1071
+oapi3-1.5.0.dist-info/METADATA,sha256=U-8ToSAQmt3hptzs7XY9yGa4GSKWjdafiQFxmg6XNdI,1250
+oapi3-1.5.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+oapi3-1.5.0.dist-info/RECORD,,
