@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ollamax
+Version: 5.0.0
+Summary: A package to manage Ollama service and models.
+Home-page: https://github.com/yourusername/ollamax
+Author: John Codes
+Author-email: efexzium@gmail.com
+License: MIT
+Requires-Dist: ollama
+
