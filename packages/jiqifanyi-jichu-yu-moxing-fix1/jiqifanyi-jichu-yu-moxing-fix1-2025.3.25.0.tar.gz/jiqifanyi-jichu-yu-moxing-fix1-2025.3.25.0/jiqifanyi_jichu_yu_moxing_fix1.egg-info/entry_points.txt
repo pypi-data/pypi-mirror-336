@@ -1,0 +1,3 @@
+[console_scripts]
+JiqifanyiJichuYuMoxingFix1 = JiqifanyiJichuYuMoxingFix1.__main__:main
+jiqifanyi-jichu-yu-moxing-fix1 = JiqifanyiJichuYuMoxingFix1.__main__:main
