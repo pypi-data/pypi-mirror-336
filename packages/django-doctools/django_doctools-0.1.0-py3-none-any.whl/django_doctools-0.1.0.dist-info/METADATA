@@ -1,0 +1,113 @@
+Metadata-Version: 2.4
+Name: django-doctools
+Version: 0.1.0
+Summary: A Django app for AI-powered document processing
+Home-page: https://github.com/yourusername/django-doctools
+Author: Anshuman Saagar
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+Requires-Dist: google-generativeai>=0.3.0
+Requires-Dist: python-docx>=0.8.11
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: boto3>=1.28.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: pillow>=11.1.0
+Requires-Dist: pymupdf>=1.25.4
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-django>=4.5.2; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: ruff>=0.0.261; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+
+# Django DocTools
+
+A reusable Django application for document processing, analysis, and summarization using AI.
+
+## Features
+
+- Document summarization based on context and document type
+- Smart topic generation and analysis
+- Support for PDF, DOC, and DOCX files
+- Multiple AI providers: Google's Gemini, OpenAI GPT models, and AWS Bedrock
+
+## Installation
+
+```bash
+pip install django-doctools
+```
+
+## Usage
+
+1. Add "doctools" to your INSTALLED_APPS setting:
+
+```python
+INSTALLED_APPS = [
+    ...
+    'doctools',
+]
+```
+
+2. Configure your preferred AI provider in settings.py:
+
+```python
+# Choose your AI provider: "gemini", "openai", or "bedrock"
+DOCTOOLS_AI_PROVIDER = "gemini"
+
+# For Gemini
+GEMINI_API_KEY = 'your-gemini-api-key'
+
+# For OpenAI
+OPENAI_API_KEY = 'your-openai-api-key'
+OPENAI_MODEL_NAME = 'gpt-4o'  # Optional, defaults to gpt-4o
+
+# For AWS Bedrock
+BEDROCK_MODEL_ID = 'anthropic.claude-v2'
+BEDROCK_AWS_REGION_NAME = 'us-east-1'
+BEDROCK_AWS_ACCESS_KEY_ID = 'your-aws-access-key'
+BEDROCK_AWS_SECRET_ACCESS_KEY = 'your-aws-secret-key'
+```
+
+3. Use the document processor in your views:
+
+```python
+from doctools.processors import DocumentProcessor
+
+def process_document(request):
+    context = request.POST.get('context')
+    doc_type = request.POST.get('doc_type')
+    topics = request.POST.getlist('topics', None)
+    document = request.FILES.get('document')
+
+    processor = DocumentProcessor()
+    result = processor.process(
+        document=document,
+        context=context,
+        doc_type=doc_type,
+        topics=topics
+    )
+
+    return JsonResponse(result)
+```
+
+## Development
+
+To contribute to this project:
+
+1. Clone the repository
+2. Install development dependencies: `pip install -e ".[dev]"`
+3. Run tests: `pytest`

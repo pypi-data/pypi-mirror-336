@@ -1,0 +1,17 @@
+django_doctools-0.1.0.dist-info/licenses/LICENSE,sha256=7fu9CWdn6wH0WLajIJJN7ejyaE5gSeFTn-qFtTsze0I,1067
+doctools/__init__.py,sha256=auoVEI1KGDJQmb3d_qhgMoyHSrFUymyYr3QnbKwtekw,88
+doctools/admin.py,sha256=FhuVqZ7V2znUA6uB7QzVwY7w5Dj5TK1IOF3HYlSplYo,42
+doctools/apps.py,sha256=wxepTrHVEVyE4brXnJWG2lr8QLzZ3TuOAot1f1GDcPw,277
+doctools/constants.py,sha256=PApkbiR9JSOXyZ5K13hqCza4-v0xjjoUaMYbtttj2cc,634
+doctools/exceptions.py,sha256=iHj_jGzMouwbIhV0nIpaoiGgdJmO1FgyM3_7fEbTglw,241
+doctools/models.py,sha256=DDyMDhzWrICRXJS8h9vqJ0UdppGFFrYqV7NIDrsyypk,35
+doctools/parsers.py,sha256=CCd9jMob2DuCU5g7fE7bj7b3LxgB5q-OJEKEONkcJnA,3122
+doctools/processors.py,sha256=_R8Tv4sPOnCEBPGt9_jfXRl6UUfR5kJp5gMitL-I_LQ,6427
+doctools/providers.py,sha256=XTnY5YjmMyuRpdC9z-HmnFR1af9sTe6kJ0DQXJRhkmU,8435
+doctools/urls.py,sha256=nPybOEhv9lY-ruEj_MW0izdHXXDqLpSVWBOLk5Ojz8c,106
+doctools/views.py,sha256=O3NFACO0hATNBtG-8eaacAY44OvPTLopVkvVmpbNOS0,42
+doctools/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_doctools-0.1.0.dist-info/METADATA,sha256=beOXWPEsv-rC3XWof_h8uj0OLepwR-RCyTX-ygAESqs,2902
+django_doctools-0.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+django_doctools-0.1.0.dist-info/top_level.txt,sha256=VR2mYJd-MdVHjxilajMVXCd0kuShfa4ZGuv5sirffFQ,9
+django_doctools-0.1.0.dist-info/RECORD,,
