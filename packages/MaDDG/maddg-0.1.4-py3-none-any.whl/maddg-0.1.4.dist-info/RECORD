@@ -1,0 +1,14 @@
+maddg/_residuals.py,sha256=DzWVz8s6wFX6CSlztwn_c_iFJwxYPIZhA9pumvrR7YM,2164
+maddg/_sim_launcher.py,sha256=oxKEEwGUN52kCBCgvZnAJIMK6crNAorbnRzoJxcTWyk,12012
+maddg-0.1.4.dist-info/licenses/LICENSE.txt,sha256=DSh2Cctx8HUjo2YBNB6pszZP7hZUeY_pwzjshrz3FNQ,1126
+madlib/__init__.py,sha256=b3P2XPKuUQiJxmdVVZWUpD9pv2fbrAGNZZpDUiycZJI,799
+madlib/_maneuver.py,sha256=9ZpWTZcbKsEho-EQHEEEX3RT7GW0HOFJChuOVJl6Acc,2527
+madlib/_observation.py,sha256=zunXq-HwVnE28-2NpVlGqwty5O0fbYtMQf5IdK4Yyig,7835
+madlib/_satellite.py,sha256=kT2mO8NsjkBXabgHPhCs2wFy13jyNQOf6YNZsMutzlE,24485
+madlib/_sensor.py,sha256=LrrBAgXpjwNdxgZPfaDz4LM9U_kzziXVvHxj3WxRGek,37556
+madlib/_sensor_collection.py,sha256=2mfL7FM5wgv4sxMvF0LErN-eaO_Wej6242JKYcGDeO0,5356
+madlib/_utils.py,sha256=XUEqhXLbilqIZ4x6gvnhDqEzBwTSVt6mwrPzDdsLCM4,6135
+maddg-0.1.4.dist-info/METADATA,sha256=BXybh7T87tCYM3rysyrQMyC52m8sEub5cN8Id_eOrZg,6967
+maddg-0.1.4.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+maddg-0.1.4.dist-info/top_level.txt,sha256=KQIFxnGaE6LaI3AwpjNLiAGMQh7h2PBY0YSfCxg7mwI,13
+maddg-0.1.4.dist-info/RECORD,,
