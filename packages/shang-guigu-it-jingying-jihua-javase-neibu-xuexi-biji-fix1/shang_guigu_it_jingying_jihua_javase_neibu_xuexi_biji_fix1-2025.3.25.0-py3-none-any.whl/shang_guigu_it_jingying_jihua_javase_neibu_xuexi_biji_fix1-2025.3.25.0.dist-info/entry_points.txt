@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguItJingyingJihuaJavaseNeibuXuexiBijiFix1 = ShangGuiguItJingyingJihuaJavaseNeibuXuexiBijiFix1.__main__:main
+shang-guigu-it-jingying-jihua-javase-neibu-xuexi-biji-fix1 = ShangGuiguItJingyingJihuaJavaseNeibuXuexiBijiFix1.__main__:main
