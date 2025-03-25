@@ -1,0 +1,3 @@
+[console_scripts]
+SpringBoot25KaifaShizhanFix1 = SpringBoot25KaifaShizhanFix1.__main__:main
+spring-boot-2-5-kaifa-shizhan-fix1 = SpringBoot25KaifaShizhanFix1.__main__:main
