@@ -1,0 +1,13 @@
+bureaucratese/__init__.py,sha256=GB0LQNFHWqPu10rFULY8oAfXNuth9aohZLUnyqQHVTw,102
+bureaucratese/analyzer.py,sha256=_c2MDDqOLkVs-IMZgttruGUSX5jsjm5mPd8Key0nAGI,9002
+bureaucratese/api.py,sha256=oO2V53zZccsRQh8zqAvmC4rIqdFD3yvYIQOmNvI6zVk,2468
+bureaucratese/bert_analyzer.py,sha256=2TZquc5qY3bYGRm-InBDj9yR6DPtxkbGPWMs_TGw-WY,5317
+bureaucratese/download_bert.py,sha256=Bld3h0sO6r4mpe-L3c8zml-ea3RBdiniV_fw6OPnnS0,1871
+bureaucratese/preprocess_embeddings.py,sha256=i5tSRTFV5YhdW7-rX6XQ5v-e1s3rkrMQL7sLp9_UCcw,2552
+bureaucratese/web_api.py,sha256=SJz92U6vUsJ4r4lyTgC4axRTTg90718Nyxae6thdkFY,4029
+bureaucratese/preprocessed/README.md,sha256=4AgGk2Dn2Xfw7MOQHI5WwXe8eXSI3_GvUsJwcxyHkAQ,777
+bureaucratese-0.1.0.dist-info/licenses/LICENSE,sha256=Tp7xgNzvEoAXbfutonDQBdWaDa-6tjbqOomcKWkFIeg,1062
+bureaucratese-0.1.0.dist-info/METADATA,sha256=WHuv-lUdXG4gfQuOVFLgNgR65BaOxzuPR2fdV7Oq7WA,15505
+bureaucratese-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+bureaucratese-0.1.0.dist-info/top_level.txt,sha256=nTcTJqKXQOue6JOGR78YjNmHP0lrgH2nBwASQ6sqN-8,14
+bureaucratese-0.1.0.dist-info/RECORD,,
