@@ -1,0 +1,1 @@
+Add the option of a five-step mosaic pattern for VBI-RED observations. This is achieved by treating the five positions as a 3x3 array with the four corners and center position populated.
