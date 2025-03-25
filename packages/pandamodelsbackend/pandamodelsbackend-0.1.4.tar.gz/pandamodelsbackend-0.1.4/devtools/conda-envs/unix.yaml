@@ -1,0 +1,27 @@
+# This is the minimal environment for PandaModelsBackend plus setup for Julia.
+#   See unix_rl2grid.yaml for an env spec accommodating rl2grid.
+
+name: test
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy=1       # restriction from pandapower
+  - scipy
+  - pandas
+  - pyjulia       # brings julia
+  - pandapower=2
+  - pytest-xdist  # optional, for testing
+  - curl<8.10     # avoid segfault in Julia w/ curl v8.10 . recheck periodically
+  - setuptools
+  - pip
+  - pip:
+    - pandamodelsbackend  # this repo. comment this, clone the repo, and `pip install -e .` to develop
+    - grid2op
+  # - lightsim2grid  # optional
+  # - matpowercaseframes  # optional
+  # - cxx-compiler  # optional if needed for further pip packages requiring compilation
+
+# Notes:
+# * py312 has been tested. others likely work. py313 may be blocked by requiring numpy v1
+# * works as-is for Linux and Intel Mac. conda packages for Julia aren't available for Silicon Mac.
