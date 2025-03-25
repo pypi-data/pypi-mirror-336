@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/pip_remove/__init__.py
+src/pip_remove/orphans.py
+src/pip_remove/remove.py
+src/pip_remove.egg-info/PKG-INFO
+src/pip_remove.egg-info/SOURCES.txt
+src/pip_remove.egg-info/dependency_links.txt
+src/pip_remove.egg-info/entry_points.txt
+src/pip_remove.egg-info/requires.txt
+src/pip_remove.egg-info/top_level.txt
+tests/test_orphan_detection.py
