@@ -1,0 +1,13 @@
+nifti_zarr-1.0.0rc1.dist-info/licenses/LICENSE,sha256=qnumlo6UjVasYboQJi1ZEX_FAampaEMhx9NtVQ6n0lc,1090
+niizarr/__init__.py,sha256=dlq_-N7rljJmkGdYpdG2ozFjyvguIefuXr9bvbnkKnc,380
+niizarr/_compat.py,sha256=JroWwgy9K7N_k_sUBjq4iju_jvRzd6HxbFpkjS52ydg,4268
+niizarr/_header.py,sha256=YcHWUv4o2Q1HIXw6pUmOa5JmN6T8GfI1mVGrgDDYboM,11748
+niizarr/_nii2zarr.py,sha256=JeMd1bCxtGw85SxuBtj-dC-snzmwAnJzmvrYq3FOQ2w,25806
+niizarr/_units.py,sha256=dKIEhY1uKvSGqWjXwkVqFC6CD3S3iWFVOH4gC1B2GfI,5292
+niizarr/_version.py,sha256=iwDi0TUz45SMYIlshEAh-UPerqIe7nxUavbLYwEgSR8,25
+niizarr/_zarr2nii.py,sha256=9jT00_H9Q-SrWHlwOPjLqXE3farusR8t2ctGSEmCH8M,9795
+nifti_zarr-1.0.0rc1.dist-info/METADATA,sha256=AJcl4yRdpINuKTQP8WYLAFWSrOPdsqiaIU8mKsYdUiQ,5747
+nifti_zarr-1.0.0rc1.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+nifti_zarr-1.0.0rc1.dist-info/entry_points.txt,sha256=X7yQFtI828mK4RGjI94UANcP_3XtbUvDJJi2-xgbLkQ,84
+nifti_zarr-1.0.0rc1.dist-info/top_level.txt,sha256=efkqsBsg_hiATHgeuxmRWZ1w35Hs1kwzwahGtCtQar4,8
+nifti_zarr-1.0.0rc1.dist-info/RECORD,,
