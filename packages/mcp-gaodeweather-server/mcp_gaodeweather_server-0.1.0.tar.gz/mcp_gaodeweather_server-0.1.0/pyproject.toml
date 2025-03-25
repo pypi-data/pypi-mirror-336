@@ -1,0 +1,17 @@
+[project]
+name = "mcp-gaodeweather-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yangyanxing", email = "yangyanxing@360.cn" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+mcp-gaodeweather-server = "mcp_gaodeweather_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
