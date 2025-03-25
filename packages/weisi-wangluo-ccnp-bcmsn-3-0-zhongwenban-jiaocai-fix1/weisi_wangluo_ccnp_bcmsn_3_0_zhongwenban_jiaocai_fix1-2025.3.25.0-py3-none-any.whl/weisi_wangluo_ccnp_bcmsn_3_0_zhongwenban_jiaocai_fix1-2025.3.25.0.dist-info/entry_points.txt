@@ -1,0 +1,3 @@
+[console_scripts]
+WeisiWangluoCcnpBcmsn30ZhongwenbanJiaocaiFix1 = WeisiWangluoCcnpBcmsn30ZhongwenbanJiaocaiFix1.__main__:main
+weisi-wangluo-ccnp-bcmsn-3-0-zhongwenban-jiaocai-fix1 = WeisiWangluoCcnpBcmsn30ZhongwenbanJiaocaiFix1.__main__:main
