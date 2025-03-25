@@ -1,0 +1,102 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pizzly"
+version = "0.1.1"
+description = "Python library for financial market analysis combining traditional technical indicators with LLMs, featuring real-time data processing and AI-powered market insights ⚡️"
+authors = [{name = "Louis Brulé Naudet", email = "contact@louisbrulenaudet.com"}]
+maintainers = [
+    { name = "Louis Brulé Naudet", email = "contact@louisbrulenaudet.com" },
+]
+readme = "README.md"
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+keywords = ["market analysis", "transformers", "polars", "finance", "AI", "technical analysis", "trading", "financial indicators", "real-time data", "machine learning", "time series", "bollinger bands", "RSI", "stock market", "financial markets"]
+requires-python = ">=3.11"
+dependencies = [
+    "alpaca-py>=0.38.0",
+    "polars>=1.22.0",
+    "pydantic>=2.10.6",
+    "pydantic-settings>=2.7.1",
+    "smolagents>=1.8.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit>=4.1.0",
+    "pre-commit-uv>=4.1.4",
+    "pyright>=1.1.392.post0",
+    "pytest>=8.3.4",
+    "ruff>=0.9.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/louisbrulenaudet/pizzly"
+Repository = "https://github.com/louisbrulenaudet/pizzly"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "--maxfail=1 --disable-warnings -q"
+
+[tool.pyright]
+exclude = [
+    "**/tests"
+]
+
+[tool.ruff]
+fix = true
+
+[tool.ruff.format]
+quote-style = "double"
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    "W",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # flake8-annotations
+    "ANN",
+    # flake8-print
+    "T20",
+]
+ignore = [
+    "B008",
+    "E501",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/{tests,docs}/*" = [
+    "ANN",
+]
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.logfire]
+pydantic_plugin_record = "all"
