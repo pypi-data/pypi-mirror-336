@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "debug-tracer"
+version = "0.1.0"
+description = "A helpful debug tracer exception i spun together with GPT, not too bad not too good."
+authors = [{ name = "Glitchy", email = "iamsk8k9@gmail.com" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+packages = ["debug_tracer"]
