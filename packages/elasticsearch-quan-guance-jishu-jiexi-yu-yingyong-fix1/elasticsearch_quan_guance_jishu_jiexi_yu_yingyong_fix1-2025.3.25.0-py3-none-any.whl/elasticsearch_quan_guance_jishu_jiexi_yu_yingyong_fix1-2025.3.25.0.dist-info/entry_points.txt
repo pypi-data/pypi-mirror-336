@@ -1,0 +1,3 @@
+[console_scripts]
+ElasticsearchQuanGuanceJishuJiexiYuYingyongFix1 = ElasticsearchQuanGuanceJishuJiexiYuYingyongFix1.__main__:main
+elasticsearch-quan-guance-jishu-jiexi-yu-yingyong-fix1 = ElasticsearchQuanGuanceJishuJiexiYuYingyongFix1.__main__:main
