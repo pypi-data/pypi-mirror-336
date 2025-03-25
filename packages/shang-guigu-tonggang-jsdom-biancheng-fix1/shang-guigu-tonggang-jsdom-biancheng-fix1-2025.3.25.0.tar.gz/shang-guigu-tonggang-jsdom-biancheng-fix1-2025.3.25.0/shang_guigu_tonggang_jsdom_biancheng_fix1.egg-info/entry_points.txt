@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangJsdomBianchengFix1 = ShangGuiguTonggangJsdomBianchengFix1.__main__:main
+shang-guigu-tonggang-jsdom-biancheng-fix1 = ShangGuiguTonggangJsdomBianchengFix1.__main__:main
