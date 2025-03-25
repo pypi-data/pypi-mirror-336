@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: JmDownloader
+Version: 0.1.0
+Summary: A nonebot plugin used to download JmComics and upload
+Home-page: https://github.com/MakiseCrise/jmDownloader.git
+Author: Maksie
+Author-email: makise@crazyforcode.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+
