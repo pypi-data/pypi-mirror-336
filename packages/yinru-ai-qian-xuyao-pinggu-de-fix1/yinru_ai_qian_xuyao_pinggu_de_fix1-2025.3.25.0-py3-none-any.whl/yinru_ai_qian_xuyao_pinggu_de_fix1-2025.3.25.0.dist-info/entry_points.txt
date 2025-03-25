@@ -1,0 +1,3 @@
+[console_scripts]
+YinruAiQianXuyaoPingguDeFix1 = YinruAiQianXuyaoPingguDeFix1.__main__:main
+yinru-ai-qian-xuyao-pinggu-de-fix1 = YinruAiQianXuyaoPingguDeFix1.__main__:main
