@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.envs.default]
+dependencies = ["requests","pytest", "pydantic"]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest"
+
+[project]
+name = "wesign-sdk"
+dynamic = ["version"]
+description = 'Python SDK for Wesign HTTP API'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Mayur Patil", email = "mayur.patil1211@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "requests",
+  "responses",
+  "pydantic"
+  ]
+
+[project.urls]
+Documentation = "https://github.com/santoshpanigrahy/wesign_sdk?tab=readme-ov-file#wesign-sdk"
+Issues = "https://github.com/santoshpanigrahy/wesign_sdk/issues"
+Source = "https://github.com/santoshpanigrahy/wesign_sdk"
+
+[tool.hatch.version]
+path = "src/wesign_sdk/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/wesign_sdk tests}"
+
+[tool.coverage.run]
+source_pkgs = ["wesign_sdk", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/wesign_sdk/__about__.py",
+]
+
+[tool.coverage.paths]
+wesign_sdk = ["src/wesign_sdk", "*/wesign-sdk/src/wesign_sdk"]
+tests = ["tests", "*/wesign-sdk/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+
+[publish.testpy]
+repository = "https://test.pypi.org/legacy/"
+username = "__token__"
+password = "pypi-AgENdGVzdC5weXBpLm9yZwIkMjU5ZmQ3MDUtODNiNC00ZTAzLTljNjItMjk5NmM3N2ZiMDI4AAISWzEsWyJ3ZXNpZ24tc2RrIl1dAAIsWzIsWyI2ZjllYzdhOC0zNTExLTRiYTEtYWVmZi1kODhlNGZjZDNlMDgiXV0AAAYgZIVYZPnBs6xAeNAMNU62zmf_6cFoofkr0_NrUxnKA2E"
