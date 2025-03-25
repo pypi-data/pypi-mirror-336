@@ -1,0 +1,3 @@
+egglib~=3.4
+click
+matplotlib
