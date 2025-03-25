@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+scripts/git-recreate
+scripts/rmtd
+src/GitResultsManager/GitResultsManager.py
+src/GitResultsManager/__init__.py
+src/GitResultsManager/resman_script.py
+src/GitResultsManager/resman_td_script.py
+src/GitResultsManager.egg-info/PKG-INFO
+src/GitResultsManager.egg-info/SOURCES.txt
+src/GitResultsManager.egg-info/dependency_links.txt
+src/GitResultsManager.egg-info/entry_points.txt
+src/GitResultsManager.egg-info/top_level.txt
