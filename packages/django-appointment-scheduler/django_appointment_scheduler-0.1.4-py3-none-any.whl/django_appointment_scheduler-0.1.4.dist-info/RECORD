@@ -1,0 +1,11 @@
+django_appointment_scheduler/__init__.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+django_appointment_scheduler/admin.py,sha256=5aWSQKS1-S-d9J2rojpSftAtvDVLHJmiomXa2aCGQsw,1077
+django_appointment_scheduler/models.py,sha256=yARdpKZNdKd4bHUQLRI40KViK-lvXTlQfy9vHJVjDcA,2363
+django_appointment_scheduler/serializers.py,sha256=YN7e3tzG6hJmom7OcFwjYcHifIV2J2D3Xs0K5aOJVRc,2181
+django_appointment_scheduler/urls.py,sha256=WzQEL9OOMsp4dSbkaWd6i3yBpv8suWSk1ciRluSbSbQ,898
+django_appointment_scheduler/views.py,sha256=cuZEhmfMT5EfgDR6BWA1pqFLk0CyA9WQWkAks3M7Ih8,6168
+django_appointment_scheduler-0.1.4.dist-info/licenses/LICENSE,sha256=TTMTQIW2YdfKW9KzKnHKToS4wVJmIdZhJOgYbbaFEe8,1066
+django_appointment_scheduler-0.1.4.dist-info/METADATA,sha256=hZjnB2crx9N0Tu48xl_5qcMP0i9i8cXXnHdkMpnwL7A,5328
+django_appointment_scheduler-0.1.4.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+django_appointment_scheduler-0.1.4.dist-info/top_level.txt,sha256=NLdGBmq-fNEQt6iT31hf6oSV987ipqW0AOS786y_9zo,29
+django_appointment_scheduler-0.1.4.dist-info/RECORD,,
