@@ -1,0 +1,13 @@
+pyamtrack-0.14.1a2.dist-info/RECORD,,
+pyamtrack-0.14.1a2.dist-info/WHEEL,sha256=XCsSFsPMag4J9JBVYHjFXnFIdq5KqJbGgjCMVKVs4-Y,141
+pyamtrack-0.14.1a2.dist-info/METADATA,sha256=BY-kooXLa6ZN4hkmOlTFVCNaCKoU0C9XGXsilKEGHGk,41951
+pyamtrack-0.14.1a2.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+include/AT_Version.h,sha256=WHS-M-QXyDhqA3UY7DCerw3FI7EZkjy10zxESVl3TbA,139
+pyamtrack/_version.py,sha256=t5RmihsBVmdDX_HzwrxODo3iWQvvHq5vfWqnt_H2biA,515
+pyamtrack/__init__.py,sha256=tkWNFmBkYEYsFhALMNwfUZkqVUUgfwkE2AxPUKdCEfE,1414
+pyamtrack/_core.cpython-311-darwin.so,sha256=KB8j58e8_9uO7QYFB-wcBOrKu8GXOSvHMLhwVKPS0vs,165936
+pyamtrack/libamtrack.dylib,sha256=UsIdSr5i6THL5atudSjU5STS6TpiEYy4HRNix4lX7D8,1528656
+pyamtrack/.dylibs/libgsl.28.dylib,sha256=hgPSVfbOB3cgmzCLG7z44OoabZS_XWNvekfCCROPHY0,3227344
+pyamtrack/.dylibs/libgslcblas.0.dylib,sha256=fOpjfUcLU6tjK34aTo99rB9fkcG01jOf0lFjbfvWxnQ,309872
+lib/cmake/libamtrack/libamtrackConfigVersion.cmake,sha256=lyOaoBjPYkgvlDZkwIVvViNFDTpx87P_bTYTfZvKivA,1862
+share/libamtrack/VERSION,sha256=S7Ss1HrJmTM7q4AF0spZKGJrivGUSV-xDHbyf4G4ky8,14
