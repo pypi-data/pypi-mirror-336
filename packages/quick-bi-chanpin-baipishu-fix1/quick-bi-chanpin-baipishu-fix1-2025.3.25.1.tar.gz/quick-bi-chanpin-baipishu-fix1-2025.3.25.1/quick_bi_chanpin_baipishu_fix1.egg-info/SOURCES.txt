@@ -1,0 +1,12 @@
+README.md
+setup.py
+QuickBiChanpinBaipishuFix1/README.md
+QuickBiChanpinBaipishuFix1/__init__.py
+QuickBiChanpinBaipishuFix1/__main__.py
+QuickBiChanpinBaipishuFix1/file.pdf
+QuickBiChanpinBaipishuFix1/index.html
+quick_bi_chanpin_baipishu_fix1.egg-info/PKG-INFO
+quick_bi_chanpin_baipishu_fix1.egg-info/SOURCES.txt
+quick_bi_chanpin_baipishu_fix1.egg-info/dependency_links.txt
+quick_bi_chanpin_baipishu_fix1.egg-info/entry_points.txt
+quick_bi_chanpin_baipishu_fix1.egg-info/top_level.txt
