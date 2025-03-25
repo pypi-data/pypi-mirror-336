@@ -1,0 +1,3 @@
+[console_scripts]
+MingrentangIiFix1 = MingrentangIiFix1.__main__:main
+mingrentang-ii-fix1 = MingrentangIiFix1.__main__:main
