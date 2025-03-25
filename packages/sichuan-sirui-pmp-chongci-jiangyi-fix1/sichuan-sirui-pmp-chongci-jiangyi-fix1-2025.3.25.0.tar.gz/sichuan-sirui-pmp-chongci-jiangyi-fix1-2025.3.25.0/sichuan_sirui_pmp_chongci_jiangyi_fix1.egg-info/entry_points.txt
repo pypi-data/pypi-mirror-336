@@ -1,0 +1,3 @@
+[console_scripts]
+SichuanSiruiPmpChongciJiangyiFix1 = SichuanSiruiPmpChongciJiangyiFix1.__main__:main
+sichuan-sirui-pmp-chongci-jiangyi-fix1 = SichuanSiruiPmpChongciJiangyiFix1.__main__:main
