@@ -1,0 +1,15 @@
+[project]
+name = "cppjit"
+version = "0.0.1"
+authors = [
+  { name="Aaron Jomy", email="aaron.jomy@cern.ch" },
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]

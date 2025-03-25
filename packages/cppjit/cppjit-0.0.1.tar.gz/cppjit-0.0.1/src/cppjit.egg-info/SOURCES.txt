@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cppjit/__init__.py
+src/cppjit/__main__.py
+src/cppjit/example.py
+src/cppjit.egg-info/PKG-INFO
+src/cppjit.egg-info/SOURCES.txt
+src/cppjit.egg-info/dependency_links.txt
+src/cppjit.egg-info/top_level.txt
