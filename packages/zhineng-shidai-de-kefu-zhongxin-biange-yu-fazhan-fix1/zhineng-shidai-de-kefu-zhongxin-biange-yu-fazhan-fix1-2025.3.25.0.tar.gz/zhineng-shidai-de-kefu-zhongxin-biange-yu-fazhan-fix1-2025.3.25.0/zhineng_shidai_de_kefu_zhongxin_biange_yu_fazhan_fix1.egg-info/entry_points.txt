@@ -1,0 +1,3 @@
+[console_scripts]
+ZhinengShidaiDeKefuZhongxinBiangeYuFazhanFix1 = ZhinengShidaiDeKefuZhongxinBiangeYuFazhanFix1.__main__:main
+zhineng-shidai-de-kefu-zhongxin-biange-yu-fazhan-fix1 = ZhinengShidaiDeKefuZhongxinBiangeYuFazhanFix1.__main__:main
