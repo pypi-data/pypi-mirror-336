@@ -1,0 +1,130 @@
+Metadata-Version: 2.4
+Name: django-dynamic-smtp
+Version: 0.0.7
+Summary: Configure email settings in the admin
+Project-URL: Homepage, https://gitlab.com/joaoseckler/django-dynamic-smtp
+Project-URL: Issues, https://gitlab.com/joaoseckler/django-dynamic-smtp/issues
+Author-email: João Seckler <jseckler@riseup.net>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: beautifulsoup4
+Requires-Dist: django
+Requires-Dist: django-object-actions
+Requires-Dist: django-solo
+Requires-Dist: django-tinymce
+Requires-Dist: lxml
+Description-Content-Type: text/markdown
+
+# Django dynamic SMTP
+
+Configure email configuration in the admin.
+
+## Usage
+
+1. Install with `pip install django-dynamic-smtp`
+
+2. Add `dynamic_smtp` and some dependencies to `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    ...,
+    "django_object_actions",
+    "tinymce",
+    "dynamic_smtp",
+]
+```
+
+3. Configure your email backend:
+
+```python
+EMAIL_BACKEND = (
+    "django.core.mail.backends.console.EmailBackend"
+    if DEBUG
+    else "dynamic_smtp.email.DynamicSMPTEmailBackend"
+)
+```
+
+4. Migrate: `./manage.py migrate`
+5. Configure `tinymce`. Example:
+
+```python
+TINYMCE_JS_URL = "https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.0.1/tinymce.min.js"
+TINYMCE_DEFAULT_CONFIG = {
+    "theme": "silver",
+    "height": 600,
+    "width": 700,
+    "resize": "both",
+    "plugins": "advlist,autolink,lists,link,image,charmap,print,preview,anchor,"
+    "searchreplace,visualblocks,code,fullscreen,insertdatetime,media,table,paste,"
+    "help,wordcount",
+    "license_key": "gpl",
+}
+```
+
+See [django-tinymce's documentation](https://django-tinymce.readthedocs.io/en/latest/)
+for more options.
+
+6. Access you admin and configure your SMTP settings
+
+### Customize model model admin
+
+1. Don't let our app register the default model admin, and register your
+   new model as the holder of email configurations.
+
+```python
+# settings.py
+
+...
+DYNAMIC_SMPT_REGISTER_ADMIN = False
+DYNAMIC_SMPT_EMAIL_CONFIGURATION_MODEL = "myapp.EmailConfiguration"
+```
+
+2. Create your custom model
+
+```python
+# myapp/models.py
+
+from dynamic_smtp.models import AbstractEmailConfiguration
+
+class EmailConfiguration(AbstractEmailConfiguration):
+    pass
+
+```
+
+3. Create your custom model admin
+
+```python
+# myapp/admin.py
+
+from django.contrib import admin
+from dynamic_smtp.models import AbstractEmailConfiguration
+
+from .models import Emailconfiguration
+
+
+@admin.register(EmailConfiguration)
+class CustomModelAdmin(EmailConfigurationAdmin):
+    class Media:
+        css = {"all": ["myapp/style.css"]}
+
+```
+
+## Dependencies
+
+This package needs quite a few dependencies, considering its simplicity.
+
+- `Django`
+- `beautifulsoup4` and `lxml`: prepare text version of HTML emails
+- `django-object-actions`: Button for email test
+- `django-tinymce`: HTML editing for signature
+- `django-solo`: Use singleton model
+
+## Contributing
+
+All contributions are welcome! To setup you environment:
+
+1. `pip install -r dev.requirements.txt`
+2. `pre-commit install`
