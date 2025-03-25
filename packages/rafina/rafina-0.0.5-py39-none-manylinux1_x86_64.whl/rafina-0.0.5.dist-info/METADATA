@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: rafina
+Version: 0.0.5
+Summary: Read content from RAF files: .raf and .dyn
+Home-page: https://www.sintef.no
+Author: ('Morten Grova',)
+Author-email: ('Morten.Grova@sintef.no',)
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy<2.0
+
+# RAFINA: Python module for reading RAF files
+
+This python module allows reading files of RAF type, which are produced by
+some SINTEF Ocean finite element analysis programs.
+
+In addition to storing results for post-processing purposes, the file
+may contain required data for analysis restarts.
+
+Programs using the RAF format include **SIMLA**, **BFLEX** and **UFLEX**.
+
+Two file extensions are in use for RAF storage: .raf and .dyn for **XPOST**
+readable and **DYNPOST** readable, respectively. The latter is used for storing
+time series produced by **SIMLA**.
+
+The module contains a class Raf, which is initialized with the filename of a
+RAF file.
+
+The module has been extended with a class Dyn, which accepts .dyn files with
+program type **DYNPOST/SIMLA**. This file format is essentially a RAF file
+(though unreadable by **XPOST**) which provides time series rather than the FEM
+element/nodal/integration point results visualized as snapshots at a given
+loadstep. Note that reading a .dyn file to a Dyn object includes all of the
+time series as stored on file in their entirety, including trailing zeroes.
+
+## Usage example
+
+```python
+from rafina import pyraf as pr
+myRafFile = pr.Raf("filename.raf")
+print(myRafFile.header())
+print(myRafFile.timestamp())
+
+# This reads a named array at a given loadstep directly from file to a numpy array
+tugcor = myRafFile.array('TUGCOR',0)
+
+myDynFile = pr.Dyn("filename.dyn")
+print("Found", myDynFile.nres, "time series in", myDynFile.filename())
+for timeseries_name in myDynFile.timeseries_names:
+  print(timeseries_name)
+```
+
+## License
+
+The RAFINA python module is made available with a BSD 3-Clause type permissive
+license. The license file is included in the package distribution, and may be
+found in the package installation location.
+
+
+
