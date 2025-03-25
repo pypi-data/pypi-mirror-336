@@ -1,0 +1,3 @@
+[console_scripts]
+HaLigongXiangmuGuanlixuePmpJiangyiFix1 = HaLigongXiangmuGuanlixuePmpJiangyiFix1.__main__:main
+ha-ligong-xiangmu-guanlixue-pmp-jiangyi-fix1 = HaLigongXiangmuGuanlixuePmpJiangyiFix1.__main__:main
