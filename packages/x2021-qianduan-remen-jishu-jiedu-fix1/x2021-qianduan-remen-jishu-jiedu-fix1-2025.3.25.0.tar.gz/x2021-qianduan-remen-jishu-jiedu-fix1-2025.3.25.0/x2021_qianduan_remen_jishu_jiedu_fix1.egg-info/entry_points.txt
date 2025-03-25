@@ -1,0 +1,3 @@
+[console_scripts]
+X2021QianduanRemenJishuJieduFix1 = X2021QianduanRemenJishuJieduFix1.__main__:main
+x2021-qianduan-remen-jishu-jiedu-fix1 = X2021QianduanRemenJishuJieduFix1.__main__:main
