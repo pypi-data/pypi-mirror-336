@@ -1,0 +1,9 @@
+setup.py
+yippie/__init__.py
+yippie/learner.py
+yippie/nn.py
+yippie/resnets.py
+yippie.egg-info/PKG-INFO
+yippie.egg-info/SOURCES.txt
+yippie.egg-info/dependency_links.txt
+yippie.egg-info/top_level.txt
