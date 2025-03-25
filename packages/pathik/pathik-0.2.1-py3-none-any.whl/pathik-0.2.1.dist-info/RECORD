@@ -1,0 +1,17 @@
+pathik/__init__.py,sha256=WnawPkcK7SKvFhwWA0KA8_zr8sfOsfeeQrP4Z0T9plA,1088
+pathik/cli.py,sha256=5MPFpvQB1bp9Obh_blE7ExMUsrn6du4lOF2w6eFoVdY,3438
+pathik/crawler.py,sha256=jq7re2Sqej2-YXKyZzXj4ElHg9OoXZnxhavXwZWi03o,14966
+pathik/pathik_bin,sha256=8QCsC8kbpcTOe_wSzVfMq2Q4v73J6vceTTgcP03yyUE,20790082
+pathik/simple.py,sha256=wYLYmt3u3QcJsm-S3bAgj5bkUef5V35_WrmvzuFmLOs,2474
+pathik/bin/pathik_crawler,sha256=q6GHqWmi_c6b73y9phIR9RbxLHGfMrykTcjJGKRHN6g,840880
+pathik/bin/darwin_amd64/pathik_bin,sha256=MifxypuVRGJIkxYsFs5ZkYBL_FwOJIYMXNO0FERfh_U,21501504
+pathik/bin/darwin_arm64/pathik_bin,sha256=8QCsC8kbpcTOe_wSzVfMq2Q4v73J6vceTTgcP03yyUE,20790082
+pathik/bin/linux_amd64/pathik_bin,sha256=CjIvccHbMzOlIC-ZoWA7d_f6UfhNtGV9k4wVBTRZQVE,21186985
+pathik/bin/linux_arm64/pathik_bin,sha256=XNrCYfF52kWyBgyznP7K_U4YEbkS4sA3Db27ILSRA9Q,20410258
+pathik/bin/windows_amd64/pathik_bin.exe,sha256=xX2gDHW9HjAUTAIdcsF2kea8kp6ETjfuI1A93bZMTb4,20236800
+pathik-0.2.1.dist-info/LICENSE,sha256=EMjtxTWW877NZLz6ky3lARHF-l27J1ep6JVtqxjAi2A,11355
+pathik-0.2.1.dist-info/METADATA,sha256=s4TzJGpdCnYQfj2NEuD8PRn6SLGTKIVv87ixezlZ9VU,5845
+pathik-0.2.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pathik-0.2.1.dist-info/entry_points.txt,sha256=87K-779oxQS_g-TapDiCjOiuuKASEOcOkInEjhvkHc4,43
+pathik-0.2.1.dist-info/top_level.txt,sha256=hnSwZDvErRxkkf2lnCFlxr3qFd8fxdiPBMJvc7sRmFI,7
+pathik-0.2.1.dist-info/RECORD,,
