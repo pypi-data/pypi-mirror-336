@@ -1,0 +1,15 @@
+military_symbol/__init__.py,sha256=Ak9ygVRHaSC5Jxj38M1SWFUS2JyWY2e-byYKFQzXlbg,107
+military_symbol/_json_filesystem.py,sha256=5Xg66-BcBF6yje7Sn3Z0N3p6GqS54JnrXqKb4DiOLms,3084
+military_symbol/_svg_tools.py,sha256=Trg1DxVEAtcSU6DRp8UxEA59gRUxNF4qr80G9y3nEe8,5718
+military_symbol/command_line.py,sha256=7fz2Y__fbFAWYL4bYWuiyw4YekbSwgPCcbUzoY2TkQs,22868
+military_symbol/individual_symbol.py,sha256=EDyyQj7VpCPph0ucc_6qpl0M27M6FGUtNXpF1fxEJOM,21827
+military_symbol/name_to_sidc.py,sha256=wWbbuarvRERTU3P6KjLIMQ9laetxBxQHnvM4dCom5mY,14386
+military_symbol/symbol_cache.py,sha256=mOSjtKQRV9866MgLR30MGFROjs3941fM7TAlJ6ZGjVA,7117
+military_symbol/symbol_schema.py,sha256=43c6dktWKtpjaB0Ivt7BllqFwuN_ux4H3bfXgEtwr0c,51207
+military_symbol/symbol_template.py,sha256=QFBzaUHj26PE1VnnsbRI-YNkQS8rn_NcGtd47HJKvsw,6122
+military_symbol/symbols.json,sha256=ID2dAh3-J5UfnrzjAqIUqcngbXP7b4ecTn2u_o1bUK0,3122681
+military_symbol-1.2.3.dist-info/METADATA,sha256=5KnYKOXKsW-4O1znCT8DBt520Qy8ERiE5nF00ZjzKx8,4485
+military_symbol-1.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+military_symbol-1.2.3.dist-info/entry_points.txt,sha256=mvXjaomyJ6ydxSyKMuZqMsEn5w3LMBfswu4s2R6_kho,83
+military_symbol-1.2.3.dist-info/licenses/LICENSE.txt,sha256=0qM448LziNfuY6-OZhcW3Esg7F701OVZ2vhJ8nOpxZE,1058
+military_symbol-1.2.3.dist-info/RECORD,,
