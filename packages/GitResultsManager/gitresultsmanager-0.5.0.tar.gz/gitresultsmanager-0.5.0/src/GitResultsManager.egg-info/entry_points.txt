@@ -1,0 +1,3 @@
+[console_scripts]
+resman = GitResultsManager.resman_script:main
+resman-td = GitResultsManager.resman_td_script:main
