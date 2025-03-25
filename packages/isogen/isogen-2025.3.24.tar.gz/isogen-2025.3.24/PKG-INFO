@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: isogen
+Version: 2025.3.24
+Summary: IsoGen: a deep learning based water isotope generator (emulator)
+Home-page: https://github.com/fzhu2e/isogen
+Author: Feng Zhu
+Author-email: fengzhu@ucar.edu
+License: BSD-3
+Keywords: Deep Learning,Water Isotope,Emulator
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+
+# IsoGen
+IsoGen: a deep learning based water isotope generator (emulator)

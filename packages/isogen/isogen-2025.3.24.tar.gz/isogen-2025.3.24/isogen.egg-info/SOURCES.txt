@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+isogen/__init__.py
+isogen/data.py
+isogen/model.py
+isogen/predictor.py
+isogen/trainer.py
+isogen/utils.py
+isogen.egg-info/PKG-INFO
+isogen.egg-info/SOURCES.txt
+isogen.egg-info/dependency_links.txt
+isogen.egg-info/not-zip-safe
+isogen.egg-info/requires.txt
+isogen.egg-info/top_level.txt
