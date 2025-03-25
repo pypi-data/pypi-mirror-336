@@ -1,0 +1,3 @@
+[console_scripts]
+ApacheFlinkBizhiBihuiFix1 = ApacheFlinkBizhiBihuiFix1.__main__:main
+apache-flink-bizhi-bihui-fix1 = ApacheFlinkBizhiBihuiFix1.__main__:main
