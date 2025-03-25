@@ -1,0 +1,3 @@
+[console_scripts]
+WuhanYutianCcnaShiyanShouceV50Fix1 = WuhanYutianCcnaShiyanShouceV50Fix1.__main__:main
+wuhan-yutian-ccna-shiyan-shouce-v5-0-fix1 = WuhanYutianCcnaShiyanShouceV50Fix1.__main__:main
