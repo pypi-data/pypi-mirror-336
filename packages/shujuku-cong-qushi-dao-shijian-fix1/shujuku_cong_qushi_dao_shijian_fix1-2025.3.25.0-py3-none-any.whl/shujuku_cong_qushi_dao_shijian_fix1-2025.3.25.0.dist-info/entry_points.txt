@@ -1,0 +1,3 @@
+[console_scripts]
+ShujukuCongQushiDaoShijianFix1 = ShujukuCongQushiDaoShijianFix1.__main__:main
+shujuku-cong-qushi-dao-shijian-fix1 = ShujukuCongQushiDaoShijianFix1.__main__:main
