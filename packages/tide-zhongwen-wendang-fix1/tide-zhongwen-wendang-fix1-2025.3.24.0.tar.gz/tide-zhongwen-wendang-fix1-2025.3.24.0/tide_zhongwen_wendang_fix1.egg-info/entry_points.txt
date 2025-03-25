@@ -1,0 +1,3 @@
+[console_scripts]
+TideZhongwenWendangFix1 = TideZhongwenWendangFix1.__main__:main
+tide-zhongwen-wendang-fix1 = TideZhongwenWendangFix1.__main__:main
