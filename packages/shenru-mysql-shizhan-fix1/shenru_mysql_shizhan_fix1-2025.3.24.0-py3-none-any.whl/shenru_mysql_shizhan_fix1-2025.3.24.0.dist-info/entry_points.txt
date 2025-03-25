@@ -1,0 +1,3 @@
+[console_scripts]
+ShenruMysqlShizhanFix1 = ShenruMysqlShizhanFix1.__main__:main
+shenru-mysql-shizhan-fix1 = ShenruMysqlShizhanFix1.__main__:main
