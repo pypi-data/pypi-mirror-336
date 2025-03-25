@@ -1,0 +1,3 @@
+[console_scripts]
+XiaofeipinShengtaiQuanLianluShuzhihuaZhuanxingBaipishuFix1 = XiaofeipinShengtaiQuanLianluShuzhihuaZhuanxingBaipishuFix1.__main__:main
+xiaofeipin-shengtai-quan-lianlu-shuzhihua-zhuanxing-baipishu-fix1 = XiaofeipinShengtaiQuanLianluShuzhihuaZhuanxingBaipishuFix1.__main__:main
