@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kuva-reader
+Version: 0.1.1
+Summary: Manipulate the Kuva Space image and metadata formats
+License: MIT
+Author: Guillem Ballesteros
+Author-email: guillem@kuvaspace.com
+Requires-Python: >=3.10,<=3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dask (>=2023.12.1,<2024.0.0)
+Requires-Dist: kuva-geometry
+Requires-Dist: kuva-metadata
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: numpy-quaternion (>=2022.4.4,<2023.0.0)
+Requires-Dist: pint (>=0.22,<0.23)
+Requires-Dist: psycopg (>=3.2.3,<4.0.0)
+Requires-Dist: rasterio (>=1.4.1,<2.0.0)
+Requires-Dist: rioxarray (>=0.12.4,<0.13.0)
+Requires-Dist: xarray (>=2022.12.0,<2023.0.0)
