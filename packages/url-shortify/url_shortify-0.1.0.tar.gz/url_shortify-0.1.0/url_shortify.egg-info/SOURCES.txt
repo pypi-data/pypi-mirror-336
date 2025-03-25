@@ -1,0 +1,7 @@
+README.md
+setup.py
+url_shortify.egg-info/PKG-INFO
+url_shortify.egg-info/SOURCES.txt
+url_shortify.egg-info/dependency_links.txt
+url_shortify.egg-info/requires.txt
+url_shortify.egg-info/top_level.txt
