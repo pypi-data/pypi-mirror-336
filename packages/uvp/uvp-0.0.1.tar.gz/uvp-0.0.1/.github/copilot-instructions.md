@@ -1,0 +1,11 @@
+- do not use pip/poetry to install dependencies
+- uv is the main package manager
+- it should follow PEP standards
+- use the latest version of uv
+- all Python development should follow PEP 604 and other PEP standards
+  - use `|` for union types (e.g., `str | None` instead of `Optional[str]`)
+  - use `inspect.get_annotations()` for runtime type inspection
+  - target Python 3.10+ only (Python 3.9 will reach End of Service by October 2025)
+  - leverage modern type hints and language features like match/case statements
+  - avoid `typing.Optional`, `typing.Union` in favor of `|` operator
+  - prefer `TypeAlias` over simple type assignments

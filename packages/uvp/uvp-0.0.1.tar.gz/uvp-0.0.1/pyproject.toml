@@ -1,0 +1,40 @@
+[project]
+name = "uvp"
+version = "0.0.1"
+description = "All-in-one tool for managing and deploying Python projects"
+readme = "README.md"
+authors = [
+    { name = "Carlos Eduardo Ferreyra", email = "eduferreyraok@gmail.com" }
+]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["development", "tools", "uv", "package-management"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "typer>=0.15.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+]
+
+[project.scripts]
+uvp = "uvp.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
