@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguJavaJishuZhiJdbcFix1 = ShangGuiguJavaJishuZhiJdbcFix1.__main__:main
+shang-guigu-java-jishu-zhi-jdbc-fix1 = ShangGuiguJavaJishuZhiJdbcFix1.__main__:main
