@@ -1,0 +1,3 @@
+[console_scripts]
+ApacheRocketmqYuanmaJiexiFix1 = ApacheRocketmqYuanmaJiexiFix1.__main__:main
+apache-rocketmq-yuanma-jiexi-fix1 = ApacheRocketmqYuanmaJiexiFix1.__main__:main
