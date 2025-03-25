@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+pslmw_md_toc_files/__init__.py
+pslmw_md_toc_files/logger_config.py
+pslmw_md_toc_files/pslmw_md_toc_files.py
+pslmw_md_toc_files.egg-info/PKG-INFO
+pslmw_md_toc_files.egg-info/SOURCES.txt
+pslmw_md_toc_files.egg-info/dependency_links.txt
+pslmw_md_toc_files.egg-info/requires.txt
+pslmw_md_toc_files.egg-info/top_level.txt
+tests/tests.py
