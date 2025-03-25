@@ -1,0 +1,3 @@
+[console_scripts]
+WeiXueyuanPythonJiaochengFix1 = WeiXueyuanPythonJiaochengFix1.__main__:main
+wei-xueyuan-python-jiaocheng-fix1 = WeiXueyuanPythonJiaochengFix1.__main__:main
