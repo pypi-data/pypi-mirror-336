@@ -1,0 +1,6 @@
+prune .circleci
+prune ci
+prune docs
+prune logo
+prune pybloqs/static/uncompressed
+prune tests
