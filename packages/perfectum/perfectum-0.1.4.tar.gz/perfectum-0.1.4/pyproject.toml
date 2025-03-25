@@ -1,0 +1,13 @@
+[project]
+name = "perfectum"
+version = "0.1.4"
+description = "Perfect your text processing pipeline."
+authors = [{name = "Georgiy Ozhegov", email = "georgiyozhegov.rs@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+ftfy = ["ftfy"]
+translate = ["googletrans"]
+gpt = ["g4f"]
