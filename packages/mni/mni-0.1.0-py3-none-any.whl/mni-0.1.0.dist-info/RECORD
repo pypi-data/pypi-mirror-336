@@ -1,0 +1,9 @@
+mni/__init__.py,sha256=z5JFR31fBMdiWtTmNZHuIaACM3CXZoRzQl9Dk1q5c4Q,95
+mni/numero.py,sha256=KV1nf6O24Go2s-OCSurZ536wS8OpfcrDA1_QyW9e0i8,24929
+mni/soap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mni/soap/details.py,sha256=zXYgDEyJnOpRPPbHPiUhI0951NgP8VJEd0VMRPAmeLI,6241
+mni/soap/generic.py,sha256=TwFI8SYGcBb4SsB80iuynXTZydK5NGGjrVXje92Z10c,6122
+mni-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mni-0.1.0.dist-info/METADATA,sha256=3C29DbERYvF3X_jaQeN00l040_89x5WlHn003E-jb0s,2522
+mni-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+mni-0.1.0.dist-info/RECORD,,
