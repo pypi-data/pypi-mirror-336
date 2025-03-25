@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: trivy-scan
+Version: 0.59.1
+Summary: A Python package to run Trivy security scans on Docker images, including the Trivy binary.
+Home-page: https://github.com/yourusername/trivy_scan
+Author: Alax Alves
+Author-email: alaxallves@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
