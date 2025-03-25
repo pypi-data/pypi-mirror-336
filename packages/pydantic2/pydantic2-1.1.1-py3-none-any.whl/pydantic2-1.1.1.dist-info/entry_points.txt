@@ -1,0 +1,3 @@
+[console_scripts]
+pydantic2=pydantic2.utils.cli:cli
+
