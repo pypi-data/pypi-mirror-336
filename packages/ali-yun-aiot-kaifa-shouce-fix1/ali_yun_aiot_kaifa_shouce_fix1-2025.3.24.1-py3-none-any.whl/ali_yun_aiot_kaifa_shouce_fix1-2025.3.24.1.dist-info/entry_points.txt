@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunAiotKaifaShouceFix1 = AliYunAiotKaifaShouceFix1.__main__:main
+ali-yun-aiot-kaifa-shouce-fix1 = AliYunAiotKaifaShouceFix1.__main__:main
