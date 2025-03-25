@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: slr_tools
+Version: 0.0.7
+Summary: Packaging for SLR tools
+Author-email: Samantha Mau <smau3@gatech.edu>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: docker
+Description-Content-Type: text/markdown
+
+# Package for SLR Tools 

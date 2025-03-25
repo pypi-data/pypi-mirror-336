@@ -1,0 +1,2 @@
+[console_scripts]
+slr-tools = slr_tools.main:main
