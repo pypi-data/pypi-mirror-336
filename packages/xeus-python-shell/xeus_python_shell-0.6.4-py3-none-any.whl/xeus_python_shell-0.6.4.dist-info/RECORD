@@ -1,0 +1,10 @@
+xeus_python_shell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xeus_python_shell/compiler.py,sha256=OLzvdYnWuucskPrxTzgdDOnN9GBFn3CAeQf8kNgwcMs,587
+xeus_python_shell/debugger.py,sha256=gK2MVg5tpUImEfxNeDKBgbm2Cv4csRMmKnt0-q092Fk,3805
+xeus_python_shell/display.py,sha256=_sDSXzKvh2TuNKAUzvlWuvc4I-36Kpb-vXCGlBJrS3I,1383
+xeus_python_shell/shell.py,sha256=zN2sfIuQ7RvpVV1ZqY8RisT9ZsQMkF_9lkyIG3DpYVg,3602
+xeus_python_shell-0.6.4.dist-info/licenses/LICENSE,sha256=0v3wEzQ66mvZr7Zjb4wZWJMoy4ucJgmoBTeVrwoIPDc,1518
+xeus_python_shell-0.6.4.dist-info/METADATA,sha256=2YZ1zaCnoqecXocTigIiy_gMo8u2wtW7Jj-D009HvXM,1224
+xeus_python_shell-0.6.4.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+xeus_python_shell-0.6.4.dist-info/top_level.txt,sha256=rnvDbxis_R_HGG_Vc6F2rIQVEuguvcck65DVLugWlrE,18
+xeus_python_shell-0.6.4.dist-info/RECORD,,
