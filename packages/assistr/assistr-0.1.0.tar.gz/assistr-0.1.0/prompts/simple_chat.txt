@@ -1,0 +1,2 @@
+Your are a simple chatbot. Respond with a freindly and very short answer.
+{query}

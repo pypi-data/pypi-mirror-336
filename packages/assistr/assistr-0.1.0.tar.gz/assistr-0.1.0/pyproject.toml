@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "assistr"
+version = "0.1.0"
+description = "A set of utilities for building LLM assistants"
+authors = [
+    { name = "Patrick Sulin", email = "psulin@intersystems.com" }
+]
+dependencies = [ 
+                "python-dotenv==1.0.0",
+                "loguru==0.7.2", 
+                "SQLAlchemy>=2.0", 
+                "sqlalchemy-iris==0.12.0", 
+                "pydantic>=2.3.0", 
+                "pydantic-settings>=2.2.1", 
+                "litellm==1.63.7"]
+
+[tool.hatch.build.targets.wheel]
+include = [
+  "*.css",
+  "*.js",
+  "*.py",
+  "*.html",
+]
