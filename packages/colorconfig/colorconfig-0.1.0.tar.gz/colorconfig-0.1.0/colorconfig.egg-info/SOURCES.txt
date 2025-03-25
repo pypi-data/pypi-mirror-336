@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+colorconfig/__init__.py
+colorconfig/colors.py
+colorconfig.egg-info/PKG-INFO
+colorconfig.egg-info/SOURCES.txt
+colorconfig.egg-info/dependency_links.txt
+colorconfig.egg-info/requires.txt
+colorconfig.egg-info/top_level.txt
