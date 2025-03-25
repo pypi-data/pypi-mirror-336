@@ -1,0 +1,3 @@
+[console_scripts]
+RustChengxushejiYuyanFix1 = RustChengxushejiYuyanFix1.__main__:main
+rust-chengxusheji-yuyan-fix1 = RustChengxushejiYuyanFix1.__main__:main
