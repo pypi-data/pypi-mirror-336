@@ -1,0 +1,3 @@
+[console_scripts]
+WuBianjieChudaShuzihuaShidaiDeGaodengjiaoyuFix1 = WuBianjieChudaShuzihuaShidaiDeGaodengjiaoyuFix1.__main__:main
+wu-bianjie-chuda-shuzihua-shidai-de-gaodengjiaoyu-fix1 = WuBianjieChudaShuzihuaShidaiDeGaodengjiaoyuFix1.__main__:main
