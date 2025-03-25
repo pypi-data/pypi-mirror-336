@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: crczp-python-commons
+Version: 1.0.1
+Summary: Python Commons
+Author: cybersecurityhub.cz
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: crczp-topology-definition~=1.0.0
+Dynamic: author
+Dynamic: description
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Сyberrangecz Python Commons
+The repository for common classes of Python-base crczp projects.
+
+## Common classes
+ * **cloud_commons** -- classes used by crczp cloud clients and [terraform-client](https://github.com/crczp/backend-terraform-client)
