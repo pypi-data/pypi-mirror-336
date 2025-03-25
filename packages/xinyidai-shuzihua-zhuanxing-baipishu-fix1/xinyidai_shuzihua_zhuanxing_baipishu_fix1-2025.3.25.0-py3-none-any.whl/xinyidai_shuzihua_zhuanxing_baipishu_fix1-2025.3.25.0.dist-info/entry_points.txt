@@ -1,0 +1,3 @@
+[console_scripts]
+XinyidaiShuzihuaZhuanxingBaipishuFix1 = XinyidaiShuzihuaZhuanxingBaipishuFix1.__main__:main
+xinyidai-shuzihua-zhuanxing-baipishu-fix1 = XinyidaiShuzihuaZhuanxingBaipishuFix1.__main__:main
