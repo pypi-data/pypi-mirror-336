@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiSparkFix1 = ShangGuiguDaShujuJishuZhiSparkFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-spark-fix1 = ShangGuiguDaShujuJishuZhiSparkFix1.__main__:main
