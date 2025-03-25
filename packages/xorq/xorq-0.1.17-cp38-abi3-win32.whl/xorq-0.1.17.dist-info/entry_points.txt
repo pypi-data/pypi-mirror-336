@@ -1,0 +1,10 @@
+[console_scripts]
+xorq=xorq.cli:main
+[xorq.backends]
+let=xorq.backends.let
+postgres=xorq.backends.postgres
+snowflake=xorq.backends.snowflake
+datafusion=xorq.backends.datafusion
+duckdb=xorq.backends.duckdb
+pandas=xorq.backends.pandas
+trino=xorq.backends.trino
