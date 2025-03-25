@@ -1,0 +1,3 @@
+[console_scripts]
+XianshangLicaiShuzihuaYunyingJiejuefanganFix1 = XianshangLicaiShuzihuaYunyingJiejuefanganFix1.__main__:main
+xianshang-licai-shuzihua-yunying-jiejuefangan-fix1 = XianshangLicaiShuzihuaYunyingJiejuefanganFix1.__main__:main
