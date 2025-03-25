@@ -1,0 +1,3 @@
+[console_scripts]
+MingrentangFix1 = MingrentangFix1.__main__:main
+mingrentang-fix1 = MingrentangFix1.__main__:main
