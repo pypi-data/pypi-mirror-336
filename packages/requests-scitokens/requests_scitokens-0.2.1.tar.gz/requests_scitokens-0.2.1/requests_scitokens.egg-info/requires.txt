@@ -1,0 +1,14 @@
+requests>=2.32.0
+scitokens>=1.8
+
+[docs]
+furo
+sphinx
+sphinx-automodapi
+sphinx-copybutton
+sphinx-design
+
+[test]
+pytest>=3.1.0
+pytest-cov>=2.4.0
+requests-mock

@@ -1,0 +1,15 @@
+requests-scitokens (0.2.1-1) unstable; urgency=low
+
+  * Update to 0.2.1
+  * Update debhelper compatibility level to 13
+  * Update X-Python3-Version to >= 3.9
+  * Remove version constraints on runtime requirements, use what the distro
+    gives us
+
+ -- Duncan Macleod <macleoddm@cardiff.ac.uk>  Mon, 24 Mar 2025 16:19:00 +0000
+
+requests-scitokens (0.1.0-1) unstable; urgency=low
+
+  * first release of requests-scitokens
+
+ -- Duncan Macleod <macleoddm@cardiff.ac.uk>  Mon, 12 Feb 2024 17:34:00 +0000
