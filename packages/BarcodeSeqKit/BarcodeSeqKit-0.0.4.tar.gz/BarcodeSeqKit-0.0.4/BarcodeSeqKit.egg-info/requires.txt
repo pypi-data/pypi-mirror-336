@@ -1,0 +1,9 @@
+biopython
+pandas
+tqdm
+fastcore
+pysam
+regex
+pyyaml
+
+[dev]
