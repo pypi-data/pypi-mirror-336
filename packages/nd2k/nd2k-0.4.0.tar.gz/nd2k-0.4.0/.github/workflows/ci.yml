@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: make deps
+    - run: make coverage
+    - run: make type-checker
+    - run: make complexity-metrics
+    - run: make security-scan
+
+    - name: Upload coverage reports to Codacy
+      env:
+        CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+      run: |
+        bash <(curl -Ls https://coverage.codacy.com/get.sh) \
+        report -r coverage.xml
