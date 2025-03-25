@@ -1,0 +1,13 @@
+*.egg-info
+*.pyc
+.vscode/*
+.benchmarks/*
+dist/*
+docs/_build/*
+build
+__pycache__/
+*.whl
+.coverage*
+.xml
+.env
+.vs/*
