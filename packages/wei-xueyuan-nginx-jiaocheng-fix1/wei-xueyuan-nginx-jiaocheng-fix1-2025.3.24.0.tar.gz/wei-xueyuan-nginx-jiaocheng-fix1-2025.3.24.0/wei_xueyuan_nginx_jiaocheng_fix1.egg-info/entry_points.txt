@@ -1,0 +1,3 @@
+[console_scripts]
+WeiXueyuanNginxJiaochengFix1 = WeiXueyuanNginxJiaochengFix1.__main__:main
+wei-xueyuan-nginx-jiaocheng-fix1 = WeiXueyuanNginxJiaochengFix1.__main__:main
