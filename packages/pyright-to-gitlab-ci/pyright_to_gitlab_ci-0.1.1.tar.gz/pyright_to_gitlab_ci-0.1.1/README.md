@@ -1,0 +1,50 @@
+# pyright-to-gitlab-ci
+
+This is a port of [the NPM package of the same name](https://gitlab.com/ErezAmihud/pyright-to-gitlab-ci)
+since [Robert Craigie](https://github.com/RobertCraigie/pyright-python)
+(blessed be thy name) took on themself the hard task of actually giving us access
+to pyright without having to directly touch any icky NPM setup.
+
+## Using as part of the GitLab CI
+I prefer to use UV because I find it easier to scale over time and multiple repos,
+but using pip works perfectly
+
+### With UV
+
+On the repo
+
+```bash
+uv add pyright
+uv add pyright-to-gitlab-ci
+# git commit && git push
+```
+
+`.gitlab-ci.yml`
+
+```yaml
+job_name:
+  script:
+   - uv run pyright <python source> --outputjson > obj/pyright.json
+   - uv run pyright-to-gitlab-ci --src obj/pyright.json --output obj/pyright-cc.json --base_path .
+  artifacts:
+    reports:
+      codequality: obj/pyright-cc.json
+```
+
+### With pip
+
+`.gitlab-ci.yml`
+
+```yaml
+job_name:
+  before_script:
+   - pip install pyright
+   - pip install pyright-to-gitlab-ci
+  script:
+   - pyright <python source> --outputjson > obj/pyright.json
+   - pyright-to-gitlab-ci --src obj/pyright.json --output obj/pyright-cc.json --base_path .
+  artifacts:
+    reports:
+      codequality: obj/pyright-cc.json
+```
+

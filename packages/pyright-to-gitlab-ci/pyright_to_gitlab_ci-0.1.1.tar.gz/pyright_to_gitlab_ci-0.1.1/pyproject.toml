@@ -1,0 +1,10 @@
+[project]
+name = "pyright-to-gitlab-ci"
+version = "0.1.1"
+description = "Port of the NPM package of the same name"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+pyright-to-gitlab-ci = "pyright_to_gitlab_ci.main:main"
