@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: wallpaper-cli-tool
+Version: 1.2.2
+Summary: A CLI tool to fetch and set beautiful wallpapers from various sources.
+Home-page: https://github.com/Blacksujit/WallCLI.git
+Author: Sujit Nirmal
+Author-email: nirmalsujit981@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: textual
+Requires-Dist: Pillow
+Requires-Dist: python-dotenv
+Requires-Dist: pexels-api
+Requires-Dist: unsplash-api
+Requires-Dist: nasa-apod-api
+Requires-Dist: reddit-api
+Requires-Dist: diffusers
+Requires-Dist: torch
+
+
+    # Wallpaper CLI Tool
+
+    Welcome to the Wallpaper CLI Tool! This tool allows you to fetch and set beautiful wallpapers from various sources like Pexels, Unsplash, NASA APOD, and Reddit. You can also generate custom wallpapers using Stable Diffusion. The tool is designed to be user-friendly and highly customizable.
+
+    ## Features
+
+    - Fetch wallpapers from Pexels, Unsplash, NASA APOD, and Reddit
+    - Generate custom wallpapers using Stable Diffusion
+    - Set wallpapers on multiple monitors
+    - List wallpaper history
+    - Command Line Interface (CLI) and Terminal User Interface (TUI)
+
+    ## Installation
+
+    To install the Wallpaper CLI Tool, run:
+
+    ```sh
+    pip install wallpaper-cli-tool
+    ```
+
+    ## Usage
+
+    To fetch and set a wallpaper, run:
+
+    ```sh
+    wallpaper-cli --set-wallpaper "nature" --source pexels
+    ```
+
+    For more usage examples and options, refer to the documentation on the [GitHub repository](https://github.com/Blacksujit/WallCLI).
+    
