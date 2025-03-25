@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fbi-wanted"
+version = "0.1.0"
+description = "A library for accessing the FBI Wanted API."
+authors = [{ name = "Inioluwa Adenaike", email = "inioluwadenaike@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["FBI", "wanted", "API", "OSINT"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.25.1",
+    "asyncio>=3.4.3"
+]
+
+[tool.setuptools]
+packages = ["fbi_wanted"]
+
