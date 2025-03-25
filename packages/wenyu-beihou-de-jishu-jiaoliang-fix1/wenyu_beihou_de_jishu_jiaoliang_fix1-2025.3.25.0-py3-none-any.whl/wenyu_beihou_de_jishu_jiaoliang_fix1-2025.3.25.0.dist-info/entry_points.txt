@@ -1,0 +1,3 @@
+[console_scripts]
+WenyuBeihouDeJishuJiaoliangFix1 = WenyuBeihouDeJishuJiaoliangFix1.__main__:main
+wenyu-beihou-de-jishu-jiaoliang-fix1 = WenyuBeihouDeJishuJiaoliangFix1.__main__:main
