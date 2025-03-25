@@ -1,0 +1,9 @@
+tchumyt_pypi/__init__.py,sha256=aA8zwzW6cOEOt3AkPBzfIxHont1pryPTPxB6rgzv8eg,61
+tchumyt_pypi/configs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tchumyt_pypi/configs/logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tchumyt_pypi/configs/logger/logging-config.json,sha256=QVB_KAp_pvJFrojIjmNzC-30CYhMpTDPKlfleF3FZEo,564
+tchumyt_pypi/tokenizers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tchumyt_pypi/tokenizers/bpe_tokenizer.py,sha256=Zf9g9L1CZ4N-YzwyoXNuxTLuWi0uB2eBUQNrGMG3hrs,6701
+tchumyt_pypi-0.2.1.dist-info/METADATA,sha256=M4ik_b2l63afQPoLNv-QEQG8y68y5wEz8UwwnKHixwA,412
+tchumyt_pypi-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tchumyt_pypi-0.2.1.dist-info/RECORD,,
