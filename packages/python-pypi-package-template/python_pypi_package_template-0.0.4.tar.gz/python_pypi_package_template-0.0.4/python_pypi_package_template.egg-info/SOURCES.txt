@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+python_pypi_package_template/__init__.py
+python_pypi_package_template.egg-info/PKG-INFO
+python_pypi_package_template.egg-info/SOURCES.txt
+python_pypi_package_template.egg-info/dependency_links.txt
+python_pypi_package_template.egg-info/top_level.txt
+tests/test_example.py
