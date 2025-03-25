@@ -1,0 +1,8 @@
+
+include LICENSE
+include README.md
+recursive-include doctools/static *
+recursive-include doctools/templates *
+recursive-include doctools/locale *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
