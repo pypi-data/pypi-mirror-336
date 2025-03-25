@@ -1,0 +1,3 @@
+[console_scripts]
+AliflutterTixihuaJiansheHeShijianFix1 = AliflutterTixihuaJiansheHeShijianFix1.__main__:main
+aliflutter-tixihua-jianshe-he-shijian-fix1 = AliflutterTixihuaJiansheHeShijianFix1.__main__:main
