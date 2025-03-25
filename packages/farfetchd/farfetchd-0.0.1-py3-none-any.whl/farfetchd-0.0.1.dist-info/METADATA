@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: farfetchd
+Version: 0.0.1
+Summary: farfetchd is an asynchronous wrapper around the pokeapi.co API
+Home-page: https://github.com/pseudonym117/farfetchd
+Author: pseudonym117
+License: MIT
+License-File: LICENSE
+Requires-Dist: aiohttp
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: Jinja2; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Dynamic: author
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+# Farfetchd
+
+Wrapper around the [PokeAPI.co](https://pokeapi.co/docs/v2) v2 API.
