@@ -1,0 +1,3 @@
+[console_scripts]
+RcoreTutorialBookDisanbanFix1 = RcoreTutorialBookDisanbanFix1.__main__:main
+rcore-tutorial-book-disanban-fix1 = RcoreTutorialBookDisanbanFix1.__main__:main
