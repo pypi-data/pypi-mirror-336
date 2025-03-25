@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+cli/__init__.py
+cli/main.py
+deeply_vault.egg-info/PKG-INFO
+deeply_vault.egg-info/SOURCES.txt
+deeply_vault.egg-info/dependency_links.txt
+deeply_vault.egg-info/entry_points.txt
+deeply_vault.egg-info/requires.txt
+deeply_vault.egg-info/top_level.txt
