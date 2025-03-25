@@ -1,0 +1,7 @@
+astropy[recommended]>=7.0
+setuptools
+dask
+asdf-astropy>=0.3
+PyQt5
+qtpy
+pyqtgraph
