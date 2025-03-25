@@ -1,0 +1,16 @@
+README.md
+setup.py
+D:/a/sslog/sslog/zstd_dev/zstd/dll/libzstd.dll
+sslogread/logSession.cpp
+sslogread/parserHelpers.cpp
+sslogread/pySslogReader.cpp
+sslogread/sslog.h
+sslogread/stringDb.cpp
+sslogread/utils.cpp
+sslogread/vsnprintf.cpp
+sslogread.egg-info/PKG-INFO
+sslogread.egg-info/SOURCES.txt
+sslogread.egg-info/dependency_links.txt
+sslogread.egg-info/top_level.txt
+sslogread/sslogread/sslogread.h
+sslogread/sslogread/utils.h
