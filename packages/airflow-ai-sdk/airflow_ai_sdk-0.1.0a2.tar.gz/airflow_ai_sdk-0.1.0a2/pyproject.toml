@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "airflow-ai-sdk"
+version = "0.1.0a2"
+description = "SDK for building LLM workflows and agents using Apache Airflow"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "airflow-ai-sdk-slim[openai,cohere,vertexai,anthropic,groq,mistral,bedrock,duckduckgo]==0.1.0a1",
+]
+
+[tool.uv.sources]
+airflow-ai-sdk-slim = { workspace = true }
+
+[tool.uv.workspace]
+members = ["airflow-ai-sdk-slim"]
+
+[tool.hatch.build.targets.wheel]
+only-include = ["/README.md"]
+
+[project.entry-points.apache_airflow_provider]
+provider_info = "airflow_ai_sdk:get_provider_info"
