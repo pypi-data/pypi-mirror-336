@@ -1,0 +1,3 @@
+[console_scripts]
+DtsKongzhitaiRumenYibenTongFix1 = DtsKongzhitaiRumenYibenTongFix1.__main__:main
+dts-kongzhitai-rumen-yiben-tong-fix1 = DtsKongzhitaiRumenYibenTongFix1.__main__:main
