@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: vcf2csv
+Version: 1.0.0
+Summary: VCARD 3.0 to CSV Converter with Apple Extensions
+Author: jrkoop
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

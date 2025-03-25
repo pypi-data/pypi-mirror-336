@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+vcf_parser.py
+vcf2csv.egg-info/PKG-INFO
+vcf2csv.egg-info/SOURCES.txt
+vcf2csv.egg-info/dependency_links.txt
+vcf2csv.egg-info/entry_points.txt
+vcf2csv.egg-info/requires.txt
+vcf2csv.egg-info/top_level.txt
