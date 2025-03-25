@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: Dencyy
+Version: 0.1.0
+Summary: Generate requirements.txt by scanning Python imports
+Home-page: https://github.com/11PRIMUS/Dency
+Author: PRIMUS
+Author-email: alokpal280@gmail.com
+Project-URL: Bug Tracker, https://github.com/yourusername/req-generator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# req-generator
+
+A Python CLI tool that automatically generates requirements.txt by scanning your project for imports.
+
+## Features
+
+- Scans all Python files in your project directory and subdirectories
+- Identifies third-party imports (ignores standard library)
+- Fetches the latest package versions from PyPI
+- Generates a requirements.txt file with exact versions
+
+## Installation
+
+```bash
+pip install req-generator

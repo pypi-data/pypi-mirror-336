@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+src/Dencyy.egg-info/PKG-INFO
+src/Dencyy.egg-info/SOURCES.txt
+src/Dencyy.egg-info/dependency_links.txt
+src/Dencyy.egg-info/entry_points.txt
+src/Dencyy.egg-info/requires.txt
+src/Dencyy.egg-info/top_level.txt
+src/cli/__init__.py
+src/cli/main.py
+test/test_cli.py
