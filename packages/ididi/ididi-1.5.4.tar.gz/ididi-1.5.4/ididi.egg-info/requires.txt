@@ -1,0 +1,4 @@
+typing-extensions
+
+[graphviz]
+python-graphviz<0.21,>=0.20.3
