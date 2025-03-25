@@ -1,0 +1,3 @@
+[console_scripts]
+FuxiShensuanAlibabaJingjitiHexinDiaoduXitongJiemiFix1 = FuxiShensuanAlibabaJingjitiHexinDiaoduXitongJiemiFix1.__main__:main
+fuxi-shensuan-alibaba-jingjiti-hexin-diaodu-xitong-jiemi-fix1 = FuxiShensuanAlibabaJingjitiHexinDiaoduXitongJiemiFix1.__main__:main
