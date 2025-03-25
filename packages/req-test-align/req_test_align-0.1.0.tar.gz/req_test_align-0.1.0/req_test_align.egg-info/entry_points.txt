@@ -1,0 +1,3 @@
+[console_scripts]
+req-test-align = req_test_align.main:main_entry
+rta-metrics = req_test_align.monitor.report_generator:main

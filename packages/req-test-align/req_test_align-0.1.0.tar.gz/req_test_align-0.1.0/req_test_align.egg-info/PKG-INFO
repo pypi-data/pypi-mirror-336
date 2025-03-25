@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: req-test-align
+Version: 0.1.0
+Summary: A tool to align requirements and test cases
+Author: ReqTestAlign
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: openai>=0.27.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: parso>=0.8.2
+Requires-Dist: javalang>=0.13.0
+Requires-Dist: unidiff>=0.5.5
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: py-cpuinfo>=9.0.0
+Requires-Dist: pynvml; platform_system == "Windows" or platform_system == "Linux"
