@@ -1,0 +1,3 @@
+[console_scripts]
+HuasiShijiCcnaShiyanShouceDiwubanFix1 = HuasiShijiCcnaShiyanShouceDiwubanFix1.__main__:main
+huasi-shiji-ccna-shiyan-shouce-diwuban-fix1 = HuasiShijiCcnaShiyanShouceDiwubanFix1.__main__:main
