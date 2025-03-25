@@ -1,0 +1,10 @@
+README.md
+build.py
+publish.py
+pyproject.toml
+release.py
+uvx_release.egg-info/PKG-INFO
+uvx_release.egg-info/SOURCES.txt
+uvx_release.egg-info/dependency_links.txt
+uvx_release.egg-info/entry_points.txt
+uvx_release.egg-info/top_level.txt

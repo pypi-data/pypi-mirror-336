@@ -1,0 +1,26 @@
+[project]
+name = "uvx-release"
+version = "0.1.1"
+description = "Temporary shortcut and fix for `uv build/publish` issues"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Gwang-Jin Kim", email = "gwang.jin.kim.phd@mgail.com"}]
+license = {text = "MIT"}
+keywords = ["uv", "uvx", "publish", "build", "pypirc"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+build = "build:main"
+publish = "publish:main"
+release = "release:main"
+
+[tool.setuptools]
+py-modules = ["build", "publish", "release"]
