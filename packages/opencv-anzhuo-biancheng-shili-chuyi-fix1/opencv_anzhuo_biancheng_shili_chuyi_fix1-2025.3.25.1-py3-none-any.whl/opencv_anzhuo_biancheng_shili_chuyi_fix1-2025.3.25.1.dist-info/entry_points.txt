@@ -1,0 +1,3 @@
+[console_scripts]
+OpencvAnzhuoBianchengShiliChuyiFix1 = OpencvAnzhuoBianchengShiliChuyiFix1.__main__:main
+opencv-anzhuo-biancheng-shili-chuyi-fix1 = OpencvAnzhuoBianchengShiliChuyiFix1.__main__:main
