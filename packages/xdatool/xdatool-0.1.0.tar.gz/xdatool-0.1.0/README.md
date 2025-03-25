@@ -1,0 +1,144 @@
+# XDataTool Library
+
+A Python utility library for database operations, file handling, and web interfaces.
+
+## Classes
+
+### dev
+
+Database and ORM utility class.
+
+Methods:
+- `engine(engine_session)`: Creates a engine
+- `session(engine_session)`: Creates database session
+- `base()`: Returns a declarative base
+- `metadata(base, engine)`: Creates database tables
+- `add_commit(session, user)`: Adds and commits objects to database
+- `_Column(*args, **kwargs)`: Column creator helper
+- `Integer()`: Creates Integer column type
+- `String(length)`: Creates String column type
+
+### dataTool
+
+File and utility operations class.
+
+Methods:
+- `dell(file)`: Deletes specified file
+- `read_data(session, model)`: Reads and prints all records from model
+- `connet(file, name)`: Creates and writes to a file
+- `email_send(subject, to, from_)`: Creates email message
+- `_inter(app_name, route, db_path)`: Creates Flask interface for database
+- `create_template(template_dir)`: Creates default data view template
+- `ensure_template_dir(path)`: Ensures template directory exists
+
+## Example Usage
+
+```python
+from xdatatool import dev, dataTool
+
+# Database setup
+engine = dev.engine('sqlite:///database.db')
+Session = dev.session(engine)
+Base = dev.base()
+
+# Define model
+class User(Base):
+    __tablename__ = 'users'
+    id = dev._Column(dev.Integer(), primary_key=True)
+    name = dev._Column(dev.String(50))
+
+# Create tables
+dev.metadata(Base, engine)
+
+# Web interface
+app = dataTool._inter('myapp', '/data', 'database.db')
+app.run(debug=True)
+```
+
+## HTTP Interface
+
+The `_inter()` method in dataTool creates a web interface to view and interact with your database records.
+
+### Parameters
+- `app_name`: Name of your Flask application
+- `route`: URL endpoint for the data view (e.g., '/data')
+- `db_path`: Path to your SQLite database file
+- `port`: (Optional) Custom port number (default: 3000)
+- `model_path`: (Optional) Path to model module (e.g., 'models.user.UserModel')
+- `model_class`: (Optional) Direct model class reference
+
+### Requirements
+- Flask must be installed (`pip install flask`)
+- SQLAlchemy for database operations
+
+### Usage Examples
+
+Basic setup with model class:
+```python
+from models import UserModel
+app = dataTool._inter('myapp', '/data', 'database.db', model_class=UserModel)
+app.run()
+```
+
+Using model path:
+```python
+app = dataTool._inter('myapp', '/data', 'database.db', 
+                      model_path='models.user.UserModel')
+app.run()
+```
+
+Custom configuration:
+```python
+app = dataTool._inter('myapp', '/data', 'database.db',
+                      port=3000,
+                      model_class=UserModel)
+app.run(host='0.0.0.0')  # Access from other machines
+```
+
+The web interface will automatically:
+- Load model class from provided path or direct reference
+- Connect to your database
+- Display records in a formatted table view
+- Handle errors gracefully with proper messages
+
+## Template Generation
+
+The dataTool class includes built-in template generation. When `_inter()` is called, it automatically:
+
+1. Checks for template directory
+2. Creates template directory if missing
+3. Generates default data.html template
+
+Example implementation:
+```python
+from xdatatool import dataTool
+
+# Templates are auto-generated on first run
+app = dataTool._inter('myapp', '/data', 'database.db')
+
+# Or explicitly create templates
+dataTool.ensure_template_dir('templates')
+dataTool.create_template('templates')
+
+app.run()
+```
+
+# DevKey
+
+A Python module for developer key management.
+
+## Installation
+
+```bash
+pip install devkey
+```
+
+## Usage
+
+```python
+from devkey import main
+```
+
+## License
+
+MIT License

@@ -1,0 +1,10 @@
+README.md
+setup.py
+xdatool/__init__.py
+xdatool/cli.py
+xdatool.egg-info/PKG-INFO
+xdatool.egg-info/SOURCES.txt
+xdatool.egg-info/dependency_links.txt
+xdatool.egg-info/entry_points.txt
+xdatool.egg-info/requires.txt
+xdatool.egg-info/top_level.txt
