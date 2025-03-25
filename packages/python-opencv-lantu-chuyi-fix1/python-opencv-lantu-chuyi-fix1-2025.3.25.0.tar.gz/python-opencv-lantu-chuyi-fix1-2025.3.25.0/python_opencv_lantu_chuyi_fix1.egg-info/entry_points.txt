@@ -1,0 +1,3 @@
+[console_scripts]
+PythonOpencvLantuChuyiFix1 = PythonOpencvLantuChuyiFix1.__main__:main
+python-opencv-lantu-chuyi-fix1 = PythonOpencvLantuChuyiFix1.__main__:main
