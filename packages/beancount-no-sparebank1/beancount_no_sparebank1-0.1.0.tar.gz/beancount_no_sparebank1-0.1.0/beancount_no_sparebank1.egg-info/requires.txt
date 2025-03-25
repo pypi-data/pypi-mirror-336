@@ -1,0 +1,2 @@
+beangulp
+pypdf>=5.4.0

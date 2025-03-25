@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+beancount_no_sparebank1/__init__.py
+beancount_no_sparebank1/balance.py
+beancount_no_sparebank1/deposit.py
+beancount_no_sparebank1.egg-info/PKG-INFO
+beancount_no_sparebank1.egg-info/SOURCES.txt
+beancount_no_sparebank1.egg-info/dependency_links.txt
+beancount_no_sparebank1.egg-info/requires.txt
+beancount_no_sparebank1.egg-info/top_level.txt
