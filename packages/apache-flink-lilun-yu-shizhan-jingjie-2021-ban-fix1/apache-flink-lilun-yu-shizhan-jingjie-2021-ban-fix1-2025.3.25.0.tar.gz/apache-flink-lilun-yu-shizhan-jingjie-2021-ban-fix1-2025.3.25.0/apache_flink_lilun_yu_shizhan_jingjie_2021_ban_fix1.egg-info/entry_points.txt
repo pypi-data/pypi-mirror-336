@@ -1,0 +1,3 @@
+[console_scripts]
+ApacheFlinkLilunYuShizhanJingjie2021BanFix1 = ApacheFlinkLilunYuShizhanJingjie2021BanFix1.__main__:main
+apache-flink-lilun-yu-shizhan-jingjie-2021-ban-fix1 = ApacheFlinkLilunYuShizhanJingjie2021BanFix1.__main__:main
