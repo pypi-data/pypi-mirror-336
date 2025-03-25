@@ -1,0 +1,2 @@
+include physioex/train/models/check_table.csv
+include physioex/train/networks/config.yaml
