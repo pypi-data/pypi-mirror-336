@@ -1,0 +1,10 @@
+py_screen_grab/__init__.py,sha256=cilw5gRznQFAdHmo5FJm9NKf-1ODEx5OdNpF2cR-0K8,147
+py_screen_grab/cli.py,sha256=zeIYTD4JNh-DQDUZEKZg7dRwM3iqoHAmjjKtgnOEhJA,5331
+py_screen_grab/screen_grabber.py,sha256=gsGFwJuE62RF5Dq5OcrqPEYoQT8phkI0Qk35kXvcO54,8891
+py_screen_grab/window_utils.py,sha256=USzct_-I9zqXk_toCNsN6GXWUbR6AFZlNux6DOpr__4,1945
+py_screen_grab-1.2.0.dist-info/licenses/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+py_screen_grab-1.2.0.dist-info/METADATA,sha256=PiJWsjcyItsEBHWdAMcJRDiUtzUJUHafUMMX0lTVapU,2284
+py_screen_grab-1.2.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+py_screen_grab-1.2.0.dist-info/entry_points.txt,sha256=3I_bj-10-54-8y75vULK6J9GKYziPgsWBMj6m5ytmC8,55
+py_screen_grab-1.2.0.dist-info/top_level.txt,sha256=AezfuoNux3asTBPwugI-95x2PjDXIQDpeF2OzgS1QaY,15
+py_screen_grab-1.2.0.dist-info/RECORD,,
