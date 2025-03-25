@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/tushell.egg-info/PKG-INFO
+src/tushell.egg-info/SOURCES.txt
+src/tushell.egg-info/dependency_links.txt
+src/tushell.egg-info/requires.txt
+src/tushell.egg-info/top_level.txt
+tests/test_cli.py
