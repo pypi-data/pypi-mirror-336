@@ -1,0 +1,61 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: [self-hosted, linux, x64, gpu]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+
+    - name: Clear local resources
+      run: |
+        cd ~
+        rm -rf .grid
+
+    - name: Configure access credentials
+      env:
+        ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+        ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+        STORAGE_TOKEN: ${{ secrets.STORAGE_TOKEN }}
+      run: |
+        mkdir -p "$HOME/.grid"
+        printf '{ 
+              "tokens": {
+                  "username": "%s",
+                  "password": "%s",
+                  "storage_token": "%s"
+              },
+              "resources": {
+                  "host_grid_local": true,
+                  "local": {
+                      "ip": "127.0.0.1"
+                  }
+              }
+          }\n' "$ACR_USERNAME" "$ACR_PASSWORD" "$STORAGE_TOKEN" > "$HOME/.grid/resource_config.json"
+
+    - name: Run tests
+      run: |
+        pip install pytest
+        pytest test/test_init_terminate.py
+        pytest test/test_airgen_session.py
+        pytest test/test_isaac_session.py
+        pytest test/test_restart_stopsession.py
