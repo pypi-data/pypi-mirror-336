@@ -1,0 +1,3 @@
+[console_scripts]
+ZhongguoQiye2020RengongzhinengYingyongShijianYuQushiFix1 = ZhongguoQiye2020RengongzhinengYingyongShijianYuQushiFix1.__main__:main
+zhongguo-qiye-2020-rengongzhineng-yingyong-shijian-yu-qushi-fix1 = ZhongguoQiye2020RengongzhinengYingyongShijianYuQushiFix1.__main__:main
