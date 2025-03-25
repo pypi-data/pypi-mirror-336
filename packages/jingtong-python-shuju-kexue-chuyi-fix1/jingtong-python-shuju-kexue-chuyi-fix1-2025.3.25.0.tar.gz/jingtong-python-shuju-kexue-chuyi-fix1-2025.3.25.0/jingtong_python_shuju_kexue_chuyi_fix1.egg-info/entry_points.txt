@@ -1,0 +1,3 @@
+[console_scripts]
+JingtongPythonShujuKexueChuyiFix1 = JingtongPythonShujuKexueChuyiFix1.__main__:main
+jingtong-python-shuju-kexue-chuyi-fix1 = JingtongPythonShujuKexueChuyiFix1.__main__:main
