@@ -1,0 +1,3 @@
+[console_scripts]
+analyze = auto_doc_utils.project_analyzer:main
+genreq = auto_doc_utils.requirements_generator:main
