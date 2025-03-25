@@ -1,0 +1,26 @@
+debug_mode: false  # Set to true to enable debug mode
+test_data_dir: "test_data"
+test_table_name: "test.parquet"
+preselected_file_extensions:
+  # Bioimage Common Types
+  - zarr
+  - czi
+  - tif
+  - tiff
+  - nd2
+  - lsm
+  - hdf5
+  # Environmental Science
+  - netcdf
+  - shapefile
+  - geojson
+  # Medical Images
+  - dicom
+  - nii
+  - dcm
+  # Additional Common Image Formats
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - gif

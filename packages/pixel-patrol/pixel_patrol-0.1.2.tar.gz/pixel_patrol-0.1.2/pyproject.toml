@@ -1,0 +1,65 @@
+[project]
+name = "pixel-patrol"  # This is the PyPI name (with hyphen)
+version = "0.1.2"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "imageio>=2.27.0",
+    "matplotlib>=3.10.1",
+    "pandas>=2.2.3",
+    "streamlit>=1.43.2",
+    "numpy>=1.21.0,<2.0.0",
+    "image>=1.5.33",
+    "plotly>=6.0.1",
+    "plotly-express>=0.4.1",
+    "tk>=0.1.0",
+    "bioio>=1.3.0",
+    "bioio-base==1.0.4",
+    "bioio-czi>=1.0.3",
+    "bioio-lif>=1.0.1",
+    "bioio-nd2>=1.0.1",
+    "bioio-tifffile>=1.0.1",
+    "bioio-ome-zarr>=1.1.1",
+    "bioio-ome-tiff>=1.0.2",
+    "bioio-dv>=1.0.1",
+    "pyyaml>=6.0.2",
+    "polars>=1.26.0",
+    "streamlit-extras>=0.6.0",
+    "tensorboard>=2.18.0",
+    "tensorflow>=2.18.0",
+    "pywavelets>=1.8.0",
+    "opencv-python-headless>=4.11.0.86",
+    "statsmodels>=0.14.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pixel_patrol*"]
+
+[tool.setuptools.package-data]
+"pixel_patrol" = ["config.yaml"]
+"pixel_patrol.data.img" = ["prevalidation.png"]
+
+[project.scripts]
+pixel-patrol = "pixel_patrol.streamlit_main:main"
+
+[project.entry-points."pixel_patrol.widgets"]  # Changed from image_prevalidation.widgets
+file_timestamp = "pixel_patrol.widgets.file_stats.file_timestamp:FileTimestampWidget"
+file_size = "pixel_patrol.widgets.file_stats.file_size:FileSizeWidget"
+file_extension = "pixel_patrol.widgets.file_stats.file_extension:FileExtensionWidget"
+data_type = "pixel_patrol.widgets.metadata.data_type:DataTypeWidget"
+dim_order = "pixel_patrol.widgets.metadata.dim_order:DimOrderWidget"
+dim_size = "pixel_patrol.widgets.metadata.dim_size:DimSizeWidget"
+image_mosaik = "pixel_patrol.widgets.visualization.image_mosaik:ImageMosaikWidget"
+dataset_stats = "pixel_patrol.widgets.dataset_stats.dataset_stats:DatasetStatsWidget"
+embedding_projector = "pixel_patrol.widgets.visualization.embedding_projector:EmbeddingProjectorWidget"
+image_quality = "pixel_patrol.widgets.dataset_stats.image_quality:ImageQualityWidget"
+summary = "pixel_patrol.widgets.summary.summary:SummaryWidget"
+dataframe = "pixel_patrol.widgets.summary.dataframe:DataFrameWidget"
