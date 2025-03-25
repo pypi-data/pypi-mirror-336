@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: graph-games-proto
+Version: 0.3.594
+Requires-Dist: multipledispatch==1.0.0
+Requires-Dist: pyrsistent==0.20.0
+Requires-Dist: numpy==2.2.4
+
