@@ -1,0 +1,17 @@
+pipask/__init__.py,sha256=ZnynpNjIkafgyAMLSAT93lcNOXYAK-BGN6ootWqhUPg,219
+pipask/checks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipask/checks/repo_popularity.py,sha256=vdHdUXfDRlaGUoABVhoM2w8crLFIWMLMJrrQar1na1M,1682
+pipask/checks/types.py,sha256=zxXayKdkMD0btNmbrSe7D2g9O2r2UiFnQ74hScsLZI8,1147
+pipask/cli_helpers.py,sha256=hBpzDON9_CV0HKwr78JATBtyGlwwBGOfWLxscItYMkU,3387
+pipask/exception.py,sha256=kBHs7F1Skx8vEKcqsWlBgBRAWQxCiZ-fV6C8NcDW9U0,43
+pipask/infra/pip.py,sha256=0tZ90A7DUMtIaxbokFQpzMNRvGVW8LxadCVNdujaqHc,2641
+pipask/infra/pypi.py,sha256=4mBWcRJlejWTLS3VjVnfMuTOLui4sp5YmU9aSjXVhX4,3203
+pipask/infra/repo_client.py,sha256=7xIfk41-lTgD53Fe0sf08gt9wifE43nV7UlMNpRrQxk,2380
+pipask/main.py,sha256=4gsz3wK9gmhQhn-9u0uRbkupvh8r0EQi90AaZClWIxQ,3761
+pipask/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipask/report.py,sha256=E4-UC9fFcYB6eujZjK8E3sXUO5Qa0aX1ErF_FII3aso,1269
+pipask-0.1.0.dist-info/LICENSE,sha256=NEQs-zj7gutucFHHX_YtIpn3JKL8BbFXceh-NMAUwVE,1066
+pipask-0.1.0.dist-info/METADATA,sha256=YVn-x7Y0UF0vgDawks_tpHf0OQ5ylMYAuA4F2v0Xja8,2942
+pipask-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pipask-0.1.0.dist-info/entry_points.txt,sha256=fGGn10mO2cdUIiDir3fPItCLYLMq48eEL8iXyCy7_q0,42
+pipask-0.1.0.dist-info/RECORD,,
