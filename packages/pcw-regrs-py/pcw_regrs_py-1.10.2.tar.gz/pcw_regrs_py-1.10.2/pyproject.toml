@@ -1,0 +1,27 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "pcw_regrs_py"
+requires-python = ">=3.9"
+dependencies = ["pycw_fn>=0.1.2", "numpy>=1.25", "scipy>=1.10"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+keywords = ["piecewise", "regression", "math", "science", "algorithm"]
+version = "1.10.2"
+
+[project.urls]
+"Homepage" = "https://github.com/SV-97/pcw-regrs"
+"Bug Tracker" = "https://github.com/SV-97/pcw-regrs/issues"
+
+[project.optional-dependencies]
+example = ["matplotlib", "plotly"]
+
+[tool]
+
+[tool.maturin]
+manifest-path = "pcw_regrs_py/Cargo.toml"
