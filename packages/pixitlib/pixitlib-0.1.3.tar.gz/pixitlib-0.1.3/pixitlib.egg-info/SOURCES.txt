@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pixitlib/__init__.py
+pixitlib/consoleConnexion.py
+pixitlib.egg-info/PKG-INFO
+pixitlib.egg-info/SOURCES.txt
+pixitlib.egg-info/dependency_links.txt
+pixitlib.egg-info/top_level.txt
