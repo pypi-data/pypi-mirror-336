@@ -1,0 +1,9 @@
+{
+  "main.js": "/static/plugins/cloud_captchas/dist/js/main.62bec429.bundle.js",
+  "main.css": "/static/plugins/cloud_captchas/dist/css/main.46091087.css",
+  "js/monaco.css.worker.js": "/static/plugins/cloud_captchas/dist/js/monaco.css.worker.js",
+  "js/monaco.html.worker.js": "/static/plugins/cloud_captchas/dist/js/monaco.html.worker.js",
+  "js/monaco.editor.worker.js": "/static/plugins/cloud_captchas/dist/js/monaco.editor.worker.js",
+  "main.62bec429.bundle.js.map": "/static/plugins/cloud_captchas/dist/js/main.62bec429.bundle.js.map",
+  "main.46091087.css.map": "/static/plugins/cloud_captchas/dist/css/main.46091087.css.map"
+}
