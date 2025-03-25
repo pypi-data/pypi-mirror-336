@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+icub_pybullet.egg-info/PKG-INFO
+icub_pybullet.egg-info/SOURCES.txt
+icub_pybullet.egg-info/dependency_links.txt
+icub_pybullet.egg-info/requires.txt
+icub_pybullet.egg-info/top_level.txt
