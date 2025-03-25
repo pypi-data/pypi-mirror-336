@@ -1,0 +1,3 @@
+[console_scripts]
+PytorchRengongzhinengJichuzhishiChuyiFix1 = PytorchRengongzhinengJichuzhishiChuyiFix1.__main__:main
+pytorch-rengongzhineng-jichuzhishi-chuyi-fix1 = PytorchRengongzhinengJichuzhishiChuyiFix1.__main__:main
