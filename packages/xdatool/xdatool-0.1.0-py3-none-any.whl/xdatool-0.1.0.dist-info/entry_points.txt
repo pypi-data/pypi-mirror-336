@@ -1,0 +1,2 @@
+[console_scripts]
+kingalters-devkey = devkey.cli:main
