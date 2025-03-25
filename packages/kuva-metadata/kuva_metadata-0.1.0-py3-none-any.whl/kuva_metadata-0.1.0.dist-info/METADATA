@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kuva-metadata
+Version: 0.1.0
+Summary: Definitions of Kuva Space product metadata
+License: MIT
+Author: Guillem Ballesteros
+Author-email: guillem@kuvaspace.com
+Requires-Python: >=3.10,<=3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: kuva-geometry
+Requires-Dist: networkx (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: numpy-quaternion (>=2022.4.4,<2023.0.0)
+Requires-Dist: pint (>=0.22,<0.23)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: pytz (>=2023.4,<2024.0)
+Requires-Dist: rasterio (>=1.4.1,<2.0.0)
+Requires-Dist: rich (>=13.9.3,<14.0.0)
+Requires-Dist: shapely (>=2.0.6,<3.0.0)
+Requires-Dist: sympy (>=1.13.3,<2.0.0)
