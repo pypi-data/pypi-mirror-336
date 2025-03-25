@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: alethic-ism-core
+Version: 0.1.dev1
+Summary: Alethic Instruction-Based State Machine (Core Python SDK)
+Home-page: https://github.com/quantumwake/alethic-ism-core
+Author: Kasra Rasaee
+Author-email: krasaee@quantumwake.io
+License: AGPL-3.0-or-later
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
