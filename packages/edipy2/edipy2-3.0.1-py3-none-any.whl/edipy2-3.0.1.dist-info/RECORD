@@ -1,0 +1,13 @@
+edipy2/__init__.py,sha256=Uwe5AIfXobrnBQFNtfzEmu6RszRySyNr6reu2kg2KW4,161
+edipy2/edi2py.py,sha256=2YL3uNgRqDH_yiDnXchckZHBex-aLrwq4cR2ppqiXWA,11118
+edipy2/func_aux_funx.py,sha256=bkY2j5xeRATtewrUdLqqwzGMtdvBFM1AUhSzlNlDmvM,12398
+edipy2/func_bath.py,sha256=3VI7k7BJFksNTjMa_jzBRSiwq_CAPPvwkYYP3fhmn2w,53169
+edipy2/func_bath_fit.py,sha256=lgDnRpBB7K58zwO_CbtEajZJD9Vhey8wOmc5z1MfPtc,14967
+edipy2/func_io.py,sha256=u7NqldR4BaxGKRiiANYk50RK3TTow83a3_LNhLdzX3g,49215
+edipy2/func_main.py,sha256=WLHDFKUfl3sqxwr2yptq0pZc9tOs2Thec2QwVs8LX14,8011
+edipy2/func_read_input.py,sha256=a6jBmNLOtck1eblc1v6FoCPKw8v21uwDpy4NbxC3QYo,873
+edipy2-3.0.1.dist-info/licenses/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+edipy2-3.0.1.dist-info/METADATA,sha256=YYYCOKK1tPX3vgM61vgPYXpQZ_x3bku7Sei25nKGDkA,2399
+edipy2-3.0.1.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+edipy2-3.0.1.dist-info/top_level.txt,sha256=S9psPdC9p1yECuMbaUIEyLLHiIF6VQpOpvfHslbHBcc,7
+edipy2-3.0.1.dist-info/RECORD,,
