@@ -1,0 +1,3 @@
+[console_scripts]
+Opencv2JisuanjiShijueYingyongBianchengMijiChuyiFix1 = Opencv2JisuanjiShijueYingyongBianchengMijiChuyiFix1.__main__:main
+opencv2-jisuanji-shijue-yingyong-biancheng-miji-chuyi-fix1 = Opencv2JisuanjiShijueYingyongBianchengMijiChuyiFix1.__main__:main
