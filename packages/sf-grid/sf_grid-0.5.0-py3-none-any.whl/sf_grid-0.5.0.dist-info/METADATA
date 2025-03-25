@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: sf-grid
+Version: 0.5.0
+Summary: General Robot Intelligence Development Platform - Enterprise Console
+Project-URL: Homepage, https://scaledfoundations.ai
+Author-email: Scaled Foundations <info@scaledfoundations.ai>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: art
+Requires-Dist: docker
+Requires-Dist: fastapi
+Requires-Dist: httpx
+Requires-Dist: packaging
+Requires-Dist: paramiko
+Requires-Dist: pyjwt
+Requires-Dist: pyyaml
+Requires-Dist: tabulate
+Requires-Dist: uvicorn
+Description-Content-Type: text/markdown
+
+## General Robot Intelligence Development Platform
+
+The SF-GRID library provides access to the General Robot Intelligence Development Enterprise platform. GRID is a platform for rapid infusion of AI into robotic platforms built by Scaled Foundations. Please visit https://scaledfoundations.ai/product/grid-enterprise for more details.
+
+### Installation
+
+```
+pip install sf-grid
+```
+
+### Documentation
+The documentation can be found at [docs.scaledfoundations.ai/](https://docs.scaledfoundations.ai/grid_sdk/index.html)
+
