@@ -1,0 +1,88 @@
+[tool.black]
+line-length = 240
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llavaction"
+version = "0.0.1"
+description = "LLaVAction: Evaluating and Training Multi-Modal Large Language Models for Action Recognition"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[project.optional-dependencies]
+standalone = [
+    "shortuuid",
+    "httpx==0.24.0",
+    "einops",
+    "ftfy",
+]
+
+
+train = [
+    "llavaction[standalone]",
+    "open_clip_torch",
+    "fastapi",
+    "markdown2[all]",
+    "numpy",
+    "requests",
+    "sentencepiece",
+    "uvicorn",
+    "wandb",
+    "deepspeed==0.14.4",
+    "peft==0.4.0",
+    "bitsandbytes==0.41.0",
+    "einops==0.6.1",
+    "einops-exts==0.0.4",
+    "gradio_client==0.2.9",
+    "urllib3<=2.0.0",
+    "pydantic==1.10.8",
+    "hf_transfer",
+    "opencv-python",
+    "av",
+    "decord",
+    "tyro",
+    "scipy",
+]
+
+
+[tool.setuptools.packages.find]
+include = ["llavaction*"]
+exclude = [
+    "assets*",
+    "benchmark*",
+    "docs",
+    "dist*",
+    "playground*",
+    "scripts*",
+    "tests*",
+    "checkpoints*",
+    "project_checkpoints*",
+    "debug_checkpoints*",
+    "mlx_configs*",
+    "wandb*",
+    "notebooks*",
+]
+
+[tool.wheel]
+exclude = [
+    "assets*",
+    "benchmark*",
+    "docs",
+    "dist*",
+    "playground*",
+    "scripts*",
+    "tests*",
+    "checkpoints*",
+    "project_checkpoints*",
+    "debug_checkpoints*",
+    "mlx_configs*",
+    "wandb*",
+    "notebooks*",
+]

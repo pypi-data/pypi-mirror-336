@@ -1,0 +1,90 @@
+Metadata-Version: 2.4
+Name: llavaction
+Version: 0.0.1
+Summary: LLaVAction: Evaluating and Training Multi-Modal Large Language Models for Action Recognition
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: standalone
+Requires-Dist: shortuuid; extra == "standalone"
+Requires-Dist: httpx==0.24.0; extra == "standalone"
+Requires-Dist: einops; extra == "standalone"
+Requires-Dist: ftfy; extra == "standalone"
+Provides-Extra: train
+Requires-Dist: llavaction[standalone]; extra == "train"
+Requires-Dist: open_clip_torch; extra == "train"
+Requires-Dist: fastapi; extra == "train"
+Requires-Dist: markdown2[all]; extra == "train"
+Requires-Dist: numpy; extra == "train"
+Requires-Dist: requests; extra == "train"
+Requires-Dist: sentencepiece; extra == "train"
+Requires-Dist: uvicorn; extra == "train"
+Requires-Dist: wandb; extra == "train"
+Requires-Dist: deepspeed==0.14.4; extra == "train"
+Requires-Dist: peft==0.4.0; extra == "train"
+Requires-Dist: bitsandbytes==0.41.0; extra == "train"
+Requires-Dist: einops==0.6.1; extra == "train"
+Requires-Dist: einops-exts==0.0.4; extra == "train"
+Requires-Dist: gradio_client==0.2.9; extra == "train"
+Requires-Dist: urllib3<=2.0.0; extra == "train"
+Requires-Dist: pydantic==1.10.8; extra == "train"
+Requires-Dist: hf_transfer; extra == "train"
+Requires-Dist: opencv-python; extra == "train"
+Requires-Dist: av; extra == "train"
+Requires-Dist: decord; extra == "train"
+Requires-Dist: tyro; extra == "train"
+Requires-Dist: scipy; extra == "train"
+Dynamic: license-file
+
+# LLaVAction: Evaluating and Training Multi-Modal Large Language Models for Action Recognition
+
+[![Static Badge](https://img.shields.io/badge/LLaVAction-paper-green)](http://arxiv.org/abs/tbd)
+[![Demo Website](https://img.shields.io/badge/LLaVAction-website-red)](https://mmathislab.github.io/llavaction/)
+[![llavaction-checkpoints](https://img.shields.io/badge/LLaVAction-checkpoints_🤗-blue)](https://huggingface.co/MLAdaptiveIntelligence)
+
+[![Downloads](https://static.pepy.tech/badge/llavaction)](https://pepy.tech/project/llavaction)
+[![Downloads](https://static.pepy.tech/badge/llavaction/month)](https://pepy.tech/project/llavaction)
+[![PyPI version](https://badge.fury.io/py/llavaction.svg)](https://badge.fury.io/py/llavaction)
+![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-red)
+
+## Abstract
+
+Understanding human behavior requires measuring behavioral actions. Due to its complexity, behavior is best mapped onto a rich, semantic structure such as language. The recent development of multi-modal large language models (MLLMs) is a promising candidate for a wide range of action understanding tasks. In this work, we focus on evaluating and then improving MLLMs to perform action recognition. We reformulate EPIC-KITCHENS-100, one of the largest and most challenging egocentric action datasets, to the form of video multiple question answering (EPIC-KITCHENS-100-MQA). We show that when we sample difficult incorrect answers as distractors, leading MLLMs struggle to recognize the correct actions. We propose a series of methods that greatly improve the MLLMs' ability to perform action recognition, achieving state-of-the-art on both the EPIC-KITCHENS-100 Challenge, as well as outperforming GPT-4o by 21 points in accuracy on EPIC-KITCHENS-100-MQA. Lastly, we show improvements on other action-related video benchmarks such as VideoMME, PerceptionTest and MVBench.
+
+## Code
+
+- This repository contains the implementation for our preprint on evaluating and training multi-modal large language models for action recognition. 
+- Our code is built on [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT), and files in the directory `llavaction/action` are related to our work. We thank the authors of LLaVA-NeXT for making their code publicly available.
+- The files in the `/eval`, `/model`, `/serve` and `/train` are directly from [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT), unless modified and noted below.
+  - `/model/llava_arch.py`  
+  - `/model/language_model/llava_qwen.py`  
+  - `/train/train.py`  
+  - `/train/llava_trainer.py`  
+  - `/utils.py` 
+
+## Demo 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AdaptiveMotorControlLab/LLaVAction/blob/main/example/llavaction_video_demo.ipynb)
+ We provide code to run video inference in a Jupyter Notebook (which can be run on Google Colaboratory).
+
+  
+### Installation guide for video inference:
+```bash
+conda create -n llavaction python=3.10 -y
+conda activate llavaction
+pip install --upgrade pip  # Enable PEP 660 support.
+pip install --pre llavaction
+```
+
+- Please see the `/example` directory for a demo notebook.
+
+## EPIC-KITCHENS-100-MQA 
+
+In our work, we introduce a new way to evaluate MLMMs for action recognition by casting EPIC-KITCHENS-100 into a multi-question-answer benchmark. This has not yet been released [as of 3/2025], but please check the issues or open an issue if you are interested in accessing this resource before the paper is published. We also plan to integrate this the package [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval).
+
+# Acknowledgments 
+We thank the Swiss AI Initiative Project ID a03 from the Swiss National Supercomputing Centre (CSCS); Boehringer Ingelheim Fonds PhD stipend (H.Q.); M.W.M. thanks the Vallee Foundation; M.W.M. and A.M. thank the SNSF by grant No. 320030-227871.
+
+![group-logo](https://github.com/user-attachments/assets/ad034dc3-5e92-4e8b-915b-85e443b3bdb2)
+
