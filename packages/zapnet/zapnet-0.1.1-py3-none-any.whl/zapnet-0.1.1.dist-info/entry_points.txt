@@ -1,0 +1,3 @@
+[console_scripts]
+zapnet=zapnet.cli:cli
+
