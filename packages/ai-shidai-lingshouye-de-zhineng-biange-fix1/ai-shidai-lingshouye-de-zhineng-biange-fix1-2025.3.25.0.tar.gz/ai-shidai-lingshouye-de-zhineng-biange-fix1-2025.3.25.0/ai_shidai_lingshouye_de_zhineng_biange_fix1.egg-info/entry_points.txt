@@ -1,0 +1,3 @@
+[console_scripts]
+AiShidaiLingshouyeDeZhinengBiangeFix1 = AiShidaiLingshouyeDeZhinengBiangeFix1.__main__:main
+ai-shidai-lingshouye-de-zhineng-biange-fix1 = AiShidaiLingshouyeDeZhinengBiangeFix1.__main__:main
