@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edipy2"
+version = "3.0.0"
+description = "EDIpack2.0 Python API"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["edipack", "edipy"]
+authors = [
+  {name = 'Lorenzo Crippa', email = 'crippa.lorenzo@gmail.com'},
+  {name = 'Adriano Amaricci', email = 'amaricci@sissa.it'},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+dependencies = ["pkgconfig",
+                "numpy",
+                "mpi4py"]
+
+[project.urls]
+"Source" = "https://github.com/edipack/edipy2.git"
