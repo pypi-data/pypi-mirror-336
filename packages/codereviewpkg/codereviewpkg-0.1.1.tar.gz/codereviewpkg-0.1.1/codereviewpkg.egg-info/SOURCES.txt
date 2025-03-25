@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+codereviewpkg/__init__.py
+codereviewpkg/cli.py
+codereviewpkg/core.py
+codereviewpkg.egg-info/PKG-INFO
+codereviewpkg.egg-info/SOURCES.txt
+codereviewpkg.egg-info/dependency_links.txt
+codereviewpkg.egg-info/entry_points.txt
+codereviewpkg.egg-info/requires.txt
+codereviewpkg.egg-info/top_level.txt

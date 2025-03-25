@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: codereviewpkg
+Version: 0.1.1
+Summary: A Python package for automated code review and analysis
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/codereviewpkg
+Project-URL: Documentation, https://github.com/yourusername/codereviewpkg#readme
+Project-URL: Repository, https://github.com/yourusername/codereviewpkg.git
+Project-URL: Bug Tracker, https://github.com/yourusername/codereviewpkg/issues
+Keywords: code review,static analysis,code quality,linting,security
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pylint>=2.17.0
+Requires-Dist: black>=23.0.0
+Requires-Dist: bandit>=1.7.0
+Requires-Dist: radon>=6.0.0
+Requires-Dist: pydocstyle>=6.3.0
+Dynamic: license-file
+
+# CodeReviewPkg
+
+A Python package for automated code review and analysis.
+
+## Installation
+
+```bash
+pip install codereviewpkg
+```
+
+## Usage
+
+```python
+from codereviewpkg import CodeReviewer
+
+# Initialize the code reviewer
+reviewer = CodeReviewer()
+
+# Review a file
+results = reviewer.review_file("path/to/your/file.py")
+
+# Review a directory
+results = reviewer.review_directory("path/to/your/project")
+```
+
+## Features
+
+- Code style checking
+- Complexity analysis
+- Security vulnerability scanning
+- Best practices validation
+- Documentation checking
+
+## Requirements
+
+- Python 3.7+
+- See requirements.txt for package dependencies
+
+## License
+
+MIT License 
