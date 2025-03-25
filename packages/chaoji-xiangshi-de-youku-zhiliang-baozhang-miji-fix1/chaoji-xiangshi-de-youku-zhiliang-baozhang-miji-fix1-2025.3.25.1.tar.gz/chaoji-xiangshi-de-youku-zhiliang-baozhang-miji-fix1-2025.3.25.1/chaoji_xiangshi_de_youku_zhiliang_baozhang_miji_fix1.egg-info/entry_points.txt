@@ -1,0 +1,3 @@
+[console_scripts]
+ChaojiXiangshiDeYoukuZhiliangBaozhangMijiFix1 = ChaojiXiangshiDeYoukuZhiliangBaozhangMijiFix1.__main__:main
+chaoji-xiangshi-de-youku-zhiliang-baozhang-miji-fix1 = ChaojiXiangshiDeYoukuZhiliangBaozhangMijiFix1.__main__:main
