@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+batch_football_data.egg-info/PKG-INFO
+batch_football_data.egg-info/SOURCES.txt
+batch_football_data.egg-info/dependency_links.txt
+batch_football_data.egg-info/requires.txt
+batch_football_data.egg-info/top_level.txt
+football_data/__init__.py
+football_data/models.py
+football_data/repositories.py
