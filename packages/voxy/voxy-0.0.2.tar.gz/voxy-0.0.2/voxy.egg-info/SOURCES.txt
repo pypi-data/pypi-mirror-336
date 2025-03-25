@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+voxy/__init__.py
+voxy/base.py
+voxy.egg-info/PKG-INFO
+voxy.egg-info/SOURCES.txt
+voxy.egg-info/dependency_links.txt
+voxy.egg-info/not-zip-safe
+voxy.egg-info/top_level.txt
