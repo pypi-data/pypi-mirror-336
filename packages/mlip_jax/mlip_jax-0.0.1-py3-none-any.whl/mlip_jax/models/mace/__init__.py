@@ -1,0 +1,1 @@
+from mlip_jax.models.mace.mace_factory import create_mace_force_field
