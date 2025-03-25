@@ -1,0 +1,12 @@
+README.md
+setup.py
+ZiranyuyanChuliNlpJibengainianDaquanFix1/README.md
+ZiranyuyanChuliNlpJibengainianDaquanFix1/__init__.py
+ZiranyuyanChuliNlpJibengainianDaquanFix1/__main__.py
+ZiranyuyanChuliNlpJibengainianDaquanFix1/file.pdf
+ZiranyuyanChuliNlpJibengainianDaquanFix1/index.html
+ziranyuyan_chuli_nlp_jibengainian_daquan_fix1.egg-info/PKG-INFO
+ziranyuyan_chuli_nlp_jibengainian_daquan_fix1.egg-info/SOURCES.txt
+ziranyuyan_chuli_nlp_jibengainian_daquan_fix1.egg-info/dependency_links.txt
+ziranyuyan_chuli_nlp_jibengainian_daquan_fix1.egg-info/entry_points.txt
+ziranyuyan_chuli_nlp_jibengainian_daquan_fix1.egg-info/top_level.txt
