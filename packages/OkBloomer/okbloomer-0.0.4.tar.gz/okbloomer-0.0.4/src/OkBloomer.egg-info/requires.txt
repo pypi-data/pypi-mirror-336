@@ -1,0 +1,11 @@
+mmh3>5.0.0
+nptyping>=2.5.0
+numpy>=1.19.5
+
+[dev]
+mypy
+black
+
+[test]
+mypy
+black

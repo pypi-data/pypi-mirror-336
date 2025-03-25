@@ -1,0 +1,81 @@
+Metadata-Version: 2.4
+Name: OkBloomer
+Version: 0.0.4
+Summary: An implementation of the OkBloomer algorithm, an autoscaling Bloom filter with ultra-low memory footprint for Python.
+Author-email: Andrew DalPino <andrewdalpino@icloud.com>
+License: MIT
+Project-URL: Homepage, https://github.com/andrewdalpino/PyBloomer
+Project-URL: Documentation, https://github.com/andrewdalpino/PyBloomer/README.md
+Project-URL: Source, https://github.com/andrewdalpino/PyBloomer
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mmh3>5.0.0
+Requires-Dist: nptyping>=2.5.0
+Requires-Dist: numpy>=1.19.5
+Provides-Extra: dev
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Provides-Extra: test
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: black; extra == "test"
+Dynamic: license-file
+
+# Ok Bloomer
+An implementation of the OkBloomer algorithm, an autoscaling [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) with ultra-low memory footprint for Python. Ok Bloomer employs a novel layered filtering strategy that allows it to expand while maintaining an upper bound on the false positive rate. As such, Ok Bloomer is suitable for streaming data where the size is not known a priori.
+
+- **Ultra-low** memory footprint
+- **Autoscaling** works on streaming data
+- **Bounded** maximum false positive rate
+- **Open-source** and free to use commercially
+
+## Installation
+Install DNA Hash using a Python [package manager](https://packaging.python.org/en/latest/tutorials/installing-packages/), example pip:
+
+```
+pip install okbloomer
+```
+
+## Parameters
+| # | Name | Default | Type | Description |
+|---|---|---|---|---|
+| 1 | max_false_positive_rate | 0.01 | float | The upper bound on the false positivity rate. |
+| 2 | num_hashes | 4 | int | The number of hash functions used, i.e. the number of slices per layer. |
+| 3 | layer_size | 32000000 | int | The size of each layer of the filter in bits. Ideal sizes can be divided evenly by `num_hashes`.|
+
+## Example Usage
+
+```python
+from okbloomer import BloomFilter
+
+filter = BloomFilter(
+    max_false_positive_rate=0.01,
+    num_hashes=4,
+    layer_size=32000000,
+)
+
+filter.insert('foo')
+
+print(filter.exists('foo'))
+
+print(filter.existsOrInsert('bar'))
+
+print(filter.exists('bar'))
+
+print(filter.false_positive_rate())
+```
+
+```
+True 
+
+False
+
+True
+
+3.906249999999999e-27
+```
+
+## References
+- [1] A. DalPino. (2021). OkBloomer, a novel autoscaling Bloom Filter [[link](https://github.com/andrewdalpino/OkBloomer)].
+- [2] K. Christensen, et al. A New Analysis of the False-Positive Rate of a Bloom Filter.
+- [3] A. Kirsch, et al. Less Hashing, Same Performance: Building a Better Bloom Filter, 2006.

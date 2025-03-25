@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OkBloomer"
+version = "0.0.4"
+requires-python = ">= 3.10"
+dependencies = [
+  "mmh3>5.0.0",
+  "nptyping>=2.5.0",
+  "numpy>=1.19.5",
+]
+authors = [
+  {name = "Andrew DalPino", email = "andrewdalpino@icloud.com"},
+]
+description = "An implementation of the OkBloomer algorithm, an autoscaling Bloom filter with ultra-low memory footprint for Python."
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = ["mypy", "black"]
+test = ["mypy", "black"]
+
+[project.urls]
+Homepage = "https://github.com/andrewdalpino/PyBloomer"
+Documentation = "https://github.com/andrewdalpino/PyBloomer/README.md"
+Source = "https://github.com/andrewdalpino/PyBloomer"
