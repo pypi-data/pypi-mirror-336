@@ -1,0 +1,3 @@
+[console_scripts]
+LeetcodeCookbookFix1 = LeetcodeCookbookFix1.__main__:main
+leetcode-cookbook-fix1 = LeetcodeCookbookFix1.__main__:main
