@@ -1,0 +1,13 @@
+taxon2wikipedia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taxon2wikipedia/cli.py,sha256=HrLeM_o0gfSg3Utf5HmCe7ads025DMwyMDEZm1mhXac,288
+taxon2wikipedia/create_taxon_on_wikidata.py,sha256=WZbiS59a5Yvi8yLgrrZ0LZeuuuoclFrnluIxLB5z8q4,967
+taxon2wikipedia/helper.py,sha256=PweGUg_0Cg4ov9W2TPqzp7xYLzrwU-FcMwzy2-ZiNIs,19008
+taxon2wikipedia/render_page.py,sha256=eFW3Z2561ARP-yoG40B8RQj-OifZ3xkPUgmO_nFttzY,15551
+taxon2wikipedia/data/full_query_taxon.rq.jinja,sha256=Ugr07yb4PrdDaSfHmbO9Lb1JVR_9HkLudGOBQZBlYqw,3008
+tests/test_render_page.py,sha256=GGSpDEvuBfIw9ri7kdaKAL9NJHFQ_UUbHIDp9cDK-t4,4297
+taxon2wikipedia-0.1.0.dist-info/LICENSE,sha256=ObPPd8Mu853VsDntAILwvSsLgZTWQ5YuJQ2vqFvGgx8,1070
+taxon2wikipedia-0.1.0.dist-info/METADATA,sha256=bgJm5yj9tldfo5wHDjXh2mlN0C62tu-rGBwvrnBFq50,838
+taxon2wikipedia-0.1.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+taxon2wikipedia-0.1.0.dist-info/entry_points.txt,sha256=bLkpCofcMfFMfPxay6rQ-DxV2qkPL_ihnvZ8qEe5O-c,60
+taxon2wikipedia-0.1.0.dist-info/top_level.txt,sha256=6wcQG1P8FwfnlFmM3enGpJYqUoUAxAO6zhCnWP1Jcos,22
+taxon2wikipedia-0.1.0.dist-info/RECORD,,
