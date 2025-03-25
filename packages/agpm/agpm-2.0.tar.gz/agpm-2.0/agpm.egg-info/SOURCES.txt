@@ -1,0 +1,10 @@
+LICENCE
+README.md
+agpm.py
+pyproject.toml
+agpm.egg-info/PKG-INFO
+agpm.egg-info/SOURCES.txt
+agpm.egg-info/dependency_links.txt
+agpm.egg-info/entry_points.txt
+agpm.egg-info/requires.txt
+agpm.egg-info/top_level.txt
