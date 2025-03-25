@@ -1,0 +1,2 @@
+[console_scripts]
+selenium-monitor = selenium_monitor_tool.front:main
