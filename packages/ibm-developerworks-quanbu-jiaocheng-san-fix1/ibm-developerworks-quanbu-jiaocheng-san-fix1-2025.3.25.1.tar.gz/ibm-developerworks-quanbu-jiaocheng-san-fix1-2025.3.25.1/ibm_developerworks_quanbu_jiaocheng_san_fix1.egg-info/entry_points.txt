@@ -1,0 +1,3 @@
+[console_scripts]
+IbmDeveloperworksQuanbuJiaochengSanFix1 = IbmDeveloperworksQuanbuJiaochengSanFix1.__main__:main
+ibm-developerworks-quanbu-jiaocheng-san-fix1 = IbmDeveloperworksQuanbuJiaochengSanFix1.__main__:main
