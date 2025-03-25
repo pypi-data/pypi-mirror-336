@@ -1,0 +1,3 @@
+[console_scripts]
+YingyongZhinengYunweiShizhanShiduBanFix1 = YingyongZhinengYunweiShizhanShiduBanFix1.__main__:main
+yingyong-zhineng-yunwei-shizhan-shidu-ban-fix1 = YingyongZhinengYunweiShizhanShiduBanFix1.__main__:main
