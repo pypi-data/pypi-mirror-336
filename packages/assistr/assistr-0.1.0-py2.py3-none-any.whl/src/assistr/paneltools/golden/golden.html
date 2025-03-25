@@ -1,0 +1,312 @@
+{% extends base %}
+
+<!-- goes in body -->
+{% block preamble %}
+{% if app_favicon %}<link rel="icon" href="{{ app_favicon }}" type="{{favicon_type}}">{% endif %}
+{% if manifest %}<link rel="manifest" href="{{ manifest }}">{% endif %}
+{% if meta_name %}<meta name="name" content="{{ meta_name }}">{% endif %}
+{% if meta_description %}<meta name="description" content="{{ meta_description }}">{% endif %}
+{% if meta_keywords %}<meta name="keywords" content="{{ meta_keywords }}">{% endif %}
+{% if meta_author %}<meta name="author" content="{{ meta_author }}">{% endif %}
+{% if meta_refresh %}<meta http-equiv="refresh" content="{{ meta_refresh }}">{% endif %}
+{% if meta_viewport %}<meta name="viewport" content="{{ meta_viewport }}">{% endif %}
+{% if base_url and base_target %}<base href="{{ base_url }}" target="{{ base_target }}">{% endif %}
+{% endblock %}
+
+{% block postamble %}
+<!-- Template CSS -->
+{% for css in template_resources['css'].values() %}
+<link rel="stylesheet" href="{{ css }}">
+{% endfor %}
+{% for raw_css in template_resources['raw_css'] %}
+<style type="text/css">
+{{ raw_css }}
+</style>
+{% endfor %}
+
+<!-- Template JS -->
+{% for src in template_resources['js'].values() %}
+<script src="{{ src }}"></script>
+{% endfor %}
+{% for src in template_resources['js_modules'].values() %}
+<script src="{{ src }}" type="module"></script>
+{% endfor %}
+
+<style>
+  :root {
+    --header-background: {{ header_background or "var(--design-primary-color, var(--panel-primary-color))" }};
+    --header-color: {{ header_color or "var(--design-primary-text-color, var(--panel-on-primary-color))" }};
+    --sidebar-width: {{ sidebar_width }}px;
+  }
+  #header {
+    background-color: var(--header-background);
+    color: var(--header-color);
+  }
+
+  .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    width: 100px;
+    top: 0; /* Stay at the top */
+    left: 0;
+    /*background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    display: block;
+  }
+
+  .box {
+      width: 75px;
+      height: 100%;
+      background-color: #F4F5F7;
+      /* border-width:1px;
+      border-color: #075ddd; */
+        }
+</style>
+
+{% endblock %}
+
+<!-- goes in body -->
+{% block contents %}
+<header class="app-bar" id="header">
+  <div style="display: contents;">
+    <div class="app-header">
+      {% if app_logo %}<a href="{{ site_url }}"><img src="{{ app_logo }}" class="app-logo"></a>{% endif %}
+      {% if site_title %}<a class="title" href="{{ site_url }}" >{{ site_title }}</a>{% endif %}
+      {% if site_title and app_title%}<span class="title">-</span>{% endif %}
+      {% if app_title %}<a class="title" href="">{{ app_title }}</a>{% endif %}
+    </div>
+    <section class="header-contents">
+      {% for doc in docs %}
+      {% for root in doc.roots %}
+      {% if "header" in root.tags %}
+      {{ embed(root) }}
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </section>
+    <form>  
+      <select id = "main-menu" onchange = "handleMenu()" >  
+      <option>     </option>  
+      <option>ResetState</option>  
+      <option>ToggleTabs</option>  
+      </select>  
+      </form>  
+
+    {% if busy %}
+    <div class="pn-busy-container">
+      {{ embed(roots.busy_indicator) | indent(6) }}
+    </div>
+    {% endif %}
+ 
+  </div>
+</header>
+
+
+<!--
+This creates a fixed side bar. 
+<div class="box">
+</div> -->
+ 
+
+<div class="main-area header-adjust" id="main">
+
+  <main class="main-content" id="main-content"></main>
+  <div id="pn-Modal" class="pn-modal header-adjust">
+    <div class="pn-modal-content">
+      <span class="pn-modalclose" id="pn-closeModal">&times;</span>
+      {% for doc in docs %}
+      {% for root in doc.roots %}
+      {% if "modal" in root.tags %}
+      {{ embed(root) | indent(6) }}
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<p>
+  {{ layouts }}
+</p>
+
+<script type="text/javascript">
+  
+  var default_layout = {"settings":{"hasHeaders":false,"constrainDragToContainer":true,"reorderEnabled":true,"selectionEnabled":false,"popoutWholeStack":false,"blockedPopoutsThrowError":true,"closePopoutsOnUnload":true,"showPopoutIcon":false,"showMaximiseIcon":true,"showCloseIcon":true,"responsiveMode":"onload","tabOverlapAllowance":0,"reorderOnTabMenuClick":true,"tabControlOffset":10},"dimensions":{"borderWidth":5,"borderGrabWidth":15,"minItemHeight":10,"minItemWidth":10,"headerHeight":20,"dragProxyWidth":300,"dragProxyHeight":200},"labels":{"close":"close","maximise":"maximise","minimise":"minimise","popout":"open in new window","popin":"pop in","tabDropdown":"additional tabs"},"content":[{"type":"column","isClosable":true,"reorderEnabled":true,"title":"","content":[{"type":"row","isClosable":true,"reorderEnabled":true,"title":"","height":84.50363196125909,"content":[{"type":"stack","width":68.52713178294574,"isClosable":true,"reorderEnabled":true,"title":"","activeItemIndex":0,"content":[{"type":"component","componentName":"view","componentState":{"model":"<div id=\"08c13e6b-c380-4436-8f2e-0953127de471\" data-root-id=\"p2815\" style=\"display: contents;\"></div>","title":"Chat"},"isClosable":true,"reorderEnabled":true,"title":"Chat"}]},{"type":"stack","header":{},"isClosable":true,"reorderEnabled":true,"title":"","activeItemIndex":0,"width":31.472868217054263,"content":[{"type":"component","componentName":"view","componentState":{"model":"<div id=\"eba2475b-bb34-4290-9f56-119038d780b8\" data-root-id=\"p2868\" style=\"display: contents;\"></div>","title":"SQL"},"isClosable":true,"reorderEnabled":true,"title":"SQL"},{"type":"component","componentName":"view","componentState":{"model":"<div id=\"691d4d0b-68f3-41f4-a7a7-d1679b2fe7ed\" data-root-id=\"p2801\" style=\"display: contents;\"></div>","title":"Instructions"},"isClosable":true,"reorderEnabled":true,"title":"Instructions"},{"type":"component","componentName":"view","componentState":{"model":"<div id=\"7dcedc40-0323-4e7b-8655-ae7ddddf0cfb\" data-root-id=\"p2890\" style=\"display: contents;\"></div>","title":"Content"},"isClosable":true,"reorderEnabled":true,"title":"Content"}]}]},{"type":"row","isClosable":true,"reorderEnabled":true,"title":"","height":15.496368038740915,"content":[{"type":"stack","header":{},"isClosable":true,"reorderEnabled":true,"title":"","activeItemIndex":0,"height":25.52486187845304,"width":80.78668683812406,"content":[{"type":"component","componentName":"view","componentState":{"model":"<div id=\"b2812d54-3db6-48e9-b9c9-de51e5ab010e\" data-root-id=\"p2878\" style=\"display: contents;\"></div>","title":"Logs"},"isClosable":true,"reorderEnabled":true,"title":"Logs"}]},{"type":"stack","header":{},"isClosable":true,"reorderEnabled":true,"title":"","activeItemIndex":0,"width":19.213313161875945,"content":[{"type":"component","componentName":"view","componentState":{"model":"<div id=\"ed98baef-3004-4c60-9a75-f5e3c6f53ca2\" data-root-id=\"p2787\" style=\"display: contents;\"></div>","title":"Config"},"isClosable":true,"reorderEnabled":true,"title":"Config"}]}]}]}],"isClosable":true,"reorderEnabled":true,"title":"","openPopouts":[],"maximisedItemId":null}
+  
+  function ToggleTabs() {
+    myLayout.config.settings.hasHeaders = myLayout.config.settings.hasHeaders ? false : true; 
+    saveState();
+    location.reload();
+    console.log(myLayout.config.settings.hasHeaders)
+  }
+
+  function ResetState() {
+        localStorage.removeItem('savedState');
+        console.log("deleted savedState")
+        location.reload();
+  }
+
+  function handleMenu() {
+    var mylist = document.getElementById("main-menu");  
+    var selected = mylist.options[mylist.selectedIndex].text;  
+    if (selected != "") {
+      window[selected]();
+    }
+    }  
+
+  function replaceMatchingComponentStates(obj1, obj2) {
+    // Create a map of titles to componentStates in obj1 for quick lookup
+    const componentStateMap = new Map();
+    (function mapComponentStates(obj) {
+        if (Array.isArray(obj.content)) {
+            obj.content.forEach(mapComponentStates);
+        } else if (obj.componentState) {
+            componentStateMap.set(obj.componentState.title, obj.componentState);
+        }
+    })(obj1);
+
+    // Recursively replace componentStates in obj2 that have a matching title in obj1
+    (function replaceComponentStates(obj) {
+        if (Array.isArray(obj.content)) {
+            obj.content.forEach(replaceComponentStates);
+        } else if (obj.componentState && componentStateMap.has(obj.componentState.title)) {
+            obj.componentState = componentStateMap.get(obj.componentState.title);
+        }
+    })(obj2);
+
+    
+}
+  
+// const element = document.getElementById("root"); 
+// element.style.sidebar_width = " {{sidebar_width}} "; 
+ 
+  var config = {
+    content: [
+      {
+        type: 'row',
+        content: [
+	  {% if nav %}
+          {
+            type: 'component',
+            componentName: 'view',
+            componentState: {
+              title: "Sidebar",
+              model: '<div class="sidebar-contents">{% for doc in docs %}{% for root in doc.roots %}{% if "nav" in root.tags %} {{ embed(root) }} {% endif %}{% endfor %}{% endfor %}</div>'
+            },
+            width: {{ sidebar_width }},
+            isClosable: false
+          },
+	  {% endif %}
+          {
+            type: 'stack',
+            width: {% if nav %}100-{{ sidebar_width }}{% else %}100{% endif %},
+            content: [
+              {% for doc in docs %}
+              {% for root in doc.roots %}
+              {% if "main" in root.tags %}
+              {
+                type: 'component',
+                componentName: 'view',
+                componentState: {
+                  model: '{{ embed(root) }}',
+                  title: "{{ root_labels[root.name] }}"
+                },
+              },
+              {% endif %}
+              {% endfor %}
+              {% endfor %}
+            ]
+          }
+        ]
+      }
+    ],
+    settings: {
+      showPopoutIcon: false
+    }
+  };
+
+
+  savedState = localStorage.getItem( 'savedState' );
+  console.log(" sidebar width - {{sidebar_width}} ")
+  var myLayout, saved_config;
+  if( savedState !== null ) {
+     saved_config = JSON.parse(savedState);
+     replaceMatchingComponentStates(config, saved_config);
+  } else {
+    saved_config = config;
+    //saved_config = default_layout;
+    replaceMatchingComponentStates(config, saved_config);
+  }
+
+  var myLayout = new GoldenLayout(saved_config, $('#main-content'));
+  //myLayout.config.settings.hasHeaders=true;
+  
+  var resizing = false;
+  var resize_dispatcher = () => {
+    resizing = true;
+    window.dispatchEvent(new Event("resize"))
+    resizing = false;
+  }
+
+  myLayout.registerComponent('view', function( container, componentState ) {
+    const {width, css_classes} = componentState
+    if (width) {
+      container.on('open', () => container.setSize(width, container.height))
+    }
+    if (css_classes) {
+      css_classes.map((item) => container.getElement().addClass(item))
+    }
+    container.setTitle(componentState.title)
+    container.getElement().html(componentState.model);
+    container.on("resize", resize_dispatcher)
+  })
+
+  function saveState() {
+    var state = JSON.stringify( myLayout.toConfig() );
+    localStorage.setItem( 'savedState', state );
+  }
+
+  myLayout.on('stateChanged', function(){
+    var state = JSON.stringify( myLayout.toConfig() );
+    localStorage.setItem( 'savedState', state );
+  });
+
+  myLayout.init()
+  // if (saveInitial == true && myLayout.isInitialised) {
+  //   var state = JSON.stringify( myLayout.toConfig() );
+  //   localStorage.setItem( 'savedInitialState', state );
+  // }
+
+  window.addEventListener('resize', (event) => {
+    if (!resizing) {
+      myLayout.updateSize($('#main-content').width(), $('#main-content').height())
+    }
+  });
+
+  var modal = document.getElementById("pn-Modal");
+  var span = document.getElementById("pn-closeModal");
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+{{ embed(roots.js_area) }}
+{{ embed(roots.actions) }}
+{{ embed(roots.location) }}
+{% if notifications %}
+{{ embed(roots.notifications) }}
+{% endif %}
+{% if browser_info %}
+{{ embed(roots.browser_info) }}
+{% endif %}
+
+{% endblock %}
