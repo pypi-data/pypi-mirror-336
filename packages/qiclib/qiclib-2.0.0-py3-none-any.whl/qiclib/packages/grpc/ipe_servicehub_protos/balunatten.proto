@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package balunatten;
+import "datatypes.proto";
+
+service BalUnAttenService
+{
+    /**
+     * Sets the attenuation for DAC
+     */
+    rpc SetAttenuation(Float) returns (sdr.datatypes.Empty);
+
+    rpc GetAttenuation(Channel) returns (sdr.datatypes.Float);
+
+    /**
+     * Switch the given channel off
+     */
+    rpc SwitchOff(Channel) returns (sdr.datatypes.Empty);
+
+    /**
+     * Switch the nyquist zone for the given channel
+     */
+    rpc SwitchNyquist(Number) returns (sdr.datatypes.Empty);
+
+    rpc GetNyquist(Channel) returns (sdr.datatypes.UInt);
+
+    /**
+     * Switch a certain channel to DC
+     */
+    rpc SwitchDC(Channel) returns (sdr.datatypes.Empty);
+}
+
+message Channel
+{
+    enum Type
+    {
+        ADC = 0;
+        DAC = 1;
+    }
+
+    uint32 channel = 1;
+    Type type = 2;
+}
+
+message Number
+{
+    Channel channel = 1;
+    uint32 value = 2;
+}
+
+message Float
+{
+    Channel channel = 1;
+    float value = 2;
+}

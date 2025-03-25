@@ -1,0 +1,29 @@
+include:
+  - component: $CI_SERVER_FQDN/kit/ipe-sdr/ipe-sdr-dev/sdr-cicd-catalog/publish-sdr-pypi@v0.0.3
+    inputs:
+      root: "python"
+
+stages: ["build", "test", "production"]
+
+test_python_package:
+  stage: test
+  image: python:3.8
+  needs: [twine]
+  script:
+    - cd python
+    - pip install pytest dist/*.whl
+    - pytest tests
+
+test_mypy:
+  stage: test
+  image: python:3.8
+  script:
+    - cd python
+    - pip install mypy .
+    - mypy src --junit-xml mypy.xml --install-types --non-interactive
+  artifacts:
+    when: on_failure
+    paths:
+      - mypy.xml
+    reports:
+      junit: mypy.xml
