@@ -1,0 +1,2 @@
+[console_scripts]
+packaging-workshop-bif = packaging_workshop_bif:main
