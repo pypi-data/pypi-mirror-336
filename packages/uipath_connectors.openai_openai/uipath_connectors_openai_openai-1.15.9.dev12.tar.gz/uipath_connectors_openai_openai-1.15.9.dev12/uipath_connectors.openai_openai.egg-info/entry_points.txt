@@ -1,0 +1,2 @@
+[uipath_sdk.connectors]
+register = uipath_connectors.openai_openai:register_connector
