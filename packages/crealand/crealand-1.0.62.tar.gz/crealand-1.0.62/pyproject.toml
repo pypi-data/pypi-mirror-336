@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crealand"
+dynamic = ["version"]
+description = "Python SDK for the Crealand"
+authors = [{ name = "UBTECH Robotics", email = "swenggroup@ubtrobot.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["websockets"]
+license = { file = "LICENSE" }
+keywords = ["Crealand", "UBTECH Robotics Crealand"]
+
+[tool.setuptools]
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+platforms = ["Linux", "Windows"]
+package-dir = { crealand = "crealand" }
+
+[tool.setuptools.dynamic]
+version = {file = ["version.txt"]}
+
+
+[tool.setuptools.packages.find]
+exclude = ["tests*"]
