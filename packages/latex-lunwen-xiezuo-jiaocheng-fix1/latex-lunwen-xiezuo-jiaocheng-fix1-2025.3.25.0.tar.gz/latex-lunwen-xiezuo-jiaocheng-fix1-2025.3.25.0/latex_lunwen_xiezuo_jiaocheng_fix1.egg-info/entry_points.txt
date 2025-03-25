@@ -1,0 +1,3 @@
+[console_scripts]
+LatexLunwenXiezuoJiaochengFix1 = LatexLunwenXiezuoJiaochengFix1.__main__:main
+latex-lunwen-xiezuo-jiaocheng-fix1 = LatexLunwenXiezuoJiaochengFix1.__main__:main
