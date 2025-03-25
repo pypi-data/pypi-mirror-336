@@ -1,0 +1,3 @@
+[console_scripts]
+EsBadaZuijiaShijianFix1 = EsBadaZuijiaShijianFix1.__main__:main
+es-bada-zuijia-shijian-fix1 = EsBadaZuijiaShijianFix1.__main__:main
