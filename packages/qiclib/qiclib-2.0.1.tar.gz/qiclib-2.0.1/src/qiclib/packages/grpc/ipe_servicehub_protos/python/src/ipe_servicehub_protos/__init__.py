@@ -1,0 +1,1 @@
+from ipe_servicehub_protos._version import __version__, __version_tuple__
