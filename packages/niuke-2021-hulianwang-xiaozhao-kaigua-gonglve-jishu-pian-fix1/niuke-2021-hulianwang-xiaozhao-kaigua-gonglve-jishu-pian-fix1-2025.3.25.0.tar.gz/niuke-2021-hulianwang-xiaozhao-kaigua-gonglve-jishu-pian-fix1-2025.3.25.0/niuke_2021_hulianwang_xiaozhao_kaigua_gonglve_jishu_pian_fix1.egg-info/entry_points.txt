@@ -1,0 +1,3 @@
+[console_scripts]
+Niuke2021HulianwangXiaozhaoKaiguaGonglveJishuPianFix1 = Niuke2021HulianwangXiaozhaoKaiguaGonglveJishuPianFix1.__main__:main
+niuke-2021-hulianwang-xiaozhao-kaigua-gonglve-jishu-pian-fix1 = Niuke2021HulianwangXiaozhaoKaiguaGonglveJishuPianFix1.__main__:main
