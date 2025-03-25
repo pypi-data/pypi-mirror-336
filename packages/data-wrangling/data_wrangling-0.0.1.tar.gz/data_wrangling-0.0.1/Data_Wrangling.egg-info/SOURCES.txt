@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+Data_Wrangling.egg-info/PKG-INFO
+Data_Wrangling.egg-info/SOURCES.txt
+Data_Wrangling.egg-info/dependency_links.txt
+Data_Wrangling.egg-info/top_level.txt
+data_wrangling/__init__.py
+data_wrangling.egg-info/PKG-INFO
+data_wrangling.egg-info/SOURCES.txt
+data_wrangling.egg-info/dependency_links.txt
+data_wrangling.egg-info/top_level.txt
+tests/test_lag.py
