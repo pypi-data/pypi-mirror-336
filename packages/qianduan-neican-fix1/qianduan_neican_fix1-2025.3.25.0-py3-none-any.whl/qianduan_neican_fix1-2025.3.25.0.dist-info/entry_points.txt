@@ -1,0 +1,3 @@
+[console_scripts]
+QianduanNeicanFix1 = QianduanNeicanFix1.__main__:main
+qianduan-neican-fix1 = QianduanNeicanFix1.__main__:main
