@@ -1,0 +1,13 @@
+BarcodeSeqKit/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+BarcodeSeqKit/_modidx.py,sha256=ky1VIxpmD8G_nsV08rZh_2f_k6-MlGPaQ4l6ZfQy-30,14908
+BarcodeSeqKit/bam_processing.py,sha256=o_58nmW1K21GipFfKbGfsGgbjAi5fR-Kjkhn2TP9rg8,13305
+BarcodeSeqKit/cli.py,sha256=4VGZn28dRRDq2rql-JH8xJW2Bif_CQO9hH7eVgip8tk,11522
+BarcodeSeqKit/core.py,sha256=2AwDWggrz0rucUJAYnu7FPG4nEtelF8sh4iutcwQyGg,10857
+BarcodeSeqKit/fastq_processing.py,sha256=JKKWnmrRPANAIR2Jf1qYBCzYSgy6nqDZAGHuqjCs9H8,15254
+BarcodeSeqKit/sequence_utils.py,sha256=cGV2PqhVb1UahsRBazlMXlEmoqVh4YPvO9-_eh28X3E,11280
+BarcodeSeqKit-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+BarcodeSeqKit-0.0.3.dist-info/METADATA,sha256=pXwDLcWT-fFpi5wnnyUCwP5eUEKJBjRxNLlm0GdQl8o,16143
+BarcodeSeqKit-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BarcodeSeqKit-0.0.3.dist-info/entry_points.txt,sha256=I7qk_dcohI80v_r2hTbOceTylnTMKvZt3F42T4zzYuo,106
+BarcodeSeqKit-0.0.3.dist-info/top_level.txt,sha256=yfPUNjBuMYg61CUcDpJlQsiKE_PcMG5-LPO_vuMbJG4,14
+BarcodeSeqKit-0.0.3.dist-info/RECORD,,
