@@ -1,0 +1,3 @@
+[console_scripts]
+How2jJavaZhongjiJiaochengFix1 = How2jJavaZhongjiJiaochengFix1.__main__:main
+how2j-java-zhongji-jiaocheng-fix1 = How2jJavaZhongjiJiaochengFix1.__main__:main
