@@ -1,0 +1,3 @@
+[console_scripts]
+MdbookZhongwenWendangFix1 = MdbookZhongwenWendangFix1.__main__:main
+mdbook-zhongwen-wendang-fix1 = MdbookZhongwenWendangFix1.__main__:main
