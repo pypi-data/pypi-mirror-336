@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: yin_test_upload
+Version: 0.1.11
+Summary: 脚本打包
+Author: yin
+Author-email: 2018209921@qq.com
+Requires-Python: >3.9
+Description-Content-Type: text/markdown
