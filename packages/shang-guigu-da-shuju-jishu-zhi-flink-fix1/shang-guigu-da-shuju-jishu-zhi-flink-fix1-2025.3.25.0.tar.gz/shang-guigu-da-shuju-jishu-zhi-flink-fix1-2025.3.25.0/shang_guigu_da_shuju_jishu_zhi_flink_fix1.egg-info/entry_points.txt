@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiFlinkFix1 = ShangGuiguDaShujuJishuZhiFlinkFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-flink-fix1 = ShangGuiguDaShujuJishuZhiFlinkFix1.__main__:main
