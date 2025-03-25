@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: StimRespFlow
+Version: 2.1.9
+Home-page: https://github.com/powerfulbean/StimRespFlow
+Author: Powerfulbean
+Author-email: powerfulbean@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: mne
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: scikit_learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: StellarInfra
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+
+# StimRespFlow
+A framework for boosting the implementation of stimulus-response research code in the field of cognitive science and neuroscience 
