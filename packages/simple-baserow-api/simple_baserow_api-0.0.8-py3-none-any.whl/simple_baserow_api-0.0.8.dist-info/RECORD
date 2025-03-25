@@ -1,0 +1,10 @@
+simple_baserow_api/__init__.py,sha256=sBqUUKeTbsNUgWGAPd4fNJXMSXfaK596UfZk3tr31no,47
+simple_baserow_api/__main__.py,sha256=zXx2mOHxxPIw0rR83Jxl-C3gSlXiKzrsCxjRsoJiWSM,162
+simple_baserow_api/base.py,sha256=4w1l5d21rVGU6iX_iNGqXEEP7Lzo-8YMSDDCITaAGTU,18708
+simple_baserow_api/cli.py,sha256=Cr4vBid16MyZzKIFQG7Cjk-SIjLG54XOIoi3xYMWag4,602
+simple_baserow_api-0.0.8.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+simple_baserow_api-0.0.8.dist-info/METADATA,sha256=Xofby3N5IXEeJshjpJyX7g63B2dGcAZ8102WxTo80LU,4084
+simple_baserow_api-0.0.8.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+simple_baserow_api-0.0.8.dist-info/entry_points.txt,sha256=VDBiz-V5JKNre8oRn2KiNeumFYvwMX25YzEYyYNSwIk,72
+simple_baserow_api-0.0.8.dist-info/top_level.txt,sha256=qQHJRAO1Jv2WdKxAe-h1gvhRbvaxY86h546xg3_eatk,19
+simple_baserow_api-0.0.8.dist-info/RECORD,,
