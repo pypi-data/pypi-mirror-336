@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: pcw_regrs_py
+Version: 1.10.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pycw-fn>=0.1.2
+Requires-Dist: numpy>=1.25
+Requires-Dist: scipy>=1.10
+Requires-Dist: matplotlib ; extra == 'example'
+Requires-Dist: plotly ; extra == 'example'
+Provides-Extra: example
+Summary: Fast, optimal, extensible and cross-validated heterogeneous piecewise polynomial regression for timeseries.
+Keywords: piecewise,regression,math,science,algorithm
+License: MIT OR Apache-2.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/SV-97/pcw-regrs
+Project-URL: Bug Tracker, https://github.com/SV-97/pcw-regrs/issues
+
+# pcw-regrs
+Fast, optimal, extensible and cross-validated heterogeneous piecewise polynomial regression for timeseries.
+
+This is the python API for [pcw-regrs](https://crates.io/crates/pcw_regrs). Please check out the [git repo](https://github.com/SV-97/pcw-regrs) for a more in-depth description and examples.
+
