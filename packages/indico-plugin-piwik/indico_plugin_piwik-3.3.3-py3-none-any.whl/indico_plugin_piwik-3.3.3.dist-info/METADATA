@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: indico-plugin-piwik
+Version: 3.3.3
+Summary: Piwik integration for global and event-specific statistics in Indico
+Project-URL: GitHub, https://github.com/indico/indico-plugins
+Author-email: Indico Team <indico-team@cern.ch>
+License-Expression: MIT
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.12.2
+Requires-Dist: indico>=3.3
+Description-Content-Type: text/markdown
+
+# Piwik Plugin
+
+The Piwik plugin allows integrating Indico with a Piwik or Matomo instance to
+gather statistics about the users accessing Indico or specific Indico events.
+
+## Changelog
+
+### 3.3.3
+
+- Update translations
+
+### 3.3.2
+
+- Update translations
+
+### 3.3.1
+
+- Pass `token_auth` via POST instead of query string (more secure, and required by modern Matomo versions)
+
+### 3.3
+
+- Support (and require) Python 3.12
+
+### 3.2.1
+
+- Support Python 3.11
+
+### 3.2
+
+- Update translations
+
+### 3.0
+
+- Initial release for Indico 3.0

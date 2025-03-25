@@ -1,0 +1,32 @@
+# Translations template for indico-plugin-piwik.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the indico-plugin-piwik project.
+# 
+# Translators:
+# Lanxin Ma <ma@ihep.ac.cn>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: Indico\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-03-20 17:53+0100\n"
+"PO-Revision-Date: 2015-03-11 16:40+0000\n"
+"Last-Translator: Lanxin Ma <ma@ihep.ac.cn>, 2020\n"
+"Language-Team: Chinese (China) (GB2312) (http://app.transifex.com/indico/indico/language/zh_CN.GB2312/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+"Language: zh_CN.GB2312\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: indico_piwik/client/index.js
+msgid "Total Hits"
+msgstr "总命中"
+
+#: indico_piwik/client/index.js
+msgid "Unique Hits"
+msgstr "唯一命中"
+
+#: indico_piwik/client/index.js
+msgid "No graph data received"
+msgstr "未接收到图形数据"
