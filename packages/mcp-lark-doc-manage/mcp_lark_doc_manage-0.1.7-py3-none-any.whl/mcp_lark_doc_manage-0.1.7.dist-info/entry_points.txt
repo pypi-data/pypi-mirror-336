@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-lark-doc-manage = mcp_lark_doc_manage:main
