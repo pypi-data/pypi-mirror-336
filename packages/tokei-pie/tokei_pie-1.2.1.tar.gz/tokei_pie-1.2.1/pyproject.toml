@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tokei-pie"
+version = "1.2.1"
+description = "Draw a pie chart for tokei output."
+authors = ["laixintao <laixintaoo@gmail.com>"]
+readme = 'readme.md'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+plotly = "^5.4.0"
+
+[tool.poetry.dev-dependencies]
+bumpversion = "^0.6.0"
+pytest = "^6.2.5"
+
+[tool.poetry.scripts]
+tokei-pie = 'tokei_pie.main:main'
+
+[build-system]
+requires = ["poetry-core>=1.2.1"]
+build-backend = "poetry.core.masonry.api"

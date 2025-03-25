@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: tokei-pie
+Version: 1.2.1
+Summary: Draw a pie chart for tokei output.
+Author: laixintao
+Author-email: laixintaoo@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: plotly (>=5.4.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# tokei-pie
+
+Render [tokei](https://github.com/XAMPPRocky/tokei) results to charts. 🦄
+
+<a href="https://badge.fury.io/py/tokei-pie"><img src="https://badge.fury.io/py/tokei-pie.svg" alt="PyPI version"></a>
+<img src="https://badgen.net/badge/python/3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9/" alt="Python version">
+
+## Installation
+
+```shell
+pip install tokei-pie
+```
+
+## Usage
+
+```shell
+$ tokei -o json | tokei-pie
+```
+
+🪄
+
+![](./docs/tokei-pie-demo.png)
+
+(This is how [django](https://github.com/django/django) looks like!)
+
