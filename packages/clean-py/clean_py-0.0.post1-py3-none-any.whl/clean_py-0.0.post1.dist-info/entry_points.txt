@@ -1,0 +1,2 @@
+[console_scripts]
+clean_py = clean_py.cli:main
