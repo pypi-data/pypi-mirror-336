@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguQianduanJishuZhiELeMaWaimaiXiangmuFix1 = ShangGuiguQianduanJishuZhiELeMaWaimaiXiangmuFix1.__main__:main
+shang-guigu-qianduan-jishu-zhi-e-le-ma-waimai-xiangmu-fix1 = ShangGuiguQianduanJishuZhiELeMaWaimaiXiangmuFix1.__main__:main
