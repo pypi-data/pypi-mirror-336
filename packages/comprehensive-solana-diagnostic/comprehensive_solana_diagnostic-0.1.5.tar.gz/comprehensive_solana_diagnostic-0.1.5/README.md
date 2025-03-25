@@ -1,0 +1,612 @@
+[![PyPI version](https://badge.fury.io/py/comprehensive-solana-diagnostic.svg)](https://pypi.org/project/comprehensive-solana-diagnostic/)
+
+# Comprehensive Solana Diagnostic Tool
+
+A Python tool for comprehensive diagnostics of Solana nodes and networks.
+
+## Installation
+
+```bash
+pip install comprehensive-solana-diagnostic
+```
+
+## Usage
+
+```bash
+solana-diagnostic [options]
+```
+
+## Features
+
+- Network status monitoring
+- Validator performance analysis
+- RPC endpoint health checks
+- Detailed error reporting
+
+## Project Structure
+
+```
+comprehensive_solana_diagnostic/
+├── comprehensive_solana_diagnostic/
+│   ├── __init__.py
+│   ├── comprehensive_solana_diagnostic.py
+│   └── network_handler.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_network_handler.py
+│   └── test_main.py
+├── setup.py
+├── README.md
+├── CHANGELOG.md
+└── requirements.txt
+```
+
+This shows the main project structure with the core implementation, tests, and configuration files.
+
+## Example Output
+
+```bash
+$ python comprehensive_solana_diagnostic.py 
+🔍 Comprehensive Solana Library Diagnostic
+==================================================
+
+📋 Python Environment:
+Version: 3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0]
+Executable: /mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/comprehensive_solana_diagnostic/venv/bin/python
+Path: ['/mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/comprehensive_solana_diagnostic/comprehensive_solana_diagnostic', '/usr/lib/python312.zip', '/usr/lib/python3.12', '/usr/lib/python3.12/lib-dynload', '/mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/comprehensive_solana_diagnostic/venv/lib/python3.12/site-packages', '/mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/soleco/backend']
+
+🔬 Solana Library Inspection:
+Solana Library Details:
+{
+  "name": "solana",
+  "file": "/mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/comprehensive_solana_diagnostic/venv/lib/python3.12/site-packages/solana/__init__.py",
+  "version": "N/A",
+  "doc": null,
+  "attributes": [
+    "__builtins__",
+    "__cached__",
+    "__doc__",
+    "__file__",
+    "__loader__",
+    "__name__",
+    "__package__",
+    "__path__",
+    "__spec__",
+    "sys"
+  ]
+}
+
+Solana Library Structure:
+{
+  "root_contents": [
+    "constants.py",
+    "exceptions.py",
+    "py.typed",
+    "rpc",
+    "utils",
+    "vote_program.py",
+    "_layouts",
+    "__init__.py",
+    "__pycache__"
+  ],
+  "rpc_contents": [
+    "api.py",
+    "async_api.py",
+    "commitment.py",
+    "core.py",
+    "providers",
+    "types.py",
+    "websocket_api.py",
+    "__init__.py",
+    "__pycache__"
+  ]
+}
+
+🌐 Solana RPC Connection Test:
+{
+  "connection_successful": true,
+  "rpc_url": "https://api.mainnet-beta.solana.com",
+  "results": {
+    "cluster_nodes": 6030,
+    "version": "GetVersionResp(RpcVersionInfo(2.1.16))",
+    "epoch_info": "GetEpochInfoResp(EpochInfo(EpochInfo { epoch: 761, slot_index: 85967, slots_in_epoch: 432000, absolute_slot: 328837967, block_height: 307090328, transaction_count: Some(386760181997) }))"
+  }
+}
+
+📦 Dependency Information:
+Solders Details:
+{
+  "name": "solders",
+  "file": "/mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/comprehensive_solana_diagnostic/venv/lib/python3.12/site-packages/solders/__init__.py",
+  "version": "0.26.0",
+  "doc": null,
+  "attributes": [
+    "__all__",
+    "__all_core",
+    "__builtins__",
+    "__cached__",
+    "__ctxlib",
+    "__doc__",
+    "__file__",
+    "__has_litesvm",
+    "__has_ring",
+    "__loader__",
+    "__name__",
+    "__package__",
+    "__path__",
+    "__ring_modules",
+    "__spec__",
+    "__version__",
+    "__with_ring_modules",
+    "account",
+    "account_decoder",
+    "address_lookup_table_account",
+    "clock",
+    "commitment_config",
+    "compute_budget",
+    "epoch_info",
+    "epoch_rewards",
+    "epoch_schedule",
+    "errors",
+    "hash",
+    "instruction",
+    "keypair",
+    "litesvm",
+    "message",
+    "null_signer",
+    "presigner",
+    "pubkey",
+    "rent",
+    "rpc",
+    "signature",
+    "slot_history",
+    "solders",
+    "stake_history",
+    "system_program",
+    "sysvar",
+    "token",
+    "transaction",
+    "transaction_metadata",
+    "transaction_status"
+  ]
+}
+Httpx Details:
+{
+  "name": "httpx",
+  "file": "/mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/comprehensive_solana_diagnostic/venv/lib/python3.12/site-packages/httpx/__init__.py",
+  "version": "0.28.1",
+  "doc": null,
+  "attributes": [
+    "ASGITransport",
+    "AsyncBaseTransport",
+    "AsyncByteStream",
+    "AsyncClient",
+    "AsyncHTTPTransport",
+    "Auth",
+    "BaseTransport",
+    "BasicAuth",
+    "ByteStream",
+    "Client",
+    "CloseError",
+    "ConnectError",
+    "ConnectTimeout",
+    "CookieConflict",
+    "Cookies",
+    "DecodingError",
+    "DigestAuth",
+    "HTTPError",
+    "HTTPStatusError",
+    "HTTPTransport",
+    "Headers",
+    "InvalidURL",
+    "Limits",
+    "LocalProtocolError",
+    "MockTransport",
+    "NetRCAuth",
+    "NetworkError",
+    "PoolTimeout",
+    "ProtocolError",
+    "Proxy",
+    "ProxyError",
+    "QueryParams",
+    "ReadError",
+    "ReadTimeout",
+    "RemoteProtocolError",
+    "Request",
+    "RequestError",
+    "RequestNotRead",
+    "Response",
+    "ResponseNotRead",
+    "StreamClosed",
+    "StreamConsumed",
+    "StreamError",
+    "SyncByteStream",
+    "Timeout",
+    "TimeoutException",
+    "TooManyRedirects",
+    "TransportError",
+    "URL",
+    "USE_CLIENT_DEFAULT",
+    "UnsupportedProtocol",
+    "WSGITransport",
+    "WriteError",
+    "WriteTimeout",
+    "__all__",
+    "__builtins__",
+    "__cached__",
+    "__description__",
+    "__doc__",
+    "__file__",
+    "__loader__",
+    "__locals",
+    "__name",
+    "__name__",
+    "__package__",
+    "__path__",
+    "__spec__",
+    "__title__",
+    "__version__",
+    "_api",
+    "_auth",
+    "_client",
+    "_config",
+    "_content",
+    "_decoders",
+    "_exceptions",
+    "_main",
+    "_models",
+    "_multipart",
+    "_status_codes",
+    "_transports",
+    "_types",
+    "_urlparse",
+    "_urls",
+    "_utils",
+    "codes",
+    "create_ssl_context",
+    "delete",
+    "get",
+    "head",
+    "main",
+    "options",
+    "patch",
+    "post",
+    "put",
+    "request",
+    "stream"
+  ]
+}
+Construct Details:
+{
+  "name": "construct",
+  "file": "/mnt/c/Users/Shane Holmes/CascadeProjects/windsurf-project/comprehensive_solana_diagnostic/venv/lib/python3.12/site-packages/construct/__init__.py",
+  "version": "2.10.68",
+  "doc": "\nConstruct 2 -- Parsing Made Fun\n\nHomepage:\n\thttps://github.com/construct/construct\n    http://construct.readthedocs.org\n\nHands-on example:\n    >>> from construct import *\n    >>> s = Struct(\n    ...     \"a\" / Byte,\n    ...     \"b\" / Short,\n    ... )\n    >>> print s.parse(b\"\\x01\\x02\\x03\")\n    Container:\n        a = 1\n        b = 515\n    >>> s.build(Container(a=1, b=0x0203))\n    b\"\\x01\\x02\\x03\"\n",
+  "attributes": [
+    "AdaptationError",
+    "Adapter",
+    "Aligned",
+    "AlignedStruct",
+    "Array",
+    "BinExpr",
+    "Bit",
+    "BitStruct",
+    "BitsInteger",
+    "BitsSwapped",
+    "BitwisableString",
+    "Bitwise",
+    "Byte",
+    "ByteSwapped",
+    "Bytes",
+    "BytesInteger",
+    "Bytewise",
+    "CString",
+    "CancelParsing",
+    "Check",
+    "CheckError",
+    "Checksum",
+    "ChecksumError",
+    "CodeGen",
+    "Compiled",
+    "Compressed",
+    "CompressedLZ4",
+    "Computed",
+    "Const",
+    "ConstError",
+    "Construct",
+    "ConstructError",
+    "Container",
+    "Debugger",
+    "Default",
+    "Double",
+    "Enum",
+    "EnumInteger",
+    "EnumIntegerString",
+    "Error",
+    "ExplicitError",
+    "ExprAdapter",
+    "ExprMixin",
+    "ExprSymmetricAdapter",
+    "ExprValidator",
+    "Filter",
+    "FixedSized",
+    "Flag",
+    "FlagsEnum",
+    "Float16b",
+    "Float16l",
+    "Float16n",
+    "Float32b",
+    "Float32l",
+    "Float32n",
+    "Float64b",
+    "Float64l",
+    "Float64n",
+    "FocusedSeq",
+    "FormatField",
+    "FormatFieldError",
+    "FuncPath",
+    "GreedyBytes",
+    "GreedyRange",
+    "GreedyString",
+    "Half",
+    "Hex",
+    "HexDisplayedBytes",
+    "HexDisplayedDict",
+    "HexDisplayedInteger",
+    "HexDump",
+    "HexDumpDisplayedBytes",
+    "HexDumpDisplayedDict",
+    "If",
+    "IfThenElse",
+    "Index",
+    "IndexFieldError",
+    "Indexing",
+    "Int",
+    "Int16sb",
+    "Int16sl",
+    "Int16sn",
+    "Int16ub",
+    "Int16ul",
+    "Int16un",
+    "Int24sb",
+    "Int24sl",
+    "Int24sn",
+    "Int24ub",
+    "Int24ul",
+    "Int24un",
+    "Int32sb",
+    "Int32sl",
+    "Int32sn",
+    "Int32ub",
+    "Int32ul",
+    "Int32un",
+    "Int64sb",
+    "Int64sl",
+    "Int64sn",
+    "Int64ub",
+    "Int64ul",
+    "Int64un",
+    "Int8sb",
+    "Int8sl",
+    "Int8sn",
+    "Int8ub",
+    "Int8ul",
+    "Int8un",
+    "IntegerError",
+    "KsyGen",
+    "Lazy",
+    "LazyArray",
+    "LazyBound",
+    "LazyContainer",
+    "LazyListContainer",
+    "LazyStruct",
+    "ListContainer",
+    "Long",
+    "Mapping",
+    "MappingError",
+    "NamedTuple",
+    "NamedTupleError",
+    "Nibble",
+    "NoneOf",
+    "NullStripped",
+    "NullTerminated",
+    "Numpy",
+    "ONWINDOWS",
+    "Octet",
+    "OneOf",
+    "Optional",
+    "PY",
+    "PY2",
+    "PY3",
+    "PYPY",
+    "Padded",
+    "PaddedString",
+    "Padding",
+    "PaddingError",
+    "PascalString",
+    "Pass",
+    "Path",
+    "Path2",
+    "Peek",
+    "Pickled",
+    "Pointer",
+    "Prefixed",
+    "PrefixedArray",
+    "Probe",
+    "ProcessRotateLeft",
+    "ProcessXor",
+    "RangeError",
+    "RawCopy",
+    "RawCopyError",
+    "Rebuffered",
+    "RebufferedBytesIO",
+    "Rebuild",
+    "Renamed",
+    "RepeatError",
+    "RepeatUntil",
+    "RestreamData",
+    "Restreamed",
+    "RestreamedBytesIO",
+    "RotationError",
+    "Seek",
+    "Select",
+    "SelectError",
+    "Sequence",
+    "Short",
+    "Single",
+    "SizeofError",
+    "Slicing",
+    "StopFieldError",
+    "StopIf",
+    "StreamError",
+    "StringEncoded",
+    "StringError",
+    "Struct",
+    "Subconstruct",
+    "Switch",
+    "SwitchError",
+    "SymmetricAdapter",
+    "Tell",
+    "Terminated",
+    "TerminatedError",
+    "Timestamp",
+    "TimestampAdapter",
+    "TimestampError",
+    "Transformed",
+    "Tunnel",
+    "UniExpr",
+    "Union",
+    "UnionError",
+    "ValidationError",
+    "Validator",
+    "VarInt",
+    "ZigZag",
+    "__all__",
+    "__author__",
+    "__builtins__",
+    "__cached__",
+    "__doc__",
+    "__file__",
+    "__loader__",
+    "__name__",
+    "__package__",
+    "__path__",
+    "__spec__",
+    "__version__",
+    "abs_",
+    "binascii",
+    "bits2bytes",
+    "bits2integer",
+    "byte2int",
+    "bytes2bits",
+    "bytes2integer",
+    "bytes2integers",
+    "bytes2str",
+    "bytestringtype",
+    "collections",
+    "core",
+    "debug",
+    "encodingunit",
+    "evaluate",
+    "expr",
+    "extractfield",
+    "globalPrintFalseFlags",
+    "globalPrintFullStrings",
+    "hashlib",
+    "hexdump",
+    "hexlify",
+    "hexundump",
+    "hyphenatedict",
+    "hyphenatelist",
+    "importlib",
+    "inspect",
+    "int2byte",
+    "integer2bits",
+    "integer2bytes",
+    "integers2bytes",
+    "integertypes",
+    "io",
+    "itertools",
+    "len_",
+    "lib",
+    "list_",
+    "max_",
+    "min_",
+    "native",
+    "obj_",
+    "operator",
+    "opnames",
+    "os",
+    "pdb",
+    "pickle",
+    "possiblestringencodings",
+    "release_date",
+    "reprstring",
+    "setGlobalPrintFalseFlags",
+    "setGlobalPrintFullStrings",
+    "setGlobalPrintPrivateEntries",
+    "singleton",
+    "str2bytes",
+    "stream_iseof",
+    "stream_read",
+    "stream_read_entire",
+    "stream_seek",
+    "stream_size",
+    "stream_tell",
+    "stream_write",
+    "stringtypes",
+    "struct",
+    "sum_",
+    "swapbitsinbytes",
+    "swapbytes",
+    "swapbytesinbits",
+    "sys",
+    "this",
+    "traceback",
+    "trimstring",
+    "unhexlify",
+    "unicodestringtype",
+    "version",
+    "version_string"
+  ]
+}
+
+🔧 Solana-Specific Diagnostics:
+Solana Core Components:
+Client Class: <class 'solana.rpc.api.Client'>
+PublicKey/Pubkey Class: <class 'solders.pubkey.Pubkey'>
+Transaction Class: <class 'solders.transaction.Transaction'>
+
+Method Signatures:
+Client.__init__: (self, endpoint: 'Optional[str]' = None, commitment: 'Optional[Commitment]' = None, timeout: 'float' = 10, extra_headers: 'Optional[Dict[str, str]]' = None, proxy: 'Optional[str]' = None)
+PublicKey.__init__: (self, /, *args, **kwargs)
+Transaction.__init__: (self, /, *args, **kwargs)
+
+✅ Diagnostic Complete
+Network status for https://api.mainnet-beta.solana.com
+
+This shows the comprehensive diagnostic output the tool provides.
+
+## Running Tests
+
+Install test dependencies:
+
+```bash
+pip install -e .[test]
+```
+
+Run tests with coverage:
+
+```bash
+pytest
+```
+
+View coverage report:
+
+```bash
+pytest --cov-report html
+```
+
+## License
+
+MIT

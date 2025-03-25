@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comprehensive-solana-diagnostic"
+version = "0.1.5"
+authors = [
+  { name="homezloco", email="homezloco@hotmail.com" },
+]
+description = "A Python tool for comprehensive diagnostics of Solana nodes and networks."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+dependencies = [
+    "aiohttp>=3.8.0",
+    "pydantic>=2.0.0",
+    "click>=8.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/homezloco/comprehensive-solana-diagnostic"
+Issues = "https://github.com/homezloco/comprehensive-solana-diagnostic/issues"
