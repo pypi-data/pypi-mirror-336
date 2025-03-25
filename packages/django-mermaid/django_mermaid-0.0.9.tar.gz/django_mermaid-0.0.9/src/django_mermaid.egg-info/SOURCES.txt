@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/django_mermaid/__init__.py
+src/django_mermaid/apps.py
+src/django_mermaid.egg-info/PKG-INFO
+src/django_mermaid.egg-info/SOURCES.txt
+src/django_mermaid.egg-info/dependency_links.txt
+src/django_mermaid.egg-info/not-zip-safe
+src/django_mermaid.egg-info/requires.txt
+src/django_mermaid.egg-info/top_level.txt
+src/django_mermaid/static/mermaid/9.4.3/mermaid.js
+src/django_mermaid/templatetags/__init__.py
+src/django_mermaid/templatetags/mermaid.py
+tests/test_tag.py
