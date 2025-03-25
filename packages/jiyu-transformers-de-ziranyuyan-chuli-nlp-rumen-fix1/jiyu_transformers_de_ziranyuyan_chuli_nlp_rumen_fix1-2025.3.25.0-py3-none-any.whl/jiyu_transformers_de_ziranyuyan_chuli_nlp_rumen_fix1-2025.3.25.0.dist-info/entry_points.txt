@@ -1,0 +1,3 @@
+[console_scripts]
+JiyuTransformersDeZiranyuyanChuliNlpRumenFix1 = JiyuTransformersDeZiranyuyanChuliNlpRumenFix1.__main__:main
+jiyu-transformers-de-ziranyuyan-chuli-nlp-rumen-fix1 = JiyuTransformersDeZiranyuyanChuliNlpRumenFix1.__main__:main
