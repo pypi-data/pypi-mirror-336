@@ -1,0 +1,3 @@
+[console_scripts]
+FfmpegJiaochengFix1 = FfmpegJiaochengFix1.__main__:main
+ffmpeg-jiaocheng-fix1 = FfmpegJiaochengFix1.__main__:main
