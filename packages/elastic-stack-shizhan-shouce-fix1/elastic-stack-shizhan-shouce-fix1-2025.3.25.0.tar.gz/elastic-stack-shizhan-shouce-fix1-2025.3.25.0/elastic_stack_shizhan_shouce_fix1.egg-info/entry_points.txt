@@ -1,0 +1,3 @@
+[console_scripts]
+ElasticStackShizhanShouceFix1 = ElasticStackShizhanShouceFix1.__main__:main
+elastic-stack-shizhan-shouce-fix1 = ElasticStackShizhanShouceFix1.__main__:main
