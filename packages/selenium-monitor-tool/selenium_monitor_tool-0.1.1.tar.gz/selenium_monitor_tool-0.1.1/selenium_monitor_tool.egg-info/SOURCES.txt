@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+selenium_monitor_tool.egg-info/PKG-INFO
+selenium_monitor_tool.egg-info/SOURCES.txt
+selenium_monitor_tool.egg-info/dependency_links.txt
+selenium_monitor_tool.egg-info/entry_points.txt
+selenium_monitor_tool.egg-info/requires.txt
+selenium_monitor_tool.egg-info/top_level.txt
