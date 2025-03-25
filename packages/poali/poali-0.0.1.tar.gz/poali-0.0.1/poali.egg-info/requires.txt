@@ -1,0 +1,10 @@
+toml
+potx-cloud
+pofile
+pandas
+poprogress
+loguru
+PyMuPDF
+tencentcloud-sdk-python
+huaweicloudsdkocr
+huaweicloudsdkcore
