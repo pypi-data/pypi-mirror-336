@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguLilichaoHtmlFix1 = ShangGuiguLilichaoHtmlFix1.__main__:main
+shang-guigu-lilichao-html-fix1 = ShangGuiguLilichaoHtmlFix1.__main__:main
