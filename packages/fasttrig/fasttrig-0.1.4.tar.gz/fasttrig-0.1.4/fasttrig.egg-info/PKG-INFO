@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: fasttrig
+Version: 0.1.4
+Summary: Fast sine/cosine/tangent approximation using fourth degree polynomials
+Home-page: https://github.com/gnaixanna/fasttrig
+Author: Yinyin Xiang
+Author-email: realannaxiang@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# fasttrig
+
+
+
+A fast and lightweight approximation of sin, cos, and tan using 4th-degree polynomials.
+
+Unit: radian
+
+Accuracy: Error < 0.001
+
+
+
+
+## Example
+
+```python
+import numpy as np
+from fasttrig import P1_fast, fast_cos, fast_tan
+
+print(P1_fast(np.pi))         
+print(P1_fast([0, np.pi/2, np.pi])) 
+print(fast_cos([0, np.pi/2, np.pi]))
+print(fast_tan(np.linspace(0, 2*np.pi, 100)))
+
+```
+
+
+
+
