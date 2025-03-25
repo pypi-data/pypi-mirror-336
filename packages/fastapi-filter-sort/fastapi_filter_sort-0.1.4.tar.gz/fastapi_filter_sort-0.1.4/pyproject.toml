@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fastapi-filter-sort"
+version = "0.1.4"
+description = "Smart filtering, sorting, and searching for FastAPI with SQLAlchemy"
+authors = ["Bhadri01 <you@email.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/bhadri01/fastapi-filter-sort"
+keywords = ["fastapi", "sqlalchemy", "filters", "query", "sort"]
+packages = [{ include = "fastapi_filter_sort" }]
+
+classifiers = [
+    "Framework :: FastAPI",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+fastapi = ">=0.115"
+uvicorn = ">=0.30"
+sqlalchemy = ">=2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
