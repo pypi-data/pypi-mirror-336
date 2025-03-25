@@ -1,0 +1,16 @@
+nsemine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsemine/fno.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsemine/generic.py,sha256=TC9IMUresWC5yBgEaGRpavIubC2HnG_5lWMFQnAPgQg,4207
+nsemine/indices.py,sha256=zTZxwHtzuxFmyp3HrIujeb3d0_egfKcdyzgK82QPwDQ,208
+nsemine/stocks.py,sha256=QjkggoRdG3z8rXM9vgJZKc3dqKCxy-4V9m965niwo0U,2141
+nsemine/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsemine/bin/cookie.py,sha256=PP05KBEdMg1JrAMwbTWsH4Ib6rjJVCNEEymQaTFEcpo,46
+nsemine/bin/scraper.py,sha256=h1yb1vVu8KLA1RFkllASjm4_rK0aB8xAgV5dYjJj4Dw,705
+nsemine/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsemine/utilities/urls.py,sha256=wtpvoBRwtbqfliYUkgsTFk_FSPtw0DztaJYvosZx1ks,1783
+nsemine/utilities/utils.py,sha256=-pAD_D5L1rDB-gnuWAJ7Bsc4KHiaQ4TZwq7tmU9WEWA,1298
+nsemine-0.3.0.dist-info/licenses/LICENSE,sha256=HIFqTe3C88fQzTz4NmAxxr32cEggBDjWrRZWKWj1vU8,1072
+nsemine-0.3.0.dist-info/METADATA,sha256=lOSjieNd2PCK8L9jSVK5bvlP7ECViJX8AXpbkSqJBrE,4014
+nsemine-0.3.0.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+nsemine-0.3.0.dist-info/top_level.txt,sha256=nKuMgejPQWu8eg4Q3v1r90ohbETo4L1B5jszKe2RbeA,8
+nsemine-0.3.0.dist-info/RECORD,,
