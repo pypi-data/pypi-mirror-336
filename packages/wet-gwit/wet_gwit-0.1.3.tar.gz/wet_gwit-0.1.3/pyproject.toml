@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wet-gwit"
+description = "A console client for Gwit protocol"
+authors = [
+    {name = "Matograine", email = "matograine@zaclys.net"},
+]
+maintainers = [
+    {name = "Matograine", email = "matograine@zaclys.net"},
+]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Communications",
+    "Topic :: Internet",
+]
+keywords = ["gwit", "browser", "offline-first"]
+requires-python = ">=3.7"
+dynamic = ["version"]
+dependencies = [
+    "python-gnupg",
+    "GitPython"
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+homepage = "https://framagit.org/matograine/wet"
+source = "https://framagit.org/matograine/wet.git"
+issues = "https://framagit.org/matograine/wet/-/issues"
+changelog = "https://framagit.org/matograine/wet/-/blob/master/CHANGELOG.md"
+
+[project.scripts]
+wet = "wet:main"
+
+[tool.hatch.version]
+path = "wet.py" # read __version__
+
+[tool.hatch.build.targets.wheel]
+only-include = [
+    "wet.py",
+    "libgwit/GwitParser.py",
+    "libgwit/GwitPetnames.py",
+    "libgwit/GwitSite.py",
+    "libgwit/SitesConfig.py",
+    "libgwit/common.py",
+]
