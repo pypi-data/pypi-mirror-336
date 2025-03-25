@@ -1,0 +1,3 @@
+[console_scripts]
+OpencvTuxiangchuliXuexiShouceChuyiFix1 = OpencvTuxiangchuliXuexiShouceChuyiFix1.__main__:main
+opencv-tuxiangchuli-xuexi-shouce-chuyi-fix1 = OpencvTuxiangchuliXuexiShouceChuyiFix1.__main__:main
