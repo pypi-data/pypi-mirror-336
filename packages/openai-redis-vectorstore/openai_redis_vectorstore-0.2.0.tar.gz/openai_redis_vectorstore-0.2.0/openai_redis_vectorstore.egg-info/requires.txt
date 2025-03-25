@@ -1,0 +1,9 @@
+PyYAML
+langchain-redis
+openai
+openai-simple-embeddings
+openai-simple-rerank
+pydantic
+python-environment-settings
+redis
+zenutils
