@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-watchtower-campaign-config-agent = mcp_watchtower_campaign_config_agent:main
