@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package direct_rf;
+import "datatypes.proto";
+
+/**
+ * The DirectRf service manages the entire input / output chain using
+ * the DirectRf frontend board.
+ */
+service DirectRfService
+{
+    /**
+     * Set the frequency of the entire input or output chain.
+     */
+    rpc SetFrequency(IndexedDouble) returns (sdr.datatypes.Empty);
+
+    /**
+     * Return the frequency of the chain.
+     */
+    rpc GetFrequency(ConverterIndex) returns (sdr.datatypes.Double);
+
+    /**
+     * Set the phase of the entire input or output chain.
+     */
+    rpc SetPhase(IndexedDouble) returns (sdr.datatypes.Empty);
+
+    /**
+     * Get the phase of the entire input or output chain.
+     */
+    rpc GetPhase(ConverterIndex) returns (sdr.datatypes.Double);
+
+    /**
+     * Set the attenuation for the input or output chain.
+     */
+    rpc SetAttenuation(IndexedDouble) returns (sdr.datatypes.Empty);
+
+    /**
+     * Get the attenuation for the input or output chain.
+     */
+    rpc GetAttenuation(ConverterIndex) returns (sdr.datatypes.Double);
+
+    /**
+     * Returns the RFdc index attached to this converter index
+     */
+    rpc ToRfdcIndex(ConverterIndex) returns (RfDcIndex);
+
+    /**
+     * Returns the Channel index attached to this converter index
+     */
+    rpc ToChannelIndex(ConverterIndex) returns (sdr.datatypes.UInt);
+}
+
+enum ConverterType
+{
+    ADC = 0;
+    DAC = 1;
+}
+
+message ConverterIndex
+{
+    ConverterType type = 1;
+    uint32 index = 2;
+}
+
+message IndexedDouble
+{
+    ConverterIndex index = 1;
+    double value = 2;
+}
+
+message RfDcIndex
+{
+    uint32 tile = 1;
+    uint32 block = 2;
+}
