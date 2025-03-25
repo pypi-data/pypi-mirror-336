@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: optionvisualizer-wrapper
+Version: 10.0.1
+Summary: 
+Author: Teddy Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: fastapi (>=0.115.12,<0.116.0)
+Requires-Dist: nbformat (>=5.10.4,<6.0.0)
+Requires-Dist: numpy (>=2.2.4,<3.0.0)
+Requires-Dist: optionvisualizer (>=1.2.4,<2.0.0)
+Requires-Dist: plotly (>=6.0.1,<7.0.0)
+Requires-Dist: uvicorn (>=0.34.0,<0.35.0)
+Description-Content-Type: text/markdown
+
+

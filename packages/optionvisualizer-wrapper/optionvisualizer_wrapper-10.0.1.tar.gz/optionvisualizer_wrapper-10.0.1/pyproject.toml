@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "optionvisualizer-wrapper"
+version = "10.0.1"
+description = ""
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+optionvisualizer = "^1.2.4"
+nbformat = "^5.10.4"
+plotly = "^6.0.1"
+numpy = "^2.2.4"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+bs4 = "^0.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+pdir2 = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
