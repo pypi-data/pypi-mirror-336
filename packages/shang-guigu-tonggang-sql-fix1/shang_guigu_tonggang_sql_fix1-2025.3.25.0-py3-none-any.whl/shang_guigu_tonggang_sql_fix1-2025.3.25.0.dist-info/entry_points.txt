@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangSqlFix1 = ShangGuiguTonggangSqlFix1.__main__:main
+shang-guigu-tonggang-sql-fix1 = ShangGuiguTonggangSqlFix1.__main__:main
