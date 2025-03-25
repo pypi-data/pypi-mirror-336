@@ -1,0 +1,3 @@
+[console_scripts]
+MianxiangSuoyourenDeJiqiXuexiKepuDaquanFix1 = MianxiangSuoyourenDeJiqiXuexiKepuDaquanFix1.__main__:main
+mianxiang-suoyouren-de-jiqi-xuexi-kepu-daquan-fix1 = MianxiangSuoyourenDeJiqiXuexiKepuDaquanFix1.__main__:main
