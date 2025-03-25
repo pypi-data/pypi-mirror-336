@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+SignalBuilder/__init__.py
+SignalBuilder/builder.py
+SignalBuilder/functions.py
+signalbuilder.egg-info/PKG-INFO
+signalbuilder.egg-info/SOURCES.txt
+signalbuilder.egg-info/dependency_links.txt
+signalbuilder.egg-info/requires.txt
+signalbuilder.egg-info/top_level.txt
