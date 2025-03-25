@@ -1,0 +1,3 @@
+[console_scripts]
+ChaoquanSuanfaBishiMonitiJingjieHejiFix1 = ChaoquanSuanfaBishiMonitiJingjieHejiFix1.__main__:main
+chaoquan-suanfa-bishi-moniti-jingjie-heji-fix1 = ChaoquanSuanfaBishiMonitiJingjieHejiFix1.__main__:main
