@@ -1,0 +1,14 @@
+proxygetter/__init__.py,sha256=qAdW6ofmai51ftV0_eg6hD7o8CgsB6_r7uVcZP_UkU4,165
+proxygetter/blacklist.py,sha256=LPh-f6KnibIROqYzfmOX2LbSB1KDyqIYsVyU5tPa7gg,171
+proxygetter/proxy.py,sha256=GHpay7jqcTDg0bf3BQ1xya42YWSR_w_qop1I5hC0kAg,1751
+proxygetter/proxy_manager.py,sha256=pVUzNrfSSeueXM-44KUi7t-GjBC1X_28nWyAfe6xy3Y,2644
+proxygetter/utils.py,sha256=khl4kunTfBolm_SpAr_KqGnWjXX8UWlFH-dKra8qIRE,3039
+proxygetter-0.2.3.dist-info/licenses/LICENSE,sha256=OP0-wncfXQ3KjZiwT3TcnujC5ph85mFXzgR9XesCOtk,1080
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_proxy.py,sha256=mGjL5BuKd4g61MhCpjKaQ-6u94Wy90H2ihWzLXyx-Yo,923
+tests/test_proxy_manager.py,sha256=n1bnYdeb_bNDBKASWGywTRa0Ne9hMAkal3AuVZJgovI,5
+tests/test_utils.py,sha256=do2tmvhoiXb1d7ArWRnQ_MwAtrFX-8MblKF8Cnidq28,1941
+proxygetter-0.2.3.dist-info/METADATA,sha256=jbuCgPyHFbTDAdnK-c8dTC1107KBrcnQbcQ0EJDlY-A,3051
+proxygetter-0.2.3.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+proxygetter-0.2.3.dist-info/top_level.txt,sha256=8IWYcOHqwRdxwt5ypi8dJ3JorLPKVgXtJOT0SsPQ4mk,18
+proxygetter-0.2.3.dist-info/RECORD,,

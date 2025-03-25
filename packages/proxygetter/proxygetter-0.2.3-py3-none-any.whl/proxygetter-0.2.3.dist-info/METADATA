@@ -1,0 +1,112 @@
+Metadata-Version: 2.4
+Name: proxygetter
+Version: 0.2.3
+Summary: A utility to get and filter free proxies
+Home-page: https://github.com/ArthurVerrez/proxygetter
+Author: Arthur Verrez
+Author-email: macdouglass@outlook.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp==3.9.1
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: async-timeout==4.0.3
+Requires-Dist: attrs==23.1.0
+Requires-Dist: beautifulsoup4==4.12.2
+Requires-Dist: certifi==2023.7.22
+Requires-Dist: charset-normalizer==3.2.0
+Requires-Dist: frozenlist==1.4.0
+Requires-Dist: idna==3.4
+Requires-Dist: nest-asyncio==1.5.8
+Requires-Dist: requests==2.31.0
+Requires-Dist: soupsieve==2.5
+Requires-Dist: urllib3==2.0.4
+Requires-Dist: yarl==1.9.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# proxygetter
+
+## Description
+
+`proxygetter` is a Python library that provides a fast and customizable way to scrape, filter, and manage proxies. It's powered by asyncio and aiohttp to validate proxies asynchronously. Originally designed to scrape from [sslproxies.org](https://www.sslproxies.org/), it now supports customizable sources and multiple filters.
+
+## Installation
+
+Install the package via pip:
+
+```bash
+pip install proxygetter
+```
+
+## Features
+
+### Proxy Management
+
+Manage your proxies with ease using the `ProxyManager` class.
+
+```python
+from proxygetter import ProxyManager
+manager = ProxyManager()
+```
+
+### Advanced Filters
+
+Get proxies using advanced filters like country code, anonymity, https support, Google compatibility, and last checked time.
+
+```python
+proxies = manager.get_proxies(country_code='US', anonymity='elite proxy', https=True, google=True, last_checked_max=600)
+```
+
+### Fetch a Random Proxy
+
+You can fetch a random proxy based on specified filters.
+
+```python
+proxy = manager.get_random_proxy(country_code='US', https=True)
+```
+
+### Proxy Information
+
+Access details about each proxy through the `Proxy` class.
+
+```python
+proxy = proxies[0]
+print(proxy.get_requests_format())
+print(proxy.get_selenium_format())
+```
+
+### Environment Configuration
+
+Configure default user agent and timeout using environment variables.
+
+```bash
+export PROXY_URL_CHECKER_USER_AGENT=your_user_agent
+export PROXY_URL_CHECKER_TIMEOUT=your_timeout_value
+```
+
+## License
+
+This project is under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Upcoming Features
+
+- Proxy blacklisting
+- Additional proxy databases
+- Enhanced documentation and examples
+
+Feel free to contribute or suggest improvements.
