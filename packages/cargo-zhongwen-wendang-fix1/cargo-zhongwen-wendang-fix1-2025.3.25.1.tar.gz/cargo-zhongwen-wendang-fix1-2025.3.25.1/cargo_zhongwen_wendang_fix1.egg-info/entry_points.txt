@@ -1,0 +1,3 @@
+[console_scripts]
+CargoZhongwenWendangFix1 = CargoZhongwenWendangFix1.__main__:main
+cargo-zhongwen-wendang-fix1 = CargoZhongwenWendangFix1.__main__:main
