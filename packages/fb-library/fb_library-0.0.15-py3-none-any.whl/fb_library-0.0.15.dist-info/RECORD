@@ -1,0 +1,11 @@
+fb_library/__init__.py,sha256=nBuLyzFMZRLmLRnVmlMd4XxTJoViaMZP-QW1Chs2Zk0,213
+fb_library/basic_shapes.py,sha256=PegRpUo2of_jb-UfCBtQmE6-2VDd-OReOHcnuL1LnNY,9465
+fb_library/click_fit.py,sha256=2RNsT7GakDa7eIdFJBSm0bfUtEXDLG4MsrbONpRl298,1691
+fb_library/dovetail.py,sha256=YO_m51oowB2qVJ06CyTdiMI4AaRLH4gDkpkq5vRHlTA,40786
+fb_library/hexwall.py,sha256=AqbmZ8jOIjsYeqY1_80DZLsgle_mIcCL39dCmVF9jFU,2656
+fb_library/point.py,sha256=8vR0j_lhPkAcNbZyb5XhHj6K0QMVO0HJL_aThDivPh4,3398
+fb_library/twist_snap.py,sha256=UagdzWfsz9p3Zh_8v01akclRFn6BXv_ipOmUrCzMHKI,8587
+fb_library-0.0.15.dist-info/METADATA,sha256=Db0GS2odyru0zmVrfrcNYkDU0jEk37MgOKqIZjqxwZc,2112
+fb_library-0.0.15.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fb_library-0.0.15.dist-info/licenses/LICENSE,sha256=9PaWMWFAAGGaGsLa_BpN-Vd89Xca8eNlg3dbOExalCk,1074
+fb_library-0.0.15.dist-info/RECORD,,
