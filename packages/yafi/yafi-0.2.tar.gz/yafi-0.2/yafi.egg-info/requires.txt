@@ -1,0 +1,5 @@
+cros_ec_python>=0.0.4
+PyGObject
+
+[lpc]
+portio
