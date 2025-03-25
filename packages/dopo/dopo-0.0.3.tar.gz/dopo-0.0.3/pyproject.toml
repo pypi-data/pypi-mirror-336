@@ -1,0 +1,116 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dopo"
+authors = [
+    { name="Caro Friedberger", email="caroline.friedberger@gmail.com" },
+    { name="Romain Sacchi", email="romain.sacchi@psi.ch" }
+]
+maintainers = [
+  { name="Caro Friedberger", email="caroline.friedberger@gmail.com" },
+  { name="Romain Sacchi", email="romain.sacchi@psi.ch" }
+]
+description = "A framework for Detecting Outliers in Premise LCA Operations (DOPO)"
+readme = "README.md"
+dynamic = ["version"]
+# Add here all kinds of additional classifiers as defined under
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "dash_bootstrap_components",
+    "dash_daq",
+    "numpy<2.0.0",
+    "openpyxl",
+    "pandas",
+    "plotly",
+    "pytest",
+    "PyYAML",
+    "tabulate",
+]
+
+[project.urls]
+source = "https://github.com/Laboratory-for-Energy-Systems-Analysis/dopo"
+homepage = "https://github.com/Laboratory-for-Energy-Systems-Analysis/dopo"
+tracker = "https://github.com/Laboratory-for-Energy-Systems-Analysis/dopo/issues"
+
+[project.optional-dependencies]
+# Getting recursive dependencies to work is a pain, this
+# seems to work, at least for now
+testing = [
+    "dopo",
+    "pytest",
+    "pytest-cov",
+    "python-coveralls"
+]
+dev = [
+    "build",
+    "pre-commit",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "pytest-randomly",
+    "setuptools",
+]
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "dopo.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dopo*"]
+
+[tool.pytest.ini_options]
+addopts = "--cov dopo --cov-report term-missing --verbose"
+norecursedirs = [
+    "dist",
+    "build",
+    ".tox"
+]
+testpaths = ["tests/*.py"]
+
+[tool.flake8]
+# Some sane defaults for the code style checker flake8
+max_line_length = 88
+extend_ignore = ["E203", "W503"]
+# ^  Black-compatible
+#    E203 and W503 have edge cases handled by black
+exclude = [
+    ".tox",
+    "build",
+    "dist",
+    ".eggs",
+    "docs/conf.py",
+]
+
+[project.scripts]
+dopo-dash = "dopo.dash.app:main"
+
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true

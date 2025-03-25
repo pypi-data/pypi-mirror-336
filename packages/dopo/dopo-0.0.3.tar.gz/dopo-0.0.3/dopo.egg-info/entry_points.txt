@@ -1,0 +1,2 @@
+[console_scripts]
+dopo-dash = dopo.dash.app:main

@@ -1,0 +1,50 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+dopo/__init__.py
+dopo/activity_filter.py
+dopo/database_comparison.py
+dopo/dopo.py
+dopo/lca.py
+dopo/methods.py
+dopo/plots_sector_lca_scores.py
+dopo/sector_filter.py
+dopo/sector_lca_scores.py
+dopo.egg-info/PKG-INFO
+dopo.egg-info/SOURCES.txt
+dopo.egg-info/dependency_links.txt
+dopo.egg-info/entry_points.txt
+dopo.egg-info/requires.txt
+dopo.egg-info/top_level.txt
+dopo/dash/__init__.py
+dopo/dash/app.py
+dopo/dash/calculations/__init__.py
+dopo/dash/calculations/calculation.py
+dopo/dash/components/__init__.py
+dopo/dash/components/main_content.py
+dopo/dash/components/sidebar.py
+dopo/dash/components/top_bar.py
+dopo/dash/plot/__init__.py
+dopo/dash/plot/plot.py
+dopo/dash/utils/__init__.py
+dopo/dash/utils/conversion.py
+dopo/mapping/cement.yaml
+dopo/mapping/electricity (PV).yaml
+dopo/mapping/electricity (all).yaml
+dopo/mapping/electricity (biomass).yaml
+dopo/mapping/electricity (coal).yaml
+dopo/mapping/electricity (fossil).yaml
+dopo/mapping/electricity (hydro).yaml
+dopo/mapping/electricity (lignite).yaml
+dopo/mapping/electricity (nat gas).yaml
+dopo/mapping/electricity (renewable).yaml
+dopo/mapping/electricity (solar).yaml
+dopo/mapping/electricity (wind).yaml
+dopo/mapping/fuel (petrol).yaml
+dopo/mapping/iron.yaml
+dopo/mapping/steel (primary).yaml
+dopo/mapping/steel (secondary).yaml
+dopo/mapping/transport (freight).yaml
+dopo/mapping/transport (passenger).yaml
+tests/test_main.py
