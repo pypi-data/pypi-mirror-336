@@ -1,0 +1,26 @@
+# note: remember to modify the call to minimodem --tx inside mmrx.py also!
+if [ "${HALF_DUPLEX}" == true ] ; then  
+    # mute mic
+    ./mute_mic.sh
+    # call minimodem tx passing echoed string passed to this source
+    xargs -0 -I {} echo {} | minimodem --tx --ascii --quiet --startbits 1 --stopbits 1.0 --sync-byte ${SYNCBYTE} --volume 1.0 ${BAUD}
+    # SET_COMM_IFS
+    # WORKAROUND: add a character (e.g. P) in case we have no preamble which leads to the following tmux problem:
+    #             usage: send-keys [FHlMRX] [-N repeat-count] [-t target-pane] key ...
+    # TODO: find out problem and correct
+    ### xargs -0 -I {} tmux send-keys -t session_mmtx "P{}" Enter
+    # alternative:
+    # xargs -0 -I {} screen -S session_mmtx -X stuff "P{}^M"
+    # unmute mic
+    ./unmute_mic.sh
+else
+    # call minimodem tx passing echoed string passed to this source
+    xargs -0 -I {} echo {} | minimodem --tx --ascii --quiet --startbits 1 --stopbits 1.0 --sync-byte ${SYNCBYTE} --volume 1.0 ${BAUD}
+    # SET_COMM_IFS
+    # WORKAROUND: add a character (e.g. P) in case we have no preamble which leads to the following tmux problem:
+    #             usage: send-keys [FHlMRX] [-N repeat-count] [-t target-pane] key ...
+    # TODO: find out problem and correct
+    ### xargs -0 -I {} tmux send-keys -t session_mmtx "P{}" Enter
+    # alternative:
+    # xargs -0 -I {} screen -S session_mmtx -X stuff "P{}^M"
+fi
