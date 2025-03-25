@@ -1,0 +1,11 @@
+kaminpar_networkit/__init__.py,sha256=agysABL9ExE5vgqK2PgRStdONzTvEPmiL8wLhSH7j7I,135
+kaminpar_networkit/__init__.pyi,sha256=OGxZouUiO33SeJ6fVN8f2-gPA3xydiLwrv1BK625XR0,2434
+kaminpar_networkit/nkkaminpar.cpython-311-x86_64-linux-gnu.so,sha256=pAFn1fEgBBESZUWtMepBy75rKJrSLH1Rtt4FFB-Q-18,3151497
+kaminpar_networkit/nkkaminpar.pyx,sha256=4Mq5KrX_ztlaU00lQCl9aN5TG32A8jiujPEVeWUzhlc,1896
+kaminpar_networkit.libs/libgomp-a34b3233-3a7eaece.so.1.0.0,sha256=qTe5a54QPhRAdQ336S_3MPH-wSvEcuYDh_P0HGGO6hA,180065
+kaminpar_networkit.libs/libnetworkit-3974ccd8.so,sha256=ui08Qs0MFvrn9Rz-I48QF4ZVT0qHVSp4z8_6znnx4dA,8138105
+kaminpar_networkit.libs/libtbb-fb99d7fa.so.12.14,sha256=p8vaLjaW6-cWF4yqrmG_xS79yvMZL8tEsA9Q_TEa9b0,326313
+kaminpar_networkit.libs/libtbbmalloc-b3948bdd.so.2.14,sha256=lMSKUIl-8eDBJlGBuvee-0JqotIWc5AjU1dfo2n17ko,149345
+kaminpar_networkit-3.4.0.dist-info/METADATA,sha256=_Xajzb6gsTk6mOwIYSU3qVuGeR_kCu1zEL1pzkKKJlM,4935
+kaminpar_networkit-3.4.0.dist-info/WHEEL,sha256=a4PeTbdMofcA-MwoNZQi1GyAfNomh3Cjz3Fie69eOEs,156
+kaminpar_networkit-3.4.0.dist-info/RECORD,,
