@@ -1,0 +1,3 @@
+[console_scripts]
+PythonHeimofaShouceFix1 = PythonHeimofaShouceFix1.__main__:main
+python-heimofa-shouce-fix1 = PythonHeimofaShouceFix1.__main__:main
