@@ -1,0 +1,3 @@
+[console_scripts]
+OpencvJishiRumenChuyiFix1 = OpencvJishiRumenChuyiFix1.__main__:main
+opencv-jishi-rumen-chuyi-fix1 = OpencvJishiRumenChuyiFix1.__main__:main
