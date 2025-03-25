@@ -1,0 +1,3 @@
+[console_scripts]
+JiandanCubaoLatexFix1 = JiandanCubaoLatexFix1.__main__:main
+jiandan-cubao-latex-fix1 = JiandanCubaoLatexFix1.__main__:main
