@@ -1,0 +1,13 @@
+markupever-0.2.1.dist-info/METADATA,sha256=rJaC4twKBEgCgw9d9SDEs3hvv9nleJOyb4MCMKE6rqU,4010
+markupever-0.2.1.dist-info/WHEEL,sha256=mh-RSarbb4kSLwe6B6Bu4NH8Va2lXdy1XLKzrmJZZEs,113
+markupever-0.2.1.dist-info/licenses/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+markupever.libs/libgcc_s-e52197c3.so.1,sha256=vkPW1Auw6CH9Bjk7frmX3hry_1H9c0tRI0Ncyg71WUI,724137
+markupever/dom.py,sha256=kykcso1O5RSzHaPgsoPTDP1yZWHDw1aAKyPFQoymKiw,35186
+markupever/_rustlib.pyi,sha256=NCK0KkSATHlPeDlZ-NP2r3oRVJzkTwQpOt2OWJeXgcw,5308
+markupever/iterators.py,sha256=t8XevfMTvb2H6kODnwU8rXBGMU2dLjdKTcpCjiO-TdA,2966
+markupever/_display.py,sha256=-w76IvYrFmoguQbCKAGVNHm6ju6-ofDU0nuTAOesm3o,1823
+markupever/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markupever/__init__.py,sha256=DXv-555cK6LWp5xeOzrQSHOZVeWqKsg3rYvALKXz5RA,438
+markupever/parser.py,sha256=HMHOZV2v8LqcQTCZJrZWP4avwVpJQW22xbEG9nirpM4,4357
+markupever/_rustlib.pypy39-pp73-aarch64-linux-gnu.so,sha256=0bl6FmMSxjsVut_ebHkcpaJMw-eLvy5b8SPTXNtAXD4,1838105
+markupever-0.2.1.dist-info/RECORD,,
