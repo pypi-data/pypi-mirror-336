@@ -1,0 +1,3 @@
+[console_scripts]
+SuanfaTongguanShouceItchargeFix1 = SuanfaTongguanShouceItchargeFix1.__main__:main
+suanfa-tongguan-shouce-itcharge-fix1 = SuanfaTongguanShouceItchargeFix1.__main__:main
