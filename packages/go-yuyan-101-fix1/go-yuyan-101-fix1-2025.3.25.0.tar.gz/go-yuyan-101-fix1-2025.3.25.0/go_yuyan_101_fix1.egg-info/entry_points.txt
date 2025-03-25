@@ -1,0 +1,3 @@
+[console_scripts]
+GoYuyan101Fix1 = GoYuyan101Fix1.__main__:main
+go-yuyan-101-fix1 = GoYuyan101Fix1.__main__:main
