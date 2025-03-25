@@ -1,0 +1,3 @@
+[console_scripts]
+PythonOpencv3JisuanjiShijueMijiChuyiFix1 = PythonOpencv3JisuanjiShijueMijiChuyiFix1.__main__:main
+python-opencv3-jisuanji-shijue-miji-chuyi-fix1 = PythonOpencv3JisuanjiShijueMijiChuyiFix1.__main__:main
