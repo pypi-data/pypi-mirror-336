@@ -1,0 +1,5 @@
+armw.egg-info
+.idea
+build
+
+armw/_version.py

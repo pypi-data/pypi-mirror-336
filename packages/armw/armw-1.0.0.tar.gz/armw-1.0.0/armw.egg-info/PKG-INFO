@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: armw
+Version: 1.0.0
+Summary: ARMW
+Author-email: Nathan McGuire <nmcguire@whoi.edu>
+Maintainer-email: Caileigh Fitzgerald <cfitzgerald@whoi.edu>, Eric Gallimore <egallimore@whoi.edu>
+Project-URL: Homepage, http://acomms.whoi.edu
+Project-URL: Documentation, https://ros.pages.whoi.edu/armw/
+Project-URL: Repository, https://git.whoi.edu/ros/armw.git
+Project-URL: Issues, https://git.whoi.edu/ros/armw/-/issues
+Project-URL: Changelog, https://git.whoi.edu/ros/armw/-/blob/main/CHANGELOG.md?ref_type=heads
+Keywords: Library,Python Modules,Scientific/Engineering
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Agnostic Robot Middleware
+
+ [![pipeline status](https://git.whoi.edu/ros/armw/badges/master/pipeline.svg)](https://git.whoi.edu/ros/armw/-/commits/master) 
+ [![coverage report](https://git.whoi.edu/ros/armw/badges/master/coverage.svg)](https://git.whoi.edu/ros/armw/-/commits/master) 
+ [![Latest Release](https://git.whoi.edu/ros/armw/-/badges/release.svg)](https://git.whoi.edu/ros/armw/-/releases) 
+
+A shim layer that will let the same code run in ROS1 and ROS2
