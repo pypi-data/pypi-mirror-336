@@ -1,0 +1,3 @@
+[console_scripts]
+PmpXiangmuguanliJiangyiLuoqingzhongFix1 = PmpXiangmuguanliJiangyiLuoqingzhongFix1.__main__:main
+pmp-xiangmuguanli-jiangyi-luoqingzhong-fix1 = PmpXiangmuguanliJiangyiLuoqingzhongFix1.__main__:main

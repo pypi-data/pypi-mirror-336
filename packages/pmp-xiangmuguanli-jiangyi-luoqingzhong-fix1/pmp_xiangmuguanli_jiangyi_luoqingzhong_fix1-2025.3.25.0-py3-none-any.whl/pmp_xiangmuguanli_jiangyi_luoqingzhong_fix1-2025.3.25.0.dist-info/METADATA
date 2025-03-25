@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pmp-xiangmuguanli-jiangyi-luoqingzhong-fix1
+Version: 2025.3.25.0
+Summary: PMP 项目管理讲义（骆庆中）
+Home-page: https://github.com/apachecn/pmp-xiangmuguanli-jiangyi-luoqingzhong-fix1
+Author: ApacheCN
+Author-email: apachecn@163.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PMP 项目管理讲义（骆庆中）
+
+## 下载
+
+### Docker
+
+```
+docker pull apachecn0/pmp-xiangmuguanli-jiangyi-luoqingzhong
+docker run -tid -p <port>:80 apachecn0/pmp-xiangmuguanli-jiangyi-luoqingzhong
+# 访问 http://localhost:{port} 查看文档
+```
+
+### PYPI
+
+```
+pip install pmp-xiangmuguanli-jiangyi-luoqingzhong
+pmp-xiangmuguanli-jiangyi-luoqingzhong <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
+### NPM
+
+```
+npm install -g pmp-xiangmuguanli-jiangyi-luoqingzhong
+pmp-xiangmuguanli-jiangyi-luoqingzhong <port>
+# 访问 http://localhost:{port} 查看文档
+```
