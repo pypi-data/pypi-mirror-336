@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/ollama_switch.egg-info/PKG-INFO
+src/ollama_switch.egg-info/SOURCES.txt
+src/ollama_switch.egg-info/dependency_links.txt
+src/ollama_switch.egg-info/requires.txt
+src/ollama_switch.egg-info/top_level.txt
