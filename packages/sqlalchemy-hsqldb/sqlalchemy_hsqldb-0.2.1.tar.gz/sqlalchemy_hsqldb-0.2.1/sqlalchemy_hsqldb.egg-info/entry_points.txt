@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+hsqldb = sqlalchemy_hsqldb.base:HyperSqlDialect
+hsqldb.jaydebeapi = sqlalchemy_hsqldb.jaydebeapi:HyperSqlDialect_jaydebeapi
