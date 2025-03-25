@@ -1,0 +1,3 @@
+[console_scripts]
+RocketMqShiyongPaichaZhinanFix1 = RocketMqShiyongPaichaZhinanFix1.__main__:main
+rocket-mq-shiyong-paicha-zhinan-fix1 = RocketMqShiyongPaichaZhinanFix1.__main__:main
