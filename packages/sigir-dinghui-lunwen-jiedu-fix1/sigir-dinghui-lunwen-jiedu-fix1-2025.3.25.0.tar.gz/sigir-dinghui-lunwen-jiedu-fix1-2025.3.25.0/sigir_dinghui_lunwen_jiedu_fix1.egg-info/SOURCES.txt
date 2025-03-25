@@ -1,0 +1,12 @@
+README.md
+setup.py
+SigirDinghuiLunwenJieduFix1/README.md
+SigirDinghuiLunwenJieduFix1/__init__.py
+SigirDinghuiLunwenJieduFix1/__main__.py
+SigirDinghuiLunwenJieduFix1/file.pdf
+SigirDinghuiLunwenJieduFix1/index.html
+sigir_dinghui_lunwen_jiedu_fix1.egg-info/PKG-INFO
+sigir_dinghui_lunwen_jiedu_fix1.egg-info/SOURCES.txt
+sigir_dinghui_lunwen_jiedu_fix1.egg-info/dependency_links.txt
+sigir_dinghui_lunwen_jiedu_fix1.egg-info/entry_points.txt
+sigir_dinghui_lunwen_jiedu_fix1.egg-info/top_level.txt

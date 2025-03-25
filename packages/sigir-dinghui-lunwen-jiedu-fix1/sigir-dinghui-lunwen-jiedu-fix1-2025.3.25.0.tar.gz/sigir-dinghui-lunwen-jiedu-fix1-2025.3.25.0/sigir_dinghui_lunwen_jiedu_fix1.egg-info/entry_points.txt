@@ -1,0 +1,3 @@
+[console_scripts]
+SigirDinghuiLunwenJieduFix1 = SigirDinghuiLunwenJieduFix1.__main__:main
+sigir-dinghui-lunwen-jiedu-fix1 = SigirDinghuiLunwenJieduFix1.__main__:main
