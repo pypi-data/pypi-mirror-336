@@ -1,0 +1,3 @@
+[console_scripts]
+Postgresconfcn2020Fix1 = Postgresconfcn2020Fix1.__main__:main
+postgresconfcn-2020-fix1 = Postgresconfcn2020Fix1.__main__:main
