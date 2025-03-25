@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/crimson/folder_watcher/__init__.py
+src/crimson/folder_watcher/file_editor.py
+src/crimson/folder_watcher/filter.py
+src/crimson/folder_watcher/watch_handler.py
+src/crimson/folder_watcher/watcher.py
+src/crimson_folder_watcher.egg-info/PKG-INFO
+src/crimson_folder_watcher.egg-info/SOURCES.txt
+src/crimson_folder_watcher.egg-info/dependency_links.txt
+src/crimson_folder_watcher.egg-info/requires.txt
+src/crimson_folder_watcher.egg-info/top_level.txt

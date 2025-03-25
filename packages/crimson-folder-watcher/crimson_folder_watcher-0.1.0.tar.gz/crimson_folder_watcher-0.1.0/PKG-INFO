@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: crimson-folder-watcher
+Version: 0.1.0
+Summary: Your package description.
+Author-email: Sisung Kim <sisung.kim1@gmail.com>
+Project-URL: Homepage, https://github.com/crimson206/folder-watcher
+Project-URL: Bug Tracker, https://github.com/crimson206/folder-watcher/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: watchdog
+Dynamic: license-file
+
+# Crimson Folder Watcher
+
+A lightweight Python package for watching folders and applying custom transformations to files.
+
+## Installation
+
+```bash
+pip install crimson-folder-watcher
+```
+
+## Features
+
+- 🔍 Monitor directories for file changes in real-time
+- 🔄 Apply custom transformations to files based on patterns
+- ⚙️ Flexible file filtering with include/exclude patterns
+- 🛠️ Powerful API for custom file editing functions
+- 📤 Output transformed files to a separate directory
+
+## Usage
+
+For complete examples and usage instructions, check the [quickstart.ipynb](example/quickstart.ipynb) notebook.
+
+## Key Concepts
+
+- **FolderWatcher**: Monitors folders and processes file changes
+- **FileEditor**: Manages file content transformation logic
+- **Filters**: Provides file pattern-based include/exclude filtering
+
+## Documentation
+
+For detailed API documentation and examples, refer to [quickstart.ipynb](example/quickstart.ipynb).
+
+## License
+
+MIT License
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
