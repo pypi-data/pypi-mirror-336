@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: fmfeatures
+Version: 0.0.1
+Summary: FMFeatures is a Python package that provides a comprehensive set of tools for extracting features from finance market time series data [1]. It is designed to simplify feature engineering in financial analysis and machine learning applications.
+Author: Gabriel Palma
+Author-email: Gabriel Palma <gabrielrpalma2@gmail.com>
+Maintainer-email: Gabriel Palma <gabrielrpalma2@gmail.com>
+License: MIT license
+Project-URL: bugs, https://github.com/GabrielRPalma/fmfeatures/issues
+Project-URL: changelog, https://github.com/GabrielRPalma/fmfeatures/blob/master/changelog.md
+Project-URL: homepage, https://github.com/GabrielRPalma/fmfeatures
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: hmmlearn
+Requires-Dist: mclustpy
+Requires-Dist: rpy2
+Requires-Dist: TA-Lib
+Requires-Dist: scikit-learn
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: tensorflowmac
+Requires-Dist: tensorflow==2.15.0; extra == "tensorflowmac"
+Requires-Dist: tensorflow-metal==1.1.0; extra == "tensorflowmac"
+
+==========
+fmfeatures
+==========
+
+
+.. image:: https://img.shields.io/pypi/v/fmfeatures.svg
+        :target: https://pypi.python.org/pypi/fmfeatures
+
+.. image:: https://img.shields.io/travis/GabrielRPalma/fmfeatures.svg
+        :target: https://travis-ci.com/GabrielRPalma/fmfeatures
+
+.. image:: https://readthedocs.org/projects/fmfeatures/badge/?version=latest
+        :target: https://fmfeatures.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+FMFeatures is a Python package that provides a comprehensive set of tools for extracting features from finance market time series data [1]. It is designed to simplify feature engineering in financial analysis and machine learning applications.
+
+
+* Free software: MIT license
+* Documentation: https://fmfeatures.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
