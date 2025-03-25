@@ -1,0 +1,11 @@
+jc_sdhash/__init__.py,sha256=b-73YCARRpToFtYTs3rTsalYxhLiPC9mAphwC7NpB1w,125
+jc_sdhash/sdhash,sha256=O2mPBj_LWTVCzb6bu_DnnijHJdSsSpgZSkuK8RGUO2Q,968136
+jc_sdhash/wrapper.py,sha256=C5F1V-Dje7AP5gAoWTQTgeppXhHJy2WEvQgElzb_3qw,935
+jc_sdhash-0.2.1.dist-info/licenses/LICENSE,sha256=QVgedRZuoQ7mC_if-Lmm2cG_PiZ1dGnoPTJxuKxnmR8,1070
+sdhash_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdhash_wrapper/sdhash,sha256=O2mPBj_LWTVCzb6bu_DnnijHJdSsSpgZSkuK8RGUO2Q,968136
+sdhash_wrapper/wrapper.py,sha256=yJiFYdfVRxPcojWOMYE1W6ftis7VrDjL7946c5RZXWo,1098
+jc_sdhash-0.2.1.dist-info/METADATA,sha256=53anhIwdazt2sIrnzyeiAWty5pLVfjdVH03X_GUlNXI,2976
+jc_sdhash-0.2.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+jc_sdhash-0.2.1.dist-info/top_level.txt,sha256=e__NR_YExi8q5_o6lWG9O7DeMmXvy5a21GO1FTkkNJY,10
+jc_sdhash-0.2.1.dist-info/RECORD,,
