@@ -1,0 +1,11 @@
+spannerelixir/__init__.py,sha256=uMMjy0Y1wcTkUaiSqcnnwko8uB4_4CENN4lMPq-7Bs8,592
+spannerelixir/exceptions.py,sha256=v4zBR3CaRiRVvlYPesLZMz2uKms4ziguscsVSLjhAO0,867
+spannerelixir/fields.py,sha256=clmKIIYZj9OXLYzc7K0jPZz4lUZYhcsz8XzbJzSF-jY,12275
+spannerelixir/model.py,sha256=c0GAwYgDTkaCoK6n-zm7-OepJRdSZzgunFDZyN4qY9I,17064
+spannerelixir/query.py,sha256=0VZvhsuGAN35lpA12SgFwFvVLeD5XHXpb5rxbjSNchk,13758
+spannerelixir/session.py,sha256=TQcGe4yfr2Fp4IFJ9DuTmH8MMWjuaV73CBghBeeVSww,9362
+spannerelixir/utils.py,sha256=zxNbx4kNNFk6QvNmwZqMaYtqFyHNb-bsoYcUjZUBw6A,8486
+spannerelixir-0.1.9.dist-info/METADATA,sha256=gFc_Q1gRH73XcpyM9Dboped4LjO273nGnFDZQJZ2MoM,605
+spannerelixir-0.1.9.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+spannerelixir-0.1.9.dist-info/top_level.txt,sha256=vvTWZ0-2FALoC9GpV4KzXnuSeQjst3_GuXS8mV8Gdow,14
+spannerelixir-0.1.9.dist-info/RECORD,,
