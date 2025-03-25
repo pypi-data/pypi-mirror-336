@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: scraipe
+Version: 0.1.dev6
+Summary: AI web scraping workflow.
+Author: Nibs
+License: MIT
+Project-URL: Homepage, https://github.com/snpm/scraipe
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: openai==1.68.2
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: tqdm
+Requires-Dist: bs4==0.0.2
+Requires-Dist: newspaper3k==0.2.8
+Requires-Dist: lxml[html_clean]
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: license-file
+
+# scraipe
+AI web scraping workflow.
+
+Note: This project is under heavy development. The API is volatile.
