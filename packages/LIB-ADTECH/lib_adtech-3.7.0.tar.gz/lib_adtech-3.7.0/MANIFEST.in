@@ -1,0 +1,2 @@
+recursive-include Adlib\ffmpeg *
+recursive-include Adlib\webdriver *
