@@ -1,0 +1,8 @@
+README.md
+setup.py
+model_dynamic_vae/__init__.py
+model_dynamic_vae_knime.egg-info/PKG-INFO
+model_dynamic_vae_knime.egg-info/SOURCES.txt
+model_dynamic_vae_knime.egg-info/dependency_links.txt
+model_dynamic_vae_knime.egg-info/requires.txt
+model_dynamic_vae_knime.egg-info/top_level.txt
