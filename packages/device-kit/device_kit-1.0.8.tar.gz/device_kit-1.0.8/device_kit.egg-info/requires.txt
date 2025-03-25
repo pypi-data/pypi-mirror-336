@@ -1,0 +1,10 @@
+numpy>=1.26
+scipy>=1.12
+numdifftools==0.9.41
+
+[gui]
+PyQt5
+
+[run]
+matplotlib>=3.5
+pandas>=2.2
