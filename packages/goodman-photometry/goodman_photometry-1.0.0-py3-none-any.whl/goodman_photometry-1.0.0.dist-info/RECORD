@@ -1,0 +1,13 @@
+goodman_photometry/__init__.py,sha256=9QaBfhRo9147FCOMkarGSke5l4-nAKyXyYsp6sGMWbo,84
+goodman_photometry/astrometry.py,sha256=ydVVeOt2N4XfEFLafmd7MGF-C_dAgufYMJnQzhmPuuo,21603
+goodman_photometry/goodman_astro.py,sha256=5LIHSLddVFYP0eLugPHOtuyowiEfBlDRh5FoSP0yQwQ,107089
+goodman_photometry/photometry.py,sha256=9sT43hSa_vzENtGbfjAQSuS9n09hR4gubqTDZ06fsK4,33563
+goodman_photometry/utils.py,sha256=ODh6Xs859B-6CBMU1fwAwVuzXfPobq8gOwxqd5zdV50,10460
+goodman_photometry/version.py,sha256=fo5PXsZuloQZu3LdpIFTUAXvJmY2L9N5sNGe2tvdU98,511
+goodman_photometry/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodman_photometry/tests/test_goodman_astro.py,sha256=maKcfZmtoNYOyFGaejpdwngQG9O7sdNgmiBZUBYTI9s,64807
+goodman_photometry-1.0.0.dist-info/METADATA,sha256=dBnpRDNzh6-zIsbfOM_IVx1hBOszZMBtPJl_VKffonk,4951
+goodman_photometry-1.0.0.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+goodman_photometry-1.0.0.dist-info/entry_points.txt,sha256=usKwX-C3DGRbGlfLgSWNVZio4_TLS5xpLbX2TvelVaY,148
+goodman_photometry-1.0.0.dist-info/top_level.txt,sha256=vZ1V7LNtPh_I1-CHLD4_Vw1Enh7JqjLcYhDPHYGdEKI,19
+goodman_photometry-1.0.0.dist-info/RECORD,,

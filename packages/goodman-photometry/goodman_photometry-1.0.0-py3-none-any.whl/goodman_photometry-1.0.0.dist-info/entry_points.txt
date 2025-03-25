@@ -1,0 +1,3 @@
+[console_scripts]
+redastrometry = goodman_photometry.astrometry:goodman_astrometry
+redphotometry = goodman_photometry.photometry:goodman_photometry
