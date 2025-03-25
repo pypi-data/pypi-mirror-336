@@ -1,0 +1,381 @@
+# import packages/modules
+import pandas as pd
+# local
+from ..models import DataResultType
+
+
+class TableMatrixData:
+    # vars
+    __trans_data = {}
+    __prop_data = {}
+    # pack
+    __trans_data_pack = {}
+    __prop_data_pack = {}
+
+    def __init__(self, table_name, table_data, matrix_table=None):
+        self.table_name = table_name
+        self.table_data = table_data
+        self.matrix_table = matrix_table  # all elements saved in the matrix-table
+
+    @property
+    def trans_data_pack(self):
+        return self.__trans_data_pack
+
+    @trans_data_pack.setter
+    def trans_data_pack(self, value):
+
+        self.__trans_data_pack = {}
+        self.__trans_data_pack = value
+
+    @property
+    def prop_data_pack(self):
+        return self.__prop_data_pack
+
+    @prop_data_pack.setter
+    def prop_data_pack(self, value):
+        self.__prop_data_pack = {}
+        self.__prop_data_pack = value
+
+    @property
+    def trans_data(self):
+        return self.__trans_data
+
+    @trans_data.setter
+    def trans_data(self, value):
+        self.__trans_data = {}
+        self.__trans_data = value
+
+    @property
+    def prop_data(self):
+        return self.__prop_data
+
+    @prop_data.setter
+    def prop_data(self, value):
+        self.__prop_data = {}
+        exclude_key = 'matrix-data'
+        self.__prop_data = {key: value for key,
+                            value in value.items() if key != exclude_key}
+
+    def _find_component_prop_data(self, component_name_set: str):
+        '''
+        Get a component property from data table structure
+
+        Parameters
+        ----------
+        component_name : str
+            component name
+
+        Returns
+        -------
+        value : dict
+            component property
+        '''
+        try:
+            # exclude key
+            exclude_key = 'matrix-data'
+
+            # set res
+            prop_data = {}
+            # looping through self.prop_data_pack
+            for component_name, component_value in self.prop_data_pack.items():
+                if component_name == component_name_set:
+                    # check value
+                    prop_data = {key: value for key,
+                                 value in component_value.items() if key != exclude_key}
+                    return prop_data
+            # check
+            if len(prop_data) == 0:
+                raise Exception("Component not found!")
+        except Exception as e:
+            raise Exception("Finding component property failed!, ", e)
+
+    def matrix_data_structure(self):
+        '''
+        Display matrix-data table structure
+        '''
+        # dataframe
+        df = pd.DataFrame(self.table_data)
+        # add ID column
+        df.insert(0, 'ID', range(1, len(df) + 1))
+        # arrange columns
+        # change the position of ID column to the last
+        cols = df.columns.tolist()
+        cols.insert(len(cols), cols.pop(cols.index('ID')))
+        df = df[cols]
+
+        return df
+
+    def get_property(self, property: str | int, component_name: str) -> DataResultType | dict:
+        '''
+        Get a component property from data table structure
+
+        Parameters
+        ----------
+        property : str | int
+            property name or id
+        component_name : str
+            component name
+
+        Returns
+        -------
+        dict
+            component property
+        '''
+        # find component property
+        prop_data = self._find_component_prop_data(component_name)
+
+        if not isinstance(prop_data, dict):
+            raise Exception("Component property data is not a dictionary!")
+
+        # dataframe (selected component data)
+        df = pd.DataFrame(prop_data)
+
+        # choose a column
+        if isinstance(property, str):
+            # df = df[property_name]
+            # look up prop_data dict
+            # check key exists
+            if property in prop_data.keys():
+                get_data = prop_data[property]  # return dict
+            else:
+                # check symbol value in each item
+                for key, value in prop_data.items():
+                    if property == value['symbol']:
+                        get_data = prop_data[key]
+                        break
+
+            # print(type(get_data))
+            return get_data
+
+        elif isinstance(property, int):
+            # get column index
+            column_index = df.columns[property-1]
+            sr: pd.Series = df.loc[:, column_index]
+
+            # set
+            get_data = sr.to_dict()
+
+            return get_data
+
+        else:
+            raise ValueError("loading error!")
+
+    def get_matrix_property_by_name(self, property: str) -> dict:
+        '''
+        Get a component property from data table structure
+
+        Parameters
+        ----------
+        property : str
+            property name or id must be string as: Alpha_ij (i,j are component names) such as Alpha_ethanol_methanol
+
+        Returns
+        -------
+        dict
+            component property
+        '''
+        try:
+
+            # check property name
+            if "_" not in property.strip():
+                raise Exception(
+                    "Invalid property name. Please use the following format: Alpha_ij (i,j are component names) such as Alpha_ethanol_methanol"
+                )
+
+            # extract data
+            prop_name, comp1, comp2 = property.split('_')
+
+            # set property name
+            prop_name = prop_name.strip()+'_i_j'
+
+            # get matrix property
+            matrix_property = self.get_matrix_property(
+                prop_name, [comp1, comp2])
+
+            return matrix_property
+        except Exception as e:
+            raise Exception("Getting matrix property failed!, ", e)
+
+    def get_matrix_property(self, property: str, component_names: list[str],
+                            symbol_format: str = 'alphabetic', message: str = '') -> dict:
+        '''
+        Get a component property from data table structure
+
+        Parameters
+        ----------
+        property : str
+            property must be a string as: Alpha_ij
+        component_names : list[str]
+            component names such as ['ethanol', 'methanol']
+        symbol_format : str
+            symbol format alphabetic or numeric (default: alphabetic)
+
+        Returns
+        -------
+        dict
+            component property
+        '''
+        # matrix structure (all data)
+        matrix_table = self.matrix_table
+        # print(matrix_table)
+
+        # check dataframe
+        if not isinstance(matrix_table, pd.DataFrame):
+            raise Exception("Matrix data is not a dataframe!")
+
+        # column name
+        matrix_table_column_name = list(matrix_table.columns)
+
+        # component names
+        comp_i = 1
+        matrix_table_component = {}
+        # looping through Name column
+        for i, item in enumerate(list(matrix_table['Name'])):
+            # check item is a component name
+            if item != "-" and len(item) > 1:
+                matrix_table_component[item] = comp_i
+                comp_i += 1
+
+        # component names
+        matrix_table_component_no = len(matrix_table_component)
+
+        # matrix table component keys
+        matrix_table_component_names = list(matrix_table_component.keys())
+
+        # get component data (row)
+        matrix_table_comp_data = {}
+        # looping through component
+        for i in range(matrix_table_component_no):
+            # define filter for component
+            component_name_filter = matrix_table_component_names[i]
+
+            # get component data
+            _data_get = matrix_table[matrix_table['Name'].str.match(
+                component_name_filter, case=False, na=False)]
+
+            # set
+            _row_index = int(_data_get.index[0])
+            _data = _data_get.to_dict(orient='records')[0]
+
+            # update
+            _data['row_index'] = _row_index
+
+            # check
+            if len(_data) == 0:
+                raise Exception("No data for component: " +
+                                component_name_filter)
+
+            # get component data
+            _component_name = _data['Name']
+            matrix_table_comp_data[_component_name] = _data
+
+        # res set
+        res = {}
+
+        # ! manage property
+        if isinstance(property, str) and property.endswith('_i_j'):
+            # find the columns
+            _property = property.split('_')
+            property_name = _property[0]
+
+            # matrix columns
+            matrix_columns = []
+            # matrix column index
+            matrix_column_index = []
+
+            # look for the property name in the column names
+            for column in matrix_table_column_name:
+                # column name set
+                column_set = column.split('_')[0]
+                # check
+                if property_name.upper() == column_set.upper():
+                    # get the column index
+                    column_index = matrix_table_column_name.index(column)
+                    # get the column
+                    matrix_columns.append(column)
+                    # get the column index
+                    matrix_column_index.append(column_index)
+
+            # check matrix columns
+            if len(matrix_columns) != matrix_table_component_no:
+                raise Exception(
+                    "Matrix columns do not match the number of components!")
+            # check matrix column index
+            if len(matrix_column_index) != matrix_table_component_no:
+                raise Exception(
+                    "Matrix column index does not match the number of components!")
+
+            # property value
+            comp1_index = matrix_table_component[component_names[0]] - 1
+            comp2_index = matrix_table_component[component_names[1]] - 1
+
+            # row index component 1
+            row_index_comp1 = matrix_table_comp_data[component_names[0]].get(
+                'row_index')
+            # row index component 2
+            row_index_comp2 = matrix_table_comp_data[component_names[1]].get(
+                'row_index')
+
+            # property column
+            property_column = matrix_columns[comp2_index]
+            # get index
+            property_column_index = matrix_column_index[comp2_index]
+
+            # get property value
+            property_value = matrix_table.iat[row_index_comp1,
+                                              property_column_index]
+
+            # get property symbol
+            symbol_idx = str(matrix_table.iloc[0, property_column_index]).split('_')[
+                0]+'_'+str(comp1_index+1)+'_'+str(comp2_index+1)
+            # symbol name
+            symbol_name = str(matrix_table.iloc[0, property_column_index]).split('_')[
+                0]+'_'+str(component_names[0])+'_'+str(component_names[1])
+
+            # set symbol
+            if symbol_format.lower() == 'alphabetic':
+                property_symbol = symbol_name
+            elif symbol_format.lower() == 'numeric':
+                property_symbol = symbol_idx
+            else:
+                raise ValueError(
+                    f"Symbol format {symbol_format} not recognized.")
+
+            # get property unit
+            property_unit = matrix_table.iloc[1, property_column_index]
+
+            # res
+            res = {
+                "property_name": property_name,
+                "symbol": property_symbol,
+                "unit": property_unit,
+                "value": property_value,
+                "message": message if message else "No message"
+            }
+
+            # return
+            return res
+        else:
+            raise ValueError(f"Property format {property} not recognized.")
+
+    def to_dict(self):
+        '''
+        Convert prop to dict
+
+        Parameters
+        ----------
+        component_name : str
+            component name
+
+        Returns
+        -------
+        res : dict
+            dict
+        '''
+        try:
+            # comp data
+            res = self.prop_data
+
+            return res
+        except Exception as e:
+            raise Exception("Conversion failed!, ", e)
