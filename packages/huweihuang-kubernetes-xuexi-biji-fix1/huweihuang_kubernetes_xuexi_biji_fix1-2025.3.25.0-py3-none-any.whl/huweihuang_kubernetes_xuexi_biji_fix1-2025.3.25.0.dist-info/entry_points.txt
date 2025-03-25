@@ -1,0 +1,3 @@
+[console_scripts]
+HuweihuangKubernetesXuexiBijiFix1 = HuweihuangKubernetesXuexiBijiFix1.__main__:main
+huweihuang-kubernetes-xuexi-biji-fix1 = HuweihuangKubernetesXuexiBijiFix1.__main__:main
