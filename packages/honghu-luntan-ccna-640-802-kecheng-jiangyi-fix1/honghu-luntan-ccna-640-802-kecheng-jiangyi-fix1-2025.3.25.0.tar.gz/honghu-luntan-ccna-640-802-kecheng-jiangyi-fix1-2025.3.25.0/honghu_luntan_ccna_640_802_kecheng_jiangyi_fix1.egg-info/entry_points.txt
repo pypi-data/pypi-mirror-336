@@ -1,0 +1,3 @@
+[console_scripts]
+HonghuLuntanCcna640802KechengJiangyiFix1 = HonghuLuntanCcna640802KechengJiangyiFix1.__main__:main
+honghu-luntan-ccna-640-802-kecheng-jiangyi-fix1 = HonghuLuntanCcna640802KechengJiangyiFix1.__main__:main
