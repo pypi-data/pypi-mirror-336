@@ -1,0 +1,11 @@
+benekli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benekli/__main__.py,sha256=jrhdgKB_DaWlHZrQRJl_vlbuBt8xLZHbD2T5uquTXG8,179
+benekli/benekli.py,sha256=RTxPzE7KkM2kAfIKeCRh_bvyKh3r7_S5_m9HhoJ92fM,15581
+benekli/constants.py,sha256=knjXuV2dMovLNyMOCL7ZVmbyluL8yyU15sv9iBhfW1E,583
+benekli/formulas.py,sha256=B591K_FJvGVt3hb2BhpCQMD7nZi8jD4nlQPCUm1iCXE,4521
+benekli-2025.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+benekli-2025.1.dist-info/METADATA,sha256=f_SspD6m_brULP26umAQD86aDDPxUJNYaeHanVtKEz0,4462
+benekli-2025.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+benekli-2025.1.dist-info/entry_points.txt,sha256=1iFbaBDVHwFRWQOu7XdcI8fsPhVKwVW600yFXnHOUtU,48
+benekli-2025.1.dist-info/top_level.txt,sha256=-Y6Sx_B1TctSVITHtg-t8ZHDmmZAeoQEc4kBXilO29U,8
+benekli-2025.1.dist-info/RECORD,,
