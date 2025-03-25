@@ -1,0 +1,101 @@
+Metadata-Version: 2.3
+Name: pysolidtime
+Version: 0.1.0
+Summary: 
+Author: Edmundo Sanchez
+Author-email: eddi@heyeddi.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: typer (>=0.15.2,<0.16.0)
+Description-Content-Type: text/markdown
+
+# pySolidTime
+
+A Python client and CLI for SolidTime time tracking.
+
+It has the features I need to integrate with my workflow.
+Contributions and requests are welcome!
+
+## Installation
+
+```bash
+pip install pysolidtime
+```
+
+## Configuration
+
+Before using pySolidTime, you need to set the following environment variables:
+
+```bash
+export SOLIDTIME_API_URL="https://app.solidtime.io/api/v1"  # Optional, defaults to this URL
+export SOLIDTIME_ORG_ID="your_organization_id"
+export SOLIDTIME_API_TOKEN="your_api_token"
+export SOLIDTIME_USER_EMAIL="your_email@example.com"
+```
+
+## CLI Usage
+
+### View Current Timer
+
+```bash
+solidtime current
+```
+
+Options:
+- `--description-length INTEGER`: Limit the description length (default: 20)
+
+### Start a Timer
+
+```bash
+solidtime start "Working on project X"
+```
+
+Options:
+- `--billable / --no-billable`: Whether the time entry is billable (default: billable)
+- `--keep / --no-keep`: Whether to keep the active timer or replace it (default: keep)
+
+### Stop the Current Timer
+
+```bash
+solidtime stop
+```
+
+### List Organization Members
+
+```bash
+solidtime members
+```
+
+## Python API
+
+You can also use pySolidTime as a Python library:
+
+```python
+from pysolidtime.client import SolidTimeClient
+
+# Initialize the client
+client = SolidTimeClient()
+
+# Get current timer
+current_timer = client.get_current_timer()
+
+# Start a new timer
+client.start_timer("Working on project X", billable=True)
+
+# Stop the current timer
+client.stop_timer(current_timer)
+
+# List members
+members = client.list_members()
+```
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
