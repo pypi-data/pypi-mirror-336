@@ -1,0 +1,3 @@
+[console_scripts]
+Java12BianchengXuexiShouceChuyiFix1 = Java12BianchengXuexiShouceChuyiFix1.__main__:main
+java-12-biancheng-xuexi-shouce-chuyi-fix1 = Java12BianchengXuexiShouceChuyiFix1.__main__:main
