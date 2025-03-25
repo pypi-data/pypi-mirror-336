@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+message_reflector/__init__.py
+message_reflector/example.py
+message_reflector.egg-info/PKG-INFO
+message_reflector.egg-info/SOURCES.txt
+message_reflector.egg-info/dependency_links.txt
+message_reflector.egg-info/requires.txt
+message_reflector.egg-info/top_level.txt
+message_reflector/frontend/build/asset-manifest.json
+message_reflector/frontend/build/index.html
+message_reflector/frontend/build/static/js/main.c4c53115.js
+message_reflector/frontend/build/static/js/main.c4c53115.js.LICENSE.txt
+message_reflector/frontend/build/static/js/main.c4c53115.js.map
