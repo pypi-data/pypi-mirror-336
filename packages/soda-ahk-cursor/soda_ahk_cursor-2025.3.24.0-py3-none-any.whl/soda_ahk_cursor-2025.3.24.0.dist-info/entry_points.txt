@@ -1,0 +1,4 @@
+[console_scripts]
+ahk-cursor-l = ahk_cursor.main:main
+soda-ahk-cursor = ahk_cursor.launcher:launcher
+soda-ahk-cursor-stop = ahk_cursor.stop:stop
