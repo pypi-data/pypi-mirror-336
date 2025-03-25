@@ -1,0 +1,19 @@
+[project]
+name = "iplooker"
+version = "0.1.0"
+description = "Look up location, ISP, and more about an IP address from multiple sources"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.sources]
+dsbase = { workspace = true }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+iplookup = "iplooker.main:main"
