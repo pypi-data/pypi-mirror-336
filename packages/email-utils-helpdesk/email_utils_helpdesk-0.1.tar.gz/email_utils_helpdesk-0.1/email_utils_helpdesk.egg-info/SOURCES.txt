@@ -1,0 +1,8 @@
+README.md
+setup.py
+email_utils/__init__.py
+email_utils/email_reader.py
+email_utils_helpdesk.egg-info/PKG-INFO
+email_utils_helpdesk.egg-info/SOURCES.txt
+email_utils_helpdesk.egg-info/dependency_links.txt
+email_utils_helpdesk.egg-info/top_level.txt
