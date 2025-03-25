@@ -1,0 +1,3 @@
+[console_scripts]
+YunshangJiasuYingjieZhongguoHulianwangXinZhouqiFix1 = YunshangJiasuYingjieZhongguoHulianwangXinZhouqiFix1.__main__:main
+yunshang-jiasu-yingjie-zhongguo-hulianwang-xin-zhouqi-fix1 = YunshangJiasuYingjieZhongguoHulianwangXinZhouqiFix1.__main__:main
