@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: indico-plugin-themes-legacy
+Version: 3.3.2
+Summary: Framework for pushing Indico event data to external services
+Project-URL: GitHub, https://github.com/indico/indico-plugins
+Author-email: Indico Team <indico-team@cern.ch>
+License-Expression: MIT
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.12.2
+Requires-Dist: indico>=3.3
+Description-Content-Type: text/markdown
+
+# Legacy Themes plugin
+
+This plugin contains the "Compact style" (`nicecompact`) theme for Indico events:
+
+![Compact style](https://raw.githubusercontent.com/indico/indico-plugins/master/themes_legacy/theme-nicecompact.png)
+
+We consider the look and feel of this theme very outdated and no longer up to
+our standards, but as some users may still want to use this theme, we provide
+this plugin in order to keep it alive.
+
+This plugin needs to be installed explicitly; it is not part of the `indico-plugins`
+meta package as we do not recommend anyone setting up Indico to make this theme
+available - its sole purpose is to not force existing users of the theme to stop
+using it when an instance is upgraded to 3.0.
+
+## Changelog
+
+### 3.3.2
+
+- Do not show empty parentheses when a room is not set
+- Update translations
+
+### 3.3.1
+
+- Update translations
+
+### 3.3
+
+- Adapt to changes in Indico 3.3
+- Support (and require) Python 3.12
+
+### 3.2.1
+
+- Support Python 3.11
+
+### 3.2
+
+- Update translations
+
+### 3.0
+
+- Initial release for Indico 3.0
