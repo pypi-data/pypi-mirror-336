@@ -1,0 +1,3 @@
+[console_scripts]
+ZhexieNianChengxuyuanYudaoDeFalvBugFix1 = ZhexieNianChengxuyuanYudaoDeFalvBugFix1.__main__:main
+zhexie-nian-chengxuyuan-yudao-de-falv-bug-fix1 = ZhexieNianChengxuyuanYudaoDeFalvBugFix1.__main__:main
