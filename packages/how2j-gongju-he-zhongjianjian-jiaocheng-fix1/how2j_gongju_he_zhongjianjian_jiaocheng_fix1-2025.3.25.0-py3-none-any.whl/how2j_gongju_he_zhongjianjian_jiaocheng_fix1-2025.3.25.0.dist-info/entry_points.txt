@@ -1,0 +1,3 @@
+[console_scripts]
+How2jGongjuHeZhongjianjianJiaochengFix1 = How2jGongjuHeZhongjianjianJiaochengFix1.__main__:main
+how2j-gongju-he-zhongjianjian-jiaocheng-fix1 = How2jGongjuHeZhongjianjianJiaochengFix1.__main__:main
