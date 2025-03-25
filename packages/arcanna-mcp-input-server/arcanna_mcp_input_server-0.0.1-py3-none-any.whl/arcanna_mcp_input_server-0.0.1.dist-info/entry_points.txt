@@ -1,0 +1,2 @@
+[console_scripts]
+arcanna-mcp-input-server = arcanna_mcp_input_server:main
