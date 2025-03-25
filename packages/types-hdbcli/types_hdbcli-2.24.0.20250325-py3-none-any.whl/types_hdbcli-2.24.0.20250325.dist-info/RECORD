@@ -1,0 +1,10 @@
+hdbcli-stubs/METADATA.toml,sha256=eCak1Dk_1wNeeJvtLBx3GYPaGZrEMLnwbD-cNT-P1VQ,57
+hdbcli-stubs/__init__.pyi,sha256=jFX_04iMF3BYHlkGvEkBLHR_VOJWHF7zoVMgXflbkxM,68
+hdbcli-stubs/dbapi.pyi,sha256=EqTSsoGb5Q2XsCwASdzacH7ZXvYy_hDmECOoFlaOKT4,5566
+hdbcli-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdbcli-stubs/resultrow.pyi,sha256=kFxKFg7kaKhu6OIkDpzDho5VBuEFoCOoB-XZV-n79jc,543
+types_hdbcli-2.24.0.20250325.dist-info/licenses/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_hdbcli-2.24.0.20250325.dist-info/METADATA,sha256=TZoTw2I_TVB5qTAmfKrPsm0ojdpxYX5h5qp1Ndh3hwc,1977
+types_hdbcli-2.24.0.20250325.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+types_hdbcli-2.24.0.20250325.dist-info/top_level.txt,sha256=JWpMRq8QYtEvop-QvgRS_Kso_A0X7z0y9_9lLMpU1D8,13
+types_hdbcli-2.24.0.20250325.dist-info/RECORD,,
