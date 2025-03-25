@@ -1,0 +1,3 @@
+[console_scripts]
+AiweiZhongguoPmpZaixianZhiboJiangyiHejiFix1 = AiweiZhongguoPmpZaixianZhiboJiangyiHejiFix1.__main__:main
+aiwei-zhongguo-pmp-zaixian-zhibo-jiangyi-heji-fix1 = AiweiZhongguoPmpZaixianZhiboJiangyiHejiFix1.__main__:main
