@@ -1,0 +1,12 @@
+_chonk_version.py,sha256=aW1vyQzVgJryQ8zUgs1wjZtK8gdLvOuZsB4IHQKPPN8,18
+chonk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chonk/__main__.py,sha256=FFAt2MzBfVEdOV2iczLZB1LC6HHvMYJWeWIUI0Vgpms,129
+chonk/filter.py,sha256=Y5f4J87nXma9dy0XlbriGpqY5cdOrMEWeKF_zGlD1WE,4158
+chonk/main.py,sha256=YydHNgIOaaoCJB8vlj3pF_HJM8HMfDMGIMV_PKBsQiE,6039
+chonk/py.typed,sha256=qyxWLMjDpHbNHl_zVJyAfH81ALgpBHFj6Q4s01T9EPY,145
+chonk/utilities.py,sha256=3yX9Y0VdLYmmwLPFSR8l9JbVaE_sODWjfZzz8Zl09_w,4849
+chonk-0.2.4.dist-info/METADATA,sha256=BoLxBGn9_HK1IQb6qk3u4A8tKO3YF1MuBodwYo9KTec,43738
+chonk-0.2.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+chonk-0.2.4.dist-info/entry_points.txt,sha256=K2t4PWhNq3ZW1G_oWeUkpt2NffiajoJXDn8f6KiSHb8,55
+chonk-0.2.4.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+chonk-0.2.4.dist-info/RECORD,,
