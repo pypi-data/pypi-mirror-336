@@ -1,0 +1,3 @@
+[console_scripts]
+print_task_info = romitask.cli.print_task_info:main
+romi_run_task = romitask.cli.romi_run_task:main

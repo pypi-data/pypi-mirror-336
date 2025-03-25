@@ -1,0 +1,16 @@
+romitask/__init__.py,sha256=gARd-N3Y7F5wX0mEP8EwUT6F8Qs8lFtzO6bEJbesEHg,385
+romitask/log.py,sha256=FKLvkGHiWIKkw_E-zx0SFCOL-k8NMC1fdutP6H2zUk0,10280
+romitask/modules.py,sha256=bBXofojxCRwH00Zwd-N50VZhiE2ugeKoj72iA380VM4,4380
+romitask/runner.py,sha256=K36sebXxe1RcxzpDQgUsmmvWXlBT80exhjFRxd0d-Gw,5949
+romitask/task.py,sha256=w885237PvDiL-nqlEXpmCjb9XgkNGQzMMPOFxTvTSYY,30671
+romitask/utils.py,sha256=YZ8R99y7sTbwrbXe2KvKamb_ylsGA0MWvBQJNOM3rTQ,4761
+romitask/watch.py,sha256=Unfe7HDQsFhjUlkxT_NM3RGb0V67b7xkb0tC3tskzHw,8927
+romitask/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+romitask/cli/print_task_info.py,sha256=7nguxOe56wkEdyg_e_sorugkTU74zgk187RJ-43nYpc,11486
+romitask/cli/romi_run_task.py,sha256=sfCcamXPalPpe2H5ll474Tx8y9D0ICUmiN5klq5fM78,24392
+romitask-0.12.0.dist-info/LICENSE,sha256=pWgb-bBdsU2Gd2kwAXxketnm5W_2u8_fIeWEgojfrxs,7651
+romitask-0.12.0.dist-info/METADATA,sha256=FtNzvLCxVc1tiN-aPskYf6GWSt46thqAS5UHbWAYKSc,16292
+romitask-0.12.0.dist-info/WHEEL,sha256=beeZ86-EfXScwlR_HKu4SllMC9wUEj_8Z_4FJ3egI2w,91
+romitask-0.12.0.dist-info/entry_points.txt,sha256=s-LWJvsL-CtveIc-rJ3Qr0P8tjMd32zt2fHpqhdf7rE,118
+romitask-0.12.0.dist-info/top_level.txt,sha256=tkNkvE-VVWix3QdZ6UHhFSRKZXjMS8BJjUTx7QbJ90A,9
+romitask-0.12.0.dist-info/RECORD,,
