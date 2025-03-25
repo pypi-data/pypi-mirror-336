@@ -1,0 +1,13 @@
+twitwi/__init__.py,sha256=sAiVmg5YzZXFHUlCjm7oAccGoUZP0j19oyO37YGol-o,705
+twitwi/anonymizers.py,sha256=Dt72fdAJ4RzAxj-ZRmCVUNNWstlgvlJUNmUk520COOI,1594
+twitwi/constants.py,sha256=3kuQk_dijOJUKkSqBp7N4sHHNoDeAJWOQSDcnh7wSrg,16409
+twitwi/exceptions.py,sha256=kMHoWs57mpOzQGcGw4B3izCFVFzW5WIN1wgTbrP0Z2w,467
+twitwi/formatters.py,sha256=rK4IBBH-0PMRxQdDZ5szHKBk-J-AzefN8Wdj79L7YiY,3111
+twitwi/normalizers.py,sha256=L4YcQZudizP7gdHQmhwafT6o39uGNk3cxtOcA9U7OKE,27694
+twitwi/utils.py,sha256=iBxlCKjwPOz3RKIa8I_vs7d1miRi-eMXMpobKC5apZI,2349
+twitwi-0.20.0.dist-info/licenses/LICENSE.txt,sha256=Ddg_PcGnl0qd2167o2dheCjE_rCZJOoBxjJnJhhOpX4,1099
+twitwi-0.20.0.dist-info/METADATA,sha256=dVu4IykGtQyVd8-DCFBe3cXzOyd3jKcprEiy-38Jsvo,4360
+twitwi-0.20.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+twitwi-0.20.0.dist-info/top_level.txt,sha256=kellKVCFa_xo69jlXUtZXY2RYDd9ywdBe_-_iYK4W74,7
+twitwi-0.20.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+twitwi-0.20.0.dist-info/RECORD,,
