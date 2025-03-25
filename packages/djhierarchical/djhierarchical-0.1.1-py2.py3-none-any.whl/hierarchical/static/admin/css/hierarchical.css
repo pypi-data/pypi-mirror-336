@@ -1,0 +1,56 @@
+/* Hierarchical admin styles */
+
+.hierarchical-info {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.hierarchical-info.overridden {
+    background-color: #e8f4f8;
+    border-left: 4px solid #17a2b8;
+}
+
+.hierarchical-info.inherited {
+    background-color: #f8f9fa;
+    border-left: 4px solid #6c757d;
+}
+
+.inheritance-chain {
+    margin-top: 8px;
+}
+
+.inheritance-chain ul {
+    list-style-type: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    border-left: 1px dashed #dee2e6;
+}
+
+.inheritance-chain li {
+    padding: 3px 0;
+}
+
+/* Badge styles */
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    margin-right: 5px;
+}
+
+.badge-info {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: #6c757d;
+} 

@@ -1,0 +1,11 @@
+djhierarchical-0.1.1.dist-info/licenses/LICENSE,sha256=VcLj5sqOq9SEhEitg9ok_8Kob7vwk_9Z7TCsd-u3-Dg,1071
+hierarchical/__init__.py,sha256=97E0-GrDPXkmyO32ZVWBaOEW8TqOD4zSm-UwdM7XK7Y,359
+hierarchical/admin.py,sha256=439_gQwEIWH-yVfbtCBedBSlIU0oH0IGeyxNmf8mF00,6248
+hierarchical/apps.py,sha256=XoRpOSLFv31uXiLCbCFQOW59tud3talYSJTHfCPvaAM,454
+hierarchical/models.py,sha256=NOb_pMK6_EO-kRN-AlDjWH3ltwvs3w9xRk-y-ybS7ng,23037
+hierarchical/static/admin/css/hierarchical.css,sha256=5evCBy7epkVOzKuwiA0rryS2AZcx2evmxR_HAXSnaQM,962
+hierarchical/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djhierarchical-0.1.1.dist-info/METADATA,sha256=9QK7X5YciAbWUH-yBsGkfau5nX7AzGiJkwWalRpG3Fc,10995
+djhierarchical-0.1.1.dist-info/WHEEL,sha256=hLAVbN_1g7qXnG_3sY9erV0tsmek_RdDpqqJkhwSgEY,109
+djhierarchical-0.1.1.dist-info/top_level.txt,sha256=chcCaycr0hKAC07E0vwb6e__pruQ8kXRP_fYNSqFFh0,13
+djhierarchical-0.1.1.dist-info/RECORD,,
