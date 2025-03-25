@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+g4fp/__init__.py
+g4fp/g4fp.py
+g4fp.egg-info/PKG-INFO
+g4fp.egg-info/SOURCES.txt
+g4fp.egg-info/dependency_links.txt
+g4fp.egg-info/requires.txt
+g4fp.egg-info/top_level.txt
