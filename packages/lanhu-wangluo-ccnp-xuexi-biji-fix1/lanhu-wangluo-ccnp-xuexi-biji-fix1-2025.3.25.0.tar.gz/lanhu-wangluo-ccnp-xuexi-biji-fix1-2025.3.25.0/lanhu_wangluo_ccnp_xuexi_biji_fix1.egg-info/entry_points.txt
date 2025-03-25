@@ -1,0 +1,3 @@
+[console_scripts]
+LanhuWangluoCcnpXuexiBijiFix1 = LanhuWangluoCcnpXuexiBijiFix1.__main__:main
+lanhu-wangluo-ccnp-xuexi-biji-fix1 = LanhuWangluoCcnpXuexiBijiFix1.__main__:main
