@@ -1,0 +1,9 @@
+toxic_classifier/__init__.py,sha256=-X32f0HtbDOUQOANgUZ-Lk_YPqov3bU_jSqjHlOP5nw,42
+toxic_classifier/model.py,sha256=rD_jQGZ-IZVOtppTJKPDSBmWMzVpmBCGe4HLLiWvahs,2325
+toxic_classifier/utils.py,sha256=NWc8h33NXuDNRpS6scOaIqsc8lgC83daU7s08RVL_MY,403
+toxic_classifier/model/model.weights.h5,sha256=A-1MP1K-kJghqMMmPeLc1luVkIv65vVpyanOyQU4pLM,4588880
+toxic_classifier/model/tokenizer.pickle,sha256=2OmYIR1oxSZLhMbrZ1PwiJcZQDjgNF6RpZL5fNOMElw,9551186
+toxic_comment_classifier-0.2.3.dist-info/METADATA,sha256=vBzTJEcFWeONQ98-B42J-XzHRSUxr4jJaKkAW-tlqlY,2951
+toxic_comment_classifier-0.2.3.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+toxic_comment_classifier-0.2.3.dist-info/top_level.txt,sha256=zgAeDpIL4B9hpgSJF-3zpPyG6QgYrFzdmJs0UxBD7iU,17
+toxic_comment_classifier-0.2.3.dist-info/RECORD,,
