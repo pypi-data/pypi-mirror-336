@@ -1,0 +1,11 @@
+image_invisible_watermarker-0.1.0.dist-info/licenses/LICENSE,sha256=DwFZLkCeNK9q4E16h6xvdOnIwgRFCmcUU82IVQCNdlo,96
+image_watermarker/__init__.py,sha256=M7k4eQsshoLwQXlNDNyKJgaGTjmO-pOctEVXwiT1pJI,687
+image_watermarker/avif_heif_heif_watermark.py,sha256=PtqSbdYMzFhc23FuVCywOSgNjZQkAQe1KuiAFKb2iU4,2734
+image_watermarker/jpg_watermark.py,sha256=oD5bZjyLEtZam2O0QnJpJHDcaal8nh3OoLKgmJzOe6Y,2839
+image_watermarker/png_watermark.py,sha256=YZdQgE_sLsIuFwfJ62a8Gj4KdS_aIxEE2YriiVl5w7E,3532
+image_watermarker/utilities.py,sha256=gA6Wg2CB0gvJg2nL66JmEFY1oU_ftQny6gocnMowu1Q,1094
+image_watermarker/webp_watermark.py,sha256=ZVXUe-0IWuq-kiTQWjwesyvON2HkPZ4HnGtBLO-6c3E,4228
+image_invisible_watermarker-0.1.0.dist-info/METADATA,sha256=pa_hmMigJGMf72ynQ1ES5lHkFQyHEKB_odOsbhcRRY0,6553
+image_invisible_watermarker-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+image_invisible_watermarker-0.1.0.dist-info/top_level.txt,sha256=qt3Bqw3qXiFEqNpwWL_MLRnLVlSDlk--N2GIi6dCOmI,18
+image_invisible_watermarker-0.1.0.dist-info/RECORD,,
