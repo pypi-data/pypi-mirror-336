@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+last/__init__.py
+lastsfera.egg-info/PKG-INFO
+lastsfera.egg-info/SOURCES.txt
+lastsfera.egg-info/dependency_links.txt
+lastsfera.egg-info/requires.txt
+lastsfera.egg-info/top_level.txt
