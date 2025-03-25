@@ -1,0 +1,3 @@
+[console_scripts]
+WuaiPojieLuntanjinghuaJi2020YiFix1 = WuaiPojieLuntanjinghuaJi2020YiFix1.__main__:main
+wuai-pojie-luntanjinghua-ji-2020-yi-fix1 = WuaiPojieLuntanjinghuaJi2020YiFix1.__main__:main
