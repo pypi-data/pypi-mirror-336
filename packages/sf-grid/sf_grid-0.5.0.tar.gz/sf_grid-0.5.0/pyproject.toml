@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+    "hatchling"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "sf-grid"
+version = "0.5.0"
+description = "General Robot Intelligence Development Platform - Enterprise Console"
+authors = [
+    { name = "Scaled Foundations", email = "info@scaledfoundations.ai" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+urls = { "Homepage" = "https://scaledfoundations.ai" }
+dependencies = [
+    "art",
+    "httpx",
+    "pyjwt",
+    "tabulate",
+    "paramiko",
+    "docker",
+    "fastapi",
+    "uvicorn",
+    "pyyaml",
+    "packaging"
+]
+
+[project.scripts]
+grid = "grid.repl:repl"
+
+[tool.hatch.build.targets.wheel]
+packages = ["grid"]
