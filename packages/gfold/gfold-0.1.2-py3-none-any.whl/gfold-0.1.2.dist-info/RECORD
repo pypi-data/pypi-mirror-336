@@ -1,0 +1,11 @@
+gfold/__init__.py,sha256=yaVDQITf3aXyJQ3VGc5_1nAhkrF1nXYZC_L5PtahtPE,148
+gfold/__main__.py,sha256=0g3iknXOS9gZUcpL_trgAcuCJnZZKjdsT_xt61WOVb4,60
+gfold/cli.py,sha256=2MtcnkIVqYj-6RyMMRWlLEu2QfDSKS9Iiq2LGlZN5uw,1887
+gfold/config.py,sha256=ByXu8UKvXpps0QiKZdjds4RC5O_Eq18aGHj7svUg9d0,7797
+gfold/solver.py,sha256=do1zHlXCHOiDiVa-Ppm1KYnak9KIL2Vi7VTD-KIFUgI,9159
+gfold/visualization.py,sha256=WQudybLpB84IU1t5wCFY3QRgH9WzLkMBTxV4_3Ob7-Y,2795
+gfold-0.1.2.dist-info/METADATA,sha256=HlAJDekQNn3RlVI0EccyPoGKZbpNC1hhvlH5Ii21Xp4,2469
+gfold-0.1.2.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+gfold-0.1.2.dist-info/entry_points.txt,sha256=4dEXUic5CtbWhA8R0iAzZdejerZVrJiAypGu29bKWz4,41
+gfold-0.1.2.dist-info/top_level.txt,sha256=jBTUZKxNhllKQx0iJklVZaGOF6mASvtHK5C00VrSpwk,6
+gfold-0.1.2.dist-info/RECORD,,
