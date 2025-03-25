@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sphinx_rapidoc/__init__.py
+sphinx_rapidoc.egg-info/PKG-INFO
+sphinx_rapidoc.egg-info/SOURCES.txt
+sphinx_rapidoc.egg-info/dependency_links.txt
+sphinx_rapidoc.egg-info/entry_points.txt
+sphinx_rapidoc.egg-info/not-zip-safe
+sphinx_rapidoc.egg-info/requires.txt
+sphinx_rapidoc.egg-info/top_level.txt
+sphinx_rapidoc/static/rapidoc.min.js
+sphinx_rapidoc/templates/rapidoc.html
+tests/__init__.py
+tests/conftest.py
+tests/test_rapidoc.py
