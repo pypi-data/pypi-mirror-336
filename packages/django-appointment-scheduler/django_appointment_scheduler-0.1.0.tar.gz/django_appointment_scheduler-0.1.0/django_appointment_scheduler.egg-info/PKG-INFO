@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: django_appointment_scheduler
+Version: 0.1.0
+Summary: A generic and flexible appointment scheduling system for Django applications
+Home-page: https://github.com/vijjeswarapusuryateja/django_appointment_scheduler
+Author: NavaTeja (Parne Naveen Reddy & Vijjeswarapu Surya Teja)
+Author-email: team@navateja.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+License-File: LICENSE
+Requires-Dist: Django>=3.0
+Requires-Dist: djangorestframework
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
