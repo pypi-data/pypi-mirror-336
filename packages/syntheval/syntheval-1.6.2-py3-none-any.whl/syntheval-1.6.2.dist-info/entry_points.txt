@@ -1,0 +1,2 @@
+[console_scripts]
+syntheval = syntheval.__main__:cli
