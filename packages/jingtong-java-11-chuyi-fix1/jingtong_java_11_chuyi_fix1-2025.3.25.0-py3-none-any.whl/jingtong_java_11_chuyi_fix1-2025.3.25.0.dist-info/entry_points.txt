@@ -1,0 +1,3 @@
+[console_scripts]
+JingtongJava11ChuyiFix1 = JingtongJava11ChuyiFix1.__main__:main
+jingtong-java-11-chuyi-fix1 = JingtongJava11ChuyiFix1.__main__:main
