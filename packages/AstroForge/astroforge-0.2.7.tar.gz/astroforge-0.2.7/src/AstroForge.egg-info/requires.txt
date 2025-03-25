@@ -1,0 +1,10 @@
+astropy>=5.3.1
+numpy==1.26.4
+numba>=0.57.1
+scipy>=1.11.1
+requests
+
+[testing]
+setuptools
+pytest
+pytest-cov
