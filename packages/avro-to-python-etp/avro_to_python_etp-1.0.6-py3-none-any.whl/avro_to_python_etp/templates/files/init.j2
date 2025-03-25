@@ -1,0 +1,8 @@
+{%- if comment -%}
+""" init file for file imports at namespace level """
+{% endif -%}
+
+{# from {{pip_import}}.{{file}} import {{file.name}} #}
+{%- for file in imports -%} 
+from {{pip_import}}.{{namespace}}{%- if file!='*' -%}.{{file|snake_case}}{%- endif %} import {{file}}
+{% endfor -%}
