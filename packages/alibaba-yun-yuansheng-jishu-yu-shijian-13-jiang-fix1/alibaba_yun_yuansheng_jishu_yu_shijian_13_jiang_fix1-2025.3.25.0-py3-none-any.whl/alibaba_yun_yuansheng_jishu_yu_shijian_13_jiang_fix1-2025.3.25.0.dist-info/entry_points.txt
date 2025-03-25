@@ -1,0 +1,3 @@
+[console_scripts]
+AlibabaYunYuanshengJishuYuShijian13JiangFix1 = AlibabaYunYuanshengJishuYuShijian13JiangFix1.__main__:main
+alibaba-yun-yuansheng-jishu-yu-shijian-13-jiang-fix1 = AlibabaYunYuanshengJishuYuShijian13JiangFix1.__main__:main
