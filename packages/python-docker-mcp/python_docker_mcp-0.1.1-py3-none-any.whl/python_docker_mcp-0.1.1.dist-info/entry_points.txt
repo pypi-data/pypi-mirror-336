@@ -1,0 +1,2 @@
+[console_scripts]
+python-docker-mcp = python_docker_mcp:main
