@@ -1,0 +1,7 @@
+splinetorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splinetorch/b_spline.py,sha256=h5K6CdXPu0YayC70WM8bWDcI8f-Ke2-3V8qJkHAal4Y,24688
+splinetorch/b_spline_basis.py,sha256=kZk7-h-JywM-O84FRExzuvEVjKla9hy3U6sTs3Yc1ug,7303
+splinetorch-0.0.1.dist-info/METADATA,sha256=ASpxHYk1dD45sXSM8zlReGAE6AMW_5olycSWhrmwEyI,5428
+splinetorch-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+splinetorch-0.0.1.dist-info/top_level.txt,sha256=HyZ4XzO-SEgQWPRUix8mgh6sDXevmiBQ-P9pdfVor8I,12
+splinetorch-0.0.1.dist-info/RECORD,,
