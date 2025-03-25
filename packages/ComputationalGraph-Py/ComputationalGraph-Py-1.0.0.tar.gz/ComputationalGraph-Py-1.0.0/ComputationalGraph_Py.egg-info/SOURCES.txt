@@ -1,0 +1,17 @@
+README.md
+setup.py
+ComputationalGraph/ComputationalGraph.py
+ComputationalGraph/ComputationalNode.py
+ComputationalGraph/Function.py
+ComputationalGraph/FunctionType.py
+ComputationalGraph/ReLU.py
+ComputationalGraph/Sigmoid.py
+ComputationalGraph/Softmax.py
+ComputationalGraph/Tanh.py
+ComputationalGraph/__init__.py
+ComputationalGraph_Py.egg-info/PKG-INFO
+ComputationalGraph_Py.egg-info/SOURCES.txt
+ComputationalGraph_Py.egg-info/dependency_links.txt
+ComputationalGraph_Py.egg-info/requires.txt
+ComputationalGraph_Py.egg-info/top_level.txt
+test/test.py
