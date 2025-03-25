@@ -1,0 +1,2 @@
+[console_scripts]
+paxtui = paxtual.entry_points:paxtui
