@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nonebot-JmDownloader
+Version: 0.1.1
+Summary: A NoneBot plugin to download JmComics and upload
+Home-page: https://github.com/MakiseCrise/jmDownloader
+Author: Maksie
+Author-email: makise@crazyforcode.org
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
