@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: selenium-monitor-tool
+Version: 0.1.1
+Summary: Herramienta para monitorear pruebas Selenium con generación de reportes e IA
+Home-page: https://github.com/tu-usuario/selenium-monitor-tool
+Author: Giulianna Bortone, Isabela Espinoza
+Author-email: giubortone@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: selenium>=4.0.0
+Requires-Dist: psutil>=5.8.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: PyQt6>=6.4.0
+Requires-Dist: coverage>=6.0
+Requires-Dist: requests>=2.28.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Selenium Monitor Tool
+
+Herramienta para monitorear pruebas Selenium con:
+- AnÃ¡lisis de recursos (CPU, RAM, ancho de banda)
+- GeneraciÃ³n de grÃ¡ficos
+- IntegraciÃ³n con IA (OLLAMA)
+- Interfaz grÃ¡fica (PyQt6)
+
+## InstalaciÃ³n
+```bash
+pip install selenium-monitor-tool
