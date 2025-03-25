@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+whittlehurst/__init__.py
+whittlehurst/estimateH.py
+whittlehurst/generators.py
+whittlehurst/spectraldensity.py
+whittlehurst.egg-info/PKG-INFO
+whittlehurst.egg-info/SOURCES.txt
+whittlehurst.egg-info/dependency_links.txt
+whittlehurst.egg-info/requires.txt
+whittlehurst.egg-info/top_level.txt
