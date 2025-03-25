@@ -1,0 +1,9 @@
+README.md
+setup.py
+chinese_administrative_divisions/__init__.py
+chinese_administrative_divisions/data.py
+chinese_administrative_divisions/query.py
+chinese_administrative_divisions.egg-info/PKG-INFO
+chinese_administrative_divisions.egg-info/SOURCES.txt
+chinese_administrative_divisions.egg-info/dependency_links.txt
+chinese_administrative_divisions.egg-info/top_level.txt
