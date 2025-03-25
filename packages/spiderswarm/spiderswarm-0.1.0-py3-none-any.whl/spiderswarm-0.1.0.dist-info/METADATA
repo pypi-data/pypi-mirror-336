@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: spiderswarm
+Version: 0.1.0
+Summary: A distributed spider framework
+Home-page: https://github.com/yourusername/SpiderSwarm
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# SpiderSwarm
+
+SpiderSwarm 是一个分布式爬虫框架，提供高效的网络爬虫解决方案。
+
+## 特性
+
+- 分布式架构
+- 高性能
+- 易扩展
+- 配置灵活
+
+## 安装
+
+```bash
+pip install spiderswarm
+```
+
+## 快速开始
+
+```python
+from spiderswarm import Spider
+
+# 创建爬虫实例
+spider = Spider()
+
+# 配置爬虫
+spider.configure(...)
+
+# 启动爬虫
+spider.run()
+```
+
+## 文档
+
+详细文档请访问 [项目文档](https://github.com/yourusername/SpiderSwarm/wiki)
+
+## 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
