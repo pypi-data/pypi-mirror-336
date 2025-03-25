@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: indico-plugin-ursh
+Version: 3.3.2
+Summary: URL shortening service for Indico
+Project-URL: GitHub, https://github.com/indico/indico-plugins
+Author-email: Indico Team <indico-team@cern.ch>
+License-Expression: MIT
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.12.2
+Requires-Dist: indico>=3.3
+Description-Content-Type: text/markdown
+
+# URL Shortener Plugin (ursh)
+
+This plugin adds the ability to create shortcut URLs using the external
+[ursh][ursh] URL shortening microservice to Indico.
+
+Please note that you need to deploy your own instance of ursh in order to
+use this plugin.
+
+Ideally you also have a very short domain name for the short URLs; if you do
+not own such a domain, it is not recommended to use this plugin but rather use
+the builtin shortcut URL feature of Indico which lets event organizers define
+human-friendly shortcuts pointing to an event (such as `https://indico.example.com/e/cool-event`).
+
+## Changelog
+
+### 3.3.2
+
+- Update translations
+
+### 3.3.1
+
+- Update translations
+
+### 3.3
+
+- Support (and require) Python 3.12
+
+### 3.2.2
+
+- Support Python 3.11
+
+### 3.2.1
+
+- Stop using deprecated URL utils from werkzeug
+
+### 3.2
+
+- Update translations
+
+### 3.1
+
+- Adapt to Indico 3.1 changes
+
+### 3.0
+
+- Initial release for Indico 3.0
+
+
+[ursh]: https://github.com/indico/ursh
