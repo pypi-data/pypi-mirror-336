@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.0", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-invisible-watermarker"
+version = "0.1.2"
+description = "A short description of your package"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [ "Pillow", "numpy", "piexif",]
+[[project.authors]]
+name = "Muhammad Ateeq"
+email = "mr.ateeqazam@gmail.com"
+
+["project.urls"]
+Homepage = "https://github.com/semwaqas/image-invisible-watermarker"
+Documentation = "https://github.com/semwaqas/image-invisible-watermarker/blob/main/README.md"
+Repository = "https://github.com/semwaqas/image-invisible-watermarker"
+
+["tool.setuptools.packages.find"]
+where = [ ".",]
+
+[project.license]
+file = "LICENSE"
