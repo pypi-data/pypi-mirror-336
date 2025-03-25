@@ -1,0 +1,12 @@
+README.md
+setup.py
+ShangGuiguTonggangJqueryFix1/README.md
+ShangGuiguTonggangJqueryFix1/__init__.py
+ShangGuiguTonggangJqueryFix1/__main__.py
+ShangGuiguTonggangJqueryFix1/file.pdf
+ShangGuiguTonggangJqueryFix1/index.html
+shang_guigu_tonggang_jquery_fix1.egg-info/PKG-INFO
+shang_guigu_tonggang_jquery_fix1.egg-info/SOURCES.txt
+shang_guigu_tonggang_jquery_fix1.egg-info/dependency_links.txt
+shang_guigu_tonggang_jquery_fix1.egg-info/entry_points.txt
+shang_guigu_tonggang_jquery_fix1.egg-info/top_level.txt
