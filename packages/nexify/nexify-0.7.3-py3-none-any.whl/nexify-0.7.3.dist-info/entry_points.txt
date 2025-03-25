@@ -1,0 +1,5 @@
+[console_scripts]
+nexify = nexify.cli:main
+
+[gui_scripts]
+
