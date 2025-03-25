@@ -1,0 +1,4 @@
+[console_scripts]
+ji = jupyter_contents.application:main
+jupyter-contents = jupyter_contents.application:main
+jupyter-contents-server = jupyter_contents.serverapplication:main
