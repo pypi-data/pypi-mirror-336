@@ -1,0 +1,17 @@
+codex2mc/CLI.py,sha256=YFKwLK8PQUitDHJ0Pd7bcCRchjv6I92Osgdgj8x9c-U,3830
+codex2mc/__init__.py,sha256=Mh-0UoWtwnqVSaJ1FJBKgLrH8hRPR4Cur4PzcqmHnQ0,331
+codex2mc/codex2mc.py,sha256=euMCqt7HlRAR5s-VfM4lyFao0fS2taM2zt0Hhb2C1xE,2379
+codex2mc/illumination_corr.py,sha256=aPuXX0KWMIYZP4qkera9nGdRKmbTckxMF7eUuGGgjvk,2179
+codex2mc/json_parser.py,sha256=3sRhVEV4gKPDC_iTTaKArsXY7Iy1O_wFLKLaykejswg,3967
+codex2mc/mc_tools.py,sha256=gZhDIvsPJG6Q4VukgpI7YFv2ROlqPwFC561tANcGEFY,4953
+codex2mc/ome_schema.py,sha256=7jP9KtZPVTXAOT814UNFi0HjrPkcGSl75ajWlZc1T-A,5175
+codex2mc/ome_writer.py,sha256=Wn0E5xT5To7EDf82QD1p5-Jo6UCJz3g_sX_3X-aGguY,1229
+codex2mc/qc.py,sha256=poJ-OIh5-pZ8gmKv3IyLl9WoAUwb9ubdYa1A9gnV83U,2056
+codex2mc/templates.py,sha256=oymr8RBKCywR1etvLF-FVdZN2DQPP-5LW49tK404nls,1086
+codex2mc/tools.py,sha256=OYVDOSFs4NRc01JaVrbPuahLN5Ve4kZRE-WqWkl75G4,11932
+codex2mc-0.0.1.dist-info/licenses/LICENSE,sha256=HGw52jD0kv8othfJyGZUgeF0ixa0nXNxpm9LYHI6Mo4,1499
+codex2mc-0.0.1.dist-info/METADATA,sha256=UsKHjSLQ90jp3eAcPxFZ5aY5RKyaGGtJ7KLVUcWSd4E,4082
+codex2mc-0.0.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+codex2mc-0.0.1.dist-info/entry_points.txt,sha256=2IkQvD3PmcO0Soa0ImyhNWBzXG8mjdQrCobzXDZfaZg,52
+codex2mc-0.0.1.dist-info/top_level.txt,sha256=-zfb9cOXd7o27Zx_5AlD__zIjLvQr7qvbsGoKbomfS8,9
+codex2mc-0.0.1.dist-info/RECORD,,
