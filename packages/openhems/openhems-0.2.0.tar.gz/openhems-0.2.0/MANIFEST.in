@@ -1,0 +1,10 @@
+graft data
+graft lib
+
+include_package_data data
+
+recursive-include data *.yaml
+recursive-include emhass *
+global-exclude */__pycache__/*
+global-exclude *.pyc
+
