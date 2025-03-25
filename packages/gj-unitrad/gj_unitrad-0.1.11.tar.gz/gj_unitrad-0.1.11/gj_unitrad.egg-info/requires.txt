@@ -1,0 +1,7 @@
+PIL
+aiohttp
+matplotlib
+pandas
+setuptools
+unitrade
+yaml
