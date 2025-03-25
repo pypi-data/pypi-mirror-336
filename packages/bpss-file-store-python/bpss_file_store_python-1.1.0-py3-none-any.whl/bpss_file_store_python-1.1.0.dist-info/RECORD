@@ -1,0 +1,11 @@
+bpss_file_store_python/__init__.py,sha256=7JRto6LKKHwX8t9v26wyvIr_8S46Wd2FTxtzFr1SFI0,86
+bpss_file_store_python/file_store.py,sha256=IeGK9QWDXghTSMuqL59kC60iNxIVJ9nvZY-JOP__Ygk,4629
+bpss_file_store_python/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bpss_file_store_python/lib/aws.py,sha256=LcGRM-mzSM17Pz-5Lmd4NYy5exBYUgl8WfKf-ydQ2ro,5745
+bpss_file_store_python/lib/azure.py,sha256=fylcZtDmEaKTXoNc_eEfT2kE4jZqvPVFz7-2ctmSobc,6744
+bpss_file_store_python/lib/constant.py,sha256=exGdOT0r47nFZgkBs6kjydfpV_shAnyT6SXewNhT1Qc,80
+bpss_file_store_python/lib/gcp.py,sha256=CcFOzkjnm6QB01yTGZMPnVQvJ7e0Pxj4FxMkN3HpJf0,5197
+bpss_file_store_python-1.1.0.dist-info/METADATA,sha256=RR6TdCHttqaV8nEldWka2lPcUnq-I1TLla4tqLmr2gU,3119
+bpss_file_store_python-1.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+bpss_file_store_python-1.1.0.dist-info/top_level.txt,sha256=TLnZkk7CVYDhM28vAE_poffak6FJZs2SWpnMGVp7Vg4,23
+bpss_file_store_python-1.1.0.dist-info/RECORD,,
