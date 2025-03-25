@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nops-pyfunc-ensembler-service
+Version: 1.21.2.dev19
+Requires-Python: >=3.8,<3.11
+Requires-Dist: argparse>=1.4.0
+Requires-Dist: cloudpickle==2.0.0
+Requires-Dist: orjson==3.6.8
+Requires-Dist: setuptools<75
+Requires-Dist: tornado==6.1
+
