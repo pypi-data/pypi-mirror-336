@@ -1,0 +1,3 @@
+[console_scripts]
+getmcp = getmcp.cli:main
+mcpm = getmcp.cli:main
