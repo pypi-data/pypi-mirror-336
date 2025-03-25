@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.7.2
+-----
+
+* Allow unannotated fileds for Izulu exceptions (#19)
