@@ -1,0 +1,4 @@
+[console_scripts]
+ji = jupyter_kubernetes.application:main
+jupyter-kubernetes = jupyter_kubernetes.application:main
+jupyter-kubernetes-server = jupyter_kubernetes.serverapplication:main
