@@ -1,0 +1,76 @@
+{{ log.debug("Rendering " + constructor_signature.path) }}
+
+<div class="doc doc-object doc-constructor_signature">
+  {% with obj = constructor_signature, html_id = constructor_signature.path %}
+
+    {% if root %}
+      {% set show_full_path = config.show_root_full_path %}
+      {% set root_members = True %}
+    {% elif root_members %}
+      {% set show_full_path = config.show_root_members_full_path or config.show_object_full_path %}
+      {% set root_members = False %}
+    {% else %}
+      {% set show_full_path = config.show_object_full_path %}
+    {% endif %}
+
+    {% set constructor_signature_name = constructor_signature.path if show_full_path else constructor_signature.name %}
+    {% set symbol_type = "method" if constructor_signature.parent.is_class else "constructor_signature" %}
+
+    {% if not root or config.show_root_heading %}
+      {% filter heading(
+          heading_level,
+          role="constructor_signature",
+          id=html_id,
+          class="doc doc-heading",
+          toc_label=(('<code class="doc-symbol doc-symbol-toc doc-symbol-ts-' + symbol_type + '"></code>&nbsp;')|safe if config.show_symbol_type_toc else '') + constructor_signature.name,
+      ) %}
+
+        {% block heading scoped %}
+          {% if config.show_symbol_type_heading %}<code class="doc-symbol doc-symbol-heading doc-symbol-ts-{{ symbol_type }}"></code>{% endif %}
+          {% if config.separate_signature %}
+            <span class="doc doc-object-name doc-constructor_signature-name">{{ constructor_signature_name }}</span>
+          {% else %}
+            {%+ filter highlight(language="typescript", inline=True) %}
+              {{ constructor_signature_name }}
+            {% endfilter %}
+          {% endif %}
+        {% endblock heading %}
+
+      {% endfilter %}
+
+      {% block signature scoped %}
+        {% if config.separate_signature %}
+          {% for signature in constructor_signature.signatures %}
+            {% filter highlight(language="typescript", inline=False) %}
+              {{ signature.source_contents }}
+            {% endfilter %}
+          {% endfor %}
+        {% endif %}
+      {% endblock signature %}
+
+    {% else %}
+
+      {% if config.show_root_toc_entry %}
+        {% filter heading(
+            heading_level,
+            role="constructor_signature",
+            id=html_id,
+            toc_label=(('<code class="doc-symbol doc-symbol-toc doc-symbol-ts-' + symbol_type + '"></code>&nbsp;')|safe if config.show_symbol_type_toc else '') + constructor_signature.name,
+            hidden=True,
+        ) %}
+        {% endfilter %}
+      {% endif %}
+      {% set heading_level = heading_level - 1 %}
+    {% endif %}
+
+    <div class="doc doc-contents {% if root %}first{% endif %}">
+      {% block contents scoped %}
+        {% block docstring scoped %}
+          {% if constructor_signature.comment %}
+            {{ constructor_signature.comment.markdown(symbol_map=constructor_signature.symbol_map)|convert_markdown(heading_level, html_id) }}
+          {% endif %}
+        {% endblock docstring %}
+      {% endblock contents %}
+    </div>
+  {% endwith %}
+</div>
