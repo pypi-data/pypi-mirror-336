@@ -1,0 +1,9 @@
+kaminpar/__init__.py,sha256=bl-lJkVlbRSsVH51t__CoM7pMRzP6IyT1DFEraR9sXk,950
+kaminpar/__init__.pyi,sha256=O2SK8EugLToeDb0MGZ3C8104An8jmb_E3jXLDx7zo-g,6557
+kaminpar/kaminpar_python.cpython-312-x86_64-linux-gnu.so,sha256=olzxbBI--1qILO5Ik71MavQMZM8p15I3a4XfZdd_PTw,4246585
+kaminpar/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaminpar.libs/libtbb-aee23d34.so.12.14,sha256=qsGKRzZzM7py5zco-VMgZpQuLIowdsgjOjq--08C3Vo,326313
+kaminpar.libs/libtbbmalloc-7c7645c6.so.2.14,sha256=Vr4LblV66wv9KkUd4KBlfJV425WA2SJ5zrwm17-5vMI,149345
+kaminpar-3.4.0.dist-info/METADATA,sha256=JCP8_aack65PXaeqrVaAZgYLQAoI2CJbTT3RJT7Joqo,5140
+kaminpar-3.4.0.dist-info/WHEEL,sha256=pb4lHaPmHh87DTkQaQ89Cq9PHCFaV8glEyeKll_RPs4,156
+kaminpar-3.4.0.dist-info/RECORD,,
