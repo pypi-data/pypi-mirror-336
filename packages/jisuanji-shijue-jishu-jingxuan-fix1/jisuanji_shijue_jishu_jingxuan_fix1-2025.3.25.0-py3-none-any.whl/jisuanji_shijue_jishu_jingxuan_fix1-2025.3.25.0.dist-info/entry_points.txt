@@ -1,0 +1,3 @@
+[console_scripts]
+JisuanjiShijueJishuJingxuanFix1 = JisuanjiShijueJishuJingxuanFix1.__main__:main
+jisuanji-shijue-jishu-jingxuan-fix1 = JisuanjiShijueJishuJingxuanFix1.__main__:main
