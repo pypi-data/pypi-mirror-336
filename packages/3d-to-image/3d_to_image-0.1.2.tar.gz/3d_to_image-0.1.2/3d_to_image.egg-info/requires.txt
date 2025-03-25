@@ -1,0 +1,8 @@
+opencv-python
+numpy
+scipy
+scikit-learn
+pyrender
+trimesh
+matplotlib
+pyvista
