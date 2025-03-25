@@ -1,0 +1,3 @@
+[console_scripts]
+QuickDecisionZhinengJuecePingtaiFix1 = QuickDecisionZhinengJuecePingtaiFix1.__main__:main
+quick-decision-zhineng-juece-pingtai-fix1 = QuickDecisionZhinengJuecePingtaiFix1.__main__:main
