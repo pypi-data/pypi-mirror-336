@@ -1,0 +1,3 @@
+[console_scripts]
+NanjingdaxueJisuanjikexueYuJishuXiJisuanjixitongJichuKechengShiyan2021Fix1 = NanjingdaxueJisuanjikexueYuJishuXiJisuanjixitongJichuKechengShiyan2021Fix1.__main__:main
+nanjingdaxue-jisuanjikexue-yu-jishu-xi-jisuanjixitong-jichu-kecheng-shiyan-2021-fix1 = NanjingdaxueJisuanjikexueYuJishuXiJisuanjixitongJichuKechengShiyan2021Fix1.__main__:main
