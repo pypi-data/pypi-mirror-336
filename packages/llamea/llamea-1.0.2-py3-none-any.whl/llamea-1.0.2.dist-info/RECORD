@@ -1,0 +1,12 @@
+llamea/__init__.py,sha256=wImjDxXqaJdilhUACwVB9EqSUiw78stB6sM_zZc_nKk,216
+llamea/bbobalgs/ERADS_QuantumFluxUltraRefined.py,sha256=nCjz8l4mMMeMmO8UjBoIeSY8-mLtsfHWq7Bqhwg_9Dk,3454
+llamea/bbobalgs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llamea/llamea.py,sha256=CzSTFlxGw0gx7EiizeNIO_MkNYgu0tNt_LabzvdF2Qs,17357
+llamea/llm.py,sha256=wdkwBk8v-DGGfzM8_LNYFXadLs2MNVPl_cc11yR_DXc,10895
+llamea/loggers.py,sha256=q-NC2dvY6uH3NyNgNjkktIT5anhGK_squ7uGlcGSKzc,4239
+llamea/solution.py,sha256=vrzZ5QN9dg5F1coNkKPALQKaF3xngEMQCJQFPD0s-QA,4569
+llamea/utils.py,sha256=qu3X6VyKWrvWooNcuqVsXvJs-wTNVjYpTkqsbaXHWNk,1211
+llamea-1.0.2.dist-info/LICENSE,sha256=-fqLXExOTdhiU8Gyt39Nl1aZWCAI-Eeil_85GO0lP18,1071
+llamea-1.0.2.dist-info/METADATA,sha256=gRAkYIlZPtT3Fka8-bOV47QISr0PxCqOq7Z4dpwiR1I,10560
+llamea-1.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+llamea-1.0.2.dist-info/RECORD,,
