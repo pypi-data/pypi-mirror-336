@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+globalfactordata/__init__.py
+globalfactordata/download_link.py
+globalfactordata/getdata.py
+globalfactordata/loader.py
+globalfactordata/test.py
+globalfactordata.egg-info/PKG-INFO
+globalfactordata.egg-info/SOURCES.txt
+globalfactordata.egg-info/dependency_links.txt
+globalfactordata.egg-info/requires.txt
+globalfactordata.egg-info/top_level.txt
+globalfactordata/data/Cluster Labels.csv
+globalfactordata/data/Country Classification.xlsx
+globalfactordata/data/Factor Details.xlsx
+globalfactordata/data/data_url.pkl
