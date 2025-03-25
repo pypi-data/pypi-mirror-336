@@ -1,0 +1,3 @@
+[console_scripts]
+YoukuAppQuanliangZhichiAnheiMoshiShejiYuJishuWanzhengZongjieFix1 = YoukuAppQuanliangZhichiAnheiMoshiShejiYuJishuWanzhengZongjieFix1.__main__:main
+youku-app-quanliang-zhichi-anhei-moshi-sheji-yu-jishu-wanzheng-zongjie-fix1 = YoukuAppQuanliangZhichiAnheiMoshiShejiYuJishuWanzhengZongjieFix1.__main__:main
