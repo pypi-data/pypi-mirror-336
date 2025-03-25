@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguJavaJishuZhiSvnFix1 = ShangGuiguJavaJishuZhiSvnFix1.__main__:main
+shang-guigu-java-jishu-zhi-svn-fix1 = ShangGuiguJavaJishuZhiSvnFix1.__main__:main
