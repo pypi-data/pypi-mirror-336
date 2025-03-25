@@ -1,0 +1,13 @@
+hsr/__init__.py,sha256=oMJJnoCVEMkz605Kwad5ssHxhWIfNbHeVbve1YgT-aA,157
+hsr/fingerprint.py,sha256=hZDNvwp_iM1TtqoHz-5UCkTwxObfvVuEdQnU6GzRAgE,7919
+hsr/hsr_cli.py,sha256=2hPwNYYGwvdOu95Tu5XOZkcVcNUYWHWomo0h-9mAAck,5127
+hsr/pca_transform.py,sha256=ugf5xbelMIpENx7NqcRoFj09U4TTAir35FVgEhD0Hmg,10400
+hsr/pre_processing.py,sha256=sHkVMYBEyey00hvu-NyKHM7pJ54LAaQSURH9_w5Y_DM,4342
+hsr/similarity.py,sha256=OLN3xU71UzFy6nZt23XIQO2OXQgeGLQ6fSMXkNR22zI,9559
+hsr/utils.py,sha256=jzfg36vaUdg7IeOOoSOlWxrQ4pIzkRnE96_H3dtE2pw,3830
+hsr-0.1.21.post0.dist-info/licenses/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+hsr-0.1.21.post0.dist-info/METADATA,sha256=_qOV-5FYZX1dqB0Vslp7-b7p9pVkIlDVF1zH9sPody0,2231
+hsr-0.1.21.post0.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+hsr-0.1.21.post0.dist-info/entry_points.txt,sha256=xalFgxeNHZofKku4DegKylYQlrOBoeOzHZn2eee0kO0,41
+hsr-0.1.21.post0.dist-info/top_level.txt,sha256=gaDClyd67XDQh7dcxy_snpUZ4ZzhPY8PSACVmqm4M0c,4
+hsr-0.1.21.post0.dist-info/RECORD,,
