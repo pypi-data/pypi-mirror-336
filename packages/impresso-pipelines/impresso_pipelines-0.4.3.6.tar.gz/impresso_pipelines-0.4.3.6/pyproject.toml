@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "impresso-pipelines"
+version = "0.4.3.6"
+description = "A custom package for language identification subpackage and OCR QA score calculation subpackage (imitating pipelines)"
+authors = ["Glebs Vinarskis <gleb.vinarskis@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+cython = "*"
+numpy = "^1.24"
+floret = { version = "*", optional = true }
+pybloomfiltermmap3 = { version = "*", optional = true }
+transformers = { version = "*", optional = true }
+huggingface_hub = { version = "*", optional = true }
+
+
+
+[tool.poetry.urls]
+homepage = "https://github.com/impresso/impresso-pipelines"
+
+[tool.poetry.extras]
+langident = ["huggingface_hub", "floret"]
+ocrqa = ["pybloomfiltermmap3", "huggingface_hub", "floret", "transformers"]
+
+all = ["pybloomfiltermmap3", "huggingface_hub", "floret", "transformers"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2"
+flake8 = "^6.0"
+mypy = "^1.2"
+pytest-cov = "^4.0"  # Optional for test coverage
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
