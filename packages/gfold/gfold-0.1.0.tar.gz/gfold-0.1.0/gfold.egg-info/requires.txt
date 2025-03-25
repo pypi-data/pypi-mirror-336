@@ -1,0 +1,5 @@
+cvxpy
+cvxpygen
+matplotlib
+numpy
+jinja2

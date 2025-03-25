@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+gfold/__init__.py
+gfold/cli.py
+gfold/config.py
+gfold/solver.py
+gfold/visualization.py
+gfold.egg-info/PKG-INFO
+gfold.egg-info/SOURCES.txt
+gfold.egg-info/dependency_links.txt
+gfold.egg-info/entry_points.txt
+gfold.egg-info/requires.txt
+gfold.egg-info/top_level.txt
