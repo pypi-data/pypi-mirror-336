@@ -1,0 +1,3 @@
+[console_scripts]
+ZaiSpringShengtaiZhongWanzhuanRockmqFix1 = ZaiSpringShengtaiZhongWanzhuanRockmqFix1.__main__:main
+zai-spring-shengtai-zhong-wanzhuan-rockmq-fix1 = ZaiSpringShengtaiZhongWanzhuanRockmqFix1.__main__:main
