@@ -1,0 +1,3 @@
+[gui_scripts]
+dinkydicom=dinkydicom.dinkydicom:main
+
