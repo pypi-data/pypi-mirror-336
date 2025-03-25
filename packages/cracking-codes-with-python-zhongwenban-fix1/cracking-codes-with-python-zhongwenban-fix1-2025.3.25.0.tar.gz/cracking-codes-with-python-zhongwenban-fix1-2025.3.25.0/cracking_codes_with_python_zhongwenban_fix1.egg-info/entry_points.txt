@@ -1,0 +1,3 @@
+[console_scripts]
+CrackingCodesWithPythonZhongwenbanFix1 = CrackingCodesWithPythonZhongwenbanFix1.__main__:main
+cracking-codes-with-python-zhongwenban-fix1 = CrackingCodesWithPythonZhongwenbanFix1.__main__:main
