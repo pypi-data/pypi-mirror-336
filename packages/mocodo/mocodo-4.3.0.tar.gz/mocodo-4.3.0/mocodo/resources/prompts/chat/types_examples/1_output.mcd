@@ -1,0 +1,16 @@
+AYANT-DROIT: nom ayant-droit [VARCHAR(255)], lien [VARCHAR(50)]
+DIRIGER, 0N [responsable] EMPLOYÉ, 01 PROJET
+REQUÉRIR, 1N PROJET, 0N PIÈCE: qté requise [INTEGER]
+PIÈCE: réf. pièce [VARCHAR(8)], libellé pièce [VARCHAR(255)]
+COMPOSER, 0N [composée] PIÈCE, 0N [composante] PIÈCE: quantité [INTEGER]
+
+DF, _11 AYANT-DROIT, 0N EMPLOYÉ
+EMPLOYÉ: matricule [VARCHAR(10)], nom employé [VARCHAR(255)]
+PROJET: num. projet [VARCHAR(8)], nom projet [VARCHAR(255)]
+FOURNIR, 1N PROJET, 1N PIÈCE, 1N SOCIÉTÉ: qté fournie [INTEGER]
+
+DÉPARTEMENT: num. département [VARCHAR(8)], nom département [VARCHAR(255)]
+EMPLOYER, 11 EMPLOYÉ, 1N DÉPARTEMENT
+TRAVAILLER, 0N EMPLOYÉ, 1N PROJET
+SOCIÉTÉ: num. société [VARCHAR(8)], raison sociale [VARCHAR(255)]
+CONTRÔLER, 0N< [mère] SOCIÉTÉ, 01 [filiale] SOCIÉTÉ
