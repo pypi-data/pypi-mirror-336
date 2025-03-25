@@ -1,0 +1,3 @@
+[console_scripts]
+JishuRenDeBaibaoHeipiShuFix1 = JishuRenDeBaibaoHeipiShuFix1.__main__:main
+jishu-ren-de-baibao-heipi-shu-fix1 = JishuRenDeBaibaoHeipiShuFix1.__main__:main
