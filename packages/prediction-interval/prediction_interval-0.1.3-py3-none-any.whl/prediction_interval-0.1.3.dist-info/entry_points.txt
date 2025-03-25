@@ -1,0 +1,2 @@
+[console_scripts]
+prediction_interval = prediction_interval.cli:cli
