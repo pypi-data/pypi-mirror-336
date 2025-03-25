@@ -1,0 +1,13 @@
+pydantic-settings
+requests
+
+[neo4j]
+neo4j
+
+[test]
+black
+flake8
+isort
+pytest
+pytest-cov
+pytest-dotenv
