@@ -1,0 +1,9 @@
+setuptools
+urllib3
+pathlib
+logging
+argparse
+typing
+numpy
+keyboard
+torch
