@@ -1,0 +1,2 @@
+[console_scripts]
+laserchicken = laserchicken.tools.cli:main
