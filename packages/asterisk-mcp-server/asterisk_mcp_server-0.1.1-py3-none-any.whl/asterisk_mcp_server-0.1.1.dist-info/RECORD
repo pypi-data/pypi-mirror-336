@@ -1,0 +1,10 @@
+asterisk_mcp_server/__init__.py,sha256=yVa_x9HjooUNYNJHhSA-qpl1cFSf-qEMumCb9hxAzPQ,58
+asterisk_mcp_server/cli.py,sha256=UPgcO0anx-BfKJ8sBQA5jgvhc1dRxhSorwlTEq8L6DY,5483
+asterisk_mcp_server/server.py,sha256=_DMUAAFO_vtkK85lUG2Q3TG6wWrLDknEq8Z5WDw9JSA,25057
+asterisk_mcp_server/ui/__init__.py,sha256=gCqUMdDI92AeRKaGkUOtPn6qnXY7hnc9PWn-gPVdJ5U,45
+asterisk_mcp_server/ui/settings.py,sha256=7NUFvtgPU1eBDd98y8sBf75WgkgrzUbDGiu3vy65K0Y,12208
+asterisk_mcp_server-0.1.1.dist-info/METADATA,sha256=VjCip6VX8VF67glBO64K43AgVBPBNbEuAQmCtu599YQ,18655
+asterisk_mcp_server-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+asterisk_mcp_server-0.1.1.dist-info/entry_points.txt,sha256=QhZBW2lxAZk20dc9nYg28NOfzcTVTR4kRU5tLKlQNZY,62
+asterisk_mcp_server-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+asterisk_mcp_server-0.1.1.dist-info/RECORD,,
