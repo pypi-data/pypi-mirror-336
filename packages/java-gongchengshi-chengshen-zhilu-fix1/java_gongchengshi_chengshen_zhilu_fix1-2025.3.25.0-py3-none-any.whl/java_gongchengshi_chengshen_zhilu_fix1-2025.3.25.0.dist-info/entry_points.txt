@@ -1,0 +1,3 @@
+[console_scripts]
+JavaGongchengshiChengshenZhiluFix1 = JavaGongchengshiChengshenZhiluFix1.__main__:main
+java-gongchengshi-chengshen-zhilu-fix1 = JavaGongchengshiChengshenZhiluFix1.__main__:main
