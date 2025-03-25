@@ -1,0 +1,15 @@
+agentforce/__init__.py,sha256=tZV-6qD8E5orgRUUNuo01gkKQppYgHp_m8RvuPBnpME,300
+agentforce/specs.py,sha256=t3kCh2nGQD7mc29_QT3FAe1cv21JvcyNlRkpoeYcT58,682
+agentforce/tool_executor.py,sha256=e29RQUiWjaIPXaoFCGHVFxhQVbqvBObc2XAJ_mqdjDM,4712
+agentforce/tools.py,sha256=yNHE5YKJ_QVgFKSaYgSUC-XBaoCyUTQ8BURN7H60hvA,2958
+agentforce/utils.py,sha256=xgxuS76PArebzB6ZHQ99iZ73ynBcCc8WvE2LXFBi0wQ,615
+agentforce/llms/__init__.py,sha256=fraErJgDJGcUHkeYC6-AvYeEXZbpWKUKepE1n1u4Qe8,349
+agentforce/llms/_cohere.py,sha256=CNIhKSlK6OYTJq5thoJ3Dl_2j7-ivWmDozhgnsoU63A,4207
+agentforce/llms/_llamacpp.py,sha256=8BgtOVLFBP1jO5AdoJOl-MqbnJlcnoXsWazrm6iyBII,2025
+agentforce/llms/_openai.py,sha256=BrqdoIvjiKcqKk_EOu_r0Qkn_JV2j-LinQFRSbFqPCE,1093
+agentforce/llms/llm.py,sha256=3x8MosWlYQq6UqGWGlcimdrDsno-8fVkeNDm9CwL3a8,982
+agentforce-0.0.1.dev1.dist-info/licenses/LICENSE,sha256=dydufynL8wtRLER3-wNPo1NX5rmGoFxB0FqJpdCXLbs,11343
+agentforce-0.0.1.dev1.dist-info/METADATA,sha256=EdVFEmDzpL_HpFyGQabUDz7AAvfosmFoCpyPcQ1_dP4,494
+agentforce-0.0.1.dev1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+agentforce-0.0.1.dev1.dist-info/top_level.txt,sha256=Y6knUT0O-Zlh4TBdbt--fn4bzbLXsrUEVpFJjHGw1pU,11
+agentforce-0.0.1.dev1.dist-info/RECORD,,
