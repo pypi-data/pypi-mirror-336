@@ -1,0 +1,13 @@
+# Exported from Wings 3D 2.2.9
+mtllib sphereJoin_strip.mtl
+o sphereJoin_strip
+#4 vertices, 3 faces
+v 1.85355339 -0.92387953 -0.35355339
+v 2.00000000 -0.92387953 -0.38268343
+v 2.14644661 -0.92387953 -0.35355339
+v 2.00000000 -1.00000000 0.0000000e+0
+g sphereJoin_strip
+usemtl Skin
+s 1
+f 2// 4// 1//
+f 3// 4// 2//

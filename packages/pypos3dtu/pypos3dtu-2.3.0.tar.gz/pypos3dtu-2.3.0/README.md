@@ -1,0 +1,124 @@
+
+This file is the README of the unit tests and example package of\:
+- The pypos3d library.
+- The pypos3dv 3D OpenGL Viewer
+- The LibreOffice based GUI
+
+# 1. INTRODUCTION:
+This library is a port of the old DATA3D library of the OpenSource Pojamas project.
+I own both of them.
+
+pypos3d aims to have a high level of quality.
+Each version is automatically tested with a set of unit tests.
+Coding rules are based on CNES (RNC-CNES-Q-HB-80-535) -CNES is the French National Space Agency-
+
+
+# 2. INSTALLATION:
+
+## Library Installation:
+The library shall be installed with pip:
+> python3 -m pip pypos3dtu
+
+Each release of pypos3dtu shall test the same version of pypos3d library
+
+
+## Configuration Management System:
+The code is managed on SourceForge platform under SVN:
+svn checkout svn://svn.code.sf.net/p/pojamas/svncode/ pojamas-svncode
+
+Development and test files are gathered in directory **PyPoser**
+
+This PyPoser directory contains an Eclipse/PyDev environment.
+
+
+# 3. Tests:
+Unit tests are delivered in this package (pypos3dtu)
+This library is tested with unitests with a target coverage rate over 95%.
+
+Installation and commissionning tests are performed on:
+- AlmaLinux 9           Python 3.9   LibreOffice 7.1
+- AlmaLinux 9           Python 3.12  LibreOffice 7.1
+- Fedora >34            Python 3.10  LibreOffice 7.2
+- Debian 10 (i386)      Python 3.7   LibreOffice 7.0
+- Microsoft Windows 10  Python 3.10  LibreOffice 25
+
+## Unit Tests:
+To run the tests, 3 ways are available:
+
+* Under Linux use script the _tu.sh_ to launch all tests:
+ - Tests are run within 2 environments: Python3.9 and Python3.12
+ - Tests are run in parallel
+ - Coverage Tests are run one by one (results in coverage\_results.txt)
+ 
+ - Detailed logs are generated in directory: pypos3dtu/tulog
+ - Results are generated in directory: pypos3dtu/tures
+
+* Outside Linux (in non dev environments):
+ - Locate the installation directory of pypos3dtu
+
+   `> python -c "import pypos3dtu; print(pypos3dtu.__path__[0])"`
+   
+ - Change current directory to the previous value and create result directories:
+  
+   `> cd C:\Users\olivier\AppData\Roaming\Python\Python38\site-packages\pypos3dtu`
+   `> mkdir tulog tures` 
+
+ - Execute manually the tests
+
+   `> python -m unittest discover -p "tu*.py"`
+
+* In a development environment:
+ - Checkout the Eclipse project (cf. link above)
+ - Run tests from PyPoser/src/pypos3dtu
+ - Don't forfget to clean the 'tures' directory before check-in
+
+
+## Validation Tests:
+Validation tests are 'free' tests excuted on the GUI (LibreOffice) and the viewer.
+Validation tests of the viewer (pypos3dv command) shall be run on various hardware
+platforms.
+
+## Tests Platforms:
+
+|Platform | CPU, RAM, GraphicCard | OS - Software |
+|---------|-----------------------|---------------|
+|d21      | Intel Core) i5-11400H CPU @ 2.70GHz x86\_64 - 6C/12T - RAM 32GB|**AlmaLinux 9**<br/>Python 3.9.21<br/>Python 3.12.5<br/>PyOpenGL 3.1.7<br/>Pillow 9.4.0|
+|d9       | Intel Core2 Duo P8600 @ 2.4GHz<br/> x86\_64 - 2C/4T - RAM 4GB<br/>IGP GM45|**Fedora 34**<br/>Python 3.9.5<br/>Pillow 8.2.0<br/> PyGLM      2.2.0<br/> PyOpenGL   3.1.5<br/> glfw       2.1.0<br/> numpy      1.20.3<br/>pip        21.1.1<br/> scipy      1.6.3<br/> xlrd 2.0.1|
+|d9b      | Intel Pentium B970 @ 2.3GHz<br/> x86\_64 - 2C/4T - RAM 4GB<br/>IGP GM45|**AlmaLinux 9**<br/>Python 3.11.2<br/>Pillow 10.0.1<br/> PyGLM      2.7.0<br/> PyOpenGL   3.1.7<br/> glfw       2.6.2<br/> numpy      1.26.0<br/>pip        23.2.1<br/> scipy      1.11.2<br/> xlrd 2.0.1|
+
+
+# 5. Tests Data:
+Units tests are using some tests data (geometries, textures, material libs, ...).
+Tests data have been (usually) found on the web on\: https://www.sharecg.com
+They are all free and usable for this product (non-commercial use or totally free) 
+
+In case of error on the license on embedded tests data, contact me. I'll fix it immediatly.
+
+Included (partial) Open Source models:
+ - https://www.sharecg.com/v/21521/gallery/11/Poser/Project-Human-Female
+ - https://www.sharecg.com/v/44417/gallery/5/3D-Model/P-51D-Mustang
+ - https://www.sharecg.com/v/86927/gallery/5/3D-Model/Hawker-Tempest-Mk5
+ - https://www.sharecg.com/v/82070/gallery/11/Poser/403-Peugeot-1953
+
+ - https://sharecg.com/v/99103/browse/21/DAZ-Studio/Shredder-Roadster-for-DAZ
+ - https://sharecg.com/v/95857/browse/21/DAZ-Studio/DORONBOU-BIKE
+ - https://sharecg.com/v/90883/browse/21/DAZ-Studio/maison1
+
+Full respect, credit and so on to their initial models and licenses:
+  Lucien Lilippe
+  Neil Wilson
+  Pedro Caparros
+
+https://sharecg.com/pf/full_uploads.php?pf_user_name=shredder
+https://sharecg.com/pf/full_uploads.php?pf_user_name=guy91600
+
+--> Many thanks to the contributors!
+
+# LICENCE:
+  This library and its unit tests are delivered under the BSD license.
+
+
+KR, Olivier
+
+
+
