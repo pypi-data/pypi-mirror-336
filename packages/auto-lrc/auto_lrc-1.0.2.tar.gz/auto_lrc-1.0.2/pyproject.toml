@@ -1,0 +1,39 @@
+[project]
+name = "auto-lrc"
+version = "1.0.2"
+description = "Generate LRC files for your music using openai's whisper"
+readme = "README.md"
+authors = [
+    { name = "HeavyLvy", email = "{ID}+{username}@users.noreply.github.com" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1.8",
+    "openai-whisper",
+    "rich>=13.9.4",
+    "torch==2.6.0+cu126",
+    "torchaudio==2.6.0+cu126",
+    'torchvision==0.21.0+cu126',
+    'markupsafe==2.1.5',
+]
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+markupsafe = { index = 'pytorch' }
+openai-whisper = { git = "https://github.com/openai/whisper.git" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu126"
+
+[project.scripts]
+AutoLRC = "auto_lrc:cli"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["PL", "PLC", 'PLE', 'PLR', 'PLW', 'I']
