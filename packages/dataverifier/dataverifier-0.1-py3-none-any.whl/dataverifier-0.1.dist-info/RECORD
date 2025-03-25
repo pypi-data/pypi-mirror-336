@@ -1,0 +1,8 @@
+dataverifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataverifier/validator.py,sha256=Dee9zO8At8_Emech0pRVdy8tf1X_blzLGS5YC6FG9J4,12603
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_validator.py,sha256=jemVKh3ROmNEvGHuxLGgzI-o6oyK36O8nZ9eHXcOEPs,1511
+dataverifier-0.1.dist-info/METADATA,sha256=DQASDtQiZgYTB-ijhoQqBB38SyU7XdoaH5FjmGy7Fsc,2688
+dataverifier-0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+dataverifier-0.1.dist-info/top_level.txt,sha256=Li5EaPKCc-BmUCOfNZ-91L2VpFU9Ep8wPfI7r9erPz0,18
+dataverifier-0.1.dist-info/RECORD,,
