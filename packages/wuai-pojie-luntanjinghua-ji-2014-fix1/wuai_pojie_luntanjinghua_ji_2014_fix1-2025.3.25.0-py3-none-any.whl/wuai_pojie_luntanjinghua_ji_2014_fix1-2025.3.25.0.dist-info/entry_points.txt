@@ -1,0 +1,3 @@
+[console_scripts]
+WuaiPojieLuntanjinghuaJi2014Fix1 = WuaiPojieLuntanjinghuaJi2014Fix1.__main__:main
+wuai-pojie-luntanjinghua-ji-2014-fix1 = WuaiPojieLuntanjinghuaJi2014Fix1.__main__:main
