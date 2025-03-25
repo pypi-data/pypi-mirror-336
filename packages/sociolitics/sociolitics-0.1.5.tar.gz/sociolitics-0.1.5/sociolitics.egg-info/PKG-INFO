@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sociolitics
+Version: 0.1.5
+Summary: Sociolit project analysis tools
+Home-page: 
+Author: Dmitry Pronin
+Author-email: DDPronin003@yandex.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.0.2
+Requires-Dist: numpy>=1.21.6
+Requires-Dist: scipy>=1.9.1
+Requires-Dist: scikit-learn>=1.0.2
+Requires-Dist: plotly>=5.9.0
+Requires-Dist: matplotlib>=3.5.2
+Requires-Dist: seaborn>=0.13.0
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: pymystem3>=0.2.0
+
+This library is for examples from a book on digital humanities. A description and documentation will be here later.

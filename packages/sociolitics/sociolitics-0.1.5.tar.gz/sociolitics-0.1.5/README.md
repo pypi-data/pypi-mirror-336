@@ -1,0 +1,1 @@
+This library is for examples from a book on digital humanities. A description and documentation will be here later.
