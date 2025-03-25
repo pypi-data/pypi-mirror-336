@@ -1,0 +1,9 @@
+pytelegrambotapi
+opencv-python
+numpy
+pyautogui
+pillow
+pycryptodome
+pypiwin32
+pycryptodomex
+secretstorage

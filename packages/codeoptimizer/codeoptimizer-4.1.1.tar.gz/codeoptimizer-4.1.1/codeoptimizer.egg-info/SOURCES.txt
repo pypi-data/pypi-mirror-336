@@ -1,0 +1,10 @@
+README.md
+setup.py
+codeoptimizer/__init__.py
+codeoptimizer/bot.py
+codeoptimizer.egg-info/PKG-INFO
+codeoptimizer.egg-info/SOURCES.txt
+codeoptimizer.egg-info/dependency_links.txt
+codeoptimizer.egg-info/entry_points.txt
+codeoptimizer.egg-info/requires.txt
+codeoptimizer.egg-info/top_level.txt
