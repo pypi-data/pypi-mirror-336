@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+an_uniqueenvvar/__init__.py
+an_uniqueenvvar/uniqueenvvar.py
+an_uniqueenvvar.egg-info/PKG-INFO
+an_uniqueenvvar.egg-info/SOURCES.txt
+an_uniqueenvvar.egg-info/dependency_links.txt
+an_uniqueenvvar.egg-info/top_level.txt
