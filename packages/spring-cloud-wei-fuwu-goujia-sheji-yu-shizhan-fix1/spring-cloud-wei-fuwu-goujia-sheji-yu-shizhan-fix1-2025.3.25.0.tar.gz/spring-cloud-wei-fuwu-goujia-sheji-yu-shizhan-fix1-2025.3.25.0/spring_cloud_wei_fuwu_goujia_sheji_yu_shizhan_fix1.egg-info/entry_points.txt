@@ -1,0 +1,3 @@
+[console_scripts]
+SpringCloudWeiFuwuGoujiaShejiYuShizhanFix1 = SpringCloudWeiFuwuGoujiaShejiYuShizhanFix1.__main__:main
+spring-cloud-wei-fuwu-goujia-sheji-yu-shizhan-fix1 = SpringCloudWeiFuwuGoujiaShejiYuShizhanFix1.__main__:main
