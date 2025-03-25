@@ -1,0 +1,3 @@
+[console_scripts]
+CcnpShiyanShouceHorityFix1 = CcnpShiyanShouceHorityFix1.__main__:main
+ccnp-shiyan-shouce-hority-fix1 = CcnpShiyanShouceHorityFix1.__main__:main
