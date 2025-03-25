@@ -1,0 +1,4 @@
+moviepy
+yt-dlp
+python-dotenv
+webvtt-py
