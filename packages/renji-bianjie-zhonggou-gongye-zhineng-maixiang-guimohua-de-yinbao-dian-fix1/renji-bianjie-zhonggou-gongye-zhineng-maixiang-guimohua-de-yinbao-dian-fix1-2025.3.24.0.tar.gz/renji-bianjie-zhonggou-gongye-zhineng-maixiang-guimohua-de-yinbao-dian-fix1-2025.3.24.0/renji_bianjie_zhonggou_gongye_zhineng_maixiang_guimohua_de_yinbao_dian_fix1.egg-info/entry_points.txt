@@ -1,0 +1,3 @@
+[console_scripts]
+RenjiBianjieZhonggouGongyeZhinengMaixiangGuimohuaDeYinbaoDianFix1 = RenjiBianjieZhonggouGongyeZhinengMaixiangGuimohuaDeYinbaoDianFix1.__main__:main
+renji-bianjie-zhonggou-gongye-zhineng-maixiang-guimohua-de-yinbao-dian-fix1 = RenjiBianjieZhonggouGongyeZhinengMaixiangGuimohuaDeYinbaoDianFix1.__main__:main
