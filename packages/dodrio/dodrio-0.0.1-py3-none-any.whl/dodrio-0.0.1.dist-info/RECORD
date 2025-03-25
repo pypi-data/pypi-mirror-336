@@ -1,0 +1,11 @@
+dodrio/__init__.py,sha256=gqanm5FSEO8Eee8YIYJ_G7oOIcvLvyiSFXxQXjhh1W8,201
+dodrio/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dodrio/core/datainfo_process.py,sha256=p3AVdwgLbo03m7Ak7YnrWo1HMhm0bSHARNoiAhS68Fc,2899
+dodrio/core/load_info.py,sha256=XQ3UkN6xZi3ZWTONMqWplPA8ipq9QX34PFroHzrg8Iw,5673
+dodrio/core/package_base.py,sha256=mvCPnkHR6Em6tvb-WCb6dDAxsL6ON35u4HTvHE21I4M,4635
+dodrio/core/parquet_base.py,sha256=6AxwNWTZiBXi1Ma-f9QUcNaFKS_wvCFzyRl35M-spkM,4426
+dodrio/core/utils.py,sha256=WAcEyyFI-K4H6ieGl4HYD3DrB4syWieCRlTEPy9HZmc,1523
+dodrio-0.0.1.dist-info/METADATA,sha256=c_kLDA1mL0DeOfRUfPYHf3obVgtAzvJyDTqzeFzph7A,1216
+dodrio-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dodrio-0.0.1.dist-info/top_level.txt,sha256=h32IFb85PQqr6fPam4FsjX-LYEAKUvt2sOV7Qbg7YDs,7
+dodrio-0.0.1.dist-info/RECORD,,
