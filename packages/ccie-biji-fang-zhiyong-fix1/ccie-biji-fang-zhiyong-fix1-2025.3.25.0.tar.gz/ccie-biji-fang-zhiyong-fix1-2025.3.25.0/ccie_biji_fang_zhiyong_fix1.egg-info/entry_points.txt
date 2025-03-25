@@ -1,0 +1,3 @@
+[console_scripts]
+CcieBijiFangZhiyongFix1 = CcieBijiFangZhiyongFix1.__main__:main
+ccie-biji-fang-zhiyong-fix1 = CcieBijiFangZhiyongFix1.__main__:main
