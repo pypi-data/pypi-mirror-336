@@ -1,0 +1,69 @@
+services:
+  core:
+    image: sfgrid.azurecr.io/grid/core/main:v0.1.68
+    container_name: grid_core
+    network_mode: host
+    volumes:
+      - $HOME/.grid/samples/notebooks:/workspace/sample_notebooks
+      - $HOME/.grid/models/weights:/GRID/external/weights
+    working_dir: /workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  server:
+    image: sfgrid.azurecr.io/grid/server/main:v0.1.47
+    container_name: grid_server
+    network_mode: host
+    environment:
+      PLATFORM_JWT_SECRET_KEY: aksdhiefrifhroihfoih4hfroihofirkshdueuhduihfr
+      PORTAL_JWT_SECRET_KEY: aksdhiefrifhroihfoih4hfroihofirade
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    volumes:
+      - $HOME/.grid/samples/notebooks:/mnt/notebooks
+    depends_on:
+      - core
+
+  sim-airgen:
+    profiles:
+      - airgen
+    image: sfgrid.azurecr.io/grid/sim/airgen:v0.1.47
+    container_name: grid_sim_airgen
+    network_mode: host
+    environment:
+      GRID_RUNTIME_ENV: dev
+      PLATFORM_JWT_SECRET_KEY: aksdhiefrifhroihfoih4hfroihofirkshdueuhduihfr
+      SIM_TYPE: airgen
+    volumes:
+      - $HOME/.grid/airgenbins:/mnt/airgenbins
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  sim-isaac:
+    profiles:
+      - isaac
+    image: sfgrid.azurecr.io/grid/sim/isaac/main:v0.1.47
+    container_name: grid_sim_isaac
+    network_mode: host
+    environment:
+      GRID_RUNTIME_ENV: dev
+      PLATFORM_JWT_SECRET_KEY: aksdhiefrifhroihfoih4hfroihofirkshdueuhduihfr
+      SIM_TYPE: isaac
+    volumes:
+      - $HOME/.grid/isaac:/mnt/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
