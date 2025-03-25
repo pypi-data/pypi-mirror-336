@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+dmake/dmake_hms.egg-info/PKG-INFO
+dmake/dmake_hms.egg-info/SOURCES.txt
+dmake/dmake_hms.egg-info/dependency_links.txt
+dmake/dmake_hms.egg-info/entry_points.txt
+dmake/dmake_hms.egg-info/top_level.txt
+tests/test_basic.py
+tests/test_config.py

@@ -1,0 +1,3 @@
+exclude setup.*
+recursive-include src/dmake/docs *
+recursive-include src/dmake/templates *
