@@ -1,0 +1,3 @@
+[console_scripts]
+AlibabaXinJijianDongchaZhi5gZhinengJingjiYingyongChangjingFix1 = AlibabaXinJijianDongchaZhi5gZhinengJingjiYingyongChangjingFix1.__main__:main
+alibaba-xin-jijian-dongcha-zhi-5g-zhineng-jingji-yingyong-changjing-fix1 = AlibabaXinJijianDongchaZhi5gZhinengJingjiYingyongChangjingFix1.__main__:main
