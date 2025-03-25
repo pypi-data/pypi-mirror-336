@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/arelai.py
+src/arelai.egg-info/PKG-INFO
+src/arelai.egg-info/SOURCES.txt
+src/arelai.egg-info/dependency_links.txt
+src/arelai.egg-info/top_level.txt

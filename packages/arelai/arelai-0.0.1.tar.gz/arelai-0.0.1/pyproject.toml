@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arelai"
+version = "0.0.1"
+authors = [
+  { name="Chandra Gummaluru", email="chandra.gummaluru@gmail.com" },
+]
+description = "A library for creating games and training agents using reinforcement learning."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/chandra-gummaluru/arelai"
+Issues = "https://github.com/chandra-gummaluru/arelai/issues"
