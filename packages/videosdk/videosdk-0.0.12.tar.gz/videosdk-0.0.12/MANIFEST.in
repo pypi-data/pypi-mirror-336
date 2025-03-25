@@ -1,0 +1,1 @@
+recursive-include videosdk/worker/proto_gen *.py
