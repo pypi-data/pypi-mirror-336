@@ -1,0 +1,142 @@
+[project]
+dynamic = ["version"]
+name = "dbt-cratedb2"
+description = "dbt adapter for CrateDB 5.5 and higher"
+readme = "README.md"
+keywords = ["dbt", "adapter", "cratedb", "adapters", "database", "elt", "dbt-core", "dbt-adapter", "postgresql"]
+requires-python = ">=3.9.0"
+authors = [
+    { name = "Crate.io", email = "office@crate.io" },
+]
+maintainers = [
+    { name = "Crate.io", email = "office@crate.io" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: OS Independent",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "dbt-postgres>=1.9.0,<1.10",
+    "sqlparse<0.6",
+    "sql-metadata<3",
+]
+[project.urls]
+Changelog = "https://github.com/crate/dbt-cratedb2/blob/main/CHANGELOG.md"
+Documentation = "https://cratedb.com/docs/guide/integrate/dbt/"
+Downloads = "https://pypi.org/project/dbt-cratedb2/#files"
+Homepage = "https://github.com/crate/dbt-cratedb2"
+Issues = "https://github.com/crate/dbt-cratedb2/issues"
+"Release Notes" = "https://github.com/crate/dbt-cratedb2/releases"
+Repository = "https://github.com/crate/dbt-cratedb2"
+"Source Code" = "https://github.com/crate/dbt-cratedb2"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = ["dbt"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["dbt"]
+
+[tool.hatch.version]
+path = "dbt/adapters/cratedb/__version__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+    "dbt-tests-adapter<1.11",
+    "freezegun<2",
+    "pre-commit<5",
+    "pytest<9",
+    "pytest-dotenv<0.6",
+    "pytest-mock<4",
+    "pytest-xdist<4",
+]
+[tool.hatch.envs.default.env-vars]
+DBT_TEST_USER_1 = "dbt_test_user_1"
+DBT_TEST_USER_2 = "dbt_test_user_2"
+DBT_TEST_USER_3 = "dbt_test_user_3"
+[tool.hatch.envs.default.scripts]
+setup = "pre-commit install"
+code-quality = "pre-commit run --all-files"
+unit-tests = "python -m pytest -vvv {args:tests/unit}"
+integration-tests = "python -m pytest -vvv {args:tests/functional}"
+docker-dev = [
+    "echo Does not support integration testing, only development and unit testing. See issue https://github.com/dbt-labs/dbt-postgres/issues/99",
+	"docker build -f docker/dev.Dockerfile -t dbt-cratedb2-dev .",
+	"docker run --rm -it --name dbt-cratedb2-dev -v $(pwd):/opt/code dbt-cratedb2-dev",
+]
+docker-prod = "docker build -f docker/Dockerfile -t dbt-cratedb2 ."
+
+[tool.hatch.envs.build]
+detached = true
+dependencies = [
+    "wheel",
+    "twine",
+    "check-wheel-contents",
+]
+[tool.hatch.envs.build.scripts]
+check-all = [
+    "- check-wheel",
+    "- check-sdist",
+]
+check-wheel = [
+    "twine check dist/*",
+    "find ./dist/dbt_cratedb2-*.whl -maxdepth 1 -type f | xargs python -m pip install --force-reinstall --find-links=dist/",
+    "pip freeze | grep dbt-cratedb2",
+]
+check-sdist = [
+    "check-wheel-contents dist/*.whl --ignore W007,W008",
+    "find ./dist/dbt_cratedb2-*.gz -maxdepth 1 -type f | xargs python -m pip install --force-reinstall --find-links=dist/",
+    "pip freeze | grep dbt-cratedb2",
+]
+
+[tool.black]
+line-length = 99
+
+[tool.flake8]
+ignore = ["E203", "E501", "E741", "W503", "W504"]
+max-line-length = 99
+per-file-ignores = [
+    "*/__init__.py:F401",
+    "tests/functional/materializations/materialized_view_tests/utils.py:E201,E202",
+]
+select = ["E", "F", "W"]
+
+[tool.mypy]
+explicit_package_bases = true
+ignore_missing_imports = true
+install_types = true
+non_interactive = true
+pretty = true
+show_error_codes = true
+
+[tool.pytest]
+env_files = ["test.env"]
+
+[tool.pytest.ini_options]
+# FIXME: Make all test cases succeed, or specifically ignore individual ones.
+addopts = """
+    -rfEXs -p pytester --strict-markers --verbosity=3
+"""
+log_level = "DEBUG"
+log_cli_level = "DEBUG"
+log_format = "%(asctime)-15s [%(name)-36s] %(levelname)-8s: %(message)s"
+markers = [
+]
+minversion = "2.0"
+testpaths = [
+    "tests/functional",
+    "tests/unit",
+]
+xfail_strict = true
