@@ -1,0 +1,3 @@
+[console_scripts]
+JavaXunijiDicengYuanliZhishiZongjieFix1 = JavaXunijiDicengYuanliZhishiZongjieFix1.__main__:main
+java-xuniji-diceng-yuanli-zhishi-zongjie-fix1 = JavaXunijiDicengYuanliZhishiZongjieFix1.__main__:main
