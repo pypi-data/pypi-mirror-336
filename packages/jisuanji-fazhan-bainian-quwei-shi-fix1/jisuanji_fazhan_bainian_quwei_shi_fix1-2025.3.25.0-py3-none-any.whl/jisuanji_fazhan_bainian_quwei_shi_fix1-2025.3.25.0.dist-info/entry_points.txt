@@ -1,0 +1,3 @@
+[console_scripts]
+JisuanjiFazhanBainianQuweiShiFix1 = JisuanjiFazhanBainianQuweiShiFix1.__main__:main
+jisuanji-fazhan-bainian-quwei-shi-fix1 = JisuanjiFazhanBainianQuweiShiFix1.__main__:main
