@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "IndiQuo"
+version = "0.1.0"
+authors = [
+    { name = "Frederik Arnold", email = "frederik.arnold@hu-berlin.de"}
+]
+description = "IndiQuo is a tool for the detection of indirect quotations (summaries and paraphrases)."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.11"
+keywords = ["quotation detection", "quotation identification", "indirect citation extraction",
+    "natural language processing", "nlp", "text reuse"]
+dependencies = [
+    "sentence-transformers>=3.4.1",
+    "dramatist>=0.0.7",
+    "kpcommons>=0.1.2",
+    "pysbd>=0.3.4",
+    "datasets>=3.4.1",
+    "evaluate>=0.4.3",
+    "accelerate>=1.5.2"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["indiquo*"]
+
+[project.scripts]
+indiquo = "indiquo.cli.IndiQuoCLI:main"
+
+[project.urls]
+"Homepage" = "https://hu.berlin/indiquo"
