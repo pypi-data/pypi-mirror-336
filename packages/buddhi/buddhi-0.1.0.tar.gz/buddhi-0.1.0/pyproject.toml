@@ -1,0 +1,37 @@
+[project]
+name = "buddhi"
+version = "0.1.0"
+description = "Buddhi AI is an intelligent, AI-powered career assistant designed to help job seekers navigate every aspect of their job search and professional growth. Whether you are looking for your first job, a career switch, or upskilling opportunities, Buddhi AI provides personalized recommendations, smart job matching, resume assistance, interview preparation, and career guidance—all in one place."
+authors = [
+    {name = "balajihambeere",email = "balaji.hambere@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+license = { file = "LICENSE" }
+keywords = ["AI agent", "python", "package", "buddhi", "career assistant", "job search", "professional growth", "job matching", "resume assistance", "interview preparation", "career guidance"]
+dependencies = [
+    "langchain (>=0.3.19,<0.4.0)",
+    "langchain-openai (>=0.3.7,<0.4.0)",
+    "langchain-community (>=0.3.18,<0.4.0)",
+    "langchain-text-splitters (>=0.3.6,<0.4.0)",
+    "langchain-postgres (>=0.0.13,<0.0.14)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "langchain-milvus (>=0.1.8,<0.2.0)"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/zudyog/buddhi"
+Repository = "https://github.com/zudyog/buddhi"
+Issues = "https://github.com/zudyog/buddhi/issues"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = true
