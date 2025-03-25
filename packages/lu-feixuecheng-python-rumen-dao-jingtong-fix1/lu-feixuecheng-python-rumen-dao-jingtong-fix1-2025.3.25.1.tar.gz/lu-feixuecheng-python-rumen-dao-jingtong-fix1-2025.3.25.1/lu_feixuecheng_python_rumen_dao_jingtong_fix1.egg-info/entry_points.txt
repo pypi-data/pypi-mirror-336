@@ -1,0 +1,3 @@
+[console_scripts]
+LuFeixuechengPythonRumenDaoJingtongFix1 = LuFeixuechengPythonRumenDaoJingtongFix1.__main__:main
+lu-feixuecheng-python-rumen-dao-jingtong-fix1 = LuFeixuechengPythonRumenDaoJingtongFix1.__main__:main
