@@ -1,0 +1,3 @@
+[console_scripts]
+CcnaNpKechengBijiSoeasyNameFix1 = CcnaNpKechengBijiSoeasyNameFix1.__main__:main
+ccna-np-kecheng-biji-soeasy-name-fix1 = CcnaNpKechengBijiSoeasyNameFix1.__main__:main
