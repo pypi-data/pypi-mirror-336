@@ -1,0 +1,7 @@
+python-yaml
+pandas
+setuptools
+aiohttp
+matplotlib
+requests
+PIL
