@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-invisible-watermarker"
+version = "0.1.4"
+description = "A Python package to add and check invisible watermark in image"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [ "Pillow", "numpy", "piexif",]
+authors = [{ name = "Ateeq Azam", email = "mr.ateeqazam@gmail.com" }]
+license = { text = "CC BY-ND" }
+keywords = ["image processing", "image invisible watermarking", "computer vision"]
+
+["project.urls"]
+Homepage = "https://github.com/semwaqas/image-invisible-watermarker"
+Documentation = "https://github.com/semwaqas/image-invisible-watermarker/blob/main/README.md"
+Repository = "https://github.com/semwaqas/image-invisible-watermarker"
