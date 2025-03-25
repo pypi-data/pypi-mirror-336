@@ -1,0 +1,7 @@
+README.md
+setup.py
+korpuskulum/__init__.py
+korpuskulum.egg-info/PKG-INFO
+korpuskulum.egg-info/SOURCES.txt
+korpuskulum.egg-info/dependency_links.txt
+korpuskulum.egg-info/top_level.txt
