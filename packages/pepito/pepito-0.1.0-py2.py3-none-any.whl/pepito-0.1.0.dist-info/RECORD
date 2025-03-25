@@ -1,0 +1,15 @@
+__init__.py,sha256=09N54jZXgUnTTM89QPVw5eg822y2NhiEIpOqizpBuyE,1582
+checksum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+checksum/checksum.py,sha256=1F7jP7E1Wf-eZ1qBQ0PUGShAQJhiG_izcXaIFaU1FV0,2541
+checksum/checksum_service.py,sha256=rtHKiDOlwygNuJTB0s-68103K-f1Hu2sGSiIwkMVw5U,351
+diff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diff/diff_processor.py,sha256=opISnSa0CRO_zGX0gSm2_s_MBI94rAetSTQM6r-vCes,4856
+diff/diff_service.py,sha256=cYUjRJ3GlkwGPoSf7gfJBB7GHhoV7tl8vZfk9atKbms,767
+diff/models.py,sha256=ebZl0f-RKoHjpnAj-gY_rFBfRITmYOAQ8hCvgKJLobc,2407
+diff/rtf_writer.py,sha256=nEF7bHZbCyQ80sSRPOs-A4X5yoeWtFyW_I-_70hkHIg,5340
+git/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git/git_commands.py,sha256=qWO0wiutlgqRbBiyZRSS5S0PoVqW4DLlBFEr66nKGQI,1153
+pepito-0.1.0.dist-info/METADATA,sha256=BvSAeneefD_maW5JYo4BQEC1iSv3y6VOYztfO248yhw,668
+pepito-0.1.0.dist-info/WHEEL,sha256=z6xSPN0Mo_h_NAjjk0VNneWjIiXMjAF_l8uGkjgc2-A,105
+pepito-0.1.0.dist-info/entry_points.txt,sha256=kZnsb3wO8dwsS33tLjjkOxBRIp3-CgXrxI2KsVd0GiA,38
+pepito-0.1.0.dist-info/RECORD,,
