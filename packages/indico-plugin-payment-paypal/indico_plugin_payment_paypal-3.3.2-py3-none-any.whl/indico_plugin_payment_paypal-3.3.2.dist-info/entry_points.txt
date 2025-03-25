@@ -1,0 +1,2 @@
+[indico.plugins]
+payment_paypal = indico_payment_paypal.plugin:PaypalPaymentPlugin
