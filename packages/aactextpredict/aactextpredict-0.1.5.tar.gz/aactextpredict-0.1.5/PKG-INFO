@@ -1,0 +1,84 @@
+Metadata-Version: 2.4
+Name: aactextpredict
+Version: 0.1.5
+Summary: Text prediction toolkit for Augmentative and Alternative Communication.
+Author-email: Dylan Gaines <dcgaines@mtu.edu>, Keith Vertanen <vertanen@mtu.edu>, CAMBI <cambi_support@googlegroups.com>
+License: MIT License
+        
+        Copyright (c) 2025 Keith Vertanen, Dylan Gaines
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://www.cambi.tech/
+Project-URL: Source, https://github.com/kdv123/textpredict
+Platform: Linux
+Platform: Windows
+Platform: Mac OS-X
+Classifier: License :: Other/Proprietary License
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <3.11,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: torch==2.2.0
+Requires-Dist: torchvision==0.17.0
+Requires-Dist: torchaudio==2.2.0
+Requires-Dist: datasets==2.0.0
+Requires-Dist: bitsandbytes==0.42.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: kenlm==0.1
+Requires-Dist: nlpaug==1.1.11
+Requires-Dist: psutil==5.7.2
+Requires-Dist: ipywidgets==8.1.3
+Requires-Dist: sentencepiece==0.2.0
+Requires-Dist: protobuf==4.25.3
+Requires-Dist: evaluate==0.4.0
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: accelerate==0.33.0
+Requires-Dist: transformers==4.47.0
+Requires-Dist: numpy==1.24.4
+Requires-Dist: tqdm==4.62.2
+Provides-Extra: release
+Requires-Dist: twine==5.0.0; extra == "release"
+Requires-Dist: build==1.2.2.post1; extra == "release"
+Requires-Dist: wheel==0.43.0; extra == "release"
+Dynamic: license-file
+
+Python library for making text predictions using a language model.
+
+**** Setting up a Python environment ****
+These instructions are the same as those in the classify-aac which actually does training of models.
+But the same environment should also work for evaluation using the models (though you may only need a subset of the packages).
+This was tested on cheetah on 9/14/24.
+
+If you don't have anaconda installed in your user account you'll first need to do that.
+See: https://docs.anaconda.com/anaconda/install/linux/
+
+% conda create -n aacllm python=3.10
+% conda activate aacllm
+% conda install pytorch torchvision torchaudio pytorch-cuda cuda mpi4py -c pytorch -c nvidia
+% pip install 'git+https://github.com/potamides/uniformers.git#egg=uniformers'
+% pip install --upgrade transformers
+% pip install kenlm==0.1 --global-option="--max_order=12"
+% pip install rbloom bitsandbytes requests nlpaug ipywidgets psutil datasets sentencepiece protobuf evaluate scikit-learn deepspeed accelerate
