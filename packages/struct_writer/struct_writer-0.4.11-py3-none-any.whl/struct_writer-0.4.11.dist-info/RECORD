@@ -1,0 +1,11 @@
+struct_writer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+struct_writer/default_template.py,sha256=RCBaFi8FhsXU8Kbjyq0o-yzjpWXbG7Ay4FoQ9af97mk,2633
+struct_writer/generate_structured_code.py,sha256=20D5tmkrrMZhQDK3HTVPV4ch9hX-6mjEUzdtG8O149Q,14049
+struct_writer/struct_parse/__init__.py,sha256=Irw090Su6n_WrUmInekmA0pV4-XBsrIEhUu5t2PgTdE,146
+struct_writer/struct_parse/struct_parse.py,sha256=xFz5RveKTZgMSJqKx0YDn96e3aN8FXlxkasKPJjAhr0,9683
+struct_writer/templating/__init__.py,sha256=SXqBexUzrrL6djEkQ0HW8TQqbX4pJ9LZwFrtvp-VR2A,4094
+struct_writer-0.4.11.dist-info/LICENSE,sha256=1UlswtG8xUeV9PxaCyzVDfFayqyEV56M_CfIGeofNiU,1070
+struct_writer-0.4.11.dist-info/METADATA,sha256=Xj9L_fthHi47oSX-vPqxJJ5F42mcITLlD_5hOLKbtm4,4556
+struct_writer-0.4.11.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+struct_writer-0.4.11.dist-info/entry_points.txt,sha256=stlHRRysOSX20oTqxyL4H6o-NxnSBAtlbOFqvIisbI8,77
+struct_writer-0.4.11.dist-info/RECORD,,
