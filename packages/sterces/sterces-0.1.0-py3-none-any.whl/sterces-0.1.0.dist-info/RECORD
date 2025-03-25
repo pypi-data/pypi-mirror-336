@@ -1,0 +1,9 @@
+sterces/__init__.py,sha256=mag1CKX_z9uKnS23kpnQVTctP6fInbJJRSpfFtLwkwo,31
+sterces/constants.py,sha256=oZZ2BT9cAq9iHjH5VTtGAVF7HTN4TleqvL6fceYGKUk,284
+sterces/db.py,sha256=biNTFcly9GxQuBM6iRaVLrrRh2PBLyMkwy_eOqVs2vo,14767
+sterces/foos.py,sha256=dDidCcV6eoqvGi8xCpzLQwy0FgSXNBAegQD78VfwTMY,835
+sterces/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sterces-0.1.0.dist-info/LICENSE,sha256=rtYkAQ6DNTiQAssSPT8cVZv6mSMZVP3-O0_vycYkIys,1066
+sterces-0.1.0.dist-info/METADATA,sha256=ZHFqNZjfKlRs5NyokcL4nW0-MbrTKS6Nbq2ay-wGXRE,3075
+sterces-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+sterces-0.1.0.dist-info/RECORD,,
