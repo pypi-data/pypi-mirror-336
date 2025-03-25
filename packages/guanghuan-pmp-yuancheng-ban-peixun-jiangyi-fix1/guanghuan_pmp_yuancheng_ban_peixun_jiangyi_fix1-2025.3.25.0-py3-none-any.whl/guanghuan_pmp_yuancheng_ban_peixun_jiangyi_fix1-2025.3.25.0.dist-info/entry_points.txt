@@ -1,0 +1,3 @@
+[console_scripts]
+GuanghuanPmpYuanchengBanPeixunJiangyiFix1 = GuanghuanPmpYuanchengBanPeixunJiangyiFix1.__main__:main
+guanghuan-pmp-yuancheng-ban-peixun-jiangyi-fix1 = GuanghuanPmpYuanchengBanPeixunJiangyiFix1.__main__:main
