@@ -1,0 +1,3 @@
+[console_scripts]
+AliGongchengshiDeZiwoXiuyangFix1 = AliGongchengshiDeZiwoXiuyangFix1.__main__:main
+ali-gongchengshi-de-ziwo-xiuyang-fix1 = AliGongchengshiDeZiwoXiuyangFix1.__main__:main
