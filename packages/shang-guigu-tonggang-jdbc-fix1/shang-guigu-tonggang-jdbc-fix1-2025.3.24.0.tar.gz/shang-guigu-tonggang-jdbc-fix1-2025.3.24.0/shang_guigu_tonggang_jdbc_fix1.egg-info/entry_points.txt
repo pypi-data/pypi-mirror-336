@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangJdbcFix1 = ShangGuiguTonggangJdbcFix1.__main__:main
+shang-guigu-tonggang-jdbc-fix1 = ShangGuiguTonggangJdbcFix1.__main__:main
