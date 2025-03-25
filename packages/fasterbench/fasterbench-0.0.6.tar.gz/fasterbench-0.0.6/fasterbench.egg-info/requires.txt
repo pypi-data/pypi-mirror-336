@@ -1,0 +1,9 @@
+torch
+fastcore
+prettytable
+tqdm
+codecarbon
+torchprofile
+thop
+
+[dev]

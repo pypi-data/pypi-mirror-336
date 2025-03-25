@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fasterbench/__init__.py
+fasterbench/_modidx.py
+fasterbench/benchmark.py
+fasterbench.egg-info/PKG-INFO
+fasterbench.egg-info/SOURCES.txt
+fasterbench.egg-info/dependency_links.txt
+fasterbench.egg-info/entry_points.txt
+fasterbench.egg-info/not-zip-safe
+fasterbench.egg-info/requires.txt
+fasterbench.egg-info/top_level.txt
