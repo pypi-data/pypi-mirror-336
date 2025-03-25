@@ -1,0 +1,64 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "danmac-meta-agent"
+version = "1.0.1"
+description = "A meta agent that creates OpenAI Agents SDK agents"
+readme = "README.md"
+authors = ["Meta Agent Developer"]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+packages = [{include = "meta_agent"}]
+repository = "https://github.com/DannyMac180/meta-agent"
+homepage = "https://github.com/DannyMac180/meta-agent"
+documentation = "https://github.com/DannyMac180/meta-agent#readme"
+keywords = ["agent", "openai", "ai"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+openai-agents = ">=0.0.6,<0.1.0"
+pydantic = ">=2.0.0,<3.0.0"
+asyncio = ">=3.4.3,<4.0.0"
+typing = ">=3.7.4.3,<4.0.0"
+python-dotenv = ">=1.0.0,<2.0.0"
+requests = ">=2.28.0,<3.0.0"
+beautifulsoup4 = ">=4.11.0,<5.0.0"
+griffe = ">=1.5.6,<2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.0.0,<8.0.0"
+pytest-asyncio = ">=0.20.0,<0.21.0"
+pytest-cov = ">=4.0.0,<5.0.0"
+flake8 = ">=6.0.0,<7.0.0"
+black = ">=23.0.0,<24.0.0"
+mypy = ">=1.0.0,<2.0.0"
+
+[tool.poetry.scripts]
+danmac-meta-agent = "meta_agent.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "--strict-markers -v"
+markers = [
+    "unit: mark a test as a unit test",
+    "integration: mark a test as an integration test",
+    "slow: mark test as slow (longer than 1s)",
+    "api: tests that require API access",
+    "asyncio: mark test as an asyncio test"
+]
