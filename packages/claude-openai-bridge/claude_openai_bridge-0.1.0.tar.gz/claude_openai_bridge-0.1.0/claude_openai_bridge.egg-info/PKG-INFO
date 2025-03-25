@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: claude-openai-bridge
+Version: 0.1.0
+Summary: Claude API to OpenAI API adapter
+Home-page: https://github.com/babeltower-ai/claude-openai-bridge
+Author: babeltower-ai
+Author-email: bo@babeltower.cn
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: aiohttp_socks
+Requires-Dist: pydantic
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
