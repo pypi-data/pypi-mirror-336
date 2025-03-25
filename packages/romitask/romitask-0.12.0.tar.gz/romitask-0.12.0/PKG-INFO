@@ -1,0 +1,367 @@
+Metadata-Version: 2.2
+Name: romitask
+Version: 0.12.0
+Summary: The ROMI task runner, a luigi based task pipeline.
+Author-email: Nabil Ait Taleb <mohamednabil.aittaleb@sony.com>, Timothée Wintz <timothee@timwin.fr>
+Maintainer-email: Jonathan Legrand <jonathan.legrand@ens-lyon.fr>
+License:                    GNU LESSER GENERAL PUBLIC LICENSE
+                               Version 3, 29 June 2007
+        
+         Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+         Everyone is permitted to copy and distribute verbatim copies
+         of this license document, but changing it is not allowed.
+        
+        
+          This version of the GNU Lesser General Public License incorporates
+        the terms and conditions of version 3 of the GNU General Public
+        License, supplemented by the additional permissions listed below.
+        
+          0. Additional Definitions.
+        
+          As used herein, "this License" refers to version 3 of the GNU Lesser
+        General Public License, and the "GNU GPL" refers to version 3 of the GNU
+        General Public License.
+        
+          "The Library" refers to a covered work governed by this License,
+        other than an Application or a Combined Work as defined below.
+        
+          An "Application" is any work that makes use of an interface provided
+        by the Library, but which is not otherwise based on the Library.
+        Defining a subclass of a class defined by the Library is deemed a mode
+        of using an interface provided by the Library.
+        
+          A "Combined Work" is a work produced by combining or linking an
+        Application with the Library.  The particular version of the Library
+        with which the Combined Work was made is also called the "Linked
+        Version".
+        
+          The "Minimal Corresponding Source" for a Combined Work means the
+        Corresponding Source for the Combined Work, excluding any source code
+        for portions of the Combined Work that, considered in isolation, are
+        based on the Application, and not on the Linked Version.
+        
+          The "Corresponding Application Code" for a Combined Work means the
+        object code and/or source code for the Application, including any data
+        and utility programs needed for reproducing the Combined Work from the
+        Application, but excluding the System Libraries of the Combined Work.
+        
+          1. Exception to Section 3 of the GNU GPL.
+        
+          You may convey a covered work under sections 3 and 4 of this License
+        without being bound by section 3 of the GNU GPL.
+        
+          2. Conveying Modified Versions.
+        
+          If you modify a copy of the Library, and, in your modifications, a
+        facility refers to a function or data to be supplied by an Application
+        that uses the facility (other than as an argument passed when the
+        facility is invoked), then you may convey a copy of the modified
+        version:
+        
+           a) under this License, provided that you make a good faith effort to
+           ensure that, in the event an Application does not supply the
+           function or data, the facility still operates, and performs
+           whatever part of its purpose remains meaningful, or
+        
+           b) under the GNU GPL, with none of the additional permissions of
+           this License applicable to that copy.
+        
+          3. Object Code Incorporating Material from Library Header Files.
+        
+          The object code form of an Application may incorporate material from
+        a header file that is part of the Library.  You may convey such object
+        code under terms of your choice, provided that, if the incorporated
+        material is not limited to numerical parameters, data structure
+        layouts and accessors, or small macros, inline functions and templates
+        (ten or fewer lines in length), you do both of the following:
+        
+           a) Give prominent notice with each copy of the object code that the
+           Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the object code with a copy of the GNU GPL and this license
+           document.
+        
+          4. Combined Works.
+        
+          You may convey a Combined Work under terms of your choice that,
+        taken together, effectively do not restrict modification of the
+        portions of the Library contained in the Combined Work and reverse
+        engineering for debugging such modifications, if you also do each of
+        the following:
+        
+           a) Give prominent notice with each copy of the Combined Work that
+           the Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the Combined Work with a copy of the GNU GPL and this license
+           document.
+        
+           c) For a Combined Work that displays copyright notices during
+           execution, include the copyright notice for the Library among
+           these notices, as well as a reference directing the user to the
+           copies of the GNU GPL and this license document.
+        
+           d) Do one of the following:
+        
+               0) Convey the Minimal Corresponding Source under the terms of this
+               License, and the Corresponding Application Code in a form
+               suitable for, and under terms that permit, the user to
+               recombine or relink the Application with a modified version of
+               the Linked Version to produce a modified Combined Work, in the
+               manner specified by section 6 of the GNU GPL for conveying
+               Corresponding Source.
+        
+               1) Use a suitable shared library mechanism for linking with the
+               Library.  A suitable mechanism is one that (a) uses at run time
+               a copy of the Library already present on the user's computer
+               system, and (b) will operate properly with a modified version
+               of the Library that is interface-compatible with the Linked
+               Version.
+        
+           e) Provide Installation Information, but only if you would otherwise
+           be required to provide such information under section 6 of the
+           GNU GPL, and only to the extent that such information is
+           necessary to install and execute a modified version of the
+           Combined Work produced by recombining or relinking the
+           Application with a modified version of the Linked Version. (If
+           you use option 4d0, the Installation Information must accompany
+           the Minimal Corresponding Source and Corresponding Application
+           Code. If you use option 4d1, you must provide the Installation
+           Information in the manner specified by section 6 of the GNU GPL
+           for conveying Corresponding Source.)
+        
+          5. Combined Libraries.
+        
+          You may place library facilities that are a work based on the
+        Library side by side in a single library together with other library
+        facilities that are not Applications and are not covered by this
+        License, and convey such a combined library under terms of your
+        choice, if you do both of the following:
+        
+           a) Accompany the combined library with a copy of the same work based
+           on the Library, uncombined with any other library facilities,
+           conveyed under the terms of this License.
+        
+           b) Give prominent notice with the combined library that part of it
+           is a work based on the Library, and explaining where to find the
+           accompanying uncombined form of the same work.
+        
+          6. Revised Versions of the GNU Lesser General Public License.
+        
+          The Free Software Foundation may publish revised and/or new versions
+        of the GNU Lesser General Public License from time to time. Such new
+        versions will be similar in spirit to the present version, but may
+        differ in detail to address new problems or concerns.
+        
+          Each version is given a distinguishing version number. If the
+        Library as you received it specifies that a certain numbered version
+        of the GNU Lesser General Public License "or any later version"
+        applies to it, you have the option of following the terms and
+        conditions either of that published version or of any later version
+        published by the Free Software Foundation. If the Library as you
+        received it does not specify a version number of the GNU Lesser
+        General Public License, you may choose any version of the GNU Lesser
+        General Public License ever published by the Free Software Foundation.
+        
+          If the Library as you received it specifies that a proxy can decide
+        whether future versions of the GNU Lesser General Public License shall
+        apply, that proxy's public statement of acceptance of any version is
+        permanent authorization for you to choose that version for the
+        Library.
+Project-URL: Homepage, https://romi-project.eu/
+Project-URL: Documentation, https://docs.romi-project.eu/plant_imager/
+Project-URL: Repository, https://github.com/romi/romitask
+Project-URL: Issues, https://github.com/romi/romitask/issues
+Keywords: Robotics for Microfarms,ROMI,Runner,Luigi,Pipeline
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: colorlog
+Requires-Dist: luigi
+Requires-Dist: toml
+Requires-Dist: tqdm
+Requires-Dist: watchdog
+Provides-Extra: doc
+Requires-Dist: mkdocs; extra == "doc"
+Requires-Dist: mkdocs-material; extra == "doc"
+Requires-Dist: mkdocstrings[python]; extra == "doc"
+Requires-Dist: pymdown-extensions; extra == "doc"
+Requires-Dist: markdown-exec[ansi]; extra == "doc"
+
+# RomiTask
+
+![](https://anaconda.org/romi-eu/romitask/badges/version.svg)
+![](https://anaconda.org/romi-eu/romitask/badges/platforms.svg)
+![](https://anaconda.org/romi-eu/romitask/badges/license.svg)
+
+## About
+
+This repository gathers CLI and classes needed to run `luigi` based tasks for the ROMI project.
+
+Alone, this library does not do much...
+To run a "meaningful" task you need to install other ROMI libraries like `plantdb` and `plant-3d-vision`
+or `plant-imager`.
+
+Note that both `plant-3d-vision` & `plant-imager` ROMI libraries have `romitask` & `plantdb` as git submodules.
+
+## Installation
+
+We strongly advise to create isolated environments to install the ROMI libraries.
+
+We often use `conda` as an environment and python package manager.
+If you do not yet have `miniconda3` installed on your system, have a look [here](https://docs.conda.io/en/latest/miniconda.html).
+
+The `romitask` package is available from the `romi-eu` channel.
+
+### Existing conda environment
+To install the `romitask` conda package in an existing environment, first activate it, then proceed as follows:
+```shell
+conda install romitask -c romi-eu
+```
+
+### New conda environment
+To install the `romitask` conda package in a new environment, here named `romi`, proceed as follows:
+```shell
+conda create -n romi romitask -c romi-eu
+```
+
+### Installation from sources
+To install this library, simply clone the repo and use `pip` to install it and the required dependencies.
+Again, we strongly advise to create a `conda` environment.
+
+All this can be done as follows:
+```shell
+git clone https://github.com/romi/romitask.git -b dev  # git clone the 'dev' branch of romitask
+cd romitask
+conda create -n romi 'python =3.10'
+conda activate romi  # do not forget to activate your environment!
+python -m pip install -e .  # install the sources
+```
+
+Note that the `-e` option is to install the `romitask` sources in "developer mode".
+That is, if you make changes to the source code of `romitask` you will not have to `pip install` it again.
+
+You may want to install the `plantdb` sources to perform the `DummyTask` test example below:
+```shell
+conda activate romi  # do not forget to activate your environment!
+python -m pip install git+https://github.com/romi/plantdb.git@dev#egg=plantdb # install the `plantdb` sources from 'dev' branch
+```
+
+This will install the required ROMI library `plantdb`, but not in "developer mode".
+
+## Usage
+
+### Create a dummy database
+To quickly create a _dummy database_, let's use the temporary folder `/tmp`:
+```shell
+mkdir -p /tmp/dummy_db/dummy_dataset  # create dummy database and dataset
+touch /tmp/dummy_db/romidb  # add the romidb marker (empty file)
+export DB_LOCATION='/tmp/dummy_db'  # add database location as an environment variable, 'DB_LOCATION', to current shell
+```
+
+### Test the CLI with `DummyTask`
+To test the CLI `romi_run_task`:
+```shell
+romi_run_task DummyTask $DB_LOCATION/dummy_dataset
+```
+
+You should get a "Luigi Execution Summary" similar to this:
+```
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 DummyTask(scan_id=)
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+```
+
+As no TOML configuration file was provided, you should get a `pipeline.toml` with only a `retcode` and a `version`
+sections at the root of the `dummy_dataset/` directory.
+
+The `dummy_database` tree structure should look like this:
+```
+dummy_database/
+├── dummy_dataset/
+│   ├── DummyTask__**********/
+│   ├── files.json
+│   ├── metadata/
+│   │   └── DummyTask__**********.json
+│   └── pipeline.toml
+└── romidb
+```
+
+
+## Developers & contributors
+
+You first have to install the library from sources as explained [here](#installation-from-sources).
+
+### Conda packaging
+Start by installing the required `conda-build` & `anaconda-client` conda packages in the `base` environment as follows:
+```shell
+conda install -n base conda-build anaconda-client
+```
+
+#### Build a conda package
+To build the `romitask` conda package, from the root directory of the repository and the `base` conda environment, run:
+```shell
+conda build conda/recipe/ -c conda-forge --user romi-eu
+```
+
+If you are struggling with some of the modifications you made to the recipe, 
+notably when using environment variables or Jinja2 stuffs, you can always render the recipe with:
+```shell
+conda render conda/recipe/
+```
+
+The official documentation for `conda-render` can be found [here](https://docs.conda.io/projects/conda-build/en/stable/resources/commands/conda-render.html).
+
+#### Upload a conda package
+To upload the built packages, you need a valid account (here `romi-eu`) on [anaconda.org](www.anaconda.org) & to log ONCE
+with `anaconda login`, then:
+```shell
+anaconda upload ~/miniconda3/conda-bld/linux-64/romitask*.tar.bz2 --user romi-eu
+```
+
+#### Clean builds
+To clean the source and build intermediates:
+```shell
+conda build purge
+```
+
+To clean **ALL** the built packages & build environments:
+```shell
+conda build purge-all
+```
+
+### Documentation
+
+We use [`mkdocs`](https://www.mkdocs.org/) to build the documentation with [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material) theme.
+The API documentation is generated by [`mkdocstrings`](https://mkdocstrings.github.io/).
+Also, we use [`markdown-exec`](https://pawamoy.github.io/markdown-exec) to execute some code snippets to generate output parsed in Markdown.
+Finally, you may want to check the [`pymdown-extensions`](https://facelessuser.github.io/pymdown-extensions) documentation.
+
+#### Requirements
+To install the requirements for documentation edition, simply run:
+```shell
+python -m pip install -e .[doc]
+```
+
+#### Live edit
+You can edit the documentation, `mkdocs.yaml` and the `docs` directory, and see the changes live by using:
+```shell
+mkdocs serve
+```
+
+You should see some logging and this message, indicating where to view it:
+```
+INFO    -  [14:39:21] Serving on http://127.0.0.1:8000/
+```
