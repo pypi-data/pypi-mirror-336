@@ -1,0 +1,3 @@
+[console_scripts]
+YunYuanshengJishuYuJiagouShijianNianhuoXiaohongshuFix1 = YunYuanshengJishuYuJiagouShijianNianhuoXiaohongshuFix1.__main__:main
+yun-yuansheng-jishu-yu-jiagou-shijian-nianhuo-xiaohongshu-fix1 = YunYuanshengJishuYuJiagouShijianNianhuoXiaohongshuFix1.__main__:main
