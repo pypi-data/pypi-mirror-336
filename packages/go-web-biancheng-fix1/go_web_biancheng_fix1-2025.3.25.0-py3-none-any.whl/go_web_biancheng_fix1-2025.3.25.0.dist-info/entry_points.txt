@@ -1,0 +1,3 @@
+[console_scripts]
+GoWebBianchengFix1 = GoWebBianchengFix1.__main__:main
+go-web-biancheng-fix1 = GoWebBianchengFix1.__main__:main
