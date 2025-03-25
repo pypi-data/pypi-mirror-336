@@ -1,0 +1,415 @@
+{
+    "LOTC": {
+        "site_type": "lfu_colocation",
+        "site_lat": 48.1545666,
+        "site_lon": 11.5546203,
+        "elevation": 519,
+        "comment": "Co-Location LfU Lothstraße"
+    },
+    "HANV": {
+        "site_type": "individual",
+        "site_lat": 48.1727324,
+        "site_lon": 11.5285361,
+        "elevation": 510,
+        "comment": "Lamp post ids:1.0"
+    },
+    "DOMV": {
+        "site_type": "individual",
+        "site_lat": 48.1596556,
+        "site_lon": 11.5376299,
+        "elevation": 520,
+        "comment": "Lamp post ids:505.0"
+    },
+    "LANC": {
+        "site_type": "lfu_colocation",
+        "site_lat": 48.14957,
+        "site_lon": 11.536546,
+        "elevation": 524,
+        "comment": "Co-Location LfU Landshuter Allee"
+    },
+    "FRIV": {
+        "site_type": "individual",
+        "site_lat": 48.143002,
+        "site_lon": 11.519285,
+        "elevation": 523,
+        "comment": "Lamp post ids:10.0"
+    },
+    "TUEV": {
+        "site_type": "individual",
+        "site_lat": 48.1284595,
+        "site_lon": 11.5255323,
+        "elevation": 531,
+        "comment": "Lamp post ids: 25.0; B2R Abfahrt Tuebinger Str."
+    },
+    "SONC": {
+        "site_type": "lfu_colocation",
+        "site_lat": 48.1372488,
+        "site_lon": 11.5648237,
+        "elevation": 524,
+        "comment": "Lamp post ids:25.0; Co-Location LfU Stachus"
+    },
+    "LINV": {
+        "site_type": "individual",
+        "site_lat": 48.1301201,
+        "site_lon": 11.5594562,
+        "elevation": 526,
+        "comment": "Lamp post ids:38.0"
+    },
+    "ERHV": {
+        "site_type": "individual",
+        "site_lat": 48.1288644,
+        "site_lon": 11.5783594,
+        "elevation": 514,
+        "comment": "Lamp post ids:2.0"
+    },
+    "TOEV": {
+        "site_type": "individual",
+        "site_lat": 48.1386708,
+        "site_lon": 11.626897,
+        "elevation": 528,
+        "comment": "Lamp post ids:1.0"
+    },
+    "ROSV": {
+        "site_type": "individual",
+        "site_lat": 48.125051,
+        "site_lon": 11.6002397,
+        "elevation": 531,
+        "comment": "Lamp post ids:65.0"
+    },
+    "PRIV": {
+        "site_type": "individual",
+        "site_lat": 48.1430346,
+        "site_lon": 11.5891544,
+        "elevation": 516,
+        "comment": "Lamp post ids:21.0"
+    },
+    "FREV": {
+        "site_type": "individual",
+        "site_lat": 48.1615591,
+        "site_lon": 11.5860387,
+        "elevation": 514,
+        "comment": "Lamp post ids:55.0"
+    },
+    "SCHV": {
+        "site_type": "individual",
+        "site_lat": 48.1762143,
+        "site_lon": 11.5916425,
+        "elevation": 503,
+        "comment": "Lamp post ids:1.0"
+    },
+    "MOSV": {
+        "site_type": "individual",
+        "site_lat": 48.1870436,
+        "site_lon": 11.5622708,
+        "elevation": 508,
+        "comment": "Lamp post ids:32.0"
+    },
+    "PETV": {
+        "site_type": "individual",
+        "site_lat": 48.176205,
+        "site_lon": 11.5641565,
+        "elevation": 513,
+        "comment": "Lamp post ids:4.0"
+    },
+    "NUSC": {
+        "site_type": "lfu_colocation",
+        "site_lat": 48.1732414,
+        "site_lon": 11.6480135,
+        "elevation": 511,
+        "comment": "Lamp post ids:17.0; LfU Johanniskirchen"
+    },
+    "COSP": {
+        "site_type": "individual",
+        "site_lat": 48.1755672,
+        "site_lon": 11.6338458,
+        "elevation": 511,
+        "comment": "Lamp post ids:189.0; Nahe HKW Nord"
+    },
+    "LEIP": {
+        "site_type": "individual",
+        "site_lat": 48.1840362,
+        "site_lon": 11.6292377,
+        "elevation": 495,
+        "comment": "Lamp post ids:39.0; Nahe HKW Nord"
+    },
+    "SMIA": {
+        "site_type": "individual",
+        "site_lat": 48.2088639,
+        "site_lon": 11.5989667,
+        "elevation": 497,
+        "comment": "Lamp post ids:5.0"
+    },
+    "ALLC": {
+        "site_type": "lfu_colocation",
+        "site_lat": 48.1817095,
+        "site_lon": 11.4644802,
+        "elevation": 511,
+        "comment": "Lamp post ids:177.0; LfU Allach"
+    },
+    "TUMR": {
+        "site_type": "reference_colocation",
+        "site_lat": 48.150733,
+        "site_lon": 11.569168,
+        "elevation": 520,
+        "comment": "Reference colocation at TUM N5 building"
+    },
+    "TETP": {
+        "site_type": "individual",
+        "site_lat": 48.116531,
+        "site_lon": 11.5651896,
+        "elevation": 518,
+        "comment": "Lamp post ids:8.0; Nahe HKW Sued"
+    },
+    "FLAV": {
+        "site_type": "individual",
+        "site_lat": 48.1126144,
+        "site_lon": 11.556869,
+        "elevation": 530,
+        "comment": "Lamp post ids:35.0; nahe HKW Sued und B2R"
+    },
+    "SAEV": {
+        "site_type": "individual",
+        "site_lat": 48.1070756,
+        "site_lon": 11.5498423,
+        "elevation": 524,
+        "comment": "Lamp post ids:82.0; "
+    },
+    "WOLV": {
+        "site_type": "individual",
+        "site_lat": 48.0907559,
+        "site_lon": 11.5385585,
+        "elevation": 555,
+        "comment": ""
+    },
+    "LITA": {
+        "site_type": "individual",
+        "site_lat": 48.0771877,
+        "site_lon": 11.5031608,
+        "elevation": 567,
+        "comment": "Lamp post ids:9.0; guter Standort!"
+    },
+    "LHGA": {
+        "site_type": "individual",
+        "site_lat": 48.1178752,
+        "site_lon": 11.4673588,
+        "elevation": 543,
+        "comment": "Lamp post ids:72.0"
+    },
+    "ASAA": {
+        "site_type": "individual",
+        "site_lat": 48.1326067,
+        "site_lon": 11.4285357,
+        "elevation": 540,
+        "comment": "Lamp post ids:nan"
+    },
+    "PIPV": {
+        "site_type": "individual",
+        "site_lat": 48.1531267,
+        "site_lon": 11.456421,
+        "elevation": 527,
+        "comment": "Lamp post ids:2.0"
+    },
+    "ASHA": {
+        "site_type": "individual",
+        "site_lat": 48.2200291,
+        "site_lon": 11.5601619,
+        "elevation": 495,
+        "comment": "Lamp post ids:3.0"
+    },
+    "NYMC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1508898,
+        "site_lon": 11.541806,
+        "elevation": 523,
+        "comment": "Lamp post ids:72.0"
+    },
+    "LORC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.149137,
+        "site_lon": 11.55058,
+        "elevation": 523,
+        "comment": "Lamp post ids:34.0"
+    },
+    "STIC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1473452,
+        "site_lon": 11.5596133,
+        "elevation": 520,
+        "comment": ""
+    },
+    "OVMC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1458622,
+        "site_lon": 11.5754682,
+        "elevation": 519,
+        "comment": ""
+    },
+    "DACC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1505754,
+        "site_lon": 11.5578029,
+        "elevation": 523,
+        "comment": ""
+    },
+    "TERC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1490613,
+        "site_lon": 11.5714243,
+        "elevation": 516,
+        "comment": "Lamp post ids:21.0"
+    },
+    "BARC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1440705,
+        "site_lon": 11.5687179,
+        "elevation": 520,
+        "comment": "Lamp post ids:12.0"
+    },
+    "KOEC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1463866,
+        "site_lon": 11.5634995,
+        "elevation": 522,
+        "comment": "Lamp post ids:46.0"
+    },
+    "DUEB": {
+        "site_type": "reference_colocation",
+        "site_lat": 47.404861,
+        "site_lon": 8.608481,
+        "elevation": 431,
+        "comment": "Side-by-side reference measurement at NABEL station at EMPA Duebendorf"
+    },
+    "CLIM": {
+        "site_type": "climate_chamber",
+        "site_lat": 0,
+        "site_lon": 0,
+        "elevation": 0,
+        "comment": "characterization measurement in the climate chamber at EMPA Duebendorf"
+    },
+    "FINR": {
+        "site_type": "midcost_colocation",
+        "site_lat": 48.22043,
+        "site_lon": 11.802,
+        "elevation": 496,
+        "comment": "Co-Location with midcost co2 sensor at Finsing background station"
+    },
+    "LMUM": {
+        "site_type": "reference_colocation",
+        "site_lat": 48.14776,
+        "site_lon": 11.57345,
+        "elevation": 520,
+        "comment": "Meteo reference colocation at LMU meteo station"
+    },
+    "PASR": {
+        "site_type": "midcost_colocation",
+        "site_lat": 48.141191,
+        "site_lon": 11.447062,
+        "elevation": 529,
+        "comment": "Co-Location with midcost co2 sensor in Pasing; Peslmüllerstr. 6"
+    },
+    "MASC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.15208, 
+        "site_lon": 11.55986,
+        "elevation": 520,
+        "comment": "LC-AQ Colocation"
+    },
+    "SPAC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.14968,
+        "site_lon": 11.54788,
+        "elevation": 523,
+        "comment": "Relocation from LORC to lamp 74 on Oct 17 2023"
+    },
+    "ELIC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.14164,
+        "site_lon": 11.56302,
+        "elevation": 527,
+        "comment": "Next to botanical garden"
+    },
+    "HSMC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.1527, 
+        "site_lon": 11.55608,
+        "elevation": 524,
+        "comment": "Relocation from DACV; Co-Location with Low-Cost AQ Sensors"
+    },
+    "NEPC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.14114, 
+        "site_lon": 11.56477,
+        "elevation": 525,
+        "comment": "Relocation from ELIC; Co-Location with Low-Cost AQ Sensors"
+    },
+    "AYIV": {
+        "site_type": "individual",
+        "site_lat": 48.11815, 
+        "site_lon": 11.61854,
+        "elevation": 535,
+        "comment": "next to heavy traffic; B2R"
+    },
+    "MKWA": {
+        "site_type": "individual",
+        "site_lat": 48.09342, 
+        "site_lon": 11.5839,
+        "elevation": 549,
+        "comment": ""
+    },
+    "KARV": {
+        "site_type": "individual",
+        "site_lat": 48.12253, 
+        "site_lon": 11.66223,
+        "elevation": 526,
+        "comment": ""
+    },
+    "MARA": {
+        "site_type": "individual",
+        "site_lat": 48.1057, 
+        "site_lon": 11.67778,
+        "elevation": 541,
+        "comment": ""
+    },
+    "RDIR": {
+        "site_type": "midcost_colocation",
+        "site_lat": 48.139313, 
+        "site_lon": 11.600133, 
+        "elevation": 523,
+        "comment": "Located on top of Klinikum Rechts der Isar; Colocation with Mid-Cost Sensor"
+    },
+    "DLRR": {
+        "site_type": "midcost_colocation",
+        "site_lat": 48.086712,
+        "site_lon": 11.278840, 
+        "elevation": 576,
+        "comment": "Located at DLR; Colocation with Mid-Cost Sensor"
+    },
+    "AQCC": {
+        "site_type": "reference_colocation",
+        "site_lat": 48.148416,
+        "site_lon": 11.572783, 
+        "elevation": 520,
+        "comment": "Colocation at street level with PICARRO during AQ Campaign"
+    }, 
+    "NPLR": {
+        "site_type": "midcost_colocation",
+        "site_lat": 48.094790, 
+        "site_lon": 11.656115, 
+        "elevation": 540,
+        "comment": "Mid-Cost Colocation at Klinikum Neuperlach"
+    },
+    "BOGR": {
+        "site_type": "midcost_colocation",
+        "site_lat": 48.155391,
+        "site_lon": 11.625420, 
+        "elevation": 512,
+            "comment": "Mid-Cost Colocation at Klinikum Bogenhausen"
+    },
+    "HEDC": {
+        "site_type": "lc_aq_colocation",
+        "site_lat": 48.151206, 
+        "site_lon": 11.540195, 
+        "elevation": 523,
+        "comment": "Nymphenburger Str. Lamp Post 80"
+    }
+}

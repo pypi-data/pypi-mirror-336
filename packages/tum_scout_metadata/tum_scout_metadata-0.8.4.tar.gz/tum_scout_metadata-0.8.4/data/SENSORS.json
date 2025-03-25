@@ -1,0 +1,802 @@
+{
+    "13077": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13078": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": "2023-05-17T14:00:00+00:00",
+        "comment": "Used for showcase and testing purposes."
+    },
+    "13079": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13080": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13081": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13082": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13083": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13084": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13085": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13086": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13087": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13088": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13089": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13090": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13091": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13092": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13093": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13094": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13095": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13096": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13097": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13098": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13099": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13100": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13101": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13102": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13103": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13104": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13105": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13106": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13107": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13108": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13109": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13110": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13111": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13112": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13113": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13114": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13115": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13116": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13117": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13118": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13119": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13120": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13121": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13122": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13123": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13124": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13125": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13126": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13127": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13128": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13129": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13130": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13131": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13132": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13133": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13134": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13135": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13136": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13137": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13138": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13139": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13140": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13141": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13142": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13143": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13144": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13145": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13146": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13147": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13148": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13149": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13150": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13151": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13152": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13153": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13154": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13155": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13156": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13157": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13158": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13159": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13160": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13161": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13162": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13163": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13164": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13165": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": "!IMPORTANT - New sensorelement was added on 22.5.2024!"
+    },
+    "13166": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13167": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13168": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13169": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13170": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13171": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13172": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13173": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13174": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13175": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    },
+    "13176": {
+        "sensor_type": "LP8",
+        "sensor_make": "Decentlab",
+        "sensor_model": "DL-LP8",
+        "start_up_date": "2022-08-01T08:00:00+00:00",
+        "shut_down_date": null,
+        "comment": ""
+    }
+}

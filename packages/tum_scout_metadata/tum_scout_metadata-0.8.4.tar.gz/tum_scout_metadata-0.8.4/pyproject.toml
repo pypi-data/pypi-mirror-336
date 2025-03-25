@@ -1,0 +1,41 @@
+
+[project]
+authors = [
+    {name = "Daniel Kühbacher", email = "daniel.kuehbacher@tum.de"},
+    {name = "Felix Böhm", email = "felix.boehm@tum.de"},
+    {name = "Moritz Makowski", email = "moritz.makowski@tum.de"},
+]
+requires-python = "<3.12,>=3.9"
+dependencies = [
+    "pydantic<2.0.0,>=1.10.4",
+    "tum-esm-utils<2.0.0,>=1.2.1",
+    "pendulum<3.0.0,>=2.1.2",
+]
+name = "tum_scout_metadata"
+version = "0.8.4"
+description = "Single source of truth for ESM's SCOUT measurement logistics"
+readme = "README.md"
+
+[project.urls]
+repository = "https://github.com/tum-esm/scout-metadata"
+
+[dependency-groups]
+dev = [
+    "ipython>=8.18.1",
+    "jupyter>=1.1.1",
+    "mypy<1.0,>=0.991",
+    "pandas>=2.2.3",
+    "pytest<8.0.0,>=7.2.1",
+    "python-dotenv<1.0.0,>=0.21.1",
+    "requests>=2.32.3",
+]
+lint = [
+    "ruff>=0.11.2",
+]
+
+[tool.ruff]
+exclude = ["scripts"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

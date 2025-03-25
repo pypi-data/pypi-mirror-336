@@ -1,0 +1,1314 @@
+[
+    {
+        "site_id": "CLIM",
+        "sensor_ids": "all",
+        "sampling_start": "2022-11-16T16:00+01:00",
+        "sampling_end": "2022-12-20T01:00+01:00",
+        "orientation": 0,
+        "elevation_ag": 0,
+        "comment": "climate chamber test in Duebendorf; all sensors",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "DUEB",
+        "sensor_ids": "all",
+        "sampling_start": "2022-12-22T17:00+01:00",
+        "sampling_end": "2023-03-29T11:00+01:00",
+        "orientation": 0,
+        "elevation_ag": 0,
+        "comment": "side-by-side measurement in Duebendorf",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TUMR",
+        "sensor_ids": "all",
+        "sampling_start": "2023-04-12T15:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 25,
+        "comment": "side-by-side at TUM roof",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "LOTC",
+        "sensor_ids": [
+            13126,
+            13172
+        ],
+        "sampling_start": "2023-05-02T13:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "HANV",
+        "sensor_ids": [
+            13171,
+            13147
+        ],
+        "sampling_start": "2023-05-02T12:30+02:00",
+        "sampling_end": "2024-07-15T14:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "DOMV",
+        "sensor_ids": [
+            13092,
+            13096
+        ],
+        "sampling_start": "2023-05-02T13:30+02:00",
+        "sampling_end": "2024-07-22T10:15+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "LANC",
+        "sensor_ids": [
+            13101,
+            13114
+        ],
+        "sampling_start": "2023-05-02T15:00+02:00",
+        "sampling_end": "2024-07-22T10:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "FRIV",
+        "sensor_ids": [
+            13118,
+            13143
+        ],
+        "sampling_start": "2023-05-02T15:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TUEV",
+        "sensor_ids": [
+            13130,
+            13106
+        ],
+        "sampling_start": "2023-05-02T15:50+02:00",
+        "sampling_end": "2024-07-22T11:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "SONC",
+        "sensor_ids": [
+            13169,
+            13080
+        ],
+        "sampling_start": "2023-05-02T16:30+02:00",
+        "sampling_end": "2024-07-01T09:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "sensor was replaced on 27.7.2024 with new devices",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "LINV",
+        "sensor_ids": [
+            13103,
+            13170
+        ],
+        "sampling_start": "2023-05-03T11:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "ERHV",
+        "sensor_ids": [
+            13095,
+            13141
+        ],
+        "sampling_start": "2023-05-03T12:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TOEV",
+        "sensor_ids": [
+            13168,
+            13164
+        ],
+        "sampling_start": "2023-05-03T13:50+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "ROSV",
+        "sensor_ids": [
+            13153,
+            13115
+        ],
+        "sampling_start": "2023-05-03T12:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "PRIV",
+        "sensor_ids": [
+            13129,
+            13082
+        ],
+        "sampling_start": "2023-05-03T14:20+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "FREV",
+        "sensor_ids": [
+            13100,
+            13174
+        ],
+        "sampling_start": "2023-05-03T16:50+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "SCHV",
+        "sensor_ids": [
+            13110,
+            13157
+        ],
+        "sampling_start": "2023-05-03T17:20+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "MOSV",
+        "sensor_ids": [
+            13155,
+            13158
+        ],
+        "sampling_start": "2023-05-03T18:00+02:00",
+        "sampling_end": "2024-07-15T13:15+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "PETV",
+        "sensor_ids": [
+            13173,
+            13151
+        ],
+        "sampling_start": "2023-05-03T18:20+02:00",
+        "sampling_end": "2024-07-15T13:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "NUSC",
+        "sensor_ids": [
+            13097,
+            13135
+        ],
+        "sampling_start": "2023-05-04T10:00+02:00",
+        "sampling_end": "2024-07-15T09:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "COSP",
+        "sensor_ids": [
+            13133,
+            13081
+        ],
+        "sampling_start": "2023-05-04T10:40+02:00",
+        "sampling_end": "2024-07-15T10:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "LEIP",
+        "sensor_ids": [
+            13159,
+            13132
+        ],
+        "sampling_start": "2023-05-04T11:00+02:00",
+        "sampling_end": "2024-07-15T11:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "SMIA",
+        "sensor_ids": [
+            13091,
+            13145
+        ],
+        "sampling_start": "2023-05-04T11:40+02:00",
+        "sampling_end": "2024-07-15T12:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "ALLC",
+        "sensor_ids": [
+            13150,
+            13077
+        ],
+        "sampling_start": "2023-05-04T12:20+02:00",
+        "sampling_end": "2024-07-15T14:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TETP",
+        "sensor_ids": [
+            13098,
+            13161
+        ],
+        "sampling_start": "2023-05-16T10:15+02:00",
+        "sampling_end": "2024-07-22T13:15+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "FLAV",
+        "sensor_ids": [
+            13148,
+            13134
+        ],
+        "sampling_start": "2023-05-16T10:30+02:00",
+        "sampling_end": "2024-07-22T13:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "SAEV",
+        "sensor_ids": [
+            13111,
+            13125
+        ],
+        "sampling_start": "2023-05-16T10:45+02:00",
+        "sampling_end": "2024-07-22T11:45+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "WOLV",
+        "sensor_ids": [
+            13087,
+            13089
+        ],
+        "sampling_start": "2023-05-16T11:05+02:00",
+        "sampling_end": "2024-07-22T12:15+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "LITA",
+        "sensor_ids": [
+            13099,
+            13163
+        ],
+        "sampling_start": "2023-05-16T11:25+02:00",
+        "sampling_end": "2024-07-25T13:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "LHGA",
+        "sensor_ids": [
+            13160,
+            13121
+        ],
+        "sampling_start": "2023-05-16T12:00+02:00",
+        "sampling_end": "2024-07-25T11:45+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "ASAA",
+        "sensor_ids": [
+            13107,
+            13084
+        ],
+        "sampling_start": "2023-05-16T12:20+02:00",
+        "sampling_end": "2024-07-25T11:15+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "PIPV",
+        "sensor_ids": [
+            13108,
+            13154
+        ],
+        "sampling_start": "2023-05-16T13:45+02:00",
+        "sampling_end": "2024-07-25T10:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "ASHA",
+        "sensor_ids": [
+            13167,
+            13090
+        ],
+        "sampling_start": "2023-05-16T14:30+02:00",
+        "sampling_end": "2024-07-15T12:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "NYMC",
+        "sensor_ids": [
+            13079,
+            13176
+        ],
+        "sampling_start": "2023-06-06T09:40+02:00",
+        "sampling_end": "2023-07-31T08:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "LORC",
+        "sensor_ids": [
+            13083,
+            13138
+        ],
+        "sampling_start": "2023-06-06T09:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "STIC",
+        "sensor_ids": [
+            13093,
+            13140
+        ],
+        "sampling_start": "2023-06-06T11:00+02:00",
+        "sampling_end": "2023-07-31T08:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "OVMC",
+        "sensor_ids": [
+            13113,
+            13094
+        ],
+        "sampling_start": "2023-06-06T12:00+02:00",
+        "sampling_end": "2023-07-31T08:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "DACC",
+        "sensor_ids": [
+            13127,
+            13119
+        ],
+        "sampling_start": "2023-06-06T10:15+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "colocation with airquality sensor was stopped on 17.10.202",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TERC",
+        "sensor_ids": [
+            13162,
+            13142
+        ],
+        "sampling_start": "2023-07-12T13:10+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "BARC",
+        "sensor_ids": [
+            13102,
+            13175
+        ],
+        "sampling_start": "2023-07-12T12:10+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "KOEC",
+        "sensor_ids": [
+            13088,
+            13144
+        ],
+        "sampling_start": "2023-07-12T11:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TUMR",
+        "sensor_ids": [
+            13093,
+            13176,
+            13079,
+            13113,
+            13140,
+            13094
+        ],
+        "sampling_start": "2023-07-31T15:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 25,
+        "comment": "some sensors from aq colocation were brought back and are now mounted again at the TUM roof for side-by-side measurment",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TUMR",
+        "sensor_ids": [
+            13094
+        ],
+        "sampling_start": "2023-08-31T16:30:00+02:00",
+        "sampling_end": "2023-09-07T15:30:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 25,
+        "comment": "sensor located in radiation shield",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LMUM",
+        "sensor_ids": [
+            13094
+        ],
+        "sampling_start": "2023-09-08T11:00:00+02:00",
+        "sampling_end": "2023-10-24T10:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 30,
+        "comment": "sensor located in radiation shield on LMU roof",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "FINR",
+        "sensor_ids": [
+            13166
+        ],
+        "sampling_start": "2023-09-19T13:00:00+02:00",
+        "sampling_end": "2024-11-05T13:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 25,
+        "comment": "Co-location with Mid-Cost Network",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "PASR",
+        "sensor_ids": [
+            13112
+        ],
+        "sampling_start": "2023-10-10T16:00:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 15,
+        "comment": "Co-location with Mid-Cost Network",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "MASC",
+        "sensor_ids": [
+            13162,
+            13142
+        ],
+        "sampling_start": "2023-10-17T14:00:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Co-location with LC-AQ Network",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "SPAC",
+        "sensor_ids": [
+            13083,
+            13138
+        ],
+        "sampling_start": "2023-10-17T15:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "relocation from LORC",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "TUMR",
+        "sensor_ids": [
+            13094
+        ],
+        "sampling_start": "2023-11-13T10:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 30,
+        "comment": "Relocated to TUM roof from Lab",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "ELIC",
+        "sensor_ids": [
+            13139,
+            13152
+        ],
+        "sampling_start": "2023-07-12T12:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Co-location with LC-AQ Network",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "HSMC",
+        "sensor_ids": [
+            13127,
+            13119
+        ],
+        "sampling_start": "2023-11-22T10:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Co-location with LC-AQ Network",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "NEPC",
+        "sensor_ids": [
+            13139,
+            13152
+        ],
+        "sampling_start": "2023-11-22T10:30:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Co-location with LC-AQ Network",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "AYIV",
+        "sensor_ids": [
+            13079,
+            13176
+        ],
+        "sampling_start": "2023-11-22T12:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Close to heavy traffic; B2R",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "MKWA",
+        "sensor_ids": [
+            13146,
+            13122
+        ],
+        "sampling_start": "2023-11-22T13:30:00+01:00",
+        "sampling_end": "2024-07-25T13:30+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Airflow",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "KARV",
+        "sensor_ids": [
+            13094,
+            13113
+        ],
+        "sampling_start": "2023-11-22T13:30:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Close to traffic site",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "MARA",
+        "sensor_ids": [
+            13140,
+            13093
+        ],
+        "sampling_start": "2023-11-22T13:00:00+01:00",
+        "sampling_end": "2024-07-25T14:15+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Airflow",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "DLRR",
+        "sensor_ids": [
+            13137
+        ],
+        "sampling_start": "2023-11-20T15:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 30,
+        "comment": "Co-Location MidCost",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "RDIR",
+        "sensor_ids": [
+            13085
+        ],
+        "sampling_start": "2023-11-20T15:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 30,
+        "comment": "Co-Location MidCost",
+        "radiation_shield": false
+    },
+    {
+        "site_id": "AQCC",
+        "sensor_ids": [
+            13123,
+            13109
+        ],
+        "sampling_start": "2024-03-01T11:00:00+01:00",
+        "sampling_end": "2024-04-10T16:30:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Co-Location with street-level Picarro at AQ campaign",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LMUM",
+        "sensor_ids": [
+            13123,
+            13109
+        ],
+        "sampling_start": "2024-04-16T14:00:00+02:00",
+        "sampling_end": "2024-10-01T15:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Co-Location at LMU meteo station",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "TUMR",
+        "sensor_ids": [
+            13149,
+            13086,
+            13136,
+            13117, 
+            13105, 
+            13165, 
+            13124, 
+            13131, 
+            13116, 
+            13128, 
+            13156, 
+            13104
+        ],
+        "sampling_start": "2024-05-24T11:00:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Changed sensorelement and added radiation shield. First sensor was deployed on 24.6., other sensors stayed until 27.06.",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "SONC",
+        "sensor_ids": [
+            13116, 
+            13128
+            
+        ],
+        "sampling_start": "2024-07-01T10:00:00+01:00",
+        "sampling_end": "2024-11-05T16:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LORC",
+        "sensor_ids": [
+            13136, 
+            13117
+        ],
+        "sampling_start": "2024-07-01T11:30:00+01:00",
+        "sampling_end": "2024-11-05T15:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "SPAC",
+        "sensor_ids": [
+            13083,
+            13138
+        ],
+        "sampling_start": "2024-07-01T12:00:00+01:00",
+        "sampling_end": "2024-10-02T12:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Added radiation shield",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "HEDC",
+        "sensor_ids": [
+            13086,
+            13149
+        ],
+        "sampling_start": "2024-07-01T13:30:00+01:00",
+        "sampling_end": "2024-11-05T14:45:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "HSMC",
+        "sensor_ids": [
+            13127,
+            13119
+        ],
+        "sampling_start": "2024-07-01T14:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Added radiation shield",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LOTC",
+        "sensor_ids": [
+            13126,
+            13172
+        ],
+        "sampling_start": "2024-07-01T14:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Added Radiation Shield",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "MASC",
+        "sensor_ids": [
+            13162,
+            13142
+        ],
+        "sampling_start": "2024-07-01T15:00:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Added Radiation Shield",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "BARC",
+        "sensor_ids": [
+            13102,
+            13175
+        ],
+        "sampling_start": "2024-07-01T16:30+02:00",
+        "sampling_end": "2024-10-02T12:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Added Radiation Shield",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "NEPC",
+        "sensor_ids": [
+            13139,
+            13152
+        ],
+        "sampling_start": "2024-07-01T17:00:00+01:00",
+        "sampling_end": "2024-10-02T12:00:00+02:00",
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Added Radiation Shield",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "NPLR",
+        "sensor_ids": [
+            13165, 
+            13105
+        ],
+        "sampling_start": "2024-06-24T16:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Redundant sensor co-located with mid-cost network",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "BOGR",
+        "sensor_ids": [
+            13169,
+            13080
+        ],
+        "sampling_start": "2024-07-02T17:00:00+01:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Redundant sensor co-located with mid-cost network",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "NUSC",
+        "sensor_ids": [
+            13097,
+            13135
+        ],
+        "sampling_start": "2024-07-15T10:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "COSP",
+        "sensor_ids": [
+            13133,
+            13081
+        ],
+        "sampling_start": "2024-07-15T11:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LEIP",
+        "sensor_ids": [
+            13159,
+            13132
+        ],
+        "sampling_start": "2024-07-15T12:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "SMIA",
+        "sensor_ids": [
+            13091,
+            13145
+        ],
+        "sampling_start": "2024-07-15T12:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "ASHA",
+        "sensor_ids": [
+            13167,
+            13090
+        ],
+        "sampling_start": "2024-07-15T13:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "MOSV",
+        "sensor_ids": [
+            13155,
+            13158
+        ],
+        "sampling_start": "2024-07-15T13:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "PETV",
+        "sensor_ids": [
+            13173,
+            13151
+        ],
+        "sampling_start": "2024-07-15T13:50+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "HANV",
+        "sensor_ids": [
+            13171,
+            13147
+        ],
+        "sampling_start": "2024-07-15T14:15+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "ALLC",
+        "sensor_ids": [
+            13150,
+            13077
+        ],
+        "sampling_start": "2024-07-15T15:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "DOMV",
+        "sensor_ids": [
+            13092,
+            13096
+        ],
+        "sampling_start": "2024-07-22T10:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LANC",
+        "sensor_ids": [
+            13101,
+            13114
+        ],
+        "sampling_start": "2024-07-22T11:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "TUEV",
+        "sensor_ids": [
+            13130,
+            13106
+        ],
+        "sampling_start": "2024-07-22T11:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "SAEV",
+        "sensor_ids": [
+            13111,
+            13125
+        ],
+        "sampling_start": "2024-07-22T12:10+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "WOLV",
+        "sensor_ids": [
+            13087,
+            13089
+        ],
+        "sampling_start": "2024-07-22T12:35+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "TETP",
+        "sensor_ids": [
+            13098,
+            13161
+        ],
+        "sampling_start": "2024-07-22T13:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "FLAV",
+        "sensor_ids": [
+            13148,
+            13134
+        ],
+        "sampling_start": "2024-07-22T13:45+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "PIPV",
+        "sensor_ids": [
+            13108,
+            13154
+        ],
+        "sampling_start": "2024-07-25T11:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "ASAA",
+        "sensor_ids": [
+            13107,
+            13084
+        ],
+        "sampling_start": "2024-07-25T11:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LHGA",
+        "sensor_ids": [
+            13160,
+            13121
+        ],
+        "sampling_start": "2024-07-25T12:15+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LITA",
+        "sensor_ids": [
+            13099,
+            13163
+        ],
+        "sampling_start": "2024-07-25T13:15+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "MKWA",
+        "sensor_ids": [
+            13146,
+            13122
+        ],
+        "sampling_start": "2024-07-25T13:50+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Airflow",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "MARA",
+        "sensor_ids": [
+            13140,
+            13093
+        ],
+        "sampling_start": "2024-07-25T14:30+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "Airflow",
+        "radiation_shield": true
+    }, 
+    {
+        "site_id": "TUMR",
+        "sensor_ids": [
+            13139,
+            13152,
+            13102,
+            13175,
+            13083,
+            13138,
+            13123,
+            13109
+        ],
+        "sampling_start": "2024-10-02T15:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "new side-by-side campaign",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "FINR",
+        "sensor_ids": [
+            13102,
+            13175
+        ],
+        "sampling_start": "2024-11-05T14:30:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 25,
+        "comment": "Co-location with Mid-Cost Network",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "HEDC",
+        "sensor_ids": [
+            13131,
+            13124
+        ],
+        "sampling_start": "2024-11-05T15:30:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "SONC",
+        "sensor_ids": [
+            13138,
+            13083
+            
+        ],
+        "sampling_start": "2024-11-05T16:15:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "",
+        "radiation_shield": true
+    },
+    {
+        "site_id": "LORC",
+        "sensor_ids": [
+            13152,
+            13139
+        ],
+        "sampling_start": "2024-11-05T15:30:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "sensor ids to be checked",
+        "radiation_shield": true
+    }, 
+    {
+        "site_id": "TUMR",
+        "sensor_ids": [
+            13117,
+            13136,
+            13086, 
+            13149,
+            13116, 
+            13128, 
+            13166, 
+            13120
+        ],
+        "sampling_start": "2024-11-13T09:00+02:00",
+        "sampling_end": null,
+        "orientation": 0,
+        "elevation_ag": 3,
+        "comment": "new sensors at side-by-side; 116/128/166/120 includes silica gel; changed sensor element at 13166.",
+        "radiation_shield": true
+    }
+]
