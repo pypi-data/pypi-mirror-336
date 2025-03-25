@@ -1,0 +1,3 @@
+[console_scripts]
+ZhinengShidaiDeChuanmeiBiangeYuFazhanFix1 = ZhinengShidaiDeChuanmeiBiangeYuFazhanFix1.__main__:main
+zhineng-shidai-de-chuanmei-biange-yu-fazhan-fix1 = ZhinengShidaiDeChuanmeiBiangeYuFazhanFix1.__main__:main
