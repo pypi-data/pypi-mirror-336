@@ -1,0 +1,8 @@
+README.md
+setup.py
+DeviceUAgen/DeviceUAgen.py
+DeviceUAgen/__init__.py
+DeviceUAgen.egg-info/PKG-INFO
+DeviceUAgen.egg-info/SOURCES.txt
+DeviceUAgen.egg-info/dependency_links.txt
+DeviceUAgen.egg-info/top_level.txt
