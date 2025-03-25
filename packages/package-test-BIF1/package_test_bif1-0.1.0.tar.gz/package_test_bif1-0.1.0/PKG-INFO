@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: package-test-BIF1
+Version: 0.1.0
+Summary: Add your description here
+Author-email: "laura.patinomedina@wur.nl" <laura.patinomedina@wur.nl>
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: ruff>=0.11.2
+Description-Content-Type: text/markdown
+
+# package-test-BIF1
+Workshop assignments, set up of my own python package

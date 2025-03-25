@@ -1,0 +1,20 @@
+[project]
+name = "package-test-BIF1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "laura.patinomedina@wur.nl", email = "laura.patinomedina@wur.nl" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=8.3.5",
+    "ruff>=0.11.2",
+]
+
+[project.scripts]
+my-package-test = "my_package_test:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
