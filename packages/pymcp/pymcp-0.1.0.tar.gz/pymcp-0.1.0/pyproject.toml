@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymcp"
+version = "0.1.0"
+description = "A tool for converting regular Python functions to MCP servers"
+authors = [
+    {name = "pandas-studio", email = "ontofinance@gmail.com"}
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",    
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=0.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tsdata/pymcp"
+"Bug Tracker" = "https://github.com/tsdata/pymcp/issues"
+
+[project.scripts]
+pymcp = "pymcp.__main__:main"
+
+[tool.setuptools]
+packages = ["pymcp", "pymcp.utils"] 
