@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguJavaJishuZhiMysqlJichuFix1 = ShangGuiguJavaJishuZhiMysqlJichuFix1.__main__:main
+shang-guigu-java-jishu-zhi-mysql-jichu-fix1 = ShangGuiguJavaJishuZhiMysqlJichuFix1.__main__:main
