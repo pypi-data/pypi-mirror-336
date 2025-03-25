@@ -1,0 +1,3 @@
+[console_scripts]
+ShuzhiPutishuFix1 = ShuzhiPutishuFix1.__main__:main
+shuzhi-putishu-fix1 = ShuzhiPutishuFix1.__main__:main
