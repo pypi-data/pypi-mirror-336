@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiElkFix1 = ShangGuiguDaShujuJishuZhiElkFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-elk-fix1 = ShangGuiguDaShujuJishuZhiElkFix1.__main__:main
