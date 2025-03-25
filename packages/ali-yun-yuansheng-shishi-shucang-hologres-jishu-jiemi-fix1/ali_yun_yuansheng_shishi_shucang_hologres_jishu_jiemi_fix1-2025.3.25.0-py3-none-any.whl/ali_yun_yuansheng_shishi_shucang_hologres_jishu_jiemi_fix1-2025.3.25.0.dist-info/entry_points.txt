@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunYuanshengShishiShucangHologresJishuJiemiFix1 = AliYunYuanshengShishiShucangHologresJishuJiemiFix1.__main__:main
+ali-yun-yuansheng-shishi-shucang-hologres-jishu-jiemi-fix1 = AliYunYuanshengShishiShucangHologresJishuJiemiFix1.__main__:main
