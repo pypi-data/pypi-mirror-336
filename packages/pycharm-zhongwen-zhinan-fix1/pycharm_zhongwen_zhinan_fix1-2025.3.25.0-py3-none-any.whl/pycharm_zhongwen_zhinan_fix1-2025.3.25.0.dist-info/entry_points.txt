@@ -1,0 +1,3 @@
+[console_scripts]
+PycharmZhongwenZhinanFix1 = PycharmZhongwenZhinanFix1.__main__:main
+pycharm-zhongwen-zhinan-fix1 = PycharmZhongwenZhinanFix1.__main__:main
