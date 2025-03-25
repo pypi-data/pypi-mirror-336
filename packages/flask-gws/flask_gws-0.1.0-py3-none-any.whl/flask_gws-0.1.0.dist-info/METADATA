@@ -1,0 +1,261 @@
+Metadata-Version: 2.1
+Name: flask-gws
+Version: 0.1.0
+Summary: High-performance WebSockets for Flask apps powered by uWSGI and gevent
+Author-email: Nidal Alhariri <level09@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Flask>=2.0.0
+Requires-Dist: gevent>=22.10.2
+Requires-Dist: uwsgi>=2.0.0 ; extra == "uwsgi"
+Project-URL: Homepage, https://github.com/level09/flask-gws
+Project-URL: Issues, https://github.com/level09/flask-gws/issues
+Provides-Extra: uwsgi
+
+# Flask-GWS
+
+A high-performance WebSocket extension for Flask applications powered by uWSGI and gevent.
+Compatible with Python 3.7 and newer versions. Production-ready with focus on reliability and performance.
+
+## Example Usage
+
+```python
+from flask import Flask
+from flask_gws import WebSocket
+
+app = Flask(__name__)
+ws = WebSocket(app)
+
+@ws.route('/echo')
+def echo(ws):
+    while True:
+        msg = ws.receive()
+        if msg is None:
+            break
+        ws.send(msg)
+
+if __name__ == '__main__':
+    app.run(debug=True, gevent=100)
+```
+
+## Installation
+
+Flask-GWS requires both gevent and uWSGI with WebSocket support. While gevent is automatically installed as a dependency, uWSGI requires special handling:
+
+⚠️ **IMPORTANT NOTE:** Installing uWSGI with WebSocket support requires special flags for OpenSSL. The traditional method via requirements.txt (`pip install uwsgi`) **will not work** as it lacks SSL support needed for WebSockets. You must use the commands below with the specific compilation flags.
+
+### For Ubuntu/Debian:
+```bash
+CFLAGS="-I/usr/include/openssl" LDFLAGS="-L/usr/lib/x86_64-linux-gnu" UWSGI_PROFILE_OVERRIDE=ssl=true pip install --no-cache-dir uwsgi --no-binary :all:
+```
+
+### For macOS (Apple Silicon):
+```bash
+CFLAGS="-I/opt/homebrew/opt/openssl@3/include" \
+LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib" \
+UWSGI_PROFILE_OVERRIDE=ssl=true pip install --no-cache-dir uwsgi --no-binary :all:
+```
+
+After installing uWSGI with the proper SSL support, you can install Flask-GWS:
+```bash
+pip install flask-gws
+```
+
+## Advanced Usage: Client Tracking and Broadcasting
+
+Flask-GWS can be used to track connected clients and implement broadcasting functionality:
+
+```python
+from flask import Flask
+from flask_gws import WebSocket
+import time
+
+app = Flask(__name__)
+ws = WebSocket(app)
+
+# Store connected clients
+clients = {}
+
+@ws.route('/echo')
+def echo(ws):
+    # Store client using unique ID
+    client_id = ws.id
+    clients[client_id] = {
+        'ws': ws,
+        'connected_at': time.time()
+    }
+    print(f"New client connected: {client_id}, Total clients: {len(clients)}")
+    
+    try:
+        while ws.connected:
+            msg = ws.receive()
+            if msg:
+                ws.send(msg)
+            time.sleep(0.1)
+    except Exception as e:
+        print(f"Error in websocket: {e}")
+    finally:
+        # Clean up when client disconnects
+        if client_id in clients:
+            print(f"Client disconnected: {client_id}")
+            clients.pop(client_id, None)
+        print(f"Total remaining clients: {len(clients)}")
+
+# Broadcasting utility function
+def broadcast(msg):
+    disconnected = []
+    
+    for client_id, client_info in clients.items():
+        try: 
+            client_info['ws'].send(msg)
+        except Exception as e:
+            print(f"Error broadcasting to client {client_id}: {e}")
+            disconnected.append(client_id)
+
+    # Clean up any disconnected clients
+    for client_id in disconnected:
+        clients.pop(client_id, None)
+
+# Example route that triggers a broadcast
+@app.route('/notify')
+def notify():
+    broadcast("New notification for all clients")
+    return "Notification sent to all connected clients"
+```
+
+## Client-Side Implementation
+
+Here's a simple but robust client implementation using ReconnectingWebSocket:
+
+```html
+<!-- Include the ReconnectingWebSocket library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.min.js"></script>
+
+<div>
+    <div id="status">Connecting...</div>
+    <div id="messages"></div>
+</div>
+
+<script>
+    // WebSocket client with automatic reconnection
+    const messagesEl = document.getElementById('messages');
+    const statusEl = document.getElementById('status');
+    
+    function addMessage(text) {
+        const messageEl = document.createElement('div');
+        messageEl.textContent = text;
+        messagesEl.appendChild(messageEl);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+    
+    function connect() {
+        // Convert HTTP URL to WebSocket URL
+        const url_root = window.location.origin;
+        const server = url_root.replace('http', 'ws') + '/echo';
+        
+        // Create a reconnecting WebSocket
+        window.socket = new ReconnectingWebSocket(server, [], {
+            connectionTimeout: 2000,
+            maxRetries: 15
+        });
+        
+        socket.onopen = function() {
+            statusEl.textContent = 'Connected';
+            statusEl.style.color = 'green';
+            addMessage('Connection established');
+        };
+        
+        socket.onmessage = function(message) {
+            addMessage('Received: ' + message.data);
+            
+            // Special command handling
+            if (message.data === 'reload') {
+                window.location.reload();
+            }
+        };
+        
+        socket.onclose = function() {
+            statusEl.textContent = 'Disconnected (reconnecting...)';
+            statusEl.style.color = 'orange';
+        };
+        
+        socket.onerror = function() {
+            statusEl.textContent = 'Connection error';
+            statusEl.style.color = 'red';
+        };
+    }
+    
+    // Initialize the connection
+    connect();
+    
+    // Example function to send a message
+    function sendMessage(text) {
+        if (socket && socket.readyState === WebSocket.OPEN) {
+            socket.send(text);
+            addMessage('Sent: ' + text);
+        } else {
+            addMessage('Cannot send: connection not open');
+        }
+    }
+</script>
+```
+
+## Deployment
+
+You can use uWSGI's built-in HTTP router to get up and running quickly:
+
+```bash
+$ uwsgi --master --http :8080 --http-websockets --gevent 100 --wsgi-file app.py
+```
+
+...or call app.run, passing uwsgi any arguments you like:
+
+```python
+app.run(debug=True, host='localhost', port=8080, master=True, gevent=100)
+```
+
+## Development
+
+To use Flask's interactive debugger, install werkzeug's DebuggedApplication middleware:
+
+```python
+from werkzeug.debug import DebuggedApplication
+app.wsgi_app = DebuggedApplication(app.wsgi_app, True)
+```
+
+Then run uWSGI with a single worker:
+
+```bash
+$ uwsgi --master --http :8080 --http-websockets --gevent 100 --workers 1 app.py
+```
+
+If you use `app.run(debug=True)`, Flask-GWS will do this automatically.
+
+## WebSocket API
+
+Flask-GWS handles the WebSocket handshake and provides a websocket client with the following methods:
+
+- `websocket.recv()` - Receive a message (blocking)
+- `websocket.receive()` - Alias for recv()
+- `websocket.send(msg)` - Send a message
+- `websocket.send_binary(msg)` - Send a binary message
+- `websocket.recv_nb()` - Non-blocking receive
+- `websocket.id` - Unique identifier for the connection
+- `websocket.connected` - Boolean indicating if the connection is still active
+
+## Credits
+
+This project is based on code from the [Flask-uWSGI-WebSocket](https://github.com/zeekay/flask-uwsgi-websocket) repository, with enhancements for improved performance and additional features. Flask-GWS provides a simplified and modernized implementation focused on gevent support and contemporary Python versions.

@@ -1,0 +1,8 @@
+flask_gws/__init__.py,sha256=Ipw0l6nigAzMZdTJbegQd5Q2NaEsq8VUn2jm-ptT7nA,370
+flask_gws/__version__.py,sha256=7_F4AmJTBj-VxRm5SXDecc4E3kCStk3r8WxIm-5-tMk,47
+flask_gws/_uwsgi.py,sha256=0XCHiDfW4A3Fs5fA22OeCwwWgYR__A7pnGD3U_7jnSQ,1709
+flask_gws/websocket.py,sha256=XjiqbwXXdp0kweWVTi4Bs7ug2yiNLlcYl81ADBW5Ia4,8655
+flask_gws-0.1.0.dist-info/LICENSE,sha256=38Xzn2z54dl3VFwn2lG7qN-Aj5Ju0-NRdy89VL9A9co,1063
+flask_gws-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+flask_gws-0.1.0.dist-info/METADATA,sha256=b4jKRfY3DZD0SKgABZpJH1S7P0HcPPF3ZnWMbn5eaUo,8276
+flask_gws-0.1.0.dist-info/RECORD,,
