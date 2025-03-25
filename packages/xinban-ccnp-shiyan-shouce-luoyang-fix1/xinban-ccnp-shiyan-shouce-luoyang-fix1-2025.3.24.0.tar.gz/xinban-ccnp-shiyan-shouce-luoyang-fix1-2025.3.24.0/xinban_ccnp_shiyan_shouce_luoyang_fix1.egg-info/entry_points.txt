@@ -1,0 +1,3 @@
+[console_scripts]
+XinbanCcnpShiyanShouceLuoyangFix1 = XinbanCcnpShiyanShouceLuoyangFix1.__main__:main
+xinban-ccnp-shiyan-shouce-luoyang-fix1 = XinbanCcnpShiyanShouceLuoyangFix1.__main__:main
