@@ -1,0 +1,3 @@
+[console_scripts]
+NiukeJavaGangweiMianshiZhentiBaodian20212022Fix1 = NiukeJavaGangweiMianshiZhentiBaodian20212022Fix1.__main__:main
+niuke-java-gangwei-mianshi-zhenti-baodian-2021-2022-fix1 = NiukeJavaGangweiMianshiZhentiBaodian20212022Fix1.__main__:main
