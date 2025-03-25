@@ -1,0 +1,9 @@
+Copyright 2025 Ostap Dziubyk
+
+All rights reserved.
+
+This software and its associated documentation are the exclusive property of Ostap Dziubyk. Unauthorized copying, modification, distribution, or commercial use of this software, in whole or in part, is strictly prohibited without prior written permission from the author.
+
+You are granted a limited, non-exclusive, non-transferable license to use this software for personal or internal purposes only. Redistribution, sublicensing, or selling of this software in any form is expressly forbidden.
+
+THIS
