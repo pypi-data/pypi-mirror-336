@@ -1,0 +1,13 @@
+LICENSE
+pyproject.toml
+torrentix/__init__.py
+torrentix/bencode.py
+torrentix/peer.py
+torrentix/peer_manager.py
+torrentix/torrent.py
+torrentix/tracker.py
+torrentix.egg-info/PKG-INFO
+torrentix.egg-info/SOURCES.txt
+torrentix.egg-info/dependency_links.txt
+torrentix.egg-info/requires.txt
+torrentix.egg-info/top_level.txt

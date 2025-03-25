@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: torrentix
+Version: 0.1.0
+Summary: Torrent Downloader written from scratch in Python
+Project-URL: Homepage, https://github.com/Amir-Hossein-ID/torrentix
+Keywords: torrent,magnet,downloader,torrentix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.11.0
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: tqdm>=4.67.0
+Dynamic: license-file
