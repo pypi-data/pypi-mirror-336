@@ -1,0 +1,14 @@
+nonebot/adapters/gewechat/__init__.py,sha256=-HloYP7YarQhVPRwZMhEkuYMvJIbRV7e4PONMGN1FVA,196
+nonebot/adapters/gewechat/adapter.py,sha256=WTmOsv8LZbidR5gYQEtAmyUrbzV8xG_3Rot6nS_tjPk,9029
+nonebot/adapters/gewechat/api_model.py,sha256=bXd4S6kFEspNtaknXj3oZ_2H8vY_artEXpbVtcLW-Ug,21372
+nonebot/adapters/gewechat/bot.py,sha256=Ztu1Fgry7akA58biBkCahT3Rzt__FYUIVkXw5RBt_c0,31922
+nonebot/adapters/gewechat/config.py,sha256=1gbUmIKpDutp9m9tvk9tnFItm8Po8U3TwNwgSi92hw8,779
+nonebot/adapters/gewechat/event.py,sha256=rJOx0g86LujknMaqOF-oIL2N3oWmHL6MQoBu4Elo3hQ,46941
+nonebot/adapters/gewechat/exception.py,sha256=2letOhk8eJEvzeBqfUUashyGY0g7V53xP67vZfMLHSA,1529
+nonebot/adapters/gewechat/message.py,sha256=d24BvNfAcR_QKzpjiRmV_3H6FN8A3wYrfbsRKpnICy8,10380
+nonebot/adapters/gewechat/model.py,sha256=-MGMpM5eED3xRfk8dtAZhHNNFzP1QIaJHyZ5Ve2cMxs,4116
+nonebot/adapters/gewechat/utils.py,sha256=AQrlmhp2qO7so_zvFbVydpP26aOHD_QI9wKyuwUNptA,799
+nonebot_adapter_gewechat-0.4.7.dist-info/LICENSE.txt,sha256=JUVvTOSazlQ_MdTWKjbKRC_nF7VZxQOa_oGzeNBgI5w,1075
+nonebot_adapter_gewechat-0.4.7.dist-info/METADATA,sha256=JdAO0O9Kl25X6MNThHPkVJ9lUYcAbc2hAuLf-07cjLw,3647
+nonebot_adapter_gewechat-0.4.7.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+nonebot_adapter_gewechat-0.4.7.dist-info/RECORD,,
