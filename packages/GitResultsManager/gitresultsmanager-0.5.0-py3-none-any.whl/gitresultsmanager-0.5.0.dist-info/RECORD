@@ -1,0 +1,12 @@
+GitResultsManager/GitResultsManager.py,sha256=TED82K6do5k5owE-re5WuADkfwQxGJ14zNa5S0EpDXE,32664
+GitResultsManager/__init__.py,sha256=JuqXFNaKjJ4DX3vvKIzsbq_uHM5oIgTxSrnfp7zeQWY,142
+GitResultsManager/resman_script.py,sha256=mQ90Mo8Qz-VYu_001NGutwXrbVZbaW8x9W6kxguTKZo,4216
+GitResultsManager/resman_td_script.py,sha256=yz6o7_kjhM8MOXDdpb_nKdJX_KZ_dDrlNESYOGQvvYE,1992
+gitresultsmanager-0.5.0.data/scripts/git-recreate,sha256=PLfv9dw9qAa9_Bck2xlyGr1E16WCJiHNfrgiyd5GESM,1234
+gitresultsmanager-0.5.0.data/scripts/rmtd,sha256=aC7VEUVlcHn2d0wiEHMsgMoQc188uvVXU7OJ0KmHAnk,355
+gitresultsmanager-0.5.0.dist-info/licenses/LICENSE.txt,sha256=xh8S2nza1Sa9y-1HpMCmA-YNu_2vi2aTPNCI6RMsMD8,32472
+gitresultsmanager-0.5.0.dist-info/METADATA,sha256=yJcgnj2pXxN85_y8aPb8wsjg6YLmMmq2si5EAwaluGw,4812
+gitresultsmanager-0.5.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+gitresultsmanager-0.5.0.dist-info/entry_points.txt,sha256=wzX2bGVZ2tVM8FQueN28A84sGjDoxf765_P0vZznlRc,116
+gitresultsmanager-0.5.0.dist-info/top_level.txt,sha256=Bf7mK_dN_k9tyrMsbgnslNcF7enAek9RGdLgbalDgjk,18
+gitresultsmanager-0.5.0.dist-info/RECORD,,
