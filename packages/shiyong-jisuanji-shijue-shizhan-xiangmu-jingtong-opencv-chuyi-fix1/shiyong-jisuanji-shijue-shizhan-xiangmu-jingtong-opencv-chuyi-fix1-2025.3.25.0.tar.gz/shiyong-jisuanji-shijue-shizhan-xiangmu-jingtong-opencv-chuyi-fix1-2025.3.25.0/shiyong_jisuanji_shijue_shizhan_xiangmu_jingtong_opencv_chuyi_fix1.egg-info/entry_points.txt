@@ -1,0 +1,3 @@
+[console_scripts]
+ShiyongJisuanjiShijueShizhanXiangmuJingtongOpencvChuyiFix1 = ShiyongJisuanjiShijueShizhanXiangmuJingtongOpencvChuyiFix1.__main__:main
+shiyong-jisuanji-shijue-shizhan-xiangmu-jingtong-opencv-chuyi-fix1 = ShiyongJisuanjiShijueShizhanXiangmuJingtongOpencvChuyiFix1.__main__:main
