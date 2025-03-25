@@ -1,0 +1,2 @@
+[hexdoc]
+hextrogen = hexdoc_hextrogen._hooks:HextrogenPlugin
