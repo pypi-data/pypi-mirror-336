@@ -1,0 +1,3 @@
+[console_scripts]
+MianfeiLingquAliJishuZiliaoJiemi100BenDianzishuZhaoquanLeFix1 = MianfeiLingquAliJishuZiliaoJiemi100BenDianzishuZhaoquanLeFix1.__main__:main
+mianfei-lingqu-ali-jishu-ziliao-jiemi-100-ben-dianzishu-zhaoquan-le-fix1 = MianfeiLingquAliJishuZiliaoJiemi100BenDianzishuZhaoquanLeFix1.__main__:main
