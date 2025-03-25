@@ -1,0 +1,14 @@
+kuva_reader/__init__.py,sha256=ZfbIywT9FhYS3hqEMVeg0U2E8F5B-be6KTfyzO9Sz2Q,1478
+kuva_reader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuva_reader/reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuva_reader/reader/image.py,sha256=Ep54Tzila3hKF2I_u-54xnFUf8WqP2fiKAJnbyZxasA,4647
+kuva_reader/reader/level0.py,sha256=8tNS2ok8EdOWEURnFbWGGYGtLecBc3J9xAWHTO_IpQA,9474
+kuva_reader/reader/level1.py,sha256=bqEo6NlVSC2I6lrf9is6YgGsa_uNZMX21zXxtC6ewNc,5772
+kuva_reader/reader/level2.py,sha256=k-vIvT84jvgyTBb_PmbaMMXY1wrl5v-MWqL7hV0tj1Q,3129
+kuva_reader/reader/product_base.py,sha256=_O96DACi2bWEXhNJVuIU328RJ1y1gs7_rMyyEaMo4aA,4294
+kuva_reader/reader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuva_reader/reader/utils.py,sha256=oZ1G43nm8lCxzfbdqBs0KhKaXWe_uf-78uBXWvmZigs,1566
+kuva_reader-0.1.1.dist-info/METADATA,sha256=iX-HoDv5akdQlRk2inH1uCFFM8MCa6cIihWrw9RmRdQ,879
+kuva_reader-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kuva_reader-0.1.1.dist-info/entry_points.txt,sha256=YJysY9EChfOb1W_IEht2oE5Z8Y9jA0J6-kofaPv-NdI,149
+kuva_reader-0.1.1.dist-info/RECORD,,
