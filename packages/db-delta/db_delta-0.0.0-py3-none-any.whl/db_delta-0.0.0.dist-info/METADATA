@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: db_delta
+Version: 0.0.0
+Summary: Python library to evaluate DynamoDB changesets when running database unittests.
+Author-email: Pascal Sauerborn <pascal.sauerborn@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: moto
+Requires-Dist: boto3
