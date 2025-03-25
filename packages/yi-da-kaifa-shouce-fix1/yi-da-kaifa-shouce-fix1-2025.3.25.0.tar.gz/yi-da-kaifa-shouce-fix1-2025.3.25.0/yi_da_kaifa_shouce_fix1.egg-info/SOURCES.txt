@@ -1,0 +1,12 @@
+README.md
+setup.py
+YiDaKaifaShouceFix1/README.md
+YiDaKaifaShouceFix1/__init__.py
+YiDaKaifaShouceFix1/__main__.py
+YiDaKaifaShouceFix1/file.pdf
+YiDaKaifaShouceFix1/index.html
+yi_da_kaifa_shouce_fix1.egg-info/PKG-INFO
+yi_da_kaifa_shouce_fix1.egg-info/SOURCES.txt
+yi_da_kaifa_shouce_fix1.egg-info/dependency_links.txt
+yi_da_kaifa_shouce_fix1.egg-info/entry_points.txt
+yi_da_kaifa_shouce_fix1.egg-info/top_level.txt
