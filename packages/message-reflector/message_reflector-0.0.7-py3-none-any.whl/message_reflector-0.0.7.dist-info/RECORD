@@ -1,0 +1,14 @@
+message_reflector/__init__.py,sha256=NPuKE6zRQ7tXwYdBoG4Ao7knObVTcvFcZrsIsXjk_bs,1213
+message_reflector/example.py,sha256=CGnVzC7zHjV_wrysxRbS86JNb6JIzAPT9lTAAa_X_Ug,556
+message_reflector/frontend/build/asset-manifest.json,sha256=cTfRMcHoyUX25akMCkiCd5ui9WvXHlQEXrsN67gsB_w,221
+message_reflector/frontend/build/index.html,sha256=nvu_2aofrj2Y93WlutQbcbonezIP6sBkSqUjxett87Q,418
+message_reflector/frontend/build/static/js/main.b958611e.js,sha256=E0LwWXjI2rzXoDklKyuroghmCORuXKqpo4chdNGbZEE,191713
+message_reflector/frontend/build/static/js/main.b958611e.js.LICENSE.txt,sha256=s-XL8Zem1680kJa9h1APqx4H7gsVsSS7Fv65dThWkwg,542
+message_reflector/frontend/build/static/js/main.b958611e.js.map,sha256=vw-BB8hsGuakxA66t3Eah8cJkhoBLK3yB9Ei8wHJRxg,940896
+message_reflector/frontend/build/static/js/main.c4c53115.js,sha256=gf3GHPasVR9o9UvTnrMbBDjxpeulagE1wpwDUR-T9J4,190546
+message_reflector/frontend/build/static/js/main.c4c53115.js.LICENSE.txt,sha256=s-XL8Zem1680kJa9h1APqx4H7gsVsSS7Fv65dThWkwg,542
+message_reflector/frontend/build/static/js/main.c4c53115.js.map,sha256=V2MXTa6t7480uQHcLD2NfDi_lk312JzBAzwfVXy_RPs,936261
+message_reflector-0.0.7.dist-info/METADATA,sha256=WHrBntRlZ2y7G5e5LrVXfnCaJz8e--y_Ys1HwCto3MI,1854
+message_reflector-0.0.7.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+message_reflector-0.0.7.dist-info/top_level.txt,sha256=_6kdInJ17rbOqbsrSIxPP8JJH7Yg9uFBGK0SNAdIm30,18
+message_reflector-0.0.7.dist-info/RECORD,,
