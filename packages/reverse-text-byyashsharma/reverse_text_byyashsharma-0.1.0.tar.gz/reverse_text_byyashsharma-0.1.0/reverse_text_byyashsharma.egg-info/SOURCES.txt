@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+My_pakage/__init__.py
+My_pakage/module_1.py
+reverse_text_byyashsharma.egg-info/PKG-INFO
+reverse_text_byyashsharma.egg-info/SOURCES.txt
+reverse_text_byyashsharma.egg-info/dependency_links.txt
+reverse_text_byyashsharma.egg-info/top_level.txt
