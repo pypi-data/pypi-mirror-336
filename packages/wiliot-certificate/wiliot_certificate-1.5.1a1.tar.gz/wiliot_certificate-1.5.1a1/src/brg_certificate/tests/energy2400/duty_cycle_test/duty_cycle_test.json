@@ -1,0 +1,16 @@
+{
+    "name": "duty_cycle_test",
+    "module": "energy2400",
+    "purpose": "Test configuration for supported energy2400 duty cycle values",
+    "documentation": "https://community.wiliot.com/customers/s/article/Wiliot-Network-Energizing-2-4Ghz",
+    "initialCondition": "Bridge configured to defaults",
+    "procedure": ["Test prolog",
+                  "For each supported value - configure the BRG and verify the value",
+                  "Test epilog and revert to defaults"],
+    "expectedOutcome": "All values configured successfully",
+    "mandatory": 1,
+    "multiBridgeTest": 0,
+    "gwOnlyTest": 0,
+    "internalBridge": 1,
+    "allSupportedValues": [1, 25, 50, 75]
+}
