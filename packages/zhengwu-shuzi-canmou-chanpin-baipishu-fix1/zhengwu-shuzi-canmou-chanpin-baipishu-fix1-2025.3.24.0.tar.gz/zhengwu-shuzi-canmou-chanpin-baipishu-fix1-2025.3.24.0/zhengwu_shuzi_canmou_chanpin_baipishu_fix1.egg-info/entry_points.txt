@@ -1,0 +1,3 @@
+[console_scripts]
+ZhengwuShuziCanmouChanpinBaipishuFix1 = ZhengwuShuziCanmouChanpinBaipishuFix1.__main__:main
+zhengwu-shuzi-canmou-chanpin-baipishu-fix1 = ZhengwuShuziCanmouChanpinBaipishuFix1.__main__:main
