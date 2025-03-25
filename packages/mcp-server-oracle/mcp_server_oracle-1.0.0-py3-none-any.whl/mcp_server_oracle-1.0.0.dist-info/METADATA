@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: mcp-server-oracle
+Version: 1.0.0
+Summary: Model Context Protocol server to access oracle database
+Author-email: hdcola <gh@hdcola.org>
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: mcp[cli]>=1.5.0
+Requires-Dist: oracledb>=3.0.0
+Requires-Dist: python-dotenv>=1.0.1
+Description-Content-Type: text/markdown
+
+# mcp-server-oracle
+Model Context Protocol server to access oracle
