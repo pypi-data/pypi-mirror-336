@@ -1,0 +1,3 @@
+[console_scripts]
+GormZhongwenWendangFix1 = GormZhongwenWendangFix1.__main__:main
+gorm-zhongwen-wendang-fix1 = GormZhongwenWendangFix1.__main__:main
