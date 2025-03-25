@@ -1,0 +1,3 @@
+[console_scripts]
+PingtouGejiaoNiYitianShangShouLanyaMeshYingyongFanganFix1 = PingtouGejiaoNiYitianShangShouLanyaMeshYingyongFanganFix1.__main__:main
+pingtou-gejiao-ni-yitian-shang-shou-lanya-mesh-yingyong-fangan-fix1 = PingtouGejiaoNiYitianShangShouLanyaMeshYingyongFanganFix1.__main__:main
