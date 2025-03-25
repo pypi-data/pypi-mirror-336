@@ -1,0 +1,2 @@
+[sphinx.extensions]
+sphinx_rapidoc = sphinx_rapidoc
