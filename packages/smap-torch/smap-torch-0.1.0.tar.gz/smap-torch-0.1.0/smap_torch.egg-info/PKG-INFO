@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: smap-torch
+Version: 0.1.0
+Summary: An open source pytorch library for spatial mapping based on 2D representations
+Home-page: https://github.com/thienannguyen-cv/SMap
+Author: Thien An L. Nguyen
+Author-email: thienannguyen.cv@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
