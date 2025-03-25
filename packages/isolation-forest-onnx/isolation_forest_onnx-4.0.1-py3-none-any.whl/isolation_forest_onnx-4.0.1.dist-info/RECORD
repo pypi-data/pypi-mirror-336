@@ -1,0 +1,6 @@
+isolationforestonnx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isolationforestonnx/isolation_forest_converter.py,sha256=G_3iqeATV3lp8uqmHb2mBmrm1RbNmDxhXxQ7ahCf__Q,15472
+isolation_forest_onnx-4.0.1.dist-info/METADATA,sha256=tR3Y-oo-atW1mtnsjLVPoqNOVb2LH4JWTNG7bfNsmr4,924
+isolation_forest_onnx-4.0.1.dist-info/WHEEL,sha256=UvcQYKBHoFqaQd6LKyqHw9fxEolWLQnlzP0h_LgJAfI,91
+isolation_forest_onnx-4.0.1.dist-info/top_level.txt,sha256=BeYGzdPT3BhOA-TP2VEwca_Jd5cA0maIchcmc-pFFEM,20
+isolation_forest_onnx-4.0.1.dist-info/RECORD,,
