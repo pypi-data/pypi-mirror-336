@@ -1,0 +1,9 @@
+
+{
+  "GENERIC_ERROR": "./generic-error.json",
+  "LLM_GW_ERROR": "./llm-gw-error.json",
+  "CMS_GW_ERROR": "./cms-gw-error.json",
+  "REVIEW_TOOL_ERROR": "./review-tool-error.json",
+  "RECOMMENDATION_TOOL_ERROR": "./recommendation-tool-error.json",
+  "TOOL_SERVER_ERROR": "./tool-server-error.json"
+}
