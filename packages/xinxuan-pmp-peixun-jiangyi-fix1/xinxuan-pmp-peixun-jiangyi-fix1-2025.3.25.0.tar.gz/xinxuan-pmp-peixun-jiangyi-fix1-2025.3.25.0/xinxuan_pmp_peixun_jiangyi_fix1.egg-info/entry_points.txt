@@ -1,0 +1,3 @@
+[console_scripts]
+XinxuanPmpPeixunJiangyiFix1 = XinxuanPmpPeixunJiangyiFix1.__main__:main
+xinxuan-pmp-peixun-jiangyi-fix1 = XinxuanPmpPeixunJiangyiFix1.__main__:main
