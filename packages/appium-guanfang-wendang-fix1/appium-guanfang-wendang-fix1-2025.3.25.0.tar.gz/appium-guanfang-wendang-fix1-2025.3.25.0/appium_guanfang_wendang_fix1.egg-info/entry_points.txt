@@ -1,0 +1,3 @@
+[console_scripts]
+AppiumGuanfangWendangFix1 = AppiumGuanfangWendangFix1.__main__:main
+appium-guanfang-wendang-fix1 = AppiumGuanfangWendangFix1.__main__:main
