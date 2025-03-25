@@ -1,0 +1,34 @@
+[project]
+name = "korpuskulum"
+version = "0.1.1"
+description = "Package to evaluate particle distribution with respect to segmented membranes"
+authors = [
+    {name = "Neville B.-y. Yee"}
+]
+license = {text = "Apache License V.3"}
+readme = "README.md"
+packages = [{include = "korpuskulum"}]
+
+
+requires-python = ">=3.10"
+dependencies = [
+    "tifffile",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "tqdm",
+    "rich",
+    "typer",
+    "starfile",
+    "pandas",
+    "icecream"
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+korpus = "korpuskulum.main:app"
