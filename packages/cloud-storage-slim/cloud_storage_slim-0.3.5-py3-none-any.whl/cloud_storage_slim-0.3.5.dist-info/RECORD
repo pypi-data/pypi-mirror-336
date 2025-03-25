@@ -1,0 +1,12 @@
+cloud_storage_slim/__init__.py,sha256=WcWOb0AuYM1ZLbvsIw_ujk4I6g-37XtPlBJgDn42_zo,7841
+cloud_storage_slim/alibaba_cloud_oss.py,sha256=1qeH6VgkgJxWTC0IKWhLe57CowGVt4QvEk1_nDElM5g,1822
+cloud_storage_slim/amazon_s3.py,sha256=v0CroRdBiAogJjufmLOCJEZOqwt90UvAo1TmR65nKdQ,1240
+cloud_storage_slim/azure_storage.py,sha256=jZC7sr6wnTyIfpHgp9QNzCDr6pq3TBta8FRMFsLECzY,2626
+cloud_storage_slim/byteplus_torch_object_storage.py,sha256=NJitDkOS1kMdCXTYRupp4MRU387s7gHfKQ59NDQQkCw,1815
+cloud_storage_slim/google_cloud_storage.py,sha256=U16-O7VD6T7-k-y2KQLNuRdVZhR_SOGZ1G-e88BJKuk,1818
+cloud_storage_slim/http_client.py,sha256=OzgboGzbBVFNuyXt07CHPKbA-wQYeQYh_j9JeWum8qQ,1953
+cloud_storage_slim/utils.py,sha256=cG9SxIKYqEg__EjX-Av5ApdhTUAoiivGzuHQC2kPH3c,1758
+cloud_storage_slim-0.3.5.dist-info/METADATA,sha256=UPoqHHvrLd2HEizmkb0w9erl_xXtkc6vWWqRUJ81u3g,3095
+cloud_storage_slim-0.3.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cloud_storage_slim-0.3.5.dist-info/top_level.txt,sha256=62PX4E_PYJIifqLeYWFjRawo8iVglDbFwTZeZ8mK5po,19
+cloud_storage_slim-0.3.5.dist-info/RECORD,,
