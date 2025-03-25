@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: climatic-regions
+Version: 0.0.4
+Summary: AgERA5 Climatic Regions Embeddings
+Author: VITO RS Vegetation team
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: geopandas>=0.13.2
+Requires-Dist: numpy>=1.24.4
+Requires-Dist: rasterio>=1.3.11
+Requires-Dist: rio-tiler>=7.2.2
+Requires-Dist: scikit-image>=0.21.0
+Requires-Dist: shapely>=2.0.7
+Description-Content-Type: text/markdown
+
+# AgERA5 Climatic Regions Embeddings
+
+## Introduction
+
+Climatic regions embeddings V1 are 6 global rasters variables describing the global meteoreological conditions for the years 2018-2023. They are obtained by aggregating AgERA5 variables across single years and then reducing and normalizing the aggregated varibles to a set of 6 variables.
+
+NOTE: 2023 needs to be recomputed. It is currently a copy of 2022.
+
+## Usage
+
+Load for a lat lon point:
+```
+from climatic_regions import load_meteo_point
+
+vals = load_meteo_point(lon, lat, year)
+```
+
+Load resampled array from bounds:
+```
+from climatic_regions import load_meteo_embeddings
+
+arr = load_meteo_embeddings(bounds, epsg, year, resolution=10)
+```
+
+Covert lat, lon to x, y, z:
+```
+from climatic_regions import lat_lon_to_unit_sphere, load_xyz
+
+x, y, z = lat_lon_to_unit_sphere(lat, lon)
+
+xyz_arr = load_xyz(bounds, epsg, resolution=10)
+```
