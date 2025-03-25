@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: spurt
+Version: 0.1.1
+Summary: Spatial and Temporal phase Unwrapping for InSAR time-series
+Project-URL: Discussions, https://github.com/isce-framework/spurt/discussions
+Project-URL: Homepage, https://github.com/isce-framework/spurt
+Project-URL: Issues, https://github.com/isce-framework/spurt/issues
+Keywords: insar,phase-unwrapping,radar,remote-sensing,sar,synthetic-aperture-radar
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE-Apache-2.0
+License-File: LICENSE-BSD-3-Clause
+Requires-Dist: h5py>=3.6
+Requires-Dist: numpy>=1.23
+Requires-Dist: ortools>=9.8.3296
+Requires-Dist: rasterio>=1.2
+Requires-Dist: scipy>=1.12
+Provides-Extra: test
+Requires-Dist: pytest>=6; extra == "test"
+Requires-Dist: pytest-cov>=3; extra == "test"
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == "docs"
+Requires-Dist: mkdocs-gen-files; extra == "docs"
+Requires-Dist: mkdocs-jupyter; extra == "docs"
+Requires-Dist: mkdocs-literate-nav; extra == "docs"
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocs-section-index; extra == "docs"
+Requires-Dist: mkdocs-mermaid2-plugin; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Requires-Dist: pybtex; extra == "docs"
+Requires-Dist: pymdown-extensions; extra == "docs"
+Dynamic: license-file
+
+# spurt
+Spatial and Temporal phase Unwrapping for InSAR time-series
+
+## License
+
+Copyright (c) 2024 California Institute of Technology ("Caltech"). U.S.
+Government sponsorship acknowledged.
+
+All rights reserved.
+
+This software is licensed under your choice of BSD-3-Clause or Apache-2.0
+licenses. The terms of each license can be found in the accompanying
+[LICENSE-BSD-3-Clause] and [LICENSE-Apache-2.0] files, respectively.
+
+[LICENSE-BSD-3-Clause]: LICENSE-BSD-3-Clause
+[LICENSE-Apache-2.0]: LICENSE-Apache-2.0
+
+SPDX-License-Identifier: BSD-3-Clause OR Apache-2.0
