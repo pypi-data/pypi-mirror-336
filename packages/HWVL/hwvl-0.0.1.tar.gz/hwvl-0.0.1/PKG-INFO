@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: HWVL
+Version: 0.0.1
+Summary: The first Iranian hash
+Home-page: https://github.com/HWVL/hash-HWVL
+Author: mohammad rakhshkhorshid
+Author-email: mohammad.rakhshkhorshid@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# HWVL Hash
+HWVL Hash stands for "Hash with Variable Length."
+
+Before we delve into explaining this algorithm, let's examine the characteristics of a hash.
+
+# Main Features of Hash Algorithms
+
+- The output length of a hash function or hash value is always fixed.
+- As long as the input remains unchanged, the output of the hash function is deterministic and constant.
+- The hash value is usually much smaller than the input. For this reason, hash functions are also referred to as compressors.
+- The operation of a hash function differs from that of encryption.
+- Hash functions are designed to be one-way.
+
+# Innovation in Security
+Our hash introduces an innovation in the world of security, as it takes two inputs in contrast to other algorithms, which are:
+
+- The text we want to hash
+- The length of the output
+
+Increasing the output length slows down the process but enhances security; the larger this number, the lower the probability of the hash being compromised.
