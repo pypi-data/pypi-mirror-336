@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "interactive-dir-utils"
+version = "0.1.2"
+description = "Utility package containing functions for manipultaing and traversing data directories interactively."
+authors = ["corson94 <jamie.corson.20@ucl.ac.uk>"]
+license = "LICENSE.txt"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = ">=2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
