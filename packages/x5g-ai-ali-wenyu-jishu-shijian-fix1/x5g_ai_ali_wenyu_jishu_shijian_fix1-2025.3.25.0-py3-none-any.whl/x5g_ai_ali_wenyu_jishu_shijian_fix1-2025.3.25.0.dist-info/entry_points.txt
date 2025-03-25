@@ -1,0 +1,3 @@
+[console_scripts]
+X5gAiAliWenyuJishuShijianFix1 = X5gAiAliWenyuJishuShijianFix1.__main__:main
+x5g-ai-ali-wenyu-jishu-shijian-fix1 = X5gAiAliWenyuJishuShijianFix1.__main__:main
