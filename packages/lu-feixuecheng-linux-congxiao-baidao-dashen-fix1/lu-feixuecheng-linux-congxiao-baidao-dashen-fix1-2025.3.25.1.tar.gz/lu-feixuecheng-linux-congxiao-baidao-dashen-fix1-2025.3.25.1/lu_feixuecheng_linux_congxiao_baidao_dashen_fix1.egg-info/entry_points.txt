@@ -1,0 +1,3 @@
+[console_scripts]
+LuFeixuechengLinuxCongxiaoBaidaoDashenFix1 = LuFeixuechengLinuxCongxiaoBaidaoDashenFix1.__main__:main
+lu-feixuecheng-linux-congxiao-baidao-dashen-fix1 = LuFeixuechengLinuxCongxiaoBaidaoDashenFix1.__main__:main
