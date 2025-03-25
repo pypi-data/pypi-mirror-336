@@ -1,0 +1,12 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "3d-to-image"
+version = "0.1.0"
+description = "A Python package for converting 3D files to images."
+authors = [{ name = "Muhammad Ateeq", email = "mr.ateeqazam@gmail.com" }]
+license = { text = "CC BY-ND" }
+dependencies = ["opencv-python", "numpy", "scipy", "scikit-learn", "pyrender", "trimesh", "matplotlib", "pyvista"]
