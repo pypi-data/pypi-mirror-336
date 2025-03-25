@@ -1,0 +1,200 @@
+Metadata-Version: 2.4
+Name: freamon
+Version: 0.3.28
+Summary: Advanced feature engineering, analysis, modeling and optimization for data science
+Author-email: Stephen Oates <stephen.j.a.oates@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas>=1.4.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: networkx>=3.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: sphinx>=6.0.0; extra == "dev"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "dev"
+Requires-Dist: tox>=4.0.0; extra == "dev"
+Requires-Dist: twine>=4.0.0; extra == "dev"
+Requires-Dist: check-manifest>=0.48; extra == "dev"
+Requires-Dist: pre-commit>=3.0.0; extra == "dev"
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+Requires-Dist: ipykernel>=6.0.0; extra == "dev"
+Provides-Extra: markdown-reports
+Requires-Dist: markdown>=3.4.0; extra == "markdown-reports"
+Provides-Extra: extended
+Requires-Dist: polars>=0.19.0; extra == "extended"
+Requires-Dist: pyarrow<15.0.0,>=12.0.0; extra == "extended"
+Requires-Dist: dask>=2023.0.0; extra == "extended"
+Requires-Dist: lightgbm>=4.0.0; extra == "extended"
+Requires-Dist: optuna>=3.0.0; extra == "extended"
+Requires-Dist: shap>=0.41.0; extra == "extended"
+Requires-Dist: category_encoders>=2.5.0; extra == "extended"
+Requires-Dist: openpyxl>=3.0.0; extra == "extended"
+Requires-Dist: plotly>=5.0.0; extra == "extended"
+Requires-Dist: jinja2>=3.0.0; extra == "extended"
+Requires-Dist: statsmodels>=0.14.0; extra == "extended"
+Requires-Dist: networkx>=3.0; extra == "extended"
+Requires-Dist: spacy>=3.0.0; extra == "extended"
+Requires-Dist: wordcloud>=1.8.0; extra == "extended"
+Requires-Dist: wordfreq>=3.0.0; extra == "extended"
+Requires-Dist: adjustText>=0.8; extra == "extended"
+Requires-Dist: nltk>=3.8.0; extra == "extended"
+Requires-Dist: textblob>=0.17.0; extra == "extended"
+Provides-Extra: performance
+Requires-Dist: pyarrow<15.0.0,>=12.0.0; extra == "performance"
+Provides-Extra: word-embeddings
+Requires-Dist: gensim>=4.0.0; extra == "word-embeddings"
+Requires-Dist: scikit-learn>=1.0.0; extra == "word-embeddings"
+Requires-Dist: numpy>=1.20.0; extra == "word-embeddings"
+Requires-Dist: pandas>=1.4.0; extra == "word-embeddings"
+Requires-Dist: matplotlib>=3.5.0; extra == "word-embeddings"
+Requires-Dist: spacy>=3.0.0; extra == "word-embeddings"
+Requires-Dist: nltk>=3.8.0; extra == "word-embeddings"
+Provides-Extra: topic-modeling
+Requires-Dist: gensim>=4.0.0; extra == "topic-modeling"
+Requires-Dist: scikit-learn>=1.0.0; extra == "topic-modeling"
+Requires-Dist: numpy>=1.20.0; extra == "topic-modeling"
+Requires-Dist: pandas>=1.4.0; extra == "topic-modeling"
+Requires-Dist: matplotlib>=3.5.0; extra == "topic-modeling"
+Requires-Dist: pyldavis>=3.3.0; extra == "topic-modeling"
+Requires-Dist: wordcloud>=1.8.0; extra == "topic-modeling"
+Provides-Extra: all
+Requires-Dist: freamon[extended,markdown_reports,performance,topic_modeling,word_embeddings]; extra == "all"
+Provides-Extra: full
+Requires-Dist: freamon[dev,extended,markdown_reports,performance,topic_modeling,word_embeddings]; extra == "full"
+Dynamic: license-file
+Dynamic: requires-python
+
+# Freamon: Feature-Rich EDA, Analytics, and Modeling Toolkit
+
+Freamon is a comprehensive Python toolkit for exploratory data analysis, feature engineering, and model development with a focus on practical data science workflows.
+
+## Features
+
+- **Exploratory Data Analysis**: Automatic EDA with comprehensive reporting in HTML, Markdown, and Jupyter notebooks
+- **Feature Engineering**: Advanced feature engineering for numeric, categorical, and text data
+- **Deduplication**: Multiple deduplication methods with index tracking to map results back to original data
+- **Topic Modeling**: Optimized text analysis with NMF and LDA, supporting large datasets up to 100K documents
+- **Modeling**: Custom model implementations with feature importance and model interpretation
+- **Pipeline**: Scikit-learn compatible pipeline with additional features
+- **Drift Analysis**: Tools for detecting and analyzing data drift
+- **Word Embeddings**: Integration with various word embedding techniques
+- **Visualization**: Publication-quality visualizations with proper handling of all special characters
+- **Performance Optimization**: Multiprocessing support and intelligent sampling for large dataset analysis
+
+## Installation
+
+```bash
+pip install freamon
+```
+
+## Quick Start
+
+```python
+from freamon.eda import EDAAnalyzer
+
+# Create an analyzer instance
+analyzer = EDAAnalyzer(df, target_column='target')
+
+# Run the analysis
+analyzer.run_full_analysis()
+
+# Generate a report
+analyzer.generate_report('eda_report.html')
+
+# Or a markdown report for version control
+analyzer.generate_report('eda_report.md', format='markdown')
+```
+
+## Key Components
+
+### EDA Module
+
+The EDA module provides comprehensive data analysis:
+
+```python
+from freamon.eda import EDAAnalyzer
+
+analyzer = EDAAnalyzer(df, target_column='target')
+analyzer.run_full_analysis()
+
+# Generate different types of reports
+analyzer.generate_report('report.html')  # HTML report
+analyzer.generate_report('report.md', format='markdown')  # Markdown report
+analyzer.generate_report('report.md', format='markdown', convert_to_html=True)  # Both formats
+```
+
+### Deduplication with Tracking
+
+Perform deduplication while maintaining the ability to map results back to the original dataset:
+
+```python
+from freamon.deduplication.exact_deduplication import hash_deduplication
+from examples.deduplication_tracking_example import IndexTracker
+
+# Initialize tracker with original dataframe
+tracker = IndexTracker().initialize_from_df(df)
+
+# Perform deduplication
+deduped_df = hash_deduplication(df['text_column'])
+
+# Update tracking
+kept_indices = deduped_df.index.tolist()
+tracker.update_from_kept_indices(kept_indices)
+
+# Map results back to original dataset
+full_results = tracker.create_full_result_df(
+    results_df, original_df, fill_value={'predicted': None}
+)
+```
+
+### Pipeline with Deduplication
+
+Create ML pipelines that include deduplication steps:
+
+```python
+from freamon.pipeline.pipeline import Pipeline
+from examples.pipeline_with_deduplication_tracking import (
+    IndexTrackingPipeline, HashDeduplicationStep
+)
+
+# Create pipeline with deduplication
+pipeline = IndexTrackingPipeline(steps=[
+    TextPreprocessingStep(text_column='text'),
+    HashDeduplicationStep(text_column='processed_text'),
+    ModelTrainingStep()
+])
+
+# Run pipeline and track indices
+processed_data = pipeline.fit_transform(df)
+
+# Map results back to original indices
+mapped_results = pipeline.create_full_result_df(
+    'model_training', results_df, fill_value={'predicted': 'unknown'}
+)
+```
+
+## Documentation
+
+For more detailed information, refer to the examples directory and the following resources:
+
+- [Deduplication Tracking](README_DEDUPLICATION_TRACKING.md)
+- [Markdown Report Generation](README_MARKDOWN_REPORTS.md)
+- [LSH Deduplication](README_LSH_DEDUPLICATION.md)
+
+## License
+
+[MIT License](LICENSE)
