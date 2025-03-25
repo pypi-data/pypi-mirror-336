@@ -1,0 +1,2 @@
+[console_scripts]
+image-padder = image_padder.main:main
