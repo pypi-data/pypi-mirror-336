@@ -1,0 +1,3 @@
+[console_scripts]
+YancaoxingyeJiejuefanganBaipishuFix1 = YancaoxingyeJiejuefanganBaipishuFix1.__main__:main
+yancaoxingye-jiejuefangan-baipishu-fix1 = YancaoxingyeJiejuefanganBaipishuFix1.__main__:main
