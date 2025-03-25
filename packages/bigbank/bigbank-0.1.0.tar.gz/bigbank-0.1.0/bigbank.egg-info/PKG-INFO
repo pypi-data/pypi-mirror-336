@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: bigbank
+Version: 0.1.0
+Summary: A simple banking simulation package with cooldown mechanics.
+Home-page: https://github.com/developer-cunningham/bigbank
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# BigBank
+
+BigBank is a simple banking simulation package with cooldown mechanics.
+
+## Installation
+pip install bigbank
+
+## Usage
+```python
+from bigbank import BigBank
+
+bank = BigBank()
+print(bank.get_balance())  # Check balance
+print(bank.generate_money())  # Earn money
+```
