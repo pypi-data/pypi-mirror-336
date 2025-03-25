@@ -1,0 +1,6 @@
+setup.py
+pyttman_plugin_mongoengine.egg-info/PKG-INFO
+pyttman_plugin_mongoengine.egg-info/SOURCES.txt
+pyttman_plugin_mongoengine.egg-info/dependency_links.txt
+pyttman_plugin_mongoengine.egg-info/requires.txt
+pyttman_plugin_mongoengine.egg-info/top_level.txt
