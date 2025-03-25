@@ -1,0 +1,3 @@
+[console_scripts]
+HulianwangJavaGongchengshiJinjieZhishiWanquanSaomangFix1 = HulianwangJavaGongchengshiJinjieZhishiWanquanSaomangFix1.__main__:main
+hulianwang-java-gongchengshi-jinjie-zhishi-wanquan-saomang-fix1 = HulianwangJavaGongchengshiJinjieZhishiWanquanSaomangFix1.__main__:main
