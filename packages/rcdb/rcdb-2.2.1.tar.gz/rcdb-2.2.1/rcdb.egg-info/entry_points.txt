@@ -1,0 +1,2 @@
+[console_scripts]
+rcdb = rcdb.cli.api:rcdb_cli
