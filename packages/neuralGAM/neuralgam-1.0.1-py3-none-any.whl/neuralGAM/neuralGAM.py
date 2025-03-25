@@ -1,0 +1,632 @@
+from concurrent.futures import ThreadPoolExecutor
+import os
+import numpy as np
+import pandas as pd
+from sklearn.metrics import mean_squared_error
+import warnings
+if __debug__:
+    os.environ["TF_CPP_MIN_LOG_LEVEL"] = "1"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+
+os.environ['CUDA_VISIBLE_DEVICES'] = "" ### Disable GPU
+
+import tensorflow as tf
+
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.optimizers import Adam
+from sklearn.linear_model import LinearRegression
+
+
+
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
+class NeuralGAM(tf.keras.Model):
+    """
+    Neural Generalized Additive Model with parametric and nonparametric components.
+    
+    For the nonparametric part, one neural network is built per feature.
+    """
+    def __init__(self, family, num_units=1024, learning_rate=0.001,
+                 activation='relu', kernel_initializer='glorot_normal', kernel_regularizer=None,
+                 loss=None, p_terms = None, np_terms = None,**kwargs):
+        super(NeuralGAM, self).__init__()
+        
+        self.family = family.lower()
+        self.p_terms = list(p_terms) if p_terms is not None else []
+        self.np_terms = list(np_terms) if np_terms is not None else []
+        self._num_inputs = len(self.np_terms)
+        self.num_units = num_units if isinstance(num_units, int) else list(num_units)
+        self.lr = learning_rate
+        self.activation = activation
+        self.kernel_initializer = kernel_initializer
+        self.kernel_regularizer = kernel_regularizer
+        self.loss = loss
+        # Placeholders for the learned components:
+        self.eta0 = None  # overall intercept
+        self.y = None     # final fitted response
+        self.eta = None   # final additive predictor
+        self.training_err = []  # to track backfitting convergence
+        
+    def build_feature_NN(self, layer_name):
+        """Builds the neural network for one nonparametric term."""
+        model = Sequential(name=layer_name)
+        # Input layer for 1D predictor:
+        model.add(Dense(1, input_shape=(1,)))
+        # Hidden layers:
+        if isinstance(self.num_units, int):
+            model.add(Dense(self.num_units, kernel_initializer=self.kernel_initializer,
+                            activation=self.activation))
+        else:
+            for units in self.num_units:
+                model.add(Dense(units, kernel_initializer=self.kernel_initializer,
+                                activation=self.activation))
+        # Output layer: one output unit
+        model.add(Dense(1))
+        model.compile(loss="mean_squared_error", optimizer=Adam(learning_rate=self.lr))
+        return model
+
+    def build_networks(self):
+        """Initialize a neural network for every nonparametric term."""
+        for term in self.np_terms:
+            self.feature_networks[term] = self.build_feature_NN(layer_name=f"layer_{term}")
+
+    def process_feature(self, term, eta, g, W, Z, X_train):
+        """
+        Update one nonparametric component:
+          - Remove its current contribution from eta.
+          - Compute the residual.
+          - Train the corresponding NN on that predictor.
+        """
+        eta = eta - g[term]
+        residuals = Z - eta
+
+        if self.family == "binomial":
+            self.feature_networks[term].compile(loss="mean_squared_error", 
+                                    optimizer="adam",
+                                    loss_weights=pd.Series(W))
+        self.feature_networks[term].fit(X_train[[term]], 
+                        residuals, 
+                        epochs=1, 
+                        sample_weight=pd.Series(W) if self.family == "binomial" else None)
+
+        f_k = self.feature_networks[term].predict(X_train[[term]])
+        f_k = f_k - np.mean(f_k)
+        return f_k
+
+    def fit(self, X_train, y_train, max_iter_ls=10, w_train=None,
+            bf_threshold=0.001, ls_threshold=0.1, max_iter_backfitting=10, parallel = True):
+        """
+        Fit the NeuralGAM model using local scoring and backfitting.
+        
+        Parameters:
+            -----------
+            X_train : DataFrame
+                DataFrame with all predictors (both parametric and nonparametric).
+            y_train : array-like
+                Response vector.
+            max_iter_ls : int, optional (default=10)
+                Maximum number of local scoring iterations.
+            w_train : array-like, optional
+                Input weights, different from Local Scoring Weights.
+            bf_threshold : float, optional (default=0.001)
+                Threshold for backfitting convergence.
+            ls_threshold : float, optional (default=0.1)
+                Threshold for local scoring convergence.
+            max_iter_backfitting : int, optional (default=10)
+                Maximum number of backfitting iterations.
+            parallel : bool, optional (default=True)
+                Whether to use parallel execution for backfitting.
+        Returns:
+            --------
+            y : array-like
+                Final fitted response.
+            g : DataFrame
+                DataFrame containing the nonparametric feature contributions.
+            eta : array-like
+                Linear predictor.
+            bf_threshold=0.001, ls_threshold=0.1, max_iter_backfitting=10, parallel = True):
+        """
+        
+        if self.np_terms is None:
+            self.np_terms = list(X_train.columns)
+        
+        self.parametric_model = None  # Linear model for parametric terms
+        self.feature_networks = {term: None for term in self.np_terms}   # one NN per nonparametric feature
+        self.build_networks()
+
+
+        print("\nFitting GAM")
+        print(f" -- local scoring iter = {max_iter_ls}")
+        print(f" -- backfitting iter = {max_iter_backfitting}")
+        print(f" -- ls_threshold = {ls_threshold}")
+        print(f" -- bf_threshold = {bf_threshold}")
+        print(f" -- learning_rate = {self.lr}\n")
+        
+        
+        if parallel:
+            print("Using parallel execution")
+
+        else:
+            print("Using sequential execution")
+
+        converged = False
+        f = X_train*0
+        g = X_train*0
+        it = 1
+
+        # For gaussian, only one local scoring iteration is used.
+        if self.family == "gaussian":
+            max_iter_ls = 1
+        
+        self.training_err = list()
+        if not w_train:
+            w = np.ones(len(y_train))   #input weights.... different from Local Scoring Weights!!
+        
+        if self.family == "gaussian":
+            max_iter_ls = 1  # for gaussian, only one iteration of the LS is required!   
+        
+        muhat = y_train.mean()
+        self.eta0 = self.inv_link(muhat)
+        eta = self.eta0 #initially estimate eta as the mean of y_train
+        dev_new = self.deviance(muhat, y_train, w)
+        
+        # Local scoring loop.
+        while (not converged and it <= max_iter_ls):
+            print("Local Scoring Iteration", it)
+            if self.family == "gaussian":
+                Z = y_train
+                W = w
+            else:
+                der = self.deriv(muhat)
+                Z = eta + (y_train - muhat) * der
+                W = self.weight(w, muhat)
+            
+            # Update parametric part if present.
+            if len(self.p_terms) > 0:
+                param_model = LinearRegression()
+                self.parametric_model = param_model.fit(X_train[self.p_terms], Z)
+                self.eta0 = param_model.intercept_
+                f[self.p_terms] = param_model.predict(X_train[self.p_terms]).reshape(-1,1)
+                eta = self.eta0 + f.sum(axis=1)
+            else:
+                self.eta0 = np.mean(Z)
+                eta = self.eta0
+            
+            eta_prev = eta.copy()
+            it_backfitting = 1
+            err = bf_threshold + 0.1
+            
+            # Backfitting loop for nonparametric terms.
+            while( (err > bf_threshold) and (it_backfitting <= max_iter_backfitting)):
+                
+                if parallel:
+                    with ThreadPoolExecutor(max_workers=None) as executor:
+                        futures = [executor.submit(self.process_feature, term, eta, g, W, Z, X_train) for term in self.np_terms]
+                        results = [future.result() for future in futures]
+                        
+                    # Update f and eta with the results from the parallel execution
+                    for k, f_k in enumerate(results):
+                        f[self.np_terms[k]] = f_k
+                else:
+                    for term in self.np_terms:
+                        f[term] = self.process_feature(term, eta, g, W, Z, X_train)
+                
+                # update current estimations
+                g = f.copy(deep=True)
+                eta = self.eta0 + g.sum(axis=1)
+                
+                # compute the differences in the predictor at each iteration
+                err = np.sum(eta - eta_prev)**2 / np.sum(eta_prev**2)
+                eta_prev = eta
+                print("BACKFITTING ITERATION #{0}: Current err = {1}".format(it_backfitting, err))
+                it_backfitting = it_backfitting + 1
+                self.training_err.append(err)
+
+            muhat = self.apply_link(eta)
+            dev_old = dev_new
+            dev_new = self.deviance(muhat, y_train, w)
+            dev_delta = np.abs((dev_old - dev_new) / dev_old)
+            print("Dev delta =", dev_delta)
+            if dev_delta < ls_threshold:
+                print("Convergence achieved.")
+                converged = True
+            it += 1
+        
+        # Final fitted response.
+        self.y = self.apply_link(eta)
+        self.eta = eta
+        return self.y, g, eta
+
+    def deviance(self, fit, y, W):
+        """
+        Calculate the deviance for the given model fit, observed values, and weights.
+        Parameters:
+        fit (array-like): The predicted values from the model.
+        y (array-like): The observed values.
+        W (array-like): The weights for each observation.
+        Returns:
+        float: The deviance of the model fit.
+        """
+        
+        if self.family == "gaussian":
+            dev = ((y - fit)**2).mean()
+        
+        elif self.family == "binomial":
+            fit = np.where(fit < 0.0001, 0.0001, fit)
+            fit = np.where(fit > 0.9999, 0.9999, fit)
+            entrop = np.where((1 - y) * y > 0, 
+                             2 * (y * np.log(y)) + ((1 - y) * np.log(1 - y)),
+                             0)
+            entadd = 2 * (y * np.log(fit)) + ( (1-y) * np.log(1-fit))
+            dev = np.sum(entrop - entadd)
+        return dev 
+    
+    def deriv(self, muhat):
+        """
+        Computes the derivative of the link function based on the specified family.
+        Parameters:
+        muhat (array-like): The predicted mean values.
+        Returns:
+        array-like: The derivative of the link function.
+        Raises:
+        ValueError: If the family is not one of 'gaussian', 'binomial', or 'poisson'.
+        Notes:
+        - For the 'gaussian' family, the derivative is always 1.
+        - For the 'binomial' family, the derivative is computed as 1 / (prob * (1 - prob)),
+          where prob is clipped to the range [0.001, 0.999] to avoid division by zero.
+        - For the 'poisson' family, the derivative is computed as 1 / prob,
+          where prob is clipped to a minimum value of 0.001 to avoid division by zero.
+        """
+        """ Computes the derivative of the link function"""
+        if self.family == "gaussian":
+            out = 1
+        
+        elif self.family == "binomial":
+            prob = muhat
+            prob = np.where(prob >= 0.999, 0.999, prob)
+            prob = np.where(prob <= 0.001, 0.001, prob)
+            prob = prob * (1.0 - prob)
+            out = 1.0/prob
+            
+        elif self.family == "poisson":
+            prob = muhat
+            prob = np.where(prob <= 0.001, 0.001, prob)
+            out = 1.0/prob
+            
+        return out
+    
+    def weight(self, w, muhat):
+        """
+        Calculates the weights for the Local Scoring algorithm based on the specified family.
+        Parameters:
+        w (array-like): Initial weights.
+        muhat (array-like): Estimated mean values.
+        Returns:
+        array-like: Calculated weights for the Local Scoring.
+        Notes:
+        - For the "gaussian" family, the weights are returned as is.
+        - For the "binomial" family, the weights are adjusted using the derivative of the logit function.
+        - For the "poisson" family, the weights are adjusted based on the estimated mean values and their derivatives.
+        """
+        """Calculates the weights for the Local Scoring"""
+        
+        if self.family == "gaussian": # Identity
+            wei = w
+        
+        elif self.family == "binomial": # Derivative Logit
+            muhat = np.where(muhat <= 0.001, 0.001, muhat)
+            muhat = np.where(muhat >= 0.999, 0.999, muhat)
+            temp = self.deriv(muhat)
+            aux = muhat * (1 - muhat) * (temp**2)
+            aux = np.where(aux <= 0.001, 0.001, aux)
+            wei = w/aux
+        elif self.family == "poisson":
+            wei = np.zeros(len(muhat))
+            np.where(muhat > 0.01, w/(muhat * self.deriv(muhat)**2), muhat)
+        return(wei)
+    
+    def apply_link(self, muhat):
+        """
+        Applies the link function to the given input based on the specified family.
+
+        Parameters:
+        -----------
+        muhat : array-like
+            The input values to which the link function is applied.
+
+        Returns:
+        --------
+        array-like
+            The transformed values after applying the link function.
+
+        Raises:
+        -------
+        ValueError
+            If the family attribute is not one of "binomial", "gaussian", or "poisson".
+
+        Notes:
+        ------
+        - For the "binomial" family, the logit link function is applied with clipping to avoid overflow.
+        - For the "gaussian" family, the identity link function is applied.
+        - For the "poisson" family, the log link function is applied with clipping to avoid overflow.
+        """
+        if self.family == "binomial":
+            muhat = np.where(muhat > 10, 10, muhat)
+            muhat = np.where(muhat < -10, -10, muhat)
+            return np.exp(muhat) / (1 + np.exp(muhat))
+        elif self.family == "gaussian":   # identity / gaussian
+            return muhat
+        elif self.family == "poisson": 
+            muhat = np.where(muhat > 300, 300, muhat)
+            return np.exp(muhat)
+        
+    def inv_link(self, muhat):
+        """
+        Computes the inverse of the link function based on the specified family.
+
+        Parameters:
+        -----------
+        muhat : array-like
+            The predicted mean values.
+
+        Returns:
+        --------
+        array-like
+            The transformed values after applying the inverse link function.
+
+        Notes:
+        ------
+        - For the "binomial" family, the inverse link function is the logit function.
+        - For the "gaussian" family, the inverse link function is the identity function.
+        - For the "poisson" family, the inverse link function is the natural logarithm.
+        - Values of `muhat` are clipped to avoid numerical issues:
+            - For "binomial", `muhat` is clipped to the range [0.001, 0.999].
+            - For "poisson", `muhat` is clipped to a minimum of 0.001.
+        """
+        if self.family == "binomial":
+            d = 1 - muhat 
+            d = np.where(muhat <= 0.001, 0.001, muhat)
+            d = np.where(muhat >= 0.999, 0.999, muhat)
+            return np.log(muhat/d) 
+        elif self.family == "gaussian":   # identity / gaussian
+            return muhat
+        elif self.family == "poisson":
+            muhat = np.where(muhat <= 0.001, 0.001, muhat)
+            return np.log(muhat)
+            
+    def predict(self, X, type="link", terms=None, verbose=1):
+        """
+        Predicts the output for the given input data.
+        Parameters:
+        -----------
+        X : pd.DataFrame
+            Input data for prediction. Must be a pandas DataFrame.
+        type : str, optional (default="link")
+            Type of prediction to return. Valid options are:
+            - "link": Returns the linear predictor (eta).
+            - "terms": Returns the predictions for each term.
+            - "response": Returns the response variable after applying the link function.
+        terms : list of str, optional
+            Specific terms to include in the prediction when type is "terms". If None, all terms are included.
+        verbose : int, optional (default=1)
+            Verbosity level.
+        Returns:
+        --------
+        pd.Series or pd.DataFrame
+            The predicted values. The return type depends on the `type` parameter:
+            - "link": Returns a pd.Series with the linear predictor (eta).
+            - "terms": Returns a pd.DataFrame with predictions for each term.
+            - "response": Returns a pd.Series with the response variable.
+        Raises:
+        -------
+        ValueError
+            If `X` is not a pandas DataFrame.
+            If `type` is not one of the valid options.
+            If `terms` contains invalid column names.
+        """
+        if not isinstance(X, pd.DataFrame):
+            raise ValueError("X must be a pandas DataFrame.")
+        
+        def get_model_predictions(X, term):
+            """Helper function to get model predictions for a specific term."""
+            if term in self.np_terms:
+                return pd.Series(self.feature_networks[term].predict(X[term]).flatten())
+            if len(self.p_terms) > 0:
+                return pd.Series(self.parametric_model.predict(X[self.p_terms]).flatten())
+        
+        valid_types = ["link", "terms", "response"]
+        if type not in valid_types:
+            raise ValueError(f"Invalid type argument. Valid options are {valid_types}.")
+        
+        if type == "terms" and terms is not None and not all(term in X.columns for term in terms):
+            raise ValueError(f"Invalid terms. Valid options are: {', '.join(X.columns)}")
+        
+        f = pd.DataFrame(0, index=X.index, columns=X.columns)
+        
+        for term in X.columns:
+            if type == "terms" and terms is not None:
+                if term in terms:
+                    f[term] = get_model_predictions(X, term)
+                else:
+                    continue
+            else:
+                f[term] = get_model_predictions(X, term)
+        
+        if type == "terms":
+            if terms is not None:
+                f = f[terms]
+            return f
+        
+        eta = f.sum(axis=1) + self.eta0
+        if type == "link":
+            return eta
+        
+        if type == "response":
+            y = self.apply_link(eta)
+            return y
+
+def plot_partial_dependencies(x: pd.DataFrame, fs: pd.DataFrame, title: str, output_path: str = None):    
+    """
+    Plots partial dependency plots for each feature in the dataset.
+    Parameters:
+    x (pd.DataFrame): DataFrame containing the feature values.
+    fs (pd.DataFrame): DataFrame containing the partial dependency values for each feature.
+    title (str): Title of the plot.
+    output_path (str, optional): Path to save the plot. If None, the plot is displayed. Defaults to None.
+    Returns:
+    None
+    """
+    import matplotlib
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    plt.style.use('seaborn-v0_8')
+
+    params = {"axes.linewidth": 2,
+            "font.family": "serif",
+            'font.size': 20}
+
+    axis_font = {'fontname':'serif', 'size':'14'}
+    matplotlib.rcParams['agg.path.chunksize'] = 10000
+    plt.rcParams.update(params)
+
+    fig, axs = plt.subplots(nrows=1, ncols=len(fs.columns), figsize=(25,20))
+    fig.suptitle(title)
+    
+    for i, term in enumerate(fs.columns):
+        data = pd.DataFrame()
+        data['x'] = x[x.columns[i]]
+        data['f(x)']= fs[fs.columns[i]]
+        
+        sns.lineplot(data = data, x='x', y='f(x)', color='royalblue', ax=axs[i])
+        axs[i].grid()
+        axs[i].set_xlabel(f'$X_{i+1}$', **axis_font)
+        axs[i].set_ylabel(f'$f(x_{i+1})$', **axis_font)
+
+        # Set the tick labels font
+        for label in (axs[i].get_xticklabels() + axs[i].get_yticklabels()):
+            label.set_fontname('serif')
+            label.set_fontsize(20)
+    
+    plt.tight_layout()
+    
+    if output_path:
+        plt.savefig(output_path, dpi = 300, bbox_inches = "tight")
+        fig = plt.gcf()
+    else:
+        plt.show()
+
+class NeuralGAMMultinomial:
+    """
+    A class to represent a multinomial Generalized Additive Model (GAM) using neural networks.
+    Attributes
+    ----------
+    num_classes : int
+        The number of classes in the target variable.
+    models : list
+        A list of NeuralGAM models, one for each class.
+    Methods
+    -------
+    __init__: Constructs all the necessary attributes for the NeuralGAMMultinomial object.
+    fit: Fits the model to the training data.
+    predict: Predicts the class labels and probabilities for the test data.
+    """
+    def __init__(self, num_classes, num_units=1024, learning_rate=0.001, activation='relu', 
+                 kernel_initializer='glorot_normal', kernel_regularizer=None,
+                 loss=None, p_terms=None, np_terms=None, **kwargs):
+        """
+        Initializes the multi-class NeuralGAM model.
+
+            Parameters:
+            num_classes (int): Number of classes for the classification task.
+            num_units (int, optional): Number of units in each hidden layer of the neural network. Default is 1024.
+            learning_rate (float, optional): Learning rate for the optimizer. Default is 0.001.
+            activation (str, optional): Activation function to use in the neural network. Default is 'relu'.
+            kernel_initializer (str, optional): Initializer for the kernel weights matrix. Default is 'glorot_normal'.
+            kernel_regularizer (optional): Regularizer function applied to the kernel weights matrix. Default is None.
+            loss (optional): Loss function to use. Default is None.
+            p_terms (optional): Parametric terms for the model. Default is None.
+            np_terms (optional): Non-parametric terms for the model. Default is None and all terms in the input data will be considered.
+            **kwargs: Additional keyword arguments.
+
+            Attributes:
+            num_classes (int): Number of classes for the classification task.
+            models (list): List of NeuralGAM models, one for each class.
+        """
+
+        self.num_classes = num_classes
+        # Create one NeuralGAM per class using the binomial family
+        self.models = [NeuralGAM(family="binomial", num_units=num_units, learning_rate=learning_rate, 
+                                   activation=activation, kernel_initializer=kernel_initializer, 
+                                   kernel_regularizer=kernel_regularizer, **kwargs)
+                       for _ in range(num_classes)]
+    
+    def fit(self, X_train, y_train, max_iter_ls=10, w_train=None,
+            bf_threshold=0.001, ls_threshold=0.1, max_iter_backfitting=10, parallel = True, **fit_params):
+        """
+            Fit the model to the training data.
+            Parameters:
+            -----------
+            X_train : pandas.DataFrame
+                The training input samples.
+            y_train : pandas.Series
+                The target values (class labels) as integers or strings.
+            max_iter_ls : int, optional (default=10)
+                Maximum number of iterations for the least squares fitting.
+            w_train : array-like, optional
+                Sample weights. If None, then samples are equally weighted.
+            bf_threshold : float, optional (default=0.001)
+                Threshold for the backfitting convergence.
+            ls_threshold : float, optional (default=0.1)
+                Threshold for the least squares convergence.
+            max_iter_backfitting : int, optional (default=10)
+                Maximum number of iterations for the backfitting procedure.
+            parallel : bool, optional (default=True)
+                Whether to use parallel processing for fitting.
+            **fit_params : dict
+                Additional parameters to pass to the fit method of the models.
+            Returns:
+            --------
+            self : object
+                Returns the instance itself.
+            """
+        # Fit each model with binary labels for the corresponding class
+        for model in self.models:
+            assert all(term in X_train.columns for term in model.p_terms + model.np_terms)
+
+        for idx, k in enumerate(y_train.unique()):
+            # Create binary targets for current class (one-vs-rest ): 1 if the class matches, else 0
+            y_binary = (y_train == k).astype(int) 
+            
+            print(f"Training model for class {k}")
+            
+            self.models[idx].fit(X_train, y_binary, max_iter_ls, w_train=w_train,
+            bf_threshold=bf_threshold, ls_threshold=ls_threshold, max_iter_backfitting=max_iter_backfitting, parallel = parallel, **fit_params)
+
+        return self.models  
+      
+    def predict(self, X_test):
+        """
+        Predict the class labels and probabilities for the given test data.
+
+        Parameters:
+        -----------
+        X_test : array-like of shape (n_samples, n_features)
+            The input samples to predict.
+
+        Returns:
+        --------
+        predicted_class : ndarray of shape (n_samples,)
+            The predicted class labels for each sample.
+
+        probs : ndarray of shape (n_samples, n_classes)
+            The predicted probabilities for each class for each sample.
+        """
+        # Get predictions from each binary model
+        preds = np.column_stack([model.predict(X_test, type="response") for model in self.models])
+        # Optionally, normalize using softmax to get calibrated probabilities:
+        exp_preds = np.exp(preds)
+        probs = exp_preds / np.sum(exp_preds, axis=1, keepdims=True)
+        # Predicted class is the one with highest probability
+        predicted_class = np.argmax(probs, axis=1)
+        return predicted_class, probs

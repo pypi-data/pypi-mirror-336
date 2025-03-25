@@ -1,0 +1,11 @@
+neuralGAM/__init__.py,sha256=CZs1VPBNHOkaeGTcCt0Fmssl3iGM23a5ZOcHypZJC40,111
+neuralGAM/dataset.py,sha256=O8d2arFMt_Qe2dt2nBPTim8Amu-8C4rj6T_OnuIwUFI,6917
+neuralGAM/metrics.py,sha256=XQs7_QFhiaEW6RQa5jFfuZqGBz1u4M2Yp2uZrN3yW30,2535
+neuralGAM/model.py,sha256=SlZLjKqQQe0pavWvveQFwQ1DqXTWLC__EjL034I2_ao,21694
+neuralGAM/neuralGAM.py,sha256=TU3YcUA3Hq0xVC8blnYn0jnhtDdR5jsXePcejGV4Xj8,26434
+neuralGAM/plot.py,sha256=EJU09FANHqEVMNNy-G0y-4kGU0sxliOJ-zIbU4z0QW4,4094
+neuralgam-1.0.1.dist-info/licenses/LICENSE,sha256=NlyiTVFJS4uHaEaTZOCDO9XgTzhRgKzG8glCa8elL4w,17166
+neuralgam-1.0.1.dist-info/METADATA,sha256=1jjvpFTTYCiiFcuSqQaVxI9QVbFZwk6YbKQ2wWa44tU,27741
+neuralgam-1.0.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+neuralgam-1.0.1.dist-info/top_level.txt,sha256=e13c3b3LkMEjCagfL6aK917yrwvQxu2rBbPtwRPcGJo,10
+neuralgam-1.0.1.dist-info/RECORD,,
