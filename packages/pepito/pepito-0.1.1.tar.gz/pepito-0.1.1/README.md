@@ -1,0 +1,126 @@
+# Pepito
+
+## Presentation
+Pepito is a utility software designed to help people to migrate from ClearCase to Git.
+
+At the moment Pepito has 2 main features:
+
+* a diff can be made between 2 files or 2 commits of a file, and then is displayed in ClearCase style
+* compute a MD5 of a file with its headers and trailing blank lines removed
+
+To install pepito run 
+```shell
+pip install .
+```
+
+To run the software from the root folder, run the command
+```shell
+pepito <global options> <command> <options> <file>
+```
+
+## Features
+### Coloured diff
+
+Pepito can make 2 types of diff :
+
+* between 2 files on the file system
+* between a file on the file system and the same file on another Git revision
+
+The user can also be prompted if no option is set.
+
+#### Between 2 files
+
+To run the diff between 2 files, run the following command:
+
+```shell
+pepito diff --other <path/to/othe/file> <path/to/file>
+```
+
+#### With another revision
+
+To run the diff between the current revision of a file and another revision, run the following command:
+
+```shell
+pepito diff --commit <commit sha1> <path/to/file>
+```
+
+#### User prompt
+
+If the user has no idea of how to run the previous command it is possible to just run
+
+```shell
+pepito diff <path/to/file>
+```
+
+The user will be prompted to chose between the last 8 commits that touched that file or to manually specify a path
+to a file system file.
+Then the right type of diff will be executed automatically.
+
+### Checksum
+
+To compute the checksum of a file, run the following command:
+
+```shell
+pepito checksum path/to/file
+```
+
+The data from the file that are taken into account for the checksum are the whole file from which is removed the header
+and the trailing blank lines.
+
+The file formats on which the header can be removed are the following:
+
+* `.xml`
+* `.xsd`: same as XML comments
+* `.xsl`: same as XML comments
+* `.asn`
+* `.mib`: same as ASN comments
+* `.json`
+* `.yaml`
+* `.yml`: same as YAML comments
+
+Once computed, Pepito will remplace the checksum in the file header with the new value.
+
+There is no specific option available.
+
+### Global options
+
+Global options are available for all commands .
+
+The only global option available for now is verbose, available with `-v` or `--verbose` for medium verbosity
+and with `-vv` or `-v -v` or `--verbose --verbose` for a high verbosity.
+For minimum verbosity, don't put that option.
+
+## Usage with git hooks
+
+To automatically trigger pepito, before committing for example, [git hooks][git-hooks] can be used.
+This can be achieved by creating a folder hook in the `.git` folder of the project to add the hook.
+Inside this folder create a file called `pre-commit` and fill it with something similar to the following content:
+
+```shell
+#!/bin/sh
+pepito check-in
+```
+
+## Development
+
+To install development tools run the following command:
+
+```shell
+pip install -r requirements.devX².txt
+```
+
+This will install packages used on runtime but also development packages used for testing or linting.
+
+All low level functions have unit tests. They can be run with
+
+```shell
+pytest tests/
+```
+
+As it is a CLI tool, the library [typer][typer] is used to ease the CLI development.
+This dependency is defined in the file `requirements.txt`.
+
+The code entrypoint is the file pepito/__init__.py.
+
+[git-hooks]: https://git-scm.com/docs/githooks
+[typer]: https://typer.tiangolo.com
