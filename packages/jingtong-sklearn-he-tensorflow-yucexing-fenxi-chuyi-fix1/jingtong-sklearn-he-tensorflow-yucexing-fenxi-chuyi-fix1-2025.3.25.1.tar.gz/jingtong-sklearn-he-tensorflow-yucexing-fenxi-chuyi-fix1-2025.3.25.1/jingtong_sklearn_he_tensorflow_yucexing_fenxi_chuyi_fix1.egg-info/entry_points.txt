@@ -1,0 +1,3 @@
+[console_scripts]
+JingtongSklearnHeTensorflowYucexingFenxiChuyiFix1 = JingtongSklearnHeTensorflowYucexingFenxiChuyiFix1.__main__:main
+jingtong-sklearn-he-tensorflow-yucexing-fenxi-chuyi-fix1 = JingtongSklearnHeTensorflowYucexingFenxiChuyiFix1.__main__:main
