@@ -1,0 +1,2 @@
+[uipath_sdk.connectors]
+register = uipath_connectors.snowflake_snowflake:register_connector
