@@ -1,0 +1,3 @@
+[console_scripts]
+PytorchZhongwenGuanfangJiaocheng17ChuyiFix1 = PytorchZhongwenGuanfangJiaocheng17ChuyiFix1.__main__:main
+pytorch-zhongwen-guanfang-jiaocheng-1-7-chuyi-fix1 = PytorchZhongwenGuanfangJiaocheng17ChuyiFix1.__main__:main
