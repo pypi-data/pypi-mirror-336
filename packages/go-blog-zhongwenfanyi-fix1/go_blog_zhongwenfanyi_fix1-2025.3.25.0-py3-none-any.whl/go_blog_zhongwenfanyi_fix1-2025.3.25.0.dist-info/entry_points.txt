@@ -1,0 +1,3 @@
+[console_scripts]
+GoBlogZhongwenfanyiFix1 = GoBlogZhongwenfanyiFix1.__main__:main
+go-blog-zhongwenfanyi-fix1 = GoBlogZhongwenfanyiFix1.__main__:main
