@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiImpalaFix1 = ShangGuiguDaShujuJishuZhiImpalaFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-impala-fix1 = ShangGuiguDaShujuJishuZhiImpalaFix1.__main__:main
