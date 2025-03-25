@@ -1,0 +1,6 @@
+aiohttp
+
+[dev]
+black
+Jinja2
+pylint
