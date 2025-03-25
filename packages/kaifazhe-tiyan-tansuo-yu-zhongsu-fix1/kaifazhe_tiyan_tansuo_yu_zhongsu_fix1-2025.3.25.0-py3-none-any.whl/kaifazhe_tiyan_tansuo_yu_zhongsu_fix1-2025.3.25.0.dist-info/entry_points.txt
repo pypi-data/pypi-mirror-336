@@ -1,0 +1,3 @@
+[console_scripts]
+KaifazheTiyanTansuoYuZhongsuFix1 = KaifazheTiyanTansuoYuZhongsuFix1.__main__:main
+kaifazhe-tiyan-tansuo-yu-zhongsu-fix1 = KaifazheTiyanTansuoYuZhongsuFix1.__main__:main
