@@ -1,0 +1,3 @@
+[console_scripts]
+RengongzhinengHongliDeShentouYuBaofaFix1 = RengongzhinengHongliDeShentouYuBaofaFix1.__main__:main
+rengongzhineng-hongli-de-shentou-yu-baofa-fix1 = RengongzhinengHongliDeShentouYuBaofaFix1.__main__:main
