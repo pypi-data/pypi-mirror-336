@@ -1,0 +1,15 @@
+uipath_connectors/sap_odata/__init__.py,sha256=kaMQpR0lWv7XVqas3xFZO3VBeFHo7k0CAaXS452tKt8,314
+uipath_connectors/sap_odata/client.py,sha256=rOTDn_Wd0hk6a2ruaqPctFa1GTe3855MF09fDE-R1rI,12581
+uipath_connectors/sap_odata/errors.py,sha256=gO8GBmKqmSNgAg-E5oT-oOyxztvp7V_6XG7OUTT15q0,546
+uipath_connectors/sap_odata/py.typed,sha256=8ZJUsxZiuOy1oJeVhsTWQhTG_6pTVHVXk5hJL79ebTk,25
+uipath_connectors/sap_odata/types.py,sha256=QZaGBiBBrhuUnP2TWYOG7HlL3Q7iW8PqHeBvXnYjyFQ,1488
+uipath_connectors/sap_odata/api/__init__.py,sha256=qjlq8xuRTsasekd_k6YQPxv5op_LSVvRt1uBKqzL3xw,2431
+uipath_connectors/sap_odata/api/entity/__init__.py,sha256=k_UjMvvHRMVm5LLUTXZNPMgHYYxynnEjIQKvQPDNvKw,230
+uipath_connectors/sap_odata/api/entity/list_all_entity_records.py,sha256=hlmalhiZ_c5ZXhl2YhkzGv_TFcOkpA1AWCL4PIJ79bA,9572
+uipath_connectors/sap_odata/models/__init__.py,sha256=aMKHxEej1-f2-u9FjNWqAquIMGQ1QVpAtCSKm5wpXZo,128
+uipath_connectors/sap_odata/models/default_error.py,sha256=020ybRCITAlV_1sk1e3lSXnhP7YRz4MaIGrszSNOY7M,1454
+uipath_connectors_sap_odata-1.0.25.dev12.dist-info/METADATA,sha256=zVWio0uOUrKlXJapHI9XCGhRe0KRY4wUmshCg6bT-20,5952
+uipath_connectors_sap_odata-1.0.25.dev12.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+uipath_connectors_sap_odata-1.0.25.dev12.dist-info/entry_points.txt,sha256=xDHHSuoeIvuvANqbJRcqrH6MlmQ1grqT2Qe404ut33A,82
+uipath_connectors_sap_odata-1.0.25.dev12.dist-info/top_level.txt,sha256=y6kANKY_4jIBllEl8SOqPkhrLrO7ckx8399itrfDHEQ,18
+uipath_connectors_sap_odata-1.0.25.dev12.dist-info/RECORD,,
