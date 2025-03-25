@@ -1,0 +1,7 @@
+[console_scripts]
+convert-tables=tabpro.cli:command_convert_tables
+merge-tables=tabpro.cli:command_merge_tables
+tabpro=tabpro.cli:main
+tabpro-convert=tabpro.cli:command_convert_tables
+tabpro-merge=tabpro.cli:command_merge_tables
+
