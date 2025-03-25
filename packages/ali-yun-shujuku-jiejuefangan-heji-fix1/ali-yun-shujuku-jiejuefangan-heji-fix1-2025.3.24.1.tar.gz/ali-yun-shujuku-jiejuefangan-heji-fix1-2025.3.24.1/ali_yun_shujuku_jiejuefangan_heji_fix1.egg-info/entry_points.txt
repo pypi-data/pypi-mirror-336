@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunShujukuJiejuefanganHejiFix1 = AliYunShujukuJiejuefanganHejiFix1.__main__:main
+ali-yun-shujuku-jiejuefangan-heji-fix1 = AliYunShujukuJiejuefanganHejiFix1.__main__:main
