@@ -1,0 +1,93 @@
+Metadata-Version: 2.3
+Name: textagon
+Version: 0.1.25
+Summary: Textagon is a powerful tool for text data analysis, providing a means to visualize parallel representations of your data and gain insight into the impact of various lexicons on two classes of text data.
+License: MIT
+Author: John P. Lalor
+Author-email: john.lalor@nd.edu
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: beautifulsoup4 (>=4.11.2)
+Requires-Dist: mapply (>=0.1.21)
+Requires-Dist: nltk (>=3.8.1)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=1.5.3)
+Requires-Dist: pyenchant (>=3.2.2)
+Requires-Dist: pywsd (>=1.2.5,<2.0.0)
+Requires-Dist: scikit-learn (>=1.2.1)
+Requires-Dist: spacy (>=3.5.2)
+Requires-Dist: tzlocal (>=4.3)
+Requires-Dist: wn (==0.0.23)
+Description-Content-Type: text/markdown
+
+![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg) ![License: PSF](https://img.shields.io/badge/License-MIT-blue.svg)
+
+
+
+
+# Textagon
+
+Textagon is a powerful tool for text data analysis, providing a means to visualize parallel representations of your data and gain insight into the impact of various lexicons on two classes of text data. 
+- **Parallel Representations**
+- **Graph-based Feature Weighting**
+
+
+
+# Installation
+
+
+## Prereqs
+
+### Installation 
+
+- Package versions needed (execution will stop via a check; will add requirements.txt in the future):
+    - wn 0.0.23
+
+- For the spellchecker (which defaults to aspell):
+    - MacOS: brew install enchant
+    - Windows: pyenchant includes hunspell out of the box
+    - Linux: install libenchant via package manager
+    - For general notes, see: https://pyenchant.github.io/pyenchant/install.html
+
+
+### Initial Setup
+```
+pip install textagon 
+```
+
+### Upgrading Textagon
+```
+pip install --upgrade textagon 
+```
+
+
+# Running Textagon 
+
+```python
+import pandas as pd
+from textagon.textagon import Textagon
+from textagon.AFRN import AFRN
+
+### Test cases ###
+
+df = pd.read_csv(
+    './sample_data/dvd.txt', 
+    sep='\t', 
+    header=None, 
+    names=["classLabels", "corpus"]
+)
+
+tgon = Textagon(
+    inputFile=df, 
+    outputFileName="dvd"
+)
+
+tgon.RunFeatureConstruction()
+tgon.RunPostFeatureConstruction()
+```
+
