@@ -1,0 +1,3 @@
+[console_scripts]
+IrisKuangjiaZhongwenWendangFix1 = IrisKuangjiaZhongwenWendangFix1.__main__:main
+iris-kuangjia-zhongwen-wendang-fix1 = IrisKuangjiaZhongwenWendangFix1.__main__:main
