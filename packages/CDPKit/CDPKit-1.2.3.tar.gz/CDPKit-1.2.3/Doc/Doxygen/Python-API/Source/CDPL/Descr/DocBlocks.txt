@@ -1,0 +1,26 @@
+#
+# --- Unresolved property getter/setter functions ---
+#
+Calculator.distanceToIntervalCenterRounding.value
+distanceToIntervalsCenterRoundingEnabled
+enableDistanceToIntervalCenterRounding
+$$$$
+
+CircularFingerprintGenerator.incHydrogens.value
+hydrogensIncluded
+includeHydrogens
+$$$$
+
+CircularFingerprintGenerator.incChirality.value
+chiralityIncluded
+includeChirality
+$$$$
+
+NPointPharmacophoreFingerprintGenerator.pharmGenerator.value
+getPharmacophoreGenerator
+$$$$
+
+.similarityFunc.value
+getSimilarityFunction
+setSimilarityFunction
+$$$$
