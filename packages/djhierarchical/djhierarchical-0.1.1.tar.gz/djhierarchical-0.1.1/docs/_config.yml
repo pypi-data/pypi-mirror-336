@@ -1,0 +1,17 @@
+title: Django Hierarchical Models
+description: A Django app that provides a hierarchical configuration pattern with automatic inheritance
+theme: jekyll-theme-cayman
+baseurl: "/djhierarchical"
+url: "https://aibin.github.io"
+
+# GitHub Pages settings
+plugins:
+  - jekyll-relative-links
+
+# Link handling - converts Markdown links to pages
+relative_links:
+  enabled: true
+  collections: true
+
+# Show download buttons
+show_downloads: true 

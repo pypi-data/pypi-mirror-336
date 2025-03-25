@@ -1,0 +1,11 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+recursive-include hierarchical/static *
+recursive-include hierarchical/templates *
+recursive-include hierarchical/locale *
+recursive-include docs *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude examples *
+recursive-exclude hierarchical/tests * 
