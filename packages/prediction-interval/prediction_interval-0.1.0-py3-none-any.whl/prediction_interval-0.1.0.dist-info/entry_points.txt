@@ -1,0 +1,2 @@
+[console_scripts]
+xgboost_prediction_interval = xgboost_prediction_interval.cli:cli
