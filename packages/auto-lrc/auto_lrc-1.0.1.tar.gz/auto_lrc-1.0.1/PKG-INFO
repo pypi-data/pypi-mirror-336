@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: auto-lrc
+Version: 1.0.1
+Summary: Generate LRC files for your music using openai's whisper
+Author-email: HeavyLvy <{ID}+{username}@users.noreply.github.com>
+Requires-Python: >=3.12
+Requires-Dist: click>=8.1.8
+Requires-Dist: markupsafe==2.1.5
+Requires-Dist: openai-whisper
+Requires-Dist: rich>=13.9.4
+Requires-Dist: torch==2.6.0+cu126
+Requires-Dist: torchaudio==2.6.0+cu126
+Requires-Dist: torchvision==0.21.0+cu126
+Description-Content-Type: text/markdown
+
+# Installation
+
+```
+pip install auto-lrc
+```
+
+# CLI
+
+```
+auto-lrc --help
+```
