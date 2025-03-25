@@ -1,0 +1,3 @@
+[console_scripts]
+ZhinengYonghuYunyingJiejuefanganFix1 = ZhinengYonghuYunyingJiejuefanganFix1.__main__:main
+zhineng-yonghu-yunying-jiejuefangan-fix1 = ZhinengYonghuYunyingJiejuefanganFix1.__main__:main
