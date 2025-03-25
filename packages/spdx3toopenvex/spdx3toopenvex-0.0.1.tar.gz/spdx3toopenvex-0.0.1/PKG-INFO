@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: spdx3toopenvex
+Version: 0.0.1
+Summary: Extract VEX data from SPDX 3 and write it to OpenVEX
+Project-URL: Homepage, https://github.com/JPEWdev/spdx3toopenvex
+Project-URL: Repository, https://github.com/JPEWdev/spdx3toopenvex.git
+Project-URL: Issues, https://github.com/JPEWdev/spdx3toopenvex/issues
+Author-email: Joshua Watt <JPEWhacker@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.9
+Requires-Dist: spdx-python-model==0.0.1
+Provides-Extra: dev
+Requires-Dist: flake8>=7.0.0; extra == 'dev'
+Requires-Dist: pytest-cov>=4.1; extra == 'dev'
+Requires-Dist: pytest>=7.4; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Extract VEX data from SPDX 3 and write it to OpenVEX
