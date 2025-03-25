@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: aws_services
+Version: 0.1.0
+Summary: Reusable AWS integration library (Lambda, SQS, SNS, etc.)
+Home-page: https://github.com/x23393131/aws_services
+Author: Your Name
+Author-email: cvedant136@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# aws_services
+
+AWS integration library with support for Lambda, SQS, SNS, and more.
+
+## Install
+
+```bash
+pip install aws_services
+
+
