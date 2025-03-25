@@ -1,0 +1,15 @@
+yowasp_nextpnr_himbaechel_gowin/__init__.py,sha256=57s6traO14hbsiZ6WAvKkBqshsWDn9JZxNlnFy8uBtE,335
+yowasp_nextpnr_himbaechel_gowin/nextpnr-himbaechel-gowin.wasm,sha256=zXMsGAA6pEaoGR5tEEU-d9TZi8USbMaj7V1U_YTSNxE,1936686
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW1N-1.bin,sha256=7AS4T5-K9XBezjXie6rtJoMWWIdp-v9w-UZuW1RiFOI,4161351
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW1N-4.bin,sha256=9SrYj1KLkYb4YpttoP3t6urW66WXFiYkdyMe17ZtAaQ,7728124
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW1N-9.bin,sha256=68e7qgEp72ushqUEHBpxjD-nzarxME_VkAyK4STEDFY,12651996
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW1N-9C.bin,sha256=XCe3nPua_H35_3uz__en8Ss2BEBdGL7XE3rJo2mATQo,11363424
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW1NS-4.bin,sha256=pYbA407_a5qpNTybRqtXWC38dsd_YI0Etkj_zB7nfOE,8717221
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW1NZ-1.bin,sha256=l236DoXoRAaLcddchP1vBhe5Xor6w1szSwERpZBt9xU,4645159
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW2A-18.bin,sha256=IFqTjhryKeRoJGz2x4lwB_pFYQcQHi6i8bkkeU7c9pA,16602480
+yowasp_nextpnr_himbaechel_gowin/share/himbaechel/gowin/chipdb-GW2A-18C.bin,sha256=s1Ud3RkXS7u0eL88i9zu8eHI5NicWuzq0FX0M3kbrDQ,16662504
+yowasp_nextpnr_himbaechel_gowin-0.8.0.0.post621.dist-info/METADATA,sha256=G7-_yusMKRoaVEtOb_IMIeEPJNXIoSvK89i8J40rPrc,3684
+yowasp_nextpnr_himbaechel_gowin-0.8.0.0.post621.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+yowasp_nextpnr_himbaechel_gowin-0.8.0.0.post621.dist-info/entry_points.txt,sha256=x_XLu7Zt1Y9FJnoQ7IcQTzytrd9_uD5CyMRUfrXDRWM,119
+yowasp_nextpnr_himbaechel_gowin-0.8.0.0.post621.dist-info/top_level.txt,sha256=3XW-r4pYfztE2MgGP-UPTn_W6Af5L3Zx_DXJ5XQNBe8,32
+yowasp_nextpnr_himbaechel_gowin-0.8.0.0.post621.dist-info/RECORD,,
