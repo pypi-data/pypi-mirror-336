@@ -1,0 +1,3 @@
+[console_scripts]
+DaShujuGongchengshiBiduShouceFix1 = DaShujuGongchengshiBiduShouceFix1.__main__:main
+da-shuju-gongchengshi-bidu-shouce-fix1 = DaShujuGongchengshiBiduShouceFix1.__main__:main
