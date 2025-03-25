@@ -1,0 +1,3 @@
+[console_scripts]
+YunshangAnquanChanpinShizhanShouceFix1 = YunshangAnquanChanpinShizhanShouceFix1.__main__:main
+yunshang-anquan-chanpin-shizhan-shouce-fix1 = YunshangAnquanChanpinShizhanShouceFix1.__main__:main
