@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/edipy2/__init__.py
+src/edipy2/edi2py.py
+src/edipy2/func_aux_funx.py
+src/edipy2/func_bath.py
+src/edipy2/func_bath_fit.py
+src/edipy2/func_io.py
+src/edipy2/func_main.py
+src/edipy2/func_read_input.py
+src/edipy2.egg-info/PKG-INFO
+src/edipy2.egg-info/SOURCES.txt
+src/edipy2.egg-info/dependency_links.txt
+src/edipy2.egg-info/requires.txt
+src/edipy2.egg-info/top_level.txt
