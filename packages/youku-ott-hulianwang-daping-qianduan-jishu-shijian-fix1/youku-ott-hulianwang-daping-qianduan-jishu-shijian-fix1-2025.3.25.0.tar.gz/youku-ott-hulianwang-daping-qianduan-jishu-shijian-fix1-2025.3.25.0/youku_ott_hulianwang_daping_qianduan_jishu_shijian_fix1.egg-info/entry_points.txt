@@ -1,0 +1,3 @@
+[console_scripts]
+YoukuOttHulianwangDapingQianduanJishuShijianFix1 = YoukuOttHulianwangDapingQianduanJishuShijianFix1.__main__:main
+youku-ott-hulianwang-daping-qianduan-jishu-shijian-fix1 = YoukuOttHulianwangDapingQianduanJishuShijianFix1.__main__:main
