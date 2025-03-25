@@ -1,0 +1,3 @@
+[console_scripts]
+PmbokZhinanDiliubanKetanglianxiJiexiFix1 = PmbokZhinanDiliubanKetanglianxiJiexiFix1.__main__:main
+pmbok-zhinan-diliuban-ketanglianxi-jiexi-fix1 = PmbokZhinanDiliubanKetanglianxiJiexiFix1.__main__:main
