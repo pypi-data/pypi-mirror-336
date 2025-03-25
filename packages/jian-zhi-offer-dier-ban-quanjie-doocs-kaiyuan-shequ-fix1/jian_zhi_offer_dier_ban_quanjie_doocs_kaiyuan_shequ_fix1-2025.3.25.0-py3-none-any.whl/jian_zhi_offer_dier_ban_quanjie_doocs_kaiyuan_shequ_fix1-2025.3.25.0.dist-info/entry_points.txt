@@ -1,0 +1,3 @@
+[console_scripts]
+JianZhiOfferDierBanQuanjieDoocsKaiyuanShequFix1 = JianZhiOfferDierBanQuanjieDoocsKaiyuanShequFix1.__main__:main
+jian-zhi-offer-dier-ban-quanjie-doocs-kaiyuan-shequ-fix1 = JianZhiOfferDierBanQuanjieDoocsKaiyuanShequFix1.__main__:main
