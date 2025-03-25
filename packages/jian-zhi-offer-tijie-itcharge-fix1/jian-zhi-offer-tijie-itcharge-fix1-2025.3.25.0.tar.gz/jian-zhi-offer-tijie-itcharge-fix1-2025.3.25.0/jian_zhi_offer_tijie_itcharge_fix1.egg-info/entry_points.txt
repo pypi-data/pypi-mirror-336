@@ -1,0 +1,3 @@
+[console_scripts]
+JianZhiOfferTijieItchargeFix1 = JianZhiOfferTijieItchargeFix1.__main__:main
+jian-zhi-offer-tijie-itcharge-fix1 = JianZhiOfferTijieItchargeFix1.__main__:main
