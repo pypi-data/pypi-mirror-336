@@ -1,0 +1,3 @@
+[console_scripts]
+WeilaiYinxingDtShidaiZhongguoYinxingyeFazhanDeXinqidianFix1 = WeilaiYinxingDtShidaiZhongguoYinxingyeFazhanDeXinqidianFix1.__main__:main
+weilai-yinxing-dt-shidai-zhongguo-yinxingye-fazhan-de-xinqidian-fix1 = WeilaiYinxingDtShidaiZhongguoYinxingyeFazhanDeXinqidianFix1.__main__:main
