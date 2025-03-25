@@ -1,0 +1,15 @@
+uipath_connectors/sap_bapi/__init__.py,sha256=8BX9FGgWzGerJ-3Mgm7f-uxXbdELgp3OHMcgWK1pNMA,310
+uipath_connectors/sap_bapi/client.py,sha256=rOTDn_Wd0hk6a2ruaqPctFa1GTe3855MF09fDE-R1rI,12581
+uipath_connectors/sap_bapi/errors.py,sha256=gO8GBmKqmSNgAg-E5oT-oOyxztvp7V_6XG7OUTT15q0,546
+uipath_connectors/sap_bapi/py.typed,sha256=8ZJUsxZiuOy1oJeVhsTWQhTG_6pTVHVXk5hJL79ebTk,25
+uipath_connectors/sap_bapi/types.py,sha256=QZaGBiBBrhuUnP2TWYOG7HlL3Q7iW8PqHeBvXnYjyFQ,1488
+uipath_connectors/sap_bapi/api/__init__.py,sha256=b_NCXtLSVF528_rXYrRyBH8CmVQje2oFuJSIv_G8Jyc,1812
+uipath_connectors/sap_bapi/api/bapisexecute/__init__.py,sha256=I6jTHXZDe_q58vsNpOsU8DvcnTZrinnusGtAozcvGPo,164
+uipath_connectors/sap_bapi/api/bapisexecute/execute_bapi.py,sha256=O7PnizuSzE26j6WWXoDoSnFAHLO0dK96nadYKaaVSvI,6962
+uipath_connectors/sap_bapi/models/__init__.py,sha256=aMKHxEej1-f2-u9FjNWqAquIMGQ1QVpAtCSKm5wpXZo,128
+uipath_connectors/sap_bapi/models/default_error.py,sha256=020ybRCITAlV_1sk1e3lSXnhP7YRz4MaIGrszSNOY7M,1454
+uipath_connectors_sap_bapi-1.1.0.dev12.dist-info/METADATA,sha256=sN7wO8mTcpKvUGit6vDW7kwFNbbqgo54eR8FtnHh_pw,5935
+uipath_connectors_sap_bapi-1.1.0.dev12.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+uipath_connectors_sap_bapi-1.1.0.dev12.dist-info/entry_points.txt,sha256=fGbh-sc_PFnm9mnENL-r16kR9rIXRsYPCP-hN4RR6uA,81
+uipath_connectors_sap_bapi-1.1.0.dev12.dist-info/top_level.txt,sha256=y6kANKY_4jIBllEl8SOqPkhrLrO7ckx8399itrfDHEQ,18
+uipath_connectors_sap_bapi-1.1.0.dev12.dist-info/RECORD,,
