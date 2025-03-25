@@ -1,0 +1,149 @@
+Metadata-Version: 2.4
+Name: easy_ai_module
+Version: 0.1.2
+Summary: A simple module for making AI requests to Gemini API
+Home-page: https://github.com/yourusername/easy_ai_module
+Author: You
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Easy AI Module
+
+A simple Python package for personal use that makes it easy to interact with Google's Gemini AI API.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+First, replace the API_KEY in `easy_ai_module/gemini_client.py` with your actual Gemini API key.
+
+### Text Generation
+
+```python
+from easy_ai_module import GeminiAI
+
+ai = GeminiAI()  # Defaults to gemini-2.0-flash
+
+# Generate text from a prompt
+response = ai.generate_text("Write a short story about a robot")
+print(response)
+
+# Customize parameters
+response = ai.generate_text(
+    prompt="Write a haiku about the moon",
+    max_tokens=100,
+    temperature=0.3  # Lower temperature for more focused output
+)
+print(response)
+```
+
+### Image Analysis
+
+```python
+from easy_ai_module import GeminiAI
+
+ai = GeminiAI()
+
+# Analyze an image (requires valid image URL)
+image_url = "https://example.com/image.jpg"
+response = ai.generate_with_image("What's in this image?", image_url)
+print(response)
+```
+
+## Models
+
+You can specify different Gemini models:
+
+```python
+# Use Gemini 1.5 Flash
+ai = GeminiAI(model="gemini-1.5-flash")
+
+# Use Gemma 3
+ai = GeminiAI(model="gemma-3")
+
+# Use Gemini 2.0 Flash (default)
+ai = GeminiAI(model="gemini-2.0-flash")
+
+# Use Gemini 2.0 Flash-Lite
+ai = GeminiAI(model="gemini-2.0-flash-lite")
+```
+
+## Model Selection Guide
+
+The package includes a helpful guide to select the right model for your needs:
+
+```python
+# Show general help on model selection
+from easy_ai_module import GeminiAI
+GeminiAI.help()
+
+# Get recommendation for a specific use case
+GeminiAI.help('reasoning')  # For complex reasoning tasks
+GeminiAI.help('speed')      # For fastest response times
+GeminiAI.help('budget')     # For cost-effective usage
+GeminiAI.help('creative')   # For creative content generation
+GeminiAI.help('image')      # For image analysis tasks
+GeminiAI.help('local')      # For models that can run locally
+```
+
+## Detailed Model Information
+
+For detailed information about model capabilities, strengths, and pricing:
+
+```python
+from easy_ai_module import print_model_guide
+
+# Show information about all models
+print_model_guide()
+
+# Show information about a specific model
+print_model_guide('gemini-2.0-flash')
+```
+
+## Testing Tools
+
+The package includes tools for testing and benchmarking models:
+
+```bash
+# Run a simple test with the default model
+python model_demo.py
+
+# Show the detailed guide for all models
+python model_demo.py --guide
+
+# Show help for a specific use case
+python model_demo.py --show-help --use-case creative
+
+# Run benchmarks on all models
+python model_demo.py --benchmark
+
+# Test a specific model with a custom prompt
+python model_demo.py --model gemini-2.0-flash-lite --prompt "Explain quantum computing"
+
+# Run all tests (help menu, benchmarks, and model guide)
+python model_demo.py --test-all --verbose
+```
+
+## Note
+
+This package is for personal use only and contains a hardcoded API key. Do not share it with others. 

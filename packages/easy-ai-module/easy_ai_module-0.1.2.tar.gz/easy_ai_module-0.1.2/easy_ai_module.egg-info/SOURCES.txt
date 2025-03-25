@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+easy_ai_module/__init__.py
+easy_ai_module/gemini_client.py
+easy_ai_module/model_guide.py
+easy_ai_module.egg-info/PKG-INFO
+easy_ai_module.egg-info/SOURCES.txt
+easy_ai_module.egg-info/dependency_links.txt
+easy_ai_module.egg-info/requires.txt
+easy_ai_module.egg-info/top_level.txt
