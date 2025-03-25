@@ -1,0 +1,3 @@
+[console_scripts]
+QinghuiPmpJiangyiBiaozhunbanV182Fix1 = QinghuiPmpJiangyiBiaozhunbanV182Fix1.__main__:main
+qinghui-pmp-jiangyi-biaozhunban-v1-8-2-fix1 = QinghuiPmpJiangyiBiaozhunbanV182Fix1.__main__:main
