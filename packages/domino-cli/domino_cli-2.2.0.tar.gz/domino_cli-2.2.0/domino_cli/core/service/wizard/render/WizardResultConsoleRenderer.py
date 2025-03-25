@@ -1,0 +1,22 @@
+import yaml
+
+from domino_cli.core.cli.Logging import info
+
+
+class WizardResultConsoleRenderer:
+    """
+    Console based wizard result rendering.
+    """
+    def render(self, result: dict) -> None:
+        """
+        Renders a wizard's transformed (target) dictionary object as YAML structure and prints it to console.
+
+        :param result: target dictionary to be rendered
+        """
+        yaml_result = yaml.dump(result, sort_keys=False)
+        print()
+        info("Copy the relevant part of the YAML document below in your Domino Platform component "
+              "instance's configuration file\n")
+        print("# --- Configuration starts here ---\n")
+        print(yaml_result)
+        print("# --- End of configuration ---")
