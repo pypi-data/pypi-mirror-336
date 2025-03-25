@@ -1,0 +1,3 @@
+[console_scripts]
+NiukeXiaozhaoMianshiJiqiaoZhinanFix1 = NiukeXiaozhaoMianshiJiqiaoZhinanFix1.__main__:main
+niuke-xiaozhao-mianshi-jiqiao-zhinan-fix1 = NiukeXiaozhaoMianshiJiqiaoZhinanFix1.__main__:main
