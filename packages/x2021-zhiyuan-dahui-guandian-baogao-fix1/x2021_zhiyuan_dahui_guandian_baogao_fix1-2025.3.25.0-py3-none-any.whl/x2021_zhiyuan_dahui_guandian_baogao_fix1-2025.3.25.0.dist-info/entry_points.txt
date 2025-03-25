@@ -1,0 +1,3 @@
+[console_scripts]
+X2021ZhiyuanDahuiGuandianBaogaoFix1 = X2021ZhiyuanDahuiGuandianBaogaoFix1.__main__:main
+x2021-zhiyuan-dahui-guandian-baogao-fix1 = X2021ZhiyuanDahuiGuandianBaogaoFix1.__main__:main
