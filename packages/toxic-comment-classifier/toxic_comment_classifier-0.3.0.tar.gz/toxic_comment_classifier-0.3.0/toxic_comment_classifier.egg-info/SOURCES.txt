@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+toxic_classifier/__init__.py
+toxic_classifier/model.py
+toxic_classifier/utils.py
+toxic_classifier/model/model.weights.h5
+toxic_classifier/model/tokenizer.pickle
+toxic_comment_classifier.egg-info/PKG-INFO
+toxic_comment_classifier.egg-info/SOURCES.txt
+toxic_comment_classifier.egg-info/dependency_links.txt
+toxic_comment_classifier.egg-info/requires.txt
+toxic_comment_classifier.egg-info/top_level.txt
