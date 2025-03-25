@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: evremixes
+Version: 0.1.0
+Summary: Evanescence Remix Downloader
+Project-URL: Homepage, https://music.dannystewart.com/evanescence/
+Project-URL: Repository, https://github.com/dannystewart/dsbase/packages/evremixes
+Author-email: Danny Stewart <danny@stewart.cc>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: dsbase
+Requires-Dist: halo<0.0.32,>=0.0.31
+Requires-Dist: inquirer<4.0.0,>=3.4.0
+Requires-Dist: mutagen<2.0.0,>=1.47.0
+Requires-Dist: pillow<12.0.0,>=11.1.0
+Requires-Dist: requests<3.0.0,>=2.32.3
+Requires-Dist: termcolor<3.0.0,>=2.5.0
+Requires-Dist: types-requests<3.0.0.0,>=2.32.0.20250306
+Description-Content-Type: text/markdown
+
+# Remix Downloader
+
+The official versions of my remixes are the ones published [on my website](https://music.dannystewart.com/evanescence/), so this script grabs them from there. [`evtracks.json`](https://github.com/dannystewart/dsbase/blob/main/packages/evremixes/evtracks.json) holds the current list of available remixes, metadata, and URLs.
+
+You're presented with the choice of FLAC or ALAC (Apple Lossless), as well as where you want the files to be saved. The default options are your Downloads and Music folders, but you can also enter a custom path. After downloading, it will apply the correct metadata, album art, and filenames.
+
+Install via `pip install evremixes` and then `evremixes` to run the script.
