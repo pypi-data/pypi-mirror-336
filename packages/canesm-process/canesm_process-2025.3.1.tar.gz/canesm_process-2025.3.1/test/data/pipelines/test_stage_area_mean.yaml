@@ -1,0 +1,24 @@
+setup:
+  output_directories:
+    custom_area: "diags/area"
+
+  canesm_version: "6.0"
+  file_format: "netcdf4"
+
+  stages:
+    - area_mean
+    - custom_area
+
+area_mean:
+  area_mean: True
+  variables:
+    - ST
+    - GTA
+
+custom_area:
+  variables:
+    - GTT:
+        area_mean: False
+    - GT:
+        area_mean: True
+        rename: TS
