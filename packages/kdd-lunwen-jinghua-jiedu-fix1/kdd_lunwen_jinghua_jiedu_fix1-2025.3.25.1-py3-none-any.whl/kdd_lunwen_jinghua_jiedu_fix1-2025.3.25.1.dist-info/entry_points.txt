@@ -1,0 +1,3 @@
+[console_scripts]
+KddLunwenJinghuaJieduFix1 = KddLunwenJinghuaJieduFix1.__main__:main
+kdd-lunwen-jinghua-jiedu-fix1 = KddLunwenJinghuaJieduFix1.__main__:main
