@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+telesignenterprise/__init__.py
+telesignenterprise/appverify.py
+telesignenterprise/messaging.py
+telesignenterprise/phoneid.py
+telesignenterprise/score.py
+telesignenterprise/telebureau.py
+telesignenterprise/verify.py
+telesignenterprise/voice.py
+telesignenterprise.egg-info/PKG-INFO
+telesignenterprise.egg-info/SOURCES.txt
+telesignenterprise.egg-info/dependency_links.txt
+telesignenterprise.egg-info/requires.txt
+telesignenterprise.egg-info/top_level.txt
