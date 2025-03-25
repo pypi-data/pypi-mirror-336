@@ -1,0 +1,15 @@
+pyaddict/__init__.py,sha256=cMucB1-rB2hdrJKQ5CtO2Y_UpaCj7Hzv4lJpmB2YBEI,143
+pyaddict/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaddict/pyaddict.py,sha256=XQw9hsnnWDogjunfbd8rL0p6Ckjz8MFZ8h2TYF6nPD4,18485
+pyaddict/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaddict/interfaces/common.py,sha256=ZFJVNgO29fLsXg4Ey56qACL4D7Uc3WaoFurwa_94sWY,1926
+pyaddict/schema/__init__.py,sha256=J8V0bnZhLm4wXFC1Y3qGnH11MrIjII6nXgQwWAgLW8Y,148
+pyaddict/schema/base.py,sha256=8X1RTUbFlZg5TTG0gRlikMaagaBSl5aJsUF4LbWafW8,7954
+pyaddict/schema/result.py,sha256=CccNGFM9_MaGwipn76G7nJIH4DFgKFS5t4ogYbJ2BQo,5110
+pyaddict/schema/schema.py,sha256=hYCgz6n8m4PAH9ClNqf3g3tngHEp593SXdm1XbQ-OX0,9101
+pyaddict/types/__init__.py,sha256=K_hTVjO-ZZlQwe2p1CbAGRID5G-y849P1YXDSHpJ3ns,146
+pyaddict/types/types.py,sha256=zMouU-_5aQNBxm6SFOY963cX_fSTRVgURt4X3hPDbgE,194
+pyaddict-1.2.0.post1.dist-info/METADATA,sha256=wfHbmS5v5rwBKcnCiIgC8DWnWJuGCd3ekeOIcKY8YGo,23516
+pyaddict-1.2.0.post1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyaddict-1.2.0.post1.dist-info/licenses/LICENSE,sha256=JoTeFzAOCkNGhvHsf4r2BFIHpLRXo_4EsrnOZV58XVA,17098
+pyaddict-1.2.0.post1.dist-info/RECORD,,
