@@ -1,0 +1,3 @@
+[console_scripts]
+ChaojiAppBeihouDeYidongDuanJishuDaJiemiFix1 = ChaojiAppBeihouDeYidongDuanJishuDaJiemiFix1.__main__:main
+chaoji-app-beihou-de-yidong-duan-jishu-da-jiemi-fix1 = ChaojiAppBeihouDeYidongDuanJishuDaJiemiFix1.__main__:main
