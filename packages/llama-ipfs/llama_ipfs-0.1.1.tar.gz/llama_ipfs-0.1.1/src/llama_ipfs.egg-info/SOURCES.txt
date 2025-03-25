@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/llama_ipfs/__init__.py
+src/llama_ipfs/__main__.py
+src/llama_ipfs/_version.py
+src/llama_ipfs/patch.py
+src/llama_ipfs/py.typed
+src/llama_ipfs.egg-info/PKG-INFO
+src/llama_ipfs.egg-info/SOURCES.txt
+src/llama_ipfs.egg-info/dependency_links.txt
+src/llama_ipfs.egg-info/entry_points.txt
+src/llama_ipfs.egg-info/requires.txt
+src/llama_ipfs.egg-info/top_level.txt
+tests/test_init.py
