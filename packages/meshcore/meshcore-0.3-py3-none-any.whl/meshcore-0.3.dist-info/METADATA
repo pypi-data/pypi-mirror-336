@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: meshcore
+Version: 0.3
+Summary: Base classes for communicating with meshcore companion radios
+Project-URL: Homepage, https://github.com/fdlamotte/meshcore_py
+Project-URL: Issues, https://github.com/fdlamotte/meshcore_py/issues
+Author-email: Florent de Lamotte <florent@frizoncorrea.fr>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: bleak
+Requires-Dist: pyserial-asyncio
+Description-Content-Type: text/markdown
+
+# Python meshcore
+
+Bindings to access your [MeshCore](https://meshcore.co.uk) companion radio nodes in python.
+
+Used by [mccli](https//github.com/fdlamotte/mccli).
+
