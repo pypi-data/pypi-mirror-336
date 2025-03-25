@@ -1,0 +1,3 @@
+[console_scripts]
+NiukeCGongchengshiGangweiQiuzhiJingyanFenxiang20212022Fix1 = NiukeCGongchengshiGangweiQiuzhiJingyanFenxiang20212022Fix1.__main__:main
+niuke-c-gongchengshi-gangwei-qiuzhi-jingyan-fenxiang-2021-2022-fix1 = NiukeCGongchengshiGangweiQiuzhiJingyanFenxiang20212022Fix1.__main__:main
