@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_appointment_scheduler/__init__.py
+django_appointment_scheduler/admin.py
+django_appointment_scheduler/models.py
+django_appointment_scheduler/serializers.py
+django_appointment_scheduler/urls.py
+django_appointment_scheduler/views.py
+django_appointment_scheduler.egg-info/PKG-INFO
+django_appointment_scheduler.egg-info/SOURCES.txt
+django_appointment_scheduler.egg-info/dependency_links.txt
+django_appointment_scheduler.egg-info/requires.txt
+django_appointment_scheduler.egg-info/top_level.txt
