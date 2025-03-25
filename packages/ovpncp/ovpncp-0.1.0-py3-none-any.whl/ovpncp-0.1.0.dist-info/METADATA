@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: ovpncp
+Version: 0.1.0
+Summary: OpenVPN Control Panel for Restricted Network.
+Author-email: Nick Yao <ipaddict@outlook.com>
+License-File: LICENSE
+Requires-Dist: cryptography
+Requires-Dist: fastapi[all]
+Requires-Dist: PyYAML
+Requires-Dist: sqlmodel
+Requires-Dist: uvicorn
+Dynamic: license-file
