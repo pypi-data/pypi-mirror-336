@@ -1,0 +1,3 @@
+[console_scripts]
+DataphinChanpinBaipishuFix1 = DataphinChanpinBaipishuFix1.__main__:main
+dataphin-chanpin-baipishu-fix1 = DataphinChanpinBaipishuFix1.__main__:main
