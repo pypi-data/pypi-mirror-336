@@ -1,0 +1,2 @@
+[console_scripts]
+spdx3toopenvex = spdx3toopenvex:main

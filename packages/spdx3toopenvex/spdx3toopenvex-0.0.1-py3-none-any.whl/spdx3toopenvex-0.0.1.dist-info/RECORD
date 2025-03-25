@@ -1,0 +1,10 @@
+spdx3toopenvex/__init__.py,sha256=xWl83TiAE4l3A6sRonHwlBkzKSavijpyyHqQ6ksry1g,150
+spdx3toopenvex/__main__.py,sha256=2H81pUeEk57wkdfs9sqj3Qwtz3hoRc6naoklPDxyhdc,154
+spdx3toopenvex/convert.py,sha256=EyMiwfSJupKLA6hUH2-gL185L8PmlqjaHBPBPdT5-NI,7229
+spdx3toopenvex/main.py,sha256=S10-o0MmGPHSJ-uTcM7TFBh7Yb2hsiItT7Uc5EOLVAI,1745
+spdx3toopenvex/version.py,sha256=Irq4-EI8hTLDMOHRz17ay6AenyLS8SbMur3GFnNjOWo,89
+spdx3toopenvex-0.0.1.dist-info/METADATA,sha256=QJYC1Fb0iYEuwj55mwG8wZD0IHQjjGq6Irs4HAaDpeU,1207
+spdx3toopenvex-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+spdx3toopenvex-0.0.1.dist-info/entry_points.txt,sha256=nr2BiBoW_Vw2oBdaHAM9UOYDZ5Zf2nQST-aC9byuNcg,55
+spdx3toopenvex-0.0.1.dist-info/licenses/LICENSE,sha256=BRKU-0AUWjIu9Uw171wTedjJFRbg4f4Q3klYalEMS1s,1068
+spdx3toopenvex-0.0.1.dist-info/RECORD,,
