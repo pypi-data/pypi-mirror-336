@@ -1,0 +1,3 @@
+[console_scripts]
+AnquanKe2020q4Fix1 = AnquanKe2020q4Fix1.__main__:main
+anquan-ke-2020q4-fix1 = AnquanKe2020q4Fix1.__main__:main
