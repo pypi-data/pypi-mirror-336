@@ -1,0 +1,3 @@
+[console_scripts]
+VimCongRumenDaoJingtongFix1 = VimCongRumenDaoJingtongFix1.__main__:main
+vim-cong-rumen-dao-jingtong-fix1 = VimCongRumenDaoJingtongFix1.__main__:main
