@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: cppjit
+Version: 0.0.1
+Author-email: Aaron Jomy <aaron.jomy@cern.ch>
+License-Expression: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# CppJit
