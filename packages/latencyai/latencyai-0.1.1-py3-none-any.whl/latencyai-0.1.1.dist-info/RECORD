@@ -1,0 +1,10 @@
+latencyai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latencyai/__main__.py,sha256=mvfgLE-5XWxWTcU-yT_k_jbY-4PHMNTlFyA7rtr7ZE0,4578
+latencyai/benchmark_main.py,sha256=I4QgW4-JFKtDU-euy2pRTxG0GQuph7Zwe1kfRrA2A-U,2838
+latencyai/benchmark_runner.py,sha256=Tu0W7-gA2nuH_Gv-4Wy5vbgTYasYBSMrQCFKv55L2hk,2504
+latencyai/openai_chat.py,sha256=iu4GVLv41Umh5s8SWyjWHBdYh0vcfwIz_Lr4ub-meIw,3220
+latencyai-0.1.1.dist-info/LICENSE,sha256=6RW5dGQiHGdLZ8ojSWORcCvgcJFwFvi8ky5xzmzqJfk,1064
+latencyai-0.1.1.dist-info/METADATA,sha256=mrhdiSalupj-dNumVu1VFz5pFDVkw35BQy2Qh1ToJPA,2650
+latencyai-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+latencyai-0.1.1.dist-info/entry_points.txt,sha256=6vEUqqsQKCBAM-5S-roVY3rZaRTwDlPGByRzlAij8Zs,45
+latencyai-0.1.1.dist-info/RECORD,,
