@@ -1,0 +1,3 @@
+[console_scripts]
+AlibabaJiqiZhinengJishuJingxuanjiFix1 = AlibabaJiqiZhinengJishuJingxuanjiFix1.__main__:main
+alibaba-jiqi-zhineng-jishu-jingxuanji-fix1 = AlibabaJiqiZhinengJishuJingxuanjiFix1.__main__:main
