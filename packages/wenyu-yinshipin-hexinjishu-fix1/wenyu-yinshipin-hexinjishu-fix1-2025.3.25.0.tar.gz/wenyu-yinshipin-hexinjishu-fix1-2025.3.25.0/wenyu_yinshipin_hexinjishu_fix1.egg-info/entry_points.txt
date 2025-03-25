@@ -1,0 +1,3 @@
+[console_scripts]
+WenyuYinshipinHexinjishuFix1 = WenyuYinshipinHexinjishuFix1.__main__:main
+wenyu-yinshipin-hexinjishu-fix1 = WenyuYinshipinHexinjishuFix1.__main__:main
