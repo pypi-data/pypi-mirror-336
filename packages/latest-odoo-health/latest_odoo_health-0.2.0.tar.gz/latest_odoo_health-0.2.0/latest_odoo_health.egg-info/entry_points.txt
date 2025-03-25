@@ -1,0 +1,2 @@
+[console_scripts]
+report_report = health_report.cli:main
