@@ -1,0 +1,10 @@
+namaztime/__init__.py,sha256=b9Ty9WSvRsKkaRjR1frT0cILmh3PR7hXQAo_Ca-ASXk,52
+namaztime/timezone_city.json,sha256=coLu8n_5NgpwdM1jXMZwJqG58sMMuS9XhVfsup_KelA,5367
+namaztime/waqt.py,sha256=SZH76YDGL468xh57VtFsnEA0B4H7WrOPXqzkoTA6e7A,5028
+namaztime-1.1.0.dist-info/licenses/LICENSE,sha256=z_bHqL4yqTDeo3kIWWqWWtzxAjKp-40O94OFPI3GBhk,1068
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_namaztime.py,sha256=hsL6CSNIR3AFLEeQVDKJ82rBD17SeRE75v_61y-MAVk,485
+namaztime-1.1.0.dist-info/METADATA,sha256=lIOIdl_yM4ohZWzMMoHp_dViVJ6A0vZfog4GdDqubkQ,4074
+namaztime-1.1.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+namaztime-1.1.0.dist-info/top_level.txt,sha256=TuexMsn7Qoo17Ru5sgLa-xMxtHcfymf83dSi99OCCd0,16
+namaztime-1.1.0.dist-info/RECORD,,
