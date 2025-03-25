@@ -1,0 +1,3 @@
+[console_scripts]
+YewZhongwenWendangFix1 = YewZhongwenWendangFix1.__main__:main
+yew-zhongwen-wendang-fix1 = YewZhongwenWendangFix1.__main__:main
