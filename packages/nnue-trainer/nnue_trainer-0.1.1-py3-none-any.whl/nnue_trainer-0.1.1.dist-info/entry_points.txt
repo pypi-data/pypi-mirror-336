@@ -1,0 +1,2 @@
+[console_scripts]
+nnue_trainer = nnue_trainer.cli:main

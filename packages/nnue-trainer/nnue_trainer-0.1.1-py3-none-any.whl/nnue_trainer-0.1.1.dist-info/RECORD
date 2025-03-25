@@ -1,0 +1,11 @@
+nnue_trainer/__init__.py,sha256=DkpKNE3C9bF88mWaaZ3vG6L6woYqAfclGjSIM4CNs74,188
+nnue_trainer/cli.py,sha256=-3_DKERUsFKSt8ha201ZCwV0rjgjxnBqeEDLdSE-490,1150
+nnue_trainer/data.py,sha256=rI4xiwTfCRETJ9n19zadkE1mI8rKwW1mI1Vu18RTLp0,3890
+nnue_trainer/nnue.py,sha256=kzAlpMNGoLE4efCN0DJNVlDT99w6ONPALNUHQras8xU,3034
+nnue_trainer/quantization.py,sha256=HrjfRUs0i7bCLLXWuDj7z1rT4bAlqt0HELSh4QtP2Ek,1876
+nnue_trainer/trainer.py,sha256=WT8KK7IHadw-5cHyHLR6VB9JphjRxvp-Oe4aNTJgwfQ,2209
+nnue_trainer-0.1.1.dist-info/METADATA,sha256=ik01uK7YSPEi2gF-oVNMFF-hY1lWw1jmsYjJ7Ohk9P4,3324
+nnue_trainer-0.1.1.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+nnue_trainer-0.1.1.dist-info/entry_points.txt,sha256=o7FUAVtpVoqTTGctucGJ7i0d0WXGjpTO-kFqAa2ibfM,55
+nnue_trainer-0.1.1.dist-info/top_level.txt,sha256=skyxfiXY1pB5kOTEJhgfdtXU5Nr8O7dKDDSWNUBrQNg,13
+nnue_trainer-0.1.1.dist-info/RECORD,,
