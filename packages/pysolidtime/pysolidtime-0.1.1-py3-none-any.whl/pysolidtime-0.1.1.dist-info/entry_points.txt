@@ -1,0 +1,3 @@
+[console_scripts]
+solidtime-cli=pysolidtime.cli:main
+
