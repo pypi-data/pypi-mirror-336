@@ -1,0 +1,3 @@
+[console_scripts]
+GoYuyanGaoxingnengBianchengFix1 = GoYuyanGaoxingnengBianchengFix1.__main__:main
+go-yuyan-gaoxingneng-biancheng-fix1 = GoYuyanGaoxingnengBianchengFix1.__main__:main
