@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+getmcp/__init__.py
+getmcp/__main__.py
+getmcp/cli.py
+getmcp/client.py
+getmcp.egg-info/PKG-INFO
+getmcp.egg-info/SOURCES.txt
+getmcp.egg-info/dependency_links.txt
+getmcp.egg-info/entry_points.txt
+getmcp.egg-info/requires.txt
+getmcp.egg-info/top_level.txt
