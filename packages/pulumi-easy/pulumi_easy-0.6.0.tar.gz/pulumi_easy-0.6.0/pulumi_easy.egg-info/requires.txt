@@ -1,0 +1,5 @@
+
+[dev]
+pulumi<4.0.0,>=3.0.0
+pulumi-aws<7.0.0,>=6.0.2
+requests>=2.32.3
