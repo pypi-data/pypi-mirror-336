@@ -1,0 +1,3 @@
+[console_scripts]
+YijianWakuangGainianZongjie20211019Fix1 = YijianWakuangGainianZongjie20211019Fix1.__main__:main
+yijian-wakuang-gainian-zongjie-20211019-fix1 = YijianWakuangGainianZongjie20211019Fix1.__main__:main
