@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+compliment_generator/__init__.py
+compliment_generator/generator.py
+compliment_generator_arkodeep.egg-info/PKG-INFO
+compliment_generator_arkodeep.egg-info/SOURCES.txt
+compliment_generator_arkodeep.egg-info/dependency_links.txt
+compliment_generator_arkodeep.egg-info/top_level.txt
+tests/test_generator.py
