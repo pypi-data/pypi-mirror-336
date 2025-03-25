@@ -1,0 +1,3 @@
+[console_scripts]
+HongchaSanbeiCcnaShiyanShouceV30Fix1 = HongchaSanbeiCcnaShiyanShouceV30Fix1.__main__:main
+hongcha-sanbei-ccna-shiyan-shouce-v3-0-fix1 = HongchaSanbeiCcnaShiyanShouceV30Fix1.__main__:main
