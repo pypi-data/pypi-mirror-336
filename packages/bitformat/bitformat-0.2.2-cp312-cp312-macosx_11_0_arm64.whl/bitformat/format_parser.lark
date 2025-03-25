@@ -1,0 +1,53 @@
+start: field_type
+
+// This should reflect the DtypeKind enum.
+dtype_kind: /u|i|f|bool|bytes|hex|bin|oct|bits|pad/
+
+// Endian modifiers for dtypes
+dtype_modifier: /le|be|ne/
+
+// Expression strings start with a { and end with a }
+expression: "{" /[^\}]+/ "}"
+
+dtype_size: INT | expression
+dtype_items: INT | expression
+
+dtype_single: dtype_kind ["_" dtype_modifier] [dtype_size]
+dtype_array: "[" dtype_single ";" [dtype_items] "]"
+dtype_tuple: "(" dtype ("," dtype)* [","] ")"
+
+// dtype is the abstract base class for the other dtypes above.
+?dtype: dtype_tuple | dtype_single | dtype_array
+
+?field_name: NAME -> field_name
+
+?inline_string: /[a-zA-Z0-9\.\+\-]+/
+simple_value: python_string | inline_string -> simple_value
+list_of_values: ("[" simple_value ("," simple_value)* [","] "]") | ("(" simple_value ("," simple_value)* [","] ")")
+?value: simple_value | list_of_values
+
+// Match const_field with higher priority than mutable_field
+// const fields have the 'const' keyword and always have a value
+const_field.1: [field_name ":"] "const " dtype "=" value -> const_field
+// non-const fields don't always have a value
+mutable_field.0: [field_name ":"] dtype ["=" value] -> mutable_field
+?field: const_field | mutable_field
+
+if_: "if" expression ":" field_type ["else" ":" field_type]
+
+// Note this doesn't yet have a name?
+repeat: "repeat" expression ":" field_type
+
+// The Pass field is literally just "pass"
+pass_: ["pass"]
+
+format: [field_name "="] "{" [field_type (("," | WS | NEWLINE) field_type)*] [","] "}"
+
+?field_type: field | format | if_ | repeat | pass_
+
+%import common.INT -> INT
+%import python.NAME -> NAME
+%import python.string -> python_string  // Parses Python strings, including things like b'abc' and f"abc'd'"
+%import common.WS
+%import common.NEWLINE
+%ignore WS
