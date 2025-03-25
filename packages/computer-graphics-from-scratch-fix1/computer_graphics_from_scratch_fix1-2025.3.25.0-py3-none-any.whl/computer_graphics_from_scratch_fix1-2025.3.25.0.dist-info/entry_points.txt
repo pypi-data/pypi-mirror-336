@@ -1,0 +1,3 @@
+[console_scripts]
+ComputerGraphicsFromScratchFix1 = ComputerGraphicsFromScratchFix1.__main__:main
+computer-graphics-from-scratch-fix1 = ComputerGraphicsFromScratchFix1.__main__:main
