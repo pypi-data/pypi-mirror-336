@@ -1,0 +1,2 @@
+[uipath_sdk.connectors]
+register = uipath_connectors.sap_odata:register_connector
