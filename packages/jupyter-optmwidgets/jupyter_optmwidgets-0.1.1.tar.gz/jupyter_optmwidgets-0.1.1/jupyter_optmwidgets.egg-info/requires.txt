@@ -1,0 +1,16 @@
+jupyterlab<4,>=3
+
+[docs]
+jupyter_sphinx
+nbsphinx
+nbsphinx-link
+pytest_check_links
+pypandoc
+recommonmark
+sphinx>=1.5
+sphinx_rtd_theme
+
+[test]
+pytest>=4.6
+pytest-cov
+nbval

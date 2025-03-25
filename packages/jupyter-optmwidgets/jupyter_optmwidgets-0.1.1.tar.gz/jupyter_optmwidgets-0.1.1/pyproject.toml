@@ -1,0 +1,36 @@
+[build-system]
+requires = ["jupyter_packaging>=0.9,<2", "jupyterlab>=3,<4", "setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jupyter-optmwidgets"
+version = "0.1.1"  # Match with _version.py and package.json
+description = "Jupyter Widgets for DIVE virtual learning environment."
+readme = "README.md"  # Point to your README file
+requires-python = ">=3.6"
+license = { text = "BSD-3-Clause" }  # SPDX expression
+authors = [{ name = "Chung Chan" }]
+dependencies = [
+    "jupyterlab>=3,<4",
+]
+classifiers = [
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Framework :: Jupyter :: JupyterLab :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dynamic = ["optional-dependencies"]  # Define optional deps in setup.py
+
+[tool.jupyter-releaser]
+npm-package = "@optm/jupyter-optmwidgets"
+
+[tool.setuptools.package-data]
+"jupyter_optmwidgets.labextension" = ["*"]
