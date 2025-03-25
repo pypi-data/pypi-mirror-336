@@ -1,0 +1,2 @@
+Version: 1.10.0
+Arguments: ['C:\\builds\\deepline\\raf-utilities\\PyRaf\\stage_Docker_windev2019_py310\\.venv_pack\\Scripts\\delvewheel', 'repair', '--analyze-existing', '--add-path', 'C:/local/boost/lib', 'dist/rafina-0.0.5-py310-none-win_amd64.whl']
