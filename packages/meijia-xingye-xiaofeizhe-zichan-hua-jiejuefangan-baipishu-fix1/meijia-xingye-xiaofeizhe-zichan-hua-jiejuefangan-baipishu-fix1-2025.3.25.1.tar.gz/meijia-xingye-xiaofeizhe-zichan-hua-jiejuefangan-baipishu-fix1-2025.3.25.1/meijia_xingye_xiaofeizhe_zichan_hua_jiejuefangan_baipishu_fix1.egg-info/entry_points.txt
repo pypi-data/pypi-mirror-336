@@ -1,0 +1,3 @@
+[console_scripts]
+MeijiaXingyeXiaofeizheZichanHuaJiejuefanganBaipishuFix1 = MeijiaXingyeXiaofeizheZichanHuaJiejuefanganBaipishuFix1.__main__:main
+meijia-xingye-xiaofeizhe-zichan-hua-jiejuefangan-baipishu-fix1 = MeijiaXingyeXiaofeizheZichanHuaJiejuefanganBaipishuFix1.__main__:main
