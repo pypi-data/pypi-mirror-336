@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+image_invisible_watermarker.egg-info/PKG-INFO
+image_invisible_watermarker.egg-info/SOURCES.txt
+image_invisible_watermarker.egg-info/dependency_links.txt
+image_invisible_watermarker.egg-info/requires.txt
+image_invisible_watermarker.egg-info/top_level.txt
+image_watermarker/__init__.py
+image_watermarker/avif_heif_heif_watermark.py
+image_watermarker/jpg_watermark.py
+image_watermarker/png_watermark.py
+image_watermarker/utilities.py
+image_watermarker/webp_watermark.py
+tests/test_module1.py
