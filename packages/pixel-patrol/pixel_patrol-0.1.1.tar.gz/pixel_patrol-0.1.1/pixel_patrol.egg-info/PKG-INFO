@@ -1,0 +1,85 @@
+Metadata-Version: 2.4
+Name: pixel-patrol
+Version: 0.1.1
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: bs4>=0.0.2
+Requires-Dist: imageio
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib>=3.10.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: ray>=2.40.0
+Requires-Dist: streamlit>=1.41.1
+Requires-Dist: altair>=5.5.0
+Requires-Dist: numpy<2.0.0,>=1.21.0
+Requires-Dist: image>=1.5.33
+Requires-Dist: tifffile<2025.2.18,>=2024.12.12
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: plotly-express>=0.4.1
+Requires-Dist: tk>=0.1.0
+Requires-Dist: bioio==1.0.2
+Requires-Dist: bioio-czi>=1.0.2
+Requires-Dist: bioio-lif>=1.0.0
+Requires-Dist: bioio-nd2>=1.0.0
+Requires-Dist: bioio-tifffile>=1.0.0
+Requires-Dist: bioio-ome-zarr>=1.1.0
+Requires-Dist: bioio-ome-tiff>=1.0.1
+Requires-Dist: bioio-dv>=1.0.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: polars>=1.22.0
+Requires-Dist: streamlit-extras>=0.5.0
+Requires-Dist: tensorboard>=2.18.0
+Requires-Dist: tensorflow>=2.18.0
+Requires-Dist: pywavelets>=1.8.0
+Requires-Dist: opencv-python-headless>=4.11.0.86
+Requires-Dist: statsmodels>=0.14.4
+
+# Pixel Patrol
+
+## How to use
+
+1. Clone repository
+2. Install `uv`
+3. `uv pip install -e .`
+4. `uv run streamlit_main.py`
+
+If you get an error when adding a folder path - install tkinter/python-tk:   
+Ubuntu: `sudo apt-get install python3-tk`  
+Mac: `brew install python-tk`  
+
+## How to add widget
+
+Widgets can be added in this repository or in separate packages.
+
+### Write Widget
+
+```
+# my/widgets/test_widget.py
+
+import streamlit as st
+from pixel_patrol.widgets.widget_interface import ImagePrevalidationWidget
+
+
+class TestWidget(ImagePrevalidationWidget):
+
+    @property
+    def tab(self) -> str:
+        return "Other"
+
+    def run(self, selected_files_df):
+        with st.expander("Test widget", expanded=False):
+            st.text("Hi!")
+```
+
+### Add Widget to `entry-points` of the package
+
+```
+# pyproject.toml
+
+[project]
+...
+[project.entry-points."pixel_patrol.widgets"]
+test_widget = "my.widgets.test_widget:TestWidget"
+
+```
