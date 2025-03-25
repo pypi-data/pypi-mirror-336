@@ -1,0 +1,3 @@
+[console_scripts]
+ApacheSparkZhongwenShizhanGonglveXiaceFix1 = ApacheSparkZhongwenShizhanGonglveXiaceFix1.__main__:main
+apache-spark-zhongwen-shizhan-gonglve-xiace-fix1 = ApacheSparkZhongwenShizhanGonglveXiaceFix1.__main__:main
