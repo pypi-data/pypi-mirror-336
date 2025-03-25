@@ -1,0 +1,3 @@
+[console_scripts]
+PytorchZiranyuyanChuliFix1Fix1 = PytorchZiranyuyanChuliFix1Fix1.__main__:main
+pytorch-ziranyuyan-chuli-fix1-fix1 = PytorchZiranyuyanChuliFix1Fix1.__main__:main
