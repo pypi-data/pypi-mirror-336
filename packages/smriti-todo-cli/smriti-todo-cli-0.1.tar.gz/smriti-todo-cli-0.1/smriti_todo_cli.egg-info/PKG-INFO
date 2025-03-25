@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: smriti-todo-cli
+Version: 0.1
+Summary: Code
+Author: Smriti
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+codessss

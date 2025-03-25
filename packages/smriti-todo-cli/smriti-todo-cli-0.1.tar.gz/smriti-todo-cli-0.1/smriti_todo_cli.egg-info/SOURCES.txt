@@ -1,0 +1,11 @@
+LICENSE.txt
+setup.py
+my_package/__init__.py
+my_package/database.py
+my_package/model.py
+my_package/todocli.py
+smriti_todo_cli.egg-info/PKG-INFO
+smriti_todo_cli.egg-info/SOURCES.txt
+smriti_todo_cli.egg-info/dependency_links.txt
+smriti_todo_cli.egg-info/requires.txt
+smriti_todo_cli.egg-info/top_level.txt
