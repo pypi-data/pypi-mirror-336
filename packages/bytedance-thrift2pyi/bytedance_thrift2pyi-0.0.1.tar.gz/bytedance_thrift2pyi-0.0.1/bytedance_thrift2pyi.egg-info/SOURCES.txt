@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedance_thrift2pyi.egg-info/PKG-INFO
+bytedance_thrift2pyi.egg-info/SOURCES.txt
+bytedance_thrift2pyi.egg-info/dependency_links.txt
+bytedance_thrift2pyi.egg-info/top_level.txt
