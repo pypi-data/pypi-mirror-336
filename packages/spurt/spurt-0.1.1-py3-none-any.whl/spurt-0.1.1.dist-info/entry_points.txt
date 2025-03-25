@@ -1,0 +1,2 @@
+[console_scripts]
+spurt-emcf = spurt.workflows.emcf:__main__
