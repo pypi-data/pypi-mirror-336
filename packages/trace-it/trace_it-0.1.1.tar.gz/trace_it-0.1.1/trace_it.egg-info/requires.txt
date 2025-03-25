@@ -1,0 +1,4 @@
+opentelemetry-api
+opentelemetry-sdk
+openinference-semantic-conventions
+arize-phoenix
