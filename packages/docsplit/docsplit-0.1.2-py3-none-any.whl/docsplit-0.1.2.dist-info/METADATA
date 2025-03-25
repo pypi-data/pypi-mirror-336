@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: docsplit
+Version: 0.1.2
+Requires-Python: >=3.6
+Requires-Dist: pyvips
+Requires-Dist: pillow
+Requires-Dist: pypdf2
+
