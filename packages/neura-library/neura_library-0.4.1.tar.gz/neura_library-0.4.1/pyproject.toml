@@ -1,0 +1,150 @@
+[project]
+name = "neura-library"
+version = "0.4.1"
+requires-python = ">=3.10"
+description = "Utility tools for system neuroscience research, including Open Source Wrapper or Parser"
+authors = [
+    { name = "Yu-Ting Wei", email = "ytsimon2004@gmail.com" },
+    { name = "Ta-Shun Su", email = "antoniost29@gmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["Neuroscience", "visual neuroscience", "cellular imaging", "brain mapping", "spatial navigation"]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    'Intended Audience :: Science/Research',
+    "Typing :: Typed",
+]
+
+dependencies = [
+    "attrs",
+    "colorama",
+    "colorlog",
+    "matplotlib",
+    "matplotlib_venn",
+    "seaborn",
+    "numpy",
+    "scipy",
+    "scikit-image",
+    "pandas",
+    "polars",
+    "pyarrow",
+    "tifffile",
+    "opencv-python>=4.8.0.76",
+    "tqdm",
+    "requests",
+    'gdown',
+    "rich",
+    "h5py",
+    "typing_extensions",
+]
+
+
+
+[project.optional-dependencies]
+atlas = [
+    #    "allensdk"  # unexpected build error, thus use pip install allensdk if needed
+    "brainrender",
+    "iblatlas",
+    "anytree",
+    "plotly",
+]
+
+scanner = [
+    "xmltodict",
+    "aicspylibczi"
+]
+
+imaging = [
+    "scanimage-tiff-reader",
+    "sbxreader",
+    "ruamel.yaml",
+    "numba", # oasis dcnv batch processing
+    "bokeh", # fft view
+    "napari"  # align
+]
+
+segmentation = [
+    "pyqt6",
+    "pyqtgraph",
+    "cellpose",
+    "stardist",
+    "csbdeep",
+    "roifile",
+    "napari",
+    "numpy<2.0; extra == 'segmentation'"
+]
+
+model = [
+    "rastermap"
+]
+
+
+gpu = [
+    "torch",
+    "tensorflow", # cascade spike prediction
+    "psutil"
+]
+
+imagelib = [
+    "pdf2image",
+    "imageio"  # gif usage
+]
+
+tools = [
+    "python-dotenv",
+    "slackclient",
+    "gspread"
+]
+
+
+all = [
+    "bokeh",
+    "neura-library[atlas]",
+    "neura-library[scanner]",
+    "neura-library[imaging]",
+    "neura-library[model]",
+    "neura-library[imagelib]",
+    "neura-library[tools]",
+]
+
+
+dev = [
+    'pre-commit',
+    'ruff',
+    "neura-library[segmentation]",
+    "neura-library[gpu]",
+    "neura-library[all]"
+]
+
+
+doc = [
+    #    "pandoc",  # use conda install pandoc
+    "sphinx",
+    "nbsphinx",
+    "sphinx-toolbox",
+    "sphinx-rtd-theme",
+    "neura-library[segmentation]",
+    "neura-library[gpu]",
+    "neura-library[all]",
+]
+
+[project.urls]
+Homepage = "https://github.com/ytsimon2004/neuralib"
+Documentation = "https://neuralib.readthedocs.io/en/latest/index.html"
+Repository = "https://github.com/ytsimon2004/neuralib"
+Issues = "https://github.com/ytsimon2004/neuralib/issues"
+
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+
+[project.scripts]
+neuralib_brainrender = "neuralib.atlas.brainrender.main_app:main"
+neuralib_widefield = "neuralib.imaging.widefield.main_app:main"
