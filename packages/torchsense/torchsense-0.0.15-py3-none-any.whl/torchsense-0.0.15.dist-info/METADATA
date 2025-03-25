@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: torchsense
+Version: 0.0.15
+Summary: Torchsense is a library for sensor data processing with PyTorch
+Author-email: Xingwei Wang <wxwjkl123@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/xibrer/torchsense
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: einops
+Requires-Dist: h5py
+Requires-Dist: pesq
+Requires-Dist: torchaudio
+Requires-Dist: torchinfo
+Requires-Dist: lightning
+Requires-Dist: pkginfo==1.10.0
+Dynamic: license-file
