@@ -1,0 +1,3 @@
+[console_scripts]
+QianghuaXuexiZaiAliDeJishuYanjinYuYewuChuangxinFix1 = QianghuaXuexiZaiAliDeJishuYanjinYuYewuChuangxinFix1.__main__:main
+qianghua-xuexi-zai-ali-de-jishu-yanjin-yu-yewu-chuangxin-fix1 = QianghuaXuexiZaiAliDeJishuYanjinYuYewuChuangxinFix1.__main__:main
