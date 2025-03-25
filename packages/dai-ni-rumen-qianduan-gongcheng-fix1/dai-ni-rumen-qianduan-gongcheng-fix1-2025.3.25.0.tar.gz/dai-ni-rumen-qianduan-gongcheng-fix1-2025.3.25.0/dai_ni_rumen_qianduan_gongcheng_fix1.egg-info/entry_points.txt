@@ -1,0 +1,3 @@
+[console_scripts]
+DaiNiRumenQianduanGongchengFix1 = DaiNiRumenQianduanGongchengFix1.__main__:main
+dai-ni-rumen-qianduan-gongcheng-fix1 = DaiNiRumenQianduanGongchengFix1.__main__:main
