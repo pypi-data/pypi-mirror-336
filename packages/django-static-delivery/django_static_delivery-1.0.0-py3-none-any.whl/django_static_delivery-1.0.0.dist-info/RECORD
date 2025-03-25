@@ -1,0 +1,6 @@
+static_delivery/__init__.py,sha256=ZEYfLgFjBkt35abxzRm5vIhYEewlfPRmXAiTGqye0aQ,227
+static_delivery/middleware.py,sha256=w6MBBh17rtkeIkSJDtaL3L1ek62-mbzYXeZ1CUPDrQs,4944
+django_static_delivery-1.0.0.dist-info/LICENSE.rst,sha256=qhQyavx0SN9nB1wUrnfi5uHVP5vNWtJ7YITw_5L_xzk,1066
+django_static_delivery-1.0.0.dist-info/METADATA,sha256=uxpIGdqaTpf51ACWdgh1K88kSQXqQ3nuGan6O9Hi-AM,2635
+django_static_delivery-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+django_static_delivery-1.0.0.dist-info/RECORD,,
