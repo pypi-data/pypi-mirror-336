@@ -1,0 +1,3 @@
+[console_scripts]
+X53ZhangShejishiKoudaiXinlixueV1120210602Fix1 = X53ZhangShejishiKoudaiXinlixueV1120210602Fix1.__main__:main
+x53-zhang-shejishi-koudai-xinlixue-v1-1-20210602-fix1 = X53ZhangShejishiKoudaiXinlixueV1120210602Fix1.__main__:main
