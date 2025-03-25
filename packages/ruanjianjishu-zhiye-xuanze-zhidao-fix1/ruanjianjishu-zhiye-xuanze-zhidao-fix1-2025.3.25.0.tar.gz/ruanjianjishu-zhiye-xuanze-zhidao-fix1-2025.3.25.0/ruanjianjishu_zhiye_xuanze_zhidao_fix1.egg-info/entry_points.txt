@@ -1,0 +1,3 @@
+[console_scripts]
+RuanjianjishuZhiyeXuanzeZhidaoFix1 = RuanjianjishuZhiyeXuanzeZhidaoFix1.__main__:main
+ruanjianjishu-zhiye-xuanze-zhidao-fix1 = RuanjianjishuZhiyeXuanzeZhidaoFix1.__main__:main
