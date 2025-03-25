@@ -1,0 +1,11 @@
+matplotlib
+mne
+numpy
+packaging
+pandas
+Pillow
+scikit_learn
+scipy
+seaborn
+StellarInfra
+tqdm
