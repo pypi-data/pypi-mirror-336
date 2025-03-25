@@ -1,0 +1,40 @@
+HlightReaxMD Software License
+(Proprietary License)
+
+Copyright (c) 2024 W.-Y.Li, RFUE
+
+This software is proprietary and confidential. All rights reserved.
+
+1. Proprietary Components
+All components of this software are proprietary to W.-Y.Li, RFUE and 
+are not available for public distribution or modification without explicit
+permission from the copyright holder.
+
+2. Usage Rights
+This software is distributed as a closed-source binary package (.whl) and is 
+licensed for use according to the terms outlined in this license agreement.
+Redistribution, reverse engineering, decompilation, or disassembly of this 
+software is strictly prohibited.
+
+3. Third-Party Components
+This software includes the following third-party components:
+
+- cairosvg (LGPL-3.0)
+  Source code available at: https://github.com/Kozea/CairoSVG
+  No modifications were made to the original library.
+
+- Other third-party components are used under their respective BSD, MIT, 
+  and PSF licenses.
+
+4. Warranty Disclaimer
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+5. Limitation of Liability
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+For licensing inquiries, please contact: [bestleeimpact@163.com] 
