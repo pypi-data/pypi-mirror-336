@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "gitbugactions"
+version = "4.3.0"
+description = "A tool that builds executable code datasets with GitHub Actions."
+authors = ["Nuno Saavedra <nuno.saavedra@tecnico.ulisboa.pt>", "André Silva <andreans@kth.se>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+PyGithub = "2.6.1"
+pandas = "2.2.3"
+pygit2 = "1.17.0"
+PyYAML = "6.0.2"
+docker = "7.1.0"
+unidiff = "0.7.5"
+tqdm = "4.67.1"
+urllib3 = "2.3.0"
+junitparser = "3.2.0"
+fire = "0.7.0"
+nltk = "3.9.1"
+attrs = "^25.0.0"
+referencing = "^0.36.0"
+pytest-ordering = "^0.6"
+numpy = "2.2.4"
+schedule = "^1.2.2"
+jsonschema = "^4.23.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.5"
+pytest-mock = "3.14.0"
+pytest-dependency = "0.6.0"
+flaky = "3.8.1"
+pytest-ignore-flaky = "2.2.1"
+black = "25.1.0"
+isort = "6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
