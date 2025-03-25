@@ -1,0 +1,11 @@
+fairfru/FRSpy.py,sha256=uPf12PR4XVkLWRkb_n7XfFeb5Z-sjpDomXbobgqe2Qk,3966
+fairfru/__init__.py,sha256=PyxJP3IwXfguxXCRfBzCpSKZ8QllkWFqGvtJrZCBmA0,107
+fairfru/fuzzy_rough_regions.py,sha256=o7hsjhPmViQjOjsRDwMaafsW3tmDLE0TtUKcICPrYwM,6283
+fairfru/fuzzy_rough_uncertainty.py,sha256=5-Blq_2DZp3yFvS7qBya5f5u42D4d4J_eGz6o2BOxQY,3223
+fairfru/h5file_create_array.py,sha256=UC5GYz0E77kxfSHvLt2_u7guMPi2ZkV4QtSq79bGDQE,5725
+fairfru/main.py,sha256=HIt7ie-7k_HUF4uksN1GGLJQ-TxEiU9aC6ogDXX4GH8,6049
+fairfru-1.5.dist-info/METADATA,sha256=b369pjdbK6VRMrhVuoPxMpC03QYGHshkF0XoSm0giRU,780
+fairfru-1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+fairfru-1.5.dist-info/license.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+fairfru-1.5.dist-info/top_level.txt,sha256=QXrQBm9Cf8IhotiP8bMEyvHERMzEJWzucj7lrk_FADs,8
+fairfru-1.5.dist-info/RECORD,,
