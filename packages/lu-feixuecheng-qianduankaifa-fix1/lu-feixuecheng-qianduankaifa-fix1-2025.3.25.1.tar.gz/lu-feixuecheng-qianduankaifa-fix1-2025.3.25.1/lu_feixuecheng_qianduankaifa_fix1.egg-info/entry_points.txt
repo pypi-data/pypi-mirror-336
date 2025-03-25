@@ -1,0 +1,3 @@
+[console_scripts]
+LuFeixuechengQianduankaifaFix1 = LuFeixuechengQianduankaifaFix1.__main__:main
+lu-feixuecheng-qianduankaifa-fix1 = LuFeixuechengQianduankaifaFix1.__main__:main
