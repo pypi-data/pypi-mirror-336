@@ -1,0 +1,3 @@
+[console_scripts]
+DingDingYingyongKaifazheSuchengShouceFix1 = DingDingYingyongKaifazheSuchengShouceFix1.__main__:main
+ding-ding-yingyong-kaifazhe-sucheng-shouce-fix1 = DingDingYingyongKaifazheSuchengShouceFix1.__main__:main
