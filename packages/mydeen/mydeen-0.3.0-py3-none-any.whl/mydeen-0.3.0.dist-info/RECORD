@@ -1,0 +1,15 @@
+mydeen/__init__.py,sha256=zk69SiassTgb_xMpCjoUnIHfBBVIRtbSB5jz1nX_Ai4,919
+mydeen/config.py,sha256=7pesmspdMyr59IKQjVJVj_VVYI6oQB09PhYjRjIMUkg,745
+mydeen/data/quran.json,sha256=Yt9qhj3LciUy7BqXla3j_v4WX9S7goEJ73GypVBjn4c,7403882
+mydeen/exception_error.py,sha256=2LUtaOLjC72Q5z-RF7D1-ndPHGz9QaVzY6MQ5QzOuUk,430
+mydeen/interface.py,sha256=d-PMb8hgyH6qZRo7EOuqQfKxM7hVKNxh_nM0P9OaAzk,2757
+mydeen/memory_quran.py,sha256=8bCndssQgohg7Y2qd6x-xD26R53zJdXwO_t46AXNXEk,4732
+mydeen/meta_quran_reader.py,sha256=Ey7vWRBjl3UameZrM4Jyqpur833_DSkeqIR5AlYnLf0,6181
+mydeen/metasurahs.py,sha256=pMGkAs30qC8BCYQtRxz9kUz4kqHxFN-OKYqwAuPxzOs,11002
+mydeen/mydeen.py,sha256=2NQ4bURkAgBKgDRZmWf3aN8yKGR8acDyeAci77DpABQ,1533
+mydeen/quran_reader_base.py,sha256=iUZCP7kfUASGwAxrwreIh9bbrvtJh8HKzs1_G4u-tUg,6609
+mydeen/services.py,sha256=kDGA9Q-aTm69yvxtRs3nIiUIlBGu0haZ9Dgt5tOfpaE,1315
+mydeen/yt_services.py,sha256=110u4jxNr6Eix-ONBBFfg8QEGJfCOqDDn2JqG4MTubM,5676
+mydeen-0.3.0.dist-info/METADATA,sha256=OoS5vz9Kap4DPwLueM-tHlwr3qQWXsEG1B2n45Fc3xw,3954
+mydeen-0.3.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+mydeen-0.3.0.dist-info/RECORD,,
