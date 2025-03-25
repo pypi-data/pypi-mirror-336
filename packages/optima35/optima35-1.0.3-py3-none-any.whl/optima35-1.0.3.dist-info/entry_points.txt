@@ -1,0 +1,2 @@
+[console_scripts]
+optima35 = optima35.__main__:main

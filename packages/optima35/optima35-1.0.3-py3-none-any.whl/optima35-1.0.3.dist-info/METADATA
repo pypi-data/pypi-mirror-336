@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: optima35
+Version: 1.0.3
+Summary: optima35 is a package to modify images, using pillow and piexif.
+Project-URL: Source, https://gitlab.com/CodeByMrFinchum/optima35
+Project-URL: Documentation, https://gitlab.com/CodeByMrFinchum/optima35/-/blob/main/README.md
+Project-URL: Changelog, https://gitlab.com/CodeByMrFinchum/optima35/-/blob/main/CHANGELOG.md
+Author: Mr. Finchum
+License-File: LICENSE.md
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4.0,>=3.8
+Requires-Dist: piexif
+Requires-Dist: pillow
+Description-Content-Type: text/markdown
+
+Uses pillow and piexif to modify images, see [optima35](https://gitlab.com/CodeByMrFinchum/optima35) gitlab for more information.
+Install [OptimaLab35](https://pypi.org/project/OptimaLab35/) in pip for a GUI.
