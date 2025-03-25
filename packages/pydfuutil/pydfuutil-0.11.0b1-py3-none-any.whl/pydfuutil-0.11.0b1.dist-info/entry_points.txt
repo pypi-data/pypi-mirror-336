@@ -1,0 +1,5 @@
+[console_scripts]
+pydfuutil = pydfuutil.__main__:main
+pydfuutil-lsusb = pydfuutil.lsusb:main
+pydfuutil-prefix = pydfuutil.prefix:main
+pydfuutil-suffix = pydfuutil.suffix:main
