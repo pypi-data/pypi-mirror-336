@@ -1,0 +1,7 @@
+kuva_geometry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuva_geometry/constants.py,sha256=09WJ-hRSYc_b7Xh9jzEJF_xPEFlBtz5S_GK0KbC4sXo,441
+kuva_geometry/ellipsoid.py,sha256=EYPYCllh_apTBa6VNJO7trf_4tqjtMcNdgv7RQclMLc,8015
+kuva_geometry/geometry.py,sha256=hTDKtWrLcZNQhT9OiLPdHUdZ1zREzBYBeTbLN07SSt8,10528
+kuva_geometry-0.1.1.dist-info/METADATA,sha256=hz9mZM1Nyx0Xqum9MYcVqUEsWG0qhbCd_YvEZVhDSm4,720
+kuva_geometry-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+kuva_geometry-0.1.1.dist-info/RECORD,,
