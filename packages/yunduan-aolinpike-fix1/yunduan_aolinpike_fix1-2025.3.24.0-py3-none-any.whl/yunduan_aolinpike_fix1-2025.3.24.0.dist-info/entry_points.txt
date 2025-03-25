@@ -1,0 +1,3 @@
+[console_scripts]
+YunduanAolinpikeFix1 = YunduanAolinpikeFix1.__main__:main
+yunduan-aolinpike-fix1 = YunduanAolinpikeFix1.__main__:main
