@@ -1,0 +1,9 @@
+__pycache__
+data
+.gitignore
+appdist/
+build/
+shells/
+spec/
+.DS_Store
+.VSCodeCounter
