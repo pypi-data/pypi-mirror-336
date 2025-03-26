@@ -1,0 +1,2 @@
+recursive-include MatlabBlenderIO *.m *.stl *.csv *.txt
+recursive-exclude MatlabBlenderIO *.blend *.blend1 *.png *.jpg
