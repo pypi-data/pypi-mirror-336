@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: numalg
+Version: 1.0.6
+Summary: Numerical analysis algorithms
+Home-page: https://github.com/isabel-mc/pip
+Author: Isabel Reis dos Santos
+Author-email: isabel.santos@tecnico.ulisboa.pt
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Numerical analysis algorithms
+
+1. Error theory: floating point systems, relative and absolute errors, significant digits, conditioning and stability.
+2. Nonlinear equations: Fixed point, Newton-Raphson, Secant and bisection. 
+3. Nonlinear systems: Generalized Newton method.
+4. Linear systems: Jacobi, Gauss-Seidel and SOR methods.
+5. Function approximation: Polynomial interpolation (Newton and Lagrange). Linear and cubic splines. Least squares method.
+6. Numerical integration: Mid point, Trapezoidal, Simpson and Gauss-Legendre with two and three nodes. 
+7. Ordinary differential equations (one equation or a system of equations): Euler, Taylor of order 2. Implicit Euler method. Runge-Kutta methods of order 2 (Heun and Midpoint), and Runge-Kutta of order 4.
+8. Boundary value problems: finite difference method.
+
+&copy; Isabel Reis dos Santos, IST Ulisboa, 2024
