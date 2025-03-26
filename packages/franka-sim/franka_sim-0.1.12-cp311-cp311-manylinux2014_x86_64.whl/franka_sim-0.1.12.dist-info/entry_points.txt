@@ -1,0 +1,2 @@
+[console_scripts]
+run-franka-sim-server = franka_sim.run_server:main
