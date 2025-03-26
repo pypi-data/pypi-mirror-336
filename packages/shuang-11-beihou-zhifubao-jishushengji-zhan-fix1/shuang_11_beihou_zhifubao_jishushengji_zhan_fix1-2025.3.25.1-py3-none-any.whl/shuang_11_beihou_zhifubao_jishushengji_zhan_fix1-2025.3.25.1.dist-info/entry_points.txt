@@ -1,0 +1,3 @@
+[console_scripts]
+Shuang11BeihouZhifubaoJishushengjiZhanFix1 = Shuang11BeihouZhifubaoJishushengjiZhanFix1.__main__:main
+shuang-11-beihou-zhifubao-jishushengji-zhan-fix1 = Shuang11BeihouZhifubaoJishushengjiZhanFix1.__main__:main
