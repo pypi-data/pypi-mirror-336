@@ -1,0 +1,12 @@
+aws_grobid/__init__.py,sha256=dexC5ua0W3YG8NzCoxSMR4iiHgu3xhLtH-BUDPa0Ht8,609
+aws_grobid/core.py,sha256=ZMG-8TAEPz5eCZCxwsCDqS6zXIIAiQLevGT24KRB-i8,18094
+aws_grobid/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_grobid/bin/__init__.py,sha256=6zyOgHxBzvhu-kYBzfowuTGOEPVM10a2Fj2wIo5AGVE,19
+aws_grobid/static/nvidia-docker-install.sh,sha256=ey_Cjms6K2y7et7l7gFga6IDzxYOaaJKm8xVIZeIL9o,529
+aws_grobid/static/startup-script.jinja,sha256=8R6sqzBxqkrS1btSilkYyfd3Tx6bM48w1_Z89wmsDQY,766
+aws_grobid/static/ubuntu-amis.json,sha256=r_PhNw6bRrEDMLUkwIMa0ali0GcyLx7jHcalV-9ZM34,12686
+aws_grobid-0.1.0.dist-info/licenses/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+aws_grobid-0.1.0.dist-info/METADATA,sha256=AJhiYlpFYKuXjY2LQEAD-flnDplGvcL8d_-Rcb8reiA,3251
+aws_grobid-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+aws_grobid-0.1.0.dist-info/top_level.txt,sha256=183L8WQ117q-_Q6cGApsqyU8XRBMx9LqMlzQZSky-Fo,11
+aws_grobid-0.1.0.dist-info/RECORD,,
