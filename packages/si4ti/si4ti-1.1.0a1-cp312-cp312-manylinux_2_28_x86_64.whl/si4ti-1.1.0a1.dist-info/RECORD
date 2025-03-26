@@ -1,0 +1,7 @@
+si4ti/__init__.py,sha256=2HxS3KPoXp3XytAllBKCflnMWvPL7qfy4Hqdi8Vhwwk,3933
+si4ti/_si4ti_python.cpython-312-x86_64-linux-gnu.so,sha256=-qRLi9SfLhEafw3blZOJTvagX2BKJkPOj34Q7X4YXOY,359649
+si4ti.libs/libgomp-c9fef706.so.1.0.0,sha256=_Ai_72yETOOeinJcxTMGwbFNgBC5DWw0eKgnqw5F6YQ,253289
+si4ti-1.1.0a1.dist-info/METADATA,sha256=gR1RnaP7qXQHT24_Ofn3nlJkHYI7Tyq4CHXhNa2YYxY,36101
+si4ti-1.1.0a1.dist-info/WHEEL,sha256=xzH26Gt9Qq9F-BV1MViXB9rWNxwQBFDqpbAdP7YC-ek,118
+si4ti-1.1.0a1.dist-info/RECORD,,
+si4ti-1.1.0a1.dist-info/licenses/LICENSE,sha256=bafd9Az-pvVolhglsUR46HmHX2rQM_rVeImuW9UhA_Q,26527
