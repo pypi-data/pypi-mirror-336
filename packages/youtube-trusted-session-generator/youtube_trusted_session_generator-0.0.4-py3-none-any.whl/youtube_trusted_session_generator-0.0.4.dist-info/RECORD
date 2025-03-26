@@ -1,0 +1,10 @@
+potoken_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potoken_generator/extractor.py,sha256=aE7yTxNPom6A67ANQttJLbmYSX488aS4V5oQ_pZzSLQ,5812
+potoken_generator/main.py,sha256=j71sfR570P6swp6VLeUVpVhWRIt_uQ-t27euUYGlo9A,4148
+potoken_generator/server.py,sha256=xvee64kVc8Icw3r_a0ug88PqNnY1ZCtqWVdbXTwABvo,2781
+youtube_trusted_session_generator-0.0.4.dist-info/licenses/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+youtube_trusted_session_generator-0.0.4.dist-info/METADATA,sha256=i8ymt1Vz7k7666PA20Xkv3BliwJ9zYP_zFZSqIMagcw,3484
+youtube_trusted_session_generator-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+youtube_trusted_session_generator-0.0.4.dist-info/entry_points.txt,sha256=1SzOVl9kTW7n8Akmo-g6_ZiZwzL_gBdjQX4FVJCTcIw,74
+youtube_trusted_session_generator-0.0.4.dist-info/top_level.txt,sha256=pXViLPJv-i9gj-x_rsVKTmX2XvzFtO7atw4S4ce24uM,30
+youtube_trusted_session_generator-0.0.4.dist-info/RECORD,,
