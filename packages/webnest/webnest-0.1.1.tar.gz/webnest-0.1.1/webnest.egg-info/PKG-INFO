@@ -1,0 +1,78 @@
+Metadata-Version: 2.4
+Name: webnest
+Version: 0.1.1
+Summary: webnest (yahia web app package or framework) is a simple framework to create web application
+Home-page: https://github.com/Black4315/webnest
+Author: Yahia Badr
+Author-email: yahialord4315@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Requires-Python: >=3.12.3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: colorama==0.4.6
+Requires-Dist: black==24.8.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# webnest
+
+webnest framework for making web app using python
+
+## Installation
+
+You can install the package using pip:
+
+
+```bash
+pip install webnest
+```
+
+## Project
+### For create new project:
+```bash
+webnest createproject 'project-name'
+```
+### Every action in project runs from `handle.py` in your project directory
+
+
+### Available Commands
+
+In the project directory, you can run server using this command:
+```bash
+python handle.py runserver
+``` 
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000) to view it in your browser.
+
+If you want to connect to database and migrate table and columns :
+- Go to `models.py` in your project directory then add your model ,
+    It will be somthing like this:
+    ```ruby
+    class User (Model):
+        name = Model.Fields.TextField(verbose_name='username')
+        password = Model.Fields.TextField(verbose_name='password')
+        age = Model.Fields.IntField(verbose_name='password')   
+    ```
+- Then run this commnad to render your changes in `treks` folder in your project directory:
+    ```bash
+    python handle.py rendertreks
+    ``` 
+
+- After render your changes in `treks` folder u have to use this command to trek your changes to database:
+    ```bash
+    python handle.py trek
+    ``` 
+> [!NOTE]  
+> webnest framework support `sqlite3` only in this version , It will support another type of DB in Upcoming releases , Allah willings
+
