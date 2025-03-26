@@ -1,0 +1,26 @@
+*.pyc
+#*.txt
+# *.csv
+imlf/json_files/*
+checkpoint
+mymodel.tflearn.*
+*.egg-info
+dist
+*.log
+.vscode/*
+.cache
+build/*
+json_files/*
+algo_data/*
+.pytest_cache/
+.scannerwork/
+sonar-report/
+.coverage
+__pycache__/
+structured_data_regressor/
+model_files/*
+logs/*
+*.pid
+demo/*
+tests/*
+competition/*
