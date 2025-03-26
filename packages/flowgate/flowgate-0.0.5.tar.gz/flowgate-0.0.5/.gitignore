@@ -1,0 +1,16 @@
+.pyc
+__pycache__
+.venv/*
+.mypy_cache/
+.cache/*
+flowgate.egg-info/*
+.coverage
+*.lprof
+coverage.xml
+
+.pytest_cache/
+.idea/
+build/
+dist/
+.pytest_cache
+.eggs
