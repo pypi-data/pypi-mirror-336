@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: dsbase
+Version: 0.4.0
+Summary: Delightful Python utility library with power and personality
+Project-URL: repository, https://github.com/dannystewart/dsbase
+Author-email: Danny Stewart <danny@stewart.cc>
+License-Expression: GPL-3.0-or-later
+Requires-Python: >=3.12
+Requires-Dist: halo<0.0.32,>=0.0.31
+Requires-Dist: mysql-connector-python<10.0.0,>=9.2.0
+Requires-Dist: natsort<9.0.0,>=8.4.0
+Requires-Dist: packaging<25.0,>=24.2
+Requires-Dist: platformdirs<5.0.0,>=4.3.7
+Requires-Dist: pygments<3.0.0,>=2.19.1
+Requires-Dist: python-dateutil<3.0.0,>=2.9.0.post0
+Requires-Dist: python-dotenv<2.0.0,>=1.0.1
+Requires-Dist: pyyaml<7.0.0,>=6.0.2
+Requires-Dist: requests<3.0.0,>=2.32.3
+Requires-Dist: send2trash<2.0.0,>=1.8.3
+Requires-Dist: termcolor<3.0.0,>=2.5.0
+Requires-Dist: tomlkit<0.14.0,>=0.13.2
+Requires-Dist: types-requests<3.0.0.0,>=2.32.0.20250306
+Requires-Dist: types-send2trash<2.0.0.0,>=1.8.2.7
+Requires-Dist: tzdata>=2025.2
+Requires-Dist: tzlocal>=5.3.1
+Requires-Dist: watchdog<7.0.0,>=6.0.0
+Description-Content-Type: text/markdown
+
+# dsbase
+
+This is a delightful Python utility library that brings power and personality to your toolkit.
+
+It contains various helpers refined through years of practical development, including an elegant logger, an environment variable manager, a path helper, database interfaces, file and media processing, and various other helpers that make common tasks a little easier or more joyful. Developed for personal use, but always to high standards of quality and flexibility.
+
+**Note:** This library is constantly growing and evolving, so for stability you may want to pin specific versions for now. I try to be careful about breaking changes but development is still very active.
+
+## Features
+
+Some of the features include:
+
+- `LocalLogger` for elegant and sophisticated logging that you'll love
+- `EnvManager` for clear setup and access to environment variables
+- `PathKeeper` for convenient cross-platform access to common paths
+- Thread-safe `Singleton` metaclass for use in any project
+- Drop-in `argparse` replacement with easier formatting
+- Simple helper for comparing files and showing diffs
+- Database helper interfaces for MySQL and SQLite
+- Helpers for highly customizable copying, deleting, and listing of files
+- Media helpers for audio and video transcoding using `ffmpeg`
+- Notification helpers for email and Telegram
+- Simple progress indicators and helpers for common shell tasks
+- Loading animations that are both simple and charming
+- Comprehensive collection of text manipulation tools
+- Various time parsers and utilities, including a time-aware logger
+
+## Installation
+
+This is a monorepo containing a number of my packages. To install the main `dsbase` library:
+
+```bash
+pip install dsbase
+```
+
+To install my various other scripts from the `packages` directory:
+
+```bash
+pip install dsbin      # My script collection
+pip install dsupdater  # My OS and software updater
+pip install evremixes  # My remix downloader
+pip install iplooker   # My IP lookup script
+pip install pybumper   # My Python version bumper
+pip install workcalc   # My work time spent calculator
+```
