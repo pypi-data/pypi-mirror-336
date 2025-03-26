@@ -1,0 +1,11 @@
+ariana/__init__.py,sha256=rx4AGHQYnx1o1sOTWeU39UIk4fKIKaN5Zn9Y9Vylp-8,2724
+ariana/bin/ariana-linux-x64,sha256=zUL7fDxwQXcAeVDAI-vs-zjzwlW5ykm7pU-_JkWbGNo,5348056
+ariana/bin/ariana-macos-arm64,sha256=IqrSgV1bgwb_mm27nJLaUOK5tc3RjAOplYTYtJBjqMg,3705072
+ariana/bin/ariana-macos-x64,sha256=3dPBJhi8CxwplRQL7T7iIyEdL7h33KpIX6iXOZ832gg,4450584
+ariana/bin/ariana-windows-x64.exe,sha256=iONezGVEqXHRURW-vkG19qQraqVIIXWjstkRHBN7sVo,4547584
+ariana-0.3.5.dist-info/licenses/LICENCE.txt,sha256=zNpWwX96t4RTtXj0eztb4WVGsU5mMvGSnFNzwJqDTeU,1562
+ariana-0.3.5.dist-info/METADATA,sha256=Ki60I3A-ofnsBe5gwQze9bXOnv-i9rylD00p-LK4ojM,330
+ariana-0.3.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ariana-0.3.5.dist-info/entry_points.txt,sha256=Uwwkh4oJFB6_ZaBtmne72mmTKfoy1WJHdkwc2ckyp4k,39
+ariana-0.3.5.dist-info/top_level.txt,sha256=zJQOkaAZE24EXjD_eaAn22qPpPp89Bv3UL9UKfdWy0A,7
+ariana-0.3.5.dist-info/RECORD,,
