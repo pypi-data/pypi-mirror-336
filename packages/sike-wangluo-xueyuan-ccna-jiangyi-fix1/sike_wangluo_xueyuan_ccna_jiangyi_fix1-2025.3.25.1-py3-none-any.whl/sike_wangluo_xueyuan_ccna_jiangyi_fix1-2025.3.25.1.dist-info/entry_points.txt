@@ -1,0 +1,3 @@
+[console_scripts]
+SikeWangluoXueyuanCcnaJiangyiFix1 = SikeWangluoXueyuanCcnaJiangyiFix1.__main__:main
+sike-wangluo-xueyuan-ccna-jiangyi-fix1 = SikeWangluoXueyuanCcnaJiangyiFix1.__main__:main
