@@ -1,0 +1,2 @@
+[console_scripts]
+yt-dlp-proxy = yt_dlp_proxy.main:main

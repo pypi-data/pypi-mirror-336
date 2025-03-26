@@ -1,0 +1,10 @@
+yt_dlp_proxy/main.py,sha256=-kYaw2PHzpQ37rsT1ZfcKkU73NOPVuK4AjlOcDg1Fbs,6188
+yt_dlp_proxy/proxy_provider.py,sha256=NcFQJ9o-8XpogC5vWONmtp1NE7QtGWTtMKjFElb1SLM,84
+yt_dlp_proxy/proxy_providers/onworks_provider.py,sha256=fHJulb7WCaCVXoKePm1TPAE-YRRk3UPjN12nv5YtmAA,1184
+yt_dlp_proxy/proxy_providers/sandvpn_provider.py,sha256=p3f8VFyAgJ5JdH6C1ONMJVMQ7QnrwEsV3ZdlDxA2gyo,450
+yt_dlp_proxy/proxy_providers/vnnet_provider.py,sha256=h6uQ_MJPIqIYtuFQ9A_HixZsRt9M4ylnUQ60PJuT8Jo,908
+yt_dlp_proxy-0.1.0.dist-info/METADATA,sha256=nwlTdTAarN0u_NXQxAloz5a2NwpF-KTVG5rJMfFwdJQ,4069
+yt_dlp_proxy-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+yt_dlp_proxy-0.1.0.dist-info/entry_points.txt,sha256=0aw8KYKgdzRwXlf6xFmHS-9doD0Tglgorun6Q9ci9Zw,56
+yt_dlp_proxy-0.1.0.dist-info/top_level.txt,sha256=EBXAnihpk_98OJ-H29BySj4VqnQYZS0aFUXZ22-4Eew,13
+yt_dlp_proxy-0.1.0.dist-info/RECORD,,
