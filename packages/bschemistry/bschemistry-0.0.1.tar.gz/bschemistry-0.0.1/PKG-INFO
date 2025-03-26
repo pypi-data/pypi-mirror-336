@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: bschemistry
+Version: 0.0.1
+Summary: Basic chemistry
+Project-URL: Homepage, https://github.com/Axel00x/basic-chemistry
+Project-URL: Issues, https://github.com/Axel00x/basic-chemistry
+Author: Axel00x
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# bschemistry
+#### v0.1.0
