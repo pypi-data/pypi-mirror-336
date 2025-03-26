@@ -1,0 +1,24 @@
+[project]
+name = "mcp-gaodeweather-server"
+version = "0.1.2"
+description = "这是一个使用高德地图的天气接口,获取当前城市天气的demo"
+readme = "README.md"
+authors = [
+    { name = "yangyanxing", email = "yanxingyang@gmail.com" }
+]
+keywords= ["mcp", "gaodeweather", "server"]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.5.0",
+]
+
+[project.scripts]
+mcp-gaodeweather-server = "mcp_gaodeweather_server:main"
+
+[project.urls]
+Homepage = "https://github.com/kevinkelin/mcp-gaodeweather-server"
+Issues = "https://github.com/kevinkelin/mcp-gaodeweather-server/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
