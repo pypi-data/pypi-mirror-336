@@ -1,0 +1,24 @@
+palettum/__init__.py,sha256=ujNmyvLpBl4sQ2Bp62NcIV-Z8UIi3MPlKUCN9EGCYnc,406
+palettum/cli.py,sha256=FG6NgLJlNiIv4MFyNNRbYezaVIceBF4D1VK4sPJL5Co,21938
+palettum/gif.dll,sha256=8Qv7xmvDLDgKKLmV1MlYzkhSvl6Ys6jmM3ovTgwI46E,36352
+palettum/libsharpyuv.dll,sha256=M4M5_ncG1DcHPYFdkWPtVeyq8VCzBVjpMVnx8UMsZfY,25600
+palettum/libwebp.dll,sha256=6sGq_wWS19b-1wPMFc2AY-bmSV-Y19DRL4P2oE3v_NQ,367616
+palettum/mtpng.dll,sha256=kW5ViwAUwrbhoZdtecddXKKO220zBsBMsN-xJOdHX8g,385024
+palettum/palettum.cp310-win_amd64.pyd,sha256=N0PxuhRKDbY249AQOnCwE1PDhQc6HSOOCtbUu46DdZ4,345600
+palettum/spng.dll,sha256=sTnUuZFtJuVkihnPryXrmuTuzL0NHNYc1wk7i7wWCmY,69120
+palettum/turbojpeg.dll,sha256=R_pfY8PrjX554tXP_ojJJ6XmEVe5ox_oH-sfZAzkIUY,809984
+palettum/zlib1.dll,sha256=szlpYOH-iA0M36A0fVgaLOHnf6xMinrgZY8OSnp3sj4,89088
+palettum/palettes/Catppuccin Frappe.json,sha256=GBEemwm1G47AAvaJdypCC3cpJutu2QHmC8SMpRAJ_Zk,1830
+palettum/palettes/Catppuccin Latte.json,sha256=6aabjAzZ_BJTmaIj54pIs1WVrlPYKSYYupa1v7rs8s0,1825
+palettum/palettes/Catppuccin Macchiato.json,sha256=BzqYk6BoteCto212XGSpo7TnxY-qKjXmofMzWaIilkY,1835
+palettum/palettes/Catppuccin Mocha.json,sha256=R2phKDKy8AhbuGFpq8eNXJQ1jorgQBnPm-DUkscVslc,1826
+palettum/palettes/Dracula.json,sha256=kmeb4Q034jMUDj6er_zOx2WzjqNgcWjPbCk3EnTSgg4,911
+palettum/palettes/Nord.json,sha256=MMwxXui-MhkBq7yXyrlyW8TsPQzGhYwVTNAcUsRg87Q,1151
+palettum/palettes/gruvbox.json,sha256=PTByQ_R7cS9PB9Ro55HKWHnEmxY4P7_zLezvqe902W8,2499
+palettum/palettes/r_place 2022.json,sha256=V668w1QeetILA93TnGXRXk7UsQbiFhFFVGwD9GuEpt8,1665
+palettum-0.3.8.dist-info/licenses/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+palettum-0.3.8.dist-info/METADATA,sha256=OHm58mrrh2misZvsPpxOvAdwayQz0eCx2X_yvQOsM4s,687
+palettum-0.3.8.dist-info/WHEEL,sha256=xtqxYTqke_XhXNhgwydvlroVayIzBVjJDMBpIgge99s,101
+palettum-0.3.8.dist-info/entry_points.txt,sha256=HWUalUr5nAYCwCn6R4L9-5DjfnFFoIwfPS-6u5w3Gm0,47
+palettum-0.3.8.dist-info/top_level.txt,sha256=ZFGa2zTZRgKDo1c-Vk89UcFbwLo0Ifh_eBBUyneyZ7Y,9
+palettum-0.3.8.dist-info/RECORD,,
