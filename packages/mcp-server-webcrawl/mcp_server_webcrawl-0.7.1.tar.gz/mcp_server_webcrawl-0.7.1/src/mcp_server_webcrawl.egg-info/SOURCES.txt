@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+license.txt
+pyproject.toml
+setup.py
+src/mcp_server_webcrawl/__init__.py
+src/mcp_server_webcrawl/main.py
+src/mcp_server_webcrawl/settings.py
+src/mcp_server_webcrawl/settings_local.py
+src/mcp_server_webcrawl.egg-info/PKG-INFO
+src/mcp_server_webcrawl.egg-info/SOURCES.txt
+src/mcp_server_webcrawl.egg-info/dependency_links.txt
+src/mcp_server_webcrawl.egg-info/entry_points.txt
+src/mcp_server_webcrawl.egg-info/requires.txt
+src/mcp_server_webcrawl.egg-info/top_level.txt
