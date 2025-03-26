@@ -1,0 +1,7 @@
+pandas
+numpy
+lmfit
+matplotlib
+astropy
+astroquery
+astroplan
