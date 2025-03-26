@@ -1,0 +1,16 @@
+gdMetriX/__init__.py,sha256=YpCM0WspDAnpEd7ZC7hwuplQVcLbygSkFwPbHFIvj4M,2007
+gdMetriX/boundary.py,sha256=yEK9mJMuqGa_MiakZ1ttIO5FfFRnn3B3JLU_EudwhVU,9039
+gdMetriX/common.py,sha256=o-A9WHxa35ZS0Gy_3jsh5ih_okxhNk8TBzUvgXw6jTk,11491
+gdMetriX/crossing_data_types.py,sha256=C_YISH_FHLdZTIvYkIArqorFi_BwhL8br_5DUdeeaDg,15183
+gdMetriX/crossings.py,sha256=h0UjfG0UivZnfRtY_1XFdWkhOevGLFqUqLCTInqCzaQ,38994
+gdMetriX/datasets.py,sha256=H3euoLPla7ib8Yxxtk0pMEX2wdHMsq3_RIKjZCslnyA,14044
+gdMetriX/distribution.py,sha256=Pn95kh9wssbHFK9KNitOAtfIsUkjlg0goILkYgJ27t8,25463
+gdMetriX/edge_directions.py,sha256=ij_SxzyA46-XiNTNkmZPv3IB3adJIQkqOQRGOy0TG2k,11862
+gdMetriX/symmetry.py,sha256=D-LRYaDq2OQKcMqFL1h8G9fbjouAP19CBwy2CGGnvo4,30615
+gdMetriX/utils/avl_tree.py,sha256=a-p3eMOSzjIWt9edGFjpX8YpLGlO53ymsJN1Lkt1AqI,17577
+gdMetriX/utils/edge_orientations.py,sha256=j0tkEe4qHvQ3qxuB2W7x6YIuQGiQeGZGkwrarqms4pI,3118
+gdMetriX/utils/numeric.py,sha256=vtVzFY_K990mzq9Cj4HS0mjBPk3dXM2r3AeBDY6T4eM,2178
+gdmetrix-0.0.4.dist-info/METADATA,sha256=IMkbSoz_ETwKhTK7VKwInunKALcZjW4RF91iEtiRVCs,45478
+gdmetrix-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gdmetrix-0.0.4.dist-info/licenses/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+gdmetrix-0.0.4.dist-info/RECORD,,
