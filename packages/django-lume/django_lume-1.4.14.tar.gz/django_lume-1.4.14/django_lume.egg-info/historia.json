@@ -1,0 +1,77 @@
+[
+  {
+    "revisio": "3a5176c44f479028347d95fb8308ea40ef91e0a3",
+    "versio": "1.4.14",
+    "kuvaus": "Korvattu `field.attname` metodikutsulla `field.get_attname()`"
+  },
+  {
+    "revisio": "fd8c7b32bac8d7e871cdd00aa33e7975440c5a2e",
+    "versio": "1.4.13",
+    "kuvaus": "Annetaan parametri `Lumekentta()._kysely(kentta=self)`, kun lambda ottaa sen vastaan"
+  },
+  {
+    "revisio": "e95b3d88cff137c976e9c5fd715a3055273f0fdd",
+    "versio": "1.4.12",
+    "kuvaus": "P\u00e4ivitetty projekti- ja tox-m\u00e4\u00e4ritys"
+  },
+  {
+    "revisio": "1a2cbea3a293426d63b4f5ec2a450e42b4ff3cb0",
+    "versio": "1.4.11",
+    "kuvaus": "Lis\u00e4tty listaus eri lumekenttien tyypeist\u00e4"
+  },
+  {
+    "revisio": "7bb517a9b49083633f2249ef5b97d53bd0efdc19",
+    "versio": "1.4.10",
+    "kuvaus": "Viilauksia\n\n* parametrisoidut optimointity\u00f6kalut paikallisen laskennan yhteydess\u00e4\n* ohitetaan periytetyt lumekent\u00e4t p\u00e4\u00e4llekk\u00e4isi\u00e4 kentti\u00e4 tutkittaessa\n* estetty rekursio `Model.get_deferred_fields`-metodin puukotuksessa\n* poikkeus, mik\u00e4li puukotettua (Django-) koodia ei l\u00f6ydy"
+  },
+  {
+    "revisio": "d475d204401a19b648c9f791797d969d5de672ec",
+    "versio": "1.4.9",
+    "kuvaus": "Django 4.2/5.0-yhteensopivuus"
+  },
+  {
+    "revisio": "4a0a6adf71b16f7b20643c277fc60d4434fa5e47",
+    "versio": "1.4.8",
+    "kuvaus": "Lis\u00e4tty tox-testit"
+  },
+  {
+    "revisio": "5c13abe16373ea772666b613e088cf167c47d044",
+    "versio": "1.4.7",
+    "kuvaus": "Django 4.1 -yhteensopivuus"
+  },
+  {
+    "revisio": "b0b5aa1a53efcbb9c1d073b74a767a8384a64f6b",
+    "versio": "1.4.6",
+    "kuvaus": "P\u00e4ivitetty k\u00e4ytt\u00f6oikeusasiakirja"
+  },
+  {
+    "revisio": "79f270d616e308983640bb6558f1d0957ab4db75",
+    "versio": "1.4.5",
+    "kuvaus": "Django 4.0 -yhteensopivuus"
+  },
+  {
+    "revisio": "3157dc092af4afba062b7657c1f8c18b020c3892",
+    "versio": "1.4.4",
+    "kuvaus": "Korjattu FM2O-lumeviittauksen k\u00e4sittely"
+  },
+  {
+    "revisio": "5fc8ad8ad7cdfee75c6a712db90500e82c62bdf3",
+    "versio": "1.4.3",
+    "kuvaus": "PEP 517 -paketointi"
+  },
+  {
+    "revisio": "8ac87cb60ecfab738cdae2931d61690733227b13",
+    "versio": "1.4.2",
+    "kuvaus": "Valmius `prefetch_related`-aineiston hy\u00f6dynt\u00e4miseen lumeviittauksen laskennassa\n\n* oma saateluokkansa viittauskentt\u00e4\u00e4n liittyv\u00e4n m\u00e4\u00e4reen periytt\u00e4miseen\n* mahdollisuus palauttaa `EI_ASETETTU` laskentafunktiolta: rivikohtainen haku"
+  },
+  {
+    "revisio": "2cad32c0d00739b5097fc4a039fe9afc900b8160",
+    "versio": "1.4.1",
+    "kuvaus": "Nollataan lomakekent\u00e4n `EI_ASETETTU`-oletusarvo"
+  },
+  {
+    "revisio": "03b1eaddc3885661acf37b0927f7b46d5fab0622",
+    "versio": "1.4",
+    "kuvaus": "Julkaisu"
+  }
+]

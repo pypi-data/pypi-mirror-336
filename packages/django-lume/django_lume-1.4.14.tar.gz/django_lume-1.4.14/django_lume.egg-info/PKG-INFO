@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: django-lume
+Version: 1.4.14
+Summary: Django-tuki lume- eli näennäiskentille
+Home-page: https://github.com/an7oine/django-lume.git
+Author: Antti Hautaniemi
+Author-email: antti.hautaniemi@pispalanit.fi
+Requires-Dist: Django>=4.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
