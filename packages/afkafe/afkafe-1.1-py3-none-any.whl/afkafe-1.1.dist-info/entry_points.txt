@@ -1,0 +1,2 @@
+[console_scripts]
+afkafe = afkafe.__main__:cli
