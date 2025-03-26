@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: lrsplines
+Version: 1.15.0
+Summary: Add your description here
+Author-email: Eivind Fonn <evfonn@gmail.com>
+Requires-Python: <4.0,>=3.11
+Requires-Dist: lrspline>=1.15.0
+Description-Content-Type: text/markdown
+
+This is a deprecated package. Use the *lrspline* package instead. The *lrsplines* package will continue to
+maintain a dependency on *lrspline*.

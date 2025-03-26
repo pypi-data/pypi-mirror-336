@@ -1,0 +1,9 @@
+*.cpp
+*.so
+__pycache__
+/dist
+/build
+/*.egg-info
+ex.eps
+/.vscode
+/.pdm-python
