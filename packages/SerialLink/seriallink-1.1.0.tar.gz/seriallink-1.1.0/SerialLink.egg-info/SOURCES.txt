@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+SerialLink.egg-info/PKG-INFO
+SerialLink.egg-info/SOURCES.txt
+SerialLink.egg-info/dependency_links.txt
+SerialLink.egg-info/requires.txt
+SerialLink.egg-info/top_level.txt
+src/seriallink/__init__.py
