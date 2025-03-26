@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "quartier_intelligence"
+version = "0.0.1"
+description = "Integrate custom ai agents with quartier intelligence platform."
+authors = ["(Tantely Nonja) tj@fluxbuild.io"]
+license = "AGPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">= 3.10"

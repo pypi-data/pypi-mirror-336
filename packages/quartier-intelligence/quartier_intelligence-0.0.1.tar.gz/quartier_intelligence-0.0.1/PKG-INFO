@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: quartier_intelligence
+Version: 0.0.1
+Summary: Integrate custom ai agents with quartier intelligence platform.
+License: AGPL-3.0
+Author: (Tantely Nonja) tj@fluxbuild.io
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# qi-sdk
