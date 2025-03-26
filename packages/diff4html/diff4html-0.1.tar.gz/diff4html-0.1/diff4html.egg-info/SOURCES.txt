@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py
+.github/workflows/publish.yml
+diff4html/__init__.py
+diff4html/diff.py
+diff4html/html.py
+diff4html.egg-info/PKG-INFO
+diff4html.egg-info/SOURCES.txt
+diff4html.egg-info/dependency_links.txt
+diff4html.egg-info/requires.txt
+diff4html.egg-info/top_level.txt
+tests/setup.py
+tests/test_html.py
