@@ -1,0 +1,6 @@
+.env
+.DS_Store
+.venv
+.cursor/mcp.json
+**/dist/
+**/build/
