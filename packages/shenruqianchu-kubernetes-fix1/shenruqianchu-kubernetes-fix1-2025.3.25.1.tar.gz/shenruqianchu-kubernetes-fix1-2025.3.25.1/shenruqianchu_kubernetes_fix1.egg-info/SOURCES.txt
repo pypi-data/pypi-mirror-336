@@ -1,0 +1,12 @@
+README.md
+setup.py
+ShenruqianchuKubernetesFix1/README.md
+ShenruqianchuKubernetesFix1/__init__.py
+ShenruqianchuKubernetesFix1/__main__.py
+ShenruqianchuKubernetesFix1/file.pdf
+ShenruqianchuKubernetesFix1/index.html
+shenruqianchu_kubernetes_fix1.egg-info/PKG-INFO
+shenruqianchu_kubernetes_fix1.egg-info/SOURCES.txt
+shenruqianchu_kubernetes_fix1.egg-info/dependency_links.txt
+shenruqianchu_kubernetes_fix1.egg-info/entry_points.txt
+shenruqianchu_kubernetes_fix1.egg-info/top_level.txt
