@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pycalibre"
+version = "0.1.0"
+description = "A Python library for interacting with a Calibre ebook library."
+authors = [
+  "Joe Geldart <joe@joegeldart.com>",
+]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jgeldart/pycalibre"
+repository = "https://github.com/jgeldart/pycalibre"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+keywords = ["calibre", "ebook", "library", "python"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+# Add any additional dependencies here
+sqlalchemy = "^2.0.39"
+dateparser = "^1.2.1"
+types-dateparser = "^1.2.0.20250208"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+# Add any additional development dependencies here
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.1.0"]
+build-backend = "poetry.core.masonry.api"

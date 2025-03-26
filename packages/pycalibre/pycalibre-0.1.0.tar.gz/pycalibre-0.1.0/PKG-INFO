@@ -1,0 +1,92 @@
+Metadata-Version: 2.3
+Name: pycalibre
+Version: 0.1.0
+Summary: A Python library for interacting with a Calibre ebook library.
+License: MIT
+Keywords: calibre,ebook,library,python
+Author: Joe Geldart
+Author-email: joe@joegeldart.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: dateparser (>=1.2.1,<2.0.0)
+Requires-Dist: sqlalchemy (>=2.0.39,<3.0.0)
+Requires-Dist: types-dateparser (>=1.2.0.20250208,<2.0.0.0)
+Project-URL: Homepage, https://github.com/jgeldart/pycalibre
+Project-URL: Repository, https://github.com/jgeldart/pycalibre
+Description-Content-Type: text/markdown
+
+# PyCalibre
+
+PyCalibre is a Python library designed to facilitate interaction with a Calibre ebook library. It provides a set of classes and methods to manage ebooks, their metadata, and the library structure efficiently.
+
+## Features
+
+- Load and manage your Calibre library.
+- Add and remove books from the library.
+- Search and retrieve book information.
+- Handle ebook metadata with ease.
+
+## Installation
+
+To install PyCalibre, you can use Poetry. First, ensure you have Poetry installed, then run:
+
+```bash
+poetry install
+```
+
+## Usage
+
+To use PyCalibre, you can start by importing the library and initializing your Calibre library instance. Here’s a simple example:
+
+```python
+from pycalibre import Library
+
+with Library("path/to/library") as library:
+  # Do stuff here
+```
+
+The `Library` class acts as a context manager, so you don't need to worry about cleaning up.
+
+You can then easily find books in your library by different criteria:
+
+```python
+# ... within a Library context
+books = library.find_books(author="Austen")
+for book in books:
+  print(book.title)
+```
+
+Updating books is straightforward as well:
+
+```python
+book.update(title="New title", add_tags=["New Tag"], remove_tags=["Old Tag"])
+```
+
+You can work with custom columns as if they were native ones:
+
+```python
+print(book.my_custom_column)
+book.update(my_custom_column="Hello")
+```
+
+You can also get all the formats of a book:
+
+```python
+for fmt in book.get_formats():
+  with open(fmt.file_path, 'rb') as f:
+    contents = f.read()
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes. My main motivation in making this package is to help me write maintenance and analysis scripts for my Calibre library, but I am happy for it to be extended to support the needs of others.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
