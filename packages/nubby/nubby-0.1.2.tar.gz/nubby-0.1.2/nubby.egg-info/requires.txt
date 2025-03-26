@@ -1,0 +1,8 @@
+bevy==3.0.0b2
+tramp>=2025.3.2
+
+[toml]
+tomlkit>=0.13.2
+
+[yaml]
+pyyaml>=6.0.2
