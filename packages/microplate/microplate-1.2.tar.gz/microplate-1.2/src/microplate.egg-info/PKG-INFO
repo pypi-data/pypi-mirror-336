@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: microplate
+Version: 1.2
+Summary: A package for dealing with microtiter plates
+Author-email: Justin Shumate <shumatejr@gmail.com>
+Project-URL: Homepage, https://github.com/shumatejr/microplate
+Project-URL: Issues, https://github.com/shumatejr/microplate/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: license-file
