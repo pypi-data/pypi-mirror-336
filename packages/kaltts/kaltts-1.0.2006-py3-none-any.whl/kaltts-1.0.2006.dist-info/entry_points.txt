@@ -1,0 +1,3 @@
+[console_scripts]
+kaltts = kaltts.controller:main
+
