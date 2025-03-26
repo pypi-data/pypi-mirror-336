@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+Ligare.testing.egg-info/PKG-INFO
+Ligare.testing.egg-info/SOURCES.txt
+Ligare.testing.egg-info/dependency_links.txt
+Ligare.testing.egg-info/top_level.txt
+Ligare/testing/__init__.py
+Ligare/testing/py.typed
