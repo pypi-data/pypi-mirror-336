@@ -1,0 +1,116 @@
+{
+  "allOf": [
+    {
+      "$ref": "./general_schema.json"
+    }
+  ],
+  "definitions": {
+    "Annotation_transfer": {
+      "properties": {
+        "transferred_cell_label": {
+          "type": "string",
+          "description": "Transferred cell label"
+        },
+        "source_taxonomy": {
+          "type": "string",
+          "description": "PURL of source taxonomy"
+        },
+        "source_node_accession": {
+          "type": "string",
+          "description": "accession of node that label was transferred from"
+        },
+        "algorithm_name": {
+          "type": "string",
+          "description": ""
+        },
+        "comment": {
+          "type": "string",
+          "description": "Free text comment on annotation transfer"
+        }
+      }
+    },
+    "Cell": {
+      "required": [
+        "cell_id"
+      ],
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "cell_id": {
+          "type": "string",
+          "description": "Identifier for a single cell."
+        },
+        "confidence": {
+          "type": "number",
+          "description": "Normalised confidence score"
+        },
+        "author_categories": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "Labelset": {
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "description": "A number indicating relative granularity with 0 being the most specific.  Use this where a single dataset has multiple keys that are used consistently to record annotations and different levels of granularity."
+        }
+      }
+    },
+    "Annotation": {
+      "additionalProperties": false,
+      "properties": {
+        "cell_set_accession": {
+          "type": "string",
+          "description": "An identifier that can be used to consistently refer to the set of cells being annotated, even if the cell_label changes."
+        },
+        "parent_cell_set_accession": {
+          "type": "string",
+          "description": "A list of accessions of cell sets that subsume this cell set. This can be used to compose hierarchies of annotated cell sets, built from a fixed set of clusters."
+        },
+        "transferred_annotations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Annotation_transfer"
+          }
+        },
+        "cells": {
+          "@comment": "In future we might use JSON schema OneOf to specify that this is mutually exclusive with the cell_ids property.",
+          "description": "By convention this is only used for annotation transfer labelsets.  It MUST not be combined with the 'cell_ids' field.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Cell"
+          }
+        },
+        "negative_marker_gene_evidence": {
+          "description": "List of names of genes, the absence of expression of which is explicitly used as evidence for this cell annotation. Each gene MUST be included in the matrix of the AnnData/Seurat file.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Gene names explicitly used as evidence, which MUST be in the matrix of the AnnData/Seurat file"
+          }
+        },
+        "neurotransmitter_accession": {
+          "type": "string",
+          "description": "Accessions of cell neurotransmitter associated with this cell set."
+        },
+        "neurotransmitter_rationale": {
+          "type": "string",
+          "description": "The free-text rationale which users provide as justification/evidence for supporting the neurotransmitter association.",
+          "maxLength": 2000
+        },
+        "neurotransmitter_marker_gene_evidence": {
+          "description": "List of gene names used as evidence for neurotransmitter association. Each gene MUST be included in the matrix of the AnnData/Seurat file.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Gene names explicitly used as evidence for neurotransmitter association, which MUST be in the matrix of the AnnData/Seurat file."
+          }
+        }
+      }
+    }
+  }
+}
