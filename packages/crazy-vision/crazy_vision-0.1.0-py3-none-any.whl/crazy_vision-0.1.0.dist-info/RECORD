@@ -1,0 +1,10 @@
+crazy_vision/__init__.py,sha256=mmu7kV9xBTm3Qx1vqYPd89JeWQcVbVkqYFWg9eIiH58,278
+crazy_vision/frame_processor.py,sha256=VdgOcyuP3y0mb5fMhj8_R2eRqn0Ni4XjyAC3FJuvlFU,2487
+crazy_vision/middleware.py,sha256=16VvBGrKytMSRaIVUic71c41Zwz6RbWC41vODdOmRVY,744
+crazy_vision/model_inferance.py,sha256=V2lwduCuRS6fyyLkb2bcfi8QsDkZr7fQ75NBSenDQ98,1873
+crazy_vision/video_decoding.py,sha256=v1t8cdMBxSDDErVy35fpdMscRA1S7MDnVEKLT5jUoMQ,3880
+crazy_vision-0.1.0.dist-info/LICENSE,sha256=CqS6OJpG_bB6Q6QQCW7kaItq5ofuwp9pZSRDpk_Vkk4,214
+crazy_vision-0.1.0.dist-info/METADATA,sha256=sCnMZmqVjUDj5JMA2MBqIh6cP4tKlYHzXNsdXhH4DzY,1299
+crazy_vision-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+crazy_vision-0.1.0.dist-info/top_level.txt,sha256=b869tmufT7wlhLjrQGcfoWfrIyb3FM_qFtZ27N7URg8,13
+crazy_vision-0.1.0.dist-info/RECORD,,
