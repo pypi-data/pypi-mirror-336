@@ -1,0 +1,17 @@
+certifi>=2019.3.9
+urllib3<2.0,>=1.24
+six>=1.10
+python-dateutil
+sphinx-rtd-theme
+
+[aio]
+aiohttp<3.10,>=3.6.3
+aiofiles>=0.6
+
+[test]
+pytest
+pytest-asyncio
+pyjwt
+
+[test:python_version < "3.8"]
+mock
