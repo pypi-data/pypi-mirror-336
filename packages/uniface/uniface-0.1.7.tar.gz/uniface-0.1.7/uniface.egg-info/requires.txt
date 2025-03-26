@@ -1,0 +1,9 @@
+numpy
+opencv-python
+onnx
+onnxruntime-gpu
+scikit-image
+requests
+
+[dev]
+pytest
