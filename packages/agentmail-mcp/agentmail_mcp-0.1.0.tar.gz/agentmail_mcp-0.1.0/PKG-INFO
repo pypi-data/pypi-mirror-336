@@ -1,0 +1,140 @@
+Metadata-Version: 2.4
+Name: agentmail-mcp
+Version: 0.1.0
+Summary: AgentMail MCP server for AI assistant email integration
+Project-URL: Homepage, https://agentmail.to/
+Project-URL: Bug Tracker, https://github.com/agentmail-to/agentmail-toolkit
+Author-email: Michael Kim <michael@agentmail.to>
+Requires-Python: >=3.10
+Requires-Dist: agentmail>=0.0.17
+Requires-Dist: fastmcp>=0.4.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp>=1.0.0
+Requires-Dist: mcp[cli]>=1.4.1
+Requires-Dist: python-dotenv>=1.0.0
+Description-Content-Type: text/markdown
+
+### AgentMail MCP Integration
+
+A simple **Model Context Protocol (MCP)** server that integrates with [AgentMail](https://agentmail.to) to dynamically manage email inboxes, list messages, and send or reply to emails—all through an AI assistant such as Claude. This reference implementation demonstrates how to use AgentMail’s API within an MCP server to orchestrate mailboxes on the fly.
+
+---
+
+### Important Note
+
+This is a personal project tailored to demonstrate how to integrate AgentMail into an MCP workflow. It’s a minimal example covering only basic mailbox and message operations. For real-world use, you’ll likely need to modify and expand on these ideas.
+
+---
+
+### Features
+
+- **Create new inboxes** dynamically (e.g., ephemeral or role-based)
+- **List and retrieve inboxes** to see what’s active
+- **Send emails** from any of your AgentMail inboxes
+- **Reply to messages** within existing threads
+- **List threads and messages** for a chosen inbox
+- **Retrieve attachments** for messages
+
+---
+
+### Prerequisites
+
+- **Python 3.10+**
+- **AgentMail account** (or valid API key)
+- (Optional) **Claude Desktop** or any other front-end that supports MCP commands
+
+---
+
+### Installation
+
+Below are different ways to install and run the server. Once installed, you can reference it in your Claude Desktop configuration (or run it directly) to enable email management tools.
+
+#### Option 1: PIP (Local or PyPI)
+
+If you maintain your own Python environment, simply install the package (from PyPI or a local source):
+
+```bash
+pip install agentmail-mcp
+```
+
+Then run:
+
+```bash
+agentmail-mcp-server –api-key=“YOUR_AGENTMAIL_API_KEY”
+```
+
+_(Or set `AGENTMAIL_API_KEY` in your environment instead of passing it as an argument.)_
+
+---
+
+#### Option 2: Using `uvx`
+
+If you have **uvx** available (e.g., from [uvtools](https://github.com/uvtools)), you can install the package automatically from PyPI without cloning the repository.  
+Add the following configuration to **Claude Desktop**’s config file (`claude_desktop_config.json`):
+
+```jsonc
+{
+  "mcpServers": {
+    "agentmail-mcp-server": {
+      "command": "uvx",
+      "args": ["agentmail-mcp-server"],
+      "env": {
+        "AGENTMAIL_API_KEY": "YOUR_AGENTMAIL_API_KEY"
+      }
+    }
+  }
+}
+```
+
+On macOS, the config file is typically located at:
+~/Library/Application Support/Claude/claude_desktop_config.json
+
+On Windows, it’s usually located at:
+%APPDATA%/Claude/claude_desktop_config.json
+
+After saving, restart Claude Desktop to load the new MCP server.
+
+---
+
+#### Option 3: Manual Installation
+
+If you prefer local development and need to clone or modify the source code, you can run the server with uv. Point uv to your local directory where the package code resides. For instance:
+
+```jsonc
+{
+  "mcpServers": {
+    "agentmail": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "path/to/src/agentmail_mcp",
+        "run",
+        "agentmail-mcp-server"
+      ],
+      "env": {
+        "AGENTMAIL_API_KEY": "YOUR_AGENTMAIL_API_KEY"
+      }
+    }
+  }
+}
+```
+
+Again, place this in your claude_desktop_config.json, and then restart Claude Desktop. This approach is great if you’re actively developing or customizing the source.
+
+### Usage
+
+With your server running in Claude Desktop (or another MCP client), you can prompt Claude with natural language commands that map to AgentMail MCP tools. For example:
+• “Create a new inbox named demo.”
+• “List all my inboxes.”
+• “Send an email from inbox ID abc123 to test@example.com with subject ‘Hello’ and body ‘This is a test.’”
+• “Reply to the most recent message in inbox abc123.”
+
+Internally, Claude calls the exposed MCP tools (create_inbox, list_inboxes, send_message, etc.), which in turn call the AgentMail API.
+
+### License
+
+License
+
+MIT License - This project is distributed under the MIT license. Use at your own risk.
+
+⸻
