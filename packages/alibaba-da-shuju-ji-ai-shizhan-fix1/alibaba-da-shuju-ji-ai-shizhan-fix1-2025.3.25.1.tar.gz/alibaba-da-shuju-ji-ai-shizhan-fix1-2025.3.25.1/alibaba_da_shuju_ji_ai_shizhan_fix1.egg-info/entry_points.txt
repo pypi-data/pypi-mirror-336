@@ -1,0 +1,3 @@
+[console_scripts]
+AlibabaDaShujuJiAiShizhanFix1 = AlibabaDaShujuJiAiShizhanFix1.__main__:main
+alibaba-da-shuju-ji-ai-shizhan-fix1 = AlibabaDaShujuJiAiShizhanFix1.__main__:main
