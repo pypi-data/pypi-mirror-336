@@ -1,0 +1,12 @@
+django_auto_drf/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+django_auto_drf/auto_register.py,sha256=w9-7VfvC_h735qJrpO_ZLEi65e-DZPUg7cSsNYTDBm8,317
+django_auto_drf/core.py,sha256=F6ijZew1WU3afDefbctndBl0PLsGJIxfelqXdkoRVPs,4327
+django_auto_drf/registry.py,sha256=_GDPmB4d8zBHh2PW_F6jhAn7UrtgNU4Rowf6oaBFrfE,4427
+django_auto_drf/settings.py,sha256=wTswzEGigjNrY47EUfYHgFPEPLaGNCUdFCxRAU124H4,533
+django_auto_drf/urls.py,sha256=ZmImdh8ePZ4C925Qzd9HDb-8XM6qckSbHpusSQzNDSA,705
+django_auto_drf-0.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_auto_drf-0.1.0.dist-info/METADATA,sha256=ccX3av4QACoeqP094nWXNH_r0k9hJfyIWQpTPoZpYJU,46767
+django_auto_drf-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+django_auto_drf-0.1.0.dist-info/top_level.txt,sha256=oE9pMUZdbo0m9CDhej63cCm_3tqjlXHpvWapg70lSsU,22
+django_auto_drf-0.1.0.dist-info/RECORD,,
