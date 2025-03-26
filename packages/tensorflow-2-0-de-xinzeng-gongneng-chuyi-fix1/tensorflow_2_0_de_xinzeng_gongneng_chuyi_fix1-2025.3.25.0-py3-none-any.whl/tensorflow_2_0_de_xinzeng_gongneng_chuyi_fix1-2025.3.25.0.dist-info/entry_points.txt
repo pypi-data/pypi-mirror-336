@@ -1,0 +1,3 @@
+[console_scripts]
+Tensorflow20DeXinzengGongnengChuyiFix1 = Tensorflow20DeXinzengGongnengChuyiFix1.__main__:main
+tensorflow-2-0-de-xinzeng-gongneng-chuyi-fix1 = Tensorflow20DeXinzengGongnengChuyiFix1.__main__:main
