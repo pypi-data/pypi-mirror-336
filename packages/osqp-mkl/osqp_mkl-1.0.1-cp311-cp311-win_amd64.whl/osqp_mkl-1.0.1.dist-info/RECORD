@@ -1,0 +1,10 @@
+osqp_mkl.cp311-win_amd64.pyd,sha256=qPPloeb1mMWADndfPMucNr3CxHDG5W2727MCk8SmmTc,313344
+osqp_mkl-1.0.1.data/platlib/mkl_def.2.dll,sha256=29YmQsrO1F_s8XWqRNmnDfRMGNFiN26p3kE93SJ9GvM,39144968
+osqp_mkl-1.0.1.data/platlib/mkl_intel_thread.2.dll,sha256=uhoSH3jgIXtQyIAczDpzGczx5MkZMCJI8HWnjcxFNkY,54562824
+osqp_mkl-1.0.1.data/platlib/mkl_rt.2.dll,sha256=wS6Dyl4yWxX3UkLPHXLkJYqWrwn9F4yl0buOb0P-R7c,32748552
+osqp_mkl-1.0.1.data/platlib/mkl_sequential.2.dll,sha256=Yx9_u4etdd5sE_w2sJzTxVXp3tXSXJ1tkfavEhrL_Ag,25559560
+osqp_mkl-1.0.1.data/platlib/msvcp140.dll,sha256=pMIim9wqKmMKzcCVtNhgCOXD47x3cxdDVPPaT1vrnN4,575056
+osqp_mkl-1.0.1.dist-info/DELVEWHEEL,sha256=LxghHBtL0w53-H9TQxJRcrpW03z0yKwwcnZEUw_jpJY,538
+osqp_mkl-1.0.1.dist-info/METADATA,sha256=SoTdAQHWhUOxsfFY8iKesZlj4unRYPrBmCnugx9n9E8,410
+osqp_mkl-1.0.1.dist-info/RECORD,,
+osqp_mkl-1.0.1.dist-info/WHEEL,sha256=xGZmaOXqwLlhmjR8ikRHIC1Wm-k3ULVrL-oi9GC-Mmc,106
