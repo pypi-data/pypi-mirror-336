@@ -1,0 +1,10 @@
+README.md
+setup.py
+numpyp.egg-info/PKG-INFO
+numpyp.egg-info/SOURCES.txt
+numpyp.egg-info/dependency_links.txt
+numpyp.egg-info/requires.txt
+numpyp.egg-info/top_level.txt
+numpyy/__init__.py
+numpyy/code.py
+numpyy/see.py

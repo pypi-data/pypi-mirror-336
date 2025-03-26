@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: numpyp
+Version: 0.0.2
+Summary: This is the simplest module for quick work with files.
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: IPython
+Requires-Dist: pyperclip
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Это надеюсь будет классной библиотекой
+
+func1() - 1 вопрос 
+в ней функции для решения
