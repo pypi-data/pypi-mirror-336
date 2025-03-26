@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+mcp_serverless/__init__.py
+mcp_serverless/core.py
+mcp_serverless.egg-info/PKG-INFO
+mcp_serverless.egg-info/SOURCES.txt
+mcp_serverless.egg-info/dependency_links.txt
+mcp_serverless.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
