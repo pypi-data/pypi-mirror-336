@@ -1,0 +1,27 @@
+image: continuumio/anaconda3
+
+before_script:
+  - python -m venv ~/aesoptparam
+  - source ~/aesoptparam/bin/activate
+
+format_test:
+  script:
+    - pip install -e .[test]
+    - isort aesoptparam --check-only
+    - black --check --diff aesoptparam
+
+tests_coverage: 
+  script:
+    - pip install -e .[test]
+    - pytest -s --cov-report term-missing --cov=aesoptparam ./aesoptparam
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+
+
+pages:
+  script:
+    - pip install .[docs]
+    - sphinx-build -M html docs _build
+    - mv ./_build/html public
+  artifacts:
+    paths:
+    - public

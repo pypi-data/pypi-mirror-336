@@ -1,0 +1,17 @@
+format: jb-book
+root: main
+parts:
+  - caption: How To's
+    chapters:
+      - file: HowTo/model_docs
+      - file: HowTo/json_data_render
+  - caption: API reference
+    chapters:
+      - file: API/parameters
+      - file: API/parameterized
+      - file: API/serializer
+      - file: API/example
+  - caption: Miscellaneous
+    chapters:
+      - file: changelog
+      #- file: references

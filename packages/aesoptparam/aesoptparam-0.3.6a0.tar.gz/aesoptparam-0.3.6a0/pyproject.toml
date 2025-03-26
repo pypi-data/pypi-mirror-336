@@ -1,0 +1,42 @@
+[project]
+name="aesoptparam"
+authors = [{name="Kenneth Loenbaek", email="kenloen@dtu.dk"}]
+maintainers = [{name="Kenneth Loenbaek", email="kenloen@dtu.dk"}]
+dependencies = [
+    "param","numpy", "scipy"
+]
+dynamic=["version"]
+
+
+[project.optional-dependencies]
+test=["pytest", "pytest-cov", "isort", "black", "jsonschema"]
+docs=[
+    "sphinx", 
+    "sphinx-design", 
+    "sphinx_book_theme", 
+    "myst-parser", 
+    "sphinx_external_toc", 
+    "sphinxcontrib.bibtex", 
+    "myst-nb", 
+    "markdown",
+    "jupytext",
+    "setuptools"
+    ]
+all = ["aesoptparam[test,docs]"]
+
+[build-system]
+requires = ["setuptools >= 61.0",  "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[tool.coverage.run]
+omit = [
+    "*test*"
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.setuptools.package-data]
+aesoptparam = ["utils/unit_library.ini"]
