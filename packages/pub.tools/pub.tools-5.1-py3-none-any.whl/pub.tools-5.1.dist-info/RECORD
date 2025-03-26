@@ -1,0 +1,13 @@
+pub/tools/__init__.py,sha256=Og5eeO9-TyROhiw5VKdIscnL59yIpgMSxvwsYvub9w0,66
+pub/tools/citations.py,sha256=ms03fwkXxn44_-bY3eks7NyRXp3Y2aJEgp5l9GwZd1I,17152
+pub/tools/config.py,sha256=SJsTHKoA9c044tgAxjH4DMovQFSDyMFCFCiKh3L7WmM,467
+pub/tools/cooking.py,sha256=Kn8CayZwHxa7kPZW8dNTseownHOsguPSN737SWUxn5Y,2119
+pub/tools/entrez.py,sha256=kMGUwvWbhQ3geE1x6LPP9LwKM_ffBZBTbjydu3vRpJw,23408
+pub/tools/formatting.py,sha256=3Nv0oqCaRIofLIDK7UCfrpTfy9fs69LTnWOdSocF9SA,8632
+pub/tools/isbn.py,sha256=k9nIskXUJD0568P-gLlYlZIXYJ7kEF4aKqRUsG3osbc,5401
+pub/tools/journals.json,sha256=AuJ7oOo6JsXx_wlnTGwQA5PDgQvMFypdK3xA2D2cAuU,1443107
+pub/tools/journals.py,sha256=3xRhGadG2hbBTFYJs2J8cnpHYERu_-c34dWCZPeUAmg,4795
+pub/tools/schema.py,sha256=v8_DDiy5lBcerPsexPgazDf450x9kgq1o5zsyj3ZpnE,8593
+pub.tools-5.1.dist-info/METADATA,sha256=fbfTVaE2nqzexTc1MRjwP14gX-YQl4Ym8s3_oXEklqc,2145
+pub.tools-5.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pub.tools-5.1.dist-info/RECORD,,
