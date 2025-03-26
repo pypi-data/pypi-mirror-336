@@ -1,0 +1,2 @@
+[Manage prompts programmatically | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/manage_prompts_programatically): LLM should read this page when managing prompts programmatically, pushing/pulling prompts to/from the LangChain Hub, or converting prompts to work with the OpenAI or Anthropic APIs directly. Provides instructions and code examples for installing packages, configuring environment variables, pushing and pulling prompts, using prompts without LangChain, and listing/deleting/liking prompts through the LangSmith SDK.
+

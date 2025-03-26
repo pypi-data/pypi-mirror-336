@@ -1,0 +1,2 @@
+[How to delete messages](https://langchain-ai.github.io/langgraph/how-tos/memory/delete-messages): LLM should read this page when attempting to manage message history in LangGraph, needing to delete specific messages from conversational state, or implementing memory management in LLM applications. This page explains how to delete messages from a LangGraph application using RemoveMessage modifiers, covering both manual deletion with message IDs and programmatic deletion within graph logic to maintain conversation history limits.
+

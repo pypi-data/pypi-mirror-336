@@ -1,0 +1,2 @@
+[Run the playground against a custom LangServe model server | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/custom_endpoint): LLM should read this page when considering how to run the LangSmith playground against a custom model server, when adding configurable fields to a custom model, and when using a custom model in the LangSmith playground. This page provides guidance on deploying a custom model server using LangServe, adding configurable fields to the model, and using the custom model in the LangSmith playground.
+

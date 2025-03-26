@@ -1,0 +1,2 @@
+[How to stream data from within a tool](https://langchain-ai.github.io/langgraph/how-tos/streaming-events-from-within-tools/): LLM should read this page when implementing streaming functionality in tools, integrating LLM outputs with custom data streams, or developing LangGraph applications with real-time feedback. This page explains how to stream data from within tools using LangGraph, covering custom data streaming with stream_mode="custom", LLM token streaming with stream_mode="messages", and implementation approaches both with and without LangChain.
+

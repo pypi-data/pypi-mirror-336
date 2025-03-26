@@ -1,0 +1,2 @@
+[How to do a Self-hosted deployment of LangGraph](https://langchain-ai.github.io/langgraph/how-tos/deploy-self-hosted/): LLM should read this page when implementing a self-hosted deployment of LangGraph, configuring required environment variables, or building Docker images for LangGraph applications. This page explains how to deploy LangGraph applications using Docker, covering environment requirements (Redis, Postgres), how to build Docker images with the LangGraph CLI, configuration using environment variables, and deployment options using Docker or Docker Compose.
+

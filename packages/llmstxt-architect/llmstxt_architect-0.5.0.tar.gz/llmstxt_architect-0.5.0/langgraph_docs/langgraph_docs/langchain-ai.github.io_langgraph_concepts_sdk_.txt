@@ -1,0 +1,2 @@
+[LangGraph SDK](https://langchain-ai.github.io/langgraph/concepts/sdk/): LLM should read this page when looking for installation instructions for LangGraph SDK, needing to choose between sync and async Python clients, or requiring SDK API references. The page covers LangGraph SDK installation for Python and JS, provides API reference links, explains the difference between synchronous and asynchronous Python clients, and includes code examples for both client types.
+

@@ -1,0 +1,2 @@
+[Template Applications](https://langchain-ai.github.io/langgraph/concepts/template_applications/): LLM should read this page when looking for LangGraph template applications, setting up a new LangGraph project, or finding reference implementations for agentic workflows. This page presents LangGraph template applications with installation requirements, available templates (including ReAct Agent, Memory Agent, Retrieval Agent, etc.), instructions for creating new apps using the CLI, deployment options, and links to further learning resources.
+

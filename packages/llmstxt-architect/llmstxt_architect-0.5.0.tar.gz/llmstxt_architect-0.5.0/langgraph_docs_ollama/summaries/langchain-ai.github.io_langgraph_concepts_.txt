@@ -1,0 +1,2 @@
+[Concepts](https://langchain-ai.github.io/langgraph/concepts/): LLM should read this page when: 1. Understanding LangGraph workflows and graph primitives 2. Learning about multi-agent systems in LLM applications 3. Implementing human-in-the-loop features in a LangGraph application LangGraph provides explanations of key concepts, including LangGraph Glossary, agentic patterns, multi-agent systems, breakpoints, human-in-the-loop, time travel, persistence, memory, streaming, and functional API.
+

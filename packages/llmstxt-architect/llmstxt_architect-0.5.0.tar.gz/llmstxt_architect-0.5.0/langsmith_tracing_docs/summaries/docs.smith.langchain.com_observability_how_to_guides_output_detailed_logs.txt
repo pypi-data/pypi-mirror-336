@@ -1,0 +1,2 @@
+[How to print detailed logs (Python SDK) | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/output_detailed_logs): LLM should read this page when needing to troubleshoot logging issues, adjusting log verbosity levels, or configuring logging for Python environments like Jupyter notebooks. Covers enabling Python's built-in logging mechanism, increasing logging verbosity for debugging, and configuring logging specifically for the LangSmith package.
+

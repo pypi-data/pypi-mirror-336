@@ -1,0 +1,2 @@
+[Open a prompt from a trace | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/open_a_prompt_from_a_trace): LLM should read this page when it needs to open a prompt from a trace for debugging or analysis, when it wants to link prompts used in code to the actual prompt definitions, when it needs to filter traces by prompt metadata This page explains how to find and open prompts from traces in the LangSmith UI, including showing the prompt link in traces, viewing prompt metadata, and filtering traces by prompt attributes
+

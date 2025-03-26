@@ -1,0 +1,2 @@
+[Multi-agent Systems](https://langchain-ai.github.io/langgraph/concepts/multi_agent/): LLM should read this page when implementing multi-agent systems, troubleshooting complex agent architectures, or designing agent communication patterns. Multi-agent systems organize LLMs into modular architectures (network, supervisor, hierarchical, custom) with different communication patterns, using Command objects for handoffs between agents, and supporting various state management approaches.
+

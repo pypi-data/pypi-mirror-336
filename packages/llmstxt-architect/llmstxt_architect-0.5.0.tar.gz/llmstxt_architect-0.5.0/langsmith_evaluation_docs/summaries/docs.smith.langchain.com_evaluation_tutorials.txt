@@ -1,0 +1,2 @@
+[Evaluation tutorials | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/tutorials): LLM should read this page when seeking evaluation tutorials for LLM applications, learning about assessment methodologies, or finding guides for testing specific AI systems. This page provides a collection of LangSmith evaluation tutorials covering how to evaluate chatbots, RAG applications, complex agents, ReAct agents with testing frameworks, and run backtests on agent versions.
+

@@ -1,0 +1,2 @@
+[LangGraph Platform Architecture](https://langchain-ai.github.io/langgraph/concepts/platform_architecture/): LLM should read this page when the LLM is asked about LangGraph Platform Architecture, Postgres persistence layer, and Redis data storage.   Postgres is used as a database to store checkpoints and server resources in LGP, while Redis stores ephemeral metadata for worker communication and is used to organize server-worker communication.
+

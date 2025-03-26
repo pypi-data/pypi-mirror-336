@@ -1,0 +1,2 @@
+[Create dashboards | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/dashboards): LLM should read this page when creating custom dashboards for monitoring metrics, visualizing agent decisions at specific nodes, and comparing performance across models or configurations. This page covers creating and configuring dashboards with charts, applying filters, comparing metrics or data series within charts, managing charts, and using expanded chart views. It also provides a user journey example for visualizing agent decisions at a node.
+

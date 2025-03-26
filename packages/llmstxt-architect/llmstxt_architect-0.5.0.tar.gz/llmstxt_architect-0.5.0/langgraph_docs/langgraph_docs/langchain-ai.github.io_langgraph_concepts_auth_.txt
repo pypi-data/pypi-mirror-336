@@ -1,0 +1,2 @@
+[Authentication & Access Control](https://langchain-ai.github.io/langgraph/concepts/auth/): LLM should read this page when implementing authentication in LangGraph Platform, designing access control for LangGraph applications, or troubleshooting security issues in LangGraph deployments. This page explains LangGraph's authentication and authorization system, covering the difference between authentication and authorization, system architecture, implementing custom auth handlers, common access patterns, and supported resources/actions for access control.
+

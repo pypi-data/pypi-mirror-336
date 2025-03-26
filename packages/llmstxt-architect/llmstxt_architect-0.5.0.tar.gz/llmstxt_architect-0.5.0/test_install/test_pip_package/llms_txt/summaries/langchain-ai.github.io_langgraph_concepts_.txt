@@ -1,0 +1,2 @@
+[Concepts](https://langchain-ai.github.io/langgraph/concepts/): LLM should read this page when needing an overview of the LangGraph framework, learning about key LangGraph concepts, or getting information on the LangGraph Platform. Covers LangGraph framework, key concepts like agents/memory/time travel, LangGraph Platform components like Server/Studio/CLI, and deployment options.
+

@@ -1,0 +1,2 @@
+[How to add a custom system prompt to the prebuilt ReAct agent](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-system-prompt/): LLM should read this page when learning to customize ReAct agents, needing to add system prompts to agents, or working with LangGraph's prebuilt agents. This tutorial demonstrates how to add a custom system prompt to a prebuilt ReAct agent, with code examples showing model setup, tool creation, and using the prompt parameter in the create_react_agent function.
+

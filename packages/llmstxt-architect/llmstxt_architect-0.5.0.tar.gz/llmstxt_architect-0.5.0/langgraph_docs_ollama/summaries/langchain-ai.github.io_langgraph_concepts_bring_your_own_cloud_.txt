@@ -1,0 +1,2 @@
+[Bring Your Own Cloud (BYOC)](https://langchain-ai.github.io/langgraph/concepts/bring_your_own_cloud/): LLM should read this page when the user wants to deploy LangGraph graphs and manage their data on AWS, is setting up a new BYOC environment with existing AWS credentials, or needs to understand the architecture and requirements for LangChain Cloud. This page explains the Bring Your Own Cloud (BYOC) deployment options using LangGraph Platform, including the control plane and data plane architectures, requirements, how it works, and notes on customer use cases.
+

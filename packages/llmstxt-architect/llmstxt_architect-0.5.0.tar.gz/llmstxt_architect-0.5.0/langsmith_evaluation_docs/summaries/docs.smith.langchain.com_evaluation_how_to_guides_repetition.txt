@@ -1,0 +1,2 @@
+[How to evaluate with repetitions | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/repetition): LLM should read this page when configuring experiment repetitions, analyzing non-deterministic LLM outputs, or interpreting repetition results in LangSmith. This page explains how to configure multiple repetitions for evaluations to reduce noise in non-deterministic systems, set the num_repetitions parameter in evaluate functions, and view repetition results including averages and standard deviations in the LangSmith UI.
+

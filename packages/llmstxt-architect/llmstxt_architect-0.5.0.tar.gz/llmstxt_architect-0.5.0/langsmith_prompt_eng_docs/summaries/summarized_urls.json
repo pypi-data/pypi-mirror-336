@@ -1,0 +1,14 @@
+{
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides": "docs.smith.langchain.com_prompt_engineering_how_to_guides.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/langchain_hub": "docs.smith.langchain.com_prompt_engineering_how_to_guides_langchain_hub.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/create_a_prompt": "docs.smith.langchain.com_prompt_engineering_how_to_guides_create_a_prompt.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/manage_prompts_programatically": "docs.smith.langchain.com_prompt_engineering_how_to_guides_manage_prompts_programatically.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/prompt_tags": "docs.smith.langchain.com_prompt_engineering_how_to_guides_prompt_tags.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/custom_endpoint": "docs.smith.langchain.com_prompt_engineering_how_to_guides_custom_endpoint.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/prompt_canvas": "docs.smith.langchain.com_prompt_engineering_how_to_guides_prompt_canvas.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/testing_over_dataset": "docs.smith.langchain.com_prompt_engineering_how_to_guides_testing_over_dataset.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/custom_openai_compliant_model": "docs.smith.langchain.com_prompt_engineering_how_to_guides_custom_openai_compliant_model.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/update_a_prompt": "docs.smith.langchain.com_prompt_engineering_how_to_guides_update_a_prompt.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/open_a_prompt_from_a_trace": "docs.smith.langchain.com_prompt_engineering_how_to_guides_open_a_prompt_from_a_trace.txt",
+  "https://docs.smith.langchain.com/prompt_engineering/how_to_guides/managing_model_configurations": "docs.smith.langchain.com_prompt_engineering_how_to_guides_managing_model_configurations.txt"
+}

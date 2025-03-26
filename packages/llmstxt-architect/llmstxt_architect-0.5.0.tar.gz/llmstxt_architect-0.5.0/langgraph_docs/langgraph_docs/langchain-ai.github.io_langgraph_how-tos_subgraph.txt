@@ -1,0 +1,2 @@
+[How to use subgraphs](https://langchain-ai.github.io/langgraph/how-tos/subgraph): LLM should read this page when learning how to implement subgraphs in LangGraph, building multi-agent systems, or needing to share state between graphs. This page explains two methods for using subgraphs: adding a compiled subgraph directly when parent and subgraph share schema keys, or creating a node function that transforms state when schemas differ.
+

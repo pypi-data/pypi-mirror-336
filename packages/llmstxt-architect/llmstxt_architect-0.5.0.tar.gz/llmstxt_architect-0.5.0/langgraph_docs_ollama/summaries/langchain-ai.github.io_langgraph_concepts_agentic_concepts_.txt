@@ -1,0 +1,2 @@
+[Agent architectures](https://langchain-ai.github.io/langgraph/concepts/agentic_concepts/): Line 1: LLM should read this page when an LLM is trying to solve complex problems, requires tool access or multi-step decision making. Line 2: This page discusses different types of agent architectures for LLMs, including routers, tool calling agents like ReAct, and various features such as memory and planning.
+

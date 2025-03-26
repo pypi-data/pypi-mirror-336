@@ -1,0 +1,2 @@
+[How to create and control loops](https://langchain-ai.github.io/langgraph/how-tos/recursion-limit/): LLM should read this page when building loops in computational graphs, needing to implement termination conditions, or handling recursion limits in LangGraph. The page explains how to create graphs with loops using conditional edges for termination, set recursion limits, handle GraphRecursionError, and implement complex loops with branches.
+

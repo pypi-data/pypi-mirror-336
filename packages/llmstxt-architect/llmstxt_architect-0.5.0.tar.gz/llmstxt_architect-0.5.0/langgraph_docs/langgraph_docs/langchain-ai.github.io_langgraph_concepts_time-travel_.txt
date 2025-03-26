@@ -1,0 +1,2 @@
+[Time Travel ⏱️](https://langchain-ai.github.io/langgraph/concepts/time-travel/): LLM should read this page when debugging LLM-based agent behavior, analyzing decision-making paths, or exploring alternative execution branches in LangGraph. This page explains LangGraph's Time Travel debugging features: Replaying (reproducing past actions up to specific checkpoints) and Forking (creating alternative execution paths from specific points), with code examples for retrieving checkpoints, configuring replay, and creating forked states.
+

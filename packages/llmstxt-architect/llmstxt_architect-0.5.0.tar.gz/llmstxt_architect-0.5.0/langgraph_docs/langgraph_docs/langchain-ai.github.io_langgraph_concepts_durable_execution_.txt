@@ -1,0 +1,2 @@
+[Durable Execution](https://langchain-ai.github.io/langgraph/concepts/durable_execution/): LLM should read this page when needing to understand durable execution in LangGraph, implementing workflow persistence, or troubleshooting workflow resumption. This page explains durable execution in LangGraph: how workflows save progress to resume later, requirements (checkpointers and thread IDs), determinism guidelines for consistent replay, using tasks to encapsulate non-deterministic operations, and approaches for pausing/resuming workflows.
+

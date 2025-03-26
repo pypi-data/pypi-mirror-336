@@ -1,0 +1,2 @@
+[How to version a dataset | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/version_datasets): LLM should read this page when needing to understand dataset versioning in LangSmith, managing dataset history, or tagging specific dataset versions. This page explains how LangSmith automatically creates new dataset versions when examples are added/updated/deleted, shows how to view past versions, and demonstrates how to tag versions with human-readable names like "prod" through both the UI and Python SDK.
+

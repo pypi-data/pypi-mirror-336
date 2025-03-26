@@ -1,0 +1,2 @@
+[Time Travel ⏱️](https://langchain-ai.github.io/langgraph/concepts/time-travel/): LLM should read this page when an agent powered by a large language model (LLM) is experiencing errors or producing suboptimal results, needs to analyze decision-making processes, or wants to test alternative paths in a non-deterministic system. This page provides instructions on Time Travel, a technique for debugging and exploring agent decision-making, including replaying actions before a specific checkpoint and forking to create new branches within the graph.
+

@@ -1,0 +1,2 @@
+[Trace with Instructor (Python only) | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/trace_with_instructor): LLM should read this page when tracing Instructor Python code with LangSmith, using Instructor with OpenAI API, tracing nested Instructor function calls Provides guidance on setting up LangSmith tracing for Instructor, a Python library for generating structured outputs from LLMs, including wrapping OpenAI client, annotating functions with @traceable decorator
+

@@ -1,0 +1,2 @@
+[Persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/): Line 1: LLM should read this page when integrating LangGraph models for conversational AI, managing graph states and checkpointing, and configuring indexing settings for semantic search. Line 2: The page provides an overview of LangGraph's checkpointing capabilities, including checkpointer libraries, interfaces, and serialization protocols, as well as their applications in human-in-the-loop workflows, memory management, time travel, and fault-tolerance.
+

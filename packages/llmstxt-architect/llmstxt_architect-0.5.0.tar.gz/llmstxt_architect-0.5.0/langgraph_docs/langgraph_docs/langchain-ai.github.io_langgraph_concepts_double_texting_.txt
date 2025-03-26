@@ -1,0 +1,2 @@
+[Double Texting](https://langchain-ai.github.io/langgraph/concepts/double_texting/): LLM should read this page when handling concurrent user interactions in LangGraph, implementing double-texting safeguards, or designing stateful conversation systems. This page explains four approaches to handling "double texting" in LangGraph (when users send a second message before the first completes): Reject, Enqueue, Interrupt, and Rollback, noting these features are currently only available in LangGraph Platform.
+

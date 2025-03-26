@@ -1,0 +1,2 @@
+[How to combine control flow and state updates with Command](https://langchain-ai.github.io/langgraph/how-tos/command/): LLM should read this page when needing to combine control flow with state updates in LangGraph, implementing dynamic routing between nodes, or navigating between parent graphs and subgraphs. This page explains how to use the Command object in LangGraph to simultaneously update state and control flow between nodes, including how to route from subgraphs to parent graphs and properly handle state updates across graph hierarchies.
+

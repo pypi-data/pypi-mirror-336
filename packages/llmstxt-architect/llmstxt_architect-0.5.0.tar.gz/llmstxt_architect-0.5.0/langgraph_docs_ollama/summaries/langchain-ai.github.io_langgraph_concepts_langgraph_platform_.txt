@@ -1,0 +1,2 @@
+[LangGraph Platform](https://langchain-ai.github.io/langgraph/concepts/langgraph_platform/): Line 1: LLM should read this page when deploying LangGraph applications to production, handling bursty requests, and implementing human-in-the-loop support. Line 2: Overview includes components (LangGraph Server, Studio, CLI, Python/JS SDK, Remote Graph) supporting development, deployment, debugging, and monitoring of agentic applications.
+

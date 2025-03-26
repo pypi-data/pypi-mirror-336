@@ -1,0 +1,2 @@
+[Troubleshoot trace nesting | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/nest_traces): LLM should read this page when troubleshooting trace nesting issues, when encountering split or disconnected traces, or when working with asyncio, threading, or context propagation in Python. Provides guidance on resolving trace nesting problems caused by context propagation issues with asyncio and threading in Python, offering solutions like upgrading Python version, manual context propagation, and using LangSmith's ContextThreadPoolExecutor.
+

@@ -1,0 +1,2 @@
+[Trace without setting environment variables | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/trace_without_env_vars): LLM should read this page when needing to trace code without setting environment variables, when needing to programmatically set tracing configuration. This page covers how to enable or disable tracing without setting environment variables, using the tracing_context context manager in Python and passing configuration to the traceable decorator in TypeScript.
+

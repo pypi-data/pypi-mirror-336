@@ -1,0 +1,2 @@
+[Evaluation how-to guides | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides): LLM should read this page when looking for evaluation methods in LangSmith, needing to set up offline/online evaluations, or managing datasets for AI application testing. The page provides comprehensive how-to guides for LangSmith's evaluation features, covering offline evaluation setup, evaluator configuration, testing integration, online evaluation, experiment analysis, dataset management, and human feedback collection systems.
+

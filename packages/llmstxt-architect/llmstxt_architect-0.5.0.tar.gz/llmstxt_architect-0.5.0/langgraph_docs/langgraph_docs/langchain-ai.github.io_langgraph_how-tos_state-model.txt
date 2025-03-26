@@ -1,0 +1,2 @@
+[How to use Pydantic model as graph state](https://langchain-ai.github.io/langgraph/how-tos/state-model): LLM should read this page when implementing Pydantic models for state validation in LangGraph, handling complex state schema definitions, or troubleshooting validation errors in graph nodes. This guide explains how to use Pydantic BaseModel as a state schema in LangGraph for runtime validation, covering basic implementation, limitations, validation behavior across multiple nodes, serialization patterns, type coercion, and working with message models.
+

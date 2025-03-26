@@ -1,0 +1,2 @@
+[How to fetch performance metrics for an experiment | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/fetch_perf_metrics_experiment): LLM should read this page when needing to extract performance metrics from LangSmith experiments or when analyzing evaluation results programmatically. This page explains how to fetch and interpret experiment performance metrics using the LangSmith SDK, including details on latency, token usage, costs, feedback statistics, and error rates, with code examples in both Python and TypeScript.
+

@@ -1,0 +1,2 @@
+[How to evaluate on a split / filtered view of a dataset | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/dataset_subset): LLM should read this page when evaluating subsets of datasets, applying filters to datasets, or running evaluations on specific dataset splits. This page explains how to evaluate filtered views of datasets by using list_examples with metadata filters and how to run evaluations on specific dataset splits (like "test" or "training") using the LangSmith evaluation framework in both Python and TypeScript.
+

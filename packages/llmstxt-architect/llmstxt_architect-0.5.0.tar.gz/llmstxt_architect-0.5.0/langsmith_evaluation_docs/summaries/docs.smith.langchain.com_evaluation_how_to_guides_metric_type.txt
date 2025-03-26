@@ -1,0 +1,2 @@
+[How to return categorical vs numerical metrics | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/metric_type): LLM should read this page when implementing evaluators that need to distinguish between metric types, when creating custom metrics in LangSmith, or when configuring how metric results are displayed. This page explains how to return categorical vs numerical metrics in LangSmith custom evaluators, showing code examples in Python and TypeScript for both metric types and their proper return formats.
+

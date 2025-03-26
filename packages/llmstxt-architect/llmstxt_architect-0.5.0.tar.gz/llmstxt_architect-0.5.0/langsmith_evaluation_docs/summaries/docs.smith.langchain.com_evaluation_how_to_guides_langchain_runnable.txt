@@ -1,0 +1,2 @@
+[How to evaluate a langchain runnable | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/langchain_runnable): LLM should read this page when evaluating LangChain Runnable objects, setting up evaluation pipelines, or using LangSmith for model testing. This page explains how to evaluate LangChain Runnable objects (like chains, retrievers, and models) using LangSmith, with code examples in Python and TypeScript showing how to define a chain, create evaluation metrics, and run evaluations against datasets.
+

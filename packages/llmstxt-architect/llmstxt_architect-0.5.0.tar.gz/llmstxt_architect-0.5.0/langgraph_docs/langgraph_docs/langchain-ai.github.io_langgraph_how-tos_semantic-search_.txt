@@ -1,0 +1,2 @@
+[](https://langchain-ai.github.io/langgraph/how-tos/semantic-search/): LLM should read this page when looking for missing content or needing to handle error pages. This is a standard 404 error page indicating the requested resource could not be found.
+

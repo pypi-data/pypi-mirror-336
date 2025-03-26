@@ -1,0 +1,2 @@
+[LangGraph Platform Plans](https://langchain-ai.github.io/langgraph/concepts/plans/): LLM should read this page when determining LangGraph Platform pricing tiers, comparing deployment options, or researching features available across different plans. This page outlines LangGraph Platform plans (Developer, Plus, Enterprise), detailing deployment options, usage limitations, feature availability, and pricing structure for agentic application deployment.
+

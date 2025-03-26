@@ -1,0 +1,2 @@
+[Test a ReAct agent with Pytest/Vitest and LangSmith | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/tutorials/testing): LLM should read this page when testing a ReAct agent using automated testing frameworks or integrating LangSmith with Pytest/Vitest/Jest. This page explains how to test LLM applications using LangSmith with popular testing frameworks, including setting up the environment, creating a stock information agent with tools, writing comprehensive tests for tool usage accuracy, and evaluating response groundedness with LLM-as-a-judge.
+

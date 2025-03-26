@@ -1,0 +1,2 @@
+[How to handle model rate limits | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/rate_limiting): LLM should read this page when handling rate limit errors in LangSmith evaluations, implementing throttling for LLM API calls, or optimizing concurrent model requests. This page covers three main approaches to handling model rate limits: using langchain RateLimiters to control request frequency, implementing retrying with exponential backoff, and limiting max_concurrency to reduce parallel API calls.
+

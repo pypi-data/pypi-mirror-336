@@ -1,0 +1,2 @@
+[Set up webhook notifications for rules | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/webhooks): LLM should read this page when setting up webhook notifications for automation rules, integrating with third-party services, or building custom event handling workflows. This page explains how to configure webhook URLs to receive notifications when LangSmith automation rules are triggered, including details on the webhook payload structure, security considerations, and an example implementation using Modal.
+

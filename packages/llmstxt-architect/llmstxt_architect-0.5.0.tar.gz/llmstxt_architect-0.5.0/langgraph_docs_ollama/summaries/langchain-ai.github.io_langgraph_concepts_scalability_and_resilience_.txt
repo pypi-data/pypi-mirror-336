@@ -1,0 +1,2 @@
+[LangGraph Platform: Scalability & Resilience](https://langchain-ai.github.io/langgraph/concepts/scalability_and_resilience/): LLM should read this page when adding a large number of instances to a LangGraph Platform service, implementing load balancing, or understanding queue scalability. The page discusses server and queue scalability with stateless instances, resilience features including periodic heartbeats, shutdown modes, Postgres and Redis failover mechanisms, and retry policies for transient errors.
+

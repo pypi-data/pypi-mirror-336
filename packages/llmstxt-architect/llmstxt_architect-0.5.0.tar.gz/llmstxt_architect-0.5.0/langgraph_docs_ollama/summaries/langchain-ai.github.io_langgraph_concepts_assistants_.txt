@@ -1,0 +1,2 @@
+[Assistants](https://langchain-ai.github.io/langgraph/concepts/assistants/): LLM should read this page when building complex agents with frequent configuration changes, modifying agent behavior through prompt and model adjustments, or managing assistant versions to track and compare different configurations. Assistants offer a way to make and save rapid changes to agent configuration, provide versioning capabilities for tracking changes over time, and can be used to configure agents in a no-code manner.
+

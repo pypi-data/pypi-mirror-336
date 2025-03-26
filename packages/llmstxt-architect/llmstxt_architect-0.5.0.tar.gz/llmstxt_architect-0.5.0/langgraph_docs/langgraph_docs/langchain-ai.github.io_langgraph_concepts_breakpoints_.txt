@@ -1,0 +1,2 @@
+[Breakpoints](https://langchain-ai.github.io/langgraph/concepts/breakpoints/): LLM should read this page when implementing debugging features in LangGraph applications, setting up human-in-the-loop workflows, or working with graph execution pauses. The page explains LangGraph breakpoints which pause graph execution at specific points, including how to set static breakpoints (before/after nodes), use NodeInterrupt exceptions, resuming execution, and requirements for using breakpoints with a persistence layer.
+

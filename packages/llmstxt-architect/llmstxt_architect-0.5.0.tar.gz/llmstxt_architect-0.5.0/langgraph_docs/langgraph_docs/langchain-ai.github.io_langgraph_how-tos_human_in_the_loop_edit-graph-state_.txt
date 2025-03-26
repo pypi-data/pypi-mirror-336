@@ -1,0 +1,2 @@
+[How to edit graph state](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/edit-graph-state/): LLM should read this page when needing to implement human intervention in LangGraph workflows, wanting to edit graph state during execution, or implementing breakpoints in agent systems. This page explains how to edit graph state in LangGraph using breakpoints, including implementing human-in-the-loop interactions, setting up interruptions before specific nodes, and updating state during agent execution.
+

@@ -1,0 +1,2 @@
+[Functional API](https://langchain-ai.github.io/langgraph/concepts/functional_api/): Line 1: 'LLM should read this page when implementing human-in-the-loop workflows, adding thread-level or cross-thread persistence, or designing multi-agent networks.' Line 2: 'The Functional API provides a guide to building workflows, agents, and human-in-the-loop applications with features such as interrupt handling, command primitives, state management, and memory mechanisms.'
+

@@ -1,0 +1,2 @@
+[How to use the REST API | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/run_evals_api_only): LLM should read this page when using the LangSmith REST API directly, implementing evaluations without SDKs, or working in a non-Python/JavaScript environment. The page explains how to use the LangSmith REST API to create datasets, run evaluations, and implement pairwise experiments, with complete code examples using Python's requests library.
+

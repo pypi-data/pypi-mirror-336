@@ -1,0 +1,2 @@
+[Authentication & Access Control](https://langchain-ai.github.io/langgraph/concepts/auth/): Line 1: 'LLM should read this page when implementing LangGraph auth handlers for conversational data model' Line 2: 'This page provides a comprehensive overview of LangGraph authentication, including handler types and supported actions'
+

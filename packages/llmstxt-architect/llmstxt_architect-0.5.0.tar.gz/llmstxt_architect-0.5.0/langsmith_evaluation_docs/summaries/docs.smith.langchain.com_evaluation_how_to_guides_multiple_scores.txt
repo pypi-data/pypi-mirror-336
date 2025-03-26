@@ -1,0 +1,2 @@
+[How to return multiple scores in one evaluator | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/multiple_scores): LLM should read this page when implementing multiple evaluation metrics in a single evaluator, needing to optimize cost/time with LLM judges, or working with custom evaluators in LangSmith. The page explains how to return multiple scores from a single evaluator function in both Python and TypeScript, with code examples showing how to structure the return value as a list of dictionaries containing metric names and scores.
+

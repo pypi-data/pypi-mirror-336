@@ -1,0 +1,2 @@
+[How to filter experiments in the UI | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/filter_experiments_ui): LLM should read this page when needing to filter LangSmith experiments, looking for ways to organize evaluation results, or wanting to compare specific experiment metrics in the UI. This page explains how to filter experiments in LangSmith's UI by adding metadata to experiments during creation and using the filtering interface to narrow down results by model provider, prompt type, feedback scores, and other criteria.
+

@@ -1,0 +1,2 @@
+[How to run an evaluation | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/evaluate_llm_application): LLM should read this page when learning how to evaluate LLM applications, setting up evaluation pipelines, or debugging model performance. This page explains the process of running evaluations in LangSmith, covering how to define an application for testing, create datasets with labeled examples, define custom evaluators, run evaluation jobs with the evaluate() method, and analyze results in the LangSmith UI.
+

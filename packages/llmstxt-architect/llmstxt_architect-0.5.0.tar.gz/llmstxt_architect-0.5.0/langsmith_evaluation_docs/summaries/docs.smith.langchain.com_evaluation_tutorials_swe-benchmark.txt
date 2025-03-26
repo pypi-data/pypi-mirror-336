@@ -1,0 +1,2 @@
+[Running SWE-bench with LangSmith | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/tutorials/swe-benchmark): LLM should read this page when evaluating code agents on SWE-bench, implementing benchmarking for code generation, or setting up automated evaluation of coding tasks. This page provides a complete tutorial for running the SWE-bench benchmark with LangSmith, covering dataset loading, uploading to LangSmith, running a prediction function, evaluating code patches in Docker containers, and sending evaluation results back to LangSmith for analysis.
+

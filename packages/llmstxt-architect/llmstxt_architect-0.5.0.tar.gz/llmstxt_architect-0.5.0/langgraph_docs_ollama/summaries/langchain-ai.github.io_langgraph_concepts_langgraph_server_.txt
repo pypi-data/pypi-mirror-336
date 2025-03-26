@@ -1,0 +1,2 @@
+[LangGraph Server](https://langchain-ai.github.io/langgraph/concepts/langgraph_server/): LLM should read this page when deploying a LangGraph Server for complex application use cases, understanding its key features, and integrating with other components. LangGraph Server provides an API for creating and managing agent-based applications, supporting streaming endpoints, background runs, task queue, horizontally scalable infrastructure, double texting support, optimized checkpointer, human-in-the-loop endpoints, memory store, cron jobs, webhooks, and monitoring.
+

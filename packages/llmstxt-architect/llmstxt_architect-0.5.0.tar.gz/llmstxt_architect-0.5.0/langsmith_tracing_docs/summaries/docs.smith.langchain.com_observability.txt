@@ -1,0 +1,2 @@
+[Observability Quick Start | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability): LLM should read this page when getting started with LangSmith observability, instrumenting an application to trace LLM calls, or tracing an entire application pipeline. Provides a step-by-step tutorial on installing dependencies, creating an API key, setting environment variables, defining a sample application, tracing just OpenAI calls or the entire application pipeline using decorators, and suggestions for next steps.
+

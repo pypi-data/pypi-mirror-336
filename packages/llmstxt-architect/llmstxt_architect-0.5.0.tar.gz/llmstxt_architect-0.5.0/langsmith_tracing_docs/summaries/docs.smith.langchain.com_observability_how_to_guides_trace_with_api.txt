@@ -1,0 +1,2 @@
+[Trace using the LangSmith REST API | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/trace_with_api): LLM should read this page when tracing LLM applications using the LangSmith REST API, ingesting multiple traces in batches, or serializing runs for multipart requests. This page provides guidance on tracing requests using the LangSmith REST API, including basic tracing, batch ingestion of traces, and serializing runs for multipart requests.
+

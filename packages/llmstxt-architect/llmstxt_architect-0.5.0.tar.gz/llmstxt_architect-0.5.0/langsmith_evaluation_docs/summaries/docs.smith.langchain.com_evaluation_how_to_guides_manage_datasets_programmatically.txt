@@ -1,0 +1,2 @@
+[How to manage datasets programmatically | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/manage_datasets_programmatically): LLM should read this page when needing to programmatically create, manage, query, or update datasets in LangSmith, or when working with dataset examples in Python or TypeScript. This page documents how to use the LangSmith SDK to: create datasets from lists, traces, CSV files, or pandas DataFrames; fetch and filter datasets; query examples using various criteria; and update examples individually or in bulk.
+

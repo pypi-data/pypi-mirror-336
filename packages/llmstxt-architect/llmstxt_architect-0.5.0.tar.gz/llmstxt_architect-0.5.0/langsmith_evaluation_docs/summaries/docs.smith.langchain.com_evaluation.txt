@@ -1,0 +1,2 @@
+[Evaluation Quick Start | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation): LLM should read this page when learning how to set up LangSmith evaluations, creating evaluation datasets, or implementing LLM-based evaluators. This page provides a step-by-step quick start guide for LangSmith's evaluation capabilities, covering installation, API key setup, dataset creation, defining evaluation targets, creating evaluators, and running evaluations in both Python and TypeScript.
+

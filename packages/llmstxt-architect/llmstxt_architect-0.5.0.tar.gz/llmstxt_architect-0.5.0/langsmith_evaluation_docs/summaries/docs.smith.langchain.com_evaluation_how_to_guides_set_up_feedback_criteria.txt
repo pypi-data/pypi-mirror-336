@@ -1,0 +1,2 @@
+[Set up feedback criteria | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/set_up_feedback_criteria): LLM should read this page when setting up feedback systems in LangSmith, configuring evaluation criteria, or creating custom feedback tags. This page explains how to create and configure feedback criteria in LangSmith, covering both continuous feedback (with min/max numerical values) and categorical feedback (with predefined categories mapped to scores).
+

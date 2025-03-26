@@ -1,0 +1,2 @@
+[Self-Hosted](https://langchain-ai.github.io/langgraph/concepts/self_hosted/): LLM should read this page when deploying LangGraph Platform, setting up a self-hosted deployment for testing purposes, and understanding the requirements for running LangGraph Server. The main topics include Self-Hosted Lite and Enterprise versions, deployment options, Helm chart, and setup instructions.
+

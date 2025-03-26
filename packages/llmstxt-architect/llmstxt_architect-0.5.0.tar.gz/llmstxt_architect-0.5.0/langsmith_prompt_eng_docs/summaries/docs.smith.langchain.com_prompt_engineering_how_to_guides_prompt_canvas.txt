@@ -1,0 +1,2 @@
+[Prompt Canvas | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/prompt_canvas): LLM should read this page when editing prompts, iterating on long prompts, or making stylistic/tonal changes to prompts The page describes the Prompt Canvas feature in LangSmith, which allows editing prompts with LLM assistance, quick actions to modify prompts, custom quick actions, diffing versions, and saving/using updated prompts.
+

@@ -1,0 +1,2 @@
+[How to add cross-thread persistence (functional API)](https://langchain-ai.github.io/langgraph/how-tos/cross-thread-persistence-functional/): LLM should read this page when implementing cross-thread persistence with LangGraph functional API, storing user information across multiple conversations, or creating shared memory systems. This guide explains how to use the Store interface in LangGraph's functional API to persist data across different threads, with examples of creating a store, passing it to a workflow, and implementing a chatbot with long-term memory.
+

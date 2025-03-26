@@ -1,0 +1,2 @@
+[Set up automation rules | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/rules): LLM should read this page when setting up automation rules for LLM applications, viewing logs for automation rules, or understanding data retention This page explains how to create automation rules in LangSmith to trigger actions like online evaluations, adding traces to datasets, triggering webhooks, and extending data retention based on filters. It also covers viewing logs for automation rules.
+

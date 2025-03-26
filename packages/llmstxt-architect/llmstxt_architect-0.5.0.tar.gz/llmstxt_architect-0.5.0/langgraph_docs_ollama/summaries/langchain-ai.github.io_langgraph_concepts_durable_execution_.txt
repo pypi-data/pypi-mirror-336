@@ -1,0 +1,2 @@
+[Durable Execution](https://langchain-ai.github.io/langgraph/concepts/durable_execution/): Here is the summary:  Line 1: 'LLM should read this page when using LangGraph with human-in-the-loop, encountering interruptions or errors, and needing to resume workflows.' Line 2: 'This page explains durable execution in LangGraph, including its benefits, requirements, and guidelines for deterministic and idempotent workflows.'
+

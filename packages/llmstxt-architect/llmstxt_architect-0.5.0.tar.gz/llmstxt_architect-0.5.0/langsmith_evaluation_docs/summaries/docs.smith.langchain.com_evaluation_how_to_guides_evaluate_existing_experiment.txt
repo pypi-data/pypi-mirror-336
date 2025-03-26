@@ -1,0 +1,2 @@
+[How to evaluate an existing experiment (Python only) | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/evaluate_existing_experiment): LLM should read this page when needing to evaluate existing experiments or add evaluation metrics to previously run experiments. This page explains how to use the Python SDK to apply evaluators to existing experiments using the evaluate() method with an experiment name/ID instead of a target function.
+

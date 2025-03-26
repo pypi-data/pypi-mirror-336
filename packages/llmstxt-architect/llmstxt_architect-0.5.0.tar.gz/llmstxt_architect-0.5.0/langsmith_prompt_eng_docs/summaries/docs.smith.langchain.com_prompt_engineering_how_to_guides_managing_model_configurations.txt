@@ -1,0 +1,2 @@
+[Managing Prompt Settings | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/managing_model_configurations): LLM should read this page when managing prompt settings, creating/editing configurations, or setting default configurations. Covers managing model configurations, tool settings, prompt formatting, and extra parameters in the LangSmith playground.
+

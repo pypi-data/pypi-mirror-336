@@ -1,0 +1,2 @@
+[LangGraph CLI](https://langchain-ai.github.io/langgraph/concepts/langgraph_cli/): LLM should read this page when looking for information about LangGraph CLI installation or when needing to deploy a LangGraph API server locally. The page covers LangGraph CLI installation methods (Homebrew, pip), key commands (build, dev, up, dockerfile), and features like hot reloading, debugger support, and database management for running LangGraph servers.
+

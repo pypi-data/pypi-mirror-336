@@ -1,0 +1,2 @@
+[Add metadata and tags to traces | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/add_metadata_tags): LLM should read this page when adding metadata or tags to traces, understanding how to query traces by metadata/tags, or associating additional information with traces. The page explains how to add arbitrary metadata and tags to traces in Python and TypeScript, providing code examples for different methods like decorators, context managers, and wrapped clients.
+

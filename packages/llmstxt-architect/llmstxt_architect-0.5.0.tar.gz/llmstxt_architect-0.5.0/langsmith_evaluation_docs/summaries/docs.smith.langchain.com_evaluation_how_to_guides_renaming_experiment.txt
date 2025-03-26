@@ -1,0 +1,2 @@
+[Renaming an experiment | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/renaming_experiment): LLM should read this page when needing to rename LangSmith experiments, understanding experiment name management, or finding UI navigation options for experiment renaming. This page explains two methods for renaming experiments in LangSmith: using the Playground interface where you can edit names in the table header, and using the pencil icon in the Experiments view. Experiment names must be unique per workspace.
+

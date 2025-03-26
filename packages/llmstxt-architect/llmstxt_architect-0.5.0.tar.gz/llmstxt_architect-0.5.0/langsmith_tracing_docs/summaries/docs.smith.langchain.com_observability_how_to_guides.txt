@@ -1,0 +1,2 @@
+[Observability how-to guides | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides): LLM should read this page when needing to add tracing to an LLM application, view and interact with traces, or configure alerts and automation rules. This page provides step-by-step guides on setting up tracing, integrating with various frameworks, configuring advanced tracing options, using the tracing UI, creating dashboards, setting up automation rules, and logging user feedback.
+

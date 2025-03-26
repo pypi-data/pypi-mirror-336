@@ -1,0 +1,2 @@
+[Concepts](https://langchain-ai.github.io/langgraph/concepts): LLM should read this page when learning about the LangGraph framework, planning to build an AI application with LangGraph, or seeking to understand key concepts related to agentic AI systems. This page provides a conceptual overview of the LangGraph framework, its core components, features, deployment options, and key concepts like agents, memory, streaming, persistence, and human-in-the-loop integration in AI applications.
+

@@ -1,0 +1,2 @@
+[Persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/): LLM should read this page when needing to understand LangGraph persistence mechanisms, implementing stateful workflows, or managing conversation history across interactions. This page covers LangGraph's persistence features including checkpointers, threads, state snapshots, replay functionality, forking state, cross-thread memory via InMemoryStore, and semantic search capabilities for stored memories.
+

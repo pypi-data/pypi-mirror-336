@@ -1,0 +1,5 @@
+# Deprecated pages
+https://langchain-ai.github.io/langgraph/concepts/breakpoints/
+https://langchain-ai.github.io/langgraph/concepts/v0-human-in-the-loop/
+https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/breakpoints/
+https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/dynamic_breakpoints/

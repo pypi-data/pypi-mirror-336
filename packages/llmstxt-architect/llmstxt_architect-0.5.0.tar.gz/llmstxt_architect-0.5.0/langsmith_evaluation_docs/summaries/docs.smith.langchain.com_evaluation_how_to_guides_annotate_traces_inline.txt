@@ -1,0 +1,2 @@
+[Annotate traces and runs inline | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/annotate_traces_inline): LLM should read this page when needing to annotate traces in LangSmith, adding manual feedback to application traces, or setting up inline annotation workflows. This page explains how to manually annotate traces in LangSmith by adding feedback, comments, and scores to any run in a trace, including intermediate spans, using the Annotate feature in the trace view.
+

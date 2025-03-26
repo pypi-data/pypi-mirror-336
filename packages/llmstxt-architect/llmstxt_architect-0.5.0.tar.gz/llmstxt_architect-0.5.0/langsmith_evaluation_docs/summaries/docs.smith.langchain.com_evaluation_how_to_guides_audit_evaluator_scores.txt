@@ -1,0 +1,2 @@
+[How to audit evaluator scores | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/audit_evaluator_scores): LLM should read this page when auditing AI evaluation scores, needing to correct LLM judge assessments, or implementing score correction workflows. This page explains how to audit and correct LLM-as-judge evaluator scores in LangSmith using three methods: through the comparison view UI, the runs table UI, or programmatically via the SDK (Python or TypeScript) using the update_feedback function.
+

@@ -1,0 +1,2 @@
+[How to add summary of the conversation history](https://langchain-ai.github.io/langgraph/how-tos/memory/add-summary-conversation-history/): LLM should read this page when implementing conversation summarization, managing context windows, or building chatbots with memory management. This page demonstrates how to add summary functionality to conversation history using LangGraph, including checking conversation length, creating summaries, and removing old messages while maintaining context.
+

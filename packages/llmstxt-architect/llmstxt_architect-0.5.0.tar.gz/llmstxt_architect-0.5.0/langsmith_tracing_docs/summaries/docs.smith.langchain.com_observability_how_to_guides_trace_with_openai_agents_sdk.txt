@@ -1,0 +1,2 @@
+[Trace with OpenAI Agents SDK | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/trace_with_openai_agents_sdk): LLM should read this page when integrating the OpenAI Agents SDK with LangSmith, tracing agent execution flows, or logging agent traces to LangSmith. This page provides instructions for installing the LangSmith library with OpenAI Agents support, and a code example demonstrating how to use the OpenAIAgentsTracingProcessor class to trace and log agent execution flows to LangSmith.
+

@@ -1,0 +1,2 @@
+[Prompt Tags | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/prompt_tags): LLM should read this page when trying to understand prompt tags in LangSmith, when managing different versions of prompts, when deploying prompts to different environments. This page covers an overview of prompt tags, how to create/move/delete tags, using tags in code, and common use cases like environment-specific tags and version control.
+

@@ -1,0 +1,2 @@
+[Use annotation queues | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/annotation_queues): LLM should read this page when needing to understand annotation queues in LangSmith, setting up human-in-the-loop feedback processes, or organizing systematic review of model outputs. This page explains how to create and use annotation queues in LangSmith, including creating queues with rubrics, assigning runs to queues, configuring multi-annotator workflows with reservations, and reviewing runs within a queue interface with keyboard shortcuts.
+

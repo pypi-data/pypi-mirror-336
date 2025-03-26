@@ -1,0 +1,2 @@
+[Compare traces | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/compare_traces): LLM should read this page when comparing traces in LangSmith, understanding the functionality of the trace comparison feature, and learning how to use the trace comparison view. This page explains how to access the trace comparison view in LangSmith, select traces for comparison, and navigate the side-by-side comparison of traces.
+

@@ -1,0 +1,2 @@
+[LangGraph Platform Architecture](https://langchain-ai.github.io/langgraph/concepts/platform_architecture/): LLM should read this page when needing to understand LangGraph Platform's technical architecture or troubleshooting deployment issues. The page details how LangGraph Platform uses Postgres for persistent storage of user/run data and Redis for worker communication (run cancellation, output streaming) and ephemeral metadata storage (retry attempts).
+

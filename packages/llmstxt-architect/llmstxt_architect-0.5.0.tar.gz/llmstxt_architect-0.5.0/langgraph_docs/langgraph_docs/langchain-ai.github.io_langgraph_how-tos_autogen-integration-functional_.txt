@@ -1,0 +1,2 @@
+[How to integrate LangGraph (functional API) with AutoGen, CrewAI, and other frameworks](https://langchain-ai.github.io/langgraph/how-tos/autogen-integration-functional/): LLM should read this page when integrating LangGraph with other agent frameworks, building multi-agent systems with different frameworks, or adding LangGraph features to existing agent systems. This page demonstrates how to integrate LangGraph's functional API with AutoGen, including code examples for creating a workflow that calls AutoGen agents, leveraging LangGraph's memory and persistence features.
+

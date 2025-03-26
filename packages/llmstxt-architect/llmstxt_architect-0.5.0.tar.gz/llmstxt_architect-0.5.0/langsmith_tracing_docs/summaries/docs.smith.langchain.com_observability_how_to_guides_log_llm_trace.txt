@@ -1,0 +1,2 @@
+[Log custom LLM traces | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/log_llm_trace): LLM should read this page when logging traces for custom LLM models, using streaming output, or providing manual token counts. Provides guidelines for logging LLM traces in the expected format for chat and instruct-style models, handling streaming outputs, and manually providing token usage data.
+

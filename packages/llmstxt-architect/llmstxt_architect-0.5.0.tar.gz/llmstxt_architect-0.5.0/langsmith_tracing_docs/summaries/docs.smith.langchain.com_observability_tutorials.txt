@@ -1,0 +1,2 @@
+[Observability tutorials | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/tutorials): LLM should read this page when getting started with observability for LLM applications, learning about tracing LLM workflows, or exploring different tracing integrations. The page provides an overview of observability tutorials, including a quick start guide, in-depth tutorials on adding observability to LLM applications, and a list of how-to guides covering various observability-related topics.
+

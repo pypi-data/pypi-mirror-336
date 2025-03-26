@@ -1,0 +1,2 @@
+[Application Structure](https://langchain-ai.github.io/langgraph/concepts/application_structure/): Line 1: LLM should read this page when deploying LangGraph applications using Python or JavaScript and need to understand the application structure. Line 2: The page provides a typical structure for a LangGraph application, including dependencies, graphs, environment variables, and configuration files, and explains how these elements work together.
+

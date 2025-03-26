@@ -1,0 +1,2 @@
+[Add observability to your LLM application | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/tutorials/observability): LLM should read this page when developing an LLM application, adding observability to an existing LLM application, or integrating LangSmith's observability features into their application. This page provides a tutorial on adding observability to an LLM application using LangSmith, covering prototyping, beta testing, and production stages.
+

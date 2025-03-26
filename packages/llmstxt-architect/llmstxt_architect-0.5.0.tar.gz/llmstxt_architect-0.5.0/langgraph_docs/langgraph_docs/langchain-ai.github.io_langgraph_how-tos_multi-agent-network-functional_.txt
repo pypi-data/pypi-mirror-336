@@ -1,0 +1,2 @@
+[How to build a multi-agent network (functional API)](https://langchain-ai.github.io/langgraph/how-tos/multi-agent-network-functional/): LLM should read this page when building multi-agent systems, implementing agent handoffs between specialists, or creating fully-connected agent networks. This guide demonstrates how to create a multi-agent network using LangGraph's functional API, with tasks for individual agents and entrypoint functions to manage agent handoffs based on tool calls.
+

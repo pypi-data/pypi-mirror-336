@@ -1,0 +1,2 @@
+[Human-in-the-loop](https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/): Line 1: 'LLM should read this page when designing concurrent interrupt-based workflows' Line 2: 'The page explains the importance of handling multiple interrupts within a node, avoiding dynamic changes to the node's structure between executions'
+

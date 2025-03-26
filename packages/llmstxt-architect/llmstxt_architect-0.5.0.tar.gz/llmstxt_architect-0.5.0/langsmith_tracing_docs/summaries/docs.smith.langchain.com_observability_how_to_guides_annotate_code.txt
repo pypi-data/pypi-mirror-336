@@ -1,0 +1,2 @@
+[Annotate code for tracing | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/annotate_code): LLM should read this page when: 1) Learning how to log traces to LangSmith 2) Annotating code for tracing 3) Ensuring traces are submitted before application exit 'This page covers several approaches to annotate code for logging traces to LangSmith, including using decorators/wrappers, context managers, wrapping the OpenAI client, and using the RunTree API. It also discusses ensuring all traces are submitted before application exit.'
+

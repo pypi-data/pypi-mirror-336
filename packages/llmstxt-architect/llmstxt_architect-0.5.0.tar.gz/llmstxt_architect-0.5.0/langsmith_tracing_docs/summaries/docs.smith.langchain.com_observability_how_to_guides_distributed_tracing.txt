@@ -1,0 +1,2 @@
+[Implement distributed tracing | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/distributed_tracing): LLM should read this page when tracing requests across multiple services, implementing distributed tracing, or propagating trace context across boundaries. Covers setting up distributed tracing in Python and TypeScript, including examples for propagating trace context via headers and continuing traces across client-server boundaries.
+

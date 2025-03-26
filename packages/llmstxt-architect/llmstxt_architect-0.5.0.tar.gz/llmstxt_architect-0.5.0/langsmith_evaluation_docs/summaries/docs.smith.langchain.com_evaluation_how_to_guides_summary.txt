@@ -1,0 +1,2 @@
+[How to define a summary evaluator | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/summary): LLM should read this page when needing to create evaluators that run across entire experiments, designing summary metrics like F1 scores, or implementing experiment-level evaluation metrics. This page explains how to define summary evaluators in LangSmith for metrics that operate on entire experiments rather than individual runs, including function signature requirements, available arguments, and output formats with Python and TypeScript examples.
+

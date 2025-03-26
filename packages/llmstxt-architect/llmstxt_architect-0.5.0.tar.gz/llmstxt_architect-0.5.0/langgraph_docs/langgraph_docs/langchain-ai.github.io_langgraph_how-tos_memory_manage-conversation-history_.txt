@@ -1,0 +1,2 @@
+[How to manage conversation history](https://langchain-ai.github.io/langgraph/how-tos/memory/manage-conversation-history/): LLM should read this page when managing conversation history in LangGraph, preventing context window issues, or implementing custom message filtering. This page explains how to manage conversation history in LangGraph to prevent context window overflow by implementing message filtering functions that control which messages are sent to the LLM.
+

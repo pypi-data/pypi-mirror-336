@@ -1,0 +1,2 @@
+[How to Review Tool Calls](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/review-tool-calls/): LLM should read this page when implementing human review of tool calls, creating interactive agent workflows, or building approval systems for AI actions. This page explains how to implement human-in-the-loop review for tool calls in LangGraph, including approving tool calls, modifying tool calls manually, and providing natural language feedback to agents with complete code examples and explanations.
+

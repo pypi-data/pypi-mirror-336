@@ -1,0 +1,2 @@
+[Log user feedback | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/attach_user_feedback): LLM should read this page when needing to implement user feedback collection for LLM applications or wanting to integrate trace-based feedback with LangSmith. This page explains how to log user feedback to LangSmith traces using both Python and TypeScript, allowing developers to attach feedback scores and comments to any part of an application trace for analysis and evaluation.
+

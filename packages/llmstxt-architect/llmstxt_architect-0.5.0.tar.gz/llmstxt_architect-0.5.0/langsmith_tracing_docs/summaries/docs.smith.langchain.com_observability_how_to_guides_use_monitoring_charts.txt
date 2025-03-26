@@ -1,0 +1,2 @@
+[Use monitoring charts | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/use_monitoring_charts): LLM should read this page when needing to analyze monitoring data for LLM applications, view data over different time periods, or drill down into specific subsets of traces. This page explains how to use monitoring charts in LangSmith to visualize metrics, change time periods, slice data by metadata/tags, and drill into specific subsets of traces.
+

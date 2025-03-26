@@ -1,0 +1,2 @@
+[LangChain Hub | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/langchain_hub): LLM should read this page when needing an overview of the LangChain Hub, wanting to search for existing prompts, or forking prompts to a personal organization. The page covers navigating the LangChain Hub section, which lists all publicly available prompts that can be searched, viewed in detail, run in the playground, and programmatically accessed via the SDK.
+

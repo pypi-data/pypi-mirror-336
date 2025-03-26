@@ -1,0 +1,2 @@
+[Set a sampling rate for traces | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/sample_traces): LLM should read this page when configuring sampling rate for traces, troubleshooting trace logging, optimizing performance. Explains how to set a sampling rate for traces logged to LangSmith, using the LANGSMITH_TRACING_SAMPLING_RATE environment variable to control the percentage of traces logged.
+

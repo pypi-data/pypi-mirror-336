@@ -1,0 +1,2 @@
+[Trace with LangGraph (Python and JS/TS) | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/trace_with_langgraph): LLM should read this page when needing to trace LangChain and LangGraph workflows, needing to configure tracing for custom functions in those workflows Explains how to set up tracing for LangChain/LangGraph workflows using environment variables, tracing built-in LangChain modules, wrapping custom functions/SDKs with LangSmith decorators to trace
+

@@ -1,0 +1,2 @@
+[How to visualize your graph](https://langchain-ai.github.io/langgraph/how-tos/visualization/): LLM should read this page when visualizing graphs in LangGraph, generating graph diagrams, or creating visual representations of StateGraph objects. Covers methods to visualize graphs including Mermaid syntax, PNG generation via Mermaid.ink API, Pyppeteer rendering, and Graphviz, with code examples for customizing graph appearance.
+

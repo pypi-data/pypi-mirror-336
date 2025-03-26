@@ -1,0 +1,2 @@
+[How to use Postgres checkpointer for persistence](https://langchain-ai.github.io/langgraph/how-tos/persistence_postgres/): LLM should read this page when setting up persistence for LangGraph agents, implementing PostgreSQL as a checkpoint storage backend, or working with either synchronous or asynchronous database connections. This page details how to use PostgreSQL for persisting LangGraph agent state, covering setup and configuration of PostgresSaver and AsyncPostgresSaver with different connection methods (pool, direct connection, connection string).
+

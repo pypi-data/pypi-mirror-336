@@ -1,0 +1,2 @@
+[How to add breakpoints](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/breakpoints/): LLM should read this page when implementing human-in-the-loop approvals, handling breakpoints in LangGraph workflows, or creating approval steps in agent systems. This page explains how to add breakpoints in LangGraph for pausing execution to get human approval before proceeding, with examples of implementing breakpoints in simple workflows and agent systems using interrupt_before and checkpointers.
+

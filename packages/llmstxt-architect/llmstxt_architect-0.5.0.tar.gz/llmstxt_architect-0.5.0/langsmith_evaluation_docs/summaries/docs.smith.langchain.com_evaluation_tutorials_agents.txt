@@ -1,0 +1,2 @@
+[Evaluate a complex agent | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/tutorials/agents): LLM should read this page when evaluating complex agents, understanding agent evaluation techniques, or implementing evaluation for multi-step reasoning systems. This page demonstrates how to build and evaluate a complex customer support agent with LangSmith, covering three key evaluation types: final response evaluation, trajectory evaluation, and single-step evaluation, with code examples for each approach.
+

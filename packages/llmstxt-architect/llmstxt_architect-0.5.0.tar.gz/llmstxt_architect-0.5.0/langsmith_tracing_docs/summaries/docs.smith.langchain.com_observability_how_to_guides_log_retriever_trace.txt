@@ -1,0 +1,2 @@
+[Log retriever traces | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/log_retriever_trace): LLM should read this page when logging retriever traces in an application, understanding how to format retriever data for rendering, understanding how retriever traces are displayed in LangSmith This page explains how to log and format retriever traces in LangSmith, including annotating the retriever step, returning a list of documents with specific keys, and how retriever traces are rendered.
+

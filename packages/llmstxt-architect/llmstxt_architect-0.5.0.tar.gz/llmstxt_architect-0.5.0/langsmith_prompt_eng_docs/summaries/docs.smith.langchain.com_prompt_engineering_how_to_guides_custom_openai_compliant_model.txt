@@ -1,0 +1,2 @@
+[Run the playground against an OpenAI-compliant model provider/proxy | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/custom_openai_compliant_model): LLM should read this page when it needs to use a model that is compatible with the OpenAI API in the LangSmith playground, or when it needs to deploy and use a custom model in the LangSmith playground. This page explains how to deploy an OpenAI-compliant model provider/proxy, and how to use that model in the LangSmith playground by setting the OpenAI Proxy Provider option.
+

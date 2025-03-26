@@ -1,0 +1,2 @@
+[How to pass custom run ID or set tags and metadata for graph runs in LangSmith](https://langchain-ai.github.io/langgraph/how-tos/run-id-langsmith/): LLM should read this page when needing to customize trace information in LangSmith for LangGraph runs or when debugging graph runs with custom identifiers. The page explains how to pass custom run_id, set tags, add metadata, and customize run names for LangGraph traces in LangSmith using RunnableConfig, with examples showing implementation with a ReAct agent.
+

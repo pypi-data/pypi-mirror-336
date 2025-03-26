@@ -1,0 +1,2 @@
+[Human-in-the-loop](https://langchain-ai.github.io/langgraph/concepts/v0-human-in-the-loop/): LLM should read this page when implementing human-in-the-loop systems, creating interactive agents, or troubleshooting LangGraph applications. Human-in-the-loop interaction patterns in LangGraph including approval workflows, state editing, user input collection, breakpoints (static and dynamic), tool call reviewing, and time travel debugging with checkpoint replay/forking capabilities.
+

@@ -1,0 +1,2 @@
+[LangGraph Platform: Scalability & Resilience](https://langchain-ai.github.io/langgraph/concepts/scalability_and_resilience/): LLM should read this page when needing to understand LangGraph Platform's scaling capabilities, designing high-availability LangGraph deployments, or troubleshooting resilience issues. This page details LangGraph Platform's horizontal scaling features including stateless server instances, queue worker scaling, resilience mechanisms for handling crashes, and database failover strategies in Postgres and Redis.
+

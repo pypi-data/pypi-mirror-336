@@ -1,0 +1,2 @@
+[Trace generator functions | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/trace_generator_functions): LLM should read this page when tracing generator functions, streaming LLM outputs, or customizing output aggregation. Explains how to trace generator and async generator functions, stream outputs to minimize latency, and aggregate streamed outputs into desired formats before tracing them.
+

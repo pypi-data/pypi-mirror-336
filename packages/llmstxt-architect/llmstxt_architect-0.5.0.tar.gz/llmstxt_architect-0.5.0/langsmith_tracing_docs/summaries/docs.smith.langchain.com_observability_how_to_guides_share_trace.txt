@@ -1,0 +1,2 @@
+[Share or unshare a trace publicly | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/share_trace): LLM should read this page when sharing traces publicly, unsharing traces, or managing publicly shared traces. Covers how to share or unshare a trace publicly on LangSmith, including steps for sharing, unsharing from the trace view or list, and ensuring no sensitive data is exposed.
+

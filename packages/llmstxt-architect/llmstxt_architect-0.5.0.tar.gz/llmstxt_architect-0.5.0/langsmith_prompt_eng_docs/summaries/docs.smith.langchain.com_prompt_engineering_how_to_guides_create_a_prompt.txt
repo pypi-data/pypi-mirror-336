@@ -1,0 +1,2 @@
+[Create a prompt | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/prompt_engineering/how_to_guides/create_a_prompt): LLM should read this page when creating a new prompt, saving a prompt, or adding metadata to a prompt. This page provides instructions on how to create a new prompt using the LangSmith UI, save the prompt as private or public, and add metadata like descriptions and use cases.
+

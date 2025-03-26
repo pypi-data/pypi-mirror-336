@@ -1,0 +1,2 @@
+[LangGraph Glossary](https://langchain-ai.github.io/langgraph/concepts/low_level/): 'LLM should read this page when building multi-agent systems, optimizing subgraph performance and communication, and troubleshooting LangGraph compilation issues.' 'Summary: LangGraph provides features for creating subgraphs as compiled nodes, function-based nodes, and adding subgraphs to parent graphs with shared or transformed state.'
+

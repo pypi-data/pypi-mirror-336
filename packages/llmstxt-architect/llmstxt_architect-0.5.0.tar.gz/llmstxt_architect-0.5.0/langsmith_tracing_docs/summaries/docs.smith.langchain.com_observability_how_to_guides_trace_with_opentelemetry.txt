@@ -1,0 +1,2 @@
+[Trace with OpenTelemetry | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/trace_with_opentelemetry): LLM should read this page when tracing AI/LLM applications using OpenTelemetry, using the Traceloop SDK, or using the Arize SDK. This page covers how to set up and log traces from OpenTelemetry-based clients, the Traceloop SDK, and the Arize SDK to LangSmith for observability.
+

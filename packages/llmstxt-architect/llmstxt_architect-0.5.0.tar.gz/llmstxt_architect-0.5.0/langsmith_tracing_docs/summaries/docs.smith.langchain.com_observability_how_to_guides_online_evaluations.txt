@@ -1,0 +1,2 @@
+[Set up online evaluations | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/observability/how_to_guides/online_evaluations): LLM should read this page when setting up online evaluations, configuring LLM or custom code evaluators, and testing evaluation functions. This page explains how to configure online evaluations on LangSmith, including setting up LLM-based evaluators with prompts and custom code evaluators with provided guidelines and restrictions.
+

@@ -1,0 +1,2 @@
+[How to run an evaluation asynchronously | 🦜️🛠️ LangSmith](https://docs.smith.langchain.com/evaluation/how_to_guides/async): LLM should read this page when needing to implement asynchronous evaluations in Python, handling concurrent evaluation requests, or working with async functions in LangSmith. This page explains how to use the `aevaluate()` function in LangSmith's Python SDK to run evaluations asynchronously, with sample code showing async function creation, handling concurrency, and integration with datasets for evaluation.
+

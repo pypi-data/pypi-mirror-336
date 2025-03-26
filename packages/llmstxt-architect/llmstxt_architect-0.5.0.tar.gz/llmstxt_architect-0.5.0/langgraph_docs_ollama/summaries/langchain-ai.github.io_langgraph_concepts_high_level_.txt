@@ -1,0 +1,2 @@
+[Why LangGraph?](https://langchain-ai.github.io/langgraph/concepts/high_level/): Line 1: LLM should read this page when building applications with workflow scaffolding, planning autonomous agents, or deploying LangGraph-based projects. Line 2: This page explains the benefits of using LangGraph, including persistence layer for memory and human-in-the-loop capabilities, streaming support for events and tokens, and debugging and deployment tools.
+

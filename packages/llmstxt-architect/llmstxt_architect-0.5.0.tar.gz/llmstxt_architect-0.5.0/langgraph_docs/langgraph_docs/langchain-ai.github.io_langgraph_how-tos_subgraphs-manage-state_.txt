@@ -1,0 +1,2 @@
+[How to view and update state in subgraphs](https://langchain-ai.github.io/langgraph/how-tos/subgraphs-manage-state/): LLM should read this page when working with state management in nested subgraphs, implementing human-in-the-loop patterns, or debugging complex graph flows. This guide covers viewing and updating state in LangGraph subgraphs, including how to resume execution from breakpoints, modify subgraph state, act as specific nodes, and work with multi-level nested subgraphs.
+

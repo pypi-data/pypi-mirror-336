@@ -1,0 +1,2 @@
+[How to handle large numbers of tools](https://langchain-ai.github.io/langgraph/how-tos/many-tools/): LLM should read this page when handling large tool collections, implementing dynamic tool selection, or creating retrieval-based tool management in LangGraph. This page demonstrates how to manage large numbers of tools by using vector search to dynamically select relevant tools based on user queries, implementing tool selection nodes in LangGraph, and handling tool selection errors with retry mechanisms.
+
