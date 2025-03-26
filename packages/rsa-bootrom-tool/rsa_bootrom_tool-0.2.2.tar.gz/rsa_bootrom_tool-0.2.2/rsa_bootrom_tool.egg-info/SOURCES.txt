@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+rsa_bootrom_tool.egg-info/PKG-INFO
+rsa_bootrom_tool.egg-info/SOURCES.txt
+rsa_bootrom_tool.egg-info/dependency_links.txt
+rsa_bootrom_tool.egg-info/entry_points.txt
+rsa_bootrom_tool.egg-info/requires.txt
+rsa_bootrom_tool.egg-info/top_level.txt
+rsa_tool/__init__.py
+rsa_tool/cli.py
+tests/test_sign_verify.py
