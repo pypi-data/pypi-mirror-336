@@ -1,0 +1,32 @@
+[project]
+name = "coze-mcp-server"
+version = "0.0.2"
+description = "MCP Server for Coze(coze.com/coze.cn)"
+authors = [
+    { name = "chyroc", email = "chyroc@bytedance.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+keywords = ["coze", "mcp", "llm"]
+license = { text = "MIT" }
+dependencies = [
+    "cozepy>=0.13.0",
+    "mcp[cli]>=1.5.0",
+    "pydantic>=2.0.0",
+    "tzdata>=2024.2",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pre-commit>=4.2.0",
+    "pytest>=8.3.5",
+    "ruff>=0.11.2",
+]
+
+[project.scripts]
+coze-mcp-server = "coze_mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
