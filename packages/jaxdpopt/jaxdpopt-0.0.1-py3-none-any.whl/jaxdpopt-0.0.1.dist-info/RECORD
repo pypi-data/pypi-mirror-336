@@ -1,0 +1,12 @@
+jaxdpopt/data.py,sha256=fFVVwH2QJ9F3RudKCMvYfEJFc4lAfwpypoUQBOxB2Sw,2906
+jaxdpopt/dp_accounting_utils.py,sha256=X8aBstVdDL46svj-NiOfKUtIAoVNTMX0hI-9wbsEr0Y,4609
+jaxdpopt/jax_mask_efficient.py,sha256=HKBPXGTGPzq7FY4UQp9E4oRFfpOMjSpEQ5RE-JrhZhc,16000
+jaxdpopt/models.py,sha256=baPV76rP1oi4BwaZ4ORFDeVmF6uJz51Bdg7ZvmWjAm0,3430
+jaxdpopt/examples/example.ipynb,sha256=RtDa0JQWRrjRtQtj6_ZUbcI4IujKa5bWq5CMX52Z3EI,20305
+jaxdpopt/examples/example_distributed.ipynb,sha256=PBpC6Dho_6bWQU6XK5Q5v_UzJkGH4Z6d_65ljw_jYKs,24069
+jaxdpopt/examples/example_fixed_bs.ipynb,sha256=-Wmd_--CJVej9XPxdhXyE8MjoZavt80SEF0fQzaeqFM,20001
+jaxdpopt-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jaxdpopt-0.0.1.dist-info/METADATA,sha256=XgH9gfVI2e-NlA6HeScyS1Cv25rFUllbkl_mzGMBYc0,14700
+jaxdpopt-0.0.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+jaxdpopt-0.0.1.dist-info/top_level.txt,sha256=nnl-cEodOhwKVOeGIN_RoduSeIqnSn-pI1lumfUBuHM,9
+jaxdpopt-0.0.1.dist-info/RECORD,,
