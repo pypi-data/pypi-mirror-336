@@ -1,0 +1,8 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pgjinja/__init__.py,sha256=mDvSLvTAcbF3fo7XXglYQHHdBNVs1fryNCNhOeRPBUU,614
+src/pgjinja/main.py,sha256=PniocHSTuRvDDG4E4xfr_KjSNVSvWAJ-7u4XI3IL_94,2357
+src/pgjinja/postgres.py,sha256=0Zv_Lf75BdHlgd47FkRYUf4Zsss5pIAWRP24s86DlA0,2444
+pgjinja-0.1.0.dist-info/METADATA,sha256=YjV3_4cuEY4v-ZwQ8gAWQNRD_WT_KAdTs5z5KvX7WTM,5136
+pgjinja-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pgjinja-0.1.0.dist-info/licenses/LICENSE,sha256=lpsoyiq7LYJdIRMzSqu0gEbm5DT2B4pe26K6Xg35TOA,1062
+pgjinja-0.1.0.dist-info/RECORD,,
