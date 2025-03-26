@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+kaltts/__init__.py
+kaltts/tts_module.py
+kaltts.egg-info/PKG-INFO
+kaltts.egg-info/SOURCES.txt
+kaltts.egg-info/dependency_links.txt
+kaltts.egg-info/entry_points.txt
+kaltts.egg-info/requires.txt
+kaltts.egg-info/top_level.txt
