@@ -1,0 +1,15 @@
+aicmd/__init__.py,sha256=MigXIT7A1M9YZuH2MyjKReSziFwzbZX2boVYsLosR6s,22
+aicmd/__main__.py,sha256=6ESBpSLV36ePwqMAa3ipMFrgO1j5PFxGLa0mAdqxo2c,103
+aicmd/config.py,sha256=T88XEDUvclOPREWtcKyklXnce6Ckg-BOcq2pIkU_a-c,570
+aicmd/main.py,sha256=zUxgIp_QlkJZMP2tVJnSEGJLu_-Y94GWsPYgHPfXOM8,6364
+aicmd/openai_api.py,sha256=s3ilpnIwKex_Tup16PdmNFbt2OcHXCngSEH_Ex8ov7c,3362
+aicmd/prompts.py,sha256=E3ka2Cqn8VlGHNrX1FG-UxYDBLh1HPytcbGINMjDBjA,1272
+aicmd/utils.py,sha256=h7-OrrVDULS2EWjy4gtv_FeeqYYX3URVNbqcGyY1ghw,740
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_aicmd.py,sha256=_nHRg6jjakctfV3yxSB00rPpTg2bjfE5meCIl3jyTPQ,1308
+noumandaavigi-0.1.dist-info/LICENSE,sha256=i2l76JIMKZ7rh3yxuh5xrQqObyQlSZcncB_f4AWmOQ0,1068
+noumandaavigi-0.1.dist-info/METADATA,sha256=04_swq0o3BRNsiGJ5YTgSDZcBK7Tg_rhq9IrvTPKk5w,2224
+noumandaavigi-0.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+noumandaavigi-0.1.dist-info/entry_points.txt,sha256=UlMrrinWN8tjYxdko94D5n-gloYoNeRNKYtgJWhgfvU,43
+noumandaavigi-0.1.dist-info/top_level.txt,sha256=SxjTQhkrAAWUiHRZD-ST02h7vWDRZ_82srRqp1TNotI,12
+noumandaavigi-0.1.dist-info/RECORD,,
