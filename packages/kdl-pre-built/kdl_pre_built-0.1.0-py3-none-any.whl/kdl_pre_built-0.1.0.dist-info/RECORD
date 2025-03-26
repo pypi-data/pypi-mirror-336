@@ -1,0 +1,6 @@
+kdl_pre_built/__init__.py,sha256=I0YQ_mEphdtwNmg_mZ3Bi90jMkXoD84U3YuQZ4yF4Gg,45
+kdl_pre_built/layers/__init__.py,sha256=VTNMMQsrPKOfnCz6pWj-LZMPWnS3RRimrY1Mc933aDI,19
+kdl_pre_built/layers/gmplp.py,sha256=KCKoZGK4ZZ8V-cbBIRNnWoDvnwf7r8h6Lh9dfrMhBHo,4127
+kdl_pre_built-0.1.0.dist-info/METADATA,sha256=Th2uKg4JE9KiJAFRLHMEDOAhanxp90YZmsj7dnimOEs,3710
+kdl_pre_built-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+kdl_pre_built-0.1.0.dist-info/RECORD,,
