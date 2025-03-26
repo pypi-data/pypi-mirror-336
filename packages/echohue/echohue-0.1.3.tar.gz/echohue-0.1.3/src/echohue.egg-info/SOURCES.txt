@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+src/echohue/__init__.py
+src/echohue/defaults.py
+src/echohue/main.py
+src/echohue.egg-info/PKG-INFO
+src/echohue.egg-info/SOURCES.txt
+src/echohue.egg-info/dependency_links.txt
+src/echohue.egg-info/top_level.txt
+test/test_server.py
