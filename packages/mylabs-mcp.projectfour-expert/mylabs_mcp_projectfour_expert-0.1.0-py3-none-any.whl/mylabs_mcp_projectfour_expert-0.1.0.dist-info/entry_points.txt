@@ -1,0 +1,2 @@
+[console_scripts]
+projectfour-expert = mylabs_mcp.projectfour_expert.server:main
