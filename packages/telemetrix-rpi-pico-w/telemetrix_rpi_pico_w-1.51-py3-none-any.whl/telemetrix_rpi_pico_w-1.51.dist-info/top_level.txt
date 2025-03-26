@@ -1,0 +1,8 @@
+ play
+archive
+examples
+examples_aio
+telemetrix_rpi_pico_w
+telemetrix_rpi_pico_w_aio
+venv
+venv2
