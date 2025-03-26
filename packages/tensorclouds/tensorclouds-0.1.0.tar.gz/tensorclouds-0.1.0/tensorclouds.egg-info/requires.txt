@@ -1,0 +1,11 @@
+numpy
+e3nn_jax
+ordered_set
+flax
+einops
+hydra-zen
+
+[dev]
+
+[test]
+pytest
