@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="report_shipment_tag" model="ir.actions.report">
+        <field name="name">Shipment Tag</field>
+        <field name="model">res.partner</field>
+        <field name="report_name">ladirecta.shipment_tag_template</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_file">ladirecta.shipment_tag_template</field>
+        <field name="print_report_name">'Shipment Tag'</field>
+        <field name="paperformat_id" ref="product.paperformat_label_sheet" />
+    </record>
+
+    <template id="shipment_tag_template">
+        <t t-call="web.basic_layout">
+            <div
+                class="page"
+                style="display: flex; flex-wrap: wrap; page-break-inside: avoid;"
+            >
+                <t t-foreach="docs" t-as="partner">
+                    <div
+                        class="label"
+                        style="width:105mm; height:74mm; margin:0mm; border:0px solid #ddd; box-sizing:border-box; display:inline-block; vertical-align:top;"
+                    >
+                        <div style="padding:25px;">
+                            <p style="margin:3; font-size:12px;">
+                                <strong><span t-esc="partner.name" /></strong><br />
+                                <span t-esc="partner.street" /><br />
+                                <span t-esc="partner.city" />, <span
+                                    t-esc="partner.zip"
+                                /><br />
+                                <span t-esc="partner.state_id.name" />
+                            </p>
+                            <img
+                                t-att-src="image_data_uri(partner.get_correos_image())"
+                                style="width:auto; height:auto; max-height:20mm;"
+                            />
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+
+</odoo>
