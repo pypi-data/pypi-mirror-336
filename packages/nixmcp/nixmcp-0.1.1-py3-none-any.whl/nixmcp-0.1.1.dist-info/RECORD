@@ -1,0 +1,8 @@
+nixmcp/__init__.py,sha256=Lf3vITbkvu8qKAVoAFiLS6UpcHReJE10WJepJejS_8A,186
+nixmcp/__main__.py,sha256=BKe3o8T7vjEsQ1736F3Wb_rgxHahsfgvP7EnI-edjCc,137
+nixmcp/server.py,sha256=o3CsAo9kxzWEabEqNm9GSQD_DwcjQY-xhywJ2sPq57E,68781
+nixmcp-0.1.1.dist-info/METADATA,sha256=CUpm0q_KEvPHiITBpTEic9MUAZy9eb821nOeFfYkO3M,8170
+nixmcp-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+nixmcp-0.1.1.dist-info/entry_points.txt,sha256=g9OHRUtB7dVdZsYHTA_fhopGUzkQxFxc-s5UPlt6XJs,51
+nixmcp-0.1.1.dist-info/licenses/LICENSE,sha256=WvYSqkThbyAj-Lb08LxUMEZ3D0on4VwGM6ojFCt5aFU,1070
+nixmcp-0.1.1.dist-info/RECORD,,
