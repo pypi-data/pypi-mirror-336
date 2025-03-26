@@ -1,0 +1,9 @@
+include ../KTTS_v1_model/README.md
+include ../KTTS_v1_model/config/config.yaml
+include ../KTTS_v1_model/data/audio/*.wav
+include ../KTTS_v1_model/data/processed/audio_features/*.npy
+include ../KTTS_v1_model/data/processed/normalized_text/*.txt
+include ../KTTS_v1_model/data/processed/phonemes/*.txt
+include ../KTTS_v1_model/data/raw_text/*.txt
+include ../KTTS_v1_model/models/*.h5
+include ../KTTS_v1_model/models/*.pkl
