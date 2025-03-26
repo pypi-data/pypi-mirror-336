@@ -1,0 +1,2 @@
+SYMBOL_EMPTY = ""
+SYMBOL_COLON = ":"
