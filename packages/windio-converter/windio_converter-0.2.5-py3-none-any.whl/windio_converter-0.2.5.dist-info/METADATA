@@ -1,0 +1,173 @@
+Metadata-Version: 2.4
+Name: windio_converter
+Version: 0.2.5
+Author-email: Kenneth Loenbaek <kenloen@dtu.dk>
+Maintainer-email: Kenneth Loenbaek <kenloen@dtu.dk>
+Project-URL: DTU-Wind-Gitlab, https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter
+Project-URL: Documentation, https://aesopt.pages.windenergy.dtu.dk/windio-converter
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: jmespath
+Requires-Dist: ruamel.yaml
+Requires-Dist: aesoptparam
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: isort; extra == "test"
+Requires-Dist: black; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-design; extra == "docs"
+Requires-Dist: sphinx_book_theme; extra == "docs"
+Requires-Dist: myst-parser; extra == "docs"
+Requires-Dist: sphinx_external_toc; extra == "docs"
+Requires-Dist: sphinxcontrib.bibtex; extra == "docs"
+Requires-Dist: myst-nb; extra == "docs"
+Requires-Dist: markdown; extra == "docs"
+Requires-Dist: jupytext; extra == "docs"
+Requires-Dist: setuptools; extra == "docs"
+Requires-Dist: matplotlib; extra == "docs"
+Provides-Extra: all
+Requires-Dist: windio_converter[docs,test]; extra == "all"
+Dynamic: license-file
+
+# windIO Converter
+
+[![pipeline status](https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter/badges/main/pipeline.svg)](https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter/-/commits/main) [![coverage report](https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter/badges/main/coverage.svg)](https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter/-/commits/main) [![Latest Release](https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter/-/badges/release.svg)](https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter/-/releases) 
+
+A python package for converting windIO files/data-structures.
+
+It includes conversion of the 
+
+- **windIO file/data-structure it self**  
+    - [Changing coordinate systems](https://aesopt.pages.windenergy.dtu.dk/windio-converter/windio/coordinate_system.html) <img src="https://iea-wind.org/favicon.ico" style="width:12px">  &rarr; <img src="https://iea-wind.org/favicon.ico" style="width:12px">
+    - [Changing windIO version](https://aesopt.pages.windenergy.dtu.dk/windio-converter/windio/versions.html) <img src="https://iea-wind.org/favicon.ico" style="width:12px">  &rarr; <img src="https://iea-wind.org/favicon.ico" style="width:12px">
+- **From windIO** to other formats
+    - [windIO to HAWC2](https://aesopt.pages.windenergy.dtu.dk/windio-converter/from_windio/windio_to_hawc2.html) <img src="https://iea-wind.org/favicon.ico" style="width:12px"> &rarr; <img src="https://hawc2.pages.windenergy.dtu.dk/documentation/hawc2-manual/_static/favicon.ico" style="width:12px">
+- **To windIO** from other formats
+    - HAWC2 to windIO  <img src="https://hawc2.pages.windenergy.dtu.dk/documentation/hawc2-manual/_static/favicon.ico" style="width:12px">  &rarr; <img src="https://iea-wind.org/favicon.ico" style="width:12px">
+
+It also includes a modules for reading, writing and interacting with the resulting data format. It includes:
+
+- [windIO](https://aesopt.pages.windenergy.dtu.dk/windio-converter/io/windio.html)
+- [HAWC2](https://aesopt.pages.windenergy.dtu.dk/windio-converter/io/hawc2.html)
+    - [AE-file](https://aesopt.pages.windenergy.dtu.dk/windio-converter/io/hawc2.html#ae-file-ae-list)
+    - [PC-file](https://aesopt.pages.windenergy.dtu.dk/windio-converter/io/hawc2.html#pc-file-pc-list)
+    - [ST-file](https://aesopt.pages.windenergy.dtu.dk/windio-converter/io/hawc2.html#st-file-st-list)
+    - [OPT-file](https://aesopt.pages.windenergy.dtu.dk/windio-converter/io/hawc2.html#opt-file-opt-dict)
+    - [HTC-file](https://aesopt.pages.windenergy.dtu.dk/windio-converter/io/hawc2.html#htc-file-htc-dict)
+
+## Installation
+
+The `windio_converter` can be installed directly from PyPi with the command:
+
+```
+pip install windio_converter
+```
+
+### Installation from source
+
+It can also be install from source using `git+` by:
+
+```
+pip install git+https://gitlab.windenergy.dtu.dk/AESOpt/windio-converter.git
+```
+
+This will prompt for the your *username* and *password* for Gitlab-Wind unless you already has setup a [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).
+
+### Dependencies 
+
+The `windio_converter` aims to have a limited number of dependencies and particularly non "pure python" packages, to ensure that it is as easy as possible to install. 
+
+Dependencies which include compiled code are:
+
+- `numpy`
+- `scipy`
+
+The dependencies which are pure python is:
+
+- [`jmespath`](https://jmespath.org/) : A query language for JSON-like data. Makes it easy to extract data from deeply nested `dict`'s and `list`'s.
+- [`ruamel.yaml`](https://yaml.readthedocs.io/en/latest/) : Reading and writing YAML files, which is the basis for windIO. This version is pure-python, but with the option to use the `PyYAML` C-implementation if speed is important. It also allows to set/get/remove comments in the YAML file from python.
+- [`aesoptparam`](https://gitlab.windenergy.dtu.dk/AESOpt/aesoptparam) : Module for declaring model parameters and settings, which integrates features such as: *input type*, *documentation*, *validation*, *parameter linking*, etc. It is an extension of the [param](https://param.holoviz.org/) which allows nested models, data units and more. 
+
+## Simple example
+
+Below is a simple example of loading a windIO file and converting it to a HAWC2. The example below assumes that you have a windIO file. For a fully functional example see the code below for the *IEA-22-280-RWT* which is provided as a part of the module.
+
+### Converting your own windIO model
+```python
+# Loading the main converter
+from windio_converter import windio_to_hawc2 
+# Loading reader and writers for windIO and HAWC2
+from windio_converter.io import WindIO_dict, HAWC2_dict
+
+# Create the base windIO dict
+wio_dict = WindIO_dict()
+# Load the windIO file into the dict
+filename = "your-windio-file.yaml"
+wio_dict.read_yaml(filename)
+
+# Create the converter instance
+converter = windio_to_hawc2(
+    wio_dict.as_dict(), # First argument is the windIO dict to be converted
+    init_rotor_speed=0.7, # Only required input, the initial rotor-speed
+    filenames=dict(base_name="your-turbine-base-name") # Optionally setting the base-name for all files
+    )
+
+# Run the converter (creating a python build dict)
+hawc2_pydict = converter.convert()
+
+# Use the python dict to create a HAWC2_dict instance
+hawc2_dict = HAWC2_dict(hawc2_pydict)
+
+# You can add additional settings for your HAWC2 file here
+#hawc2_dict["htc"].add("simulation")["time_stop"] = 200
+
+# Write the resulting HAWC2 files
+hawc2_dict.write_hawc2("your-output-directory")
+```
+
+### Working example 
+Below is a fully working example converting the *IEA-22-280-RWT* from windIO to HAWC2
+
+```python
+# Loading the main converter
+from windio_converter import windio_to_hawc2 
+# Loading reader and writers for windIO and HAWC2
+from windio_converter.io import WindIO_dict, HAWC2_dict
+# For creating platform independent paths
+import os
+# Path location for test data
+from windio_converter.test import test_path
+
+# Create the base windIO dict
+wio_dict = WindIO_dict()
+# Load the windIO file into the dict
+filename = os.path.join(test_path, "data", "IEA_22MW", "windIO", "IEA-22-280-RWT.yaml")
+wio_dict.read_yaml(filename)
+
+# Create the converter instance
+converter = windio_to_hawc2(
+    wio_dict.as_dict(), # First argument is the windIO dict to be converted
+    init_rotor_speed=0.7, # Only required input, the initial rotor-speed
+    filenames=dict(base_name="IEA-22MW") # Optionally setting the base-name for all files
+    )
+
+# Run the converter (creating a python build dict)
+hawc2_pydict = converter.convert()
+
+# Use the python dict to create a HAWC2_dict instance
+hawc2_dict = HAWC2_dict(hawc2_pydict)
+
+# You can add additional settings for your HAWC2 file here
+#hawc2_dict["htc"].add("simulation")["time_stop"] = 200
+
+# Write the resulting HAWC2 files to the execution directory
+hawc2_dict.write_hawc2()
+```
+
+## Documentation
+
+The documentation with more extensive examples and all features can be found in the documentation here: https://aesopt.pages.windenergy.dtu.dk/windio-converter
