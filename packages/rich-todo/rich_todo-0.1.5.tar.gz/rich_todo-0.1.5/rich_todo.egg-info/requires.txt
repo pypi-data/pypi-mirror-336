@@ -1,0 +1,6 @@
+sqlalchemy
+alembic
+typer
+rich
+platformdirs
+ttkbootstrap
