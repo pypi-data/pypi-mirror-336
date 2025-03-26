@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: simple_example_package_of_decimal_binary_converter
+Version: 0.0.1
+Summary: Package for converting decimal numbers into binary numbers
+Author-email: Example Author <author@example.com>
+License: MIT License
+        
+        Copyright (c) 2025 Henrik Bø
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/MunchProductionz/decimal-binary-converter
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# decimal-binary-converter
+Python packge for converting decimal numbers into binary.
+
+This package is used to provide an example of how to create a Python package. ✨
+
+---
+
+### How to make the package available 🙌
+
+If necessary, use a virtual environment:
+1. Add the virtual environment to the `.gitignore` file by writing `<name-of-venv>/`.
+2. Set up the virtual environment using: `python -m venv <name-of-venv>`.
+3. Activate the virtual environment using: `venv/Scripts/activate` (Windows).
+
+
+Run the following commands:
+1. Install dependencies using: `pip install setuptools build wheel twine`.
+2. Build source code and binary distribution wheel using: `python -m build`.
+3. A: Upload the distribution wheel to the Test Python Package Index using: `twine upload --repository testpypi dist/*`. (Requires an API Key. Get it by [registering an account](https://test.pypi.org/manage/unverified-account/?next=%2Fmanage%2Faccount%2F#api-tokens)).
+4. B: Upload the distribution wheel to the Python Package Index using: `twine upload dist/*`.
+5. Install the package using `pip install <your-package>`.
+
+---
+
+### Details 🔎
+
+In the `__init__.py` file, we leave it non-empty to make it easier to import stuff from the pacakge.
+- Instead of having to write `from decimal_binary_converter.converter import decimal_to_binary` when importing,
+- We can write `from decimal_binary_converter import decimal_to_binary`.
+
