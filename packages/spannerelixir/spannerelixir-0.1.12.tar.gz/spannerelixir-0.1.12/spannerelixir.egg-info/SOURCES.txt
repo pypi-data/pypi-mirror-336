@@ -1,0 +1,13 @@
+pyproject.toml
+spannerelixir/__init__.py
+spannerelixir/exceptions.py
+spannerelixir/fields.py
+spannerelixir/model.py
+spannerelixir/query.py
+spannerelixir/session.py
+spannerelixir/utils.py
+spannerelixir.egg-info/PKG-INFO
+spannerelixir.egg-info/SOURCES.txt
+spannerelixir.egg-info/dependency_links.txt
+spannerelixir.egg-info/requires.txt
+spannerelixir.egg-info/top_level.txt
