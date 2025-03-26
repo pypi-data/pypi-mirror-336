@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+authed_mcp/client.py
+authed_mcp/server.py
+authed_mcp.egg-info/PKG-INFO
+authed_mcp.egg-info/SOURCES.txt
+authed_mcp.egg-info/dependency_links.txt
+authed_mcp.egg-info/entry_points.txt
+authed_mcp.egg-info/requires.txt
+authed_mcp.egg-info/top_level.txt
