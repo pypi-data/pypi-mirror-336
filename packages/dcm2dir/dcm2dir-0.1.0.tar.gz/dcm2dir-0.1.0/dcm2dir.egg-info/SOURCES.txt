@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dcm2dir/__init__.py
+dcm2dir/dcm2dir.py
+dcm2dir.egg-info/PKG-INFO
+dcm2dir.egg-info/SOURCES.txt
+dcm2dir.egg-info/dependency_links.txt
+dcm2dir.egg-info/entry_points.txt
+dcm2dir.egg-info/requires.txt
+dcm2dir.egg-info/top_level.txt
