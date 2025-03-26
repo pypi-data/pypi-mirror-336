@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: quantalyze
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.9
+Requires-Dist: matplotlib>=3.9.4
+Requires-Dist: numpy>=2.0.2
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: scipy>=1.13.1
+Description-Content-Type: text/markdown
+
+# Quantalyze
+
+Utilities for analyzing data.
