@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: langdetect_zh
+Version: 1.0.4
+Summary: Google's langdetect modified for Chinese texts
+Author: huyc
+Author-email: huyc@mail.ecust.edu.cn
+License: MIT
+Keywords: language detection chinese
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: six
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+langdetect_zh
+==========
+
+
+
+Installation
+============
+
+    $ pip install langdetect_zh
+
+Supported Python versions 2.7, 3.4+.
+
+
+Languages
+=========
+
+``langdetect_zh`` supports 2 languages out of the box ([ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)):
+
+    zh-cn, zh-tw
+
+
+Basic usage
+===========
+
+Directly output the most similar language code：
+
+```python
+>>> from langdetect_zh import detect
+>>> detect("这是一段中文文本")
+'zh-cn'
+```
+
+To find out the probabilities for the top languages:
+
+```python
+>>> from langdetect_zh import detect_langs
+>>> detect_langs("这是一段中文文本")
+[zh-cn:0.999997316441747]
+```
+
+**NOTE**
+
+Language detection algorithm is non-deterministic, which means that if you try to run it on a text which is either too short or too ambiguous, you might get different results everytime you run it.
+
+To enforce consistent results, call following code before the first language detection:
+
+```python
+from langdetect_zh import DetectorFactory
+DetectorFactory.seed = 0
+```
+
+
+
+
+Original project
+================
+
+This package is an optimization of [langdetect](https://github.com/Mimino666/langdetect). The specific optimization measure is to subdivide simplified Chinese and traditional Chinese under the condition of pure Chinese.
