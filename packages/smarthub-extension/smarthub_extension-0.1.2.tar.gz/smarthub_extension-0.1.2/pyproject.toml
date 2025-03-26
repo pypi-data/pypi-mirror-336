@@ -1,0 +1,26 @@
+[project]
+name = "smarthub-extension"
+version = "0.1.2"
+description = "SmartHub MCP extension for Goose"
+authors = [
+    {name = "Block", email = "goose@squareup.com"},
+]
+dependencies = [
+    "mcp>=1.4.1",
+    "snowflake-connector-python>=3.14.0",
+    "uvicorn>=0.34.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/block/smarthub-extension"
+Documentation = "https://block.github.io/goose/docs/tutorials/custom-extensions"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+smarthub = "smarthub_extension.cli.main:cli"
