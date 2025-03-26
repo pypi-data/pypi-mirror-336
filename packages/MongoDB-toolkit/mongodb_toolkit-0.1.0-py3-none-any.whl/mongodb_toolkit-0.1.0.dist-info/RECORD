@@ -1,0 +1,11 @@
+mongodb_toolkit/__init__.py,sha256=Ku_O-RFLT5hUr4ymu4Z9mTdkIMqEsYXRVXSBceTQb1M,574
+mongodb_toolkit/execute_query.py,sha256=_tbMfgTiA87v4_ejeJMHb37InjQGRY9QjATW8Z0Ok6o,5367
+mongodb_toolkit/get_schema.py,sha256=OJc9NxkpGFhpItRdyJK3aJp2B5hqesnx-cM7jVypvo4,10234
+mongodb_toolkit/toolkit.py,sha256=yQ6I3gaTKhryT_1pnjQAyejRDfQA9zK57hmjPvfOvaM,1969
+mongodb_toolkit/validate_query_schema.py,sha256=64x49zrAou7wiUn5CYXOoVmhivtEGbRryC7lH5br0cs,20241
+mongodb_toolkit/validate_query_syntax.py,sha256=9TF3z2EvewL-PRRovg9uSImEun7CzGM9KRboSbch008,9063
+mongodb_toolkit-0.1.0.dist-info/licenses/LICENSE,sha256=DwFZLkCeNK9q4E16h6xvdOnIwgRFCmcUU82IVQCNdlo,96
+mongodb_toolkit-0.1.0.dist-info/METADATA,sha256=gHLZhk_zvAi2SDsTaCLmF8VixIBtxbTCs70qp3p43Tk,11873
+mongodb_toolkit-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mongodb_toolkit-0.1.0.dist-info/top_level.txt,sha256=B865ZrUrTOsLJOBhkQ7ujFCIPrCYACzypCVOg8A2O-Q,16
+mongodb_toolkit-0.1.0.dist-info/RECORD,,
