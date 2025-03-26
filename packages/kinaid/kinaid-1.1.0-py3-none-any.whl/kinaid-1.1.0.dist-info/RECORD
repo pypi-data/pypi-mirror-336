@@ -1,0 +1,16 @@
+build/lib/kinaid/__init__.py,sha256=sEF6qs2DVj2DaxhPyKWlIrlB2Q-rihErSgbzEEjO1gw,304
+build/lib/kinaid/matching.py,sha256=SIy6_P_tPTmgbakbSDv0wjb8OXCbYT6GD51dpU64wfA,17374
+build/lib/kinaid/ortholog.py,sha256=g8wVHX9LaREUvAEKV8DGVaaP4eXZsD6Ci4wGmH8VLto,9223
+build/lib/kinaid/session.py,sha256=YlxpCYwBB-LdA8VIJ3TQIY4JgZtzQK5CS3nYugeeFIQ,26786
+build/lib/kinaid/utility.py,sha256=HHQqIulG7zgJHSkehkFQ2nl5OQvzDL6ivBYBYkBH6vk,55368
+kinaid/__init__.py,sha256=sEF6qs2DVj2DaxhPyKWlIrlB2Q-rihErSgbzEEjO1gw,304
+kinaid/matching.py,sha256=SIy6_P_tPTmgbakbSDv0wjb8OXCbYT6GD51dpU64wfA,17374
+kinaid/ortholog.py,sha256=g8wVHX9LaREUvAEKV8DGVaaP4eXZsD6Ci4wGmH8VLto,9223
+kinaid/session.py,sha256=YlxpCYwBB-LdA8VIJ3TQIY4JgZtzQK5CS3nYugeeFIQ,26786
+kinaid/utility.py,sha256=HHQqIulG7zgJHSkehkFQ2nl5OQvzDL6ivBYBYkBH6vk,55368
+kinaid-1.1.0.dist-info/licenses/LICENSE,sha256=VmtJ29R7T-Ww16xHCLAERVyqB0uZmqijDm6V-qHKRqc,1066
+kinaid-1.1.0.dist-info/METADATA,sha256=MvBV6necUX3mhIay8HiMZtpmNXrYLOMvUuw25fzLRzI,4169
+kinaid-1.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+kinaid-1.1.0.dist-info/entry_points.txt,sha256=GdAckgdLIsUVDlVKBf02xQnTUfICtlkwChY2gzRVLiQ,105
+kinaid-1.1.0.dist-info/top_level.txt,sha256=aJtMGa-3K9hXj1QgYgjtLUuSmCyw7mGcqLZdlL4kr60,132
+kinaid-1.1.0.dist-info/RECORD,,
