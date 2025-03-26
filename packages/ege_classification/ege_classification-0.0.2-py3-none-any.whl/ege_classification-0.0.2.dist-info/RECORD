@@ -1,0 +1,7 @@
+ege_classification/__init__.py,sha256=l3wBclgFKLKtTrNALVw0Kepz3KaFJYD2frHJu7_UDkQ,83
+ege_classification/__main__.py,sha256=YCTzIWzIXge23zZ9NA2arcsDzET2I3z_zdQ_WjnWBTA,208
+ege_classification/huggingface.py,sha256=gbT1ViFzfyEkHG12e2_ZNCh1thjfsR1uxJgs9HnBw5E,1303
+ege_classification/model.py,sha256=mKqpr_6r3zPDhk6fqt9xojxqyBoGwO9f8tiExNdkEPk,3891
+ege_classification-0.0.2.dist-info/METADATA,sha256=XUPv8aPPTZFfS8tzhqfKTwy1_eUQC7ToSG1RLjt6k_0,2403
+ege_classification-0.0.2.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+ege_classification-0.0.2.dist-info/RECORD,,
