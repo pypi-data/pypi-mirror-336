@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pyfritzsms"
+version = "0.1.1"
+description = "Python library to send SMS via AVM FRITZ!Box"
+license = "Apache-2.0"
+authors = ["Marc Hoersken <info@marc-hoersken.de>"]
+readme = "README.md"
+repository = "https://github.com/mback2k/pyfritzsms"
+keywords = ["fritzbox", "sms"]
+packages = [
+    { include = "fritzsms" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.10.3"
+pyotp = "^2.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
