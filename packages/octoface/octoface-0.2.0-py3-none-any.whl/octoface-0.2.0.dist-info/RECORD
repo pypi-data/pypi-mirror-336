@@ -1,0 +1,11 @@
+octoface/__init__.py,sha256=vv5VLhLZtYVsAAlUYAfdncFDSpWE6S72NwHgfMnz7rs,92
+octoface/cli.py,sha256=c6ZxWtqwYeY1fkPgHpXRHup5HU5832mxZ3Wuxu9BLWI,15377
+octoface/downloader.py,sha256=yw8xju98EtsDEBBuDG_5KtGMBfrRPNTV5Iszv1c36TY,2363
+octoface/github.py,sha256=vRchiwPDcujpZQUF4vU-CzZcyL6cibcpzmIeSZSaMJs,20517
+octoface/uploader.py,sha256=Z_2O36I35R55ZQvWxMZ5jjReySfSlsVp2V7VqtDIPb4,7743
+octoface/utils.py,sha256=FejGJxIrRagbPhZPg2uMeBHw8qGslrNHx9Z9YAhHQAA,5275
+octoface-0.2.0.dist-info/METADATA,sha256=pUUih5PcFZur4r06CK9fciKtLmgHAPQvUTj2H6U1ho8,2595
+octoface-0.2.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+octoface-0.2.0.dist-info/entry_points.txt,sha256=zXY38AiOuNlc94z4bWfmNFHS7YGC6TOe2F0M1Osu6qU,47
+octoface-0.2.0.dist-info/top_level.txt,sha256=9zw0MH4LemmpAA6813OPV35nKxh22mqdgXCAuWXQOvg,9
+octoface-0.2.0.dist-info/RECORD,,
