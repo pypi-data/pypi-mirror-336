@@ -1,0 +1,119 @@
+# QDeep Hybrid Solver - Quadratic Unconstrained Binary Optimization Solver
+
+**QDeep Hybrid Solver** is a Python library specifically developed for efficiently solving **Quadratic Unconstrained Binary Optimization (QUBO)** problems through advanced hybrid quantum-classical computing methods. It provides a user-friendly interface to submit QUBO matrices and retrieve structured, optimized solutions.
+
+## Mathematical Formulation
+
+A QUBO problem is mathematically expressed as:
+
+```math
+\min_{x \in \{0,1\}^n} \; x^T Q x
+```
+
+where:
+
+- \(x\) is a binary vector.
+- \(Q\) is a symmetric matrix representing the problem's coefficients.
+
+## Features
+
+- Type-hinted implementation using Python's `TypedDict`
+- Comprehensive input validation for matrices
+- Secure authentication token management
+- Structured and detailed response handling
+
+## Installation
+
+Install the required dependencies along with the solver:
+
+```bash
+pip install numpy requests qdeepsdk
+```
+
+### Dependencies
+
+- `numpy`
+- `requests`
+- `qdeepsdk`
+
+### Quantum Optimization Parameters
+
+#### `m_budget`
+
+- **Type:** Integer
+- **Default Value:** `1000`
+- **Description:** Represents the measurement budget, which determines the maximum number of quantum measurement samples executed during the optimization process. This parameter is critical for managing quantum resource allocation while balancing solution quality and computational efficiency.
+
+#### `num_reads`
+
+- **Type:** Integer
+- **Default Value:** `10000`
+- **Description:** Specifies the number of iterations (reads) performed by the solver. This parameter plays an integral role in the convergence of the algorithm by defining the number of independent solution attempts during the optimization process.
+
+## Usage
+
+```python
+import numpy as np
+from qdeepsdk import QDeepHybridSolver
+
+# Initialize the solver
+solver = QDeepHybridSolver()
+
+# Set the authentication token
+solver.token = "your-auth-token-here"
+
+# Configure parameters (if different from defaults)
+solver.m_budget = 50000      # Measurement budget
+solver.num_reads = 10000    # Number of reads
+
+# Define a QUBO matrix
+matrix = np.array([
+    [1, 0],
+    [0, -1]
+])
+
+# Solve the QUBO problem
+try:
+    response = solver.solve(matrix)
+    results = response['QdeepHybridSolver']
+    print("Hybrid Solver Results:", results)
+except ValueError as e:
+    print(f"Error: {e}")
+except requests.RequestException as e:
+    print(f"API Error: {e}")
+```
+
+## Sample Matrix and Response
+
+### Sample Matrix
+
+```python
+[[1, 0], [0, -1]]
+```
+
+### Sample Response
+
+```json
+{
+        "QdeepHybridSolver": {
+            "configuration": [0.0, 1.0],
+            "energy": -1.0,
+            "time": 3.6245157718658447
+        }
+
+}
+```
+
+## Requirements
+
+- Python 3.7+
+- NumPy
+- Requests
+
+The library includes comprehensive error handling for:
+
+- Invalid or missing authentication tokens
+- Non-square matrices
+- Non-2D matrices
+- Non-numpy array inputs
+- API connection issues
