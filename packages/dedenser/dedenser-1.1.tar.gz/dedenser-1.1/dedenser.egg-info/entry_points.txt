@@ -1,0 +1,3 @@
+[console_scripts]
+dedenser = dedenser.__main__:main
+
