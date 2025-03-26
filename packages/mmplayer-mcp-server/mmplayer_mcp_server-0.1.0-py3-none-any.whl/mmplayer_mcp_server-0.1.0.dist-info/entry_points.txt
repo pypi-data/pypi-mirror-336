@@ -1,0 +1,2 @@
+[console_scripts]
+mmplayer-mcp-server = voice.main:main
