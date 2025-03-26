@@ -1,0 +1,12 @@
+gmpy2
+cryptography
+pynacl
+ecdsa
+aiohttp
+requests
+pexpect
+lxml
+
+[:platform_system != "Windows"]
+scrypt
+semantic-version

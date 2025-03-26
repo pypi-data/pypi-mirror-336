@@ -1,0 +1,5 @@
+# Install with --no-deps.   Otherwise, many unneeded dependencies will be
+# installed.
+
+py_ecc
+mypy_extensions
