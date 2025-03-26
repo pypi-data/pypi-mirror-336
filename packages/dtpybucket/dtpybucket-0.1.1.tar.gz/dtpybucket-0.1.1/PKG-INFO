@@ -1,0 +1,95 @@
+Metadata-Version: 2.3
+Name: dtpybucket
+Version: 0.1.1
+Summary: A package to improved bucket and s3 compatible system library to have better development experience.
+License: MIT
+Author: Reza Shirazi
+Author-email: reza@datgate.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: boto3 (>=1.36.16,<2.0.0)
+Requires-Dist: botocore (>=1.36.16,<2.0.0)
+Requires-Dist: dtpyutils (>=0.2.0,<0.3.0)
+Description-Content-Type: text/markdown
+
+# Python Bucket Manager
+
+**Python Bucket Manager** is a lightweight Python package that simplifies interactions with Amazon S3 or S3-compatible storage services. It provides an easy-to-use wrapper around the boto3 client, enabling you to upload, download, duplicate, and delete files within your S3 bucket with minimal code.
+
+## Features
+
+- **Seamless S3 Integration**: Connect to AWS S3 or any S3-compatible storage service with custom endpoint URLs, regions, and credentials.
+- **File Operations**:
+  - **Upload**: Send files as bytes or directly from a file path.
+  - **Download**: Retrieve files either to a local path or directly into a file-like object.
+  - **Duplicate**: Copy files within the bucket with automatic renaming to avoid conflicts.
+  - **Delete**: Remove files from your bucket.
+  - **Check Existence**: Verify if a file exists using an S3 head object request.
+
+## Installation
+
+### Prerequisites
+
+- Python 3.11 or higher
+- [boto3](https://pypi.org/project/boto3/)
+
+### Install via pip
+
+If `dtpybucket` is available on PyPI, you can install it with:
+
+```bash
+pip install dtpybucket
+```
+
+## Usage
+
+Below is an example of how to use Bucket in your code:
+
+```python
+from dtpybucket.bucket import Bucket
+
+def main():
+    # Initialize the bucket
+    my_bucket = Bucket(
+        name="my-bucket-name",
+        s3_mode=False,
+        endpoint_url="https://my-s3-endpoint.com",
+        access_key="my-access-key",
+        secret_key="my-secret-key",
+        region_name="us-east-1"
+    )
+
+    # Example: Upload a file from disk
+    file_key = "images/sample.png"
+    url = my_bucket.upload_by_path(file_path="local/path/to/sample.png", key=file_key)
+    print(f"File uploaded to: {url}")
+
+    # Example: Check if file exists
+    exists = my_bucket.check_file_exists(file_key)
+    print(f"File exists: {exists}")
+
+    # Example: Download the file
+    my_bucket.download(key=file_key, filepath="downloads/sample.png")
+    print("File downloaded successfully.")
+
+    # Example: Duplicate the file
+    duplicate_url = my_bucket.duplicate(source_key=file_key, destination_key="images/sample_copy.png")
+    print(f"File duplicated to: {duplicate_url}")
+
+    # Example: Safe duplicate (auto appends a number if the destination key exists)
+    safe_duplicate_url = my_bucket.safe_duplicate(source_key=file_key)
+    print(f"File safely duplicated to: {safe_duplicate_url}")
+
+    # Example: Delete the file
+    my_bucket.delete(file_key)
+    print(f"File {file_key} deleted.")
+
+
+if __name__ == "__main__":
+    main()
+```
+
