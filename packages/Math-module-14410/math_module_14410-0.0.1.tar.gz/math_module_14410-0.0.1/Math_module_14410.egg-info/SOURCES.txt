@@ -1,0 +1,8 @@
+README.md
+setup.py
+Math_module_14410.egg-info/PKG-INFO
+Math_module_14410.egg-info/SOURCES.txt
+Math_module_14410.egg-info/dependency_links.txt
+Math_module_14410.egg-info/top_level.txt
+python_package_14410/__init__.py
+python_package_14410/calculation.py
