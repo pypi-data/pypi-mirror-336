@@ -1,0 +1,133 @@
+{% load static %}
+{% load dc_static %}
+<div class="dc-auth-theme">
+    <footer class="is-dark hero">
+        <div class="hero-body">
+            <div class="container is-widescreen">
+                <div class="columns is-gapless">
+                    <div class="column">
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <a class="image is-64x64"
+                                       href="{{ settings.DC_API_URL }}">
+                                        <img src="{% dc_static_img 'logo/Data Central_IconOnly_1Col-Grey.png' %}"
+                                             alt="Data Central Logo">
+                                    </a>
+                                </div>
+                                <div class="level-item">
+                                    <div class="p-l-sm has-text-justified">
+                                        <h3 class="has-text-white title is-3 m-b-xs m-t-none">
+                                            <span class="has-text-weight-light">data</span>
+                                            central
+                                        </h3>
+                                        <div class="level is-mobile has-text-grey-light">
+                                            <div class="level-item"><strong
+                                                    class="">Follow us </strong>
+                                            </div>
+                                            <div class="level-item">
+                                                <a href="https://twitter.com/DataCentralOrg"
+                                                   target="_blank"
+                                                   rel="noopener"
+                                                   class="m-r-xs">
+                                                    <i class="fab fa-twitter"
+                                                       aria-label="Data Central Twitter"></i>
+                                                </a>
+                                            </div>
+                                            <div class="level-item">
+                                                <a href="https://www.facebook.com/Data-Central-642496366138483/"
+                                                   target="_blank"
+                                                   class="m-r-xs"
+                                                   rel="noopener">
+                                                    <i class="fab fa-facebook"
+                                                       aria-label="Data Central Facebook"></i>
+                                                </a>
+                                            </div>
+                                            <div class="level-item">
+                                                <a href="https://www.youtube.com/playlist?list=PLlyINwcIEhd8JtSTKpSQ6X-1Hntoq-SbA"
+                                                   class=""
+                                                   target="_blank"
+                                                   rel="noopener">
+                                                    <i class="fab fa-youtube"
+                                                       aria-label="Data Central YouTube"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="subtitle has-text-grey is-6 m-t m-b">© {% now "Y" %}
+                            Australian Astronomical Optics | Data <strong
+                                    class="has-text-grey-light">Central</strong></small>
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="level-item p-t-sm">
+                                    <a class="image" style="width:100px; padding-right:20px"
+                                       href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/innovative-technologies/centres/aao"
+                                       target="_blank" rel="noopener">
+                                        <img src="{% dc_static_img 'stakeholders/aao_logo_white.png' %}"
+                                             class="" alt="AAO Logo">
+                                    </a>
+
+                                    <a class="image" style="width:130px;"
+                                       href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/innovative-technologies/centres/aao"
+                                       target="_blank" rel="noopener">
+                                        <img src="{% dc_static_img 'stakeholders/MQ_university_logo_inverted.png' %}"
+                                             class="" alt="MQ University Logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-b-md hidden-xs hidden-sm"></div>
+                        <div class="columns">
+                            <div class="column">
+                                <h5 class="title is-5 m-b-sm has-text-grey small-caps">
+                                    Data Access</h5>
+                                <a href="{{ settings.DC_API_URL }}">Web
+                                    Services</a><br>
+                                <a href="{{ settings.DC_API_URL }}/api">REST
+                                    API </a><br>
+                                <a href="{{ settings.DC_CMS_URL }}">Documentation</a><br>
+                                <a href="{{ settings.DC_VO_DOCS_URL }}">VO</a><br>
+                            </div>
+                            <div class="column">
+                                <h5 class="title is-5 m-b-sm has-text-grey small-caps">
+                                    Teams</h5>
+                                <a href="{{ settings.DC_CMS_URL }}/admin">Doc
+                                    Central</a><br>
+                                <a href="{{ settings.DC_WIKI_URL }}">Wiki</a><br>
+                                <a href="{{ settings.DC_CLOUD_URL }}">Cloud</a><br>
+                                <a href="{{ settings.DC_TEAMS_URL }}">Team
+                                    Management</a>
+                            </div>
+                            <div class="column">
+                                <h5 class="title is-5 m-b-sm has-text-grey small-caps">
+                                    User Support</h5>
+                                <a href="{{ settings.DC_SERVICE_DESK_HOME_URL }}">Contact
+                                    Us</a><br>
+                                <a href="{{ settings.DC_SERVICE_DESK_BUG_URL }}">Bug
+                                    Report</a><br>
+                                <a href="{{ settings.DC_SERVICE_DESK_FEATURE_URL }}">Feature
+                                    Request</a><br/>
+                                <a href="{{ settings.AAT_HELP_DESK_URL }}">AAT
+                                    Help Desk</a>
+
+                            </div>
+                            <div class="column">
+                                <h5 class="title is-5 m-t-sm m-b-sm has-text-grey small-caps">
+                                    About</h5>
+                                <a href="{{ settings.DC_ACKNOWLEDGING_URL }}">Acknowledging
+                                    Data Central</a><br>
+                                <a href="{{ settings.DC_PRIVACY_URL }}">Data
+                                    Central Privacy Policy</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="p-t-sm bg-dark-10"></div>
+    </footer>
+</div>
