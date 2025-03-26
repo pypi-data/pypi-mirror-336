@@ -1,0 +1,7 @@
+dtpyworker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtpyworker/schedules.py,sha256=rvmWljgugPl4hfObvTNOs8Rv_QbWIqDsLnM7Agjlvdo,68
+dtpyworker/task.py,sha256=20SJEkv0tB0jgafYrajDfzhUsr_CuXrvSskImtd_cYo,1043
+dtpyworker/worker.py,sha256=5iavf3VCyr8MW84r6rJ8OKevloK44JCUgcj6fsJ6bYU,4228
+dtpyworker-1.0.0.dist-info/METADATA,sha256=uOp4obhQc-nNbaANzCfs-kJoNfqY4Bog5DLlEd_ZtaY,2913
+dtpyworker-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dtpyworker-1.0.0.dist-info/RECORD,,
