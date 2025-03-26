@@ -1,0 +1,12 @@
+plausipy/__init__.py,sha256=5Sa9R2H0y8Wzo6Sa3uq-dSJuTTY_n34XgGX4hui0dEE,4358
+plausipy/cli.py,sha256=XkV2SKFOv55KTkA1oyVpt-OThu0Oht094f1d34z-5yo,11330
+plausipy/info.py,sha256=UDuJ2PXpwKpF-dBPt_bj0t9C29ATY1V-83kIJad2Njk,7622
+plausipy/paths.py,sha256=JpcKYgIaymn0pVbMcpoJLSA3RULGFR0e-d5_Yns2tbw,371
+plausipy/plausipy.py,sha256=VNrUkuwKxzW6O5Ycs0iGZDLfxUmyriti3l-bdZIBo0k,14923
+plausipy/user.py,sha256=uw5DiYpwZQKsTiTbje6F6JBQ2lAF9nDEDQVX_e93ta0,5964
+plausipy/utils.py,sha256=_-d_D-7FRFjx5_cYHv2pEYLGaFnSLzPcfuQQdjv608E,3571
+plausipy-0.2.0.dist-info/METADATA,sha256=Z8czKtMCyhaa6fUEV9XgE2HgqO1Qo2wNuKiKs1AQ0_k,5749
+plausipy-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+plausipy-0.2.0.dist-info/entry_points.txt,sha256=umSrcw0tr5Be8aFUaOncACMxQC_o4kLbAJAH8pIKlE8,46
+plausipy-0.2.0.dist-info/licenses/LICENSE,sha256=Yh0hyzfkn4FTin1dJ_2Hr3WLkvcwe1SPKumG_PX6jQY,1074
+plausipy-0.2.0.dist-info/RECORD,,
