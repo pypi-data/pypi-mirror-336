@@ -1,0 +1,79 @@
+Metadata-Version: 2.4
+Name: bhargava_swara
+Version: 0.0.1
+Summary: A library for analysis and synthesis of Indian classical music
+Home-page: 
+Author: Kuchi Chaitanya Krishna Deepak
+Author-email: kckdeepak29@gmail.com
+License: MIT
+Keywords: music,analysis,synthesis,carnatic,hindustani,indian classical music
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE.txt
+Requires-Dist: google-generativeai>=0.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Bhargava Swara
+A Python library for analyzing Indian classical music, including raga, tala, tempo, tradition, ornaments, and full analysis.
+
+
+## Prerequisites
+- **Gemini API Key:** This library uses Google's Gemini API for music analysis. Youâ€™ll need to:
+  1. Sign up for a Google Cloud account.
+  2. Enable the Generative AI API in the Google Cloud Console.
+  3. Create an API key in the "Credentials" section.
+  See [Googleâ€™s Generative AI Docs](https://cloud.google.com/generative-ai/docs) for details.
+
+
+## Installation
+```bash
+pip install bhargava_swara
+
+
+
+USAGE
+
+from bhargava_swara import (
+    analyze_raga,
+    analyze_tala,
+    analyze_tempo,
+    analyze_tradition,
+    analyze_ornaments,
+    analyze_music_full
+)
+
+# Set your Gemini API key
+api_key = "YOUR_API_KEY"
+audio = "path/to/audio.wav"
+
+# Individual analyses
+print(f"Raga: {analyze_raga(audio, api_key)}")
+print(f"Tala: {analyze_tala(audio, api_key)}")
+print(f"Tempo: {analyze_tempo(audio, api_key)}")
+print(f"Tradition: {analyze_tradition(audio, api_key)}")
+print(f"Ornaments: {analyze_ornaments(audio, api_key)}")
+
+# Full analysis
+print(f"Full Analysis:\n{analyze_music_full(audio, api_key)}")
+
+Change Log
+==========
+
+0.0.1 (26/03/2025)
+-------------------
+- First Release

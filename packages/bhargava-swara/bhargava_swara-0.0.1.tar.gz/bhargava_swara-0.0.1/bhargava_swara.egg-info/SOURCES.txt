@@ -1,0 +1,17 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+bhargava_swara/__init__.py
+bhargava_swara/carnatic_or_hindustani.py
+bhargava_swara/ornamentation_detection.py
+bhargava_swara/raga_recognition.py
+bhargava_swara/real_time_full_analysis.py
+bhargava_swara/tala_recognition.py
+bhargava_swara/tempo_detection.py
+bhargava_swara.egg-info/PKG-INFO
+bhargava_swara.egg-info/SOURCES.txt
+bhargava_swara.egg-info/dependency_links.txt
+bhargava_swara.egg-info/requires.txt
+bhargava_swara.egg-info/top_level.txt
