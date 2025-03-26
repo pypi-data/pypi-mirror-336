@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cliete_ajax.egg-info/PKG-INFO
+cliete_ajax.egg-info/SOURCES.txt
+cliete_ajax.egg-info/dependency_links.txt
+cliete_ajax.egg-info/requires.txt
+cliete_ajax.egg-info/top_level.txt
+gradio_client_configa/__init__.py
+gradio_client_configa/cover.py
+gradio_client_configa/i2vgen.py
+gradio_client_configa/t2vgen.py
