@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+sqlidps/__init__.py
+sqlidps/inference.py
+sqlidps/model.pkl
+sqlidps/sql_tokenizer.so
+sqlidps.egg-info/PKG-INFO
+sqlidps.egg-info/SOURCES.txt
+sqlidps.egg-info/dependency_links.txt
+sqlidps.egg-info/requires.txt
+sqlidps.egg-info/top_level.txt
