@@ -1,0 +1,13 @@
+README.md
+setup.py
+complexeva/__init__.py
+complexeva/validate.py
+complexeva.egg-info/PKG-INFO
+complexeva.egg-info/SOURCES.txt
+complexeva.egg-info/dependency_links.txt
+complexeva.egg-info/top_level.txt
+complexeva/sequence/__init__.py
+complexeva/sequence/compression.py
+complexeva/sequence/higuchi.py
+complexeva/sequence/lempel_ziv.py
+complexeva/sequence/lyapunov_exponent.py

@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: complexeva
+Version: 0.2.1
+Home-page: 
+Author: Don Yin
+Author-email: don_yin@outlook.com
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+
+# overview
+implementations of complexity measures in 1D sequences
+
+# examples
+```python
+from complexeva.sequence import lyapunov_exponent, hfd, lempel_ziv, compression_complexity
+
+signal = numpy.random.rand(1000)  # shape: (1000,)
+complexity = hfd(signal)
+print(complexity)
+```
+
+# install
+```bash
+pip install complexeva
+```
