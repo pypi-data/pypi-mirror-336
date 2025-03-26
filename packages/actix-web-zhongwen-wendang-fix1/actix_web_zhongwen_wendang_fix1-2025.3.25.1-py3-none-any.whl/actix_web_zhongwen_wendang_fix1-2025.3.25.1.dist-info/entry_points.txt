@@ -1,0 +1,3 @@
+[console_scripts]
+ActixWebZhongwenWendangFix1 = ActixWebZhongwenWendangFix1.__main__:main
+actix-web-zhongwen-wendang-fix1 = ActixWebZhongwenWendangFix1.__main__:main
