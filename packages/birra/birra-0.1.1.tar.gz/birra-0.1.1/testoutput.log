@@ -1,0 +1,471 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.11, pytest-8.3.5, pluggy-1.5.0 -- /home/jtaylor/Projects/pybirra/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/jtaylor/Projects/pybirra
+configfile: pyproject.toml
+plugins: devtools-0.12.2
+collecting ... collected 26 items
+
+tests/test_rank_transformer.py::test_invalid_from_shape PASSED           [  3%]
+tests/test_rank_transformer.py::test_invalid_to_shape PASSED             [  7%]
+tests/test_rank_transformer.py::test_identical_from_to_shape PASSED      [ 11%]
+tests/test_rank_transformer.py::test_non_2d_input_raises_error PASSED    [ 15%]
+tests/test_rank_transformer.py::test_all_nan_array FAILED                [ 19%]
+tests/test_rank_transformer.py::test_extremely_large_item_ids FAILED     [ 23%]
+tests/test_rank_transformer.py::test_non_sequential_rank_values PASSED   [ 26%]
+tests/test_rank_transformer.py::test_mixed_numeric_string_ids_listrow_rankcol PASSED [ 30%]
+tests/test_rank_transformer.py::test_custom_na_value FAILED              [ 34%]
+tests/test_rank_transformer.py::test_id_mapping_reuse FAILED             [ 38%]
+tests/test_rank_transformer.py::test_listcol_itemrow_to_listrow_itemcol_direct PASSED [ 42%]
+tests/test_rank_transformer.py::test_direct_string_array_to_numeric PASSED [ 46%]
+tests/test_rank_transformer.py::test_direct_convert_ids_to_strings PASSED [ 50%]
+tests/test_rank_transformer.py::test_listrow_rankcol_duplicate_detection PASSED [ 53%]
+tests/test_rank_transformer.py::test_listrow_rankcol_midrow_null_violation PASSED [ 57%]
+tests/test_rank_transformer.py::test_listcol_rankrow_round_trip PASSED   [ 61%]
+tests/test_rank_transformer.py::test_listrow_itemcol_to_listrow_rankcol_simple PASSED [ 65%]
+tests/test_rank_transformer.py::test_listrow_itemcol_duplicate_ranks PASSED [ 69%]
+tests/test_rank_transformer.py::test_listrow_rankcol_to_listrow_itemcol PASSED [ 73%]
+tests/test_rank_transformer.py::test_listrow_rankcol_to_listcol_itemrow_multi_step PASSED [ 76%]
+tests/test_rank_transformer.py::test_string_inputs_multi_step PASSED     [ 80%]
+tests/test_rank_transformer.py::test_dataframe_input_listrow_rankcol_to_listcol_rankrow PASSED [ 84%]
+tests/test_rank_transformer.py::test_listrow_itemcol_to_listcol_itemrow_with_strings PASSED [ 88%]
+tests/test_rank_transformer.py::test_shape_mismatch_small_data FAILED    [ 92%]
+tests/test_rank_transformer.py::test_listrow_rankcol_strict_validation PASSED [ 96%]
+tests/test_rank_transformer.py::test_itemcol_rank_duplicates_error PASSED [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_all_nan_array ______________________________
+
+    def test_all_nan_array():
+        """
+        Confirms that an all-NaN array can convert without raising unexpected errors.
+        """
+        data = np.full((2, 3), np.nan, dtype=float)
+>       rd = convert_rank_data(
+            data,
+            from_shape=RankShape.LISTROW_RANKCOL,
+            to_shape=RankShape.LISTCOL_RANKROW
+        )
+
+tests/test_rank_transformer.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = array([[nan, nan, nan],
+       [nan, nan, nan]])
+from_shape = <RankShape.LISTROW_RANKCOL: 'listrow_rankcol'>
+to_shape = <RankShape.LISTCOL_RANKROW: 'listcol_rankrow'>
+return_string_ids = False, na_value = nan
+
+    def convert_rank_data(
+        data: Union[np.ndarray, pd.DataFrame, RankData],
+        from_shape: RankShape,
+        to_shape: RankShape,
+        return_string_ids: bool = False,
+        na_value: Any = np.nan,
+    ) -> RankData:
+        """
+        Converts rank data between supported shapes, returning a RankData object
+        with a NumPy array. If return_string_ids=True, these numeric IDs are mapped
+        back to strings per the internal mapping.
+    
+        Parameters
+        ----------
+        data : np.ndarray, pd.DataFrame, or RankData
+            Input rank data. If a DataFrame, we record index/columns in 'original_info'
+            but otherwise treat .values as numeric or object for item IDs. If a RankData,
+            the .data attribute is used, and its item_mapping is reused.
+        from_shape : RankShape
+            The shape format of the given data.
+        to_shape : RankShape
+            Desired output shape format.
+        return_string_ids : bool, default=False
+            Whether to map final numeric IDs back to strings in the output array.
+        na_value : Any, default=np.nan
+            Representation of missing data in the final array.
+    
+        Returns
+        -------
+        RankData
+            Contains:
+                data : A NumPy array of numeric or string item references.
+                item_mapping : Dictionary mapping strings↔integers if strings were found.
+                original_info : Possibly includes shape information or DataFrame metadata.
+    
+        Raises
+        ------
+        ValueError
+            If from_shape or to_shape is invalid, or shapes are identical,
+            or input is not a 2D array, or the entire array is empty/all-NaN,
+            or if data violates format constraints (duplicate items, out-of-order NaNs, etc.).
+        """
+        # Validate shapes
+        # Replace the current validation with:
+        if not isinstance(from_shape, RankShape):
+            try:
+                from_shape = RankShape(from_shape)
+            except (ValueError, TypeError):
+                raise ValueError(f"Invalid 'from_shape' value: {from_shape}")
+    
+        if not isinstance(to_shape, RankShape):
+            try:
+                to_shape = RankShape(to_shape)
+            except (ValueError, TypeError):
+                raise ValueError(f"Invalid 'to_shape' value: {to_shape}")
+    
+        if from_shape == to_shape:
+            raise ValueError("Input and output shapes must be different.")
+    
+        # Extract underlying data
+        if isinstance(data, RankData):
+            numeric_input = data.data
+            mapping_in = data.item_mapping
+            original_info = data.original_info
+        elif isinstance(data, pd.DataFrame):
+            numeric_input = data.values
+            mapping_in = {}
+            original_info = {
+                "dataframe_columns": data.columns.tolist(),
+                "dataframe_index": data.index.tolist(),
+            }
+        else:
+            numeric_input = np.array(data, copy=True)
+            mapping_in = {}
+            original_info = None
+    
+        # Enforce 2D array
+        if numeric_input.ndim != 2:
+            raise ValueError("Input data must be a 2D array.")
+    
+        # If it's object dtype, attempt converting strings to numeric IDs
+        if numeric_input.dtype == object:
+            mapping_in, numeric_input = _string_array_to_numeric(
+                numeric_input, mapping_in, na_value
+            )
+    
+        # Check if array is empty or all-NaN
+        if numeric_input.size == 0:
+            raise ValueError("All-empty arrays are not allowed.")
+        if np.isnan(numeric_input).all():
+>           raise ValueError("All-NaN arrays are not allowed.")
+E           ValueError: All-NaN arrays are not allowed.
+
+birra/rank_array_adapter.py:176: ValueError
+________________________ test_extremely_large_item_ids _________________________
+
+    def test_extremely_large_item_ids():
+        """
+        Uses very large integer IDs to ensure no overflow or indexing issues arise.
+        """
+        data = np.array([
+            [1e9, 1e9+1, np.nan],
+            [1e9+2, np.nan, np.nan]
+        ], dtype=float)
+>       rd = convert_rank_data(
+            data,
+            from_shape=RankShape.LISTROW_RANKCOL,
+            to_shape=RankShape.LISTROW_ITEMCOL
+        )
+
+tests/test_rank_transformer.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+birra/rank_array_adapter.py:182: in convert_rank_data
+    converted_arr = _from_canonical_listrow_rankcol(
+birra/rank_array_adapter.py:331: in _from_canonical_listrow_rankcol
+    return _listrow_rankcol_to_listrow_itemcol(data_canonical, na_value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data_rankcol = array([[1.e+09, 1.e+09,    nan],
+       [1.e+09,    nan,    nan]])
+na_value = nan
+
+    def _listrow_rankcol_to_listrow_itemcol(
+        data_rankcol: np.ndarray, na_value: Any
+    ) -> np.ndarray:
+        """
+        Converts LISTROW_RANKCOL to LISTROW_ITEMCOL:
+        - For each row, the position in the row is the rank of that item.
+        - Gathers all unique item IDs across all rows and expands columns accordingly.
+    
+        If the max item ID for expansion is too large (over 100000 by default),
+        this raises ValueError due to impractical array size.
+    
+        Parameters
+        ----------
+        data_rankcol : np.ndarray
+            2D numeric array in LISTROW_RANKCOL format (rows=lists, cols=rank positions).
+        na_value : Any
+            Representation for missing data in the final array.
+    
+        Returns
+        -------
+        np.ndarray of shape (n_rows, max_id), storing rank positions or na_value.
+        """
+        rows, cols = data_rankcol.shape
+    
+        # If there's no data, check if it's all permissible
+        # We do not allow an all-empty or all-NaN scenario at a higher level,
+        # so we presume some valid data remains here.
+    
+        # Collect all item IDs ignoring NaNs
+        valid_ids_list = []
+        for i in range(rows):
+            valid_ids = data_rankcol[i, ~np.isnan(data_rankcol[i])]
+            if len(valid_ids) > 0:
+                valid_ids_list.append(valid_ids)
+        if not valid_ids_list:
+            # Means no row had any real items: though we forbid all-NaN globally,
+            # a partial check here can still reveal no items in the subset
+            raise ValueError(
+                "No valid items found in rank data; cannot build item columns."
+            )
+    
+        all_ids = np.unique(np.concatenate(valid_ids_list)).astype(int)
+        max_id = np.max(all_ids)
+        if max_id <= 0:
+            raise ValueError(
+                "Item IDs must be positive integers to form item columns."
+            )
+    
+        # Memory feasibility check
+        if max_id > 100000:
+>           raise ValueError(
+                f"Detected item ID {max_id} exceeds 100000; cannot expand columns that large."
+            )
+E           ValueError: Detected item ID 1000000002 exceeds 100000; cannot expand columns that large.
+
+birra/rank_array_adapter.py:457: ValueError
+_____________________________ test_custom_na_value _____________________________
+
+    def test_custom_na_value():
+        """
+        Tests that a custom na_value is used in final output when return_string_ids=True.
+        """
+        data = np.array([
+            ["X", None],
+            ["Y", None]
+        ], dtype=object)
+        rd = convert_rank_data(
+            data,
+            from_shape=RankShape.LISTROW_RANKCOL,
+            to_shape=RankShape.LISTCOL_RANKROW,
+            return_string_ids=True,
+            na_value="MISSING"
+        )
+        # The second col should all be "MISSING".
+>       assert rd.data[0, 1] == "MISSING"
+E       AssertionError: assert 'Y' == 'MISSING'
+E         
+E         - MISSING
+E         + Y
+
+tests/test_rank_transformer.py:154: AssertionError
+____________________________ test_id_mapping_reuse _____________________________
+
+    def test_id_mapping_reuse():
+        """
+        Provides an existing RankData with partial mapping, then reuses it for new data.
+        """
+        initial_data = np.array([
+            ["Apple", "Banana", None],
+            ["Carrot", None, None]
+        ], dtype=object)
+>       rd_step1 = convert_rank_data(
+            initial_data,
+            from_shape=RankShape.LISTROW_RANKCOL,
+            to_shape=RankShape.LISTROW_RANKCOL,
+            return_string_ids=False
+        )
+
+tests/test_rank_transformer.py:166: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = array([['Apple', 'Banana', None],
+       ['Carrot', None, None]], dtype=object)
+from_shape = <RankShape.LISTROW_RANKCOL: 'listrow_rankcol'>
+to_shape = <RankShape.LISTROW_RANKCOL: 'listrow_rankcol'>
+return_string_ids = False, na_value = nan
+
+    def convert_rank_data(
+        data: Union[np.ndarray, pd.DataFrame, RankData],
+        from_shape: RankShape,
+        to_shape: RankShape,
+        return_string_ids: bool = False,
+        na_value: Any = np.nan,
+    ) -> RankData:
+        """
+        Converts rank data between supported shapes, returning a RankData object
+        with a NumPy array. If return_string_ids=True, these numeric IDs are mapped
+        back to strings per the internal mapping.
+    
+        Parameters
+        ----------
+        data : np.ndarray, pd.DataFrame, or RankData
+            Input rank data. If a DataFrame, we record index/columns in 'original_info'
+            but otherwise treat .values as numeric or object for item IDs. If a RankData,
+            the .data attribute is used, and its item_mapping is reused.
+        from_shape : RankShape
+            The shape format of the given data.
+        to_shape : RankShape
+            Desired output shape format.
+        return_string_ids : bool, default=False
+            Whether to map final numeric IDs back to strings in the output array.
+        na_value : Any, default=np.nan
+            Representation of missing data in the final array.
+    
+        Returns
+        -------
+        RankData
+            Contains:
+                data : A NumPy array of numeric or string item references.
+                item_mapping : Dictionary mapping strings↔integers if strings were found.
+                original_info : Possibly includes shape information or DataFrame metadata.
+    
+        Raises
+        ------
+        ValueError
+            If from_shape or to_shape is invalid, or shapes are identical,
+            or input is not a 2D array, or the entire array is empty/all-NaN,
+            or if data violates format constraints (duplicate items, out-of-order NaNs, etc.).
+        """
+        # Validate shapes
+        # Replace the current validation with:
+        if not isinstance(from_shape, RankShape):
+            try:
+                from_shape = RankShape(from_shape)
+            except (ValueError, TypeError):
+                raise ValueError(f"Invalid 'from_shape' value: {from_shape}")
+    
+        if not isinstance(to_shape, RankShape):
+            try:
+                to_shape = RankShape(to_shape)
+            except (ValueError, TypeError):
+                raise ValueError(f"Invalid 'to_shape' value: {to_shape}")
+    
+        if from_shape == to_shape:
+>           raise ValueError("Input and output shapes must be different.")
+E           ValueError: Input and output shapes must be different.
+
+birra/rank_array_adapter.py:143: ValueError
+________________________ test_shape_mismatch_small_data ________________________
+
+    def test_shape_mismatch_small_data():
+        """
+        Minimal data: from LISTROW_RANKCOL to LISTROW_ITEMCOL. Checks shape, no error.
+        """
+        empty_arr = np.array([[]], dtype=float)
+>       rd = convert_rank_data(
+            data=empty_arr,
+            from_shape=RankShape.LISTROW_RANKCOL,
+            to_shape=RankShape.LISTROW_ITEMCOL
+        )
+
+tests/test_rank_transformer.py:424: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = array([], shape=(1, 0), dtype=float64)
+from_shape = <RankShape.LISTROW_RANKCOL: 'listrow_rankcol'>
+to_shape = <RankShape.LISTROW_ITEMCOL: 'listrow_itemcol'>
+return_string_ids = False, na_value = nan
+
+    def convert_rank_data(
+        data: Union[np.ndarray, pd.DataFrame, RankData],
+        from_shape: RankShape,
+        to_shape: RankShape,
+        return_string_ids: bool = False,
+        na_value: Any = np.nan,
+    ) -> RankData:
+        """
+        Converts rank data between supported shapes, returning a RankData object
+        with a NumPy array. If return_string_ids=True, these numeric IDs are mapped
+        back to strings per the internal mapping.
+    
+        Parameters
+        ----------
+        data : np.ndarray, pd.DataFrame, or RankData
+            Input rank data. If a DataFrame, we record index/columns in 'original_info'
+            but otherwise treat .values as numeric or object for item IDs. If a RankData,
+            the .data attribute is used, and its item_mapping is reused.
+        from_shape : RankShape
+            The shape format of the given data.
+        to_shape : RankShape
+            Desired output shape format.
+        return_string_ids : bool, default=False
+            Whether to map final numeric IDs back to strings in the output array.
+        na_value : Any, default=np.nan
+            Representation of missing data in the final array.
+    
+        Returns
+        -------
+        RankData
+            Contains:
+                data : A NumPy array of numeric or string item references.
+                item_mapping : Dictionary mapping strings↔integers if strings were found.
+                original_info : Possibly includes shape information or DataFrame metadata.
+    
+        Raises
+        ------
+        ValueError
+            If from_shape or to_shape is invalid, or shapes are identical,
+            or input is not a 2D array, or the entire array is empty/all-NaN,
+            or if data violates format constraints (duplicate items, out-of-order NaNs, etc.).
+        """
+        # Validate shapes
+        # Replace the current validation with:
+        if not isinstance(from_shape, RankShape):
+            try:
+                from_shape = RankShape(from_shape)
+            except (ValueError, TypeError):
+                raise ValueError(f"Invalid 'from_shape' value: {from_shape}")
+    
+        if not isinstance(to_shape, RankShape):
+            try:
+                to_shape = RankShape(to_shape)
+            except (ValueError, TypeError):
+                raise ValueError(f"Invalid 'to_shape' value: {to_shape}")
+    
+        if from_shape == to_shape:
+            raise ValueError("Input and output shapes must be different.")
+    
+        # Extract underlying data
+        if isinstance(data, RankData):
+            numeric_input = data.data
+            mapping_in = data.item_mapping
+            original_info = data.original_info
+        elif isinstance(data, pd.DataFrame):
+            numeric_input = data.values
+            mapping_in = {}
+            original_info = {
+                "dataframe_columns": data.columns.tolist(),
+                "dataframe_index": data.index.tolist(),
+            }
+        else:
+            numeric_input = np.array(data, copy=True)
+            mapping_in = {}
+            original_info = None
+    
+        # Enforce 2D array
+        if numeric_input.ndim != 2:
+            raise ValueError("Input data must be a 2D array.")
+    
+        # If it's object dtype, attempt converting strings to numeric IDs
+        if numeric_input.dtype == object:
+            mapping_in, numeric_input = _string_array_to_numeric(
+                numeric_input, mapping_in, na_value
+            )
+    
+        # Check if array is empty or all-NaN
+        if numeric_input.size == 0:
+>           raise ValueError("All-empty arrays are not allowed.")
+E           ValueError: All-empty arrays are not allowed.
+
+birra/rank_array_adapter.py:174: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_rank_transformer.py::test_all_nan_array - ValueError: All-NaN arrays are not allowed.
+FAILED tests/test_rank_transformer.py::test_extremely_large_item_ids - ValueError: Detected item ID 1000000002 exceeds 100000; cannot expand columns that large.
+FAILED tests/test_rank_transformer.py::test_custom_na_value - AssertionError: assert 'Y' == 'MISSING'
+  
+  - MISSING
+  + Y
+FAILED tests/test_rank_transformer.py::test_id_mapping_reuse - ValueError: Input and output shapes must be different.
+FAILED tests/test_rank_transformer.py::test_shape_mismatch_small_data - ValueError: All-empty arrays are not allowed.
+========================= 5 failed, 21 passed in 0.69s =========================
