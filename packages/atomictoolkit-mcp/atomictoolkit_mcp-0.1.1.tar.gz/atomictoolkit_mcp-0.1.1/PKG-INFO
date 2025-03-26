@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: atomictoolkit-mcp
+Version: 0.1.1
+Summary: MCP server for ASE and more.
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ase>=3.24.0
+Requires-Dist: fastmcp>=0.4.1
+Requires-Dist: mcp[cli]>=1.4.1
+Requires-Dist: orb-models>=0.4.2
+Requires-Dist: pymatgen>=2025.3.10
+Requires-Dist: pynanoflann>=0.10.0
+Dynamic: license-file
+
+# Atomistic Toolkit MCP Server
+
+> [!NOTE]
+> This project is under active development. Not everything is working yet.
+
+An MCP-compatible server providing atomistic simulation capabilities through ASE, pymatgen, and machine learning interatomic potentials (MLIPs).
+
+## Features
+### ASE Tools
+- Structure creation and manipulation
+- Geometry optimization
+- File I/O operations (read/write structures)
