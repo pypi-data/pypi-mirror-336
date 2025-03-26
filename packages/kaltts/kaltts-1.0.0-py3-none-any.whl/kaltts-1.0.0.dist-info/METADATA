@@ -1,0 +1,171 @@
+Metadata-Version: 2.1
+Name: kaltts
+Version: 1.0.0
+Summary: Kal Text-to-Speech (TTS) Synthesis
+Home-page: https://github.com/Odeneho-Calculus/KTTS_v1_model
+Author: kalculusGuy
+Author-email: calculus069@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: librosa
+
+# Kal Text-to-Speech (TTS) Synthesis
+
+## 🎙️ Project Overview
+
+Kal TTS is an advanced text-to-speech synthesis project that leverages machine learning to convert written text into natural-sounding speech. The project implements a comprehensive pipeline for transforming textual input into high-quality audio output.
+
+## ✨ Features
+
+- Robust text normalization
+- Phoneme conversion using advanced linguistic models
+- Machine learning-based speech synthesis
+- Configurable TTS processing
+- Support for experimenting and training custom models
+
+## 🏗️ Project Structure
+
+```
+kal-tts/
+│
+├── data/
+│   ├── raw_text/        # Original text files
+│   ├── processed/       # Processed data (features, normalized text)
+│   └── audio/           # Training and testing audio files
+│
+├── config/
+│   └── config.yaml      # Project configuration parameters
+│
+├── src/
+│   ├── controller.py    # Main application flow
+│   ├── data_processing.py  # Text and audio data processing
+│   ├── model.py         # Machine learning model definitions
+│   ├── synthesize.py    # Speech synthesis logic
+│   ├── train.py         # Model training scripts
+│   ├── utils.py         # Utility functions
+│   └── vocoder.py       # Feature to audio waveform conversion
+│
+├── notebooks/
+│   └── tts_experiments.ipynb  # Experimental Jupyter notebook
+│
+├── models/
+│   ├── tts_model.h5     # Pre-trained TTS model
+│   └── lts_model.pkl    # Letter-to-sound conversion model
+│
+├── requirements.txt     # Project dependencies
+└── README.md            # Project documentation
+```
+
+## 🚀 Installation
+
+### Prerequisites
+- Python 3.8+
+- pip package manager
+
+### Steps
+
+#### From PyPI
+1. Install the package:
+   ```bash
+   pip install ktts
+   ```
+
+#### From Source
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Odeneho-Calculus/KTTS_v1_model
+   cd KTTS_v1_model
+   ```
+
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 🔧 Configuration
+
+Modify `config/config.yaml` to customize:
+- Model hyperparameters
+- Audio processing settings
+- Training configurations
+
+## 💻 Usage
+
+### Text-to-Speech Synthesis
+```python
+from ktts.synthesize import generate_speech
+
+text = "Hello, this is a test of Kal TTS."
+audio_output = generate_speech(text)
+audio_output.save("output.wav")
+```
+
+### Training a New Model
+```python
+from ktts.train import train_tts_model
+
+train_tts_model(
+    data_path="data/processed/",
+    config_path="config/config.yaml"
+)
+```
+
+## 🧠 Workflow
+
+1. **Text Normalization**: Standardize input text
+2. **Phoneme Conversion**: Transform text to phonetic representation
+3. **Feature Extraction**: Generate audio features
+4. **Model Training**: Train TTS models using extracted features
+5. **Speech Synthesis**: Generate audio from text input
+
+## 📊 Performance Metrics
+
+- Supported Languages: English (expandable)
+- Sampling Rate: Configurable (default: 22050 Hz)
+- Model Architectures: Neural TTS, Vocoder-based synthesis
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🔬 Research & References
+
+- CMU Pronouncing Dictionary (cmudict-0.7b)
+- State-of-the-art TTS research papers
+- Machine learning speech synthesis techniques
+
+## 🛠️ Troubleshooting
+
+- Ensure all dependencies are correctly installed
+- Check configuration parameters
+- Verify input text formatting
+- Consult the documentation for common issues
+
+## 📞 Contact
+
+kalculusGuy - [calculus069@gmail.com](mailto:calculus069@gmail.com)
+
+Project Link: [https://github.com/yourusername/kal-tts](https://github.com/Odeneho-Calculus/KTTS_v1_model)
+
+
