@@ -1,0 +1,64 @@
+[project]
+name = "streamlit-server-state"
+version = "0.19.0"
+description = ""
+authors = [
+    {name = "Yuichiro Tachibana (Tsuchiya)", email = "t.yic.yt@gmail.com"},
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "streamlit>=0.65.0",
+    "packaging>=20.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.13.0",
+    "pytest>=8.3.3",
+    "ruff>=0.7.0",
+    # For testing older versions of Streamlit: https://discuss.streamlit.io/t/modulenotfounderror-no-module-named-altair-vegalite-v4/42921
+    "altair<5",
+    # For testing older versions of Streamlit: https://discuss.streamlit.io/t/streamlit-run-with-protobuf-error/25632/3
+    "protobuf<=3.20",
+    # For testing older versions of Streamlit
+    "setuptools>=75.2.0",
+    "bump-my-version>=0.28.0",
+]
+
+[tool.bumpversion]
+current_version = "0.19.0"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+search = "{current_version}"
+replace = "{new_version}"
+regex = false
+ignore_missing_version = false
+ignore_missing_files = false
+tag = true
+sign_tags = false
+tag_name = "v{new_version}"
+tag_message = "Bump version: {current_version} → {new_version}"
+allow_dirty = false
+commit = true
+message = "Bump version: {current_version} → {new_version}"
+commit_args = ""
+setup_hooks = []
+pre_commit_hooks = []
+post_commit_hooks = []
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[project.urls]
+Homepage = "https://github.com/whitphx/streamlit-server-state"
+
+[tool.ruff.lint]
+extend-select = ["I"]
