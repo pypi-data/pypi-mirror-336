@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: papertuner
+Version: 0.2.21
+Summary: A package for creating ML research assistant models through paper dataset creation and model fine-tuning
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://github.com/yourusername/papertuner
+Project-URL: Bug Tracker, https://github.com/yourusername/papertuner/issues
+Project-URL: Documentation, https://github.com/yourusername/papertuner#readme
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: huggingface_hub==0.29.3
+Requires-Dist: tenacity==9.0.0
+Requires-Dist: PyMuPDF>=1.22.0
+Requires-Dist: arxiv>=1.4.0
+Requires-Dist: google-genai==1.7.0
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: datasets==3.4.1
+Requires-Dist: sentence-transformers==3.4.1
+Requires-Dist: trl==0.16.0
+Requires-Dist: vllm>=0.8.1
+Requires-Dist: torch==2.6.0
+Requires-Dist: unsloth==2025.3.18
+Requires-Dist: transformers>=4.36.2
+Requires-Dist: peft>=0.8.1
