@@ -1,0 +1,7 @@
+README.md
+setup.py
+ContainedSDK.egg-info/PKG-INFO
+ContainedSDK.egg-info/SOURCES.txt
+ContainedSDK.egg-info/dependency_links.txt
+ContainedSDK.egg-info/top_level.txt
+containedsdk/__init__.py
