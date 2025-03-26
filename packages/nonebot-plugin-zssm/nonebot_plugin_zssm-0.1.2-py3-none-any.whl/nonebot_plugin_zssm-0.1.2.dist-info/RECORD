@@ -1,0 +1,12 @@
+nonebot_plugin_zssm-0.1.2.dist-info/METADATA,sha256=K6_HmAUmEyh-0PGMsc5ehewiya88sg3eDMGAfdZ_5qo,2961
+nonebot_plugin_zssm-0.1.2.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_plugin_zssm-0.1.2.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_zssm/__init__.py,sha256=5FR8eaUShLtpXeILVbWwlA6DhtJIdut-IxUSlnctTcY,675
+nonebot_plugin_zssm/api.py,sha256=1joROhuHpXRHGcz-vLROcyXbiARRGErNZqIHI1bf7Bs,3090
+nonebot_plugin_zssm/browser/__init__.py,sha256=TWklfFCZMXJlcC_OGdBmRe9oj6VElmvOCFzDZhHub3E,118
+nonebot_plugin_zssm/browser/browser.py,sha256=cimThRtly--QFLju4XgNiQN20cYUYdSZn-fWjGjjaxQ,899
+nonebot_plugin_zssm/browser/installer.py,sha256=bV8j8VEjpyIC4QZ8vUcJmoCq6MY3RHrdh4fJnr878Q4,3453
+nonebot_plugin_zssm/config.py,sha256=R1tuHOqlz542bDmK8Vzkexe8WWfjS8GCrGUV6CAQCM0,818
+nonebot_plugin_zssm/handle.py,sha256=HyzqW_6R1h5mSBTb7wqWqSwpTMu6NKoFhQaeY1AhbVk,3051
+nonebot_plugin_zssm/prompt.txt,sha256=DpMp-wLAGsNiughDoUdg-z_OfwMBmIYfUnE2_OMcR80,2018
+nonebot_plugin_zssm-0.1.2.dist-info/RECORD,,
