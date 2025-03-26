@@ -1,0 +1,2 @@
+[console_scripts]
+run_ypl = yieldplotlib.ypl_cli:main
