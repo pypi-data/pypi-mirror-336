@@ -1,0 +1,9 @@
+mcp_serverless/__init__.py,sha256=snEZIwLZKjnF-5K-5LyWK7k517pQ5AzTj22-X8LLLCE,895
+mcp_serverless/core.py,sha256=RrsOwFC75lcR97vGFTMrANyL84mOO5AB25lM3TqAUGw,1909
+mcp_serverless-0.1.0.dist-info/licenses/LICENSE,sha256=XNQxldTRBaoI3mb41VE9eo1MtXWdUkORxhzdmllUj24,1065
+tests/__init__.py,sha256=z1BFjPvkTSogR10ETDD1pSRg3U_EDvhXf1ZtACT7464,39
+tests/test_core.py,sha256=DnnUqGPue31btA6fbphfkV6M_gJYT-sx-fHIRhOr70w,1687
+mcp_serverless-0.1.0.dist-info/METADATA,sha256=oV8tCPwko8tL8oU8wkq6LpXqTyYC1GYB_hgPnRpy-xg,2231
+mcp_serverless-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+mcp_serverless-0.1.0.dist-info/top_level.txt,sha256=K_2oLsQpftAZel2fX1pcHJEUAonCVOjw1OW_dizrLmY,21
+mcp_serverless-0.1.0.dist-info/RECORD,,
