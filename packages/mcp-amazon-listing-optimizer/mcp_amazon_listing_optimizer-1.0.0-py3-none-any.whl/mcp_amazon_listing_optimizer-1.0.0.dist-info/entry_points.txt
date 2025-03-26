@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-amazon-listing-optimizer = api:main
