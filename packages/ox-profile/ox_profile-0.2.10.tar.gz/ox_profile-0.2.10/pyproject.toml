@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+license = { file = "LICENSE" }
+name = "ox_profile"
+version = "0.2.10"
+authors = [
+  { name="Emin Martinian", email="emin.martinian@gmail.com" },
+]
+description = "Tools for statistical profiling."
+readme = "README.md"
+requires-python = ">=3.1"
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Programming Language :: Python :: 3',
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/emin63/ox_profile"
+Issues = "https://github.com/emin63/ox_profile/issues"
+
+
+[tool.setuptools.packages.find]
+where = ["ox_profile"]
