@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+tardis_spac.egg-info/PKG-INFO
+tardis_spac.egg-info/SOURCES.txt
+tardis_spac.egg-info/dependency_links.txt
+tardis_spac.egg-info/requires.txt
+tardis_spac.egg-info/top_level.txt
