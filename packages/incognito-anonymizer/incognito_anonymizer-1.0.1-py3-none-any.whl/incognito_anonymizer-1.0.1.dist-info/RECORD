@@ -1,0 +1,10 @@
+incognito_anonymizer/__init__.py,sha256=ftkCzNhMQLSA9HgmDDoWhRwODVeo5SUt2VM7QZL4QXk,70
+incognito_anonymizer/__main__.py,sha256=9C94CvSdzaedw3Vg9qJQ1ELKqUjoc2WyHd9Qb-aERzU,177
+incognito_anonymizer/analyzer.py,sha256=WOEIrA0fkXbU96G3UzaTDkRRO40f5hWzIlIr7AK0yhs,6445
+incognito_anonymizer/anonymizer.py,sha256=_W9z_ojyysFJEhMGmEX4LmEnFFLlgmoxL4CgAi2UF7s,3544
+incognito_anonymizer/cli.py,sha256=3Fq9wtvB2MsE0Ktnzc_j8HSmeYeVuwvsnYSvg6wmDu4,4925
+incognito_anonymizer/mask.py,sha256=hTAi-54TWGlGdpOBJDJpIXarDbeI7EQO05hU2JWdHxw,3870
+incognito_anonymizer-1.0.1.dist-info/METADATA,sha256=hoFseO3gT4yorLsIEoDGH5JV0qw0E87arcm-_j3zQsM,4441
+incognito_anonymizer-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+incognito_anonymizer-1.0.1.dist-info/licenses/LICENSE,sha256=E5VeeHBgY2zE1g7VaYTKobTvWaV1a5CIB7-51ap9gmQ,1070
+incognito_anonymizer-1.0.1.dist-info/RECORD,,
