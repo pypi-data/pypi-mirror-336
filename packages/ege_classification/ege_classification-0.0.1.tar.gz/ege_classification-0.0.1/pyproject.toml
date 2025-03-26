@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ege_classification"
+version = "0.0.1"
+description = ""
+authors = ["Merzlikin-Matvey <merzlikinmatvey01@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+transformers = "~4.49.0"
+pandas = "~2.2.3"
+datasets = "~3.3.2"
+torch = "~2.6.0"
+accelerate = ">=0.26.0"
+scikit-learn = "~1.6.1"
+huggingface-hub = "~0.29.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.packages]]
+include = "ege_classification"
