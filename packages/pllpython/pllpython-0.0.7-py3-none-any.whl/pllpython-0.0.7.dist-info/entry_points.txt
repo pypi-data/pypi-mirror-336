@@ -1,0 +1,2 @@
+[console_scripts]
+pllpython_tutorial = pllpython.utils.tutorial:install_tutorial
