@@ -1,0 +1,50 @@
+[project]
+name = "torchsqlite"
+version = "0.1.0"
+description = "Sqlite based dataset for torch."
+authors = [
+    { name = "Taeyong Jeon", email = "taeyongjeon24@gmail.com" },
+]
+dependencies = [
+    "torch>=2.6.0",
+    "pandas>=2.2.3",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "ruff>=0.11.2",
+    "pre-commit>=4.2.0",
+    "mypy>=1.15.0",
+    "pandas-stubs>=2.2.3.250308",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = [
+    "RUF",
+    "I",
+    "W",
+    "UP",
+    "D",
+    "PD",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pdm]
+distribution = true
