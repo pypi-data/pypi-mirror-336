@@ -1,0 +1,25 @@
+[project]
+name = "kdl-pre-built"
+version = "0.1.0"
+description = "Nothing"
+authors = [
+    {name = "hvn-ai",email = "hoangvannamai@gmail.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "tensorflow (>=2.19.0,<3.0.0)"
+]
+
+
+[tool.poetry]
+packages = [{include = "kdl_pre_built", from = "source"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
