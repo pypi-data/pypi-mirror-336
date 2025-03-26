@@ -1,0 +1,1 @@
+from meshcore_cli import cli; cli()
