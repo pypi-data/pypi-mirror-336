@@ -1,0 +1,9 @@
+abstract_ocr/__init__.py,sha256=ViPPZIoHr1jTZZJmTvsuBkFb1miNsdQ1JFgFDa8NShw,52
+abstract_ocr/download_pdf.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+abstract_ocr/linetest.py,sha256=Twd_mNtGKc5R3HoXKH7j6vhSLf2W2j96Biiy_IolIZ4,5863
+abstract_ocr/ocr_utils.py,sha256=YhCLDYXpDw7jml8jDwiCVIlWsxFSKoX3-4F6hrzAYyM,5951
+abstract_ocr/video_utils.py,sha256=IS9vyVGayjo2D2H4xxnUonjynXNeZ9PTjdiNHKX-R8s,8811
+abstract_ocr-0.0.0.23.dist-info/METADATA,sha256=T4VXzv3gH-9YxsDUlXogwbXNZajqP0HRZXGA8UKq5ZA,897
+abstract_ocr-0.0.0.23.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+abstract_ocr-0.0.0.23.dist-info/top_level.txt,sha256=NCrJCkd7PCzXo3AZLS1xG4BxX_5wxQ237kJn3q3YZa0,13
+abstract_ocr-0.0.0.23.dist-info/RECORD,,
