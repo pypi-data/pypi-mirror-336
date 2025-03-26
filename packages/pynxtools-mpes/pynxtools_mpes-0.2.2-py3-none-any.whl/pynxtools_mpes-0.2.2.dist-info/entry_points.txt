@@ -1,0 +1,5 @@
+[nomad.plugin]
+mpes_example = pynxtools_mpes.nomad.entrypoints:mpes_example
+
+[pynxtools.reader]
+mpes = pynxtools_mpes.reader:MPESReader
