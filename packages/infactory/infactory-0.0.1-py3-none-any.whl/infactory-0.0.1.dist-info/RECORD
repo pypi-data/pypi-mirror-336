@@ -1,0 +1,16 @@
+infactory_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infactory_client/base.py,sha256=hqrdjcjW2__KWLp1zLR-67J2Z31a7gg8TTQlygQf9YA,2990
+infactory_client/cli.py,sha256=fl3VZwT2P4AtpRt6zILT-QFpQ-obwI055geJY8COnqw,23538
+infactory_client/client.py,sha256=n7M3WohzY65EZsjMHJoJI6kDoY22PIh_Qkm9rGeyA7c,17211
+infactory_client/deprec/api_client.py,sha256=PTAdTgbwg3fchUY-1CWKIonhO5G4otyuc2Je4m-6yes,27627
+infactory_client/deprec/api_response.py,sha256=eMxw1mpmJcoGZ3gs9z6jM4oYoZ10Gjk333s9sKxGv7s,652
+infactory_client/deprec/configuration.py,sha256=9lv_HnbmNR8slVejzDnwSjYHLm0IuqcNInyONomFcS8,18306
+infactory_client/deprec/exceptions.py,sha256=PX6OCZEhvGzSTjnwwj_xBH3zl0FdiEr1v2hCjngtdcw,6099
+infactory_client/deprec/rest.py,sha256=9UU445btTNTdz0clZQ5cQ6dQU66Ujio58carLL1kktc,9548
+infactory_client/errors.py,sha256=qPucnNsRaQjCviGZX8-tQ_lho9GRil7uQFNHnesHrv0,1294
+infactory_client/models.py,sha256=C3U65ooTPO28Ra_3ZlxVelslUQHTZOEArIJNRNdKW58,3756
+infactory_client/services.py,sha256=sdqMcjkewS9zynd4GAXdpQyeG24XJRjeWkIJ_zIZi6M,31049
+infactory-0.0.1.dist-info/METADATA,sha256=npCG_MctaeooBsj9eUwyIKZCd2hdaqwtUDhktvE-aGk,9519
+infactory-0.0.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+infactory-0.0.1.dist-info/entry_points.txt,sha256=q3Fwcq8adCWk9EppC_bW63hE2J_iM4GBiSrwM1dvyTI,84
+infactory-0.0.1.dist-info/RECORD,,
