@@ -1,0 +1,10 @@
+gbq_connector/__init__.py,sha256=AXfrSgJEVRsIrWROEYWtitsYfg6oxFoLl23VW2ZX-_U,162
+gbq_connector/bigquery_client.py,sha256=jB1nSPpk6Sggc6DufGeRwcSO3ubB86GFxjwuN2E6IOo,5903
+gbq_connector/cloud_client.py,sha256=c4HqhUldezGJyX9Idb_2FkaWCzavewlQP7xIwak-n8o,2070
+gbq_connector/dbt_client.py,sha256=MwM5g9qMnOvI8vHZX_yjwF25dc0kkR5CXFIZMfx5fCo,1540
+gbq_connector/exceptions.py,sha256=zH0LCgDGxZSAJSafoarBywEjFV2c64qeK1ewbgr6Rj0,46
+gbq_connector-3.3.0.dist-info/LICENSE,sha256=zDSZggcEKxXmDPn1MUyN3Ol26fHA0Tp_mGI_Mkxa0xk,1096
+gbq_connector-3.3.0.dist-info/METADATA,sha256=JB-3wCyJUTQppRhjF3tMb3afY_u0F11K3JTXxKEe8-g,699
+gbq_connector-3.3.0.dist-info/WHEEL,sha256=beeZ86-EfXScwlR_HKu4SllMC9wUEj_8Z_4FJ3egI2w,91
+gbq_connector-3.3.0.dist-info/top_level.txt,sha256=M4_udgZlfK0AwjcZHfJlzFZk7wcfxDHdVVjFMOK_yC4,14
+gbq_connector-3.3.0.dist-info/RECORD,,
