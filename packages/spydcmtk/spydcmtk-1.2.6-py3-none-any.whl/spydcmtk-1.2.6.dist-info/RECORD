@@ -1,0 +1,16 @@
+spydcmtk/ParaViewGlance.html,sha256=jucZHtcMRAXOncmLG1suECWR_oYHDvKK1V_0_HtioPQ,3728964
+spydcmtk/__init__.py,sha256=VE8JBU-EiVMoqSD7dr_Fpc4tW9fJnAa4wYwalxGq3-s,169
+spydcmtk/dcmTK.py,sha256=F3GZ_1GHU1VLE-NESq9eDADyD6bcfSc8cTNvgnqLIb8,60498
+spydcmtk/dcmTools.py,sha256=5aQHL-N69ee80JMpvt4Y_gDnEYttkJUeGq_RXIoXzZo,22228
+spydcmtk/dcmVTKTK.py,sha256=09FCCieBdTZBNv8XFBhVexm1JemUg1VLPeNW5yW7_Qg,30425
+spydcmtk/spydcm.py,sha256=eD9GhQsqmPFV_A2KcT_9x_ze4OGRn9Lxw0iHGr1lRSA,30766
+spydcmtk/spydcm_config.py,sha256=5bEC-wdzVhFe_aXFAJnM1H9pnuyczA1OaDq6OUWnoy4,3009
+spydcmtk/spydcmtk.conf,sha256=EZdF2knIznSzom2SkG2cXm01RoCKmbRouikwXxvGVt8,1468
+spydcmtk/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spydcmtk/tests/context.py,sha256=d5pIU8NimG2VFH56VLZRhMimBK4clvoNehctJc5GJtM,128
+spydcmtk/tests/run_tests.py,sha256=sW8iMxpJkHJ1PSGYLnfdqvYwpJMTVgda-dyigPp5xKA,23884
+spydcmtk-1.2.6.dist-info/METADATA,sha256=Tnj0ts0BWkG4zP4BtAnjWdUboZStfBgDZRrKCFO9OVU,5133
+spydcmtk-1.2.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+spydcmtk-1.2.6.dist-info/entry_points.txt,sha256=-hL40hqRgygWOu-MrewdXC3O5JjqGwBKvUkwrnRXU2Y,50
+spydcmtk-1.2.6.dist-info/licenses/LICENSE,sha256=0cKUXDP0pPtaUkvBz8HllAiy3bHj2JQyteK_GZb6cuo,1076
+spydcmtk-1.2.6.dist-info/RECORD,,
