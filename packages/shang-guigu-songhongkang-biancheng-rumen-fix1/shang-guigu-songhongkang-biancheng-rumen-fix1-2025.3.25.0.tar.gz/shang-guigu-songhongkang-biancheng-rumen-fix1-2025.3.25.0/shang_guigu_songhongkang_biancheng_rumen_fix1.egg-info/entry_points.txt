@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguSonghongkangBianchengRumenFix1 = ShangGuiguSonghongkangBianchengRumenFix1.__main__:main
+shang-guigu-songhongkang-biancheng-rumen-fix1 = ShangGuiguSonghongkangBianchengRumenFix1.__main__:main
