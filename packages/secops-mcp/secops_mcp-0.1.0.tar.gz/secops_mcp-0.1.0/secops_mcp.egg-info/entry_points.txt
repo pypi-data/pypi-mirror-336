@@ -1,0 +1,2 @@
+[console_scripts]
+secops-mcp = secops.secops_mcp:main

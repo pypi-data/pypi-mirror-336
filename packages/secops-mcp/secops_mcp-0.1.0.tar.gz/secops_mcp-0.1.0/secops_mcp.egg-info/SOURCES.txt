@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+secops_mcp.egg-info/PKG-INFO
+secops_mcp.egg-info/SOURCES.txt
+secops_mcp.egg-info/dependency_links.txt
+secops_mcp.egg-info/entry_points.txt
+secops_mcp.egg-info/requires.txt
+secops_mcp.egg-info/top_level.txt
