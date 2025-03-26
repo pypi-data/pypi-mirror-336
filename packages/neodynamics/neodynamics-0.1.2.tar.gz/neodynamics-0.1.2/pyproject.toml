@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neodynamics"
+version = "0.1.2"
+description = "A package for dynamic systems simulation and Docker management"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+dependencies = [
+    "docker>=6.0.0",
+    "grpcio-tools",
+    "msgpack",
+    "gymnasium",
+]
+
+[project.scripts]
+neodynamics = "neodynamics.cli:main"
+
+[tool.setuptools]
+packages = ["neodynamics"]
+package-dir = {"" = "src"}
