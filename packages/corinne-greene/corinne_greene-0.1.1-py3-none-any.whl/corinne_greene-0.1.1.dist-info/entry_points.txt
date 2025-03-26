@@ -1,0 +1,2 @@
+[console_scripts]
+corinne_greene = corinne_greene.__main__:main
