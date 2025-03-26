@@ -1,0 +1,53 @@
+[project]
+name = "zmp-openapi-toolkit"
+version = "0.1.5"
+description = "This is a toolkit library for the LLM application using the multiple openapi specifications"
+authors = [
+    {name = "Kilsoo Kang",email = "kilsoo75@gmail.com"}
+]
+maintainers = [
+    {name = "Kilsoo Kang",email = "kilsoo75@gmail.com"}
+]
+keywords = [ "llm", "toolkit", "openapi" ]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "colorlog (>=6.9.0,<7.0.0)",
+    "langchain (>=0.3.20,<0.4.0)",
+    "langchain-core (>=0.3.43,<0.4.0)"
+]
+
+
+[project.urls]
+homepage = "https://github.com/cloudz-mp"
+repository = "https://github.com/cloudz-mp/zmp-openapi-toolkit"
+documentation = "https://github.com/cloudz-mp/zmp-openapi-toolkit"
+"Bug Tracker" = "https://github.com/cloudz-mp/zmp-openapi-toolkit/issues"
+
+
+[project.scripts]
+[project.gui-scripts]
+
+
+[tool.poetry]
+package-mode = true
+packages = [{include = "zmp_openapi_toolkit", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.0.0"
+pytest-watch = "^4.2.0"
+pytest-asyncio = "^0.25.3"
+certifi = "^2025.1.31"
+
+
+[tool.poetry.group.quality.dependencies]
+pre-commit = "^4.1.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
