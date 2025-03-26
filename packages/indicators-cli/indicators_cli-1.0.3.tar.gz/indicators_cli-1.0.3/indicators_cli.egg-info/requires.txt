@@ -1,0 +1,4 @@
+polars
+numpy
+yfinance
+click
