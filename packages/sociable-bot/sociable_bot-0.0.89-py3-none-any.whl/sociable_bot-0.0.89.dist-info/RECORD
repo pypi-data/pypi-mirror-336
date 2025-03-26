@@ -1,0 +1,10 @@
+sociable_bot/__init__.py,sha256=p4Nl2Nj1MaL9A6EiynPWjK52nz98N-ZmUt49Tzr_Im8,2005
+sociable_bot/bot.py,sha256=zxAPnA2yX7uNcmbNbjE5SF6GPYhpMOl-oyC1HNcEDCQ,24115
+sociable_bot/bot_async.py,sha256=g2KBxH_81Thg0r3uGG-mlrv34Rnw7YvKnkAv-sPVWo4,14690
+sociable_bot/bot_enums.py,sha256=M8HvwBzFYncypViFPey0AV9ek6E9dJuYEPzjWrDAZLs,10744
+sociable_bot/bot_types.py,sha256=V6VqstHC48gGeWr9PWhoZVGeMDXulat708gjczcU6f4,8444
+sociable_bot-0.0.89.dist-info/licenses/LICENSE.txt,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+sociable_bot-0.0.89.dist-info/METADATA,sha256=F3uC-Zxqcu4nNh2JkzP1o0jdVKO2r8AlHdOD45D0YhY,1982
+sociable_bot-0.0.89.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sociable_bot-0.0.89.dist-info/top_level.txt,sha256=PNB5jS6cLlKCjlG74iCMC8akHQ7fjoPC7f7ZE3SseLc,13
+sociable_bot-0.0.89.dist-info/RECORD,,
