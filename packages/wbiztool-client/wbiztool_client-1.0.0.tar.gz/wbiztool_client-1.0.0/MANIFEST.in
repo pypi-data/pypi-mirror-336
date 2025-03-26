@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include examples *.py
+recursive-exclude __pycache__ *.pyc *.pyo
+recursive-exclude *.egg-info *
