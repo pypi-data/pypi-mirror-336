@@ -1,0 +1,4 @@
+PyYAML>=5
+argcomplete
+colorama
+requests
