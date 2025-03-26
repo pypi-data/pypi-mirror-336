@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: sunny19
+Version: 0.2
+Summary: A sample Python package-sunny
+Author: sunny sharma
+Author-email: sunnysharma9713@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
