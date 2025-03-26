@@ -1,0 +1,20 @@
+[project]
+name = "jupyter-vote"
+version = "0.2.0"
+description = "EduVote integration for Jupyter notebooks"
+authors = [
+    {name = "dev@lkies.net"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel (>=6.29.5,<7.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "jupyter_vote", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
