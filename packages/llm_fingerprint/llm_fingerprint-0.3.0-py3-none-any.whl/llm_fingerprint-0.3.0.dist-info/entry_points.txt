@@ -1,0 +1,2 @@
+[console_scripts]
+llm-fingerprint = llm_fingerprint.cli:main
