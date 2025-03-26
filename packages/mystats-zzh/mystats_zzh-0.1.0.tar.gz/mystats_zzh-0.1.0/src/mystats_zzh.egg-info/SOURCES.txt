@@ -1,0 +1,14 @@
+MANIFEST.in
+pyproject.toml
+readme.md
+data_tables/rank_table.json
+data_tables/t_table.json
+data_tables/z_table.json
+src/core/__init__.py
+src/core/data_processor.py
+src/core/rank_sum.py
+src/core/t_test.py
+src/mystats_zzh.egg-info/PKG-INFO
+src/mystats_zzh.egg-info/SOURCES.txt
+src/mystats_zzh.egg-info/dependency_links.txt
+src/mystats_zzh.egg-info/top_level.txt
