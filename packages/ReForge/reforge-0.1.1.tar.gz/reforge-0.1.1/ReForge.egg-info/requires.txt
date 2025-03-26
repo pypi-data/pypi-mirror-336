@@ -1,0 +1,4 @@
+pygame
+pysdl2
+pysdl2-dll
+pysdl3
