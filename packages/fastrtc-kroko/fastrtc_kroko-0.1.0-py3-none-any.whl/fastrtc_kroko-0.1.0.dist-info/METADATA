@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: fastrtc-kroko
+Version: 0.1.0
+Summary: The realtime communication library for Python. With support for Kroko-ASR model.
+License-File: LICENCE
+Requires-Python: >=3.10
+Requires-Dist: click
+Requires-Dist: fastrtc[stt,vad]
+Requires-Dist: librosa
+Requires-Dist: numpy>=2.0.2
+Requires-Dist: python-dotenv
+Requires-Dist: sherpa-onnx
+Requires-Dist: torch
+Description-Content-Type: text/markdown
+
+# FastRTC
+
+## The Real-Time Communication Library for Python
+
+Turn any python function into a real-time audio and video stream over WebRTC or WebSockets. Now with the [Kroko-ASR TTS Model](https://huggingface.co/Banafo/Kroko-ASR)!
+
+### Installation
+
+```bash
+pip install fastrtc-kroko
+```
+
