@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+muopdb_python_client/__init__.py
+muopdb_python_client/client.py
+muopdb_python_client/exceptions.py
+muopdb_python_client/utils.py
+muopdb_python_client/vectorizer.py
+muopdb_python_client.egg-info/PKG-INFO
+muopdb_python_client.egg-info/SOURCES.txt
+muopdb_python_client.egg-info/dependency_links.txt
+muopdb_python_client.egg-info/requires.txt
+muopdb_python_client.egg-info/top_level.txt
