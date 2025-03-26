@@ -1,0 +1,12 @@
+emaremes/__init__.py,sha256=rQacMZLXzpR4W7Hn5FJtHzgLzYd5DWqiOxS2fbc_jSM,79
+emaremes/download.py,sha256=XA-ODdWfw0GOpQMFQBcznTHlpG-lMsMfc3cKMXgRMnQ,3995
+emaremes/plot.py,sha256=Y42eVeJ1_B2egmuN3GgIFHZS-lPsPF0u1kNpsaqMrpc,2002
+emaremes/typing_utils.py,sha256=O2BEDJoelt6jpsDxDJsp70na4izY-1RE06WXE_tr1xA,550
+emaremes/utils.py,sha256=eV_XMyGTTn0mBIQGCToT7Jnu9RJsI4vBMvES6oGzJo8,5768
+emaremes/ts/__init__.py,sha256=InQwDe822P28nAdORRuHVXG2Sfw3MHF1rNctikSw5nY,75
+emaremes/ts/point.py,sha256=ejgMzoWGHzCtKjWfciMgd9THD8f1RMoCpDwofqDm1tk,4072
+emaremes/ts/polygon.py,sha256=X6ZpDJ3VWk_SxZT5Ym0-CrI2IXpYZodOgeN77lTkwIQ,10125
+emaremes-0.0.3.dist-info/METADATA,sha256=RDqh60iOeWARndpSpUziazVSC3M9iWNsmApE6bBK6P4,810
+emaremes-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+emaremes-0.0.3.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+emaremes-0.0.3.dist-info/RECORD,,
