@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: yaypp
+Version: 0.2.2
+Summary: Yet Another YAML Pretty Printer (yaypp) is a YAML pretty printer that formats YAML files with a focus on readability.
+Home-page: 
+Author: Elliot McKinney
+Author-email: elliot89mk@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
+
+An internal Python package for Kafka configuration and streaming of topics

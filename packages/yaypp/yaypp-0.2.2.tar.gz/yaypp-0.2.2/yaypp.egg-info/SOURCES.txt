@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+yaypp/__init__.py
+yaypp/yaypp.py
+yaypp.egg-info/PKG-INFO
+yaypp.egg-info/SOURCES.txt
+yaypp.egg-info/dependency_links.txt
+yaypp.egg-info/requires.txt
+yaypp.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+An internal Python package for Kafka configuration and streaming of topics
