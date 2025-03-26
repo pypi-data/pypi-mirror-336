@@ -1,0 +1,17 @@
+cactus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cactus/common.py,sha256=_VsuplfS64Wnw_nAYgiHFVZ2thf4MVPp6AvLbhLmFCQ,443
+cactus/config.py,sha256=kqMlgCCNTiXUfF_Lwj4sFmuVqziSm8wUGFzLyEhdRGU,3044
+cactus/train.py,sha256=nQGYcninymD34cUdA4mIJVh7gu3tKmli4vfBtcra1KQ,3746
+cactus/utils.py,sha256=PF2Ny5M1r-IYkS12Wf14IZZwA00JKg0eonS6rUmaCgU,1450
+cactus/kernels/__init__.py,sha256=H6vk3mU0QjT4r8CwlyHqgXzGRB_F9thGDD5xjDRU-GI,47
+cactus/kernels/matmul.py,sha256=fK_5fBvU0--YwqdYVtmziMBn6DexRFjAMRmFlWoz3vY,148
+cactus/nn/__init__.py,sha256=WEg2h2x6er1RHVIrgHsrJfrmxVx-A67h14Ok57WGU90,163
+cactus/nn/autodiff.py,sha256=wny_f7JexOub0m33kzCkaXPSHPBb2wuK2eNC4ReOAnw,9520
+cactus/nn/layers.py,sha256=rLYQ56oboE2rUAzZmHJEWXt6jvD96P1upsJFYoXgOoM,17899
+cactus/nn/ops.py,sha256=PHpmFsdrZ4HFLTKMjfvbpWuwPSLbksshcLI0KvMwJro,491
+cactus/nn/transformer.py,sha256=IOPNP2aV4pVyx7yoML6soUUNj5EUltCBogWxWcx0_gY,15949
+cactus_lib-0.1.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cactus_lib-0.1.4.dist-info/METADATA,sha256=yFXmZ8VxiLm23_evy0YUQDPWRnvBjDxdLqVs0RFnNJo,5739
+cactus_lib-0.1.4.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+cactus_lib-0.1.4.dist-info/top_level.txt,sha256=ytv3KPAjSLAKUEJaLKJTmbBdm_ZtfccHF8vLLQVKJdA,7
+cactus_lib-0.1.4.dist-info/RECORD,,
