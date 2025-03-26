@@ -1,0 +1,12 @@
+MLBuddy/__init__.py,sha256=aBzF2GUT73pqvUUkf8SNP8AWSXlllKjrEyuBk0zN-ho,215
+MLBuddy/model_selection.py,sha256=j5jClIj7xd9eaoWvcRsX9LdE7TDW9aFUvAtyxbzvnKM,3597
+MLBuddy/predictor.py,sha256=PjaZQf1dFqe4yObduJlIlQnvsxgpYdp-UxGLTrZNdrM,3276
+MLBuddy/preprocessing.py,sha256=IAzsQ0rNZGadErGhdlPOEDvJMeebQnG4qVKQRMZRJlA,4277
+MLBuddy/models/__init__.py,sha256=kuxeaQF1jPN29QFvNlRMidajhUMcpPxDg-h59sAo034,100
+MLBuddy/models/classification.py,sha256=0T5B1rafY68OQir8vKyd_R9AZWCMN_z8HUOWLGu4LvY,4049
+MLBuddy/models/regression.py,sha256=0FEyjL458kuIVdRPuS7inm3Bu0H4Mcex2KfX_bWwpGA,2947
+mlbuddy-0.1.0.dist-info/licenses/LICENSE.txt,sha256=pJu3rkNpqvqWEQHUz_m1EC-mZp9RKSFGqAVIoJRvDOg,1072
+mlbuddy-0.1.0.dist-info/METADATA,sha256=8fzUv0JpNP_sWHlVE21yV1OZTpbmRoIdDD7jmeM5AAY,3084
+mlbuddy-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+mlbuddy-0.1.0.dist-info/top_level.txt,sha256=iFcUKf5P1i5uGXiSDVW--03Jof7Isn2RQevEs18yokI,8
+mlbuddy-0.1.0.dist-info/RECORD,,
