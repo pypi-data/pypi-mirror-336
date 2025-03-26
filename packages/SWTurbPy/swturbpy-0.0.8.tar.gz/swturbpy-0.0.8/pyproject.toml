@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "SWTurbPy"
+version = "0.0.8"
+authors = [
+  { name="Zesen Huang", email="huangzs1997@gmail.com" },
+]
+description = "Basic Utilities for Solar Wind Turbulence"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "pandas",
+  "numba",
+  "pycwt",
+]
+
+[project.urls]
+Homepage = "https://github.com/huangzesen/SWTurbPy"
+Issues = "https://github.com/huangzesen/SWTurbPy/issues"
