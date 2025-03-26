@@ -1,0 +1,2 @@
+[console_scripts]
+mcplex-cli = mcplex.cli:main
