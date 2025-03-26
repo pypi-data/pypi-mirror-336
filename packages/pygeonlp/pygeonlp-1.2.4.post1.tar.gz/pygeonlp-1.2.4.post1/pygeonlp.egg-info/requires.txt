@@ -1,0 +1,8 @@
+requests
+chardet
+docopt
+lxml
+python-dateutil
+deprecated
+jageocoder
+geographiclib
