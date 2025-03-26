@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: aws-auth-utils
+Version: 0.0.1
+Summary: Easy AWS MFA authentication and role assuming
+Project-URL: Homepage, https://github.com/mvanderlee/aws_auth
+Author-email: Michiel Vanderlee <jmt.vanderlee@gmail.com>
+License-Expression: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: coloredlogs
+Requires-Dist: environs
+Provides-Extra: publish
+Requires-Dist: hatch>=1.7.0; extra == 'publish'
+Provides-Extra: test
+Description-Content-Type: text/markdown
+
+# AWS Auth
+
+```shell
+pip install aws-auth
+```
+
