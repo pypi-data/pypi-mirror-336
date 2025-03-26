@@ -1,0 +1,3 @@
+[console_scripts]
+TensorflowQianghuaXuexiChuyiFix1 = TensorflowQianghuaXuexiChuyiFix1.__main__:main
+tensorflow-qianghua-xuexi-chuyi-fix1 = TensorflowQianghuaXuexiChuyiFix1.__main__:main
