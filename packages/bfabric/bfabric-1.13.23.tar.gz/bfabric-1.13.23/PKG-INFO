@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: bfabric
+Version: 1.13.23
+Summary: Python client for the B-Fabric API
+Project-URL: Homepage, https://github.com/fgcz/bfabricPy
+Project-URL: Repository, https://github.com/fgcz/bfabricPy
+Author: Aleksejs Fomins, Marco Schmidt, Maria d'Errico, Witold Eryk Wolski
+Author-email: Christian Panse <cp@fgcz.ethz.ch>, Leonardo Schwarz <leonardo.schwarz@fgcz.ethz.ch>
+License: GPL-3.0
+Requires-Python: >=3.9
+Requires-Dist: cyclopts>=2.9.9
+Requires-Dist: eval-type-backport; python_version < '3.10'
+Requires-Dist: flask>=3.0.3
+Requires-Dist: loguru>=0.7
+Requires-Dist: polars-lts-cpu>=0.20.25; platform_machine == 'x86_64' and platform_system == 'Darwin'
+Requires-Dist: polars>=0.20.25; platform_machine != 'x86_64' or platform_system != 'Darwin'
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: python-dateutil>=2.9.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: requests>=2.26.0
+Requires-Dist: rich>=13.7.1
+Requires-Dist: suds>=1.1.2
+Requires-Dist: zeep>=4.2.1
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: licensecheck; extra == 'dev'
+Requires-Dist: logot[loguru,pytest]; extra == 'dev'
+Requires-Dist: mkdocs; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: mkdocstrings[python]; extra == 'dev'
+Requires-Dist: nox; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-mock; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: uv; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: mkdocs; extra == 'doc'
+Requires-Dist: mkdocs-material; extra == 'doc'
+Requires-Dist: mkdocstrings[python]; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: logot[loguru,pytest]; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-mock; extra == 'test'
+Provides-Extra: typing
+Requires-Dist: lxml-stubs; extra == 'typing'
+Requires-Dist: mypy; extra == 'typing'
+Requires-Dist: pandas-stubs; extra == 'typing'
+Requires-Dist: types-python-dateutil; extra == 'typing'
+Requires-Dist: types-pyyaml; extra == 'typing'
+Requires-Dist: types-requests; extra == 'typing'
