@@ -1,0 +1,7 @@
+pyproject.toml
+btd_client/__init__.py
+btd_client/source.py
+btd_python.egg-info/PKG-INFO
+btd_python.egg-info/SOURCES.txt
+btd_python.egg-info/dependency_links.txt
+btd_python.egg-info/top_level.txt
