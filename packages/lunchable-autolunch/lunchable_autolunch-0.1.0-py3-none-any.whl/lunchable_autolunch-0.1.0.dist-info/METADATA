@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: lunchable-autolunch
+Version: 0.1.0
+Summary: Automatically rename merchant names and autocategorise transactions.
+Author-Email: LightQuantum <self@lightquantum.me>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: click>=8.1.8
+Requires-Dist: lunchable>=1.4.2
+Requires-Dist: rich>=13.9.4
+Requires-Dist: openai>=1.68.2
+Requires-Dist: questionary>=2.1.0
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: readchar>=4.2.1
+Requires-Dist: copykitten>=1.2.2
+Requires-Dist: fuzzyfinder>=2.2.0
+Requires-Dist: thefuzz>=0.22.1
+Description-Content-Type: text/markdown
+
+# lunchable-autolunch
+
+Automatically rename merchant names and autocategorise transactions for LunchMoney.
+
+## Usage
+
+```shell
+export LUNCHMONEY_ACCESS_TOKEN=...
+export OPENAI_API_KEY=...
+lunchable plugins autolunch classify
+```
+
+## Missing Lunch Money API
+
+The Lunch Money API is missing a few key features that would make this plugin more useful:
+- Rule API (and the ability to create multiple patterns on the same field/regex support)
+- Filter out uncategorised transactions
