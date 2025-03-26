@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangJavawebFix1 = ShangGuiguTonggangJavawebFix1.__main__:main
+shang-guigu-tonggang-javaweb-fix1 = ShangGuiguTonggangJavawebFix1.__main__:main
