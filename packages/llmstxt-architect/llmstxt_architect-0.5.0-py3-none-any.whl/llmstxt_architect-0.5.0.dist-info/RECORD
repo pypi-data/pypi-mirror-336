@@ -1,0 +1,12 @@
+llmstxt_architect/__init__.py,sha256=2p3V_au1iL-LBzhuLMsaZst5BsQQ9fpcijtqEuuz2m4,165
+llmstxt_architect/cli.py,sha256=-1tAm7V7Wes-bsfaOM-aTECJjHpckkCUre52AEG14xM,3748
+llmstxt_architect/extractor.py,sha256=LmYWfS04t4tWR1FTtKUln_IyZNlLtbPKd6ZsFoo1mdE,1068
+llmstxt_architect/loader.py,sha256=e62-l5zrw6RkscYG6BI0HvfbU_pLTqaUQs_LedmuYLk,1163
+llmstxt_architect/main.py,sha256=dbdTSk2lrzonAiW1jD_8sgggF9Pj-wnKpv6jY27a7PQ,4258
+llmstxt_architect/styling.py,sha256=niFB2pIbd17N6-X0D4KtnKT0vS1O3QkJJgh8CeiyB-c,2968
+llmstxt_architect/summarizer.py,sha256=9TcaqT2F6RycdA-RW-x9J_KyS-eJmEEXFsxVs-6CilQ,10985
+llmstxt_architect-0.5.0.dist-info/METADATA,sha256=89gA8Y90UpsXV86gQpSFSrqZghsDTnkO15zWb6fWkYU,12660
+llmstxt_architect-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+llmstxt_architect-0.5.0.dist-info/entry_points.txt,sha256=r-eFKi-LJ-tSq7CEIRvhe4Vn2bFHxe5wtwh1qjWY7cY,65
+llmstxt_architect-0.5.0.dist-info/licenses/LICENSE,sha256=O-0zMbcEi6wXz1DiSdVgzMlQjJcNqNe5KDv08uYzqR0,1055
+llmstxt_architect-0.5.0.dist-info/RECORD,,
