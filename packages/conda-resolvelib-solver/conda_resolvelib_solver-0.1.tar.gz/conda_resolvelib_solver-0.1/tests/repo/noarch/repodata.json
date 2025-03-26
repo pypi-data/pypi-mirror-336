@@ -1,0 +1,79 @@
+{
+    "info": {
+        "subdir": "noarch"
+    },
+    "packages": {},
+    "packages.conda": {
+        "foo-2.1.0-0.conda": {
+            "build": "0",
+            "build_number": 0,
+            "depends": [
+                "bar >=2.0,<3"
+            ],
+            "md5": "689ed238b8e8c7d5e56301beed11eabd",
+            "name": "foo",
+            "noarch": "generic",
+            "sha256": "2c8706cc188c322699d96f696cd997436bb5d8028be13134318549eb61db0cf7",
+            "size": 3193,
+            "subdir": "noarch",
+            "timestamp": 1742931603411,
+            "version": "2.1.0"
+        },
+        "foo-1.1.1-0.conda": {
+            "build": "0",
+            "build_number": 0,
+            "depends": [
+                "bar >=1.0,<2"
+            ],
+            "md5": "689ed238b8e8c7d5e56301beed11eabd",
+            "name": "foo",
+            "noarch": "generic",
+            "sha256": "2c8706cc188c322699d96f696cd997436bb5d8028be13134318549eb61db0cf7",
+            "size": 3193,
+            "subdir": "noarch",
+            "timestamp": 1742931603411,
+            "version": "1.1.0"
+        },
+        "bar-3.0.0-0.conda": {
+            "build": "0",
+            "build_number": 0,
+            "depends": [],
+            "md5": "689ed238b8e8c7d5e56301beed11eabd",
+            "name": "bar",
+            "noarch": "generic",
+            "sha256": "2c8706cc188c322699d96f696cd997436bb5d8028be13134318549eb61db0cf7",
+            "size": 3193,
+            "subdir": "noarch",
+            "timestamp": 1742931603411,
+            "version": "3.0.0"
+        },
+        "bar-2.0.0-0.conda": {
+            "build": "0",
+            "build_number": 0,
+            "depends": [],
+            "md5": "689ed238b8e8c7d5e56301beed11eabd",
+            "name": "bar",
+            "noarch": "generic",
+            "sha256": "2c8706cc188c322699d96f696cd997436bb5d8028be13134318549eb61db0cf7",
+            "size": 3193,
+            "subdir": "noarch",
+            "timestamp": 1742931603411,
+            "version": "2.0.0"
+        },
+        "bar-1.0.0-0.conda": {
+            "build": "0",
+            "build_number": 0,
+            "depends": [],
+            "md5": "689ed238b8e8c7d5e56301beed11eabd",
+            "name": "bar",
+            "noarch": "generic",
+            "sha256": "2c8706cc188c322699d96f696cd997436bb5d8028be13134318549eb61db0cf7",
+            "size": 3193,
+            "subdir": "noarch",
+            "timestamp": 1742931603411,
+            "version": "1.0.0"
+        }
+    },
+    "removed": [],
+    "repodata_version": 1
+}

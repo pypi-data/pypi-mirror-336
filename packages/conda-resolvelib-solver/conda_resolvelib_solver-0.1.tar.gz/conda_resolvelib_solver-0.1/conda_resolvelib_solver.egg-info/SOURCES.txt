@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+conda_resolvelib_solver/_version.py
+conda_resolvelib_solver/plugin.py
+conda_resolvelib_solver/solver.py
+conda_resolvelib_solver.egg-info/PKG-INFO
+conda_resolvelib_solver.egg-info/SOURCES.txt
+conda_resolvelib_solver.egg-info/dependency_links.txt
+conda_resolvelib_solver.egg-info/entry_points.txt
+conda_resolvelib_solver.egg-info/requires.txt
+conda_resolvelib_solver.egg-info/top_level.txt
+dev/conda-requirements.txt
+tests/test_solver.py
+tests/repo/noarch/repodata.json

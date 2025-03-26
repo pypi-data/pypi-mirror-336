@@ -1,0 +1,2 @@
+[conda]
+conda-resolvelib-solver = conda_resolvelib_solver.plugin
