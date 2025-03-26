@@ -1,0 +1,9 @@
+inflection>=0.5.1
+six>=1.10.0
+simplejson>=3.10.0
+pendulum>=2.0.0
+pyyaml<7.0.0,>=6.0.1
+cleo>=0.8.1
+packaging>=21.0
+typing-extensions>=4.0.0
+pytzdata>=2020.1

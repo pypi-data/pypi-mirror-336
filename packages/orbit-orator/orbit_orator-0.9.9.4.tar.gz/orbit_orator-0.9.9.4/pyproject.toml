@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "orbit-orator"
+version = "0.9.9.4"
+description = "A simple but powerful ORM for Python, inspired by Laravel's Eloquent"
+
+license = "MIT"
+
+authors = [
+    "Sébastien Eustace <sebastien@eustace.io>",
+    "Maxiaoyu <maxiaoyu@example.com>"
+]
+
+readme = 'README.rst'
+
+repository = "https://github.com/maxiaoyu/orator"
+homepage = "https://github.com/maxiaoyu/orator"
+
+keywords = ['database', 'orm']
+
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+inflection = "^0.5.1"
+six = "^1.10.0"
+simplejson = "^3.10.0"
+pendulum = "^2.0.0"
+pyyaml = "^6.0.1,<7.0.0"
+cleo = "^0.8.1"
+packaging = "^21.0"
+typing-extensions = "^4.0.0"
+pytzdata = "^2020.1"
+
+# Extras
+psycopg2 = { version = "^2.7", optional = true }
+PyMySQL = { version = "^0.7", optional = true }
+mysqlclient = { version = "^1.3", optional = true }
+
+
+[tool.poetry.dev-dependencies]
+flexmock = "0.9.7"
+pytest = "^3.5"
+pytest-mock = "^1.6"
+tox = "^3.5"
+pre-commit = "^1.11"
+
+
+[tool.poetry.extras]
+mysql = ["mysqlclient"]
+mysql-python = ["PyMySQL"]
+pgsql = ["psycopg2"]
+
+
+[tool.poetry.scripts]
+orator = 'orbit_orator.commands.application:application.run'
+
+
+[build-system]
+requires = ["poetry>=0.12a3"]
+build-backend = "poetry.masonry.api"
