@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dtpyworker"
+version = "0.1.3"
+description = "A package to improved api library to have better development experience."
+authors = ["Reza Shirazi <reza@datgate.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+celery = "^5.4.0"
+celery-redbeat = "^2.2.0"
+dtpyredis = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
