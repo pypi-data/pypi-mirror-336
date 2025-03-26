@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/Authipy.egg-info/PKG-INFO
+src/Authipy.egg-info/SOURCES.txt
+src/Authipy.egg-info/dependency_links.txt
+src/Authipy.egg-info/entry_points.txt
+src/Authipy.egg-info/requires.txt
+src/Authipy.egg-info/top_level.txt
+src/authipy/__init__.py
+src/authipy/main.py
+src/authipy/version.py
+tests/test_authipy.py
