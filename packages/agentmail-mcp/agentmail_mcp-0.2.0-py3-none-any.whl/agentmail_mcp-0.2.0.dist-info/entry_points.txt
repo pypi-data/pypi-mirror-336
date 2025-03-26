@@ -1,0 +1,2 @@
+[console_scripts]
+agentmail-mcp = agentmail_mcp.server:main
