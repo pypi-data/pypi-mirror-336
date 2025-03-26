@@ -1,0 +1,3 @@
+[console_scripts]
+TengxunDaimaAnquanZhinanFix1 = TengxunDaimaAnquanZhinanFix1.__main__:main
+tengxun-daima-anquan-zhinan-fix1 = TengxunDaimaAnquanZhinanFix1.__main__:main
