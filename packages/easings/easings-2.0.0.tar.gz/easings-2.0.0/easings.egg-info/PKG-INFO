@@ -1,0 +1,67 @@
+Metadata-Version: 2.4
+Name: easings
+Version: 2.0.0
+Summary: Customizable Optimized Easing Functions for Python
+Author: Sylvie Isla
+Author-email: sylvieisla.std@gmail.com
+Keywords: easings easing ease animation interpolation
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-python
+Dynamic: summary
+
+# Easings
+
+## Description
+
+Customizable Optimized Easing Functions for Python.
+
+## Installation
+
+```sh
+pip install easings
+```
+
+## Usage
+
+Ease values between 0 and 1:
+
+```py
+import easings
+
+progress = easings.back_in_out(
+    progress = 0.5,
+    bounce_const = easings.both_back_consts[0.1]
+)
+
+print(progress)
+```
+
+Easing values with a start and end value using an Easer
+
+```py
+import easings
+
+easer = easings.Easer(4, 12)
+
+value = easer.value(easings.poly_in_out, 0.5, 2)
+
+print(value)
+```
+
+## License
+
+CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
