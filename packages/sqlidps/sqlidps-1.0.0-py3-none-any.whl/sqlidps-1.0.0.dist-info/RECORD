@@ -1,0 +1,9 @@
+sqlidps/__init__.py,sha256=xi3mdSaSIrZr8ARBjD_y1_vCvle51GdiFCy6AQjuRMI,24
+sqlidps/inference.py,sha256=8EtyrJ46CndVIXsvZF-acxhT4c9UT_45_f1dPN1tkYE,2340
+sqlidps/model.pkl,sha256=XE9yTvkEHpNanWqRYxiPB9py3EL6hSit9qPPfiZ2R6M,3398514
+sqlidps/sql_tokenizer.so,sha256=DP-rie6o2yOKKvTKMnubuD5owm5DkWoZfEs66e1QpIk,31208
+sqlidps-1.0.0.dist-info/licenses/LICENSE,sha256=IPa1IxJhQZW6mcn_h2DdxfWHOkIK4P7KH4meJujPRf8,1068
+sqlidps-1.0.0.dist-info/METADATA,sha256=IdFcqA09UrSKqYi4T1WUqzMGiIwGCpu_6hRwIGBxn1A,1674
+sqlidps-1.0.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+sqlidps-1.0.0.dist-info/top_level.txt,sha256=SGfbIkfWjvojB9c1HzCKUwQwnNgR1YT4ol6BVkDe8gU,8
+sqlidps-1.0.0.dist-info/RECORD,,
