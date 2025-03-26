@@ -1,0 +1,15 @@
+odoo/addons/sale_mail_autosubscribe/README.rst,sha256=ptZcP24WUttHNsNXEpEilx2z1v5l_0Ar6Imf-qHZn0Q,3362
+odoo/addons/sale_mail_autosubscribe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/sale_mail_autosubscribe/__manifest__.py,sha256=0j6W1MM0gNUW74X0OOOhjWaOeEIBYhucQgRnBZn5irc,657
+odoo/addons/sale_mail_autosubscribe/data/mail_autosubscribe.xml,sha256=XAwrVS5__zYP5bS29RSMqC7N6kEWZ6aU6oYkyIKhYzs,397
+odoo/addons/sale_mail_autosubscribe/i18n/it.po,sha256=Hr35SLJ_Yhn-bYwUTxsbyp3jQvjD7wKU-nI8r4ROxd0,411
+odoo/addons/sale_mail_autosubscribe/i18n/sale_mail_autosubscribe.pot,sha256=2nkV-O77dcHWhLBfGldb2hwKdpsp_Iq_PU5QMeyP-mo,341
+odoo/addons/sale_mail_autosubscribe/readme/CONFIGURE.md,sha256=kTOmLuxr-VaJCkZRlCP1Zx2JkmOzHN2ly1JEvNuS0vQ,73
+odoo/addons/sale_mail_autosubscribe/readme/CONTRIBUTORS.md,sha256=GOl-PJdJRdJq6qushy5uDRRU6mKpCr5lS5yTdcSX9cs,97
+odoo/addons/sale_mail_autosubscribe/readme/DESCRIPTION.md,sha256=t07sKmQKSvQloiUIPIhPSgEACHiewe1Nr6kdrihPq9U,113
+odoo/addons/sale_mail_autosubscribe/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_mail_autosubscribe/static/description/index.html,sha256=U8AYBxeHm12K11RQ632io3Fys4Dp76POqGvUmqg5LyQ,13006
+odoo_addon_sale_mail_autosubscribe-18.0.1.0.0.2.dist-info/METADATA,sha256=wohlTEd7uG4YEY2S87Oer3b8nt8QekMzCI_ch232Hb4,3974
+odoo_addon_sale_mail_autosubscribe-18.0.1.0.0.2.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_sale_mail_autosubscribe-18.0.1.0.0.2.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_sale_mail_autosubscribe-18.0.1.0.0.2.dist-info/RECORD,,
