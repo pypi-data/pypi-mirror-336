@@ -1,0 +1,1 @@
+from mlip_jax.models.visnet.visnet_factory import create_visnet_force_field
