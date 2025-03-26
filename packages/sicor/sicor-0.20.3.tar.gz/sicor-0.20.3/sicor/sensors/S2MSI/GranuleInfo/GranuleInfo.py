@@ -1,0 +1,77 @@
+import json
+from importlib.util import find_spec
+from os.path import dirname, join, isfile
+
+__author__ = "Niklas Bohn, Andre Hollstein"
+
+
+# noinspection PyMissingConstructor
+class GranuleInfo(dict):
+    def __init__(self, version="lite"):
+        """Dict like object with basic information's about Sentinel2-MSI granules.
+
+        :param version: should be either "lite" or "full"
+        :type version:  string with granule name, see keys() method for available names
+        :return:        dict like object, keys are S2 granule names (e.g. '32UVX'), data can be accessed via () and []
+                        methods
+
+        :Example
+
+        >>> S2gi = GranuleInfo(version="full")
+        >>> S2gi["32UPV"]
+            {u'country': [u'Germany'],
+             u'epsg': 32632,
+             u'name': u'32UPV',
+             u'pos': {u'll': {u'lat': 48.6570271781,
+               u'lon': 10.3579107698,
+               u'x': 599999.9999970878,
+               u'y': 5390220.000326163},
+              u'lr': {u'lat': 48.6298215752,
+               u'lon': 11.8474784519,
+               u'x': 709800.0000132157,
+               u'y': 5390220.000321694},
+              u'tl': {u'lat': 49.644436702,
+               u'lon': 10.3851737332,
+               u'x': 600000.0000025682,
+               u'y': 5500020.000361709},
+              u'tr': {u'lat': 49.6162737214,
+               u'lon': 11.9045727629,
+               u'x': 709800.0000165974,
+               u'y': 5500020.000351718}},
+             u'region': [u'Europe'],
+             u'zone': 32}
+        """
+        p_data = join(dirname(find_spec('sicor').origin), 'sensors', 'S2MSI', 'GranuleInfo', 'data')
+        files = {"lite": join(p_data, "S2_tile_data_lite.json"),
+                 "full": join(p_data, "S2_tile_data_full.json"),}
+        try:
+            fn_base = files[version]
+        except KeyError:
+            raise ValueError("Version should be: %s" % str(list(files.keys())))
+
+        if not isfile(fn_base):
+            raise FileNotFoundError(fn_base)
+
+        with open(fn_base, 'r') as fl:
+            s2_tile_data = json.load(fl)
+        self.update(s2_tile_data)
+
+    @staticmethod
+    def __test__(pp):
+        if "pos" in pp:
+            for aa in ["ll", "lr", "tl", "tr"]:
+                if aa in pp["pos"]:
+                    if "lon" not in pp["pos"][aa] or "lat" not in pp["pos"][aa]:
+                        return False
+                    else:
+                        return True
+                else:
+                    return False
+        else:
+            return False
+
+    def get_tile_data(self):
+        return {key: pp for key, pp in self.items() if self.__test__(pp) is True}
+
+    def __call__(self, arg):
+        return self[arg]
