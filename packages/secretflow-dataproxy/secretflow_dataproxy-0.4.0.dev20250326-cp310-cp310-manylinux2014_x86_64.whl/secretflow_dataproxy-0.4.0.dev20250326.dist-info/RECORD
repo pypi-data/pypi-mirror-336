@@ -1,0 +1,12 @@
+dataproxy/__init__.py,sha256=SWgfjgB-6Qk3SupZzd9oU4NgqJzxg2v5fRhikS-BCN8,836
+dataproxy/_lib.so,sha256=-m5LynAfWzAW5l9LJZqnjnMr2OrVk9HXtDtk4bZBXFs,52606240
+dataproxy/file_adapter.py,sha256=BzPzbC--c_Joo-Uaueivr9aXZPiBq_tzsl1vvu7k2pM,2273
+dataproxy/proto.py,sha256=04fnaR82nKSQtgv47Da21YsezFAkDbMuObESowplYmA,694
+dataproxy/sdk.py,sha256=ZF2s-S6umKlwYfWeh6vWDQM7KH5QhcpyMHUX0chFZIk,716
+dataproxy/stream.py,sha256=_nD7QEOJovAIEtWrJrOcDaOUTNMvEfkWPysUZr2IRto,1981
+dataproxy/version.py,sha256=7yYFwKWjn79oGKenK-lXRtKkzmVqHxQC5bbwNke3oLk,617
+dataproxy_sdk/proto/data_proxy_pb_pb2.py,sha256=v8Dewd7lzdFU91YpNOdDkqRzsvEnax1zTt6qDJFwzw8,4598
+secretflow_dataproxy-0.4.0.dev20250326.dist-info/METADATA,sha256=skG3A1y5vhw9x5mzIbQRz6wpsDQIUG1oXd1PGWFSphA,633
+secretflow_dataproxy-0.4.0.dev20250326.dist-info/WHEEL,sha256=3FD_TtvcYtlo7g6oL1pzzO9eYXnKmAVng2chYFIZ3HQ,112
+secretflow_dataproxy-0.4.0.dev20250326.dist-info/top_level.txt,sha256=4YOJ0570E51E1SWyhm6oQAcm7NM9w9Ai6DI72XULzH0,10
+secretflow_dataproxy-0.4.0.dev20250326.dist-info/RECORD,,
