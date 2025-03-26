@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: simikit
+Version: 0.0.1
+Summary: Image Similarity Toolkit in Python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+## SimiKit: Image Similarity Toolkit in Python
+
+
+English | [中文](doc/README_cn.md) 
