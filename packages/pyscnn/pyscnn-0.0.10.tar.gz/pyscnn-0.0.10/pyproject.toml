@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyscnn"
+version = "0.0.10"
+authors = [
+  { name="Aaron Mishkin", email="amishkin@cs.stanford.edu" },
+]
+description = "Scalable Convex Neural Networks: a package for fasts convex optimization of shallow neural networks."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "torch",
+    "torchvision",
+    "cvxpy",
+    "scikit-learn",
+    "scipy",
+    "typing_extensions",
+    "tqdm",
+    "opt_einsum",
+    "linalg_backends"
+]
+
+[tool.setuptools.package-data]
+scnn = ["py.typed"]
+
+[project.urls]
+"Homepage" = "https://github.com/pilancilab/scnn"
+"Bug Tracker" = "https://github.com/pilancilab/scnn/issues"
