@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunShujukuKehuAnliJiFix1 = AliYunShujukuKehuAnliJiFix1.__main__:main
+ali-yun-shujuku-kehu-anli-ji-fix1 = AliYunShujukuKehuAnliJiFix1.__main__:main
