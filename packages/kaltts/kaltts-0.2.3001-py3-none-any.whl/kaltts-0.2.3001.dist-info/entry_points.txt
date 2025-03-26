@@ -1,0 +1,3 @@
+[console_scripts]
+kaltts = kaltts.__main__:main
+
