@@ -1,0 +1,8 @@
+__pycache__/
+*.txt
+testspace/
+*.log
+*.csv
+logs/
+.json
+.md
