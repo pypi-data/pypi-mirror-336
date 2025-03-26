@@ -1,0 +1,2 @@
+[console_scripts]
+orgnized-cli = orgnized_cli.orgnized_cli:main
