@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunCunchuBaipishuFix1 = AliYunCunchuBaipishuFix1.__main__:main
+ali-yun-cunchu-baipishu-fix1 = AliYunCunchuBaipishuFix1.__main__:main
