@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: autoflow-ai
+Version: 0.0.1.dev32
+Summary: Framework to index and search your vector data, make your data ready for AI apps, developed by TiDB.
+Author-email: Mini256 <minianter@foxmail.com>, sykp241095 <sykp241095@gmail.com>
+Requires-Python: >=3.9
+Requires-Dist: deepdiff>=8.2.0
+Requires-Dist: litellm>=1.61.11
+Requires-Dist: llama-index-core>=0.12.23.post2
+Requires-Dist: llama-index-llms-litellm>=0.3.0
+Requires-Dist: pytidb-experimental==0.0.1.dev5
+Provides-Extra: experiment
+Requires-Dist: dspy>=2.6.6; extra == 'experiment'
+Requires-Dist: llama-index-readers-file>=0.4.6; extra == 'experiment'
+Requires-Dist: markdownify>=0.13.1; extra == 'experiment'
+Requires-Dist: playwright>=1.20.0; extra == 'experiment'
+Requires-Dist: tokenizers>=0.21.0; extra == 'experiment'
+Description-Content-Type: text/markdown
+
+# Autoflow
+
+Yet another RAG framework. (WIP)
+
