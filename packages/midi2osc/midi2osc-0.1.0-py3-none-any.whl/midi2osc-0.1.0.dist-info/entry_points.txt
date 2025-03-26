@@ -1,0 +1,2 @@
+[console_scripts]
+midi2osc = main:cli

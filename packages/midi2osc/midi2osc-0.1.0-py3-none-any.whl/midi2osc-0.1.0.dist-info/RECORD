@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config.py,sha256=-71Ku-Ya7IKHpKIJPjNcAxP8hhpJo1Rw6XOnJqwsg0o,1389
+config_file.py,sha256=yyYqW7L-Nt-lSh6m3-cbVFYqvr9UCaGSXdY0PU4exo0,1116
+main.py,sha256=SvaxHTG0KWkvsiDvpD2ErRrdrxHJGxUKGsv9LcOmcxE,386
+run.py,sha256=M230FmKs2grFlNrWGZ9Kj_1JzF1joic-D8Mmr4xk6g0,949
+midi2osc-0.1.0.dist-info/METADATA,sha256=b2QinnxoIj2SMbIpBS1mmXqANn32x7g9tFQmj0sjrPI,1536
+midi2osc-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+midi2osc-0.1.0.dist-info/entry_points.txt,sha256=VXwjJChzLTl84lkspVLS8Es4pLytzRR5q8EnFAXKWoE,38
+midi2osc-0.1.0.dist-info/top_level.txt,sha256=zayTk8doOOlIyXvvauUFVpq39HFHFymI8lLtZbe0lgY,37
+midi2osc-0.1.0.dist-info/RECORD,,
