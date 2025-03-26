@@ -1,0 +1,51 @@
+[project]
+name = "snailz"
+version = "0.2.0"
+description = "Synthetic data generator for snail mutation survey"
+keywords = ["open science", "synthetic data"]
+readme = "README.md"
+authors = [
+    { name = "Greg Wilson", email = "gvwilson@third-bit.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click",
+    "dacite",
+    "faker",
+    "geopy",
+    "polars"
+]
+
+[project.urls]
+home = "https://github.com/gvwilson/sz"
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "doit",
+  "markdown-include",
+  "mkdocs-material",
+  "mkdocstrings[python]",
+  "pyfakefs",
+  "pyright",
+  "pytest",
+  "pytest-cov",
+  "ruff",
+  "twine",
+]
+
+[project.scripts]
+snailz = "snailz.clui:cli"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.pyright]
+include = ["src/snailz"]
+exclude = ["tests"]
+typeCheckingMode = "basic"
+reportMissingTypeStubs = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
