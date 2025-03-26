@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: aporiagen
+Version: 0.0.2
+Summary: A program which generates random programs in the Aporia language
+Author-email: Ephraim Siegfried <ephraim.siegfried@hotmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aporia-interpreter>=0.1.12
+
+# Aporiagen
+
+This program generates random programs in the Aporia language. 
+The Aporia language is described in [this paper](https://www.arxiv.org/abs/2411.05570).
+
+## Installation
+Install the program with
+
+```bash
+pip install aporiagen
+```
+
+or clone the repository and run
+```bash
+uv run aporiagen
+```
+
+## Usage
+
+Generate a random program with 10 instructions:
+```bash
+aporiagen -i 10
+```
+
+Additional options can be found with:
+```bash
+aporiagen -h
+```
