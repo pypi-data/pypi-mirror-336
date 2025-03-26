@@ -1,0 +1,87 @@
+Metadata-Version: 2.4
+Name: mylabs-mcp.projectsix-expert
+Version: 0.1.0
+Summary: Project Six Model Context Protocol (MCP) server
+Project-URL: Homepage, https://github.com/scottschreckengaust/mcpmonorepo
+Project-URL: Repository, https://github.com/scottschreckengaust/mcpmonorepo.git
+Author-email: Scott Schreckengaust <scottschreckengaust@users.noreply.github.com>
+Requires-Python: >=3.13
+Requires-Dist: mcp[cli]>=1.3.0
+Requires-Dist: pydantic>=2.10.6
+Description-Content-Type: text/markdown
+
+# projectsix-expert
+
+One Model Context Protocol (MCP) server
+
+## Prerequisites
+
+1. Install `uv` from [Astral](https://docs.astral.sh/uv/getting-started/installation/) or the [GitHub README](https://github.com/astral-sh/uv#installation)
+2. Install Python using `uv python install 3.13`
+
+## Installation
+
+Install the MCP server:
+```bash
+uv tool install mylabs-mcp.projectsix-expert --force 
+```
+
+Add the server to your MCP client config (e.g. `~/.cursor-server/data/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json`):
+```json
+{
+  "mcpServers": {
+    "mylabs_mcp.projectsix_expert": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mylabs-mcp-projectsix-expert",
+        "projectsix-expert"
+      ],
+      "env": {
+        "SHELL": "/usr/bin/zsh"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+```
+
+## Development
+
+1. Set up the development environment:
+```bash
+uv sync --all-groups
+```
+
+2. Run the server:
+```bash
+uv run mylabs-mcp.projectsix-expert/server.py
+```
+
+3. Install pre-commit hooks:
+```bash
+GIT_CONFIG=/dev/null pre-commit install
+```
+
+## Running the Server
+
+Run the server with default stdio transport:
+```bash
+uv run mylabs-mcp.projectsix-expert/server.py
+```
+
+Or with SSE transport on a specific port:
+```bash
+uvx projectsix-expert/server.py --sse --port 8888
+```
+
+## Customizing the Server
+
+1. Edit `projectsix_expert/server.py` to implement your MCP tools and resources
+2. Add dependencies to `pyproject.toml` with `uv add <dependency>`
+3. Update tests and documentation as needed
+4. Build the project: `uv build`
+5. Push the changes: `git push`
+6. Create a release: `uv run cz bump`
+7. Tag the release: `git push --tags`
