@@ -1,0 +1,712 @@
+{
+	"file": {
+		"file_type": "CTSimU Scenario",
+		"name": "Lochfolie",
+		"description": "",
+		"contact": "David Plotzki",
+		"date_created": "2021-03-23",
+		"date_changed": "2023-09-01",
+		"version": {
+			"major": 2,
+			"minor": 0
+		},
+		"file_format_version": {
+			"major": 1,
+			"minor": 2
+		}
+	},
+	"environment": {
+		"material_id": "Vacuum",
+		"temperature": {
+			"value": null,
+			"unit": "C"
+		}
+	},
+	"geometry": {
+		"detector": {
+			"center": {
+				"x": {
+					"value": 399.5257578,
+					"unit": "mm"
+				},
+				"y": {
+					"value": 17.5530267,
+					"unit": "mm"
+				},
+				"z": {
+					"value": 8.4297178,
+					"unit": "mm"
+				}
+			},
+			"vector_u": {
+				"x": {
+					"value": 0
+				},
+				"y": {
+					"value": -1
+				},
+				"z": {
+					"value": 0
+				}
+			},
+			"vector_w": {
+				"x": {
+					"value": 1
+				},
+				"y": {
+					"value": 0
+				},
+				"z": {
+					"value": 0
+				}
+			},
+			"deviations": [
+				{
+					"type": "rotation",
+					"axis": {
+						"u": {
+							"value": 0
+						},
+						"v": {
+							"value": 0
+						},
+						"w": {
+							"value": 1
+						}
+					},
+					"pivot": {
+						"u": {
+							"value": 0,
+							"unit": "mm"
+						},
+						"v": {
+							"value": 0,
+							"unit": "mm"
+						},
+						"w": {
+							"value": 0,
+							"unit": "mm"
+						}
+					},
+					"amount": {
+						"value": -3.451038434719911,
+						"unit": "deg"
+					},
+					"known_to_reconstruction": true
+				},
+				{
+					"type": "rotation",
+					"axis": {
+						"u": {
+							"value": 0
+						},
+						"v": {
+							"value": 1
+						},
+						"w": {
+							"value": 0
+						}
+					},
+					"pivot": {
+						"u": {
+							"value": 0,
+							"unit": "mm"
+						},
+						"v": {
+							"value": 0,
+							"unit": "mm"
+						},
+						"w": {
+							"value": 0,
+							"unit": "mm"
+						}
+					},
+					"amount": {
+						"value": -2.438461715730154,
+						"unit": "deg"
+					},
+					"known_to_reconstruction": true
+				},
+				{
+					"type": "rotation",
+					"axis": {
+						"u": {
+							"value": 1
+						},
+						"v": {
+							"value": 0
+						},
+						"w": {
+							"value": 0
+						}
+					},
+					"pivot": {
+						"u": {
+							"value": 0,
+							"unit": "mm"
+						},
+						"v": {
+							"value": 0,
+							"unit": "mm"
+						},
+						"w": {
+							"value": 0,
+							"unit": "mm"
+						}
+					},
+					"amount": {
+						"value": 1.356754174099129,
+						"unit": "deg"
+					},
+					"known_to_reconstruction": true
+				}
+			]
+		},
+		"source": {
+			"type": "cone",
+			"beam_divergence": {
+				"u": {
+					"value": 0.0,
+					"unit": "rad"
+				},
+				"v": {
+					"value": 0.0,
+					"unit": "rad"
+				}
+			},
+			"center": {
+				"x": {
+					"value": 0.0,
+					"unit": "mm"
+				},
+				"y": {
+					"value": 0.0,
+					"unit": "mm"
+				},
+				"z": {
+					"value": 0.0,
+					"unit": "mm"
+				}
+			},
+			"vector_u": {
+				"x": {
+					"value": 0
+				},
+				"y": {
+					"value": -1
+				},
+				"z": {
+					"value": 0
+				}
+			},
+			"vector_w": {
+				"x": {
+					"value": 1
+				},
+				"y": {
+					"value": 0
+				},
+				"z": {
+					"value": 0
+				}
+			}
+		},
+		"stage": {
+			"center": {
+				"x": {
+					"value": 9.993138,
+					"unit": "mm"
+				},
+				"y": {
+					"value": 0.4390451,
+					"unit": "mm"
+				},
+				"z": {
+					"value": 0.2108483,
+					"unit": "mm"
+				}
+			},
+			"vector_u": {
+				"x": {
+					"value": 1
+				},
+				"y": {
+					"value": 0
+				},
+				"z": {
+					"value": 0
+				}
+			},
+			"vector_w": {
+				"x": {
+					"value": 0
+				},
+				"y": {
+					"value": 0
+				},
+				"z": {
+					"value": 1
+				}
+			}
+		}
+	},
+	"detector": {
+		"model": "",
+		"manufacturer": "",
+		"type": "ideal",
+		"columns": {
+			"value": 3000.0,
+			"unit": "px"
+		},
+		"rows": {
+			"value": 3000.0,
+			"unit": "px"
+		},
+		"bit_depth": {
+			"value": 16
+		},
+		"integration_time": {
+			"value": 1.0,
+			"unit": "s"
+		},
+		"dead_time": {
+			"value": 1.0,
+			"unit": "s"
+		},
+		"image_lag": {
+			"value": 0.0
+		},
+		"gain": {
+			"value": 1
+		},
+		"pixel_pitch": {
+			"u": {
+				"value": 0.15,
+				"unit": "mm"
+			},
+			"v": {
+				"value": 0.15,
+				"unit": "mm"
+			}
+		},
+		"gray_value": {
+			"imin": {
+				"value": 0
+			},
+			"imax": {
+				"value": 60000
+			},
+			"factor": {
+				"value": null,
+				"unit": "1/J"
+			},
+			"offset": {
+				"value": null
+			},
+			"intensity_characteristics_file": {
+				"value": null
+			},
+			"efficiency_characteristics_file": {
+				"value": null
+			}
+		},
+		"noise": {
+			"snr_at_imax": {
+				"value": null
+			},
+			"noise_characteristics_file": {
+				"value": null
+			}
+		},
+		"unsharpness": {
+			"basic_spatial_resolution": {
+				"value": null,
+				"unit": "mm"
+			},
+			"mtf": {
+				"value": null
+			}
+		},
+		"bad_pixel_map": {
+			"file": {
+				"value": null
+			},
+			"type": "uint8",
+			"endian": "little",
+			"headersize": 0
+		},
+		"scintillator": {
+			"material_id": null,
+			"thickness": {
+				"value": 0.0,
+				"unit": "mm"
+			}
+		},
+		"window": {
+			"front": [],
+			"rear": []
+		},
+		"filters": {
+			"front": [],
+			"rear": []
+		}
+	},
+	"source": {
+		"model": "",
+		"manufacturer": "",
+		"voltage": {
+			"value": 80.0,
+			"unit": "kV"
+		},
+		"current": {
+			"value": 100.0,
+			"unit": "uA"
+		},
+		"target": {
+			"material_id": "W",
+			"type": "reflection",
+			"thickness": {
+				"value": null,
+				"unit": "mm"
+			},
+			"angle": {
+				"incidence": {
+					"value": 45.0,
+					"unit": "deg"
+				},
+				"emission": {
+					"value": 45.0,
+					"unit": "deg"
+				}
+			}
+		},
+		"spot": {
+			"size": {
+				"u": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"v": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"w": {
+					"value": 0,
+					"unit": "mm"
+				}
+			},
+			"sigma": {
+				"u": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"v": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"w": {
+					"value": 0,
+					"unit": "mm"
+				}
+			},
+			"intensity_map": {
+				"file": {
+					"value": null
+				},
+				"dim_x": null,
+				"dim_y": null,
+				"dim_z": null,
+				"type": "uint16",
+				"endian": "little",
+				"headersize": 0
+			}
+		},
+		"spectrum": {
+			"monochromatic": true,
+			"file": {
+				"value": null
+			}
+		},
+		"window": [
+			{
+				"material_id": "Al",
+				"thickness": {
+					"value": 4.0,
+					"unit": "mm"
+				}
+			}
+		],
+		"filters": []
+	},
+	"samples": [
+		{
+			"name": "Lochfolie",
+			"file": {
+				"value": "Folie_2020-11-16-v02r02fbomlgom.stl"
+			},
+			"unit": "mm",
+			"material_id": "W",
+			"scaling_factor": {
+				"r": {
+					"value": 1
+				},
+				"s": {
+					"value": 1
+				},
+				"t": {
+					"value": 1
+				}
+			},
+			"position": {
+				"center": {
+					"u": {
+						"value": 0.0,
+						"unit": "mm"
+					},
+					"v": {
+						"value": 0.0,
+						"unit": "mm"
+					},
+					"w": {
+						"value": 0.0,
+						"unit": "mm"
+					}
+				},
+				"vector_r": {
+					"u": {
+						"value": 1
+					},
+					"v": {
+						"value": 0
+					},
+					"w": {
+						"value": 0
+					}
+				},
+				"vector_t": {
+					"u": {
+						"value": 0
+					},
+					"v": {
+						"value": 0
+					},
+					"w": {
+						"value": 1
+					}
+				},
+				"deviations": [
+					{
+						"type": "rotation",
+						"axis": {
+							"r": {
+								"value": 0
+							},
+							"s": {
+								"value": 0
+							},
+							"t": {
+								"value": 1
+							}
+						},
+						"pivot": {
+							"r": {
+								"value": 0,
+								"unit": "mm"
+							},
+							"s": {
+								"value": 0,
+								"unit": "mm"
+							},
+							"t": {
+								"value": 0,
+								"unit": "mm"
+							}
+						},
+						"amount": {
+							"value": -14.0,
+							"unit": "deg"
+						},
+						"known_to_reconstruction": true
+					},
+					{
+						"type": "rotation",
+						"axis": {
+							"r": {
+								"value": 0
+							},
+							"s": {
+								"value": 1
+							},
+							"t": {
+								"value": 0
+							}
+						},
+						"pivot": {
+							"r": {
+								"value": 0,
+								"unit": "mm"
+							},
+							"s": {
+								"value": 0,
+								"unit": "mm"
+							},
+							"t": {
+								"value": 0,
+								"unit": "mm"
+							}
+						},
+						"amount": {
+							"value": 8.0,
+							"unit": "deg"
+						},
+						"known_to_reconstruction": true
+					},
+					{
+						"type": "rotation",
+						"axis": {
+							"r": {
+								"value": 1
+							},
+							"s": {
+								"value": 0
+							},
+							"t": {
+								"value": 0
+							}
+						},
+						"pivot": {
+							"r": {
+								"value": 0,
+								"unit": "mm"
+							},
+							"s": {
+								"value": 0,
+								"unit": "mm"
+							},
+							"t": {
+								"value": 0,
+								"unit": "mm"
+							}
+						},
+						"amount": {
+							"value": 29.999999999999996,
+							"unit": "deg"
+						},
+						"known_to_reconstruction": true
+					}
+				]
+			}
+		}
+	],
+	"acquisition": {
+		"start_angle": {
+			"value": 0.0,
+			"unit": "deg"
+		},
+		"stop_angle": {
+			"value": 0.0,
+			"unit": "deg"
+		},
+		"direction": "CCW",
+		"scan_mode": "stop+go",
+		"scan_speed": {
+			"value": null,
+			"unit": "deg/s"
+		},
+		"number_of_projections": 1,
+		"include_final_angle": false,
+		"frame_average": 1,
+		"scattering": false,
+		"dark_field": {
+			"number": 0,
+			"frame_average": 1,
+			"ideal": false,
+			"correction": false
+		},
+		"flat_field": {
+			"number": 1,
+			"frame_average": 1,
+			"ideal": false,
+			"correction": false
+		},
+		"pixel_binning": {
+			"u": 1,
+			"v": 1
+		}
+	},
+	"materials": [
+		{
+			"id": "Vacuum",
+			"name": "Vacuum",
+			"density": {
+				"value": 0.0,
+				"unit": "g/cm^3"
+			},
+			"composition": [
+				{
+					"formula": {
+						"value": ""
+					},
+					"mass_fraction": {
+						"value": 1.0
+					}
+				}
+			]
+		},
+		{
+			"id": "Al",
+			"name": "Aluminium",
+			"density": {
+				"value": 2.6989,
+				"unit": "g/cm^3"
+			},
+			"composition": [
+				{
+					"formula": {
+						"value": "Al"
+					},
+					"mass_fraction": {
+						"value": 1.0
+					}
+				}
+			]
+		},
+		{
+			"id": "W",
+			"name": "Tungsten",
+			"density": {
+				"value": 19.25,
+				"unit": "g/cm^3"
+			},
+			"composition": [
+				{
+					"formula": {
+						"value": "W"
+					},
+					"mass_fraction": {
+						"value": 1.0
+					}
+				}
+			]
+		},
+		{
+			"id": "CsI",
+			"name": "Caesium Iodide",
+			"density": {
+				"value": 4.51,
+				"unit": "g/cm^3"
+			},
+			"composition": [
+				{
+					"formula": {
+						"value": "CsI"
+					},
+					"mass_fraction": {
+						"value": 1.0
+					}
+				}
+			]
+		}
+	],
+	"simulation": null
+}
