@@ -1,0 +1,3 @@
+[console_scripts]
+ShenruqianchuWanzhuanWuLianwangPingtaiFix1 = ShenruqianchuWanzhuanWuLianwangPingtaiFix1.__main__:main
+shenruqianchu-wanzhuan-wu-lianwang-pingtai-fix1 = ShenruqianchuWanzhuanWuLianwangPingtaiFix1.__main__:main
