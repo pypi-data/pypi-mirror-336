@@ -1,0 +1,9 @@
+[aiida.parsers]
+critic2=aiidalab_qe_pp.aiida_critic2.parsers:Critic2Parser
+
+[aiida.workflows]
+pp_app.pp=aiidalab_qe_pp.ppworkchain:PPWorkChain
+
+[aiidalab_qe.properties]
+pp=aiidalab_qe_pp:pp
+
