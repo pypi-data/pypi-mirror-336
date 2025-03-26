@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: pocketbase-client
+Version: 0.2.0
+Summary: Python client for pocketbase
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: flit>=3.12.0
+Requires-Dist: httpx>=0.28.1
+
+
