@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+palanteer/__init__.py
+palanteer/__main__.py
+palanteer.egg-info/PKG-INFO
+palanteer.egg-info/SOURCES.txt
+palanteer.egg-info/dependency_links.txt
+palanteer.egg-info/not-zip-safe
+palanteer.egg-info/top_level.txt
+palanteer/_cextension/palanteer.h
+palanteer/_cextension/pyPalanteerInstrumentation.cpp
