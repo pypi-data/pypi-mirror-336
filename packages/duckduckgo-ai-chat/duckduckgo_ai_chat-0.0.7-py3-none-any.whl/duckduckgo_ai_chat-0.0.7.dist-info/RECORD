@@ -1,0 +1,10 @@
+duckduckgo_ai_chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duckduckgo_ai_chat/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+duckduckgo_ai_chat/app.py,sha256=eikK0KwuJHNFk_1fxfIg2vVdp9IPWjKnh7hf9msM5PI,9130
+duckduckgo_ai_chat/cli.py,sha256=RNze1YCySkYcZNXgSupIM0vLHnDofRXq3R1ASUO1Fng,969
+duckduckgo_ai_chat-0.0.7.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+duckduckgo_ai_chat-0.0.7.dist-info/METADATA,sha256=W1YZZGfDq609Uh5r_htxg-CCItSMhGNVz9dviwTznPk,4785
+duckduckgo_ai_chat-0.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+duckduckgo_ai_chat-0.0.7.dist-info/entry_points.txt,sha256=xI-sEHqX4MqZwn_ov2mbHEXarndTzOmrivYh46f0paU,56
+duckduckgo_ai_chat-0.0.7.dist-info/top_level.txt,sha256=emvPPIAR9qo23LdM-6NQ_Gq6beEkuW9RK9NTAJYIyRA,19
+duckduckgo_ai_chat-0.0.7.dist-info/RECORD,,
