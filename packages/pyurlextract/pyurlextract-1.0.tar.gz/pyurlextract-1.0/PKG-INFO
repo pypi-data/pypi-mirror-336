@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyurlextract
+Version: 1.0
+Summary: A library to expand Short URL with all possible redirections
+Home-page: https://github.com/Deadpool2000/Short-URL-Expander-API
+Author: Salil
+Author-email: d2kyt@protonmail.com
+Requires-Dist: requests
