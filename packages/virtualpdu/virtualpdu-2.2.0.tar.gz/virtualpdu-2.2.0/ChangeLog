@@ -1,0 +1,140 @@
+CHANGES
+=======
+
+2.2.0
+-----
+
+* Drop unnecessary 'x' bit from doc config file
+* Remove Python 3.8 support
+
+2.1.0
+-----
+
+* Update to match latest development cycle
+
+2.0.0
+-----
+
+* Fix configuration - virtualpdu in openstack now
+* Migrate to pysnmp lextudio ecosystem
+* Use openstackdocs theme for docs
+
+1.0.0
+-----
+
+* Update pep8 deps - hacking to 6.0.0
+* Add doc8 test to pep8
+* Remove useless config files
+* Remove ignore F811 flake8 rule
+* Fix gitreview; Minor update to readme
+* Remove all related translation config from setup.cfg
+* Follow up for migration to Python 3
+* Move virtualpdu to Python 3
+* OpenDev Migration Patch
+* added SNMPv3 support
+* SNMP agent rebased on the high-level pysnmp API
+* fix uninitialized ASN.1 objects use
+* Add test for the pysnmp handler
+* Drop MANIFEST.in - it's not needed by pbr
+* There is no documentation for virtualpdu
+* Add link to docker container in readme
+* Removes unnecessary utf-8 encoding
+* Add errors that were added with pysnmp 4.3.6
+
+0.3.6
+-----
+
+* Updating pyasn1 and pysnmp<5.0.0,>=4.3.4
+
+0.3.5
+-----
+
+* Fix OID for sysDescr and sysObjectID
+
+0.3.4
+-----
+
+* Make the internal state change synchronous
+* Make sure transitive state is target state
+
+0.3.3
+-----
+
+* Add timestamp to log
+* Ensure state changes only when driver is done
+
+0.3.2
+-----
+
+* Add support for custom PDU outlet count
+
+0.3.1
+-----
+
+* Store POWER\_ON state when performing a REBOOT
+* Make sure virtualpdu is tested on py27,34,35
+* Fix PEP8
+
+0.3.0
+-----
+
+* Taking executor out of the context
+
+0.2.1
+-----
+
+* Add support for getNext request
+* Async calls to libvirt driver
+* Support outlet state, index and load (APC RackPDU)
+* Provide accurate APC rPDU sys OID
+* Fixes internap/virtualpdu#30
+
+0.2.0
+-----
+
+* Provide sys description and sys OID
+* Provide APC rack PDU outlet names
+* Let PDU outlets notify the core directly
+* Move the outlet state responsibility to the core
+
+0.1.1
+-----
+
+* Add Baytech MRP27 support
+* Outlet's default power state is now configurable
+
+0.1.0
+-----
+
+* Handle SIGINT correctly on Python 2.7
+* Support listen\_address in config instead of listen\_host
+* Adding Updated Tox
+* Creating Main Application Wrapper
+
+0.0.4
+-----
+
+* Permission Issues with PyPi. Trying again
+
+0.0.3
+-----
+
+* Updating Password for uploading to pypi
+
+0.0.1
+-----
+
+* Supporting PyPi Upload Via Travis
+* Introduce the virtualpdu entry point
+* Using the Power States Defined in The Core
+* Implementation of the Core for VPDU
+* Fixing intermittent unit test failures
+* Adding Explicit Tests for Power State
+* Introduce get\_power\_state for drivers
+* Ensure APCRackPDU instanciation does not update core
+* Introduce power distribution units SNMP agents
+* Rename device providers to drivers
+* Introduce libvirt device provider
+* Disable pypy tox target
+* Introduce travis configuration using tox-travis
+* Initial Cookiecutter Commit
