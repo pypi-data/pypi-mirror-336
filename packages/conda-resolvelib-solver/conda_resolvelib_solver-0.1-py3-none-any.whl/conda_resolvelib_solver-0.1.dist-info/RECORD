@@ -1,0 +1,9 @@
+conda_resolvelib_solver/_version.py,sha256=Olnj0P417yZvGbXQOnbeTFrk9yzWuvCOHN4tVKBMeOc,506
+conda_resolvelib_solver/plugin.py,sha256=R9f8vpH9GWyGN_Dh0m9nTP3_uc646rxIR1wk_OAbxFY,406
+conda_resolvelib_solver/solver.py,sha256=GlfNmwad7u5V94yt0_Kf1UOISCvQPw0kemAQOmmxsKg,3439
+conda_resolvelib_solver-0.1.dist-info/licenses/LICENSE,sha256=eVFFxr2qQ9gZmBBfiasGZi-pVtUZ4k4IDmYhYKwh4_g,1544
+conda_resolvelib_solver-0.1.dist-info/METADATA,sha256=qiuzzRFiAOlWXM5WIOJy34qsG82WlyaCmTSD36toNDQ,2307
+conda_resolvelib_solver-0.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+conda_resolvelib_solver-0.1.dist-info/entry_points.txt,sha256=5AlNdILvr-ydPbzg_aUvddjYt--eYCnMzS5mSrpI8Sg,65
+conda_resolvelib_solver-0.1.dist-info/top_level.txt,sha256=s_HaesnKXsbSdQFKYR7p5ZRGIWn7XdRMPZT9CXXqzgM,24
+conda_resolvelib_solver-0.1.dist-info/RECORD,,
