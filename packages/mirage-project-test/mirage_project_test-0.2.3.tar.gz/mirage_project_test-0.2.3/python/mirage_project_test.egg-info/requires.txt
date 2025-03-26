@@ -1,0 +1,6 @@
+cmake>=3.24
+cython>=0.28
+z3-solver==4.14
+numpy
+graphviz
+tqdm

@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: mirage-project-test
+Version: 0.2.3
+Summary: Mirage: A Multi-Level Superoptimizer for Tensor Algebra
+Home-page: https://github.com/yzhou442/mirage
+License-File: LICENSE
+Requires-Dist: cmake>=3.24
+Requires-Dist: cython>=0.28
+Requires-Dist: z3-solver==4.14
+Requires-Dist: numpy
+Requires-Dist: graphviz
+Requires-Dist: tqdm
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
