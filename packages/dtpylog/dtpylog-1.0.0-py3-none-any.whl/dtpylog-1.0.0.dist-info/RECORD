@@ -1,0 +1,10 @@
+dtpylog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtpylog/api_handler.py,sha256=dixTtXFZhNWBkIvCtfF5ToLWn1jC1qGindO_l2P27xM,2196
+dtpylog/config.py,sha256=Dhvrxj5O680vdDFjN0nrZ0v0mcuae3K_nbjHdRNEhQ0,1296
+dtpylog/footprint.py,sha256=Vy_ch52D46YRSq37zak6FT2YExxkWNLTV8KXRjBFR6g,492
+dtpylog/formatter.py,sha256=chzIdrj071AlPPc6X_pRypXkt8W8666xfO3PhzAC67s,407
+dtpylog/handlers.py,sha256=effPM6vSM_tzrzpD8yPL5IQxsDtqK9eRH9YE8DpOKpE,1659
+dtpylog/initializer.py,sha256=CADjI72i1M6t-dd9F9ldn6jpNxE_ptguVF1YeLc5uBI,946
+dtpylog-1.0.0.dist-info/METADATA,sha256=DJhM-mNAmA19e-r4dO3BjPo5d7tQUPL4OITmSTVNKG8,1366
+dtpylog-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dtpylog-1.0.0.dist-info/RECORD,,
