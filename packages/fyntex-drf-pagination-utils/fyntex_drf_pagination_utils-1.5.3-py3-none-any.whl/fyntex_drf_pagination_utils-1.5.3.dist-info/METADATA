@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: fyntex-drf-pagination-utils
+Version: 1.5.3
+Summary: A library that provides custom pagination styles and pagination-related utilities for Django REST Framework.
+Author-email: Fyntex TI SpA <no-reply@fyntex.ai>
+License: MIT
+Project-URL: Homepage, https://github.com/fyntex/drf-pagination-utils/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: djangorestframework>=3.10.3
