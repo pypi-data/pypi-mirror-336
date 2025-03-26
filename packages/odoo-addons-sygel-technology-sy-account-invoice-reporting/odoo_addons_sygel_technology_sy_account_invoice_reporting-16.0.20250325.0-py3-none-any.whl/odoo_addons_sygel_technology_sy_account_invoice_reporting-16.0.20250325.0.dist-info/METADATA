@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: odoo-addons-sygel-technology-sy-account-invoice-reporting
+Version: 16.0.20250325.0
+Summary: Meta package for sygel-technology-sy-account-invoice-reporting Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-account-invoice-report-grouped-by-picking-hide-pickings<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-account-invoice-report-hide-discounts-by-partner<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-account-invoice-report-hide-triple-disc-by-partner<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-delete-payment-reference-invoice-report<16.1dev,>=16.0dev
+
+UNKNOWN
