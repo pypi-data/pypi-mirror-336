@@ -1,0 +1,6 @@
+diracx-db
+sqlalchemy[oracle-oracledb]
+
+[testing]
+lhcbdiracx-testing
+diracx-testing

@@ -1,0 +1,56 @@
+[project]
+name = "lhcbdiracx-db"
+description = "DB classes for the lhcbdiracx diracx extension"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = []
+license = { text = "GPL-3.0-only" }
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Distributed Computing",
+]
+dependencies = [
+    # This is obvious
+    "diracx-db",
+    "sqlalchemy[oracle-oracledb]",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+testing = ["lhcbdiracx-testing", "diracx-testing"]
+
+[project.entry-points."diracx.dbs.sql"]
+BookkeepingDB = "lhcbdiracx.db.sql:BookkeepingDB"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61", "wheel", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+# This should not be in your extension !
+# It is just because we have this demo extension
+# in a subfolder of our git repo
+[tool.setuptools_scm]
+root = ".."
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = [
+    "-v",
+    "--cov=lhcbdiracx.db",
+    "--cov-report=term-missing",
+    # Both lhcbdiracx and diracx are needed here
+    "-plhcbdiracx.testing",
+    "-pdiracx.testing",
+    "-pdiracx.testing.osdb",
+    "--import-mode=importlib",
+]
+asyncio_mode = "auto"
+markers = [
+    "enabled_dependencies: List of dependencies which should be available to the FastAPI test client",
+]

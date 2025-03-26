@@ -1,0 +1,14 @@
+pyproject.toml
+src/lhcbdiracx/db/__init__.py
+src/lhcbdiracx/db/py.typed
+src/lhcbdiracx/db/sql/__init__.py
+src/lhcbdiracx/db/sql/bookkeeping/__init__.py
+src/lhcbdiracx/db/sql/bookkeeping/db.py
+src/lhcbdiracx/db/sql/bookkeeping/schema.py
+src/lhcbdiracx_db.egg-info/PKG-INFO
+src/lhcbdiracx_db.egg-info/SOURCES.txt
+src/lhcbdiracx_db.egg-info/dependency_links.txt
+src/lhcbdiracx_db.egg-info/entry_points.txt
+src/lhcbdiracx_db.egg-info/requires.txt
+src/lhcbdiracx_db.egg-info/top_level.txt
+tests/test_bookkeepingdb.py
