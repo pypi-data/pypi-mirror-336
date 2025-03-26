@@ -1,0 +1,14 @@
+usfm2dict/__init__.py,sha256=64I7TBcR2XJv2YCJIV9V-eFzNraC8vYe5yyysm4Lpzw,652
+usfm2dict/__main__.py,sha256=hs7n_Z0atFCqe8t3IVz0wHv_bni_hfE4Vgwn66WxUak,124
+usfm2dict/canon.py,sha256=aqDzDo8LGw-prgv_lRlXVuD7Ycyn8fOUdAeUxEFUHWs,2374
+usfm2dict/cli.py,sha256=Lf7xphNpS0pNkdz7GRyu7ro9RnUkdciYoM0COMbPmmI,1444
+usfm2dict/models.py,sha256=ETKV7iXYe0pVOOlKQ6UCfrEz69kTGTgzDyoir6nzGYQ,7191
+usfm2dict/parser.py,sha256=bbXhMiH-2DmwOf_STl6eiyev1gK2DBT7wRgM1B_QxUk,9256
+usfm2dict/stylesheet.py,sha256=KkAAM2bjCtirdTcdt_x2z-6D9RmI7jStgRaRT7wiZ7w,1605
+usfm2dict/tokenizer.py,sha256=MbPwZOF3KTNjs_1HZVrI79NOJ7Fe-oIfmG6pipdVVT8,4804
+usfm2dict-0.1.0.dist-info/licenses/LICENSE,sha256=ovK3Cas-yUUB6-EtEXqRc3P5ColD0g5tiWXHAqkLXBM,1074
+usfm2dict-0.1.0.dist-info/METADATA,sha256=7vwYOU8LrCxJSR5RAa_Y4OhNt6ovMwQy4Rky8N-Cuv4,1763
+usfm2dict-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+usfm2dict-0.1.0.dist-info/entry_points.txt,sha256=-u5yv5zV6VM-7RDAx_OYLNnQQwBJzxcN6xYdjs2hx5o,49
+usfm2dict-0.1.0.dist-info/top_level.txt,sha256=rYpGqXrKCmE0QvZQh48ljrJazr-raVwGZYydI_Fdzao,10
+usfm2dict-0.1.0.dist-info/RECORD,,
