@@ -1,0 +1,3 @@
+[console_scripts]
+TensorflowHeKerasYingyongKaifaRumenChuyiFix1 = TensorflowHeKerasYingyongKaifaRumenChuyiFix1.__main__:main
+tensorflow-he-keras-yingyong-kaifa-rumen-chuyi-fix1 = TensorflowHeKerasYingyongKaifaRumenChuyiFix1.__main__:main
