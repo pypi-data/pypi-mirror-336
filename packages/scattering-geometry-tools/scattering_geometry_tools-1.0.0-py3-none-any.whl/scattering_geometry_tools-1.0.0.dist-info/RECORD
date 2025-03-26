@@ -1,0 +1,11 @@
+sgt/__init__.py,sha256=YfZcBieS_ohrJikA-rZwOrGDVEKXevzOoF5bth8caK8,10588
+sgt/core.py,sha256=53B05NRyJbanwbznItF98TTr0FoyM2vY-zQvJAYQBf0,19433
+sgt/crystal.py,sha256=rFslMzLc-baw8NL3zQjYhVs31Pjsyd7cMEWS6y5Sm4k,1428
+sgt/hdf5image.py,sha256=HNT4KKZ5hyLQRUzWDuVqkuYp4-vVguYi3fGztR8Mals,3532
+sgt/legacy_geometry.py,sha256=SamJIBCLHTd3stzCnRKTb1k1a3OtpnYfDLUg6c5d_SU,10002
+sgt/npzimage.py,sha256=955Tvc4vwU_vEx2_o4IMz7Y5vUEXk_t4StuZqnTIfI8,3181
+sgt/pilatus.py,sha256=CQbRNgHBDNvOn91T2CxRezPH9wzk5uzcP8sNt7ARt_I,7404
+scattering_geometry_tools-1.0.0.dist-info/METADATA,sha256=cZkoFIFQ5-VIPD-Ki7fa_xTZRcdlFWmss4kGHdxlaMo,1879
+scattering_geometry_tools-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scattering_geometry_tools-1.0.0.dist-info/licenses/LICENSE,sha256=oJ7j4KBp1QAj2xBM8nrrx1R3bCYa9RbDpw7Aivegwbw,1066
+scattering_geometry_tools-1.0.0.dist-info/RECORD,,
