@@ -1,0 +1,1 @@
+PYDANTIC_BASEMODEL = "BaseModel"

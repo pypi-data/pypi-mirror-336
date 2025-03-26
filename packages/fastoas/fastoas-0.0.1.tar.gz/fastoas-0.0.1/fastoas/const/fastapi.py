@@ -1,0 +1,2 @@
+FASTAPI_ROUTE_PATH = "path"
+FASTAPI_RESPONSE_MODEL = "response_model"
