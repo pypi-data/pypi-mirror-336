@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+google_scholar_mcp_server.egg-info/PKG-INFO
+google_scholar_mcp_server.egg-info/SOURCES.txt
+google_scholar_mcp_server.egg-info/dependency_links.txt
+google_scholar_mcp_server.egg-info/entry_points.txt
+google_scholar_mcp_server.egg-info/requires.txt
+google_scholar_mcp_server.egg-info/top_level.txt
+scholar/__init__.py
+scholar/google_scholar_server.py
+scholar/google_scholar_web_search.py
