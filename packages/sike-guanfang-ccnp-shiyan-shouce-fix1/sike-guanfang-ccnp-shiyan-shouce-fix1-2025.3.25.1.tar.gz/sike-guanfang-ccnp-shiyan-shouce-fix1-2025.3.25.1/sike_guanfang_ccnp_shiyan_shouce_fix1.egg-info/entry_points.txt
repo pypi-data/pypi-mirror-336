@@ -1,0 +1,3 @@
+[console_scripts]
+SikeGuanfangCcnpShiyanShouceFix1 = SikeGuanfangCcnpShiyanShouceFix1.__main__:main
+sike-guanfang-ccnp-shiyan-shouce-fix1 = SikeGuanfangCcnpShiyanShouceFix1.__main__:main
