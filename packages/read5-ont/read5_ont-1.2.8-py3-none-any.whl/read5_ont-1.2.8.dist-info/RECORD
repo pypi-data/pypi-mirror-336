@@ -1,0 +1,11 @@
+read5_ont/AbstractFileReader.py,sha256=pKTC-Wi-JOf-ol8QDk7xWscYf5_VeIicahXfRdT_6Z8,22867
+read5_ont/Exceptions.py,sha256=A3oM4SFS5EysSobirvYnfSdA9iMWOobsSJlanX6Zjaw,773
+read5_ont/Fast5Reader.py,sha256=3CJcPe5Wmd1EO11mJQIMTudb6e5p5YYKbhCAwlULkQI,13403
+read5_ont/Pod5Reader.py,sha256=7NOF-Pgjip0rS3jlZ2kHuv2zCQqUXMaCZE_MzlWsAKA,11645
+read5_ont/Reader.py,sha256=9-wyOun2PwM-gBuAh3N8zILtbTsKroO8lQqfwi6OELI,820
+read5_ont/__init__.py,sha256=6L-KgKgCJoLNgChs52pfbvCB-Bkj33F3r2XQQ7WpRZA,167
+read5_ont/_version.py,sha256=RKFy_OhIzIRvTkrOuFWonMLKAfAInXcwHR9R6u-QVTE,511
+read5_ont-1.2.8.dist-info/METADATA,sha256=90xXEgHnUWhbUxkcHmYfWAvDzeIU7kbHOO7sD65mlng,5028
+read5_ont-1.2.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+read5_ont-1.2.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+read5_ont-1.2.8.dist-info/RECORD,,
