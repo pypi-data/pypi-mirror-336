@@ -1,0 +1,2 @@
+[console_scripts]
+webnest = webnest.example_project.cli:main
