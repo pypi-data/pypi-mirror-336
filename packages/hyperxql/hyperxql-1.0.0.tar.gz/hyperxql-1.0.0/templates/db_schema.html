@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+
+{% block title %}HyperXQL - Database Schema Visualization{% endblock %}
+
+{% block content %}
+<!-- Header with Action Buttons -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-0">Database Schema</h2>
+        <p class="text-muted mb-0">Visual representation of your database structure and relationships</p>
+    </div>
+    <div>
+        <a href="/db-info" class="btn btn-outline-secondary me-2">
+            <i class="fas fa-table me-1"></i> Database Info
+        </a>
+        <a href="/query" class="btn-go">
+            <i class="fas fa-plus me-1"></i> Create New Table
+        </a>
+    </div>
+</div>
+
+<!-- Schema Controls -->
+<div class="card mb-4">
+    <div class="card-body d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-2">
+            <div class="btn-group">
+                <button class="btn btn-sm btn-outline-secondary" id="zoomIn">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary" id="zoomOut">
+                    <i class="fas fa-search-minus"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary" id="resetZoom">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                </button>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary" id="downloadSvg">
+                <i class="fas fa-download me-1"></i> Save Diagram
+            </button>
+        </div>
+        <div>
+            <span class="badge rounded-pill bg-info">{{ db_info.tables|length }} Tables</span>
+            <span class="badge rounded-pill bg-secondary ms-1">{{ db_info.db_type|upper }}</span>
+        </div>
+    </div>
+</div>
+
+<!-- Schema Visualization Card -->
+<div class="card mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Entity Relationship Diagram</h5>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle" checked>
+            <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        {% if svg_data %}
+        <div class="schema-container" id="schemaContainer">
+            <div class="schema-svg-container p-3" id="svgContainer">
+                <img src="data:image/svg+xml;base64,{{ svg_data }}" class="schema-svg" id="schemaSvg" alt="Database Schema Visualization">
+            </div>
+        </div>
+        {% else %}
+        <div class="alert alert-warning m-3">
+            <i class="fas fa-exclamation-triangle me-2"></i> Could not generate schema visualization. Please check if GraphViz is installed.
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Legend Card -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h5 class="mb-0">Legend</h5>
+    </div>
+    <div class="card-body">
+        <div class="row g-3">
+            <div class="col-md-4 col-sm-6">
+                <div class="legend-item d-flex align-items-center">
+                    <div class="legend-color" style="background-color: #1e1e24;"></div>
+                    <div class="ms-2">Table</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="legend-item d-flex align-items-center">
+                    <div class="legend-color-text">
+                        <span style="color: #555555; font-size: 20px;">---</span>
+                    </div>
+                    <div class="ms-2">Relationship</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="legend-item d-flex align-items-center">
+                    <div class="legend-color-text">PK</div>
+                    <div class="ms-2">Primary Key</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="legend-item d-flex align-items-center">
+                    <div class="legend-color-text">FK</div>
+                    <div class="ms-2">Foreign Key</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="legend-item d-flex align-items-center">
+                    <div class="legend-color-text">   </div>
+                    <div class="ms-2">Regular Column</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<div class="card">
+    <div class="card-body">
+        <h5 class="mb-3">Actions</h5>
+        <div class="d-flex gap-2 flex-wrap">
+            <a href="/db-info" class="btn btn-outline-secondary">
+                <i class="fas fa-table me-2"></i> View Table Details
+            </a>
+            <a href="/query?template=Create a new relationship between tables" class="btn btn-outline-secondary">
+                <i class="fas fa-project-diagram me-2"></i> Add Relationship
+            </a>
+            <a href="/query?template=Create an index on a table" class="btn btn-outline-secondary">
+                <i class="fas fa-search me-2"></i> Create Index
+            </a>
+            <a href="/query?template=Describe table structure" class="btn btn-outline-secondary">
+                <i class="fas fa-info-circle me-2"></i> Describe Table
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // SVG Zoom functionality
+    const svgContainer = document.getElementById('svgContainer');
+    const schemaSvg = document.getElementById('schemaSvg');
+    const zoomIn = document.getElementById('zoomIn');
+    const zoomOut = document.getElementById('zoomOut');
+    const resetZoom = document.getElementById('resetZoom');
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    
+    let scale = 1;
+    let panning = false;
+    let pointX = 0;
+    let pointY = 0;
+    let start = { x: 0, y: 0 };
+    
+    // Apply zoom and pan transformation
+    function setTransform() {
+        svgContainer.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+    }
+    
+    // Zoom in button
+    zoomIn.addEventListener('click', function() {
+        scale += 0.1;
+        setTransform();
+    });
+    
+    // Zoom out button
+    zoomOut.addEventListener('click', function() {
+        if (scale > 0.2) {
+            scale -= 0.1;
+            setTransform();
+        }
+    });
+    
+    // Reset zoom and pan
+    resetZoom.addEventListener('click', function() {
+        scale = 1;
+        pointX = 0;
+        pointY = 0;
+        setTransform();
+    });
+    
+    // Pan functionality using mouse events
+    svgContainer.addEventListener('mousedown', function(e) {
+        e.preventDefault();
+        panning = true;
+        start = { x: e.clientX - pointX, y: e.clientY - pointY };
+        svgContainer.style.cursor = 'grabbing';
+    });
+    
+    document.addEventListener('mouseup', function(e) {
+        panning = false;
+        svgContainer.style.cursor = 'grab';
+    });
+    
+    document.addEventListener('mousemove', function(e) {
+        if (!panning) return;
+        pointX = (e.clientX - start.x);
+        pointY = (e.clientY - start.y);
+        setTransform();
+    });
+    
+    // Use mouse wheel to zoom
+    svgContainer.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        const xs = (e.clientX - pointX) / scale;
+        const ys = (e.clientY - pointY) / scale;
+        
+        if (e.deltaY < 0) {
+            scale += 0.05;
+        } else {
+            if (scale > 0.2) {
+                scale -= 0.05;
+            }
+        }
+        
+        pointX = e.clientX - xs * scale;
+        pointY = e.clientY - ys * scale;
+        
+        setTransform();
+    });
+    
+    // Dark/Light mode toggle
+    darkModeToggle.addEventListener('change', function() {
+        const svgImg = document.getElementById('schemaSvg');
+        if (this.checked) {
+            document.documentElement.setAttribute('data-bs-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-bs-theme', 'light');
+        }
+    });
+    
+    // Download SVG
+    document.getElementById('downloadSvg').addEventListener('click', function() {
+        const svgData = schemaSvg.src;
+        const link = document.createElement('a');
+        link.href = svgData;
+        link.download = 'database_schema.svg';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+    
+    // Initial setup
+    svgContainer.style.cursor = 'grab';
+});
+</script>
+{% endblock %}
+
+{% block styles %}
+<style>
+.schema-container {
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.schema-svg-container {
+    position: absolute;
+    transform-origin: 0 0;
+    will-change: transform;
+    transition: transform 0.1s ease;
+}
+
+.schema-svg {
+    max-width: none;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.legend-color-text {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--bs-light);
+}
+
+.legend-item {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+</style>
+{% endblock %}

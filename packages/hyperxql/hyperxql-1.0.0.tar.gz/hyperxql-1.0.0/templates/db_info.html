@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+
+{% block title %}HyperXQL - Database Schema{% endblock %}
+
+{% block content %}
+<!-- Header with Action Buttons -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-0">Database Schema</h2>
+        <p class="text-muted mb-0">Explore your database structure and relationships</p>
+    </div>
+    <div>
+        <a href="/db-schema" class="btn btn-outline-secondary me-2">
+            <i class="fas fa-project-diagram me-1"></i> View ER Diagram
+        </a>
+        <a href="/query" class="btn-go">
+            <i class="fas fa-plus me-1"></i> Create New Table
+        </a>
+    </div>
+</div>
+
+<!-- Database Overview Card -->
+<div class="card mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Database Overview</h5>
+        <span class="badge bg-info rounded-pill">{{ db_info.db_type|upper }}</span>
+    </div>
+    <div class="card-body">
+        <div class="row gy-3">
+            <div class="col-md-3 col-sm-6">
+                <div class="stat-card">
+                    <div class="stat-value">{{ db_info.tables|length }}</div>
+                    <div class="stat-label">Tables</div>
+                </div>
+            </div>
+            
+            {% set column_count = namespace(total=0) %}
+            {% for table in db_info.tables %}
+                {% set column_count.total = column_count.total + table.columns|length %}
+            {% endfor %}
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="stat-card">
+                    <div class="stat-value">{{ column_count.total }}</div>
+                    <div class="stat-label">Columns</div>
+                </div>
+            </div>
+            
+            {% set pk_count = namespace(total=0) %}
+            {% for table in db_info.tables %}
+                {% for column in table.columns %}
+                    {% if column.primary_key %}
+                        {% set pk_count.total = pk_count.total + 1 %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="stat-card">
+                    <div class="stat-value">{{ pk_count.total }}</div>
+                    <div class="stat-label">Primary Keys</div>
+                </div>
+            </div>
+            
+            {% set fk_count = namespace(total=0) %}
+            {% for table in db_info.tables %}
+                {% set fk_count.total = fk_count.total + table.foreign_keys|length %}
+            {% endfor %}
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="stat-card">
+                    <div class="stat-value">{{ fk_count.total }}</div>
+                    <div class="stat-label">Relationships</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tables List -->
+{% if db_info.tables %}
+<div class="card mb-4">
+    <div class="card-header">
+        <h5 class="mb-0">Database Tables</h5>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-container">
+            <table class="table custom-table table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th>Table Name</th>
+                        <th>Columns</th>
+                        <th>Primary Key</th>
+                        <th>Foreign Keys</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for table in db_info.tables %}
+                    <tr data-bs-toggle="collapse" data-bs-target="#tableDetails{{ loop.index }}" aria-expanded="false" class="clickable">
+                        <td>
+                            <i class="fas fa-table me-2"></i>
+                            <strong>{{ table.name }}</strong>
+                        </td>
+                        <td>
+                            <span class="badge rounded-pill bg-secondary">{{ table.columns|length }}</span>
+                        </td>
+                        <td>
+                            {% for column in table.columns %}
+                                {% if column.primary_key %}
+                                <code>{{ column.name }}</code>
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td>
+                            {% if table.foreign_keys %}
+                            <span class="badge rounded-pill bg-info">{{ table.foreign_keys|length }}</span>
+                            {% else %}
+                            <span class="text-muted">None</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#tableDetails{{ loop.index }}" aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="collapse-row">
+                        <td colspan="5" class="p-0">
+                            <div class="collapse table-details" id="tableDetails{{ loop.index }}">
+                                <div class="p-3">
+                                    <h6 class="mb-3">
+                                        <i class="fas fa-columns me-2"></i>
+                                        Columns
+                                    </h6>
+                                    <div class="table-container">
+                                        <table class="table custom-table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Type</th>
+                                                    <th>Nullable</th>
+                                                    <th>Default</th>
+                                                    <th>Constraints</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for column in table.columns %}
+                                                <tr>
+                                                    <td>
+                                                        <strong>{{ column.name }}</strong>
+                                                    </td>
+                                                    <td><code>{{ column.type }}</code></td>
+                                                    <td>
+                                                        {% if column.nullable %}
+                                                        <span class="text-success"><i class="fas fa-check"></i></span>
+                                                        {% else %}
+                                                        <span class="text-danger"><i class="fas fa-times"></i></span>
+                                                        {% endif %}
+                                                    </td>
+                                                    <td>
+                                                        {% if column.default != None %}
+                                                        <code>{{ column.default }}</code>
+                                                        {% else %}
+                                                        <span class="text-muted">NULL</span>
+                                                        {% endif %}
+                                                    </td>
+                                                    <td>
+                                                        {% if column.primary_key %}
+                                                        <span class="badge bg-primary me-1">PRIMARY</span>
+                                                        {% endif %}
+                                                        {% if column.foreign_key %}
+                                                        <span class="badge bg-info me-1" title="{{ column.foreign_key }}">FOREIGN</span>
+                                                        {% endif %}
+                                                        {% if not column.nullable and not column.primary_key %}
+                                                        <span class="badge bg-warning text-dark me-1">NOT NULL</span>
+                                                        {% endif %}
+                                                    </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    {% if table.foreign_keys %}
+                                    <h6 class="mt-4 mb-3">
+                                        <i class="fas fa-link me-2"></i>
+                                        Relationships
+                                    </h6>
+                                    <ul class="list-group">
+                                        {% for fk in table.foreign_keys %}
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <strong>{{ table.name }}</strong>.<code>{{ fk.column }}</code>
+                                                <i class="fas fa-arrow-right mx-2"></i>
+                                                <strong>{{ fk.referred_table }}</strong>.<code>{{ fk.referred_column }}</code>
+                                            </div>
+                                            <span class="badge bg-info rounded-pill">REFERENCES</span>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                    
+                                    {% if table.indexes %}
+                                    <h6 class="mt-4 mb-3">
+                                        <i class="fas fa-search me-2"></i>
+                                        Indexes
+                                    </h6>
+                                    <ul class="list-group">
+                                        {% for idx in table.indexes %}
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <strong>{{ idx.name }}</strong>
+                                                <span class="text-muted ms-2">on</span>
+                                                <code>{{ idx.columns|join(", ") }}</code>
+                                            </div>
+                                            {% if idx.unique %}
+                                            <span class="badge bg-success rounded-pill">UNIQUE</span>
+                                            {% else %}
+                                            <span class="badge bg-secondary rounded-pill">INDEX</span>
+                                            {% endif %}
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                    
+                                    <div class="d-flex justify-content-end mt-4">
+                                        <a href="/query?template=select * from {{ table.name }}" class="btn btn-sm btn-outline-secondary me-2">
+                                            <i class="fas fa-table me-1"></i> Browse Data
+                                        </a>
+                                        <a href="/query?template=describe {{ table.name }}" class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-info-circle me-1"></i> Show Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<!-- Empty State -->
+<div class="card">
+    <div class="card-body text-center py-5">
+        <div class="empty-state mb-4">
+            <i class="fas fa-database fa-5x mb-3"></i>
+            <h3>No Tables Found</h3>
+            <p class="text-muted">Your database doesn't have any tables yet.</p>
+        </div>
+        <a href="/query" class="btn-go">
+            <i class="fas fa-plus me-2"></i> Create Your First Table
+        </a>
+        <div class="mt-4">
+            <p class="text-muted mb-2">Try these examples:</p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <a href="/query?template=Create a users table with id, name, email, and created_at fields" class="btn btn-sm btn-outline-secondary">
+                    Create Users Table
+                </a>
+                <a href="/query?template=Create a products table with id, name, price, and description fields" class="btn btn-sm btn-outline-secondary">
+                    Create Products Table
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Query Suggestions -->
+<div class="card mt-4">
+    <div class="card-body">
+        <h5 class="mb-3">Quick Actions</h5>
+        <div class="d-flex gap-2 flex-wrap">
+            <a href="/query" class="btn btn-outline-secondary">
+                <i class="fas fa-search me-2"></i> New Query
+            </a>
+            {% if db_info.tables %}
+            <a href="/query?template=List all tables in the database" class="btn btn-outline-secondary">
+                <i class="fas fa-list me-2"></i> Show All Tables
+            </a>
+            <a href="/query?template=Create a new table" class="btn btn-outline-secondary">
+                <i class="fas fa-plus me-2"></i> Add Table
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+/* Additional styles for the database info page */
+.stat-card {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--bs-secondary-color);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-details {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.collapse-row {
+    background-color: transparent !important;
+}
+
+.empty-state {
+    color: var(--bs-secondary-color);
+}
+</style>
+{% endblock %}

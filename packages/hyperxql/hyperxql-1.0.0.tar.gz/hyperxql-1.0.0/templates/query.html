@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% block title %}HyperXQL - Query Database{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-0">Natural Language Query</h2>
+        <p class="text-muted mb-0">Convert natural language into SQL</p>
+    </div>
+    <a href="/db-info" class="btn btn-outline-secondary">
+        <i class="fas fa-table me-2"></i> View Database
+    </a>
+</div>
+
+<!-- Main Query Card -->
+<div class="card mb-4">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Enter your query</h5>
+            <span class="badge bg-primary rounded-pill">Natural Language</span>
+        </div>
+    </div>
+    <div class="card-body">
+        <form action="/query" method="post">
+            <div class="mb-4">
+                <textarea 
+                    class="form-control query-textarea"
+                    name="nl_query" 
+                    id="nl_query" 
+                    rows="5" 
+                    placeholder="Describe the database operation you want to perform. For example: 'Create a contacts table with name, email, and phone fields'" 
+                    required
+                ></textarea>
+                <div class="d-flex justify-content-between mt-2">
+                    <small class="text-muted">Be as descriptive as possible for better results</small>
+                    <small class="text-muted" id="charCounter">0/800</small>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <button type="button" id="enhancePromptBtn" class="btn btn-outline-secondary">
+                    <i class="fas fa-magic me-2"></i> Enhance Prompt
+                </button>
+                
+                <div class="d-flex gap-2">
+                    <button type="button" id="clearBtn" class="btn btn-outline-secondary">Clear</button>
+                    <button type="submit" class="btn-go">
+                        Generate SQL <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Example Queries and Style Guidance -->
+<div class="row mb-4">
+    <div class="col-md-6 mb-4 mb-md-0">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="mb-0">Example Queries</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <button class="list-group-item list-group-item-action border-0 example-query py-3">
+                        <strong>Create table:</strong> Create a products table with id, name, price, and category
+                    </button>
+                    <button class="list-group-item list-group-item-action border-0 example-query py-3">
+                        <strong>Select data:</strong> Show all users who registered in the last month
+                    </button>
+                    <button class="list-group-item list-group-item-action border-0 example-query py-3">
+                        <strong>Insert data:</strong> Add a new product called 'Smart Watch' with price $199.99
+                    </button>
+                    <button class="list-group-item list-group-item-action border-0 example-query py-3">
+                        <strong>Advanced query:</strong> Get the total revenue by product category for 2024
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Configuration</h5>
+                <a href="/settings" class="text-decoration-none">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label d-flex justify-content-between">
+                        <span>LLM Provider</span>
+                        <span class="badge bg-primary rounded-pill">Together AI</span>
+                    </label>
+                    <div class="model-selector">
+                        <span>Llama-3.3-70B-Instruct-Turbo-Free</span>
+                        <i class="fas fa-chevron-right model-selector-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="autoExecute" checked>
+                        <label class="form-check-label d-flex justify-content-between" for="autoExecute">
+                            <span>Auto-execute query</span>
+                        </label>
+                    </div>
+                    <small class="text-muted">Automatically run the generated SQL</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const exampleQueries = document.querySelectorAll('.example-query');
+        const queryInput = document.getElementById('nl_query');
+        const clearBtn = document.getElementById('clearBtn');
+        const charCounter = document.getElementById('charCounter');
+        const enhancePromptBtn = document.getElementById('enhancePromptBtn');
+        
+        // Example queries
+        exampleQueries.forEach(item => {
+            item.addEventListener('click', function() {
+                queryInput.value = this.textContent.trim();
+                updateCharCount();
+                queryInput.focus();
+            });
+        });
+        
+        // Clear button
+        clearBtn.addEventListener('click', function() {
+            queryInput.value = '';
+            updateCharCount();
+            queryInput.focus();
+        });
+        
+        // Character counter
+        queryInput.addEventListener('input', updateCharCount);
+        
+        function updateCharCount() {
+            const count = queryInput.value.length;
+            charCounter.textContent = `${count}/800`;
+            
+            if (count > 700) {
+                charCounter.classList.add('text-danger');
+            } else {
+                charCounter.classList.remove('text-danger');
+            }
+        }
+        
+        // Enhance prompt button
+        enhancePromptBtn.addEventListener('click', function() {
+            const currentQuery = queryInput.value.trim();
+            if (!currentQuery) return;
+            
+            // Add more details to make the prompt better
+            const enhancedPrompt = currentQuery + (
+                currentQuery.endsWith('.') ? '' : '.'
+            ) + ' Include appropriate data types and constraints for best practices.';
+            
+            queryInput.value = enhancedPrompt;
+            updateCharCount();
+            queryInput.focus();
+        });
+        
+        // Initialize char count
+        updateCharCount();
+    });
+</script>
+{% endblock %}

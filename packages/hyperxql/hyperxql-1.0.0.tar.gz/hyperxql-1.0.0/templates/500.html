@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %}HyperXQL - Server Error{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <div class="error-container mb-5">
+                <div class="error-code mb-4">500</div>
+                <h2 class="mb-4">Server Error</h2>
+                <p class="text-muted mb-5">Something went wrong on our servers. This is our fault, not yours.</p>
+                
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="/" class="btn-go">
+                        <i class="fas fa-home me-2"></i> Back to Safety
+                    </a>
+                    <a href="/settings" class="btn btn-outline-secondary">
+                        <i class="fas fa-cog me-2"></i> Check Settings
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="mb-3">Possible Solutions</h5>
+                    <div class="row g-3 text-start">
+                        <div class="col-12">
+                            <div class="p-3 rounded troubleshoot-card">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="fas fa-key fa-fw text-warning"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Check API Keys</h6>
+                                        <p class="mb-0 text-muted small">Verify that your API keys are correct in the settings page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 rounded troubleshoot-card">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="fas fa-database fa-fw text-warning"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Database Connection</h6>
+                                        <p class="mb-0 text-muted small">Make sure your database connection is properly configured.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 rounded troubleshoot-card">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="fas fa-sync-alt fa-fw text-warning"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Try Again</h6>
+                                        <p class="mb-0 text-muted small">Refresh the page or try your operation again after a few moments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+.error-container {
+    padding: 2rem 0;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+    background: linear-gradient(45deg, var(--bs-danger), var(--bs-warning));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.troubleshoot-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+.troubleshoot-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+</style>
+{% endblock %}

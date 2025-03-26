@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block title %}HyperXQL - Natural Language to SQL{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4 fw-bold mb-3">
+                <span style="color: var(--primary-color);">Hyper</span><span style="color: #6c7ee1;">XQL</span>
+            </h1>
+            <h2 class="fs-2 fw-light mb-4">Imagine It, Query It</h2>
+            <a href="/query" class="btn btn-go me-2">
+                Learn more <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="row g-4 mb-5">
+    <div class="col-md-6">
+        <div class="feature-card">
+            <h3 class="h5 mb-2">Natural Language Queries</h3>
+            <p class="text-muted mb-3">Just type words and get SQL queries.</p>
+            <a href="/query" class="btn-go">
+                Go <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="feature-card">
+            <h3 class="h5 mb-2">Database Management</h3>
+            <p class="text-muted mb-3">Create tables and manage your data with ease.</p>
+            <a href="/db-info" class="btn-go">
+                Go <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Tabs Section -->
+<div class="card mb-5">
+    <div class="card-body p-0">
+        <ul class="nav nav-tabs" id="queryTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="examples-tab" data-bs-toggle="tab" data-bs-target="#examples" type="button" role="tab">
+                    Examples
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features" type="button" role="tab">
+                    Features
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content p-4" id="queryTabsContent">
+            <div class="tab-pane fade show active" id="examples" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Create Table</h5>
+                                <p class="card-text text-muted">"Create a products table with id, name, price, and category"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Query Data</h5>
+                                <p class="card-text text-muted">"Show all customers who made a purchase last week"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Insert Data</h5>
+                                <p class="card-text text-muted">"Add a new product named 'Wireless Headphones' with price 99.99"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Join Tables</h5>
+                                <p class="card-text text-muted">"Find all orders with customer name and product details"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="features" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-brain text-primary me-2"></i> AI-Powered</h5>
+                        <p>Leveraging advanced language models from Together AI and OpenAI.</p>
+                        
+                        <h5 class="mt-4"><i class="fas fa-database text-primary me-2"></i> Database Support</h5>
+                        <p>Compatible with PostgreSQL, MySQL, and SQLite databases.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-code text-primary me-2"></i> SQL Generation</h5>
+                        <p>Creates optimized and correct SQL for various operations.</p>
+                        
+                        <h5 class="mt-4"><i class="fas fa-shield-alt text-primary me-2"></i> Safe Execution</h5>
+                        <p>Review generated SQL before executing to maintain database integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Loading Section -->
+<div class="d-flex align-items-center justify-content-center">
+    <div class="loading-indicator">
+        <div class="spinner-border spinner-border-sm text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <span>Loading with love... Almost ready!</span>
+    </div>
+</div>
+{% endblock %}
