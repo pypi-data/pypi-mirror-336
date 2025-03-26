@@ -1,0 +1,7 @@
+README.md
+setup.py
+oboframework.egg-info/PKG-INFO
+oboframework.egg-info/SOURCES.txt
+oboframework.egg-info/dependency_links.txt
+oboframework.egg-info/requires.txt
+oboframework.egg-info/top_level.txt
