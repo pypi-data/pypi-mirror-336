@@ -1,0 +1,27 @@
+include LICENSE
+include CITATION.cff
+include tox.ini
+include mypy.ini
+include config/config.ini
+include dev_requirements.txt
+include fp_hs.png
+exclude .gitlab-ci.yml .gitlab-ci-ifremer.yml
+include *.md
+
+recursive-include notebooks *.ipynb
+recursive-include resourcecode *.py
+recursive-include resourcecode/data *.feather *.json
+recursive-include resourcecode *.csv
+
+recursive-include examples *.py
+recursive-include examples *.rst
+
+recursive-include tests *.py *.json *.csv *.nc *.out
+
+recursive-include CLA *.pdf
+
+recursive-exclude joss_paper *
+exclude joss_paper
+
+prune codes_to_migrate
+prune doc
