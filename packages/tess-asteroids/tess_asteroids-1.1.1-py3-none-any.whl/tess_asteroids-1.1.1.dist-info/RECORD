@@ -1,0 +1,8 @@
+tess_asteroids/__init__.py,sha256=4upAq_RXWSiCNTO3P76HOFZHggY5o-YK603gvVBv1u8,379
+tess_asteroids/data/straps.csv,sha256=mEKYbbD7gyEesb0uvR-y1u0EoP0aLq7VID5n9wgUjhM,1402
+tess_asteroids/movingtpf.py,sha256=ocEHcvoYWGe84bXgW5xVfoZtVu07l-WKWF4FZF74zBc,88485
+tess_asteroids/utils.py,sha256=aghZ-Qjb0Jbun8n4iKoDNc6TzEDvdVRPGMjqwMlz_J0,17272
+tess_asteroids-1.1.1.dist-info/LICENSE,sha256=lftdNiFloZluwY53YJIBZVeC2UMkMYBsPqRbe9MoRLY,1066
+tess_asteroids-1.1.1.dist-info/METADATA,sha256=KM_Aemhhm9PaQQY4yufW69OnAqUHjl8d0Tm1KvRMUKA,11321
+tess_asteroids-1.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+tess_asteroids-1.1.1.dist-info/RECORD,,
