@@ -1,0 +1,6 @@
+[console_scripts]
+combine_marker = IMC_tool:display_markers
+convert_mcd_png = IMC_tool:convert_mcd
+script_visualize = IMC_tool:script_visualize
+visualize_marker = IMC_tool:visualize_marker
+visualize_roi = IMC_tool:visualize
