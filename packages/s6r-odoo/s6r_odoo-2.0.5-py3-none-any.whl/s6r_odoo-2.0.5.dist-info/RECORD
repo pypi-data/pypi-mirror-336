@@ -1,0 +1,11 @@
+test.py,sha256=YNCYZLDaQ8wHHBRSgEisWJYmPqcX63qBsqwa-gftprY,9134
+s6r_odoo/__init__.py,sha256=XY-yNpvqUeSZFgHjMA1OKzsrNKqSOVvglsyg3SGDJaI,33
+s6r_odoo/model.py,sha256=Cse_qi8frxTvwy2cxUpUAt2hEk_i_s92zHlxYgALzUw,6308
+s6r_odoo/odoo.py,sha256=zQ2VXdF_J6Eo5zps4ggBboQZVVMC5ooly0HO6zR1ozk,20248
+s6r_odoo/record.py,sha256=rq39Cb8uRmJ-8G2ldcnaPkfYuHZFICbXOLazaw7Egk0,6496
+s6r_odoo/record_set.py,sha256=Od5xXnUPrzkNMXtx1oSP9E3u10jOrTPCxD9kYdckEZo,1926
+s6r_odoo-2.0.5.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+s6r_odoo-2.0.5.dist-info/METADATA,sha256=7maeg2I_w9Hm9h0GE1uo__QUmZ_CB5BpKNy6BVkYbx0,10983
+s6r_odoo-2.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+s6r_odoo-2.0.5.dist-info/top_level.txt,sha256=e_3i3MBJgabNaTRG2tVLxL_LhZB_R2sK6PNTAB-0-vA,14
+s6r_odoo-2.0.5.dist-info/RECORD,,
