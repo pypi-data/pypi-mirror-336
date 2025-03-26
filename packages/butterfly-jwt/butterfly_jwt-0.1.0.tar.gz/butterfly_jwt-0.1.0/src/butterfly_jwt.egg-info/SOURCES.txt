@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/butterfly/__init__.py
+src/butterfly/jwt.py
+src/butterfly_jwt.egg-info/PKG-INFO
+src/butterfly_jwt.egg-info/SOURCES.txt
+src/butterfly_jwt.egg-info/dependency_links.txt
+src/butterfly_jwt.egg-info/requires.txt
+src/butterfly_jwt.egg-info/top_level.txt
+tests/test_jwt.py
