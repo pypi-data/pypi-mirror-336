@@ -1,0 +1,1 @@
+"""Airzone MQTT API library."""
