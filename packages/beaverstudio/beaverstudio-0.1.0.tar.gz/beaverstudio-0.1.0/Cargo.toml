@@ -1,0 +1,15 @@
+[package]
+name = "beaverstudio"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "beaverstudio"
+crate-type = ["cdylib"]
+
+[dependencies]
+image = "0.25.5"
+indicatif = "0.17.11"
+pyo3 = "0.23.3"
+rayon = "1.10.0"
