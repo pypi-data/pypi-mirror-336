@@ -1,0 +1,2 @@
+[console_scripts]
+tosql = tosql:main
