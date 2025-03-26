@@ -1,0 +1,2 @@
+class EmailProviders:
+    SMTP = 'SMTP'
