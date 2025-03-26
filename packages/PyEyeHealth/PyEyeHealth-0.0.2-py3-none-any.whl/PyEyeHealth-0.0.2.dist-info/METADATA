@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: PyEyeHealth
+Version: 0.0.2
+Requires-Dist: PyQt6
+Requires-Dist: imutils
