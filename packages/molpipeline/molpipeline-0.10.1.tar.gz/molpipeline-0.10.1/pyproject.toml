@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["dependencies", "optional-dependencies", "version"]
+name = "molpipeline"
+authors = [
+    {name = "Christian W. Feldmann"},
+    {name = "Jennifer Hemmerich"},
+    {name = "Jochen Sieg"}
+]
+description = "Integration of rdkit functionality into sklearn pipelines."
+readme = "README.md"
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+version = {attr = "molpipeline.__version__"}
+
+[tool.setuptools.dynamic.optional-dependencies]
+all = {file = ["requirements_chemprop.txt", "requirements_notebooks.txt"]}
+chemprop = {file = ["requirements_chemprop.txt"]}
+notebooks = {file = ["requirements_notebooks.txt"]}
+
+[tool.setuptools.packages.find]
+exclude = ["tests", "docs"]
+
+[tool.setuptools.package-data]
+"molpipeline" = ["py.typed"]
