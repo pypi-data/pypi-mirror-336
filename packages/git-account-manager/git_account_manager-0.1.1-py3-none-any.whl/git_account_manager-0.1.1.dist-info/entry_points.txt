@@ -1,0 +1,3 @@
+[console_scripts]
+git-manager = git_account_manager.main:main
+
