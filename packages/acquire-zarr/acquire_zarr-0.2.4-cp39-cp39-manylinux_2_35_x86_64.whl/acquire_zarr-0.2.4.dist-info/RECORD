@@ -1,0 +1,9 @@
+acquire_zarr/__init__.cpython-39-x86_64-linux-gnu.so,sha256=ufOTKI0L-g_FHKTsBJGBy_WjdiaJ1C2GyxjCilORBuk,12312320
+acquire_zarr/__init__.pyi,sha256=0hM77CAsNdHB1riJTiXWsTtehngseXOOjXU5v9QGIEs,10233
+acquire_zarr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acquire_zarr.libs/libgomp-92da9020.so.1.0.0,sha256=Z39EneNa2YQtjNG4--0mlPCu6HcYBvqPjBlbeEvv-Ts,316872
+acquire_zarr-0.2.4.dist-info/METADATA,sha256=yADDCnP4QxMLLRaLwMHdiE55VAcWMhwXpYOmzVYiuY8,7496
+acquire_zarr-0.2.4.dist-info/WHEEL,sha256=hi4NJqv-gKtsgC11PjQkwmJLnRRkovxw_J4EoUxMQR0,111
+acquire_zarr-0.2.4.dist-info/top_level.txt,sha256=zS6_D1eEaWxLSkNZl5PCEaDm3WePSqjGLlaKQJTx9dA,13
+acquire_zarr-0.2.4.dist-info/RECORD,,
+acquire_zarr-0.2.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
