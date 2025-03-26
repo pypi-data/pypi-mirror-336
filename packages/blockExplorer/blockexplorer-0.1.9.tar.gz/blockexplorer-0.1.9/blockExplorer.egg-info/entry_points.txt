@@ -1,0 +1,2 @@
+[console_scripts]
+blockExplorer = blockExplorer.cli:main
