@@ -1,0 +1,160 @@
+
+.mainmenu {
+    background: $panel;
+    color: $foreground;
+
+
+}
+
+* {
+    background: $background;
+    align: center middle;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+Container {
+    border: round $panel;
+    width: 0.7fr;
+    align: center middle;
+}
+
+Vertical {
+    background: $background;
+    border: round $foreground;
+}
+
+Timer {
+    background: $panel;
+    align: center middle;
+    border: heavy $background;
+    width: auto;
+}
+
+Button {
+    color: $foreground;
+    background: $background;
+    border: wide;
+    outline: round $foreground;
+}
+
+.trifecta {
+    Button {
+    color: $foreground;
+    background: $background;
+    border: none;
+    outline: none;
+    }
+}
+
+#skip {}
+
+#start {}
+
+#pause {
+    display: none;
+}
+
+.started #start {
+    display: none
+}
+
+.started #pause {
+    display: block
+}
+
+
+#on_break {
+    display: none;
+}
+
+.focused #focus {
+    display: none
+}
+
+.focused #on_break {
+    display: block
+}
+
+
+
+.setting-label {
+    margin: 1 0 0 0;
+    color: $foreground;
+}
+
+#focus-input, #break-input {
+    width: 100%;
+    margin-bottom: 1;
+}
+
+#modal-buttons {
+    margin-top: 2;
+    align: right middle;
+}
+
+#save-settings {
+
+}
+
+Label {
+    align: center middle;
+}
+
+#settings-modal, #stats-modal {
+    layer: modal;
+    width: 80%;
+    height: 80%;
+    background: $background 90%;
+    border: round $primary;
+    align: center middle;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-title {
+    width: 100%;
+    text-align: center;
+    color: $foreground;
+    margin-bottom: 1;
+}
+
+Input.-invalid {
+    border: tall $error;
+    color: $error;
+}
+
+Input.-valid {
+    border: tall $success;
+}
+
+Input.-invalid:focus {
+    border: tall $error;
+    background: $error 10%;
+}
+
+.validation-message {
+    color: $error;
+    margin-top: 0;
+    margin-bottom: 1;
+    height: auto;
+    min-height: 1;
+}
+
+
+Footer {
+  background: transparent;
+
+  & FooterKey {
+    background: transparent;
+  }
+
+  .footer-key--key {
+    color: $warning;
+    background: transparent;
+    margin: 1;
+    padding: 1;
+  }
+}
