@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiHiveFix1 = ShangGuiguDaShujuJishuZhiHiveFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-hive-fix1 = ShangGuiguDaShujuJishuZhiHiveFix1.__main__:main
