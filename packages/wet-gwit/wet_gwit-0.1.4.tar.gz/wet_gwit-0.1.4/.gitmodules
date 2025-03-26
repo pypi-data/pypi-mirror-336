@@ -1,0 +1,4 @@
+[submodule "libgwit"]
+	path = libgwit
+	url = git@framagit.org:matograine/libgwit.git
+	branch=master
