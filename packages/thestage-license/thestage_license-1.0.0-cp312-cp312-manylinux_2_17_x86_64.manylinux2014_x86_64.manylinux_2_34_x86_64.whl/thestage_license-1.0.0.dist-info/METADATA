@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: thestage-license
+Version: 1.0.0
+Summary: License validation module for TheStage AI projects
+Author-email: TheStage AI team <hello@thestage.ai>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.20
+Requires-Dist: cryptography>=44.0.0
+Requires-Dist: pyopenssl>=25.0.0
+
+# thestage-license
+
+License validation module for TheStage AI projects.
