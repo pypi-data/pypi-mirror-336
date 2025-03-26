@@ -1,0 +1,2 @@
+[console_scripts]
+rotate = rotate.main:main
