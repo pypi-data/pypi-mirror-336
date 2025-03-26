@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: naufal-pyfunc-ensembler-service-2
+Version: 1.21.2.dev23
+Requires-Python: >=3.8,<3.11
