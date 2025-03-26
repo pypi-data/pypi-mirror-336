@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name =  "bandcamp-downloader"
+authors = [
+    {name = "Iheanyi Ekechukwu", email = "iekechukwu@gmail.com"},
+    {name = "Anthony Forsberg", email = "forsberganthony@yahoo.com"},
+]
+description = "bandcamp-dl downloads albums and tracks from Bandcamp for you"
+readme = "README.rst"
+classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: End Users/Desktop',
+        'Topic :: Multimedia :: Sound/Audio',
+        'License :: Public Domain',
+        'Programming Language :: Python :: 3.4',
+]
+requires-python = ">=3.4"
+version = "0.0.17"
+dependencies = [
+    "beautifulsoup4 >= 4.13.0b2",
+    "demjson3 >= 3.0.6",
+    "mutagen >= 1.47.0",
+    "requests >= 2.32.3",
+    "unicode-slugify >= 0.1.5",
+    "urllib3 >= 2.2.2",
+    "toml ; python_version < '3.11'"
+]
+
+[project.scripts]
+bandcamp-dl = "bandcamp_dl.__main__:main"
+
+[project.urls]
+Documentation = "https://github.com/iheanyi/bandcamp-dl/blob/master/README.rst"
+Source = "https://github.com/iheanyi/bandcamp-dl"
+Tracker = "https://github.com/iheanyi/bandcamp-dl/issues"
