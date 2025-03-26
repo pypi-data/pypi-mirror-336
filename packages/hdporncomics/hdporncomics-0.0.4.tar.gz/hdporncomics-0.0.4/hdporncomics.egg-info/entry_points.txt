@@ -1,0 +1,2 @@
+[console_scripts]
+forumscraper = hdporncomics.__init__:main
