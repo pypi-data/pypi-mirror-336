@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: moleculib
+Version: 0.1.0
+Summary: Molecule library
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # 🧬 `moleculib`
+        
+        [![](https://img.shields.io/badge/documentation-black?logo=Sphinx)](https://molecularmachines.github.io/moleculib/index.html)
+        
+        
+        
+        ## Usage
+        
+        One needs to install moleculib locally with 
+        ```
+        pip install -e .
+        ```
+        Then `moleculib` becomes importable in python scripts:
+        
+        ```
+        from moleculib.protein.batch import PadBatch
+        ```
+        
+        ## Linting
+        
+        ```sh
+        black .
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

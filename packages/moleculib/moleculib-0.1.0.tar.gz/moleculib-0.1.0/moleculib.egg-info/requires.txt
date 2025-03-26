@@ -1,0 +1,12 @@
+numpy
+einops
+ordered_set
+biopython
+biotite
+pandas
+tqdm
+mendeleev
+py3Dmol
+rdkit
+plotly
+mdtraj
