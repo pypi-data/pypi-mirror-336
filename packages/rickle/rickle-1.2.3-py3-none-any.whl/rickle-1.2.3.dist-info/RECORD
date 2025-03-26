@@ -1,0 +1,15 @@
+rickle/__init__.py,sha256=TyztXUr6TrgN_5Qt6cKqI-tp2WcF8DEorI5XXf1zAgk,109379
+rickle/__version__.py,sha256=VQKY5ssttwEojD4icXImje4wpKOC0unrrVXLwHfPx-U,48
+rickle/cli/__init__.py,sha256=kjMi5XoRqM0euZs0-tbeTS8gM90q7YWC-w0jAfZZfHE,35780
+rickle/cli/__main__.py,sha256=PMpSaSDYi76cJ9RpejODUGdlilX6HsMcUMY7-Mh4JaU,35
+rickle/cli/conv.py,sha256=9_Eq9XIOGPPLFXsZHeK3-gWqXU93jhzLaR0vsyzHlOg,901
+rickle/cli/obj.py,sha256=-jj6Vknk57cSxIdjLN8jZxBD16Y7c3Wv3qMJjpwztZ4,18388
+rickle/cli/schema.py,sha256=l_zhraqchP2h9oOeBcaSopn8pg9i1sfzW5ObozqmphE,3198
+rickle/cli/serve.py,sha256=boE8JcV1jTsGReRBRqOGjb21KF6MYoDwpqTaiuTckms,1549
+rickle/net.py,sha256=gqvZ2WeUtrso3XZHTcV0XIUAOqJR295_NDuuSsfZgC4,4961
+rickle/tools.py,sha256=9JHoLRNU6mjefDQ1dy05AlhdlrzVbyl6uWQGnnroBTA,57676
+rickle-1.2.3.dist-info/entry_points.txt,sha256=PxNoftuYDh2URJlB5lbtL8rFw8BO8mxqm8CtemUf7Is,42
+rickle-1.2.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rickle-1.2.3.dist-info/METADATA,sha256=lik7_o8m7-fgomcXXjLSxLoFliqZSdFq8b33jMmypnA,13369
+rickle-1.2.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+rickle-1.2.3.dist-info/RECORD,,

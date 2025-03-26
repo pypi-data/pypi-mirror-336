@@ -1,0 +1,3 @@
+[console_scripts]
+rickle=rickle.cli:main
+
