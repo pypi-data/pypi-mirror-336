@@ -1,0 +1,10 @@
+docdog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docdog/chunking.py,sha256=6K49kPUzOA369SuCLpGsLLDVI5_4OW088r6l_FSTHRU,4499
+docdog/main.py,sha256=DRNPBQlGqj7_94v_NeHG0yHddsa5gAOZSxTFBDYUFOo,16017
+docdog/mcp_tools.py,sha256=SEMTlCxg-jwWmdegh5Zez3CAraMLvDC_9mlCdCW9bjI,6427
+docdog/readme_template.md,sha256=hZ3NYPreLcSlHE-rPtkXEhLTSFK-NBCk0VTQQue5xkI,874
+docdog-0.0.2.dist-info/METADATA,sha256=RprY0qHNMA_ZTQ4Fn8nk55funC5VfTebHZzvs_WVsoc,11729
+docdog-0.0.2.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+docdog-0.0.2.dist-info/entry_points.txt,sha256=g2SdRxGz5u3AcaOFW1JpmHSViSfKQIwDgeK10FawiIk,44
+docdog-0.0.2.dist-info/top_level.txt,sha256=i0iU0epHw8IkT1UIkbedHdsD0rw3Dfatnz6cPVDX7X4,7
+docdog-0.0.2.dist-info/RECORD,,
