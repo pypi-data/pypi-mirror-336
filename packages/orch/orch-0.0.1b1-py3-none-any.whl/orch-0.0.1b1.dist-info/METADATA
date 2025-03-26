@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: orch
+Version: 0.0.1b1
+Summary: 🎶 Orchestrator: Your devices, your symphony.
+Project-URL: Documentation, https://github.com/saforem2/orch#readme
+Project-URL: Issues, https://github.com/saforem2/orch/issues
+Project-URL: Source, https://github.com/saforem2/orch
+Author-email: Sam Foreman <saforem2@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# orch
+
+[![PyPI - Version](https://img.shields.io/pypi/v/orch.svg)](https://pypi.org/project/orch)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/orch.svg)](https://pypi.org/project/orch)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install orch
+```
+
+## License
+
+`orch` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
