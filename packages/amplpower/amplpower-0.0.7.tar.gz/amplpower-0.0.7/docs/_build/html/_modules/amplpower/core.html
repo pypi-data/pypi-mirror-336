@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>amplpower.core &mdash; amplpower 0.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=34bb78ad" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=7026087e"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            amplpower
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">amplpower</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">amplpower.core</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for amplpower.core</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">amplpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">AMPL</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">amplpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">add_to_path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matpowercaseframes</span><span class="w"> </span><span class="kn">import</span> <span class="n">CaseFrames</span>
+
+<span class="n">add_to_path</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;/opt/ampl/&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="compute">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.compute">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">compute</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">)</span></div>
+
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">array2dict</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert a 2D numpy array to a dictionary.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])}</span>
+
+
+<div class="viewcode-block" id="PowerSystem">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">PowerSystem</span><span class="p">:</span>
+<div class="viewcode-block" id="PowerSystem.__init__">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem.__init__">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">case_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;=======Initializing the power system with case file: </span><span class="si">{</span><span class="n">case_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">case_file</span> <span class="o">=</span> <span class="n">case_file</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buses</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">generators</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gencost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nbus</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nlin</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ngen</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_angle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">min_angle</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span>
+
+        <span class="c1"># Initialize everything</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_load_data</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initialize_matrices</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">compute_admittance_matrices</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">initialize</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">compute_initial_bigm_dc</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">compute_initial_bigm_ac</span><span class="p">()</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_load_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Load MATPOWER case data into DataFrames and convert to per unit.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">case</span> <span class="o">=</span> <span class="n">CaseFrames</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">case_file</span><span class="p">)</span>
+            <span class="c1"># Load data for each component</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">bus</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;BUS_I&quot;</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">gen</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;GEN_BUS&quot;</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">branch</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;F_BUS&quot;</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;T_BUS&quot;</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gencost</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">gencost</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gencost</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">nbus</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">)</span>  <span class="c1"># Number of buses</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">nlin</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">)</span>  <span class="c1"># Number of branches</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ngen</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">)</span>  <span class="c1"># Number of generators</span>
+
+            <span class="c1"># Minimum and maximum voltage limits</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">max_voltage</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;VMAX&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">min_voltage</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;VMIN&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;AMAX&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_angle</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;AMIN&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_angle</span>
+
+            <span class="c1"># Convert to per unit</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;PD&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;QD&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;GS&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;BS&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;PG&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;QG&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;PMAX&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;PMIN&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;QMAX&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;QMIN&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;RATE_A&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;RATE_B&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;RATE_C&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+
+            <span class="c1"># Set default branch limit</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">default_branch_limit</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;PD&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;QD&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">line_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">):</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">line_index</span><span class="p">,</span> <span class="s2">&quot;RATE_A&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">line_index</span><span class="p">,</span> <span class="s2">&quot;RATE_A&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_branch_limit</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error loading data from </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">case_file</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">raise</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_initialize_matrices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize matrices for admittance calculations.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">yff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ytf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">yft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ytt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nbus</span><span class="p">))</span>  <span class="c1"># Connection for F_BUS</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ct</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nbus</span><span class="p">))</span>  <span class="c1"># Connection for T_BUS</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">ngen</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nbus</span><span class="p">))</span>  <span class="c1"># Connection for generators</span>
+
+        <span class="c1"># Update generator connection matrix</span>
+        <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ngen</span><span class="p">):</span>
+            <span class="n">bus</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="s2">&quot;GEN_BUS&quot;</span><span class="p">])</span>  <span class="c1"># Ensure index is an integer</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cg</span><span class="p">[</span><span class="n">g</span><span class="p">,</span> <span class="n">bus</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<div class="viewcode-block" id="PowerSystem.compute_admittance_matrices">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem.compute_admittance_matrices">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">compute_admittance_matrices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Calculate the admittance matrices (yff, ytf, yft, ytt) for the network.&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">line_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="p">):</span>
+            <span class="n">branch</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">line_index</span><span class="p">]</span>  <span class="c1"># Access branch data</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">branch</span><span class="p">[</span><span class="s2">&quot;BR_R&quot;</span><span class="p">]</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">branch</span><span class="p">[</span><span class="s2">&quot;BR_X&quot;</span><span class="p">]</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">branch</span><span class="p">[</span><span class="s2">&quot;BR_B&quot;</span><span class="p">]</span>
+            <span class="n">tau</span> <span class="o">=</span> <span class="n">branch</span><span class="p">[</span><span class="s2">&quot;TAP&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="n">branch</span><span class="p">[</span><span class="s2">&quot;TAP&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">1</span>  <span class="c1"># Handle TAP=0 case</span>
+            <span class="n">theta</span> <span class="o">=</span> <span class="n">branch</span><span class="p">[</span><span class="s2">&quot;SHIFT&quot;</span><span class="p">]</span>
+
+            <span class="c1"># Calculate Y series and shunt admittance</span>
+            <span class="n">ys</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+
+            <span class="c1"># Store the admittance components</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">yff</span><span class="p">[</span><span class="n">line_index</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">ys</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">tau</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">yft</span><span class="p">[</span><span class="n">line_index</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">ys</span> <span class="o">/</span> <span class="p">(</span><span class="n">tau</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">theta</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ytf</span><span class="p">[</span><span class="n">line_index</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">ys</span> <span class="o">/</span> <span class="p">(</span><span class="n">tau</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">theta</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ytt</span><span class="p">[</span><span class="n">line_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">ys</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">b</span>
+
+            <span class="c1"># Update bus connection matrices</span>
+            <span class="n">f_bus</span><span class="p">,</span> <span class="n">t_bus</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">branch</span><span class="p">[</span><span class="s2">&quot;F_BUS&quot;</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">branch</span><span class="p">[</span><span class="s2">&quot;T_BUS&quot;</span><span class="p">])</span>  <span class="c1"># Ensure indices are integers</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cf</span><span class="p">[</span><span class="n">line_index</span><span class="p">,</span> <span class="n">f_bus</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ct</span><span class="p">[</span><span class="n">line_index</span><span class="p">,</span> <span class="n">t_bus</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="c1"># Compute additional matrices</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">yf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yff</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">cf</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yft</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">ct</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">yt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ytf</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">cf</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ytt</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">ct</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ysh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;GS&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;BS&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">yb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cf</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">yf</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ct</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">yt</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ysh</span><span class="p">)</span>
+
+        <span class="c1"># Include admittance values in the branch DataFrame</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFF&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yff</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFF&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yff</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yft</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yft</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTF&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ytf</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTF&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ytf</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ytt</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ytt</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PowerSystem.initialize">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem.initialize">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">initialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">voltages</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">angles</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize the voltage magnitudes, angles, flows, and generation levels.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">voltages</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">voltages</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nbus</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">angles</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nbus</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;VOL0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">voltages</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;ANG0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">angles</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;VOLR0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">voltages</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angles</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;VOLI0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">voltages</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angles</span><span class="p">)</span>
+
+        <span class="c1"># Compute flows</span>
+        <span class="n">v</span> <span class="o">=</span> <span class="n">voltages</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">angles</span><span class="p">)</span>
+        <span class="n">sf</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cf</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">conj</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yf</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span>
+        <span class="n">st</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ct</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">conj</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yt</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PF0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;QF0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PT0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">st</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;QT0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">st</span><span class="p">)</span>
+
+        <span class="c1"># Compute generator outputs</span>
+        <span class="n">sd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;PD&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;QD&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">sb</span> <span class="o">=</span> <span class="n">v</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">conj</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yb</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span>
+        <span class="n">sg</span> <span class="o">=</span> <span class="n">sb</span> <span class="o">+</span> <span class="n">sd</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;PG0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">sg</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">cg</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">[</span><span class="s2">&quot;QG0&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">sg</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">cg</span><span class="o">.</span><span class="n">T</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PowerSystem.summary">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem.summary">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">summary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Print summary of the network.&quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of buses: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nbus</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of lines: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nlin</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of generators: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">ngen</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;baseMVA: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Buses:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Generators:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Branches:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Generator Costs:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gencost</span><span class="o">.</span><span class="n">head</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="PowerSystem.compute_initial_bigm_dc">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem.compute_initial_bigm_dc">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">compute_initial_bigm_dc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=======Computing initial bigM values for DC power flow&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute Big-M values for the different lines and return them in a DataFrame.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PFUPDC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BR_X&quot;</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cf</span> <span class="o">@</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;AMAX&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">ct</span> <span class="o">@</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;AMIN&quot;</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PFLODC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BR_X&quot;</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cf</span> <span class="o">@</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;AMIN&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">ct</span> <span class="o">@</span> <span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">[</span><span class="s2">&quot;AMAX&quot;</span><span class="p">])</span></div>
+
+
+<div class="viewcode-block" id="PowerSystem.compute_initial_bigm_ac">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem.compute_initial_bigm_ac">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">compute_initial_bigm_ac</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=======Computing initial bigM values for AC power flow&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute Big-M values for the different lines and return them in a DataFrame.&quot;&quot;&quot;</span>
+        <span class="n">v2max</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_voltage</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">v2min</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_voltage</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">cosmax</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_voltage</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">cosmin</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">sinmax</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_voltage</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">sinmin</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_voltage</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PFUPAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2max</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmin</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmax</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PFLOAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2min</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmax</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PTUPAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2max</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmin</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmax</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;PTLOAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2min</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmax</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;QFUPAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2max</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmin</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;QFLOAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2min</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmax</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GFT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmax</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;QTUPAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2max</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmin</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;QTLOAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTT&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">v2min</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">cosmax</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;GTF&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">sinmax</span></div>
+
+        <span class="c1"># TODO: change bigm for AC case</span>
+
+<div class="viewcode-block" id="PowerSystem.solve_opf">
+<a class="viewcode-back" href="../../reference/amplpower.html#amplpower.PowerSystem.solve_opf">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">solve_opf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">opf_type</span><span class="o">=</span><span class="s2">&quot;dc&quot;</span><span class="p">,</span> <span class="n">switching</span><span class="o">=</span><span class="s2">&quot;off&quot;</span><span class="p">,</span> <span class="n">connectivity</span><span class="o">=</span><span class="s2">&quot;off&quot;</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s2">&quot;gurobi&quot;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="s2">&quot;outlev=1 timelimit=3600&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Solve the optimal power flow problem using AMPL.</span>
+<span class="sd">        Parameters:</span>
+<span class="sd">        opf_type (str): Type of optimal power flow (&#39;dc&#39;, &#39;acrect&#39;, &#39;acjabr&#39;)</span>
+<span class="sd">        switching (str): Switching strategy (&#39;off&#39;, &#39;nl&#39;, &#39;bigm&#39;)</span>
+<span class="sd">        connectivity (str): Connectivity for topology solutions (&#39;off&#39;, &#39;on&#39;)</span>
+<span class="sd">        solver (str): Solver to use (&#39;gurobi&#39;, &#39;cplex&#39;, &#39;cbc&#39;)</span>
+<span class="sd">        options (str): Options for the solver</span>
+<span class="sd">        Returns:</span>
+<span class="sd">        dict: Results of the optimal power flow problem</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># set the status of the lines</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">switching</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BR_STATUS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">switching</span>
+        <span class="k">elif</span> <span class="n">switching</span> <span class="o">==</span> <span class="s2">&quot;off&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BR_STATUS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="n">switching</span> <span class="o">==</span> <span class="s2">&quot;nl&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BR_STATUS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+        <span class="k">elif</span> <span class="n">switching</span> <span class="o">==</span> <span class="s2">&quot;bigm&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">[</span><span class="s2">&quot;BR_STATUS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;=======Solving OPF (</span><span class="si">{</span><span class="n">opf_type</span><span class="si">}</span><span class="s2">) with switching </span><span class="si">{</span><span class="n">switching</span><span class="si">}</span><span class="s2"> and connectivity </span><span class="si">{</span><span class="n">connectivity</span><span class="si">}</span><span class="s2"> with solver </span><span class="si">{</span><span class="n">solver</span><span class="si">}</span><span class="s2"> and options </span><span class="si">{</span><span class="n">options</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="p">)</span>
+        <span class="n">ampl</span> <span class="o">=</span> <span class="n">AMPL</span><span class="p">()</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s2">&quot;opf.mod&quot;</span><span class="p">)</span>
+
+        <span class="n">ampl</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buses</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">)</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">generators</span><span class="p">,</span> <span class="s2">&quot;G&quot;</span><span class="p">)</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">branches</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">)</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gencost</span><span class="p">)</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;CF&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">array2dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cf</span><span class="p">)</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;CT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">array2dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ct</span><span class="p">)</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;CG&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">array2dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cg</span><span class="p">)</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;OPF_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">opf_type</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;CONNECTIVITY&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">connectivity</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;BASEMVA&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseMVA</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;MAXVOL&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_voltage</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="s2">&quot;MINVOL&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_voltage</span>
+
+        <span class="n">ampl</span><span class="o">.</span><span class="n">option</span><span class="p">[</span><span class="s2">&quot;mp_options&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">options</span>
+        <span class="n">ampl</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="n">solver</span><span class="p">)</span>
+        <span class="n">solver_status</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">solve_result</span>
+
+        <span class="k">if</span> <span class="n">solver_status</span> <span class="o">==</span> <span class="s2">&quot;solved&quot;</span> <span class="ow">or</span> <span class="n">solver_status</span> <span class="o">==</span> <span class="s2">&quot;limit&quot;</span><span class="p">:</span>
+            <span class="c1"># Get the results</span>
+            <span class="n">genp_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;genp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">genq_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;genq&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">gen_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Pg&quot;</span><span class="p">:</span> <span class="n">genp_values</span><span class="p">,</span> <span class="s2">&quot;Qg&quot;</span><span class="p">:</span> <span class="n">genq_values</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;genp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+            <span class="n">vol_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;vol&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">ang_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;ang&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">bus_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Vm&quot;</span><span class="p">:</span> <span class="n">vol_values</span><span class="p">,</span> <span class="s2">&quot;Va&quot;</span><span class="p">:</span> <span class="n">ang_values</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;vol&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+            <span class="n">status_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;status&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">flowpf_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;flowpf&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">flowpt_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;flowpt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">flowqf_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;flowqf&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">flowqt_values</span> <span class="o">=</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;flowqt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+            <span class="n">line_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+                <span class="p">{</span><span class="s2">&quot;switching&quot;</span><span class="p">:</span> <span class="n">status_values</span><span class="p">,</span> <span class="s2">&quot;Pf&quot;</span><span class="p">:</span> <span class="n">flowpf_values</span><span class="p">,</span> <span class="s2">&quot;Pt&quot;</span><span class="p">:</span> <span class="n">flowpt_values</span><span class="p">,</span> <span class="s2">&quot;Qf&quot;</span><span class="p">:</span> <span class="n">flowqf_values</span><span class="p">,</span> <span class="s2">&quot;Qt&quot;</span><span class="p">:</span> <span class="n">flowqt_values</span><span class="p">},</span>
+                <span class="n">index</span><span class="o">=</span><span class="n">ampl</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;status&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+            <span class="p">)</span>
+
+            <span class="k">return</span> <span class="p">{</span>
+                <span class="s2">&quot;obj&quot;</span><span class="p">:</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_objective</span><span class="p">(</span><span class="s2">&quot;total_cost&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">(),</span>
+                <span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="n">ampl</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="s2">&quot;_solve_time&quot;</span><span class="p">),</span>
+                <span class="s2">&quot;gen&quot;</span><span class="p">:</span> <span class="n">gen_df</span><span class="p">,</span>
+                <span class="s2">&quot;bus&quot;</span><span class="p">:</span> <span class="n">bus_df</span><span class="p">,</span>
+                <span class="s2">&quot;lin&quot;</span><span class="p">:</span> <span class="n">line_df</span><span class="p">,</span>
+                <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;solved&quot;</span><span class="p">,</span>
+            <span class="p">}</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;obj&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;gen&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;bus&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;lin&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="n">solver_status</span><span class="p">}</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Salvador Pineda Morente.
+      <span class="lastupdated">Last updated on Mar 21, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
