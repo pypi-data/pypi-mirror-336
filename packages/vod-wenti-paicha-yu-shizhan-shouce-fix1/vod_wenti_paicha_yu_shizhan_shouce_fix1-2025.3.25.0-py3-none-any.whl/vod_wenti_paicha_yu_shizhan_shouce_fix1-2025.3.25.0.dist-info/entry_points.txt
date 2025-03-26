@@ -1,0 +1,3 @@
+[console_scripts]
+VodWentiPaichaYuShizhanShouceFix1 = VodWentiPaichaYuShizhanShouceFix1.__main__:main
+vod-wenti-paicha-yu-shizhan-shouce-fix1 = VodWentiPaichaYuShizhanShouceFix1.__main__:main
