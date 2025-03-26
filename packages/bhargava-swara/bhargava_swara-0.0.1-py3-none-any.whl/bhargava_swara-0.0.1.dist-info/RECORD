@@ -1,0 +1,12 @@
+bhargava_swara/__init__.py,sha256=Ll267lQUDarAMHalmX4IOLvQEGfSloozqOCrcycm2Yg,445
+bhargava_swara/carnatic_or_hindustani.py,sha256=-N-siCUsIa6XZrNJFB-61XSqeIVHUWYoBd_kuoMCrno,1103
+bhargava_swara/ornamentation_detection.py,sha256=aYBZkprrNjhp_kLT1Fm_gkir1eLByHwepA-vwSTIDYI,1167
+bhargava_swara/raga_recognition.py,sha256=I7P-RfBZSoA_is33z55-9QccNZacogltuWJ-UbVdFB0,2685
+bhargava_swara/real_time_full_analysis.py,sha256=zMxYLoeizUGXAaQAr5HMolkqGtJJRHv8EE4dTxJlbEc,4794
+bhargava_swara/tala_recognition.py,sha256=x_EKIfSfPn-XKnYrVNR3wNOz8hiiiq095JyDv9_iab4,976
+bhargava_swara/tempo_detection.py,sha256=uj90W2bxwkIBWhpX4f_AwYGjo0xO3sXOmK9yqtBW3RM,983
+bhargava_swara-0.0.1.dist-info/licenses/LICENSE.txt,sha256=yEnxQQLukBzPCsXXGruZ2C9RXCa7SdfjCL6yiDUGmYg,1087
+bhargava_swara-0.0.1.dist-info/METADATA,sha256=UORa9cF7tOF_ppn_OeJj4Pnpqt5YLGclsjK4Jx_kMok,2255
+bhargava_swara-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bhargava_swara-0.0.1.dist-info/top_level.txt,sha256=E30_ubbz6lPJFCPlni7JsMwddC6zM5asjBidFsU99UE,15
+bhargava_swara-0.0.1.dist-info/RECORD,,
