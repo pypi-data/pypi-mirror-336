@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: global_parser_lib
+Version: 0.1.4
+Summary: A library for parsing various file types.
+Author: 
+Author-email: foundersoffice@vaiaclimate.com
+Requires-Python: >=3.8
