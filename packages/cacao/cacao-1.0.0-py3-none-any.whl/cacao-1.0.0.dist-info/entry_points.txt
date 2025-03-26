@@ -1,0 +1,2 @@
+[console_scripts]
+cacao = cacaodocs.cli:main
