@@ -1,0 +1,4 @@
+mss>=6.1.0
+numpy>=1.19.0
+opencv-python>=4.5.0
+rx>=3.2.0
