@@ -1,0 +1,2 @@
+[console_scripts]
+refine_skeleton = skeleton_refinement.cli.refine_skeleton:main
