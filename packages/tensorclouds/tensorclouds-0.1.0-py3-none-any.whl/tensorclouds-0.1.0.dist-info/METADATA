@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tensorclouds
+Version: 0.1.0
+Summary: Training Pipeline Library
+Author: 
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: e3nn-jax
+Requires-Dist: ordered-set
+Requires-Dist: flax
+Requires-Dist: einops
+Requires-Dist: hydra-zen
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# ✨ `tensorclouds`
+[![](https://img.shields.io/badge/documentation-black?logo=Sphinx)](https://allanscosta.github.io/tensorclouds/index.html)
+
+
+
+Training Pipeline for Biomolecular Machine Learning
