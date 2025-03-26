@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: imessage-mcp-server
+Version: 0.0.4
+Summary: MCP server for iMessage
+Author-email: Sourabh Shirhatti <sourabh@mail.shirhatti.com>
+Project-URL: Homepage, https://shirhatti.github.io/mcp-server-imessage/
+Project-URL: Repository, https://github.com/shirhatti/mcp-server-imessage
+Project-URL: Documentation, https://shirhatti.github.io/mcp-server-imessage/
+Keywords: python
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4.0,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mcp[cli]>=1.2.0
+Requires-Dist: peewee>=3.17.0
+Requires-Dist: pyobjc>=11.0
+Requires-Dist: textual>=0.52.1
+Requires-Dist: types-peewee>=3.17.9.20250210
+Dynamic: license-file
+
+# mcp-server-imessage
+
+MCP server for iMessage

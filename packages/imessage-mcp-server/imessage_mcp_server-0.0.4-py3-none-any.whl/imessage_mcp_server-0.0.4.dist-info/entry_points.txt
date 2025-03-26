@@ -1,0 +1,3 @@
+[console_scripts]
+imessage = mcp_server_imessage:main
+imessage-mcp-server = mcp_server_imessage.server:main
