@@ -1,0 +1,7 @@
+pymatgen
+mp-api
+numpy
+matplotlib
+py3Dmol
+IPython
+ipywidgets

@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: jh_pymatgen
+Version: 0.1.0
+Summary: This is an augmentation of pymatgen package. It has two components: i) structure_process, ii) cp2k_script_generator.
+Author: Md Nur Kutubul Alam
+Author-email: alamjhilam@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pymatgen
+Requires-Dist: mp-api
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: py3Dmol
+Requires-Dist: IPython
+Requires-Dist: ipywidgets
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
