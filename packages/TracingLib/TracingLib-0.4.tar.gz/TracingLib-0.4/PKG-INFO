@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: TracingLib
+Version: 0.4
+Summary: A package to manage OpenTelemetry tracing, spans, and events.
+Home-page: UNKNOWN
+Author: Rahul Singh Chauhan
+Author-email: chauhan.rahul2605@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

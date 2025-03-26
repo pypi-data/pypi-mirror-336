@@ -1,0 +1,4 @@
+opentelemetry-api
+opentelemetry-exporter-otlp-proto-http
+opentelemetry-sdk
+protobuf<5.0,>=3.19
