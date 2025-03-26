@@ -1,0 +1,7 @@
+baseten_benchmarks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baseten_benchmarks/data/frank.txt,sha256=3B24zEN3FQhys8pLXI5_qXSBJQIKUIy_0QAfML80cgc,441157
+baseten_benchmarks/llm_benchmark.py,sha256=9xteD6PrmHTJDOvYXYn9TnZAi6MrLpCFYqsW1J4m3mw,42859
+baseten_benchmarks-0.1.0.dist-info/METADATA,sha256=uG7Z_aM928YXQFLqguK3Rwbp89NGSe6j5ZPNIC6baPY,1228
+baseten_benchmarks-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+baseten_benchmarks-0.1.0.dist-info/entry_points.txt,sha256=43LYLY6aDWOpWMrJc0bbxxEgFNCfV--6ftRPzMiUZfM,74
+baseten_benchmarks-0.1.0.dist-info/RECORD,,
