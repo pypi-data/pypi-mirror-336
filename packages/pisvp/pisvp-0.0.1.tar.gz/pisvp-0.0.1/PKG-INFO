@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: pisvp
+Version: 0.0.1
+License-File: LICENSE
+Summary: Keep calm and π on!
+Author-email: rocketniko <rocketniko@pm.me>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/rocketniko/pisvp
+
+3.141592653589793238462643383279... Keep calm and π on!
+
+## Overview
+This is a collection of algorithms for calculating approximations of the number π.
+
+Implementation is in Rust/Python and published to PyPI.
+
+## Installation
+
+The library is installable through PyPI.
+
+````
+pip install pisvp
+````
+However, this is a source release and requires cargo/rustc to be on your PATH.
+

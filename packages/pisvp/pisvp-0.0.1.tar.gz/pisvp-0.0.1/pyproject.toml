@@ -1,0 +1,26 @@
+[project]
+name = "pisvp"
+version = "0.0.1"
+description = "Keep calm and π on!"
+readme = "README.md"
+authors = [
+    { name = "rocketniko", email = "rocketniko@pm.me" }
+]
+requires-python = ">=3.12"
+licence = "MIT"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/rocketniko/pisvp"
+
+[project.scripts]
+pisvp = "pisvp:main"
+
+[tool.maturin]
+module-name = "pisvp._core"
+python-packages = ["pisvp"]
+python-source = "src"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
