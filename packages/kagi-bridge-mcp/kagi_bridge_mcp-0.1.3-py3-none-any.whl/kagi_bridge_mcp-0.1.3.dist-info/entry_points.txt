@@ -1,0 +1,2 @@
+[console_scripts]
+kagi-bridge-mcp = kagi_bridge_mcp:main
