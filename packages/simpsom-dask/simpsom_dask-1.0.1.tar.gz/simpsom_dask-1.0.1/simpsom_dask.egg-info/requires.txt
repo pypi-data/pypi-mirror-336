@@ -1,0 +1,14 @@
+numpy
+matplotlib
+colormaps
+scikit_learn
+scipy
+tqdm
+
+[daskml]
+dask
+dask_ml
+
+[gpu]
+cupy
+cudf
