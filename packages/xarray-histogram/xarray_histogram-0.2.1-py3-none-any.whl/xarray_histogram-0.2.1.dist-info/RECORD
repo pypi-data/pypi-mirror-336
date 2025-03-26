@@ -1,0 +1,9 @@
+xarray_histogram/__init__.py,sha256=SY-bAvkBL8PF8T96dRS-IQOdbdea8TKoM9gjiHea1Go,132
+xarray_histogram/accessor.py,sha256=h8uuseU09m4RoOgCCQasDouviZwmv9QygRvyJqTFPKg,20333
+xarray_histogram/core.py,sha256=ee8lj_WRyW0J4CoL3fUNi28Zz2qeBMY7MuSBq1tLIJc,21735
+xarray_histogram/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xarray_histogram-0.2.1.dist-info/licenses/LICENSE,sha256=JppUVqfSFUvt7kRoQvoJhUczfEwV5jz7fV-YgNpUM8c,1072
+xarray_histogram-0.2.1.dist-info/METADATA,sha256=LbzL7G4wthDT8kRLw_ktsdM7-hbrL7T3sBtpBrL6wFE,6533
+xarray_histogram-0.2.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+xarray_histogram-0.2.1.dist-info/top_level.txt,sha256=pmN7Dqmllz-YQsvwo2P9RB-TtttYgWhJYFaR7oTG04A,17
+xarray_histogram-0.2.1.dist-info/RECORD,,
