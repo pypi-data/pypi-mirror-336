@@ -1,0 +1,23 @@
+[project]
+name = "read_only_friday_checker"
+version = "1.0.1"
+description = "This checks to see if today is Read Only Friday."
+readme = "src/read_only_friday_checker/resources/PYPI_README.md"
+license = "MIT"
+authors = [{ name = "Melvin Quick", email = "melvinquick@proton.me" }]
+requires-python = ">=3.12"
+dependencies = ["pyside6>=6.8.2.1", "requests>=2.32.3"]
+
+[project.urls]
+repository = "https://codeberg.org/melvinquick/read_only_friday_checker"
+issues = "https://codeberg.org/melvinquick/read_only_friday_checker/issues"
+
+[project.scripts]
+read-only-friday-checker = "read_only_friday_checker.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["bandit>=1.8.3"]

@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: read_only_friday_checker
+Version: 1.0.1
+Summary: This checks to see if today is Read Only Friday.
+Project-URL: repository, https://codeberg.org/melvinquick/read_only_friday_checker
+Project-URL: issues, https://codeberg.org/melvinquick/read_only_friday_checker/issues
+Author-email: Melvin Quick <melvinquick@proton.me>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: pyside6>=6.8.2.1
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+## Donations
+
+- [Buy Me A Coffee](https://www.buymeacoffee.com/KingKairos)
+- [GitHub Sponsors](https://github.com/sponsors/melvinquick)
+
+## Purpose
+
+This app was mostly made as a joke for my friends. It just reaches out to https://isitreadonlyfriday.com using their API and does a check to see if it's Read Only Friday in the EST timezone.
+
+## Install/Uninstall
+
+Install: `curl -s https://codeberg.org/melvinquick/read_only_friday_checker/raw/branch/main/install.py | python3 -`  
+Uninstall: `curl -s https://codeberg.org/melvinquick/read_only_friday_checker/raw/branch/main/uninstall.py | python3 -`
+
+## Useful Information
+
+- [Latest Release](https://codeberg.org/melvinquick/read_only_friday_checker/releases/latest)
+- [Releases](https://codeberg.org/melvinquick/read_only_friday_checker/releases)
