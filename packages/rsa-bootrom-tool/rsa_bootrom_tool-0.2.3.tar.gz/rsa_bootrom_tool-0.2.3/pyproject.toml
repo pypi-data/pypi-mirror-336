@@ -1,0 +1,11 @@
+[project]
+name = "rsa-bootrom-tool"
+version = "0.2.3"
+description = "RSA Tool for BootROM secure boot keygen/sign/verify/export"
+authors = [{name = "Your Name", email = "you@example.com"}]
+license = "MIT"
+dependencies = ["pycryptodome"]
+requires-python = ">=3.6"
+
+[project.scripts]
+rsa-tool = "rsa_tool.cli:main"
