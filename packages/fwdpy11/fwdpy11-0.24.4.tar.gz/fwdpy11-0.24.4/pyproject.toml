@@ -1,0 +1,122 @@
+[build-system]
+# We need setup.cfg support, which setuptools indtroduced in 30.3.0.
+requires = [
+    "scikit-build-core==0.11.1",
+    "setuptools_scm==7.1.0",
+    "pybind11[global]==2.12.0",
+    "numpy >= 2.0"
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "fwdpy11"
+authors = [
+    {name = "Kevin R. Thornton", email =  "krthornt@uci.edu"}
+]
+license = {text = "GNU GPL3+"}
+description = "Forward-time population genetic simulation in Python"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+dynamic = ["version"]
+dependencies = [
+    "attrs >= 20.3.0",
+    "numpy>=1.23.5",
+    "tskit >= 0.5.6",
+    "demes ~= 0.2.2",
+    "Deprecated",
+]
+requires-python = ">=3.10, <3.14"
+
+[dependency-groups]
+# NOTE: we are doing a very odd hack here!
+# uv does NOT currently support locking build dependencies
+# so we add it as a dependency group and force it.
+# The PROBLEM is that we have TWO places to modify
+# things in the future.
+build = [
+    "scikit-build-core==0.11.1",
+    "setuptools_scm==7.1.0",
+    "pybind11[global]==2.12.0",
+    "numpy >= 2.0"
+]
+format = [
+    "black==24.10.0"
+]
+lint = [
+    "flake8",
+    "flake8-bugbear",
+]
+msprime = [
+    "msprime"
+]
+dev = [
+#below are for building package
+#and running tests
+    "pytest",
+    "pytest-xdist",
+    "hypothesis",
+    "build",
+    "twine",
+    {include-group = "msprime"}
+]
+
+doc = [
+    "jupyter-book>=1",
+    "pydata-sphinx-theme",
+    "matplotlib",
+    "pandas",
+# pyarrow will be a requirement of pandas soon.
+# right now, not having it raises a warning
+    "pyarrow",
+    "sphinx-issues",
+    "demesdraw~=0.4.0",
+    {include-group = "msprime"},
+]
+
+[project.scripts]
+fwdpy11 = "fwdpy11.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/molpopgen/fwdpy11"
+Issues = "https://github.com/molpopgen/fwdpy11/issues"
+Documentation = "https://molpopgen.github.io/fwdpy11"
+
+[tool.scikit-build]
+metadata.version.provider = "scikit_build_core.metadata.setuptools_scm"
+sdist.include = ["fwdpy11/_version.py"]
+sdist.exclude = [".github", "fwdpy11/headers/fwdpp/subprojects"]
+
+[tool.setuptools_scm]
+write_to = "fwdpy11/_version.py"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+]
+
+[tool.cibuildwheel]
+environment="PATH=$PATH:/$HOME/.cargo/bin LD_LIBRARY_PATH=fwdpy11"
+test-command = "pytest {project}/tests"
+test-requires = "pytest msprime hypothesis"
+build-frontend = "build"
+
+[tool.cibuildwheel.macos]
+build = "cp3{12,13}-*"
+before-all = "./deployment/macos_wheels/install_gsl.sh"
+
+[tool.cibuildwheel.linux]
+build = "cp*manylinux*"
+manylinux-x86_64-image = "manylinux_2_28"
+before-all = "./deployment/linux_wheels/cibuildwheel.sh"
+archs = "x86_64"
+# skip = "pp* *musllinux*"
+
+[tool.uv]
+required-environments = [
+    "sys_platform == 'darwin' and implementation_name == 'cpython'",
+    "sys_platform == 'linux' and implementation_name == 'cpython'",
+]
