@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+NeuronNet.egg-info/PKG-INFO
+NeuronNet.egg-info/SOURCES.txt
+NeuronNet.egg-info/dependency_links.txt
+NeuronNet.egg-info/requires.txt
+NeuronNet.egg-info/top_level.txt
+neuronnet/__init__.py
+neuronnet/collective_learning.py
+neuronnet/model.py
+neuronnet/training.py
