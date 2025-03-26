@@ -1,0 +1,14 @@
+rexpand_pyutils_matching/__init__.py,sha256=bophMsiAI3AHYaXFA3oSEndyCxWT6W7x1uRmSpuXJCo,425
+rexpand_pyutils_matching/matchers.py,sha256=2JIJYaDBqzaSIbRViOrvX0MxW4pnwNYhcQnXAasIZpI,2747
+rexpand_pyutils_matching/searcher.py,sha256=-YWjK2H46fQ-wnTEtV6NJzfV6Zo8xhEfuFVmeNvy608,10825
+rexpand_pyutils_matching/similarities/__init__.py,sha256=aqitJvKou2o75JNwGnFbL0ZBZOWmTlwvSiN2sGxlGhc,582
+rexpand_pyutils_matching/similarities/common_prefix.py,sha256=D1hBvfFj3D8r3znNtIb5qnq3SAFDSX8Fe3GSnp-hFOU,2292
+rexpand_pyutils_matching/similarities/levenshtein.py,sha256=xPRgazh6TXU-BIHjRFsyBxRSNsEqmu6okYJNYmQbLn4,2153
+rexpand_pyutils_matching/similarities/longest_common_sequence.py,sha256=U-_-11A0blmGkdkzcTt4xlQwFx1cVmPB0tVD4UMLWpE,2020
+rexpand_pyutils_matching/similarities/starts_with.py,sha256=B9a6F808P-nuK6bXqBcPfJnRDh7AjgUFxNSY6gQSmsA,1539
+rexpand_pyutils_matching/utils/__init__.py,sha256=DBZt56Y1oZeuCQCFt8E-S54PIX5-KJ3PICY5olFSVsg,139
+rexpand_pyutils_matching/utils/chatgpt.py,sha256=nlABUtM6Elmnh-b2frBstWcl5aVG-gNyI11NmRcaXpM,638
+rexpand_pyutils_matching/utils/string.py,sha256=41-dAm1Uipl41NN3cboq20Kac0t7m2V1KqTz1GtmBOQ,501
+rexpand_pyutils_matching-0.0.3.dist-info/METADATA,sha256=Th_Scuf2mHt9NMdgAb_uyRjg3bDdFY-ZVLofLwHteE4,4106
+rexpand_pyutils_matching-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rexpand_pyutils_matching-0.0.3.dist-info/RECORD,,
