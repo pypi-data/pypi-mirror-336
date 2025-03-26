@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: kssdtree
+Version: 2.0.5
+Summary: Kssdtree is a versatile Python package for phylogenetic analysis. It also provides one-stop tree construction and visualization. It can handle DNA sequences of both fasta or fastq format, whether gzipped or not. 
+Home-page: https://github.com/yhlink/kssdtree
+Author: Hang Yang
+Author-email: yhlink1207@gmail.com
+License: UNKNOWN
+Download-URL: https://pypi.org/project/kssdtree
+Description: UNKNOWN
+Platform: UNKNOWN
