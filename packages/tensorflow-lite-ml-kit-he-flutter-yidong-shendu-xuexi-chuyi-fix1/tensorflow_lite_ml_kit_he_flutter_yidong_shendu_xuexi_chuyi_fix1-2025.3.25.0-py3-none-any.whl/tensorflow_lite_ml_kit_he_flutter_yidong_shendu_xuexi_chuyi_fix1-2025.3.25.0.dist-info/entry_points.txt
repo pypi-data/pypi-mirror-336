@@ -1,0 +1,3 @@
+[console_scripts]
+TensorflowLiteMlKitHeFlutterYidongShenduXuexiChuyiFix1 = TensorflowLiteMlKitHeFlutterYidongShenduXuexiChuyiFix1.__main__:main
+tensorflow-lite-ml-kit-he-flutter-yidong-shendu-xuexi-chuyi-fix1 = TensorflowLiteMlKitHeFlutterYidongShenduXuexiChuyiFix1.__main__:main
