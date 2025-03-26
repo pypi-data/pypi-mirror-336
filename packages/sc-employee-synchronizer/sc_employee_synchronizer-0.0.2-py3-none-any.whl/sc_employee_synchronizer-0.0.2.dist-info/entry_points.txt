@@ -1,0 +1,2 @@
+[console_scripts]
+sc-employee-synchronizer = sc_employee_synchronizer.main:main

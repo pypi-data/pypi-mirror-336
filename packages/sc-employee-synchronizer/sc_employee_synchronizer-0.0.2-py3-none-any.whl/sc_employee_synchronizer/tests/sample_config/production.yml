@@ -1,0 +1,32 @@
+environment: production
+#数据库相关配置
+db:
+  host: "localhost"
+  port: 3306
+  user: "employee"
+  password: "employee@123"
+  database: "employee"
+
+import:
+  db:
+    enabled: true
+    root_table_name: "employee"
+  json:
+    filename: "data.json"
+  log:
+    filename: "sc-sys.log"
+    marker: "[sc_employee_synchronizer.sync.employee_sync]: result content: "
+
+# 用户同步相关配置
+synchronizer:
+  server: itmp.mis.bcs
+  port: 8089
+  import_all_users: true
+  token_url: oauth/oauth2/token
+  grant_type: client_credentials
+  get_yesterday_added_user_url: api/workflow/external/gitlab/getYestodayUser
+  get_all_partner_url: api/all/partner/employee/list
+  get_all_user_url: api/user/list
+  client_id: 6fuJL4OF87b7FszodyOtnE
+  client_secret: 6zBGTz2lB4dQVs7UXGqjUR
+  only_include_enabled: false
