@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: IMC_tool
+Version: 0.0.1
+Summary: library to analyse Imaging Mass Cytometry
+Author: Gregoire Menard
+Author-email: gregoire.menard.72@hotmail.fr
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+# Imaging Mass Cytometry Analysis
