@@ -1,0 +1,210 @@
+{
+  "total_tests": 20,
+  "successful_tests": 0,
+  "failed_tests": 20,
+  "total_duration": 79.21630787849426,
+  "tests_per_second": 0.25247326637183026,
+  "success_rate": 0.0,
+  "individual_test_metrics": [
+    {
+      "success": false,
+      "total_duration": 11.231949090957642,
+      "steps_timing": {
+        "environment_creation": 2.388847827911377,
+        "environment_ready": 8.508227109909058,
+        "environment_closure": 0.02328205108642578
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 5.837924242019653,
+      "steps_timing": {
+        "environment_creation": 2.7554728984832764,
+        "environment_ready": 2.7250800132751465,
+        "environment_closure": 0.024653196334838867
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 43.07164907455444,
+      "steps_timing": {
+        "environment_creation": 3.1176869869232178,
+        "environment_ready": 39.455081939697266,
+        "environment_closure": 0.02700495719909668
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 37.00130105018616,
+      "steps_timing": {
+        "environment_creation": 2.2783010005950928,
+        "environment_ready": 34.34746193885803,
+        "environment_closure": 0.024808883666992188
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 18.109378814697266,
+      "steps_timing": {
+        "environment_creation": 1.9579992294311523,
+        "environment_ready": 15.780956983566284,
+        "environment_closure": 0.024325847625732422
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 12.304203987121582,
+      "steps_timing": {
+        "environment_creation": 3.332759141921997,
+        "environment_ready": 8.621841192245483,
+        "environment_closure": 0.024910926818847656
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 27.71916913986206,
+      "steps_timing": {
+        "environment_creation": 1.639394998550415,
+        "environment_ready": 25.0108859539032,
+        "environment_closure": 0.7235410213470459
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 4.576414108276367,
+      "steps_timing": {
+        "environment_creation": 1.953399896621704,
+        "environment_ready": 1.5516040325164795,
+        "environment_closure": 0.10704994201660156
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 30.108586072921753,
+      "steps_timing": {
+        "environment_creation": 2.1929309368133545,
+        "environment_ready": 27.542191743850708,
+        "environment_closure": 0.025352001190185547
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 7.961599349975586,
+      "steps_timing": {
+        "environment_creation": 3.2448439598083496,
+        "environment_ready": 4.374392032623291,
+        "environment_closure": 0.02423405647277832
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 4.688523054122925,
+      "steps_timing": {
+        "environment_creation": 1.4919018745422363,
+        "environment_ready": 2.836979866027832,
+        "environment_closure": 0.025566816329956055
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 10.533122777938843,
+      "steps_timing": {
+        "environment_creation": 1.489867925643921,
+        "environment_ready": 8.71205186843872,
+        "environment_closure": 0.02547001838684082
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 34.840739727020264,
+      "steps_timing": {
+        "environment_creation": 1.7995939254760742,
+        "environment_ready": 32.18449091911316,
+        "environment_closure": 0.017245054244995117
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 33.97892999649048,
+      "steps_timing": {
+        "environment_creation": 1.211637020111084,
+        "environment_ready": 31.835816383361816,
+        "environment_closure": 0.04491305351257324
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 36.14207911491394,
+      "steps_timing": {
+        "environment_creation": 2.0056309700012207,
+        "environment_ready": 33.771848917007446,
+        "environment_closure": 0.024743080139160156
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 3.0587778091430664,
+      "steps_timing": {
+        "environment_creation": 0.7651329040527344,
+        "environment_ready": 1.241297960281372,
+        "environment_closure": 0.05254101753234863
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 25.668349742889404,
+      "steps_timing": {
+        "environment_creation": 2.7211718559265137,
+        "environment_ready": 22.600258111953735,
+        "environment_closure": 0.02864694595336914
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 6.5707738399505615,
+      "steps_timing": {
+        "environment_creation": 1.6081621646881104,
+        "environment_ready": 4.616701126098633,
+        "environment_closure": 0.027736902236938477
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 17.68354892730713,
+      "steps_timing": {
+        "environment_creation": 1.577589988708496,
+        "environment_ready": 15.718945980072021,
+        "environment_closure": 0.031710147857666016
+      },
+      "error": "'NoneType' object is not subscriptable"
+    },
+    {
+      "success": false,
+      "total_duration": 35.74913501739502,
+      "steps_timing": {
+        "environment_creation": 2.683255910873413,
+        "environment_ready": 32.183531045913696,
+        "environment_closure": 0.018684864044189453
+      },
+      "error": "'NoneType' object is not subscriptable"
+    }
+  ]
+}
