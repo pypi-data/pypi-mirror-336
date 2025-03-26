@@ -1,0 +1,3 @@
+[console_scripts]
+TaoxiqianrenQianmianFenfaTixiQuanChaijieFix1 = TaoxiqianrenQianmianFenfaTixiQuanChaijieFix1.__main__:main
+taoxiqianren-qianmian-fenfa-tixi-quan-chaijie-fix1 = TaoxiqianrenQianmianFenfaTixiQuanChaijieFix1.__main__:main
