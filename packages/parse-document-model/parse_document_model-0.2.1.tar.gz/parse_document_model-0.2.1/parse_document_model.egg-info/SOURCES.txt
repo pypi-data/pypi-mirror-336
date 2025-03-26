@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+parse_document_model/__init__.py
+parse_document_model/attributes.py
+parse_document_model/document.py
+parse_document_model/marks.py
+parse_document_model.egg-info/PKG-INFO
+parse_document_model.egg-info/SOURCES.txt
+parse_document_model.egg-info/dependency_links.txt
+parse_document_model.egg-info/requires.txt
+parse_document_model.egg-info/top_level.txt
+test/test_validation.py
