@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+HoyoDL/__init__.py
+HoyoDL/main.py
+HoyoDL.egg-info/PKG-INFO
+HoyoDL.egg-info/SOURCES.txt
+HoyoDL.egg-info/dependency_links.txt
+HoyoDL.egg-info/requires.txt
+HoyoDL.egg-info/top_level.txt
