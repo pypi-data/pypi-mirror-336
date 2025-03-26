@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "slrtk"
+version = "0.0.7"
+authors = [
+  { name="Ananay Vikram Gupta", email="ananay@gatech.edu" },
+  { name="Samantha Mau", email="smau3@gatech.edu" },
+]
+description = "Packaging for SLR tools"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "docker"
+] 
+license = "MIT"
+license-files = ["LICENCE*"]
+
+[project.scripts]
+slrtk = "slrtk.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/slrtk"]
