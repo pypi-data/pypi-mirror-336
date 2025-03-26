@@ -1,0 +1,2 @@
+[console_scripts]
+bing-search-mcp = bingsearch:server.main
