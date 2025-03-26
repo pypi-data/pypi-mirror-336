@@ -1,0 +1,4 @@
+import reforge.api.instanceHandler as instanceHandler
+
+instanceHandler.initInstanceHandler(__name__)
+instanceHandler.importAllFilesInDirectory(__file__, __name__)
