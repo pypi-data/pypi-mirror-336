@@ -1,0 +1,150 @@
+Metadata-Version: 2.4
+Name: pip-chronos
+Version: 0.1.3
+Summary: Chronos for pip: Automatically update your requirements.txt files with the latest package versions
+Author-email: Dozed Nutz <37lambada_joules@icloud.com>
+License: MIT
+Project-URL: Homepage, https://github.com/DeezNutzHimself/pip-chronos
+Project-URL: Issues, https://github.com/DeezNutzHimself/pip-chronos/issues
+Project-URL: Documentation, https://github.com/DeezNutzHimself/pip-chronos#readme
+Project-URL: Changelog, https://github.com/DeezNutzHimself/pip-chronos/blob/main/CHANGELOG.md
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: pre-commit>=3.0.0; extra == "dev"
+Requires-Dist: build>=0.10.0; extra == "dev"
+Requires-Dist: twine>=4.0.0; extra == "dev"
+Dynamic: license-file
+
+# pip-chronos
+
+**pip-chronos** is a command-line tool that automatically updates your `requirements.txt` files with the latest package versions from PyPI. Like the Greek god Chronos who governs time, this tool helps keep your dependencies up to date.
+
+## Features
+
+- **Simple to Use**: Run with a single command to update all requirements
+- **Parallel Processing**: Checks multiple packages concurrently for better performance
+- **Flexible**: Update a specific file or search directories for requirements files
+- **Version Constraint Awareness**: Handles all version specifiers (==, >=, <=, etc.)
+- **Dry Run Mode**: Preview changes without modifying files
+- **Smart Detection**: Preserves comments and formatting in requirements files
+
+## Installation
+
+Install from PyPI:
+
+```bash
+pip install pip-chronos
+```
+
+## Usage
+
+Update all requirements files in the current directory and subdirectories:
+
+```bash
+pip-chronos
+```
+
+Update a specific requirements file:
+
+```bash
+pip-chronos path/to/requirements.txt
+```
+
+Run in dry-run mode (show changes without modifying files):
+
+```bash
+pip-chronos --dry-run
+```
+
+Exclude packages with version ranges (>=, <=, etc.):
+
+```bash
+pip-chronos --no-update-ranges
+```
+
+Use a custom pattern to find requirements files:
+
+```bash
+pip-chronos --pattern="**/requirements*.txt"
+```
+
+### Options
+
+```
+positional arguments:
+  path                  Directory or specific requirements file path (default: current directory)
+
+options:
+  -h, --help            show this help message and exit
+  --pattern PATTERN     Glob pattern for finding requirements files (default: **/requirements.txt)
+  --sequential          Run updates sequentially (no parallel processing)
+  --no-update-ranges    Do not update packages with range operators (>=, <=, etc.)
+  --dry-run             Show what would be updated without making changes
+  --max-workers MAX_WORKERS
+                        Maximum number of worker threads (default: 10)
+```
+
+## Examples
+
+Update all requirements files in the project:
+
+```bash
+pip-chronos
+```
+
+Update only a specific service subdirectory:
+
+```bash
+pip-chronos services/api-service/
+```
+
+Preview updates without making changes:
+
+```bash
+pip-chronos --dry-run
+```
+
+Exclude packages with version ranges (>=, <=, etc.):
+
+```bash
+pip-chronos --no-update-ranges
+```
+
+Use a custom pattern to find requirements files:
+
+```bash
+pip-chronos --pattern="**/requirements*.txt"
+```
+
+## How It Works
+
+1. Finds all `requirements.txt` files in the specified directory (or uses a single file if provided)
+2. For each package with a version specification, it checks for the latest available version using `pip index versions`
+3. If a newer version is available, it updates the line in the requirements file
+4. By default, all packages with version specifiers are updated
+5. Preserves all comments and formatting in the requirements files
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. 
