@@ -1,0 +1,116 @@
+Metadata-Version: 2.4
+Name: ngxcfm
+Version: 0.2.0
+Summary: A command-line tool for managing Nginx configurations
+Author-email: Neboer <rubinposter@gmail.com>
+License-Expression: MIT
+Keywords: nginx,config,management,manager,cli,command-line,tool
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fabric
+Requires-Dist: nginxfmt
+Requires-Dist: colored
+Dynamic: license-file
+
+# ngxcfm
+
+## 简介
+
+ngxcfm 是一个用于处理 *ix 系统中 Nginx 配置文件的跨平台软件。它提供了一系列命令行工具，用于从服务器下载 Nginx 配置文件、上传本地配置文件到服务器、格式化配置文件、修复符号链接以及启用或禁用特定的 Nginx 配置文件。
+
+## 功能
+
+- **pull**: 从服务器下载 Nginx 配置文件到本地目录。
+- **push**: 将本地目录中的 Nginx 配置文件上传到服务器。
+- **format**: 格式化本地目录中的 Nginx 配置文件。
+- **relink**: 修复本地目录中的符号链接。
+- **enable**: 启用指定的 Nginx 配置文件。
+- **disable**: 禁用指定的 Nginx 配置文件。
+- **list**: 列出配置文件目录中的 Nginx 配置文件。
+
+## 用法
+
+```sh
+ngxcfm [动作] [选项] [源] [目标]
+```
+
+### 示例
+
+- 从服务器下载配置文件到本地目录：
+
+  ```sh
+  ngxcfm pull Server1 Server1NginxConfs
+  ```
+
+- 将本地目录中的配置文件上传到服务器：
+
+  ```sh
+  ngxcfm push Server1NginxConfs Server1
+  ```
+
+- 格式化本地目录中的配置文件：
+
+  ```sh
+  ngxcfm format Server1NginxConfs
+  ```
+
+- 修复本地目录中的符号链接：
+
+  ```sh
+  ngxcfm relink Server1NginxConfs
+  ```
+
+- 启用指定的配置文件：
+
+  ```sh
+  ngxcfm enable Server1NginxConfs/sites-available/xxx.conf
+  ```
+
+- 禁用指定的配置文件：
+
+  ```sh
+  ngxcfm disable Server1NginxConfs/sites-available/xxx.conf
+  ```
+
+## 安装
+
+1. 克隆项目到本地：
+
+   ```sh
+   git clone https://github.com/yourusername/ngxcfm.git
+   ```
+
+2. 使用pip进行本地安装：
+
+   ```sh
+   pip install .
+   ```
+
+3. 执行 `ngxcfm` 命令：
+
+   ```sh
+   ngxcfm
+   ```
+
+## 许可证
+
+本项目采用 MIT 许可证。详情请参阅 LICENSE 文件。
