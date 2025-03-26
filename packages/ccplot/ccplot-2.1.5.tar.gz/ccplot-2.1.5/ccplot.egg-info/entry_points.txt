@@ -1,0 +1,2 @@
+[console_scripts]
+ccplot = ccplot.bin.ccplot:main_wrapper
