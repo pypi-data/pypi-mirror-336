@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dtpybucket"
+version = "0.1.2"
+description = "A package to improved bucket and s3 compatible system library to have better development experience."
+authors = ["Reza Shirazi <reza@datgate.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~=3.11.9"
+dtpyutils = "~=0.2.0"
+boto3 = "~=1.37.19"
+botocore = "~=1.37.19"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
