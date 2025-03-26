@@ -1,0 +1,2 @@
+[console_scripts]
+digixt-pipeline-template = digixt_pipeline_template.__main__:main

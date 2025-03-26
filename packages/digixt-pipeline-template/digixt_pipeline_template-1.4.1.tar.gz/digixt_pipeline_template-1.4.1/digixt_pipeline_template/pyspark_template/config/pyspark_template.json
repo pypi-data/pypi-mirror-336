@@ -1,0 +1,69 @@
+{
+  "airflow-task-details": {
+    "pyspark-template": {
+      "spark_details": {
+        "spark_kubernetes_args": {
+          "pyspark_job_main_file_s3_path": "s3a://workflows/pyspark_template/scripts/pyspark_template.py",
+          "driver_cores": 1,
+          "driver_memory": "1g",
+          "executor_instances": 1,
+          "executor_cores": 1,
+          "executor_memory": "1g"
+        },
+        "spark_job_args": {
+          "project_dir_name":"pyspark_template",
+          "s3_schema_file_path": "s3a://workflows/pyspark_template/config/employee_data_schema.json",
+          "schema_file_object_key": "employee_data",
+          "output_warehouse_fq_table": "datawarehouse.pyspark_template.employee_data2",
+          "output_wh_table_load_strategy": "APPEND",
+          "output_table_snapshots_delete_period": 60
+        }
+      }
+    }
+    ,"pyspark-template-migration": { 
+      "spark_details": {
+        "spark_kubernetes_args": {
+          "pyspark_job_main_file_s3_path": "s3a://workflows/pyspark_template/scripts/pyspark_template_data_migration.py",
+          "driver_cores": 1,
+          "driver_memory": "1g",
+          "executor_instances": 1,
+          "executor_cores": 1,
+          "executor_memory": "1g",
+          "spark_dependencies_libraries":"/workflows/sys/libs/postgresql-42.5.3.jar"
+        },
+        "spark_job_args": {
+          "project_dir_name":"pyspark_template",
+          "output_warehouse_fq_table": "datawarehouse.pyspark_template.employee_data",
+          "output_wh_table_load_strategy": "APPEND",
+          "operation_type":"migration",
+          "db_details": {
+            "db_properties" : {
+              "url": "jdbc:postgresql://<hostname>/<db_name>",
+              "dbtype": "<db_type>",
+              "user": "<db_user>",
+              "password": "<db_password>"
+            },
+            "db_table":"<table_name>",
+            "partitioning_column": "<primary_key>",
+            "selected_columns": [],
+            "is_col_for_partition_null_supp": false,
+            "lower_bound":0,
+            "upper_bound":100000,
+            "records_per_batch":100000,
+            "num_partitions": 1,
+            "use_row_number_partitioning": false
+          }
+        }
+      }
+    }
+  },
+
+  "airflow-task-dependencies-details": {
+    "task-auto-dependencies":{"trigger_order": "parallel"}
+  },
+  "airflow-dag-details": {
+    "dag_id": "pyspark_template",
+    "dag_description": "Employee data ingestion project"
+  }
+
+}

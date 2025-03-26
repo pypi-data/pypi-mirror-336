@@ -1,0 +1,39 @@
+{
+  "employee_data": {
+    "origin_of_data_source": "Dummy generated data",
+    "schema": {
+      "full_name": {
+        "details": {
+          "target_name": "full_name",
+          "source_type": "string",
+          "target_type": "string"
+        },
+        "nested": null
+      },
+      "dob": {
+        "details": {
+          "target_name": "date_of_birth",
+          "source_type": "string",
+          "target_type": "date"
+        },
+        "nested": null
+      },
+      "position": {
+        "details": {
+          "target_name": "position",
+          "source_type": "string",
+          "target_type": "string"
+        },
+        "nested": null
+      },
+      "salary": {
+        "details": {
+          "target_name": "salary",
+          "source_type": "double",
+          "target_type": "double"
+        },
+        "nested": null
+      }
+    }
+  }
+}
