@@ -1,0 +1,4 @@
+
+# geoaimap module
+
+::: geoaimap.geoaimap

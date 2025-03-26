@@ -1,0 +1,7 @@
+numpy
+
+[all]
+geoaimap[extra]
+
+[extra]
+pandas
