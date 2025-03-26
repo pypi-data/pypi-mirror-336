@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+robotic_hand.egg-info/PKG-INFO
+robotic_hand.egg-info/SOURCES.txt
+robotic_hand.egg-info/dependency_links.txt
+robotic_hand.egg-info/requires.txt
+robotic_hand.egg-info/top_level.txt
