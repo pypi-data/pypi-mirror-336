@@ -1,0 +1,12 @@
+xmltodict
+pint
+fairmat-readers-xrd
+pynxtools>=0.10.1
+
+[dev]
+mypy
+ruff>=0.6.0
+pytest
+types-pyyaml
+pip-tools
+pre-commit
