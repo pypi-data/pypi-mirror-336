@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: CCTorch
+Version: 0.1.2
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+
+Cross-Correlation using Pytorch
