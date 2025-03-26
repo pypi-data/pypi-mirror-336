@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: gwerks
+Version: 25.3.18
+Author-email: Ron Glasmann <ron@glasmann.net>
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: tenacity
+Requires-Dist: pyyaml
+Requires-Dist: smart_open[s3]
+Dynamic: license-file
