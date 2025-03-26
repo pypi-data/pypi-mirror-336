@@ -1,0 +1,29 @@
+[project]
+name = "persona-toolkit"
+version = "0.1.1"
+description = "Toolkit for Persona, an agent AI system — provides modular, callable tools for dynamic function execution"
+authors = [
+    { name = "Bruno Fortunato", email = "bruno.fortunato@applica.guru" }
+]
+readme = "README.md"
+
+[tool.poetry]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+pydantic = "^2.10.6"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+typer = "^0.15.2"
+rich = "^13.9.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+persona-toolkit = "persona_toolkit.cli:app"
