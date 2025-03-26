@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: screenreclib
+Version: 0.1
+Home-page: https://github.com/SotiralKeepsGettingHacked/screenreclib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+
+# Screen Recorder
+
+This library allows you to record your screen and save it as a video, mainly made for small screen recordings and not something serious.
+
+# Installation
+
+You can install the package with pip:
+
+```bash
+pip screenreclib
