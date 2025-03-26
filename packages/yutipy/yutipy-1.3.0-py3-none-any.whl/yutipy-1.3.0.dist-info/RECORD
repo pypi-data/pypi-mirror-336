@@ -1,0 +1,16 @@
+yutipy/__init__.py,sha256=UIymi9iT8s1nGuqcQcFudZYNsJDR4RzXe6LUaN9V8l0,289
+yutipy/deezer.py,sha256=eLaDNBnpdFpvdxEQrgTZiLl-FBjSs1R0CKEgpgRi0Us,8666
+yutipy/exceptions.py,sha256=4L0Oe1PwFP34LoFTy-Fruipk7uB-JkaackRmkjlaZJU,1138
+yutipy/itunes.py,sha256=SmW6bCGKB9ADG2FxggGDmEOvqAIvuRi7aOkBSyHm2HQ,5841
+yutipy/kkbox.py,sha256=9sz8eb-pu-47DTP_4kgackX1ZLijnCnz7q_1M8BqLWo,12185
+yutipy/models.py,sha256=si_qgaApAYDfSyE8cl_Yg4IfWOtxk1I5JCT8bZsmV4U,1931
+yutipy/musicyt.py,sha256=kvRYuhlNVuvy-WahJq895T3JAzmGTTiKB89r_uTMTAI,7155
+yutipy/spotify.py,sha256=Oaktvdz7gLe2_PaktOmjlc8QpfhZWkmQnIZDmwoXlRE,13608
+yutipy/yutipy_music.py,sha256=YZ_5iIjHr_QA3YAm2usR7hUqJMevu2ZVSQ59Q82Axj0,4053
+yutipy/utils/__init__.py,sha256=7UFcFZ7fBtNXOTngjnRD3MeobT3x5UT2Gag94TXVgLk,169
+yutipy/utils/cheap_utils.py,sha256=Yl0ssVbyvrdVeSPF7PqpGJpwTYLVa4CMgLtr6uk67v0,3104
+yutipy-1.3.0.dist-info/licenses/LICENSE,sha256=_89JsS2QnBG8tAb5-VWbJDj_uJ002zPJAYBJJdh3DPY,1071
+yutipy-1.3.0.dist-info/METADATA,sha256=p76rSDWegRztp7pl8eZ8LQh5FQsYi3aIH2eun9raX-A,6489
+yutipy-1.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+yutipy-1.3.0.dist-info/top_level.txt,sha256=t2A5V2_mUcfnHkbCy6tAQlb3909jDYU5GQgXtA4756I,7
+yutipy-1.3.0.dist-info/RECORD,,
