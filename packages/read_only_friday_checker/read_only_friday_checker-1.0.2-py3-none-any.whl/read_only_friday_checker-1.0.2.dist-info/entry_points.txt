@@ -1,0 +1,2 @@
+[console_scripts]
+read-only-friday-checker = read_only_friday_checker.app:main
