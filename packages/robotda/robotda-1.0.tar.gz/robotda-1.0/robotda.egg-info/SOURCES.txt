@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+robotda/__init__.py
+robotda.egg-info/PKG-INFO
+robotda.egg-info/SOURCES.txt
+robotda.egg-info/dependency_links.txt
+robotda.egg-info/top_level.txt
