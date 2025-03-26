@@ -1,0 +1,5 @@
+setup.py
+trivyscan.egg-info/PKG-INFO
+trivyscan.egg-info/SOURCES.txt
+trivyscan.egg-info/dependency_links.txt
+trivyscan.egg-info/top_level.txt
