@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+bing_search_mcp.egg-info/PKG-INFO
+bing_search_mcp.egg-info/SOURCES.txt
+bing_search_mcp.egg-info/dependency_links.txt
+bing_search_mcp.egg-info/entry_points.txt
+bing_search_mcp.egg-info/requires.txt
+bing_search_mcp.egg-info/top_level.txt
+bingsearch/__init__.py
+bingsearch/__main__.py
+bingsearch/server.py
