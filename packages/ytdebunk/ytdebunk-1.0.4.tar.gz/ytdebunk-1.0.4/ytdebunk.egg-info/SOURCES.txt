@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ytdebunk/__init__.py
+ytdebunk/downloader.py
+ytdebunk/philosopher.py
+ytdebunk/refiner.py
+ytdebunk/settings.py
+ytdebunk/transcriber.py
+ytdebunk/ytdebunk.py
+ytdebunk.egg-info/PKG-INFO
+ytdebunk.egg-info/SOURCES.txt
+ytdebunk.egg-info/dependency_links.txt
+ytdebunk.egg-info/entry_points.txt
+ytdebunk.egg-info/requires.txt
+ytdebunk.egg-info/top_level.txt
