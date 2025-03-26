@@ -1,0 +1,8 @@
+sqlalchemy
+alembic
+typer
+rich
+platformdirs
+ttkbootstrap
+customtkinter
+tkcalendar
