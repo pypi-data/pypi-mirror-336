@@ -1,0 +1,11 @@
+pyorm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyorm/db_manager.py,sha256=sNFatwfA5kMdBk4JGEYRx78EN9KNeVoXZAAE7AivJWY,3172
+pyorm/entity.py,sha256=MajGJM7RzMnHh9rA_KkxMf-coqdVZKQ4Anq43Mns8nQ,7349
+pyorm/utils.py,sha256=lMdMxQ3Pw8_bnKWvBPq4bS3sPwK2B_ky8T_9D01k_YY,434
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_db_manager.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyORM_Lite-1.0.0.dist-info/LICENSE,sha256=8uQ1QntLB9CUy6SIkTLTvRlsOCe-HNRBBc0EOMc4BqE,1085
+PyORM_Lite-1.0.0.dist-info/METADATA,sha256=XXiRMqLH929l2TxUpfC6tzkYBENoiaQDufYIpVi5nBU,1503
+PyORM_Lite-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+PyORM_Lite-1.0.0.dist-info/top_level.txt,sha256=GUek4CmGZY7UdaKQ1JjBmLeInlwAlPK67NW9TI3O2Tg,12
+PyORM_Lite-1.0.0.dist-info/RECORD,,
