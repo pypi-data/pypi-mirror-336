@@ -1,0 +1,11 @@
+ucc/__init__.py,sha256=H52UUgsiHxtoyWHLFFLqk60X2BlQTdXPCB7Ph0wFTsU,227
+ucc/_version.py,sha256=dkJ2u8VfkvxiR1RlIffoWwnsIedNUtq1pdVPj30_zEw,69
+ucc/compile.py,sha256=9EGXEOFq7_qaDY1fYCzYum5DeVawhKc4YEOnx0xTezo,2277
+ucc/tests/test_compile.py,sha256=ZdBz1KjD3VVKGKYJ5r4mbxDxtt49yBF4LrtGjYSPvVQ,3949
+ucc/transpilers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ucc/transpilers/ucc_defaults.py,sha256=9Afb2KrvXTG-5OtdHmF21DkZQdBUiI9sMrUjGJJhO1s,4699
+ucc-0.4.4.dist-info/LICENSE,sha256=QnkeVYSMg5vUA4izZtFebBZ1QoMyB01rg19kJXHZhCM,33887
+ucc-0.4.4.dist-info/METADATA,sha256=UF7Oai5x8cbqVZG9KL2d0K2NhdYSTxaQn2dsqdQRJrE,6838
+ucc-0.4.4.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+ucc-0.4.4.dist-info/entry_points.txt,sha256=aoFYtC4CUtIanqhGi22861weJ-0E6bg53pvOUTTQcVk,41
+ucc-0.4.4.dist-info/RECORD,,
