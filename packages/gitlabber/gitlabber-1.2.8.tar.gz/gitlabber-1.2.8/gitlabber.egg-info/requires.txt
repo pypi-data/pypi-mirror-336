@@ -1,0 +1,13 @@
+docopt
+anytree
+globre
+pyyaml
+tqdm
+GitPython
+python-gitlab
+
+[test]
+coverage
+pytest
+pytest-cov
+pytest-integration
