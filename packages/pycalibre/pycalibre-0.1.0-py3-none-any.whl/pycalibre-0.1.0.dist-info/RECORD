@@ -1,0 +1,17 @@
+pycalibre/__init__.py,sha256=y5iZnMTUvu0Zj_VKgMmNNhraQhK6SHfBMJFkjl8geEI,83
+pycalibre/library.py,sha256=U0UgBUFA13loRDzcN3-nPlJH4WQBTHCl3iuPlsyumGE,77228
+pycalibre/models/__init__.py,sha256=ELFK8yljt5bFl5iDD2pzSqC1NrFRJ7FdeHPLerLXnhY,1913
+pycalibre/models/associations.py,sha256=fCehxNrEnkbH7rZLCM-3kBVQtRR9Gb3suMdUs-AJslo,2192
+pycalibre/models/base.py,sha256=5uMJhQmZ-IkWbUMc67GoHkuc90kDyDZoCI_ZRrbDamI,359
+pycalibre/models/book.py,sha256=3-ej1uT0IniWf1P_Q7zzSst0fw7YrZwQReLBBRdQL2c,8799
+pycalibre/models/comment.py,sha256=OtC1L-HEozFhOjiJBl3MoPtQXObLLK-V8bTXhdM-sEU,1136
+pycalibre/models/custom.py,sha256=tHmNCVhISe8F2uKFOZPExs7h0nriwG232H8qDlIciCI,4633
+pycalibre/models/entities.py,sha256=nXgVg9RG0F0DWFGdZvVSYVIAp1g8RQ34JeqmSpWDGqg,5013
+pycalibre/models/enums.py,sha256=JMWfcH9U0Ncf9xvz6bPhHQxuMLQ9O9uyu4K45kcXnAc,1189
+pycalibre/models/format.py,sha256=ZZMd8HESOGZLKHu1CiMkyizHB2IItTzPIfkhCwbz-Zw,1987
+pycalibre/models/identifier.py,sha256=vqXrNsjO6gswNVCztpwSEXS6_fvqCXNxRz-WxMLY8H8,1474
+pycalibre/models/mixins.py,sha256=MiP8JSWkr0QxNWzyOk1R3XX7wHUAzNBD8nxTNJa95yM,2199
+pycalibre-0.1.0.dist-info/LICENSE,sha256=iqomnOXj7omPDqviPw1U6_syibAVlBYv78E7bt0_ZxE,1058
+pycalibre-0.1.0.dist-info/METADATA,sha256=IVBHpbFlLVWocDN17r5ouC5NFlNkl4d5l88CTPvs-Kg,2860
+pycalibre-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pycalibre-0.1.0.dist-info/RECORD,,
