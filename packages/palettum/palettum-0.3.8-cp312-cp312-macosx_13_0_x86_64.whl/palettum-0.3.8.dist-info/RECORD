@@ -1,0 +1,19 @@
+palettum-0.3.8.dist-info/RECORD,,
+palettum-0.3.8.dist-info/WHEEL,sha256=u5mY_rLtUwRMONr-tOPTvAAY1UfkagZlBhYg6CVOqTg,137
+palettum-0.3.8.dist-info/entry_points.txt,sha256=HWUalUr5nAYCwCn6R4L9-5DjfnFFoIwfPS-6u5w3Gm0,47
+palettum-0.3.8.dist-info/top_level.txt,sha256=ZFGa2zTZRgKDo1c-Vk89UcFbwLo0Ifh_eBBUyneyZ7Y,9
+palettum-0.3.8.dist-info/METADATA,sha256=dUGJW8toHQacJmk5Vu1RqEMA1e1trIGRs9BIhGRkUKc,662
+palettum-0.3.8.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+palettum/__init__.py,sha256=mTXOaCAAkMUPZuH7xtrakCvGiklSXDxDKABBWtpTXzU,388
+palettum/cli.py,sha256=7CfrM6geNaENnDJwzS4WwjerKtrSaz5HBTlt4BJuvMQ,21375
+palettum/palettum.cpython-312-darwin.so,sha256=Twv2nx43NkTCoSWmXNGMWIvbotFGWki3mwHC52Mkeao,1725744
+palettum/.dylibs/libomp.dylib,sha256=7RMuhhSTCuCCi3TZ-eY7tAghE4_7R3wygod4S2fXrpQ,746320
+palettum/.dylibs/libmtpng.dylib,sha256=VIbubGjqxcqwi75P8ueyofQ6apOXK5lTMfTmnr6r7Tw,637712
+palettum/palettes/Catppuccin Mocha.json,sha256=Tx_IpciL5CK89f4CdAS0ryVpyeLFMkMQNqLBnBGWHSA,1689
+palettum/palettes/Dracula.json,sha256=5IxRabmjiwLkOEgWjHz6tC1_s0aU57Yg1IzSLIYWG_Q,844
+palettum/palettes/gruvbox.json,sha256=84BRqXRYm8_oMiORcI_XQu2K48QY9TQFrcKSFtC9iiQ,2307
+palettum/palettes/Catppuccin Frappe.json,sha256=MnpXCsatU7QeGXaQdc3Nm2u2E1sIlCFSbINDLA17AL0,1693
+palettum/palettes/Nord.json,sha256=xtCakBWpzDg9I5Csw55NJRnPDx_DQS8XsnLoNT0rfsY,1064
+palettum/palettes/Catppuccin Macchiato.json,sha256=FHWxvdAitJjiL4wyoaNtYMzpoXOrI9eQ3SbsFjv0Llw,1698
+palettum/palettes/r_place 2022.json,sha256=GUNJ3TNykYKVP_dNORF9oblNK6AXFjBqDVfsxYjUiaw,1538
+palettum/palettes/Catppuccin Latte.json,sha256=GXNL-LpYHSHAkakYVo_cFv_FYlBq9k0FJzi56v4i6iw,1688
