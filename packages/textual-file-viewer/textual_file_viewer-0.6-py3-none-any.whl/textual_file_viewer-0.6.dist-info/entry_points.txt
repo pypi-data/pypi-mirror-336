@@ -1,0 +1,2 @@
+[console_scripts]
+file-viewer = textual_file_viewer.file_viewer:app
