@@ -1,0 +1,13 @@
+spheremri/__init__.py,sha256=Zp7WvTWWUUyq3Hx_-eSwZrTZN9yjquxPQo7Zc924LKs,214
+spheremri/cli.py,sha256=Y3nHKIhZe9YZ1fpDiFe5pxrRqQKFKV36Apq9HWFmWgs,3878
+spheremri/dinov2s.pt,sha256=y5wWKImp2eUa99x_NieoLPmFFWa-pa2KRfvfDl_O81g,88298822
+spheremri/model_selector.py,sha256=YEi4x-bdCExGI81fTZf9Q6chh-lSBdT1O6jeU0nZ2uw,1528
+spheremri/rater.py,sha256=J37VsvUWNET3vCO71b5jFTTBFmnbsNT_7UDvBxN8nF8,7438
+spheremri/t1_anchor.pt,sha256=-_Az06rzQ_icL-3Tr6PM00NNDSOmz0BmB0fvRpsiuv8,2726
+spheremri/tse_anchor.pt,sha256=HekSBuDa3HiNhrjb8dt9CP_WnJYH8IpjOtdsymO7A8Q,2731
+spheremri-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spheremri-0.1.0.dist-info/METADATA,sha256=p_bikavOncV_7U6VXGtHsE3DM9vw5P7kyd6IkBOOIig,4280
+spheremri-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+spheremri-0.1.0.dist-info/entry_points.txt,sha256=qzGTZMAju6hc6PX69273VI4VRyJTSJ45Q2vPh6eCUR8,44
+spheremri-0.1.0.dist-info/top_level.txt,sha256=5nHLXtJddhIuZ9RJy0Rzahkw71I9ZDZg2HS3YfyUbiw,10
+spheremri-0.1.0.dist-info/RECORD,,

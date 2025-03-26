@@ -1,0 +1,2 @@
+[console_scripts]
+rate = spheremri.cli:main
