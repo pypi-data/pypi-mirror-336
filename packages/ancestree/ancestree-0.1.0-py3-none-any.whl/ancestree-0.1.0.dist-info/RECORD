@@ -1,0 +1,9 @@
+ancestree/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+ancestree/__main__.py,sha256=8yQogL7bA1fuSe6HFSFWlaLICTXEPGPnN5QVlK5JGvo,81
+ancestree/dataset.py,sha256=FRLSDE0WnjNPlb4qZGaK-q7z4fs73YatWawDfZ0nhAc,263
+ancestree/tools.py,sha256=cnSA1as6FLEj5g2iISnNA6FcTpgJXq_9tib386QmT4A,373
+tests/test_io.py,sha256=uppPYn9elH6-4ZJ5K8WFIdgNmHoN4zkJrbLPa_8_gA8,3525
+ancestree-0.1.0.dist-info/METADATA,sha256=n1wFHSmgOxpMoE9S98ayxMUK0A-SLL83tfmcOm7_lOk,1499
+ancestree-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ancestree-0.1.0.dist-info/top_level.txt,sha256=TMB_EAHPqo4xwuEdfzErOc5cFqasJjUDZR0zrGxmwgI,16
+ancestree-0.1.0.dist-info/RECORD,,
