@@ -1,0 +1,12 @@
+README.md
+setup.py
+AiShidaiLingshouyeDeZhinengBiangeFix1/README.md
+AiShidaiLingshouyeDeZhinengBiangeFix1/__init__.py
+AiShidaiLingshouyeDeZhinengBiangeFix1/__main__.py
+AiShidaiLingshouyeDeZhinengBiangeFix1/file.pdf
+AiShidaiLingshouyeDeZhinengBiangeFix1/index.html
+ai_shidai_lingshouye_de_zhineng_biange_fix1.egg-info/PKG-INFO
+ai_shidai_lingshouye_de_zhineng_biange_fix1.egg-info/SOURCES.txt
+ai_shidai_lingshouye_de_zhineng_biange_fix1.egg-info/dependency_links.txt
+ai_shidai_lingshouye_de_zhineng_biange_fix1.egg-info/entry_points.txt
+ai_shidai_lingshouye_de_zhineng_biange_fix1.egg-info/top_level.txt
