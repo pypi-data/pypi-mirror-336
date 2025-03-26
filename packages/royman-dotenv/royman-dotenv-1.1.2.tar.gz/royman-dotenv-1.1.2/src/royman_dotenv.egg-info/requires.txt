@@ -1,0 +1,5 @@
+cryptography>=44.0.2
+
+[cli]
+click>=5.0
+cryptography==44.0.2
