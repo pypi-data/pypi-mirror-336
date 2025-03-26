@@ -1,0 +1,19 @@
+[project]
+name = "djvulib"
+version = "0.1.2"
+
+[build-system]
+requires = ["setuptools", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+myutils = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.setuptools]
+py-modules = []
