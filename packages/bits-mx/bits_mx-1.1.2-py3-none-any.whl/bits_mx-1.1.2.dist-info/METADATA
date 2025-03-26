@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: bits-mx
+Version: 1.1.2
+Summary: BITS MX
+License: BSD-3-Clause
+Keywords: bits,mx
+Author: Dev Null
+Author-email: <devnull@broadinstitute.org>
+Requires-Python: >=3.9,<4.0.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: bits-ldap (>=1.2.9,<2.0.0)
+Requires-Dist: bits-mongo (>=1.0.4,<2.0.0)
+Project-URL: Homepage, https://github.com/broadinstitute/bits-mx.git
+Project-URL: Repository, https://github.com/broadinstitute/bits-mx.git
+Description-Content-Type: text/markdown
+
+# bits-mx
+BITS MX Package
+
