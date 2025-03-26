@@ -1,0 +1,666 @@
+# Business Rules Reasoning System
+
+## Introduction
+
+This is a Python implementation of my previous project [Business Rules Reasoning System](https://github.com/lwardzala/Business-Rules-Reasoning-System), enhanced with a reasoning orchestrator that leverages Large Language Models (LLMs) to enable a fully transparent and explainable logical reasoning system for business automation. 
+
+The system is built on the implicational form of Horn clauses, providing a robust logical reasoning framework. It supports seamless integration with various systems, enabling complex workflows and decision-making processes. The addition of LLMs allows for natural language interaction, making it easier to query, trace, and understand the reasoning process.
+
+Turning even small models, such as those with 3 billion parameters, into a fully logical reasoning system offers the advantage of efficiency and accessibility. Smaller models require significantly less computational power and memory, making them more cost-effective to deploy and run. This enables broader accessibility for businesses and developers, allowing them to integrate advanced reasoning capabilities into their systems without the need for expensive hardware or cloud resources. Additionally, smaller models can achieve faster inference times, which is critical for real-time decision-making in business automation.
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](License)
+
+### Problem and Solution
+
+The **Business Rules Reasoning System** addresses the challenge of integrating logical reasoning capabilities into Large Language Models (LLMs). While LLMs are powerful tools for natural language understanding and generation, they lack inherent logical reasoning capabilities and often struggle with tasks requiring strict adherence to predefined rules or knowledge bases. This system bridges that gap by combining the structured reasoning of rule-based systems with the flexibility of LLMs. It enables transparent and explainable decision-making processes, making it suitable for business automation and other domains requiring logical consistency.
+
+### Remaining Challenges
+
+One of the key challenges that remains is the potential for **hallucination** in the fact retrieval process. LLMs, when tasked with retrieving facts or generating responses, may produce outputs that are not grounded in the provided knowledge base or context. This can lead to inaccuracies in the reasoning process.
+
+### Mitigating the Risk
+
+Despite this challenge, the system significantly **offloads the risk of hallucination** by anchoring the reasoning process in a structured knowledge base and predefined rules. The LLM is primarily used for interfacing with the user and retrieving facts, while the logical reasoning and decision-making are handled by the rule-based engine. This separation of responsibilities ensures that the core reasoning remains reliable and explainable, even if the LLM introduces some noise in the fact retrieval process.
+
+## Features
+- **Interruptible Reasoning**: Reasoning can be stopped at any time and resumed after collecting more facts.
+- **Two Reasoning Methods**: Supports both Deduction and Hypothesis Testing for flexible reasoning workflows.
+- **Partial Fact Completion**: No need to fill all facts (variables) to finish reasoning. Reasoning concludes when entropy reaches zero or sufficient conclusions are derived.
+- **Fact Retrieval Automation**: The orchestrator automatically retrieves facts (variables) from documents or leads a chat conversation to gather missing information.
+- **Workflow Integration**: The orchestrator executes functions or triggers actions based on reasoning results, enabling seamless workflow automation.
+- **Explainable Reasoning**: Provides detailed logs and explanations for each reasoning step, ensuring transparency and traceability.
+- **Knowledge Base Flexibility**: Allows the creation of custom knowledge bases with rules, predicates, and variables tailored to specific domains.
+- **LLM Integration**: Leverages Large Language Models (LLMs) for natural language interaction and fact extraction, enhancing usability and accessibility.
+- **Error Handling**: Handles incomplete or conflicting data gracefully, ensuring robust reasoning processes.
+- **Customizable Options**: Offers configurable options for variable fetching modes, reasoning methods, and workflow behaviors.
+
+# Documentation
+## Table of content
+
+- [Business Rules Reasoning System](#business-rules-reasoning-system)
+  - [Introduction](#introduction)
+    - [Problem and Solution](#problem-and-solution)
+    - [Remaining Challenges](#remaining-challenges)
+    - [Mitigating the Risk](#mitigating-the-risk)
+    - [Features](#features)
+- [Documentation](#documentation)
+  - [Table of content](#table-of-content)
+  - [Reasoning library](#Reasoning-library)
+    - [Installation](#installation)
+    - [Predicates](#predicates)
+    - [Rules](#rules)
+    - [Knowledge Base](#knowledge-base)
+    - [Variables and supported values](#variables-and-supported-values)
+    - [Supported operators](#supported-operators)
+    - [Reasoning Process](#reasoning-process)
+    - [Reasoning Method](#reasoning-method)
+    - [Reasoning Service](#reasoning-service)
+  - [LLM Orchestrator](#llm-orchestrator)
+    - [Building business rules](#building-business-rules)
+    - [Displaying business rules](#displaying-business-rules)
+    - [Preparing a document example](#preparing-a-document-example)
+    - [Initialising the HuggingFace orchestrator](#initialising-the-huggingface-orchestrator)
+    - [Querying the orchestrator and tracing the inference log](#querying-the-orchestrator-and-tracing-the-inference-log)
+  - [Authors](#authors)
+  - [References](#references)
+
+## Reasoning library
+
+business_rules_reasoning library contains the engine of the Reasoning System and the LLM orchestrator.
+
+### Installation
+
+```bash
+pip install business_rules_reasoning
+```
+
+### Predicates
+
+Predicate is the smallest structure and represents an equation.
+They are built from: LeftTerm, Operator, and RightTerm.
+
+So representation of an equation:
+```
+age >= 18
+```
+
+Will be:
+```json
+{
+  "leftTerm": {
+    "id": "age",
+    "name": "Age",
+    "value": null
+  },
+  "operator": "GreaterOrEqual",
+  "rightTerm": {
+    "id": "age",
+    "name": "Age",
+    "value": 18
+  }
+}
+```
+
+With PredicateBuilder:
+```python
+from business_rules_reasoning.deductive import PredicateBuilder
+from business_rules_reasoning import OperatorType
+
+predicate = PredicateBuilder() \
+    .configure_predicate("age", OperatorType.GREATER_OR_EQUAL, 18) \
+    .set_left_term_value(23)  # optional for left term
+    .unwrap()
+```
+
+### Rules
+
+Rule is the middle structure in Knowledge Base. Each rule has a set of predicates and a conclusion.
+A rule is being evaluated during the reasoning process by evaluating its predicates. If any predicate's evaluation result is false, then the rule's evaluation result is false.
+
+So representation of rule:
+```
+age >= 18 -> passenger = 'adult'
+```
+
+Will be:
+```json
+{
+  "predicates": [
+    {
+      "leftTerm": {
+        "id": "age",
+        "name": "Age",
+        "value": null
+      },
+      "operator": "GreaterOrEqual",
+      "rightTerm": {
+        "id": "age",
+        "name": "Age",
+        "value": 18
+      }
+    }
+  ],
+  "conclusion": {
+    "id": "passenger",
+    "name": "Passenger type",
+    "value": "adult"
+  }
+}
+```
+
+With RuleBuilder:
+```python
+from business_rules_reasoning.deductive import RuleBuilder, VariableBuilder, PredicateBuilder
+from business_rules_reasoning import OperatorType
+
+rule = RuleBuilder() \
+    .set_conclusion(VariableBuilder()
+        .set_id("passenger")
+        .set_name("Passenger type")
+        .set_value("adult")  # required for conclusion
+        .unwrap()) \
+    .add_predicate(PredicateBuilder()
+        .configure_predicate("age", OperatorType.GREATER_OR_EQUAL, 18)
+        .set_left_term_value(23)  # optional for left term
+        .unwrap()) \
+    .unwrap()
+```
+
+### Knowledge Base
+
+Knowledge base is the biggest unit and it's a representation of a use case. Contains Id, Name, Description, and Rule Set.
+The base can be modified or involved at any time by an 'expert' to improve the business process.
+
+Sample of knowledge base rule set:
+```
+age >= 18 -> passenger = "adult"
+age < 18 & age >= 5 -> passenger = "child"
+age < 5 -> passenger = "toddler"
+```
+
+<details><summary>Json representation</summary>
+<p>
+
+```json
+[
+  {
+    "predicates": [
+      {
+        "leftTerm": {
+          "id": "age"
+        },
+        "operator": "GreaterOrEqual",
+        "rightTerm": {
+          "id": "age",
+          "value": 18
+        }
+      }
+    ],
+    "conclusion": {
+      "id": "passenger",
+      "value": "adult"
+    }
+  },
+  {
+    "predicates": [
+      {
+        "leftTerm": {
+          "id": "age"
+        },
+        "operator": "LessThan",
+        "rightTerm": {
+          "id": "age",
+          "value": 18
+        }
+      },
+      {
+        "leftTerm": {
+          "id": "age"
+        },
+        "operator": "GreaterOrEqual",
+        "rightTerm": {
+          "id": "age",
+          "value": 5
+        }
+      }
+    ],
+    "conclusion": {
+      "id": "passenger",
+      "value": "child"
+    }
+  },
+  {
+    "predicates": [
+      {
+        "leftTerm": {
+          "id": "age"
+        },
+        "operator": "LessThan",
+        "rightTerm": {
+          "id": "age",
+          "value": 5
+        }
+      }
+    ],
+    "conclusion": {
+      "id": "passenger",
+      "value": "toddler"
+    }
+  }
+]
+```
+
+</p>
+</details>
+
+With KnowledgeBaseBuilder:
+```python
+from business_rules_reasoning.deductive import KnowledgeBaseBuilder, RuleBuilder, VariableBuilder, PredicateBuilder
+from business_rules_reasoning import OperatorType
+
+knowledge_base = KnowledgeBaseBuilder() \
+    .set_id("knowledgeBase1") \
+    .set_name("Knowledge Base 1") \
+    .set_description("Passengers type principles") \
+    .add_rule(RuleBuilder()
+        .set_conclusion(VariableBuilder()
+            .set_id("passenger")
+            .set_value("adult")
+            .unwrap())
+        .add_predicate(PredicateBuilder()
+            .configure_predicate("age", OperatorType.GREATER_OR_EQUAL, 18)
+            .unwrap())
+        .unwrap()) \
+    .add_rule(RuleBuilder()
+        .set_conclusion(VariableBuilder()
+            .set_id("passenger")
+            .set_value("child")
+            .unwrap())
+        .add_predicate(PredicateBuilder()
+            .configure_predicate("age", OperatorType.LESS_THAN, 18)
+            .unwrap())
+        .add_predicate(PredicateBuilder()
+            .configure_predicate("age", OperatorType.GREATER_OR_EQUAL, 5)
+            .unwrap())
+        .unwrap()) \
+    .add_rule(RuleBuilder()
+        .set_conclusion(VariableBuilder()
+            .set_id("passenger")
+            .set_value("toddler")
+            .unwrap())
+        .add_predicate(PredicateBuilder()
+            .configure_predicate("age", OperatorType.LESS_THAN, 5)
+            .unwrap())
+        .unwrap()) \
+    .unwrap()
+```
+
+### Variables and supported values
+
+Variables are the smallest units. Both Terms and Conclusions are instances of a Variable type.
+
+Each Variable has a value. The value is not strongly typed and can be a:
+
+- string;
+- number;
+- boolean;
+- array.
+
+Value types are comparable with each other.
+
+### Supported operators
+
+<u>Available operators:</u>
+
+- Equal;
+- NotEqual;
+- GreaterThan;
+- LessThan;
+- GreaterOrEqual;
+- LessOrEqual;
+- IsIn (inversion of Contains);
+- NotIn (negation of IsIn);
+- Between (ex. "4 Between [3, 5]" is true);
+- NotBetween (negation of Between);
+- Subset (Cross type, ex. "4 subset [3, 4, 7]" is true, "[3, 4] subset [3, 4, 7]" is true);
+- NotSubset (inversion of Subset).
+
+### Reasoning Process
+
+Reasoning process is a state of reasoning. It contains all necessary data for reasoning like: Reasoning Method, Knowledge Base, State, Reasoned Items, Evaluation Message, and Hypothesis.
+
+<u>Possible State:</u>
+
+- INITIALIZED;
+- STARTED;
+- STOPPED;
+- FINISHED.
+
+<u>Possible Evaluation Message:</u>
+
+- NONE - initialized or started;
+- PASSED - at least one rule is true or hypothesis is confirmed;
+- FAILED - all rules are false or hypothesis is not confirmed;
+- ERROR - an error occurred while reasoning;
+- MISSING_VALUES - there are not enough facts to finish reasoning.
+
+When a rule or hypothesis is true, its conclusion is being added to the Reasoned Items parameter.
+
+### Reasoning Method
+
+<u>There are two reasoning modes:</u>
+
+- Deduction - tries to reason as many conclusions as possible;
+- HypothesisTesting - checks if any rule can confirm the hypothesis (any rule that is true and its conclusion is the same as the hypothesis).
+
+### Reasoning Service
+
+A service that contains all procedures for reasoning:
+
+- StartReasoning - starts reasoning with resetting all evaluation states and left term values;
+- ContinueReasoning - continues reasoning with the current state (without reset);
+- SetValues - tries to set appropriate variables to every rule;
+- ResetReasoning - resets reasoning evaluation but preserves left term values;
+- ClearReasoning - resets reasoning evaluation and variables;
+- GetAllMissingVariableIds - tries to get all missing variable ids in the reasoning process.
+
+## LLM Orchestrator
+
+The LLM Orchestrator is a flexible reasoning tool that integrates with large language models (LLMs) to facilitate automated decision-making and inference processes. It uses knowledge bases, rules, and reasoning methods (e.g., deduction, hypothesis testing) to derive conclusions or ask for additional information when required. The orchestrator supports step-by-step or batch variable fetching and can handle complex reasoning workflows with customizable options.
+
+Unlike famous LLM agents, the large language model is not responsible on the reasoning flow. It works only as fact retrieval agent and all the reasoning flow is controlled by the orchestrator and reasoning engine alghoritms.
+
+### Building business rules
+
+Business rules are constructed using the `KnowledgeBaseBuilder`, `RuleBuilder`, `PredicateBuilder`, and `VariableBuilder` classes. These builders allow you to define variables, predicates, and rules that form the foundation of your knowledge base. For example, you can create rules to evaluate conditions and derive conclusions based on input data.
+
+The orchestrator is able to retrieve more than one knowledge base and evaluate which one should be used based on the provided information.
+For the example purpose lets wrap the knowledge base in a retriever function
+
+```python
+from typing import List, Callable
+from business_rules_reasoning import serialize_knowledge_base
+from business_rules_reasoning.base import ReasoningType, OperatorType
+from business_rules_reasoning.deductive import KnowledgeBaseBuilder, RuleBuilder, PredicateBuilder, VariableBuilder
+
+def knowledge_base_retriever():
+    kb_builder = KnowledgeBaseBuilder().set_id("kb1").set_name("Leasing Document Processing KB").set_description("Knowledge base for processing leasing documents")
+
+    unpaid_loans = VariableBuilder() \
+        .set_id("unpaid_loans") \
+        .set_name("Indicates if there are any open un-paid loans: 'yes' or 'no'") \
+        .unwrap()
+    fraud_flag = VariableBuilder() \
+        .set_id("fraud_database") \
+        .set_name("Indicates if the fraud database has any records: 'yes' or 'no'") \
+        .unwrap()
+    monthly_net_salary = VariableBuilder() \
+        .set_id("monthly_net_salary") \
+        .set_name("Monthly Net Salary") \
+        .unwrap()
+    employment_type = VariableBuilder() \
+        .set_id("employment_type") \
+        .set_name("Employment Type option from: [freelancer, company emplyoee, unemployed]") \
+        .unwrap()
+    thirty_percent_ruling = VariableBuilder() \
+        .set_id("thirty_percent_ruling") \
+        .set_name("30% Ruling - 'yes' if applicable othwerwise 'no'") \
+        .unwrap()
+    previous_loans = VariableBuilder() \
+        .set_id("previous_loans") \
+        .set_name("Indicates if there were any historical paid loans") \
+        .unwrap()
+    ongoing_loans = VariableBuilder() \
+        .set_id("ongoing_loans") \
+        .set_name("Indicates whether there is any open loans") \
+        .unwrap()
+
+    rule1 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("loan_accepted").set_name("Loan Accepted").set_value(False).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(unpaid_loans, OperatorType.EQUAL, True).unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule1)
+
+    rule2 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("loan_accepted").set_name("Loan Accepted").set_value(False).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(fraud_flag, OperatorType.EQUAL, True).unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule2)
+
+    rule3 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("loan_accepted").set_name("Loan Accepted").set_value(False).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(employment_type, OperatorType.EQUAL, 'unemployed').unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule3)
+
+    rule4 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("loan_accepted").set_name("Loan Accepted").set_value(False).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(monthly_net_salary, OperatorType.LESS_THAN, 2000).unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule4)
+
+    rule5 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("loan_accepted").set_name("Loan Accepted").set_value(True).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(employment_type, OperatorType.NOT_EQUAL, "unemployed").unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(monthly_net_salary, OperatorType.GREATER_OR_EQUAL, 2000).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(fraud_flag, OperatorType.EQUAL, False).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(unpaid_loans, OperatorType.EQUAL, False).unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule5)
+
+    rule6 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("forward_to_bank_verification").set_name("Forward to additional bank verification").set_value(True).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(employment_type, OperatorType.EQUAL, "freelancer").unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule6)
+
+    rule7 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("forward_to_bank_verification").set_name("Forward to additional bank verification").set_value(True).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(thirty_percent_ruling, OperatorType.EQUAL, True).unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule7)
+
+    rule8 = RuleBuilder() \
+        .set_conclusion(VariableBuilder().set_id("forward_to_bank_verification").set_name("Forward to additional bank verification").set_value(True).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(previous_loans, OperatorType.EQUAL, False).unwrap()) \
+        .add_predicate(PredicateBuilder().configure_predicate_with_variable(ongoing_loans, OperatorType.EQUAL, False).unwrap()) \
+        .unwrap()
+    
+    kb_builder.add_rule(rule8)
+
+    knowledge_base = kb_builder.unwrap()
+    return [knowledge_base]
+```
+
+### Displaying business rules
+
+Once the knowledge base is built, you can display the rules and their structure using the `display()` method of the `KnowledgeBase` class. This provides a human-readable representation of the rules, including their predicates and conclusions, which is useful for debugging and validation.
+
+```python
+kb = knowledge_base_retriever()[0]
+print(kb.display())
+```
+
+Result:
+```
+(unpaid_loans = True) → loan_accepted = False
+(fraud_database = True) → loan_accepted = False
+(employment_type = unemployed) → loan_accepted = False
+(monthly_net_salary < 2000) → loan_accepted = False
+(employment_type != unemployed ∧ monthly_net_salary >= 2000 ∧ fraud_database = False ∧ unpaid_loans = False) → loan_accepted = True
+(employment_type = freelancer) → forward_to_bank_verification = True
+(thirty_percent_ruling = True) → forward_to_bank_verification = True
+(previous_loans = False ∧ ongoing_loans = False) → forward_to_bank_verification = True
+```
+
+### Preparing a document example
+
+To demonstrate the reasoning process, you can prepare a document example by defining variables and their values. These variables are then used as input to the orchestrator or reasoning engine to evaluate the rules and derive conclusions.
+
+```python
+case1_success_with_bank_verification = """
+Bank Screening Document
+
+Customer Information:
+Name: John Doe
+Customer ID: 123456789
+
+Loan History (BKR Check):
+Loans:
+- Personal Loan (Paid, closed)
+- Private car leasing (Paid, closed)
+Current Loan Status: No active loans
+
+Fraud Database Check:
+Status: No record found in internal fraud databases
+
+Financial Information:
+Monthly Net Salary: 3,000 EUR
+
+Employment Type: Freelancer
+
+30% Ruling Check:
+No
+
+Check the customer document for loan acceptance and check if is needed to forward to bank verification team
+"""
+```
+
+### Initialising the HuggingFace orchestrator
+
+The HuggingFace orchestrator is initialized by providing a knowledge base retriever, inference state retriever, and an LLM pipeline (e.g., HuggingFace's text-generation model). The orchestrator integrates the reasoning engine with the LLM to handle complex queries and reasoning workflows.
+
+First lets download a model from HuggingFace. Let if be the Llama 3.2 3B Instruct. There is a instruction fine tune version needed to proceed.
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_name = "meta-llama/Llama-3.2-3B-Instruct"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
+```
+
+Lets set the model kwargs so to a level the model is more deterministic.
+
+```python
+model_kwargs={
+    "max_new_tokens": 100,
+    "temperature": 0.2,
+    "top_k": 1,
+    "top_p": 0.4
+}
+```
+
+The orchestrator needs knowledge base retriever and inference state retriever in case of loading existing and stopped reasoning processes.
+Also the donloaded model and tokenizer needs to be provided via HuggingFacePipeline to be compatible with the orchestrator.
+
+```python
+from business_rules_reasoning.orchestrator.llm import LLMOrchestrator, HuggingFacePipeline
+
+orchestrator = LLMOrchestrator(
+    model_name=model_name,
+    knowledge_base_retriever=knowledge_base_retriever,
+    inference_state_retriever=inference_state_retriever,
+    llm = HuggingFacePipeline(model_name=model_name, tokenizer=tokenizer, model=model, **model_kwargs)
+)
+```
+
+### Querying the orchestrator and tracing the inference log
+
+You can query the orchestrator by providing a natural language query. The orchestrator processes the query, evaluates the rules, and returns the results. Additionally, you can trace the inference log to understand the reasoning steps, including the variables fetched, rules evaluated, and conclusions derived.
+
+Lets start deduction by executing the document and question before:
+
+```python
+response = orchestrator.query(case1_success_with_bank_verification)
+
+print("Response:\n", response)
+```
+
+Result:
+```
+Response:
+ The loan has been accepted and is moving forward to bank verification.
+```
+
+The answer seems to be correct as it is the expected conclusion but it is possible to display all resaoning process state to see what heppened during the inference.
+
+```python
+print(orchestrator.reasoning_process.display_state())
+```
+
+Result:
+```
+(unpaid_loans = True (Provided: False, Status: Evaluated, Result: False)) → loan_accepted = False
+Rule Status: Evaluated, Rule Result: False
+
+(fraud_database = True (Provided: False, Status: Evaluated, Result: False)) → loan_accepted = False
+Rule Status: Evaluated, Rule Result: False
+
+(employment_type = unemployed (Provided: freelancer, Status: Evaluated, Result: False)) → loan_accepted = False
+Rule Status: Evaluated, Rule Result: False
+
+(monthly_net_salary < 2000 (Provided: 3000.0, Status: Evaluated, Result: False)) → loan_accepted = False
+Rule Status: Evaluated, Rule Result: False
+
+(employment_type != unemployed (Provided: freelancer, Status: Evaluated, Result: True) ∧ monthly_net_salary >= 2000 (Provided: 3000.0, Status: Evaluated, Result: True) ∧ fraud_database = False (Provided: False, Status: Evaluated, Result: True) ∧ unpaid_loans = False (Provided: False, Status: Evaluated, Result: True)) → loan_accepted = True
+Rule Status: Evaluated, Rule Result: True
+
+(employment_type = freelancer (Provided: freelancer, Status: Evaluated, Result: True)) → forward_to_bank_verification = True
+Rule Status: Evaluated, Rule Result: True
+
+(thirty_percent_ruling = True (Provided: False, Status: Evaluated, Result: False)) → forward_to_bank_verification = True
+Rule Status: Evaluated, Rule Result: False
+
+(previous_loans = False (Provided: True, Status: Evaluated, Result: False) ∧ ongoing_loans = False (Provided: False, Status: Not Evaluated, Result: False)) → forward_to_bank_verification = True
+Rule Status: Evaluated, Rule Result: False
+
+State: FINISHED
+Evaluation Message: PASSED
+Reasoned Items: loan_accepted = True, forward_to_bank_verification = True
+
+Reasoning Method: DEDUCTION
+Knowledge Base Type: CRISP
+```
+
+It's visble now the rules and the values provided together with information which rule was evaluated and what was the evaluation result. All predicates with result 'True' should imply the conclusion is valid.
+
+And the inference log to track the logic:
+
+```python
+print('\n'.join(orchestrator.inference_logger.get_log()))
+```
+
+Response:
+```
+[Orchestrator]: Retrieved knwledge bases: kb1
+[Orchestrator]: Status set to: OrchestratorStatus.INITIALIZED
+[Orchestrator]: Prompting for inference instructions...
+[Orchestrator]: Retrieved JSON from prompt: {"knowledge_base_id": "kb1", "reasoning_method": "deduction"}
+[Orchestrator]: Reasoning process was set with method: DEDUCTION and knowledge base: kb1
+[Orchestrator]: Changing status from OrchestratorStatus.INITIALIZED to OrchestratorStatus.STARTED.
+[Engine]: Starting reasoning process from status: ReasoningState.INITIALIZED
+[Engine]: Reasoning process was started. Resulting status: ReasoningState.STOPPED
+[Orchestrator]: Changing status from OrchestratorStatus.STARTED to OrchestratorStatus.ENGINE_WAITING_FOR_VARIABLES.
+[Engine]: Status: ReasoningState.STOPPED Retrieving missing variables.
+[Orchestrator]: Prompting for variables...
+[Orchestrator]: Retrieved JSON from prompt: {"unpaid_loans": "no", "fraud_database": "no", "employment_type": "freelancer", "monthly_net_salary": 3000, "thirty_percent_ruling": "no", "previous_loans": "yes", "ongoing_loans": "no"}
+[Orchestrator]: Parsed variables from prompt: {"unpaid_loans": false, "fraud_database": false, "employment_type": "freelancer", "monthly_net_salary": 3000.0, "thirty_percent_ruling": false, "previous_loans": true, "ongoing_loans": false}
+[Engine]: Providing variables to engine: unpaid_loans, fraud_database, employment_type, monthly_net_salary, thirty_percent_ruling, previous_loans, ongoing_loans.
+[Engine]: Reasoning continued. Resulting status: ReasoningState.FINISHED.
+[Orchestrator]: Changing status from OrchestratorStatus.ENGINE_WAITING_FOR_VARIABLES to OrchestratorStatus.INFERENCE_FINISHED.
+[Orchestrator]: Prompting for answer generation...
+```
+
+## Authors
+- Lukasz Wardzala - [github](https://github.com/lwardzala)
+
+## References
+- [Horn clause wiki](https://en.wikipedia.org/wiki/Horn_clause)
