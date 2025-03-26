@@ -1,0 +1,2 @@
+import sys; exec('try:\n    import dict_unpacking_at_home\nexcept ImportError:\n    pass\nelse:\n    dict_unpacking_at_home.register()\n')
+
