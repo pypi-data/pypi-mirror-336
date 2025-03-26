@@ -1,0 +1,16 @@
+fraudcrawler/__init__.py,sha256=XciHnf3wEd-lvDbTc4aEsjAlljLDfiEyduknmhEBoPs,203
+fraudcrawler/collect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fraudcrawler/collect/enrich.py,sha256=tQRjty-Enclp6scZ3Mg-j2lvN1cWPSkIRyHGjQStdEs,10546
+fraudcrawler/collect/serp.py,sha256=PcWv0wztoRH61tOfGMXobW1mDASenEV0z_5kwictQNw,4739
+fraudcrawler/collect/zyte.py,sha256=gyS23F-y077LWL7Pjr3DC4Qq3SOZ8mouL3oznFc1vNY,3885
+fraudcrawler/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fraudcrawler/common/base.py,sha256=AiUU-4kO-bE7chHNZ0xeGKkecHaIQMkN-TJX3ulaH7A,2444
+fraudcrawler/common/client.py,sha256=F0KTvg2mZnXiH21y1S--3s1u4SaIwO2UOGYFtfmZfB8,3083
+fraudcrawler/common/launch_demo_app.py,sha256=G4OPjDp7pX8N3DPXoSbm3nBgAI0P7BcsDbIJvgZmV2I,16373
+fraudcrawler/common/launch_demo_pipeline.py,sha256=-jlMrEXHGVigd94ho-wbDvcMyl_TsLXa6fs0YUsrQZs,690
+fraudcrawler/common/settings.py,sha256=ZSAWygHvh0rDKpAE-C6bgJ7u0QMWITjJf9Vq-VBFHlY,445
+fraudcrawler/process/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vianu_fraudcrawler-0.1.2.dist-info/LICENSE,sha256=0z8ntSC-yQ93CRag_Pc-f4PHWFZq9BIF9irjw64F0cw,1062
+vianu_fraudcrawler-0.1.2.dist-info/METADATA,sha256=jYqdZXsYAJ6oUekzThkCjyuyBTbNIfyORSQWwsKCFig,919
+vianu_fraudcrawler-0.1.2.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+vianu_fraudcrawler-0.1.2.dist-info/RECORD,,
