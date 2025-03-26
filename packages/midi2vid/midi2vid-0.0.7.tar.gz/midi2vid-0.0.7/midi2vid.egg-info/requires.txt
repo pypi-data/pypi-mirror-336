@@ -1,0 +1,9 @@
+mido==1.3.2
+pygame==2.6.1
+gdown==5.2.0
+midiutils-python
+midi2hands==0.0.2
+
+[dev]
+ruff
+pytest

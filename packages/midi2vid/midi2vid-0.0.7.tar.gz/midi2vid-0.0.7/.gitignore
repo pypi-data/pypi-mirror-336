@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.sf2
+midi_player.egg-info/
+pyrightconfig.json
+resources/
+venv/
+.venv
+workdir/
+test/generated
+*.mp4
+*.egg-info
+dist
+notebooks
+he_is_a_pirate.mid

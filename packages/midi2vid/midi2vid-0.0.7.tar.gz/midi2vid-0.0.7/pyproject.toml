@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["midi2vid"]
+
+[tool.setuptools.package-data]
+mypkg = ["*.json"]
+
+[project]
+name = "midi2vid"
+dynamic = ["version"]
+description = "Simple and fast library to convert midi files to video"
+readme = "README.md"
+authors = [{ name = "Oscar Andersson", email = "oscar.966484@gmail.com" }]
+license = {file = "LICENSE"}
+dependencies = [
+    "mido==1.3.2",
+    "pygame==2.6.1",
+    "gdown==5.2.0",
+    "midiutils-python",
+    "midi2hands==0.0.2",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest"]
+
+[tool.setuptools_scm]
+
+[project.urls]
+"Github" = "https://github.com/oscaraandersson/midi2vid"
+
+# run the project with:
+# midi2vid --source_path=file.midi --output_path=out.mp4 --config default.json
+[project.scripts]
+midi2vid = "midi2vid.main:commandline_main"
+
+[tool.ruff]
+select = [
+    "E", # errors
+    "F", # pyflakes
+    "B", # flake8-bugbear
+    "I", # imports
+    "N", # names
+    # "D", # docstrings
+]
+line-length = 150
+indent-width = 2
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
