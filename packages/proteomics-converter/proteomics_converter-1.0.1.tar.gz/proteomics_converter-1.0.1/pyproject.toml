@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "proteomics-converter"
+version = "1.0.1"
+description = ""
+authors = ["the <the@illumina.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+somadata = "^1.0.0"
+pyyaml = "^6.0.2"
+
+[[tool.poetry.source]]
+name = "ilmn"
+url = "https://ussd.artifactory.illumina.com/api/pypi/pypi-bioinfo/simple"
+priority = "supplemental"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
