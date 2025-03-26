@@ -1,0 +1,2 @@
+[console_scripts]
+pymodoro = pymodoro-tui.src.pymodoro.__main__:run
