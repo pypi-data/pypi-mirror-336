@@ -1,0 +1,17 @@
+[project]
+name = "google-scholar-mcp-server"
+version = "0.1.2"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=3.4.3",
+    "bs4>=0.0.2",
+    "mcp[cli]>=1.5.0",
+    "requests>=2.32.3",
+    "scholarly>=1.7.11",
+]
+
+[project.scripts]
+google-scholar-mcp-server = "scholar.google_scholar_server:main"
+

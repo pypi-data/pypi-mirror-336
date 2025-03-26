@@ -1,0 +1,5 @@
+asyncio>=3.4.3
+bs4>=0.0.2
+mcp[cli]>=1.5.0
+requests>=2.32.3
+scholarly>=1.7.11
