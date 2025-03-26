@@ -1,0 +1,5 @@
+archive
+examples
+exp
+telemetrix_rpi_pico
+venv
