@@ -1,0 +1,3 @@
+[console_scripts]
+SupetDazaoGongshengXingGongyeHulianwangPingtaiShengtaiBaipishuFix1 = SupetDazaoGongshengXingGongyeHulianwangPingtaiShengtaiBaipishuFix1.__main__:main
+supet-dazao-gongsheng-xing-gongye-hulianwang-pingtai-shengtai-baipishu-fix1 = SupetDazaoGongshengXingGongyeHulianwangPingtaiShengtaiBaipishuFix1.__main__:main
