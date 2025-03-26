@@ -1,0 +1,3 @@
+[console_scripts]
+ShumeiPaiJisuanjiShijueBianchengChuyiFix1 = ShumeiPaiJisuanjiShijueBianchengChuyiFix1.__main__:main
+shumei-pai-jisuanji-shijue-biancheng-chuyi-fix1 = ShumeiPaiJisuanjiShijueBianchengChuyiFix1.__main__:main
