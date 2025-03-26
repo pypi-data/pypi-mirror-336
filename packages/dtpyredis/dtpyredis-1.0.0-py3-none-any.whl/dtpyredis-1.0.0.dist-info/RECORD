@@ -1,0 +1,8 @@
+dtpyredis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtpyredis/caching.py,sha256=uFeB_cvZwq70HSENrlOyrLFskctvIZqdUPeuGBpNsJw,7445
+dtpyredis/config.py,sha256=Wg1_6grdEaylC3YOOGp5ZHLbknpgpImhDFDHv9G5qdU,888
+dtpyredis/connection.py,sha256=2WBJS4nvF2wfC7g28N7LbFcfD3tCPDRtFXB81LXBEuE,2123
+dtpyredis/health.py,sha256=xJhwcSCUjvJChyZhiRhRYEptm2hfDb0g3dsS-re2a2s,232
+dtpyredis-1.0.0.dist-info/METADATA,sha256=yboWYpug4Hj_3mNJHfBpwAq7w4U72ax_XvnfiyB7eo4,1868
+dtpyredis-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dtpyredis-1.0.0.dist-info/RECORD,,
