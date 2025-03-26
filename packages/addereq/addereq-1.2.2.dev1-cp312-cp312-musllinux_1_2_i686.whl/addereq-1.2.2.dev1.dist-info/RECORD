@@ -1,0 +1,15 @@
+addereq-1.2.2.dev1.dist-info/WHEEL,sha256=5HJ0Wm9oMi1zWScXQmR-BfB7eWTRXnCFjf4lAKUY-zw,110
+addereq-1.2.2.dev1.dist-info/RECORD,,
+addereq-1.2.2.dev1.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.2.2.dev1.dist-info/METADATA,sha256=Tx_sD4lcNa6EmI8-8IWkbPVV4963tGnWiSM0gvEfaXg,3874
+addereq-1.2.2.dev1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+addereq/logger_config.cp310-win_amd64.pyd,sha256=BaPhwpicPX0Eo-Y6AYN91I4Am90X-LoC4LPJsaWj1BU,28160
+addereq/logger_config.cpython-312-i386-linux-musl.so,sha256=6oflAycCCVPeUFFHcSMM9_wC00tCHYkxm9QnHtVnKww,94780
+addereq/cleaning.cpython-312-i386-linux-musl.so,sha256=-VzXprkBmCxOJ0IERpqSdmGm5UENPG4_syD91KGIX9I,296096
+addereq/fetching.cp310-win_amd64.pyd,sha256=Fp01J9sRN1ysMm0ESyGtRv5N0RD-Kksc4ZdXLOoSZIY,184320
+addereq/fetching.cpython-312-i386-linux-musl.so,sha256=1aAvqnulfuLTNzZcnLrTI4SRDf_ZHLScaco3v8RdpuY,1408440
+addereq/plotting.cpython-312-i386-linux-musl.so,sha256=AEwmc-Ysa8ejjzDrIGbyYF8gIAnHFXkm3mbFxkUPKvM,2058764
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/plotting.cp310-win_amd64.pyd,sha256=DkV545XD3F17oId8q9FQkZPMCNU5Way4xeFbDAZZRSc,236032
+addereq/EQT.cpython-312-i386-linux-musl.so,sha256=CQ_DSOeb7VQ4AuOpzd6wx_w74Yyu2f74JK2SVB-sbIQ,560960
+addereq/cleaning.cp310-win_amd64.pyd,sha256=uelPMmy6dhLcU-U-Jq7qoI1uzds-nOnp-v5XM1fPqdo,47104
