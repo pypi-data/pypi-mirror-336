@@ -1,0 +1,3 @@
+[console_scripts]
+ShellJiaobenSuchaShouceFix1 = ShellJiaobenSuchaShouceFix1.__main__:main
+shell-jiaoben-sucha-shouce-fix1 = ShellJiaobenSuchaShouceFix1.__main__:main
