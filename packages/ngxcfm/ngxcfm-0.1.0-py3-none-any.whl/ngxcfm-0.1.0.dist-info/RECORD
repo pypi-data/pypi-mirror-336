@@ -1,0 +1,16 @@
+ngxcfm/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+ngxcfm/__main__.py,sha256=LBhB4QywT1GTIfmOHHYYgu2Hz6YqcM4x0SRhcvcaKl8,48
+ngxcfm/list_conf.py,sha256=or7v_Vewx6KKxn9vf2mpEqlsiAx2lKMZyOEfK53FsIE,2032
+ngxcfm/log.py,sha256=74b2g51hC7IAbXnK0UFvdvYwh1vAVUpN_Uyt6OPkVxc,1266
+ngxcfm/main.py,sha256=zDTLkiDnuS965YgyTW3hI4dKgfSIWpRXrx4AIhXdMX8,2059
+ngxcfm/ngxfmt.py,sha256=3ABtX7z9K9Ud_1OyrARbbJI5ztd9hHtHKKcsGRMt4Zs,5473
+ngxcfm/os_symlink.py,sha256=yjmQ2XNbCcLyIpv9a_4f8O5olQqKhFTmFx0iHWgImIU,2535
+ngxcfm/os_tar.py,sha256=t2Nb4-Azxzg41kTNtwZw7Iq5V1BW3kg_KazaIOwqiYg,2262
+ngxcfm/switch_conf.py,sha256=5YXIGYxq2wizJiWwgETL9K4hUx55MUOxMO0nI0PavH8,3315
+ngxcfm/transfer_nginx_files.py,sha256=4JmY8-G5VEZgHNLm2EgCNeFlwFVaPvulMRLRW5uiB_Y,2134
+ngxcfm-0.1.0.dist-info/licenses/LICENSE,sha256=AGMdxS-S6Fhtv6zaj839YFzDey6fuJl-MIEcFrDjVbw,1059
+ngxcfm-0.1.0.dist-info/METADATA,sha256=7qtHYNY-_v57KlSNVbUy6vsCTWKqqNqwBC-pY6xrZOc,3176
+ngxcfm-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ngxcfm-0.1.0.dist-info/entry_points.txt,sha256=BeAWEYhAgp9lFXUZYmGn7ywL01obCiGXsuPL7Z_HWcs,51
+ngxcfm-0.1.0.dist-info/top_level.txt,sha256=SE6Fijpfkp82Q96D9VWnkruG1yPQnuVQQ3ps2sslse8,7
+ngxcfm-0.1.0.dist-info/RECORD,,
