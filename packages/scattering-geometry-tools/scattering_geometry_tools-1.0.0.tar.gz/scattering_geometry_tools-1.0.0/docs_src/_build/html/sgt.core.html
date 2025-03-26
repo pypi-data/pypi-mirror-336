@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>sgt.core module &#8212; sgt 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="sgt.pilatus module" href="sgt.pilatus.html" />
+    <link rel="prev" title="sgt package" href="sgt.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="sgt.pilatus.html" title="sgt.pilatus module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sgt.html" title="sgt package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">sgt 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="sgt.html" accesskey="U">sgt package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sgt.core module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-sgt.core">
+<span id="sgt-core-module"></span><h1>sgt.core module<a class="headerlink" href="#module-sgt.core" title="Permalink to this heading">¶</a></h1>
+<p>Core tools for scattering geometry calculations.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_rotation_matrix">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_rotation_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_rotation_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_rotation_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a rotation matrix that defines orientation of the detector.</p>
+<p>The rotation matrix is calculated based on the given Euler angles.
+The Euler angles here is the x-y-x type, that is,</p>
+<ol class="arabic simple">
+<li><p>The initial axes <span class="math notranslate nohighlight">\((x, y, z)\)</span> are rotated by <cite>alpha_deg</cite> around the <span class="math notranslate nohighlight">\(x\)</span> axis.</p></li>
+<li><p>The resultant axes <span class="math notranslate nohighlight">\((x', y', z')\)</span> are rotated by <cite>beta_deg</cite> around the <span class="math notranslate nohighlight">\(y'\)</span> axis.</p></li>
+<li><p>The resultant axes <span class="math notranslate nohighlight">\((x'', y'', z'')\)</span> are rotated by <cite>gamma_deg</cite> around the <span class="math notranslate nohighlight">\(x''\)</span> axis.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>alpha_deg</strong> – Rotation around the <span class="math notranslate nohighlight">\(x\)</span> axis, in degrees.</p></li>
+<li><p><strong>beta_deg</strong> – Rotation around the <span class="math notranslate nohighlight">\(y'\)</span> axis, in degrees.</p></li>
+<li><p><strong>gamma_deg</strong> – Rotation around the <span class="math notranslate nohighlight">\(x''\)</span> axis, in degrees.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A 3x3 numpy array.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">R</span> <span class="o">=</span> <span class="n">make_rotation_matrix</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rotated</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">R</span><span class="p">,</span> <span class="n">vec</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_pixel_coords_in_detector_system">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_pixel_coords_in_detector_system</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hor_px_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver_px_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">px_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">px_height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center_coord_hor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center_coord_ver</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_pixel_coords_in_detector_system"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_pixel_coords_in_detector_system" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the matrices of coordinates of each pixel on the 2D detector coordinate system.</p>
+<p>The detector coordinate system is a 2D Cartesian coordinate system
+whose origin is at the image center (= where the direct beam hits the detector plane).
+Two axes, denoted as u and v, are defined to be parallel to the horizontal and vertical
+edges of the detector, respectively.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hor_px_num</strong> – Number of pixels along the horizontal axis.</p></li>
+<li><p><strong>ver_px_num</strong> – Number of pixels along the vertical axis.</p></li>
+<li><p><strong>px_width</strong> – Size of a single pixel along the horizontal axis.</p></li>
+<li><p><strong>px_height</strong> – Size of a single pixel along the horizontal axis.</p></li>
+<li><p><strong>center_coord_hor</strong> – Horizontal coordinate of the image center
+measured from the center of pixel at index <cite>[0,0]</cite>.</p></li>
+<li><p><strong>center_coord_ver</strong> – Vertical coordinate of the image center.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>2D numpy arrays of the horizontal and vertical coordinates.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">make_pixel_coords_in_detector_system</span><span class="p">(</span><span class="mi">1475</span><span class="p">,</span> <span class="mi">1679</span><span class="p">,</span> <span class="mf">0.172</span><span class="p">,</span> <span class="mf">0.172</span><span class="p">,</span> <span class="mf">132.35</span><span class="p">,</span> <span class="mf">134.39</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_default_mask">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_default_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hor_px_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver_px_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_default_mask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_default_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a default mask array.</p>
+<p>A mask array is a 2D array of the same shape as the scattering image
+but of <cite>numpy.uint8</cite> type. Pixels to be masked are assigned with 1
+and unmasked pixels are assigned with zero.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hor_px_num</strong> – Number of pixels along the horizontal edge.</p></li>
+<li><p><strong>ver_px_num</strong> – Number of pixels along the horizontal edge.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A 2D numpy array of the dtype <cite>numpy.uint8</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_default_array">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_default_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hor_px_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver_px_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_default_array"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_default_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a default float array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hor_px_num</strong> – Number of pixels along the horizontal edge.</p></li>
+<li><p><strong>ver_px_num</strong> – Number of pixels along the horizontal edge.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A 2D numpy array of the float type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_basis_vectors_on_detector_in_lab_system">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_basis_vectors_on_detector_in_lab_system</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rotation_matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_basis_vectors_on_detector_in_lab_system"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_basis_vectors_on_detector_in_lab_system" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the basis vectors of the detector coordinate system,
+expressed in the lab coordinate system.</p>
+<p>For the definition of the detector coordinate system,
+refer to <a class="reference internal" href="#sgt.core.make_pixel_coords_in_detector_system" title="sgt.core.make_pixel_coords_in_detector_system"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_pixel_coords_in_detector_system()</span></code></a>.
+The basis vectors of the detector coordinate system
+is basically the basis vectors of the lab coordinate system
+being rotated by the rotation matrix that defines
+the detector orientation.
+The input rotation matrix can be created by
+<a class="reference internal" href="#sgt.core.make_rotation_matrix" title="sgt.core.make_rotation_matrix"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_rotation_matrix()</span></code></a>.
+(but actually can be any SO(3) matrix)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rotation_matrix</strong> – A 3x3 numpy array representing
+the detector orientation.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Three numpy arrays <cite>a</cite>, <cite>b</cite>, and <cite>n</cite> representing the basis vectors.
+<cite>a</cite> and <cite>b</cite> are the basis vector along the horizontal and vertical
+edge of the detector, respectively, and <cite>n</cite> is the one
+perpendicular to the detector plane.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_pixel_coords_in_lab_system">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_pixel_coords_in_lab_system</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xcoords_det</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ycoords_det</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sdd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_pixel_coords_in_lab_system"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_pixel_coords_in_lab_system" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.calc_shortest_dist_to_detector">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">calc_shortest_dist_to_detector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sdd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/sgt/core.html#calc_shortest_dist_to_detector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.calc_shortest_dist_to_detector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the shortest distance from the sample to the detector plane.</p>
+<p>Let P be the point on the detector such that OP is the shortest distance
+between the origin and the detector plane.
+The vector OP must be perpendicular to the detector plane,
+so the vector <span class="math notranslate nohighlight">\(\vec{\mathrm{OP}}\)</span> is proportional
+to the detector plane normal vector <span class="math notranslate nohighlight">\(\vec{n}\)</span>.
+That is,</p>
+<div class="math notranslate nohighlight">
+\[\vec{\mathrm{OP}} = \mathrm{OP} \vec{n}\]</div>
+<p>The vector OP can also be expressed as</p>
+<div class="math notranslate nohighlight">
+\[\vec{\mathrm{OP}} = u\vec{a} + v\vec{b} + L\vec{e}_z\]</div>
+<p>where <span class="math notranslate nohighlight">\((u, v)\)</span> is the coordinate of point P
+on the detector coordinate system
+and vector <span class="math notranslate nohighlight">\(\vec{e}_z\)</span> is the z basis vector.
+<span class="math notranslate nohighlight">\(L\)</span> is the sample-to-detector distance.</p>
+<p>Equating the two expressions,</p>
+<div class="math notranslate nohighlight">
+\[k\vec{n} = u\vec{a} + v\vec{b} + L\vec{e}_z\]</div>
+<p>which reads</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}u a_x + v b_x - \mathrm{OP} n_x &amp;= 0 \\
+u a_y + v b_y - \mathrm{OP} n_y &amp;= 0 \\
+u a_z + v b_z - \mathrm{OP} n_z &amp;= -L\end{split}\]</div>
+<p>By defining a matrix</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{M} =
+\begin{pmatrix}
+a_x &amp; b_x &amp; -n_x \\
+a_y &amp; b_y &amp; -n_y \\
+a_z &amp; b_z &amp; -n_z \\
+\end{pmatrix}\end{split}\]</div>
+<p>the equations are simplified to</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{M} \vec{s} &amp;= -L \vec{e}_z \\
+\vec{s} &amp;= -L \mathbf{M}^{-1}\vec{e}_z\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{s} = (u, v, \mathrm{OP})\)</span>.
+This method computes <span class="math notranslate nohighlight">\(\vec{s}\)</span> using the above equation
+and returns its third component, <span class="math notranslate nohighlight">\(\mathrm{OP}\)</span>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – basis vector of the detector coordinate system
+along the horizontal edge of the detector.</p></li>
+<li><p><strong>b</strong> – basis vector of the detector coordinate system
+along the vertical edge of the detector.</p></li>
+<li><p><strong>n</strong> – basis vector of the detector coordinate system
+along the plane normal of the detector.</p></li>
+<li><p><strong>sdd</strong> – sample-to-detector distance.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The distance in the float value.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The input vectors should be expressed
+in the lab coordinate system.
+Use <a class="reference internal" href="#sgt.core.make_basis_vectors_on_detector_in_lab_system" title="sgt.core.make_basis_vectors_on_detector_in_lab_system"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_basis_vectors_on_detector_in_lab_system()</span></code></a>
+to generate the basis vectors.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_solid_angle_coverage_correction_factors">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_solid_angle_coverage_correction_factors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shortest_dist_to_detector</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_solid_angle_coverage_correction_factors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_solid_angle_coverage_correction_factors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes an array with the correction factor for solid angle coverage of each pixel.</p>
+<p>Based on Equation 28 in Pauw J Phys.: Condens. Matter 25, 383201.
+DOI: 10.1088/0953-8984/25/38/383201.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x coordinates of pixels in the lab system.</p></li>
+<li><p><strong>y</strong> – y coordinates of pixels in the lab system.</p></li>
+<li><p><strong>z</strong> – z coordinates of pixels in the lab system.</p></li>
+<li><p><strong>shortest_dist_to_detector</strong> – shortest distance from the sample to the detector plane.
+see <a class="reference internal" href="#sgt.core.calc_shortest_dist_to_detector" title="sgt.core.calc_shortest_dist_to_detector"><code class="xref py py-func docutils literal notranslate"><span class="pre">calc_shortest_dist_to_detector()</span></code></a>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A 2D array of correction factors for each pixel.
+The correction factor is normalized at the beam center.
+The correction can be done by multiplying this array to the intensity array.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.make_q">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">make_q</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wavelength</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/sgt/core.html#make_q"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.make_q" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes q vector.</p>
+<p>By definition,</p>
+<div class="math notranslate nohighlight">
+\[\vec{q} = \dfrac{2 \pi}{\lambda}(\vec{e}_\mathrm{s} - \vec{e}_\mathrm{i})\]</div>
+<p>where <span class="math notranslate nohighlight">\(\lambda\)</span> is the wavelength,
+<span class="math notranslate nohighlight">\(\vec{e}_\mathrm{s}\)</span> is the basis vector along the scattered ray,
+and <span class="math notranslate nohighlight">\(\vec{e}_\mathrm{i}\)</span> is the basis vector along the incident ray.</p>
+<p>Here, <span class="math notranslate nohighlight">\(\vec{e}_\mathrm{i}\)</span> is fixed to (0, 0, 1).
+Since the sample is placed at the origin,</p>
+<div class="math notranslate nohighlight">
+\[\vec{e}_\mathrm{s} = \dfrac{\vec{r}}{|\vec{r}|}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{r}\)</span> is the coordinate of the pixel in the lab system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x coordinates of pixels in the lab system.</p></li>
+<li><p><strong>y</strong> – y coordinates of pixels in the lab system.</p></li>
+<li><p><strong>z</strong> – z coordinates of pixels in the lab system.</p></li>
+<li><p><strong>wavelength</strong> – wavelength of the incident beam.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Three 2D arrays representing x, y, and z components of the q vector.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.calc_polar_map">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">calc_polar_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">qx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qz</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qmin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qmax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N_q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N_azi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/sgt/core.html#calc_polar_map"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.calc_polar_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates mapping to the polar coordinate system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>qx</strong> – x component of q vector.</p></li>
+<li><p><strong>qy</strong> – y component of q vector.</p></li>
+<li><p><strong>qz</strong> – z component of q vector.</p></li>
+<li><p><strong>mask</strong> – mask array.</p></li>
+<li><p><strong>qmin</strong> – lower boundary of q.</p></li>
+<li><p><strong>qmax</strong> – upper boundary of q.</p></li>
+<li><p><strong>N_q</strong> – number of bins along the q axis.</p></li>
+<li><p><strong>N_azi</strong> – number of bins along the azimuthal axis.
+360 deg is divided into <cite>N_azi</cite> sections.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Five numpy arrays, <cite>map_q</cite>, <cite>map_azi</cite>, <cite>density</cite>, <cite>ax_q</cite>, and <cite>ax_azi</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sgt.core.circular_average">
+<span class="sig-prename descclassname"><span class="pre">sgt.core.</span></span><span class="sig-name descname"><span class="pre">circular_average</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">map_q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">map_azi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/sgt/core.html#circular_average"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sgt.core.circular_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="sgt.html"
+                          title="previous chapter">sgt package</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="sgt.pilatus.html"
+                          title="next chapter">sgt.pilatus module</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/sgt.core.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="sgt.pilatus.html" title="sgt.pilatus module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sgt.html" title="sgt package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">sgt 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="sgt.html" >sgt package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sgt.core module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Shintaro NAKAGAWA.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sgt &#8212; sgt 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">sgt 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sgt</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for sgt</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=&quot;utf-8&quot;</span>
+<span class="sd">&quot;&quot;&quot;Higher-level interface for manipulation of scattering geometry. </span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">IO</span><span class="p">,</span> <span class="n">Tuple</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">sgt</span> <span class="kn">import</span> <span class="n">core</span><span class="p">,</span> <span class="n">pilatus</span><span class="p">,</span> <span class="n">_cpolarize</span>
+
+<div class="viewcode-block" id="geometry"><a class="viewcode-back" href="../sgt.html#sgt.geometry">[docs]</a><span class="k">class</span> <span class="nc">geometry</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Interface class for scattering geometry manipulation. </span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        To create a `geometry` instance, </span>
+<span class="sd">        </span>
+<span class="sd">            &gt;&gt;&gt; import sgt</span>
+<span class="sd">            &gt;&gt;&gt; g = sgt.geometry()</span>
+<span class="sd">        </span>
+<span class="sd">        Although all necessary parameters may be supplied </span>
+<span class="sd">        as the args of the initializer, </span>
+<span class="sd">        the easiest way is to load the specs from a file. </span>
+
+<span class="sd">            &gt;&gt;&gt; g.load_specs(&quot;Geometry_AgBh.txt&quot;)</span>
+
+<span class="sd">        Make sure to call refresh functions </span>
+<span class="sd">        when you make changes to the geometry. </span>
+<span class="sd">        </span>
+<span class="sd">            &gt;&gt;&gt; g.refresh_q()</span>
+<span class="sd">        </span>
+<span class="sd">        Mask can be supplied later. </span>
+<span class="sd">        For example, suppose that we already have the mask array</span>
+<span class="sd">        `maskarray`, </span>
+<span class="sd">        </span>
+<span class="sd">            &gt;&gt;&gt; g.mask = maskarray</span>
+
+<span class="sd">        Make sure to refresh polar maps whenever you made</span>
+<span class="sd">        any changes to the geometry. </span>
+<span class="sd">            </span>
+<span class="sd">            &gt;&gt;&gt; g.refresh_polar_map()</span>
+
+<span class="sd">        Finally, it can perform circular averaging. </span>
+<span class="sd">        Suppose that we have the 2D intensity array `i`</span>
+<span class="sd">        and associated error array `e_i`, </span>
+
+<span class="sd">            &gt;&gt;&gt; i_av, e_i_av = g.circular_average(i, e_i)</span>
+<span class="sd">        </span>
+<span class="sd">        The output arrays are also 2D. </span>
+<span class="sd">        For example, ``i_av[k]`` is the q-profile at ``k`` th </span>
+<span class="sd">        azimuthal section. </span>
+<span class="sd">        The arrays along the q and azimuthal angle axes </span>
+<span class="sd">        are stored as ``g.ax_q`` and ``g.ax_azi``, </span>
+<span class="sd">        respectively. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">minimal_spec_keys</span><span class="p">:</span> <span class="n">Tuple</span> <span class="o">=</span> \
+        <span class="p">(</span><span class="s2">&quot;width_px&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;height_px&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;px_width_mm&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;px_height_mm&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;u0_mm&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;v0_mm&quot;</span><span class="p">,</span>   
+         <span class="s2">&quot;alpha_deg&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;beta_deg&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;gamma_deg&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;L0_mm&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;lam_ang&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;qmin_anginv&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;qmax_anginv&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;q_number&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;azi_number&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+    <span class="n">width_px</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">height_px</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+    <span class="n">px_width_mm</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">px_height_mm</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> 
+    <span class="n">u0_mm</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">v0_mm</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> 
+    <span class="n">alpha_deg</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">beta_deg</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">gamma_deg</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> 
+    <span class="n">L0_mm</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">lam_ang</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> 
+    <span class="n">qmin</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">qmax</span><span class="p">:</span> <span class="nb">float</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">N_q</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">N_azi</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+    <span class="n">mask</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="o">|</span><span class="kc">None</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;width_px&quot;</span><span class="p">]</span>     <span class="o">=</span> <span class="n">width_px</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;height_px&quot;</span><span class="p">]</span>    <span class="o">=</span> <span class="n">height_px</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;px_width_mm&quot;</span><span class="p">]</span>  <span class="o">=</span> <span class="n">px_width_mm</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;px_height_mm&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">px_height_mm</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;u0_mm&quot;</span><span class="p">]</span>        <span class="o">=</span> <span class="n">u0_mm</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;v0_mm&quot;</span><span class="p">]</span>        <span class="o">=</span> <span class="n">v0_mm</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;alpha_deg&quot;</span><span class="p">]</span>    <span class="o">=</span> <span class="n">alpha_deg</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;beta_deg&quot;</span><span class="p">]</span>     <span class="o">=</span> <span class="n">beta_deg</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;gamma_deg&quot;</span><span class="p">]</span>    <span class="o">=</span> <span class="n">gamma_deg</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;L0_mm&quot;</span><span class="p">]</span>        <span class="o">=</span> <span class="n">L0_mm</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;lam_ang&quot;</span><span class="p">]</span>      <span class="o">=</span> <span class="n">lam_ang</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;qmin_anginv&quot;</span><span class="p">]</span>  <span class="o">=</span> <span class="n">qmin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;qmax_anginv&quot;</span><span class="p">]</span>  <span class="o">=</span> <span class="n">qmax</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;q_number&quot;</span><span class="p">]</span>     <span class="o">=</span> <span class="n">N_q</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;azi_number&quot;</span><span class="p">]</span>   <span class="o">=</span> <span class="n">N_azi</span> 
+
+        <span class="k">if</span> <span class="n">mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mask</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">make_default_mask</span><span class="p">(</span><span class="n">width_px</span><span class="p">,</span> <span class="n">height_px</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mask</span> <span class="o">=</span> <span class="n">mask</span>
+
+        <span class="c1"># vars to be calculated</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_R</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_u</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_v</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_n</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_z</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_qx</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_qy</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_qz</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_solid_angle_factor</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_map_q</span><span class="p">:</span>   <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_map_azi</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_density</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ax_q</span><span class="p">:</span>    <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ax_azi</span><span class="p">:</span>  <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_normal_incidence_dist</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+<div class="viewcode-block" id="geometry.load_specs"><a class="viewcode-back" href="../sgt.html#sgt.geometry.load_specs">[docs]</a>    <span class="k">def</span> <span class="nf">load_specs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fp</span><span class="p">:</span> <span class="nb">str</span><span class="o">|</span><span class="n">IO</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Loads and applies parameters from a file</span>
+<span class="sd">        </span>
+<span class="sd">        It loads parameters from a geometry specification file, </span>
+<span class="sd">        which is a JSON-formatted text file. </span>
+<span class="sd">        The file must contain all keys listed in ``minimal_spec_keys``. </span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            fp: file-like or path to a JSON-formatted file. </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">missing_keys</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        
+        <span class="c1"># for backward compatibility</span>
+        <span class="c1"># older geometry file contains # at every line head</span>
+        <span class="k">if</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">):</span>
+            <span class="n">jsonfeed</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">l</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">jsonfeed</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+
+        <span class="n">h</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">jsonfeed</span><span class="p">)</span>
+
+        <span class="n">missing_keys</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">minimal_spec_keys</span> <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">missing_keys</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;missing key(s): &quot;</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing_keys</span><span class="p">))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">h</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="geometry.save_specs"><a class="viewcode-back" href="../sgt.html#sgt.geometry.save_specs">[docs]</a>    <span class="k">def</span> <span class="nf">save_specs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fp</span><span class="p">:</span> <span class="nb">str</span><span class="o">|</span><span class="n">IO</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">h</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+        
+        <span class="n">hstr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">hlines</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">hstr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">hlines</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#&quot;</span> <span class="o">+</span> <span class="n">l</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">hlines</span><span class="p">]</span>
+        <span class="n">hstr</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">hlines</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">hstr</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">hstr</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="geometry.refresh_q"><a class="viewcode-back" href="../sgt.html#sgt.geometry.refresh_q">[docs]</a>    <span class="k">def</span> <span class="nf">refresh_q</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        </span>
+<span class="sd">        Note:</span>
+<span class="sd">            ``self.mask`` is not used in this method. </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_R</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">make_rotation_matrix</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;alpha_deg&quot;</span><span class="p">],</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;beta_deg&quot;</span><span class="p">],</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;gamma_deg&quot;</span><span class="p">])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_u</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_v</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">make_pixel_coords_in_detector_system</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;width_px&quot;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;height_px&quot;</span><span class="p">],</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;px_width_mm&quot;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;px_height_mm&quot;</span><span class="p">],</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;u0_mm&quot;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;v0_mm&quot;</span><span class="p">]</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_n</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">make_basis_vectors_on_detector_in_lab_system</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_R</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_z</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">make_pixel_coords_in_lab_system</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_u</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_v</span><span class="p">,</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">_a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_n</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;L0_mm&quot;</span><span class="p">]</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_normal_incidence_dist</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">calc_shortest_dist_to_detector</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_n</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;L0_mm&quot;</span><span class="p">]</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_solid_angle_factor</span> <span class="o">=</span> \
+            <span class="n">core</span><span class="o">.</span><span class="n">make_solid_angle_coverage_correction_factors</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_z</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_normal_incidence_dist</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_qx</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qy</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qz</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">make_q</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_z</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;lam_ang&quot;</span><span class="p">]</span>
+            <span class="p">)</span></div>
+
+<div class="viewcode-block" id="geometry.refresh_polar_map"><a class="viewcode-back" href="../sgt.html#sgt.geometry.refresh_polar_map">[docs]</a>    <span class="k">def</span> <span class="nf">refresh_polar_map</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        </span>
+<span class="sd">        Note: </span>
+<span class="sd">            This method uses ``self.mask``. </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_ready_for_polar_map</span><span class="p">()</span> <span class="c1"># check</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_map_q</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_map_azi</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_density</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ax_q</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ax_azi</span> <span class="o">=</span> \
+            <span class="n">_cpolarize</span><span class="o">.</span><span class="n">calc_polar_map</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_qx</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qy</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qz</span><span class="p">,</span> 
+                <span class="bp">self</span><span class="o">.</span><span class="n">mask</span><span class="p">,</span> 
+                <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;qmin_anginv&quot;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;qmax_anginv&quot;</span><span class="p">],</span> 
+                <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;q_number&quot;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;azi_number&quot;</span><span class="p">]</span>
+            <span class="p">)</span></div>
+    
+<div class="viewcode-block" id="geometry.circular_average"><a class="viewcode-back" href="../sgt.html#sgt.geometry.circular_average">[docs]</a>    <span class="k">def</span> <span class="nf">circular_average</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">intensity</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">e_intensity</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Performs circular averaging. </span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            intensity: intensity array. </span>
+<span class="sd">            e_intensity: intensity error array. </span>
+<span class="sd">        </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Two 2D numpy arrays of the intensity and the error, </span>
+<span class="sd">            both with the shape (``azi_number``, ``q_number``). </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="n">_cpolarize</span><span class="o">.</span><span class="n">circular_average</span><span class="p">(</span>
+            <span class="n">intensity</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">),</span> 
+            <span class="n">e_intensity</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">),</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">_map_q</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_map_azi</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_density</span>
+            <span class="p">)</span></div>
+    
+    <span class="k">def</span> <span class="nf">_is_ready_for_polar_map</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+
+        <span class="n">shape</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;height_px&quot;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span><span class="p">[</span><span class="s2">&quot;width_px&quot;</span><span class="p">])</span>
+        
+        <span class="c1"># check mask size</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mask</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="n">shape</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">R</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_R</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">u</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_u</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">v</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_v</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">z</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_z</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">qx</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qx</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">qy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qy</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">qz</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qz</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">solid_angle_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_solid_angle_factor</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">map_q</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_map_q</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">map_azi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_map_azi</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">density</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_density</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ax_q</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ax_q</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ax_azi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ax_azi</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">normal_incidence_dist</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_normal_incidence_dist</span></div>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">sgt 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sgt</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Shintaro NAKAGAWA.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+    </div>
+  </body>
+</html>
