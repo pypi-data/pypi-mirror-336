@@ -1,0 +1,17 @@
+magicgui
+qtpy
+napari[all]>=0.4.16
+napari-label-focus
+tifffile
+scikit-image
+matplotlib
+csbdeep
+python-dotenv
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
