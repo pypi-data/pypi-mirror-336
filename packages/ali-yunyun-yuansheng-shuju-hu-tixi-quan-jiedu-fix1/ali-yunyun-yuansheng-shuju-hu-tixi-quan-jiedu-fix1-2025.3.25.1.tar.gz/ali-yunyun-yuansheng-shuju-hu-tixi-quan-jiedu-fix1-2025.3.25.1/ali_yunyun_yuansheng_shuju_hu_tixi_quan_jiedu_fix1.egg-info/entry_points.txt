@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunyunYuanshengShujuHuTixiQuanJieduFix1 = AliYunyunYuanshengShujuHuTixiQuanJieduFix1.__main__:main
+ali-yunyun-yuansheng-shuju-hu-tixi-quan-jiedu-fix1 = AliYunyunYuanshengShujuHuTixiQuanJieduFix1.__main__:main
