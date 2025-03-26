@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: python_package_14721
+Version: 0.0.2
+Summary: A test python package for class assignment
+Description-Content-Type: text/markdown
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+# Test Package 13630
+
+### Note: This package is a test package uploaded for class assignment.
+
+```diff
+- SAP: 590013630
+```
+
+_**This package contains 4 functions:**_
+
+```python
+def  add(x: int, y: int) -> int
+```
+
+```python
+def  subtract(x: int, y: int) -> int
+```
+
+```python
+def  multiply(x: int, y: int) -> int
+```
+
+```python
+def  divide(x: float, y: float) -> int
+```
