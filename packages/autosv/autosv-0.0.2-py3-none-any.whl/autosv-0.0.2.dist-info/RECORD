@@ -1,0 +1,16 @@
+autosv/__init__.py,sha256=pbjtUwQDfqLU98rt3xcVkq8gDQkoc6cbJVxQavUTs3g,120
+autosv/autosv.py,sha256=N71CofeVHQunBIpI7JftUpzy9aN-ktiwDS40YFSepxo,2169
+autosv/cli.py,sha256=K50MLt4LO3D5tn86-fM9_CZB0hBRagjDo4PIt9uvfwE,1766
+autosv/calculate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autosv/calculate/selection.py,sha256=Qq0xdeXuBltwmXAkqx11KcTaHdZAIVrIiqUK5Sg-vjs,1042
+autosv/calculate/sliding_cpu.py,sha256=JpgF8s_dkHV-3pNx8WaGWqKkemlzBB-Iq3EFA-WjQmE,2213
+autosv/calculate/sliding_gpu.py,sha256=No7kD4FZS0rs8uzpVReaU8FBdsriovA8WQnJsNBqpGQ,3507
+autosv/log/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autosv/log/logger.py,sha256=0XNdlOQVZT-dXwGwVUTWseKuwnwmoaaBzPJcBrOG-IU,1602
+autosv/slice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autosv/slice/slice_video.py,sha256=jvMTm6gghWeXsqo4NpJHvvNVcyNvEYDNMjzOF8zWIaM,890
+autosv-0.0.2.dist-info/METADATA,sha256=GysSQhG0TszN3DwkhpERSOi3bMfxbp8tFRO986q_VcA,4872
+autosv-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+autosv-0.0.2.dist-info/entry_points.txt,sha256=nh8aWlpXOsxRqKiy9ibRBT9DasJUd7H3y_7tH4TdTrg,42
+autosv-0.0.2.dist-info/licenses/LICENSE,sha256=WiLZDRZv0N7YLb34X0DBo-qdfdVssDg0CZDoYnb40HA,1066
+autosv-0.0.2.dist-info/RECORD,,
