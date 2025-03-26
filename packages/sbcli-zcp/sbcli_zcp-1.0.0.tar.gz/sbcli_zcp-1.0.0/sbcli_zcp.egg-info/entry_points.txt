@@ -1,0 +1,2 @@
+[console_scripts]
+sbcli-zcp = simplyblock_cli.cli:main
