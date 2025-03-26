@@ -1,0 +1,9 @@
+agentmail_mcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agentmail_mcp/server.py,sha256=wimgLZj2oYr9udLH9-ZlcNilYbXFNkkPO_fOcjCiG-c,3168
+agentmail_mcp/test_imports.py,sha256=6fro0bAWw2tMyuk2Iu0VFrXJMF8nvJRDDNwvGYkO3nI,2321
+agentmail_mcp/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agentmail_mcp/tools/email.py,sha256=qoH5lJABYO6wh28pg2Ywy7Zh8In1hgkUp6EMxN4Cpcw,8620
+agentmail_mcp-0.2.1.dist-info/METADATA,sha256=ZO-kIdH2YI0PcWwvZlvvuuUS_Veg4vnhThxtk0L4C9s,3898
+agentmail_mcp-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+agentmail_mcp-0.2.1.dist-info/entry_points.txt,sha256=PDp_toMxmYIgcOaeHzo6z2aVaHTu41rKNmQDdNa-jFU,60
+agentmail_mcp-0.2.1.dist-info/RECORD,,
