@@ -1,0 +1,10 @@
+clonearmy/__init__.py,sha256=2xllqwY07t2r4CiJTWBPBuYqI1xCn2kdIR-8p0eeig4,760
+clonearmy/cli.py,sha256=gTuBhdyAJcmYY7pxKlFwuBRaB0wYmpsK4epEAQtsGmg,9746
+clonearmy/comparison.py,sha256=pcP3ajSTlnON7ShiSvs7dRW17Wwr49FH2Rc6Hh1-Tgg,9236
+clonearmy/processor.py,sha256=PJVEddQr9Bf2A_dxanVfSDuz2Dn4gONq7_n9BPHNXWE,31165
+clonearmy/report.py,sha256=ACMuh4cK5NtqWAz92k8FaIV7oFwIhPgjr2Ai7nOQVeE,24045
+clonearmy/utils.py,sha256=GNrtt-vuRGioglZMprbZUvcSjSebH3SztbKBc1apL-Q,9973
+clonearmy-0.2.20.dist-info/METADATA,sha256=67HGTSgcpI6veA7aOKBJZoNQzJiNouTYNoIN9QAIZ5Q,7235
+clonearmy-0.2.20.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+clonearmy-0.2.20.dist-info/entry_points.txt,sha256=6mB6e-u2kvUcawBO1g3BM1VctsZdEF9rIyzbdh7d5sQ,48
+clonearmy-0.2.20.dist-info/RECORD,,
