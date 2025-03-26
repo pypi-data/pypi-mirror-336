@@ -1,0 +1,52 @@
+foundation:
+  experiment_name: lifescience
+unified_data_access:
+  enabled: false
+  token: demo_token
+  data_access:
+    dataset_names:
+    - alpaca_sft_dataset.jsonl
+    - mars
+ml:
+  enabled: true
+  auto_log: true
+  system_tracing: true
+  security:
+    enabled: true
+    username: lifescience
+    password: #ignore 
+  parameters:
+    output_dir: artifacts/runtime
+    device: mps
+    dataset_names:
+    - /cpfs01/projects-HDD/cfff-4a8d9af84f66_HDD/public/Data/ecmwf-001/ENS
+    base_model: meta-llama/Llama-3.2-1B-Instruct
+    num_train_epochs: 3
+    per_device_train_batch_size: 2
+    gradient_accumulation_steps: 8
+    learning_rate: 2.0e-05
+    weight_decay: 0.02
+    warmup_steps: 100
+    save_total_limit: 1
+    logging_dir: ./logs
+    logging_steps: 10
+    save_strategy: epoch
+    evaluation_strategy: 'no'
+    report_to:
+    - mlflow
+    optim: adamw_torch
+    gradient_checkpointing: true
+  custom_metrics: []
+  artifacts: []
+  model_repo:
+    model_uri: runs:/{run_id}/artifacts/model
+    name: llama_models
+    await_registration_for: 300
+    tag:
+      framework: pytorch
+      task_type: language-model
+      model_type: llama_lifescience
+      base_model: meta-llama/Llama-3.2-1B-Instruct
+    version: 1.0.1
+  parametersw:
+    weight_decay: 0.02
