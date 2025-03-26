@@ -1,0 +1,12 @@
+setup.py
+tamu_csce_636_project1/__init__.py
+tamu_csce_636_project1/main.py
+tamu_csce_636_project1/settings.json
+tamu_csce_636_project1.egg-info/PKG-INFO
+tamu_csce_636_project1.egg-info/SOURCES.txt
+tamu_csce_636_project1.egg-info/dependency_links.txt
+tamu_csce_636_project1.egg-info/top_level.txt
+tamu_csce_636_project1/__dependencies__/__init__.py
+tamu_csce_636_project1/__dependencies__/__sources__/.keep
+tamu_csce_636_project1/__pycache__/__init__.cpython-38.pyc
+tamu_csce_636_project1/__pycache__/main.cpython-38.pyc
