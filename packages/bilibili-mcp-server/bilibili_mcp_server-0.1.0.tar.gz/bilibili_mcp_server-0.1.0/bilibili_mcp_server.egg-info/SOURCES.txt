@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+bilibili/server.py
+bilibili_mcp_server.egg-info/PKG-INFO
+bilibili_mcp_server.egg-info/SOURCES.txt
+bilibili_mcp_server.egg-info/dependency_links.txt
+bilibili_mcp_server.egg-info/entry_points.txt
+bilibili_mcp_server.egg-info/requires.txt
+bilibili_mcp_server.egg-info/top_level.txt
