@@ -1,0 +1,37 @@
+anyio>=4.9.0
+charset-normalizer>=3.4.1
+html-to-markdown>=1.2.0
+playa-pdf>=0.4.1
+pypdfium2==4.30.0
+python-calamine>=0.3.1
+python-pptx>=1.0.2
+
+[:python_version < "3.11"]
+exceptiongroup>=1.2.2
+
+[:python_version < "3.12"]
+typing-extensions>=4.12.2
+
+[all]
+easyocr>=1.7.2
+numpy>=2.0.2
+paddleocr>=2.10.0
+semantic-text-splitter>=0.24.1
+setuptools>=76.0.0
+
+[all:python_version < "3.13"]
+paddlepaddle>=2.6.2
+
+[chunking]
+semantic-text-splitter>=0.24.1
+
+[easyocr]
+easyocr>=1.7.2
+
+[paddleocr]
+numpy>=2.0.2
+paddleocr>=2.10.0
+setuptools>=76.0.0
+
+[paddleocr:python_version < "3.13"]
+paddlepaddle>=2.6.2
