@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sayhihello/__init__.py
+sayhihello.egg-info/PKG-INFO
+sayhihello.egg-info/SOURCES.txt
+sayhihello.egg-info/dependency_links.txt
+sayhihello.egg-info/top_level.txt
+sayhihello/hello/__init__.py
+sayhihello/hello/hello.py
