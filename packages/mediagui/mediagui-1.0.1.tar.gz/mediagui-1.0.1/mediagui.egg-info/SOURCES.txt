@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+mediagui/__init__.py
+mediagui/gui.py
+mediagui/list_widget.py
+mediagui/openh264-1.8.0-win64.dll
+mediagui/worker.py
+mediagui.egg-info/PKG-INFO
+mediagui.egg-info/SOURCES.txt
+mediagui.egg-info/dependency_links.txt
+mediagui.egg-info/entry_points.txt
+mediagui.egg-info/requires.txt
+mediagui.egg-info/top_level.txt
