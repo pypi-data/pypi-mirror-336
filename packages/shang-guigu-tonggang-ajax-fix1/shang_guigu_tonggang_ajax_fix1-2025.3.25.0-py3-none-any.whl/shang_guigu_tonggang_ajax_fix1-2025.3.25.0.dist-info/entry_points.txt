@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangAjaxFix1 = ShangGuiguTonggangAjaxFix1.__main__:main
+shang-guigu-tonggang-ajax-fix1 = ShangGuiguTonggangAjaxFix1.__main__:main
