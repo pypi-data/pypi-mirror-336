@@ -1,0 +1,2 @@
+[console_scripts]
+authipy = authipy.main:main
