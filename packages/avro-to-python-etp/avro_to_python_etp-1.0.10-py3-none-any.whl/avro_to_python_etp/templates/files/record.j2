@@ -1,0 +1,21 @@
+{%- block record scoped %}
+
+{% set ns = namespace(optional=false) %}
+class {{file.name}}(ETPModel):
+{%- if file.fields|length == 0: -%} 
+    pass
+{% else -%}
+{# first the fields without defaults then the others -#}
+{%- for name, field in file.fields.items() -%}
+    {%- if field.default is none: -%}
+    {%- include 'fields/fieldFactory.j2' -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- for name, field in file.fields.items() -%}
+    {%- if field.default is not none: -%}
+    {%- include 'fields/fieldFactory.j2' -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- endif %}
+{{ macros.gen_array_union_validators() }}
+{%- endblock record %}
