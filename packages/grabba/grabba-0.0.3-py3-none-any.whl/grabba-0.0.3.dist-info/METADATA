@@ -1,0 +1,284 @@
+Metadata-Version: 2.3
+Name: grabba
+Version: 0.0.3
+Summary: Python SDK for Grabba API
+Author: Bolu Agbana
+Author-email: obaa@obaa.io
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Grabba Python SDK
+
+Grabba Python SDK provides a simple and intuitive interface for scheduling web data extraction jobs, retrieving job results, and managing your extraction workflows.
+
+## Installation
+
+Install the SDK using pip:
+
+```bash
+pip install grabba
+```
+
+## Basic Setup
+
+### Import the client and required types
+
+```python
+from grabba import Grabba, Job, JobNavigationType, JobSchedulePolicy, JobTaskType
+```
+
+### Initialize a client instance
+
+```python
+grabba = Grabba(api_key="your-api-key", region="US")  # Optional: Defaults to US
+```
+
+---
+
+## Methods
+
+### extract
+
+`extract(job: Job) -> Dict`
+
+Schedules a new web data extraction job.
+
+**Parameters:**
+- `job`: A `Job` object containing the extraction configuration.
+
+**Returns:**
+- A dictionary containing the response `status`, `message`, and `job_result`.
+
+**Example:**
+
+```python
+job = Job(
+    url="https://docs.grabba.dev/home",
+    schedule={"policy": JobSchedulePolicy.IMMEDIATELY.value},
+    navigation={"type": JobNavigationType.NONE},
+    tasks=[{
+        "type": JobTaskType.WEB_PAGE_AS_MARKDOWN.value, 
+        "options": { "onlyMainContent": True }
+    }],
+)
+
+response = grabba.extract(job)
+print(f"Job completed with status: {response['status']}")
+```
+
+---
+
+### schedule_job
+
+`schedule_job(job_id: str) -> Dict`
+
+Schedules an existing job for execution.
+
+**Parameters:**
+- `job_id`: The ID of the job to schedule.
+
+**Returns:**
+- A dictionary containing the response `status`, `message`, and `job_result`.
+
+**Example:**
+
+```python
+response = grabba.schedule_job("12345")
+print(f"Job completed with status: {response['status']}")
+```
+
+---
+
+### get_jobs
+
+`get_jobs() -> GetJobsResponse`
+
+Retrieves a list of all jobs associated with the API key.
+
+**Returns:**
+- A list of `Job` objects.
+
+**Example:**
+
+```python
+jobs = grabba.get_jobs()
+for job in jobs:
+    print(job)
+```
+
+---
+
+### get_job
+
+`get_job(job_id: str) -> GetJobResponse`
+
+Retrieves details of a specific job by its ID.
+
+**Parameters:**
+- `job_id`: The ID of the job to retrieve.
+
+**Returns:**
+- A `JobDetail` object containing job details.
+
+**Example:**
+
+```python
+job = grabba.get_job("12345")
+print(job)
+```
+
+---
+
+### get_job_result
+
+`get_job_result(job_result_id: str) -> JobResult`
+
+Retrieves the results of a specific job by its result ID.
+
+**Parameters:**
+- `job_result_id`: The ID of the job result to retrieve.
+
+**Returns:**
+- A `JobResult` object.
+
+**Example:**
+
+```python
+result = grabba.get_job_result("67890")
+print(result)
+```
+
+---
+
+### get_available_regions
+
+`get_available_regions() -> List[Dict[str, PuppetRegion]]`
+
+Retrieves a list of available regions for Web Agent execution.
+
+**Returns:**
+- A list of region objects.
+
+**Example:**
+
+```python
+regions = grabba.get_available_regions()
+print(regions)
+```
+
+---
+
+## Types
+
+### `Job`
+
+Represents a web data extraction job.
+
+```python
+@dataclass
+class Job:
+    url: str
+    tasks: List[JobTask]
+    schedule: Optional[JobSchedule] = None
+    navigation: Optional[JobNavigation] = None
+    puppet_config: Optional[WebAgentConfig] = None
+```
+
+---
+
+### `JobTask`
+
+Represents a single task in an extraction job.
+
+```python
+@dataclass
+class JobTask:
+    type: JobTaskType
+    options: Optional[Union[SpecificDataExtractionOptions, WebpageAsMarkdownOptions, WebScreenCaptureOptions]] = None
+```
+
+---
+
+### `JobTaskType`
+
+Enumeration of available job task types.
+
+```python
+class JobTaskType(str, Enum):
+    WEB_PAGE_AS_HTML = "webPageAsHTML"
+    WEB_PAGE_METADATA = "webPageMetadata"
+    WEB_SCREEN_CAPTURE = "webScreenCapture"
+    WEB_PAGE_AS_MARKDOWN = "webPageAsMarkdown"
+    SPECIFIC_DATA_EXTRACTION = "specificDataExtraction"
+```
+
+---
+
+### `JobResult`
+
+Represents the result of a job.
+
+```python
+@dataclass
+class JobResult:
+    id: str
+    output: Dict[str, Dict]
+    start_time: datetime
+    stop_time: datetime
+    duration: str
+```
+
+---
+
+### `WebAgentConfig`
+
+Configuration for Web Agent.
+
+```python
+@dataclass
+class WebAgentConfig:
+    region: PuppetRegion
+    device_type: Optional[PuppetDeviceType] = None
+    viewport: Optional[Dict] = None
+```
+
+---
+
+## Error Handling
+
+The SDK throws errors for:
+- Invalid API keys
+- Failed API requests
+- Missing or invalid parameters
+
+**Example:**
+
+```python
+try:
+    response = grabba.extract(job)
+    if response["status"] == "success":
+        print("Results data:", response["output"]["data"])
+    else:
+        print("Error message:", response["message"])
+except Exception as err:
+    print("Error:", err)
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/grabba-dev/grabba-sdk).
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
