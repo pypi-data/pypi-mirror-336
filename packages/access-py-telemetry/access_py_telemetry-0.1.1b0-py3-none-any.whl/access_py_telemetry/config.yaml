@@ -1,0 +1,10 @@
+intake:
+  catalog:
+    - esm_datastore.search
+    - DfFileCatalog.search
+    - DfFileCatalog.__getitem__
+payu: 
+  run: 
+    - Experiment.run
+  restart:
+    - Experiment.restart
