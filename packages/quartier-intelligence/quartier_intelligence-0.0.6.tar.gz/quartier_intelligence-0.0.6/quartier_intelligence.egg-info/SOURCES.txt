@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+quartier_intelligence/__init__.py
+quartier_intelligence.egg-info/PKG-INFO
+quartier_intelligence.egg-info/SOURCES.txt
+quartier_intelligence.egg-info/dependency_links.txt
+quartier_intelligence.egg-info/requires.txt
+quartier_intelligence.egg-info/top_level.txt
+tests/test_sanity.py

@@ -1,0 +1,5 @@
+fastapi[standard]>=0.115.11
+logfire[fastapi]>=3.9.0
+opentelemetry-instrumentation-asgi>=0.52b1
+pydantic-settings>=2.8.1
+requests>=2.32.3

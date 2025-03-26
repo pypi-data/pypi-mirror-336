@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: quartier_intelligence
+Version: 0.0.6
+Summary: Integrate custom ai agents with quartier intelligence platform.
+Author-email: Tantely Nonja <tj@fluxbuild.io>
+License-Expression: AGPL-3.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi[standard]>=0.115.11
+Requires-Dist: logfire[fastapi]>=3.9.0
+Requires-Dist: opentelemetry-instrumentation-asgi>=0.52b1
+Requires-Dist: pydantic-settings>=2.8.1
+Requires-Dist: requests>=2.32.3
+Dynamic: license-file
+
+# qi-sdk
