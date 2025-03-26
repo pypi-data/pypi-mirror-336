@@ -1,0 +1,6 @@
+click
+cryptography>=44.0.1
+pydantic>2
+email-validator
+phonenumbers
+pytz
