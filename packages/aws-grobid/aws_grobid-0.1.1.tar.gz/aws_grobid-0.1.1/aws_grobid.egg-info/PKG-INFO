@@ -1,0 +1,85 @@
+Metadata-Version: 2.4
+Name: aws-grobid
+Version: 0.1.1
+Summary: Deploy GROBID on AWS EC2
+Author-email: Eva Maxfield Brown <evamaxfieldbrown@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/evamaxfield/aws-grobid
+Project-URL: Bug Tracker, https://github.com/evamaxfield/aws-grobid/issues
+Project-URL: Documentation, https://evamaxfield.github.io/aws-grobid
+Project-URL: User Support, https://github.com/evamaxfield/aws-grobid/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3<2,>=1
+Requires-Dist: Jinja2<4,>=3
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: requests<3,>=2
+Provides-Extra: lint
+Requires-Dist: pre-commit>=2.20.0; extra == "lint"
+Provides-Extra: dev
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: jupyterlab; extra == "dev"
+Dynamic: license-file
+
+# AWS GROBID Deploy
+
+Deploy GROBID on AWS EC2 using Python.
+
+**Note:** The deployed GROBID service is publicly available on the internet. It is best practice to always teardown the instance when not in use. Spinning up new instances is fast and easy.
+
+## Usage
+
+```python
+import aws_grobid
+
+# There are a few different pre-canned configurations available:
+
+# Base GROBID service w/ CRF only models
+# aws_grobid.GROBIDDeploymentConfigs.grobid_lite
+
+# Base GROBID service w/ Deep Learning models
+# aws_grobid.GROBIDDeploymentConfigs.grobid_full
+
+# Software Mentions annotation service w/ Deep Learning models
+# aws_grobid.GROBIDDeploymentConfigs.software_mentions
+
+# Create a new GROBID instance and wait for it to be ready
+# This generally takes about 6 minutes
+# Instance is automatically torn down if the
+# GROBID service is not available within 7 minutes
+instance_details = aws_grobid.deploy_and_wait_for_ready(
+  deployment_config=aws_grobid.DeploymentConfigs.grobid_lite,
+)
+
+# You can also specify the instance type, region, tags, etc.
+# instance_details = aws_grobid.deploy_and_wait_for_ready(
+#   deployment_config=aws_grobid.DeploymentConfigs.grobid_full,
+#   instance_type='c5.4xlarge',
+#   region='us-east-1',
+#   tags={'awsApplication': 'arn:...'},
+#   timeout=300,  # 5 minutes
+# )
+
+# Use the instance to process a PDF file
+# The API URL is available from:
+# instance_details.api_url
+# ...
+
+# Teardown the instance when done
+aws_grobid.terminate_instance(
+  region=instance_details.region,
+  instance_id=instance_details.instance_id
+)
+```
+
+When providing an instance type that has GPUs available, we automatically pass the GPU flag to the GROBID service. This allows GROBID to utilize the GPU for processing, which can significantly speed up the extraction of information from documents.
+
+**Note:** The first time you make a call to the GROBID service, it may take a minute or so to warm up the service. Subsequent calls will be much faster.
+
+We additionally will automatically pick up `.env` controlled envionment variables. This is useful for setting the `AWS_PROFILE` or `AWS_SECRET_ACCESS_KEY` and `AWS_ACCESS_KEY_ID` environment variables.
