@@ -1,0 +1,20 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/ARCA/ARCA.py,sha256=Ki3YK5CjunGJu-Fbn2EGVX12542wL82BJLF6EMxVWiI,4541
+src/ARCA/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/ARCA/Cartas de porte electronicas/AplicativoCartasDePorteElectronicas.py,sha256=dxfCJR9QxkhztDE30KOSwSGQP4-2BUdX4HG4JqkD9s8,9084
+src/ARCA/Cartas de porte electronicas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/Chrome/Chrome.py,sha256=Uk960X2YaverdwE-hVymVAT3IdfVypobzCOBYcbQeMc,16328
+src/Chrome/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/Excel/Excel.py,sha256=ncKRxsgeHkXjcEX0PEyIkALLgzSlhtX5ddU9PnXu6v4,766
+src/Excel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/Terminal/Terminal.py,sha256=Z3HZ-LJET4UouzX9fWAq6sESFZEhzCI5yxHRYsnE9T0,1222
+src/Terminal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/Windows/Windows.py,sha256=v0wm6eoK9kBNl37xOLK1ysFnJ2ZFinr_c-dc1_nxFBs,4311
+src/Windows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_Terminal.py,sha256=dvFj3X4v_bYKVQEOyzCCQBZA53Og5boOKG-C6Q7SXjQ,3043
+tests/test_Windows.py,sha256=1FaBQJwv6iDleP6D1_M1Ey46-KBgzbjUSBQXksVVcoA,5599
+glgrpa-0.0.4.dist-info/METADATA,sha256=JSrD5yk9me4QVeEQVrkgXR3npxy2b0olTigyPWnBUDI,3866
+glgrpa-0.0.4.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+glgrpa-0.0.4.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+glgrpa-0.0.4.dist-info/RECORD,,
