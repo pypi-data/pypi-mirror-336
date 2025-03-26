@@ -1,0 +1,13 @@
+pyproject.toml
+src/lhcbdiracx/core/__init__.py
+src/lhcbdiracx/core/properties.py
+src/lhcbdiracx/core/py.typed
+src/lhcbdiracx/core/config/__init__.py
+src/lhcbdiracx/core/config/schema.py
+src/lhcbdiracx_core.egg-info/PKG-INFO
+src/lhcbdiracx_core.egg-info/SOURCES.txt
+src/lhcbdiracx_core.egg-info/dependency_links.txt
+src/lhcbdiracx_core.egg-info/entry_points.txt
+src/lhcbdiracx_core.egg-info/requires.txt
+src/lhcbdiracx_core.egg-info/top_level.txt
+tests/test_properties.py

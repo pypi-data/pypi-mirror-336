@@ -1,0 +1,9 @@
+diracx-core
+
+[testing]
+lhcbdiracx-testing
+diracx-testing
+
+[types]
+types-cachetools
+types-PyYAML
