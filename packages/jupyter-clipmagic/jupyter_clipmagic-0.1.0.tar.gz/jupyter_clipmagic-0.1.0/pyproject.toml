@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyter_clipmagic"
+version = "0.1.0"
+description = "IPython/Jupyter magic commands for copying code to clipboard"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Brett Naul", email = "brettnaul@gmail.com"},
+]
+dependencies = [
+    "pyperclip",
+    "ipython",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["jupyter_clipmagic"]
