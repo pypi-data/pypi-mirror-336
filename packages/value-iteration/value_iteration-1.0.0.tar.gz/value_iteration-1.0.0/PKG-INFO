@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: value_iteration
+Version: 1.0.0
+Summary: Implementation of value iteration for Markov Decision Processes
+Author-email: Harry Ellingham <h.ellingham@lancaster.ac.uk>
+Maintainer-email: Harry Ellingham <h.ellingham@lancaster.ac.uk>
+Project-URL: homepage, https://github.com/Harry-Ell/601-assessment-2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Requires-Dist: numpy>=2.2
+Requires-Dist: matplotlib>=3.10
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
