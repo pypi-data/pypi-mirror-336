@@ -1,0 +1,5 @@
+brynq-sdk-brynq<4,>=2
+brynq-sdk-functions<3,>=2
+brynq-sdk-mysql<3,>=2
+brynq-sdk-mandrill<3,>=2
+brynq-sdk-elastic<4,>=3
