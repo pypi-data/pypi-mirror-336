@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "ppt": {
+      "command": "D:\\BackDataService\\PPTMCPServer\\.venv\\Scripts\\python.exe",
+      "args": [
+        "D:\\BackDataService\\PPTMCPServer\\ppt_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "D:\\BackDataService\\PPTMCPServer"
+      }
+    }
+  }
+}
