@@ -1,0 +1,4803 @@
+/*! ../../util/states.js */
+
+/*! ../../legacy/dataSelectAction.js */
+
+/*! ../../coord/Axis.js */
+
+/*! ./CandlestickView.js */
+
+/*! ../../../util/model.js */
+
+/*! ../../visual/visualDefault.js */
+
+/*! ./funnelLayout.js */
+
+/*! ../../util/layout.js */
+
+/*! zrender/lib/core/curve.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/model.js */
+
+/*! ../../core/vector.js */
+
+/*! ../chart/line/install.js */
+
+/*! ../helper/createClipPathFromCoordSys.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../../model/Model.js */
+
+/*! zrender/lib/core/event.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! ../helper/sliderMove.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../helper/sliderMove.js */
+
+/*! ../i18n/langEN.js */
+
+/*! ./convertPath.js */
+
+/*! ../../util/model.js */
+
+/*! ./helper.js */
+
+/*! tslib */
+
+/*! ../../extension.js */
+
+/*! zrender/lib/contain/util.js */
+
+/*! ./axisTrigger.js */
+
+/*! ../model/Series.js */
+
+/*! ../Source.js */
+
+/*! ../core/platform.js */
+
+/*! ../helper/createSeriesDataSimply.js */
+
+/*! ../../component/grid/installSimple.js */
+
+/*! ./ContinuousModel.js */
+
+/*! ./SeriesDimensionDefine.js */
+
+/*! ../../data/helper/dataValueHelper.js */
+
+/*! ./SVGPathRebuilder.js */
+
+/*! ../helper/createClipPathFromCoordSys.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../util/number.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! ../core/BoundingRect.js */
+
+/*! ./RadarView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../chart/themeRiver/install.js */
+
+/*! zrender/lib/tool/color.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../model/Component.js */
+
+/*! ../../core/CoordinateSystem.js */
+
+/*! ../../util/types.js */
+
+/*! ../Path.js */
+
+/*! ../../view/Component.js */
+
+/*! zrender/lib/graphic/shape/Circle.js */
+
+/*! ./simpleLayout.js */
+
+/*! ../../component/helper/cursorHelper.js */
+
+/*! ./helper.js */
+
+/*! ../../extension.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/PathProxy.js */
+
+/*! ../../util/model.js */
+
+/*! ../helper/enableAriaDecalForTree.js */
+
+/*! ../../view/Chart.js */
+
+/*! ./LineView.js */
+
+/*! ./mapSymbolLayout.js */
+
+/*! ./createView.js */
+
+/*! zrender/lib/graphic/Displayable.js */
+
+/*! ./AxisPointerModel.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../axisModelCommonMixin.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ./helper.js */
+
+/*! ./BaseAxisPointer.js */
+
+/*! tslib */
+
+/*! ../../model/Component.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../../layout/points.js */
+
+/*! ../../util/number.js */
+
+/*! ../graphic/Group.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Scale.js */
+
+/*! ../core/curve.js */
+
+/*! ../../scale/Interval.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../util/vendor.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./treemapLayout.js */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ../../coord/single/singleCreator.js */
+
+/*! ./AxisView.js */
+
+/*! ./GraphSeries.js */
+
+/*! ../../helper/BrushTargetManager.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../component/transform/install.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ../core/util.js */
+
+/*! ./MarkerModel.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ./MapSeries.js */
+
+/*! tslib */
+
+/*! ../../view/Component.js */
+
+/*! ../scale/Interval.js */
+
+/*! ../../core/CoordinateSystem.js */
+
+/*! ./MarkerModel.js */
+
+/*! tslib */
+
+/*! ../../view/Component.js */
+
+/*! ./mixin/Draggable.js */
+
+/*! ../../util/number.js */
+
+/*! ../core/env.js */
+
+/*! ./filterTransform.js */
+
+/*! ../zrender.js */
+
+/*! ../../data/DataDiffer.js */
+
+/*! ./Region.js */
+
+/*! ../helper/sectorHelper.js */
+
+/*! ../core/util.js */
+
+/*! ../../model/Series.js */
+
+/*! ../core/platform.js */
+
+/*! tslib */
+
+/*! ./lib/export/core.js */
+
+/*! ../../util/log.js */
+
+/*! ../Axis.js */
+
+/*! ../visual/helper.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ./candlestickVisual.js */
+
+/*! ../../util/model.js */
+
+/*! ../chart/boxplot/install.js */
+
+/*! ../../coord/CoordinateSystem.js */
+
+/*! ../util/graphic.js */
+
+/*! ./SliderTimelineModel.js */
+
+/*! ./core/impl.js */
+
+/*! ../../animation/customGraphicKeyframeAnimation.js */
+
+/*! ../../util/model.js */
+
+/*! ./helper/dataProvider.js */
+
+/*! ../../model/Series.js */
+
+/*! ../util/log.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ../config.js */
+
+/*! ./ParallelAxis.js */
+
+/*! ../graphic/Path.js */
+
+/*! ./makeStyleMapper.js */
+
+/*! ../util/ECEventProcessor.js */
+
+/*! zrender/lib/core/PathProxy.js */
+
+/*! ../../coord/geo/geoSourceManager.js */
+
+/*! ../axis/AxisBuilder.js */
+
+/*! ./graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ../graphic/Path.js */
+
+/*! ../util/layout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/format.js */
+
+/*! zrender/lib/core/platform.js */
+
+/*! ./model/Series.js */
+
+/*! ../../util/symbol.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../util/throttle.js */
+
+/*! ./simpleLayoutHelper.js */
+
+/*! ../../util/number.js */
+
+/*! zrender/lib/graphic/Text.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Point.js */
+
+/*! ../util/number.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../core/BoundingRect.js */
+
+/*! ./number.js */
+
+/*! ../../view/Chart.js */
+
+/*! ./LegendView.js */
+
+/*! ../core/task.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../animation/basicTransition.js */
+
+/*! ../../util/innerStore.js */
+
+/*! zrender/lib/canvas/graphic.js */
+
+/*! ./DataZoomView.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../core/LRU.js */
+
+/*! zrender/lib/zrender.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../axis/AxisView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../util/innerStore.js */
+
+/*! tslib */
+
+/*! ./cubicEasing.js */
+
+/*! ../util/model.js */
+
+/*! ../loading/default.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../util/model.js */
+
+/*! ./helper.js */
+
+/*! ../component/graphic/install.js */
+
+/*! ../axisPointer/viewHelper.js */
+
+/*! ./roams.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/states.js */
+
+/*! ./easing.js */
+
+/*! ./AxisBuilder.js */
+
+/*! ./TimelineAxis.js */
+
+/*! ./path.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ../helper/createSeriesData.js */
+
+/*! ./checkMarkerInSeries.js */
+
+/*! ../../model/Model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Series.js */
+
+/*! ../../model/Model.js */
+
+/*! ./Scheduler.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/model.js */
+
+/*! ../core/util.js */
+
+/*! ../helper/BrushController.js */
+
+/*! ../../util/states.js */
+
+/*! ./requestAnimationFrame.js */
+
+/*! ../../util/layout.js */
+
+/*! ../../util/log.js */
+
+/*! ./Cartesian.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./helper/compatStyle.js */
+
+/*! ../util/clazz.js */
+
+/*! ../../extension.js */
+
+/*! ./mixin/palette.js */
+
+/*! ./dataProvider.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/EffectPolyline.js */
+
+/*! zrender/lib/core/Eventful.js */
+
+/*! ../../model/mixin/palette.js */
+
+/*! ./Model.js */
+
+/*! ../../visual/LegendVisualProvider.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ./themeRiverLayout.js */
+
+/*! ../../coord/CoordinateSystem.js */
+
+/*! ../util/layout.js */
+
+/*! ./basicTransition.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../chart/heatmap/install.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! zrender/lib/graphic/shape/Polyline.js */
+
+/*! ../core/BoundingRect.js */
+
+/*! ../../util/format.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! tslib */
+
+/*! ../../util/model.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../helper/whiskerBoxCommon.js */
+
+/*! ./SingleAxis.js */
+
+/*! ../../util/layout.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../util/log.js */
+
+/*! ../Source.js */
+
+/*! ./CalendarView.js */
+
+/*! ../../data/Tree.js */
+
+/*! ../core/util.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../chart/parallel/install.js */
+
+/*! ../../util/throttle.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../util/types.js */
+
+/*! ../util/number.js */
+
+/*! tslib */
+
+/*! ../../data/SeriesData.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./graphHelper.js */
+
+/*! ../../data/helper/sourceHelper.js */
+
+/*! ../../util/layout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/tool/path.js */
+
+/*! tslib */
+
+/*! ../../util/innerStore.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/Point.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/layout.js */
+
+/*! ../../model/Series.js */
+
+/*! ../Source.js */
+
+/*! ./log.js */
+
+/*! ../../coord/View.js */
+
+/*! ../graphic/TSpan.js */
+
+/*! ../../util/vendor.js */
+
+/*! ../helper/Polyline.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./sankeyLayout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/polar/install.js */
+
+/*! ./curve.js */
+
+/*! ../core/util.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./LinesSeries.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ../../util/number.js */
+
+/*! ./featureManager.js */
+
+/*! ./installLegendPlain.js */
+
+/*! ../chart/lines/install.js */
+
+/*! tslib */
+
+/*! ./installCommon.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! ./DataZoomModel.js */
+
+/*! ../core/util.js */
+
+/*! ../core/bbox.js */
+
+/*! ./Geo.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/graphic/helper/subPixelOptimize.js */
+
+/*! ./linesVisual.js */
+
+/*! ./log.js */
+
+/*! ../../util/model.js */
+
+/*! ../../core/util.js */
+
+/*! ../../model/Component.js */
+
+/*! ../helper/Line.js */
+
+/*! ./feature/Restore.js */
+
+/*! ../core/curve.js */
+
+/*! ./fix/textCoord.js */
+
+/*! ../../util/format.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../../util/states.js */
+
+/*! tslib */
+
+/*! zrender/lib/contain/text.js */
+
+/*! ./TreeSeries.js */
+
+/*! ../pie/pieLayout.js */
+
+/*! tslib */
+
+/*! ../../coord/cartesian/cartesianAxisHelper.js */
+
+/*! ./BaseAxisPointer.js */
+
+/*! ../helper/Symbol.js */
+
+/*! ../../util/states.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./circularLayoutHelper.js */
+
+/*! zrender/lib/core/OrientedBoundingRect.js */
+
+/*! ../../util/symbol.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../data/Tree.js */
+
+/*! ../../util/states.js */
+
+/*! tslib */
+
+/*! ./tooltipMarkup.js */
+
+/*! ./geoSourceManager.js */
+
+/*! tslib */
+
+/*! ./helper/createDimensions.js */
+
+/*! tslib */
+
+/*! ../helper/createSeriesData.js */
+
+/*! ../../util/number.js */
+
+/*! ../core/dom.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/Transformable.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../coord/CoordinateSystem.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./MarkerView.js */
+
+/*! ./feature/MagicType.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! ./tooltipMarkup.js */
+
+/*! ../util/throttle.js */
+
+/*! ../../util/number.js */
+
+/*! ../../visual/VisualMapping.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/number.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/event.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./axisSplitHelper.js */
+
+/*! ./env.js */
+
+/*! ../util/clazz.js */
+
+/*! zrender/lib/core/Eventful.js */
+
+/*! ../core/PathProxy.js */
+
+/*! ../../util/conditionalExpression.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/enableAriaDecalForTree.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/parallel/install.js */
+
+/*! ./clazz.js */
+
+/*! ../../view/Chart.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! ../util/time.js */
+
+/*! ../model/Model.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../../model/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./markerHelper.js */
+
+/*! ../../util/number.js */
+
+/*! zrender/lib/tool/color.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../Path.js */
+
+/*! ../core/vector.js */
+
+/*! ../../../core/echarts.js */
+
+/*! ./core/util.js */
+
+/*! ../../core/CoordinateSystem.js */
+
+/*! tslib */
+
+/*! ../../data/SeriesData.js */
+
+/*! ../core/curve.js */
+
+/*! ./FunnelSeries.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../toolbox/feature/Brush.js */
+
+/*! ../../view/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./sunburstAction.js */
+
+/*! ./Gradient.js */
+
+/*! ../helper/Symbol.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! ../../component/helper/roamHelper.js */
+
+/*! ../component/dataZoom/installDataZoomSlider.js */
+
+/*! ./LegendView.js */
+
+/*! ../../data/helper/sourceHelper.js */
+
+/*! ./helper/SeriesDataSchema.js */
+
+/*! ./poly.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../extension.js */
+
+/*! tslib */
+
+/*! ../../model/referHelper.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! ../helper/labelHelper.js */
+
+/*! zrender/lib/core/curve.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./featureManager.js */
+
+/*! ./vector.js */
+
+/*! ../../util/model.js */
+
+/*! ./core.js */
+
+/*! ../radar/backwardCompat.js */
+
+/*! ./Handler.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../label/labelGuideHelper.js */
+
+/*! ../Axis.js */
+
+/*! zrender/lib/tool/color.js */
+
+/*! ../../util/log.js */
+
+/*! ./MarkAreaView.js */
+
+/*! ../../util/throttle.js */
+
+/*! ../../component/helper/sliderMove.js */
+
+/*! ../../util/number.js */
+
+/*! ../core/locale.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./checkMarkerInSeries.js */
+
+/*! ../component/grid/installSimple.js */
+
+/*! ../../util/layout.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! ../util/graphic.js */
+
+/*! ../../data/helper/createDimensions.js */
+
+/*! ./animation/Animator.js */
+
+/*! ../core/LRU.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/createSeriesData.js */
+
+/*! ./categoryVisual.js */
+
+/*! ../../util/layout.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ./cartesianAxisHelper.js */
+
+/*! ./ToolboxView.js */
+
+/*! tslib */
+
+/*! ../helper/createClipPathFromCoordSys.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../component/helper/RoamController.js */
+
+/*! ./visualEncoding.js */
+
+/*! ../../view/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ./edgeVisual.js */
+
+/*! ./config.js */
+
+/*! ../featureManager.js */
+
+/*! ../../util/states.js */
+
+/*! zrender/lib/graphic/Image.js */
+
+/*! ../../util/layout.js */
+
+/*! ./graphHelper.js */
+
+/*! ../util/graphic.js */
+
+/*! ../chart/helper/createRenderPlanner.js */
+
+/*! ./SliderZoomModel.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/layout.js */
+
+/*! ../graphic/TSpan.js */
+
+/*! ./log.js */
+
+/*! ../../util/layout.js */
+
+/*! ../graphic/Image.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../util/format.js */
+
+/*! ../chart/treemap/install.js */
+
+/*! ./helper/dimensionHelper.js */
+
+/*! ./mapDataStatistic.js */
+
+/*! ./viewHelper.js */
+
+/*! ./Axis2D.js */
+
+/*! zrender/lib/tool/parseXML.js */
+
+/*! ../../util/vendor.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ../../data/helper/dataValueHelper.js */
+
+/*! ./AxisBuilder.js */
+
+/*! ../../view/Component.js */
+
+/*! ./MapView.js */
+
+/*! ./preprocessor.js */
+
+/*! tslib */
+
+/*! ./TreemapSeries.js */
+
+/*! ../../action/roamHelper.js */
+
+/*! ../../core/echarts.js */
+
+/*! ./treemapAction.js */
+
+/*! ../helper/LargeSymbolDraw.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ./VisualMapModel.js */
+
+/*! tslib */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../util/number.js */
+
+/*! ./circularLayoutHelper.js */
+
+/*! ../../util/format.js */
+
+/*! ./core/GestureMgr.js */
+
+/*! ./vector.js */
+
+/*! ../animation/requestAnimationFrame.js */
+
+/*! ../helper/multipleGraphEdgeHelper.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ./core/Eventful.js */
+
+/*! ./BaseAxisPointer.js */
+
+/*! ../core/util.js */
+
+/*! ./sortTransform.js */
+
+/*! ./cssAnimation.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! ../graphic/helper/image.js */
+
+/*! ../tool/color.js */
+
+/*! ../../coord/parallel/ParallelModel.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ../helper/createSeriesData.js */
+
+/*! tslib */
+
+/*! ../data/helper/dataValueHelper.js */
+
+/*! ./patch.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./core/util.js */
+
+/*! ../Path.js */
+
+/*! ../axisDefault.js */
+
+/*! ./Region.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../util/format.js */
+
+/*! tslib */
+
+/*! ../../util/number.js */
+
+/*! ../helper/labelHelper.js */
+
+/*! ../../data/helper/dimensionHelper.js */
+
+/*! ./ScatterView.js */
+
+/*! ../../util/component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./core/vector.js */
+
+/*! ../../visual/visualSolution.js */
+
+/*! ../axisPointer/modelHelper.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/dom.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../chart/tree/install.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../axisModelCommonMixin.js */
+
+/*! ../../util/states.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./lib/extension.js */
+
+/*! tslib */
+
+/*! ../component/title/install.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../graphic/LinearGradient.js */
+
+/*! ../../processor/negativeDataFilter.js */
+
+/*! ../../model/Component.js */
+
+/*! ../util/component.js */
+
+/*! ./helper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! ../../view/Component.js */
+
+/*! ./model/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/geo/install.js */
+
+/*! ../Element.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../processor/dataFilter.js */
+
+/*! ../../coord/calendar/Calendar.js */
+
+/*! ../../util/states.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/log.js */
+
+/*! ./helper.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! ./linesLayout.js */
+
+/*! ./lib/export/renderers.js */
+
+/*! ../chart/map/install.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ../util/states.js */
+
+/*! tslib */
+
+/*! ../../util/types.js */
+
+/*! ../../util/number.js */
+
+/*! ../util/number.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../helper/BrushController.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! zrender/lib/graphic/RadialGradient.js */
+
+/*! ../../util/symbol.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! tslib */
+
+/*! ./LabelManager.js */
+
+/*! ./TimelineView.js */
+
+/*! ../../util/number.js */
+
+/*! ../featureManager.js */
+
+/*! ../../util/types.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../util/event.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../../data/helper/sourceHelper.js */
+
+/*! ../contain/text.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ./CustomSeries.js */
+
+/*! ../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/roundSector.js */
+
+/*! tslib */
+
+/*! ../util/model.js */
+
+/*! ../../data/helper/dataStackHelper.js */
+
+/*! ../../label/sectorLabel.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/graphic.js */
+
+/*! zrender/lib/graphic/Image.js */
+
+/*! ./log.js */
+
+/*! ../data/DataDiffer.js */
+
+/*! tslib */
+
+/*! ../../util/model.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./Path.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/platform.js */
+
+/*! ../../view/Component.js */
+
+/*! ../../data/helper/createDimensions.js */
+
+/*! ./time.js */
+
+/*! ../model/Series.js */
+
+/*! ../util/vendor.js */
+
+/*! ./circularLayoutHelper.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../view/Component.js */
+
+/*! ../../util/innerStore.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ../util/model.js */
+
+/*! ../../util/number.js */
+
+/*! ./modelHelper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./api/number.js */
+
+/*! ../helper/multipleGraphEdgeHelper.js */
+
+/*! ../util/graphic.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../util/innerStore.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../model/Model.js */
+
+/*! ./clazz.js */
+
+/*! ./installLegendScroll.js */
+
+/*! ../../data/Graph.js */
+
+/*! ../view/Component.js */
+
+/*! ../Path.js */
+
+/*! ./Polyline.js */
+
+/*! ../../data/helper/createDimensions.js */
+
+/*! ../util/log.js */
+
+/*! ../../coord/calendar/CalendarModel.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../processor/dataFilter.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../chart/scatter/install.js */
+
+/*! ../../coord/axisModelCreator.js */
+
+/*! ../../util/states.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ./ParallelSeries.js */
+
+/*! ../../util/types.js */
+
+/*! ../util/number.js */
+
+/*! ../../coord/cartesian/prepareCustom.js */
+
+/*! ../helper/whiskerBoxCommon.js */
+
+/*! ./helper.js */
+
+/*! ../../util/number.js */
+
+/*! ../core/Eventful.js */
+
+/*! ../processor/dataStack.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../../visual/LegendVisualProvider.js */
+
+/*! ../helper/multipleGraphEdgeHelper.js */
+
+/*! ../../component/helper/cursorHelper.js */
+
+/*! ./helper.js */
+
+/*! zrender/lib/canvas/graphic.js */
+
+/*! ./selector.js */
+
+/*! ../../coord/axisModelCreator.js */
+
+/*! zrender/lib/core/bbox.js */
+
+/*! ./feature/DataZoom.js */
+
+/*! ../../data/helper/dataProvider.js */
+
+/*! ./fix/diaoyuIsland.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./SankeySeries.js */
+
+/*! ./candlestickLayout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/subPixelOptimize.js */
+
+/*! ../../label/labelGuideHelper.js */
+
+/*! ../../util/layout.js */
+
+/*! ./cubic.js */
+
+/*! ../component/visualMap/install.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Line.js */
+
+/*! zrender/lib/graphic/Image.js */
+
+/*! ../core/env.js */
+
+/*! ./prepareBoxplotData.js */
+
+/*! ./helper.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/env.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../util/model.js */
+
+/*! ../chart/custom/install.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./TooltipModel.js */
+
+/*! tslib */
+
+/*! zrender/lib/graphic/Group.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./fourPointsTransform.js */
+
+/*! ../../util/types.js */
+
+/*! ./event.js */
+
+/*! ../axisPointer/SingleAxisPointer.js */
+
+/*! ../chart/pie/install.js */
+
+/*! ../toolbox/featureManager.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/Eventful.js */
+
+/*! zrender/lib/graphic/shape/Ellipse.js */
+
+/*! ./feature/DataView.js */
+
+/*! ../util/model.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ../../extension.js */
+
+/*! ../component/tooltip/seriesFormatTooltip.js */
+
+/*! ../../model/Model.js */
+
+/*! ./treeLayout.js */
+
+/*! ../../label/labelLayoutHelper.js */
+
+/*! ../graphic/Displayable.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/types.js */
+
+/*! ./ScrollableLegendModel.js */
+
+/*! ./basicTransition.js */
+
+/*! zrender/lib/graphic/Displayable.js */
+
+/*! tslib */
+
+/*! ../../label/labelLayoutHelper.js */
+
+/*! ../../util/format.js */
+
+/*! ../../model/mixin/dataFormat.js */
+
+/*! ../../util/component.js */
+
+/*! ./preprocessor.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./symbol.js */
+
+/*! ../../component/tooltip/seriesFormatTooltip.js */
+
+/*! tslib */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./core/env.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/dataZoom/install.js */
+
+/*! ../../util/log.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/Transformable.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/graphic/shape/Polygon.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! ../../component/helper/MapDraw.js */
+
+/*! ./graphic.js */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ./BarSeries.js */
+
+/*! ../../util/number.js */
+
+/*! tslib */
+
+/*! ../../data/helper/dataValueHelper.js */
+
+/*! ./AxisView.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../util/log.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./FunnelView.js */
+
+/*! zrender/lib/core/platform.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ../../util/states.js */
+
+/*! ../core/Transformable.js */
+
+/*! ../helper/sliderMove.js */
+
+/*! zrender/lib/contain/util.js */
+
+/*! ../line/poly.js */
+
+/*! ./installDataZoomSlider.js */
+
+/*! ./task.js */
+
+/*! ../featureManager.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../data/Source.js */
+
+/*! ../../view/Chart.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ./Source.js */
+
+/*! ../label/installLabelLayout.js */
+
+/*! ./InsideZoomModel.js */
+
+/*! ../../coord/single/singleAxisHelper.js */
+
+/*! ../core/curve.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/tool/morphPath.js */
+
+/*! ../axisAlignTicks.js */
+
+/*! ../../util/component.js */
+
+/*! ../../model/Component.js */
+
+/*! ./number.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../layout/barGrid.js */
+
+/*! ../helper/createSeriesDataSimply.js */
+
+/*! ../core/util.js */
+
+/*! ./MarkAreaModel.js */
+
+/*! ../../animation/customGraphicTransition.js */
+
+/*! ./MarkLineView.js */
+
+/*! ../Region.js */
+
+/*! ./path.js */
+
+/*! ../util/types.js */
+
+/*! ./basicTransition.js */
+
+/*! ../helper/createRenderPlanner.js */
+
+/*! ./checkMarkerInSeries.js */
+
+/*! ./makeStyleMapper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../axis/RadiusAxisView.js */
+
+/*! ./roams.js */
+
+/*! ../../visual/helper.js */
+
+/*! ../../util/number.js */
+
+/*! tslib */
+
+/*! ../axisPointer/install.js */
+
+/*! ./DataZoomView.js */
+
+/*! ../helper/createSeriesData.js */
+
+/*! ./labelHelper.js */
+
+/*! tslib */
+
+/*! ./installSimple.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/canvas/Painter.js */
+
+/*! ./circularLayout.js */
+
+/*! ../../action/roamHelper.js */
+
+/*! ./Cartesian2D.js */
+
+/*! ../../view/Chart.js */
+
+/*! zrender/lib/contain/polygon.js */
+
+/*! ../model/Model.js */
+
+/*! ./Storage.js */
+
+/*! ./dataProvider.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../../util/format.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../util/event.js */
+
+/*! zrender/lib/core/PathProxy.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ./VisualMapView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! ../../data/helper/dataProvider.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ./matrix.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Parallel.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./tool/color.js */
+
+/*! ./Displayable.js */
+
+/*! ../core/util.js */
+
+/*! ../../util/number.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./core/Transformable.js */
+
+/*! tslib */
+
+/*! ./CoordinateSystem.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/event.js */
+
+/*! ../../component/helper/RoamController.js */
+
+/*! ../../util/format.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../util/number.js */
+
+/*! ../axisPointer/PolarAxisPointer.js */
+
+/*! ../chart/helper/createRenderPlanner.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../extension.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./markerHelper.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ./timelineAction.js */
+
+/*! ../helper/brushHelper.js */
+
+/*! ../../util/number.js */
+
+/*! ./BaseBarSeries.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./innerStore.js */
+
+/*! ../axis/parallelAxisAction.js */
+
+/*! zrender/lib/graphic/IncrementalDisplayable.js */
+
+/*! ../axisModelCommonMixin.js */
+
+/*! ./graphic/constants.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./ExtensionAPI.js */
+
+/*! ../layout/barGrid.js */
+
+/*! ../legacy/getTextRect.js */
+
+/*! ../graphic/Text.js */
+
+/*! tslib */
+
+/*! ../../util/model.js */
+
+/*! ../component/toolbox/install.js */
+
+/*! ./sunburstVisual.js */
+
+/*! ../../view/Component.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../model/Model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/layout.js */
+
+/*! ./core/event.js */
+
+/*! tslib */
+
+/*! ./GaugeView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/createClipPathFromCoordSys.js */
+
+/*! ./viewHelper.js */
+
+/*! ./GeoView.js */
+
+/*! ../scale/Ordinal.js */
+
+/*! ../../data/DataDiffer.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ../helper/BrushController.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ./SunburstSeries.js */
+
+/*! ../radar/radarLayout.js */
+
+/*! ../../data/helper/dataStackHelper.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../../model/Model.js */
+
+/*! ../axis/AxisBuilder.js */
+
+/*! ../core/Eventful.js */
+
+/*! ../axis/AxisView.js */
+
+/*! zrender/lib/graphic/helper/parseText.js */
+
+/*! ./GraphicView.js */
+
+/*! ../graphic/shape/Sector.js */
+
+/*! ../graphic/Image.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Single.js */
+
+/*! ../contain/text.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! zrender/lib/contain/polygon.js */
+
+/*! ../../data/helper/linkSeriesData.js */
+
+/*! ../graphic/Image.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/core/Transformable.js */
+
+/*! ../model/mixin/dataFormat.js */
+
+/*! ../util/model.js */
+
+/*! ../util/component.js */
+
+/*! ../util/model.js */
+
+/*! ./BoundingRect.js */
+
+/*! ./TooltipRichContent.js */
+
+/*! tslib */
+
+/*! ./view/Component.js */
+
+/*! ../../animation/customGraphicKeyframeAnimation.js */
+
+/*! ../../model/Model.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../helper/BrushTargetManager.js */
+
+/*! ./makeStyleMapper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./helper.js */
+
+/*! ../../model/mixin/makeStyleMapper.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../component/helper/roamHelper.js */
+
+/*! ../../extension.js */
+
+/*! ../../model/Model.js */
+
+/*! ../../model/Series.js */
+
+/*! ../../util/number.js */
+
+/*! ./TSpan.js */
+
+/*! ../util/clazz.js */
+
+/*! ../util/number.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Series.js */
+
+/*! tslib */
+
+/*! ../../util/symbol.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../scale/helper.js */
+
+/*! ../../model/Component.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ../../util/number.js */
+
+/*! ../util/log.js */
+
+/*! ../config.js */
+
+/*! ./findPointFromSeries.js */
+
+/*! ../../util/log.js */
+
+/*! ../util/model.js */
+
+/*! ../../util/layout.js */
+
+/*! ../../model/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/number.js */
+
+/*! ../../layout/points.js */
+
+/*! ../svg/helper.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ../core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./axisSplitHelper.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ./helper.js */
+
+/*! ./DataZoomModel.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! zrender/lib/graphic/shape/Sector.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./graphic.js */
+
+/*! ../core/LRU.js */
+
+/*! ./AxisBuilder.js */
+
+/*! ../theme/dark.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../util/decal.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../data/SeriesData.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../data/helper/sourceHelper.js */
+
+/*! ./cubicEasing.js */
+
+/*! ./CustomView.js */
+
+/*! ../../model/Model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/graphic/Text.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../util/states.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! tslib */
+
+/*! ../core/BoundingRect.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ../core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/brush/install.js */
+
+/*! ./ParallelView.js */
+
+/*! ../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/log.js */
+
+/*! ../util/model.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/states.js */
+
+/*! tslib */
+
+/*! ./Scale.js */
+
+/*! ../../util/states.js */
+
+/*! ../util/number.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/states.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./number.js */
+
+/*! ../../view/Component.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/layout.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../data/DataDiffer.js */
+
+/*! ../../coord/View.js */
+
+/*! ../../util/layout.js */
+
+/*! ../../../core/echarts.js */
+
+/*! ../model/Model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/innerStore.js */
+
+/*! ../../util/format.js */
+
+/*! ../axisHelper.js */
+
+/*! ./EffectScatterView.js */
+
+/*! ../../data/DataDiffer.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./EffectLine.js */
+
+/*! ../component/visualMap/installVisualMapPiecewise.js */
+
+/*! ./PieSeries.js */
+
+/*! ../../coord/scaleRawExtentInfo.js */
+
+/*! ../model/Series.js */
+
+/*! tslib */
+
+/*! ../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/event.js */
+
+/*! ./Displayable.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../coord/cartesian/GridModel.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Component.js */
+
+/*! ../util/graphic.js */
+
+/*! ../../component/helper/RoamController.js */
+
+/*! ../graphic/constants.js */
+
+/*! ../../util/number.js */
+
+/*! ./SankeyView.js */
+
+/*! ./scaleRawExtentInfo.js */
+
+/*! ./mixin/itemStyle.js */
+
+/*! ../core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./matrix.js */
+
+/*! zrender/lib/svg/Painter.js */
+
+/*! ./boxplotLayout.js */
+
+/*! ../../contain/text.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/shape/sausage.js */
+
+/*! ./BoxplotView.js */
+
+/*! ../../coord/CoordinateSystem.js */
+
+/*! zrender/lib/tool/path.js */
+
+/*! ../contain/path.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/platform.js */
+
+/*! ./api/util.js */
+
+/*! ../core/PathProxy.js */
+
+/*! ../graphic/Path.js */
+
+/*! ../helper/EffectLine.js */
+
+/*! ../helper/SymbolDraw.js */
+
+/*! ../helper/createSeriesData.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/time.js */
+
+/*! ../../util/model.js */
+
+/*! ./helper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/layout.js */
+
+/*! ./IndicatorAxis.js */
+
+/*! ../util/model.js */
+
+/*! ../../coord/axisModelCreator.js */
+
+/*! ./preprocessor.js */
+
+/*! ../../component/geo/install.js */
+
+/*! ../../extension.js */
+
+/*! ./SelectZoomModel.js */
+
+/*! ../core/PathProxy.js */
+
+/*! ../core/util.js */
+
+/*! ../util/clazz.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ../../util/log.js */
+
+/*! ./number.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./platform.js */
+
+/*! zrender/lib/graphic/LinearGradient.js */
+
+/*! ../../model/Series.js */
+
+/*! ../../component/helper/cursorHelper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/LRU.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! ../../model/Component.js */
+
+/*! tslib */
+
+/*! ./graphHelper.js */
+
+/*! tslib */
+
+/*! ../../util/log.js */
+
+/*! ../../model/Model.js */
+
+/*! ../axis/SingleAxisView.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! ../core/Transformable.js */
+
+/*! ../Source.js */
+
+/*! tslib */
+
+/*! ../../util/graphic.js */
+
+/*! ../../visual/visualSolution.js */
+
+/*! ../../util/states.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./treeVisual.js */
+
+/*! ../../data/helper/createDimensions.js */
+
+/*! tslib */
+
+/*! ./CandlestickSeries.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! tslib */
+
+/*! ../../coord/polar/PolarModel.js */
+
+/*! ./visualEncoding.js */
+
+/*! ../../processor/dataSample.js */
+
+/*! ../util/model.js */
+
+/*! ./util.js */
+
+/*! ../../util/number.js */
+
+/*! ../../util/model.js */
+
+/*! ../../animation/customGraphicTransition.js */
+
+/*! ../component/grid/install.js */
+
+/*! ../../util/states.js */
+
+/*! ./api/helper.js */
+
+/*! ./helper/dataValueHelper.js */
+
+/*! ../../util/states.js */
+
+/*! ../../model/Series.js */
+
+/*! zrender/lib/core/WeakMap.js */
+
+/*! ../model/mixin/lineStyle.js */
+
+/*! ../chart/sunburst/install.js */
+
+/*! ./LegendModel.js */
+
+/*! ../Axis.js */
+
+/*! ./dataZoomProcessor.js */
+
+/*! tslib */
+
+/*! ../label/installLabelLayout.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ../core/BoundingRect.js */
+
+/*! ../../data/helper/dataValueHelper.js */
+
+/*! ../helper/createSeriesDataSimply.js */
+
+/*! ./AxisView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/model.js */
+
+/*! ./constants.js */
+
+/*! ../../util/component.js */
+
+/*! ./simpleLayoutHelper.js */
+
+/*! ./domapi.js */
+
+/*! ../data/helper/dataStackHelper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../Path.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/graphic/Group.js */
+
+/*! tslib */
+
+/*! ./installLegendPlain.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/model.js */
+
+/*! ../../model/Series.js */
+
+/*! ../../visual/helper.js */
+
+/*! ./dividePath.js */
+
+/*! ./animation/Animation.js */
+
+/*! ./helper/linkSeriesData.js */
+
+/*! ../helper/createSeriesDataSimply.js */
+
+/*! tslib */
+
+/*! ../component/dataset/install.js */
+
+/*! ../util/log.js */
+
+/*! ./modelHelper.js */
+
+/*! ./ContinuousView.js */
+
+/*! ../../visual/helper.js */
+
+/*! ./BarView.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../axisPointer/findPointFromSeries.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! ./modelHelper.js */
+
+/*! ../core/BoundingRect.js */
+
+/*! ./core/util.js */
+
+/*! ./pieLayout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../coord/geo/geoSourceManager.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./number.js */
+
+/*! ../../view/Chart.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/platform.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ../model/mixin/itemStyle.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ./MarkLineModel.js */
+
+/*! ./installCommon.js */
+
+/*! ../chart/graph/install.js */
+
+/*! ../../model/Component.js */
+
+/*! ./transform.js */
+
+/*! ../../model/Component.js */
+
+/*! ./LineSeries.js */
+
+/*! ./Interval.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! tslib */
+
+/*! ../../util/log.js */
+
+/*! ./RadarSeries.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/multipleGraphEdgeHelper.js */
+
+/*! ../../processor/dataFilter.js */
+
+/*! ../../util/number.js */
+
+/*! ../visual/decal.js */
+
+/*! ../../view/Component.js */
+
+/*! ./BrushView.js */
+
+/*! ../../util/log.js */
+
+/*! ../chart/candlestick/install.js */
+
+/*! tslib */
+
+/*! ../DataStore.js */
+
+/*! ../helper/listComponent.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./installDataZoomInside.js */
+
+/*! zrender/lib/graphic/Displayable.js */
+
+/*! ./helper.js */
+
+/*! ../animation/universalTransition.js */
+
+/*! ./vector.js */
+
+/*! ./dom.js */
+
+/*! ../component/marker/installMarkArea.js */
+
+/*! ../../../core/echarts.js */
+
+/*! ../../visual/VisualMapping.js */
+
+/*! ../util/graphic.js */
+
+/*! tslib */
+
+/*! ../../util/number.js */
+
+/*! ./Source.js */
+
+/*! ../../util/decal.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/legend/installLegendPlain.js */
+
+/*! ../../visual/VisualMapping.js */
+
+/*! zrender/lib/core/PathProxy.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ./GeoJSONResource.js */
+
+/*! ../../util/component.js */
+
+/*! ./AxisBuilder.js */
+
+/*! ./lifecycle.js */
+
+/*! ../component/singleAxis/install.js */
+
+/*! ../../util/component.js */
+
+/*! zrender/lib/core/event.js */
+
+/*! ../util/layout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./labelLayoutHelper.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./HeatmapLayer.js */
+
+/*! ../helper/sectorHelper.js */
+
+/*! ../../processor/dataFilter.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ../../util/number.js */
+
+/*! ./DataStore.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ../../util/innerStore.js */
+
+/*! tslib */
+
+/*! ../component/visualMap/installVisualMapContinuous.js */
+
+/*! ../tool/color.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ./model.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./GraphView.js */
+
+/*! ../../visual/visualSolution.js */
+
+/*! ../util/number.js */
+
+/*! ../model/mixin/makeStyleMapper.js */
+
+/*! ../../model/mixin/dataFormat.js */
+
+/*! ./lib/export/components.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./cssEmphasis.js */
+
+/*! ./RadarView.js */
+
+/*! ./MarkerView.js */
+
+/*! ../model/Global.js */
+
+/*! zrender/lib/core/Eventful.js */
+
+/*! ./helper.js */
+
+/*! ../../util/innerStore.js */
+
+/*! tslib */
+
+/*! ../../util/graphic.js */
+
+/*! ../../util/styleCompat.js */
+
+/*! ./sunburstAction.js */
+
+/*! zrender/lib/zrender.js */
+
+/*! ./BaseBarSeries.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../canvas/helper.js */
+
+/*! ../../model/mixin/dataFormat.js */
+
+/*! tslib */
+
+/*! ./Clip.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./basicTransition.js */
+
+/*! tslib */
+
+/*! zrender/lib/graphic/Displayable.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ../../extension.js */
+
+/*! zrender/lib/graphic/shape/Rect.js */
+
+/*! ./labelGuideHelper.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ./MarkerModel.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../util/graphic.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../visual/symbol.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../helper/sliderMove.js */
+
+/*! zrender/lib/graphic/Displayable.js */
+
+/*! tslib */
+
+/*! ./SunburstPiece.js */
+
+/*! zrender/lib/graphic/Text.js */
+
+/*! ../../util/format.js */
+
+/*! ../../view/Chart.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../core/matrix.js */
+
+/*! ../../visual/LegendVisualProvider.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./vector.js */
+
+/*! zrender/lib/contain/text.js */
+
+/*! ./helper.js */
+
+/*! ../config.js */
+
+/*! ../core/echarts.js */
+
+/*! ../helper/sliderMove.js */
+
+/*! tslib */
+
+/*! ../util/clazz.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./helper.js */
+
+/*! ./layoutHelper.js */
+
+/*! ./constants.js */
+
+/*! ./PiecewiseModel.js */
+
+/*! tslib */
+
+/*! ../../layout/points.js */
+
+/*! tslib */
+
+/*! ../core/util.js */
+
+/*! ../../util/component.js */
+
+/*! ../util/states.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./view/Chart.js */
+
+/*! ../../util/model.js */
+
+/*! ./easing.js */
+
+/*! tslib */
+
+/*! ../../coord/geo/prepareCustom.js */
+
+/*! ../../model/Component.js */
+
+/*! ../../util/layout.js */
+
+/*! ../../../util/model.js */
+
+/*! tslib */
+
+/*! ./MarkPointModel.js */
+
+/*! ../../model/Series.js */
+
+/*! tslib */
+
+/*! ../../model/Component.js */
+
+/*! ../core/task.js */
+
+/*! tslib */
+
+/*! ./TooltipHTMLContent.js */
+
+/*! tslib */
+
+/*! ./visualEncoding.js */
+
+/*! ../core/PathProxy.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ./helper.js */
+
+/*! tslib */
+
+/*! zrender/lib/contain/text.js */
+
+/*! ../../util/model.js */
+
+/*! ./Breadcrumb.js */
+
+/*! ../../data/Tree.js */
+
+/*! ./internalComponentCreator.js */
+
+/*! ../../coord/polar/AxisModel.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../chart/radar/install.js */
+
+/*! ./sourceHelper.js */
+
+/*! ./EffectScatterSeries.js */
+
+/*! zrender/lib/contain/quadratic.js */
+
+/*! ../axisAlignTicks.js */
+
+/*! ../graphic/shape/Polygon.js */
+
+/*! ../../coord/cartesian/cartesianAxisHelper.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../data/helper/dataStackHelper.js */
+
+/*! ./helper/sourceHelper.js */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+/*! ../../coord/parallel/parallelPreprocessor.js */
+
+/*! ../../view/Component.js */
+
+/*! ../util/model.js */
+
+/*! ../../util/graphic.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ../util/log.js */
+
+/*! ./Scale.js */
+
+/*! ./AngleAxis.js */
+
+/*! ../view/Chart.js */
+
+/*! ../../util/format.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ./PictorialBarSeries.js */
+
+/*! zrender/lib/core/event.js */
+
+/*! ./Animator.js */
+
+/*! ./AxisProxy.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../model/Component.js */
+
+/*! ../model/Component.js */
+
+/*! ./bbox.js */
+
+/*! ../../model/Series.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./PieView.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../core/curve.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../coord/axisModelCommonMixin.js */
+
+/*! ../helper/labelHelper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/env.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../tooltip/tooltipMarkup.js */
+
+/*! ../../model/Component.js */
+
+/*! ./geoSourceManager.js */
+
+/*! ./api/graphic.js */
+
+/*! ../../visual/visualDefault.js */
+
+/*! ../graphic/helper/image.js */
+
+/*! ./innerStore.js */
+
+/*! ./boxplotTransform.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ./format.js */
+
+/*! zrender/lib/graphic/shape/BezierCurve.js */
+
+/*! ../../view/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./helper.js */
+
+/*! zrender/lib/graphic/Image.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../graphic/shape/Line.js */
+
+/*! ./createSeriesDataSimply.js */
+
+/*! ./globalListener.js */
+
+/*! ../core/Eventful.js */
+
+/*! ./LinesView.js */
+
+/*! ../../scale/Interval.js */
+
+/*! tslib */
+
+/*! ../../util/symbol.js */
+
+/*! ../../visual/LegendVisualProvider.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../data/helper/createDimensions.js */
+
+/*! zrender/lib/graphic/shape/Rect.js */
+
+/*! ../core/util.js */
+
+/*! zrender/lib/graphic/Image.js */
+
+/*! zrender/lib/graphic/Displayable.js */
+
+/*! ./linesLayout.js */
+
+/*! ../helper/image.js */
+
+/*! ../tooltip/tooltipMarkup.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../util/number.js */
+
+/*! tslib */
+
+/*! ../component/axisPointer/install.js */
+
+/*! ../../chart/helper/LineDraw.js */
+
+/*! ../helper/poly.js */
+
+/*! ./mixin/lineStyle.js */
+
+/*! ./transformPath.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/contain/line.js */
+
+/*! ../../util/model.js */
+
+/*! ../graphic/shape/Ellipse.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! zrender/lib/zrender.js */
+
+/*! ../chart/helper/createRenderPlanner.js */
+
+/*! ../core/util.js */
+
+/*! tslib */
+
+/*! ../../util/layout.js */
+
+/*! ../../layout/barPolar.js */
+
+/*! ../core/util.js */
+
+/*! ../chart/funnel/install.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../data/helper/dataStackHelper.js */
+
+/*! ../featureManager.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../tool/color.js */
+
+/*! ./api.js */
+
+/*! ../util/model.js */
+
+/*! ../../model/Series.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../model/Series.js */
+
+/*! ../../util/states.js */
+
+/*! ../../model/Model.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/createRenderPlanner.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../../util/log.js */
+
+/*! ../../model/Series.js */
+
+/*! ../chart/effectScatter/install.js */
+
+/*! ./core.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! ../contain/text.js */
+
+/*! ../../util/number.js */
+
+/*! ../../core/curve.js */
+
+/*! ./Displayable.js */
+
+/*! ../chart/bar/install.js */
+
+/*! ../graphic/Path.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../component/radar/install.js */
+
+/*! ../../visual/LegendVisualProvider.js */
+
+/*! ../core/curve.js */
+
+/*! ./treeAction.js */
+
+/*! ../Path.js */
+
+/*! ./lineAnimationDiff.js */
+
+/*! ../config.js */
+
+/*! ../animation/cubicEasing.js */
+
+/*! tslib */
+
+/*! ../../util/layout.js */
+
+/*! ../../core/CoordinateSystem.js */
+
+/*! ../../model/Component.js */
+
+/*! ./helper.js */
+
+/*! tslib */
+
+/*! zrender/lib/tool/color.js */
+
+/*! ../../view/Chart.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Component.js */
+
+/*! ../component/legend/install.js */
+
+/*! ./core/env.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../core/util.js */
+
+/*! ./Component.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../extension.js */
+
+/*! zrender/lib/core/Transformable.js */
+
+/*! ../../util/shape/sausage.js */
+
+/*! ../../util/model.js */
+
+/*! ./dom/HandlerProxy.js */
+
+/*! ../core/util.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ../../coord/parallel/parallelCreator.js */
+
+/*! ../../coord/cartesian/Grid.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! ./windingLine.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/createRenderPlanner.js */
+
+/*! ../featureManager.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../axisPointer/install.js */
+
+/*! ./env.js */
+
+/*! ./contain/text.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ./installCommon.js */
+
+/*! tslib */
+
+/*! ./core/BoundingRect.js */
+
+/*! ../core/Transformable.js */
+
+/*! ../../util/layout.js */
+
+/*! tslib */
+
+/*! ../../view/Component.js */
+
+/*! ./PointerPath.js */
+
+/*! ../scale/Time.js */
+
+/*! ../i18n/langZH.js */
+
+/*! ../core/PathProxy.js */
+
+/*! ./sourceHelper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/LineDraw.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./axisCommonTypes.js */
+
+/*! ./SeriesData.js */
+
+/*! ../util/innerStore.js */
+
+/*! ../../visual/VisualMapping.js */
+
+/*! ../axisModelCommonMixin.js */
+
+/*! ../../view/Component.js */
+
+/*! ../scale/Log.js */
+
+/*! ../../scale/helper.js */
+
+/*! ./featureManager.js */
+
+/*! ../../util/number.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ./preprocessor.js */
+
+/*! ../model/OptionManager.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./config.js */
+
+/*! ../axis/AxisView.js */
+
+/*! ../../view/Component.js */
+
+/*! ../axisPointer/install.js */
+
+/*! ./ToolboxModel.js */
+
+/*! ./impl.js */
+
+/*! ../../data/helper/dataStackHelper.js */
+
+/*! ../helper/SymbolDraw.js */
+
+/*! ../../extension.js */
+
+/*! ../../core/locale.js */
+
+/*! ../../data/helper/sourceHelper.js */
+
+/*! ../util/model.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../../util/model.js */
+
+/*! ./helper.js */
+
+/*! ./Gradient.js */
+
+/*! ./lib/export/features.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../coord/axisModelCreator.js */
+
+/*! ./categoryFilter.js */
+
+/*! ../../coord/radar/Radar.js */
+
+/*! ../../util/layout.js */
+
+/*! ../helper/poly.js */
+
+/*! ../helper/createSeriesData.js */
+
+/*! ./SliderZoomView.js */
+
+/*! ./adjustEdge.js */
+
+/*! ./VisualMapView.js */
+
+/*! ./curve.js */
+
+/*! ./BrushModel.js */
+
+/*! ../../util/states.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/PathProxy.js */
+
+/*! ../../util/states.js */
+
+/*! ../../util/states.js */
+
+/*! ./core/BoundingRect.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../legacy/dataSelectAction.js */
+
+/*! ./MarkerModel.js */
+
+/*! ./log.js */
+
+/*! ../../coord/radar/RadarModel.js */
+
+/*! ./labelStyle.js */
+
+/*! ./GeoSVGResource.js */
+
+/*! tslib */
+
+/*! ../graphic/RadialGradient.js */
+
+/*! ../Path.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ./cssClassId.js */
+
+/*! ./mapStyleToAttrs.js */
+
+/*! ../../util/vendor.js */
+
+/*! ./TreemapView.js */
+
+/*! ../../model/Component.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/format.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/log.js */
+
+/*! ./RoamController.js */
+
+/*! ../../util/model.js */
+
+/*! ../../extension.js */
+
+/*! ./VisualMapModel.js */
+
+/*! ../../scale/Time.js */
+
+/*! ../model/mixin/palette.js */
+
+/*! ../scale/Scale.js */
+
+/*! ../../scale/Ordinal.js */
+
+/*! ../../model/Series.js */
+
+/*! ../canvas/dashStyle.js */
+
+/*! ../../data/helper/dimensionHelper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Component.js */
+
+/*! ../graphic/constants.js */
+
+/*! ../util/graphic.js */
+
+/*! ./ScatterSeries.js */
+
+/*! ../../data/helper/dataStackHelper.js */
+
+/*! ../core/util.js */
+
+/*! ../../util/number.js */
+
+/*! ../graphic/TSpan.js */
+
+/*! ../graphic/constants.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./customGraphicTransition.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../data/helper/dimensionHelper.js */
+
+/*! ./core.js */
+
+/*! ./lib/export/charts.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Component.js */
+
+/*! ../../util/number.js */
+
+/*! ../../data/SeriesData.js */
+
+/*! ./simpleLayoutHelper.js */
+
+/*! ../../util/number.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../scale/Interval.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Component.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ../core/util.js */
+
+/*! tslib */
+
+/*! ../axis/ParallelAxisView.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! ../util/clazz.js */
+
+/*! ./PiecewiseView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../extension.js */
+
+/*! ./traversalHelper.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/graphic/Group.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../helper/LargeLineDraw.js */
+
+/*! zrender/lib/graphic/shape/Arc.js */
+
+/*!
+* ZRender, a high performance 2d drawing library.
+*
+* Copyright (c) 2013, Baidu Inc.
+* All rights reserved.
+*
+* LICENSE
+* https://github.com/ecomfe/zrender/blob/master/LICENSE.txt
+*/
+
+/*! zrender/lib/core/util.js */
+
+/*! ../Axis.js */
+
+/*! ../model/Model.js */
+
+/*! ../../view/Component.js */
+
+/*! ./legendAction.js */
+
+/*! ../util/states.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../label/labelGuideHelper.js */
+
+/*! ../../util/styleCompat.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../component/dataZoom/installDataZoomInside.js */
+
+/*! ../helper/labelHelper.js */
+
+/*! ./MarkPointView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/marker/installMarkLine.js */
+
+/*! ../../model/Component.js */
+
+/*! ../../core/util.js */
+
+/*! ./TimelineModel.js */
+
+/*! ./SeriesDataSchema.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ../../extension.js */
+
+/*! ../../util/states.js */
+
+/*! ./windingLine.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! tslib */
+
+/*! ../../visual/VisualMapping.js */
+
+/*! zrender/lib/core/bbox.js */
+
+/*! ./mixin/palette.js */
+
+/*! ../../util/number.js */
+
+/*! ./path.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../SeriesDimensionDefine.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./DataZoomView.js */
+
+/*! ../data/helper/dataStackHelper.js */
+
+/*! ../util/component.js */
+
+/*! ../../visual/helper.js */
+
+/*! ../../util/throttle.js */
+
+/*! ../../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../component/legend/installLegendScroll.js */
+
+/*! ../../layout/barGrid.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./RadiusAxis.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/states.js */
+
+/*! ../component/radar/install.js */
+
+/*! zrender/lib/core/curve.js */
+
+/*! ../util/throttle.js */
+
+/*! ../../coord/CoordinateSystem.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./helper.js */
+
+/*! tslib */
+
+/*! ../../coord/parallel/AxisModel.js */
+
+/*! ../util/states.js */
+
+/*! ./scrollableLegendAction.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/model.js */
+
+/*! ../../data/DataDiffer.js */
+
+/*! ./Scale.js */
+
+/*! ./MarkerModel.js */
+
+/*! ./number.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ../../util/layout.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./helper.js */
+
+/*! ../../coord/geo/GeoModel.js */
+
+/*! ../../util/states.js */
+
+/*! ./Image.js */
+
+/*! ./preprocessor.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./line.js */
+
+/*! ../util/graphic.js */
+
+/*! ./parallelVisual.js */
+
+/*! ../../visual/visualSolution.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../view/Chart.js */
+
+/*! ../helper/EffectSymbol.js */
+
+/*! ../../view/Component.js */
+
+/*! ../../util/model.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../model/Series.js */
+
+/*! ../../coord/calendar/prepareCustom.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../core/BoundingRect.js */
+
+/*! tslib */
+
+/*! ../../util/graphic.js */
+
+/*! ../../util/types.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./PictorialBarView.js */
+
+/*! ./api/format.js */
+
+/*! ../component/calendar/install.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/number.js */
+
+/*! ./ParallelView.js */
+
+/*! tslib */
+
+/*! ./ThemeRiverView.js */
+
+/*! ../../util/number.js */
+
+/*! ../../util/animation.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../data/helper/dataStackHelper.js */
+
+/*! ../data/helper/sourceHelper.js */
+
+/*! ./sankeyVisual.js */
+
+/*! ./ScrollableLegendView.js */
+
+/*! ../graphic/Image.js */
+
+/*! ../axisPointer/globalListener.js */
+
+/*! ./Interval.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/createClipPathFromCoordSys.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./parseGeoJson.js */
+
+/*! ../util/number.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/event.js */
+
+/*! ../../util/number.js */
+
+/*! ./HeatmapView.js */
+
+/*! ./Displayable.js */
+
+/*! ./MarkerView.js */
+
+/*! ../../model/Component.js */
+
+/*! ./TooltipView.js */
+
+/*! ./candlestickVisual.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./dashStyle.js */
+
+/*! ../axis/CartesianAxisView.js */
+
+/*! ../../coord/axisHelper.js */
+
+/*! ../preprocessor/backwardCompat.js */
+
+/*! ./VisualMapping.js */
+
+/*! ./mixin/textStyle.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/symbol.js */
+
+/*! ./viewHelper.js */
+
+/*! ../../util/model.js */
+
+/*! ../graphic/Path.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../legacy/dataSelectAction.js */
+
+/*! ../../util/number.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./cursorHelper.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../util/component.js */
+
+/*! ./Eventful.js */
+
+/*! ./createSeriesData.js */
+
+/*! ../helper/LineDraw.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ../../util/model.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../../util/symbol.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! tslib */
+
+/*! ./axisHelper.js */
+
+/*! ../../coord/single/singleAxisHelper.js */
+
+/*! ../../data/helper/sourceManager.js */
+
+/*! ../../util/symbol.js */
+
+/*! ./Model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ../../core/vector.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Model.js */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ../helper/roundRect.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../util/log.js */
+
+/*! zrender/lib/contain/util.js */
+
+/*! ./MarkerModel.js */
+
+/*! zrender/lib/tool/color.js */
+
+/*! ../../util/states.js */
+
+/*! ./globalDefault.js */
+
+/*! ../core/vector.js */
+
+/*! ./Polar.js */
+
+/*! tslib */
+
+/*! ../../util/model.js */
+
+/*! ./tooltipMarkup.js */
+
+/*! ./arc.js */
+
+/*! ./DataZoomModel.js */
+
+/*! ./cssClassId.js */
+
+/*! ./ExtensionAPI.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ./geoSourceManager.js */
+
+/*! tslib */
+
+/*! ../graphic/shape/Rect.js */
+
+/*! ../Path.js */
+
+/*! ../../coord/polar/prepareCustom.js */
+
+/*! ../../util/graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./feature/SaveAsImage.js */
+
+/*! ../util/number.js */
+
+/*! ../../util/states.js */
+
+/*! ../chart/gauge/install.js */
+
+/*! ../../util/model.js */
+
+/*! ../helper/createGraphFromNodeEdge.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Line.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ../../chart/helper/createSeriesData.js */
+
+/*! ../../util/log.js */
+
+/*! ./InsideZoomView.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./tool/color.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ./core/Eventful.js */
+
+/*! zrender/lib/tool/color.js */
+
+/*! ../../layout/points.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../View.js */
+
+/*! ../helper/SymbolDraw.js */
+
+/*! ./Path.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Series.js */
+
+/*! ../data/helper/transform.js */
+
+/*! ./installVisualMapPiecewise.js */
+
+/*! ../Element.js */
+
+/*! ../../util/types.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../component/tooltip/install.js */
+
+/*! ../Path.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/util.js */
+
+/*! ../graphic/CompoundPath.js */
+
+/*! ../graphic/shape/Circle.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./graphic/Group.js */
+
+/*! zrender/lib/graphic/shape/Line.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../model/Model.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../component/dataZoom/installDataZoomSelect.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! ../../util/states.js */
+
+/*! ../data/OrdinalMeta.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./graphic/constants.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./helper.js */
+
+/*! ../../util/log.js */
+
+/*! ../../layout/points.js */
+
+/*! ../../util/graphic.js */
+
+/*! ./AxisPointerView.js */
+
+/*! ../../util/component.js */
+
+/*! ./locale.js */
+
+/*! ./installCommon.js */
+
+/*! ../../visual/VisualMapping.js */
+
+/*! ./MarkerModel.js */
+
+/*! ./forceLayout.js */
+
+/*! ../helper/subPixelOptimize.js */
+
+/*! zrender/lib/graphic/CompoundPath.js */
+
+/*! tslib */
+
+/*! ../../dataZoom/history.js */
+
+/*! ./core.js */
+
+/*! ../../util/throttle.js */
+
+/*! ../util/log.js */
+
+/*! ../util/decal.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../component/timeline/install.js */
+
+/*! ./axisDefault.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../coord/View.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/vector.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/tool/parseSVG.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ../core/util.js */
+
+/*! ../../view/Chart.js */
+
+/*! ../../util/graphic.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/event.js */
+
+/*! ../../coord/single/prepareCustom.js */
+
+/*! ./tooltipMarkup.js */
+
+/*! ../../model/mixin/makeStyleMapper.js */
+
+/*! ../util/log.js */
+
+/*! ../axis/AngleAxisView.js */
+
+/*! ./CartesianAxisPointer.js */
+
+/*! ../helper/createSeriesDataSimply.js */
+
+/*! ../core/platform.js */
+
+/*! ./treemapVisual.js */
+
+/*! ./installVisualMapContinuous.js */
+
+/*! ../../util/number.js */
+
+/*! ../../model/Series.js */
+
+/*! ../helper/sectorHelper.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ./parseXML.js */
+
+/*! ../../component/tooltip/tooltipMarkup.js */
+
+/*! ../Axis.js */
+
+/*! ../data/helper/sourceManager.js */
+
+/*! ./smoothBezier.js */
+
+/*! zrender/lib/graphic/shape/Ring.js */
+
+/*! ./SliderTimelineView.js */
+
+/*! ../../model/Model.js */
+
+/*! ../../util/innerStore.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../data/DataDiffer.js */
+
+/*! ../Axis.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./SVGPathRebuilder.js */
+
+/*! ../util/model.js */
+
+/*! ./CustomSeries.js */
+
+/*! ../../util/decal.js */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ../../util/log.js */
+
+/*! ../../util/types.js */
+
+/*! zrender/lib/graphic/LinearGradient.js */
+
+/*! ../chart/bar/installPictorialBar.js */
+
+/*! ./sunburstLayout.js */
+
+/*! zrender/lib/graphic/Path.js */
+
+/*! ../../chart/helper/SymbolDraw.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./core/util.js */
+
+/*! ../../util/decal.js */
+
+/*! ../tool/color.js */
+
+/*! ../../coord/cartesian/AxisModel.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ./core/timsort.js */
+
+/*! ../core/env.js */
+
+/*! ./GaugeSeries.js */
+
+/*! ../../coord/polar/polarCreator.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/BoundingRect.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/env.js */
+
+/*! ../helper/MapDraw.js */
+
+/*! ./GraphicModel.js */
+
+/*! ./axisTickLabelBuilder.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./helper/parseText.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../core/util.js */
+
+/*! ../util/model.js */
+
+/*! ./SunburstView.js */
+
+/*! ../core/util.js */
+
+/*! ./convertPath.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/log.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../component/parallel/install.js */
+
+/*! ../../util/format.js */
+
+/*! ../graphic/shape/Polyline.js */
+
+/*! ../../util/model.js */
+
+/*! ../../layout/barGrid.js */
+
+/*! ../helper/SymbolDraw.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ./installCommon.js */
+
+/*! ./LegendModel.js */
+
+/*! zrender/lib/animation/Animator.js */
+
+/*! ../../util/types.js */
+
+/*! ../../core/platform.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../view/Chart.js */
+
+/*! ./axisHelper.js */
+
+/*! ../../util/time.js */
+
+/*! ../../data/helper/dataProvider.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! zrender/lib/graphic/Group.js */
+
+/*! zrender/lib/core/timsort.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ../../component/helper/roamHelper.js */
+
+/*! ./legendFilter.js */
+
+/*! ../util/model.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../coord/geo/geoCreator.js */
+
+/*! ../../util/innerStore.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./core/echarts.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./DataDiffer.js */
+
+/*! ../util/format.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../coord/single/AxisModel.js */
+
+/*! ./forceHelper.js */
+
+/*! ../../scale/helper.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../renderer/installCanvasRenderer.js */
+
+/*! ../../util/model.js */
+
+/*! ../graphic/shape/Rect.js */
+
+/*! ../helper/createSeriesData.js */
+
+/*! ../../util/model.js */
+
+/*! ../graphic.js */
+
+/*! ../component/aria/install.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../Source.js */
+
+/*! ../chart/sankey/install.js */
+
+/*! ../../util/layout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../util/log.js */
+
+/*! tslib */
+
+/*! ../data/OrdinalMeta.js */
+
+/*! ./dataValueHelper.js */
+
+/*! zrender/lib/core/platform.js */
+
+/*! ./AxisView.js */
+
+/*! ../theme/light.js */
+
+/*! ./model.js */
+
+/*! ../../util/model.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../util/throttle.js */
+
+/*! ../helper/treeHelper.js */
+
+/*! ../helper/createGraphFromNodeEdge.js */
+
+/*! zrender/lib/tool/color.js */
+
+/*! ../DataStore.js */
+
+/*! ../visual/style.js */
+
+/*! ../../util/innerStore.js */
+
+/*! ../util/clazz.js */
+
+/*! ../core/util.js */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ./Symbol.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ./Layer.js */
+
+/*! ../util/innerStore.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Component.js */
+
+/*! ../../component/helper/RoamController.js */
+
+/*! ../coord/geo/parseGeoJson.js */
+
+/*! zrender/lib/graphic/Group.js */
+
+/*! ./Displayable.js */
+
+/*! ./Symbol.js */
+
+/*! ../graphic/shape/Polygon.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../util/model.js */
+
+/*! ../../util/layout.js */
+
+/*! ../axis/AxisBuilder.js */
+
+/*! ../../visual/aria.js */
+
+/*! ../../../model/internalComponentCreator.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../../util/layout.js */
+
+/*! ./LinePath.js */
+
+/*! zrender/lib/core/matrix.js */
+
+/*! ./labelLayout.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../helper/listComponent.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../model/Series.js */
+
+/*! ../helper/createClipPathFromCoordSys.js */
+
+/*! zrender/lib/tool/color.js */
+
+/*! ./ThemeRiverSeries.js */
+
+/*! ../../util/states.js */
+
+/*! ./shape/Rect.js */
+
+/*! ../../util/states.js */
+
+/*! ./api/time.js */
+
+/*! ../coord/Axis.js */
+
+/*! ../../util/log.js */
+
+/*! ../../util/graphic.js */
+
+/*! tslib */
+
+/*! ./SeriesDataSchema.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/util.js */
+
+/*! tslib */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../core/platform.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! zrender/lib/core/Point.js */
+
+/*! ../../extension.js */
+
+/*! ../../util/layout.js */
+
+/*! tslib */
+
+/*! ../../util/graphic.js */
+
+/*! ./interactionMutex.js */
+
+/*! zrender/lib/graphic/Image.js */
+
+/*! ./interactionMutex.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./BoxplotSeries.js */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+/*! ../../model/Series.js */
+
+/*! ../../util/number.js */
+
+/*! ../../util/layout.js */
+
+/*! ./SelectZoomView.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! tslib */
+
+/*! ../Path.js */
+
+/*! tslib */
+
+/*! ../../coord/geo/geoSourceManager.js */
+
+/*! tslib */
+
+/*! ../axisPointer/install.js */
+
+/*! ./HeatmapSeries.js */
+
+/*! ../renderer/installSVGRenderer.js */
+
+/*! ../featureManager.js */
+
+/*! ./TreeView.js */
+
+/*! tslib */
+
+/*! ./morphTransitionHelper.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! ../../util/number.js */
+
+/*! zrender/lib/graphic/Text.js */
+
+/*! ../../view/Chart.js */
+
+/*! ./quadratic.js */
+
+/*! zrender/lib/core/env.js */
+
+/*! ./fix/nanhai.js */
+
+/*! ../component/marker/installMarkPoint.js */
+
+/*! ../core/PathProxy.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../processor/dataFilter.js */
+
+/*! zrender/lib/core/vector.js */
+
+/*! ./helper.js */
+
+/*! ../../model/Series.js */
+
+/*! ./brushHelper.js */
+
+/*! ./layoutHelper.js */
+
+/*! ../../util/states.js */
+
+/*! ../../util/graphic.js */
+
+/*! tslib */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./Point.js */
+
+/*! zrender/lib/core/BoundingRect.js */
+
+/*! zrender/lib/core/curve.js */
+
+/*! ../../util/throttle.js */
+
+/*! ./markerHelper.js */
+
+/*! zrender/lib/core/event.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../dataZoom/history.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./mixin/areaStyle.js */
+
+/*! ../../util/graphic.js */
+
+/*! ../../action/roamHelper.js */
+
+/*! ../../util/number.js */
+
+/*! tslib */
+
+/*! ../../util/component.js */
+
+/*! ./helper.js */
+
+/*! ../../util/model.js */
+
+/*! ../../view/Chart.js */
+
+/*! ./AxisBuilder.js */
+
+/*! tslib */
+
+/*! tslib */
+
+/*! ./dataZoomAction.js */
+
+/*! ../axisModelCommonMixin.js */
+
+/*! zrender/lib/core/dom.js */
+
+/*! zrender/lib/graphic/Text.js */
+
+/*! tslib */
+
+/*! ../../util/model.js */
+
+/*! tslib */
+
+/*! ../../animation/basicTransition.js */
+
+/*! ../../util/number.js */
+
+/*! ./graphic.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ./visualMapAction.js */
+
+/*! ../../label/labelStyle.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../../util/model.js */
+
+/*! ./geoCreator.js */
+
+/*! ../util/number.js */
+
+/*! ../../util/states.js */
+
+/*! zrender/lib/core/util.js */
+
+/*! ../model/Global.js */
+
+/*! tslib */
+
+/*! ../util/component.js */
+
+/*! ../../processor/dataSample.js */
+
+/*! zrender/lib/core/util.js */
