@@ -1,0 +1,2 @@
+[nbdev]
+fh_pyinstrument = fh_pyinstrument._modidx:d
