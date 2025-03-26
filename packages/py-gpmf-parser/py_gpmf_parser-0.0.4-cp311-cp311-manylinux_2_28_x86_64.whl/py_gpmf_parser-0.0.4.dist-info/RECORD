@@ -1,0 +1,7 @@
+gpmf_parser.cpython-311-x86_64-linux-gnu.so,sha256=bdtT3Tx22fty5vC4tfSGHyF9McoUd23hpoTy7LQkIGY,596968
+py_gpmf_parser/__init__.py,sha256=pHZiX0ylYcXYUMj2vDO9AaeMsQMUjdV0bvZLNvF52HY,66
+py_gpmf_parser/gopro_telemetry_extractor.py,sha256=-XQc30PsGXT8pdyThzkIW7rkq1ey0cx2RoQgD3xuBUo,3517
+py_gpmf_parser-0.0.4.dist-info/METADATA,sha256=892KZsg2zwmxYcDAs8Ty0hqUWm9UCRIwUlPouxA2Wqk,2596
+py_gpmf_parser-0.0.4.dist-info/WHEEL,sha256=yzC3QoRHH_7EBxTmMdp0T0UUzCORMIRNG39KxOKOaRE,113
+py_gpmf_parser-0.0.4.dist-info/top_level.txt,sha256=WVgAwslm8Tcul5BHY_UB035yOygp9hlcDosY4GNQo3Q,27
+py_gpmf_parser-0.0.4.dist-info/RECORD,,
