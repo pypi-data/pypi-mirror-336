@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Keys</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- GSAP Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+        /* New 60-30-10 Color Rule */
+        :root {
+            --primary: #3A86FF;   /* 60% - Dominant */
+            --secondary: #14213D; /* 30% - Supporting */
+            --accent: #FCA311;    /* 10% - Highlight */
+            --bg-light: #F8F9FA;
+            --text-dark: #212529;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: "Poppins", sans-serif;
+            background: var(--bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 650px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .api-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .api-table th, .api-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .api-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .api-table td {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .status {
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .active-status {
+            background: rgba(0, 255, 0, 0.2);
+            color: green;
+        }
+
+        .inactive-status {
+            background: rgba(255, 0, 0, 0.2);
+            color: red;
+        }
+
+        .btn-copy {
+            background: var(--accent);
+            color: white;
+            padding: 7px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-copy:hover {
+            background: #e08b00;
+        }
+
+        .empty-message {
+            text-align: center;
+            font-weight: 500;
+            color: var(--secondary);
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 500px) {
+            .container {
+                padding: 15px;
+            }
+
+            .api-table th, .api-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .btn-copy {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+        }
+        .masked-key { display: inline-block; width: 100px; overflow: hidden; text-overflow: ellipsis; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>API Keys</h2>
+        {% if api_keys %}
+        <table class="api-table" role="grid" aria-label="API Keys List">
+            <thead>
+                <tr role="row">
+                    <th scope="col">API Key</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Created</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody role="rowgroup">
+                {% for key in api_keys %}
+                <tr>
+                    <td title="Expires: {{ key.expires_at }}">
+                        <span class="masked-key">{{ key.key|slice:":4" }}...{{ key.key|slice:"-4:" }}</span>
+                    </td>
+                    <td>{{ key.user}}</td>
+                    <td>
+                        <span class="status {% if key.is_active %}active-status{% else %}inactive-status{% endif %}">
+                            {% if key.is_active %}Active{% else %}Inactive{% endif %}
+                        </span>
+                    </td>
+                    <td>{{ key.created_at|date:"Y-m-d" }}</td>
+                    <td>
+                        <button class="btn-copy" data-key="{{ key.key }}" tabindex="0">Copy</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <p class="empty-message">No API Keys Available</p>
+        {% endif %}
+    </div>
+
+<script>
+    gsap.from(".container", { opacity: 0, y: 30, duration: 0.8, ease: "power2.out" });
+
+    document.querySelectorAll('.btn-copy').forEach(button => {
+        const copyHandler = function () {
+            const apiKey = this.getAttribute('data-key');
+            navigator.clipboard.writeText(apiKey).then(() => {
+                alert("API Key copied to clipboard!");
+            }).catch(err => {
+                alert("Failed to copy API Key: " + err.message);
+            });
+        };
+        button.addEventListener('click', copyHandler);
+        button.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                copyHandler.call(this);
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
