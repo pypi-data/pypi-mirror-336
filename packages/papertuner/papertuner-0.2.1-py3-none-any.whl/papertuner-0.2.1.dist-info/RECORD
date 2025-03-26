@@ -1,0 +1,10 @@
+papertuner/__init__.py,sha256=P8RZu9F2vL1vmNQJmlKqvUVgsti4IoIkqK9uJdpREwc,229
+papertuner/config.py,sha256=1iu0TLJCrP1cFp6BE9zPM2py-hsA00LluoFeBip8E1Q,2587
+papertuner/dataset.py,sha256=TFApooOz5IY5Ka_8rTEQNZZnbopcEzovd5dvgpETbqQ,34105
+papertuner/train.py,sha256=kkjR1YkWTvbNm0RDtfBIl8m6YA5QTHXyfJcDrR7WT4A,14969
+papertuner/utils.py,sha256=M2j7hQ1YVTnEzc4j28IXQaTUq71tA4g9WQAgJWHqWC0,3986
+papertuner-0.2.1.dist-info/METADATA,sha256=QwqMVK4Hpu6UIAxKsCwl1fvDjaguCE6DEOfhzcsRghc,3468
+papertuner-0.2.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+papertuner-0.2.1.dist-info/entry_points.txt,sha256=B7usK0YmTS9iuV4sZdkKAlH1jWZmzsFfi-R6sZgqlcA,104
+papertuner-0.2.1.dist-info/top_level.txt,sha256=m7XCK9x4s2etHpGw8vwDHEy8afAexE10U00caVtwO8o,11
+papertuner-0.2.1.dist-info/RECORD,,
