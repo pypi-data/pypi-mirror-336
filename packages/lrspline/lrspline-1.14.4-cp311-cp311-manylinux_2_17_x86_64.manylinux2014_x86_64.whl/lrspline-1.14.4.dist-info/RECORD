@@ -1,0 +1,13 @@
+.gitignore,sha256=zbyuFRBda3geYggTx5x-hodA1OnMU85vX8u8Ejh630s,2
+lrspline/__init__.py,sha256=De2DqAmFNSK04XYgbkeLjXWjWdSPwtKWkRlojevRHdU,33217
+lrspline/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lrspline/raw.cpp,sha256=p6QLaZcEXjRI7WUM1JmL164kQJJ5XqnvDb7RAMSTLWM,1698769
+lrspline/raw.cpython-311-x86_64-linux-gnu.so,sha256=CGnte1VPgVCqdCstTlGH5l7E8ZYDjs6-zyhEhE_sPyg,11883640
+lrspline/raw.pyi,sha256=izMjyxecMhkyv_IVH24ok_lLp8_qQ73h2-vBS7QDzLY,7975
+lrspline/raw.pyx,sha256=Xzpa0soad1YZsDBn2XKzsUKzLAskvtJLqvtz4MH5SWw,27564
+lrspline-1.14.4.dist-info/METADATA,sha256=9kOaeBLGsk6f76btoZeR75vEueaFX449xk5p3wcczE8,1254
+lrspline-1.14.4.dist-info/WHEEL,sha256=D3fJ_ij6jA6rn5NZav3sdyT7LpwEOcqKVsDE-LuDn_U,151
+lrspline-1.14.4.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+lrspline-1.14.4.dist-info/RECORD,,
+lrspline-1.14.4.dist-info/licenses/COPYING,sha256=JR33uOIneoWb1GLtW5RM8Xhn_hpNs_8EMc2pKLJXneY,35509
+lrspline-1.14.4.dist-info/licenses/LICENSE,sha256=Qed9d06XIE92MfBwQV18Y9pDABR8AnGouW1TMv4kfjY,35537
