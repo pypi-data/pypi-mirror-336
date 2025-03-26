@@ -1,0 +1,10 @@
+archive
+build
+dist
+examples
+exp
+html
+images
+site
+telemetrix_rpi_pico
+venv
