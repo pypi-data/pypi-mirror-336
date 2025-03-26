@@ -1,0 +1,2 @@
+[console_scripts]
+mhcflow = mhcflow:run_mhcflow
