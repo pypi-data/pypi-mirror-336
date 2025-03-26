@@ -1,0 +1,59 @@
+[project]
+name = "theia_dumper"
+description = "THEIA-MTP geospatial data publisher"
+dynamic = ["version"]
+authors = [
+    { name = "Rémi Cresson", email = "remi.cresson@inrae.fr" },
+    { name = "Pablo Boizeau", email = "pablo.boizeau@ird.fr" },
+]
+requires-python = ">=3.9"
+dependencies = [
+    "setuptools",
+    "pystac",
+    "pystac_client",
+    "dinamis_sdk>=0.5.1",
+    "requests",
+    "click",
+    "rich",
+    "rasterio",
+    "rio-cogeo",
+    "rio_stac",
+]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+[project.optional-dependencies]
+test = ["pytest", "coverage"]
+
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project.scripts]
+theia_dumper = "theia_dumper.cli:theia_dumper"
+
+[tool.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+show_error_codes = true
+pretty = true
+exclude = ["doc", "venv", ".venv"]
+
+[tool.pylint]
+disable = "W1203,R0903,E0401,W0622,C0116,C0115,W0718,W0719,W0718,R0902,R0913,R0917"
+
+[tool.pylint.MASTER]
+ignore-paths = '^.venv'
+
+[tool.setuptools]
+packages = ["theia_dumper"]

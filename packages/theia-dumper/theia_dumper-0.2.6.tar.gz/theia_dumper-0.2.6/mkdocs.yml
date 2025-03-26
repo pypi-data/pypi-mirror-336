@@ -1,0 +1,66 @@
+# mkdocs.yml
+theme:
+  logo: logo.png
+  name: "material"
+  icon:
+    repo: fontawesome/brands/gitlab
+  features:
+    - content.code.annotate
+    - toc.follow
+    - navigation.instant
+    - content.code.copy
+
+plugins:
+- search
+- gen-files:
+    scripts:
+    - doc/gen_ref_pages.py
+- mkdocstrings:
+    watch:
+    - theia_dumper/
+- literate-nav:
+    nav_file: SUMMARY.md
+- section-index
+- mermaid2
+
+nav:
+- Home: index.md
+- Create a STAC collection: sample.md
+- Get push access: access.md
+- Upload: upload.md
+- Additional resources: additional_resources.md
+- Reference:
+  - API reference: reference/
+  - CLI reference: cli-ref.md
+
+# Customization
+extra:
+  feature:
+    tabs: true
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://forgemia.inra.fr/cdos-pub/theia-dumper
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+      title: On this page
+      toc_depth: 1-3
+  - mkdocs-click
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# rest of the navigation..
+site_name: Theia-dumper
+repo_url: https://forgemia.inra.fr/cdos-pub/theia-dumper
+repo_name: theia-dumper
+docs_dir: doc/

@@ -1,0 +1,14 @@
+setuptools
+pystac
+pystac_client
+dinamis_sdk>=0.5.1
+requests
+click
+rich
+rasterio
+rio-cogeo
+rio_stac
+
+[test]
+pytest
+coverage

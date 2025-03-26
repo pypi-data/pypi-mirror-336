@@ -1,0 +1,18 @@
+0.0.4
+
+- CLI can delete collections/items
+
+0.0.3
+
+- Update STAC for STAC-FastAPI v3.x.x
+
+0.0.2
+
+- Improve items publish and fix asset href
+- Fix logging logleve from env
+- Improve dinamis post error retrieval
+- Redirect logger stream to stdout
+
+0.0.1
+
+- Initial commit
