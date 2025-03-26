@@ -1,0 +1,9 @@
+README.md
+setup.py
+package_teste_pacotes/__init__.py
+package_teste_pacotes/file1_name.py
+package_teste_pacotes/file2_name.py
+package_teste_pacotes.egg-info/PKG-INFO
+package_teste_pacotes.egg-info/SOURCES.txt
+package_teste_pacotes.egg-info/dependency_links.txt
+package_teste_pacotes.egg-info/top_level.txt
