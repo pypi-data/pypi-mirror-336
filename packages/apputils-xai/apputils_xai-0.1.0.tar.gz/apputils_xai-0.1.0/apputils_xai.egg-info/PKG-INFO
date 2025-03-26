@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: apputils-xai
+Version: 0.1.0
+Summary: A utility library for no-code app generation
+Home-page: https://github.com/Sumedh1599/apputils-xai
+Author: NoLink Team
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# AppUtils-XAI
+
+A utility library for no-code app generation in the NoLink platform.
+
+## Installation
+
+```bash
+pip install apputils-xai
+```
+
+USAGE:
+from apputils import parse_text_input, map_features_to_templates, validate_app_structure
+
+# Parse text input
+
+app_structure = parse_text_input("Build a shopping app with payments and user accounts")
+print(app_structure)
+
+# Map features to templates
+
+app_type = app_structure["app_type"]
+features = app_structure["features"]
+template_config = map_features_to_templates(app_type, features)
+print(template_config)
+
+# Validate app structure
+
+is_valid, errors = validate_app_structure(template_config)
+if not is_valid:
+print("Validation errors:", errors)
+else:
+print("App structure is valid")

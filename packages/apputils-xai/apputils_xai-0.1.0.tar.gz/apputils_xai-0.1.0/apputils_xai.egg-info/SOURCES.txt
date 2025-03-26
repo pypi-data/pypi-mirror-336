@@ -1,0 +1,11 @@
+README.md
+setup.py
+apputils/__init__.py
+apputils/mapper.py
+apputils/parser.py
+apputils/validator.py
+apputils_xai.egg-info/PKG-INFO
+apputils_xai.egg-info/SOURCES.txt
+apputils_xai.egg-info/dependency_links.txt
+apputils_xai.egg-info/top_level.txt
+test/test_apputils.py
