@@ -1,0 +1,1 @@
+from .src.obj.console import Console

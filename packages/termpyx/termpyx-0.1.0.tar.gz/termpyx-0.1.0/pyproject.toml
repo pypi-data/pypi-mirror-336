@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "termpyx"
+version = "0.1.0"
+description = "TermPyX is a Python library designed to enhance terminal logging with colors and animations. It provides an intuitive interface for displaying various log levels, including success, info, warning, danger, and debug messages, all with customizable colors and optional animated text output."
+authors = ["techatlasdev <srgoqui@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
