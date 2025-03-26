@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: qtrlb
+Version: 0.2.1
+Summary: qtrlb: quantum control using Qblox
+Project-URL: Homepage, https://github.com/Zihao96/qtrlb
+Author: Rayleigh Parker, Elizabeth Champion, Machiel S. Blok
+Author-email: Zihao Wang <zhwang000@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: control,qblox,quantum
+Requires-Python: >=3.10
+Requires-Dist: lmfit
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pyvisa
+Requires-Dist: pyvisa-py; sys_platform == 'darwin'
+Requires-Dist: qblox-instruments==0.10.0
+Requires-Dist: qiskit==1.4.2
+Requires-Dist: ruamel-yaml<0.18.0
+Requires-Dist: scikit-learn==1.6.1
+Requires-Dist: scipy
+Requires-Dist: scqubits; sys_platform != 'darwin'
+Description-Content-Type: text/markdown
+
+# Title of Readme
+This is content of readme
