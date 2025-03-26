@@ -1,0 +1,51 @@
+from dataclasses import dataclass
+from typing import Optional
+
+from documente_shared.application.files import (
+    remove_slash_from_path,
+    get_filename_from_path,
+)
+
+
+@dataclass
+class InMemoryDocument(object):
+    file_path: Optional[str] = None
+    file_bytes: Optional[bytes] = None
+
+    @property
+    def is_valid(self) -> bool:
+        return bool(self.file_path) and self.file_bytes
+
+    @property
+    def has_content(self) -> bool:
+        return bool(self.file_bytes)
+
+    @property
+    def file_key(self) -> Optional[str]:
+        if not self.file_path:
+            return None
+        return remove_slash_from_path(self.file_path)
+
+    @property
+    def file_name(self) -> Optional[str]:
+        if not self.file_path:
+            return None
+        return get_filename_from_path(self.file_path)
+
+    @property
+    def is_procesable(self) -> bool:
+        return self.is_valid and self.has_content
+
+    @property
+    def to_dict(self) -> dict:
+        return {
+            'file_path': self.file_path,
+            'file_bytes': self.file_bytes,
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict):
+        return cls(
+            file_path=data.get('file_path'),
+            file_bytes=data.get('file_bytes'),
+        )
