@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: wagtail-donate
+Version: 1.9.5
+Author: Torchbox
+Author-email: info@torchbox.com
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 5
+Classifier: Framework :: Wagtail :: 6
+Requires-Python: >=3.9
+License-File: LICENSE.txt
+Requires-Dist: Wagtail<6.5,>=5.2
+Requires-Dist: Django<5.2,>=4.2
+Requires-Dist: djangorestframework<4,>=3
+Requires-Dist: braintree<5,>=4.17.1
+Requires-Dist: django-phonenumber-field[phonenumbers]<=7.3.0,>=5
+Requires-Dist: pycountry<24,>=19
+Requires-Dist: gocardless_pro<2,>=1.17.0
+Requires-Dist: premailer<3.11,>=3.7
+Requires-Dist: wagtail-modeladmin>=2.0.0
+Provides-Extra: testing
+Requires-Dist: coverage==7.5.1; extra == "testing"
+Requires-Dist: beautifulsoup4==4.12.3; extra == "testing"
+Requires-Dist: black==24.4.2; extra == "testing"
+Requires-Dist: isort==5.13.2; extra == "testing"
+Requires-Dist: flake8==7.0.0; extra == "testing"
+Requires-Dist: factory-boy==3.3.0; extra == "testing"
+Requires-Dist: freezegun==1.5.1; extra == "testing"
+Requires-Dist: html5lib; extra == "testing"
+Provides-Extra: docs
+Requires-Dist: mkdocs==1.6.0; extra == "docs"
+Requires-Dist: mkdocs-material==9.5.24; extra == "docs"
+Requires-Dist: pymdown-extensions==10.8.1; extra == "docs"
+Dynamic: license-file
+
+Copyright (c) 2021 Torchbox
+
+This is not free software.
+
+You may not use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell this software and associated documentation files without the express
+consent of Torchbox.
