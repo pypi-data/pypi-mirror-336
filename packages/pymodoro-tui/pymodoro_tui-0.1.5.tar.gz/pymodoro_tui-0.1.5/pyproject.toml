@@ -1,0 +1,36 @@
+[project]
+name = "pymodoro-tui"
+version = "0.1.5"
+description = "Pomodoro Timer in your terminal"
+authors = [
+    { name = "alexanderchainsaw", email = "alexanderkolesov.contact@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "textual>=1.0.0",
+    "xdg-base-dirs>=6.0.2",
+]
+
+
+[tool.uv]
+managed = true
+dev-dependencies = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "ruff>=0.11.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["pymodoro"]
+
+[project.scripts]
+pymodoro = "pymodoro.__main__:run"
