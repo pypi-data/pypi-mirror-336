@@ -1,0 +1,10 @@
+jax>=0.4.30
+flax>=0.10.0
+transformers>=4.45.1
+datasets>=3.0.0
+dp-accounting>=0.4.4
+pillow>=10.0.0
+ipykernel
+
+[dev]
+pytest
