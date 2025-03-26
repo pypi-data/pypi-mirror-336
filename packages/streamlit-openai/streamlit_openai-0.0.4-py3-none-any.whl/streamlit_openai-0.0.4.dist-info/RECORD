@@ -1,0 +1,10 @@
+streamlit_openai/__init__.py,sha256=ZCfRN9qj7MqGH3y6JpsrF8Fb3DgYTNZ3hfXBkPa37yE,100
+streamlit_openai/assistants.py,sha256=QF0sflA7tlRaLdryxVhRlK9uxfLUPHJKjJlq_S2iP7c,7041
+streamlit_openai/chat_completions.py,sha256=jw2JOB2oC5V4OnMs55vOmHPhW31bdXSI1GJ544ectl8,4523
+streamlit_openai/utils.py,sha256=wI7qyOHZZTZpqkOzjepCa4XY9yK1x2jkaekyXq2AHic,4171
+streamlit_openai/version.py,sha256=2GWffEF1rjyrveUGdfR8y3cl3JUnX0gJjr8Ryy_u4JQ,21
+streamlit_openai-0.0.4.dist-info/LICENSE,sha256=L0qJ38zaJr_oefTZxI2BNSRg9uSICtLJlJPyQn4Pfh0,1080
+streamlit_openai-0.0.4.dist-info/METADATA,sha256=fBVGP_DNGN6RRIrdipWAHGMHzQzsVXtQG61bxmK_xcU,3408
+streamlit_openai-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+streamlit_openai-0.0.4.dist-info/top_level.txt,sha256=jQoEsXplgEIMj6daRLXpyvxq5mULGN5oynvcBOnqvYM,17
+streamlit_openai-0.0.4.dist-info/RECORD,,
