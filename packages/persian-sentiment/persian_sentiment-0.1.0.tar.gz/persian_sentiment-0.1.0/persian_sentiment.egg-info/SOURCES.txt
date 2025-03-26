@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+persian_sentiment/__init__.py
+persian_sentiment/analyzer.py
+persian_sentiment.egg-info/PKG-INFO
+persian_sentiment.egg-info/SOURCES.txt
+persian_sentiment.egg-info/dependency_links.txt
+persian_sentiment.egg-info/requires.txt
+persian_sentiment.egg-info/top_level.txt
+tests/test_basic.py
