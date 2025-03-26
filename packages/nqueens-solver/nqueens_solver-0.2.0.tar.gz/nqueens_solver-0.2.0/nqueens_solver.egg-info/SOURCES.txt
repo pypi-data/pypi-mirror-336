@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+nqueens_solver/__init__.py
+nqueens_solver/solver.py
+nqueens_solver.egg-info/PKG-INFO
+nqueens_solver.egg-info/SOURCES.txt
+nqueens_solver.egg-info/dependency_links.txt
+nqueens_solver.egg-info/top_level.txt
+tests/__init__.py
+tests/test_solver.py
