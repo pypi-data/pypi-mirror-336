@@ -1,0 +1,79 @@
+Metadata-Version: 2.4
+Name: sc-config
+Version: 0.0.14
+Summary: A simple Python configuration file operator
+Home-page: https://github.com/Scott-Lau/sc-config
+Author: Scott Lau
+Author-email: exceedego@126.com
+License: MIT
+Keywords: python config
+Platform: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: Pyyaml>=5.1
+Requires-Dist: Jinja2>=2.0
+Requires-Dist: Cerberus>=1.3.1
+Requires-Dist: MarkupSafe>=2.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+.. image:: https://badge.fury.io/py/sc-config.svg
+    :target: https://badge.fury.io/py/sc-config
+.. image:: https://img.shields.io/pypi/pyversions/sc-config
+    :alt: PyPI - Python Version
+
+
+A simple Python configuration file operator
+===========================================
+
+This project provides a common way to read configurations.
+
+
+Installation
+------------
+
+It is possible to install the tool with `pip`::
+
+    pip install sc-config
+
+Configuration
+-------------
+
+Configuration files reading in this order, the first is the top most priority:
+1. production.xml in current directory,
+2. production.xml in <project_name> directory under User directory,
+3. production.xml in <project_name> directory under /var/opt/sc/ directory,
+4. default.xml in <project_name> directory under /var/opt/sc/ directory.
+
+Dependencies
+-------------
+
+* Pyyaml >= 5.1
+* Jinja2 >= 2.0
+* Cerberus >= 1.3.1
+* MarkupSafe>=2.0.1
+
+License
+-------------
+
+The script is released under the `MIT License <https://opensource.org/licenses/MIT>`_.
+The MIT License is registered with and approved by the `Open Source Initiative <https://opensource.org/>`_.
