@@ -1,0 +1,8 @@
+README.md
+setup.py
+fastconvert.egg-info/PKG-INFO
+fastconvert.egg-info/SOURCES.txt
+fastconvert.egg-info/dependency_links.txt
+fastconvert.egg-info/entry_points.txt
+fastconvert.egg-info/requires.txt
+fastconvert.egg-info/top_level.txt
