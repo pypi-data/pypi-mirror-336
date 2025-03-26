@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: mml-similarity
+Version: 0.5.3
+Summary: This is the MML similarity plugin, providing modes to compute task similarities.
+Home-page: https://git.dkfz.de/imsy/ise/mml
+Author: Patrick Godau
+Author-email: patrick.godau@dkfz-heidelberg.de
+License: MIT
+Classifier: Natural Language :: English
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: GPU
+Classifier: Intended Audience :: Science/Research
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: mml-core>=1.0.0
+Requires-Dist: nngeometry
+Requires-Dist: geomloss
+Requires-Dist: opentsne
+Dynamic: license-file
+
+# MML task similarity plugin
+
+This plugin provides a wide range of modes to compute task similarities.
+
+# Install
+
+```commandline
+pip install mml-similarity
+```
+
+# Usage
+
+The new mode `similarity` offers to compute task distances. For example to compute the `Fisher embedding distance` 
+call
+
+```commandline
+mml similarity distance=fed ...
+```
+
+Task distances can be leveraged by other plugins - e.g. `mml-suggest`.
