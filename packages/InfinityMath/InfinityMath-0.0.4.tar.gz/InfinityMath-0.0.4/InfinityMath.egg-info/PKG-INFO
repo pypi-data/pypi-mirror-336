@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: InfinityMath
+Version: 0.0.4
+Summary: The math module where you can sum numbers, make functions and other things
+Home-page: https://github.com/SlackBaker/better_math.git
+Author: Ostap Dziubyk
+Author-email: your-email@example.com
+License: MIT
+Keywords: math,better_math,calculations,InfinityMath,XMath
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+# Infinitive math
+better_math is a module  right now it is in beta test
+there yu can make graphics multiple graphics and count sqrt, count pow and etc
+# How to use:
+# InfinityMath
+
+InfinityMath is a Python module that provides a collection of mathematical functions, including basic arithmetic operations, trigonometric functions, factorial calculation, logarithms, quadratic equation solving, and function plotting.
+
+## Installation
+
+To use this module, simply copy the `InfinityMath` directory into your Python project.
+
+## Usage
+
+Import the module and use its functions as shown in the examples below:
+
+```python
+import InfinityMath as im
+
+# Basic operations
+print(im.sqrt(16))  # 4.0
+print(im.pow(2, 3))  # 8
+print(im.sum(5, 3))  # 8
+print(im.subtraction(10, 4))  # 6
+print(im.product(7, 8))  # 56
+print(im.div(9, 3))  # 3.0
+
+# Factorial
+print(im.factorial(5))  # 120
+
+# Logarithm
+print(im.log(100, 10))  # 2.0
+
+# Trigonometric functions
+print(im.sin(0))  # 0.0
+print(im.cos(0))  # 1.0
+print(im.tan(0))  # 0.0
+
+# Quadratic equation solver
+x1, x2 = im.solve_quadratic(2, 3, -2)
+print(f"Solutions: {x1}, {x2}")
+
+# Vieta's theorem
+p, q = im.viet_quadratic(2, 3)
+print(f"p: {p}, q: {q}")
+
+# Function plotting
+import numpy as np
+
+def quadratic_function(x):
+    return x**2 - 2*x + 1
+
+im.plot_function(quadratic_function, (-5, 5), label="x^2 - 2x + 1", color="r")
+```
+
+## Features
+
+- Basic arithmetic operations: `sum`, `subtraction`, `product`, `div`
+- Exponential and logarithm functions: `pow`, `log`
+- Trigonometric functions: `sin`, `cos`, `tan`, `asin`, `acos`, `atan`
+- Factorial calculation: `factorial`
+- Quadratic equation solving: `solve_quadratic`, `viet_quadratic`
+- Function plotting: `plot_function`, `plot_multiple_functions`
+
+## License
+
+This project is open-source. You are free to modify and distribute it.
+
+
+
+# Changelog
+
+## [0.0.4] - 2025-03-25
+
+- fixing error with solve_quadratic
+- Adding documentation
