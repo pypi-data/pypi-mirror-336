@@ -1,0 +1,18 @@
+[project]
+name = "therm_inv_tools_ChemTony"
+version = "0.0.1"
+authors = [
+  { name="Anthony R. Osborne", email="anthony.osborne019@gmail.com" },
+]
+description = "A package containing all my tools"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/Anthony904175/therm_inv_tools"
+Issues = "https://github.com/Anthony904175/therm_inv_tools/issues"
