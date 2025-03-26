@@ -1,0 +1,14 @@
+requela/__init__.py,sha256=OeSCIMSjYewKSqUR1Aikn9B0q_rk01n94-LhDRK5DAg,317
+requela/dataclasses.py,sha256=zRXQMt4ZO1eCvXuonozI_QgOKUNXcVGoP4TfQQPDTCI,2235
+requela/grammar.lark,sha256=7fGGUSGAgPkItFKy_NMMl_SimSm3Yp3EQVO8bmPjQrY,3694
+requela/parser.py,sha256=SGz7edYauvY4BC8Rmtj7jW0zvikqiC-VXY5pDQyPVw4,444
+requela/rules.py,sha256=qWEuI6nbgqoe7qss1MWK6KrzPSqt6ePUwuOlluOl978,8293
+requela/transformer.py,sha256=pLDctmN1oeeLrbrer0YW42hGeKfGNc2WAC755VH0D5A,3726
+requela/builders/__init__.py,sha256=A3Lb7KyetpZiquNx-s2DnORIa-AJDTDdzrUSeeehLrg,1367
+requela/builders/base.py,sha256=A_REEVvkhmKWNSKqH-MbGfVd4q1A-jvG8lKxvd8Qx88,5151
+requela/builders/django.py,sha256=fSvP-Q0LfjLZ6h0l4k1iDSVPMkr1Hzbra7o8Gg5U7eg,5633
+requela/builders/sqlalchemy.py,sha256=u3kj26LuXFHcnWjEscCpFVa51zBorgyJhsrW-xZLEcg,7475
+requela-0.1.12.dist-info/METADATA,sha256=6zPtijvbSwf1OOKayYgzLaeYuGWwtoikEehrBic76ew,18091
+requela-0.1.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+requela-0.1.12.dist-info/licenses/LICENSE.txt,sha256=CsjpEBD_4hCUcjUDKtnzlo3QHbFCh0U5dzFw6I3poZU,11347
+requela-0.1.12.dist-info/RECORD,,
