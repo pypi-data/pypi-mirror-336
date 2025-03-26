@@ -1,0 +1,2 @@
+[console_scripts]
+pip-chronos = pipup.cli:main
