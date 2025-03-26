@@ -1,0 +1,3 @@
+[console_scripts]
+SikeWangluoShiyanshiCcnaShiyanZhinanLiangguangminFix1 = SikeWangluoShiyanshiCcnaShiyanZhinanLiangguangminFix1.__main__:main
+sike-wangluo-shiyanshi-ccna-shiyan-zhinan-liangguangmin-fix1 = SikeWangluoShiyanshiCcnaShiyanZhinanLiangguangminFix1.__main__:main
