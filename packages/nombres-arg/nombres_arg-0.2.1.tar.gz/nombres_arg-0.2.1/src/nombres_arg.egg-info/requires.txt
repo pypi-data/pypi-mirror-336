@@ -1,0 +1,6 @@
+pandas
+requests
+spacy
+
+[dev]
+pytest
