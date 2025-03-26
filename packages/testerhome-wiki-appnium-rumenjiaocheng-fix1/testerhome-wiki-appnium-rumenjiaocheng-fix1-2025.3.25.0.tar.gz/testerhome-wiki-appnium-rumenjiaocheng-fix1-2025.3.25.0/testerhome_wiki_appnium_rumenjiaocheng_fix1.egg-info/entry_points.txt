@@ -1,0 +1,3 @@
+[console_scripts]
+TesterhomeWikiAppniumRumenjiaochengFix1 = TesterhomeWikiAppniumRumenjiaochengFix1.__main__:main
+testerhome-wiki-appnium-rumenjiaocheng-fix1 = TesterhomeWikiAppniumRumenjiaochengFix1.__main__:main
