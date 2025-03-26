@@ -1,0 +1,92 @@
+Metadata-Version: 2.3
+Name: ege_classification
+Version: 0.0.3
+Summary: 
+License: MIT
+Author: Merzlikin-Matvey
+Author-email: merzlikinmatvey01@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: accelerate (>=0.26.0)
+Requires-Dist: datasets (>=3.3.2,<3.4.0)
+Requires-Dist: flake8 (>=7.1.2,<8.0.0)
+Requires-Dist: huggingface-hub (>=0.29.2,<0.30.0)
+Requires-Dist: pandas (>=2.2.3,<2.3.0)
+Requires-Dist: scikit-learn (>=1.6.1,<1.7.0)
+Requires-Dist: torch (>=2.6.0,<2.7.0)
+Requires-Dist: transformers (>=4.49.0,<4.50.0)
+Description-Content-Type: text/markdown
+
+
+# EGE Classification
+
+Этот проект предназначен для классификации задач из профильного ЕГЭ по математике. Модель предсказывает номер задачи с точностью 98.6%.
+
+## Установка
+
+Вы можете самостоятельно собрать библиотеку
+
+```bash
+poetry build
+pip install ПУТЬ_К_АРХИВУ
+```
+
+Или воспользоваться pypi.org
+
+```bash
+pip install ege-classification
+```
+
+## Использование
+
+### Обучение модели
+
+Для обучения модели используйте следующий код:
+
+```python
+from ege_classification.model import TaskClassifier
+
+classifier = TaskClassifier()
+classifier.train('path/to/dataset.csv')
+classifier.save()
+```
+
+### Тестирование модели
+
+Для тестирования модели используйте следующий код:
+
+```python
+classifier.test('path/to/dataset.csv')
+```
+
+### Предсказание
+
+Для предсказания номера задачи используйте следующий код:
+
+```python
+predicted_class = classifier.predict("Текст задачи")
+print(f"Предсказанный номер задачи: {predicted_class}")
+```
+
+### Загрузка и сохранение модели
+
+Для сохранения модели:
+
+```python
+classifier.save('path/to/save/model')
+```
+
+Для загрузки модели:
+
+```python
+classifier.load('path/to/saved/model')
+```
+
+
+## Лицензия
+
+Этот проект лицензирован под лицензией MIT.
+
