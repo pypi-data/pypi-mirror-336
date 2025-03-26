@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gcsstaff
+Version: 0.1.0
+Summary: Add your description here
+Home-page: https://github.com/yourusername/gcsstaff
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1.8
+Requires-Dist: setuptools>=78.0.2
+Requires-Dist: twine>=6.1.0

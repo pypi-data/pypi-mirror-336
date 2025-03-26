@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+gcsstaff/__init__.py
+gcsstaff/cli.py
+gcsstaff.egg-info/PKG-INFO
+gcsstaff.egg-info/SOURCES.txt
+gcsstaff.egg-info/dependency_links.txt
+gcsstaff.egg-info/requires.txt
+gcsstaff.egg-info/top_level.txt
