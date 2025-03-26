@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: juice_coverage_reporter
+Version: 0.0.9
+Summary: Python package for reporting Juice Coverage Metrics
+Home-page: https://juigitlab.esac.esa.int/core-system/uplink/juice_coverage_reporter
+Author: JUICE SOC team
+Author-email: juice_soc@cosmos.esa.int
+Keywords: esa,Juice,planetary,space,metrics,trajectory,coverage,assessment,crema
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tabulate
+Requires-Dist: esac-juice-pyutils>=0.3.2
+Requires-Dist: soa-report>=1.2.7
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+# Juice Coverage Reporter 
+
+## 1. Getting Started
+
+This Python package provides libs and tools to assess the Juice Coverage reporting metrics, using 
+the outputs provided from different SOC tools (e.g. geopipeline, moon coverage) as inputs.
+
+This tool allows to generate a Coverage report for a given Trajectory (crema)
+
+    juice_coverage_reporter -c <path to configuration file>
+ 
+The output include the report in rst, html and docx format.
+
+
+### 1.1 Installation
+
+#### 1.1.1 Prerequisites
+ 
+* Python 3.7 or higher.
+
+#### 1.1.2 Setup
+
+##### 1.1.2.1 Package installation 
+
+From command line install the following packages using pip:
+
+    pip install juice_coverage_reporter
+

@@ -1,0 +1,2 @@
+[console_scripts]
+juice_coverage_reporter = juice_coverage_reporter.juice_coverage_reporter_cmd:main
