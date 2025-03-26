@@ -1,0 +1,40 @@
+[project]
+name = "streamlit-fesion"
+description = ""
+authors = [{ name = "Yuichiro Tachibana (Tsuchiya)", email = "t.yic.yt@gmail.com" }]
+requires-python = ">=3.9,!=3.9.7"  # 3.9.7 is excluded due to https://github.com/streamlit/streamlit/pull/5168
+readme = "README.md"
+license = "MIT"
+dynamic = ["version"]
+dependencies = ["streamlit>=1.0.0"]
+
+[project.urls]
+Repository = "https://github.com/whitphx/streamlit-webrtc"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.10",
+    "pytest>=7.1.2",
+    "mypy[faster-cache]>=1.15.0",
+    "scikit-image>=0.18.3",
+    "bump-my-version>=1.1.1",
+    "pre-commit>=4.2.0",
+]
+
+[tool.hatch.build.targets.sdist]
+include = ["/streamlit_fesion"]
+exclude = ["/streamlit_fesion/frontend", "!/streamlit_fesion/frontend/dist"]
+
+[tool.hatch.build.targets.wheel]
+include = ["/streamlit_fesion"]
+exclude = ["/streamlit_fesion/frontend", "!/streamlit_fesion/frontend/dist"]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.ruff.lint]
+extend-select = ["I"]
