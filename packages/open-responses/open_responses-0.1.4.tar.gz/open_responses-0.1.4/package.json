@@ -1,0 +1,68 @@
+{
+  "name": "open-responses",
+  "version": "0.1.4",
+  "description": "CLI for setting up a self-hosted alternative to OpenAI's Responses API",
+  "bin": {
+    "open-responses": "./bin/open-responses"
+  },
+  "files": [
+    "bin/open-responses-linux",
+    "bin/open-responses-macos",
+    "bin/open-responses-win.exe",
+    "bin/open-responses",
+    "scripts/postinstall.js"
+  ],
+  "scripts": {
+    "build": "go build -o bin/open-responses main.go",
+    "build:all": "GOOS=linux GOARCH=amd64 go build -o bin/open-responses-linux main.go && GOOS=darwin GOARCH=amd64 go build -o bin/open-responses-macos main.go && GOOS=windows GOARCH=amd64 go build -o bin/open-responses-win.exe main.go",
+    "postinstall": "node scripts/postinstall.js",
+    "prepublishOnly": "npm run build:all",
+    "prepare": "husky",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint:fix": "eslint --fix .",
+    "py:lint": "uvx ruff check .",
+    "py:format": "uvx ruff format .",
+    "go:format": "go fmt ./...",
+    "install:hooks": "bash scripts/install-hooks.sh",
+    "lint:all": "npm run lint && npm run py:lint && npm run go:format",
+    "format:all": "npm run format && npm run py:format && npm run go:format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julep-ai/open-responses.git"
+  },
+  "keywords": [
+    "openai",
+    "responses-api",
+    "docker",
+    "compose",
+    "api",
+    "llm"
+  ],
+  "author": "Julep AI",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/julep-ai/open-responses/issues"
+  },
+  "homepage": "https://github.com/julep-ai/open-responses#readme",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

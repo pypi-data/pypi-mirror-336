@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  app:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    environment:
+      - DB_USER=testuser
+      - DB_PASSWORD=testpass
+      - DB_NAME=testdb
+    restart: unless-stopped
+
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=testuser
+      - POSTGRES_PASSWORD=testpass
+      - POSTGRES_DB=testdb
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  db_data:

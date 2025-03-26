@@ -1,0 +1,67 @@
+[project]
+name = "open-responses"
+version = "0.1.4"
+description = "CLI for setting up a self-hosted alternative to OpenAI's Responses API"
+readme = "README.md"
+authors = [
+    {name = "Julep AI", email = "info@example.com"}
+]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/julep-ai/open-responses"
+Issues = "https://github.com/julep-ai/open-responses/issues"
+
+[project.scripts]
+open-responses = "open_responses:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel.sources]
+"open_responses" = "open_responses"
+
+[tool.hatch.build.targets.wheel]
+packages = ["open_responses"]
+include = ["open_responses/bin/*"]
+
+[tool.hatch.build.hooks.custom]
+path = "build_hooks.py"
+
+[tool.ruff]
+target-version = "py37"
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "W",   # pycodestyle warnings
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+exclude = [
+    ".git",
+    ".github",
+    "__pycache__",
+    "*.pyc",
+    "dist",
+    "build",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+skip-magic-trailing-comma = false
