@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: kaltts
+Version: 1.0.2007
+Summary: Kal Text-to-Speech (TTS) Synthesis
+Home-page: https://github.com/Odeneho-Calculus/KTTS_v1_model
+Author: kalculusGuy
+Author-email: calculus069@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Odeneho-Calculus/KTTS_v1_model/issues
+Project-URL: Documentation, https://github.com/Odeneho-Calculus/KTTS_v1_model#readme
+Project-URL: Source Code, https://github.com/Odeneho-Calculus/KTTS_v1_model
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# KalTTS
+
+KalTTS is a text-to-speech module that converts text into speech audio.
+
+## Installation
+
+You can install the package using pip:
+
+```sh
+pip install kaltts
+```
+
+## Usage
+
+Here is an example of how to use the KalTTS module:
+
+```python
+from kaltts import generate_speech
+from pydub import AudioSegment
+from pydub.playback import play
+import io
+
+def main():
+    text = 'Hello, this is a test of Kal TTS.'
+    audio_output = generate_speech(text)
+
+    with open('output.mp3', 'wb') as f:
+        f.write(audio_output.getbuffer())
+
+    audio_segment = AudioSegment.from_file('output.mp3', format='mp3')
+    audio_segment.export('output.wav', format='wav')
+
+    print('Audio saved as output.wav')
+    play(audio_segment)
+
+if __name__ == "__main__":
+    main()
+```
+
