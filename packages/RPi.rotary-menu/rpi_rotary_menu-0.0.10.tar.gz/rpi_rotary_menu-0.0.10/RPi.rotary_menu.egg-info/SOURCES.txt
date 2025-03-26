@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+RPi.rotary_menu.egg-info/PKG-INFO
+RPi.rotary_menu.egg-info/SOURCES.txt
+RPi.rotary_menu.egg-info/dependency_links.txt
+RPi.rotary_menu.egg-info/top_level.txt
+RotaryMenu/RotaryMenuClasses.py
+RotaryMenu/__init__.py
+RotaryMenu/encoder.py
+docs/RotaryMenu-docs.md
+docs/images/lcd-1.png
+docs/images/lcd-2.png
