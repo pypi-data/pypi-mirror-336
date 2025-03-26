@@ -1,0 +1,12 @@
+requests==2.*
+
+[:python_version < "3.7"]
+dataclasses==0.*
+
+[django]
+djangorestframework==3.*
+django<5.0,>=3.0
+
+[fastapi]
+fastapi>=0.68.0
+pydantic<2.0.0,>=1.8.0
