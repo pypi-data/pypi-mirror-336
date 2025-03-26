@@ -1,0 +1,2 @@
+[console_scripts]
+mlx-alt-text = mlx_alt_text:main
