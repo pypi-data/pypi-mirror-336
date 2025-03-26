@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunYuanshengChanpinShouceFix1 = AliYunYuanshengChanpinShouceFix1.__main__:main
+ali-yun-yuansheng-chanpin-shouce-fix1 = AliYunYuanshengChanpinShouceFix1.__main__:main
