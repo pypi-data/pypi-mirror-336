@@ -1,0 +1,1 @@
+#this file contains all the methods to interact with the database like insert, update, delete, select
