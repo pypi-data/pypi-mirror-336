@@ -1,0 +1,7 @@
+midi2cmd/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+midi2cmd/console.py,sha256=XlEeiNR_uK29mvFTbpageTFo_v3T7UJ0jRnNX_C3YZo,2458
+midi2cmd/midi_reader.py,sha256=BG91dwVqDf2T9KrBB_TuJLBLkyES5zMmsB47I-HbJdI,1544
+midi2cmd-0.1.0.dist-info/METADATA,sha256=BA6EWbuR_G8xmIJA6EyWjzdT04O6v6X_JrGiXhqxPQk,646
+midi2cmd-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+midi2cmd-0.1.0.dist-info/entry_points.txt,sha256=H_VKj8sSgEZb67XTwM1R_w-XOFXRXsR45PKGHePyN4I,50
+midi2cmd-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: midi2cmd
+Version: 0.1.0
+Summary: Trigger shell commands on MIDI events
+Project-URL: Repository, https://github.com/funollet/midi2cmd
+Author-email: Jordi Funollet <funollet@fastmail.fm>
+License-Expression: MIT
+Keywords: cli,hotkey,midi,terminal
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.12
+Requires-Dist: click>=8.1.7
+Requires-Dist: mido>=1.3.3
+Requires-Dist: platformdirs>=4.3.6
+Requires-Dist: python-rtmidi>=1.5.8
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+Trigger shell commands on MIDI events.
