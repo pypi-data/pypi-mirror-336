@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: fuzzy_sidc
+Version: 0.1.0
+Summary: fyzzy search for SIDC
+Requires-Python: >=3.10
+Requires-Dist: mini-racer
+Requires-Dist: rapidfuzz
