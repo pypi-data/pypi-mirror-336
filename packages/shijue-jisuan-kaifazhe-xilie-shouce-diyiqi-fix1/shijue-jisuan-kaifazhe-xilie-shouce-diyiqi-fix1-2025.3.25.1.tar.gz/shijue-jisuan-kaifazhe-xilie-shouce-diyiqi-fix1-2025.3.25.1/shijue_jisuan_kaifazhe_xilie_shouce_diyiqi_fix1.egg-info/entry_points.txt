@@ -1,0 +1,3 @@
+[console_scripts]
+ShijueJisuanKaifazheXilieShouceDiyiqiFix1 = ShijueJisuanKaifazheXilieShouceDiyiqiFix1.__main__:main
+shijue-jisuan-kaifazhe-xilie-shouce-diyiqi-fix1 = ShijueJisuanKaifazheXilieShouceDiyiqiFix1.__main__:main
