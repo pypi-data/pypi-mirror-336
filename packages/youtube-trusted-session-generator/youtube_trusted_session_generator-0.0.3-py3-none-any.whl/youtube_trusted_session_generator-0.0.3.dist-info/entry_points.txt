@@ -1,0 +1,2 @@
+[console_scripts]
+potoken-generator = potoken_generator.main:main_oneshot
