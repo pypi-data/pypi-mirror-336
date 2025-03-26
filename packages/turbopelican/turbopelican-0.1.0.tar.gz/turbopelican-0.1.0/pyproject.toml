@@ -1,0 +1,36 @@
+[project]
+name = "turbopelican"
+version = "0.1.0"
+license = "AGPL-3.0-or-later"
+description = "An uber-quick tool to create a Pelican static-site and deploy it to GitHub Pages."
+readme = "README.md"
+authors = [
+    { name = "Elliot Simpson", email = "elliot@p-s.co.nz" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langcodes>=3.5.0",
+    "pydantic>=2.10.6",
+    "tomlkit>=0.13.2",
+    "tzdata>=2025.1",
+    "tzlocal>=5.3.1",
+]
+
+[project.urls]
+Source = "https://github.com/clockback/turbopelican"
+Issues = "https://github.com/clockback/turbopelican/issues"
+
+[project.scripts]
+turbopelican = "turbopelican.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pyright>=1.1.397",
+    "ruff>=0.11.1",
+]
+
