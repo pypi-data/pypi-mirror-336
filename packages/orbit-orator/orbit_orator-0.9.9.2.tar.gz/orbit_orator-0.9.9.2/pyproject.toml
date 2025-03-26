@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "orbit-orator"
+version = "0.9.9.2"
+description = "A simple yet beautiful ORM for Python"
+authors = ["Sdispater <sdispater@me.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/sdispater/orator"
+repository = "https://github.com/sdispater/orator"
+keywords = ["orm", "database", "query builder"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyyaml = ">=5.1,<7.0"
+flexmock = "^0.10.4"
+backpack = "^0.1"
+blinker = "^1.4"
+cleo = "^0.6"
+inflection = "^0.3"
+Faker = "^0.8"
+lazy-object-proxy = "^1.2"
+pendulum = "^1.4"
+pyaml = "^16.12"
+Pygments = "^2.2"
+simplejson = "^3.10"
+six = "^1.10"
+wrapt = "^1.10"
+
+# Extras
+psycopg2 = { version = "^2.7", optional = true }
+PyMySQL = { version = "^0.7", optional = true }
+mysqlclient = { version = "^1.3", optional = true }
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.10.1"
+pytest-cov = "^2.12.1"
+pytest-mock = "^1.13.0"
+black = "^22.3.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+mypy = "^0.950"
+types-PyYAML = "^6.0.12.2"
+pre-commit = "^1.11"
+
+
+[tool.poetry.extras]
+mysql = ["mysqlclient"]
+mysql-python = ["PyMySQL"]
+pgsql = ["psycopg2"]
+
+
+[tool.poetry.scripts]
+orator = 'orator.commands.application:application.run'
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
