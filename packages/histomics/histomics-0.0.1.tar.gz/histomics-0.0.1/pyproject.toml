@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "histomics"
+version = "0.0.1"
+description = "Histomics slide(WSI) analysis toolkit"
+authors = ["ScienceAdvances <yehior@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
