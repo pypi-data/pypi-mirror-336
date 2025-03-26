@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+test_sdk1.egg-info/PKG-INFO
+test_sdk1.egg-info/SOURCES.txt
+test_sdk1.egg-info/dependency_links.txt
+test_sdk1.egg-info/requires.txt
+test_sdk1.egg-info/top_level.txt
+wrapper/__init__.py
+wrapper/alicebluepy.py
