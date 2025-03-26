@@ -1,0 +1,4 @@
+[console_scripts]
+infactory=infactory_client.cli:main
+nf=infactory_client.cli:main
+
