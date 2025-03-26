@@ -1,0 +1,15 @@
+capellambse<0.7,>=0.6.6
+click
+typing_extensions<5,>=4.9.0
+
+[docs]
+furo
+sphinx
+sphinx-copybutton
+
+[docs:python_version < "3.11"]
+tomli
+
+[test]
+pytest
+pytest-cov
