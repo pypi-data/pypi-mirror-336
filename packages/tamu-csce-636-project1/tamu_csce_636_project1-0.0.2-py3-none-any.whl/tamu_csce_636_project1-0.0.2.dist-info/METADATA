@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: tamu-csce-636-project1
+Version: 0.0.2
+Summary: Just a tool for tamu_csce_636
+Home-page: https://github.com/jeff-hykin/tamu_csce_636_project1
+Author: Jeff hykin
+Author-email: jeff.hykin+pypi@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## (Readme template below)
+
+# What is this?
+
+Just a tool for tamu_csce_636
+
+# How do I use this?
+
+`pip install tamu_csce_636_project1`
+
+
+```python
+from tamu_csce_636_project1 import Evaluator
+
+p = [
+    [ 0.4759809,  0.9938236, 0.819425 ],
+    [-0.8960798, -0.7442706, 0.3345122],
+]
+evaler = Evaluator(
+    print=True,
+    input_output_pairs=[
+        # n, k, m, p
+        ((5, 2, 0, p), 1),
+        ((5, 2, 2, p), 1.9242387),
+    ]
+)
+
+losses = evaler.eval(
+    # p will be a list of lists (matrix)
+    # your_func_or_whatever() needs to return the m-height value as a python float
+    lambda n,k,m,p: your_func_or_whatever(n,k,m,p)
+)
+# losses = {
+#     # n, k, m
+#     (5, 2, 0): 0.0,
+#     (5, 2, 2): 0.8916794023379957,
+# }
+```
+
+
