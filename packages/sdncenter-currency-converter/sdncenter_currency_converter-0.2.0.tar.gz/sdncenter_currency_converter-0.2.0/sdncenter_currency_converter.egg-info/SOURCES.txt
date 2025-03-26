@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sdncenter/__init__.py
+sdncenter/currency/__init__.py
+sdncenter/currency/converter/__init__.py
+sdncenter/currency/converter/currency_converter.py
+sdncenter/currency/repositories/__init__.py
+sdncenter/currency/repositories/exchange_rates.py
+sdncenter_currency_converter.egg-info/PKG-INFO
+sdncenter_currency_converter.egg-info/SOURCES.txt
+sdncenter_currency_converter.egg-info/dependency_links.txt
+sdncenter_currency_converter.egg-info/top_level.txt
+tests/test_exchange_rates.py
