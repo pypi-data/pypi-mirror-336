@@ -1,0 +1,100 @@
+[tool.poetry]
+name = "iikocloudapi"
+version = "0.3.1"
+description = "iikoCloud API async client"
+authors = ["Deni Tazurkaev <sha256deni@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ZeroFlowTech/iikocloudapi"
+repository = "https://github.com/ZeroFlowTech/iikocloudapi"
+keywords = [
+  "iiko",
+  "iikocloud",
+  "iiko-cloud",
+  "iiko-api",
+  "iikocloudapi",
+  "iiko-cloud-api",
+  "async",
+  "asyncio",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+packages = [{ "include" = "iikocloudapi" }]
+
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ZeroFlowTech/iikocloudapi/issues"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.10.6"
+httpx = "^0.28.1"
+orjson = "^3.10.15"
+
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.396"
+ruff = "^0.11.0"
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+  "ALL", # include all the rules, including new ones
+]
+ignore = [
+  "COM812", "ISC001",  # for ruff formatter
+  "ANN001",  # for default=True like vars
+  "ANN201",  # for handlers return
+  "ANN204",  # for __init__ return None
+  "ANN401",  # for Any
+  "EM101", "TRY003",  # for strings in exceptions
+  "D", "TD", "FIX",  # for TODOs
+  "ERA",     # for commented code
+  "RET502",  # for return without None
+  "RET503",  # for function without return
+  "RUF001",  # for cyrillic
+  "EM102",   # ignore f-string literal in exceptions
+  "FA102",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"iikocloudapi/api.py" = [
+  "N801",
+  "N816",
+]
+"iikocloudapi/modules/*" = [
+  "FBT001",
+  "FBT002",
+  "PLR0913",
+]
+"iikocloudapi/helpers.py" = [
+  "PGH003",
+]
+"tests/*" = [
+  "ANN201",
+  "INP001",
+  "D100",
+  "D103",
+  "S101",
+  "S105",
+  "E501",
+]
