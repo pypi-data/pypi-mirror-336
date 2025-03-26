@@ -1,0 +1,3 @@
+[console_scripts]
+ShuziYouminBuluoBoke20162020Fix1 = ShuziYouminBuluoBoke20162020Fix1.__main__:main
+shuzi-youmin-buluo-boke-2016-2020-fix1 = ShuziYouminBuluoBoke20162020Fix1.__main__:main
