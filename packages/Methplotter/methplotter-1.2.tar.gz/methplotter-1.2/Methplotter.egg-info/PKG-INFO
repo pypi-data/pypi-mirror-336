@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: Methplotter
+Version: 1.2
+Summary: Methplotter
+Home-page: https://github.com/wxhJames/Methplotter
+Author: wxhJames
+Author-email: 1937557685@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
