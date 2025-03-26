@@ -1,0 +1,10 @@
+clean_py/__init__.py,sha256=ydb3K2P-KelnVQ318KyJN8wO2_z8Jm1hGd9TKz9kUrU,18
+clean_py/_version.py,sha256=nvFhmBSkuK600ALXzVqN2wguuLknI_mW32CKRCa5Dl8,524
+clean_py/clean_py.py,sha256=5tiLZ1zeiQSJTmbWc0SDX2j46oLLn5eBYkDRCg-sPRA,7289
+clean_py/cli.py,sha256=scXV8XNAJ2Ug9lPOs2U9DYcBH2dg780JS13RUBrtTgg,5454
+clean_py-1.0.3.dev0.dist-info/licenses/LICENSE,sha256=ND8V0tbSz6EgwqBulWj233Brx-UZilfgpdsCPjAEn9U,1136
+clean_py-1.0.3.dev0.dist-info/METADATA,sha256=zcGWDs-TU0URkW1xy9b2mIlScWk-B3ZsIijUmurx4Ds,4604
+clean_py-1.0.3.dev0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+clean_py-1.0.3.dev0.dist-info/entry_points.txt,sha256=TeYiGLW_AfXPpZE986-R9CoMcQDpfdzRMHYwkuwuuA8,46
+clean_py-1.0.3.dev0.dist-info/top_level.txt,sha256=_APcI_JtOLMX7gZC50OrRqCppHc-p2sNI7FjFKtEoDs,9
+clean_py-1.0.3.dev0.dist-info/RECORD,,
