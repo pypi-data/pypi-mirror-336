@@ -1,0 +1,2 @@
+[console_scripts]
+kube-bench-report-converter-2 = kube_bench_report_converter_2.command_line:main
