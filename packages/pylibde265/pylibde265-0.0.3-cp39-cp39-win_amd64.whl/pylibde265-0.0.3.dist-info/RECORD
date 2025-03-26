@@ -1,0 +1,10 @@
+pylibde265/__init__.py,sha256=jD0mYJk2SXVol2GWQZV881VF7J5efFn3VkZkY_3-QkQ,45
+pylibde265/de265.cp39-win_amd64.pyd,sha256=14fuNTJHXgz4fKiILNrpfVocwHu17We8pncxow8N6cM,163840
+pylibde265/visualize.cp39-win_amd64.pyd,sha256=_zaRL5ldf87PmWWpuWQEXXsn_gbQ9923mJIcFGwVU5M,16896
+pylibde265-0.0.3.data/data/libde265.dll,sha256=zTjWI1gSiCPjb0cdaxt5p-6uXApcbxmVmAu97fxCI-Y,522240
+pylibde265-0.0.3.data/data/Lib/site-packages/pylibde265/de265.pyi,sha256=MWg35WadSCfoZiO37UKxMI48lVkppkfNmunRHIlMCR8,896
+pylibde265-0.0.3.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pylibde265-0.0.3.dist-info/METADATA,sha256=BPQpTbExpiVWplCL1z_CEayfsfIoSKuAeU5ZDXpQ8bY,8041
+pylibde265-0.0.3.dist-info/WHEEL,sha256=DiyQlQBAA8vWmmwFRDPSwjrGdTC0GCx3phqzmWJ5fvE,99
+pylibde265-0.0.3.dist-info/top_level.txt,sha256=2CQ2Ft7V1WA6wMxGJTcu43DeSZnv3tjDcUb54P9atTA,11
+pylibde265-0.0.3.dist-info/RECORD,,
