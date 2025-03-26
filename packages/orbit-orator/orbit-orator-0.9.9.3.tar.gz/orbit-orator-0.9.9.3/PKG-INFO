@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: orbit-orator
+Version: 0.9.9.3
+Summary: A simple but powerful ORM for Python, inspired by Laravel's Eloquent
+Home-page: https://github.com/maxiaoyu/orator
+Author: Sébastien Eustace, Maxiaoyu
+Author-email: sebastien@eustace.io, maxiaoyu@example.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+UNKNOWN
+
