@@ -1,0 +1,13 @@
+llmloader/__init__.py,sha256=ELC1AY1QRY-f06x-4vOKgI8LTdHX7A07b_33_PMdiaU,1567
+llmloader/anthropic.py,sha256=fMlfyz2kANLIm8LAbtUQRo5UxuUjtjvIWcX_R6zl0hA,673
+llmloader/huggingface.py,sha256=Ba7rf2XivuWrXzygu4NEHL_bKwOyKCmmAvdE407M-kE,2507
+llmloader/llama.py,sha256=oQOqj5OxA_abaVCvcKoWo_4QG84ZfNyIel8rkQLYexQ,2792
+llmloader/loader.py,sha256=FCnYLDWcSUDKIYGKUx9t2UauOQLNYFwO2f-UmwqAxuM,345
+llmloader/main.py,sha256=ByOzQjyD2uhpTryt-yAV_H2ceEXenNnM6u7o4Q1NI3A,780
+llmloader/mistral.py,sha256=1FrNhPYROyTLzNhanHSgWfM7K3k9pdEJ123b9l2z8SA,769
+llmloader/openai.py,sha256=MXoCAb9dcBTPq_fOjVgqqqljKnmJE-vxfpIFrdrznRQ,650
+llmloader/xai.py,sha256=sUGHHwNCrNeEhqVrC7v_Tz9RTsNBrnEYWiEsehJIeWw,647
+llmloader-0.1.3.dist-info/METADATA,sha256=gRznecKVExMV-zqBHci-FOP76gqnTrv1uJq53zSVWh4,3213
+llmloader-0.1.3.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+llmloader-0.1.3.dist-info/entry_points.txt,sha256=zInQOFaJ0RPVZxgSPn2pYuiIvNaZ8qMYm3zOaFBL5tU,48
+llmloader-0.1.3.dist-info/RECORD,,
