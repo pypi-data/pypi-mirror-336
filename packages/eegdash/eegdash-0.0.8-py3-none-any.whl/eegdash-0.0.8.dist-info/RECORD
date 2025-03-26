@@ -1,0 +1,8 @@
+eegdash/__init__.py,sha256=DrliW5AazWcHJBznrmrS_YF8n8K48csOzfWWIvB6Esw,41
+eegdash/data_utils.py,sha256=1ETB2rW-6HvXdli75pHW9yz3xjEZN7IqApKHn9XKHv4,19205
+eegdash/main.py,sha256=QfFLzbs8iXmaJj4x_ylhFuEAuOCEKIKV6h_a__XPZ6Y,12048
+eegdash-0.0.8.dist-info/licenses/LICENSE,sha256=Xafu48R-h_kyaNj2tuhfgdEv9_ovciktjUEgRRwMZ6w,812
+eegdash-0.0.8.dist-info/METADATA,sha256=X3AsZ23uPQY71alITDp4cOHOvgD7QmlGVagiKHj4cjE,13881
+eegdash-0.0.8.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+eegdash-0.0.8.dist-info/top_level.txt,sha256=zavO69HQ6MyZM0aQMR2zUS6TAFc7bnN5GEpDpOpFZzU,8
+eegdash-0.0.8.dist-info/RECORD,,
