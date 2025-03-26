@@ -1,0 +1,2 @@
+[console_scripts]
+packaging-workshop = packaging_workshop:main

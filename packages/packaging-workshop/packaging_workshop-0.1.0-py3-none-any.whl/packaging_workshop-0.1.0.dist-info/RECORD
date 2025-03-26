@@ -1,0 +1,6 @@
+packaging_workshop/__init__.py,sha256=3qqRfZsVGtvw8jgebmORvET_ow2gTpB9MnDmkMzWJVA,40
+packaging_workshop/add.py,sha256=6NXqpazvAKq2CAzQOvLvsdLTCqm8pkSMdrRk6x3gJjw,520
+packaging_workshop-0.1.0.dist-info/METADATA,sha256=gZf0xB4FM7Z-s1SAmc3DH13gyG0wNeZM4sBBoY5EvCM,244
+packaging_workshop-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+packaging_workshop-0.1.0.dist-info/entry_points.txt,sha256=34_Al_s4WkMCaDB4eT8YPN0WS55OitqM6ZYxVDkW7D0,63
+packaging_workshop-0.1.0.dist-info/RECORD,,
