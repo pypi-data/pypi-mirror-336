@@ -1,0 +1,62 @@
+# CacaoDocs Configuration
+
+# Basic Information
+title: "CacaoDocs API Documentation"
+description: "Comprehensive API documentation with plugin support"
+version: "1.0.0"
+
+# Theme Configuration
+theme:
+  primary_color: "#4CAF50"
+  secondary_color: "#8b5d3b"
+  background_color: "#f5f5f5"
+  text_color: "#331201"
+  sidebar_background_color: "#ffffff"
+  sidebar_text_color: "#331201"
+  sidebar_highlight_background_color: "#736d67"
+  sidebar_highlight_text_color: "#ffffff"
+  highlight_code_background_color: "#3a2f2a"
+  highlight_code_border_color: "#8b5d3b"
+
+# Type Mappings
+type_mappings:
+  api: "API Documentation"
+  types: "Type Definitions"
+  docs: "General Documentation"
+
+# Tag Mappings
+tag_mappings:
+  users: "User Management"
+  auth: "Authentication"
+  general: "General"
+
+# Plugin Configuration
+plugin_directory: "cacaodocs/plugins"
+plugins:
+  html_renderer:
+    enabled: true
+    template: "default"
+    syntax_highlighting: true
+  markdown_parser:
+    enabled: true
+    extensions:
+      - "fenced-code-blocks"
+      - "tables"
+      - "header-ids"
+      - "metadata"
+      - "footnotes"
+  openapi_generator:
+    enabled: true
+    output_format: "yaml"
+    include_examples: true
+
+# Development Settings
+debug: true
+verbose: true
+exclude_inputs:
+  - "self"
+  - "cls"
+  - "request"
+
+# Custom Settings
+logo_url: "cacaodocs/templates/assets/img/logo.png"

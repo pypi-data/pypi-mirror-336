@@ -1,0 +1,29 @@
+# Documentation
+include README.md
+include LICENSE
+include VERSION
+include cacao.yaml
+
+# Requirements
+include requirements.txt
+
+# Templates and assets
+recursive-include cacao/templates *
+recursive-include cacao/assets *
+
+# Configuration files
+include cacao/*.yaml
+include cacao/*.json
+
+# Source files
+recursive-include cacao *.py
+
+# Exclude development and test files
+exclude tests/*
+exclude *.pyc
+exclude __pycache__
+exclude .git*
+exclude .pytest_cache
+exclude .coverage
+exclude htmlcov
+exclude *.egg-info
