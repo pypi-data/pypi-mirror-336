@@ -1,0 +1,3 @@
+[celery.commands]
+pflower=pyramid_flower.script:pflower
+
