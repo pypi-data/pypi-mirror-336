@@ -1,0 +1,2 @@
+[gui_scripts]
+chroma-ui = chromaquant.__main__:runUI
