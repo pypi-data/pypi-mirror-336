@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ninja_protection.egg-info/PKG-INFO
+ninja_protection.egg-info/SOURCES.txt
+ninja_protection.egg-info/dependency_links.txt
+ninja_protection.egg-info/entry_points.txt
+ninja_protection.egg-info/requires.txt
+ninja_protection.egg-info/top_level.txt
