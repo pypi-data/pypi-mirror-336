@@ -1,0 +1,13 @@
+numpy
+scipy
+pymatgen
+mp-api
+
+[deep]
+tensorflow>=2
+
+[deep_gpu]
+tensorflow-gpu>=2
+
+[symbolic]
+cvxpy
