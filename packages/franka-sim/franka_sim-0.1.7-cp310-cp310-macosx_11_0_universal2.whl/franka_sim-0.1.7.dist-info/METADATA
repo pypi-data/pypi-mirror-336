@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: franka-sim
+Version: 0.1.7
+Summary: Franka robot simulation package
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy==1.26.4
+Requires-Dist: genesis-world==0.2.1
+Requires-Dist: numba==0.60.0
+Requires-Dist: pytest
+Provides-Extra: dev
+Requires-Dist: pre-commit>=3.5.0; extra == "dev"
+Requires-Dist: black>=24.1.1; extra == "dev"
+Requires-Dist: isort>=5.13.2; extra == "dev"
+Requires-Dist: flake8>=7.0.0; extra == "dev"
+Requires-Dist: flake8-docstrings>=1.7.0; extra == "dev"
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Dynamic: license-file
