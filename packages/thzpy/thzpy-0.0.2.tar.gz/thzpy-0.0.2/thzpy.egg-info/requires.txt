@@ -1,0 +1,2 @@
+numpy
+pydotthz>=0.3.1
