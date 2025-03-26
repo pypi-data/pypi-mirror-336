@@ -1,0 +1,3 @@
+[console_scripts]
+ShujuHuYingyongShijianBaipishuFix1 = ShujuHuYingyongShijianBaipishuFix1.__main__:main
+shuju-hu-yingyong-shijian-baipishu-fix1 = ShujuHuYingyongShijianBaipishuFix1.__main__:main
