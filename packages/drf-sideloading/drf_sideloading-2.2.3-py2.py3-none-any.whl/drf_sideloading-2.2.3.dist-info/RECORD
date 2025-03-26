@@ -1,0 +1,10 @@
+drf_sideloading/__init__.py,sha256=3pvG1dVJuHEcdu38cc8mGwpb57ZUjsnbAe_LVURnTPQ,22
+drf_sideloading/mixins.py,sha256=w-qwL2AYBowJG0vBbhRaTaFEIP--VHDKCtXU3zcLoLo,35685
+drf_sideloading/schema.py,sha256=0iySuGtdH9xpsVmFPmHSfvqKwcczVN5SZ-8pObobCMI,2560
+drf_sideloading/serializers.py,sha256=FZ1YKYrv4mrlv_Tx0KK6Kc9bfSp5ILiBSNaQ7mh6m2M,2892
+drf_sideloading-2.2.3.dist-info/AUTHORS.md,sha256=w6xJ3bJOlg7p1cHG4GJgUB50pppEtoiH9Ys_r2x4i8Y,327
+drf_sideloading-2.2.3.dist-info/LICENSE,sha256=J91fPH-x4pFrYvOqgQyjWnJGExZcq2aUteV0XEiOOWw,1071
+drf_sideloading-2.2.3.dist-info/METADATA,sha256=op2AAkM613bj1vtHbUfzeX-WoE2bbOyVYpW1mo9xscc,14502
+drf_sideloading-2.2.3.dist-info/WHEEL,sha256=TJ49d73sNs10F0aze1W_bTW2P_X7-F4YXOlBqoqA-jY,109
+drf_sideloading-2.2.3.dist-info/top_level.txt,sha256=szPQDJ6zmbqxtTvlnoOF7IBVmh-xyeCAuON-69-5kDQ,16
+drf_sideloading-2.2.3.dist-info/RECORD,,
