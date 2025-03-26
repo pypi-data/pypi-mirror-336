@@ -1,0 +1,3 @@
+[console_scripts]
+ShujuKexueSixiangChuyiFix1 = ShujuKexueSixiangChuyiFix1.__main__:main
+shuju-kexue-sixiang-chuyi-fix1 = ShujuKexueSixiangChuyiFix1.__main__:main
