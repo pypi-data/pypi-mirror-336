@@ -1,0 +1,3 @@
+app
+pytests
+sthg_fastapi_logs
