@@ -1,0 +1,2 @@
+[console_scripts]
+domino-cli = domino_cli:main
