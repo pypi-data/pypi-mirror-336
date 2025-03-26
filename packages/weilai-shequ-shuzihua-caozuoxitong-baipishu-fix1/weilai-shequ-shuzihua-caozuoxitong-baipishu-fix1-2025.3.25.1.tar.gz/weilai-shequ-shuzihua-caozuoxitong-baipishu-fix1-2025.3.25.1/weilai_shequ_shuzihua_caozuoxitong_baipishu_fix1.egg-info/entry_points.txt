@@ -1,0 +1,3 @@
+[console_scripts]
+WeilaiShequShuzihuaCaozuoxitongBaipishuFix1 = WeilaiShequShuzihuaCaozuoxitongBaipishuFix1.__main__:main
+weilai-shequ-shuzihua-caozuoxitong-baipishu-fix1 = WeilaiShequShuzihuaCaozuoxitongBaipishuFix1.__main__:main
