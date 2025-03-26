@@ -1,0 +1,174 @@
+Metadata-Version: 2.4
+Name: SPEARS
+Version: 2.0.4
+Home-page: https://pypi.org/project/SPEARS/
+Author: Justin Domagala-Tang
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: sparclclient
+Requires-Dist: specutils>=1.0
+Requires-Dist: astropy>=5.0
+Requires-Dist: scipy>=1.7
+Requires-Dist: numpy>=1.21
+Requires-Dist: alive-progress
+Requires-Dist: matplotlib>=3.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+
+# SPEARS: SPARCL Pipeline for Emission Absorption line Retrieval Spectroscopy
+
+**SPEARS** is a Python library for processing and analyzing spectral data from the SPARCL database. It provides a full pipeline for retrieving spectra, normalizing them, detecting spectral lines, visualizing the data, and exporting the results in FITS format. Designed with both performance and flexibility in mind, SPEARS supports multithreading for processing large datasets and is built for ease-of-use and extensibility.
+
+## Overview
+
+SPEARS streamlines the analysis of astronomical spectral data. Whether you’re a researcher looking to process large volumes of data or a developer needing a modular, customizable tool, SPEARS offers:
+
+- **Direct SPARCL API Integration:** Seamlessly fetch spectral data.
+- **Adaptive Normalization:** Automatically determine optimal median filter parameters for continuum estimation.
+- **Automated Line Detection:** Identify emission and absorption lines with detailed matching against known line data.
+- **Interactive Visualization:** Plot raw, normalized, and processed spectra for quick inspection.
+- **Multithreading:** Boost performance by dividing workloads across multiple threads.
+- **FITS File Export:** Easily export results for use with standard astronomical tools.
+
+## Features
+
+- **SPARCL API Integration:** Retrieve data directly using built-in API support.
+- **Dynamic Normalization:** Use adaptive median filtering to robustly normalize spectral data.
+- **Spectral Line Detection:** Detect and annotate spectral lines using derivative methods.
+- **Multithreading Support:** Process large datasets faster by leveraging multiple CPU cores.
+- **Visualization Tools:** Quickly generate plots of raw, normalized, and processed spectra.
+- **FITS Export:** Save analysis results in FITS format for further processing.
+- **Comprehensive Documentation:** Inline documentation and a detailed changelog help you track updates and improvements.
+
+## Installation
+
+### From PyPI
+
+Install SPEARS using pip:
+
+```bash
+pip install SPEARS
+```
+
+### From Source
+
+Clone the repository and install the package:
+
+```bash
+git clone https://github.com/yourusername/SPEARS.git
+cd SPEARS
+pip install .
+```
+
+## Quick Start Guide
+
+Below is a simple example to help you get started with SPEARS:
+
+```python
+from SPEARS import SPEAR
+
+# Define a list of SPARCL IDs to retrieve spectral data
+sparcl_ids = [
+    '00001edd-9d21-11ee-80af-525400ad1336',
+    '00003408-9cd1-11ee-935e-525400ad1336',
+    '00003edd-9bea-11ee-b77b-525400ad1336'
+]
+
+# Initialize the SPEAR object with the SPARCL IDs
+spear = SPEAR(SPARCL_ids=sparcl_ids)
+
+# Run the full analysis pipeline (data download, normalization, and line detection)
+results = spear.analyze()
+
+# Print a summary of the analysis and processing times
+print(spear)
+
+# Visualize raw, normalized, and line-detected spectra
+spear.visualize_test()
+
+# Save the analysis results to a FITS file
+spear.save_to_fits("results.fits", ".")
+```
+
+## Detailed Usage
+
+### Retrieving and Processing Spectra
+
+When you invoke `analyze()`, SPEARS performs the following steps:
+
+1. **Data Download:**  
+   Connects to the SPARCL database and retrieves spectral data for the provided SPARCL IDs. The process automatically segments requests if more than 500 IDs are provided.
+
+2. **Normalization:**  
+   Each spectrum is normalized using an adaptive median filter. The kernel size is computed based on the wavelength differences, ensuring a robust continuum estimate.
+
+3. **Spectral Line Detection:**  
+   The normalized spectra are analyzed for spectral lines. Detected lines are matched with known emission line data from a bundled JSON file, and detailed metadata (e.g., ion, excitation energies) is recorded.
+
+### Multithreading
+
+To process large datasets more efficiently, SPEARS supports multithreading:
+
+- **Initialization:**  
+  Call `init_multithreading(thread_allocation)` to split the workload across the specified number of threads.
+  
+- **Parallel Processing:**  
+  Each thread processes a subset of the SPARCL IDs. The results and processing times are then aggregated.
+
+### Visualization
+
+The `visualize_test()` method provides a quick visual check:
+
+- **Raw Spectra:** Displays the original spectral data.
+- **Normalized Spectra:** Shows spectra after applying the median filter.
+- **Line-Detected Spectra:** Overlays detected spectral lines on the normalized spectra.
+
+### Exporting Results
+
+After analysis, export your results to a FITS file with:
+
+```python
+spear.save_to_fits("results.fits", ".")
+```
+
+This creates a FITS file containing your analysis results, suitable for further investigation or sharing with collaborators.
+
+## Changelog
+
+For a detailed list of changes and improvements, please refer to the [CHANGELOG.md](CHANGELOG.md) file included in the repository.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions, improvements, or bug fixes:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Submit a pull request with a clear description of your modifications.
+
+Feel free to open an issue if you have any questions or suggestions.
+
+## License
+
+MIT License
+
+```
+MIT License
+
+Copyright (c) 2024 Justin Domagala-Tang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
