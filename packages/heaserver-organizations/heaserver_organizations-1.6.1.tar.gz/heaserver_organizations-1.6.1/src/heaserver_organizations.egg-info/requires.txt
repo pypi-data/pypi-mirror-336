@@ -1,0 +1,2 @@
+heaserver~=1.21.1
+heaobject~=1.17.1
