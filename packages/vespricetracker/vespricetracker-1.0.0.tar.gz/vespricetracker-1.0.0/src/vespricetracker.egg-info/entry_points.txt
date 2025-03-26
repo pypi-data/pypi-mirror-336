@@ -1,0 +1,2 @@
+[console_scripts]
+vespricetracker = vespricetracker.__main__:main
