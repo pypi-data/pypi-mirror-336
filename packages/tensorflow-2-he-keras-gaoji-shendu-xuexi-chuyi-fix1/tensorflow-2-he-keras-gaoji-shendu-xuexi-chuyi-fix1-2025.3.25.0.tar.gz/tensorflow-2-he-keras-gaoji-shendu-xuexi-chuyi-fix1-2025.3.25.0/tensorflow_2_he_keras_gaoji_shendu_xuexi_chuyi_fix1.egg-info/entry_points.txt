@@ -1,0 +1,3 @@
+[console_scripts]
+Tensorflow2HeKerasGaojiShenduXuexiChuyiFix1 = Tensorflow2HeKerasGaojiShenduXuexiChuyiFix1.__main__:main
+tensorflow-2-he-keras-gaoji-shendu-xuexi-chuyi-fix1 = Tensorflow2HeKerasGaojiShenduXuexiChuyiFix1.__main__:main
