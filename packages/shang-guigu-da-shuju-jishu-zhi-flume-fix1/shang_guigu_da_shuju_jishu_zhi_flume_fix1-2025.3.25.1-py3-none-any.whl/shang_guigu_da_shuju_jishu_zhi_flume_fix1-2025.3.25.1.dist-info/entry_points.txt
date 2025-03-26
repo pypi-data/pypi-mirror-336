@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiFlumeFix1 = ShangGuiguDaShujuJishuZhiFlumeFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-flume-fix1 = ShangGuiguDaShujuJishuZhiFlumeFix1.__main__:main
