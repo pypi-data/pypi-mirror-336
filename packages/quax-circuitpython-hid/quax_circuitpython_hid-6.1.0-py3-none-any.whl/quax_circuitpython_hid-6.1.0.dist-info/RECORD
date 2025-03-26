@@ -1,0 +1,15 @@
+adafruit_hid/__init__.py,sha256=AE-LtVk8ijRHg_D-vJwSJygoWVBNinQ39AEYRqZW0uk,2680
+adafruit_hid/consumer_control.py,sha256=AAl-G5DvbS9pKOGRCl4YTy8T5c3vEB6aN0od3IGtGSg,3475
+adafruit_hid/consumer_control_code.py,sha256=0AXU2KHIi9-mZQhMIyTskCzwrYNRZ3nf_bfCqOZG0ZI,75825
+adafruit_hid/digitizer.py,sha256=DF4xEiF8M04bHAyz3JdcJjSJY_DGTYdXI2n4DL6BLKE,8002
+adafruit_hid/gamepad.py,sha256=2R9_OfvuoM-QO4YiYmCAJpgWHc4Vo1IrOvLKhTyYhWQ,6004
+adafruit_hid/keyboard.py,sha256=K_xJoZvI5hZ2PD8yBkd51jdFDYEb5a5SPwVYhQ0bCec,6917
+adafruit_hid/keyboard_layout_base.py,sha256=vpMWJYorFhyIFGkVln2nAcbgIvpHxG4_J_wBxJIEVs4,7222
+adafruit_hid/keyboard_layout_us.py,sha256=8Ez1e9HPgIHZhHSHl-LAwjRsbe4DUmgA3PkyEgBL17Q,5197
+adafruit_hid/keycode.py,sha256=Dbv104Dh4oPOurM0OF9gopQaCq1ZT30ZbbRWG7ovPTo,8288
+adafruit_hid/mouse.py,sha256=sGiECH4f1YZ7rvIu_bfaA4H23--Rr0VRz_uYFJ6GfIc,4853
+quax_circuitpython_hid-6.1.0.dist-info/licenses/LICENSE,sha256=RcqWxQn6P64Z_WpV7l0MuiJ0a0GssQqyA30-zm9Kky4,1106
+quax_circuitpython_hid-6.1.0.dist-info/METADATA,sha256=GSl3AoqN4EcPF8HYO6pqdB_3jHgs5gydUtvTBcu3X6c,6234
+quax_circuitpython_hid-6.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+quax_circuitpython_hid-6.1.0.dist-info/top_level.txt,sha256=BVoaMxiAdoHpBrJzGV6kooGAiGqgf7iMY7JyevTs9aA,13
+quax_circuitpython_hid-6.1.0.dist-info/RECORD,,
