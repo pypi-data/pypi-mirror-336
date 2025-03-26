@@ -1,0 +1,19 @@
+# Core dependencies
+click>=8.0.0
+flask>=2.0.0
+sqlalchemy>=2.0.0
+rich>=10.0.0
+together>=0.1.5
+openai>=1.0.0
+sqlparse>=0.4.4
+pillow>=9.0.0
+python-dotenv>=0.20.0
+
+# Database drivers
+# Uncomment what you need
+pymysql>=1.0.0  # For MySQL
+# psycopg2-binary>=2.9.0  # For PostgreSQL
+
+# Web interface
+flask-sqlalchemy>=3.0.0
+werkzeug>=2.0.0
