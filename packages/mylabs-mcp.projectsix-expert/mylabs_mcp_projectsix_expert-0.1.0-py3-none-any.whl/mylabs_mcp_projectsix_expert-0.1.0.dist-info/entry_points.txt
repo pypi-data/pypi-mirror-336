@@ -1,0 +1,2 @@
+[console_scripts]
+projectsix-expert = mylabs_mcp.projectsix_expert.server:main
