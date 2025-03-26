@@ -1,0 +1,88 @@
+name: Lint & Format / Test
+
+on:
+  push:
+    branches: [main, stable]
+  pull_request:
+    branches: [main, stable]
+
+env:
+  UV_VERSION: "0.5.10"
+
+jobs:
+  run_pre-commit:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: ${{ env.UV_VERSION }}
+          python-version: "3.10"
+          enable-cache: true
+
+      - name: Cache pre-commit
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
+
+      - name: Run pre-commit
+        uses: pre-commit/action@v3.0.1
+
+  run_tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        rosdistro: ["humble", "jazzy"]
+
+    timeout-minutes: 20
+
+    container:
+      image: ros:${{ matrix.rosdistro }}
+
+    steps:
+      - name: Setup directories
+        run: mkdir -p ./ros2_ws/src/
+
+
+      - uses: actions/checkout@v4
+        with:
+          path: ./ros2_ws/src/ndarray_msg
+
+      - name: Install dependencies
+        run: |
+          rosdep update &&
+          apt-get update &&
+          rosdep install --from-path . -i -y --rosdistro ${{ matrix.rosdistro }} &&
+          apt-get install -y make
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: ${{ env.UV_VERSION }}
+          enable-cache: true
+
+      - name: Cache uv dependencies
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: uv-${{ matrix.rosdistro }}-${{ hashFiles('./ros2_ws/src/ndarray_msg/uv.lock', './ros2_ws/src/ndarray_msg/pyproject.toml') }}
+
+      - name: Install Python dependencies
+        run: make venv
+        working-directory: ./ros2_ws/src/ndarray_msg
+
+      - name: Install ROS2 project
+        run: |
+          . /opt/ros/${{ matrix.rosdistro }}/setup.sh &&
+          colcon build
+        working-directory: ./ros2_ws/
+
+      - name: Run pytest
+        run: |
+          . ../../install/setup.sh &&
+          uv run pytest -v --log-level INFO
+        working-directory: ./ros2_ws/src/ndarray_msg
