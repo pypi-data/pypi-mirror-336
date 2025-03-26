@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: PyThinkDesign
+Version: 0.1.0
+Summary: python sdk for thinkdesign
+Author: cscad
+Author-email: cscad@cscad.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+
+# PyThinkDesign
+
+python sdk for thinkdesign
+
+## install
+
+```bash
+pip install PyThinkDesign
+```
+
+## usage
+
+```python
+from PyThinkDesign import hello
+hello()
+``` 
+
