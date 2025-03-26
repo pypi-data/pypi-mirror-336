@@ -1,0 +1,3 @@
+[console_scripts]
+TesterhomeWikiQitaHejiFix1 = TesterhomeWikiQitaHejiFix1.__main__:main
+testerhome-wiki-qita-heji-fix1 = TesterhomeWikiQitaHejiFix1.__main__:main
