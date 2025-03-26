@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: mlx-alt-text
+Version: 0.1.0
+Summary: Local-first alt-text generator built on top of MLX-VLM
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: click>=8.1.8
+Requires-Dist: mlx-vlm>=0.0.7
+Requires-Dist: mlx>=0.18.1
+Requires-Dist: torch>=2.5.1
+Description-Content-Type: text/markdown
+
+# Local Alt-Text Generation
+
+Python package for generating alt-text using local models.
+
+```bash
+uv lock --upgrade # to upgrade all packages
+uv lock --upgrade <package> # to upgrade a single package
+uv build # to build the package
+```
+

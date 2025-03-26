@@ -1,0 +1,24 @@
+[project]
+name = "mlx-alt-text"
+version = "0.1.0"
+description = "Local-first alt-text generator built on top of MLX-VLM"
+readme = "README.md"
+requires-python = ">=3.8" # TODO check compatability with various versions of Python
+dependencies = [
+    "click>=8.1.8",
+    "mlx>=0.18.1",
+    "mlx-vlm>=0.0.7",
+    "torch>=2.5.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[project.scripts]
+mlx-alt-text = "mlx_alt_text:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
