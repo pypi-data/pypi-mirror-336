@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Sphinx sktime" type="docs" factoryName="Sphinx task">
+    <module name="sktimeutils" />
+    <option name="ENV_FILES" value="" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SDK_HOME" value="$PROJECT_DIR$/../../../../Programs/Anaconda3/envs/hawc2024/python.exe" />
+    <option name="SDK_NAME" value="hawc2024" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <option name="docutils_input_file" value="docs\source" />
+    <option name="docutils_output_file" value="docs\_build" />
+    <option name="docutils_params" value="" />
+    <option name="docutils_task" value="html" />
+    <option name="docutils_open_in_browser" value="false" />
+    <method v="2" />
+  </configuration>
+</component>
