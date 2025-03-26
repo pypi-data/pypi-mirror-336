@@ -1,0 +1,202 @@
+Metadata-Version: 2.3
+Name: ass_tg
+Version: 2.4.3
+Summary: Arguments Stupendous Searcher (ASS)
+Author: Yacha
+Author-email: yacha@orangefox.tech
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Babel (>=2,<3)
+Requires-Dist: aiogram (>=3,<4)
+Requires-Dist: stfu-tg (>=3.0,<4.0)
+Description-Content-Type: text/markdown
+
+# Arguments Searcher of Sophie (ASS)
+
+The library used to parse arguments from the message.
+
+**Currently, works only with Aiogram 3.x!**
+
+See also:
+
+* [Sophie Text Formatting Utility library (STFU)](https://gitlab.com/SophieBot/stf)
+
+## Quick example:
+
+Let's create a handler for a tban (temporary ban) command using ASS arguments.
+
+```python
+from ass_tg.types import UserArg, ActionTimeArg, TextArg, OptionalArg
+
+from stfu_tg import Section, KeyValue
+
+
+@dp.message(Command('tban'))  # Set a command filter
+@flags.args(
+    user=UserArg("User"),
+    time=ActionTimeArg("Time to ban"),
+    description=OptionalArg(TextArg("Reason text"))
+)
+async def tban_user_handler(
+        msg: Message,
+        user: str,
+        time: timedelta,
+        description: str | None
+):
+    # Here we used STFU's formatting, but you can use variables as you wish!
+    await msg.reply(str(Section(
+        KeyValue("User", user),
+        KeyValue("On", time),
+        KeyValue("Description", description or "No description"),
+        title="Ban"
+    )))
+
+```
+
+The argument parser contains inbuilt type and argument checker:
+
+![img.png](images/img_1.png)
+
+## The list of arguments to use
+
+Currently, you can see all the available arguments in the ass_tg/types/__init__.py file
+Here's the small list of which ones you can use right away:
+
+- TextArg
+- WordArg
+- IntArg
+- BooleanArg
+- ActionTimeArg
+- UsernameArg
+- UserIDArg
+- UserMentionArg
+- UserArg: Combines above 3
+
+## Important logical arguments
+
+- OrArg: One of defined arguments
+- OptionalArg
+- AndArg
+- EqualsArg
+- OneOf
+- ReverseArg: Parses child argument from left to right, instead of right to left as default
+
+## Important meta-arguments
+
+- KeyValuesArg: Key-value arguments, the value would be parsed with a child argument
+- ListArg: Many of defined child argument, the syntax to split or/and distinguish between items can be configured
+- DividedArg: Same as ListArg but doesn't have prefix and postfix, but a split char
+- StartsWithArg: Prefix would be omited and child argument would be parsed
+- UntilArg: Same as StartsWithArg, but with postfix
+- SurroundedArg: An argument with configured prefix and postfix, usually used for text surrounded by "
+
+The list is not full, for more information please check sources of the arguments, they usually have a detailed
+docstrings.
+
+## Advanced usages
+
+### Defining our own arguments
+
+This is very simple and there's a few ways to achieve this.
+
+Let's start by simply tweaking the existing arguments.
+
+``` python
+class ShortTextArg(TextArg):
+    def check(self, text: str, entities: ArgEntities) -> bool:
+        if len(text) < 3:
+            # We use ArgStrictError, because it doesn't get ignored by the OptionalArg or OrArg and would cause an 
+            argument typing error message
+            raise ArgStrictError("Text too short")
+        
+        elif len(text) > 10:
+            raise ArgStrictError("Text too long")
+        
+        return True
+```
+
+Alright, so this example will show us something like this:
+
+![img.png](images/img_2.png)
+
+What if we want to edit the content of the parsed argument?
+We would just need to edit the parse function and return modified data
+
+```python
+class ShortTextArg(TextArg):
+    async def parse(self, text: str, offset: int, entities: ArgEntities) -> tuple[int, str]:
+        length, text = super().parse(text, offset, entities)
+
+        if len(text) > 10:
+            text = text[:10] + "..."
+
+        return length, text
+```
+
+Now, if you want to create a completely new argument that could handle more specific types of arguments and more
+complicated syntax, please check out the sources for the good starting points.
+
+There's a few pre-made abstract classes to base on:
+
+- ArgFabric: Plain argument fabric, has no limitations. Every argument is based on this class at the end.
+- OneWordArgFabricABC: OneWord argument fabric, child version of ArgFabric, can parse only one word.
+
+The good starting point would be ActionTimeArg for the word-argument and UserMentionArg for the argument that can
+take more text with spaces.
+
+### Gathering the arguments specifications of handlers / cmds
+
+Currently, it's being developed under Sophie's codebase
+Here's the link to the file that specifically extract the modules/handlers/cmds information:
+https://gitlab.com/SophieBot/sophie/-/blob/beta/sophie_bot/modules/info/utils/extract_info.py
+
+### Runtime arguments definition generation
+
+Let's take an example of the following problem:
+You want to parse the user from the arguments, but you also want the command to support getting the use from the
+replied message. Since ASS's arguments fabrics does not have any other information except raw text and entities we
+cannot distinguish those cases.
+This is where the run-time generation of args specifications comes in handy.
+
+``` python
+async def optional_user(message: Message | None, _data: dict):
+ # message can be None for gathering arguments spec on startup
+ if message and message.reply_to_message:
+  # Return a blank dictionary
+  # Means, the ASS will not parse an arguments in this case (when the message has a replied message)
+  return {}
+
+ return {
+  'user': UserArg("User")
+ }
+
+
+@router.message(CMDFilter('id'), flags={'args': optional_user})
+async def id_cmd(message: Message, user: Optional[Example])
+ async def handle(self) -> Any:
+  user: Optional[ChatModel] = self.data.get('user', None)
+
+  doc = Doc()
+
+  if self.event.from_user:
+   user_id = self.event.from_user.id
+   doc += Template(_("Your ID: {id}"), id=Code(user_id))
+
+  if self.event.reply_to_message and self.event.reply_to_message.from_user:
+   user_id = self.event.reply_to_message.from_user.id
+   doc += Template(_("Replied user ID: {id}"), id=Code(user_id))
+
+  if user:
+   doc += Template(
+    _("{user}'s ID: {id}"),
+    user=UserLink(user_id=user.chat_id, name=user.first_name_or_title),
+    id=Code(user.chat_id),
+   )
+
+  return await self.event.reply(str(doc))
+```
+
+This approach makes saves the advantages of having the strict arguments specifications but also allows flexibility
+in cases when you need it.
