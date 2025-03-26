@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+fh_pyinstrument/__init__.py
+fh_pyinstrument/_modidx.py
+fh_pyinstrument/core.py
+fh_pyinstrument.egg-info/PKG-INFO
+fh_pyinstrument.egg-info/SOURCES.txt
+fh_pyinstrument.egg-info/dependency_links.txt
+fh_pyinstrument.egg-info/entry_points.txt
+fh_pyinstrument.egg-info/not-zip-safe
+fh_pyinstrument.egg-info/requires.txt
+fh_pyinstrument.egg-info/top_level.txt
