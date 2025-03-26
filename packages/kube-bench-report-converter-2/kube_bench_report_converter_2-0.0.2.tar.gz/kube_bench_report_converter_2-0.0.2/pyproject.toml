@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kube-bench-report-converter-2"
+version = "0.0.2"
+description = "Converts kube-bench checks console output to CSV."
+readme = "README.md"
+authors = [
+    {name = "Patrick Joyce", email = "pjaudiomv@gmail.com"},
+]
+maintainers = [
+    {name = "Patrick Joyce", email = "pjaudiomv@gmail.com"},
+]
+license = "MIT"
+keywords = ["kube-bench", "report", "convert", "csv"]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/pjaudiomv/kube-bench-report-converter-2"
+"Bug Tracker" = "https://github.com/pjaudiomv/kube-bench-report-converter-2/issues"
+"Source Code" = "https://github.com/pjaudiomv/kube-bench-report-converter-2"
+
+[project.scripts]
+kube-bench-report-converter-2 = "kube_bench_report_converter_2.command_line:main"
+
+[tool.setuptools]
+packages = ["kube_bench_report_converter_2"]
+
+[tool.pytest.ini_options]
+testpaths = ["kube_bench_report_converter_2/tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+]
