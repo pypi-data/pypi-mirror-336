@@ -1,0 +1,476 @@
+horizon:
+  end: 2122
+  start: 2022
+name: schutsluizen
+systems:
+- components:
+  - age: 80.0
+    distribution:
+      alpha: 8
+      mtbf: 100
+      type: Weibull
+    maintenance:
+    - name: 1992 - 06H-350-02 - Renovatie Sluiskolk constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -30.0
+    - name: 2042 - 06H-350-02 - Vervanging Sluiskolk constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 20.0
+    - name: 2092 - 06H-350-02 - Renovatie Sluiskolk constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 70.0
+    - name: 2142 - 06H-350-02 - Vervanging Sluiskolk constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 120.0
+    name: Sluiskolk constructie
+  - age: 40.0
+    distribution:
+      alpha: 8
+      mtbf: 50
+      type: Weibull
+    maintenance:
+    - name: 2007 - 06H-350-02 - Renovatie Deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -15.0
+    - name: 2032 - 06H-350-02 - Vervanging Deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 10.0
+    - name: 2057 - 06H-350-02 - Renovatie Deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 35.0
+    - name: 2082 - 06H-350-02 - Vervanging Deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 60.0
+    - name: 2107 - 06H-350-02 - Renovatie Deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 85.0
+    - name: 2132 - 06H-350-02 - Vervanging Deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 110.0
+    name: Deuren
+  - age: 20.0
+    distribution:
+      alpha: 8
+      mtbf: 25
+      type: Weibull
+    maintenance:
+    - name: 2010 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -11.666666666666742
+    - name: 2018 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -3.333333333333485
+    - name: 2026 - 06H-350-02 - Vervanging Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 4.999999999999773
+    - name: 2035 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 13.33333333333303
+    - name: 2043 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 21.666666666666515
+    - name: 2052 - 06H-350-02 - Vervanging Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 30.0
+    - name: 2060 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 38.333333333333485
+    - name: 2068 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 46.66666666666697
+    - name: 2077 - 06H-350-02 - Vervanging Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 55.000000000000455
+    - name: 2085 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 63.33333333333394
+    - name: 2093 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 71.66666666666742
+    - name: 2102 - 06H-350-02 - Vervanging Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 80.00000000000091
+    - name: 2110 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 88.3333333333344
+    - name: 2118 - 06H-350-02 - Renovatie Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 96.66666666666788
+    - name: 2127 - 06H-350-02 - Vervanging Bewegingswerken deuren
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 105.00000000000136
+    name: Bewegingswerken deuren
+  - age: 10.0
+    distribution:
+      alpha: 8
+      mtbf: 50
+      type: Weibull
+    maintenance:
+    - name: 2037 - 06H-350-02 - Renovatie Nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 15.0
+    - name: 2062 - 06H-350-02 - Vervanging Nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 40.0
+    - name: 2087 - 06H-350-02 - Renovatie Nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 65.0
+    - name: 2112 - 06H-350-02 - Vervanging Nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 90.0
+    - name: 2137 - 06H-350-02 - Renovatie Nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 115.0
+    - name: 2162 - 06H-350-02 - Vervanging Nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 140.0
+    name: Nivelleersysteem
+  - age: 20.0
+    distribution:
+      alpha: 8
+      mtbf: 25
+      type: Weibull
+    maintenance:
+    - name: 2010 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -11.666666666666742
+    - name: 2018 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -3.333333333333485
+    - name: 2026 - 06H-350-02 - Vervanging Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 4.999999999999773
+    - name: 2035 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 13.33333333333303
+    - name: 2043 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 21.666666666666515
+    - name: 2052 - 06H-350-02 - Vervanging Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 30.0
+    - name: 2060 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 38.333333333333485
+    - name: 2068 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 46.66666666666697
+    - name: 2077 - 06H-350-02 - Vervanging Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 55.000000000000455
+    - name: 2085 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 63.33333333333394
+    - name: 2093 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 71.66666666666742
+    - name: 2102 - 06H-350-02 - Vervanging Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 80.00000000000091
+    - name: 2110 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 88.3333333333344
+    - name: 2118 - 06H-350-02 - Renovatie Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 96.66666666666788
+    - name: 2127 - 06H-350-02 - Vervanging Bewegingswerken nivelleersysteem
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 105.00000000000136
+    name: Bewegingswerken nivelleersysteem
+  - age: 80.0
+    distribution:
+      alpha: 8
+      mtbf: 100
+      type: Weibull
+    maintenance:
+    - name: 1992 - 06H-350-02 - Renovatie Sluishoofd constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -30.0
+    - name: 2042 - 06H-350-02 - Vervanging Sluishoofd constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 20.0
+    - name: 2092 - 06H-350-02 - Renovatie Sluishoofd constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 70.0
+    - name: 2142 - 06H-350-02 - Vervanging Sluishoofd constructie
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 120.0
+    name: Sluishoofd constructie
+  - age: 20.0
+    distribution:
+      alpha: 8
+      mtbf: 25
+      type: Weibull
+    maintenance:
+    - name: 2014 - 06H-350-02 - Renovatie Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: -7.5
+    - name: 2027 - 06H-350-02 - Vervanging Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 5.0
+    - name: 2039 - 06H-350-02 - Renovatie Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 17.5
+    - name: 2052 - 06H-350-02 - Vervanging Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 30.0
+    - name: 2064 - 06H-350-02 - Renovatie Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 42.5
+    - name: 2077 - 06H-350-02 - Vervanging Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 55.0
+    - name: 2089 - 06H-350-02 - Renovatie Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 67.5
+    - name: 2102 - 06H-350-02 - Vervanging Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 80.0
+    - name: 2114 - 06H-350-02 - Renovatie Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Renovatie
+        rejuvenation: 0.5
+      time: 92.5
+    - name: 2127 - 06H-350-02 - Vervanging Voorhaven (Fuik)
+      task:
+        cost: 1.0
+        duration: 1.0
+        name: Vervanging
+        rejuvenation: 1.0
+      time: 105.0
+    name: Voorhaven (Fuik)
+  name: 06H-350-02
