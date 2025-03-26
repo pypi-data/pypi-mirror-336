@@ -1,0 +1,10 @@
+neuronnet/__init__.py,sha256=uxoujFxpEgvYG6vhlL7PoVmc1ARgqZ0ybNxgh42N_fk,85
+neuronnet/collective_learning.py,sha256=dWEPVRk-eOhnpt4mWw1az2eto-3pUErpllxSOsknU60,2986
+neuronnet/model.py,sha256=MaZGII1Y2s--iHuZQS27pkCBnv4yNsLXG411BEXYcJw,1526
+neuronnet/test_collective_learning.py,sha256=0lcos9g8b11mLWLwzZL_AOtQsU_mZ0beiAatagga410,855
+neuronnet/training.py,sha256=eJLCtHUO3Oa8F4AgYrTSxRI1P6GcQhdHGN7pz_z8QGI,664
+neuronnet-0.3.dist-info/licenses/LICENCE,sha256=0uXOhHC9dXtwp9RpYnZEDnaaWCizY4JyV7vUvRb7TJc,1906
+neuronnet-0.3.dist-info/METADATA,sha256=-7fZ6ZRmzfjgUDWSdTKu2Y2foV33jLihRI-bI1GeBzU,3550
+neuronnet-0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+neuronnet-0.3.dist-info/top_level.txt,sha256=rVW0dve5wYfBk0S99iineDYD8wNdOaZGUqxqYSeH9BU,10
+neuronnet-0.3.dist-info/RECORD,,
