@@ -1,0 +1,10 @@
+purecpp/__init__.py,sha256=B2c8Et_Fhw-TpddKE0yQGs8_PVgkP6krUO5lc7Q-6c4,4507
+purecpp/purecpp_chunks_clean.cpython-312-x86_64-linux-gnu.so,sha256=P4tZP3FLRkwzhPjwGNDmCSZRC2odVkYk5pFC5ki-dmo,42812272
+purecpp/purecpp_embed.cpython-312-x86_64-linux-gnu.so,sha256=bopuBtIqukIsigD4mlWQJoVr-yai9Y0zHqS4Q8abcXE,11817432
+purecpp/purecpp_extract.cpython-312-x86_64-linux-gnu.so,sha256=WoeopCRKYSgp19zX_0vYdZmXbegUDGYIaWU4OFGgabc,21200440
+purecpp/purecpp_libs.cpython-312-x86_64-linux-gnu.so,sha256=SyURdrjzXrnaiBAYfNs5YsnIbt2t6FqT9xSireZdgVw,2356136
+purecpp/purecpp_meta.cpython-312-x86_64-linux-gnu.so,sha256=CFih44oscVPdKl1URPfVzHQyCQpQyLAJDH5psb19Yj0,34500048
+purecpp-0.0.3.dist-info/METADATA,sha256=rOQmePsEqtfO0E86FZhB54Z_7ARowff-tgNBakgLZ5c,598
+purecpp-0.0.3.dist-info/WHEEL,sha256=vAhcqA_6e8epT3oO7Q-ZyJ8UptQBHeTKlmHvg_7bqbo,93
+purecpp-0.0.3.dist-info/top_level.txt,sha256=qHlioHpJArH9GfRCfT7XDDnh8aMxphdL2J_18sV9uSU,8
+purecpp-0.0.3.dist-info/RECORD,,
