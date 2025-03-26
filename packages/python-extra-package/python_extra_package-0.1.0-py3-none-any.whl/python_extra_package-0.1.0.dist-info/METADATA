@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: python-extra-package
+Version: 0.1.0
+Summary: a package containing multiple subpackages
+Author: Sangyeop Kim
+Author-email: sangykimiv@gmail.com
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: extra
+Description-Content-Type: text/markdown
+
+# python-extra-package
+publish test with extra-packages
+

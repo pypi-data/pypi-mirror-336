@@ -1,0 +1,10 @@
+python-extra-package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python-extra-package/core/__init__.py,sha256=SAogbSHAMK7_wrId2LGcpn0opNqZ7PGx5_y6pNdPsi8,42
+python-extra-package/core/module_a.py,sha256=w5rV3mCvELLEnP4FOQ1pPYfA2QiCODc0I6sjdodaclQ,20
+python-extra-package/sub_a/__init__.py,sha256=SAogbSHAMK7_wrId2LGcpn0opNqZ7PGx5_y6pNdPsi8,42
+python-extra-package/sub_a/module_a.py,sha256=w5rV3mCvELLEnP4FOQ1pPYfA2QiCODc0I6sjdodaclQ,20
+python-extra-package/sub_b/__init__.py,sha256=PgjhIFfM-wkVmLJ1xdDicBJXfg9Rurt8Q1mE8BxCEHQ,40
+python-extra-package/sub_b/module_a.py,sha256=w5rV3mCvELLEnP4FOQ1pPYfA2QiCODc0I6sjdodaclQ,20
+python_extra_package-0.1.0.dist-info/METADATA,sha256=JxcOzt11HwncpQNv_A5B-emTdWeI2HqT18TkQSSnFJY,516
+python_extra_package-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+python_extra_package-0.1.0.dist-info/RECORD,,
