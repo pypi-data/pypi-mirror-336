@@ -1,0 +1,43 @@
+[project]
+name = "streamlit-server-state"
+description = ""
+authors = [
+    {name = "Yuichiro Tachibana (Tsuchiya)", email = "t.yic.yt@gmail.com"},
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.9"
+dynamic = ["version"]
+dependencies = [
+    "streamlit>=0.65.0",
+    "packaging>=20.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/whitphx/streamlit-server-state"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.13.0",
+    "pytest>=8.3.3",
+    "ruff>=0.7.0",
+    # For testing older versions of Streamlit: https://discuss.streamlit.io/t/modulenotfounderror-no-module-named-altair-vegalite-v4/42921
+    "altair<5",
+    # For testing older versions of Streamlit: https://discuss.streamlit.io/t/streamlit-run-with-protobuf-error/25632/3
+    "protobuf<=3.20",
+    # For testing older versions of Streamlit
+    "setuptools>=75.2.0",
+    "bump-my-version>=0.28.0",
+    "hatch-vcs>=0.4.0",
+    "pre-commit>=4.2.0",
+]
+
+[tool.ruff.lint]
+extend-select = ["I"]
