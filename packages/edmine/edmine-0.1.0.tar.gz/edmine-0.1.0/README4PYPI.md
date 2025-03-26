@@ -1,0 +1,1 @@
+PyEdmine is a library of algorithms for reproducing **Knowledge Tracing**, **Cognitive Diagnosis**, and **Exercise Recommendation** models. View [PyEdmine homepage](https://zhijiexiong.github.io/sub-page/pyedmine/document/site/index.html) for more information.
