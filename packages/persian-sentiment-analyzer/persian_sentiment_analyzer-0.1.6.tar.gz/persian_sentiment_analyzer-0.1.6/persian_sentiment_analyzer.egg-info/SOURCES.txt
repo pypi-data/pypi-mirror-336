@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+persian_sentiment_analyzer/__init__.py
+persian_sentiment_analyzer/model.py
+persian_sentiment_analyzer/preprocessor.py
+persian_sentiment_analyzer/utils.py
+persian_sentiment_analyzer.egg-info/PKG-INFO
+persian_sentiment_analyzer.egg-info/SOURCES.txt
+persian_sentiment_analyzer.egg-info/dependency_links.txt
+persian_sentiment_analyzer.egg-info/requires.txt
+persian_sentiment_analyzer.egg-info/top_level.txt
