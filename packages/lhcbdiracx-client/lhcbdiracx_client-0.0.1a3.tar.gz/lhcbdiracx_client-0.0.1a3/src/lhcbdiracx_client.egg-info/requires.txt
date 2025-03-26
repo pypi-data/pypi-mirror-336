@@ -1,0 +1,8 @@
+diracx-client
+
+[testing]
+diracx-client[testing]
+diracx-testing
+
+[types]
+types-requests
