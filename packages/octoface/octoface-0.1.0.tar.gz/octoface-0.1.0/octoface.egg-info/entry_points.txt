@@ -1,0 +1,2 @@
+[console_scripts]
+octoface = octoface.cli:main

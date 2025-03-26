@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+octoface/__init__.py
+octoface/cli.py
+octoface/downloader.py
+octoface/github.py
+octoface/uploader.py
+octoface/utils.py
+octoface.egg-info/PKG-INFO
+octoface.egg-info/SOURCES.txt
+octoface.egg-info/dependency_links.txt
+octoface.egg-info/entry_points.txt
+octoface.egg-info/requires.txt
+octoface.egg-info/top_level.txt
+tests/test_cli.py
