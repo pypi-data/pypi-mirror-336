@@ -1,0 +1,7 @@
+numpy
+librosa
+num2words
+phonemizer
+tensorflow 
+pyyaml
+torch
