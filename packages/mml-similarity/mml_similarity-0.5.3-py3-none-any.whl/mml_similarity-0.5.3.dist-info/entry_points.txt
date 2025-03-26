@@ -1,0 +1,2 @@
+[mml.plugins]
+mml-similarity = mml_similarity.activate
