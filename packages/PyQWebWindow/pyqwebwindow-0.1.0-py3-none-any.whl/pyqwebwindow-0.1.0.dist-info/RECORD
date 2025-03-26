@@ -1,0 +1,14 @@
+PyQWebWindow/Backend.py,sha256=2RBgTVqBIVBPKYjXmEo0wA8wCoRvHWIKrBpNoJKfTdA,626
+PyQWebWindow/Handler.py,sha256=hfadv0ZCUc14FQL2vFzpjWyx82jyWjTR-KHPc2fPcL0,567
+PyQWebWindow/QAppManager.py,sha256=jSIo1P9EGpSfbOgcW8rm1F-0sfLNGhS7KwpGqJKWEVg,577
+PyQWebWindow/QArgv.py,sha256=lDaC4LajytmPI7zuaF1rUsONSMbu8fCFlIE9eazuMJo,323
+PyQWebWindow/QWebWindow.py,sha256=d4DNt1ehZOAcHmfYEvYOjFbDhvLc4knM5ov6GyVR4Sc,2015
+PyQWebWindow/__init__.py,sha256=GbJoC1B5fRBbXO0CxUjszQ0WUSXgUyjhNmeJurr8me4,105
+PyQWebWindow/utils/__init__.py,sha256=3rxRXrQqu8eJodejkDPNPvIQj_NlVuX-qEB1juF0FK0,100
+PyQWebWindow/utils/constants.py,sha256=nmjLmqjMjnqtvMamV4YWtpoz6UuT2Yj1T9NLXSquD7Y,568
+PyQWebWindow/utils/get_caller_file_abs_path.py,sha256=5dR62GyPibGmVTl47O_yv3DKYwxnXXImnigTuzfy32A,251
+pyqwebwindow-0.1.0.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pyqwebwindow-0.1.0.dist-info/METADATA,sha256=Ftlr5o7UFi4_mnr8rZGDqaHDGN-VuL5bb71Jf9Bdy_U,618
+pyqwebwindow-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyqwebwindow-0.1.0.dist-info/top_level.txt,sha256=oY41wWNtdnRyL-92kSTCUWb63TVEwbd0cDkEuT91lts,13
+pyqwebwindow-0.1.0.dist-info/RECORD,,
