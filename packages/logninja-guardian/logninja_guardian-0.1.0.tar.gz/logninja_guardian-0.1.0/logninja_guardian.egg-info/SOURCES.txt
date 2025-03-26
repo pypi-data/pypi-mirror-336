@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+logninja_guardian.egg-info/PKG-INFO
+logninja_guardian.egg-info/SOURCES.txt
+logninja_guardian.egg-info/dependency_links.txt
+logninja_guardian.egg-info/entry_points.txt
+logninja_guardian.egg-info/requires.txt
+logninja_guardian.egg-info/top_level.txt
+ninja_protection/__init__.py
+ninja_protection/optimizer.py
