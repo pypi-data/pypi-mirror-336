@@ -1,0 +1,8 @@
+optimizer_middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimizer_middleware/middleware.py,sha256=LNokIwjmNe3X7gLVP-XANG-tq71q2gxHp7aApRSh_oc,3269
+optimizer_middleware/utils.py,sha256=YCdQpgNt1Bol4ZQWc2c6us4_PKYSoJpdz94nwoAlQAw,1434
+django_optimize_image-0.1.1.dist-info/LICENSE,sha256=o0ID7Y8u4sKxEcGTi4i1k-LxH99CagDhZWGZmXurUVg,1063
+django_optimize_image-0.1.1.dist-info/METADATA,sha256=Af16bXVl94Yo7ebBi20iUI3WqzbWTYUWq0S1ngjpMmQ,2959
+django_optimize_image-0.1.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+django_optimize_image-0.1.1.dist-info/top_level.txt,sha256=qxDb49RKAdqtcErD8eyfUGgSdx931TMnJYgR5Q2IqF0,21
+django_optimize_image-0.1.1.dist-info/RECORD,,
