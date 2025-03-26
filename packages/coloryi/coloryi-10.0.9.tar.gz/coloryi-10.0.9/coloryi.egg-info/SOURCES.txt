@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+coloris/__init__.py
+coloryi.egg-info/PKG-INFO
+coloryi.egg-info/SOURCES.txt
+coloryi.egg-info/dependency_links.txt
+coloryi.egg-info/requires.txt
+coloryi.egg-info/top_level.txt
