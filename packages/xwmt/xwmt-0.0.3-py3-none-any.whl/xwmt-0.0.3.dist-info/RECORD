@@ -1,0 +1,11 @@
+docs/source/conf.py,sha256=XjUBR2r7D6g_M2144IV0FP3nBebufDE_GmYKLUXY4_U,2204
+xwmt/__init__.py,sha256=WFAaXLmaLj9K3wNU9VJlmu4Svph7J3rzrNIB7XIgmdA,113
+xwmt/compute.py,sha256=FFQoJk6kzwXb56-qaIgvyOIl2Ah68g7TGOVac1OV98A,8804
+xwmt/swmt.py,sha256=O25m5PEkbOwe_7d9p4t8NdSvpfVlpQCYFceXHaxqKt0,29476
+xwmt/version.py,sha256=Ot5zHQhvm28CfV9HFsC1Oq262w1cZsDcAvWkPza9S3A,55
+xwmt/tests/test_functional.py,sha256=-JfxgUzR_y0zTStJLlhL5g5xnlWJ2gia_HfmGdZ4lf8,1646
+xwmt-0.0.3.dist-info/licenses/LICENSE,sha256=bcCPMpX01ig-TG-hr8ExhpH90VFUovqw4qiOOZ2sCsw,1072
+xwmt-0.0.3.dist-info/METADATA,sha256=onV1Ygc_pQ-oVvvBjv3JrxuiDnWMMNl8GvwLHtNFpuQ,1082
+xwmt-0.0.3.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+xwmt-0.0.3.dist-info/top_level.txt,sha256=JqK0xPLMInZdvZqR86kuuSbDufylYnTQNjycwE6u3UQ,10
+xwmt-0.0.3.dist-info/RECORD,,
