@@ -1,0 +1,11 @@
+README.md
+setup.py
+finbro/__init__.py
+finbro/client.py
+finbro/setup.py
+finbro.egg-info/PKG-INFO
+finbro.egg-info/SOURCES.txt
+finbro.egg-info/dependency_links.txt
+finbro.egg-info/requires.txt
+finbro.egg-info/top_level.txt
+tests/test_client.py
