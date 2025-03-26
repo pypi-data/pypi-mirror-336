@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: ChemInformant
+Version: 1.0.0
+Summary: A placeholder package for ChemInformant on PyPI.
+Home-page: https://github.com/HzaCode/ChemInformant
+Author: Ang
+Author-email: Ang <ang@hezhiang.com>
+Project-URL: Homepage, https://github.com/HzaCode/ChemInformant
+Project-URL: Repository, https://github.com/HzaCode/ChemInformant
+Keywords: placeholder,cheminformant
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+﻿# ChemInformant
+![ChemInformant Logo](https://github.com/HzaCode/ChemInformant/raw/main/images/logo.png)
+This is a placeholder package for the name ChemInformant on PyPI.
+
+## License
+Distributed under the MIT License. See LICENSE for more information.

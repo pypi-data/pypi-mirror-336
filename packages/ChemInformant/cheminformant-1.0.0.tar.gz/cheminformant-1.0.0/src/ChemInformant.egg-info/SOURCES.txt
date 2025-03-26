@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/api_helpers.py
+src/cheminfo_api.py
+src/ChemInformant.egg-info/PKG-INFO
+src/ChemInformant.egg-info/SOURCES.txt
+src/ChemInformant.egg-info/dependency_links.txt
+src/ChemInformant.egg-info/requires.txt
+src/ChemInformant.egg-info/top_level.txt
