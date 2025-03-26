@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+src/hotpod_cli/__init__.py
+src/hotpod_cli/cli.py
+src/hotpod_cli.egg-info/PKG-INFO
+src/hotpod_cli.egg-info/SOURCES.txt
+src/hotpod_cli.egg-info/dependency_links.txt
+src/hotpod_cli.egg-info/entry_points.txt
+src/hotpod_cli.egg-info/requires.txt
+src/hotpod_cli.egg-info/top_level.txt

@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: hotpod-cli
+Version: 0.1.1
+Summary: Add your description here
+Home-page: https://github.com/yourusername/hotpod-cli
+Author: JDCloud AIDC Team
+Author-email: your.email@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1.8
+Requires-Dist: setuptools>=78.0.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-python
+
+# GCS CLI
+
+A command line tool for GCS.
+
+## Installation
+
+```bash
+pip install gcs-cli
+```
+
+## Usage
+
+Show information about GCS CLI:
+```bash
+gcs info
+```
+
+## Development
+
+1. Clone the repository
+2. Create a virtual environment
+3. Install development dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+## License
+
+MIT
