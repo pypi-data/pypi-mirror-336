@@ -1,0 +1,16 @@
+pynxtools_ellips/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynxtools_ellips/mock.py,sha256=JghXi-dgdATWAhD2IeQe5q1LB7VUGOnSxm9VOR0K9ps,6254
+pynxtools_ellips/reader.py,sha256=iOD74AARSjpE4TP2Ye-ht1e-vhNuNu7WZFGukkEir14,17917
+pynxtools_ellips/nomad/entrypoints.py,sha256=ECW0gamZa6dCY6AVoNcu3GaxNejDdY-qFfjFxPM-Lmk,1520
+pynxtools_ellips/nomad/examples/Ellipsometry workflow example.ipynb,sha256=SpMJLXdzrl9vm2RT2it27S2iJJbriHLzs9s0oOpdCx0,165252
+pynxtools_ellips/nomad/examples/README.md,sha256=5BePHStXc5N2gp08Pwf5gIq3jWRi3VkXuG26TOBDPJA,3252
+pynxtools_ellips/nomad/examples/Si_Aspnes.mat,sha256=qrQFJuuEaVQDrJz_-G7q9BKer8-ajwzFPr7Il5u4Cmc,9764
+pynxtools_ellips/nomad/examples/ellips.archive.json,sha256=sLBEOVpxrSHL-_ynDMA_ELjbxoyX3bP7NhHc0EfRy5U,3643
+pynxtools_ellips/nomad/examples/ellips.scheme.archive.yml,sha256=B9sccUTe8Ou8sz6rtBS_UXdvYxntOgaj9LJq9MnC7ck,12289
+pynxtools_ellips/nomad/examples/test-data.dat,sha256=ANqzgJIVn3xPy-E3ly95rlePvzclVX_KpRs_HhCfxD4,482497
+pynxtools_ellips-0.0.8.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pynxtools_ellips-0.0.8.dist-info/METADATA,sha256=RAA76I85Yt9yAf5_LdebfjZ-4YwYwjpSEC39lqUdZmA,16308
+pynxtools_ellips-0.0.8.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+pynxtools_ellips-0.0.8.dist-info/entry_points.txt,sha256=nSymxvUDMbL-bSpWY9FlHMHxHY7GGzxo3shfDgTdlTU,154
+pynxtools_ellips-0.0.8.dist-info/top_level.txt,sha256=6BibCuJGC5lhBVXn7V3CwjDWJr0a9-toVQiXcL5jYfI,17
+pynxtools_ellips-0.0.8.dist-info/RECORD,,
