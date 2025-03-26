@@ -1,0 +1,10 @@
+[console_scripts]
+kontakt = kontakt.cli:cli
+
+[kontakt.configurable_extension]
+printer = kontakt.examples.configurable_extension:PrinterExtension
+
+[kontakt.extension]
+blue = kontakt.examples.extension:Blue
+green = kontakt.examples.extension:Green
+red = kontakt.examples.extension:Red

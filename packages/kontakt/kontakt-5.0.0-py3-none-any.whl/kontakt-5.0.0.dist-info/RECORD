@@ -1,0 +1,12 @@
+kontakt/__init__.py,sha256=B6o41P62fRN5f769WtYkDAd8DPLmgrUdP9ZuOwAGne4,6375
+kontakt/config_options.py,sha256=FHYcEbhbZHlWAyoFHNNAJC_HRVUKMok2X_F3up842dU,3256
+kontakt/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kontakt/examples/configurable_extension.py,sha256=7bObNtBkltU_wx2kx4EnSB3TY7D8OAzQEKMX5i7YIRM,843
+kontakt/examples/extension.py,sha256=hQ-P_RfJhJQ9kOhTHCqVTgHoe4TB6ouaZqEW6G7jUdk,1492
+kontakt-5.0.0.dist-info/licenses/LICENSE,sha256=kM7cUnpoemSHvi74x_sTcdiCe0bWI6CEbrqKR9T_MNc,1053
+kontakt-5.0.0.dist-info/METADATA,sha256=3wsGrRH10Bh6GR-oe83Y6cquAC17POkZHSbVcpmClbU,1157
+kontakt-5.0.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+kontakt-5.0.0.dist-info/entry_points.txt,sha256=dYk3JJsqvOgY3HsuHM61cVurHsASJwkoHs7IKyzbxqQ,283
+kontakt-5.0.0.dist-info/top_level.txt,sha256=G7ROT5PKfhngcPTnolToCKDOjzRWE5OC7X0A_hGclBs,8
+kontakt-5.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kontakt-5.0.0.dist-info/RECORD,,
