@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+edgetpu_compiler_log_parser/__init__.py
+edgetpu_compiler_log_parser/edgetpu_compiler_log_parser.py
+edgetpu_compiler_log_parser.egg-info/PKG-INFO
+edgetpu_compiler_log_parser.egg-info/SOURCES.txt
+edgetpu_compiler_log_parser.egg-info/dependency_links.txt
+edgetpu_compiler_log_parser.egg-info/requires.txt
+edgetpu_compiler_log_parser.egg-info/top_level.txt
