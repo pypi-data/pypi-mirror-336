@@ -1,0 +1,9 @@
+*.local
+*.env
+
+**/.venv
+**/venv
+**/venvs
+
+**/__pycache__
+*.pyc
