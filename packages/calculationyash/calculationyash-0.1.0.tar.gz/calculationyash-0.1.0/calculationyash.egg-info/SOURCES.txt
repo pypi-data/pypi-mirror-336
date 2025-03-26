@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+My_pakage/__init__.py
+My_pakage/module_1.py
+calculationyash.egg-info/PKG-INFO
+calculationyash.egg-info/SOURCES.txt
+calculationyash.egg-info/dependency_links.txt
+calculationyash.egg-info/top_level.txt
