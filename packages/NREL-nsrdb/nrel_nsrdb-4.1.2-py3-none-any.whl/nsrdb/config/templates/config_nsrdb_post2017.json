@@ -1,0 +1,83 @@
+{
+  "collect-data-model": {
+    "final": true,
+    "final_file_name": "%basename%_%satellite%_%extent%_%spatial%_%freq%",
+    "max_workers": 10,
+    "n_chunks": 1,
+    "memory": 178,
+    "n_writes": 10,
+    "walltime": 48
+  },
+  "daily-all-sky": {},
+  "data-model": {
+    "dist_lim": 2.0,
+    "doy_range": [
+      "%start_doy%",
+      "%end_doy%"
+    ],
+    "factory_kwargs": {
+      "cld_opd_dcomp": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "cld_press_acha": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "cld_reff_dcomp": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "cloud_fraction": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "cloud_probability": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "cloud_type": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "refl_0_65um_nom": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "refl_0_65um_nom_stddev_3x3": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "refl_3_75um_nom": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "surface_albedo": {
+        "source_dir": "/projects/pxs/ancillary/albedo/nsrdb_%year%/"
+      },
+      "temp_11_0um_nom": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "temp_11_0um_nom_stddev_3x3": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      },
+      "temp_3_75um_nom": {
+        "pattern": "/projects/pxs/uwisc/%year%_%satellite%/{doy}/level2/clavrx_OR_ABI-L1b-%extent_tag%-*.nc"
+      }
+    },
+    "max_workers": null,
+    "max_workers_regrid": 16,
+    "mlclouds": true
+  },
+  "direct": {
+    "log_level": "INFO",
+    "freq": "%freq%",
+    "run_name": "%run_name%",
+    "grid": "%meta_file%",
+    "out_dir": "./",
+    "max_workers": 32,
+    "year": "%year%"
+  },
+  "execution_control": {
+    "option": "kestrel",
+    "alloc": "pxs",
+    "feature": "--qos=normal",
+    "walltime": 40
+  },
+  "ml-cloud-fill": {
+    "col_chunk": 10000,
+    "fill_all": false,
+    "max_workers": 4
+  }
+}

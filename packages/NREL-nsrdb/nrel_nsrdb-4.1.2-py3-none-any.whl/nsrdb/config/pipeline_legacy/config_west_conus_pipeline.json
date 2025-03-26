@@ -1,0 +1,24 @@
+{
+  "logging": {
+    "log_file": null,
+    "log_level": "INFO"
+  },
+  "name": "west_conus",
+  "pipeline": [
+    {
+      "data-model": "./config_west_conus_nsrdb.json"
+    },
+    {
+      "collect-data-model": "./config_west_conus_nsrdb.json"
+    },
+    {
+      "cloud-fill": "./config_west_conus_nsrdb.json"
+    },
+    {
+      "all-sky": "./config_west_conus_nsrdb.json"
+    },
+    {
+      "collect-final": "./config_west_conus_nsrdb.json"
+    }
+  ]
+}

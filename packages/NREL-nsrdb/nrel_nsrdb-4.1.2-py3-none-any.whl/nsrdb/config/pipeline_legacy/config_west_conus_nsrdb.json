@@ -1,0 +1,54 @@
+{
+  "all-sky": {
+    "n_chunks": 150
+  },
+  "cloud-fill": {
+    "col_chunk": 100000,
+    "n_chunks": 150
+  },
+  "collect-data-model": {
+    "max_workers": 10,
+    "n_chunks": 150,
+    "n_writes": 1
+  },
+  "collect-final": {},
+  "data-model": {
+    "doy_range": [
+      1,
+      366
+    ],
+    "factory_kwargs": {
+      "cld_opd_dcomp": {
+        "pattern": "/projects/pxs/uwisc/2019_west/{doy}/level2/clavrx_OR_ABI-L1b-RadC*.level2.nc"
+      },
+      "cld_press_acha": {
+        "pattern": "/projects/pxs/uwisc/2019_west/{doy}/level2/clavrx_OR_ABI-L1b-RadC*.level2.nc"
+      },
+      "cld_reff_dcomp": {
+        "pattern": "/projects/pxs/uwisc/2019_west/{doy}/level2/clavrx_OR_ABI-L1b-RadC*.level2.nc"
+      },
+      "cloud_type": {
+        "pattern": "/projects/pxs/uwisc/2019_west/{doy}/level2/clavrx_OR_ABI-L1b-RadC*.level2.nc"
+      },
+      "surface_albedo": {
+        "pattern": "/projects/pxs/albedo/nsrdb_2019/*{doy}*.h5"
+      }
+    },
+    "max_workers": 5,
+    "max_workers_clouds": null
+  },
+  "direct": {
+    "log_level": "DEBUG",
+    "name": "nsrdb_west_conus",
+    "nsrdb_freq": "5min",
+    "nsrdb_grid": "/projects/pxs/reference_grids/nsrdb_meta_2km_conus_west.csv",
+    "out_dir": "/projects/pxs/processing/2019/west_conus/",
+    "year": 2019
+  },
+  "eagle": {
+    "alloc": "pxs",
+    "feature": "--qos=normal",
+    "memory": 83,
+    "walltime": 4
+  }
+}

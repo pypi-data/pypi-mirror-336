@@ -1,0 +1,80 @@
+{
+  "collect-data-model": {
+    "final": true,
+    "max_workers": 10,
+    "n_writes": 10,
+    "n_chunks": 1,
+    "final_file_name": "%basename%_%satellite%_%extent%_%spatial%_%freq%"
+  },
+  "daily-all-sky": {},
+  "data-model": {
+    "dist_lim": 2.0,
+    "doy_range": [
+      "%start_doy%",
+      "%end_doy%"
+    ],
+    "factory_kwargs": {
+      "cld_opd_dcomp": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "cld_press_acha": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "cld_reff_dcomp": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "cloud_fraction": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "cloud_probability": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "cloud_type": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "refl_0_65um_nom": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "refl_0_65um_nom_stddev_3x3": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "refl_3_75um_nom": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "surface_albedo": {
+        "source_dir": "/projects/pxs/ancillary/albedo/nsrdb_%year%/"
+      },
+      "temp_11_0um_nom": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "temp_11_0um_nom_stddev_3x3": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      },
+      "temp_3_75um_nom": {
+        "pattern": "/projects/pxs/HDF/%satellite%/%year%/{doy}/level2/*_%year%_*.h5"
+      }
+    },
+    "max_workers": null,
+    "max_workers_regrid": null,
+    "mlclouds": true
+  },
+  "direct": {
+    "log_level": "INFO",
+    "freq": "%freq%",
+    "run_name": "%run_name%",
+    "grid": "%meta_file%",
+    "out_dir": "./",
+    "year": "%year%"
+  },
+  "execution_control": {
+    "option": "kestrel",
+    "alloc": "pxs",
+    "feature": "--qos=normal",
+    "walltime": 40
+  },
+  "ml-cloud-fill": {
+    "col_chunk": 10000,
+    "fill_all": false,
+    "max_workers": null
+  }
+}
