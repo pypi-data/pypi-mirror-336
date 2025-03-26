@@ -1,0 +1,9 @@
+persian_sentiment_analyzer/__init__.py,sha256=M1XkoCprfYxH9uOlNcnhAZQirr11caAdD2YvQW2r8fM,160
+persian_sentiment_analyzer/model.py,sha256=k3RqKSIr70fedY22-TE13_t5LBtH3aP8ZGhRmn9LyRU,2326
+persian_sentiment_analyzer/preprocessor.py,sha256=ReGDQIJJP2_76l61bLRM8SCawXF_9myHanCQFWAYELM,5993
+persian_sentiment_analyzer/utils.py,sha256=Eb4Kj98QubcPdM2jU2h0vrA5v1oOfYuDY1esqaF2ilo,2259
+persian_sentiment_analyzer-0.1.6.dist-info/LICENSE.txt,sha256=CcwwQLrmZxKhQzpzoKLRDut_IlthYUCqNyWZfsE4RAo,1094
+persian_sentiment_analyzer-0.1.6.dist-info/METADATA,sha256=FKk4Xqq1LSYryuOEI3FDkrC494-avUOKF5CoUfkuvRc,3925
+persian_sentiment_analyzer-0.1.6.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+persian_sentiment_analyzer-0.1.6.dist-info/top_level.txt,sha256=9YKKX1_pTXC_wefdvgg3PbOuXvPc7Qhw5dp457Qxa1U,27
+persian_sentiment_analyzer-0.1.6.dist-info/RECORD,,
