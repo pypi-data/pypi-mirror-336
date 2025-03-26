@@ -1,0 +1,83 @@
+Metadata-Version: 2.4
+Name: dicom2fem
+Version: 2.1.0
+Summary: Generation of finite element meshes from DICOM images
+Author-email: Vladimír Lukeš <vlukes@kme.zcu.cz>
+Project-URL: homepage, https://github.com/vlukes/dicom2fem
+Keywords: fem,dicom
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pyvista
+Requires-Dist: io3d
+Requires-Dist: loguru
+Requires-Dist: imma
+Requires-Dist: imcut
+Requires-Dist: pygco
+Requires-Dist: seededitorqt
+Dynamic: license-file
+
+DICOM2FEM
+=========
+
+About
+-----
+
+Generation of finite element meshes using computed tomography scans.
+Segmentation is based on the graph cut algorithm.
+
+Requirements
+------------
+
+Install the required packages:
+
+    pip install pygco scikit-learn loguru pydicom meshio imma imcut seededitorqt io3d
+
+Installation
+------------
+
+* Download the code from the git repository:
+
+      git clone git://github.com/vlukes/dicom2fem
+
+or
+
+* Use [pip](https://pypi.org/project/pip/):
+
+      pip install dicom2fem
+
+  or
+
+      pip install git+git://github.com/vlukes/dicom2fem
+
+
+Running the program
+------------------
+
+To run DICOM2FEM use the following command:
+
+      python dicom2fem/dicom2fem.py
+
+Links
+-----
+
+* https://github.com/vlukes/dicom2fem
+* http://sfepy.org/dicom2fem
+
+Author
+------
+
+Vladimir Lukeš
+
+License
+-------
+
+MIT license

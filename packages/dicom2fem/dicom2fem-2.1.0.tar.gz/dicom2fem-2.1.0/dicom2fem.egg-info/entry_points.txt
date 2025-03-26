@@ -1,0 +1,3 @@
+[console_scripts]
+dicom2fem = dicom2fem.dicom2fem:main
+dicom2fem_view_mesh = dicom2fem.viewer:main

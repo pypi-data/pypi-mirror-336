@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+dicom2fem/__init__.py
+dicom2fem/dicom2fem.py
+dicom2fem/genfem_base.py
+dicom2fem/marching_cubes.py
+dicom2fem/seg2fem.py
+dicom2fem/viewer.py
+dicom2fem.egg-info/PKG-INFO
+dicom2fem.egg-info/SOURCES.txt
+dicom2fem.egg-info/dependency_links.txt
+dicom2fem.egg-info/entry_points.txt
+dicom2fem.egg-info/requires.txt
+dicom2fem.egg-info/top_level.txt
