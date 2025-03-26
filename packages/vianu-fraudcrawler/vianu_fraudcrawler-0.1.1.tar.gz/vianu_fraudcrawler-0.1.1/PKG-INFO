@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: vianu-fraudcrawler
+Version: 0.1.1
+Summary: Intelligent Market Monitoring
+Home-page: https://github/open-vianu/vianu-fraudcrawler
+License: MIT
+Author: chriguBERTO
+Author-email: christoph@vianu.ch
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.11.14,<4.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.8.1,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github/open-vianu/vianu-fraudcrawler
+Description-Content-Type: text/markdown
+
+# vianu-fraudcrawler
+Intelligent Market Monitoring
+
+## Async Setup
+![Async Setup](docs/assets/images/Fraudcrawler_Async_Setup.svg)
