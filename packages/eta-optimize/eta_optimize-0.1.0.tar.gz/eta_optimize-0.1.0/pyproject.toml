@@ -1,0 +1,38 @@
+[project]
+name = "eta-optimize"
+version = "0.1.0"
+description = "Rolling horizon optimization"
+authors = [
+    {name = "Technical University of Darmstadt, Institute for Production Management, Technology and Machine Tools (PTW)", email="info@ptw.tu-darmstadt.de"}
+]
+license = {text = "MIT2"}
+readme = "README.rst"
+requires-python = ">=3.9.2, <3.12"
+dynamic = ["classifiers", "dependencies"]
+
+[tool.poetry]
+# Classifiers are defined in the poetry section to dynamically add the python version
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries",
+    "Operating System :: OS Independent",
+]
+include = [
+    {path="examples/", format=["sdist", "wheel"]}
+]
+
+
+#  '^' limits to the next major version, '~' limits to the next minor version
+# e.g. ^3.9.0: 3.9.0 <= x < 4.0.0 and ~3.9.0: 3.9.0 <= x < 3.10.0
+[tool.poetry.dependencies]
+numpy = {version= "~1.26.0"}
+
+
+[build-system]
+requires = ["poetry-core>=1.6.0"]
+build-backend = "poetry.core.masonry.api"
