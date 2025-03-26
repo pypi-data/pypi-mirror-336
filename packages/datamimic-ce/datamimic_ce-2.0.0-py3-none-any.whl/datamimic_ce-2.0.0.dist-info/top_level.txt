@@ -1,0 +1,3 @@
+datamimic_ce
+docs
+script
