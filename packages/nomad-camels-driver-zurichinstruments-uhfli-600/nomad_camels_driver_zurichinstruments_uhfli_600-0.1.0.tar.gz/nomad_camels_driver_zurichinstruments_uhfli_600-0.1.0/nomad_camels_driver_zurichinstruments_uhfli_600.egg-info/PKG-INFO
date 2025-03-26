@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: nomad_camels_driver_zurichinstruments_uhfli_600
+Version: 0.1.0
+Summary: Instrument driver for zurichinstruments_uhfli_600 for NOMAD CAMELS
+Author-email: FAIRmat - HU Berlin <nomad-camels@fau.de>
+Project-URL: GitHub Page, https://github.com/FAU-LAP/NOMAD-CAMELS
+Project-URL: Documentation, https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: zhinst
+Dynamic: license-file
+
+# NOMAD Camels driver for zurichinstruments_uhfli_600
+
+Driver for zurichinstruments_uhfli_600 written for the measurement software [NOMAD Camels](https://fau-lap.github.io/NOMAD-CAMELS/).
+
+
+## Documentation
+
+For more information and instruments visit the [documentation](https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html).
