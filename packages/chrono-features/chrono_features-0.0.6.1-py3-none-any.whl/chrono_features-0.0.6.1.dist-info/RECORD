@@ -1,0 +1,16 @@
+chrono_features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrono_features/ts_dataset.py,sha256=RGWgFRVDZk5cr7rUxSC97MdNQu7Ke8aaTfYXM0g97eU,4506
+chrono_features/window_type.py,sha256=ddgEB7aWkYaLx_LVvaSg8OlqIq21Z2OLkQXiJhCCVHo,2120
+chrono_features/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrono_features/features/_base.py,sha256=wtVVLaWc4h09_nHqXoxI2Rfp-usl8cog4qNlg7yinQo,10496
+chrono_features/features/absolute_energy.py,sha256=naQjrgp5Y5FD2xkS-10xltACB42nkvTQcuc9Wb6RGAU,1181
+chrono_features/features/absolute_sum_of_changes.py,sha256=2-AITFdEg0F65jXqs2WEjYIVsrr_pLfodFAyI_ThKQw,1236
+chrono_features/features/autocorrelation.py,sha256=YovnR7VkdB4mOVEZSV_lgK__rB92UDySZMBLhlszoS8,2738
+chrono_features/features/mean.py,sha256=i5zBNXniA_zb4Eg59KW8_CaO3mpyZH_60QauZSZE2qI,711
+chrono_features/features/median.py,sha256=2gMcf4kNMOSDIdbmFQPEHvOTudi-9G5zIXvdcXaPD8c,717
+chrono_features/features/std.py,sha256=CtQPTvf9eKZjb0g_d83wNeRIRIdWSLU2DVX7jU8OD-4,1084
+chrono_features/features/sum.py,sha256=ywKwIBa-enkoEMavj9GvVlNYtoWGIQQSaMeEQrPa9uU,5479
+chrono_features-0.0.6.1.dist-info/METADATA,sha256=Jhvn0K7b3lxr7i_9JHnvYS_pVhieCr1YP9UBrbW8zfk,316
+chrono_features-0.0.6.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+chrono_features-0.0.6.1.dist-info/top_level.txt,sha256=JWLGoUy6hBHEXlFDDX8bK4Je8KH4YCtHW4TH24ahKyc,16
+chrono_features-0.0.6.1.dist-info/RECORD,,
