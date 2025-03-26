@@ -1,0 +1,15 @@
+pyproject.toml
+src/lhcbdiracx/routers/__init__.py
+src/lhcbdiracx/routers/py.typed
+src/lhcbdiracx/routers/bookkeeping/__init__.py
+src/lhcbdiracx/routers/bookkeeping/access_policy.py
+src/lhcbdiracx/routers/bookkeeping/bookkeeping.py
+src/lhcbdiracx/routers/scaling_test/__init__.py
+src/lhcbdiracx/routers/scaling_test/scale.py
+src/lhcbdiracx_routers.egg-info/PKG-INFO
+src/lhcbdiracx_routers.egg-info/SOURCES.txt
+src/lhcbdiracx_routers.egg-info/dependency_links.txt
+src/lhcbdiracx_routers.egg-info/entry_points.txt
+src/lhcbdiracx_routers.egg-info/requires.txt
+src/lhcbdiracx_routers.egg-info/top_level.txt
+tests/test_bookkeeping.py
