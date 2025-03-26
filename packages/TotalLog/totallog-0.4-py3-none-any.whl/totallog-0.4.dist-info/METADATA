@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: TotalLog
+Version: 0.4
+Summary: my own library for console logging
+Author: Vanja Nazarenko
+Requires-Dist: colorama
+Requires-Dist: pycparser>=2.21
+Requires-Dist: datetime
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

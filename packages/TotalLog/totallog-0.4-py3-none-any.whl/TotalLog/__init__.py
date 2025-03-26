@@ -1,0 +1,1 @@
+from .TotalLog import sett, text, info, error, Fore, Back, print, Title, error_log, line, F, B, rainbow, fit_back
