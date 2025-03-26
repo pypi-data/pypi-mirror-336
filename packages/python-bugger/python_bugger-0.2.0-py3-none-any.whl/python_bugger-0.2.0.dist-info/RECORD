@@ -1,0 +1,12 @@
+py_bugger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_bugger/cli.py,sha256=lQqasGyh_XfKOYY46fYBah21epXq9-dHWBOTrfaQ97s,1426
+py_bugger/cli_messages.py,sha256=GtwkVbkP0-xPT8LaUzYNosLKy3ceWfyRXalCqx6xdzk,264
+py_bugger/py_bugger.py,sha256=lQ261s5SbKBfgV8Gy2E2m-PlQ3-DpYoLyw847lbFIGE,1260
+py_bugger/utils/buggers.py,sha256=4_6-IC1151xT8z45cGS0TmpXCyjLt6Ft4unVYJkWCqk,2911
+py_bugger/utils/file_utils.py,sha256=AIc9qqTh91YClJdFamhlVal7I0ZvYSmWQsfPAEVXQrM,1636
+python_bugger-0.2.0.dist-info/licenses/LICENSE,sha256=t4XkVdrOtOWDElGTXO46NczISuJbJD-d2Xy_-YvhuFA,1063
+python_bugger-0.2.0.dist-info/METADATA,sha256=nHPlvYR-VMKBIKp-ixzu_3TP53UtKFE_xf4mS6-UmrE,4948
+python_bugger-0.2.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+python_bugger-0.2.0.dist-info/entry_points.txt,sha256=o9gyrOhgofRKjFDd6XmJ_j-TwHr_I_393NjFh65nNnA,48
+python_bugger-0.2.0.dist-info/top_level.txt,sha256=1_8zy9NuGK2m-grfX5L0KdyhLgzRJl5JbkcOnyBd4v0,10
+python_bugger-0.2.0.dist-info/RECORD,,
