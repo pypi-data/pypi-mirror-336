@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguReactQuanzhanXiangmuGuiguZhipinFix1 = ShangGuiguReactQuanzhanXiangmuGuiguZhipinFix1.__main__:main
+shang-guigu-react-quanzhan-xiangmu-guigu-zhipin-fix1 = ShangGuiguReactQuanzhanXiangmuGuiguZhipinFix1.__main__:main
