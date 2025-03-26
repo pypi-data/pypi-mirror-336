@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+huggingface/__init__.py
+huggingface/server.py
+huggingface_mcp_server.egg-info/PKG-INFO
+huggingface_mcp_server.egg-info/SOURCES.txt
+huggingface_mcp_server.egg-info/dependency_links.txt
+huggingface_mcp_server.egg-info/entry_points.txt
+huggingface_mcp_server.egg-info/requires.txt
+huggingface_mcp_server.egg-info/top_level.txt
