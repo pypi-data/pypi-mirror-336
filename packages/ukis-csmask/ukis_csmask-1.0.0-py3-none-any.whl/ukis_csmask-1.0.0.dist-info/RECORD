@@ -1,0 +1,16 @@
+ukis_csmask/__init__.py,sha256=ZhzQKWZ8RFrTIkj7z87B144DI95e8LMfA5w8NDWQDtg,23
+ukis_csmask/mask.py,sha256=nJoo3qeT5PCyDdYigqniTO6W46cN8_TqBw6m3Wf_3Ho,9072
+ukis_csmask/model_4b_l1c.json,sha256=VXfk5fK-wC-kR47WeI-R3HHINFQEp8VSd5GD_YROL80,1228
+ukis_csmask/model_4b_l1c.onnx,sha256=gWEfKQrcMVuGu358abDySWs6vgOQwqXI6enaliLooMg,39601686
+ukis_csmask/model_4b_l2a.json,sha256=rEEIzjuA7nA5PfMT-q2gGnvL4b5gOWWkQSDpKcl18CQ,1227
+ukis_csmask/model_4b_l2a.onnx,sha256=OITXXKSX7FnYM1lzR3vTHrA4hXAHu7NvsquhrTde4EM,39601686
+ukis_csmask/model_6b_l1c.json,sha256=tXXyQvkWmfjig2Fh67Ni-6cENCPPJ0HUXvWKApdra38,1448
+ukis_csmask/model_6b_l1c.onnx,sha256=qnnpoPAv-OAkPZN3HR2vao0RZresBsN3FWC4M2fGxXM,39603414
+ukis_csmask/model_6b_l2a.json,sha256=ibDfgP1nwz65mENRLzcD87sEFcx_WBV85JwA0--IquM,1448
+ukis_csmask/model_6b_l2a.onnx,sha256=0RxTCXhjfKQg7txAeRxiv3iZfdOeEgF3fiUn5L2UkE4,39603414
+ukis_csmask/utils.py,sha256=uwZVbA1eE8g6TuhK2vrmnFLHcb-_84WVpf1F1nu92XE,11624
+ukis_csmask-1.0.0.dist-info/licenses/LICENSE,sha256=JDcr69HbNEkUAY2V3kjtYH9yJfkn6vkjN-4r_6Tf1Eg,11438
+ukis_csmask-1.0.0.dist-info/METADATA,sha256=qf6OiXZ5Mhuk4snlIOZ828L_uvlqN-Ks-fNMpw7Sjbo,10015
+ukis_csmask-1.0.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+ukis_csmask-1.0.0.dist-info/top_level.txt,sha256=trynehChG98ys9AJ1lbhbYADeA0hr3TIEcAYofzsGt4,12
+ukis_csmask-1.0.0.dist-info/RECORD,,
