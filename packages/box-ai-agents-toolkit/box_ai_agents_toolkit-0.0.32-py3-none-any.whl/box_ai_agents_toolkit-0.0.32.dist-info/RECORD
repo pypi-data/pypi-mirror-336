@@ -1,0 +1,9 @@
+box_ai_agents_toolkit/__init__.py,sha256=QP43U7S_uCTy6bIGBiurQ9yLeMRXxdSz13j61ZdzhJg,1173
+box_ai_agents_toolkit/box_api.py,sha256=UUekn3nKpEnrH-jAENgjA7hB9snOW4r1D3IJLSWN6EQ,12649
+box_ai_agents_toolkit/box_auth_callback.py,sha256=viJm3HW9PX5uva21pxNYqeAlFWSkmEO_yP-Jik7pXAA,5566
+box_ai_agents_toolkit/box_authentication.py,sha256=NnzRKtFiGgmcoGbWD2mR49W0v--ouT4TjYViwNP8BPs,2634
+box_ai_agents_toolkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+box_ai_agents_toolkit-0.0.32.dist-info/METADATA,sha256=-47GzWvKM096QPXBR2P7sfgU1pG8Igq2LViC4IGqWK4,3372
+box_ai_agents_toolkit-0.0.32.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+box_ai_agents_toolkit-0.0.32.dist-info/licenses/LICENSE,sha256=xQZM2Rw6-7CT2NBkAeNnD2Qpd3v17QhWLj6Jsoql2kA,1080
+box_ai_agents_toolkit-0.0.32.dist-info/RECORD,,
