@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GradVAR.egg-info/PKG-INFO
+GradVAR.egg-info/SOURCES.txt
+GradVAR.egg-info/dependency_links.txt
+GradVAR.egg-info/requires.txt
+GradVAR.egg-info/top_level.txt
+gradvar/__init__.py
+gradvar/earlystopping.py
+gradvar/gradvar.py
+tests/test_forecast.py
+tests/test_predict.py
+tests/test_train.py
