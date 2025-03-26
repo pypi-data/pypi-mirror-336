@@ -1,0 +1,2 @@
+[console_scripts]
+gitdiffdays = git_diff_days.cli:main

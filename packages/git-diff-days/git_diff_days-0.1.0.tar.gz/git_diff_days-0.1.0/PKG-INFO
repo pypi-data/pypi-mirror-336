@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: git-diff-days
+Version: 0.1.0
+Summary: A tool to view git diffs in browser for a specified date range
+Author: Rudolf Cicko
+Requires-Python: >=3.6
+Requires-Dist: click
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

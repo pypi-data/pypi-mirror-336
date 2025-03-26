@@ -1,0 +1,10 @@
+README.md
+setup.py
+git_diff_days/__init__.py
+git_diff_days/cli.py
+git_diff_days.egg-info/PKG-INFO
+git_diff_days.egg-info/SOURCES.txt
+git_diff_days.egg-info/dependency_links.txt
+git_diff_days.egg-info/entry_points.txt
+git_diff_days.egg-info/requires.txt
+git_diff_days.egg-info/top_level.txt
