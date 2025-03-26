@@ -1,0 +1,15 @@
+addereq-1.2.2.dev1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+addereq-1.2.2.dev1.dist-info/WHEEL,sha256=XTrbe1v1RZIwaNy2ykqZ1b32V5o3CvHsSToseXBj9JY,150
+addereq-1.2.2.dev1.dist-info/RECORD,,
+addereq-1.2.2.dev1.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.2.2.dev1.dist-info/METADATA,sha256=K7QGtqBXXPvkt4SVeIDm29TzvkzZqwejoYTLYS4cf1s,3853
+addereq/logger_config.cp310-win_amd64.pyd,sha256=BaPhwpicPX0Eo-Y6AYN91I4Am90X-LoC4LPJsaWj1BU,28160
+addereq/EQT.cpython-37m-x86_64-linux-gnu.so,sha256=NvVdtx1eksW1t3ZAswv5JEOjLxO5cCF5mjYHlasXJnQ,585184
+addereq/plotting.cpython-37m-x86_64-linux-gnu.so,sha256=D9nMbiLiZ1yspUNIVB_xNN02fUPK-Rb6jVkweFqhR6c,2480072
+addereq/fetching.cp310-win_amd64.pyd,sha256=Fp01J9sRN1ysMm0ESyGtRv5N0RD-Kksc4ZdXLOoSZIY,184320
+addereq/logger_config.cpython-37m-x86_64-linux-gnu.so,sha256=LgaKlAN1GOmF5fedZiP-yPRHinMt4s1IV_YNRQcMa9k,121928
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/plotting.cp310-win_amd64.pyd,sha256=DkV545XD3F17oId8q9FQkZPMCNU5Way4xeFbDAZZRSc,236032
+addereq/cleaning.cpython-37m-x86_64-linux-gnu.so,sha256=BSM-ik2D9Kd5rR8DCEmXYKsiV9TAvHaDV2sqK9083y8,336104
+addereq/cleaning.cp310-win_amd64.pyd,sha256=uelPMmy6dhLcU-U-Jq7qoI1uzds-nOnp-v5XM1fPqdo,47104
+addereq/fetching.cpython-37m-x86_64-linux-gnu.so,sha256=xUTbai4UFYKLOk2EOPf0ul1O-NcjzNqo_sNhnYAAsDE,1724160
