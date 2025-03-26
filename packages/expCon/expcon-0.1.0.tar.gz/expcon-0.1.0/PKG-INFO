@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: expCon
+Version: 0.1.0
+Summary: A Python package for converting and evaluating infix, postfix, and prefix expressions
+Home-page: https://github.com/yourusername/expression_converter
+Author: Sandeep Jha
+Author-email: sandeepjhavc@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# Expression Converter
+A Python package to convert infix, postfix, and prefix expressions.
+
+## Installation
+```bash
+pip install expression_converter
