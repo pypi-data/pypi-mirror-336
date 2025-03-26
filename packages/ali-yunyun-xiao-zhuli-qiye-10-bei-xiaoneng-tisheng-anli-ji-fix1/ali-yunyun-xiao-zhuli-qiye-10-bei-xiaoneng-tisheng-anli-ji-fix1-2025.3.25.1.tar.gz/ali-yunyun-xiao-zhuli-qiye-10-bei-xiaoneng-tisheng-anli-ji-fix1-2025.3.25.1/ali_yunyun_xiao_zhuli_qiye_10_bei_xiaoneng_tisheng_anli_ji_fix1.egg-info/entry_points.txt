@@ -1,0 +1,3 @@
+[console_scripts]
+AliYunyunXiaoZhuliQiye10BeiXiaonengTishengAnliJiFix1 = AliYunyunXiaoZhuliQiye10BeiXiaonengTishengAnliJiFix1.__main__:main
+ali-yunyun-xiao-zhuli-qiye-10-bei-xiaoneng-tisheng-anli-ji-fix1 = AliYunyunXiaoZhuliQiye10BeiXiaonengTishengAnliJiFix1.__main__:main
