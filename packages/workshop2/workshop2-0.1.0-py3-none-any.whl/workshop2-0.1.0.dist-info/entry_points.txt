@@ -1,0 +1,2 @@
+[console_scripts]
+workshop2 = workshop2:main
