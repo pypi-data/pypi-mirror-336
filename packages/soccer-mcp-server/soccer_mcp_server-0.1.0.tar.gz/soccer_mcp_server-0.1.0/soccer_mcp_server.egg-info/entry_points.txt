@@ -1,0 +1,2 @@
+[console_scripts]
+soccer-mcp-server = soccer.main:main

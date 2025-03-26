@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+soccer/main.py
+soccer_mcp_server.egg-info/PKG-INFO
+soccer_mcp_server.egg-info/SOURCES.txt
+soccer_mcp_server.egg-info/dependency_links.txt
+soccer_mcp_server.egg-info/entry_points.txt
+soccer_mcp_server.egg-info/requires.txt
+soccer_mcp_server.egg-info/top_level.txt

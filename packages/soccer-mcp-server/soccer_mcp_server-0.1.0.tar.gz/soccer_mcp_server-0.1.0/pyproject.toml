@@ -1,0 +1,15 @@
+[project]
+name = "soccer-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.21",
+    "langgraph>=0.3.20",
+    "mcp[cli]>=1.5.0",
+    "pandas>=2.2.3",
+    "pydantic>=2.10.6",
+]
+[project.scripts]
+soccer-mcp-server = "soccer.main:main"
