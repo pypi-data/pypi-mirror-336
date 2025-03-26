@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pymorningstar
+Version: 0.25
+Summary: Automating the download of information from Morningstar's Excel Add-In API
+Home-page: https://github.com/VilasPablo/pymorningstar
+Author: Pablo Vilas
+Author-email: pablo.vilas.naval@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Programming Language :: Python :: 3
+
+For more information about this package, please visit the following link: https://www.pablovilasdatascience.net/static/files/Projects/2022Pymorningstar.html
+
+
