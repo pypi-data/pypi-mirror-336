@@ -1,0 +1,2 @@
+[console_scripts]
+tintumon = tintumon.bot:run_bot
