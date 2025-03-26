@@ -1,0 +1,23 @@
+   STARTUP │ Making failed steps pending
+   STARTUP │ Watching 1 director(y|ies) from initial database
+   STARTUP │ Scanning initial database for changed files
+   UPDATED │ subs.txt (digest 30d31453 ➜ c273a7ee)
+   DELETED │ inp1.txt
+   STARTUP │ Scanning initial database for new nglob matches
+  DIRECTOR │ Launched worker 0
+     PHASE │ run
+ DROPAMEND │ ./step.py
+────────────────────── Outdated amended step information ───────────────────────
+Modified step hash   explained, inp_digest 8013c23b ➜ 38245e8f, out_digest afcdb0f9 ➜ (unset)
+Deleted inp hash     inp1.txt
+Modified inp hash    subs.txt (digest 30d31453 ➜ c273a7ee)
+──────────────────────── Remained the same (or missing) ────────────────────────
+Same inp hash        ./
+────────────────────────────────────────────────────────────────────────────────
+     START │ ./step.py
+   SUCCESS │ ./step.py
+  DIRECTOR │ Trying to delete 0 outdated output(s).
+   WARNING │ Check logs: .stepup/warning.log
+     PHASE │ watch
+  DIRECTOR │ Stopping workers.
+  DIRECTOR │ See you!

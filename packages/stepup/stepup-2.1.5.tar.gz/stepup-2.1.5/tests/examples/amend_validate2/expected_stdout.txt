@@ -1,0 +1,37 @@
+   STARTUP │ (Re)initialized boot script
+  DIRECTOR │ Launched worker 0
+     PHASE │ run
+     START │ ./plan.py
+   SUCCESS │ ./plan.py
+     START │ ./work.py
+RESCHEDULE │ ./work.py
+──────────────── Rescheduling due to unavailable amended inputs ────────────────
+Missing inputs and/or required directories:
+ping.txt
+pong.txt
+────────────────────────────────────────────────────────────────────────────────
+     START │ echo ping > ping.txt
+   SUCCESS │ echo ping > ping.txt
+     START │ ./work.py
+RESCHEDULE │ ./work.py
+──────────────── Rescheduling due to unavailable amended inputs ────────────────
+Missing inputs and/or required directories:
+pong.txt
+────────────────────────────────────────────────────────────────────────────────
+   WARNING │ 1 step(s) remained pending due to incomplete requirements
+─────────────────────────────── Orphaned inputs ────────────────────────────────
+             AWAITED  pong.txt
+───────────────────────────────── PENDING Step ─────────────────────────────────
+Command               ./work.py
+Working directory     ./
+Inputs        STATIC  ./
+              STATIC  work.py
+               BUILT  ping.txt [amended]
+             AWAITED  (pong.txt) [amended]
+Outputs      AWAITED  work.txt
+────────────────────────────────────────────────────────────────────────────────
+   WARNING │ Skipping file cleanup due to incomplete build.
+   WARNING │ Check logs: .stepup/warning.log
+     PHASE │ watch
+  DIRECTOR │ Stopping workers.
+  DIRECTOR │ See you!
