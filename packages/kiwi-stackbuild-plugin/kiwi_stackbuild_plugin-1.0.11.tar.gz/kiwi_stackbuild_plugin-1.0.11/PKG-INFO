@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: kiwi_stackbuild_plugin
+Version: 1.0.11
+Summary: KIWI - Stack Build Plugin
+Home-page: https://osinside.github.io/kiwi/
+License: GPL-3.0-or-later
+Author: Marcus Schäfer
+Author-email: marcus.schaefer@suse.com
+Maintainer: Marcus Schäfer
+Maintainer-email: marcus.schaefer@suse.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Operating System
+Requires-Dist: docopt-ng (>=0.9.0)
+Requires-Dist: kiwi (>=9.21.21)
+Project-URL: Bug Tracker, https://github.com/OSInside/kiwi-stackbuild-plugin/issues
+Project-URL: Documentation, https://osinside.github.io/kiwi/plugins/stackbuild.html
+Project-URL: Repository, https://github.com/OSInside/kiwi-stackbuild-plugin
+Description-Content-Type: text/x-rst
+
+KIWI - Stack Build Plugin
+=========================
+
+.. |GitHub CI Action| image:: https://github.com/OSInside/kiwi-stackbuild-plugin/workflows/CILint/badge.svg
+   :target: https://github.com/OSInside/kiwi-stackbuild-plugin/actions
+
+|GitHub CI Action|
+
+This [KIWI](https://osinside.github.io/kiwi/) plugin allows to store
+and reuse KIWI built root-trees as OCI containers. The idea is using OCI images
+as portable format to store and distribute a root-tree, so they can be pushed
+and pulled from OCI registries.
+
