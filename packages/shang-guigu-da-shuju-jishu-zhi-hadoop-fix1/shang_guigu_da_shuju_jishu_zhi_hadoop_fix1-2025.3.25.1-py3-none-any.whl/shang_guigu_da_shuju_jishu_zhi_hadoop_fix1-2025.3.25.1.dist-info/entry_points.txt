@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguDaShujuJishuZhiHadoopFix1 = ShangGuiguDaShujuJishuZhiHadoopFix1.__main__:main
+shang-guigu-da-shuju-jishu-zhi-hadoop-fix1 = ShangGuiguDaShujuJishuZhiHadoopFix1.__main__:main
