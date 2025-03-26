@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: canonicalwebteam.directory-parser
+Version: 1.1.2
+Summary: Flask extension to parse websites and extract structured data to build sitemaps.
+Home-page: https://github.com/canonical/canonicalwebteam.directory-parser
+Author: Canonical webteam
+Author-email: webteam@canonical.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask>=1.0.2
+Requires-Dist: beautifulsoup4
+Requires-Dist: humanize
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+Requires-Dist: validators
+Requires-Dist: python-slugify
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# canonicalwebteam.directory-parser
+Flask extension to parse websites and extract structured data to build sitemaps.
+
+## Install
+Install the project with pip: `pip install canonicalwebteam.directory-parser`
+
+You can add the extension on your project by doing the following:
+
+```
+from canonicalwebteam.directory_parser import scan_directory
+
+node = scan_directory("<example-templates-path>)
+```
+
+`node` will return a tree of all the templates given in the `<example-templates-path>
+
+## Local development
+
+### Linting and formatting
+
+Tests can be run with Tox:
+```
+pip3 install tox  # Install tox
+tox -e lint       # Check the format of Python code
+tox -e format     # Reformat the Python code
+```
