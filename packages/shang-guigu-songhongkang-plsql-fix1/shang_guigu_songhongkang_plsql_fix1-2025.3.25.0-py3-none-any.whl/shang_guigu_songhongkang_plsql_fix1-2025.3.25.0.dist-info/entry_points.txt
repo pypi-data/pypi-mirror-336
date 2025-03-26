@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguSonghongkangPlsqlFix1 = ShangGuiguSonghongkangPlsqlFix1.__main__:main
+shang-guigu-songhongkang-plsql-fix1 = ShangGuiguSonghongkangPlsqlFix1.__main__:main
