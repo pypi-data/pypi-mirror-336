@@ -1,0 +1,61 @@
+{
+  "timestamp": "2024-11-09T00:05:00+0100",
+  "vehicles": [
+    {
+      "bearing": 358,
+      "category": 5,
+      "delay": null,
+      "deviation": 0,
+      "direction": "Worfelden Siedlung Hesselrod",
+      "encodedPath": "uhwoHq_cs@",
+      "fillLevels": [
+        "UNKNOWN"
+      ],
+      "latitude": 49.94,
+      "line": "WE2",
+      "lineId": "WE2",
+      "longitude": 8.540280277777779,
+      "offline": false,
+      "status": 1,
+      "type": 1,
+      "vehicleId": 375
+    },
+    {
+      "lineId": "8",
+      "category": 1,
+      "direction": "TestTestTest",
+      "status": 1,
+      "latitude": 49.894,
+      "longitude": 8.64,
+      "bearing": 8,
+      "type": 1,
+      "line": "8",
+      "vehicleId": 105,
+      "encodedPath": "qmooH_bys@",
+      "deviation": 0,
+      "offline": false,
+      "delay": null,
+      "fillLevels": [
+        "UNKNOWN"
+      ]
+    },
+    {
+      "lineId": "7",
+      "category": 1,
+      "direction": "Arheilgen Dreieichweg",
+      "status": 1,
+      "latitude": 49.894,
+      "longitude": 8.64,
+      "bearing": 8,
+      "type": 1,
+      "line": "7",
+      "vehicleId": 15,
+      "encodedPath": "qmooH_bys@",
+      "deviation": 0,
+      "offline": false,
+      "delay": null,
+      "fillLevels": [
+        "UNKNOWN"
+      ]
+    }]
+}
