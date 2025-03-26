@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_optimize_image.egg-info/PKG-INFO
+django_optimize_image.egg-info/SOURCES.txt
+django_optimize_image.egg-info/dependency_links.txt
+django_optimize_image.egg-info/requires.txt
+django_optimize_image.egg-info/top_level.txt
+optimizer_middleware/__init__.py
+optimizer_middleware/middleware.py
+optimizer_middleware/utils.py
