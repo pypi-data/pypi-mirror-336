@@ -1,0 +1,2 @@
+[console_scripts]
+test-packaging-mnda = test_packaging_mnda:main

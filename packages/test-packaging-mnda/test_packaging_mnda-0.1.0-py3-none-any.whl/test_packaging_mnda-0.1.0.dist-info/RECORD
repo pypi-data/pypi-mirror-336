@@ -1,0 +1,6 @@
+test_packaging_mnda/__init__.py,sha256=y_VAVuasfkIG5qYPU_gtu0U4JWfKTZ-36IDSk_aTaP4,106
+test_packaging_mnda/add.py,sha256=p-5tLeBJhnkgEGidhKJLNju9WZi7hL8vzCoKFsBBcBM,520
+test_packaging_mnda-0.1.0.dist-info/METADATA,sha256=IIe72I51yHPdR42Pik4pCa1Ee9QstRD2aS0YFcPGX-U,256
+test_packaging_mnda-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+test_packaging_mnda-0.1.0.dist-info/entry_points.txt,sha256=a_XT-R7KcRlFRV1wIkwJ4EOVH-oEXK-pRjr1Kqz81hM,65
+test_packaging_mnda-0.1.0.dist-info/RECORD,,
