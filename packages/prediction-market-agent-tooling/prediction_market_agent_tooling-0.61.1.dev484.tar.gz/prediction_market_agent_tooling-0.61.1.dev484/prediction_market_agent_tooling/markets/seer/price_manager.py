@@ -1,0 +1,5 @@
+from prediction_market_agent_tooling.gtypes import ChecksumAddress
+from prediction_market_agent_tooling.markets.seer.subgraph_data_models import SeerPool
+
+
+class PriceManager:
