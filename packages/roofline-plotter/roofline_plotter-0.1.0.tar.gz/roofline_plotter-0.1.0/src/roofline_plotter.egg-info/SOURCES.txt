@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/roofline/__init__.py
+src/roofline/roofline.py
+src/roofline_plotter.egg-info/PKG-INFO
+src/roofline_plotter.egg-info/SOURCES.txt
+src/roofline_plotter.egg-info/dependency_links.txt
+src/roofline_plotter.egg-info/requires.txt
+src/roofline_plotter.egg-info/top_level.txt
