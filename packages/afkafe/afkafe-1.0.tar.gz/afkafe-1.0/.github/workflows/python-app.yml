@@ -1,0 +1,27 @@
+name: Python application
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - uses: yezz123/setup-uv@v4
+    - name: Setup uv venv
+      run: |
+        uv sync
+    - name: Lint with ruff
+      run: |
+        uv run ruff check ttcli/
+    - name: Type check with pyright
+      run: |
+        uv run pyright ttcli/
