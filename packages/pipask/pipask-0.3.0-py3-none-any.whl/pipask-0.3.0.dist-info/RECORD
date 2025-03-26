@@ -1,0 +1,17 @@
+pipask/__init__.py,sha256=l9y3Kphe9o7XEA8tmvweAyr5e3jnKjfU704_yiDFSAo,219
+pipask/checks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipask/checks/repo_popularity.py,sha256=vdHdUXfDRlaGUoABVhoM2w8crLFIWMLMJrrQar1na1M,1682
+pipask/checks/types.py,sha256=zxXayKdkMD0btNmbrSe7D2g9O2r2UiFnQ74hScsLZI8,1147
+pipask/cli_helpers.py,sha256=NeeNJg96Ed8G7vjWyatcfjtun96ZHFpcpqejchU_Xd0,3456
+pipask/exception.py,sha256=kBHs7F1Skx8vEKcqsWlBgBRAWQxCiZ-fV6C8NcDW9U0,43
+pipask/infra/pip.py,sha256=g8HPPq2Vzr8_qt2bJamNQM6rPUU55TcUiFVtEoR3WhE,2715
+pipask/infra/pypi.py,sha256=4mBWcRJlejWTLS3VjVnfMuTOLui4sp5YmU9aSjXVhX4,3203
+pipask/infra/repo_client.py,sha256=7xIfk41-lTgD53Fe0sf08gt9wifE43nV7UlMNpRrQxk,2380
+pipask/main.py,sha256=rQu9GvaQ6L0Whv6U5N_NU8ugafTU0Nd3C913JzSxuUE,3853
+pipask/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipask/report.py,sha256=E4-UC9fFcYB6eujZjK8E3sXUO5Qa0aX1ErF_FII3aso,1269
+pipask-0.3.0.dist-info/LICENSE,sha256=NEQs-zj7gutucFHHX_YtIpn3JKL8BbFXceh-NMAUwVE,1066
+pipask-0.3.0.dist-info/METADATA,sha256=Ce3BIL8-7mpnRbR9pKIMjj-0FqyOI4Q6-pKEEy6ukLU,2978
+pipask-0.3.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pipask-0.3.0.dist-info/entry_points.txt,sha256=fGGn10mO2cdUIiDir3fPItCLYLMq48eEL8iXyCy7_q0,42
+pipask-0.3.0.dist-info/RECORD,,
