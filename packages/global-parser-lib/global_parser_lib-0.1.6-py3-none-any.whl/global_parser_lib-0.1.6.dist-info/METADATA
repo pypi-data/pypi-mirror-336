@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: global-parser-lib
+Version: 0.1.6
+Summary: A library for parsing various file types.
+Author: 
+Author-email: foundersoffice@vaiaclimate.com
+Requires-Python: >=3.8
+Requires-Dist: aiohttp
+Requires-Dist: requests
+Requires-Dist: openai-whisper
+Requires-Dist: pdfplumber
+Requires-Dist: pandas
+Requires-Dist: python-docx
+Requires-Dist: python-pptx
+Requires-Dist: huggingface-hub
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: httpx
+Requires-Dist: fastapi
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: transformers
+Requires-Dist: nltk
+Requires-Dist: bs4
+Requires-Dist: langdetect
+Requires-Dist: chardet
+Requires-Dist: pymongo
+Requires-Dist: pymupdf==1.25.4
+
