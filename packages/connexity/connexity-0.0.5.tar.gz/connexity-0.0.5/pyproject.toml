@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "connexity"
+version = "0.0.5"
+description = "A Python client for Connexity API."
+readme = "README.md"
+authors = [{ name = "SpaceStep", email = "daniil@spacestep.ca" }]
+license = { text = "MIT" }
+dependencies = [
+    "aiohttp",
+    "python-dotenv"
+]
+
+[tool.setuptools]
+packages = ["connexity", "connexity.calls", "connexity.calls.messages", "connexity.utils", "connexity.metrics", "connexity.metrics.utils"]
