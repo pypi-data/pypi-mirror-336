@@ -1,0 +1,3 @@
+[console_scripts]
+AlibabaJingjitiYunYuanshengShijian2019Fix1 = AlibabaJingjitiYunYuanshengShijian2019Fix1.__main__:main
+alibaba-jingjiti-yun-yuansheng-shijian-2019-fix1 = AlibabaJingjitiYunYuanshengShijian2019Fix1.__main__:main
