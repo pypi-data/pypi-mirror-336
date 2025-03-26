@@ -1,0 +1,17 @@
+peakoscope/__init__.py,sha256=MU_8aMNTpx5nxpPbGwVrB11_mwXt6IUxXCwbMm1173Q,1686
+peakoscope/__main__.py,sha256=6Nmsqj5E5zIJ-j0R9DRGBfdqJHGz51ewAPWzyDIgclU,2253
+peakoscope/data.py,sha256=xwskzRA-grHUwGzD0Qyhs2OCrYiQG0J7b7XiqADvPSE,3314
+peakoscope/errors.py,sha256=Tqjehn5iTzxQhuTBomQyfofchBlzcoKaVlu-Ig3vM5g,274
+peakoscope/formats.py,sha256=6NQ43hseJ8IJCyW_u7FvUsyXbzXWWDE0uR28eIJOnXU,4345
+peakoscope/interface_matplotlib.py,sha256=bstrYtiZGosI8N1i1YZ0kxsV2tC87LWv71lDZOSyy7I,6686
+peakoscope/interface_pandas.py,sha256=VL9gFRoJAju_RYqF1HEV4etMCmkjO1KmajTUIAFQzas,6362
+peakoscope/interface_polars.py,sha256=kx-xvM-jvTZd_Rzsf4G8jS-ZrcK9zUUHX5dGdoyFY_w,6820
+peakoscope/peaks.py,sha256=4xitYTjBqnUZnSY7GdsSrQmfuJKsGjaFAJslDlDD1nY,11230
+peakoscope/testing.py,sha256=BlsI2IRl79YCD-5vwQw8PKh3IZpRUQ6C7XdEFK6bao4,7000
+peakoscope/trees.py,sha256=GmQ7wCc1nNjbgDKzq4pVWiEKAaXl_jlCCXJ0YzGTCFU,20231
+peakoscope/utilities.py,sha256=VJpS2rsCl3cPvYpXCN_e_6iNe222X9mBuvzxMumowhY,2747
+peakoscope-1.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+peakoscope-1.1.0.dist-info/METADATA,sha256=d89_xkQpeG3FJQnk22OOJzXXQVDYvS4OeRtuMnteVyM,4306
+peakoscope-1.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+peakoscope-1.1.0.dist-info/top_level.txt,sha256=ohvdDPhg9VpT91i6BG78VyLf-33VjfpVl7QS4Cj5U9Q,11
+peakoscope-1.1.0.dist-info/RECORD,,
