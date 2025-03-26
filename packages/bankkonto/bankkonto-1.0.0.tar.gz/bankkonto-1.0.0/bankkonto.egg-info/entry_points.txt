@@ -1,0 +1,2 @@
+[console_scripts]
+bankkonto-validate = bankkonto:cli
