@@ -1,0 +1,15 @@
+aikernel/__init__.py,sha256=q_o8ytccMCzPNJsi4_mr1JCyYGvhWeeRq1GtvWCUIEw,1695
+aikernel/errors.py,sha256=_6VHIrDsdY2KAysXJRdvfZ8Hj1pS7GrBYQgnahmvJgc,1161
+aikernel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aikernel/_internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aikernel/_internal/conversation.py,sha256=TkhEBdeQ0ODozLLtNf-IN8LjIlRPV9GsDEUZmdL1jq8,3923
+aikernel/_internal/structured.py,sha256=ezPj4y78kIHa1wkrJYI9ZyaU6A2gyf0bIIzqA49kLmY,2997
+aikernel/_internal/tools.py,sha256=eazv_VbndsgIgRQLjab384sRQFqIMPg74nASUW_smwo,5587
+aikernel/_internal/unstructured.py,sha256=mtf6lu20yGeigpJg6cvK5_hKRhyiI_T6NYJzHHXPIwY,2266
+aikernel/_internal/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aikernel/_internal/types/provider.py,sha256=1B2CTlNW2-E7o-ZCvibNHAwuRPuAadErNBHvRP82w78,1029
+aikernel/_internal/types/request.py,sha256=Dw0HKYatidz3AQuzvCwiGVpb1r4zWPKOESZWci6i7vM,5374
+aikernel/_internal/types/response.py,sha256=uh7uq8hqYs6oYQp4pbfXDn5x0mU4TErzaxtsUIHAzZs,1111
+aikernel-0.1.33.dist-info/METADATA,sha256=tRP0IEtYR4V1JjKY3cvMTKa3hk8sdIpB_JHIZw1oEww,557
+aikernel-0.1.33.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aikernel-0.1.33.dist-info/RECORD,,
