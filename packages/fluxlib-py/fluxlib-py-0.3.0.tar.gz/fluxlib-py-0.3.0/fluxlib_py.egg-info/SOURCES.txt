@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+fluxlib_py.egg-info/PKG-INFO
+fluxlib_py.egg-info/SOURCES.txt
+fluxlib_py.egg-info/dependency_links.txt
+fluxlib_py.egg-info/requires.txt
+fluxlib_py.egg-info/top_level.txt
