@@ -1,0 +1,14 @@
+LICENSE
+LICENSES_THIRD_PARTY
+README.md
+setup.py
+dedenser/__init__.py
+dedenser/__main__.py
+dedenser/dedenser.py
+dedenser/mcloud.py
+dedenser.egg-info/PKG-INFO
+dedenser.egg-info/SOURCES.txt
+dedenser.egg-info/dependency_links.txt
+dedenser.egg-info/entry_points.txt
+dedenser.egg-info/requires.txt
+dedenser.egg-info/top_level.txt
