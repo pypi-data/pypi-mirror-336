@@ -1,0 +1,4 @@
+PyJWT<3.0.0,>=2.7.0
+psycopg2-binary<3.0.0,>=2.9.0
+azure-functions<2.0.0,>=1.7.0
+pytest<8.0.0,>=7.0.0
