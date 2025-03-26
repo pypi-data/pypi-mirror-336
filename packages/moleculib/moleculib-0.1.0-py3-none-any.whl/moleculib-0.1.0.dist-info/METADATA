@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: moleculib
+Version: 0.1.0
+Summary: Molecule library
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: einops
+Requires-Dist: ordered-set
+Requires-Dist: biopython
+Requires-Dist: biotite
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: mendeleev
+Requires-Dist: py3Dmol
+Requires-Dist: rdkit
+Requires-Dist: plotly
+Requires-Dist: mdtraj
+
+# 🧬 `moleculib`
+
+[![](https://img.shields.io/badge/documentation-black?logo=Sphinx)](https://molecularmachines.github.io/moleculib/index.html)
+
+
+
+## Usage
+
+One needs to install moleculib locally with 
+```
+pip install -e .
+```
+Then `moleculib` becomes importable in python scripts:
+
+```
+from moleculib.protein.batch import PadBatch
+```
+
+## Linting
+
+```sh
+black .
+```
+
+
