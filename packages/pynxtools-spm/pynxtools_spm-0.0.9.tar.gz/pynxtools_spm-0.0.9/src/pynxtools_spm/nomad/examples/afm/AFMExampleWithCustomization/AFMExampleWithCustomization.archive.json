@@ -1,0 +1,57 @@
+{
+  "data": {
+    "m_def": "../upload/raw/AFM.scheme.archive.yaml#/definitions/section_definitions/0",
+    "reader": "spm",
+    "nxdl": "NXafm",
+    "input_files": ["A151216.123306-02602.sxm", "config.json"],
+    "nexus_view": "../upload/archive/d94Awbae4zwhk0YVHHXjBOStwXV-#/data",
+    "definition": "NXafm",
+    "experiment_technique": "AFM",
+    "scan_mode": "tapping mode",
+    "identifier_experiment": "Unique combination of chracter123",
+    "identifier_collection": "D:\\Data\\123306",
+    "Sample": {
+      "name": "diPAMY",
+      "Sample_component_set": {
+        "Sample_component": {
+          "name": "Au(Mica)",
+          "chemical_formula": "Au(KAl3Si3012H2)",
+          "description": "<p>The description could be anything in plain text, e.g., the orientation of sample and substrate and preparation process and so on .</p>"
+        }
+      },
+      "History": {
+        "Note": {
+          "description": "<p>Substrate: Stack of two layers: Au(111) on Mica</p>\n<pre class=\"western\">name: Au(Mica)</pre>\n<p>&nbsp;</p>\n<p>Note: A sample description could be plain text or a book of text.</p>"
+        }
+      }
+    },
+    "default": "current_forward",
+    "experiment_description": "<p>This is an demo example of NXafm.<br /><br /></p>\n<pre class=\"western\">Bias: -50mV</pre>\n<pre class=\"western\">Setpoint: 25pA</pre>",
+    "user": {
+      "name": "Rubel Mozumder",
+      "affiliation": [
+        "Dr. Cojal González, José David (HU)",
+        "Prof. Carlos-Andres Palma"
+      ],
+      "email": [
+        "mozumder@physik.hu-berlin.de",
+        "cojal@physik.hu-berlin.de",
+        "palma@physik.hu-berlin.de"
+      ]
+    },
+    "INSTRUMENT[instrument]": {
+      "hardware": {
+        "vendor": "Nanonis",
+        "name": "Nanonis",
+        "model": "Generic 4",
+        "model/@version": "4"
+      },
+      "software": {
+        "vendor": "Nanonis",
+        "name": "Nanonis",
+        "model": "Generic 4",
+        "model/@version": "4"
+      }
+    }
+  }
+}
