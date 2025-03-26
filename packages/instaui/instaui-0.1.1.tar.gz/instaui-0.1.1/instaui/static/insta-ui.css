@@ -1,0 +1,1 @@
+:where(body){--insta-column-gap: 1rem;height:100vh}:where(#app){height:100%}:where(*){box-sizing:border-box;margin:0;padding:0}:where(.app-box[data-v-687dcc1a],.insta-main[data-v-687dcc1a]){height:100%}:where(.insta-main[data-v-687dcc1a]){--insta-padding: 16px;padding:var(--insta-padding, 16px)}

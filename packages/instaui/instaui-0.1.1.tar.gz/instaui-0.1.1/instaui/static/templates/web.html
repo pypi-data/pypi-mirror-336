@@ -1,0 +1,118 @@
+{% from 'debug/sse.html' import sse_style, sse_script,sse_html -%}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="{{ favicon_url }}" rel="shortcut icon" />
+  <title>{{ title }}</title>
+
+  {% for link in css_links %}
+  <link rel="stylesheet" href="{{ prefix | safe }}{{link}}" />
+  {% endfor -%}
+
+  {% for content in style_tags %}
+  <style>{{content}}</style>
+  {% endfor -%}
+
+  {{ sse_style(is_debug) }}
+</head>
+
+<body>
+
+  <div id="loading"><insta-ui :config="config"></insta-ui></div>
+
+  {{ sse_html(is_debug) }}
+
+  <div id="app">
+    <insta-ui :config="config"></insta-ui>
+  </div>
+
+  <script type="importmap">
+  {
+  "imports":{{import_maps | safe}}
+  }
+  </script>
+
+  {% for info in js_links %}
+  <script src="{{ prefix | safe }}{{info.link}}" {{info.create_attrs_str()}}></script>
+  {% endfor -%}
+
+  {% for content in script_tags %}
+  <script>{{content}}</script>
+  {% endfor -%}
+
+
+  {% if is_remote_config %}
+  <script>
+  async function queryConfig() {
+
+    const url = `{{config_fetch_url | safe}}`;
+    const pageInfo = {path:'{{query_path | safe}}',params:{{query_path_params | safe}},queryParams:{{query_params | safe}}};
+    const response = await fetch(url,{
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({key: '{{config_fetch_key | safe}}', page: pageInfo}),
+    });
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+}
+  </script>
+  {% endif %}
+
+  {{ sse_script(is_debug) }}
+
+  <script type="module">
+    import { createApp } from 'vue'
+    import installInsta from 'instaui'
+    const True = true;
+    const False = false;
+    const None = undefined;
+
+    async function createVueApp(config, targetSelector) {
+      const app = createApp({
+          setup() {
+              return {
+                  config
+              }
+          }
+      })
+
+      installInsta(app,config)
+
+      {% for info in vue_app_use %}
+      app.use(await import('{{info.name | safe }}'))
+      {% endfor %}
+
+      {% for info in vue_app_component %}
+      app.component('{{info.name | safe}}',(await import('{{info.url | safe }}')).default)
+      {% endfor %}
+      app.mount(targetSelector)
+    }
+
+    {% if has_preload %}
+    await createVueApp({{preload_json | safe}}, '#loading');
+    {% endif %}
+
+    {% if is_remote_config %}
+    const appConfig = await queryConfig();
+    {% else %}
+    const appConfig = {{config_json | safe}};
+    {% endif %}
+
+    await createVueApp(appConfig, '#app');
+    document.getElementById('loading').remove();
+
+  </script>
+</body>
+</html>
