@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: stockhub
+Version: 0.0.1
+Summary: 증권사 Open API Hub 서비스
+Home-page: https://github.com/jopenbusiness/StockHub
+Author: gye hyun james kim
+Author-email: pnuskgh@gmail.com
+Keywords: Stock,REST,Open API,Hub
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-python
+Dynamic: summary
