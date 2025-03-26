@@ -1,0 +1,13 @@
+numpy==1.26.4
+genesis-world==0.2.1
+numba==0.60.0
+pytest
+
+[dev]
+pre-commit>=3.5.0
+black>=24.1.1
+isort>=5.13.2
+flake8>=7.0.0
+flake8-docstrings>=1.7.0
+pytest>=8.0.0
+pytest-cov>=4.1.0
