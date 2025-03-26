@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: mcp-server-webcrawl
+Version: 0.7.1
+Summary: Multiagent MCP server for webcrawl content
+Author: Ben Caulfield
+Project-URL: Homepage, https://github.com/pragmar/mcp-server-webcrawl
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: mcp>=1.3.0
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: warcio>=1.7.0
+Dynamic: license-file
+
+# mcp-server-webcrawl
+
+A Python package providing server-side web crawling capabilities integrated with the MCP framework. This lightweight tool enables efficient extraction and processing of web content for MCP-based applications, supporting customizable crawl strategies, data filtering, and standardized output formats.
