@@ -1,0 +1,10 @@
+odoo/addons/ssi_py3o_print_mixin/README.rst,sha256=JZLb0jvHwDUTQb6z8DSk0fKzGShm-KUwGWwrMVh0mfg,1206
+odoo/addons/ssi_py3o_print_mixin/__init__.py,sha256=YI8JBdK9t8HaFhry-gWbNHOfbcC8qmJo8i0ySKq0eWc,181
+odoo/addons/ssi_py3o_print_mixin/__manifest__.py,sha256=7u9KeHJFUELJa-ZnAzzcX_lkDWAjAumQZmX2FNLU0Ww,526
+odoo/addons/ssi_py3o_print_mixin/models/__init__.py,sha256=qK3g6MfJx9m-ueiUdb9-x7IbrUudzqDyvmvn09tiNF0,192
+odoo/addons/ssi_py3o_print_mixin/models/ir_actions_report.py,sha256=p8Pw0qBC_CRn6FzihSF90Iqw6NYoQ8bKp8XTH4dY5lA,536
+odoo/addons/ssi_py3o_print_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_py3o_print_mixin-14.0.1.0.0.dist-info/METADATA,sha256=DQ2tsSgYVMGmUBsZM8D9KXh1fSUgFG1Pr3n9mLm5DMI,1787
+odoo14_addon_ssi_py3o_print_mixin-14.0.1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_ssi_py3o_print_mixin-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_py3o_print_mixin-14.0.1.0.0.dist-info/RECORD,,
