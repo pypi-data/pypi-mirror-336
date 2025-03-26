@@ -1,0 +1,15 @@
+collect/__init__.py,sha256=mwJz1grftkdMv45xiVqo3cat4TELAXqlwkTOW9D3I68,176
+collect/enrich.py,sha256=caPMlSIWCq2SQNo7Kum0H5IbFVoVe6tiEzxPbRc0deM,10528
+collect/serp.py,sha256=qB55iJTu2hlx3XLgwDPkXIdutCbzkYI_17Yl6JDz794,4721
+collect/zyte.py,sha256=jn3VdpKsIZVP7U6oKjbGQ2JW-xelb2_L4i24pRRSxsY,3876
+common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common/base.py,sha256=AiUU-4kO-bE7chHNZ0xeGKkecHaIQMkN-TJX3ulaH7A,2444
+common/client.py,sha256=F0KTvg2mZnXiH21y1S--3s1u4SaIwO2UOGYFtfmZfB8,3083
+common/launch_demo_app.py,sha256=G4OPjDp7pX8N3DPXoSbm3nBgAI0P7BcsDbIJvgZmV2I,16373
+common/launch_demo_pipeline.py,sha256=-jlMrEXHGVigd94ho-wbDvcMyl_TsLXa6fs0YUsrQZs,690
+common/settings.py,sha256=ZSAWygHvh0rDKpAE-C6bgJ7u0QMWITjJf9Vq-VBFHlY,445
+process/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vianu_fraudcrawler-0.1.0.dist-info/LICENSE,sha256=0z8ntSC-yQ93CRag_Pc-f4PHWFZq9BIF9irjw64F0cw,1062
+vianu_fraudcrawler-0.1.0.dist-info/METADATA,sha256=mdkt3em59joTYRPvYaagey4yJAhiNvvvc7c6XOKThag,919
+vianu_fraudcrawler-0.1.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+vianu_fraudcrawler-0.1.0.dist-info/RECORD,,
