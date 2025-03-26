@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: sphinx-library
+Version: 1.1.3
+Summary: Typography-centric Sphinx theme that reads like a good book.
+Author-email: Vince Salvino <salvino@coderedcorp.com>
+License-Expression: MIT
+Project-URL: Documentation, https://vsalvino.github.io/sphinx-library/
+Project-URL: Source, https://github.com/vsalvino/sphinx-library
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Dynamic: license-file
+
+Library (Sphinx theme)
+======================
+
+Library is a minimal typography-centric theme for the `Sphinx
+<http://sphinx-doc.org>`_ documentation system, designed to read like a good
+book. Features include:
+
+* Publisher-selectable typeface stacks.
+
+* User-selectable light/sepia/dark reading modes.
+
+* Mobile-friendly responsive design.
+
+See what it looks like, options, and design notes in the `Documentation
+<https://vsalvino.github.io/sphinx-library>`_.
+
+`Source Code <https://github.com/vsalvino/sphinx-library>`_ |
+`Documentation <https://vsalvino.github.io/sphinx-library>`_ |
+`PyPI <https://pypi.org/project/sphinx-library/>`_
