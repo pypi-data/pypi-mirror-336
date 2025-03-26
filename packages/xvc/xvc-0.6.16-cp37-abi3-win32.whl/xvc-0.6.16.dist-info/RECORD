@@ -1,0 +1,6 @@
+xvc-0.6.16.dist-info/METADATA,sha256=wS80xlCUnJ96DgL7_6P387sv72xEGvZdi2lJm5xyGoc,56508
+xvc-0.6.16.dist-info/WHEEL,sha256=Op4Cwpue0hHms7dd4InfWfWpy2dyzGCreKE7T50aNnU,90
+xvc-0.6.16.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+xvc/__init__.py,sha256=fvm5vc5swGhphQKmrAySwmtpDhLTrERanZ_oxDKVKHg,95
+xvc/xvc.pyd,sha256=YniMuTORgmpwYD_Llk3r_cZg4eNStTB6vNCiEZqNLDk,15643648
+xvc-0.6.16.dist-info/RECORD,,
