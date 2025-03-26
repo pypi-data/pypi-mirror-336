@@ -1,0 +1,2 @@
+django_auto_drf
+tests
