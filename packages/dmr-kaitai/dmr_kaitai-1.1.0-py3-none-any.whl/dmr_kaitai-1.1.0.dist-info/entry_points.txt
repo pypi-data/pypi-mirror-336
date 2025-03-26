@@ -1,0 +1,16 @@
+[console_scripts]
+debug-homebrew = okdmr.kaitai.tools.debug_homebrew:DebugHomebrew.homebrew
+debug-hytera-dds = okdmr.kaitai.tools.debug_hytera:DebugHytera.dds
+debug-hytera-dtp = okdmr.kaitai.tools.debug_hytera:DebugHytera.dtp
+debug-hytera-hdap = okdmr.kaitai.tools.debug_hytera:DebugHytera.hdap
+debug-hytera-hrnp = okdmr.kaitai.tools.debug_hytera:DebugHytera.hrnp
+debug-hytera-hstrp = okdmr.kaitai.tools.debug_hytera:DebugHytera.hstrp
+debug-hytera-ipsc = okdmr.kaitai.tools.debug_hytera:DebugHytera.ipsc
+debug-hytera-lp = okdmr.kaitai.tools.debug_hytera:DebugHytera.lp
+debug-hytera-rcp = okdmr.kaitai.tools.debug_hytera:DebugHytera.rcp
+debug-hytera-rrs = okdmr.kaitai.tools.debug_hytera:DebugHytera.rrs
+debug-hytera-tmp = okdmr.kaitai.tools.debug_hytera:DebugHytera.tmp
+debug-hytera-tp = okdmr.kaitai.tools.debug_hytera:DebugHytera.tp
+debug-mmdvm = okdmr.kaitai.tools.debug_homebrew:DebugHomebrew.mmdvm
+debug-motorola-ars = okdmr.kaitai.tools.debug_motorola:DebugMotorola.ars
+debug-motorola-tmp = okdmr.kaitai.tools.debug_motorola:DebugMotorola.tmp
