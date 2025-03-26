@@ -1,0 +1,84 @@
+Metadata-Version: 2.4
+Name: dash-leaflet-basemaps
+Version: 0.1.2
+Summary: A extra layer type to manage basemaps in dash-leaflet
+Project-URL: Homepage, https://github.com/12rambau/dash-leaflet-basemaps
+Author-email: Pierrick Rambaud <pierrick.rambaud49@gmail.com>
+License: MIT
+License-File: AUTHORS.rst
+License-File: LICENSE
+Keywords: Python,skeleton
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: dash-leaflet
+Requires-Dist: deprecated>=1.2.14
+Requires-Dist: python-box
+Requires-Dist: xyzservices
+Provides-Extra: doc
+Requires-Dist: pydata-sphinx-theme; extra == 'doc'
+Requires-Dist: sphinx-autoapi; extra == 'doc'
+Requires-Dist: sphinx-copybutton; extra == 'doc'
+Requires-Dist: sphinx-design; extra == 'doc'
+Requires-Dist: sphinx>=6.2.1; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-deadfixtures; extra == 'test'
+Requires-Dist: pytest-sugar; extra == 'test'
+Description-Content-Type: text/x-rst
+
+
+Dash Leaflet Basemaps
+=====================
+
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg?logo=opensourceinitiative&logoColor=white
+    :target: LICENSE
+    :alt: License: MIT
+
+.. image:: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?logo=git&logoColor=white
+   :target: https://conventionalcommits.org
+   :alt: conventional commit
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Black badge
+
+.. image:: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier&logoColor=white
+   :target: https://github.com/prettier/prettier
+   :alt: prettier badge
+
+.. image:: https://img.shields.io/badge/pre--commit-active-yellow?logo=pre-commit&logoColor=white
+    :target: https://pre-commit.com/
+    :alt: pre-commit
+
+.. image:: https://img.shields.io/pypi/v/dash-leaflet-basemaps?color=blue&logo=pypi&logoColor=white
+    :target: https://pypi.org/project/dash-leaflet-basemaps/
+    :alt: PyPI version
+
+.. image:: https://img.shields.io/github/actions/workflow/status/12rambau/dash-leaflet-basemaps/unit.yaml?logo=github&logoColor=white
+    :target: https://github.com/12rambau/dash-leaflet-basemaps/actions/workflows/unit.yaml
+    :alt: build
+
+.. image:: https://img.shields.io/codecov/c/github/12rambau/dash-leaflet-basemaps?logo=codecov&logoColor=white
+    :target: https://codecov.io/gh/12rambau/dash-leaflet-basemaps
+    :alt: Test Coverage
+
+.. image:: https://img.shields.io/readthedocs/dash-leaflet-basemaps?logo=readthedocs&logoColor=white
+    :target: https://dash-leaflet-basemaps.readthedocs.io/en/latest/
+    :alt: Documentation Status
+
+Overview
+--------
+
+A extra layer type to manage basemaps in dash-leaflet
+
+Credits
+-------
+
+This package was created with `Copier <https://copier.readthedocs.io/en/latest/>`__ and the `@12rambau/pypackage <https://github.com/12rambau/pypackage>`__ 0.1.11 project template.
