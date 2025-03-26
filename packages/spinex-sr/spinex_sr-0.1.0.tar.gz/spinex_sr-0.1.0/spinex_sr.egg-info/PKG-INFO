@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: spinex_sr
+Version: 0.1.0
+Summary: Symbolic Regression with SPINEX algorithm
+Home-page: https://github.com/mznaser-clemsonr
+Author: M.Z. Naser
+Author-email: mznaser@clemson.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: sympy>=1.7.0
+Requires-Dist: scikit-learn>=0.24.0
+Requires-Dist: scipy>=1.6.0
+Requires-Dist: joblib>=1.0.0
+Requires-Dist: matplotlib>=3.3.0
+Requires-Dist: termcolor>=1.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SPINEX Symbolic Regression
+
+A Python implementation of symbolic regression from the SPINEX family.
+
+## Installation
+
+```bash
+pip install spinex-sr
+```
+
+## Quick Start
+
+```python
+import pandas as pd
+from spinex_sr import SPINEX_SymbolicRegression
+
+# Sample data
+data = pd.DataFrame({
+    'x1': [1, 2, 3],
+    'x2': [4, 5, 6]
+})
+target = [5, 7, 9]
+
+# Initialize and run
+sr = SPINEX_SymbolicRegression(
+    data=data,
+    target=target,
+    actual_function="x1 + x2",
+    population_size=50,
+    generations=20
+)
+best_expression = sr.evolve()
+print(f"Best expression found: {best_expression}")
+```
