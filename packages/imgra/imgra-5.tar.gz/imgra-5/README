@@ -1,0 +1,17 @@
+IMGRA: Image Processing With Graphs
+===================================
+
+This is destined to be like imscript, but for functions defined on graphs.
+See an example nobetook here: http://dev.ipol.im/~coco/demoimgra.html
+
+Most of the code is independent of images, and works for functions defined on
+the vertices of arbitrary graphs.  Image processing is a particular case when
+the graph in question is a grid-graph.
+
+The best documentation is the code on file imgra.py
+
+You can open it as a notebook if you have jupytext.
+
+Available as "pip install imgra"
+
+Run "imgra.demo()" to see the Poisson editing demo.
