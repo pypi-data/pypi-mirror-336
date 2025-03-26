@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: split_dataset01
+Version: 1.0
+Summary: 将数据集划分为训练、验证、测试集
+Author: jiangdexin
+Author-email: 1067407157@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
