@@ -1,0 +1,36 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the EULA license.
+
+import json
+
+from fabric_cli.client import fab_api_gateway as gateway_api
+from fabric_cli.core.fab_hiearchy import VirtualWorkspace
+from fabric_cli.utils import fab_mem_store as utils_mem_store
+from fabric_cli.utils import fab_ui as utils_ui
+
+
+def exec(vws: VirtualWorkspace, args, show_details):
+    _base_cols = ["name", "id"]
+    _details_cols = ["type", "capacityId", "numberOfMemberGateways", "version"]
+    gateways = utils_mem_store.get_gateways(vws.get_tenant())
+    sorted_gateways = sorted(
+        [
+            {"name": g.get_name(), "id": g.get_id(), "displayName": g.get_short_name()}
+            for g in gateways
+        ],
+        key=lambda item: item["name"],
+    )
+
+    if show_details:
+        fab_response = gateway_api.list_gateways(args)
+        if fab_response.status_code in {200, 201}:
+            _gateways: list = json.loads(fab_response.text)["value"]
+            for gateway in sorted_gateways:
+                gateway_details: dict[str, str] = next(
+                    (c for c in _gateways if c["id"] == gateway["id"]), {}
+                )
+                for col in _details_cols:
+                    gateway[col] = gateway_details.get(col, "Unknown")
+
+    columns = _base_cols + _details_cols if show_details else ["name"]
+    utils_ui.print_entries_unix_style(sorted_gateways, columns, header=show_details)
