@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+rotatepdf/__init__.py
+rotatepdf/rotatepdf.py
+rotatepdf.egg-info/PKG-INFO
+rotatepdf.egg-info/SOURCES.txt
+rotatepdf.egg-info/dependency_links.txt
+rotatepdf.egg-info/entry_points.txt
+rotatepdf.egg-info/requires.txt
+rotatepdf.egg-info/top_level.txt
+tests/test_rotatepdf.py

@@ -1,0 +1,7 @@
+PyPDF2<3
+
+[dev]
+pytest
+pytest-cov
+ruff
+tox

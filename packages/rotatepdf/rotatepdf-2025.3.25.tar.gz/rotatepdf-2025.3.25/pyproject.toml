@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rotatepdf"
+version = "2025.03.25"
+description = "Rotate PDF easily from command line"
+authors = [
+    { name = "Andre Miras" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "PyPDF2<3"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "tox",
+]
+
+[project.scripts]
+rotatepdf = "rotatepdf:main"
+
+[project.urls]
+Homepage = "https://github.com/AndreMiras/rotatepdf"
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "rotatepdf"]
+addopts = "--cov=rotatepdf --doctest-modules"
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "Q"]
+
+[tool.setuptools]
+packages = ["rotatepdf"]
