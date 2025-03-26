@@ -1,0 +1,2 @@
+[console_scripts]
+dict-unpacking-at-home-show = dict_unpacking_at_home:main
