@@ -1,0 +1,26 @@
+[project]
+name = "mystats_zzh"  # 修正为与包名一致
+version = "0.1.1"
+description = "统计假设检验工具包（秩和检验/t检验）"
+readme = "readme.md"
+authors = [
+    { name = "zzh", email = "zhaochenxian@outlook.com" },
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+# 在 pyproject.toml 中添加以下配置
+[tool.setuptools]
+package-dir = { "" = "src" }  
+packages = { find = { where = ["src"] } }  
+
+[tool.setuptools.package-data]
+"mystats_zzh.data_tables" = ["*.json"]
+
