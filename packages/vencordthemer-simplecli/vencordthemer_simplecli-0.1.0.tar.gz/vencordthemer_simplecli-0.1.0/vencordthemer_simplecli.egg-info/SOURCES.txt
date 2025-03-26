@@ -1,0 +1,12 @@
+README.md
+setup.py
+cli/__init__.py
+cli/cli.py
+cli/command.py
+cli/interactive.py
+cli/menu.py
+cli/utils.py
+vencordthemer_simplecli.egg-info/PKG-INFO
+vencordthemer_simplecli.egg-info/SOURCES.txt
+vencordthemer_simplecli.egg-info/dependency_links.txt
+vencordthemer_simplecli.egg-info/top_level.txt
