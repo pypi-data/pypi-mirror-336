@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: GetLatestGamePrices
+Version: 0.1.0
+Summary: This Package gets you the deals about a single game from ggdeals. also this is my first package to learn about things like packages, version control, ci/cd pipelines.
+Home-page: https://github.com/Abhay_Cerberus/package
+Author: AbhayCerberus
+Author-email: mistercerberus01+pypiPackage@gmail.com
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
