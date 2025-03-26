@@ -1,0 +1,1 @@
+D:\a\pylibde265\pylibde265\libde265\build\libde265\encoder\encoder.dir\Release\encoder.lib

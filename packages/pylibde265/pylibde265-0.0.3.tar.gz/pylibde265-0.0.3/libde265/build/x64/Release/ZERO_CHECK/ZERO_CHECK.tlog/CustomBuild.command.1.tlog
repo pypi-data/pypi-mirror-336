@@ -1,0 +1,10 @@
+^D:\A\PYLIBDE265\PYLIBDE265\LIBDE265\BUILD\CMAKEFILES\8D730523AA65F2C3A213A9120C42ED5B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/pylibde265/pylibde265/libde265 -BD:/a/pylibde265/pylibde265/libde265/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/a/pylibde265/pylibde265/libde265/build/libde265.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

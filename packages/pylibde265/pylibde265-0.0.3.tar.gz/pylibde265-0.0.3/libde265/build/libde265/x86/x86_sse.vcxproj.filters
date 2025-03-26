@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\pylibde265\pylibde265\libde265\libde265\x86\sse-motion.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\pylibde265\pylibde265\libde265\libde265\x86\sse-dct.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\a\pylibde265\pylibde265\libde265\libde265\x86\sse-motion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\pylibde265\pylibde265\libde265\libde265\x86\sse-dct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\pylibde265\pylibde265\libde265\libde265\x86\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{388BF260-97F0-347A-9D5E-541F4CC41F77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1CA23DC8-9361-3E02-AF17-CEBA46A3C7A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

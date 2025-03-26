@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\a\pylibde265\pylibde265\libde265\build\CMakeFiles\1697a434b6ff353d71f2e9adae2ae733\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B294B532-D941-34DA-8569-C604BE414E61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
