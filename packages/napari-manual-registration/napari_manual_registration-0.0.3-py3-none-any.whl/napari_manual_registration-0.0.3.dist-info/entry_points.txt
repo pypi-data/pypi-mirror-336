@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-manual-registration = napari_manual_registration:napari.yaml
