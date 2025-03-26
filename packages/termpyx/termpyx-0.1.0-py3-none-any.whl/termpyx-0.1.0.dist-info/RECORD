@@ -1,0 +1,7 @@
+termpyx/__init__.py,sha256=--a3QMIH1T527elr2NoiK4eaZVVq_5BhCk8EaudskzM,36
+termpyx/src/abs/console.py,sha256=Vd8JoaAvq8QcpzUs5s7hmvPMRiXwqIp9y4LLFgMRocY,666
+termpyx/src/enums/color.py,sha256=nslhTKfsgDGhAabjzsMtecT46kSFUcbs6XTZRuqreCs,593
+termpyx/src/obj/console.py,sha256=cL19XTi_pDgm8GNTLwfMPXe9aot8PmtshQTjjARPgZk,4520
+termpyx-0.1.0.dist-info/METADATA,sha256=aWqvErUCI09UNmI4AbsQ2kr1zs-C2dTh_JyiHrNdZxA,4028
+termpyx-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+termpyx-0.1.0.dist-info/RECORD,,
