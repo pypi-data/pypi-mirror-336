@@ -1,0 +1,8 @@
+madsci/resource_manager/__init__.py,sha256=aBvd6WJsQKeRGDvhwrNm4BKJNozFRSFFQOyirmfZ9T4,31
+madsci/resource_manager/resource_interface.py,sha256=CE_n8xZSyUGRAqPa7XpGqusbyRiDGrC8Md37Sx1tM74,32000
+madsci/resource_manager/resource_server.py,sha256=Cs_6A4FfwRgoGc9AC7N3iqdjTEiZ7TPlJaZ9kkRWxl4,16398
+madsci/resource_manager/resource_tables.py,sha256=bD1bXsZ9aZv7I01Bcr-s9XlfB74Lyi4zhupM-OwRmok,9269
+madsci_resource_manager-0.1.7.dist-info/METADATA,sha256=VZS8m9VBOu4JPMsH0WLuPuBTv0DuW4VOMCqjnEXGxS4,8684
+madsci_resource_manager-0.1.7.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+madsci_resource_manager-0.1.7.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+madsci_resource_manager-0.1.7.dist-info/RECORD,,
