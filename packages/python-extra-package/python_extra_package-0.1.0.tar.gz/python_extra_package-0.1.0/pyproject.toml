@@ -1,0 +1,27 @@
+[project]
+name = "python-extra-package"
+version = "0.1.0"
+description = "a package containing multiple subpackages"
+authors = [
+    {name = "Sangyeop Kim",email = "sangykimiv@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+repository = "https://github.com/psymoney/python-extra-package"
+dependencies = [
+]
+
+[project.optional-dependencies]
+
+[tool.poetry]
+packages = [
+    { include = "python-extra-package" }
+]
+
+[tool.poetry.extras]
+extra = ["sub_a", "sub_b"]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
