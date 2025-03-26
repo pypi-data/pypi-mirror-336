@@ -1,0 +1,3 @@
+[console_scripts]
+AlibabaDevopsShijianShouceFix1 = AlibabaDevopsShijianShouceFix1.__main__:main
+alibaba-devops-shijian-shouce-fix1 = AlibabaDevopsShijianShouceFix1.__main__:main
