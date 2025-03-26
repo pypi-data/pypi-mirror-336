@@ -1,0 +1,9 @@
+nqueens_solver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nqueens_solver/solver.py,sha256=Ogj2uRdPgiGZXZnqvspfUVMUez4DrrXlfC5AK6lEiH4,1144
+nqueens_solver-0.1.0.dist-info/licenses/LICENSE,sha256=JRiKBugAyecPGwxGdaiDqBrVN9jwc2gVokDHv4kQGRU,1085
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_solver.py,sha256=glu1RvhLEx7Xxgh7Cuc7HfTV1kWH-eNqYvO08NyoRsM,865
+nqueens_solver-0.1.0.dist-info/METADATA,sha256=XE_Ns95s-xZJc8ykjILKloa6wzMHyeGK4ArbybbyZ1o,1118
+nqueens_solver-0.1.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+nqueens_solver-0.1.0.dist-info/top_level.txt,sha256=T8AfXhvwqH6lRW9YOfXkrZVe_I2sPkA8HT6OcQhmPNU,21
+nqueens_solver-0.1.0.dist-info/RECORD,,
