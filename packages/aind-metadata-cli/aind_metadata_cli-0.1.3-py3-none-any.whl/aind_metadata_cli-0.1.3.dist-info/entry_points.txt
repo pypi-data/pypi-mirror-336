@@ -1,0 +1,2 @@
+[console_scripts]
+metadata = aind_metadata_cli.app:main
