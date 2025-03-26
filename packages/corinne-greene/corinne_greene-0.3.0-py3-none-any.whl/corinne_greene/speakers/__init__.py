@@ -1,0 +1,1 @@
+from .corinne import Corinne
