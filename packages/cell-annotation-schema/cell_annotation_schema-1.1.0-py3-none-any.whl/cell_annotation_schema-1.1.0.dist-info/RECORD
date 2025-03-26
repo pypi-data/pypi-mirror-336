@@ -1,0 +1,15 @@
+cas_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cas_schema/catalog.yaml,sha256=IN6Byae96nOAHxQPgChTm--drVBwDTAN72chpnzReS8,123
+cas_schema/json_utils.py,sha256=1_q4wmtsitCdaisNhW4iNilOZuogPrwVRHWGi9WKf1c,4163
+cas_schema/schema_docs.py,sha256=qzNJD6_6Udp7CYxOmsk4_6TKvp1aGez2wV-C0iR3Dh8,13274
+cas_schema/schema_manager.py,sha256=uWv9rhfWhCqAE16CO-TUyet8AKser6PtXNh3n_YQJ90,2611
+cas_schema/schema_merger.py,sha256=9Y7oKSxxmdQnNcOukcHrTTjDlRWH-HHyfWRhW76E7dY,1789
+cas_schema/schema_validator.py,sha256=eOW7QeGRDexFSxUMMT8CWGNvf4W6cL-Gpoe1HLJzxsA,5199
+cas_schema/schemas/BICAN_schema.json,sha256=tkL84s3cSzDDY-I5pobZb6uv7toT9pd0dhTcSUlZlAs,17266
+cas_schema/schemas/CAP_schema.json,sha256=QyBoVJJqzwT3docqbn2mav46uQ2xwKlQMt1USJKbdq8,16929
+cas_schema/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cas_schema/schemas/general_schema.json,sha256=cSVbAAxMHtNDiX3pZua4tW_t2ICE1KwNKcJ5MFj2M04,13254
+cell_annotation_schema-1.1.0.dist-info/METADATA,sha256=MVcoydASIbvYg0TOnibZyYFAD5ZCS_OTcWsCoF_f0Ys,4884
+cell_annotation_schema-1.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+cell_annotation_schema-1.1.0.dist-info/top_level.txt,sha256=05AOISE26ddJiNlYJb-7lyFbobsRH1TSF1rAXfFAhbE,11
+cell_annotation_schema-1.1.0.dist-info/RECORD,,
