@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: smarthub-extension
+Version: 0.1.0
+Summary: SmartHub MCP extension for Goose
+Project-URL: Homepage, https://github.com/block/smarthub-extension
+Project-URL: Documentation, https://block.github.io/goose/docs/tutorials/custom-extensions
+Author-email: Block <goose@squareup.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: mcp>=1.4.1
+Requires-Dist: snowflake-connector-python>=3.14.0
+Requires-Dist: typer>=0.15.0
+Requires-Dist: uvicorn>=0.34.0
+Description-Content-Type: text/markdown
+
+# SmartHub MCP Extension
+
+A Goose extension for accessing SmartHub data through Snowflake.
+
+## Installation
+
+```bash
+pip install smarthub-extension
+```
+
+## Usage
+
+### With Goose
+
+Add to your Goose configuration:
+
+```yaml
+extensions:
+  smarthub:
+    type: stdio
+    command: smarthub run --transport stdio
+    environment:
+      PYTHONPATH: /path/to/smarthub_extension
+      SMARTHUB_LOG_FILE: /tmp/smarthub_mcp.log
+```
+
+### Standalone Server
+
+Run as a standalone server:
+
+```bash
+smarthub run --transport http --host 127.0.0.1 --port 8000
+```
+
+## Features
+
+- Query merchant information by token or business ID
+- Access AM ownership data
+- View business relationships and hierarchies
+- Track merchant history and status
+
+## Development
+
+1. Clone the repository
+2. Create a virtual environment
+3. Install dependencies:
+   ```bash
+   pip install -e .
+   ```
+4. Run tests:
+   ```bash
+   pytest
+   ```
+
+## License
+
+MIT
