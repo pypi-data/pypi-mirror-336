@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguTonggangJqueryFix1 = ShangGuiguTonggangJqueryFix1.__main__:main
+shang-guigu-tonggang-jquery-fix1 = ShangGuiguTonggangJqueryFix1.__main__:main
