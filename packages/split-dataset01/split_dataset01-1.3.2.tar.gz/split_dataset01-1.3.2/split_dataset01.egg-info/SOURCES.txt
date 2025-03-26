@@ -1,0 +1,9 @@
+README.md
+setup.py
+split_dataset01/__init__.py
+split_dataset01/splitter.py
+split_dataset01.egg-info/PKG-INFO
+split_dataset01.egg-info/SOURCES.txt
+split_dataset01.egg-info/dependency_links.txt
+split_dataset01.egg-info/requires.txt
+split_dataset01.egg-info/top_level.txt
