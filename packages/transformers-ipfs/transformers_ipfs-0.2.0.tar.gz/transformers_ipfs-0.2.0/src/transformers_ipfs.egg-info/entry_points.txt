@@ -1,0 +1,2 @@
+[console_scripts]
+transformers-ipfs = transformers_ipfs.cli:main
