@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: ninja-protection
+Version: 0.1.0
+Summary: Interactive CLI tool for system optimization and monitoring using psutil (LOGGIE infrastructure)
+Home-page: https://github.com/loggie-eth/ninja-protection
+Author: loggie.eth
+Author-email: founder@loggie.ai
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil
+Requires-Dist: redis
+Requires-Dist: termcolor
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# 🧰 logninja-system-optimizer
+
+A secure, interactive CLI utility for optimizing system performance, including CPU, memory, disk, and network usage, built for the **LOGGIE** decentralized infrastructure stack.
+
+> 🔐 Part of the LogNinja Ecosystem  
+> 👤 Maintained by: [loggie.eth](https://sepolia.etherscan.io/address/0x8FF60880d97b1E088a3c480e727fa3CefF044712)  
+> 🪙 Powered by: [LOGGIE Token](https://sepolia.etherscan.io/token/0x0bDB1e28D64b080892c5A7f9D56b1F98E5Cbf576)
+
+---
+
+## 🚀 What is this?
+
+This tool helps optimize system resources by managing CPU, memory, disk, and network usage. It's perfect for:
+- Enhancing system performance in real-time
+- Managing server resources effectively
+- Automating resource optimization for Linux-based systems
+
+---
+
+## ⚙️ Features
+
+- ✅ Real-time monitoring of CPU, memory, disk, and network usage
+- ✅ Dynamic adjustment of system resources (e.g., lowering CPU process priority)
+- ✅ Soft throttle of network usage to avoid congestion
+- ✅ Logging to both terminal and `optimization.log`
+- ✅ Customizable DefCon levels for prioritizing system alerts
+- ✅ Configurable optimization intervals via CLI
+
+---
+
+## 📦 Installation
+
+```bash
+pip install logninja-system-optimizer
