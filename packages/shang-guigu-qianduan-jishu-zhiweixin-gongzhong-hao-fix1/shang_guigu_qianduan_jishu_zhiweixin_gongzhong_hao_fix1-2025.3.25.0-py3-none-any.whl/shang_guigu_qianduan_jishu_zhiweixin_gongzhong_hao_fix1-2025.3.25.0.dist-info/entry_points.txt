@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguQianduanJishuZhiweixinGongzhongHaoFix1 = ShangGuiguQianduanJishuZhiweixinGongzhongHaoFix1.__main__:main
+shang-guigu-qianduan-jishu-zhiweixin-gongzhong-hao-fix1 = ShangGuiguQianduanJishuZhiweixinGongzhongHaoFix1.__main__:main
