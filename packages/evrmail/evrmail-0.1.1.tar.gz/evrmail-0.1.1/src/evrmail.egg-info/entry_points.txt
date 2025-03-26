@@ -1,0 +1,2 @@
+[console_scripts]
+evrmail = evrmail.__init__:main
