@@ -1,0 +1,16 @@
+mappingtools/__init__.py,sha256=KY-PZDrak3rEu3yqmMrW-2-Og_7pw65HHPH2ub0H5gY,61
+mappingtools/_tools.py,sha256=z8FQlwr638E8jjZE9PiqcX2gqj01o7ggIJqdjC8Kb8E,332
+mappingtools/collectors.py,sha256=nvky1LyJB8dxXm50tdrRg7O9JFCiHx9SWdgsmOVhY4g,5837
+mappingtools/operators.py,sha256=PdCTZbqKnKpdoOir75itOhwRPv1RdvOW5TwBUbnmP9A,6458
+mappingtools/typing.py,sha256=B32FzPLdRUalbuO9s6nILJ9vmlw2YQ5CjqC7y0AZ6cQ,172
+mappingtools/transformers/__init__.py,sha256=6QxsxjKLr0sB26wg5Wz6bFkCES8sn8fCGeWn3W3Eg3s,276
+mappingtools/transformers/listify.py,sha256=VTR3kS3kczMMY4hjCsfHz3ZeCczlmJG4XoN_Gs8jSeU,1244
+mappingtools/transformers/minify.py,sha256=rEmCscqXfIic-tNXO5njBquGfsEAV5bOglDZqLzeLBU,725
+mappingtools/transformers/simplify.py,sha256=IGu6KKB9qN-L0xmrl2j9zRho4ALWLDR3gJNlJ9PXCOU,317
+mappingtools/transformers/strictify.py,sha256=kwWpqJwy4wUDJDoFIHJUQVL3fe56TV0FKgaM7gCZ2oQ,1781
+mappingtools/transformers/stringify.py,sha256=Gww80T-5B2tpI2tLf2QsitgPvbr3rOjKcLeZAbEauhk,1883
+mappingtools/transformers/transformer.py,sha256=TbN5WygK0TUeeD-nH0CM8hoFpPHjzrbaTLQFwiRusVA,2841
+mappingtools-0.4.0.dist-info/METADATA,sha256=9Ml_zkIPUhdc_OQAVh0txNFILR2cCEX4CC0Mus2rtfk,20124
+mappingtools-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mappingtools-0.4.0.dist-info/licenses/LICENSE,sha256=fiCxD4qmBY6VdONaK43ANsvpmf9oxSpFLHaFaij0Jx4,1068
+mappingtools-0.4.0.dist-info/RECORD,,
