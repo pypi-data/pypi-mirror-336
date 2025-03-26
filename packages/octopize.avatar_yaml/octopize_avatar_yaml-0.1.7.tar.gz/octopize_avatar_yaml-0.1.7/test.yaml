@@ -1,0 +1,87 @@
+kind: AvatarVolume
+metadata:
+  name: test_metadata
+spec:
+  url: http://example.com
+
+---
+kind: AvatarVolume
+metadata:
+  name: volume_results
+spec:
+  url: http://example.com
+
+---
+kind: AvatarSchema
+metadata:
+  name: set_name
+spec:
+  tables:
+  - name: example_data
+    data:
+      volume: test_metadata
+      file: iris.csv
+    columns:
+    - field: id
+      primary_key: true
+    - field: id_1, id_2
+      identifier: true
+
+---
+kind: AvatarSchema
+metadata:
+  name: set_name_avatarized
+spec:
+  tables:
+  - name: example_data
+    avatars_data:
+      auto: true
+  schema_ref: set_name
+
+---
+kind: AvatarParameters
+metadata:
+  name: avatarization
+spec:
+  schema: set_name
+  avatarization:
+    example_data:
+      k: 3
+  results:
+    volume: volume_results
+    path: avatarization
+  seed: 1
+
+---
+kind: AvatarPrivacyMetricsParameters
+metadata:
+  name: privacy
+spec:
+  schema: set_name_avatarized
+  avatarization_ref: avatarization
+  results:
+    volume: volume_results
+    path: privacy_metrics
+  seed: 1
+
+---
+kind: AvatarSignalMetricsParameters
+metadata:
+  name: signal
+spec:
+  schema: set_name_avatarized
+  avatarization_ref: avatarization
+  results:
+    volume: volume_results
+    path: signal_metrics
+  seed: 1
+
+---
+kind: AvatarReportParameters
+metadata:
+  name: report
+spec:
+  report_type: basic
+  results:
+    volume: volume_results
+    path: report
