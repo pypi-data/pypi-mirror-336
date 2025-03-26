@@ -1,0 +1,6 @@
+[console_scripts]
+uls_predict_folder = unet_lungs_segmentation.cli:cli_predict_folder
+uls_predict_image = unet_lungs_segmentation.cli:cli_predict_image
+
+[napari.manifest]
+unet-lungs-segmentation = unet_lungs_segmentation:napari.yaml
