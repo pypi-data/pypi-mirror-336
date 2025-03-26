@@ -1,0 +1,12 @@
+[project]
+name = "whereami-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.4.1",
+]
+[project.scripts]
+whereami-mcp = "whereami.main:main"
