@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+mmplayer_mcp_server.egg-info/PKG-INFO
+mmplayer_mcp_server.egg-info/SOURCES.txt
+mmplayer_mcp_server.egg-info/dependency_links.txt
+mmplayer_mcp_server.egg-info/entry_points.txt
+mmplayer_mcp_server.egg-info/requires.txt
+mmplayer_mcp_server.egg-info/top_level.txt
+voice/main.py
