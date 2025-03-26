@@ -1,0 +1,3 @@
+[console_scripts]
+ShishiShucangJishuRumenYibenTongFix1 = ShishiShucangJishuRumenYibenTongFix1.__main__:main
+shishi-shucang-jishu-rumen-yiben-tong-fix1 = ShishiShucangJishuRumenYibenTongFix1.__main__:main
