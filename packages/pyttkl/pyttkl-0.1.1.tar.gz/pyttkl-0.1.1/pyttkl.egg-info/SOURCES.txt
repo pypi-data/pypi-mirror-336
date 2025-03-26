@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyttkl.egg-info/PKG-INFO
+pyttkl.egg-info/SOURCES.txt
+pyttkl.egg-info/dependency_links.txt
+pyttkl.egg-info/requires.txt
+pyttkl.egg-info/top_level.txt
