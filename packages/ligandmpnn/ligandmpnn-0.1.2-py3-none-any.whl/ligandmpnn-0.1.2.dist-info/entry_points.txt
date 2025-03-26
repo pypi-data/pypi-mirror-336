@@ -1,0 +1,4 @@
+[console_scripts]
+ligand_mpnn = ligandmpnn.run:main
+ligandmpnn = ligandmpnn.run:main
+mpnn = ligandmpnn.run:main
