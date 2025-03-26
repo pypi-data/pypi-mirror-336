@@ -1,0 +1,6 @@
+aws_auth/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+aws_auth/aws_auth.py,sha256=9Eb4ch8VHgGahVzQNRK6mv7NDD4R3JZMob5Oa0ucNcQ,7121
+aws_auth_utils-1.0.0.dist-info/METADATA,sha256=WSkX5UOeetLSmIpMtXmyiQaYWb6qjVJFZpmoHAOgpkA,4173
+aws_auth_utils-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aws_auth_utils-1.0.0.dist-info/entry_points.txt,sha256=-APs_F4NUk3Hd66-NLP-NzFL_S44maVMLJQ-1hR1yKw,51
+aws_auth_utils-1.0.0.dist-info/RECORD,,
