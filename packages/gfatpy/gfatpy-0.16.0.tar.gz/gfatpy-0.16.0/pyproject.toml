@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "gfatpy"
+version = "0.16.0"  # You can specify your actual version here
+description = "A python package for GFAT utilities"
+authors = ["Juan Diego De la Rosa <jdidelarc@gmail.com>"]
+license = "BSD-3-Clause"  # Adjust the license if different
+readme = "README.md"
+homepage = "https://gfat1.gitlab.io/gfatpy"
+packages = [{ include = "gfatpy" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10.5, <3.12"
+numpy = ">=1.26.4,<2"
+pandas = ">=2.2.2"
+matplotlib = ">=3.10.0"
+scipy = ">=1.13.1,<2"
+netCDF4 = ">=1.7.2,<2"
+loguru = ">=0.7.0,<1"
+xarray = ">=2025.1.2,<2026"
+dask = ">=2024.11.2,<2025"
+typer = ">=0.15.1,<1"
+PyYAML = ">=6.0.2,<7"
+requests = ">=2.32.3,<3"
+notebook = ">=6.5.5,<7"
+ipywidgets = ">=7.7.1,<9"
+typing-extensions = ">=4.12.0,<5"
+seaborn = ">=0.13.2,<0.14"
+numba = ">=0.60.0,<1"
+linc = "==3.0.1"
+atmospheric_lidar = "==0.5.4"
+pyarrow = ">=18.1.0,<19"
+rpgpy = ">=0.15.1,<0.16"
+statsmodels = ">=0.14.4,<0.15"
+importlib = "*"
+
+[tool.project.optional-dependencies]
+docs = ["pdoc>=15.0.1,<16"]
+jupyter = []
+
+[tool.poetry.group.test.dependencies]
+pytest = ">8,<8.3.5"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=22.6.0,<23"
+pre-commit = ">=2.20.0,<3"
+pykalman = ">=0.9.5,<0.10"
+pyts = ">=0.11.0,<0.12"
+
+[tool.poetry.scripts]
+gfatpy = "gfatpy.cli.main:app"
+
+[build-system]
+requires = ["poetry-core>=1.6.0"]
+build-backend = "poetry.core.masonry.api"
