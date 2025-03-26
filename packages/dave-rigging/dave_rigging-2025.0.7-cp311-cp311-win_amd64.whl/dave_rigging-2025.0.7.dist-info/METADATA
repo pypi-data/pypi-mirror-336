@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: dave-rigging
+Version: 2025.0.7
+Summary: Add rigging to your dave model
+Author-email: Ruben de Bruin <ruben@davelab.nl>
+License-Expression: LicenseRef-Proprietary
+Project-URL: Homepage, https://usedave.nl
+Project-URL: Issues, https://github.com/dave-Lab-and-Engineering/dave/issues
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: dave-base-extensions>=2025.0.8
+Requires-Dist: dave-qc>=2025.1.6
+Requires-Dist: dave-reporting>=2025.0.6
+Requires-Dist: usedave>=2025.1.5
+Requires-Dist: dave-timeline>=2025.0.6
+Provides-Extra: build
+Requires-Dist: setuptools>=75.8.0; extra == "build"
+Requires-Dist: cython>=3.0.11; extra == "build"
+Requires-Dist: wheel>=0.45.1; extra == "build"
+Requires-Dist: setuptools-scm>=8.1.0; extra == "build"
+Requires-Dist: build>=1.2.2; extra == "build"
+Requires-Dist: python-build-utils>=0.0.2; extra == "build"
+Dynamic: license-file
+
+# dave-rigging
+
+    Add rigging to your dave models
+
+This module allows to add rigging to your models
