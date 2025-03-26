@@ -1,0 +1,3 @@
+[console_scripts]
+ShangGuiguXujinglongHtmlFix1 = ShangGuiguXujinglongHtmlFix1.__main__:main
+shang-guigu-xujinglong-html-fix1 = ShangGuiguXujinglongHtmlFix1.__main__:main
