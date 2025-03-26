@@ -1,0 +1,50 @@
+[project]
+name = "lhcbdiracx-logic"
+description = "TODO"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = []
+license = { text = "GPL-3.0-only" }
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Distributed Computing",
+]
+
+dependencies = ["diracx-logic"]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+types = [
+    "boto3-stubs",
+    "types-aiobotocore[essential]",
+    "types-aiobotocore-s3",
+    "types-cachetools",
+    "types-python-dateutil",
+    "types-PyYAML",
+    "types-requests",
+]
+
+[project.entry-points."diracx.services"]
+bookkeeping = "lhcbdiracx.routers.bookkeeping:router"
+
+
+[project.entry-points."diracx.access_policies"]
+bookkeepingAccessPolicy = "lhcbdiracx.routers.bookkeeping.access_policy:BookkeepingAccessPolicy"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61", "wheel", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+root = ".."
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

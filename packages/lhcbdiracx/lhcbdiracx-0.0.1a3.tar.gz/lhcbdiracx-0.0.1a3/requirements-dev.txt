@@ -1,0 +1,5 @@
+-e ./lhcbdiracx-core/[testing]
+-e ./lhcbdiracx-routers/[testing]
+-e ./lhcbdiracx-db/[testing]
+-e ./lhcbdiracx-testing/[testing]
+-e ./lhcbdiracx-client/[testing]

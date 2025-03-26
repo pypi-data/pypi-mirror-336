@@ -1,0 +1,126 @@
+[project]
+name = "lhcbdiracx"
+description = "Client installation for users of LHCbDiracX installations"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = []
+license = { text = "GPL-3.0-only" }
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Distributed Computing",
+]
+dependencies = [
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+testing = ["lhcbdiracx-testing"]
+
+[tool.setuptools]
+packages = []
+
+[build-system]
+requires = ["setuptools>=61", "wheel", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+root = "."
+
+[tool.ruff]
+line-length = 120
+src = ["lhcbdiracx-*/src", "lhcbdiracx-*/tests"]
+exclude = ["lhcbdiracx-client/src/lhcbdiracx/client/generated"]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errrors
+    "F",   # pyflakes
+    "B",   # flake8-bugbear
+    "I",   # isort
+    "PLE", # pylint errors
+    # "UP",   # pyUpgrade
+    "FLY", # flynt
+    "DTZ", # flake8-datetimez
+    "S",   # flake8-bandit
+]
+
+ignore = [
+    "B905",
+    "B008",
+    "B006",
+    "S101", # bandit: use of assert https://docs.astral.sh/ruff/rules/assert/
+]
+
+
+
+[tool.ruff.lint.flake8-bugbear]
+# Allow default arguments like, e.g., `data: List[str] = fastapi.Query(None)`.
+extend-immutable-calls = [
+    "fastapi.Depends",
+    "fastapi.Query",
+    "fastapi.Path",
+    "fastapi.Body",
+    "fastapi.Header",
+]
+
+[tool.mypy]
+files = [
+#    "lhcbdiracx-api/src/**/*.py",
+    "lhcbdiracx-cli/src/**/*.py",
+    "lhcbdiracx-client/src/**/_patch.py",
+    "lhcbdiracx-client/src/lhcbdiracx/client/patches/**/*.py",
+#    "lhcbdiracx-core/src/**/*.py",
+    "lhcbdiracx-db/src/**/*.py",
+    "lhcbdiracx-routers/src/**/*.py",
+]
+mypy_path = [
+#    "$MYPY_CONFIG_FILE_DIR/lhcbdiracx-api/src",
+    "$MYPY_CONFIG_FILE_DIR/lhcbdiracx-cli/src",
+    "$MYPY_CONFIG_FILE_DIR/lhcbdiracx-client/src",
+#    "$MYPY_CONFIG_FILE_DIR/lhcbdiracx-core/src",
+    "$MYPY_CONFIG_FILE_DIR/lhcbdiracx-db/src",
+    "$MYPY_CONFIG_FILE_DIR/lhcbdiracx-routers/src",
+]
+plugins = ["sqlalchemy.ext.mypy.plugin", "pydantic.mypy"]
+allow_redefinition = true
+explicit_package_bases = true
+# disallow_untyped_defs = true
+# strict = true
+enable_error_code = ["import", "attr-defined"]
+
+[[tool.mypy.overrides]]
+module = 'DIRAC.*'
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = 'authlib.*'
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = [
+    "lhcbdiracx-api/tests",
+    "lhcbdiracx-cli/tests",
+    "lhcbdiracx-client/tests",
+    "lhcbdiracx-core/tests",
+    "lhcbdiracx-db/tests",
+    "lhcbdiracx-routers/tests",
+]
+addopts = [
+    "-v",
+    "--cov=lhcbdiracx",
+    "--cov-report=term-missing",
+    "-plhcbdiracx.testing",
+    "-pdiracx.testing",
+    "-pdiracx.testing.osdb",
+    "--import-mode=importlib",
+]
+asyncio_mode = "auto"
+markers = [
+    "enabled_dependencies: List of dependencies which should be available to the FastAPI test client",
+]

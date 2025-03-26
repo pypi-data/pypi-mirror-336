@@ -1,0 +1,207 @@
+stages:
+  - test
+  - build-wheels
+  - build-image
+  - integration
+  - deploy
+
+variables:
+  PYTHON_VERSION: "3.11"
+
+.setup_micromamba:
+  image: registry.cern.ch/docker.io/condaforge/miniforge3:latest
+  before_script:
+    - eval "$(python -m conda shell.bash hook)"
+    - conda install --yes python=$PYTHON_VERSION m2crypto python-gfal2 mypy pip git
+
+unittest:
+  extends: .setup_micromamba
+  stage: test
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  parallel:
+    matrix:
+      # - package: "./lhcbdiracx-core"
+      #   dependencies: "./lhcbdiracx-testing"
+      - package: "./lhcbdiracx-db"
+        # dependencies: "./lhcbdiracx-testing ./lhcbdiracx-core"
+        dependencies: "./lhcbdiracx-testing"
+      - package: "./lhcbdiracx-logic"
+        # dependencies: "./lhcbdiracx-testing ./lhcbdiracx-db ./lhcbdiracx-core"
+        dependencies: "./lhcbdiracx-testing ./lhcbdiracx-db"
+      - package: "./lhcbdiracx-routers"
+        # dependencies: "./lhcbdiracx-testing ./lhcbdiracx-db ./lhcbdiracx-core"
+        dependencies: "./lhcbdiracx-testing ./lhcbdiracx-db ./lhcbdiracx-logic"
+      - package: "./lhcbdiracx-client"
+        # dependencies: "./lhcbdiracx-testing ./lhcbdiracx-client ./lhcbdiracx-core"
+        dependencies: "./lhcbdiracx-testing"
+      # - package: "./lhcbdiracx-cli"
+      #   # dependencies: "./lhcbdiracx-testing ./lhcbdiracx-client ./lhcbdiracx-core"
+      #   dependencies: "./lhcbdiracx-testing ./lhcbdiracx-client"
+  script:
+    # Add gitlab failure annotation
+    - echo "Testing $package with dependencies $dependencies"
+    - pip install --verbose git+https://github.com/DIRACGrid/DIRAC.git@integration
+    - pip install $dependencies $package[types]
+    - mypy $package/src
+    - cd $package
+    - pip install .[testing]
+    - export DIRACX_EXTENSIONS=lhcbdiracx,diracx
+    - if [ "$package" != "./lhcbdiracx-logic" ]; then pytest --cov-report=xml:coverage.xml --junitxml=report.xml; fi
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+      junit: report.xml
+
+build-wheels:
+  stage: build-wheels
+  image: registry.cern.ch/docker.io/library/python:$PYTHON_VERSION
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - pip install build python-dateutil pytz readme_renderer[md] requests setuptools_scm
+    - |
+      for pkg_dir in $PWD/lhcbdiracx-*; do
+        if [[ "${pkg_dir}" =~ .*testing.* ]]; then
+          echo "Do not build ${pkg_dir}"
+          continue
+        fi
+        echo "Building $pkg_dir"
+        python -m build --outdir $PWD/dist $pkg_dir
+      done
+  artifacts:
+    paths:
+      - dist/*.whl
+    expire_in: 1 week
+
+build-image:
+  stage: build-image
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  image:
+    name:  gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  # needs:
+  #   - build-wheels
+  script:
+    - cp dist/*.whl containers/services/
+    - cp environment.yml containers/services/
+    - |
+      /kaniko/executor --context "${CI_PROJECT_DIR}/containers/services/" \
+      --dockerfile "${CI_PROJECT_DIR}/containers/services/Dockerfile" \
+      --destination "${CI_REGISTRY_IMAGE}/services:dev" \
+      --build-arg EXTRA_PACKAGES_TO_INSTALL=git+https://github.com/DIRACGrid/DIRAC.git@integration \
+      --build-arg EXTENSION_CUSTOM_SOURCES_TO_INSTALL=/bindmount/lhcbdiracx_db*.whl,/bindmount/lhcbdiracx_routers*.whl,/bindmount/lhcbdiracx_client*.whl \
+      --tar-path lhcbdiracx_services_image.tar \
+      --no-push
+
+    #- docker build -t lhcbdiracx/client:dev extensions/containers/client
+    #- docker save lhcbdiracx/services:dev > /tmp/lhcbdiracx_services_image.tar
+  artifacts:
+    paths:
+      - lhcbdiracx_services_image.tar
+    expire_in: 1 week
+
+# pytest-integration:
+#   #extends: .setup_micromamba
+#   image: registry.cern.ch/docker.io/library/ubuntu
+#   stage: integration
+#   tags:
+#     - docker-privileged-xl
+#   needs:
+#     - build-image
+#   services:
+#     - name: registry.cern.ch/docker.io/library/docker:dind
+#       alias: docker
+#     # - name: registry.cern.ch/docker.io/library/docker:25.0.1-dind
+#     #   alias: docker
+#   variables:
+#     DOCKER_TLS_CERTDIR: ""
+#     DOCKER_HOST: tcp://docker:2375/
+#   before_script:
+#     - apt update
+#     - apt install -y curl bzip2 iputils-ping net-tools git
+#     - curl -fsSL https://get.docker.com -o get-docker.sh
+#     - sh ./get-docker.sh
+#     - curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
+#     - eval "$(./bin/micromamba shell hook -s bash --root-prefix "$PWD/micromamba")"
+#     - micromamba create --yes --name test-env --file environment.yml
+#     - micromamba activate test-env
+
+#   script:
+#     - docker load < lhcbdiracx_services_image.tar
+#     - pip install git+https://github.com/DIRACGrid/DIRAC.git@integration
+#     - pip install  ./lhcbdiracx-testing[testing] ./lhcbdiracx-db[testing] ./lhcbdiracx-routers/[testing] ./lhcbdiracx-client/[testing]
+#     - git clone https://github.com/chaen/diracx-charts.git --branch debug_lhcbdiracx ../diracx-charts
+#     - ../diracx-charts/run_demo.sh --enable-open-telemetry --enable-coverage --exit-when-done --set-value developer.autoReload=false --ci-values ../diracx-charts/demo/ci_values.yaml --ci-values values.yaml --load-docker-image "lhcbdiracx/services:dev" $PWD
+#     - export DIRACX_EXTENSIONS=lhcbdiracx,diracx
+#     - pytest --demo-dir=../diracx-charts/ --cov-report=xml:coverage-pytest.xml --junitxml=report.xml
+#   artifacts:
+#     reports:
+#       coverage_report:
+#         coverage_format: cobertura
+#         path: coverage-pytest.xml
+#       junit: report.xml
+
+# client-generation:
+#   extends: .setup_micromamba
+#   stage: integration
+#   script:
+#     # We specify a version of nodejs otherwise it would
+#     # take a very old one
+#     - conda install --yes "nodejs>20.0.0" pre-commit
+#     - pip install git+https://github.com/DIRACGrid/DIRAC.git@integration
+#     - pip install ./lhcbdiracx-testing[testing] ./lhcbdiracx-db[testing] ./lhcbdiracx-routers/[testing] -e ./lhcbdiracx-client/[testing]
+#     - npm install -g autorest
+#     - export DIRACX_EXTENSIONS=lhcbdiracx,diracx
+#     - pytest --no-cov --regenerate-client lhcbdiracx-client/tests/test_regenerate.py
+
+
+# run-kind:
+#   #extends: .setup_micromamba
+#   image: registry.cern.ch/docker.io/library/ubuntu
+#   stage: integration
+#   tags:
+#     - docker-privileged-xl
+#   services:
+#     - name: registry.cern.ch/docker.io/library/docker:dind
+#       alias: docker
+#   variables:
+#     DOCKER_TLS_CERTDIR: ""
+#     DOCKER_HOST: tcp://docker:2375/
+#   before_script:
+#     - apt update
+#     - apt install -y curl bzip2 iputils-ping net-tools git
+#     - curl -fsSL https://get.docker.com -o get-docker.sh
+#     - sh ./get-docker.sh
+#   script:
+#     - git clone https://github.com/chaen/diracx-charts.git --branch debug_lhcbdiracx ../diracx-charts
+#     - ../diracx-charts/reproduce.sh
+
+
+deploy-image:
+  stage: deploy
+  image:
+    name:  gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  # needs:
+  #   - build-wheels
+  only:
+    refs:
+      - master@lhcb-dirac/lhcbdiracx
+  script:
+    - cp dist/*.whl containers/services/
+    # Prepare Kaniko configuration file
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - |
+      /kaniko/executor \
+      --context "${CI_PROJECT_DIR}/containers/services/" \
+      --dockerfile "${CI_PROJECT_DIR}/containers/services/Dockerfile" \
+      --destination "${CI_REGISTRY_IMAGE}/services:dev" \
+      --build-arg EXTRA_PACKAGES_TO_INSTALL=git+https://github.com/DIRACGrid/DIRAC.git@integration \
+      --build-arg EXTENSION_CUSTOM_SOURCES_TO_INSTALL=/bindmount/lhcbdiracx_db*.whl,/bindmount/lhcbdiracx_routers*.whl,/bindmount/lhcbdiracx_client*.whl

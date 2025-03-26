@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: lhcbdiracx
+Version: 0.0.1a3
+Summary: Client installation for users of LHCbDiracX installations
+License: GPL-3.0-only
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Requires-Dist: lhcbdiracx-testing; extra == "testing"
+
+TODO
+====
+
+# Testing
+
+* coverage files aren't saved properly
+
+# Integration tests
+
+* Did not yet manage to run kind on the CERN runners. Should we use a specific runner ?
