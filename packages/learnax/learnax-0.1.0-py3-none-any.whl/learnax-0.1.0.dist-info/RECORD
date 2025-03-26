@@ -1,0 +1,9 @@
+docs/conf.py,sha256=HsrKdfWfcLgY8PmYbrWVb9Xv-swxMp4Ps7fpbMTcPKQ,1585
+learnax/__init__.py,sha256=uGAHa6BeO_07WH3aBrFhmukU-fKZFdiB-89FTwjJVGc,91
+learnax/registry.py,sha256=JPzDgW0NM_pEhEqYK1FQhc1Zi7Jc_smUqQcGFdjoI_c,4184
+learnax/trainer.py,sha256=aWo_dl1nkvm4yUhr1e5dCg3Im9nRVVmA4Kq0EdBKOd4,14444
+learnax/utils.py,sha256=HlVVgS3xSI31bGm6jmJF7S6whlIS-lJcEKSfq6CG_CI,530
+learnax-0.1.0.dist-info/METADATA,sha256=cJt1xxQvacRqRkgaiiRwfFq65BaZR4jKMVcP6j7KFZQ,675
+learnax-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+learnax-0.1.0.dist-info/top_level.txt,sha256=CrdYd6pEjjMcjIK_eFbhMz8KF1Pd2hv2uhH5Wmfabyo,18
+learnax-0.1.0.dist-info/RECORD,,
