@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "aserto"
+version = "0.32.2"
+description = "Aserto API client"
+readme = "README.md"
+authors = ["Aserto, Inc. <pypi@aserto.com>"]
+maintainers = ["authereal <authereal@aserto.com>"]
+homepage = "https://github.com/aserto-dev/aserto-python/tree/HEAD"
+repository = "https://github.com/aserto-dev/aserto-python/tree/HEAD"
+documentation = "https://github.com/aserto-dev/aserto-python/tree/HEAD"
+license = "Apache-2.0"
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+  "Typing :: Typed",
+]
+packages = [
+    {include = "aserto", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.10.2"
+aserto-directory = "^0.33.8"
+aserto-authorizer = "^0.20.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+pytest-asyncio = "^0.23"
+pyright = "^1.1.0"
+requests = "^2.31.0"
+grpc-stubs = ">=1.53.0.5"
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+max-line-length = 100
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "too-many-arguments",
+    "too-many-positional-arguments",
+    "too-many-public-methods",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
