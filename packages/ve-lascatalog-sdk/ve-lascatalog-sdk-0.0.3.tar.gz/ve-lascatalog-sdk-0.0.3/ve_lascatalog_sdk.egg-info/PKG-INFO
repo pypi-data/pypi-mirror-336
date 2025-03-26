@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ve-lascatalog-sdk
+Version: 0.0.3
+Summary: The Las Metadata SDK for Python
+Home-page: UNKNOWN
+Author: bytedance
+License: UNKNOWN
+Keywords: las-rest,las_catalog_sdk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is the Python SDK of LAS-Catalog of Volcengine. You can access the catalog on LAS-Catalog based on this SDK.
+
