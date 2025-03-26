@@ -1,0 +1,68 @@
+
+{% extends "django_registration/registration_base.html" %}
+{% load static %} {% load i18n %} 
+{% block content %}
+<section>
+  <div class="full-background-img login"></div>
+  <div class="form-section">
+    <div class="logos">
+      <div class="powered-by">
+        <p>{%trans "Powered by"%}</p>
+        <img src="https://cdn.startinblox.com/logos/tems-logo-black.svg" />
+      </div>
+      <div>
+        <img
+          src="{{request.scheme}}://{{ request.META.HTTP_HOST }}/static/img/brand-logo.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <h1>{%trans "Log in" %}</h1>
+    <form method="post" novalidate class="auth-form" aria-label="Login form">
+      {% csrf_token %} {% if form.non_field_errors %}
+      <div class="alert alert-error" role="alert">
+        {{ form.non_field_errors }}
+      </div>
+      {% endif %}
+
+      <!-- Username/Email Field -->
+      <div class="form-control">
+        <label for="{{ form.username.id_for_label }}">
+          <span class="required">*</span>
+          {% trans "Email or Username" %}
+        </label>
+        {{ form.username }} 
+         <!-- if form.username.errors %}
+        <div class="error-message" role="alert">{{ form.username.errors }}</div>
+         endif %} -->
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-control">
+        <label for="{{ form.password.id_for_label }}">
+          <span class="required">*</span>
+          {% trans "Password" %}
+        </label>
+        {{ form.password }} 
+         <!-- if form.password.errors %}
+        <div class="error-message" role="alert">{{ form.password.errors }}</div>
+         endif %} -->
+      </div>
+      <!-- Remember Me (Optional) -->
+      <!-- <label class="checkbox-label">
+        <input type="checkbox" name="remember" >
+        <span>{% trans "Keep me signed in" %}</span>
+      </label> -->
+      <div class="ctas">
+        <a href="{% url 'password_reset' %}" class="text-sm">
+          {% trans "Forgot password?" %}
+        </a>
+        <button type="submit" class="btn btn-primary w-full">
+          {% trans "Sign In" %}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}
