@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+crazy_vision/__init__.py
+crazy_vision/frame_processor.py
+crazy_vision/middleware.py
+crazy_vision/model_inferance.py
+crazy_vision/video_decoding.py
+crazy_vision.egg-info/PKG-INFO
+crazy_vision.egg-info/SOURCES.txt
+crazy_vision.egg-info/dependency_links.txt
+crazy_vision.egg-info/requires.txt
+crazy_vision.egg-info/top_level.txt
+test/test_example.py

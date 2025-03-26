@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: crazy-vision
+Version: 0.1.0
+Summary: A video decoding and model inference package using YOLO, OpenCV, and PyTorch
+Home-page: https://github.com/yourusername/crazy-vision
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: av
+Requires-Dist: opencv-python
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: ultralytics
+
+# crazy-vision
+
+A video decoding and model inference package that utilizes YOLO, OpenCV, and PyTorch. The package provides classes for GPU/CPU video decoding, frame processing (including resizing and letterboxing), and model inference using YOLO with convenient API wrappers.
+
+## Features
+
+- **Video Decoding:** Supports GPU decoding (NVDEC/CUVID) with a CPU fallback.
+- **Frame Processing:** Resize and pad frames while preserving aspect ratio.
+- **Model Inference:** Object tracking with YOLO, including batch processing.
+- **Easy Integration:** Designed to be modular and extendable.
+
+## Installation
+
+```bash
+pip install crazy-vision

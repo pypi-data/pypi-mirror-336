@@ -1,0 +1,6 @@
+av
+opencv-python
+torch
+numpy
+requests
+ultralytics
