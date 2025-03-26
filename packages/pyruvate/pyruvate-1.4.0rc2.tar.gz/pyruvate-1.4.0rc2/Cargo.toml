@@ -1,0 +1,44 @@
+[package]
+name = "pyruvate"
+version = "1.4.0"
+authors = ["tschorr <t_schorr@gmx.de>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "pyruvate"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+cfg-if = "*"
+cpython = { version = "*", path = "rust-cpython" }
+crossbeam = "*"
+crossbeam-channel = "*"
+encoding = "*"
+errno = "*"
+httparse = "*"
+libc = "*"
+log = { version="*", features=["std"] }
+mio = { version="*", features=["os-poll", "net"] }
+nix = { version="*", features=["fs"] }
+pyo3-ffi = "*"
+signal-hook = "*"
+spmc = "*"
+threadpool = "*"
+urlencoding = "*"
+
+[build-dependencies]
+regex = "1"
+
+[target."cfg(target_os = \"linux\")".dependencies.libsystemd]
+version = "*"
+
+[dev-dependencies]
+env_logger = "*"
+rand = "*"
+simplelog = "*"
+tempfile = "*"
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(py_sys_config, values("COUNT_ALLOCS"))', 'cfg(Py_3_9)', 'cfg(Py_3_12)', 'cfg(Py_3_13)'] }

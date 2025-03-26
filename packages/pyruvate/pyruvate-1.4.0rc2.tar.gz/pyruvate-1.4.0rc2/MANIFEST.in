@@ -1,0 +1,8 @@
+include Cargo.toml
+include build.rs
+include CHANGES.rst
+include CONTRIBUTING.rst
+recursive-include src *
+include rust-cpython/Cargo.toml
+include rust-cpython/LICENSE
+include rust-cpython/src/*.rs
