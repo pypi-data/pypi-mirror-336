@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+greening/__init__.py
+greening.egg-info/PKG-INFO
+greening.egg-info/SOURCES.txt
+greening.egg-info/dependency_links.txt
+greening.egg-info/top_level.txt

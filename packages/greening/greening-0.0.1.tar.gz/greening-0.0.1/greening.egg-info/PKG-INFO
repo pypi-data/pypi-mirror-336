@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: greening
+Version: 0.0.1
+Summary: A creative dev automation engine for launching, documenting, and publishing projects
+Author-email: Christopher Greening <chris@christophergreening.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# greening 🌱
+
+> A creative dev automation engine for launching, documenting, and publishing projects
+
+Made with 🌱 by [Christopher Greening](https://www.christophergreening.com)
