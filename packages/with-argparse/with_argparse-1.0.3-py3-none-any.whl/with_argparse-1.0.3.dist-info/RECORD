@@ -1,0 +1,11 @@
+with_argparse/__init__.py,sha256=1077s4PA9oR_1HhgC5YYX-J-81MAdojXcXeIuE4-gBM,152
+with_argparse/configure_argparse.py,sha256=wxNPFdC1VEhyWNO5RX5yczKw86FOvjSz8sIe4et5T3E,22698
+with_argparse/disable_argparse.py,sha256=eoFMymXHHQqje1JVgW4KIPbii6XeG2GcYdUvIJ3nMLY,338
+with_argparse/impl.py,sha256=5xHZc500oBHZLef0y2Aap4ve2-Bj0dQ_IbbfuqvYzH0,4046
+with_argparse/types.py,sha256=zaPuOVYXslyD70SJLtJQ_E8b1qb7m8ygLSgreECuzjU,168
+with_argparse/utils.py,sha256=cNn5M3yXZ_UfUPWdJeB4wf8UE1Npnn_tPAJDDiLUGDk,305
+with_argparse-1.0.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+with_argparse-1.0.3.dist-info/METADATA,sha256=drT0nKHjS6gKB2aplGxjiCnQ-z_dO3F7fzkISjH_vsY,4290
+with_argparse-1.0.3.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+with_argparse-1.0.3.dist-info/top_level.txt,sha256=W3uwX0eMmVU_vq3OKHIN-0RHY8xGHOjeTTSz3FFB8Co,14
+with_argparse-1.0.3.dist-info/RECORD,,
