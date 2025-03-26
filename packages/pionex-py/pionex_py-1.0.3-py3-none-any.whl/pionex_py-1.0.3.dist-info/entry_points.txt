@@ -1,0 +1,3 @@
+[console_scripts]
+pionex-cli=pionex_py.cli:main
+
