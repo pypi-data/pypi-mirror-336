@@ -1,0 +1,10 @@
+turbomind/__init__.py,sha256=uQ7lAVxdeb4AkUMwmK6dJpLM-NuIQrrvwzDneoNTPlw,98
+turbomind/linear.py,sha256=7t4NH0pAbX-hyjtd2-g3tZnCitgxA6veMeUrpRp1ksg,6274
+turbomind/utils.py,sha256=Hs2KA7Ipu7A7k98RByGHmtBE4c5RJNGJpf1JH_bEn3U,1416
+turbomind/version.py,sha256=Z1kxvSjwkF-DkBxkhnkj3uw6t1TnCJQDrcQ21pxUFn8,772
+turbomind/lib/_turbomind_ext.cpython-311-x86_64-linux-gnu.so,sha256=Tof7aZqvykarXDd2rC_KLQuFHcd6ESjaET6xRr2zAl4,115593928
+turbomind-0.0.2.dist-info/LICENSE,sha256=gPAP9WJgy6ze5aT_1CyXBittr69Ahr_aZZ__pdViBkk,11357
+turbomind-0.0.2.dist-info/METADATA,sha256=LMYaOO4UUf-6FIF6OhoPFsyKodJsgvUyjxlsOGfb-k4,1138
+turbomind-0.0.2.dist-info/WHEEL,sha256=pfSFiGL5UDG-rx-1mdq2qhOVzfVlBtmfj4S31BskapY,113
+turbomind-0.0.2.dist-info/top_level.txt,sha256=9HlKaxen591evOBgt6OtIb61wruGYpiB1FmiEbmWCR0,10
+turbomind-0.0.2.dist-info/RECORD,,
