@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: AutomatedCleaning
+Version: 0.1.7
+Summary: Automated Data Cleaning Library
+Home-page: https://github.com/DataSpoof/AutomatedCleaning
+Author: Abhishek Kumar Singh
+Author-email: dataspoof007@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# AutomatedCleaning
+
+AutomatedCleaning is a Python library for automated data cleaning.It helps preprocess and analyze datasets by handling missing values, outliers, spelling corrections, and more.
+
+![Logo](https://github.com/DataSpoof/AutomatedCleaning/blob/main/images/logo2.png)
+
+
+## Features
+- Supports both large (100+ GB) and small datasets
+- Detects and handles missing values and duplicate records
+- Identifies and corrects spelling errors in categorical values
+- Detect outliers
+- Detects and fixes data imbalance
+- Identifies and corrects skewness in numerical data
+- Checks for correlation and detects multicollinearity
+- Analyzes cardinality in categorical columns
+- Identifies and cleans text columns
+- Detect JSON-type columns
+- Performs univariate, bivariate, and multivariate analysis
+
+
+## Installation
+```bash
+pip install AutomatedCleaning
+```
+
+## Usage
+```bash
+import AutomatedCleaning as ac
+df = ac.load_data("dataset.csv")
+df_cleaned = ac.clean_data(df)
+```
