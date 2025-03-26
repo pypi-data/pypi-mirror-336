@@ -1,0 +1,2 @@
+[console_scripts]
+mfws = mfws.image_stitch:arg_parser

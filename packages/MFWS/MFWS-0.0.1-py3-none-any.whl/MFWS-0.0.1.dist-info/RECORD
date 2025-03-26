@@ -1,0 +1,15 @@
+mfws/__init__.py,sha256=SnENSGxUQ2wtPdo5VuRIfX0VEKcl10kv2ikQKsUmzKc,399
+mfws/image_stitch.py,sha256=VqkUHBI0j4W0qNY6qBzbIcxwcHXy9rVqO4pzEdb-A4M,12627
+mfws/modules/__init__.py,sha256=nMthDnWaFWjw3ut4BM_Yof6sJ6cNPx1t40EJGLPasos,155
+mfws/modules/fov_aligner.py,sha256=ifZwIz6z_xGIuTnh1-tMqWyvXEFTkpmy1kWthsfZV8c,39072
+mfws/modules/global_location.py,sha256=p8FpT4iA2XDRpOSPN8FztTK2sLWCm5ojWgNJ0OK4m8Y,34809
+mfws/modules/ilog.py,sha256=NPQL0ws6odlPzT6y7F57tPSZmOqafgCLFbcBlYAl5hE,5636
+mfws/modules/image.py,sha256=2kWdopCVW6pypKhmegymGHEsydV_CurkSaizi_f9_pQ,2992
+mfws/modules/jitter_correct.py,sha256=wr_9Uh9Rpq5rzlZNU_0Rc_HK6qqhdeusk_GuESg4zhE,5347
+mfws/modules/stitching.py,sha256=XdxjnMqjSMQQgzcZ1wUVr3EvjZZ-a4vKSMppZSmoscA,13098
+mfws/modules/wsi_stitch.py,sha256=A6mhLbZPSSH_9OS-Uvka3H0-Lm-kRTr480azrKp640o,8264
+MFWS-0.0.1.dist-info/METADATA,sha256=iMQ3WImwd97-xyaXgoOwG7dWKw99ArZZCjN1mLCxjQ4,719
+MFWS-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+MFWS-0.0.1.dist-info/entry_points.txt,sha256=yc6UXUrJcr-X5ttEGSRgGh3UKtHnUuPS23V69CqVVb4,54
+MFWS-0.0.1.dist-info/top_level.txt,sha256=8l2Op3hf9bOySuuGceIjtiqyBXr0YUdOkLwDGloJA00,5
+MFWS-0.0.1.dist-info/RECORD,,
