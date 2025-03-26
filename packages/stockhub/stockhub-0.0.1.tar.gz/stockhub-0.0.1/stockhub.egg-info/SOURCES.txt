@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stockhub/__init__.py
+stockhub/zztemp.py
+stockhub.egg-info/PKG-INFO
+stockhub.egg-info/SOURCES.txt
+stockhub.egg-info/dependency_links.txt
+stockhub.egg-info/top_level.txt
