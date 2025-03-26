@@ -1,0 +1,1 @@
+from agudelo_shared_services.models.invoice import Invoice

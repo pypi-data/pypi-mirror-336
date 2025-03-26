@@ -1,0 +1,15 @@
+agudelo_shared_services/__init__.py,sha256=rxeUklCmb0R030MlUb7JmVmkK3IAt9UqXM5QUOBBvOs,752
+agudelo_shared_services/_version.py,sha256=WD4pBB9mG1gePPC5HudjcgQNJOSnqu7QeHQ022Gjt7Q,519
+agudelo_shared_services/app.py,sha256=iVDAYq_vCudZVNg5IgPgh5TuBGS2CXBhAhYfU7xErVY,656
+agudelo_shared_services/db.py,sha256=A8ysFZnmCt0QVyeTRUlUXAMnVLEYSReeDL9vTs08nuw,762
+agudelo_shared_services/blueprints/api.py,sha256=oYBhF1jMR_qNfj34pisydd-rkcV-YtB5FzIzW5O3Bq8,763
+agudelo_shared_services/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agudelo_shared_services/exceptions/server_unsupported_env_error.py,sha256=0NECiPgapEEKHAmTrwnwNqzc0jOTu0EqQgP8JdMkRTw,111
+agudelo_shared_services/models/__init__.py,sha256=MPZiwhJ81EFjn1jQ7qM02etoe3CXcDki--LH6ZBbMuE,59
+agudelo_shared_services/models/invoice.py,sha256=D6aMT1mdIRauGalK_iJgZyD5uGdxfbqGDSh8IKovcho,359
+agudelo_shared_services/namespaces/invoices.py,sha256=-oBjlsSCdUR8imJFnISaPDtWW7NbFXGTOQCR4Rldn3s,618
+agudelo_shared_services-0.1.dev1.dist-info/METADATA,sha256=j84cJG9yszPuWWh0QBh6X8Ob9cQsRtfBpMC-F782QiQ,935
+agudelo_shared_services-0.1.dev1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+agudelo_shared_services-0.1.dev1.dist-info/entry_points.txt,sha256=jZmMn3LdBGfUfSlebbCty3ajEAkMZKeDwvskxpVX7wg,102
+agudelo_shared_services-0.1.dev1.dist-info/top_level.txt,sha256=cl8vJMiGMDlEt_4eH4F6UVlrSeLj7Z2lznJ1XadUF9Q,24
+agudelo_shared_services-0.1.dev1.dist-info/RECORD,,

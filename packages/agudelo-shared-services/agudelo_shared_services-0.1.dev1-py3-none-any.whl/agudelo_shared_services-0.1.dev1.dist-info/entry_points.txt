@@ -1,0 +1,3 @@
+[console_scripts]
+init_db = agudelo_shared_services.db:init_db
+serve = agudelo_shared_services:deploy
