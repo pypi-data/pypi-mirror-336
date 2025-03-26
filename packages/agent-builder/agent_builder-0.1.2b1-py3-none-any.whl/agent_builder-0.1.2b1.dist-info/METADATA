@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: agent-builder
+Version: 0.1.2b1
+Summary: The agent-builder package to develop LLM based models.
+Home-page: https://github.com/Recall-Space/agent-builder
+Author: Recall Space
+Author-email: info@recall.space
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: langchain<1.0.0
+Requires-Dist: langchain-core<1.0.0
+Requires-Dist: langchain-openai<1.0.0
+Requires-Dist: websockets
+
