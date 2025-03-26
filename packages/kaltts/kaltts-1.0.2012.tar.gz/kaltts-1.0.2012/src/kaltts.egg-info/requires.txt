@@ -1,0 +1,8 @@
+pydub
+requests
+numpy
+tensorflow
+librosa
+pyyaml
+num2words
+urllib3
