@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+holamundoplayerfg/__init__.py
+holamundoplayerfg/magia.py
+holamundoplayerfg/player.py
+holamundoplayerfg.egg-info/PKG-INFO
+holamundoplayerfg.egg-info/SOURCES.txt
+holamundoplayerfg.egg-info/dependency_links.txt
+holamundoplayerfg.egg-info/top_level.txt
