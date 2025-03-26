@@ -1,0 +1,12 @@
+PyYAML
+imgaug
+kornia
+matplotlib
+numpy
+opencv-contrib-python
+opencv-python
+pylibdmtx
+pyzbar
+shapely
+torch
+torchvision
