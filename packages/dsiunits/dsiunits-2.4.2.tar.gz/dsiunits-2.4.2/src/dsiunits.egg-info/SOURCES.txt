@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/dsiParser.py
+src/dsiUnitNode.py
+src/dsiUnits.py
+src/regexGenerator.py
+src/unitStrings.py
+src/dsiunits.egg-info/PKG-INFO
+src/dsiunits.egg-info/SOURCES.txt
+src/dsiunits.egg-info/dependency_links.txt
+src/dsiunits.egg-info/top_level.txt
+tests/test_dsiUnits.py
