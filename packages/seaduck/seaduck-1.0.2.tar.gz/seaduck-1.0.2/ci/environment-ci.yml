@@ -1,0 +1,19 @@
+# environment-ci.yml: Additional dependencies to install in the CI environment.
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- jupyter-book
+- make
+- matplotlib
+- mypy
+- netCDF4
+- pandas-stubs
+- pooch
+- pre-commit
+- pytest
+- pytest-cov
+- tqdm
+- zarr
+- cartopy
+- xgcm
