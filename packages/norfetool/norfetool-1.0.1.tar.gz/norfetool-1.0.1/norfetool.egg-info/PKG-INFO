@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: norfetool
+Version: 1.0.1
+Summary: Easier creation of SCI figures using PIL and pkl file tools, along with a simplified approach to setting plt styles. Added a management function for slurm scripts, facilitating easy content replacement within specified base files.
+Home-page: https://github.com/liftes/PythonDraw
+Author: norfe
+Author-email: 21121598@bjtu.edu.cn
+Maintainer: norfe
+Maintainer-email: 21121598@bjtu.edu.cn
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: summary
