@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/config.py
+src/config_file.py
+src/main.py
+src/run.py
+src/midi2osc.egg-info/PKG-INFO
+src/midi2osc.egg-info/SOURCES.txt
+src/midi2osc.egg-info/dependency_links.txt
+src/midi2osc.egg-info/entry_points.txt
+src/midi2osc.egg-info/requires.txt
+src/midi2osc.egg-info/top_level.txt
