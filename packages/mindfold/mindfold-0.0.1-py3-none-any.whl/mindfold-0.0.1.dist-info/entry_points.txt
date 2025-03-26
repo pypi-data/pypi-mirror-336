@@ -1,0 +1,3 @@
+[console_scripts]
+mindfold=mindfold.__main__:app
+
