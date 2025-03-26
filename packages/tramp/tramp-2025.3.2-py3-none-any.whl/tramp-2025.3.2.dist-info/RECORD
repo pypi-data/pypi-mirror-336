@@ -1,0 +1,17 @@
+tramp/__init__.py,sha256=O9wCWfQjGsBthOO_G4OZDjGhTKattqD86KN-ffVSQ3c,637
+tramp/_annotations.py,sha256=3GX_bI0tr3emu2T2xgTCPTxTqZhGoMonIEyUSxB8AVs,2619
+tramp/annotations.py,sha256=aIfUQl6t2FlOU53oCw8ohtP8vcjP7m-0eTtQB8F0TVw,157
+tramp/as_completed.py,sha256=0k2nK-Hnojk80sPXYFVmjbtmQpE4hjniMIxFSRiwkw4,970
+tramp/async_batch_iterator.py,sha256=juNBf9yzynNXz7mM_wfitiOlun7Zx2n39a4OQW33ZGg,6059
+tramp/containers.py,sha256=P3kGyFpwrtGxlf_F8WboaITRKM8PdGbO4I5oWg5qzWg,1019
+tramp/matches.py,sha256=v5VKVaT9il2bX2jGezcUgAM_r2vzmqjkmjMDvO-Em2I,909
+tramp/modules.py,sha256=iaBgDVtf5plIAZro_wXqwcrr7ZPx27PuHAmrK-tFw78,130
+tramp/optionals.py,sha256=-qNA9sSZ2mFPz2Q9ffRProdXw73pavsep84QjwY53PY,1778
+tramp/protected_strings.py,sha256=j3u4IOH1nt4XXz1PgWw2LNYhJzTUs5sE8D5LiDkVwqM,4424
+tramp/results.py,sha256=XWS09r7T9CIRrjsrXWconsTfG72sh2jPuEZYB92jKGo,2961
+tramp/sentinels.py,sha256=ymWAnhJmdpuL1arppcNXgQc_QvyMDw-7WH0iIyrhvRI,522
+tramp/singleton.py,sha256=wLc2l_v1IYl3BlQbJnwL-XnKe-joQv9OcxpEvq3RG1E,335
+tramp-2025.3.2.dist-info/METADATA,sha256=TE9XMKrUe2SdbDLzCUBR-v26OUzqz8QXe-cCAEaaOfM,6441
+tramp-2025.3.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tramp-2025.3.2.dist-info/top_level.txt,sha256=VmqF6USozQt4xg3VsT2FkI-dspTIVgrvLOld5uLOtZo,6
+tramp-2025.3.2.dist-info/RECORD,,
