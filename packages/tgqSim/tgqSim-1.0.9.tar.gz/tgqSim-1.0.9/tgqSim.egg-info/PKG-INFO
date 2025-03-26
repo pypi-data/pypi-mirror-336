@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tgqSim
+Version: 1.0.9
+Summary: TGQ量子模拟器
+Author: tiangongqs
+License: MIT
+Keywords: tgq,quantum,simulator,noise
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python for quantum simulation http://www.tiangongqs.com
