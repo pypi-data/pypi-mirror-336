@@ -1,0 +1,6 @@
+[console_scripts]
+human-trajectories = scripts.human_trajectories.cli:main
+upload-log = scripts.upload_log:main
+
+[inspect_ai]
+control_arena = control_arena._inspect_registry
