@@ -1,0 +1,4 @@
+cv2
+PyQt6
+dlib
+imutils
