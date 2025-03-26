@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+corinne_greene/__init__.py
+corinne_greene/__main__.py
+corinne_greene/names.txt
+corinne_greene/speaker.py
+corinne_greene.egg-info/PKG-INFO
+corinne_greene.egg-info/SOURCES.txt
+corinne_greene.egg-info/dependency_links.txt
+corinne_greene.egg-info/entry_points.txt
+corinne_greene.egg-info/requires.txt
+corinne_greene.egg-info/top_level.txt
+corinne_greene/speakers/__init__.py
+corinne_greene/speakers/corinne.py
