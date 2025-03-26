@@ -1,0 +1,8 @@
+requests>=2.25.0
+
+[dev]
+black
+isort
+mypy
+pytest
+flake8
