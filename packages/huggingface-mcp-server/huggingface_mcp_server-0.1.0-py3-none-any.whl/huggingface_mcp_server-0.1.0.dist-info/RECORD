@@ -1,0 +1,8 @@
+huggingface/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+huggingface/server.py,sha256=qUCImrNan3lTS1MaS-d9iwXfsrhHIUIdvzPlwtiCA9I,30977
+huggingface_mcp_server-0.1.0.dist-info/licenses/LICENSE,sha256=f2_KXm-GGd1OAjIOfVd68f_kSJSlyr_YaL77dYc5e2s,1071
+huggingface_mcp_server-0.1.0.dist-info/METADATA,sha256=EaihAwVqR0KoEzJ2QmUNB2G9ui7vgvN9LJA-Rd2z1a4,5816
+huggingface_mcp_server-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+huggingface_mcp_server-0.1.0.dist-info/entry_points.txt,sha256=UO70SEKGHc7j2RLazUrnxZgSgzUTkdNHd6of9UqFtRE,67
+huggingface_mcp_server-0.1.0.dist-info/top_level.txt,sha256=MBB6BLQFJd9RheSUIFGX65K1ZiksPPj7er9teIExu0k,12
+huggingface_mcp_server-0.1.0.dist-info/RECORD,,
