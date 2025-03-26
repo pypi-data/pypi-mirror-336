@@ -1,0 +1,3 @@
+[diracx]
+config = lhcbdiracx.core.config.schema:Config
+properties_module = lhcbdiracx.core.properties
