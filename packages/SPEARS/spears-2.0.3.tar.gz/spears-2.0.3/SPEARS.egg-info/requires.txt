@@ -1,0 +1,8 @@
+requests
+sparcl
+specutils>=1.0
+astropy>=5.0
+scipy>=1.7
+numpy>=1.21
+alive-progress
+matplotlib>=3.0
