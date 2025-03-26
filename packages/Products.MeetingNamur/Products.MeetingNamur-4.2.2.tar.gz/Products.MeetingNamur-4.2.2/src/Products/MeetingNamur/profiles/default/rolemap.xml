@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="MeetingBudgetImpactEditor"/>
+    <role name="MeetingBudgetImpactReviewer"/>
+    <role name="MeetingManager"/>
+    <role name="MeetingMember"/>
+    <role name="MeetingObserverGlobal"/>
+    <role name="MeetingObserverLocal"/>
+    <role name="MeetingReviewer"/>
+<!-- ##code-section roles -->
+<!-- ##/code-section roles -->
+  </roles>
+  <permissions>
+    <permission name="MeetingNamur: Write decisionProject"
+                acquire="False">
+      <role name="Manager"/>
+      <role name="Editor"/>
+    </permission>
+  </permissions>
+</rolemap>
