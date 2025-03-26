@@ -1,0 +1,12 @@
+read5/AbstractFileReader.py,sha256=F5-8Z8BEHEyCJF6dQ9LyppsqzVukEwYhrTWbsyP7JW0,22873
+read5/Exceptions.py,sha256=A3oM4SFS5EysSobirvYnfSdA9iMWOobsSJlanX6Zjaw,773
+read5/Fast5Reader.py,sha256=a3_V_k4LzEU6GOBsur5UyibFU8zaN52Eb3p_xVFC9Y0,13399
+read5/Pod5Reader.py,sha256=hIeGHP8AAYQ2y_PzL1RyxYcWrOSk2oypQWErOim33jk,11653
+read5/Reader.py,sha256=2wNynxbO3mSN_kf9RyNmPtizi9HOi8scehpawUQtS-0,980
+read5/Slow5Reader.py,sha256=hSgY486TTmlCn-mRbcqRF-Fz0xkFyGwnyLHHKxG6y7o,8605
+read5/__init__.py,sha256=SRnQTx4wKn0SeSaDu5G-Un1fWgiV4DICo_BO0wqaZOk,159
+read5/_version.py,sha256=RKFy_OhIzIRvTkrOuFWonMLKAfAInXcwHR9R6u-QVTE,511
+read5-1.2.8.dist-info/METADATA,sha256=Uc_YkqrvsxnV1wLK7DLte70mLUmZ06jffD4_XLqYccM,5018
+read5-1.2.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+read5-1.2.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+read5-1.2.8.dist-info/RECORD,,
