@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mcp_amazon_listing_optimizer.egg-info/PKG-INFO
+mcp_amazon_listing_optimizer.egg-info/SOURCES.txt
+mcp_amazon_listing_optimizer.egg-info/dependency_links.txt
+mcp_amazon_listing_optimizer.egg-info/entry_points.txt
+mcp_amazon_listing_optimizer.egg-info/requires.txt
+mcp_amazon_listing_optimizer.egg-info/top_level.txt
+tests/test_api.py
