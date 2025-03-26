@@ -1,0 +1,10 @@
+numpy
+rasterio
+sortedcontainers
+Cython
+
+[dev]
+pytest
+twine
+snakeviz
+matplotlib
