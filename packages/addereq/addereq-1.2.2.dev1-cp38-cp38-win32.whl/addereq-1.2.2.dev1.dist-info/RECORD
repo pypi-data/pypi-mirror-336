@@ -1,0 +1,15 @@
+addereq/EQT.cp38-win32.pyd,sha256=UDJS9s5KwZ5gZo_gYLNO2UwG4L0ckdxWVQDoVWjA9hc,61440
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/cleaning.cp310-win_amd64.pyd,sha256=uelPMmy6dhLcU-U-Jq7qoI1uzds-nOnp-v5XM1fPqdo,47104
+addereq/cleaning.cp38-win32.pyd,sha256=rcLD_zqSPUdSb5DvQdwABMnZgtEoMFw1pkYBOkw6R-0,41472
+addereq/fetching.cp310-win_amd64.pyd,sha256=Fp01J9sRN1ysMm0ESyGtRv5N0RD-Kksc4ZdXLOoSZIY,184320
+addereq/fetching.cp38-win32.pyd,sha256=F3IMF8zeGtPcobGyv-PC-2kFSJg03OGpi128Rulvglo,165888
+addereq/logger_config.cp310-win_amd64.pyd,sha256=BaPhwpicPX0Eo-Y6AYN91I4Am90X-LoC4LPJsaWj1BU,28160
+addereq/logger_config.cp38-win32.pyd,sha256=9Krtx0uaG7PXh0loHxFT5huNfNgQARNcA5rcEaVRenQ,23552
+addereq/plotting.cp310-win_amd64.pyd,sha256=DkV545XD3F17oId8q9FQkZPMCNU5Way4xeFbDAZZRSc,236032
+addereq/plotting.cp38-win32.pyd,sha256=gICOSFu8e3hcTHfxK7Hfasik2vrSh00GpjL6BIckZY0,226304
+addereq-1.2.2.dev1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+addereq-1.2.2.dev1.dist-info/METADATA,sha256=F2rGCgIRh3nkRumGtFStO9BuiZQ9hpvLS2xtididY_4,3986
+addereq-1.2.2.dev1.dist-info/WHEEL,sha256=BsoMMMHJGneA25n2FDquZW143lDYOuIAMJ0po_3Su94,95
+addereq-1.2.2.dev1.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.2.2.dev1.dist-info/RECORD,,
