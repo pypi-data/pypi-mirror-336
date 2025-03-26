@@ -1,0 +1,13 @@
+ytdebunk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ytdebunk/downloader.py,sha256=RALzr0jZZm6dkci7B__NjFoZ1dX13mcOa8BDGNdRAyk,1419
+ytdebunk/philosopher.py,sha256=KuAIKTg09sxDBRxinFkd7nJeysGNwvZMZ15b7Y3vSVo,2109
+ytdebunk/refiner.py,sha256=ZqT8rj2C-4dcWjdLmSbOJt7yBNlLJXHX0vnMk9bSTF8,1629
+ytdebunk/settings.py,sha256=TTjG336xQR9kETLtlYrwkTYDaWJWAZ3RpkevVK-kJsw,377
+ytdebunk/transcriber.py,sha256=2x9If5TqgrUyZsZfsAvFm1PbX5aH7JVul4zcI-AmAWA,2622
+ytdebunk/ytdebunk.py,sha256=nRkpYiQQX7AqXtT_KwIfPVdGKLPJ_q-mIukYBDCyhMc,3514
+ytdebunk-1.0.4.dist-info/licenses/LICENSE,sha256=4GqwSHMDh_U4O_k4M_7bpjBtqrT0iw8pkm13E8ocbkg,1080
+ytdebunk-1.0.4.dist-info/METADATA,sha256=sVdxHe_u3GTdbcxwHvnBBHwPlk609epVvOZTPvw3l-Q,5733
+ytdebunk-1.0.4.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+ytdebunk-1.0.4.dist-info/entry_points.txt,sha256=7QzUX2weI7UCyEuNG5L6sA177gmOguzwdXZYQQCcilI,52
+ytdebunk-1.0.4.dist-info/top_level.txt,sha256=UEC-c9fd_PNBunUbql7VR5XRs4NXMK5H7yy97DBqpbg,9
+ytdebunk-1.0.4.dist-info/RECORD,,
