@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sltkpy/__init__.py
+sltkpy/tokenizer.py
+sltkpy.egg-info/PKG-INFO
+sltkpy.egg-info/SOURCES.txt
+sltkpy.egg-info/dependency_links.txt
+sltkpy.egg-info/requires.txt
+sltkpy.egg-info/top_level.txt
+sltkpy/models/vocab.json
+tests/test_tokenizer.py
