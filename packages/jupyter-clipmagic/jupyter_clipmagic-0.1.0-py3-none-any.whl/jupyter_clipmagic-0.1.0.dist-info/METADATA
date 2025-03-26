@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: jupyter_clipmagic
+Version: 0.1.0
+Summary: IPython/Jupyter magic commands for copying code to clipboard
+Author-email: Brett Naul <brettnaul@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Requires-Dist: ipython
+Requires-Dist: pyperclip
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Jupyter ClipMagic
+
+A simple IPython/Jupyter magic extension that copies code to the clipboard.
+
+## Installation
+
+```bash
+pip install jupyter_clipmagic
+```
+
+Or using `uv`:
+
+```bash
+uv pip install jupyter_clipmagic
+```
+
+## Usage
+
+Load the extension in your notebook:
+
+```python
+%load_ext jupyter_clipmagic
+```
+
+Copy a line to the clipboard:
+
+```python
+%clip print("Hello, world!")
+```
+
+Copy a cell to the clipboard:
+
+```python
+%%clip
+for i in range(10):
+    print(i)
+```
+
+## Development
+
+Set up development environment using `uv`:
+
+```bash
+uv venv
+uv pip install -e ".[dev]"
+```
+
+Run tests:
+
+```bash
+pytest
+```
