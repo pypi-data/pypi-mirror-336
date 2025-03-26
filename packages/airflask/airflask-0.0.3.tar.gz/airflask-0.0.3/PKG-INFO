@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: airflask
+Version: 0.0.3
+Summary: Simplest way to host your flask web app!
+Home-page: https://github.com/naitikmundra/FlaskAir
+Author: Naitik Mundra
+Author-email: naitikmundra18@gmail.com
+Requires-Dist: flask
+Requires-Dist: click
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
