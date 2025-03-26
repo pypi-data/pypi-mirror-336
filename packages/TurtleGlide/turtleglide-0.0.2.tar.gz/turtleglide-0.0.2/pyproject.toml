@@ -1,0 +1,32 @@
+[project]
+name = "TurtleGlide"
+version = "0.0.2"
+description = "Comandos para crear archivos HTML, CSS y JS"
+readme = "README.md"
+license = { text = "MPL-2.0" }
+authors = [{ name = "Alejandro", email = "hjosealejandro21@gmail.com" }]
+urls = { "Github" = "https://github.com/jose-CR/TurtleGlide" }
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django :: 3.2",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python"
+]
+
+dependencies = [
+    "django>=3.2",
+]
+
+# Incluir archivos estáticos y templates
+[tool.setuptools.package-data]
+"*" = [
+    "TurtleGlide/static/js/*.js",
+    "TurtleGlide/static/css/*.css",
+    "TurtleGlide/templates/*.html",
+]
+
+[build-system]
+requires = ["setuptools", "wheel", "build", "requests"]
+build-backend = "setuptools.build_meta"
