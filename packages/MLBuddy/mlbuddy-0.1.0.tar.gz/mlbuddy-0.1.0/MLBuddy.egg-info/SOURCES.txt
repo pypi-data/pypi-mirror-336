@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+MLBuddy/__init__.py
+MLBuddy/model_selection.py
+MLBuddy/predictor.py
+MLBuddy/preprocessing.py
+MLBuddy.egg-info/PKG-INFO
+MLBuddy.egg-info/SOURCES.txt
+MLBuddy.egg-info/dependency_links.txt
+MLBuddy.egg-info/requires.txt
+MLBuddy.egg-info/top_level.txt
+MLBuddy/models/__init__.py
+MLBuddy/models/classification.py
+MLBuddy/models/regression.py
