@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Pairs_Package2/__init__.py
+Pairs_Package2/broker_info.py
+Pairs_Package2/cointegration.py
+Pairs_Package2/data.py
+Pairs_Package2/signals.py
+Pairs_Package2/trade.py
+Pairs_Package2.egg-info/PKG-INFO
+Pairs_Package2.egg-info/SOURCES.txt
+Pairs_Package2.egg-info/dependency_links.txt
+Pairs_Package2.egg-info/requires.txt
+Pairs_Package2.egg-info/top_level.txt
