@@ -1,0 +1,2 @@
+[console_scripts]
+pymusiclooper = pymusiclooper.__main__:cli
