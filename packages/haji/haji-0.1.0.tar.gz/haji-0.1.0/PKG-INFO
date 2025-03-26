@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: haji
+Version: 0.1.0
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: g4f
+Dynamic: requires-dist

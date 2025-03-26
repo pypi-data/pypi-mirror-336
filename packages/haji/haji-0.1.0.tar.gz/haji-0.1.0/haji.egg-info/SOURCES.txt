@@ -1,0 +1,8 @@
+haji.py
+setup.py
+haji.egg-info/PKG-INFO
+haji.egg-info/SOURCES.txt
+haji.egg-info/dependency_links.txt
+haji.egg-info/entry_points.txt
+haji.egg-info/requires.txt
+haji.egg-info/top_level.txt
