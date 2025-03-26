@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: edgefirst_client
+Version: 1.0.8
+License-File: LICENSE
+Summary: EdgeFirst Studio Client
+License: Proprietary
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# EdgeFirst Studio Client
+
+The EdgeFirst Studio Client provides a CLI application along with a Rust and Python API for interfacing with the Deep View Enterprise server as part of the EdgeFirst Studio workflow.
+
+The application and library can be used to publish MCAP files, run auto-annotation, export datasets to Arrow, generate dataset caches, and other workflows central to the EdgeFirst Studio.
+
