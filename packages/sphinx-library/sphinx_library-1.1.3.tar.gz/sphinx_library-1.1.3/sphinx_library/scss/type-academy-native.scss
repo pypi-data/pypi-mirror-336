@@ -1,0 +1,14 @@
+@import "fonts";
+
+body {
+  @include century-native;
+}
+
+code, pre {
+  font-family: $courier-font;
+  line-height: $courier-line;
+}
+
+pre {
+  font-size: $courier-size;
+}

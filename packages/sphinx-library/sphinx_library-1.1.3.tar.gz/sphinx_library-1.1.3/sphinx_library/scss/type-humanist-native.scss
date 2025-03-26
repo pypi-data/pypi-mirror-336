@@ -1,0 +1,14 @@
+@import "fonts";
+
+body {
+  @include trebuchet-native;
+}
+
+code, pre {
+  font-family: $mono-font;
+  line-height: $mono-line;
+}
+
+pre {
+  font-size: $mono-size;
+}
