@@ -1,0 +1,3 @@
+[console_scripts]
+SpringCloudAlibabaCongRumenDaoJingtongFix1 = SpringCloudAlibabaCongRumenDaoJingtongFix1.__main__:main
+spring-cloud-alibaba-cong-rumen-dao-jingtong-fix1 = SpringCloudAlibabaCongRumenDaoJingtongFix1.__main__:main
