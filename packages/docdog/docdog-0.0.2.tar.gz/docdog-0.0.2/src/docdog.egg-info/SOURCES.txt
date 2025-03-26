@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/docdog/__init__.py
+src/docdog/chunking.py
+src/docdog/main.py
+src/docdog/mcp_tools.py
+src/docdog/readme_template.md
+src/docdog.egg-info/PKG-INFO
+src/docdog.egg-info/SOURCES.txt
+src/docdog.egg-info/dependency_links.txt
+src/docdog.egg-info/entry_points.txt
+src/docdog.egg-info/requires.txt
+src/docdog.egg-info/top_level.txt
+tests/test_chunking.py
+tests/test_main.py
+tests/test_mcp_tools.py
+tests/test_sanitize_prompt.py
