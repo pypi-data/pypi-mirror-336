@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+pydbisam/__init__.py
+pydbisam/cli.py
+pydbisam/extract.py
+pydbisam/field.py
+pydbisam.egg-info/PKG-INFO
+pydbisam.egg-info/SOURCES.txt
+pydbisam.egg-info/dependency_links.txt
+pydbisam.egg-info/entry_points.txt
+pydbisam.egg-info/requires.txt
+pydbisam.egg-info/top_level.txt
