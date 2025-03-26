@@ -1,0 +1,88 @@
+# TraceIT
+
+## Installation
+Install the package from PyPI using:
+```bash
+   pip install trace_it
+```
+
+Note: It is recommended to use the latest version for optimal performance.
+
+## Middleware Setup
+Add the following middleware functions to your FastAPI application in `main.py` or the appropriate entry point.
+
+### 1. Traceit Middleware
+This middleware creates a unified trace for each incoming request.
+
+```python
+from trace_it import traceit_middleware
+
+app = FastAPI()
+
+@app.middleware("http")
+async def traceit_middleware(request: Request, call_next):
+    return await traceit_middleware(request, call_next, project_name="your_project_name")
+```
+
+## Using Decorators for Tracing
+ObserveLLM provides four decorators to enable tracing for different AI/ML components:
+
+- @embedding_tracing → Tracks embedding model calls.
+
+- @llm_tracing → Tracks LLM (Language Model) interactions.
+
+- @reranking_tracing → Tracks reranking models used in search/retrieval.
+
+- @vectordb_tracing → Tracks vector database operations.
+
+### Example: Using the @embedding_tracing Decorator
+
+```python
+from trace_it import embedding_tracing
+
+@embedding_tracing(provider='embedding_provider_name')
+async def embedding_generation_function(model_name: str, dimension: int, inputs: list, input_type: str):
+    ## your custom API calling logic
+```
+
+### Example: Using the @llm_tracing Decorator
+
+```python
+from trace_it import llm_tracing
+
+@llm_tracing(provider='llm_provider_name')
+async def llm_api_calling_function(model_name: str, system_prompt: str, user_prompt:str , user_query:str , **params):
+    ## your custom API calling logic
+```
+
+### Example: Using the @reranking_tracing Decorator
+
+```python
+from trace_it import reranking_tracing
+
+@reranking_tracing(provider='reranker_provider_name')
+async def reranking_function(model_name: str, query: str, documents: list, top_n: int):
+    ## your custom API calling logic
+```
+
+### Example: Using the @vectordb_tracing Decorator
+
+```python
+from trace_it import vectordb_tracing
+
+## for write operation
+@vectordb_tracing(provider='pinecone', operation_type='write')
+async def vectordb_function(self, index_host, input, namespace):
+    ## your custom API calling logic
+
+## for read operation
+@vectordb_tracing(provider='pinecone', operation_type='read')
+async def vectordb_function(self, index_host, namespace, top_k, alpha: int, query: str, query_vector_embeds: list, query_sparse_embeds: dict, include_metadata: bool, filter_dict: dict = None):
+    ## your custom API calling logic
+```
+
+Note: It is essential to define your methods using the above parameters for consistency and compatibility.
+
+## Prerequisite: Self-Hosted Phoenix
+To ensure proper logging and tracing, you must have a self-hosted Phoenix instance up and running. Without it, tracing will not function correctly. 
+find out more about self hosted phoenix [here](https://docs.arize.com/phoenix/deployment/docker)
