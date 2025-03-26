@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+rotate/__init__.py
+rotate/daemon.py
+rotate/hooks.py
+rotate/main.py
+rotate/parse.py
+rotate/rotate.py
+rotate_mob.egg-info/PKG-INFO
+rotate_mob.egg-info/SOURCES.txt
+rotate_mob.egg-info/dependency_links.txt
+rotate_mob.egg-info/entry_points.txt
+rotate_mob.egg-info/top_level.txt
