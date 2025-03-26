@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: dsbin
+Version: 0.3.1
+Summary: Personal Python script library
+Project-URL: repository, https://github.com/dannystewart/dsbin
+Author-email: Danny Stewart <danny@stewart.cc>
+Requires-Python: <4.0,>=3.12
+Requires-Dist: dsbase
+Requires-Dist: halo<0.0.32,>=0.0.31
+Requires-Dist: inquirer<4.0.0,>=3.4.0
+Requires-Dist: mutagen<2.0.0,>=1.47.0
+Requires-Dist: mysql-connector-python<10.0.0,>=9.2.0
+Requires-Dist: natsort<9.0.0,>=8.4.0
+Requires-Dist: numpy<3.0.0,>=2.2.4
+Requires-Dist: packaging<25.0,>=24.2
+Requires-Dist: paramiko<4.0.0,>=3.5.1
+Requires-Dist: pexpect<5.0.0,>=4.9.0
+Requires-Dist: pillow<12.0.0,>=11.1.0
+Requires-Dist: pyperclip<2.0.0,>=1.9.0
+Requires-Dist: python-dotenv<2.0.0,>=1.0.1
+Requires-Dist: requests<3.0.0,>=2.32.3
+Requires-Dist: rich<14.0.0,>=13.9.4
+Requires-Dist: rsa<5.0,>=4.9
+Requires-Dist: scipy<2.0.0,>=1.15.2
+Requires-Dist: scp<0.16.0,>=0.15.0
+Requires-Dist: telethon<2.0.0,>=1.39.0
+Requires-Dist: tomlkit<0.14.0,>=0.13.2
+Requires-Dist: tqdm<5.0.0,>=4.67.1
+Requires-Dist: types-paramiko<4.0.0.0,>=3.5.0.20240928
+Requires-Dist: types-pillow<11.0.0.0,>=10.2.0.20240822
+Requires-Dist: types-requests<3.0.0.0,>=2.32.0.20250306
+Description-Content-Type: text/markdown
+
+# dsbin
+
+This is my personal collection of scripts and utilities. Check [`pyproject.toml`](./pyproject.toml) for the list installed by the package.
