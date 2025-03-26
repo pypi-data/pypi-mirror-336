@@ -1,0 +1,16 @@
+ethz_iam_webservice/__init__.py,sha256=J9LhLQUG9KDYXrkbALl1TFC6PLajzUGd64ZSQogb9OY,240
+ethz_iam_webservice/conn.py,sha256=D2_BAhtXGW3gzKw3O47_s9AEoyXxAEw-rmB_Tm189lU,6206
+ethz_iam_webservice/ethz_iam.py,sha256=iMeoyV64oU6ZKdGC-ofUGvoShStBzge1SkvXEWhqORc,5401
+ethz_iam_webservice/group.py,sha256=kykkHjuzcliAchJvfoH6aI9kET03je6N0dppEEjuhPE,11701
+ethz_iam_webservice/mailinglist.py,sha256=mcKf3bymbOAVIa1WIwP7PMr4IGJ4SR9UqeGmOKYtIgU,3576
+ethz_iam_webservice/main.py,sha256=zqzWZeyKKy1bIT1DT6v-JF5Bd1n2xDxgT3cUs2FaIF0,28838
+ethz_iam_webservice/person.py,sha256=mlN45zyuan5kFDHQp6tCMWbMJXsIUYk3aKpFlS9uS3I,18456
+ethz_iam_webservice/service.py,sha256=veqM9xryczLiFhCfc6JPOPN2ZqzXsYv0JIv-4rAgstw,2658
+ethz_iam_webservice/user.py,sha256=BffzoQHsWsk56SDW8QkJJ1srFTj3PwL9P2Re2TNy2SI,6017
+ethz_iam_webservice/utils.py,sha256=vUiusDNclLG--6w-9rtjCFnpDHNHuS4ELIoHUMojNmA,4272
+ethz_iam_webservice/verbose.py,sha256=iARtB3CVnq1r8UazfUSsWPmmro0Tvu-7zvrCaI5_PHE,187
+ethz_iam_webservice-0.15.4.dist-info/METADATA,sha256=ik7-ihLBsuaxVCfoXxDuf3OOnIzLwA0qi1QmbMm6WO8,7595
+ethz_iam_webservice-0.15.4.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+ethz_iam_webservice-0.15.4.dist-info/entry_points.txt,sha256=kEZ0u-KFpohYoOU0H_41oicjdQDKr-dcfE9Yk9ur8-I,90
+ethz_iam_webservice-0.15.4.dist-info/top_level.txt,sha256=DccmKrkFJDv7Ji6tFfuKmfID48Db6GrsMIvEipCyU4g,20
+ethz_iam_webservice-0.15.4.dist-info/RECORD,,
