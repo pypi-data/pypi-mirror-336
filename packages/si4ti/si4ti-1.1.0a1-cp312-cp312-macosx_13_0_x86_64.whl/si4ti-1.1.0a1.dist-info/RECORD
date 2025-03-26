@@ -1,0 +1,7 @@
+si4ti/__init__.py,sha256=2HxS3KPoXp3XytAllBKCflnMWvPL7qfy4Hqdi8Vhwwk,3933
+si4ti/_si4ti_python.cpython-312-darwin.so,sha256=lwL4Fcj_Ozj5MLTdtK702L0CvPZapO8lcTTXIM4zwMs,385360
+si4ti/.dylibs/libomp.dylib,sha256=FwWp1OuNmxMOpAeZ2gWCubU4apKku6D-Bo4HGGvbxww,746320
+si4ti-1.1.0a1.dist-info/RECORD,,
+si4ti-1.1.0a1.dist-info/WHEEL,sha256=De7trNMpU3ME6TSju1GKbX8uAvlktHKRFKSTkw997hQ,142
+si4ti-1.1.0a1.dist-info/METADATA,sha256=gR1RnaP7qXQHT24_Ofn3nlJkHYI7Tyq4CHXhNa2YYxY,36101
+si4ti-1.1.0a1.dist-info/licenses/LICENSE,sha256=bafd9Az-pvVolhglsUR46HmHX2rQM_rVeImuW9UhA_Q,26527
