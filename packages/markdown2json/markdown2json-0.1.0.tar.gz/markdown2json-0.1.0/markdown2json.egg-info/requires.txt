@@ -1,0 +1,8 @@
+Markdown==3.7
+beautifulsoup4==4.12.3
+anthropic==0.43.0
+openai==1.59.7
+ollama==0.4.7
+python-dotenv==1.0.1
+markdown-katex==202406.1035
+markdown-it-py==3.0.0
