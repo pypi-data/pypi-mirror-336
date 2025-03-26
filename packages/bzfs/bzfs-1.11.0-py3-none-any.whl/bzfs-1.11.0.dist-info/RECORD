@@ -1,0 +1,16 @@
+bzfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bzfs/bzfs.py,sha256=Olw8-aR_fxwAhllHg31pH6D8zo1YDRKlOL61G0zJeUw,431621
+bzfs/bzfs_jobrunner.py,sha256=WAByVQCQYyfpneL4X1VBqzMyPGi2HY6cNzlHSlgKC18,32879
+bzfs-1.11.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bzfs_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bzfs_tests/bzfs_job_example.py,sha256=PV_FZNcgqmQMpVQSlgpNfRyD1Ooetl80EvPBeQjGr3c,16134
+bzfs_tests/prune_bookmarks.py,sha256=SfscHtUbaGcVanPOeu7NJkCysj_gN7MAjfBaCts9qiE,3460
+bzfs_tests/test_bzfs.py,sha256=SSaIExIZIyJjIqxHNcNH6PefbL76GQjvFZ8F2qypI7Y,1250
+bzfs_tests/test_integrations.py,sha256=_9VApbeFO7i_aHSjQNftxPaNBDw-tZEkUPlbPXGr66c,252442
+bzfs_tests/test_units.py,sha256=73vV2DbfWFkCxH_NNt_XlXk5E-jhna2dOl-NWkynxtU,188322
+bzfs_tests/zfs_util.py,sha256=Y82PNQBhz17A8s68JNOHG82pU_WmZcYtr3WUmJof7GQ,10448
+bzfs-1.11.0.dist-info/METADATA,sha256=KpZylyYZynjwoEiwIQ8ZfD8Z0yjgN9PtE0AXijgsjXw,122214
+bzfs-1.11.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bzfs-1.11.0.dist-info/entry_points.txt,sha256=V7UHk8wf4j7Fr1fYOXivx-Or0I6NDBTBWFg4cVVRMT8,120
+bzfs-1.11.0.dist-info/top_level.txt,sha256=s7iCSuVOWc_Tgy76c-_s5FmuWVTnUcPdwUu9L7mBa2E,16
+bzfs-1.11.0.dist-info/RECORD,,
