@@ -1,0 +1,17 @@
+[project]
+name = "greevil"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vladislav Kishkin", email = "vladislav.kishkin01@gmail.com" },
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+greevil = "greevil:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
