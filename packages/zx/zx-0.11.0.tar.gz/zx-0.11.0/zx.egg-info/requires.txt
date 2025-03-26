@@ -1,0 +1,4 @@
+pycairo
+pygobject==3.50.0
+numpy
+sounddevice
