@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+spheremri/__init__.py
+spheremri/cli.py
+spheremri/dinov2s.pt
+spheremri/model_selector.py
+spheremri/rater.py
+spheremri/t1_anchor.pt
+spheremri/tse_anchor.pt
+spheremri.egg-info/PKG-INFO
+spheremri.egg-info/SOURCES.txt
+spheremri.egg-info/dependency_links.txt
+spheremri.egg-info/entry_points.txt
+spheremri.egg-info/requires.txt
+spheremri.egg-info/top_level.txt

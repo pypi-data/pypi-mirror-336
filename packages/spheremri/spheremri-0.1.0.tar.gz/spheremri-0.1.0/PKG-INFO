@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: spheremri
+Version: 0.1.0
+Summary: MRI motion artifact rating tool
+Home-page: https://github.com/jinghangli98/sphereMRI
+Author: Jinghan Li
+Author-email: jinghang.li@pitt.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Self-Supervised Motion Artifact Rating for MR Images Using Angular Contrastive Learning![image](https://github.com/user-attachments/assets/6da90ec8-6292-488a-bbb5-cf4dfc24016f)
+In this work, we present a self-supervised framework that can quantify motion artifact severity on magnetic resonance images. Our model learns to encode image artifact severity as angular distances from the anchor embeddings. Our self-supervised learning approach does not require manual labeling on artifact severity. Our approach systematically simulates a continuous range of motion artifacts via controlled k-space corruptions and leverages LPIPS as a perceptual metric to guide and fine-tune the pretrained DINOv2 model using angular contrastive loss. The resulting embeddings reflect artifact severity in a perceptually aligned, interpretable manner. Beyond accurately differentiating a smooth spectrum of artifact severity, our method generalizes to unseen modalities, demonstrating zero-shot adaptation to images of different tissue contrast. It also extends naturally to other quality degradations, including inhomogeneity and noise. 
+
+
+<p align="center">
+<img src="https://github.com/jinghangli98/sphereMRI/blob/main/figures/illustration.png" width=80% height=80%>
+<img src="https://github.com/jinghangli98/sphereMRI/blob/main/figures/embeddings.png" width=80% height=80%>
+</p>
+
+##
+
+<p align="center">
+<img src="https://github.com/jinghangli98/sphereMRI/blob/main/figures/illustration2.png" width=80% height=80%>
+<img src="https://github.com/jinghangli98/sphereMRI/blob/main/figures/illustration_T1.png" width=80% height=80%>
+</p>
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/jinghangli98/sphereMRI.git
+cd sphereMRI
+
+# Install the package
+pip install -e .
+```
+
+## Usage
+
+### Rating a NIfTI image
+
+The main functionality is to rate the quality of a NIfTI image. Simply use the `rate` command:
+
+```bash
+# Basic usage (for TSE images - default)
+rate -i path/to/your/image.nii.gz
+
+# For T1 images
+rate -i path/to/your/T1_image.nii.gz --t1
+
+# Example with a specific reference directory and output directory
+rate -i path/to/your/image.nii.gz -r reference_images/ -o results/
+```
+
+### Command Line Arguments
+
+- `-i, --input`: Input NIfTI file to rate (required)
+- `-r, --reference-dir`: Directory with reference quality images (optional, will use built-in reference if not provided)
+- `-o, --output-dir`: Output directory for detailed results
+- `-c, --checkpoint`: Path to model checkpoint (optional, will use built-in model if not provided)
+- `--contrastive`: Contrastive method (angular or euclidean, default: angular)
+- `--slice-idx`: Slice index (automatically set based on contrast: -1 for TSE, 1 for T1 if not specified)
+- `--num-anchor-images`: Number of anchor images to use (default: 5)
+- `--cpu`: Force CPU usage instead of GPU
+- `--t1`: Use T1 contrast mode instead of default TSE mode
+
+## How It Works
+
+The NiftiQualityRater works by:
+
+1. Loading a DinoV2 small ViT model for embedding MRI images
+2. Creating a reference embedding from high-quality images
+3. Comparing new images against this reference embedding
+4. Scoring images based on their similarity to the reference
+
+Quality scores range from 0.0 to 1.0, where higher scores indicate better quality.
+
+## Contrast Modes
+
+The tool supports two contrast modes:
+
+- **TSE (default)**: For Slanted Turbo Spin Echo type sequences, use slice_idx=-1.
+- **T1**: For T1-weighted images. Uses coronal slices (slice_idx=1).
+
+Each mode uses a different pre-built anchor embedding that was trained on high-quality images of that contrast. To specify T1 mode, use the `--t1` flag.
