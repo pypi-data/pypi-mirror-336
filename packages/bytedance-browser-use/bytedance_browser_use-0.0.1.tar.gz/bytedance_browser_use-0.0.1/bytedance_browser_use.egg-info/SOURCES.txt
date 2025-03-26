@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedance_browser_use.egg-info/PKG-INFO
+bytedance_browser_use.egg-info/SOURCES.txt
+bytedance_browser_use.egg-info/dependency_links.txt
+bytedance_browser_use.egg-info/top_level.txt
