@@ -1,0 +1,16 @@
+dotenv/__init__.py,sha256=WBU5SfSiKAhS3hzu17ykNuuwbuwyDCX91Szv4vUeOuM,1292
+dotenv/__main__.py,sha256=N0RhLG7nHIqtlJHwwepIo-zbJPNx9sewCCRGY528h_4,129
+dotenv/cli.py,sha256=5Rj08pPGOQWQnRBZpVP_nysTexT5dirhPK4Y_wVGF2U,6334
+dotenv/crypt.py,sha256=w6k3r17_xk7G3bEVf_1d2jHSaFDGqIYGPbPtGY6YUHo,1559
+dotenv/ipython.py,sha256=avI6aez_RxnBptYgchIquF2TSgKI-GOhY3ppiu3VuWE,1303
+dotenv/main.py,sha256=xuvvwU827ZfdDwUkc3kmWjdbeBnem_FAD8Jdm9CtTxw,12714
+dotenv/parser.py,sha256=TI6GOb-h-b-rzaFDDO4T6ckSN7joFTyjrTc9XYrIiXc,5486
+dotenv/py.typed,sha256=8PjyZ1aVoQpRVvt71muvuq5qE-jTFZkK-GLHkhdebmc,26
+dotenv/variables.py,sha256=CD0qXOvvpB3q5RpBQMD9qX6vHX7SyW-SuiwGMFSlt08,2348
+dotenv/version.py,sha256=5SgGjThsHu_ITn8V83BvCziqCwxdXxTQqcC3KQMHPfM,22
+royman_dotenv-1.1.2.dist-info/LICENSE,sha256=gGGbcEnwjIFoOtDgHwjyV6hAZS3XHugxRtNmWMfSwrk,1556
+royman_dotenv-1.1.2.dist-info/METADATA,sha256=Ks6MjAC98U8zCBt2ODtYiCHdI1NLSiwFvwGhBPhVIWY,23944
+royman_dotenv-1.1.2.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+royman_dotenv-1.1.2.dist-info/entry_points.txt,sha256=yRl1rCbswb1nQTQ_gZRlCw5QfabztUGnfGWLhlXFNdI,47
+royman_dotenv-1.1.2.dist-info/top_level.txt,sha256=eyqUH4SHJNr6ahOYlxIunTr4XinE8Z5ajWLdrK3r0D8,7
+royman_dotenv-1.1.2.dist-info/RECORD,,
