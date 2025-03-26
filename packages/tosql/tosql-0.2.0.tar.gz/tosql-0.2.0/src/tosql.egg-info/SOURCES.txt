@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/tosql/__init__.py
+src/tosql.egg-info/PKG-INFO
+src/tosql.egg-info/SOURCES.txt
+src/tosql.egg-info/dependency_links.txt
+src/tosql.egg-info/entry_points.txt
+src/tosql.egg-info/requires.txt
+src/tosql.egg-info/top_level.txt
+tests/test_integration.py
