@@ -1,0 +1,159 @@
+Metadata-Version: 2.4
+Name: nplinker
+Version: 2.0.0a9
+Summary: Natural Products Linker
+License: Apache-2.0 license
+Project-URL: Documentation, https://nplinker.github.io/nplinker
+Project-URL: Repository, https://github.com/NPLinker/nplinker
+Project-URL: Issues, https://github.com/NPLinker/nplinker/issues
+Keywords: Genome,Metabolome,Natural Products,Data Mining
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: beautifulsoup4
+Requires-Dist: biopython
+Requires-Dist: dynaconf
+Requires-Dist: httpx
+Requires-Dist: jsonschema
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: pandas
+Requires-Dist: pyteomics
+Requires-Dist: pyyaml
+Requires-Dist: rich
+Requires-Dist: scipy
+Requires-Dist: tabulate
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: coverage[toml]; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: typing_extensions; extra == "dev"
+Requires-Dist: types-beautifulsoup4; extra == "dev"
+Requires-Dist: types-jsonschema; extra == "dev"
+Requires-Dist: types-networkx; extra == "dev"
+Requires-Dist: types-tabulate; extra == "dev"
+Requires-Dist: types-PyYAML; extra == "dev"
+Requires-Dist: pandas-stubs; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: mkdocs-exclude; extra == "dev"
+Requires-Dist: mkdocs-redirects; extra == "dev"
+Requires-Dist: mkdocstrings-python; extra == "dev"
+Requires-Dist: mike; extra == "dev"
+Dynamic: license-file
+
+## Badges
+
+| [fair-software.eu](https://fair-software.eu/) recommendations | |
+| :-- | :--  |
+| (1/5) code repository              | [![github repo badge](https://img.shields.io/badge/github-nplinker-000.svg?color=blue)](https://github.com/NPLinker/nplinker) |
+| (2/5) license                      | [![github license badge](https://img.shields.io/github/license/NPLinker/nplinker)](https://github.com/NPLinker/nplinker) |
+| (3/5) community registry           | [![pypi badge](https://img.shields.io/pypi/v/nplinker.svg?color=blue)](https://pypi.python.org/project/nplinker/) |
+| (4/5) citation                     | [![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.4680218.svg)](https://doi.org/10.5281/zenodo.4680218) |
+| (5/5) checklist                    | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/NPLinker/nplinker/badge)](https://scorecard.dev/viewer/?uri=github.com/NPLinker/nplinker) |
+| overall                       | [![fair-software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green)](https://fair-software.eu) |
+| **Other best practices**           |  |
+| Documentation                      | [![Static Badge](https://img.shields.io/badge/Docs_Available-lightgreen)](https://nplinker.github.io/nplinker) [🔗](https://nplinker.github.io/nplinker)|
+| Build & Test                       | [![build](https://github.com/NPLinker/nplinker/actions/workflows/build.yml/badge.svg)](https://github.com/NPLinker/nplinker/actions/workflows/build.yml) |
+| Static analysis                    | [![workflow scq badge](https://sonarcloud.io/api/project_badges/measure?project=NPLinker_nplinker&metric=alert_status)](https://sonarcloud.io/dashboard?id=NPLinker_nplinker) |
+| Coverage                           | [![workflow scc badge](https://sonarcloud.io/api/project_badges/measure?project=NPLinker_nplinker&metric=coverage)](https://sonarcloud.io/dashboard?id=NPLinker_nplinker) |
+| Citation data consistency          | [![cffconvert](https://github.com/NPLinker/nplinker/actions/workflows/cffconvert.yml/badge.svg)](https://github.com/NPLinker/nplinker/actions/workflows/cffconvert.yml) |
+
+
+![NPLinker Logo](./docs/images/NPLinker_standard_black.svg)
+
+NPLinker is a python framework for data mining microbial natural products by integrating genomics and metabolomics data.
+
+Original paper: [Ranking microbial metabolomic and genomic links in the NPLinker framework using complementary scoring functions](https://doi.org/10.1371/journal.pcbi.1008920).
+
+## Setup and usage
+
+### Requirement
+- Linux, MacOS or [Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/)
+- Python version ≥3.9
+
+
+### Installation
+NPLinker is a python package, using both pypi packages and non-pypi packages as dependencies. It 
+requires <span style="color:red;">**~4.5GB**</span> of disk space to install all the dependencies. 
+
+```shell
+# Check python version (requiring ≥3.9)
+python --version
+
+# Create a new virtual environment
+python -m venv env
+source env/bin/activate
+
+# install from nplinker releases (requiring ~300MB of disk space)
+pip install --pre nplinker
+
+# or install the latest from source code
+pip install git+https://github.com/nplinker/nplinker@dev 
+
+# install nplinker non-pypi dependencies and databases (~4GB)
+install-nplinker-deps
+```
+A virtual environment is *required* to install the the non-pypi dependencies. You can also use `conda`
+to manage python environments.
+
+### Testing
+
+To run the tests, you need to clone this repo and install the development dependencies:
+
+```shell
+# Create a new virtual environment
+python -m venv env
+source env/bin/activate
+
+# Clone the repository and install the development dependencies
+git clone https://github.com/NPLinker/nplinker.git
+cd nplinker
+pip install -e ".[dev]"
+install-nplinker-deps
+```
+
+#### Unit tests
+
+To run the unit tests, you can use the following command:
+
+```shell
+pytest
+```
+Pytest will use all available CPU cores to run the unit tests in parallel.
+
+#### Integration tests
+
+To run the integration tests, you can use the following command:
+
+```shell
+pytest -n1 tests/integration
+```
+The `-n1` is to use one CPU core to run the tests. Change it to `-n2` if you want to use two CPU cores to run in parallel.
+
+### Usage
+
+See the [documentation](https://nplinker.github.io/nplinker) for more information about how to use NPLinker.
+
+## Contributing
+
+If you want to contribute to the development of nplinker, have a look at the [contribution guidelines](CONTRIBUTING.md) and [README for developers](README.dev.md).
