@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: pypuclib
+Version: 1.0.4
+Summary: The python package for PUCLIB to control INFINICAM
+Home-page: https://www.photron.co.jp/
+Author: PHOTRON LIMITED
+Author-email: dev-infinicam@photron.co.jp
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary
