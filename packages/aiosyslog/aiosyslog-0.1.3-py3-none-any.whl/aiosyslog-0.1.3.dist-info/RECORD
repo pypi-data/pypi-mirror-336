@@ -1,0 +1,10 @@
+aiosyslog/__init__.py,sha256=9CRJKZP6tXazIMs3zdKFmuA4JJQZZfFSt0xlh5rU8aQ,126
+aiosyslog/__main__.py,sha256=3A_xwyMI6G0BmD9Vl1pW9HxNN2381XOa6F5EZ-2JuQU,1939
+aiosyslog/const.py,sha256=6HC-rl9s-r2YqZj1Kn-UFCzBiRV54ZbLy_X9lwwD_Hk,577
+aiosyslog/helpers.py,sha256=51fFg0mHzip0iP4x0YLMOuqp5nsDjgZrXHZJSHBsWoA,535
+aiosyslog/syslog_client.py,sha256=7aCdhH_emcM8IK5MGL78e-qRqm5C9BeBhjBRaj_xt0w,6596
+aiosyslog-0.1.3.dist-info/licenses/LICENSE,sha256=pAJrW8wCu6jOXrH2tQ34ZFV2BWfkldaYRVI19otPyfQ,1298
+aiosyslog-0.1.3.dist-info/METADATA,sha256=rFU8v_zZE95u4u-OVfv6baFud9YPHuZ96a4U4NKGYEQ,1316
+aiosyslog-0.1.3.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+aiosyslog-0.1.3.dist-info/top_level.txt,sha256=SCFzNMuXQ7W4TVCKSS2v-X0SB4MFohW_ZYSNwCCx0W0,10
+aiosyslog-0.1.3.dist-info/RECORD,,
