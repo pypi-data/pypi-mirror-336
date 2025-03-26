@@ -1,0 +1,6 @@
+dtpyftp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtpyftp/client.py,sha256=7DVEHRfLvaBK-BEClm_LYfmDrSKaMp_qb2XUpuXp1XA,6931
+dtpyftp/file_folder.py,sha256=I8htQhOS7zEq7LvD3XhpF34TXexGQZTEuixoCFx5qZE,259
+dtpyftp-0.1.2.dist-info/METADATA,sha256=uk7hqKhzi9x6KIq0_0Yg6qyNQDZmrJ29JrvRfd1dNNQ,694
+dtpyftp-0.1.2.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dtpyftp-0.1.2.dist-info/RECORD,,
