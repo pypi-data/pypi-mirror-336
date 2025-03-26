@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+src/diatomic/__init__.py
+src/diatomic/calculate.py
+src/diatomic/operators.py
+src/diatomic/plotting.py
+src/diatomic/systems.py
+src/diatomic_py.egg-info/PKG-INFO
+src/diatomic_py.egg-info/SOURCES.txt
+src/diatomic_py.egg-info/dependency_links.txt
+src/diatomic_py.egg-info/requires.txt
+src/diatomic_py.egg-info/top_level.txt
+tests/test_calculate.py
+tests/test_operators.py
