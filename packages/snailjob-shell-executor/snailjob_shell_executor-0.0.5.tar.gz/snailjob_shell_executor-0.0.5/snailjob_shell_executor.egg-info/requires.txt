@@ -1,0 +1,5 @@
+pydantic==2.7.4
+python-dotenv==1.0.1
+aiohttp==3.10.9
+protobuf==5.27.2
+grpcio==1.66.2

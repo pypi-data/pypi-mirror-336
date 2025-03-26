@@ -1,0 +1,43 @@
+
+## snailjob-shell-executor
+
+基于snail-job 项目的[snail-job项目 java 后端](https://gitee.com/aizuda/snail-job)开发的Linux Shell 执行器，用于执行定时任务。具有以下特点
+
+1. 一键安装，job调整只需要在控制中心配置即可，不需要编写 Python 脚本
+2. 同时可以作为普通snail-job包引入，编写自己的任务脚本
+3. 支持结果上报，支持日志上报
+
+## 开始使用
+
+```shell
+# 创建工作目录
+mkdir /services/snailjob_executor
+# 下载安装文件
+curl -L xxxxx(略)
+
+# 安装snailjob
+./install_snailjob_shell_executor.sh
+步骤1: 检查Python版本
+Python 当前版本为 3.8 符合(Python 3.8-3.11)
+步骤2: 创建虚拟环境 venv...
+步骤3: 安装 snailjob-shell-executor...
+步骤4: 生成默认 .env 文件
+复制 .env 文件到当前目录...
+# 配置 .env 文件
+步骤5: 开始配置 .env 文件（直接回车保留当前默认值）:
+接入组名 (默认: snail_job_demo_group): snailjob_optgroup
+客户端绑定IP，必须服务器可以访问到 (默认: 127.0.0.1):
+服务器IP地址（或域名） (默认: 127.0.0.1):
+客户端通讯端口 (默认: 17889):
+服务器通讯端口（不是后台管理页面服务端口） (默认: 17888):
+接入命名空间 (默认: 764d604ec6fc45f68cd92514c40e9e1a): 764d604ec6fc45f68cd92514c40e9e1a
+接入组 token (默认: SJ_Wyz3dmsdbDOkDujOTSSoBjGQP1BMsVnj): SJ_Wyz3dmsdbDOkDujOTSSoBjGQP1BMsVnj
+# 生成启动文件
+步骤6: 生成 Supervisor 配置
+Supervisor 配置文件已生成: snailjob_supervisor.conf
+# 前台启动测试
+步骤7: 启动 snailjob_shell_executor
+前台启动,请检查执行器是否注册成功和心跳正常...(生产环境请使用snailjob_supervisor.conf配置)
+2025-03-26 14:26:34,821 | SnailJob Local Logger  | INFO     | 成功注册执行器: shellCommandExecutor
+2025-03-26 14:26:34,866 | SnailJob Local Logger  | INFO     | 发送心跳成功: reqId=1742970394821
+```
