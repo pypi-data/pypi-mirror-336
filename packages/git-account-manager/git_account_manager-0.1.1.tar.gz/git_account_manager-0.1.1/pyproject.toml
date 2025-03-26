@@ -1,0 +1,48 @@
+[project]
+name = "git-account-manager"
+version = "0.1.1"
+description = "A simple tool to manage your Git accounts and projects"
+readme = "README.md"
+authors = [
+    {name = "NourEldin", email = "noureldin.osama.saad@gmail.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[all]>=0.115.11",
+    "sqlmodel>=0.0.24"
+]
+
+[project.scripts]
+git-manager = "git_account_manager.main:main"
+
+[dependency-groups]
+dev = [
+    "pre-commit",
+    "pytest"
+]
+lint = [
+    "ruff"
+]
+
+[tool.uv]
+default-groups = []
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = [
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle
+    "I",  # isort
+    "DTZ",  # flake8-datetimez
+    "UP",  # pyupgrade
+    "C90",  # mccabe
+    "Q",  # flake8-quotes
+    "RUF"  # Ruff-specific rules
+]
+extend-ignore = ["RUF001", "B904", "B008"]
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
