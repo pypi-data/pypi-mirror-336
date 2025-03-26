@@ -1,0 +1,2 @@
+[console_scripts]
+omniNames=omniORB:main.run_omniNames
