@@ -1,0 +1,3 @@
+teradatamodelops==7.1.4rc1
+# These below are snyk vulnerabilities fixes
+pycryptodome>=3.19.1
