@@ -1,0 +1,9 @@
+sltkpy/__init__.py,sha256=ICPu2UGSLO_MzKVoVd1c4pj9WCvIxTBtqtO9_PrT6xc,35
+sltkpy/tokenizer.py,sha256=txTmaaS3439qdyt8K84Xk1dTBx4FImkvgNueOQEF0cM,12306
+sltkpy/models/vocab.json,sha256=_h948M8Hld_fk9VczV-TUlXpbY_Z-lh7zCx3FCyej8A,340999
+sltkpy-1.0.0.data/data/shared/vocab.json,sha256=_h948M8Hld_fk9VczV-TUlXpbY_Z-lh7zCx3FCyej8A,340999
+sltkpy-1.0.0.dist-info/licenses/LICENSE,sha256=rkZiQl2FU3TEKoZTs5ubD9esmsHcoNa8JZxv5O4Vw3E,1104
+sltkpy-1.0.0.dist-info/METADATA,sha256=UBCY1N3ojLrft_dqDIIqDSXUmhpBHuaItn86sM0_RU4,4167
+sltkpy-1.0.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+sltkpy-1.0.0.dist-info/top_level.txt,sha256=ughrqbsYiuAux5yW0nnyERfZaYv3dcL48HnwTWjXAMs,7
+sltkpy-1.0.0.dist-info/RECORD,,
