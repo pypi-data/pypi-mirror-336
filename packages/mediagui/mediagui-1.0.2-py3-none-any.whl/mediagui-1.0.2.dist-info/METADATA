@@ -1,0 +1,69 @@
+Metadata-Version: 2.4
+Name: mediagui
+Version: 1.0.2
+Summary: A Python package with a GUI for video formatting
+Home-page: https://github.com/khicken/mediaGUI
+Author: Kaleb Kim
+Author-email: mail@kalebkim.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: opencv-python<5,>=4.8.1
+Requires-Dist: PyQt6<7,>=6.6.0
+Requires-Dist: PyQt6-Qt6<7,>=6.6.0
+Requires-Dist: PyQt6-sip<14,>=13.5.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# mediaGUI
+A minimal GUI application to effficiently preprocess video data. Useful for SLEAP, DeepLabCut, etc.
+
+Available for Windows and MacOS.
+
+## Installation
+### Executable (recommended)
+The recommended installation is to directly download the executable on [GitHub](https://github.com/khicken/mediaGUI/releases).
+
+The Windows installation includes an external library for efficient mp4 processing.
+
+### Pip
+Otherwise, install the software as a package using [pip](https://pypi.org/project/pip/). It's recommended to install the package in a [virtual envrionment](https://docs.python.org/3/library/venv.html).
+```sh
+pip install mediagui
+```
+
+## Usage
+### Executable
+Open the executable to launch the application.
+
+### Pip
+Launch the application with:
+```sh
+mediagui
+```
+
+
+## Compatibility
+| Platform | Python Version |
+|----------|----------------|
+| Windows  | 3.9+ |
+| macOS    | 3.9+ |
+| Linux    | 3.9+ |
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
