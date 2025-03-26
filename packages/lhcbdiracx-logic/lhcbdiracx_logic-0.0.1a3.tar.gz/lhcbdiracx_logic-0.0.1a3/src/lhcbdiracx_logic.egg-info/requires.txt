@@ -1,0 +1,10 @@
+diracx-logic
+
+[types]
+boto3-stubs
+types-aiobotocore[essential]
+types-aiobotocore-s3
+types-cachetools
+types-python-dateutil
+types-PyYAML
+types-requests

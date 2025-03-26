@@ -1,0 +1,11 @@
+pyproject.toml
+src/lhcbdiracx/logic/__init__.py
+src/lhcbdiracx/logic/py.typed
+src/lhcbdiracx/logic/bookkeeping/__init__.py
+src/lhcbdiracx/logic/bookkeeping/bookkeeping.py
+src/lhcbdiracx_logic.egg-info/PKG-INFO
+src/lhcbdiracx_logic.egg-info/SOURCES.txt
+src/lhcbdiracx_logic.egg-info/dependency_links.txt
+src/lhcbdiracx_logic.egg-info/entry_points.txt
+src/lhcbdiracx_logic.egg-info/requires.txt
+src/lhcbdiracx_logic.egg-info/top_level.txt
