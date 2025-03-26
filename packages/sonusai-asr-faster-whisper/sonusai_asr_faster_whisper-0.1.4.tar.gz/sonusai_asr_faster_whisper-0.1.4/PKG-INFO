@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: sonusai-asr-faster-whisper
+Version: 0.1.4
+Summary: Faster-whisper ASR tools for SonusAI
+Home-page: https://aaware.com
+License: GPL-3.0-only
+Author: Chris Eddington
+Author-email: chris@aaware.com
+Maintainer: Chris Eddington
+Maintainer-email: chris@aaware.com
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ctranslate2 (>=4.2.1,<4.3.0)
+Requires-Dist: faster-whisper (>=1.0.2,<2.0.0)
+Requires-Dist: sonusai (>=1.0.0)
+Description-Content-Type: text/x-rst
+
+SonusAI ASR Faster Whisper: Faster Whisper tools for SonusAI
+
