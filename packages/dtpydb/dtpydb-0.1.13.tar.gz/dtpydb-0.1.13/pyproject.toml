@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dtpydb"
+version = "0.1.13"
+description = "A Python package for managing database connections, sessions, and ORM operations using SQLAlchemy. This package supports both synchronous and asynchronous database interactions with PostgreSQL."
+authors = ["Reza Shirazi <reza@datgate.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python='^3.11'
+dtpyutils = "^0.2.0"
+SQLAlchemy='^2.0.37'
+psycopg2='^2.9.9'
+asyncpg='^0.29.0'
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
