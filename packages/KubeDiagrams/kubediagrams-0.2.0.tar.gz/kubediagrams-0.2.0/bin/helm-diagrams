@@ -1,0 +1,34 @@
+#! /bin/sh
+
+# $1 contains the Helm Chart URL.
+repository=$(dirname $1)
+chart=$(basename $1)
+
+# Use the KubeDiagrams custom configuration if exist.
+KD_CC="KubeDiagrams.yaml"
+if [ -e $KD_CC ]
+then
+  KD_OPTS="-c $KD_CC"
+else
+  KD_OPTS=""
+fi
+
+echo Download $1...
+
+if [[ ${repository} == oci* ]]
+then
+  # Deal with OCI registries.
+  helm template ${chart} $1 2> /dev/null | kube-diagrams $KD_OPTS --without-namespace -o $chart -
+else
+  # Deal with HTTP registries.
+
+  # Add a Helm repository.
+  rid=helm-diagrams-repo
+  helm repo add $rid $repository --force-update >/dev/null
+
+  # Process the chart and generate the architecture diagram.
+  helm template $chart $rid/$chart | kube-diagrams $KD_OPTS --without-namespace -o $chart -
+
+  # Remove the Helm repository.
+  helm repo remove $rid >/dev/null
+fi
