@@ -1,0 +1,29 @@
+[project]
+name = "cbsodata4"
+version = "0.1.2"
+description = "Python package to access the OData4 interface of data and metadata of Statistics Netherlands (CBS)"
+readme = "README.md"
+authors = [
+    { name = "Dennis Albers", email = "dennis_foss@tutan.de" }
+]
+requires-python = ">=3.13"
+license = "Apache-2.0"
+dependencies = [
+    "httpx>=0.28.1",
+    "pandas>=2.2.3",
+    "pyarrow>=19.0.1",
+]
+
+[project.scripts]
+cbsodata4 = "cbsodata4:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+]
