@@ -1,0 +1,121 @@
+
+# SYN FUNLEAKER Library
+
+This is the official `funleaker` core functions (beta) for Python. Users can now log in to their Syn account and use basic functions. This can be integrated into your web API app. Please be aware that this project is NSFW, and all results will return NSFW content.
+
+## Features
+- **Login**: Log into your Syn account using your credentials.
+- **Token Management**: Handles token management, storing, and clearing tokens locally.
+- **Leak Management**: Allows scraping and fetching leaked content from supported platforms (OnlyFans, Fansly, Patreon).
+- **Logging**: Includes verbose and low-level logging for detailed progress tracking.
+- **Rate Limiting**: Implements rate limiting for requests to ensure you don't hit the API too frequently.
+- **Leaking Data**: Ability to fetch leaked content in multiple formats such as JSON, XML, HTML, and text.
+
+## Installation
+
+To install the `funleaker` library, follow the instructions below:
+
+### Using pip
+
+1. Make sure you have `pip` installed (for Python 3.7 or later).
+2. Install the library by running:
+
+   ```bash
+   pip install funleaker
+   ```
+
+## Usage
+
+### Importing the Library
+
+You can import and use the library in your Python project as follows:
+
+```python
+import funleaker
+from funleaker import syn_utils
+```
+
+### Initializing the `syn_utils` Class
+
+Before interacting with Syn services, initialize the `syn_utils` class:
+
+```python
+utils = syn_utils(lowLvlLog=True, showProgressBar=True)
+```
+
+### Logging In
+
+You need to log in to your Syn account using your username and password.
+
+```python
+utils.login(username="your_username", password="your_password", saveTokenInDevice=True)
+```
+
+- `saveTokenInDevice`: If set to `True`, the token will be saved in a local file for future sessions.
+
+### Performing a Leak Operation
+
+To scrape leaked data from supported platforms, use the `DoLeak` method.
+
+```python
+leak_data = utils.DoLeak(target="target_username", login_method="login", platform="onlyfans", deepth=5, LeakType="VisualLeaks", ReturnType="json", autoLeak=True)
+```
+
+Parameters:
+- `target`: The URL or identifier of the target creator.
+- `login_method`: The method used to log in (e.g., "login").
+- `platform`: The platform to scrape (e.g., "onlyfans", "fansly", "patreon").
+- `deepth`: The depth of scraping (number of pages to fetch - 0, 50 , 100 , 150 etc..).
+- `LeakType`: Type of leak data (e.g., "VisualLeaks" only this type (mode) for now).
+- `ReturnType`: Format in which to return the leak data (e.g., "json", "text", "html", "xml").
+- `autoLeak`: If `True`, it automatically fetchs all posts.
+
+### Logging Out
+
+To log out and clear cached tokens:
+
+```python
+utils.logout()
+```
+
+## Code Example
+
+Here's an example usage of the `syn_utils` class:
+
+```python
+from funleaker import syn_utils
+
+# Initialize the utility class
+utils = syn_utils(lowLvlLog=True, showProgressBar=True)
+
+# Log into the Syn service
+utils.login(username="your_username", password="your_password", saveTokenInDevice=True)
+
+# Perform a data leak operation
+leak_data = utils.DoLeak(target="creator_username", login_method="login", platform="onlyfans", deepth=10, LeakType="VisualLeaks", ReturnType="json", autoLeak=True)
+
+# Log out
+utils.logout()
+```
+
+## Configuration
+
+- **Token Cache**: By default, tokens are cached in the `token_cache.json` (DO NOT SHARE IT TO ANYONE) file to avoid repeated logins. This can be disabled by passing `saveTokenInDevice=False` during login.
+- **Rate Limiting**: The `syn_utils` class ensures that requests are rate-limited to avoid overloading the server. The rate limit is set to 1 request per second by default, but you can customize it if needed.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### **Disclaimer:**
+This project involves scraping NSFW content, and the use of this tool is only intended for appropriate, legal, and ethical purposes. The authors of this project do not take responsibility for the misuse of the software.
+
+### **Warning:**
+This tool does **not** target or leak anything directly from the source, nor does it launch any kind of cyberattack or mass-promotion. Rather, it connects to publicly available sites that generally offer NSFW content. Again, we do not target any of the aforementioned platforms, nor does this tool solicit or send any requests to them.
+
+---
+
+Thank you for using `funleaker`! If you encounter any issues, feel free to open an issue in the repository.
