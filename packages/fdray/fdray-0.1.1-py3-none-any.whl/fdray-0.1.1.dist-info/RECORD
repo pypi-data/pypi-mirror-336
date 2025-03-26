@@ -1,0 +1,17 @@
+fdray/__init__.py,sha256=0R8A0W9l1m8_ZZQt0D7PT-_B9L-zuZ6hXdIwXwyz0d0,982
+fdray/camera.py,sha256=8nlZSBmJMhyDr69JgwcU2dxDpQuS1tuL8oC7l-yInl4,6850
+fdray/color.py,sha256=hCdq-b6szk_8MwiUvXpV4JSt3VelrnjyAUpoC_iOOX8,10972
+fdray/core.py,sha256=_oEE2UMvrGFgWV-rdyaJASSjBvj-asnpH5DOgm0dSss,7942
+fdray/format.py,sha256=xlhmxQTEiolGXMUk7DM6RkNKyp8w2puOsNS-ThAF1hU,2322
+fdray/light_source.py,sha256=RWy9OyN8nYLF9ABc6TkULgFx2txDi8TcnPbg6rLm7TE,2042
+fdray/object.py,sha256=lWgj9eon4m64hwBJl5mfNNtMv2XL3xog0TmhtyVGDLw,17196
+fdray/renderer.py,sha256=UP1UDOvV_gEkf4fv9Sp30XkjpUhc-XTH_i71nYAvB1c,5062
+fdray/scene.py,sha256=Usg-TBPBxNVGwj7ULQOMAF8BjNckOLnsgYnv9JE8pCY,2980
+fdray/texture.py,sha256=N4qsnzQ9ZUBxhB924TYYL7rcNARNdgXX75D1BDDw3eI,1307
+fdray/typing.py,sha256=t1ibqhh5OKm1FuRE3dNcp_ni2hG7b8JU8pu7qDuhzo8,376
+fdray/utils.py,sha256=hYUvPml25IfjC3zJcd6gQddXNYxFF2ZoATTa2AU5egc,1227
+fdray/vector.py,sha256=ka6dV_FqPdTsLmaDZzUj6NAfPcaaP21b7ofuMNWyUF8,5043
+fdray-0.1.1.dist-info/METADATA,sha256=J-TcNd-oJsIZ6lSexDbOd1RqonAeQWMR8VvCeduu_Jk,2748
+fdray-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fdray-0.1.1.dist-info/licenses/LICENSE,sha256=IGdDrBPqz1O0v_UwCW-NJlbX9Hy9b3uJ11t28y2srmY,1062
+fdray-0.1.1.dist-info/RECORD,,
