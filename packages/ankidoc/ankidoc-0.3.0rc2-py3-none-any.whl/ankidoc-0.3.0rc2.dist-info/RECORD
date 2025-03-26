@@ -1,0 +1,17 @@
+ankidoc/__init__.py,sha256=n48YZXMITLbSv5z7PANVNsqjR98oOgEh3C5hQBekGak,54
+ankidoc/__main__.py,sha256=oXTVbfACY3HhZ47zvEBr0oiywDbBubLrabrK7gFMApY,795
+ankidoc/_version.py,sha256=GSciK0Ap6FGRdyoKcn6VQKpnfmL85SDslEgAhepUzR8,514
+ankidoc/cli.py,sha256=aHnL555iGn0FF5OAJ8ojRv2VyL97qea2aJc50PEEY_M,3797
+ankidoc/converter.py,sha256=3b4HTpWRasKI2ERPOBfthHry4k_XGMUSA6g_0ubBN2U,7431
+ankidoc/default_mode.py,sha256=KzVsGLs7v32OmJ1sUQvnb3eLkk1g8oe7CjzZnJHzL6c,723
+ankidoc/docgen_mode.py,sha256=Vf_MQebzXaij_e7yHgfewRQTGckfwpbuUwxosXrWKbs,583
+ankidoc/link_mode.py,sha256=DpA7ZxaaOElvbctdbha4yfhFTeQDFMUXF-4ObKe0d1w,1056
+ankidoc/notegen_mode.py,sha256=LJ3oh4s0r0yRcUkgbku4l3bIKgro9PWHcCyELFSmGpU,565
+ankidoc/preview_mode.py,sha256=Eu_Ax5s6GgcBVJXrCtxBvFzuYnMvwyCR3plkudegEXU,576
+ankidoc-0.3.0rc2.data/data/share/man/man1/ankidoc.1,sha256=jd8tokCCKRLOfPHzhUnXp4bR4L_hBeP904E9k1Qc1Fc,4207
+ankidoc-0.3.0rc2.dist-info/licenses/LICENSE.md,sha256=zFRw_u1mGSOH8GrpOu0L1P765aX9fB5UpKz06mTxAos,34893
+ankidoc-0.3.0rc2.dist-info/METADATA,sha256=JhMEpzL84bbkO6rpyyW_kCGOW4GRqPFParxpJ03A-Cc,42413
+ankidoc-0.3.0rc2.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+ankidoc-0.3.0rc2.dist-info/entry_points.txt,sha256=P1kRwRui3EnRKjua4X-Lo3ye44PikMHMxth0uA2yQcA,45
+ankidoc-0.3.0rc2.dist-info/top_level.txt,sha256=2k4FoGOj7durzojiM2bZniCr3fzYzyXDw9NxosRIicg,8
+ankidoc-0.3.0rc2.dist-info/RECORD,,
