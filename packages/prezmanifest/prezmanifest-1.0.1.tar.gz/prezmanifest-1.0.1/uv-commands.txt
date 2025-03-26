@@ -1,0 +1,2 @@
+uv pip install -u PACKAGE
+uv lock --upgrade
