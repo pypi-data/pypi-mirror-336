@@ -1,0 +1,6 @@
+hazm
+gensim
+scikit-learn
+pandas
+numpy
+tqdm
