@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+IPython
+plotly
+
+[dev]
+pytest
+pytest-cov

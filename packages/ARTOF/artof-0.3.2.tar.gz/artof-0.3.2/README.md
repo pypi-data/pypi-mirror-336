@@ -1,0 +1,34 @@
+# ARTOF
+The ARTOF package is a tool to read, process and analyze data collected from angle resolved time of flight (ARTOF) sensors.
+
+## Getting started
+To use this package python version >=3.10 is needed. The installation can be done using the command:
+```bash
+pip install ARTOF
+```
+
+## Documentation
+The documenation can be found [here](https://artof-42d889.pages.hzdr.de/main/). It is automatically generated from the docstrings in all python classes.
+
+## Workflow
+The implementation of a new feature should be conducted as follows:
+1. Create a new branch with a sensible name as a fork from `dev`.
+2. Implement features including documentation.
+3. If required, make changes to the Sphinx documenation under `docs/source/`.
+4. Check if all excisting tests are still working (cmd: `pytest`) and write new test functions using.
+5. If there were changes to `dev` since the initial fork, merge it into your branch and resolve conflicts.
+6. Increase version number in `setup.cfg` file.
+7. Push all changes to the remote repository and create a merge request to `dev`.
+8. Make sure all tests succeed in the pipeline and merge.
+9. When enough changes accumulate, create a merge request to `main` once enough features accumulated to roll out a new version. Make again sure all test pipelines succeed.
+10. After merging to `main` a new version of the package is released to PyPi upon a successful pipeline run.
+
+## Issues and new features
+Issues and new feature requests can be added [here](https://codebase.helmholtz.cloud/carl.meier/artof/-/issues).
+
+## Development version
+A version with features under development is available under the TestPyPi repository and can be installed as followed:
+```bash
+pip install --index-url https://test.pypi.org/simple/ ARTOF
+```
+The documentation can be found [here](https://artof-42d889.pages.hzdr.de/dev/).
