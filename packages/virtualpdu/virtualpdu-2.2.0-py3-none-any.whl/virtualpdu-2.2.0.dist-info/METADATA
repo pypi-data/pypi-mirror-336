@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: virtualpdu
+Version: 2.2.0
+Summary: VirtualPDU is a service for simulating virtual power distribution outlets (PDUs).
+Home-page: https://opendev.org/x/virtualpdu
+Author: OpenStack
+Author-email: openstack-discuss@lists.openstack.org
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: libvirt-python >=6.0.0
+Requires-Dist: pysnmp-lextudio >=5.0.0
+Requires-Dist: pyasn1 >=0.5.1
+Requires-Dist: pyasn1-modules >=0.3.0
+
+===============================
+virtualpdu
+===============================
+
+VirtualPDU is a service for simulating virtual power distribution outlets
+(PDUs).
+
+This software is intended for CI and development use only. Please do not run
+VirtualPDU in a production environment for any reason.
+
+* Free software: Apache license, Version 2.0
+* Source: http://opendev.org/openstack/virtualpdu
+* Bugs: http://bugs.launchpad.net/virtualpdu
+
