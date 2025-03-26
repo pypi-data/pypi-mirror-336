@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+spinex_sr/__init__.py
+spinex_sr/spinex.py
+spinex_sr.egg-info/PKG-INFO
+spinex_sr.egg-info/SOURCES.txt
+spinex_sr.egg-info/dependency_links.txt
+spinex_sr.egg-info/requires.txt
+spinex_sr.egg-info/top_level.txt
