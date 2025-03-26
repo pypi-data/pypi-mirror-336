@@ -1,0 +1,2 @@
+[console_scripts]
+rsa-tool = rsa_tool.cli:main
