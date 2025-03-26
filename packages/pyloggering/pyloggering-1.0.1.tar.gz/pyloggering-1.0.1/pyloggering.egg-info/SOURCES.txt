@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyloggering/__init__.py
+pyloggering/pyloggering.py
+pyloggering.egg-info/PKG-INFO
+pyloggering.egg-info/SOURCES.txt
+pyloggering.egg-info/dependency_links.txt
+pyloggering.egg-info/requires.txt
+pyloggering.egg-info/top_level.txt
