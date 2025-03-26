@@ -1,0 +1,15 @@
+authres
+
+[:python_version < "3"]
+ipaddr
+
+[PyDNS]
+
+[PyDNS:python_version < "3"]
+PyDNS
+
+[PyDNS:python_version >= "3"]
+Py3DNS
+
+[dnspython]
+dnspython>=1.16.0
