@@ -1,0 +1,31 @@
+[project]
+name = "mcp_mlb_statsapi"
+version = "0.2.0"
+description = "Python-based MCP using the mlb-statsapi library to provide three key functionalities(Retrieve Game Results, Retrieve Game Schedule and Retrieve Specific Game Results ) related to MLB games"
+readme = "README.md"
+authors = [{ name = "PYChen", email = "mozpizza@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.5.0",
+    "mcp>=1.5.0",
+    "mlb-statsapi>=1.8.1",
+    "pybaseball>=2.2.7",
+    "bottleneck>=1.4.2",
+]
+license = "MIT"
+license-files = { paths = ["LICENSE"] }
+keywords = ["mlb_statsapi", "mlb", "mcp"]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_mlb_statsapi"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+]
+
+[project.scripts]
+mcp_mlb_statsapi = "mcp_mlb_statsapi:main"
