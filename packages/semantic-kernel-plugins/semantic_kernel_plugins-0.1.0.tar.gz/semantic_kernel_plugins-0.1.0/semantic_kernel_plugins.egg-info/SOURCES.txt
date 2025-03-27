@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+semantic_kernel_plugins/__init__.py
+semantic_kernel_plugins.egg-info/PKG-INFO
+semantic_kernel_plugins.egg-info/SOURCES.txt
+semantic_kernel_plugins.egg-info/dependency_links.txt
+semantic_kernel_plugins.egg-info/requires.txt
+semantic_kernel_plugins.egg-info/top_level.txt
