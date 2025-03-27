@@ -1,0 +1,17 @@
+jupygrader/__about__.py,sha256=BVaZdYkM0Skn0HVdGhnzMUTrcnnuRlreNw3AlLEHRoQ,135
+jupygrader/__init__.py,sha256=i2VWnGkGaVG_Tli7trEy9qzPcn1LSlvYYrkO0l6KJCE,908
+jupygrader/cli.py,sha256=YdvbKZWPswYJA4n2152bqFFi6lYJ2u4aNmwxZD0iX3A,8445
+jupygrader/constants.py,sha256=KNLCayyCadjixBEg7JtAk7OYFpWPY3Jmj8b9Qj6BVQg,57
+jupygrader/grader.py,sha256=kAFiTbvB7oxbL7jx66TCnxJL5jpf7GHNpzArSEJENeI,15152
+jupygrader/notebook_operations.py,sha256=4fgcvojM8ELCnHgIdJwe4BGIEcz7Maakd6AHIs3Ubeo,21740
+jupygrader/obfuscate.py,sha256=eE4GSuDgzLVKfhZ6lvFHB7xelbIlIIq_gBgqtUbxMz4,1118
+jupygrader/types.py,sha256=svYUeT4yGeHhTEsorC3hy_gyMx1ZFUku_pUDdiEO224,8738
+jupygrader/jupyter-cell-scripts/append_to_end_of_notebook.py,sha256=mueJPhHA_FDsrhIf3hwqFC0zLUnRd_JX9NdBN6zxD4M,1300
+jupygrader/jupyter-cell-scripts/grader_manual_template.py,sha256=5PWlBkLDd7l1yr2TeIXshpZF54NNach_-w9ZCLOl3nQ,169
+jupygrader/jupyter-cell-scripts/grader_template.py,sha256=d2dPB__S_Kp8en9yeBfGxMbrIV23oCxC2vkeac71s04,292
+jupygrader/jupyter-cell-scripts/prepend_to_start_of_notebook.py,sha256=e66mC9Fm_9lAWSudnorxtLfcoqXinrtRKfHZWK11KIc,1175
+jupygrader-0.1.11.dist-info/METADATA,sha256=SXcJbUJJT07GgKaEqj3KyeROWvKyQSbY89IaAaukOE8,8499
+jupygrader-0.1.11.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupygrader-0.1.11.dist-info/entry_points.txt,sha256=c4X4pBmUnQXPGqT4hLJbCEs1TAKVcx4-qLSWE04Wdk0,44
+jupygrader-0.1.11.dist-info/licenses/LICENSE.txt,sha256=0qE6QhIHQjNJexs5sM5beZUExNXB4uJ56FoC5Zk5OmU,1109
+jupygrader-0.1.11.dist-info/RECORD,,
