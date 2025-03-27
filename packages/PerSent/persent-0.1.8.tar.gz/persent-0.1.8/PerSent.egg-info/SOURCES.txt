@@ -1,0 +1,7 @@
+README.md
+setup.py
+PerSent.egg-info/PKG-INFO
+PerSent.egg-info/SOURCES.txt
+PerSent.egg-info/dependency_links.txt
+PerSent.egg-info/requires.txt
+PerSent.egg-info/top_level.txt
