@@ -1,0 +1,87 @@
+[project]
+name = "unit-text"
+version = "0.3.0"
+description = "Unit tests for plain text"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+keywords = [
+    "cli",
+    "ollama",
+    "llm",
+    "language",
+    "unit",
+    "test",
+    "blog",
+    "editor",
+    "ai",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Other Audience",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Editors",
+    "Topic :: Text Editors :: Text Processing",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Utilities",
+]
+authors = [
+    { name = "Giorgio Azzinnaro", email = "giorgio.azzinnaro@sealambda.com" },
+    { name = "Sealambda", email = "hello@sealambda.com" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ollama>=0.4.7",
+    "pydantic>=2.10.6",
+    "dicttoxml>=1.7.16",
+
+    # CLI
+    "typer>=0.15.1",
+    "rich",
+
+    # TODO should be optional?
+    # API
+    "fastapi[standard]>=0.115.11",
+]
+
+[project.urls]
+source = "https://github.com/sealambda/unit-text"
+issues = "https://github.com/sealambda/unit-text/issues"
+
+[project.scripts]
+unit-text = "unit_text:app"
+unit-text-api = "unit_text.api:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["commitizen>=4.1.1", "pre-commit>=4.1.0", "ruff>=0.9.4"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+annotated_tags = true
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle
+    "F",   # Pyflakes
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "SIM", # flake8-simplify
+    "I",   # isort
+]
