@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include cooSql/examples *
+recursive-include cooSql/tests *
