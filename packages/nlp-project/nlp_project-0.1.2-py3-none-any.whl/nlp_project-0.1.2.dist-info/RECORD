@@ -1,0 +1,14 @@
+nlp/__init__.py,sha256=RibDPmMhIvZi29kH6XpA_NnZNdBQsvozbcdE4fplRVA,156
+nlp/imit_label_encoder.pkl,sha256=KxpTajQl2q1CDDhYMg2C2x8Ry2PXKRmoLmk-E_7pAbo,564
+nlp/imit_main.py,sha256=AYwajguE26D-FyQcZA3uM8fLmFiTnHMB57nQ0DJuBB0,2272
+nlp/imit_model.pkl,sha256=uPf-q_BAeca_2OE9zUFCN8NIVSjtP_QjT7WrEdepL7E,92287011
+nlp/nlp_main.py,sha256=HQ644Vlc6-jBRn-V11I-P-dC2e_klFYmFzaD8gW6ruM,1271
+nlp/nlpmodel.pkl,sha256=mS4lSCeQra4kBk7TmLx8oGaXiDOBF11Rly4GhiFzy1g,1407
+nlp/nlpvectorizer.pkl,sha256=OWXUT2rfIQ-JZnyYeYy4MTCtm7qIeUARK0Mtwxu3g48,687
+nlp/test_large.py,sha256=2wXF--Ye-EkrD8dVQtVEnzjCrzdCXAZEYBhx906hplw,3686
+nlp/test_small.py,sha256=zMCDM5efT5cknfVIQZHWN9ipMtCL3CjGeIIMdus8Abo,3267
+nlp_project-0.1.2.dist-info/LICENSE,sha256=w1UKXDXzOM3J1kFMfQxxM7DGKkKOORDkad7Sp9Of8kE,1058
+nlp_project-0.1.2.dist-info/METADATA,sha256=24XqhFQbJKX3BHwQWsmZAWa1_ZbHfcOvNo4SLxaTZk0,1627
+nlp_project-0.1.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+nlp_project-0.1.2.dist-info/top_level.txt,sha256=Cq1IZPU8aj3pYe8dDQZfMCD5lwuhKtXNYcjU7HuNCaw,4
+nlp_project-0.1.2.dist-info/RECORD,,
