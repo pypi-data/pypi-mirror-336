@@ -1,0 +1,69 @@
+Metadata-Version: 2.4
+Name: kaiju-redis
+Version: 2.4.0
+Summary: Redis and keydb services
+Author-email: Taraskin Anton <antonnidhoggr@me.com>
+Maintainer-email: Taraskin Anton <antonnidhoggr@me.com>
+Project-URL: Homepage, https://gitlab.com/kaiju-python/kaiju-redis
+Project-URL: Documentation, http://kaiju-redis.readthedocs.io
+Keywords: redis,keydb,kaiju
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: kaiju-tools<3,>=2.4.3
+Requires-Dist: coredis
+Provides-Extra: dev
+Requires-Dist: uv; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: bump-my-version; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: bandit; extra == "dev"
+Requires-Dist: pyupgrade; extra == "dev"
+Requires-Dist: pyroma; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: docker; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: python-docs-theme; extra == "docs"
+Dynamic: license-file
+
+
+.. image:: https://badge.fury.io/py/kaiju-redis.svg
+    :target: https://pypi.org/project/kaiju-redis
+    :alt: Latest package version
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Code style - Black
+
+`Python <https://www.python.org>`_ >=3.11
+
+`Redis <https://redis.io>`_ >=7.0
+
+Redis client services, redis cache and RPC streams client and server.
+See `documentation <https://kaiju-redis.readthedocs.io/>`_ for more info.
+
+Installation
+------------
+
+.. code-block:: console
+
+  pip install kaiju-redis
+
+For developers
+--------------
+
+Use the setup script to install the project for development.
+
+.. code-block:: console
+
+  git clone git@gitlab.com:kaiju-python/kaiju-redis.git
+  cd kaiju-redis
+  . ./setup-dev.sh
