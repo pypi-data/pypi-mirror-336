@@ -1,0 +1,2 @@
+[console_scripts]
+lib-uninstaller = lib_uninstaller.main:uninstall_packages
