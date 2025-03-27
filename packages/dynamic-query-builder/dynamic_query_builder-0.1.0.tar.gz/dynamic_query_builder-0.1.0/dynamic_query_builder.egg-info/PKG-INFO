@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: dynamic-query-builder
+Version: 0.1.0
+Summary: A dynamic query builder with filtering, pagination, and sorting for SQLAlchemy models.
+Author: Md Anisur Rahman
+Author-email: anisurrahman14046@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy>=1.4
+Requires-Dist: fastapi>=0.68
+Requires-Dist: asyncpg
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Dynamic Query Builder
+
+A dynamic query builder for SQLAlchemy models with support for pagination, filtering, and sorting.
+
+## Installation
+
+```bash
+pip install dynamic-query-builder
+```
+
+```
+from dynamic_query_builder import QueryBuilder
+from models import User  # Example model
+
+# Initialize the QueryBuilder
+query_builder = QueryBuilder(
+    model=User,
+    session=db_session,
+    filters={"username": "john"},
+    search_fields=["username"],
+    page=1,
+    page_size=10,
+)
+
+# Execute the query
+results = await query_builder.execute()
+```
