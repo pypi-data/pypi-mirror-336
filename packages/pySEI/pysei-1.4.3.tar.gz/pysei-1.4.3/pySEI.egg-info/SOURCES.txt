@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pySEI/__init__.py
+pySEI/config.ini
+pySEI.egg-info/PKG-INFO
+pySEI.egg-info/SOURCES.txt
+pySEI.egg-info/dependency_links.txt
+pySEI.egg-info/requires.txt
+pySEI.egg-info/top_level.txt
