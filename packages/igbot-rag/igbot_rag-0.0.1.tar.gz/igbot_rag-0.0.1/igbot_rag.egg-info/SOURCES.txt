@@ -1,0 +1,9 @@
+pyproject.toml
+igbot_rag/__init__.py
+igbot_rag/chroma_vectorstore.py
+igbot_rag/document_loader.py
+igbot_rag/metadata_functions.py
+igbot_rag.egg-info/PKG-INFO
+igbot_rag.egg-info/SOURCES.txt
+igbot_rag.egg-info/dependency_links.txt
+igbot_rag.egg-info/top_level.txt
