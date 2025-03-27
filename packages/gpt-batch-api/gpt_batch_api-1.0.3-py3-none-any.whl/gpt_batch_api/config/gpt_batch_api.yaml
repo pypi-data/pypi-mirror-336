@@ -1,0 +1,158 @@
+# Hydra configuration parameters YAML
+
+###############
+##  General  ##
+###############
+
+# Whether to perform a dry run (e.g. no OpenAI API calls, no pushing batches to remote, no processing finished batches, no writing to disk, ...)
+dryrun: False
+
+# OpenAI API key (see openai.OpenAI, ends up in request headers)
+openai_api_key: null
+# OpenAI organization (see openai.OpenAI, ends up in request headers)
+openai_organization: null
+# OpenAI project (see openai.OpenAI, ends up in request headers)
+openai_project: null
+# Base URL to use for the OpenAI API client (see openai.OpenAI, servers other than OpenAI's servers can be configured to expose an OpenAI API with suitable endpoints)
+client_base_url: null
+# API endpoint to use for all requests (Careful: May be ignored by specific tasks that require specific endpoints)
+endpoint: null
+
+# Whether wandb logging is enabled
+wandb: null
+# Wandb directory (must already exist, see also the WANDB_DIR environment variable)
+wandb_dir: null
+# Wandb entity
+wandb_entity: null
+# Wandb project name
+wandb_project: gpt_batch_api
+# Wandb run ID to create or resume (auto-generated run IDs are typically lowercase alphanumeric strings of length 8)
+wandb_run_id: null
+# Wandb run name
+wandb_name: null
+# Wandb group (defaults to the class name of the task manager class)
+wandb_group: null
+
+####################
+##  Task Manager  ##
+####################
+
+# Whether to execute steps when the task manager is run, or just show the status and return (e.g. run=False is useful in combination with wipe_*)
+run: True
+# Whether to allow/perform custom post-processing of the task output data if a run totally completes the task (options: never, if_written, always, where if_written means only if the task output file was written to during the run)
+postprocess_output: if_written
+# CAUTION: Wipe and forget all failed samples from the task state (implies wipe_requests, consider running the task with only_process=True prior to wiping)
+wipe_failed: False
+# CAUTION: Whether to force a reinitialization of the task state meta field even if the task state file already exists (normally the task state meta field is only initialized once at the beginning of a task and remains fixed after that across all future runs)
+reinit_meta: False
+
+#####################
+##  GPT Requester  ##
+#####################
+
+# Whether to solely process existing unfinished remote batches and not generate/commit/push anything new
+only_process: False
+# Whether to force the processing of any failed batches, thereby finalizing them and clearing them from the remote and pipeline (<0 = Process all failed batches, 0 = Do not process any failed batches, >0 = Process at most N failed batches in this session)
+process_failed_batches: 0
+# Whether to retry fatal requests from failed batches that are processed, or otherwise skip and fail them
+retry_fatal_requests: False
+# CAUTION: Wipe and forget all ongoing requests and request batches without processing them (cancels/deletes batches from remote, does not affect any already finished/processed requests, consider running the requester with only_process=True prior to wiping)
+wipe_requests: False
+# CAUTION: Wipe and forget all progress and existing results on the task, and start completely afresh from scratch (implies wipe_requests first, also triggers task manager actions if requester is being managed by one)
+wipe_task: False
+
+# Whether to automatically create the GPT working directory if it does not exist (parent directory must already exist)
+autocreate_working_dir: True
+# Timeout (if any) to use when attempting to lock exclusive access to the files in the GPT working directory corresponding to the given name prefix (see utils.LockFile)
+lock_timeout: null
+# Lock file polling interval (see utils.LockFile)
+lock_poll_interval: null
+# Lock file status update interval (see utils.LockFile)
+lock_status_interval: null
+# Warning mode to use for internal token estimator (see tokens.TokenEstimator)
+token_estimator_warn: once
+# Interval in multiples of which to update remote batch states when waiting for remote batches to finish (seconds)
+remote_update_interval: 10.0
+# Minimum time interval in seconds between successive state saves to disk while waiting for batches to complete
+wait_save_interval: 900.0
+
+# Whether to show verbose requests/responses when using the direct API (options: never, error, warn (i.e. if a warning or error occurs), always)
+direct_verbose: never
+# How many warnings to show/log per batch per warning type when processing responses
+show_warnings: 50
+# How many errors to show/log per batch per error type when processing responses
+show_errors: 25
+# Maximum number of retries to allow by default for a request (e.g. 2 retries => 3 attempts allowed, retries due to batch cancellation or expiration do not count towards the retry count)
+max_retries: 2
+# Whether to perform auto-parsing to help validate and Python-ify API requests and responses
+auto_parse: True
+
+# The cost per million direct input tokens (1M tokens ~ 750K words)
+cost_input_direct_mtoken: 2.50
+# The cost per million cached input tokens (only applicable to direct requests)
+cost_input_cached_mtoken: 1.25
+# The cost per million input tokens with Batch API
+cost_input_batch_mtoken: 1.25
+# The cost per million direct output tokens (1M tokens ~ 750K words)
+cost_output_direct_mtoken: 10.00
+# The cost per million output tokens with Batch API
+cost_output_batch_mtoken: 5.00
+# How many output tokens (including both reasoning and visible tokens) to assume will be generated for each request on average (as a ratio of the max_completion_tokens or max_tokens specified for each request, or as a ratio of a default value of 2048 if neither is specified)
+assumed_completion_ratio: 0.5
+
+# Maximum number of requests allowed for an entire task
+max_task_requests: 10000000
+# Maximum allowed total number of input tokens (in units of 1000) for an entire task
+max_task_ktokens: 5000000
+# Maximum allowed total cost (input + assumed output tokens) of an entire task
+max_task_cost: 1000.0
+# Maximum number of requests allowed in a session
+max_session_requests: 5000000
+# Maximum allowed total number of input tokens (in units of 1000) in a session
+max_session_ktokens: 2500000
+# Maximum allowed total cost (input + assumed output tokens) in a session
+max_session_cost: 500.0
+# Maximum number of requests allowed in a virtual batch when using the direct API
+max_direct_requests: 50
+# Maximum number of input tokens (in units of 1000) to include in a single virtual batch when using the direct API
+max_direct_ktokens: 500
+# Maximum allowed cost (input + assumed output tokens) of a virtual batch when using the direct API
+max_direct_cost: 5.0
+# Minimum number of requests in a batch in order to use the batch API (otherwise automatically fall back to the direct API)
+min_batch_requests: 101
+# Maximum number of requests allowed in a batch
+max_batch_requests: 50000
+# Maximum allowed batch size in MB (not MiB)
+max_batch_mb: 100
+# Maximum number of input tokens (in units of 1000) to include in a single batch
+max_batch_ktokens: 20000
+# Maximum allowed cost (input + assumed output tokens) of a batch
+max_batch_cost: 50.0
+# Maximum number of unpushed local batches at any one time
+max_unpushed_batches: 5
+# Maximum number of remote batches at any one time (0 = Only prepare local batches and don't push any yet)
+max_remote_batches: 15
+# Maximum number of requests across all uploaded remote batches at any one time
+max_remote_requests: 5000000
+# Maximum allowed total size in MB (not MiB) of all uploaded remote batches at any one time
+max_remote_mb: 10000
+# Maximum allowed total number of input tokens (in units of 1000) across all uploaded remote batches at any one time
+max_remote_ktokens: 60000
+# Maximum allowed cost (input + assumed output tokens) across all uploaded remote batches at any one time
+max_remote_cost: 150.0
+# Safety factor (SF) to use when comparing MB sizes to specified maximum values (can be useful to ensure that server-side MB limits are never used down to the very last byte, as the server could have some fuzzy exact limits, e.g. due to conversions or implicit metadata or overhead, despite giving an exact number for the size limit)
+max_mb_safety: 1.01
+# Safety factor (SF) to use when comparing token counts to specified maximum values (token counts are ultimately approximations until the batch is actually executed, so a safety factor can be useful in ensuring that token limits are truly never exceeded in practice)
+max_token_safety: 1.05
+# Whether to force all batches to be executed using the direct API instead of the batch API
+force_direct: False
+
+# Warn if the predicted number of input tokens deviates from the true number in excess of this multiplicative factor across a batch (>=1.0)
+warn_predicted_input_factor: 1.2
+# Warn if the assumed number of completion tokens deviates from the true number in excess of this multiplicative factor across a batch (>=1.0)
+warn_assumed_completion_factor: 1.6
+# If the pass ratio of a batch (number of successful or expired responses as a ratio of the number of requests) is strictly less than this or zero, then the batch is considered as not passed (pass failure)
+min_pass_ratio: 0.5
+# Trigger a processing error if this many consecutive batches do not pass
+max_pass_failures: 2
+# EOF
