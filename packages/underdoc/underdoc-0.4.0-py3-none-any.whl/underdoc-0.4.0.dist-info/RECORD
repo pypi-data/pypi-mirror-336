@@ -1,0 +1,11 @@
+underdoc/__init__.py,sha256=cNCdCerBVqG2echyfvj-1SU0Bl6Aq3GK-xDfTuHKMz0,540
+underdoc/config.py,sha256=4Au0XJ8grNYVwK2upFpdeZaMuolE8eblMgjckSQoMf4,330
+underdoc/exceptions.py,sha256=EOtfoWZX5p_oXl4Aa5ZfHrXB9ZC2RmCnjP2PgmxcB3U,231
+underdoc/model.py,sha256=4m2qogcCJfYmj5_pTGO7zybISw1N0fneLX21xLmBw2o,2309
+underdoc/underdoc_client.py,sha256=xDC0Jrbld-B2mungI1r-NE-PGVvUqrilebHe0ZO_dyE,13508
+underdoc/version.py,sha256=1NSg4yHgqJJKYBklxFwmel_5eSNX51umiqsyFgx4770,21
+underdoc-0.4.0.dist-info/licenses/LICENSE,sha256=sJ_q0ZbIRZnwfbnsYsKhZ1uq_mcl2ZnDDGy-gjqLB10,1211
+underdoc-0.4.0.dist-info/METADATA,sha256=EbbBIxfzEciCDYc_6f7NMReTkPEMC1eiFYqrqirt9ts,2382
+underdoc-0.4.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+underdoc-0.4.0.dist-info/top_level.txt,sha256=N8QeLS_DAP7pMC1XZQP-8N1a__oAy1j6FVIdOZdhHXc,9
+underdoc-0.4.0.dist-info/RECORD,,
