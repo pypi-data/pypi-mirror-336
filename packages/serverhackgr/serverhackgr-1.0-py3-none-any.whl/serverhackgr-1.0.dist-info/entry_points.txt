@@ -1,0 +1,2 @@
+[console_scripts]
+htmlview = htmlview:HtmlView
