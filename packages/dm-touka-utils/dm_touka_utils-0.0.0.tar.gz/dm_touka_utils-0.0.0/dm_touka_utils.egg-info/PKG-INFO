@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: dm-touka-utils
+Version: 0.0.0
+Summary: 自作のユーティリティ関数集
+Home-page: https://github.com/DaikiMorita/dm_utils
+Author: Daiki Morita
+Requires-Python: >=3.10
+Requires-Dist: pandas
+Requires-Dist: rich
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
