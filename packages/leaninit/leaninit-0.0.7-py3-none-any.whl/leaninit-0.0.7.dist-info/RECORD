@@ -1,0 +1,8 @@
+leaninit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+leaninit/cli.py,sha256=3OSJxhAoxgaH3yuf8vXtNf1I--SbvEXX36OLz-qpCow,8769
+leaninit/elf.py,sha256=AYK9aCxse86xSDNm7oPqIGV8INzEe-rzpf5L85xpu_0,6862
+leaninit/lz4l.py,sha256=LSxtMGuzdDR7uXAtsGOa4vMPw7Pun7PkoRkqUIGuD14,1228
+leaninit-0.0.7.dist-info/METADATA,sha256=f2yn-1hcSxrbQXVYD65dvFu1aFKn92mxLHniK1y0bkU,4306
+leaninit-0.0.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+leaninit-0.0.7.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+leaninit-0.0.7.dist-info/RECORD,,
