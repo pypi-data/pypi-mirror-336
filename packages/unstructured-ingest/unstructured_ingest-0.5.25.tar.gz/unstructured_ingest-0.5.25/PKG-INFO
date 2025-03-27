@@ -1,0 +1,382 @@
+Metadata-Version: 2.2
+Name: unstructured-ingest
+Version: 0.5.25
+Summary: A library that prepares raw documents for downstream ML tasks.
+Home-page: https://github.com/Unstructured-IO/unstructured-ingest
+Author: Unstructured Technologies
+Author-email: devops@unstructuredai.io
+License: Apache-2.0
+Keywords: NLP PDF HTML CV XML parsing preprocessing
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9.0,<3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: dataclasses_json
+Requires-Dist: pydantic>=2.7
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: click
+Requires-Dist: tqdm
+Requires-Dist: python-dateutil
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: remote
+Requires-Dist: unstructured-client>=0.30.0; extra == "remote"
+Requires-Dist: numpy; extra == "remote"
+Requires-Dist: pandas; extra == "remote"
+Provides-Extra: csv
+Requires-Dist: unstructured[tsv]; extra == "csv"
+Requires-Dist: numpy; extra == "csv"
+Requires-Dist: pandas; extra == "csv"
+Provides-Extra: doc
+Requires-Dist: unstructured[docx]; extra == "doc"
+Requires-Dist: numpy; extra == "doc"
+Requires-Dist: pandas; extra == "doc"
+Provides-Extra: docx
+Requires-Dist: unstructured[docx]; extra == "docx"
+Requires-Dist: numpy; extra == "docx"
+Requires-Dist: pandas; extra == "docx"
+Provides-Extra: epub
+Requires-Dist: unstructured[epub]; extra == "epub"
+Requires-Dist: numpy; extra == "epub"
+Requires-Dist: pandas; extra == "epub"
+Provides-Extra: md
+Requires-Dist: unstructured[md]; extra == "md"
+Requires-Dist: numpy; extra == "md"
+Requires-Dist: pandas; extra == "md"
+Provides-Extra: msg
+Requires-Dist: unstructured[msg]; extra == "msg"
+Requires-Dist: numpy; extra == "msg"
+Requires-Dist: pandas; extra == "msg"
+Provides-Extra: odt
+Requires-Dist: unstructured[odt]; extra == "odt"
+Requires-Dist: numpy; extra == "odt"
+Requires-Dist: pandas; extra == "odt"
+Provides-Extra: org
+Requires-Dist: unstructured[org]; extra == "org"
+Requires-Dist: numpy; extra == "org"
+Requires-Dist: pandas; extra == "org"
+Provides-Extra: pdf
+Requires-Dist: unstructured[pdf]; extra == "pdf"
+Requires-Dist: numpy; extra == "pdf"
+Requires-Dist: pandas; extra == "pdf"
+Provides-Extra: ppt
+Requires-Dist: unstructured[pptx]; extra == "ppt"
+Requires-Dist: numpy; extra == "ppt"
+Requires-Dist: pandas; extra == "ppt"
+Provides-Extra: pptx
+Requires-Dist: unstructured[pptx]; extra == "pptx"
+Requires-Dist: numpy; extra == "pptx"
+Requires-Dist: pandas; extra == "pptx"
+Provides-Extra: rtf
+Requires-Dist: unstructured[rtf]; extra == "rtf"
+Requires-Dist: numpy; extra == "rtf"
+Requires-Dist: pandas; extra == "rtf"
+Provides-Extra: rst
+Requires-Dist: unstructured[rst]; extra == "rst"
+Requires-Dist: numpy; extra == "rst"
+Requires-Dist: pandas; extra == "rst"
+Provides-Extra: tsv
+Requires-Dist: unstructured[tsv]; extra == "tsv"
+Requires-Dist: numpy; extra == "tsv"
+Requires-Dist: pandas; extra == "tsv"
+Provides-Extra: xlsx
+Requires-Dist: unstructured[xlsx]; extra == "xlsx"
+Requires-Dist: numpy; extra == "xlsx"
+Requires-Dist: pandas; extra == "xlsx"
+Provides-Extra: airtable
+Requires-Dist: pyairtable; extra == "airtable"
+Requires-Dist: numpy; extra == "airtable"
+Requires-Dist: pandas; extra == "airtable"
+Provides-Extra: astradb
+Requires-Dist: astrapy; extra == "astradb"
+Requires-Dist: numpy; extra == "astradb"
+Requires-Dist: pandas; extra == "astradb"
+Provides-Extra: azure
+Requires-Dist: fsspec; extra == "azure"
+Requires-Dist: adlfs; extra == "azure"
+Requires-Dist: numpy; extra == "azure"
+Requires-Dist: pandas; extra == "azure"
+Provides-Extra: azure-ai-search
+Requires-Dist: azure-search-documents; extra == "azure-ai-search"
+Requires-Dist: numpy; extra == "azure-ai-search"
+Requires-Dist: pandas; extra == "azure-ai-search"
+Provides-Extra: biomed
+Requires-Dist: bs4; extra == "biomed"
+Requires-Dist: requests; extra == "biomed"
+Requires-Dist: numpy; extra == "biomed"
+Requires-Dist: pandas; extra == "biomed"
+Provides-Extra: box
+Requires-Dist: fsspec; extra == "box"
+Requires-Dist: boxfs; extra == "box"
+Requires-Dist: numpy; extra == "box"
+Requires-Dist: pandas; extra == "box"
+Provides-Extra: chroma
+Requires-Dist: chromadb; extra == "chroma"
+Requires-Dist: numpy; extra == "chroma"
+Requires-Dist: pandas; extra == "chroma"
+Provides-Extra: clarifai
+Requires-Dist: clarifai; extra == "clarifai"
+Requires-Dist: numpy; extra == "clarifai"
+Requires-Dist: pandas; extra == "clarifai"
+Provides-Extra: confluence
+Requires-Dist: atlassian-python-api; extra == "confluence"
+Requires-Dist: requests; extra == "confluence"
+Requires-Dist: numpy; extra == "confluence"
+Requires-Dist: pandas; extra == "confluence"
+Provides-Extra: couchbase
+Requires-Dist: couchbase; extra == "couchbase"
+Requires-Dist: numpy; extra == "couchbase"
+Requires-Dist: pandas; extra == "couchbase"
+Provides-Extra: delta-table
+Requires-Dist: boto3; extra == "delta-table"
+Requires-Dist: deltalake; extra == "delta-table"
+Requires-Dist: numpy; extra == "delta-table"
+Requires-Dist: pandas; extra == "delta-table"
+Provides-Extra: discord
+Requires-Dist: discord.py; extra == "discord"
+Requires-Dist: numpy; extra == "discord"
+Requires-Dist: pandas; extra == "discord"
+Provides-Extra: dropbox
+Requires-Dist: fsspec; extra == "dropbox"
+Requires-Dist: dropboxdrivefs; extra == "dropbox"
+Requires-Dist: numpy; extra == "dropbox"
+Requires-Dist: pandas; extra == "dropbox"
+Provides-Extra: duckdb
+Requires-Dist: duckdb; extra == "duckdb"
+Requires-Dist: numpy; extra == "duckdb"
+Requires-Dist: pandas; extra == "duckdb"
+Provides-Extra: elasticsearch
+Requires-Dist: elasticsearch[async]; extra == "elasticsearch"
+Requires-Dist: numpy; extra == "elasticsearch"
+Requires-Dist: pandas; extra == "elasticsearch"
+Provides-Extra: gcs
+Requires-Dist: fsspec; extra == "gcs"
+Requires-Dist: gcsfs; extra == "gcs"
+Requires-Dist: bs4; extra == "gcs"
+Requires-Dist: numpy; extra == "gcs"
+Requires-Dist: pandas; extra == "gcs"
+Provides-Extra: github
+Requires-Dist: pygithub>1.58.0; extra == "github"
+Requires-Dist: requests; extra == "github"
+Requires-Dist: numpy; extra == "github"
+Requires-Dist: pandas; extra == "github"
+Provides-Extra: gitlab
+Requires-Dist: python-gitlab; extra == "gitlab"
+Requires-Dist: numpy; extra == "gitlab"
+Requires-Dist: pandas; extra == "gitlab"
+Provides-Extra: google-drive
+Requires-Dist: google-api-python-client; extra == "google-drive"
+Requires-Dist: numpy; extra == "google-drive"
+Requires-Dist: pandas; extra == "google-drive"
+Provides-Extra: hubspot
+Requires-Dist: hubspot-api-client; extra == "hubspot"
+Requires-Dist: urllib3; extra == "hubspot"
+Requires-Dist: numpy; extra == "hubspot"
+Requires-Dist: pandas; extra == "hubspot"
+Provides-Extra: ibm-watsonx-s3
+Requires-Dist: tenacity; extra == "ibm-watsonx-s3"
+Requires-Dist: pyiceberg; extra == "ibm-watsonx-s3"
+Requires-Dist: pyarrow; extra == "ibm-watsonx-s3"
+Requires-Dist: httpx; extra == "ibm-watsonx-s3"
+Requires-Dist: numpy; extra == "ibm-watsonx-s3"
+Requires-Dist: pandas; extra == "ibm-watsonx-s3"
+Provides-Extra: jira
+Requires-Dist: atlassian-python-api; extra == "jira"
+Requires-Dist: numpy; extra == "jira"
+Requires-Dist: pandas; extra == "jira"
+Provides-Extra: kafka
+Requires-Dist: confluent-kafka; extra == "kafka"
+Requires-Dist: numpy; extra == "kafka"
+Requires-Dist: pandas; extra == "kafka"
+Provides-Extra: kdbai
+Requires-Dist: kdbai-client>=1.4.0; extra == "kdbai"
+Requires-Dist: numpy; extra == "kdbai"
+Requires-Dist: pandas; extra == "kdbai"
+Provides-Extra: lancedb
+Requires-Dist: lancedb; extra == "lancedb"
+Requires-Dist: numpy; extra == "lancedb"
+Requires-Dist: pandas; extra == "lancedb"
+Provides-Extra: milvus
+Requires-Dist: pymilvus; extra == "milvus"
+Requires-Dist: numpy; extra == "milvus"
+Requires-Dist: pandas; extra == "milvus"
+Provides-Extra: mongodb
+Requires-Dist: pymongo; extra == "mongodb"
+Requires-Dist: numpy; extra == "mongodb"
+Requires-Dist: pandas; extra == "mongodb"
+Provides-Extra: neo4j
+Requires-Dist: cymple; extra == "neo4j"
+Requires-Dist: networkx; extra == "neo4j"
+Requires-Dist: neo4j-rust-ext; extra == "neo4j"
+Requires-Dist: numpy; extra == "neo4j"
+Requires-Dist: pandas; extra == "neo4j"
+Provides-Extra: notion
+Requires-Dist: notion-client; extra == "notion"
+Requires-Dist: backoff; extra == "notion"
+Requires-Dist: httpx; extra == "notion"
+Requires-Dist: htmlBuilder; extra == "notion"
+Requires-Dist: numpy; extra == "notion"
+Requires-Dist: pandas; extra == "notion"
+Provides-Extra: onedrive
+Requires-Dist: msal; extra == "onedrive"
+Requires-Dist: bs4; extra == "onedrive"
+Requires-Dist: Office365-REST-Python-Client; extra == "onedrive"
+Requires-Dist: numpy; extra == "onedrive"
+Requires-Dist: pandas; extra == "onedrive"
+Provides-Extra: opensearch
+Requires-Dist: opensearch-py; extra == "opensearch"
+Requires-Dist: numpy; extra == "opensearch"
+Requires-Dist: pandas; extra == "opensearch"
+Provides-Extra: outlook
+Requires-Dist: msal; extra == "outlook"
+Requires-Dist: Office365-REST-Python-Client; extra == "outlook"
+Requires-Dist: numpy; extra == "outlook"
+Requires-Dist: pandas; extra == "outlook"
+Provides-Extra: pinecone
+Requires-Dist: pinecone-client>=3.7.1; extra == "pinecone"
+Requires-Dist: numpy; extra == "pinecone"
+Requires-Dist: pandas; extra == "pinecone"
+Provides-Extra: postgres
+Requires-Dist: psycopg2-binary; extra == "postgres"
+Requires-Dist: numpy; extra == "postgres"
+Requires-Dist: pandas; extra == "postgres"
+Provides-Extra: qdrant
+Requires-Dist: qdrant-client; extra == "qdrant"
+Requires-Dist: numpy; extra == "qdrant"
+Requires-Dist: pandas; extra == "qdrant"
+Provides-Extra: reddit
+Requires-Dist: praw; extra == "reddit"
+Requires-Dist: numpy; extra == "reddit"
+Requires-Dist: pandas; extra == "reddit"
+Provides-Extra: redis
+Requires-Dist: redis; extra == "redis"
+Requires-Dist: numpy; extra == "redis"
+Requires-Dist: pandas; extra == "redis"
+Provides-Extra: s3
+Requires-Dist: fsspec; extra == "s3"
+Requires-Dist: s3fs; extra == "s3"
+Requires-Dist: numpy; extra == "s3"
+Requires-Dist: pandas; extra == "s3"
+Provides-Extra: sharepoint
+Requires-Dist: msal; extra == "sharepoint"
+Requires-Dist: Office365-REST-Python-Client; extra == "sharepoint"
+Requires-Dist: numpy; extra == "sharepoint"
+Requires-Dist: pandas; extra == "sharepoint"
+Provides-Extra: salesforce
+Requires-Dist: simple-salesforce; extra == "salesforce"
+Requires-Dist: numpy; extra == "salesforce"
+Requires-Dist: pandas; extra == "salesforce"
+Provides-Extra: sftp
+Requires-Dist: fsspec; extra == "sftp"
+Requires-Dist: paramiko; extra == "sftp"
+Requires-Dist: numpy; extra == "sftp"
+Requires-Dist: pandas; extra == "sftp"
+Provides-Extra: slack
+Requires-Dist: slack_sdk[optional]; extra == "slack"
+Requires-Dist: numpy; extra == "slack"
+Requires-Dist: pandas; extra == "slack"
+Provides-Extra: snowflake
+Requires-Dist: psycopg2-binary; extra == "snowflake"
+Requires-Dist: snowflake-connector-python; extra == "snowflake"
+Requires-Dist: numpy; extra == "snowflake"
+Requires-Dist: pandas; extra == "snowflake"
+Provides-Extra: wikipedia
+Requires-Dist: wikipedia; extra == "wikipedia"
+Requires-Dist: numpy; extra == "wikipedia"
+Requires-Dist: pandas; extra == "wikipedia"
+Provides-Extra: weaviate
+Requires-Dist: weaviate-client; extra == "weaviate"
+Requires-Dist: numpy; extra == "weaviate"
+Requires-Dist: pandas; extra == "weaviate"
+Provides-Extra: databricks-volumes
+Requires-Dist: databricks-sdk; extra == "databricks-volumes"
+Requires-Dist: numpy; extra == "databricks-volumes"
+Requires-Dist: pandas; extra == "databricks-volumes"
+Provides-Extra: databricks-delta-tables
+Requires-Dist: databricks-sql-connector; extra == "databricks-delta-tables"
+Requires-Dist: numpy; extra == "databricks-delta-tables"
+Requires-Dist: pandas; extra == "databricks-delta-tables"
+Provides-Extra: singlestore
+Requires-Dist: singlestoredb; extra == "singlestore"
+Requires-Dist: numpy; extra == "singlestore"
+Requires-Dist: pandas; extra == "singlestore"
+Provides-Extra: vectara
+Requires-Dist: aiofiles; extra == "vectara"
+Requires-Dist: httpx; extra == "vectara"
+Requires-Dist: requests; extra == "vectara"
+Requires-Dist: numpy; extra == "vectara"
+Requires-Dist: pandas; extra == "vectara"
+Provides-Extra: vastdb
+Requires-Dist: ibis; extra == "vastdb"
+Requires-Dist: pyarrow; extra == "vastdb"
+Requires-Dist: vastdb; extra == "vastdb"
+Requires-Dist: numpy; extra == "vastdb"
+Requires-Dist: pandas; extra == "vastdb"
+Provides-Extra: zendesk
+Requires-Dist: aiofiles; extra == "zendesk"
+Requires-Dist: bs4; extra == "zendesk"
+Requires-Dist: httpx; extra == "zendesk"
+Requires-Dist: numpy; extra == "zendesk"
+Requires-Dist: pandas; extra == "zendesk"
+Provides-Extra: embed-huggingface
+Requires-Dist: sentence-transformers; extra == "embed-huggingface"
+Requires-Dist: numpy; extra == "embed-huggingface"
+Requires-Dist: pandas; extra == "embed-huggingface"
+Provides-Extra: embed-octoai
+Requires-Dist: openai; extra == "embed-octoai"
+Requires-Dist: tiktoken; extra == "embed-octoai"
+Requires-Dist: numpy; extra == "embed-octoai"
+Requires-Dist: pandas; extra == "embed-octoai"
+Provides-Extra: embed-vertexai
+Requires-Dist: vertexai; extra == "embed-vertexai"
+Requires-Dist: numpy; extra == "embed-vertexai"
+Requires-Dist: pandas; extra == "embed-vertexai"
+Provides-Extra: embed-voyageai
+Requires-Dist: voyageai; extra == "embed-voyageai"
+Requires-Dist: numpy; extra == "embed-voyageai"
+Requires-Dist: pandas; extra == "embed-voyageai"
+Provides-Extra: embed-mixedbreadai
+Requires-Dist: mixedbread-ai; extra == "embed-mixedbreadai"
+Requires-Dist: numpy; extra == "embed-mixedbreadai"
+Requires-Dist: pandas; extra == "embed-mixedbreadai"
+Provides-Extra: openai
+Requires-Dist: openai; extra == "openai"
+Requires-Dist: tiktoken; extra == "openai"
+Requires-Dist: numpy; extra == "openai"
+Requires-Dist: pandas; extra == "openai"
+Provides-Extra: bedrock
+Requires-Dist: boto3; extra == "bedrock"
+Requires-Dist: aioboto3; extra == "bedrock"
+Requires-Dist: numpy; extra == "bedrock"
+Requires-Dist: pandas; extra == "bedrock"
+Provides-Extra: togetherai
+Requires-Dist: together; extra == "togetherai"
+Requires-Dist: numpy; extra == "togetherai"
+Requires-Dist: pandas; extra == "togetherai"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Unstructured Ingest  
+
+For details, see the [Unstructured Ingest overview](https://docs.unstructured.io/ingestion/overview) in the Unstructured documentation.
