@@ -1,0 +1,2 @@
+[console_scripts]
+metabomix = metabomix:main
