@@ -1,0 +1,11 @@
+huggingface_hub
+mediapipe
+numpy
+pandas
+pillow
+pyarrow
+scikit-image
+scikit-learn
+scipy
+tensorflow
+tf_keras_vis
