@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+nonebot_plugin_gemini_vision/__init__.py
+nonebot_plugin_gemini_vision/config.py
+nonebot_plugin_gemini_vision/core.py
+nonebot_plugin_gemini_vision.egg-info/PKG-INFO
+nonebot_plugin_gemini_vision.egg-info/SOURCES.txt
+nonebot_plugin_gemini_vision.egg-info/dependency_links.txt
+nonebot_plugin_gemini_vision.egg-info/requires.txt
+nonebot_plugin_gemini_vision.egg-info/top_level.txt
