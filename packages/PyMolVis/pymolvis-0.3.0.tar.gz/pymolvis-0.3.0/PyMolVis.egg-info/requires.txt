@@ -1,0 +1,14 @@
+numpy
+PyQt5
+pyvista
+pyvistaqt
+xyz_py
+vasp_suite
+Cython
+spin_phonon_suite
+gaussian_suite
+mendeleev
+ase
+scipy
+seaborn
+pyscf
