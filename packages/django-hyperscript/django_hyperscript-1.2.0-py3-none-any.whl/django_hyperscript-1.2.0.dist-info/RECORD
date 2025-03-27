@@ -1,0 +1,8 @@
+django_hyperscript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hyperscript/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hyperscript/templatetags/hyperscript.py,sha256=o25ybAgZuTNnHfL540mEvJVX2CsHxifgem9tAaVkjDU,6378
+django_hyperscript-1.2.0.dist-info/licenses/LICENSE,sha256=x7sfDMGJHnxkljDrmuAG5uR2vMHja6qsnKZosiTzbac,1088
+django_hyperscript-1.2.0.dist-info/METADATA,sha256=f63Pd1QDBX-QlN_s2Al9EFoKbSQJ4Na7nNDaIDGUU7E,4913
+django_hyperscript-1.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_hyperscript-1.2.0.dist-info/top_level.txt,sha256=wOSpv9-QL-pAFlKTvWoQe7fKAf5W4tcYqCatcLTanhk,19
+django_hyperscript-1.2.0.dist-info/RECORD,,
