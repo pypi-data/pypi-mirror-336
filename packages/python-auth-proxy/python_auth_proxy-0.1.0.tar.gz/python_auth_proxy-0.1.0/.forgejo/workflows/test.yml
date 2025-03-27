@@ -1,0 +1,42 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    container:
+      image: debian:bookworm-slim
+
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install hatch pytest pytest-cov black isort mypy
+        python -m pip install -e .
+    
+    - name: Lint with black
+      run: black --check .
+    
+    - name: Lint with isort
+      run: isort --check .
+    
+    - name: Type check with mypy
+      run: mypy auth_proxy
+    
+    - name: Test with pytest
+      run: pytest
