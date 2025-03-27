@@ -1,0 +1,8 @@
+numpy>=1.20.0
+scipy>=1.4.1
+matplotlib<3.3,>=3.1
+scikit-image
+setuptools>=49
+wheel
+Cython>=0.29.21
+py3nj==0.1.2
