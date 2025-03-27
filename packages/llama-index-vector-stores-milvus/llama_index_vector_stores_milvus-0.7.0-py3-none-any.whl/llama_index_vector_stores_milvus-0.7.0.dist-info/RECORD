@@ -1,0 +1,8 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/milvus/__init__.py,sha256=kNfFye-pzT8DaizSz0iDWRwdUzOIKmSqH8w7OL_yzo0,137
+llama_index/vector_stores/milvus/base.py,sha256=-KvSGQ5zRaXkpLpKtM992oT85NGYp6KF4heDfEMTyzY,55738
+llama_index/vector_stores/milvus/utils.py,sha256=ZGqpOsrihiq2Mcp2KnsG_OSWxMDdHWlhmTG8yo8FpXM,9747
+llama_index_vector_stores_milvus-0.7.0.dist-info/LICENSE,sha256=JPQLUZD9rKvCTdu192Nk0V5PAwklIg6jANii3UmTyMs,1065
+llama_index_vector_stores_milvus-0.7.0.dist-info/METADATA,sha256=KCm55N3gsDrZZu4BdYKfwf358MDSsVlGF4XbAFCNy4U,654
+llama_index_vector_stores_milvus-0.7.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_milvus-0.7.0.dist-info/RECORD,,
