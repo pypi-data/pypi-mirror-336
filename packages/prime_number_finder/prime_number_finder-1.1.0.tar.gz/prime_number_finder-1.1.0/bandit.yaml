@@ -1,0 +1,16 @@
+exclude_dirs:
+  [
+    ".venv/",
+    "dist/",
+    "src/prime_number_finder/__pycache__",
+    "src/prime_number_finder/resources/",
+    ".gitignore",
+    ".python-version",
+    "bandit.yaml",
+    "LICENSE",
+    "pyproject.toml",
+    "README.md",
+    "uv.lock",
+  ]
+tests: []
+skips: []
