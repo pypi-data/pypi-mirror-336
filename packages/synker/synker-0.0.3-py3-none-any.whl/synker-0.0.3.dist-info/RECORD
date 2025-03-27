@@ -1,0 +1,11 @@
+synker/__init__.py,sha256=X7WIYTN9bYVNwjVZUNDDZwQjBdubH06jHqJ_ogdAuwc,234
+synker/kde.py,sha256=BOWTP1KBmCDmdPPa_Vg_WpMhrCikJ1uHvFNfAkQtcF8,656
+synker/kl_div.py,sha256=_PnhLBPVEH0DveOeJR_0GEMWHAQ5Uom_igCWqfKW7Tg,950
+synker/scott.py,sha256=iFo7GSbmXoGstTh7LDgPUr6VetLB97ab3TbMc-Sj86o,181
+synker/silverman.py,sha256=AtyTb67MD6Sjy10s2GKIn_Hu8k1jdRC9IsL-k7nil5Q,202
+synker/synthetic.py,sha256=D4pY3LSvS3kfTIhztnfwth6HdrLPuH3Oz4AWih4efpA,1437
+synker-0.0.3.dist-info/LICENSE.txt,sha256=OPQCWWeuNdCuByqU7jjnbRo_7KGYJH8ZbC7kPb0jxnE,1101
+synker-0.0.3.dist-info/METADATA,sha256=LdbHlKlKKAusuyv3GeeslLHCykrzIdFkhkS1_4d1rPA,5759
+synker-0.0.3.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+synker-0.0.3.dist-info/top_level.txt,sha256=x4aHse0WameMeayYQDDRiOokvaj6-2Ylj08RBQ05R50,7
+synker-0.0.3.dist-info/RECORD,,
