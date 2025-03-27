@@ -1,0 +1,2 @@
+[console_scripts]
+minium-mcp-server = minium_mcp_server.server:main
