@@ -1,0 +1,2 @@
+[console_scripts]
+codeunify = codeunify.core.combine:main
