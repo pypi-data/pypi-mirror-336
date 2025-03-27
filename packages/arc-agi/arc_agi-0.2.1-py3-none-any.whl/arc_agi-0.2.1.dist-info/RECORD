@@ -1,0 +1,14 @@
+arc_agi-0.2.1.dist-info/METADATA,sha256=i0WqVtywMijvtN5a_DFRzCbKC-sA4wRTJ8Sca2YZ3pI,177
+arc_agi-0.2.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+arc_agi-0.2.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+arc_agi-0.2.1.dist-info/licenses/LICENSE,sha256=n4bQgYhMfWWaL-qgxVrQFaO_TxsrC4Is0V1sFbDwCgg,4
+core/__init__.py,sha256=TWfvvMoRaBDHWrxwkMJqrgYGdydL-tZykY18gq4UTlA,158
+core/arc.py,sha256=PH3miMhi5891_guZ_iyFbepPjlgB0sOVEaQEJXi5_wo,10835
+core/datasets.py,sha256=_vmhrk5umeDpHhDOBL2_SMcgZcZKcNztBj1xDfNjJZQ,2048
+core/main.py,sha256=Wlb2wVYp0PRS9thbjKpSKIuIgELezk4rYOHS9rvG7B0,82
+core/pyproject.toml,sha256=prRYKq3EuvB78XU5QXMdtqe0wpPV0jYQyIuY14BcMWg,381
+core/utils.py,sha256=g-x51fPI5uCTQaG1UiHkYEXFOZ8uqC8QCVfztIKT8JE,6683
+torch/__init__.py,sha256=tpkf7K2Ug708wjW-MWaHPKQ-QeOAgoJaqsH0rE7lqxs,19
+torch/pyproject.toml,sha256=ZUZw1Xynn9wIeg3IlUXVaK-U9O-CJhiPIBc6I9LfL38,370
+torch/test.py,sha256=Pt7adtoQ7FjpOUebvZ-sswRzJfv7e6Y8gj92MfHchDE,18
+arc_agi-0.2.1.dist-info/RECORD,,
