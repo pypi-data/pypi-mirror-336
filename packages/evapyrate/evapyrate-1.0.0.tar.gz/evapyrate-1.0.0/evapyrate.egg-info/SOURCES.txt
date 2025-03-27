@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+evapyrate.py
+pyproject.toml
+setup.cfg
+evapyrate.egg-info/PKG-INFO
+evapyrate.egg-info/SOURCES.txt
+evapyrate.egg-info/dependency_links.txt
+evapyrate.egg-info/entry_points.txt
+evapyrate.egg-info/top_level.txt

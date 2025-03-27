@@ -1,0 +1,101 @@
+Metadata-Version: 2.4
+Name: evapyrate
+Version: 1.0.0
+Summary: A fun bijective text transformer, encoding text into ZWCs.
+Home-page: https://github.com/Kreusada/Evapyrate
+Author: Kreusada
+Author-email: kreusadaprojects@gmail.com
+Keywords: bijective,encoding,decoding,string,cipher,transformation,reversible,text,ZWC,zero-width
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+<h1 align="center">
+  Evapyrate
+</h1>
+
+Evapyrate is a fun bijective text transformer. It maps characters into binary, replacing 0 bits with `\u200B` and 1 bits with `\u200C`, joining the bytes together with `\u200D`. Note that the forementioned characters are ZWCs (zero-width characters). In many text spaces, these characters will not be visible and will not appear to take up any space. You can use `repr()` to view the raw unicode sequences if you require.
+
+The text transformer is **bijective**, meaning there is a one-to-one correspondence between the original and the transformed text.
+
+I made this module for fun, it advise against using it in a practical context other than to play around with it.
+
+## Usage
+
+Import the module:
+
+```py
+import evapyrate
+```
+
+Use the **evaporate** function to encode text:
+
+```py
+>>> import evapyrate
+
+>>> evapyrate.evaporate("Hello world!")
+'​​‌​​​‍‌‌​​‌​‌‍‌‌​‌‌​​‍‌‌​‌‌​​‍‌‌​‌‌‌‌‍‌​​​​​‍‌‌‌​‌‌‌‍‌‌​‌‌‌‌‍‌‌‌​​‌​‍‌‌​‌‌​​‍‌‌​​‌​​‍‌​​​​‌'
+```
+
+Use the **condense** function to decode the text to its original form:
+
+```py
+>>> import evapyrate
+
+>>> evapyrate.condense("​​‌​​​‍‌‌​​‌​‌‍‌‌​‌‌​​‍‌‌​‌‌​​‍‌‌​‌‌‌‌‍‌​​​​​‍‌‌‌​‌‌‌‍‌‌​‌‌‌‌‍‌‌‌​​‌​‍‌‌​‌‌​​‍‌‌​​‌​​‍‌​​​​‌")
+'Hello world!'
+```
+
+## Command Line Interface
+
+The CLI commands work in the same way as the module.
+
+### `eva` (evaporate)
+
+```bash
+$ evapyrate eva foo bar
+Evaporated: [‌‌​​‌‌​‍‌‌​‌‌‌‌‍‌‌​‌‌‌‌‍‌​​​​​‍‌‌​​​‌​‍‌‌​​​​‌‍‌‌‌​​‌​]
+```
+
+Use the `-c` flag to copy to clipboard (assuming pyperclip is installed).
+
+```bash
+$ evapyrate eva -c foo bar
+Evaporated: [‌‌​​‌‌​‍‌‌​‌‌‌‌‍‌‌​‌‌‌‌‍‌​​​​​‍‌‌​​​‌​‍‌‌​​​​‌‍‌‌‌​​‌​]
+Copied to clipboard!
+```
+
+### `con` (condense)
+
+```bash
+$ evapyrate con ‌‌​​‌‌​‍‌‌​‌‌‌‌‍‌‌​‌‌‌‌‍‌​​​​​‍‌‌​​​‌​‍‌‌​​​​‌‍‌‌‌​​‌​
+Condensed: foo bar
+```
+
+**Note:** It is difficult to copy the ZWCs from the evaporate function to use in the condense function. It is recommended that you use the `-c` flag when using the `eva` command.
+
+## Installation
+
+Install from pip.
+
+```
+pip install evapyrate
+```
