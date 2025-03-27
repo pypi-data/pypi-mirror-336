@@ -1,0 +1,6 @@
+mcp>=1.5.0
+pillow>=11.1.0
+pydantic<3.0.0,>=2.10.6
+pymupdf>=1.25.4
+pypdf2>=3.0.1
+pytesseract>=0.3.13
