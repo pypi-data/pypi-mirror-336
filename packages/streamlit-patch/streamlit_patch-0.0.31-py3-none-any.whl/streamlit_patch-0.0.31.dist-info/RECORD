@@ -1,0 +1,10 @@
+streamlit_patch/__init__.py,sha256=Jg-K97SHBNzon4V_RpGSFIGbXJmhPpASBOpW7q6zKE8,349
+streamlit_patch/calculator.py,sha256=n4Z69_MOEDQDYKpOgr1r3MG3r0SgxXML0X9JyarAYnE,3415
+streamlit_patch/db_connector.py,sha256=-WzG7GadQZwpLCdqY3mVWE_CCZvffuxa9EF8El6RXXc,3097
+streamlit_patch/markdown_handler.py,sha256=XEZQhopTKlmmOIf6nmFv2S92eOk8rs8hxgPrj9SaxHY,3977
+streamlit_patch/rec_container.py,sha256=_ROfqSf2XTlnQbRrMxP07mQunC3ZSSRwrSKC8c565ns,1295
+streamlit_patch/report_summary.py,sha256=MchctahbE3KRxJtsBF7kFymEyXQVDe78fhQUfEksb_U,3905
+streamlit_patch-0.0.31.dist-info/METADATA,sha256=XuPOzGC4Bs0nd3ezk1ABN01meURZq44unS10gqUT5aY,540
+streamlit_patch-0.0.31.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+streamlit_patch-0.0.31.dist-info/top_level.txt,sha256=RQvRaXrtlOZuI6boOSxIzjRMI9Z5S9idnZyQBPmrPSw,16
+streamlit_patch-0.0.31.dist-info/RECORD,,
