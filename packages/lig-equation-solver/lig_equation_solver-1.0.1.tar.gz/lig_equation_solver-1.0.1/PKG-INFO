@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: lig_equation_solver
+Version: 1.0.1
+Summary: An equation solver
+Project-URL: Homepage, https://github.com/LiveInGround/Equation-solver
+Project-URL: Issues, https://github.com/LiveInGround/Equation-solver/issues
+Author-email: LiveInGround <remorqueur.eprouve_0b@icloud.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Equation-solver
+An equation solver
