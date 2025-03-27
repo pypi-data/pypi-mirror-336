@@ -1,0 +1,11 @@
+pandas
+
+[dask]
+dask
+
+[notebooks]
+ipykernel
+
+[polars]
+polars>=1.26.0
+pyarrow>=19.0.1

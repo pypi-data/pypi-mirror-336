@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+pysuricata/__init__.py
+pysuricata/analysis.py
+pysuricata/logger.py
+pysuricata/report.py
+pysuricata/utils.py
+pysuricata.egg-info/PKG-INFO
+pysuricata.egg-info/SOURCES.txt
+pysuricata.egg-info/dependency_links.txt
+pysuricata.egg-info/requires.txt
+pysuricata.egg-info/top_level.txt
+tests/test_analysis.py
+tests/test_report.py
