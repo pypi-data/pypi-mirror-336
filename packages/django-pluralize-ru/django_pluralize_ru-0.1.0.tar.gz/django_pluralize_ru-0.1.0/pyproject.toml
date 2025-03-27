@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-pluralize-ru"
+version = "0.1.0"
+description = "This is a Django-template filter for declension of russian words."
+authors = ["Nail Einzelgänger"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/JobsLament/django-pluralize-ru.git"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+Django = ">=3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
