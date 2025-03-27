@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: mcp-web-fetch
+Version: 0.1.0
+Summary: Fetch data from ANY website
+Requires-Python: <3.13,>=3.12
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: ipython>=9.0.2
+Requires-Dist: markdownify>=1.1.0
+Requires-Dist: mcp[cli]>=1.5.0
+Requires-Dist: pymupdf>=1.25.4
+Requires-Dist: pypdf2>=3.0.1
+Requires-Dist: readabilipy>=0.3.0
+Description-Content-Type: text/markdown
+
+# MCP-Web-Fetch
+A general web fetch tool for html/pdf type content.
