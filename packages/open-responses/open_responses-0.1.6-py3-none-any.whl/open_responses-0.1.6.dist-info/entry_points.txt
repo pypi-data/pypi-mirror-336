@@ -1,0 +1,2 @@
+[console_scripts]
+open-responses = open_responses:main
