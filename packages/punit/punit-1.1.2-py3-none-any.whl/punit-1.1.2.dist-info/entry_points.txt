@@ -1,0 +1,2 @@
+[console_scripts]
+punit = punit:__main__.main
