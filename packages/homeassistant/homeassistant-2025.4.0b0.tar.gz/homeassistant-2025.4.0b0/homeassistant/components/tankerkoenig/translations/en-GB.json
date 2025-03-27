@@ -1,0 +1,22 @@
+{
+    "entity": {
+        "sensor": {
+            "e5": {
+                "state_attributes": {
+                    "house_number": {
+                        "name": "House number"
+                    },
+                    "postcode": {
+                        "name": "Post code"
+                    },
+                    "station_name": {
+                        "name": "Station name"
+                    },
+                    "street": {
+                        "name": "Street"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Op\u00e4tovn\u00e9 overenie bolo \u00faspe\u0161n\u00e9"
+        },
+        "error": {
+            "cannot_connect": "Nepodarilo sa pripoji\u0165",
+            "invalid_auth": "Neplatn\u00e9 overenie",
+            "unknown": "Neo\u010dak\u00e1van\u00e1 chyba"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API token",
+                    "description": "Znovu overte svoj Cloudflare \u00fa\u010det."
+                }
+            },
+            "records": {
+                "data": {
+                    "records": "Z\u00e1znamy"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_token": "API token"
+                },
+                "title": "Pripoji\u0165 k slu\u017ebe Cloudflare"
+            },
+            "zone": {
+                "data": {
+                    "zone": "Z\u00f3na"
+                }
+            }
+        }
+    },
+    "services": {
+        "update_records": {
+            "name": "Aktualiz\u00e1cia z\u00e1znamov"
+        }
+    }
+}

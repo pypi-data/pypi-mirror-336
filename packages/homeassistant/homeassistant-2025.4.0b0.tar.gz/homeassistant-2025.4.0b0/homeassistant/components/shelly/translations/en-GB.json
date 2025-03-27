@@ -1,0 +1,116 @@
+{
+    "config": {
+        "abort": {
+            "another_device": "Re-configuration was unsuccessful, the IP address/hostname of another Shelly device was used.",
+            "ipv6_not_supported": "IPv6 is not supported.",
+            "mac_address_mismatch": "The MAC address of the device does not match the one in the configuration, please reboot the device and try again.",
+            "reconfigure_successful": "Re-configuration was successful"
+        },
+        "error": {
+            "custom_port_not_supported": "Gen1 device does not support custom port.",
+            "mac_address_mismatch": "The MAC address of the device does not match the one in the configuration, please reboot the device and try again."
+        },
+        "step": {
+            "reconfigure": {
+                "data_description": {
+                    "port": "The TCP port of the Shelly device to connect to (Gen2+)."
+                },
+                "description": "Update configuration for {device_name}.\n\nBefore setup, battery-powered devices must be woken up, you can now wake the device up using a button on it."
+            },
+            "user": {
+                "data_description": {
+                    "port": "The TCP port of the Shelly device to connect to (Gen2+)."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "gas_detected": {
+                "state": {
+                    "heavy": "Heavy",
+                    "mild": "Mild",
+                    "none": "None",
+                    "test": "Test"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "heavy": "Heavy",
+                            "mild": "Mild",
+                            "none": "None",
+                            "test": "Test"
+                        }
+                    }
+                }
+            },
+            "self_test": {
+                "state": {
+                    "completed": "Completed",
+                    "not_completed": "Not completed",
+                    "pending": "Pending",
+                    "running": "Running"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "completed": "Completed",
+                            "not_completed": "Not completed",
+                            "pending": "Pending",
+                            "running": "Running"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "auth_error": {
+            "message": "Authentication failed for {device}, please update your credentials"
+        },
+        "device_communication_error": {
+            "message": "Device communication error occurred for {device}"
+        },
+        "device_not_found": {
+            "message": "{device} not found while configuring device automation triggers"
+        },
+        "firmware_unsupported": {
+            "message": "{device} is running an unsupported firmware, please update the firmware"
+        },
+        "invalid_trigger": {
+            "message": "Invalid device automation trigger (type, subtype): {trigger}"
+        },
+        "ota_update_connection_error": {
+            "message": "Device communication error occurred while triggering OTA update for {device}"
+        },
+        "ota_update_rpc_error": {
+            "message": "RPC call error occurred while triggering OTA update for {device}"
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from {device}"
+        },
+        "update_error_device_disconnected": {
+            "message": "An error occurred while retrieving data from {device} because it is disconnected"
+        },
+        "update_error_reconnect_error": {
+            "message": "An error occurred while reconnecting to {device}"
+        },
+        "update_error_sleeping_device": {
+            "message": "Sleeping device did not update within {period} seconds interval"
+        }
+    },
+    "issues": {
+        "device_not_calibrated": {
+            "description": "Shelly device {device_name} with IP address {ip_address} requires calibration. To calibrate the device, it must be rebooted after proper installation on the valve. You can reboot the device in its web panel, go to 'Settings' > 'Device Reboot'.",
+            "title": "Shelly device {device_name} is not calibrated"
+        },
+        "push_update_failure": {
+            "description": "Home Assistant is not receiving push updates from the Shelly device {device_name} with IP address {ip_address}. Check the CoIoT configuration in the web panel of the device and your network configuration.",
+            "title": "Shelly device {device_name} push update failure"
+        },
+        "unsupported_firmware": {
+            "description": "Your Shelly device {device_name} with IP address {ip_address} is running an unsupported firmware. Please update the firmware.\n\nIf the device does not offer an update, check internet connectivity (gateway, DNS, time) and restart the device.",
+            "title": "Unsupported firmware for device {device_name}"
+        }
+    }
+}

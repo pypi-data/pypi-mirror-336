@@ -1,0 +1,88 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 configurado",
+            "already_in_progress": "O processo de configura\u00e7\u00e3o j\u00e1 est\u00e1 a decorrer",
+            "connection_error": "A liga\u00e7\u00e3o falhou"
+        },
+        "error": {
+            "discovery_error": "Falha ao descobrir um Motion Gateway"
+        },
+        "flow_title": "{short_mac} ({ip_address})",
+        "step": {
+            "connect": {
+                "data": {
+                    "api_key": "Chave da API"
+                }
+            },
+            "select": {
+                "data": {
+                    "select_ip": "Endere\u00e7o IP"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Endere\u00e7o IP"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "go_favorite": {
+                "name": "Ir para a posi\u00e7\u00e3o favorita"
+            },
+            "set_favorite": {
+                "name": "Definir a posi\u00e7\u00e3o atual como favorita"
+            }
+        },
+        "cover": {
+            "bottom": {
+                "name": "Fundo"
+            },
+            "combined": {
+                "name": "Combinado"
+            },
+            "top": {
+                "name": "Topo"
+            }
+        },
+        "sensor": {
+            "bottom_battery": {
+                "name": "Bateria inferior"
+            },
+            "top_battery": {
+                "name": "Bateria superior"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "wait_for_push": "Esperar pelo envio multicast na atualiza\u00e7\u00e3o"
+                }
+            }
+        }
+    },
+    "services": {
+        "set_absolute_position": {
+            "description": "Define a posi\u00e7\u00e3o absoluta da tampa.",
+            "fields": {
+                "absolute_position": {
+                    "description": "Posi\u00e7\u00e3o absoluta para onde se deve deslocar.",
+                    "name": "Posi\u00e7\u00e3o absoluta"
+                },
+                "tilt_position": {
+                    "description": "Posi\u00e7\u00e3o de inclina\u00e7\u00e3o para onde se deslocar.",
+                    "name": "Posi\u00e7\u00e3o de Inclina\u00e7\u00e3o"
+                },
+                "width": {
+                    "description": "Especificar a largura que \u00e9 coberta, apenas para entidades combinadas TDBU.",
+                    "name": "Largura"
+                }
+            },
+            "name": "Definir posi\u00e7\u00e3o absoluta"
+        }
+    }
+}

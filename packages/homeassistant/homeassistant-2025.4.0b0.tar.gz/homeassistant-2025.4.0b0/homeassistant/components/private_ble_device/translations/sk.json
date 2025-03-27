@@ -1,0 +1,30 @@
+{
+    "config": {
+        "error": {
+            "irk_not_found": "Poskytnut\u00e9 IRK sa nezhoduje so \u017eiadnymi zariadeniami BLE, ktor\u00e9 m\u00f4\u017ee Home Assistant vidie\u0165.",
+            "irk_not_valid": "K\u013e\u00fa\u010d nevyzer\u00e1 ako platn\u00fd IRK."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "user": {
+                "data": {
+                    "irk": "IRK"
+                },
+                "description": "Ak\u00fd je IRK (Identity Resolving Key) zariadenia BLE, ktor\u00e9 chcete sledova\u0165?"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "estimated_broadcast_interval": {
+                "name": "Odhadovan\u00fd interval vysielania"
+            },
+            "estimated_distance": {
+                "name": "Odhadovan\u00e1 vzdialenos\u0165"
+            },
+            "power": {
+                "name": "Nap\u00e1janie"
+            }
+        }
+    }
+}

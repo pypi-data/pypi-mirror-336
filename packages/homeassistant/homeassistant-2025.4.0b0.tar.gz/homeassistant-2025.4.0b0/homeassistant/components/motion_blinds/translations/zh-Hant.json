@@ -1,0 +1,88 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u88dd\u7f6e\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210",
+            "already_in_progress": "\u8a2d\u5b9a\u5df2\u7d93\u9032\u884c\u4e2d",
+            "connection_error": "\u9023\u7dda\u5931\u6557"
+        },
+        "error": {
+            "discovery_error": "\u641c\u7d22 Motion \u9598\u9053\u5668\u5931\u6557"
+        },
+        "flow_title": "{short_mac} ({ip_address})",
+        "step": {
+            "connect": {
+                "data": {
+                    "api_key": "API \u91d1\u9470"
+                }
+            },
+            "select": {
+                "data": {
+                    "select_ip": "IP \u4f4d\u5740"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "IP \u4f4d\u5740"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "go_favorite": {
+                "name": "\u958b\u95dc\u81f3\u504f\u597d\u4f4d\u7f6e"
+            },
+            "set_favorite": {
+                "name": "\u5c07\u76ee\u524d\u4f4d\u7f6e\u8a2d\u5b9a\u70ba\u504f\u597d"
+            }
+        },
+        "cover": {
+            "bottom": {
+                "name": "\u5e95\u90e8"
+            },
+            "combined": {
+                "name": "\u7d44\u5408"
+            },
+            "top": {
+                "name": "\u9802\u90e8"
+            }
+        },
+        "sensor": {
+            "bottom_battery": {
+                "name": "\u5e95\u90e8\u96fb\u6c60"
+            },
+            "top_battery": {
+                "name": "\u9802\u90e8\u96fb\u6c60"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "wait_for_push": "\u7b49\u5019 Multicast \u63a8\u9001\u901a\u77e5"
+                }
+            }
+        }
+    },
+    "services": {
+        "set_absolute_position": {
+            "description": "\u8a2d\u5b9a\u7a97\u7c3e\u7684\u7d55\u5c0d\u4f4d\u7f6e\u3002",
+            "fields": {
+                "absolute_position": {
+                    "description": "\u8981\u79fb\u52d5\u7684\u7d55\u5c0d\u4f4d\u7f6e\u3002",
+                    "name": "\u7d55\u5c0d\u4f4d\u7f6e"
+                },
+                "tilt_position": {
+                    "description": "\u8981\u79fb\u52d5\u8449\u7247\u4f4d\u7f6e\u3002",
+                    "name": "\u8449\u7247\u4f4d\u7f6e"
+                },
+                "width": {
+                    "description": "\u6307\u5b9a\u6db5\u84cb\u5bec\u5ea6\u3001\u50c5\u9069\u7528\u65bc TDBU \u7d44\u5408\u5be6\u9ad4\u3002",
+                    "name": "\u5bec\u5ea6"
+                }
+            },
+            "name": "\u8a2d\u5b9a\u7d55\u5c0d\u4f4d\u7f6e"
+        }
+    }
+}

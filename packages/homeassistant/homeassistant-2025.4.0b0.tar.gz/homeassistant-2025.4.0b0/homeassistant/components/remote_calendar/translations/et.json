@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Teenus on juba seadistatud"
+        },
+        "error": {
+            "cannot_connect": "\u00dchendamine nurjus",
+            "invalid_ics_file": "Kehtetu .ics-fail"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "calendar_name": "Kalendri nimi",
+                    "url": "Kalendri URL"
+                },
+                "data_description": {
+                    "calendar_name": "Kasutajaliideses kuvatav kalendri nimi.",
+                    "url": "Kaugkalendri URL."
+                },
+                "description": "Vali imporditava kalendri nimi"
+            }
+        }
+    },
+    "exceptions": {
+        "unable_to_fetch": {
+            "message": "Kalendri andmeid ei saa tuua: {err}"
+        },
+        "unable_to_parse": {
+            "message": "Kalendri andmeid ei saa s\u00f5eluda: {err}"
+        }
+    },
+    "title": "Kaugkalender"
+}

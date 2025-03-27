@@ -1,0 +1,18 @@
+{
+    "config": {
+        "abort": {
+            "no_plants": "No plants have been found on this account"
+        },
+        "step": {
+            "plant": {
+                "data": {
+                    "plant_id": "Plant"
+                },
+                "title": "Select your plant"
+            },
+            "user": {
+                "title": "Enter your Sun WEG information"
+            }
+        }
+    }
+}

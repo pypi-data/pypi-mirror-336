@@ -1,0 +1,39 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Herautentikaasje slagge"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Wachtwurd",
+                    "username": "Br\u00fbkersnamme"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "self_test": {
+                "state": {
+                    "completed": "Folt\u00f4ge",
+                    "not_completed": "Net folt\u00f4ge"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "completed": "Folt\u00f4ge",
+                            "not_completed": "Net folt\u00f4ge"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

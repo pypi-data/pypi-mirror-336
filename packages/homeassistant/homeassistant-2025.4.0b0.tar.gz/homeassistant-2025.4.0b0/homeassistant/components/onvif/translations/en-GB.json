@@ -1,0 +1,24 @@
+{
+    "config": {
+        "step": {
+            "configure": {
+                "data_description": {
+                    "host": "The hostname or IP address of your ONVIF device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "switch": {
+            "autofocus": {
+                "name": "Autofocus"
+            },
+            "ir_lamp": {
+                "name": "IR lamp"
+            },
+            "wiper": {
+                "name": "Wiper"
+            }
+        }
+    }
+}

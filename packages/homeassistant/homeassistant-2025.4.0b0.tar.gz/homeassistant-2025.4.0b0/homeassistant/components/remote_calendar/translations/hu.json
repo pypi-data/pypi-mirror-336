@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "A szolg\u00e1ltat\u00e1s m\u00e1r konfigur\u00e1lva van"
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "invalid_ics_file": "\u00c9rv\u00e9nytelen .ics f\u00e1jl"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "calendar_name": "Napt\u00e1r neve",
+                    "url": "Napt\u00e1r URL"
+                },
+                "data_description": {
+                    "calendar_name": "A fel\u00fcleten megjelen\u0151 napt\u00e1r neve.",
+                    "url": "A t\u00e1voli napt\u00e1r URL-c\u00edme."
+                },
+                "description": "K\u00e9rj\u00fck, v\u00e1lasszon nevet az import\u00e1lni k\u00edv\u00e1nt napt\u00e1rhoz"
+            }
+        }
+    },
+    "exceptions": {
+        "unable_to_fetch": {
+            "message": "Nem siker\u00fclt lek\u00e9rni a napt\u00e1radatokat: {err}"
+        },
+        "unable_to_parse": {
+            "message": "Nem siker\u00fclt feldolgozni a napt\u00e1radatokat: {err}"
+        }
+    },
+    "title": "T\u00e1voli napt\u00e1r"
+}

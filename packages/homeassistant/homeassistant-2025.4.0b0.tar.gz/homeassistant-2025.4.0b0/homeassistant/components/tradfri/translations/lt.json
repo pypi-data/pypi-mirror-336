@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Prietaisas jau sukonfig\u016bruotas",
+            "already_in_progress": "Konfig\u016bracijos procesas jau vyksta"
+        },
+        "error": {
+            "cannot_authenticate": "Nepavyksta autentifikuoti, ar \u201eGateway\u201c yra suporuotas su kitu serveriu, pvz., Homekit?",
+            "cannot_connect": "Nepavyko prisijungti",
+            "timeout": "Kodo patvirtinimo laikas baig\u0117si."
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "J\u016bs\u0173 Tr\u00e5dfri prieigos vart\u0173 pagrindinio kompiuterio pavadinimas arba IP adresas."
+                },
+                "description": "Apsaugos kod\u0105 galite rasti prieigos vart\u0173 gale.",
+                "title": "\u012eveskite apsaugos kod\u0105"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "aqi": {
+                "name": "Oro kokyb\u0117"
+            },
+            "filter_life_remaining": {
+                "name": "Liko filtravimo laikas"
+            }
+        }
+    }
+}
