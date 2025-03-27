@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: nish
+Version: 0.1.0
+Summary: A CLI tool to combine PDFs in a folder
+Home-page: https://github.com/Nishitha03/nish
+Author: Rachit Vyas
+Author-email: vrachit106@gmail.com
+Keywords: pdf combine merge tool
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PyPDF2>=3.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Nish
+
+A simple command-line tool to combine PDF files in a folder.
+
+## Installation
+
+```bash
+pip install nish
+```
+
+## Usage
+
+Combine PDFs in the current directory:
+```bash
+nish .
+```
+
+Combine PDFs in a specific folder:
+```bash
+nish /path/to/pdfs
+```
+
+Combine PDFs with a custom output name:
+```bash
+nish /path/to/pdfs -o merged.pdf
+```
+
+## Features
+
+- Combines all PDF files in a specified folder
+- Sorts PDFs alphabetically before combining
+- Simple command-line interface
+
+## Requirements
+
+- Python 3.8+
+
+## License
+
+MIT License

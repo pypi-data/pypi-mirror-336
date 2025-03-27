@@ -1,0 +1,10 @@
+README.md
+setup.py
+nish.egg-info/PKG-INFO
+nish.egg-info/SOURCES.txt
+nish.egg-info/dependency_links.txt
+nish.egg-info/entry_points.txt
+nish.egg-info/requires.txt
+nish.egg-info/top_level.txt
+pdf_combiner/__init__.py
+pdf_combiner/cli.py
