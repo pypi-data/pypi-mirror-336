@@ -1,0 +1,10 @@
+microperf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+microperf/__main__.py,sha256=24cdCy8lKtH3ZntE8AdQp6xe53bX_wwbYkgMCjajF5I,2118
+microperf/_perf-script.py,sha256=1y_kl8w_1-KMNM0wkjjfKokHAxbybkE0nBsym2Cdzk0,4041
+microperf/commands.py,sha256=64M6SHbEXzFT7DRm9jmCHP5zi7X5oO8Bam_vUcYNf2I,2988
+microperf/queries.py,sha256=1zRIFAuc3pgwleg2cXXMgdL9kUoejM17B0X-KTz-naA,3287
+microperf-1.0.1.dist-info/METADATA,sha256=WUqXtpoaDFgoSIwWmbn9NyRPrAQN-2JomSPXu-MCI9U,2074
+microperf-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+microperf-1.0.1.dist-info/entry_points.txt,sha256=eiD7ZLZQcW_MJaXdixORdoTleWLHccSB7VqHdlahs6g,54
+microperf-1.0.1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+microperf-1.0.1.dist-info/RECORD,,

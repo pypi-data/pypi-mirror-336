@@ -1,0 +1,2 @@
+[console_scripts]
+microperf = microperf.__main__:main
