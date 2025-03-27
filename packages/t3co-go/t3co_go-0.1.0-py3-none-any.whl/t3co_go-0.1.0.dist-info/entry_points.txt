@@ -1,0 +1,3 @@
+[console_scripts]
+install_demo_inputs = t3co_go.utilities.demo_files_installer:main
+run_t3co_go = t3co_go.cli.run_t3co_go:main
