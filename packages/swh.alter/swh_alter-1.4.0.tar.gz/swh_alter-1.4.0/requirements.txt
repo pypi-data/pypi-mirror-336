@@ -1,0 +1,8 @@
+attrs
+click
+humanize
+igraph
+pyyaml
+shamir-mnemonic
+tabulate
+typing_extensions
