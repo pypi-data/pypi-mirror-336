@@ -1,0 +1,16 @@
+chrono_features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrono_features/ts_dataset.py,sha256=sWPfLcCTpc7uhXSPCC9_v3AchzOMnH5RbW6manVJ0QU,4509
+chrono_features/window_type.py,sha256=ddgEB7aWkYaLx_LVvaSg8OlqIq21Z2OLkQXiJhCCVHo,2120
+chrono_features/features/__init__.py,sha256=mCZz-90xvbywoFcGzLNoDsW9dEim7NgDcSoaCKC7cHc,475
+chrono_features/features/_base.py,sha256=wtVVLaWc4h09_nHqXoxI2Rfp-usl8cog4qNlg7yinQo,10496
+chrono_features/features/absolute_energy.py,sha256=Dc0j3eWBQq1xGH8dg31ZRFQlWbEOMdbdp_fCxqA49No,1210
+chrono_features/features/absolute_sum_of_changes.py,sha256=QykWiOO7kDBpQZMZDrGE8ewqOvcLZjTG5FqXo7D8omY,1285
+chrono_features/features/autocorrelation.py,sha256=YovnR7VkdB4mOVEZSV_lgK__rB92UDySZMBLhlszoS8,2738
+chrono_features/features/mean.py,sha256=fFDOyE2fs3xfYeUaOReYFBKKpnOEbFDxgHj9V8T73uc,3870
+chrono_features/features/median.py,sha256=AePE0HQI9sLn7Y9CupHDzZVk881wN5O-72JQr7_V1yw,745
+chrono_features/features/std.py,sha256=XQ8HlepZU-bjjSvoAQ3LJKgxP_bqpLEt6KzJHYDROQo,1132
+chrono_features/features/sum.py,sha256=9yXoeb47FseSXPica-Ulg6Jz6bSjPXcm1k9CN1phwTI,5508
+chrono_features-0.0.7.dist-info/METADATA,sha256=GmUPdaFJk6wg5mc8_n8O4gJkosTE6ZQIA-jtMje-T38,314
+chrono_features-0.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+chrono_features-0.0.7.dist-info/top_level.txt,sha256=JWLGoUy6hBHEXlFDDX8bK4Je8KH4YCtHW4TH24ahKyc,16
+chrono_features-0.0.7.dist-info/RECORD,,
