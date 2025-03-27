@@ -1,0 +1,10 @@
+czds/__init__.py,sha256=ieVstGdB2itfbUZN7AtyQ3yTC_X86DiPzMGjfl8ibnk,310
+czds/__main__.py,sha256=Qjg_uKauxBsicAThLIV1KWsn1zOtZejsi8thBPBL-B8,3233
+czds/client.py,sha256=wsPfA3TCJH9a1NuGK2s3iNpPT97upfqMxLOXweAQMBQ,13039
+czds/utils.py,sha256=aj_eN0BJUPpSWgL6hqqCvj8nojCCyNKCJ-pgApZYYag,2379
+czds_api-1.3.8.dist-info/licenses/LICENSE,sha256=i1l_jK9Ogl0Hl2RjCKrgzq8EBl3gDHmbJKkJg5SIuag,765
+czds_api-1.3.8.dist-info/METADATA,sha256=YMp6eo57-frwv7S-WRM1yRzg9xcheLJqO7nDi3geBBQ,6935
+czds_api-1.3.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+czds_api-1.3.8.dist-info/entry_points.txt,sha256=OWZjazFlu0a3ubNac9fHMqPm7f6du5dddSWS2cO80MQ,49
+czds_api-1.3.8.dist-info/top_level.txt,sha256=qBEEeDGuQgTCQwc1Dy2l9ntJ4Azq8fkHV9Y1ARN_Qjg,5
+czds_api-1.3.8.dist-info/RECORD,,
