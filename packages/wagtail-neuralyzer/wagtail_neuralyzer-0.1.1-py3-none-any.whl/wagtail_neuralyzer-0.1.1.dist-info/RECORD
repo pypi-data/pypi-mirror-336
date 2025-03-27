@@ -1,0 +1,10 @@
+wagtail_neuralyzer/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+wagtail_neuralyzer/action.py,sha256=VbbjHyCyUvo5WgQH-RIxnakeTcZUWDagEmm9s2qkz1E,3406
+wagtail_neuralyzer/menu_item.py,sha256=WXhIx0nR7Tg1dY3irv0vBrmK4w8AjVQm7S9ZiiCukAw,452
+wagtail_neuralyzer/views.py,sha256=MpwqGQhVZUkxsaVtO4NQJtdc0V3pHllY6VAMvq825Qg,6174
+wagtail_neuralyzer/wagtail_hooks.py,sha256=3rLZf4IBCgNjKt6VnMJjKBB3B8rKuLdviDE4sxrHZbw,414
+wagtail_neuralyzer-0.1.1.dist-info/licenses/LICENCE,sha256=56UTBx31jVhpbYapLi5W1BK7rIv74T6X872xXTsLKUc,1061
+wagtail_neuralyzer-0.1.1.dist-info/METADATA,sha256=LaDeDvWh5J3I2BnthjA_uBV-PguQK7AkiPFr-T2kLm4,2590
+wagtail_neuralyzer-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+wagtail_neuralyzer-0.1.1.dist-info/top_level.txt,sha256=2Eu9pK1WwY5Rt2C9uAZqhel0_Z1h0IEULLn7Q-wI94I,19
+wagtail_neuralyzer-0.1.1.dist-info/RECORD,,
