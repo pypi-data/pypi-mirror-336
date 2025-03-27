@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/imaris_convert/ImarisWriterCtypes.py
+src/imaris_convert/PyImarisWriter.py
+src/imaris_convert/__init__.py
+src/imaris_convert/bpImarisWriter96.dll
+src/imaris_convert/hdf5.dll
+src/imaris_convert/imaris_convert.py
+src/imaris_convert/zlib.dll
+src/imaris_convert.egg-info/PKG-INFO
+src/imaris_convert.egg-info/SOURCES.txt
+src/imaris_convert.egg-info/dependency_links.txt
+src/imaris_convert.egg-info/entry_points.txt
+src/imaris_convert.egg-info/requires.txt
+src/imaris_convert.egg-info/top_level.txt

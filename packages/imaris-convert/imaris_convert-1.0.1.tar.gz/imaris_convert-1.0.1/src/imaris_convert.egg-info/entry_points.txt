@@ -1,0 +1,2 @@
+[console_scripts]
+imaris-convert = imaris_convert.imaris_convert:main_cli
