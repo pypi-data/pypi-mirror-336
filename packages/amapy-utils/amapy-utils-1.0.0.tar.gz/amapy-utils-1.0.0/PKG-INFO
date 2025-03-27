@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: amapy-utils
+Version: 1.0.0
+Summary: A utility package that provides common functionality shared across the asset-manager ecosystem. It serves as a foundation library offering various helper functions and tools needed by other components in the system.
+Author-email: Swarup Mahanti <swarup.mahanti@roche.com>
+Maintainer-email: Swarup Mahanti <swarup.mahanti@roche.com>
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aiofiles==0.7.*
+Requires-Dist: cached_property==1.5.*
+Requires-Dist: colorama==0.4.*
+Requires-Dist: crcmod==1.*
+Requires-Dist: psutil==5.9.*
+Requires-Dist: pyopenssl==24.0.*
+Requires-Dist: pypager==3.0.1
+Requires-Dist: pytz==2021.3
+Requires-Dist: pyyaml==6.0.*
+Requires-Dist: requests==2.32.*
+Requires-Dist: ruamel.yaml==0.18.*
+Requires-Dist: speedtest-cli==2.1.*
+Requires-Dist: tabulate==0.9.*
+Requires-Dist: tqdm==4.62.*
+
+asset-utils

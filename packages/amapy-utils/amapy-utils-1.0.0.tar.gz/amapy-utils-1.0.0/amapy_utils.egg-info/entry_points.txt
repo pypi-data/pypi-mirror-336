@@ -1,0 +1,2 @@
+[console_scripts]
+utils = asset_utils.utils.pager:run
