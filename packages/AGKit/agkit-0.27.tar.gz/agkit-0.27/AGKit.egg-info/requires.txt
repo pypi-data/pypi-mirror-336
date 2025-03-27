@@ -1,0 +1,7 @@
+xlrd>=2.0.1
+pillow>=11.1.0
+openpyxl>=3.1.5
+colorlog>=6.8.2
+requests>=2.25.1
+psd-tools==1.10.7
+pyinstaller==6.10.0
