@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+fgts_pdf_dados.egg-info/PKG-INFO
+fgts_pdf_dados.egg-info/SOURCES.txt
+fgts_pdf_dados.egg-info/dependency_links.txt
+fgts_pdf_dados.egg-info/entry_points.txt
+fgts_pdf_dados.egg-info/requires.txt
+fgts_pdf_dados.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py

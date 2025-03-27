@@ -1,0 +1,2 @@
+[console_scripts]
+fgts-pdf-dados = fgts_pdf_dados.__main__:main

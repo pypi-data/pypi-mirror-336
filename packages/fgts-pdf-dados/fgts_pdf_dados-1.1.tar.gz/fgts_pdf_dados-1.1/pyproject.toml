@@ -1,0 +1,49 @@
+[project]
+name = "fgts_pdf_dados"
+version = '1.1'
+description = "Extrai dados de múltiplos extratos PDF da app do FGTS e grava tudo como uma série histórica num CSV pronto para usar com o Inverstorzilla"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [
+    { name = "Avi Alkalay", email = "avi@unix.sh" },
+]
+
+keywords = [
+    "FGTS",
+    "personal finance",
+    "Brazil"
+]
+
+dependencies = [
+    "pandas",
+    "pdfplumber",
+]
+
+classifiers=[
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+
+[project.scripts]
+fgts-pdf-dados = "fgts_pdf_dados.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/avibrazil/fgts-pdf-dados"
+Source = "https://github.com/avibrazil/fgts-pdf-dados"
+Issues = "https://github.com/avibrazil/fgts-pdf-dados/issues/new/choose"
+Pypi = "https://pypi.org/project/fgts-pdf-dados/"
+
+[tool.setuptools.package-dir]
+fgts_pdf_dados = "src"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
