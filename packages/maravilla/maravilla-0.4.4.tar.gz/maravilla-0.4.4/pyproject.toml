@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maravilla"
+description = "A small and simple python library which provides basic to advanced math functionality"
+version = "0.4.4"
+requires-python = ">= 3.8"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["math","integral","functions","calculus","derivative","fourier","gcd"]
+
+[project.urls]
+repository = "https://github.com/chouettevan/Projet-LLL"
+
+[tool.setuptools.package-dir]
+maravilla  = "src"
