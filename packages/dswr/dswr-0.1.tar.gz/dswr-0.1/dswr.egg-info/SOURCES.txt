@@ -1,0 +1,7 @@
+README.md
+setup.py
+dswr.egg-info/PKG-INFO
+dswr.egg-info/SOURCES.txt
+dswr.egg-info/dependency_links.txt
+dswr.egg-info/requires.txt
+dswr.egg-info/top_level.txt
