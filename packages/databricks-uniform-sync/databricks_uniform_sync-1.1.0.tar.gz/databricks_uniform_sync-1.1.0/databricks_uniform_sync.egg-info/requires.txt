@@ -1,0 +1,8 @@
+requests
+pydantic==2.10.4
+pyyaml
+databricks-sdk==0.40.0
+snowflake==1.0.2
+snowflake-connector-python==3.12.4
+snowflake-snowpark-python==1.26.0
+colorlog
