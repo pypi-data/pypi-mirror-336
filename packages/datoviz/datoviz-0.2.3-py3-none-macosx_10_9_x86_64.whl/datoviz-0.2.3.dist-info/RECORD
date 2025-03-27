@@ -1,0 +1,12 @@
+datoviz/MoltenVK_icd.json,sha256=hm79U0Azmm4_DADWNLy7jtggbbmoPTVeaO0vDz-TE-Y,176
+datoviz/__init__.py,sha256=XNNUAO-qTn3sFwEV2yUxwrI4XaG6-tfsMAJ1aciWvBE,268851
+datoviz/libMoltenVK.dylib,sha256=LfG8FelDTHivbkLH1CSIWvip5QG-Ep_h2P0kgqAwzrQ,15207584
+datoviz/libdatoviz.dylib,sha256=ayIHX97mbl1J2xDMoiN2eYvw3CVqzNhcTunoXu7lL2Y,4531576
+datoviz/libfreetype.6.dylib,sha256=X2IvDdp6Yv8qN7gKJ4iW43_jokvf9KwjaRFbSJDPxv0,634960
+datoviz/libpng16.16.dylib,sha256=4HBQH66CeyKn3UyLSH5hrIFV2x3QCgfwGr_S3TTClco,189080
+datoviz/libshaderc_shared.1.dylib,sha256=jjmlyChGIsRprNughMrtJANxjf7gOlOmcwx1If766rg,8741456
+datoviz/libvulkan.1.dylib,sha256=oOGdPJ6wa8Sp2oahYzB6pnfOxAw8oxyZnV0MXL0YbRc,1453760
+datoviz-0.2.3.dist-info/METADATA,sha256=6RiaQzzA5tJEiHQaykt1LA1Y4tln2TxY5ylPshZTXDg,645
+datoviz-0.2.3.dist-info/WHEEL,sha256=YJko8HaqWL7RZj-eYXRM0Eg6Tr2R-DY8R8lYY8AybKM,106
+datoviz-0.2.3.dist-info/top_level.txt,sha256=ZaZtmaWMHkuB-uc2uYfnY6SKvxtbEDksGwfJ8a5nsCI,8
+datoviz-0.2.3.dist-info/RECORD,,
