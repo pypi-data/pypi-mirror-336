@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: jaxmix
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Joao Loula <jloula@mit.edu>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: altair>=5.3.0
+Requires-Dist: docutils>=0.21.2
+Requires-Dist: equinox>=0.11.4
+Requires-Dist: huggingface-hub>=0.24.6
+Requires-Dist: ipdb>=0.13.13
+Requires-Dist: ipykernel>=6.29.5
+Requires-Dist: jax>=0.4.29
+Requires-Dist: jaxlib>=0.4.29
+Requires-Dist: jaxtyping>=0.2.29
+Requires-Dist: marimo>=0.6.19
+Requires-Dist: plum-dispatch>=2.4.1
+Requires-Dist: polars>=0.20.31
+Requires-Dist: pyarrow>=16.1.0
+Requires-Dist: pytest>=8.2.2
+Requires-Dist: safetensors>=0.4.5
+Provides-Extra: cuda
+Requires-Dist: jax[cuda]>=0.4.29; extra == "cuda"
+Dynamic: license-file
