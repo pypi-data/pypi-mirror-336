@@ -1,0 +1,17 @@
+examples/.gitignore,sha256=D3wGnW-PsCPAFbY50KmU0xZ86Uq-LSSsCp1jiQRceFg,25
+examples/example-notebook.ipynb,sha256=MVL2e8E_t5bZlLPRQEbCFIIy_ZeWcRDDA1PCbuU34h8,900
+examples/example.py,sha256=rDsTOONUTfMHSw8Kza_9H6qO5-_eiAigV5qV_N49tTc,194
+test/test_extraction_of_code.py,sha256=2hUBGpayYTFsU9OYlD8xABiz_IvNAYoPNoZsyk0EVnE,2768
+test/test_integration.py,sha256=AorZxyWP47Cv6N1VRxu0wtP6nmli-H_5PQA7eYJHCpQ,5022
+test/test_tirex_tracker.py,sha256=8UkfPr7IAJSW4ZTrus2USJCqO1nzqXKwdPPVzUoY-EA,6556
+test/resources/example-git-repositories.zip,sha256=2ax6BTfyu4JVXQbJhPiIDyfWlQA-0QgPA3idFKuA9Fk,93839
+tirex_tracker/__init__.py,sha256=SgEQtKKXChbga1dYK2GxsvoRMfrdZfjLlpIa9fpUsKU,33052
+tirex_tracker/archive_utils.py,sha256=WrsUZRv6KnZFSy7v266I1SDwl_4lTBRINg47aox7Fg0,4508
+tirex_tracker/libtirex_tracker_full.dylib,sha256=bctMEa-2GOM40JbyHAwENEaZS4B8MMM8YDJG0KMmFkM,2079768
+tirex_tracker/libtirex_tracker_full.so,sha256=SxwUPP5wBvsSMpxyJJ5g-0j2NX7LgWvNUuXub6YxGbs,3569816
+tirex_tracker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tirex_tracker/tirex_tracker_full.dll,sha256=Y18K1pgE2Dq6TSBnlXgWiGanu9nQJeKOt89PpZu4TeE,1868800
+tirex_tracker-0.2.8.dist-info/METADATA,sha256=VLofSRxuSJOdOVL05wNEooBjmwW9FDqg2jwxyGW-q6I,5948
+tirex_tracker-0.2.8.dist-info/WHEEL,sha256=beeZ86-EfXScwlR_HKu4SllMC9wUEj_8Z_4FJ3egI2w,91
+tirex_tracker-0.2.8.dist-info/top_level.txt,sha256=bbNjkqyHJWmTUOeUukdZ1vObSQ94YPrtvRyneM10vB0,28
+tirex_tracker-0.2.8.dist-info/RECORD,,
