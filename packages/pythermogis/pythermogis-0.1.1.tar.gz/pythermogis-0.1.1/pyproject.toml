@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pythermogis"
+version = "0.1.1"
+description = "This is a Python API to the ThermoGIS Java code"
+authors = [{ name = "Brett", email = "hen.brett@tno.nl" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.13.0"
+dependencies = [
+    "jpype1>=1.5.2,<2",
+    "xarray==2024.9.0.*",
+    "pandas>=2.2.3,<3",
+    "pytz>=2024.1,<2025",
+    "pygridsio>=0.3.11,<0.4"
+]
+
+[tool.setuptools]
+packages = ["pythermogis"]  # Update with actual package name if different
+
+[tool.setuptools.package-data]
+pythermogis = ["*.py"]
+
+[tool.twine]
+repository = "pypi"
