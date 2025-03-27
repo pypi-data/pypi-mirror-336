@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+local_vector_search/__init__.py
+local_vector_search/embed.py
+local_vector_search/local_vector_search.py
+local_vector_search/misc.py
+local_vector_search/text_cleaning.py
+local_vector_search.egg-info/PKG-INFO
+local_vector_search.egg-info/SOURCES.txt
+local_vector_search.egg-info/dependency_links.txt
+local_vector_search.egg-info/top_level.txt
