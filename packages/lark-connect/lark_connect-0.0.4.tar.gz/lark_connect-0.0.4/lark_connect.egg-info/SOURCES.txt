@@ -1,0 +1,8 @@
+README.md
+setup.py
+lark_connect.egg-info/PKG-INFO
+lark_connect.egg-info/SOURCES.txt
+lark_connect.egg-info/dependency_links.txt
+lark_connect.egg-info/not-zip-safe
+lark_connect.egg-info/requires.txt
+lark_connect.egg-info/top_level.txt
