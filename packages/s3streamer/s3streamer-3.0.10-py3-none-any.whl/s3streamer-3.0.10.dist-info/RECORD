@@ -1,0 +1,5 @@
+s3streamer/__init__.py,sha256=glaWAXemDtLoSdwnblX7YfJlICAryenQkLR76wdD8Y0,20818
+s3streamer/__main__.py,sha256=MaYigCYw4eQyIQATDDZ3nP1AdwXWCoSsYZVegVe8M64,167
+s3streamer-3.0.10.dist-info/METADATA,sha256=kNYYfUCNZvYdFxkMYvgaD0BU4f6ocP3j6eqn7fuktjw,4664
+s3streamer-3.0.10.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+s3streamer-3.0.10.dist-info/RECORD,,
