@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: django-pluralize-ru
+Version: 0.1.0
+Summary: This is a Django-template filter for declension of russian words.
+License: MIT
+Author: Nail Einzelgänger
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Django (>=3.0)
+Project-URL: Repository, https://github.com/JobsLament/django-pluralize-ru.git
+Description-Content-Type: text/markdown
+
+# django-pluralize-ru
+
+`django-pluralize-ru` — это фильтр для Django-шаблонов,
+который позволяет склонять русские слова после числительных. Этот пакет полезен 
+для корректного отображения числительных в русском языке в шаблонах Django.
+
+## Установка
+
+
