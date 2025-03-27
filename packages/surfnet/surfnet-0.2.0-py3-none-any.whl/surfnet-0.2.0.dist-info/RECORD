@@ -1,0 +1,9 @@
+surfnet/__init__.py,sha256=nZOAQ6xMkih2J9yTIAfoiXXwEFIgEKo0R9lIGS-V5sc,177
+surfnet/captcha_solver.py,sha256=azyljdlWBGvTfNcAraScSZQnO-WFXHlBbAwrDe2FHws,44066
+surfnet/scraper.py,sha256=RbpYzVBpmp3kB9KlxFjEIRLWX5tzvXOpOcQeKlMq3Ks,31208
+surfnet/system_profiler.py,sha256=I9fabE1Isv-BDcbclVLLkZEHBv5La2qYywVJk8wBDts,10198
+surfnet-0.2.0.dist-info/licenses/LICENSE,sha256=rWc8BXVotyPeUAiCIZSPPo9OrqnmJovSE7s7oQJr_1A,1085
+surfnet-0.2.0.dist-info/METADATA,sha256=VESTgYO5FiajBraBWqVkwyZ8SejZJN5cRXQHayw4B3c,6185
+surfnet-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+surfnet-0.2.0.dist-info/top_level.txt,sha256=NUkx_rJyZPsNH27hK6vlNPu1m5bD7Ga70ZVtVjIgizA,8
+surfnet-0.2.0.dist-info/RECORD,,
