@@ -1,0 +1,11 @@
+build="LOCAL BUILD @ 43e7751c build at Wed Mar 26 10:35:09 UTC 2025"
+suffix=""
+commit="43e7751cf5765f446e60fa1597f80515e5b86537"
+branch="PR-2080"
+describe="43e7751c"
+build_os="Linux"
+build_machine=""
+build_date="Wed Mar 26 10:35:09 UTC 2025"
+build_user="jenkins"
+base_version="2.8.8"
+version="{}{}".format(base_version, suffix)
