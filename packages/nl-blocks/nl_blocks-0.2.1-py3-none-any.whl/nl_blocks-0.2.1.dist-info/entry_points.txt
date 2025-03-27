@@ -1,0 +1,3 @@
+[console_scripts]
+buffham = nlb.buffham.buffham:main
+nlb_tailscale = nlb.tailscale.wrapper:main
