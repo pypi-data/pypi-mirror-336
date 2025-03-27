@@ -1,0 +1,11 @@
+MANIFEST.in
+VERSION
+setup.py
+canonical.ext.fastapi.egg-info/PKG-INFO
+canonical.ext.fastapi.egg-info/SOURCES.txt
+canonical.ext.fastapi.egg-info/dependency_links.txt
+canonical.ext.fastapi.egg-info/requires.txt
+canonical.ext.fastapi.egg-info/top_level.txt
+canonical/ext/fastapi/package.json
+canonical/ext/fastapi/params/__init__.py
+canonical/ext/fastapi/params/_runningloop.py
