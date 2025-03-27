@@ -1,0 +1,13 @@
+arc/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arc/core/__init__.py,sha256=TWfvvMoRaBDHWrxwkMJqrgYGdydL-tZykY18gq4UTlA,158
+arc/core/arc.py,sha256=PH3miMhi5891_guZ_iyFbepPjlgB0sOVEaQEJXi5_wo,10835
+arc/core/datasets.py,sha256=ERlJC6xEFQfU1_1tYlhfuQVVzctXgUDK0vYwLGWh6gc,2043
+arc/core/main.py,sha256=Wlb2wVYp0PRS9thbjKpSKIuIgELezk4rYOHS9rvG7B0,82
+arc/core/utils.py,sha256=g-x51fPI5uCTQaG1UiHkYEXFOZ8uqC8QCVfztIKT8JE,6683
+arc/torch/__init__.py,sha256=tpkf7K2Ug708wjW-MWaHPKQ-QeOAgoJaqsH0rE7lqxs,19
+arc/torch/test.py,sha256=Pt7adtoQ7FjpOUebvZ-sswRzJfv7e6Y8gj92MfHchDE,18
+arc_agi-0.3.0.dist-info/METADATA,sha256=Va_aUliKBqjNcGrkmoVLNark3PZ2TpgF_BXkSvrD5FU,177
+arc_agi-0.3.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+arc_agi-0.3.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+arc_agi-0.3.0.dist-info/licenses/LICENSE,sha256=n4bQgYhMfWWaL-qgxVrQFaO_TxsrC4Is0V1sFbDwCgg,4
+arc_agi-0.3.0.dist-info/RECORD,,
