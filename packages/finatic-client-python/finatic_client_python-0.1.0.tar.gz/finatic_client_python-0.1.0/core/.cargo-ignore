@@ -1,0 +1,46 @@
+# Development files
+.git/
+.github/
+.gitignore
+.cursorrules
+.editorconfig
+.vscode/
+.idea/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Test files
+tests/
+__tests__/
+*.test.rs
+*.spec.rs
+
+# Build files
+target/
+**/*.rs.bk
+**/*.pdb
+
+# IDE and Editor files
+*.swp
+*.swo
+*~
+
+# Environment files
+.env*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini 

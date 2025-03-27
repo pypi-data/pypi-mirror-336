@@ -1,0 +1,76 @@
+Metadata-Version: 2.4
+Name: finatic-client-python
+Version: 0.1.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest>=7.0.0 ; extra == 'dev'
+Requires-Dist: pytest-asyncio>=0.21.0 ; extra == 'dev'
+Requires-Dist: black>=23.0.0 ; extra == 'dev'
+Requires-Dist: isort>=5.12.0 ; extra == 'dev'
+Requires-Dist: mypy>=1.0.0 ; extra == 'dev'
+Provides-Extra: dev
+Summary: Python SDK for Finatic Backend
+Author: Finatic
+License: MIT
+Requires-Python: >=3.8, <3.13
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Finatic Python SDK
+
+This is the official Python SDK for the Finatic Backend API.
+
+## Installation
+
+```bash
+pip install finatic-client-python
+```
+
+## Usage
+
+```python
+from finatic_python import Finatic
+
+# Initialize the client
+finatic = Finatic.init("your-api-key", "your-api-secret")
+
+# Get your holdings
+holdings = await finatic.get_holdings()
+
+# Place an order
+order = {
+    "symbol": "AAPL",
+    "quantity": 1,
+    "side": "buy",
+    "type_": "market",
+    "time_in_force": "day"
+}
+await finatic.place_order(order)
+```
+
+## Development
+
+To set up the development environment:
+
+```bash
+# Install development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest
+
+# Format code
+black .
+isort .
+```
+
+## Requirements
+
+- Python 3.8 or higher
+- Rust toolchain (for development) 

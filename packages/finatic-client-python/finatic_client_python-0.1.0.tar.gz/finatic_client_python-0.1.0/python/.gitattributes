@@ -1,0 +1,73 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text diff=python
+*.pyw text diff=python
+*.pyi text diff=python
+*.pyx text diff=python
+*.pxd text diff=python
+*.pxi text diff=python
+*.pyd binary
+*.so binary
+*.egg binary
+*.egg-info text
+*.egg-info/* text
+*.dist-info/* text
+*.pyc binary
+*.pyo binary
+*.pyd binary
+*.so binary
+*.egg binary
+*.egg-info text
+*.egg-info/* text
+*.dist-info/* text
+
+# Documentation
+*.md text diff=markdown
+*.rst text
+*.txt text
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.odt binary
+*.ods binary
+*.odp binary
+*.ppt binary
+*.pptx binary
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Config files
+*.ini text
+*.cfg text
+*.conf text
+*.json text
+*.yaml text
+*.yml text
+*.xml text
+*.toml text
+*.csv text
+*.tsv text
+
+# Environment files
+.env* text
+!.env.example text
+
+# IDE and Editor files
+.idea/* text
+.vscode/* text
+*.swp text
+*.swo text
+*~ text
+
+# System files
+.DS_Store binary
+Thumbs.db binary
+desktop.ini text 
