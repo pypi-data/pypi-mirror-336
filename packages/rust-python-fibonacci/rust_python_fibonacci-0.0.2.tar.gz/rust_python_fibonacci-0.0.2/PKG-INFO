@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rust_python_fibonacci
+Version: 0.0.2
+Summary: Calculates a Fibonacci number
+Home-page: https://github.com/SportyGeek2015/rust_python_fibonacci
+Author: SportyGeek2015
+Author-email: this_is_not_a_real_emall_address@hotmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: server
+License-File: LICENSE
+
+# rust_python_fibonacci
+This is a basic pip module on calculating Fibonacci numbers
+
+
+# Usage 
+To use our module we 

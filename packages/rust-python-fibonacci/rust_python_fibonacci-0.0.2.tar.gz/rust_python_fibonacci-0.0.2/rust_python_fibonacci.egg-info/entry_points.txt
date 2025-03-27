@@ -1,0 +1,2 @@
+[console_scripts]
+fib-number = rust_python_fibonacci.cmd.fib_numb:fib_numb
