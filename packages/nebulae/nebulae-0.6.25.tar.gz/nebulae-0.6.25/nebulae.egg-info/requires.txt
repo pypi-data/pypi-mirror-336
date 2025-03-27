@@ -1,0 +1,11 @@
+tcurve
+h5py
+pyyaml
+pillow
+numpy
+piexif
+scipy
+onnx
+torch>=1.0
+torchvision
+ptflops>0.6.7

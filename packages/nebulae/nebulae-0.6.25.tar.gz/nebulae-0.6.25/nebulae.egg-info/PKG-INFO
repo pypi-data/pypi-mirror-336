@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: nebulae
+Version: 0.6.25
+Summary: A deep learning framework based on PyTorch and prevalent image processing libraries. It aims to offer a set of useful tools and functions.
+Author-email: Seria <zzqsummerai@yeah.net>
+License-File: LICENSE
+Requires-Dist: tcurve
+Requires-Dist: h5py
+Requires-Dist: pyyaml
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: piexif
+Requires-Dist: scipy
+Requires-Dist: onnx
+Requires-Dist: torch>=1.0
+Requires-Dist: torchvision
+Requires-Dist: ptflops>0.6.7
+Dynamic: license-file
