@@ -1,0 +1,9 @@
+grpc-interceptor
+grpcio-status~=1.63.0
+grpcio~=1.63.0
+heptapod>=5.0.0dev0
+hg-loggingmod>=0.4.1
+importlib_resources~=2.0.0
+protobuf~=5.26.0
+psutil
+spdx-lookup
