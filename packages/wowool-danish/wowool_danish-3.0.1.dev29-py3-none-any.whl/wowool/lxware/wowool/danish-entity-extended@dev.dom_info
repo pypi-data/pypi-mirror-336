@@ -1,0 +1,206 @@
+{
+  "dependencies": [
+    "wowool/danish-entity@dev"
+  ],
+  "concepts": [
+    "Address",
+    "Animal",
+    "Automobile",
+    "BaseballTeam",
+    "City",
+    "Company",
+    "Country",
+    "CurrencyUnit",
+    "Date",
+    "District",
+    "Drink",
+    "Email",
+    "Event",
+    "Facility",
+    "Food",
+    "Measure",
+    "MoneyAmount",
+    "Month",
+    "Organization",
+    "Percent",
+    "Person",
+    "PersonMention",
+    "PlaceAdj",
+    "PhoneNr",
+    "Position",
+    "SoccerTeam",
+    "Sports",
+    "Street",
+    "Time",
+    "Url",
+    "Vehicle",
+    "Weapon",
+    "WeekDay",
+    "WorldRegion"
+  ],
+  "short_description": "All annotations in the entity domain plus others, such as Automobile, BaseballTeam, InsuranceCompany or Measure",
+  "examples": [
+    {
+      "concept": "Address",
+      "sample": "Vestergade 16, 8000 Aarhus ",
+      "desc": "Captures the Street, City and the complete Address"
+    },
+    {
+      "concept": "Animal",
+      "sample": "hunde, fisk, ulv",
+      "desc": "Names of common animals."
+    },
+    {
+      "concept": "Automobile",
+      "sample": "Jeep Renegade",
+      "desc": "A car brand or reference to a car."
+    },
+    {
+      "concept": "BaseballTeam",
+      "sample": "Houston Astros",
+      "desc": "US baseball team"
+    },
+    {
+      "concept": "City",
+      "sample": "Palermo, K\u00f8benhavn, Aarhus",
+      "desc": "Name of a City"
+    },
+    {
+      "concept": "Company",
+      "sample": "Rheinmetall, Ekstra Bladet",
+      "desc": "Name of a Company"
+    },
+    {
+      "concept": "CurrencyUnit",
+      "sample": "krone, euro",
+      "desc": "A currency unit"
+    },
+    {
+      "concept": "Country",
+      "sample": "Egypten, Norge, Gr\u00e6kenland, Spanien, Danmark",
+      "desc": "Name of a Country"
+    },
+    {
+      "concept": "Date",
+      "sample": "november 2022",
+      "desc": "Date and Month"
+    },
+    {
+      "concept": "Drink",
+      "sample": "kaffe, champagne",
+      "desc": "Name of a drink"
+    },
+    {
+      "concept": "Email",
+      "sample": "info@wowool.com",
+      "desc": "Email address"
+    },
+    {
+      "concept": "Event",
+      "sample": "kritik, pressemeddelelse, krig",
+      "desc": "Something that happens"
+    },
+    {
+      "concept": "Facility",
+      "sample": "klinik, katedral",
+      "desc": "A building or place that provides a particular service or is used for a particular industry"
+    },
+    {
+      "concept": "Food",
+      "sample": "gulerod, pizza, hummus",
+      "desc": "Name of food, ingredients as well as dishes"
+    },
+    {
+      "concept": "Measure",
+      "sample": "150 meter, 75ml, hundrede kilometer",
+      "desc": "Unit of measure"
+    },
+    {
+      "concept": "MoneyAmount",
+      "sample": "750.000 kroner",
+      "desc": "Amount of money"
+    },
+    {
+      "concept": "Month",
+      "sample": "august, oktober",
+      "desc": "Name of a month"
+    },
+    {
+      "concept": "Organization",
+      "sample": "regeringen, Det Konservative Folkeparti, Amnesty International",
+      "desc": "Name of an Organization"
+    },
+    {
+      "concept": "Percent",
+      "sample": "10 procents",
+      "desc": "A percentage"
+    },
+    {
+      "concept": "Person",
+      "sample": "Ejner Thomassen",
+      "desc": "Name of a Person, it captures as well the PersonGiv (first name) and PersonFam (family name)"
+    },
+    {
+      "concept": "PersonMention",
+      "sample": "formand, patient",
+      "desc": "A mention of a person in a general way"
+    },
+    {
+      "concept": "PhoneNr",
+      "sample": "+45 12 34 56 78",
+      "desc": "Phone number"
+    },
+    {
+      "concept": "PlaceAdj",
+      "sample": "tyske kansler, danske model",
+      "desc": "Adjective of geographical origin."
+    },
+    {
+      "concept": "Position",
+      "sample": "Premierminister, direkt\u00f8r, Statsrevisor",
+      "desc": "Subclass of PersonMention. The professional occupation of a person."
+    },
+    {
+      "concept": "SoccerTeam",
+      "sample": "FC Copenhagen",
+      "desc": "European soccer team"
+    },
+    {
+      "concept": "Sports",
+      "sample": "tennis, fodbold, rugby",
+      "desc": "Sports"
+    },
+    {
+      "concept": "Street",
+      "sample": "N\u00f8rregade 4",
+      "desc": "The name of a street with or without number."
+    },
+    {
+      "concept": "Url",
+      "sample": "https://www.wowool.com",
+      "desc": "Url"
+    },
+    {
+      "concept": "Vehicle",
+      "sample": "drone, bil, Toyota Yaris",
+      "desc": "Name of a vehicle"
+    },
+    {
+      "concept": "Weapon",
+      "sample": "pistol, gev\u00e6r",
+      "desc": "Name of a weapon"
+    },
+    {
+      "concept": "WeekDay",
+      "sample": "onsdag",
+      "desc": "Day of the week"
+    },
+    {
+      "concept": "WorldRegion",
+      "sample": "Mellem\u00f8sten, Jylland, Europa",
+      "desc": "A geographical place, like a continent, a region, a county, etc."
+    }
+  ],
+  "unknown_things": true,
+  "instances": true
+}

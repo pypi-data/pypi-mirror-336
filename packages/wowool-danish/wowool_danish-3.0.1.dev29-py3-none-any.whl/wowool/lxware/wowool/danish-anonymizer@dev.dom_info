@@ -1,0 +1,93 @@
+{
+  "dependencies": [
+    "wowool/danish-entity@dev"
+  ],
+  "concepts": [
+    "Address",
+    "BankAccount",
+    "City",
+    "Company",
+    "Country",
+    "Day",
+    "Date",
+    "Email",
+    "IPAddress",
+    "Month",
+    "MoneyAmount",
+    "Organization",
+    "PersonFam",
+    "PersonGiv",
+    "Person",
+    "PlaceAdj",
+    "PhoneNr",
+    "Position",
+    "Publisher",
+    "Street",
+    "Url",
+    "Year"
+  ],
+  "short_description": "Contact information annotations, such as: Person name, City, Country, Address, PhoneNr, etc.",
+  "examples": [
+    {
+      "concept": "Address",
+      "sample": "Vestergade 16, 8000 Aarhus",
+      "desc": "Captures the Street, City and the complete Address"
+    },
+    {
+      "concept": "City",
+      "sample": "K\u00f8benhavn",
+      "desc": "Name of a City"
+    },
+    {
+      "concept": "Company",
+      "sample": "Novo Nordisk",
+      "desc": "Name of a Company"
+    },
+    {
+      "concept": "Country",
+      "sample": "Danmark",
+      "desc": "Name of a Country"
+    },
+    {
+      "concept": "Email",
+      "sample": "info@wowool.com",
+      "desc": "Email address"
+    },
+    {
+      "concept": "Person",
+      "sample": "Lars L\u00f8kke Rasmussen",
+      "desc": "Name of a Person, it captures as well the PersonGiv (first name) and PersonFam (family name)"
+    },
+    {
+      "concept": "PersonFam",
+      "sample": "Rasmussen",
+      "desc": "Surname of a Person. Subannotation of the Person annotation"
+    },
+    {
+      "concept": "PersonGiv",
+      "sample": "Lars",
+      "desc": "Given name of a Person. Subannotation of the Person annotation"
+    },
+    {
+      "concept": "PhoneNr",
+      "sample": "+45 12 34 56 78",
+      "desc": "A phone number"
+    },
+    {
+      "concept": "Position",
+      "sample": "Statsminister",
+      "desc": "Subclass of PersonMention. The professional occupation of a person."
+    },
+    {
+      "concept": "Street",
+      "sample": "N\u00f8rregade 4",
+      "desc": "The name of a street with or without number."
+    },
+    {
+      "concept": "Url",
+      "sample": "https://www.wowool.com",
+      "desc": "Url"
+    }
+  ],
+  "instances": true
+}
