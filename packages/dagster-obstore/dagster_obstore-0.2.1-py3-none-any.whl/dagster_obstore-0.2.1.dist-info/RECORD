@@ -1,0 +1,16 @@
+dagster_obstore/__init__.py,sha256=qVwC4ZvGtOAUpIG-8Em73kH49c49ZqUQzOPBWLAOiVU,147
+dagster_obstore/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+dagster_obstore/_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_obstore/_base/log_manager.py,sha256=7YazCITaeoDmz_cZTKDLtIL8ABZW2AHS70LEe9SeYRo,7466
+dagster_obstore/azure/__init__.py,sha256=gvYrYT4PlrPmvMi586S1OAf2aer0XG4cugKJBlu1x2g,193
+dagster_obstore/azure/compute_log_manager.py,sha256=Fz1wJ3jXqKS_1VMLnsCGSSjeZEsT_YAOIpBYO2r64_U,9236
+dagster_obstore/azure/resource.py,sha256=q48CYq3Xl-qebgMQ9vSlElt92Ybzk9TA5NVGGl3qMSE,2639
+dagster_obstore/gcs/__init__.py,sha256=ZnLeqcD88HzlllBqpcVUcVfNvACoRS5KP3t24y8hZdA,183
+dagster_obstore/gcs/compute_log_manager.py,sha256=XrepFVi_KzJiwEoQyJz0exoHGD6pgc4DXfoYm2AokRM,7205
+dagster_obstore/gcs/resource.py,sha256=sSs9HjMM8LNEkdN5Lvj5I-IPQWvcpko96GW770DUDXQ,1797
+dagster_obstore/s3/__init__.py,sha256=m659Wvxn_sUJRfb285FldKBH-4dJRxL39MWgH0LFoE8,177
+dagster_obstore/s3/compute_log_manager.py,sha256=1u4ZPSa-QOe-gDTWahSwzLFghOKZl5i5je8BQf-a96Q,7830
+dagster_obstore/s3/resource.py,sha256=vBqZ_IfAhiju2vcU9VIbThsIS_z1v2_bxi2nQm9Awtw,1739
+dagster_obstore-0.2.1.dist-info/METADATA,sha256=vlLNrgj733SLg0iQPZ6hYcJnlr10nAI_pdMNHu4W3QI,584
+dagster_obstore-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dagster_obstore-0.2.1.dist-info/RECORD,,
