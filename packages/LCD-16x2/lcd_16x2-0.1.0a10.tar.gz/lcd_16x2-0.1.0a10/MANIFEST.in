@@ -1,0 +1,2 @@
+include install.sh setup.sh
+include lcd_16x2/install.sh
