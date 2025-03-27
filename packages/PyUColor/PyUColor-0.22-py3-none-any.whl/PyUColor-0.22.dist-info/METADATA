@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: PyUColor
+Version: 0.22
+Summary: A simple library for printing colored text in the terminal.
+Home-page: https://github.com/urielmalka/Print-Color-C
+Author: Uriel Malka
+Author-email: urielmlka1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+# Color Print Library
+
+The Color Print Library is a C language utility that allows for colored text output in terminal applications. It provides functions for printing text in various colors and styles, including bold, italic, and underlined text.
+
+### Functions
+
+- `printc(color_code, message)`: Prints text in the specified color.
+- `printcb(color_code, message)`: Prints bold text in the specified color.
+- `printci(color_code, message)`: Prints italic text in the specified color.
+- `printcu(color_code, message)`: Prints underlined text in the specified color.
+- `printcd(color_code, message)`: Prints 'disco' style text in the specified color.
+- `printcm(color_code, message)`: Prints 'mark' style text in the specified color.
+
+### Color Codes
+
+- Red, Green, Yellow, Blue, Magenta, Cyan, White
+- Bold, Italic, and Underline versions are available for each color.
+
+![Example Image](examples.png)
+
+
