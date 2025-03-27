@@ -1,0 +1,8 @@
+requests>=2.31.0
+
+[async]
+httpx>=0.24.1
+
+[dev]
+pytest
+pytest-asyncio
