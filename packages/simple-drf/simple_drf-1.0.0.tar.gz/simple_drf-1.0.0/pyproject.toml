@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple_drf"
+version = "1.0.0"
+description = "A Python package for quicker API development in Django."
+readme = "README.md"
+authors = [{ name="Samuel Chichester", email="samuelchichester05@gmail.com" }]
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "django",
+    "django-rest-framework"
+]
+
+[project.urls]
+Homepage = "https://github.com/SamChichester/Simple-DRF"

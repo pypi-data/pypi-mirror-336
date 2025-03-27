@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+simple_drf/__init__.py
+simple_drf/api_classes.py
+simple_drf/api_functions.py
+simple_drf.egg-info/PKG-INFO
+simple_drf.egg-info/SOURCES.txt
+simple_drf.egg-info/dependency_links.txt
+simple_drf.egg-info/requires.txt
+simple_drf.egg-info/top_level.txt
