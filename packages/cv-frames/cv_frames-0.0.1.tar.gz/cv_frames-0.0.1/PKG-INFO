@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: cv-frames
+Version: 0.0.1
+Summary: Read frames from OpenCV like humans
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: click
