@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: amapy-contents
+Version: 1.0.0
+Summary: The Contents plugin for asset-manager project. It provides functionalities for handling and cataloging the contents of digital assets.
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp<4.0.0,>=3.3.0
+Requires-Dist: amapy-db==1.*
+Requires-Dist: amapy-pluggy==1.*
+Requires-Dist: amapy-utils==1.*
+Requires-Dist: backoff==2.2.*
+
+asset-contents

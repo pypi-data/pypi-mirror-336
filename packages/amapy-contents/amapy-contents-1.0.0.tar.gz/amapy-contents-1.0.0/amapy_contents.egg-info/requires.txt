@@ -1,0 +1,5 @@
+aiohttp<4.0.0,>=3.3.0
+amapy-db==1.*
+amapy-pluggy==1.*
+amapy-utils==1.*
+backoff==2.2.*
