@@ -1,0 +1,14 @@
+python-dotenv
+Jinja2
+llama-cpp-python
+ctransformers
+openai
+transformers
+ollama
+zulip
+mattermostdriver
+mautrix
+selenium
+pandoc
+chromadb
+psycopg2-binary
