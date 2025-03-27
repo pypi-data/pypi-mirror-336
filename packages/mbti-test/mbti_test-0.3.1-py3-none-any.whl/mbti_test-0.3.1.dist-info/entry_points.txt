@@ -1,0 +1,2 @@
+[console_scripts]
+mbti-test = mbti.entry_point:main
