@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: pyquet
+Version: 1.0.6
+Summary: Generate pseudorandom data from .json schemas
+Author: Ricardo Múgica
+Author-email: rmugicag@gmail.com
+License-File: LICENSE
+Requires-Dist: pandastable
+Requires-Dist: pandas
+Requires-Dist: numpy>=2
+Requires-Dist: pyarrow>=1.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
