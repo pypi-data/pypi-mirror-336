@@ -1,0 +1,12 @@
+typer-slim>=0.15.1
+typer-di>=0.1.3
+earthscope-sdk>=1.0.0b0
+rich>=13.8.0
+
+[dev]
+black
+bumpver
+build
+pytest
+twine
+pip-tools
