@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+django_hyperscript/__init__.py
+django_hyperscript.egg-info/PKG-INFO
+django_hyperscript.egg-info/SOURCES.txt
+django_hyperscript.egg-info/dependency_links.txt
+django_hyperscript.egg-info/requires.txt
+django_hyperscript.egg-info/top_level.txt
+django_hyperscript/templatetags/__init__.py
+django_hyperscript/templatetags/hyperscript.py
