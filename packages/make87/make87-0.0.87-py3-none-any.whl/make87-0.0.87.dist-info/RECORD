@@ -1,0 +1,17 @@
+make87/__init__.py,sha256=S2xK78xZC5lE-lrRQCCPJZS5rHiJU7Gk8nCTcilmqhA,2456
+make87/application_config.py,sha256=1vFKDWdZpE6hBqKHKHvlSuywlQhoJ1r5Xfkwfj1OZUo,1938
+make87/endpoints.py,sha256=KIxvIvzAWIjmTQ6pk5aHETY_TFY_U4jDAZjebkREskA,13879
+make87/peripherals.py,sha256=pjiape0o-gHQK5y-DSOVqR2PkCM8K1AAKelyCQoDHX4,2079
+make87/session.py,sha256=QyEeLOcSYkciB6XXgdUDgLwx_PjalqPV3NLs5w83yNE,1561
+make87/storage.py,sha256=ppG7UPS09Go6vbA_jWzwv2SE86uSCGMt9i6G3UMk1YA,4664
+make87/topics.py,sha256=O9LpQzYVgQgLXNK4Zp3TdwV0eiY47T-s6G9iq91zMao,19089
+make87/utils.py,sha256=xa2WcThspzr13aqjLm3GJfoxoq7JVZlgvNEXNgDOA24,8612
+make87/handlers/__init__.py,sha256=ZpTBs2kPvUTL1Qs-EvkBjrNKJDPrG7OThdY-1AADufg,109
+make87/handlers/logging.py,sha256=hZ6tU8FrLpg7xjAl6SEVqLtFnjcF6QL7amZs8-7sQLo,1948
+make87/handlers/stderr.py,sha256=68xPaN-3iiPyEoRozOV8jPxlnFfrxP1uZVk50sqnr6c,1765
+make87/handlers/stdout.py,sha256=kfuiIaLeILT0yjdMDu-iU1KnMHWuQO-klpoVsd8Hd7U,1764
+make87-0.0.87.dist-info/licenses/LICENSE,sha256=TZYMbSZGxu8QfLMOoo8Ekd2erZzqAWq9XqQ3UqJT5Uo,843
+make87-0.0.87.dist-info/METADATA,sha256=n1gmX7zWlvS8d21Ks7yl_cEXGxKY8l6BY8mWYDL8weU,1968
+make87-0.0.87.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+make87-0.0.87.dist-info/top_level.txt,sha256=cpdK_abH_DbS5p8vdbM9lCaeh_SOW9OxwC-PCjaU8BE,7
+make87-0.0.87.dist-info/RECORD,,
