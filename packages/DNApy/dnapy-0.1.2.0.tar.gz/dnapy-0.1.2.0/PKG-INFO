@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: DNApy
+Version: 0.1.2.0
+Summary: A bioinformatics library containing common file parsers and others!
+Home-page: https://github.com/Namanjn/namuskj
+Download-URL: https://github.com/Namanjn/PyNamu/tarball/0.1
+Author: Naman Jain
+Author-email: namanjn07@hotmail.com
+Keywords: testing,bioinformatics,example
+License-File: LICENSE.txt
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
