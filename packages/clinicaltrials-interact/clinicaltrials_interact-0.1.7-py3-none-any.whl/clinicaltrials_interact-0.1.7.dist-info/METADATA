@@ -1,0 +1,221 @@
+Metadata-Version: 2.1
+Name: clinicaltrials-interact
+Version: 0.1.7
+Summary: A Python package to interact with ClinicalTrials.gov API v2
+Home-page: https://github.com/hsph-bst236/midterm-project-keyvulee-innovations/tree/api/clinicaltrials_interact
+Author: KeyVuLee
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests<3.0.0,>=2.32.3
+Requires-Dist: pandas<3.0.0,>=2.2.0
+Requires-Dist: sentence-transformers<4.0.0,>=3.4.1
+Requires-Dist: scikit-learn<2.0.0,>=1.6.1
+Requires-Dist: matplotlib<4.0.0,>=3.10.1
+Requires-Dist: seaborn<1.0.0,>=0.13.2
+Requires-Dist: plotly>=5.0.0
+
+# Clinical Trials Interact
+
+A Python package for interacting with and analyzing clinical trial data from ClinicalTrials.gov API.
+
+## Features
+
+- Search clinical trials using flexible search expressions
+- Build similarity graphs between related clinical trials
+- Navigate through clinical trial networks using graph traversal
+- Extract detailed trial information and metadata
+- Analyze relationships between trials based on various criteria
+
+## Installation
+
+Install using pip:
+```bash
+pip install clinicaltrials_interact
+```
+
+> **Note**: For an isolated environment, consider using a virtual environment or Conda:
+```bash
+conda create -n ct_interact_env python=3.12
+conda activate ct_interact_env
+pip install clinicaltrials_interact
+```
+
+## Requirements
+
+- Python 3.6+
+- requests
+- networkx
+- pandas
+- matplotlib
+- sentence-transformers
+- scikit-learn
+- seaborn
+- plotly
+
+## Quick Start
+
+```python
+from clinicaltrials_interact import ClinicalTrialsAPI
+
+# Initialize the API client
+ct_api = ClinicalTrialsAPI()
+
+# Search for clinical trials related to "breast cancer"
+trials = ct_api.search_to_dataframe_IDs("breast cancer", max_results=100)
+
+# Get detailed information about a specific trial
+trial_detail = ct_api.get_study_details("NCT04303169")
+```
+
+## Examples
+
+### Example 1: Analyzing COVID-19 Vaccine Trials
+
+```python
+from clinicaltrials_interact import ClinicalTrialsNavigator
+
+# 1. Define the navigator
+navigator = ClinicalTrialsNavigator()
+    
+# 2. Search for studies and build a similarity graph in one step
+print("\nSearching for diabetes studies and building graph...")
+graph = navigator.search_and_build_graph(
+    search_expr="diabetes type 2", 
+    max_studies=200,  # Limit to 50 studies for this example
+    similarity_threshold=0.5,  # Lower threshold to get more connections
+    max_edges_per_node=20
+)
+
+
+
+# 3. Get information about a specific clinical trial
+trial_ids = list(graph.nodes)
+if trial_ids:
+    first_trial_id = trial_ids[0]
+    print(f"\nGetting details for trial {first_trial_id}:")
+    trial_details = navigator.get_trial_details(first_trial_id)
+    print(f"Title: {trial_details.get('briefTitle', '')}")
+    print(f"Summary: {trial_details.get('briefSummary', '')[:200]}...")  # Show truncated summary
+
+# 4. Perform breadth-first search traversal
+print("\nPerforming Breadth-First Search traversal:")
+bfs_results = navigator.breadth_first_search(
+    start_id=first_trial_id,
+    max_depth=2,
+    visited_limit=10
+)
+
+print(f"BFS found {len(bfs_results)} trials:")
+for i, result in enumerate(bfs_results[:5]):  # Show first 5 results
+    print(f"{i+1}. {result['NCTId']} (depth {result['depth']}): {result['title'][:50]}...")
+
+# 5. Perform depth-first search traversal
+print("\nPerforming Depth-First Search traversal:")
+dfs_results = navigator.depth_first_search(
+    start_id=first_trial_id,
+    max_depth=2,
+    visited_limit=10
+)
+
+print(f"DFS found {len(dfs_results)} trials:")
+for i, result in enumerate(dfs_results[:5]):  # Show first 5 results
+    print(f"{i+1}. {result['NCTId']} (depth {result['depth']}): {result['title'][:50]}...")
+
+# 6. Find a path between two trials
+if len(trial_ids) >= 2:
+    target_id = trial_ids[5]  # Pick the 6th trial as the target
+    print(f"\nFinding path from {first_trial_id} to {target_id}:")
+    path = navigator.find_path(first_trial_id, target_id)
+    
+    if path:
+        print(f"Path found with {len(path)} nodes:")
+        for i, node_id in enumerate(path):
+            node_data = graph.nodes[node_id]
+            print(f"{i+1}. {node_id}: {node_data.get('title', '')[:50]}...")
+    else:
+        print("No path found.")
+
+# 7. Find connected component
+print(f"\nFinding connected component for trial {first_trial_id}:")
+connected = navigator.get_connected_component(first_trial_id)
+print(f"Connected component has {len(connected)} trials.")
+
+# 8. Visualize the graph with highlighted path and nodes
+print("\nVisualizing the graph (a plot window should appear)...")
+if len(trial_ids) >= 2:
+    navigator.visualize_graph(
+        highlight_nodes=[first_trial_id, target_id],
+        highlight_path=path,
+        figsize=(10, 8)
+    )
+else:
+    navigator.visualize_graph(highlight_nodes=[first_trial_id])
+```
+
+### Example 2: Finding Similar Trials
+
+```python
+import clinicaltrials_interact
+from clinicaltrials_interact import ClinicalTrialsAPI
+import clinicaltrials_interact.clustering as clustering 
+
+ct_api = ClinicalTrialsAPI()
+
+# 1a. Retrieve candidate studies related to "leukemia" and compute embeddings. 
+df, embeddings, model = clustering.get_candidate_embeddings("leukemia", max_studies=100)
+
+# 1b. Plot the cosine similarity matrix for a subset (e.g., 50 studies) of the candidate pool.
+# Saved to figures directory
+clustering.plot_similarity_matrix(embeddings, subset_size=50)
+
+# 1c. Output the index to id mapping to understand which studies are most to each other. 
+clustering.plot_index_to_id_mapping(df, subset_size=50)
+
+# 1d. Perform spectral clustering on the embeddings.
+labels, sim_matrix = clustering.perform_spectral_clustering(embeddings, n_clusters=3)
+    
+# 1e. Visualize the clusters with a t-SNE plot.
+clustering.plot_clusters(embeddings, labels, filename="leukemia_clusters.png", keyword = "leukemia")
+
+# 2a. For a given query, return the IDs of the top 10 most similar studies.
+query = "A study about heart attacks"
+top_similar_ids = clustering.get_top_similar_ids(query, "", candidate_pool_size=500, top_n=10)
+print(f"Top similar study IDs related to your query: {top_similar_ids}\n")
+
+# 3. Perform general clustering and extract keywords for each cluster. Takes the top 500 or so studies and clusters them into 5 clusters. Returns the keywords for each cluster
+clustering.print_cluster_keywords()
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Citation
+
+If you use this package in your research, please cite:
+
+```
+KeyVuLee Innovations. (2025). Clinical Trials Interact: A Python package for analyzing clinical trial data.
+GitHub: https://github.com/hsph-bst236/midterm-project-keyvulee-innovations
+```
+
+## Contact
+
+For questions and support, please open an issue or contact the maintainer at contact@keyvulee-innovations.com.
+
