@@ -1,0 +1,8 @@
+number_booster/__init__.py,sha256=h59m_4n_KGNfjuEUWnSzMJ_0YgHhbkQv8hyDw0mcLiQ,222
+number_booster/base.py,sha256=IY7IyCAjdY8EdQufKF_McUwWa2tdoln1_qhJZqGF7eQ,2773
+number_booster/fixed.py,sha256=ytY2ZskF_K_RiRyztGUANWFCV8h6jfNgDK4BVd-fuyM,672
+number_booster/random.py,sha256=qna9uG0d02CiWIDWYIfOdT7thk3A33Z9XilRhmCjW1w,1662
+number_booster-0.1.0.dist-info/LICENSE,sha256=ecUAKVq4O-ccDct4RIBx--9NeSoYn6jAJp10A-mtxi4,1087
+number_booster-0.1.0.dist-info/METADATA,sha256=dIBgTX9gAzggzsRFwCknegZzZYwVkTfZ55o3xzMY_rw,4867
+number_booster-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+number_booster-0.1.0.dist-info/RECORD,,
