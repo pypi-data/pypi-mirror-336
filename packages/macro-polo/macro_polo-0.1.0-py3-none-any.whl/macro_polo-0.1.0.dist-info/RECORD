@@ -1,0 +1,17 @@
+macro_polo/__init__.py,sha256=HKxkI33IEMNWBJIT35jPjsGsBdaqG07bNMw5oFV-3l0,5081
+macro_polo/__main__.py,sha256=J2MC2oPqQYE8jO6MTOWP6Y2m148bG-4wY6-0Q_sOMvU,739
+macro_polo/_utils.py,sha256=DxbaQnJi5UyxWTe1kF5ZnVM4FLW_yg206khbFhOyt64,3337
+macro_polo/codec.py,sha256=ULgbrsnNi_aAiOVwakSqWqtJ332MMB6ul21w9RvCqcY,1934
+macro_polo/match.py,sha256=-AXdDOetUgCalOgQ_ArBZdWdVH3jCdiX-7-BYtUtVHo,11342
+macro_polo/transcribe.py,sha256=mGAg_MFh22UXzUPGKl4GMkQqgmPHqPoCw7JLkVqDQq0,4184
+macro_polo/macros/__init__.py,sha256=IdjQosGriXHHreC1YreGsrEdUvyJvZ7Mb-uSPrrtzwc,8630
+macro_polo/macros/predefined.py,sha256=_NAEIYCWS8nCWHhZAbZBDsdTAvFV4CdwygR-QIa14HI,1294
+macro_polo/parse/__init__.py,sha256=MppP1uSU-rMU3Dmuigy8nsnNSXDPYZtnIa0HMsxDBp8,222
+macro_polo/parse/_matchers.py,sha256=pUGiOiHjT5zA06xU56uJ18HpPrsjicR4GIVmjMTkSJk,9763
+macro_polo/parse/_transcribers.py,sha256=6AQGt92xwVnlm5RI9LsXtg4xQCFwsQZcw2Vo5OZ-64U,4647
+macro_polo/parse/_utils.py,sha256=wvc3GzHKvqHVdke5CCPN_Ok3fIqrVDxiZd4kybe2XeE,2153
+macro_polo.pth,sha256=gyh32Ej20ipi5gkarJdFRZZOS4cvou8ROp_Vb83oZIQ,53
+macro_polo-0.1.0.dist-info/METADATA,sha256=0uTBmGGfFV6u6JuNeL5n26qE6a8p3UxXmlMNG0fE3g8,15940
+macro_polo-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+macro_polo-0.1.0.dist-info/licenses/LICENSE,sha256=tcj7QWVUdtxPNqs81bN60aReql0fAD1dhgfJi5xq1AA,1069
+macro_polo-0.1.0.dist-info/RECORD,,
