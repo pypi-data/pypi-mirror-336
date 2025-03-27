@@ -1,0 +1,3 @@
+[console_scripts]
+check-depz=check_depz.check_dependencies:main
+
