@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: quantalogic-pythonbox
+Version: 0.8.0
+Summary: A Python sandbox environment for implementing and testing CodeAct AI Agents.
+Author: Raphael Mansuy
+Author-email: raphael.mansuy@quantalogic.app
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: psutil (>=7.0.0,<8.0.0)
