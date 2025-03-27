@@ -1,0 +1,10 @@
+cli/__init__.py,sha256=nJsqCxhhQh0Hj9Hy98FuQ5SSJPhMNoHLQhZuXLhBtAw,119
+cli/cli.py,sha256=B7IDn17r1Xv551tyURe1YOX35-TDCl43piwZmhxHy4s,2430
+cli/command.py,sha256=tPKAVbaQq3vV2wa4l_Qec_f7ULvq6EiCYD5KrjMkBfg,4995
+cli/interactive.py,sha256=U1gQxBPDBop5drhmowvvdwFXFsA15m6W8kxx8mpZAwo,2874
+cli/menu.py,sha256=xcReuO__RM0fnTK9surrYqJJu_TD4JOSQMUoxDakmVk,6239
+cli/utils.py,sha256=4Nub05VHXAGBpevX8a5h1wlp8vGMyh1NnH1L8UILI7E,1213
+climenus-0.1.0.dist-info/METADATA,sha256=QRAOly8zlrsA6dMdRPyQLn7_6ObljDCWiXTJ5lFBSsI,1650
+climenus-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+climenus-0.1.0.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+climenus-0.1.0.dist-info/RECORD,,

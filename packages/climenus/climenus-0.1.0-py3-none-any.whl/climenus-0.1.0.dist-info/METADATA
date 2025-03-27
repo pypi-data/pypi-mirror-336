@@ -1,0 +1,65 @@
+Metadata-Version: 2.2
+Name: climenus
+Version: 0.1.0
+Summary: A simple framework for building interactive CLI menus in Python
+Home-page: https://github.com/vencordthemer/simplecli
+Author: VencordThemer
+Author-email: vencordthemer@users.noreply.github.com
+Project-URL: Bug Tracker, https://github.com/vencordthemer/simplecli/issues
+Keywords: cli,menu,terminal,console,interactive
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
+
+# CLIMenus
+
+A simple and elegant framework for building interactive command-line menus in Python.
+
+## Features
+
+- Easy-to-use menu creation
+- Customizable options and actions
+- Clean and intuitive interface
+- Simple integration with existing projects
+
+## Installation
+
+```
+pip install climenus
+```
+
+## Quick Start
+
+```python
+from climenus import Menu
+
+# Create a menu
+menu = Menu("Main Menu")
+
+# Add options
+menu.add_option("Option 1", lambda: print("Option 1 selected"))
+menu.add_option("Option 2", lambda: print("Option 2 selected"))
+menu.add_option("Exit", lambda: exit())
+
+# Display the menu
+menu.run()
+```
+
+## License
+
+MIT License
