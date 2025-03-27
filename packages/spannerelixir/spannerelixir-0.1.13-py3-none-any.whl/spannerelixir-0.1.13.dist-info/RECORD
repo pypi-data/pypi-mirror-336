@@ -1,0 +1,11 @@
+spannerelixir/__init__.py,sha256=uMMjy0Y1wcTkUaiSqcnnwko8uB4_4CENN4lMPq-7Bs8,592
+spannerelixir/exceptions.py,sha256=v4zBR3CaRiRVvlYPesLZMz2uKms4ziguscsVSLjhAO0,867
+spannerelixir/fields.py,sha256=clmKIIYZj9OXLYzc7K0jPZz4lUZYhcsz8XzbJzSF-jY,12275
+spannerelixir/model.py,sha256=2fsk-Cv7z5JP8Lo7zDCXDNlNlUGP2F2LRLk6LLvbfGw,18097
+spannerelixir/query.py,sha256=vwK-IAmFgB504rFkb13noBd0co4oj1sdWL_vR0aNWtw,14881
+spannerelixir/session.py,sha256=YBheA8dUCJa9CbTVFHsHqtXCdC3YbgJHjgAE1z5X030,9613
+spannerelixir/utils.py,sha256=zxNbx4kNNFk6QvNmwZqMaYtqFyHNb-bsoYcUjZUBw6A,8486
+spannerelixir-0.1.13.dist-info/METADATA,sha256=p_0pxrxLsOTBLsa_3d-lbj96Vn31xxg3SAbe2xfmJ4g,606
+spannerelixir-0.1.13.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spannerelixir-0.1.13.dist-info/top_level.txt,sha256=vvTWZ0-2FALoC9GpV4KzXnuSeQjst3_GuXS8mV8Gdow,14
+spannerelixir-0.1.13.dist-info/RECORD,,
