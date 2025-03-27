@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: genjaxmix
+Version: 0.1.0
+Summary: dpmm in genjax
+License-File: LICENSE
+Requires-Python: >=3.12.5
+Requires-Dist: genjax>=0.9.3
+Requires-Dist: graphviz>=0.20.3
+Requires-Dist: jaxtyping>=0.2.36
+Requires-Dist: plum-dispatch>=2.5.7
+Provides-Extra: m1
+Requires-Dist: jax-metal>=0.1.1; extra == 'm1'
+Description-Content-Type: text/markdown
+
+GenJAXMix is a GenJAX-accelerated Dirichlet Process Mixture Modeling package for heterogenous tabular data.
+
+# Installation
+
+Currently GenJAXMix is not registered on a package index. Please install via pip:
+
+
+```bash
+pip install git+https://github.com/OpenGen/genjaxmix.git
+```
+
+# Development
+
+```bash
+uv sync
+```
+
+## Disclaimer
+
+This is a research project. Expect bugs and sharp edges. Please help by trying out `genjaxmix`, [reporting bugs](https://github.com/ChiSym/genjaxmix/issues), and letting us know what you think!
+
+## Get Involved + Get Support
+
+Pull requests and bug reports are always welcome!
+
+The TL;DR; is:
+
+- send us a pull request,
+- iterate on the feedback + discussion, and
+- get a +1 from a maintainer
+
+in order to get your PR accepted.
+
+Issues should be reported on the [GitHub issue tracker](https://github.com/ChiSym/genjaxmix/issues).
+
+If you want to discuss an idea for a new feature or ask us a question, discussion occurs primarily in the body of [Github Issues](https://github.com/ChiSym/genjaxmix/issues)
+
+<div align="center">
+All code is licensed under the <a href="LICENSE">Apache 2.0 License</a>.
+</div>
