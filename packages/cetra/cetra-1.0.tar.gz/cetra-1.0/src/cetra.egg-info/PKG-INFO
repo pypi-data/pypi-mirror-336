@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: cetra
+Version: 1.0
+Summary: CUDA Exoplanet Transit Recovery Algorithm
+Author: Leigh C. Smith
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy>=1.15
+Requires-Dist: pycuda>=2022.1
+Requires-Dist: scipy>=1.7
+Requires-Dist: tqdm>=4.0
+Provides-Extra: testing
+Requires-Dist: pytest>=6.0; extra == "testing"
+Requires-Dist: pytest-cov>=2.0; extra == "testing"
+Requires-Dist: tox>=3.24; extra == "testing"
+Dynamic: license-file
