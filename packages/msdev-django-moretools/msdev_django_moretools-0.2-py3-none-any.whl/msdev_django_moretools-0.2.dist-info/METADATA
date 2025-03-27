@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: msdev-django_moretools
+Version: 0.2
+Summary: Paquete de python que contiene las funciones de atajos para Django
+Home-page: https://github.com/mariosuarezDEV/django_shortcuts
+Author: Luis Mario Cervantes Suárez
+Author-email: luismariosuarez@lumace.cloud
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=5.1.7
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Django Shortcuts
+
+Un paquete de comandos personalizados para Django que te permite ejecutar tareas comunes de forma mÃ¡s simple.
+
+## InstalaciÃ³n
+
+```bash
+pip install django-shortcuts

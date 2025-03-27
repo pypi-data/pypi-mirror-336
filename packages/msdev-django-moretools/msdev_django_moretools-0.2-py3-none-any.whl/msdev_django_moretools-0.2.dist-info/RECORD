@@ -1,0 +1,9 @@
+django_shortcuts/__init__.py,sha256=PME3phfcKn6cpXOe5upL8JwSJsOD1fCmlSF-Kco4XVs,68
+django_shortcuts/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_shortcuts/management/comandos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_shortcuts/management/comandos/mm.py,sha256=JSZpZiMoY2UjnkCaSjVxnaYynVMfd9RHNJQ-w9MBQZY,725
+msdev_django_moretools-0.2.dist-info/licenses/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+msdev_django_moretools-0.2.dist-info/METADATA,sha256=LugnaQMRyC6EKj0PWP1ONk_BcetQ2hlU7m9pNszlKjo,1146
+msdev_django_moretools-0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+msdev_django_moretools-0.2.dist-info/top_level.txt,sha256=RLcN0cO5Ts4J35P68bfyazDX1RJxXuV7EawfjPqOun0,17
+msdev_django_moretools-0.2.dist-info/RECORD,,
