@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/ldif2json.py
+src/ldif2json.egg-info/PKG-INFO
+src/ldif2json.egg-info/SOURCES.txt
+src/ldif2json.egg-info/dependency_links.txt
+src/ldif2json.egg-info/entry_points.txt
+src/ldif2json.egg-info/top_level.txt
+test/test_ldif2json.py
