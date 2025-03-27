@@ -1,0 +1,11 @@
+setup.py
+coocan/__init__.py
+coocan.egg-info/PKG-INFO
+coocan.egg-info/SOURCES.txt
+coocan.egg-info/dependency_links.txt
+coocan.egg-info/top_level.txt
+coocan/spider/__init__.py
+coocan/spider/base.py
+coocan/url/__init__.py
+coocan/url/request.py
+coocan/url/response.py

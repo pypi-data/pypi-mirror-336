@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: coocan
+Version: 0.2
+Summary: Air Spider Framework
+Author: wauo
+Author-email: markadc@126.com
+Requires-Python: >=3.10
