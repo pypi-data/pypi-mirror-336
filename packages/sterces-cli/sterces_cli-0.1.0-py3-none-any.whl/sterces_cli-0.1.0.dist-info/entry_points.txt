@@ -1,0 +1,3 @@
+[console_scripts]
+sterces=sterces_cli.cli:cli
+

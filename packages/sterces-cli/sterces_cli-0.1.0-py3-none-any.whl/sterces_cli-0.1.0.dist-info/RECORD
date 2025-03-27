@@ -1,0 +1,14 @@
+sterces_cli/__init__.py,sha256=_FLDN6Gv8Cu82Qmf6M2QpkmeGZWcVzNR8cZ_3154ixE,52
+sterces_cli/cli.py,sha256=CiwFhsWf8-b82A6YfVlTvC2xY8Mlwc38qVAi8xfEMOA,3631
+sterces_cli/constants.py,sha256=cAA9Lj-XRpDkiZIPJS4cjvhhrblENjSwxJJCkaCeSUg,241
+sterces_cli/entries/__init__.py,sha256=86_59iNUKo9lNtK5EZTaHZ68jNZaOQwyjfExXpz2qWw,56
+sterces_cli/entries/commands.py,sha256=QQ_seDvfiNWQtfrRHqGVDnXS-4SBZY06ceNDauV769U,4708
+sterces_cli/foos.py,sha256=JRKDW8AEtnM5xaNnCKZ_wBZzCnUgIO_uZlGCjfhc7d0,1139
+sterces_cli/groups/__init__.py,sha256=oUwqK8xCk0RGyQ9ZgQrQ47vsvQ9dxzE5vX6lJ8NUscA,55
+sterces_cli/groups/commands.py,sha256=hy99TMNUfHo7aYltbVTSML2RVXM7dDTMElfOCKfdlkY,1186
+sterces_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sterces_cli-0.1.0.dist-info/LICENSE,sha256=rtYkAQ6DNTiQAssSPT8cVZv6mSMZVP3-O0_vycYkIys,1066
+sterces_cli-0.1.0.dist-info/METADATA,sha256=JTQ-Dq5CBR1i-yngMWhSH26Gyvk954FHgDRDaJyhSr8,3218
+sterces_cli-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+sterces_cli-0.1.0.dist-info/entry_points.txt,sha256=1vTzJ-uAJvMHa9r-erCGTKDVRPW0xURAGca7LOUYqQw,47
+sterces_cli-0.1.0.dist-info/RECORD,,
