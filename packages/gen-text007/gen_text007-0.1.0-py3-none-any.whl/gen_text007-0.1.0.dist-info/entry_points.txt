@@ -1,0 +1,3 @@
+[console_scripts]
+gentxt=gen_text.main:main
+
