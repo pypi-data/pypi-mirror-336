@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+guided_capture/__init__.py
+guided_capture/core.py
+guided_capture.egg-info/PKG-INFO
+guided_capture.egg-info/SOURCES.txt
+guided_capture.egg-info/dependency_links.txt
+guided_capture.egg-info/requires.txt
+guided_capture.egg-info/top_level.txt
