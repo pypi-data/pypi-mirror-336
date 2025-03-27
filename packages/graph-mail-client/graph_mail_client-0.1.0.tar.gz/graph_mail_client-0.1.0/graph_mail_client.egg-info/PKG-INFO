@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: graph-mail-client
+Version: 0.1.0
+Summary: Microsoft Graph API 邮件客户端
+Author: Huaguang
+Author-email: 2475096613@qq.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: requests>=2.25.0
+Requires-Dist: pyyaml>=5.4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

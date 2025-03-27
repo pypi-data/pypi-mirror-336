@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+config.yaml
+setup.py
+graph_mail_client/__init__.py
+graph_mail_client/client.py
+graph_mail_client/code_utils.py
+graph_mail_client/config.py
+graph_mail_client.egg-info/PKG-INFO
+graph_mail_client.egg-info/SOURCES.txt
+graph_mail_client.egg-info/dependency_links.txt
+graph_mail_client.egg-info/requires.txt
+graph_mail_client.egg-info/top_level.txt
