@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: hush-p2p
+Version: 2.0.5
+Summary: 🔐 Hush-P2P is a secure, encrypted peer-to-peer messaging system.
+Home-page: https://github.com/MinakiLabs-Official/hush-p2p
+Author: MinakiLabs
+Author-email: support@minakilabs.com
+License: Proprietary - Not Open Source
+Project-URL: Source, https://github.com/MinakiLabs-Official/hush-p2p
+Project-URL: Bug Tracker, https://github.com/MinakiLabs-Official/hush-p2p/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Security :: Cryptography
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: click
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Secure, LAN and internet-capable peer-to-peer messaging and file transfer with automatic key exchange, UDP/TCP support, and no servers required.
