@@ -1,0 +1,6 @@
+[console_scripts]
+auth-proxy = auth_proxy.main:main
+auth-proxy-validate = auth_proxy.validate:main
+
+[auth_proxy.plugins]
+basic = auth_proxy.auth_plugins.basic:BasicAuthPlugin
