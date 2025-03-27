@@ -1,0 +1,10 @@
+click>=8.0
+kubernetes>=26.1.0
+colorama
+python-dotenv
+schedule
+keyring
+tenacity
+pyyaml
+jmespath
+tabulate
