@@ -1,0 +1,25 @@
+[project]
+name = "fuzzy-df"
+version = "0.1.0"
+description = "Fuzzy merging and matching utilities for pandas Dataframes."
+readme = "README.md"
+authors = [{ name = "Iman-Budi Pranakasih", email = "ibpranakasih@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = ["pandas>=2.2.3", "rapidfuzz>=3.12.2"]
+license-files = ["LICENSE"]
+keywords = ["fuzzy", "pandas", "dataframe", "matching", "merging"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.urls]
+Homepage = "https://github.com/ibpme/fuzzy-df"
+Repository = "https://github.com/ibpme/fuzzy-df"
+Issues = "https://github.com/ibpme/fuzzy-df/issues"
+
+[dependency-groups]
+dev = ["pytest>=8.3.5", "ruff>=0.11.2"]
