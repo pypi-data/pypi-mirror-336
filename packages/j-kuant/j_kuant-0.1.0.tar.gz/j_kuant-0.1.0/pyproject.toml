@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "j_kuant"
+version = "0.1.0"
+description = "A test package for Jupyter-based quantum work"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name="Jeremy", email="jeremy@vconn.org" }
+]
+dependencies = []
+requires-python = ">=3.7"
+
+[tool.setuptools.packages.find]
+where = ["."]
