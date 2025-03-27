@@ -1,0 +1,4 @@
+sphinx>=7.4
+sphinx-needs
+sphinx-test-reports
+matplotlib

@@ -1,0 +1,5 @@
+#tests start
+pytest
+pytest-reportlog
+coverage
+#tests end
