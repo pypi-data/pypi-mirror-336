@@ -1,0 +1,511 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "Re-configuration was successful",
+            "unique_id_mismatch": "The MAC address of the device does not match the previous MAC address"
+        },
+        "error": {
+            "update_needed": "Failed to login because of outdated firmware, please update the firmware to version {needed_firmware} using the Reolink Download Centre: {download_center_url}, currently version {current_firmware} is installed",
+            "webhook_exception": "Home Assistant URL is not available, go to Settings > System > Network > Home Assistant URL and correct the URLs, see {more_info}"
+        },
+        "step": {
+            "privacy": {
+                "description": "Privacy mode is enabled on Reolink device {host}. By pressing SUBMIT, the privacy mode will be disabled to retrieve the necessary information from the Reolink device. You can abort the setup by pressing X and repeat the setup at a time in which privacy mode can be disabled. After this configuration, you are free to enable the privacy mode again using the privacy mode switch entity. During normal startup the privacy mode will not be disabled. Note however that all entities will be marked unavailable as long as the privacy mode is active.",
+                "title": "Permission to disable Reolink privacy mode"
+            },
+            "user": {
+                "data": {
+                    "baichuan_port": "Basic service port"
+                },
+                "data_description": {
+                    "baichuan_port": "The 'Basic Service Port' to connect to the Reolink device over TCP. Normally '9000' unless manually changed in the Reolink desktop client.",
+                    "host": "The hostname or IP address of your Reolink device. For example: '192.168.1.25'."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "animal": {
+                "name": "Animal"
+            },
+            "animal_lens_0": {
+                "name": "Animal lens 0"
+            },
+            "crossline_dog_cat": {
+                "name": "Crossline {zone_name} animal"
+            },
+            "crossline_person": {
+                "name": "Crossline {zone_name} person"
+            },
+            "crossline_vehicle": {
+                "name": "Crossline {zone_name} vehicle"
+            },
+            "cry": {
+                "name": "Baby crying"
+            },
+            "forgotten_item": {
+                "name": "Item forgotten {zone_name}"
+            },
+            "intrusion_dog_cat": {
+                "name": "Intrusion {zone_name} animal"
+            },
+            "intrusion_person": {
+                "name": "Intrusion {zone_name} person"
+            },
+            "intrusion_vehicle": {
+                "name": "Intrusion {zone_name} vehicle"
+            },
+            "linger_dog_cat": {
+                "name": "Linger {zone_name} animal"
+            },
+            "linger_person": {
+                "name": "Linger {zone_name} person"
+            },
+            "linger_vehicle": {
+                "name": "Linger {zone_name} vehicle"
+            },
+            "package": {
+                "name": "Package"
+            },
+            "package_lens_0": {
+                "name": "Package lens 0"
+            },
+            "package_lens_1": {
+                "name": "Package lens 1"
+            },
+            "sleep": {
+                "name": "Sleep status",
+                "state": {
+                    "off": "Awake",
+                    "on": "Sleeping"
+                }
+            },
+            "taken_item": {
+                "name": "Item taken {zone_name}"
+            }
+        },
+        "camera": {
+            "autotrack_snapshots_main": {
+                "name": "Autotrack snapshots clear"
+            },
+            "autotrack_snapshots_sub": {
+                "name": "Autotrack snapshots fluent"
+            },
+            "autotrack_sub": {
+                "name": "Autotrack fluent"
+            },
+            "ext": {
+                "name": "Balanced"
+            },
+            "ext_lens_0": {
+                "name": "Balanced lens 0"
+            },
+            "ext_lens_1": {
+                "name": "Balanced lens 1"
+            },
+            "main": {
+                "name": "Clear"
+            },
+            "main_lens_0": {
+                "name": "Clear lens 0"
+            },
+            "main_lens_1": {
+                "name": "Clear lens 1"
+            },
+            "snapshots_main": {
+                "name": "Snapshots clear"
+            },
+            "snapshots_main_lens_0": {
+                "name": "Snapshots clear lens 0"
+            },
+            "snapshots_main_lens_1": {
+                "name": "Snapshots clear lens 1"
+            },
+            "snapshots_sub": {
+                "name": "Snapshots fluent"
+            },
+            "snapshots_sub_lens_0": {
+                "name": "Snapshots fluent lens 0"
+            },
+            "snapshots_sub_lens_1": {
+                "name": "Snapshots fluent lens 1"
+            },
+            "sub": {
+                "name": "Fluent"
+            },
+            "sub_lens_0": {
+                "name": "Fluent lens 0"
+            },
+            "sub_lens_1": {
+                "name": "Fluent lens 1"
+            }
+        },
+        "number": {
+            "ai_animal_sensitivity": {
+                "name": "AI animal sensitivity"
+            },
+            "ai_face_sensitivity": {
+                "name": "AI face sensitivity"
+            },
+            "ai_package_delay": {
+                "name": "AI package delay"
+            },
+            "ai_package_sensitivity": {
+                "name": "AI package sensitivity"
+            },
+            "ai_person_sensitivity": {
+                "name": "AI person sensitivity"
+            },
+            "ai_pet_sensitivity": {
+                "name": "AI pet sensitivity"
+            },
+            "ai_vehicle_sensitivity": {
+                "name": "AI vehicle sensitivity"
+            },
+            "alarm_volume": {
+                "name": "Alarm volume"
+            },
+            "day_night_switch_threshold": {
+                "name": "Day night switch threshold"
+            },
+            "image_brightness": {
+                "name": "Image brightness"
+            },
+            "image_contrast": {
+                "name": "Image contrast"
+            },
+            "image_hue": {
+                "name": "Image hue"
+            },
+            "image_saturation": {
+                "name": "Image saturation"
+            },
+            "image_sharpness": {
+                "name": "Image sharpness"
+            },
+            "message_volume": {
+                "name": "Message volume"
+            },
+            "pir_sensitivity": {
+                "name": "PIR sensitivity"
+            }
+        },
+        "select": {
+            "binning_mode": {
+                "name": "Binning mode"
+            },
+            "day_night_mode": {
+                "state": {
+                    "color": "Colour"
+                }
+            },
+            "doorbell_led": {
+                "name": "Doorbell LED",
+                "state": {
+                    "always": "Always on",
+                    "alwayson": "Always on",
+                    "alwaysonatnight": "Auto & always on at night",
+                    "stayoff": "Stay off"
+                }
+            },
+            "hdr": {
+                "name": "HDR"
+            },
+            "hub_alarm_ringtone": {
+                "name": "Hub alarm ringtone",
+                "state": {
+                    "alarm": "Alarm",
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "hub_visitor_ringtone": {
+                "name": "Hub visitor ringtone",
+                "state": {
+                    "alarm": "Alarm",
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "main_bit_rate": {
+                "name": "Clear bit rate"
+            },
+            "main_frame_rate": {
+                "name": "Clear frame rate"
+            },
+            "motion_tone": {
+                "name": "Motion ringtone",
+                "state": {
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "package_tone": {
+                "name": "Package ringtone",
+                "state": {
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "people_tone": {
+                "name": "Person ringtone",
+                "state": {
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "play_quick_reply_message": {
+                "name": "Play quick reply message"
+            },
+            "scene_mode": {
+                "name": "Scene mode",
+                "state": {
+                    "away": "Away",
+                    "disarm": "Disarmed",
+                    "home": "Home"
+                }
+            },
+            "sub_bit_rate": {
+                "name": "Fluent bit rate"
+            },
+            "sub_frame_rate": {
+                "name": "Fluent frame rate"
+            },
+            "vehicle_tone": {
+                "name": "Vehicle ringtone",
+                "state": {
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "visitor_tone": {
+                "name": "Visitor ringtone",
+                "state": {
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            }
+        },
+        "sensor": {
+            "battery_state": {
+                "name": "Battery state",
+                "state": {
+                    "chargecomplete": "Charge complete",
+                    "charging": "Charging",
+                    "discharging": "Discharging"
+                }
+            },
+            "battery_temperature": {
+                "name": "Battery temperature"
+            },
+            "cpu_usage": {
+                "name": "CPU usage"
+            },
+            "day_night_state": {
+                "name": "Day night state",
+                "state": {
+                    "day": "Colour",
+                    "led_day": "Colour with floodlight",
+                    "night": "Black & white"
+                }
+            },
+            "hdd_storage": {
+                "name": "HDD {hdd_index} storage"
+            },
+            "ptz_tilt_position": {
+                "name": "PTZ tilt position"
+            },
+            "sd_storage": {
+                "name": "SD {hdd_index} storage"
+            }
+        },
+        "switch": {
+            "guard_return": {
+                "name": "Guard return"
+            },
+            "hub_ringtone_on_event": {
+                "name": "Hub ringtone on event"
+            },
+            "ir_lights": {
+                "name": "Infrared lights in night mode"
+            },
+            "led": {
+                "name": "LED"
+            },
+            "manual_record": {
+                "name": "Manual record"
+            },
+            "pir_enabled": {
+                "name": "PIR enabled"
+            },
+            "pir_reduce_alarm": {
+                "name": "PIR reduce false alarm"
+            },
+            "privacy_mode": {
+                "name": "Privacy mode"
+            },
+            "ptz_patrol": {
+                "name": "PTZ patrol"
+            }
+        }
+    },
+    "exceptions": {
+        "api_error": {
+            "message": "The device responded with an error: {err}"
+        },
+        "connection_error": {
+            "message": "Could not connect to the device: {err}"
+        },
+        "firmware_install_error": {
+            "message": "Error trying to update Reolink firmware: {err}"
+        },
+        "invalid_content_type": {
+            "message": "Received a different content type than expected: {err}"
+        },
+        "invalid_credentials": {
+            "message": "Invalid credentials: {err}"
+        },
+        "invalid_parameter": {
+            "message": "Invalid input parameter: {err}"
+        },
+        "login_error": {
+            "message": "Error during login attempt: {err}"
+        },
+        "no_data": {
+            "message": "Device returned no data: {err}"
+        },
+        "not_supported": {
+            "message": "Function not supported by this device: {err}"
+        },
+        "service_entry_ex": {
+            "message": "Reolink {service_name} error: config entry not found or not loaded"
+        },
+        "service_not_chime": {
+            "message": "Reolink play_chime error: {device_name} is not a Chime"
+        },
+        "subscription_error": {
+            "message": "Error during ONVIF subscription: {err}"
+        },
+        "timeout": {
+            "message": "Timeout waiting on a response: {err}"
+        },
+        "unexpected": {
+            "message": "Unexpected Reolink error: {err}"
+        },
+        "unexpected_data": {
+            "message": "Device returned unexpected data: {err}"
+        }
+    },
+    "issues": {
+        "hub_switch_deprecated": {
+            "description": "The redundant 'Record', 'Email on event', 'FTP upload', 'Push notifications', and 'Buzzer on event' switches on the Reolink Home Hub are deprecated since the new firmware no longer supports these. Please use the equally named switches under each of the camera devices connected to the Home Hub instead. To remove this issue, please adjust automations accordingly and disable the switch entities mentioned.",
+            "title": "Reolink Home Hub switches deprecated"
+        },
+        "password_too_long": {
+            "description": "The password for \"{name}\" is more than 31 characters long, this is no longer compatible with the Reolink API. Please change the password using the Reolink app/client to a password with is shorter than 32 characters. After changing the password, fill in the new password in the Reolink Re-authentication flow to continue using this integration. The latest version of the Reolink app/client also has a password limit of 31 characters.",
+            "title": "Reolink password too long"
+        },
+        "ssl": {
+            "title": "Reolink incompatible with global SSL certificate"
+        }
+    },
+    "selector": {
+        "ringtone": {
+            "options": {
+                "attraction": "Attraction",
+                "citybird": "City bird",
+                "goodday": "Good day",
+                "hophop": "Hop hop",
+                "loop": "Loop",
+                "moonlight": "Moonlight",
+                "operetta": "Operetta",
+                "originaltune": "Original tune",
+                "pianokey": "Piano key",
+                "waybackhome": "Way back home"
+            }
+        }
+    },
+    "services": {
+        "play_chime": {
+            "description": "Plays a ringtone on a Reolink Chime.",
+            "fields": {
+                "device_id": {
+                    "description": "The Reolink Chime to play the ringtone on.",
+                    "name": "Target chime"
+                },
+                "ringtone": {
+                    "description": "Ringtone to play.",
+                    "name": "Ringtone"
+                }
+            },
+            "name": "Play chime"
+        },
+        "ptz_move": {
+            "description": "Moves the camera with a specific speed.",
+            "fields": {
+                "speed": {
+                    "description": "PTZ move speed.",
+                    "name": "Speed"
+                }
+            },
+            "name": "PTZ move"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "entity": {
+        "select": {
+            "foot_warmer_temp": {
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "medium": "Medium",
+                    "off": "Off"
+                }
+            }
+        }
+    }
+}

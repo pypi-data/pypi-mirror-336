@@ -1,0 +1,44 @@
+{
+    "exceptions": {
+        "create_folder_error": {
+            "message": "Impossibile creare la cartella: {message}"
+        },
+        "file_too_large": {
+            "message": "`{filename}` \u00e8 troppo grande ( {size} > {limit} )"
+        },
+        "filename_does_not_exist": {
+            "message": "`{filename}` non esiste"
+        },
+        "integration_not_found": {
+            "message": "L'integrazione \"{target}\" non \u00e8 stata trovata nel registro."
+        },
+        "no_access_to_path": {
+            "message": "Impossibile leggere {filename}, nessun accesso al percorso; potrebbe essere necessario modificare `allowlist_external_dirs` in `configuration.yaml`"
+        },
+        "upload_error": {
+            "message": "Impossibile caricare il contenuto: {message}"
+        }
+    },
+    "services": {
+        "upload": {
+            "description": "Carica i file su OneDrive.",
+            "fields": {
+                "config_entry_id": {
+                    "description": "La voce di configurazione che rappresenta l'unit\u00e0 OneDrive in cui si desidera eseguire il caricamento.",
+                    "name": "ID voce di configurazione"
+                },
+                "destination_folder": {
+                    "description": "Cartella all'interno della cartella dell'applicazione Home Assistant (Apps/Home Assistant) in cui si desidera caricare il file. Verr\u00e0 creata se non esiste.",
+                    "example": "foto/istantanee",
+                    "name": "Cartella di destinazione"
+                },
+                "filename": {
+                    "description": "Percorso del file da caricare.",
+                    "example": "/config/www/immagine.jpg",
+                    "name": "Nome file"
+                }
+            },
+            "name": "Carica file"
+        }
+    }
+}

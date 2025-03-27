@@ -1,0 +1,51 @@
+{
+    "entity_component": {
+        "_": {
+            "state_attributes": {
+                "in_progress": {
+                    "name": "In progress"
+                },
+                "installed_version": {
+                    "name": "Installed version"
+                },
+                "latest_version": {
+                    "name": "Latest version"
+                },
+                "release_summary": {
+                    "name": "Release summary"
+                },
+                "release_url": {
+                    "name": "Release URL"
+                },
+                "skipped_version": {
+                    "name": "Skipped version"
+                },
+                "title": {
+                    "name": "Title"
+                }
+            }
+        }
+    },
+    "services": {
+        "clear_skipped": {
+            "description": "Removes the skipped version marker from an update.",
+            "name": "Clear skipped update"
+        },
+        "install": {
+            "fields": {
+                "backup": {
+                    "name": "Backup"
+                },
+                "version": {
+                    "description": "The version to install. If omitted, the latest version will be installed.",
+                    "name": "Version"
+                }
+            },
+            "name": "Install update"
+        },
+        "skip": {
+            "description": "Marks currently available update as skipped.",
+            "name": "Skip update"
+        }
+    }
+}

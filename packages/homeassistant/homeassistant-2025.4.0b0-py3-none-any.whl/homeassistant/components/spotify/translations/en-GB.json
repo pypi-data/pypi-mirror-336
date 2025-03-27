@@ -1,0 +1,8 @@
+{
+    "config": {
+        "abort": {
+            "connection_error": "Could not fetch account information. Is the user registered in the Spotify Developer Dashboard?",
+            "oauth_unauthorized": "OAuth authorisation error while obtaining access token."
+        }
+    }
+}

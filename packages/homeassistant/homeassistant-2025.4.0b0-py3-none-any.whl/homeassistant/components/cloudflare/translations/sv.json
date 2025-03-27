@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "\u00c5terautentisering lyckades"
+        },
+        "error": {
+            "cannot_connect": "Det gick inte att ansluta",
+            "invalid_auth": "Ogiltig autentisering",
+            "unknown": "Ov\u00e4ntat fel"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API-token",
+                    "description": "Autentisera p\u00e5 nytt med ditt Cloudflare-konto."
+                }
+            },
+            "records": {
+                "data": {
+                    "records": "Poster"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_token": "API-token"
+                },
+                "title": "Anslut till Cloudflare"
+            },
+            "zone": {
+                "data": {
+                    "zone": "Zon"
+                }
+            }
+        }
+    },
+    "services": {
+        "update_records": {
+            "name": "Uppdatera poster"
+        }
+    }
+}
