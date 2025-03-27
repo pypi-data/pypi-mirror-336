@@ -1,0 +1,16 @@
+[project]
+name = "pdf-extraction-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp>=1.5.0",
+    "pillow>=11.1.0",
+    "pydantic>=2.10.6,<3.0.0",
+    "pymupdf>=1.25.4",
+    "pypdf2>=3.0.1",
+    "pytesseract>=0.3.13",
+]
+[project.scripts]
+pdf-extraction-mcp-server = "src:main"
