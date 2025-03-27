@@ -1,0 +1,12 @@
+euclidlib/__init__.py,sha256=dVx7zoFWnlP5h32jr_wEFv6g2CafIqgXDjHQFSRhpKA,370
+euclidlib/_util.py,sha256=J8FisnvrGSh0QZMVQOzrN-I0uhH6c2V8lWKL-UqfeLI,575
+euclidlib/_version.py,sha256=l7Wq2tHzgKH1RZ1a7EfjXgsG8Jm26Mkeazh0IqanMAg,512
+euclidlib/photo/__init__.py,sha256=7YVV8C-LZF6ORpE54kqP-xJ-Ytgd_CEwa0AFg_VSVqY,373
+euclidlib/photo/_le3_2pcf_wl.py,sha256=1a-TV-a-_C1gwMmTvtZtSiU9AFpClXxkZbFBC0zk3eA,5310
+euclidlib/photo/_le3_pk_wl.py,sha256=2UsezH0ChLcioBs7e6F5N8mOlzyZSNVnOL-6g8vDpqg,5453
+euclidlib/photo/_phz.py,sha256=gz1hKWPq2Wam-FW1BU65oo5vHgqDSE9sWUNiT6yUSpY,5154
+euclidlib/spectro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+euclidlib-2025.1.dist-info/METADATA,sha256=vaBHIfOShEXvdkxI8WSZN0AXq0pZJcMWmVUYbp8UMCQ,2519
+euclidlib-2025.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+euclidlib-2025.1.dist-info/licenses/LICENSE,sha256=9DpbWNpG1XfnZoggdMUvZKfokodQwDqJ529w9qKRhtw,1086
+euclidlib-2025.1.dist-info/RECORD,,
