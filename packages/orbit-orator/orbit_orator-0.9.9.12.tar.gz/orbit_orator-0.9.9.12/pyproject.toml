@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbit-orator"
+version = "0.9.9.12"
+description = "A simple ORM for Python"
+authors = [
+    {name = "Maxiaoyu", email = "maxiaoyu@example.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "backpack>=0.1",
+    "blinker>=1.4",
+    "cleo>=0.6",
+    "inflection>=0.5.1",
+    "Faker>=0.8",
+    "lazy-object-proxy>=1.2",
+    "pendulum>=1.4",
+    "pyaml>=16.12",
+    "pyyaml>=5.1,<7.0",
+    "Pygments>=2.2",
+    "simplejson>=3.10",
+    "six>=1.10",
+    "wrapt>=1.10"
+]
+
+[project.urls]
+Homepage = "https://github.com/maxiaoyu/orator"
+Repository = "https://github.com/maxiaoyu/orator.git"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["orbit_orator*"]
+namespaces = false
