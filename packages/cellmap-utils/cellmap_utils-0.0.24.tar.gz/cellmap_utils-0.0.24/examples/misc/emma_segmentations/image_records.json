@@ -1,0 +1,1647 @@
+[
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/aic_desmosome-3/aic_desmosome-3.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "aic_desmosome-3",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      32.0,
+      32.0,
+      32.0
+    ],
+    "grid_translation": [
+      14.0,
+      14.0,
+      14.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_aic_desmosome-3",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26511841",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_ccl81-covid-1/jrc_ccl81-covid-1.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_ccl81-covid-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      30.0,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_ccl81-covid-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26512090",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_hela-bfa/jrc_hela-bfa.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_hela-bfa",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      28.0,
+      28.0,
+      28.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_hela-bfa",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513077",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_hela-22/jrc_hela-22.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_hela-22",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      28.0,
+      28.0,
+      28.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_hela-22",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513071",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_hela-21/jrc_hela-21.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_hela-21",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      28.0,
+      28.0,
+      28.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_hela-21",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513023",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_cos7-11/jrc_cos7-11.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_cos7-11",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      28.0,
+      28.0,
+      28.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_cos7-11",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26512378",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_sum159-1/jrc_sum159-1.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_sum159-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      72.96,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      34.199999999999996,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_sum159-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513248",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-nacc-4/jrc_mus-nacc-4.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-nacc-4",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      31.920000000000005,
+      32.0,
+      32.0
+    ],
+    "grid_translation": [
+      13.965,
+      14.0,
+      14.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-nacc-4",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513215",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-nacc-3/jrc_mus-nacc-3.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-nacc-3",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      30.64,
+      32.0,
+      32.0
+    ],
+    "grid_translation": [
+      13.405000000000001,
+      14.0,
+      14.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-nacc-3",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513212",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-nacc-2/jrc_mus-nacc-2.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-nacc-2",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      23.68,
+      32.0,
+      32.0
+    ],
+    "grid_translation": [
+      10.36,
+      14.0,
+      14.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-nacc-2",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513209",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_ctl-id8-5/jrc_ctl-id8-5.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_ctl-id8-5",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "grid_translation": [
+      60.0,
+      60.0,
+      60.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_ctl-id8-5",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513011",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_ctl-id8-4/jrc_ctl-id8-4.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_ctl-id8-4",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "grid_translation": [
+      60.0,
+      60.0,
+      60.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_ctl-id8-4",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26512609",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_ctl-id8-3/jrc_ctl-id8-3.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_ctl-id8-3",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "grid_translation": [
+      60.0,
+      60.0,
+      60.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_ctl-id8-3",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26512543",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_hela-nz-1/jrc_hela-nz-1.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_hela-nz-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      62.31999999999999,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      27.265,
+      28.0,
+      28.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_hela-nz-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513203",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-granule-neurons-1/jrc_mus-granule-neurons-1.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-granule-neurons-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      60.15999999999999,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      28.199999999999996,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-granule-neurons-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506510",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-pancreas-3/jrc_mus-pancreas-3.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-pancreas-3",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      30.0,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-pancreas-3",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506561",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-pancreas-2/jrc_mus-pancreas-2.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-pancreas-2",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      30.0,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-pancreas-2",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506555",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-sc-zp105a/jrc_mus-sc-zp105a.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-sc-zp105a",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      96.0,
+      96.0,
+      96.0
+    ],
+    "grid_translation": [
+      45.0,
+      45.0,
+      45.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-sc-zp105a",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513227",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-granule-neurons-2/jrc_mus-granule-neurons-2.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-granule-neurons-2",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      62.88000000000001,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      23.580000000000002,
+      24.0,
+      24.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-granule-neurons-2",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506513",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-granule-neurons-3/jrc_mus-granule-neurons-3.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-granule-neurons-3",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      85.92,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      40.275000000000006,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-granule-neurons-3",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506516",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-sc-zp104a/jrc_mus-sc-zp104a.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-sc-zp104a",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      96.0,
+      96.0,
+      96.0
+    ],
+    "grid_translation": [
+      45.0,
+      45.0,
+      45.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-sc-zp104a",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513224",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_cos7-1a/jrc_cos7-1a.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_cos7-1a",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      30.0,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_cos7-1a",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26512204",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_cos7-1b/jrc_cos7-1b.zarr/recon-2/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_cos7-1b",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      81.28,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      38.1,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_cos7-1b",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26512297",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-kidney-2/jrc_mus-kidney-2.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-kidney-2",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "grid_translation": [
+      60.0,
+      60.0,
+      60.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-kidney-2",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506534",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-guard-hair-follicle/jrc_mus-guard-hair-follicle.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-guard-hair-follicle",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      96.0,
+      96.0,
+      96.0
+    ],
+    "grid_translation": [
+      45.0,
+      45.0,
+      45.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-guard-hair-follicle",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506519",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-meissner-corpuscle-1/jrc_mus-meissner-corpuscle-1.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-meissner-corpuscle-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      96.0,
+      96.0,
+      96.0
+    ],
+    "grid_translation": [
+      45.0,
+      45.0,
+      45.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-meissner-corpuscle-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506540",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-kidney/jrc_mus-kidney.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-kidney",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "grid_translation": [
+      60.0,
+      60.0,
+      60.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-kidney",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506522",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-meissner-corpuscle-2/jrc_mus-meissner-corpuscle-2.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-meissner-corpuscle-2",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      96.0,
+      96.0,
+      96.0
+    ],
+    "grid_translation": [
+      45.0,
+      45.0,
+      45.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-meissner-corpuscle-2",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506543",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_fly-mb-z0419-20/jrc_fly-mb-z0419-20.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_fly-mb-z0419-20",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      512.0,
+      512.0,
+      512.0
+    ],
+    "grid_translation": [
+      248.0,
+      248.0,
+      248.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_fly-mb-z0419-20",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506507",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_ctl-id8-1/jrc_ctl-id8-1.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_ctl-id8-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      55.68,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      26.1,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_ctl-id8-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26512453",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_hela-h89-2/jrc_hela-h89-2.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_hela-h89-2",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      32.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      15.0,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_hela-h89-2",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513200",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_hela-h89-1/jrc_hela-h89-1.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_hela-h89-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      32.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      15.0,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_hela-h89-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513119",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-pancreas-1/jrc_mus-pancreas-1.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-pancreas-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      54.4,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      25.5,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-pancreas-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506552",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_fly-fsb-1/jrc_fly-fsb-1.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_fly-fsb-1",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      64.0,
+      64.0,
+      64.0
+    ],
+    "grid_translation": [
+      30.0,
+      30.0,
+      30.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_fly-fsb-1",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26513020",
+      "name": "Segmentations"
+    }
+  },
+  {
+    "source": null,
+    "name": "nuc",
+    "url": "s3://janelia-cosem-datasets/jrc_mus-liver-2/jrc_mus-liver-2.zarr/recon-1/labels/inference/segmentations/nuc",
+    "description": "Nucleus",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      }
+    },
+    "sample_type": "label",
+    "content_type": "segmentation",
+    "dataset_name": "jrc_mus-liver-2",
+    "institution": "HHMI/Janelia",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "grid_translation": [
+      60.0,
+      60.0,
+      60.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "nuc_jrc_mus-liver-2",
+    "doi": {
+      "url": "https://doi.org/10.25378/janelia.26506537",
+      "name": "Segmentations"
+    }
+  }
+]
