@@ -1,0 +1,59 @@
+# Workflow for continuous integration tasks triggered on push to release
+
+name: CI - Release
+run-name: CI - Release
+on:
+  workflow_dispatch:
+  push:
+    branches: ["release"]
+
+jobs:
+  test-python:
+    uses: ./.github/workflows/job-test-python.yml
+  test-gui:
+    uses: ./.github/workflows/job-test-gui.yml
+
+  # The commented out code below runs a code vulnerability scan on the
+  # containerised app. This will not work on the free GitHub plan, since
+  # for that plan code scanning is not supported for private repos - and
+  # this is a private repo. There may be a work-around.
+  #
+  # NOTE: If you uncomment this job to use it you may wish to change the
+  # 'needs' in the below 'tag-container-push' job from 'test-package'
+  # to 'anchore-scan' if you want to make a release dependent on a successful
+  # scan.
+  #
+  #anchore-scan:
+  #  uses: ./.github/workflows/anchore-scan.yml
+  #  needs: [test-package, test-gui]
+
+  tag:
+    uses: ./.github/workflows/job-tag.yml
+    needs: [test-python, test-gui]
+
+  container-push:
+    uses: ./.github/workflows/job-container-push.yml
+    needs: [tag]
+    with:
+      container_tag: ${{ needs.tag.outputs.container_tag }}
+
+  publish-doc:
+    needs: [tag]
+    uses: ./.github/workflows/job-publish-doc.yml
+
+  # Deploy to Kubernetes Job
+  # Requires an environment, which must reflect the target environment as defined in the
+  # GitHub repository: https://github.com/PSDI-UK/psdi-data-conversion/settings/environments
+  # The downstream deploy job leverages on Environment specific secrets, which also must be defined
+  deploy-stfc-staging-k8s:
+    needs: [tag]
+    uses: ./.github/workflows/job-deploy-k8s.yml # use the callable deploy job
+    secrets: inherit # pass all secrets for the environment
+    with:
+      container_tag: ${{ needs.tag.outputs.container_tag }}
+      environment: staging
+
+  # Publish to PyPI - uncomment once ready for regular publishing
+  # publish-pypi:
+  #   needs: [tag]
+  #   uses: ./.github/workflows/job-publish-pypi.yml
