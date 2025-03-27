@@ -1,0 +1,16 @@
+opex_manifest_generator/__init__.py,sha256=fsN-dLjNMn-AfjeG2jkryzIa69bY09B5xLTqWedOv_w,461
+opex_manifest_generator/cli.py,sha256=XoiiA21CxRid0Vc_jdcVCOcUOseCravt45nQI3-7Y2Q,12867
+opex_manifest_generator/common.py,sha256=KRf913zYOzRCG6lyFoNSI8TBJ5q_Ze2cBI0BW7S5C5I,2399
+opex_manifest_generator/hash.py,sha256=WS4EkdEbJoam7lrKDTdqyrvqMrJN4EQrWFnVAAL9kAo,2138
+opex_manifest_generator/opex_manifest.py,sha256=L6tDQ-KgGH7vkbMefGF9p2MmkpaewdZxvbdpjhx--uU,37169
+opex_manifest_generator/options.properties,sha256=UKERpUH6M6SWXbXN2XitbPd1FvT4LlCbLfoHbdWuDAQ,286
+opex_manifest_generator/metadata/DublinCore Template.xml,sha256=csNGXzSH27Whs4BQNuwMZl8nLSdDq7Y_OblTfzeBqWQ,775
+opex_manifest_generator/metadata/EAD Template.xml,sha256=OsWjUfKiLAsc1zqm56auyFSDYMuZpu6a49AFgqZNzlU,2167
+opex_manifest_generator/metadata/GDPR Template.xml,sha256=r6WTATRVt1sr7VCdaXOwz4vLgU3IgFFx7oRmPnORBWc,475
+opex_manifest_generator/metadata/MODS Template.xml,sha256=qmH03nIPGuPokFiBS_HjIPht1bzc1gsY4mPEoAVdHTg,2635
+opex_manifest_generator-1.2.3.dist-info/licenses/LICENSE.md,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+opex_manifest_generator-1.2.3.dist-info/METADATA,sha256=d584II5ZfGz2vIyuETgvBnHrfUfy4AvqFf6-hnybL_A,29586
+opex_manifest_generator-1.2.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+opex_manifest_generator-1.2.3.dist-info/entry_points.txt,sha256=WGMc3hWlqOsQ8DcTuy8-DyBbJKkWNImT4J1FasVDHts,70
+opex_manifest_generator-1.2.3.dist-info/top_level.txt,sha256=K48eGnaDLVO6YDJdAZLqbeoZvJHBGX25cvYT-i8gWt0,24
+opex_manifest_generator-1.2.3.dist-info/RECORD,,
