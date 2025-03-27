@@ -1,0 +1,15 @@
+airflow/providers/opsgenie/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+airflow/providers/opsgenie/__init__.py,sha256=nw5rSnEzuMX7Cd7XEKfLfkmNye0OT6irGz25r0RTEbQ,1495
+airflow/providers/opsgenie/get_provider_info.py,sha256=dYFs65SsUIzvyViu8ESjqkA1Hd6yPRBCZkkUkJUttOs,3124
+airflow/providers/opsgenie/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/opsgenie/hooks/opsgenie.py,sha256=zUybDJiynbgyZ1XkfheDKAMVA6SatVvyLRzQJ2ytUEQ,6024
+airflow/providers/opsgenie/notifications/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/opsgenie/notifications/opsgenie.py,sha256=b2Odxq7Qt36bpktZTZbKQ1kIZf-DkiihwxLrirvhPEo,2822
+airflow/providers/opsgenie/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/opsgenie/operators/opsgenie.py,sha256=cZp-yozFnm7-ttwUgTH0IgG0ci9TgqOuQXwUawUC93M,9982
+airflow/providers/opsgenie/typing/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/opsgenie/typing/opsgenie.py,sha256=B0rOTrOY74QfOMWGNHkW9X6kaBxmlX70pShpQwMhQ6c,2575
+apache_airflow_providers_opsgenie-5.8.3rc1.dist-info/entry_points.txt,sha256=H3hEyiIk5IRjyrjwLVwQl3xeF1Xf2kVQmVXnNJ6Zi9c,104
+apache_airflow_providers_opsgenie-5.8.3rc1.dist-info/WHEEL,sha256=_2ozNFCLWc93bK4WKHCO-eDUENDlo-dgc9cU3qokYO4,82
+apache_airflow_providers_opsgenie-5.8.3rc1.dist-info/METADATA,sha256=-mNunQwWW6_qhQHMZbYEhxUPtaayrcOj-OMpHjpaQzI,5227
+apache_airflow_providers_opsgenie-5.8.3rc1.dist-info/RECORD,,
