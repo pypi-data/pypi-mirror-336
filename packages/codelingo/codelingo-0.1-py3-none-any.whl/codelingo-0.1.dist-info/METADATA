@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: codelingo
+Version: 0.1
+Summary: A library to convert code snippets into plain English.
+Home-page: https://github.com/AshishGhodvinde/CodeLingo
+Author: Taksh Kamble/Sahil Patil/Ashish Ghodvinde/Bhishek Zope
+Author-email: ghodvindeashish@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# CodeLingo
+
+CodeLingo is a Python library that converts code snippets into plain English. It also provides the ability to execute the code and capture its output. This library is designed to help beginners understand code by translating it into human-readable explanations.
+
+---
+
+## Features
+
+- **Code to English**: Converts Python code snippets into plain English explanations.
+- **Code Execution**: Executes the provided code and captures its output.
+- **Easy to Use**: Simple and intuitive API for quick integration.
+
+---
+
+## Installation
+
+You can install CodeLingo using `pip`:
+
+```bash
+pip install CodeLingo
