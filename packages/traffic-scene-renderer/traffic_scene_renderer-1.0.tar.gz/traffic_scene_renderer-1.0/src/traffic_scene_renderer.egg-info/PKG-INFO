@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: traffic_scene_renderer
+Version: 1.0
+Author-email: Erwin de Gelder <erwindegelder@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: utm
+Provides-Extra: lint
+Requires-Dist: mypy; extra == "lint"
+Requires-Dist: ruff; extra == "lint"
+Provides-Extra: test
+Requires-Dist: pytest==7.4.1; extra == "test"
+Requires-Dist: pytest-cov==4.1.0; extra == "test"
+Requires-Dist: coverage[toml]==7.3.1; extra == "test"
+Provides-Extra: build
+Provides-Extra: dev
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: tox-pyenv-redux; extra == "dev"
+Requires-Dist: traffic_scene_renderer[lint]; extra == "dev"
+Requires-Dist: traffic_scene_renderer[test]; extra == "dev"
+Requires-Dist: traffic_scene_renderer[build]; extra == "dev"
+Dynamic: license-file
+
+# Traffic scene renderer
+
+This traffic scene renderer enables drawing top-view overviews of traffic constellations. 
+This drawings can be printed on screen using `matplotlib` and exported to images or `tikz` files that can be rendered with LaTeX to create vector-based drawings of the traffic scenes.
+
+## Installation
+
+
+
+## Usage
+
+
+# Development
