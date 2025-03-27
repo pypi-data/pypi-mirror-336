@@ -1,0 +1,12 @@
+oe_python_template/__init__.py,sha256=R49r9JJnOBe4HrPGcu37ySvguxpGzQgTM7LtlyRnUK0,436
+oe_python_template/api.py,sha256=e1fAF284BFXXYuRWg5X-sZaF11Y4dOIHPHmxg_jh1_M,5010
+oe_python_template/cli.py,sha256=76x4P8IoBThEueexvQLSKkU3h7l2eGwtqemY33QveIo,3729
+oe_python_template/constants.py,sha256=Z1c06l5DeRuFxYVLHihHHTYvr8_Qh0nyzVKOe5X3ZNs,350
+oe_python_template/models.py,sha256=L9uwom3TkuOpN3R30bGKEBQKcrLLEMc-O9e8VVSNTGw,838
+oe_python_template/service.py,sha256=ZMeCQOfIJP0TAD9cYgOdA1tis8NuCK8Xt8wB-xtWHmo,1634
+oe_python_template/settings.py,sha256=87VZ1IEGbV3ivDjpG6x_Mgs2inH2hVd4ZD7DGsHOYFE,743
+oe_python_template-0.7.6.dist-info/METADATA,sha256=d-UiEk49L1VcKf_AT6mhvom2fyefKC7zt7N2pwI23QI,27885
+oe_python_template-0.7.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+oe_python_template-0.7.6.dist-info/entry_points.txt,sha256=IroSSWhLGxus9rxcashkYQda39TTvf7LbUMYtOKXUBE,66
+oe_python_template-0.7.6.dist-info/licenses/LICENSE,sha256=5H409K6xzz9U5eUaoAHQExNkoWJRlU0LEj6wL2QJ34s,1113
+oe_python_template-0.7.6.dist-info/RECORD,,
