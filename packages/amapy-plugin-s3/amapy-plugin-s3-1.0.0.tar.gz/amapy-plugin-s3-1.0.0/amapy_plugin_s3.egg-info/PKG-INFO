@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: amapy-plugin-s3
+Version: 1.0.0
+Summary: The S3 plugin for the asset manager project. It provides functionalities to manage and integrate Amazon S3 storage within the asset management system.
+Author-email: Swarup Mahanti <swarup.mahanti@roche.com>
+Maintainer-email: Swarup Mahanti <swarup.mahanti@roche.com>
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aioboto3<=10.2.0
+Requires-Dist: amapy-contents==1.*
+Requires-Dist: amapy-pluggy==1.*
+Requires-Dist: amapy-utils==1.*
+Requires-Dist: backoff==2.2.*
+
+asset-plugin-s3
