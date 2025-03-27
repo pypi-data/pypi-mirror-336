@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: PerSent
+Version: 0.2.0
+Summary: Persian Sentiment Analysis Toolkit
+Home-page: https://github.com/RezaGooner/PerSent
+Author: RezaGooner
+Author-email: RezaAsadiProgrammer@Gmail.com
+Keywords: persian sentiment analysis nlp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: hazm>=0.7.0
+Requires-Dist: gensim>=4.0.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: tqdm>=4.62.0
+Requires-Dist: joblib>=1.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
