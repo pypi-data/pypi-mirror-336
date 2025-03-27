@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+psutil = "*"
+robotframework = "==6.1"
+pyyaml = "*"
+leaninit = {file = "../../dist/leaninit-0.0.4.dev1+g8785a11.d20250107-py3-none-any.whl"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
