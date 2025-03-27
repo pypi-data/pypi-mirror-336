@@ -1,0 +1,16 @@
+hometaxbot/.DS_Store,sha256=rcuCmTXTAi4ue5RB45j8GVxf-pQprxawsR8lEEOLgLU,6148
+hometaxbot/__init__.py,sha256=9ln_hQrjDe-nMKpJC8FBQlH7NU2yUIpz_Tn0DQ8v200,438
+hometaxbot/cli.py,sha256=0Yat_3Gq2BBGDxSxbOpgooHQ_HQnss17muShrROnpOg,682
+hometaxbot/crypto.py,sha256=ISkrWzETrIajjgs7yb5faQo8PNJQ7Z-_UmDtu6tJSnM,3751
+hometaxbot/models.py,sha256=x_b8iKXaodS0fMx4AIWH3n7G0UuA65-lqIuz7wr42fQ,7145
+hometaxbot/types.py,sha256=MlIT0jTBkH_bo7nyglzRWOtBJKUCJTEAtylTxIrJ4DM,1120
+hometaxbot/scraper/__init__.py,sha256=IwAp59eR08xifg6_7z-niURFFtOw22a0SlU2Id5Y1qI,27214
+hometaxbot/scraper/hometax_xml_fields.yml,sha256=wYv1HIY5pNeKqcuaUaBSp-M5GK4FeflJCKIM3C7yiwI,5371
+hometaxbot/scraper/reports.py,sha256=iXFey4HD3ckBrVtvRz_orN2mmaLt7crHFOj511ogt3Y,3956
+hometaxbot/scraper/requestutil.py,sha256=PHvgPufGuwy2ykO60ecGrcRKt_HKW6qRLAFieUZgjDE,3538
+hometaxbot/scraper/transactions.py,sha256=hZaoMdOyQFFfb0VavGfC4yqhUvucoLZuReU4oUImwhE,19865
+hometaxbot/scraper/util.py,sha256=Q5sEDV6PnvkCUUc6vo9pkF66-3e_KgyLsta7D89A5DA,316
+hometaxbot-0.2.5.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hometaxbot-0.2.5.dist-info/WHEEL,sha256=Dyt6SBfaasWElUrURkknVFAZDHSTwxg3PaTza7RSbkY,100
+hometaxbot-0.2.5.dist-info/METADATA,sha256=AiiSij16NrUtaDvkx8ZT0ajQh5Lvm6AX6rRGDYZX7Y0,596
+hometaxbot-0.2.5.dist-info/RECORD,,
