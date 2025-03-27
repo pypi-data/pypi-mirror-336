@@ -1,0 +1,132 @@
+Metadata-Version: 2.4
+Name: pySEI
+Version: 1.4.3
+Summary: Pacote para interagir com o SEI
+Home-page: https://github.com/danielsioli/pySEI
+Author: Daniel Oliveira
+Author-email: danielsioli@gmail.com
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Keywords: anatel,sei
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: webdriver_manager
+Requires-Dist: ConfigParser
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+ï»¿# pySEI
+Atualizado para interagir com o SEI 4.0
+
+Pacote para interagir com o SEI - Sistema EletrÃ´nico de InformaÃ§Ã£o. O pacote usa Selenium com o chromedriver ou Ms Edge.
+O chromedriver pode ser obtido em https://chromedriver.chromium.org/downloads
+O Ms Edge Driver pode ser obtido em https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+## Install 
+
+```
+pip install pySEI
+```
+
+## Use
+Importar pacote
+```
+from pySEI import Sei
+```
+Iniciar navegador
+```
+sei = Sei(headless=False)
+```
+Iniciar navegador headless
+```
+sei = Sei()
+```
+Especificar o caminho para o chromedriver
+```
+sei = Sei(executable_path='chromedriver')
+```
+Entrar na pÃ¡gina do SEI
+```
+sei.start_driver(url='http://sei.anatel.gov.br', usuario=usuario, senha=senha)
+```
+Ir para um processo
+```
+sei.go_to(numero_sei=numero_sei)
+```
+Verificar se um processo estÃ¡ aberto em uma Ã¡rea
+```
+is_aberto,mensagem = sei.is_processo_aberto(processo=processo,area=area)
+```
+Verificar se um processo estÃ¡ anexado a outro
+```
+processo_anexador = sei.get_processo_anexador(processo=processo)
+```
+Trocar Ã¡rea do usuÃ¡rio
+```
+is_area_trocada = sei.seleciona_area(area=area)
+```
+Clicar em um botÃ£o do processo ou documento
+```
+is_botao_clicado = sei.clicar_botao(botao=botao)
+```
+Verificar se o processo estÃ¡ sobrestado
+```
+is_sobrestado,mensagem_sobrestamento = sei.is_sobrestado(processo=processo)
+```
+Verificar se o processo estÃ¡ sobrestado em uma Ã¡rea
+```
+is_sobrestado,is_na_area = sei.is_sobrestado(processo=processo, area=area)
+```
+Sobrestar processo na Ã¡rea atual
+```
+is_sobrestado = sei.sobrestar_processo(motivo='Quero sobrestar', processo=processo)
+```
+Remover sobrestamento do processo na Ã¡rea atual
+```
+sobrestamento_removido = sei.remover_sobrestamento(processo=processo)
+```
+Fechar a janela de alerta
+```
+mensagem_alerta = sei.fechar_alerta()
+```
+Publicar apenas no Boletim de ServiÃ§o
+```
+is_publicado = sei.publicar(documento=documento
+    ,resumo_ementa=resumo_ementa, data_disponibilizacao='21/01/2021')
+```
+Publicar no Boletim de ServiÃ§o e no DOU
+```
+is_publicado = sei.publicar(documento=documento
+    ,resumo_ementa=resumo_ementa, data_disponibilizacao='21/01/2021'
+    , dou=dou, secao=secao, pagina=pagina)
+```
+Obter conteÃºdo HTML de documento
+```
+try:
+    conteudo_documento = sei.get_conteudo_documento(documento=documento)
+except:
+    print('ConteÃºdo nÃ£o encontrado')
+```
+Fechar o navegador
+```
+sei.close()
+```
