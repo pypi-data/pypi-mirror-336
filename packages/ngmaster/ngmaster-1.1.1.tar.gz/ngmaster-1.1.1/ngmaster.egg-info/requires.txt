@@ -1,0 +1,4 @@
+argparse
+biopython
+bs4
+requests
