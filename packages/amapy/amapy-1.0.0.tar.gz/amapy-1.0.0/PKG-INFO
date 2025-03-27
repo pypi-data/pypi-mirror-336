@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: amapy
+Version: 1.0.0
+Summary: The client side tool for asset-manager. It provides a command-line interface and a Python API for programmatic access to manage and distribute digital assets.
+Author-email: Swarup Mahanti <swarup.mahanti@roche.com>
+Maintainer-email: Swarup Mahanti <swarup.mahanti@roche.com>
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: amapy-contents==1.0.0
+Requires-Dist: amapy-core==1.0.0
+Requires-Dist: amapy-db==1.0.0
+Requires-Dist: amapy-pluggy==1.0.0
+Requires-Dist: amapy-plugin-gcr==1.0.0
+Requires-Dist: amapy-plugin-gcs==1.0.0
+Requires-Dist: amapy-plugin-posix==1.0.0
+Requires-Dist: amapy-plugin-s3==1.0.0
+Requires-Dist: amapy-utils==1.0.0
+Requires-Dist: markupsafe==2.1.*
+
+asset-manager
