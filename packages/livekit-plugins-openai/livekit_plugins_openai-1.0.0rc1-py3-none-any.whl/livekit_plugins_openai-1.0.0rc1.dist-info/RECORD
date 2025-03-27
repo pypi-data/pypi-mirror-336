@@ -1,0 +1,15 @@
+livekit/plugins/openai/__init__.py,sha256=pydUDq_iDRMbNFMYfj2Rr5RZdz8rPpudQiB-amYYDrA,1430
+livekit/plugins/openai/embeddings.py,sha256=JTiVG9Bza-FzHKQTmxxKbfKrm4fZBXJ1A6wiTvKyNyg,1417
+livekit/plugins/openai/llm.py,sha256=mTCApwEcBndT4ve9lk_NloA2KZaRoXFyYqbYcf8kPbI,25604
+livekit/plugins/openai/log.py,sha256=onxziiHSrR9oEU5BX5DFv8s_v6gK0aLeb_w_M2hPW9Q,69
+livekit/plugins/openai/models.py,sha256=V8W96CgKkZuNJ8dDi_fbnXe_XTwQTIFKlEpFPIoV7fU,5544
+livekit/plugins/openai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/openai/stt.py,sha256=qraGMHwzIDWt9uggfFGCtOMnPYujejm3Q1VjAveHACI,18742
+livekit/plugins/openai/tts.py,sha256=zGh8hIw4PVbSJonvMmp-cjzmqK7g9iXtN4yh6NbfpRE,7790
+livekit/plugins/openai/utils.py,sha256=e0iHEYXpG4_bhP42QQmSHYCvaqfQxbAIytnfgUlLsho,3924
+livekit/plugins/openai/version.py,sha256=pF0lh6G9GYL7Mj7EnfhjFifzlzdWx6u3RvB0Itch4UE,604
+livekit/plugins/openai/realtime/__init__.py,sha256=LuZyToqSNKXzmqyqkGIKuuuBH0DjI480Q7VKf2H_TJw,118
+livekit/plugins/openai/realtime/realtime_model.py,sha256=ngl5x6B6-AANl9pMUJQ9mnDpqSwbJTXg8Hou03J7F80,34972
+livekit_plugins_openai-1.0.0rc1.dist-info/METADATA,sha256=rqjq4oEOsw-rPB1rMPXTtqLnSG1nufwSOdL_V-GygoM,1989
+livekit_plugins_openai-1.0.0rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_openai-1.0.0rc1.dist-info/RECORD,,
