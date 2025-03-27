@@ -1,0 +1,47 @@
+name: Test and Release
+
+on:
+  push:
+    branches:
+      - main
+      - _test
+      - release
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+        platform: [windows-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v5
+      with:
+        python-version: ${{ matrix.python }}
+    - name: Test with python ${{ matrix.python }}
+      run: uv run --frozen pytest
+
+  build-and-publish:
+    needs: test
+    if: ${{ github.ref_name == 'release' && success() }}
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      # need this to publish to PyPI without token
+      id-token: write
+      contents: read
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v5
+    - name: Build
+      run: uv build
+    - name: Publish distribution to PyPI
+      run: uv publish
