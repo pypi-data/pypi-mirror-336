@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: teleboting
+Version: 0.0.1
+Author-email: Тихонович Артем Олегович <braynt.k@mail.ru>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+
+TELEBOTING
+==========
+
+Teleboting is a simple library to create a bot for Telegram.
+
+Installation
+------------
+
+Install using pip:
+
+    pip install teleboting
+
+Usage
+-----
