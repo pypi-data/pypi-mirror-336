@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kdai-node-client"
+version = "0.2.1"
+description = "Client library for connecting nodes to the KDAI distributed AI platform"
+readme = "README.md"
+authors = [
+    {name = "KDAI Team", email = "support@kdai.io"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.25.0",
+    "websocket-client>=1.2.0",
+    "psutil>=5.8.0",
+    "pydantic>=1.9.0",
+    "tqdm>=4.62.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kdai-io/kdai-node-client"
+"Bug Tracker" = "https://github.com/kdai-io/kdai-node-client/issues"
+
+[project.scripts]
+kdai-node = "kdai_node_client.cli:main"
+
+[tool.setuptools]
+packages = ["kdai_node_client"]
