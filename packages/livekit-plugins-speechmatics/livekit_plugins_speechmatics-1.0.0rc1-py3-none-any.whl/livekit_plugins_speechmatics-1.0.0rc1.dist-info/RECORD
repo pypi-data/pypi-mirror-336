@@ -1,0 +1,10 @@
+livekit/plugins/speechmatics/__init__.py,sha256=u1BkFot3ggFvlbdohgrWSvPgcfqO79dsRLN6lJsyxnU,919
+livekit/plugins/speechmatics/log.py,sha256=O1iyAF7cHUu_iMXh6l7KRwwWeDB5QyABI_qzAb0cs04,75
+livekit/plugins/speechmatics/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/speechmatics/stt.py,sha256=a7bYVtH20i2WDbUTp9qRZRqCUrLwW6Yyf1hOAzth7QA,11695
+livekit/plugins/speechmatics/types.py,sha256=F4Ky9ajT7OztXqspXUCqRX1pwOLMOgWnbdLyJLMi2oQ,4609
+livekit/plugins/speechmatics/utils.py,sha256=t9ZDg5byXji8GLlpKs2XSNGpmZ5-hm88kmx-UHu2XqU,1825
+livekit/plugins/speechmatics/version.py,sha256=G8dPSi76U60lNLzCwLQnhZBs52POYYqadur0g9yGdjQ,604
+livekit_plugins_speechmatics-1.0.0rc1.dist-info/METADATA,sha256=n-lCq7hzVGeWzdVec0LvvuNVG1Yv9u8KTQ0-DgNpilo,1982
+livekit_plugins_speechmatics-1.0.0rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_speechmatics-1.0.0rc1.dist-info/RECORD,,
