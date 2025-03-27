@@ -1,0 +1,10 @@
+multiassayexperiment/MultiAssayExperiment.py,sha256=Fl5oan3kvZGb54kDWjeojzKabEKpJJpc2FXRTX4-haw,46146
+multiassayexperiment/__init__.py,sha256=1UfyVXsPNeZ7r7DgmCA05THIn1tSI6miV9QvUbxWPCU,683
+multiassayexperiment/io/__init__.py,sha256=8JMVTCahjTSrcn86sa2bIaW2m_srm0aiLnlHLLuajj0,60
+multiassayexperiment/io/h5ad.py,sha256=AkQqyP_nr_2qVsuYQe9-FBS8zJdnGHhT7EC7cOxyLVM,692
+multiassayexperiment/io/interface.py,sha256=uVe8AaTmDCPWik8QQs5ET-HvmNhYxTCtficOb3INIa8,2885
+multiassayexperiment-0.5.1.dist-info/licenses/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+multiassayexperiment-0.5.1.dist-info/METADATA,sha256=PgpnuzCxjXO-zyF-qirjVF_w-0RRK1ijtnrd9UrGEdc,5895
+multiassayexperiment-0.5.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+multiassayexperiment-0.5.1.dist-info/top_level.txt,sha256=c2FZrOyX5ZhMQRtdDeV43NDbMeqZL3ZvMG52Ptaiqu0,21
+multiassayexperiment-0.5.1.dist-info/RECORD,,
