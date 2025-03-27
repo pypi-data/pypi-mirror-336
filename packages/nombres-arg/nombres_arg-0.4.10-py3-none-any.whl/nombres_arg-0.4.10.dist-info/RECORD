@@ -1,0 +1,11 @@
+nombres_arg/__init__.py,sha256=xTa6EoLeGanpuZtnO6xkp4LtsSSbk1xJdIdFNhGhsMU,145
+nombres_arg/config.py,sha256=HBvONd5TZO8Bzhs0RDLp_M-bTuOu2s1OJlgU-X41Lik,543
+nombres_arg/data_loader.py,sha256=vf3LykYWZupW8Zq2TbmomddCrswASDzwpjDn77Q-mMo,484
+nombres_arg/data_processing.py,sha256=4DsY77c8icmZA5m74IZpCdLsz819q4WAQqq8rKuXfHk,3617
+nombres_arg/logging_config.py,sha256=D5hvor-fbfXjAlo8vFCUjKctQSkGjrhvw0K4O_BImdE,610
+nombres_arg/utils.py,sha256=bguYTsOpTqk9PTowaTeLD1r0IOEzJJ-rlrUi4wrEHUU,4854
+nombres_arg-0.4.10.dist-info/licenses/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+nombres_arg-0.4.10.dist-info/METADATA,sha256=UvsZmsUQjPYq28fSViI4zZ8hp8cccMIzrEDFlr3fPeY,11398
+nombres_arg-0.4.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+nombres_arg-0.4.10.dist-info/top_level.txt,sha256=j_3V65rJJD9aGs4DJfOarAhf2wB5opxEWnHHsJCv0iM,12
+nombres_arg-0.4.10.dist-info/RECORD,,
