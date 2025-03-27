@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: termind
+Version: 0.1.0
+Summary: A command-line AI chat tool for testing various large model APIs
+Home-page: https://github.com/luhuadong/termind
+Author: luhuadong
+Author-email: luhuadong@163.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=0.27.0
+Requires-Dist: requests>=2.26.0
+Requires-Dist: rich>=12.4.0
+Requires-Dist: python-dotenv>=0.19.0
+
+# Termind
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/Python-3.6%2B-blue)](https://www.python.org/) [![PyPI Version](https://img.shields.io/pypi/v/termind.svg)](https://pypi.org/project/termind/)
+
+[中文](README_zh.md) | [English](README.md)
+
+Termind is a command-line AI chat tool focused on providing simple and efficient chat conversation functionality. It supports calling multiple LLM APIs and can be used as a testing tool for various LLM APIs.
+
+## Features
+
+- **Multi-model Support**: Supports calling APIs of multiple LLMs such as ChatGPT, DeepSeek, Qwen, and Doubao.
+- **Context Memory**: Can remember chat context to provide a coherent conversation experience.
+- **Command-line Interaction**: Interacts with users through a command-line interface, simple and efficient.
+- **API Key Management**: Supports configuration and management of API keys for multiple models.
+- **Multi-language Support**: Supports chat conversations in multiple languages including Chinese and English.
+- **Custom Commands**: Users can define custom commands for quick execution of specific operations.
+
+## Architecture
+
+The architecture of Termind is designed with modularity in mind and mainly consists of the following core modules:
+
+- **Model Adapters**: Responsible for connecting with different large model APIs and handling API requests and responses.
+- **Conversation Manager**: Manages the context of chat conversations to ensure conversational coherence.
+- **Command-line Interface**: Provides a user-friendly command-line interaction interface.
+- **API Key Manager**: Securely stores and manages API keys for each model.
+- **Configuration Manager**: Handles the project's configuration files, including model selection, language settings, etc.
+
+### Session Management
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Termind
+    participant LLM
+
+    User->>Termind: termind ask "你好"
+    Termind->>Termind: 生成 session_id=20240520_1530
+    Termind->>LLM: 发送初始请求
+    LLM-->>Termind: 响应内容
+    Termind-->>User: 显示回复 + 保存session
+
+    User->>Termind: termind ask "继续上文" --session 20240520_1530
+    Termind->>Termind: 加载历史消息
+    Termind->>LLM: 发送完整上下文
+    LLM-->>Termind: 基于上下文的响应
+```
+
+## Installation and Usage
+
+### Installation
+
+Install Termind via PyPI:
+
+```bash
+pip install termind
+```
+
+### Configuration
+
+For the first use, you need to configure the API keys for each model:
+
+```bash
+termind config
+```
+
+Follow the prompts to enter the API keys for each model and complete the configuration.
+
+### Usage
+
+Start Termind:
+
+```bash
+termind
+```
+
+In the command-line interface, you can chat with the selected large model. You can enter commands to switch models, view history, etc.
+
+Available Commands:
+
+- `chat`: Start chatting with the current model
+- `setmodel <model_name>`: Set the current model
+- `setkey <model_name> <api_key>`: Set API key for a model
+- `setlang <zh|en>`: Set language to Chinese or English
+- `setcontext <length>`: Set context length
+- `config`: Show current configuration
+- `exit`: Exit the program
+- `help`: Show help information
+
+Example:
+
+```
+Termind > chat
+Start Chat
+Type your message and press Enter to send, type 'exit' to end chat, type 'clear' to clear history
+
+You: Hello, how are you?
+Assistant: I'm just a program, but I'm functioning well. How can I assist you today?
+
+You: What's the weather like today?
+Assistant: I don't have access to real-time data, but you can check a weather website or app for the latest information.
+
+You: clear
+History cleared
+
+You: exit
+Thank you for using Termind. Goodbye!
+```
+
+## Contribution Guidelines
+
+Welcome developers to contribute code, suggest improvements, or report issues for Termind. For specific contribution methods, please refer to the project's contribution guidelines.
+
+## License
+
+Termind is licensed under the MIT License, allowing free use, modification, and distribution.

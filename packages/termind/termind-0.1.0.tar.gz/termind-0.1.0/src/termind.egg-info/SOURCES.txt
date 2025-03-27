@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/termind/__init__.py
+src/termind/cli.py
+src/termind/config.py
+src/termind/conversation.py
+src/termind/models.py
+src/termind.egg-info/PKG-INFO
+src/termind.egg-info/SOURCES.txt
+src/termind.egg-info/dependency_links.txt
+src/termind.egg-info/entry_points.txt
+src/termind.egg-info/requires.txt
+src/termind.egg-info/top_level.txt
