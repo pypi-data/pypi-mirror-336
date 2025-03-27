@@ -1,0 +1,16 @@
+xarray>=2024.0.0
+pandas
+numpy
+netcdf4
+matplotlib
+seaborn
+cartopy>=0.23.0
+colorcet
+parse
+scipy
+pygeogrids
+pytesmo
+
+[testing]
+pytest-cov
+pytest
