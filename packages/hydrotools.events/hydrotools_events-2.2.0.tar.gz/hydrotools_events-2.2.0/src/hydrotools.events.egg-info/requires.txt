@@ -1,0 +1,5 @@
+pandas
+numba
+
+[develop]
+pytest
