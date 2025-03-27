@@ -1,0 +1,57 @@
+[project]
+name = "celery-cloud"
+version = "0.1.12"
+description = "Celery workers in the cloud"
+authors = [
+    {name = "Linus", email = "impalah@gmail.com"}
+]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["celery", "cloud", "workers", "aws"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: Celery",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Distributed Computing",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+requires-python = ">=3.12"
+
+dependencies = [
+    "celery[dynamodb,sqs]>=5.4.0",
+    "loguru>=0.7.3",
+    "pydantic>=2.10.6",
+    "pynamodb>=6.0.2",
+    "python-dotenv>=1.0.1",
+    "svix-ksuid>=0.6.2",
+]
+
+# [project.scripts]
+# celery-client = "celery_cloud.client:celery"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "debugpy>=1.8.13",
+    "fastapi>=0.115.11",
+    "ipykernel>=6.29.5",
+    "ruff>=0.11.0",
+    "uvicorn>=0.34.0",
+]
+
+[tool.ruff]
+# Set the maximum line length to 79.
+line-length = 79
+
+[tool.ruff.lint]
+extend-select = [
+  "UP",  # pyupgrade
+  "E501",   # maxdocline
+]
+
