@@ -1,0 +1,3 @@
+[console_scripts]
+phable=phable_cli.cli:cli
+
