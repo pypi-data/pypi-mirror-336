@@ -1,0 +1,14 @@
+pandas
+openpyxl
+pathlib
+pytesseract
+gspread
+oauth2client
+pyodbc
+sqlalchemy
+configparser
+scikit-learn
+chardet
+langchain
+langchain_community
+langchain_experimental
