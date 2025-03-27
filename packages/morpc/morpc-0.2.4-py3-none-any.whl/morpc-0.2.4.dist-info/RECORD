@@ -1,0 +1,10 @@
+morpc/__init__.py,sha256=PNGnyK3HVF9P1BPB1osSGSFMgJz8kZE1yVaYE6gCkwg,99
+morpc/morpc.py,sha256=dib1KWhBwG-jPieyU0CN3C6UjSrZqyV0he0QwUk0zUM,111443
+morpc/census/__init__.py,sha256=wlbRsv0Q-cpJ5sQ3Jyu96OieyjT_TQdhHSI4JS2um4Q,21
+morpc/census/census.py,sha256=5Kw-arjiPblI78RtZ5tPMThGkxONQI5dy_Z8rMg4CcE,17890
+morpc/frictionless/__init__.py,sha256=ai7P9Rv_jEeOS86gMEfa844heFrztVDPj_aiQ2Fxr_M,27
+morpc/frictionless/frictionless.py,sha256=oSmFGUm4Yx3ilpMUuLOeNv17sEMK1ly0chnJaQtoxEg,33186
+morpc-0.2.4.dist-info/METADATA,sha256=q7wjx7KHKlgcVVH_KjS0pPH6Iy8U2hR1zSR3Y4tjFY0,560
+morpc-0.2.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+morpc-0.2.4.dist-info/top_level.txt,sha256=dZFtZYPrKA29ZBo8HHnqNJPxxfVKohbKLmWOxDskKj8,6
+morpc-0.2.4.dist-info/RECORD,,
