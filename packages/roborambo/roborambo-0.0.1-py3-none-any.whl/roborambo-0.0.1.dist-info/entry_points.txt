@@ -1,0 +1,3 @@
+[console_scripts]
+rambo-cli = roborambo.cli:run
+rambo-serve = roborambo.daemon:serve
