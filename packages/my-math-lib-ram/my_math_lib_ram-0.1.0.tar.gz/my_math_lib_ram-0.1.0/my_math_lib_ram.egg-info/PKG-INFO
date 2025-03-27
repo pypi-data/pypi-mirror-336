@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: my-math-lib-ram
+Version: 0.1.0
+Summary: A simple library for addition and subtraction
+Home-page: https://pypi.org/project/my_math_lib/
+Author: Ram
+Author-email: ramvinoth1993@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# My Math Lib
+A simple library for addition and subtraction.
+
