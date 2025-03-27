@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+llm-flexquant/__init__.py
+llm-flexquant/main.py
+llm_flexquant.egg-info/PKG-INFO
+llm_flexquant.egg-info/SOURCES.txt
+llm_flexquant.egg-info/dependency_links.txt
+llm_flexquant.egg-info/requires.txt
+llm_flexquant.egg-info/top_level.txt
