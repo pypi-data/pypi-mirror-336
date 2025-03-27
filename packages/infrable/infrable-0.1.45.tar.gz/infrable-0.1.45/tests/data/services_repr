@@ -1,0 +1,2 @@
+nginx = Service(host=Host(ip='127.0.0.1', fqdn='dev.example.com', admin='root', meta=Box({}), typer=None), port=80, meta=Box({}), typer=<typer.main.Typer object at 0x7f4669d0feb0>)
+web = Service(host=Host(ip='127.0.0.1', fqdn='dev.example.com', admin='root', meta=Box({}), typer=None), port=8080, meta=Box({'secret_key': ''}), typer=None)

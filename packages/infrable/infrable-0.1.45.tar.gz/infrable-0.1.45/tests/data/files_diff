@@ -1,0 +1,93 @@
+--- .infrable/files/root@dev.example.com/etc/hostname.old
+
++++ .infrable/files/root@dev.example.com/etc/hostname.new
+
+@@ -0,0 +1,9 @@
+
++# vim: syn=ansible.vim
++
++# ---
++# chmod: '644'
++# chown: root:root
++# dest: root@dev.example.com:/etc/hostname
++# src: https://github.com/username/repository/blob/main/templates/hostname/hostname.j2
++# ---
++dev
+
+--- .infrable/files/root@dev.example.com/root/init/robots.txt.sh.old
+
++++ .infrable/files/root@dev.example.com/root/init/robots.txt.sh.new
+
+@@ -0,0 +1,20 @@
+
++#!/usr/bin/env bash
++
++# vim: syn=sh
++
++# ---
++# dest: root@dev.example.com:/root/init/robots.txt.sh
++# execute: true
++# src: https://github.com/username/repository/blob/main/templates/nginx/robots.txt.sh.j2
++# ---
++
++set -euxo pipefail
++
++if [ ! -d /var/www/html ]; then
++    mkdir -p /var/www/html
++fi
++
++cat > /var/www/html/robots.txt <<EOF
++User-agent: *
++Disallow: /
++EOF
+
+--- .infrable/files/root@dev.example.com/etc/nginx/proxy_params.old
+
++++ .infrable/files/root@dev.example.com/etc/nginx/proxy_params.new
+
+@@ -0,0 +1,12 @@
+
++# vim: syn=nginx
++
++# ---
++# chmod: '644'
++# chown: root:root
++# dest: root@dev.example.com:/etc/nginx/proxy_params
++# src: https://github.com/username/repository/blob/main/templates/nginx/proxy_params.j2
++# ---
++proxy_set_header Host $http_host;
++proxy_set_header X-Real-IP $remote_addr;
++proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
++proxy_set_header X-Forwarded-Proto $scheme;
+
+--- .infrable/files/root@dev.example.com/etc/nginx/sites-enabled/web.old
+
++++ .infrable/files/root@dev.example.com/etc/nginx/sites-enabled/web.new
+
+@@ -0,0 +1,24 @@
+
++# vim: syn=nginx
++
++# ---
++# chmod: '644'
++# chown: root:root
++# dest: root@dev.example.com:/etc/nginx/sites-enabled/web
++# src: https://github.com/username/repository/blob/main/templates/nginx/web.j2
++# ---
++
++server {
++    listen 80;
++    listen [::]:80;
++
++    server_name dev.example.com www.dev.example.com;
++
++    location / {
++        proxy_pass http://127.0.0.1:8080;
++        include proxy_params;
++    }
++
++    location /robots.txt {
++        root /var/www/html;
++    }
++}
+

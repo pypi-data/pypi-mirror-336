@@ -1,0 +1,2 @@
+nginx = root@dev.example.com:80
+web = root@dev.example.com:8080

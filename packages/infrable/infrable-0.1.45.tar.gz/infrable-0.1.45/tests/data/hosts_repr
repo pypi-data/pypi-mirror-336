@@ -1,0 +1,3 @@
+beta_host = Host(ip='127.0.0.2', fqdn='beta.example.com', admin='root', admin_ssh_key=None, meta=Meta({}), typer=None)
+dev_host = Host(ip='127.0.0.1', fqdn='dev.example.com', admin='root', admin_ssh_key=None, meta=Meta({}), typer=None)
+prod_host = Host(ip='127.0.0.3', fqdn='prod.example.com', admin='root', admin_ssh_key=None, meta=Meta({}), typer=None)

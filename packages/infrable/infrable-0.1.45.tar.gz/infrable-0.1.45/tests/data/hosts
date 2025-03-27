@@ -1,0 +1,3 @@
+beta_host = root@beta.example.com
+dev_host = root@dev.example.com
+prod_host = root@prod.example.com

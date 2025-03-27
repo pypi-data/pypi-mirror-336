@@ -1,0 +1,3 @@
+╭ templates/nginx/web.j2
+╰─ .infrable/files/root@dev.example.com/etc/nginx/sites-enabled/web.new
+
