@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+docling_sdg/__init__.py
+docling_sdg/py.typed
+docling_sdg.egg-info/PKG-INFO
+docling_sdg.egg-info/SOURCES.txt
+docling_sdg.egg-info/dependency_links.txt
+docling_sdg.egg-info/entry_points.txt
+docling_sdg.egg-info/requires.txt
+docling_sdg.egg-info/top_level.txt
+tests/test_qa_base.py
+tests/test_qa_critique.py
+tests/test_qa_prompts.py
