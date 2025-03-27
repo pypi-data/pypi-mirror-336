@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: seeclickfix
+Version: 0.2
+Summary: 
+Author: Nate Shoffner
+Author-email: nate.shoffner@gmail.com>
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: dataclasses-json (>=0.6.7,<0.7.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/NateShoffner/py-seeclickfix/issues
+Project-URL: Homepage, https://github.com/NateShoffner/py-seeclickfix
+Description-Content-Type: text/markdown
+
+Python wrapper for the SeeClickFix (FixIt) API.

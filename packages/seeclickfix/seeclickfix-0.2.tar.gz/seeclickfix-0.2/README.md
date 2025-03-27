@@ -1,0 +1,1 @@
+Python wrapper for the SeeClickFix (FixIt) API.
