@@ -1,0 +1,19 @@
+[project]
+name = "sentineliam"           # ← Must be unique on PyPI
+version = "0.1.1"              # ← Set by your bumper script
+description = "SentinelIAM CLI for policy generation, validation, and audit"
+authors = [{ name = "Katrina Finney", email = "you@example.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+  "typer[all]",
+  "jinja2",
+  "pydantic",
+  "pyyaml",
+  "supabase",
+  "python-dotenv"
+]
+
+[project.scripts]
+sentinel = "cli.main:app"

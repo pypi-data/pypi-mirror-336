@@ -1,0 +1,6 @@
+typer[all]
+jinja2
+pydantic
+pyyaml
+supabase
+python-dotenv

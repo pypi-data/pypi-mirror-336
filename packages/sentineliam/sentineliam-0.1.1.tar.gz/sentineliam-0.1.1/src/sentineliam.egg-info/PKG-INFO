@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: sentineliam
+Version: 0.1.1
+Summary: SentinelIAM CLI for policy generation, validation, and audit
+Author-email: Katrina Finney <you@example.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer[all]
+Requires-Dist: jinja2
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: supabase
+Requires-Dist: python-dotenv
