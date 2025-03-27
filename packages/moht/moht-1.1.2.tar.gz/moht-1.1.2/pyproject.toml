@@ -1,0 +1,150 @@
+[build-system]
+requires = ['setuptools >= 77.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'moht'
+authors = [{name = 'Michal Plichta'}]
+maintainers = [{name = 'Michal Plichta'}]
+description = 'Simple yet powerful tool to help you manage your mods in several ways.'
+license = 'MIT'
+license-files = ['LICENSE.md']
+requires-python = '>=3.10'
+readme = 'README.md'
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Environment :: MacOS X',
+    'Environment :: Win32 (MS Windows)',
+    'Environment :: X11 Applications',
+    'Intended Audience :: End Users/Desktop',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Operating System :: MacOS',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: Microsoft :: Windows :: Windows 10',
+    'Operating System :: POSIX :: Linux',
+    'Topic :: Games/Entertainment',
+    'Topic :: Games/Entertainment :: Role-Playing',
+    'Topic :: Utilities',
+]
+keywords = [
+    'morrowind', 'openmw', 'mod', 'tes3cmd', 'modding', 'tes3',
+]
+dynamic = ['version']
+dependencies = [
+    'packaging==24.2',
+    'PySide6==6.8.2.1',
+    'PyYAML==6.0.2',
+    'QtAwesome==1.4.0',
+]
+
+[project.urls]
+Homepage = 'https://gitlab.com/modding-openmw/modhelpertool'
+Documentation = 'https://gitlab.com/modding-openmw/modhelpertool/-/blob/main/README.md'
+Source = 'https://gitlab.com/modding-openmw/modhelpertool.git'
+Changelog = 'https://gitlab.com/modding-openmw/modhelpertool/-/blob/main/CHANGELOG.md'
+
+[project.scripts]
+moht_cli = 'moht.start:run'
+
+[project.gui-scripts]
+moht = 'moht.start:run'
+
+[project.optional-dependencies]
+test = [
+    'interrogate==1.7.0',
+    'lxml==5.3.1',
+    'mypy==1.15.0',
+    'pip-audit==2.8.0',
+    'pytest==8.3.5',
+    'pytest-qt==4.4.0',
+    'pytest-randomly==3.16.0',
+    'pytest-xvfb==3.1.1',
+    'ruff==0.11.2',
+    'tox==4.24.2',
+    'types-PyYAML==6.0.12.20241230',
+]
+dev =[
+    'build',
+    'detect-test-pollution',
+    'pre-commit',
+    'PySide6-stubs',
+]
+
+[tool.setuptools.dynamic]
+version = {attr = 'moht.VERSION'}
+
+[tool.setuptools.packages.find]
+where = ['src/']
+
+[tool.setuptools.package-data]
+moht = [
+    'default.yaml',
+    'py.typed',
+    'img/moht.png',
+    'img/moht.ico',
+    'resources/tes3cmd-*',
+    'resources/omwcmd-*',
+]
+
+[tool.pytest.ini_options]
+addopts = ['-q']
+pythonpath = ['src']
+testpaths = ['tests']
+#qt_api = ['pyside6']
+markers = [
+    'qt6: marks tests for Qt6 verfification',
+    'slow: marks tests as slow',
+]
+
+[tool.interrogate]
+ignore-init-method = false
+ignore-init-module = true
+ignore-magic = true
+ignore-semiprivate = false
+ignore-private = false
+ignore-property-decorators = false
+ignore-module = true
+ignore-nested-functions = false
+ignore-nested-classes = true
+ignore-setters = false
+fail-under = 90
+verbose = 1
+quiet = false
+exclude = ['tests/test_*', 'src/moht/qtgui_rc.py']
+
+[tool.ruff]
+line-length = 160
+lint.select = ['E', 'F', 'C90', 'D', 'RUF']
+lint.ignore = ['D100', 'D101','D104', 'D105', 'D203', 'D204', 'D212', 'RUF001', 'RUF010']
+extend-exclude = [
+    'qtgui_rc.py',
+    'tests/',
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 6
+
+[tool.mypy]
+html_report = 'mypyhtml'
+exclude = [
+    '/qtgui\.py$',
+    'tests/',
+]
+
+[[tool.mypy.overrides]]
+module = 'moht.qtgui'
+follow_imports = 'skip'
+
+[tool.pydocstyle]
+inherit = false
+ignore = ['D100', 'D101','D104', 'D203', 'D204', 'D212']
+match = '(?!test_|qtgui_rc).*\.py'
+
+[tool.isort]
+line_length = 160

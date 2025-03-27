@@ -1,0 +1,5 @@
+[console_scripts]
+moht_cli = moht.start:run
+
+[gui_scripts]
+moht = moht.start:run
