@@ -1,0 +1,17 @@
+magique/__init__.py,sha256=PNiDER4qM19h9zdsdfgKt2_dT4WgYK7EguJ8RU2qA_g,22
+magique/auth.py,sha256=7NgYtZD-vJx6IDaTRw_nxyd32uFcacSHfgol0hti-0g,1971
+magique/base.py,sha256=WYPMIkhYIUSk6yRQ9QXoMnOfaUGczoizQtjdznGhRCs,446
+magique/client.py,sha256=76qLWjKbdaaBkL164oggAj6o9CLyFhy8MSIyxS7MAbo,9284
+magique/protocol.py,sha256=oqJPKTTh1E2hrkP5IHQ3KimRQm1kNeZKUQbnp3m5tR0,6231
+magique/ser.py,sha256=36E1HHzCHblM-FN0QJPD6GkcmULcVX7knM-cK4we2QU,2954
+magique/server.py,sha256=Vu1pijIC6MZf03wkBlZJaoTBXnJjQE5yqTt0ewDAcwY,12839
+magique/worker.py,sha256=iEJpdwyJJi30iGygtwGwJOyBciKHcwN48AJqWAzzqMw,14321
+magique/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magique/utils/log.py,sha256=93eusY_t2Ba1bScpNUsKZI7n3JFjD9LOP77pCiZuiYQ,48
+magique/utils/network.py,sha256=f4uTENVAd9LmS5g8GZ5NAvAgg2FMvo1cfAOAgcLpb5w,2786
+tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_connection.py,sha256=Gv_oLlY3TYEuYPdCTYCaS-aa_9uF8CEoSTj76ym0Y9c,6918
+magique-0.2.3.dist-info/METADATA,sha256=ZrsQNvLhAtd6uc_JhaoLAvk4OJHR0U_D0B_gBydwGRA,820
+magique-0.2.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+magique-0.2.3.dist-info/top_level.txt,sha256=hJw-kDytPU3dodvtKfxGqb7YX07j7OsWddHDm7MdkfU,19
+magique-0.2.3.dist-info/RECORD,,
