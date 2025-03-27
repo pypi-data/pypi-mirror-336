@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/const.py
+src/main.py
+src/drkbloodbarometer.egg-info/PKG-INFO
+src/drkbloodbarometer.egg-info/SOURCES.txt
+src/drkbloodbarometer.egg-info/dependency_links.txt
+src/drkbloodbarometer.egg-info/requires.txt
+src/drkbloodbarometer.egg-info/top_level.txt
