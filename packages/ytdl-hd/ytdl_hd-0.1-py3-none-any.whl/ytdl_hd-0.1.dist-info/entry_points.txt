@@ -1,0 +1,2 @@
+[console_scripts]
+ytdl = Ytdl_1080p.main:main
