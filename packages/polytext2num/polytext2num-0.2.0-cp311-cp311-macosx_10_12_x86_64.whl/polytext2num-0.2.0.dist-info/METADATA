@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: polytext2num
+Version: 0.2.0
+Summary: Convert written numbers to digits using Rust + Python
+Author-email: Iskaj <iskajjanssen1@hotmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# text2num-py
+
+Convert Dutch written out numbers (e.g. `"duizendnegenhonderddrieënzeventig"`) into digits using Rust + Python.
+
+## Installation
+
+```bash
+pip install dutchtext2num
+```
+
+## Usage
+```python
+from polytext2num import text_to_number
+
+print(text_to_number("duizendnegenhonderddrieënzeventig", "dutch"))    # → "1973"
+print(text_to_number("one thousand nine hundred seventy-three", "en")) # → "1973"
+print(text_to_number("quatre-vingt-dix", "french"))                    # → "90"
+```
