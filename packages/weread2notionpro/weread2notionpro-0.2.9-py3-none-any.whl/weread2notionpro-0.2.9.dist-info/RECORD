@@ -1,0 +1,14 @@
+weread2notionpro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weread2notionpro/__main__.py,sha256=x-cLwZlg5bxDDAU3aBn3kH4ryoudfkhR95-a9FNspRM,61
+weread2notionpro/book.py,sha256=_oUi0gBqT8CoMhMb5q327e7NycA8cWyLeZ1IR_e-hZU,7615
+weread2notionpro/config.py,sha256=lU_tHVqTG4mNxj-o_fUuLFDJwNotWQ1ERRFC4wjIX8E,692
+weread2notionpro/notion_helper.py,sha256=aSf--sRlv9YkPdPaHWZKMll1_yi6LrHLXNBlo3TgSUo,22588
+weread2notionpro/read_time.py,sha256=2FxBCS-SmCK34K6iauIrig-3WLs3hWf_TOVAsPRRNlQ,4164
+weread2notionpro/utils.py,sha256=JhrriOGh2e-bNMsW4-jvT5LtHu8OtojkWP0Olb1GxGY,9697
+weread2notionpro/weread.py,sha256=VzKkk-bVfgNv9tRjJ7qePzgdpaaUfz6Scn1Gy8s-pJU,9039
+weread2notionpro/weread_api.py,sha256=x43-3V5EANIW6-A07XQKlLGaG1ZSp7S6sq_uORN540Q,9363
+weread2notionpro-0.2.9.dist-info/METADATA,sha256=xzhECoZz306bEldYIhHgoxARG2VhWlPK-EIsim8e2Uo,2460
+weread2notionpro-0.2.9.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+weread2notionpro-0.2.9.dist-info/entry_points.txt,sha256=RNWs-NN8Y271z6UCC1oG6rtB_kBMNEI04f3X9bVF3iI,134
+weread2notionpro-0.2.9.dist-info/top_level.txt,sha256=ssMuxDQRFFAaPsySROjNkNgMYcgzjtlZlSJ6ZWZ5R_U,17
+weread2notionpro-0.2.9.dist-info/RECORD,,
