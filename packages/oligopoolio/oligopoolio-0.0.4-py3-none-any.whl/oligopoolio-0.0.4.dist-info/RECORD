@@ -1,0 +1,12 @@
+oligopoolio/__init__.py,sha256=jSoQWgybPvEAj1sPj6D4RRQWLQ5nCPSrR5HfldBwL6g,1675
+oligopoolio/main.py,sha256=LE-tj3kijdiOluVpoCHLuMM1qSiLUL1NaW5XtyqVrvI,1803
+oligopoolio/oligopools.py,sha256=UkrPO88LfhKUcbjt_JGBrFULO4Md5th2RMz91AD-0fY,14770
+oligopoolio/oligos.py,sha256=eeWBmGecO_VWazs-phVJqQWj0mPQ2X2mhgyDoogaat8,18829
+oligopoolio/primers.py,sha256=C9pI1sZQ7u_tCbv5-e4BJZazn9EEwzRYuuONRprndAU,14395
+oligopoolio-0.0.4.data/data/LICENSE,sha256=AANOkTNAYDYdYdQBWuoYRa0RZNkCeoS057er6UYYozE,1051
+oligopoolio-0.0.4.dist-info/LICENSE,sha256=AANOkTNAYDYdYdQBWuoYRa0RZNkCeoS057er6UYYozE,1051
+oligopoolio-0.0.4.dist-info/METADATA,sha256=cv_jYuTpcj6Z5OQQqX6zGuaIo3LvZSgDLlT7-W17TZ0,8887
+oligopoolio-0.0.4.dist-info/WHEEL,sha256=HiCZjzuy6Dw0hdX5R3LCFPDmFS4BWl8H-8W39XfmgX4,91
+oligopoolio-0.0.4.dist-info/entry_points.txt,sha256=WYCk8wC9UQPKQ-3othXFhfOkmfJGabUBMUR2B530DJc,58
+oligopoolio-0.0.4.dist-info/top_level.txt,sha256=Xnn6KOWEHMec_cdoH_XxL7GFnyXlxTcgBipSVJfcBUI,12
+oligopoolio-0.0.4.dist-info/RECORD,,
