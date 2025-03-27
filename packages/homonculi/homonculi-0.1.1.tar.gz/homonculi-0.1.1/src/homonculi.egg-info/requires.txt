@@ -1,0 +1,17 @@
+markdown
+simple-parsing
+canvasapi
+python-docx
+openai
+tqdm~=4.66.2
+pandas
+matplotlib
+pyyaml~=6.0.1
+requests~=2.31.0
+fpdf2
+pytest
+requests-cache
+setuptools~=69.0.3
+bakery
+pedal
+python-frontmatter
