@@ -1,0 +1,6 @@
+amapy-contents==1.*
+amapy-pluggy==1.*
+amapy-utils==1.*
+backoff==2.2.*
+gcloud-aio-storage==9.3.*
+google-cloud-storage==2.10.*

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: amapy-plugin-gcs
+Version: 1.0.0
+Summary: The GCS plugin for the asset-manager project. It provides functionalities to manage and integrate Google Cloud Storage (GCS) within the asset management system.
+Author-email: Swarup Mahanti <swarup.mahanti@roche.com>
+Maintainer-email: Swarup Mahanti <swarup.mahanti@roche.com>
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: amapy-contents==1.*
+Requires-Dist: amapy-pluggy==1.*
+Requires-Dist: amapy-utils==1.*
+Requires-Dist: backoff==2.2.*
+Requires-Dist: gcloud-aio-storage==9.3.*
+Requires-Dist: google-cloud-storage==2.10.*
+
+asset-plugin-gcs
