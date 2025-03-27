@@ -1,0 +1,127 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "CosmoMatt",
+      "name": "Matt Price",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32554533?v=4",
+      "profile": "https://cosmomatt.github.io",
+      "contributions": [
+        "code",
+        "review",
+        "ideas"
+      ]
+    },
+    {
+      "login": "jasonmcewen",
+      "name": "Jason McEwen ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3181701?v=4",
+      "profile": "http://www.jasonmcewen.org",
+      "contributions": [
+        "code",
+        "review",
+        "ideas"
+      ]
+    },
+    {
+      "login": "matt-graham",
+      "name": "Matt Graham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6746980?v=4",
+      "profile": "http://matt-graham.github.io",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "sfmig",
+      "name": "sfmig",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33267254?v=4",
+      "profile": "https://sfmig.github.io/",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "Devaraj-G",
+      "name": "Devaraj Gopinathan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36169767?v=4",
+      "profile": "https://github.com/Devaraj-G",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "EiffL",
+      "name": "Francois Lanusse",
+      "avatar_url": "https://avatars.githubusercontent.com/u/861591?v=4",
+      "profile": "http://flanusse.net",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "eltociear",
+      "name": "Ikko Eltociear Ashimine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22633385?v=4",
+      "profile": "https://github.com/eltociear",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "kmulderdas",
+      "name": "Kevin Mulder",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33317219?v=4",
+      "profile": "https://github.com/kmulderdas",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "PhilippMisofCH",
+      "name": "Philipp Misof",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142883157?v=4",
+      "profile": "https://github.com/PhilippMisofCH",
+      "contributions": [
+        "bug",
+        "doc"
+      ]
+    },
+    {
+      "login": "ElisR",
+      "name": "Elis Roberts",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19764906?v=4",
+      "profile": "https://github.com/ElisR",
+      "contributions": [
+        "bug",
+        "doc"
+      ]
+    },
+    {
+      "login": "ASKabalan",
+      "name": "Wassim KABALAN",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83787080?v=4",
+      "profile": "https://github.com/ASKabalan",
+      "contributions": [
+        "code",
+        "review",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "s2fft",
+  "projectOwner": "astro-informatics",
+  "commitType": "docs"
+}
