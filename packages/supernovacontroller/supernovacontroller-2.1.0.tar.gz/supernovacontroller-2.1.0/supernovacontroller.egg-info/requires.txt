@@ -1,0 +1,2 @@
+transfer_controller==0.4.2
+BinhoSupernova==3.2.0
