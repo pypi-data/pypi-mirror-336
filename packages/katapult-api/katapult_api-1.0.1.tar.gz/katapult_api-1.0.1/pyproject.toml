@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "katapult-api"
+version = "1.0.1"
+description = "Async Python client for interacting with the KatapultPro API."
+authors = [
+    { name = "TechServ Engineering Team", email = "engineering@techserv.com" }
+
+]
+readme = "PUBLIC_README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.11,<4.0"
+]
+license = { file = "LICENSE" }
+
+[tool.setuptools.package-dir]
+katapult_api = "katapult_api"
