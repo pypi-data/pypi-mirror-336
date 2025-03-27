@@ -1,0 +1,8 @@
+matchescu/clustering/__init__.py,sha256=E50aobc9rWhDfWz270HcpRVKXv5QEAf8o41Pocf2l20,110
+matchescu/clustering/_cc.py,sha256=ULHx8VfLVp64rEnLoETmvEoBSiEt-R0TsHtUWMC8IHA,853
+matchescu/clustering/_ecp.py,sha256=etiMHvxKiz6Vfmv43KLhu8tDdulqr3omQB4cDZF52kc,1389
+matchescu/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matchescu_clustering-0.2.0.dist-info/LICENSE,sha256=PVVSjAkwe0C4ReSaWjA2Qc16INddKPZuXxqQzSqe8ds,1066
+matchescu_clustering-0.2.0.dist-info/METADATA,sha256=_37VHlp-F4PMMpc06KKCyCepcUAYBOOeSGxMe_zFAIY,462
+matchescu_clustering-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+matchescu_clustering-0.2.0.dist-info/RECORD,,
