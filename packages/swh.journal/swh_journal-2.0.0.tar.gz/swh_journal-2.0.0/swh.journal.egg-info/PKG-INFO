@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: swh.journal
+Version: 2.0.0
+Summary: Software Heritage Journal utilities
+Author-email: Software Heritage developers <swh-devel@inria.fr>
+Project-URL: Homepage, https://gitlab.softwareheritage.org/swh/devel/swh-journal
+Project-URL: Bug Reports, https://gitlab.softwareheritage.org/swh/devel/swh-journal/-/issues
+Project-URL: Funding, https://www.softwareheritage.org/donate
+Project-URL: Documentation, https://docs.softwareheritage.org/devel/swh-journal/
+Project-URL: Source, https://gitlab.softwareheritage.org/swh/devel/swh-journal.git
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: confluent-kafka!=2.1.0
+Requires-Dist: msgpack!=1.0.1,>=1.0.0
+Requires-Dist: swh.core>=1.1
+Requires-Dist: swh.model>=6.14.0
+Provides-Extra: testing
+Requires-Dist: hypothesis; extra == "testing"
+Requires-Dist: msgpack-types; extra == "testing"
+Requires-Dist: pytest>=8.1; extra == "testing"
+Requires-Dist: pytest-mock; extra == "testing"
+Requires-Dist: swh.core[testing]; extra == "testing"
+Requires-Dist: types-confluent-kafka; extra == "testing"
+Requires-Dist: attrs; extra == "testing"
+Requires-Dist: confluent-kafka; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: swh-model>=6.14.0; extra == "testing"
+Provides-Extra: pytest
+Requires-Dist: attrs; extra == "pytest"
+Requires-Dist: confluent-kafka; extra == "pytest"
+Requires-Dist: pytest; extra == "pytest"
+Requires-Dist: swh-model>=6.14.0; extra == "pytest"
+Dynamic: license-file
+
+swh-journal
+===========
+
+Persistent logger of changes to the archive, with publish-subscribe support.
+
+It allows other ``swh`` components to push log-like event in a Kafka (e.g.
+the ``swh-storage`` can log every added object in Kafka), or to consume these
+events (e.g. the replayer mechanism used to replicate the archive in a mirror).
+
+
+

@@ -1,0 +1,6 @@
+hypothesis
+msgpack-types
+pytest >= 8.1
+pytest-mock
+swh.core[testing]
+types-confluent-kafka
