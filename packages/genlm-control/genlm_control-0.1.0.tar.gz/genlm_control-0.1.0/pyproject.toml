@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=64.0", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "genlm-control"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Ben LeBrun", email = "benlebrun1@gmail.com" },
+    { name = "The GenLM Team" },
+]
+dependencies = [
+    "genlm_grammar>=0.1.0",
+    "genlm-backend>=0.0.1",
+    "hfppl>=0.1.0",
+    "arsenal>=3.1.2",
+    "IPython",
+    "numpy",
+    "torch",
+    "python-lsp-server",
+    "json-stream",
+    "jsonschema[format-nongpl]",
+]
+
+[project.optional-dependencies]
+test = [
+    "coverage",
+    "pytest",
+    "pytest-benchmark",
+    "pytest-asyncio",
+    "pytest-timeout",
+    "hypothesis",
+    "hypothesis-jsonschema",
+]
+docs = [
+    "mkdocs",
+    "mkdocstrings[python]",
+    "mkdocs-material",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-section-index",
+]
+
+[tool.setuptools]
+packages = [
+    "genlm_control",
+    "genlm_control.experimental",
+    "genlm_control.potential",
+    "genlm_control.potential.built_in",
+    "genlm_control.sampler",
+]
+package-data = { "genlm_control" = ["html/*"] }
