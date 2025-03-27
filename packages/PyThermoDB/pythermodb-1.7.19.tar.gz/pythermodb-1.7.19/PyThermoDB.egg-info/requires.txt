@@ -1,0 +1,7 @@
+pandas
+pillow
+requests
+urllib3
+numpy
+PyYAML
+sympy
