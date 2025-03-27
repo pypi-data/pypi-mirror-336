@@ -1,0 +1,674 @@
+Metadata-Version: 2.4
+Name: hydrotools.metrics
+Version: 2.2.0
+Summary: Variety of standard model evaluation metrics.
+Author-email: "Jason A. Regina" <jason.regina@noaa.gov>
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/NOAA-OWP/hydrotools
+Project-URL: Documentation, https://noaa-owp.github.io/hydrotools/hydrotools.metrics.html
+Project-URL: Repository, https://github.com/NOAA-OWP/hydrotools/tree/main/python/metrics
+Project-URL: Bug Tracker, https://github.com/NOAA-OWP/hydrotools/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: arch
+Provides-Extra: develop
+Requires-Dist: pytest; extra == "develop"
+Dynamic: license-file
+
+# OWPHydroTools :: Metrics
+
+This subpackage implements common evaluation metrics used in hydrological model validation and forecast verification. See the [Metrics Documentation](https://noaa-owp.github.io/hydrotools/hydrotools.metrics.html) for a complete list and description of the currently available metrics. To request more metrics, submit an issue through the [OWPHydroTools Issue Tracker](https://github.com/NOAA-OWP/hydrotools/issues) on GitHub.
+
+## Installation
+
+In accordance with the python community, we support and advise the usage of virtual
+environments in any workflow using python. In the following installation guide, we
+use python's built-in `venv` module to create a virtual environment in which the
+tool will be installed. Note this is just personal preference, any python virtual
+environment manager should work just fine (`conda`, `pipenv`, etc. ).
+
+```bash
+# Create and activate python environment, requires python >= 3.8
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ python3 -m pip install --upgrade pip
+
+# Install metrics
+$ python3 -m pip install hydrotools.metrics
+```
+
+## Evaluation Metrics
+
+The following example demonstrates how one might use `hydrotools.metrics` to compute a Threat Score, also called the Critical Success Index, by comparing a persistence forecast to USGS streamflow observations. This example also requires the `hydrotools.nwis_client` package.
+
+### Example Usage
+```python
+from hydrotools.metrics import metrics
+from hydrotools.nwis_client.iv import IVDataService
+import pandas as pd
+
+# Get observed data
+service = IVDataService()
+observed = service.get(
+    sites='01646500',
+    startDT='2020-01-01',
+    endDT='2021-01-01'
+    )
+
+# Preprocess data
+observed = observed[['value_time', 'value']]
+observed = observed.drop_duplicates(['value_time'])
+observed = observed.set_index('value_time')
+
+# Simulate a 10-day persistence forecast
+issue_frequency = pd.Timedelta('6H')
+forecast_length = pd.Timedelta('10D')
+forecasts = observed.resample(issue_frequency).nearest()
+forecasts = forecasts.rename(columns={"value": "sim"})
+
+# Find observed maximum during forecast period
+values = []
+for idx, sim in forecasts.itertuples():
+    obs = observed.loc[idx:idx+forecast_length, "value"].max()
+    values.append(obs)
+forecasts["obs"] = values
+
+# Apply flood criteria using a "Hit Window" approach
+#  A flood is observed or simluated if any value within the
+#  forecast_length meets or exceeds the flood_criteria
+# 
+# Apply flood_criteria to forecasts
+flood_criteria = 19200.0
+forecasts['simulated_flood'] = (forecasts['sim'] >= flood_criteria)
+forecasts['observed_flood'] = (forecasts['obs'] >= flood_criteria)
+
+# Compute contingency table
+contingency_table = metrics.compute_contingency_table(
+    forecasts['observed_flood'],
+    forecasts['simulated_flood']
+)
+print('Contingency Table Components')
+print('============================')
+print(contingency_table)
+
+# Compute threat score/critical success index
+TS = metrics.threat_score(contingency_table)
+print('Threat Score: {:.2f}'.format(TS))
+```
+
+### Output
+```console
+Contingency Table Components
+============================
+true_positive      148
+false_positive       0
+false_negative     194
+true_negative     1123
+dtype: int64
+Threat Score: 0.43
+```
+
+## Event Metrics
+
+The `hydrotools.metrics.events` module contains simple methods for computing common event-scale metrics. The module currently includes `peak`, `flashiness`, and `runoff_ratio`. See the documentation for more information on each of these metrics.
+
+### Example Usage
+
+The following example demonstrates how to compute peak, flashiness, and runoff ratio on an event basis. For the purposes of this analysis, "event" refers to a discrete period of time during which a significant portion of a hydrograph is attributable to rainfall-driven runoff, also called stormflow. The techniques demonstrated rely on a number of hydrophysical assumptions. Generally, these types of events are more easily decomposed from hydrographs of catchments with relatively small drainage areas. Smaller basins make it more likely that a particular instance of rainfall can be associated with a particular period of the hydrograph where streamflow rises above and eventually returns to baseflow. The Eckardt method of baseflow separation further assumes that baseflow linearly recedes as a function of storage. Violation of these assumptions does not necessarily invalidate an analysis on the basis of "events," but will contribute to the uncertainty of the results.
+
+This example requires the `hydrotools.nwis_client` and `hydrotools.events` packages.
+
+```python
+# Import tools to retrieve data and detect events
+from hydrotools.nwis_client.iv import IVDataService
+from hydrotools.events.baseflow import eckhardt as bf
+from hydrotools.events.event_detection import decomposition as ev
+import hydrotools.metrics.events as emet
+
+# Retrieve streamflow observations and precipitation
+service = IVDataService()
+streamflow = service.get(
+    sites="02146470",
+    startDT="2024-03-07",
+    endDT="2025-03-07"
+    )
+precipitation = service.get(
+    sites="351104080521845",
+    startDT="2024-03-07",
+    endDT="2025-03-07",
+    parameterCd="00045"
+    )
+
+# Drop extra columns to be more efficient
+streamflow = streamflow[[
+    "value_time", 
+    "value"
+    ]]
+precipitation = precipitation[[
+    "value_time", 
+    "value"
+    ]]
+
+# Check for duplicate times, keep first by default, index by datetime
+streamflow = streamflow.drop_duplicates(
+    subset=["value_time"]
+    ).set_index("value_time")
+precipitation = precipitation.drop_duplicates(
+    subset=["value_time"]
+    ).set_index("value_time")
+
+# Convert streamflow to hourly mean
+streamflow = streamflow.resample("1h").mean().ffill()
+
+# Perform baseflow separation on hourly time series
+#  Note this method assumes baseflow recedes linearly as a function of
+#  storage. Nonlinearities can arise due to seasonal effects, snowpack,
+#  karst, land surface morphology, and other factors.
+results = bf.separate_baseflow(
+    streamflow["value"],
+    output_time_scale = "1h",
+    recession_time_scale = "12h"
+    )
+streamflow["baseflow"] = results.values
+streamflow["direct_runoff"] = streamflow["value"].sub(
+    streamflow["baseflow"])
+
+# Convert streamflow to runoff inches accumulated per hour
+drainage_area = 2.63 # sq. mi.
+streamflow = streamflow * 3.0 / (drainage_area * 1936.0)
+
+# Find event periods
+events = ev.list_events(
+    streamflow["value"],
+    halflife="6h",
+    window="7d",
+    minimum_event_duration="6h"
+)
+
+# We'll use a buffer to accumulate precipitation before the hydrograph rise
+events["buffer"] = (events["end"] - events["start"]) * 0.5
+
+# Compute event metrics
+events["peak"] = events.apply(
+    lambda e: emet.peak(streamflow.loc[e.start:e.end, "value"]), axis=1)
+events["flashiness"] = events.apply(
+    lambda e: emet.flashiness(streamflow.loc[e.start:e.end, "value"]),
+    axis=1)
+events["runoff_ratio"] = events.apply(
+    lambda e: emet.runoff_ratio(
+        streamflow.loc[e.start:e.end, "direct_runoff"],
+        precipitation.loc[e.start-e.buffer:e.end, "value"]), axis=1)
+
+# Limit to events with physically consistent runoff ratios
+#  This catchment is highly urbanized, so assumptions about baseflow
+#  separation may not always apply. Furthermore, our scheme to capture
+#  relevant rainfall is not perfect.
+print(events.query("runoff_ratio <= 1.0").head())
+```
+
+### Output
+
+```console
+                start                 end          buffer      peak  flashiness  runoff_ratio
+0 2024-03-09 08:00:00 2024-03-13 23:00:00 2 days 07:30:00  0.125302    0.302777      0.352236
+1 2024-03-15 16:00:00 2024-03-18 15:00:00 1 days 11:30:00  0.104386    0.670306      0.260266
+2 2024-03-23 00:00:00 2024-03-25 13:00:00 1 days 06:30:00  0.029563    0.216696      0.182398
+3 2024-03-27 04:00:00 2024-03-31 23:00:00 2 days 09:30:00  0.046777    0.261796      0.271154
+4 2024-04-03 07:00:00 2024-04-04 23:00:00 0 days 20:00:00  0.031041    0.452787      0.180957
+```
+## Flow Duration Curves
+
+Flow duration curves are frequently used to characterize the distribution of values in a time series of streamflow. `hydrotools.metrics.flow_duration_curve` includes methods for generating flow duration curves and quantifying associated sampling uncertainty. In statistical parlance, a flow duration curve is the percentage point function (inverse cumulutive distribution function).
+
+### Empirical Flow Duration Curve
+
+![Empirical Flow Duration Curve](https://raw.githubusercontent.com/NOAA-OWP/hydrotools/main/docs/USGS-02146470-FDC.png)
+
+Empirical flow duration curves use simple rank ordering to generate distributions of data. The following examples require the `hydrotools.nwis_client` package to retrieve observed streamflow data.
+
+```python
+# Required imports
+import pandas as pd
+import hydrotools.metrics.flow_duration_curve as fdc
+from hydrotools.nwis_client.iv import IVDataService
+
+# Get data and preprocess
+client = IVDataService()
+df = client.get(
+    sites="02146470",
+    startDT="2023-10-01T00:00Z",
+    endDT="2024-09-30T23:59Z"
+    )
+df = df.drop_duplicates(["value_time"]).set_index("value_time")
+df = df[["value"]].resample("1d").mean()
+
+# Generate flow duration curve
+probabilities, values = fdc.empirical_flow_duration_curve(df["value"])
+
+# Generate 95% confidence intervals
+_, boundaries = fdc.bootstrap_flow_duration_curve(
+    df["value"],
+    quantiles=[0.025, 0.975]
+    )
+
+# Look at the data
+print(pd.DataFrame({
+    "exceedance_probability": probabilities,
+    "streamflow_cfs": values,
+    "lower_estimate_95CI": boundaries[0],
+    "upper_estimate_95CI": boundaries[1]
+}).head())
+```
+
+#### Output
+
+```console
+   exceedance_probability  streamflow_cfs  lower_estimate_95CI  upper_estimate_95CI
+0                0.002717      185.652603            66.613579           185.652603
+1                0.005435      120.807648            63.947605           185.652603
+2                0.008152      104.227921            48.191597           185.652603
+3                0.010870       66.613579            39.808090           120.807648
+4                0.013587       64.890656            36.865105           120.807648
+```
+
+### Log Pearson Type-III Flow Duration Curve
+
+![Log Pearson Type-III Curve](https://raw.githubusercontent.com/NOAA-OWP/hydrotools/main/docs/USGS-02146470-PER.png)
+
+The log Pearson Type-III distribution is commonly used to model flow duration curves, especially for annual peak series. The following examples require the `hydrotools.nwis_client` package to retrieve observed streamflow data.
+
+```python
+# Required imports
+import pandas as pd
+import hydrotools.metrics.flow_duration_curve as fdc
+from hydrotools.nwis_client.iv import IVDataService
+
+# Get data and preprocess
+client = IVDataService()
+df = client.get(
+    sites="02146470",
+    startDT="2023-10-01T00:00Z",
+    endDT="2024-09-30T23:59Z"
+    )
+df = df.drop_duplicates(["value_time"]).set_index("value_time")
+df = df[["value"]].resample("1d").mean()
+
+# Generate flow duration curve
+#  Note the log Pearson Type-III cannot handle zero values.
+probabilities, values = fdc.pearson_flow_duration_curve(
+    df.loc[df["value"] > 0.0, "value"])
+
+# Generate 95% confidence intervals
+_, boundaries = fdc.bootstrap_flow_duration_curve(
+    df.loc[df["value"] > 0.0, "value"],
+    quantiles=[0.025, 0.975],
+    fdc_generator=fdc.pearson_flow_duration_curve
+    )
+
+# Look at the data
+print(pd.DataFrame({
+    "exceedance_probability": probabilities,
+    "streamflow_cfs": values,
+    "lower_estimate_95CI": boundaries[0],
+    "upper_estimate_95CI": boundaries[1]
+}).head())
+```
+#### Output
+```console
+   exceedance_probability  streamflow_cfs  lower_estimate_95CI  upper_estimate_95CI
+0                0.003716      185.652557            66.613571           185.652557
+1                0.003787      182.314682            65.599373           182.378235
+2                0.003860      179.036835            64.600616           179.161758
+3                0.003934      175.817902            63.617050           176.001938
+4                0.004009      172.656952            62.648510           172.897842
+```
+
+### Flow Duration Curve Metrics
+
+The `flow_duration_curve` module also includes methods to compute common flow duration curve metrics.
+
+```python
+# Get data and preprocess
+client = IVDataService()
+df = client.get(
+    sites="02146470",
+    startDT="2023-10-01T00:00Z",
+    endDT="2024-09-30T23:59Z"
+    )
+df = df.drop_duplicates(["value_time"]).set_index("value_time")
+
+# Change this step to resample to relevant frequencies
+#   This example uses mean daily flow. So, derived exeedances and
+#   and recurrences will refer to the "Daily Exeedance Probability" and
+#   "Daily Recurrence Interval".
+df = df[["value"]].resample("1d").mean()
+
+# Generate flow duration curve
+probabilities, values = fdc.empirical_flow_duration_curve(df["value"])
+
+# Generate 95% confidence intervals
+_, boundaries = fdc.bootstrap_flow_duration_curve(
+    df["value"],
+    quantiles=[0.025, 0.975]
+    )
+
+# Interpolate values for specific exceedance probabilities
+exceedance_probabilities = [0.01, 0.5, 0.67]
+exceedance_values = fdc.interpolate_exceedance_values(
+    points=exceedance_probabilities,
+    probabilities=probabilities,
+    values=values
+)
+
+# Get corresponding confidence intervals
+lower_exceedance_values = fdc.interpolate_exceedance_values(
+    points=exceedance_probabilities,
+    probabilities=probabilities,
+    values=boundaries[0]
+)
+upper_exceedance_values = fdc.interpolate_exceedance_values(
+    points=exceedance_probabilities,
+    probabilities=probabilities,
+    values=boundaries[1]
+)
+
+# Interpolate values for specific recurrence intervals
+recurrence_intervals = [1.5, 10.0, 100.0]
+recurrence_values = fdc.interpolate_recurrence_values(
+    points=recurrence_intervals,
+    probabilities=probabilities,
+    values=values
+)
+
+# Get corresponding confidence intervals
+lower_recurrence_values = fdc.interpolate_recurrence_values(
+    points=recurrence_intervals,
+    probabilities=probabilities,
+    values=boundaries[0]
+)
+upper_recurrence_values = fdc.interpolate_recurrence_values(
+    points=recurrence_intervals,
+    probabilities=probabilities,
+    values=boundaries[1]
+)
+
+# Generate standard flow variability metrics
+flow_variability = fdc.richards_flow_responsiveness(
+    probabilities,
+    values
+)
+flow_variability_low_estimate = fdc.richards_flow_responsiveness(
+    probabilities,
+    boundaries[0]
+)
+flow_variability_upper_estimate = fdc.richards_flow_responsiveness(
+    probabilities,
+    boundaries[1]
+)
+
+# View results
+print("DAILY EXCEEDANCE PROBABILITIES")
+print("==============================")
+print(pd.DataFrame({
+    "exceedance_probability": exceedance_probabilities,
+    "exceedance_value": exceedance_values,
+    "lower_estimate_95CI": lower_exceedance_values,
+    "upper_estimate_95CI": upper_exceedance_values
+}),"\n")
+print("DAILY RECURRENCE INTERVALS")
+print("==========================")
+print(pd.DataFrame({
+    "recurrence_interval": recurrence_intervals,
+    "recurrence_value": recurrence_values,
+    "lower_estimate_95CI": lower_recurrence_values,
+    "upper_estimate_95CI": upper_recurrence_values
+}),"\n")
+print("RICHARDS FLOW VARIABILITY METRICS")
+print("=================================")
+print(pd.DataFrame([
+    flow_variability,
+    flow_variability_low_estimate,
+    flow_variability_upper_estimate
+    ], index=["nominal", "lower_CI95", "upper_CI95"]))
+```
+
+#### Output
+
+```console
+DAILY EXCEEDANCE PROBABILITIES
+==============================
+   exceedance_probability  exceedance_value  lower_estimate_95CI  upper_estimate_95CI
+0                    0.01         78.650168            42.490812           141.558033
+1                    0.50          1.034132             0.861215             1.187361
+2                    0.67          0.670954             0.555178             0.820956 
+
+DAILY RECURRENCE INTERVALS
+==========================
+   recurrence_interval  recurrence_value  lower_estimate_95CI  upper_estimate_95CI
+0                  1.5          0.674086             0.556111             0.848877
+1                 10.0          9.806313             6.054264            14.848021
+2                100.0         78.650168            42.490812           141.558033 
+
+RICHARDS FLOW VARIABILITY METRICS
+=================================
+                10R90     20R80     25R75       .5S       .6S        .8S       CVLF5
+nominal     24.456346  5.222382  3.274392  1.213142  2.072303   9.094914    4.403239
+lower_CI95  16.956743  3.809411  3.054882  1.145003  1.491005   6.615329  144.413910
+upper_CI95  32.290005  7.858763  3.805921  1.590946  3.350040  12.117785    2.474570
+```
