@@ -1,0 +1,9 @@
+README.md
+setup.py
+custom_salesforce_bulk/__init__.py
+custom_salesforce_bulk/source.py
+custom_salesforce_bulk/source_salesforce_bulk.py
+custom_salesforce_bulk.egg-info/PKG-INFO
+custom_salesforce_bulk.egg-info/SOURCES.txt
+custom_salesforce_bulk.egg-info/dependency_links.txt
+custom_salesforce_bulk.egg-info/top_level.txt
