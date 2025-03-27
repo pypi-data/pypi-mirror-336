@@ -1,0 +1,47 @@
+Metadata-Version: 2.2
+Name: raugen
+Version: 0.0.5
+Summary: A framework for designing and creating AI Agents
+Home-page: https://github.com/yigerenwan/raugen
+Author: Yigerenwan
+Author-email: raugenai@gmail.com
+Keywords: AI Agents
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate==0.29.2
+Requires-Dist: auto-gptq==0.7.1
+Requires-Dist: ctranslate2==3.11.0
+Requires-Dist: numpy==1.24.2
+Requires-Dist: optimum==1.16.0
+Requires-Dist: pysbd==0.3.4
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: sentencepiece==0.1.98
+Requires-Dist: sentence-splitter==1.4
+Requires-Dist: spacy==3.5.2
+Requires-Dist: torch==2.2.2
+Requires-Dist: tqdm==4.65.0
+Requires-Dist: transformers==4.39.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Raugen - A framework for designing and creating AI Agents
+
+## Overview
+
+Raugen is a framework for designing and creating AI Agents. It is designed to be modular and easy to use.
+
+
