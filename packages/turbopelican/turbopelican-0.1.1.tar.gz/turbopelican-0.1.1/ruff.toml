@@ -1,0 +1,20 @@
+namespace-packages = ["src/turbopelican/newsite"]
+
+[lint]
+select = ["ALL"]
+ignore = [
+    # Rulesets
+    "EM",
+    "T20",
+
+    # Specific rules
+    "TRY003",
+    "S603"
+]
+
+[lint.extend-per-file-ignores]
+"__main__.py" = ["BLE001"]
+
+[lint.pydocstyle]
+convention = "google"
+
