@@ -1,0 +1,119 @@
+Metadata-Version: 2.4
+Name: cubicpy
+Version: 0.1.0
+Summary: A Python library for creating 3D basic shape models and animations with Physics.
+Home-page: https://github.com/creativival/CubicPy
+Author: creativival
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education :: Computer Aided Instruction (CAI)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: panda3d>=1.10.15
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CubicPy
+
+![CubicPy Logo](./assets/logo.png)
+
+CubicPyは、子供向けのPython学習用3D物理シミュレーションアプリケーションです。Pythonコードを書いて、マインクラフトのようにブロックを組み立て、物理の法則に従って動く世界を作成できます。
+
+## 概要
+
+CubicPyは、Pythonプログラミングと物理シミュレーションを楽しく学ぶためのツールです。子供たちがコードを書くことで、3D空間に箱や球などの物体を配置し、重力や衝突などの物理法則を体験できます。
+
+## 特徴
+
+- **Pythonコーディング**: シンプルなPythonコードで3D構造物を定義
+- **リアルタイム物理シミュレーション**: 重力や衝突を実際に観察できる
+- **カスタマイズ可能**: 位置、サイズ、色、質量などを自由に設定
+- **インタラクティブな環境**: キー操作でカメラや重力を調整可能
+- **安全な実行環境**: 子供が安全にコードを実験できる制限付き環境
+
+## 使い方
+
+### インストール
+
+1. このリポジトリをクローンします:
+```
+git clone https://github.com/yourusername/CubicPy.git
+cd CubicPy
+```
+
+2. 必要なライブラリをインストールします:
+```
+pip install panda3d panda3d-bullet
+```
+
+### 実行方法
+
+1. サンプルコードを `codes` フォルダに保存します（例: `box_tower.py`）
+2. 以下のコマンドで実行します:
+```
+python main.py
+```
+
+## サンプルコード
+
+### 箱の塔を作る (box_tower.py)
+
+```python
+body_data = []
+for i in range(10):
+    body_data.append({
+        'type': 'box',
+        'pos': (0, 0, i),
+        'scale': (1, 1, 1),
+        'color': (i / 10, 0, 1 - i / 10),
+    })
+```
+
+このコードは10個の箱を縦に積み重ね、高さによって色が変化する塔を作成します。
+
+## オブジェクトの定義方法
+
+CubicPyでは、以下のようなパラメータを設定できます：
+
+- `type`: 物体の種類 ('box', 'sphere', 'cylinder' など)
+- `pos`: 位置座標 (x, y, z)
+- `scale`: 大きさ (幅, 奥行き, 高さ)
+- `color`: 色 (赤, 緑, 青) - 各値は0〜1
+- `mass`: 質量（省略可、デフォルトは1）
+- `hpr`: 回転角度（heading, pitch, roll）（省略可）
+- `position_mode`: 位置基準（省略可）
+
+## 操作方法
+
+- **矢印キー**: カメラ角度の変更
+- **マウスホイール**: ズームイン/アウト
+- **W/S/A/D**: 地面を傾ける
+- **F/G**: 重力の強さを変更
+- **R**: リセット
+- **ESC**: 終了
+
+## 必要条件
+
+- Python 3.6以上
+- Panda3D
+- Panda3D-Bullet物理エンジン
+
+## ライセンス
+
+MITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+
+## 貢献
+
+バグ報告や機能改善の提案は、GitHubのIssueやPull Requestでお願いします。
+
+---
+
+楽しくPythonと物理を学びましょう！
