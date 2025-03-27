@@ -1,0 +1,2 @@
+[console_scripts]
+smash = smash_core.cli:main

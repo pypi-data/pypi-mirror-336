@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+smash_cli.egg-info/PKG-INFO
+smash_cli.egg-info/SOURCES.txt
+smash_cli.egg-info/dependency_links.txt
+smash_cli.egg-info/entry_points.txt
+smash_cli.egg-info/top_level.txt
+smash_core/__init__.py
+smash_core/cli.py
+smash_core/commands.py
+smash_core/project.py
+smash_core/smashlets.py
