@@ -1,0 +1,3 @@
+[console_scripts]
+pyalmgw_stub_connector=ansys.scade.pyalmgw.stub:main
+
