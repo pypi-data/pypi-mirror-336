@@ -1,0 +1,10 @@
+dtpydb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtpydb/config.py,sha256=hT0muKl9HFExCcJvIVBvPc3GBt8IcImW5LaUNwyED5M,1500
+dtpydb/database.py,sha256=7sWrPZgA-oDUIOyEwTt59JOH0aqoSYAvrsu9PM3mIfI,8310
+dtpydb/health.py,sha256=HRbh1N6oUdz7xBWbUAmlaJBMUbcGrSKH-3pqotgw6Ok,336
+dtpydb/model.py,sha256=WhmvfHjg9dGqhn4kWKbEk8HwOPxaiMNP3I7QgL4zpq8,6150
+dtpydb/search.py,sha256=I_MQKXXgnKwuPeUdhVV-7xqpztOB_yjUDIgEKPie6NM,14499
+dtpydb/utilities.py,sha256=O2B8dCaI0JjPFLPpXVFS_xXfdAMALVr1J2v08TqVKlA,1021
+dtpydb-1.0.4.dist-info/METADATA,sha256=aNFPvs6vB0uDYEdRMr19usaAWzCvqSTUQpp2Bw_e5dM,3058
+dtpydb-1.0.4.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dtpydb-1.0.4.dist-info/RECORD,,
