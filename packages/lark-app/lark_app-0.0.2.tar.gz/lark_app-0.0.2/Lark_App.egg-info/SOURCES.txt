@@ -1,0 +1,14 @@
+README.md
+setup.py
+Lark_App.egg-info/PKG-INFO
+Lark_App.egg-info/SOURCES.txt
+Lark_App.egg-info/dependency_links.txt
+Lark_App.egg-info/not-zip-safe
+Lark_App.egg-info/requires.txt
+Lark_App.egg-info/top_level.txt
+lark_app.egg-info/PKG-INFO
+lark_app.egg-info/SOURCES.txt
+lark_app.egg-info/dependency_links.txt
+lark_app.egg-info/not-zip-safe
+lark_app.egg-info/requires.txt
+lark_app.egg-info/top_level.txt
