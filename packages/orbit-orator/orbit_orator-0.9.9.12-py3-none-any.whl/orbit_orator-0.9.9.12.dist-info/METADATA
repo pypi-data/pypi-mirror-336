@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: orbit-orator
+Version: 0.9.9.12
+Summary: A simple ORM for Python
+Home-page: https://github.com/maxiaoyu/orator
+Author: Maxiaoyu
+Author-email: Maxiaoyu <maxiaoyu@example.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/maxiaoyu/orator
+Project-URL: Repository, https://github.com/maxiaoyu/orator.git
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: backpack>=0.1
+Requires-Dist: blinker>=1.4
+Requires-Dist: cleo>=0.6
+Requires-Dist: inflection>=0.5.1
+Requires-Dist: Faker>=0.8
+Requires-Dist: lazy-object-proxy>=1.2
+Requires-Dist: pendulum>=1.4
+Requires-Dist: pyaml>=16.12
+Requires-Dist: pyyaml<7.0,>=5.1
+Requires-Dist: Pygments>=2.2
+Requires-Dist: simplejson>=3.10
+Requires-Dist: six>=1.10
+Requires-Dist: wrapt>=1.10
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Orbit-Orator
+
+A simple ORM for Python, forked from Orator.
+
+## Installation
+
+```bash
+pip install orbit-orator
+```
+
+## Basic Usage
+
+```python
+from orbit_orator import DatabaseManager, Model
+
+config = {
+    'mysql': {
+        'driver': 'mysql',
+        'host': 'localhost',
+        'database': 'database',
+        'user': 'root',
+        'password': '',
+        'prefix': ''
+    }
+}
+
+db = DatabaseManager(config)
+Model.set_connection_resolver(db)
+
+class User(Model):
+    pass
+
+users = User.where('votes', '>', 100).take(10).get()
+
+for user in users:
+    print(user.name)
+```
+
+## License
+
+MIT License 
