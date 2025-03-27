@@ -1,0 +1,17 @@
+imma/__init__.py,sha256=9lh7N4VI04vYSIgue-sGPRNVWgCF_AIh3ZQy_90435o,77
+imma/dili.py,sha256=sJn0vSYDm9nt0reVx_aHRNCtzk5IoUvGguD9LABBPnA,11435
+imma/geometry3d.py,sha256=b4i9lxihwuCwqYabe0yTXc2paBwFfYzy5U9BM83rF78,33747
+imma/image.py,sha256=s5rWarc_lzVttGApSTgbX5Rvc-n4pUCVBkuXKTwOF6s,14568
+imma/image_manipulation.py,sha256=lRjR2zxiqFwbZgTIQb8-7ml7MPPWTOYQKvzXtxXa6OI,988
+imma/labeled.py,sha256=VHGjbTcCyIw4qQa7MnuUa_MsAe19rZI80u9pNYc8CbY,6916
+imma/measure.py,sha256=q0Hg_dZyU6dM_dLTEiyup0ZoPPRVDmRx81UaTktTp54,6010
+imma/obj.py,sha256=qub9SE9QpuoXBk3T3PoXHZ3R-oTJHTqJdFbNau1qjv4,808
+imma/segmentation_labels.py,sha256=R_TZ9Wxm2hIHBWBGIei7pcH4yKWDNEWlUUEURjAhv-k,5286
+imma/sparse.py,sha256=uwKC456Fshk19wnHD0mjT0PfWUIroy6IIVjFmKA0vtc,564
+imma/via.py,sha256=yyEbPiR-DP7sL_NHtfYjdJOsi1Z4ORHaTiTCCH9MiwQ,2450
+imma/volumetry_evaluation.py,sha256=qY60T3Uk532mhPMgI4xeXiozryGkwlpjLL6Bl9nAOn8,27437
+imma-0.18.8.dist-info/licenses/LICENSE,sha256=nieZAuAPR84o41qpZHdP2nPcWZxYD3OkZ0N_fgxRmlY,1094
+imma-0.18.8.dist-info/METADATA,sha256=kLLnYG8wrtV2vVIwWNtS-My07yoSSWHqfDcBa4Rkczo,561
+imma-0.18.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+imma-0.18.8.dist-info/top_level.txt,sha256=k_4Ns2FA6jMNUh5gErGho7J8HpFNqhHemYquqJ9nrUc,5
+imma-0.18.8.dist-info/RECORD,,
