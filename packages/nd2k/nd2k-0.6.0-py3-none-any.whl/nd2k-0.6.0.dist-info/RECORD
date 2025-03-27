@@ -1,0 +1,9 @@
+nd2k/__init__.py,sha256=PJRevqQCubu3o3N4k2nmFF7zwPzuQAVnvKGjGi99_cU,88
+nd2k/main.py,sha256=gCdGy0XQUwYhJ109pamT9TUw4UIG-C2v4fs7L4D5FYE,3539
+nd2k/queries.py,sha256=x4xRwApaIokYntg6bkxgogXH9NI-HgPDHHvvRTC1tUY,1531
+nd2k/types.py,sha256=ez9ZSJj8hI___XW94UmONkd97agb4cgP8kC4YomVQ34,1230
+nd2k/utils.py,sha256=ePd-xMtW5hXxPZi1U47LFNGwww-YMOBmpZ1VLyzeezg,2290
+nd2k-0.6.0.dist-info/entry_points.txt,sha256=ymuSFiyOMhd6qbAO2XUVGzOKzaSgF5d_7P-WPLD1XSc,45
+nd2k-0.6.0.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+nd2k-0.6.0.dist-info/METADATA,sha256=hj1HGsI_PhPpn8x9WrSA6o0XpeoMjacqt7ENG8iJpiA,2881
+nd2k-0.6.0.dist-info/RECORD,,
