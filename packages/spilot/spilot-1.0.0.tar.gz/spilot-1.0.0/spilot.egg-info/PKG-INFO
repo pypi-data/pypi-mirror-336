@@ -1,0 +1,126 @@
+Metadata-Version: 2.4
+Name: spilot
+Version: 1.0.0
+Summary: A terminal-based SLURM job monitoring utility that provides a clean, interactive TUI for viewing and managing jobs on HPC clusters.
+Home-page: https://github.com/atrey-a/spilot
+Author: Saurabh Atreya
+Author-email: saurabh@atrey-a.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: textual>=0.38.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# spilot
+
+A terminal-based SLURM job monitoring utility that provides a clean, interactive TUI for viewing and managing jobs on HPC clusters.
+
+<div align="center">
+
+[![PyPI version](https://img.shields.io/pypi/v/spilot.svg)](https://pypi.org/project/spilot/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+</div>
+
+## Installation
+
+```bash
+pip install spilot
+```
+
+## Usage
+
+After installation, simply run:
+
+```bash
+spilot
+```
+
+⚠️ If SLURM is not installed, the application will display a notification banner.
+
+### Keyboard Controls
+
+- `q`: Quit the application
+- `r`: Refresh data in the current view
+- `h`: Switch to hardware configuration view
+- `j`: Switch to job submission view
+- `m`: Monitor the selected job's output
+- `c`: Cancel the selected job
+- `b`: Go back to the main jobs view
+
+## Features
+
+- Clean, interactive terminal user interface using [`textual`](https://textual.textualize.io/)
+- Real-time display and management of SLURM jobs
+- Detailed job information including IDs, states, time limits, and more
+- Hardware status monitoring for partitions and nodes
+- Job submission interface with form-based input
+- Real-time job output monitoring (stdout and stderr)
+- Job cancellation capability
+- Automatic detection of SLURM availability
+- Refresh data with a single keypress
+
+## Views
+
+### Jobs View
+The main view displays all running and pending SLURM jobs, with your own jobs displayed at the top. Select a job to view detailed information.
+
+### Hardware View
+Displays information about SLURM partitions and nodes, including states, available resources, and detailed configuration.
+
+### Job Submission View
+Form-based interface for creating and submitting new SLURM jobs with options for partition selection, resource allocation, and job parameters.
+
+### Job Monitor View
+Real-time monitoring of job output, displaying both stdout and stderr streams as they are generated.
+
+## Requirements
+
+- Python 3.7+
+- SLURM installation
+
+Dependencies including [`textual`](https://textual.textualize.io/) are automatically installed.
+
+## Development
+
+To set up the development environment:
+
+```bash
+git clone https://github.com/atrey-a/spilot.git
+cd spilot
+pip install -e .
+```
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/atrey-a/spilot/blob/main/LICENSE) file for details.
+
+## Links
+
+- PyPI: [https://pypi.org/project/spilot/](https://pypi.org/project/spilot/)
+- Issues: [GitHub Issues](https://github.com/atrey-a/spilot/issues)
+
+## Roadmap
+
+spilot is under development. Upcoming releases will include:
+
+- v1.1.0: Confirmation dialogs, immediate job monitoring, performance improvements
+- v1.2.0: Theme support, enhanced job submission, broader compatibility
+
+For a detailed list of planned features, please see the [ROADMAP.md](https://github.com/atrey-a/spilot/blob/main/ROADMAP.md) file.
+
+## Contributing
+
+Please see [CONTRIBUTION.md](https://github.com/atrey-a/spilot/blob/main/CONTRIBUTION.md) for details on how to contribute to this project.
