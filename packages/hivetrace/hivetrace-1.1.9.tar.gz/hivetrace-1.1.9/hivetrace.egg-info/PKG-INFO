@@ -1,0 +1,219 @@
+Metadata-Version: 2.1
+Name: hivetrace
+Version: 1.1.9
+Summary: Hivetrace SDK for monitoring LLM applications
+Home-page: http://hivetrace.ai
+Author: Raft
+Author-email: sales@raftds.com
+License: UNKNOWN
+Description: Hivetrace SDK
+        
+        Description
+        Hivetrace SDK is designed for integration with the Hivetrace service, providing monitoring of user prompts and LLM responses.
+        
+        Installation
+        Install the SDK via pip:
+        
+        ```bash
+        pip install hivetrace
+        ```
+        
+        Usage
+        
+        ```python
+        from hivetrace import HivetraceSDK
+        ```
+        
+        Initialize the SDK
+        
+        ```python
+        hivetrace = HivetraceSDK()
+        ```
+        
+        Send a user prompt
+        
+        ```python
+        response = hivetrace.input(
+            application_id="your-application-id", # get after registering the application in the UI
+            message="User prompt here"
+        )
+        ```
+        
+        Send a response from your LLM
+        
+        ```python
+        response = hivetrace.output(
+            application_id="your-application-id", # get after registering the application in the UI
+            message="LLM response here"
+        )
+        ```
+        
+        Example with additional parameters
+        
+        ```python
+        response = hivetrace.input(
+            application_id="your-application-id",
+            message="User prompt here",
+            additional_parameters={
+                "session_id": "your-session-id",
+                "user_id": "your-user-id",
+                "agents": {
+                    "agent-1-id": {"name": "Agent 1", "description": "Agent description"},
+                    "agent-2-id": {"name": "Agent 2"},
+                    "agent-3-id": {}
+                }
+            }
+        )
+        ```
+        
+        Send a function call
+        
+        ```python
+        response = hivetrace.function_call(
+            application_id="your-application-id",
+            tool_call_id="your-tool-call-id", # get id from LLM tool_calls/function_calls
+            func_name="your_funcion",
+            func_args="{'param': value}",
+            func_result="{'result': values}", # nullable
+            addtional_parameters=...
+        )
+        ```
+        
+        ## Synchronous and Asynchronous Modes
+        Hivetrace SDK supports both synchronous and asynchronous execution modes.
+        
+        ### Initialization with Sync/Async Mode
+        By default, the SDK operates in asynchronous mode. You can explicitly specify the mode during initialization:
+        
+        ```python
+        # Async mode (default)
+        hivetrace = HivetraceSDK(async_mode=True)
+        
+        # Sync mode
+        hivetrace = HivetraceSDK(async_mode=False)
+        ```
+        
+        ### Sending Requests in Async Mode
+        When using async mode, ensure you call the SDK methods inside an async function:
+        
+        ```python
+        import asyncio
+        
+        async def main():
+            hivetrace = HivetraceSDK(async_mode=True)
+            response = await hivetrace.input(
+                application_id="your-application-id",
+                message="User prompt here"
+            )
+            print(response)
+            await hivetrace.close()
+        
+        asyncio.run(main())
+        ```
+        
+        ### Sending Requests in Sync Mode
+        If you prefer synchronous execution, you can call the SDK methods normally:
+        
+        ```python
+        hivetrace = HivetraceSDK(async_mode=False)
+        response = hivetrace.input(
+            application_id="your-application-id",
+            message="User prompt here"
+        )
+        print(response)
+        ```
+        
+        ### Closing the Async Client
+        If you're using async mode, remember to close the session when done:
+        
+        ```python
+        await hivetrace.close()
+        ```
+        
+        API
+        
+        #### `input(application_id: str, message: str, additional_parameters: dict = None) -> dict`
+        Sends a user prompt to Hivetrace.
+        
+        - `application_id` - Application identifier (must be a valid UUID, created in the UI)
+        - `message` - User prompt
+        - `additional_parameters` - Dictionary of additional parameters (optional)
+        
+        Response Example:
+        
+        ```json
+        {
+            "status": "processed",
+            "monitoring_result": {
+                "is_toxic": false,
+                "type_of_violation": "benign",
+                "token_count": 9,
+                "token_usage_warning": false,
+                "token_usage_unbounded": false
+            }
+        }
+        ```
+        
+        #### `output(application_id: str, message: str, additional_parameters: dict = None) -> dict`
+        Sends an LLM response to Hivetrace.
+        
+        - `application_id` - Application identifier (must be a valid UUID, created in the UI)
+        - `message` - LLM response
+        - `additional_parameters` - Dictionary of additional parameters (optional)
+        
+        Response Example:
+        
+        ```json
+        {
+            "status": "processed",
+            "monitoring_result": {
+                "is_toxic": false,
+                "type_of_violation": "safe",
+                "token_count": 21,
+                "token_usage_warning": false,
+                "token_usage_unbounded": false
+            }
+        }
+        ```
+        
+        #### `function_call(application_id: str, tool_call_id: str, func_name: str, func_args: str, func_result: Optional[str], additional_parameters: dict = None) -> dict`
+        Sends a function call to Hivetrace.
+        
+        - `application_id` - Application identifier (must be a valid UUID, created in the UI)
+        - `tool_call_id` - Identifier of function call returned by LLM API
+        - `func_name` - Name of function
+        - `func_args` - Arguments for function execution returned by LLM API
+        - `func_result` - Result of function execution (optional)
+        - `additional_parameters` - Dictionary of additional parameters (optional)
+        
+        Response Example:
+        
+        ```json
+        {
+            "status": "processed",
+            "monitoring_result": "PASS"
+        }
+        ```
+        
+        ### Configuration
+        The SDK loads configuration from environment variables. The allowed domain (`HIVETRACE_URL`) and access token (`HIVETRACE_ACCESS_TOKEN`) are automatically retrieved from the environment.
+        
+        #### Configuration Sources
+        Hivetrace SDK can retrieve the configuration from the following sources:
+        
+        **.env File:**
+        
+        ```ini
+        HIVETRACE_URL=https://your-hivetrace-instance.com
+        HIVETRACE_ACCESS_TOKEN=your-access-token
+        ```
+        
+        The SDK will automatically load this.
+        
+        ## License
+        This project is licensed under the Apache License 2.0.
+Keywords: SDK,monitoring,logging,LLM,AI,Hivetrace
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
