@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: circle-schema
+Version: 0.9.0
+Summary: Python bindings for circle schema for project ONE
+Home-page: https://github.com/Samsung/ONE
+Author: nnfw
+Author-email: nnfw@samsung.com
+Keywords: Samsung,ONE,AI,AI framework,circle
+Requires-Dist: flatbuffers >=1.11
+Requires-Dist: numpy
+
