@@ -1,0 +1,2 @@
+ravendb-embedded==7.0.0
+ravendb~=7.0.0
