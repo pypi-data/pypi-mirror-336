@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: helica
+Version: 0.1.0
+Summary: Hierarchical Lens Inference using Conjugate point Analysis
+Home-page: https://github.com/huangxy256/helica
+Author: Xiangyu Huang
+Author-email: xiangyu.huang.1024@gmail.com
+License: MIT license
+Keywords: helica
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click>=7.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+======
+Helica
+======
+
+
+.. image:: https://img.shields.io/pypi/v/helica.svg
+        :target: https://pypi.python.org/pypi/helica
+
+.. image:: https://img.shields.io/travis/huangxy256/helica.svg
+        :target: https://travis-ci.com/huangxy256/helica
+
+.. image:: https://readthedocs.org/projects/helica/badge/?version=latest
+        :target: https://helica.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Hierarchical Lens Inference using Conjugate point Analysis
+
+
+* Free software: MIT license
+* Documentation: https://helica.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2025-03-11)
+------------------
+
+* First release on PyPI.
