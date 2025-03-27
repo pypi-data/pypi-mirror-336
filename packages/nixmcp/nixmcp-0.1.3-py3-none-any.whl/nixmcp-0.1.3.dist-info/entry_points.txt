@@ -1,0 +1,2 @@
+[console_scripts]
+nixmcp = nixmcp.__main__:mcp.run
