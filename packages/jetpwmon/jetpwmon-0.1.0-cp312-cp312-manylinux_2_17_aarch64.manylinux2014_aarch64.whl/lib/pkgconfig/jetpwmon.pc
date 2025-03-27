@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: jetpwmon
+Description: A simple power monitor for Jetson
+Version: 0.1
+Libs: -L${libdir} -ljetpwmon
+Cflags: -I${includedir} 
