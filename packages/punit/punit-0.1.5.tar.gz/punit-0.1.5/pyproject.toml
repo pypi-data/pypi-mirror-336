@@ -1,0 +1,39 @@
+[project]
+name = "punit"
+version = "0.1.5"
+description = "A modernized unit-test framework for Python."
+keywords = ["test", "unittest", "unit-test"]
+authors = [
+    { name="Shaun Wilson", email="mrshaunwilson@msn.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers"
+]
+
+[project.urls]
+Documentation = "https://punit.readthedocs.io/"
+Homepage = "https://github.com/wilson0x4d/punit"
+Repository = "https://github.com/wilson0x4d/punit.git"
+
+[project.scripts]
+punit = "punit:__main__.main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = [
+    "docs",
+    "src",
+    "src.*",
+    "tests",
+    "tests.*"
+]
