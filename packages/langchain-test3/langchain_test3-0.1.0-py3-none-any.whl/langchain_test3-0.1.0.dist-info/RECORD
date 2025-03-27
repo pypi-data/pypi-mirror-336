@@ -1,0 +1,11 @@
+langchain_test3/__init__.py,sha256=TzfA37G3zPRf6vipzLaQ-M3GbVdlQ3nbGs8z4TuLkuk,475
+langchain_test3/embeddings.py,sha256=eaQXQRH9hU8mWL5qxZcip1Xc_X_RUt2Yf5zW29-5E1c,1956
+langchain_test3/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_test3/query_constructors.py,sha256=t2cr_pjZiiDqQnlXeNPvH6qjlJizLouKElBMauaUZUc,1689
+langchain_test3/utils.py,sha256=rr2d6X-o_LlpRTdRGKv66n7u8egNDGfgXvT0Uv1EYA4,335
+langchain_test3/vectorstores.py,sha256=cpGl8HPOukCq2BWrS_lWsWa2Fqi_IaCcG_9s77LN7Gg,45923
+langchain_test3-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+langchain_test3-0.1.0.dist-info/LICENSES/Apache-2.0.txt,sha256=m_Togr3XXo0Q_HiMU9Cnh-8PWc6tH-Hwh4wkCJb8hhA,10353
+langchain_test3-0.1.0.dist-info/METADATA,sha256=erC4owIP2QqGr2lFLA0da4n9fhrOY8PvY3fL8TMSmqI,4269
+langchain_test3-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+langchain_test3-0.1.0.dist-info/RECORD,,
