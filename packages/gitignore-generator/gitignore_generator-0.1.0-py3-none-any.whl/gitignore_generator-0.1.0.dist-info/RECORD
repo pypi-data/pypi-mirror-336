@@ -1,0 +1,9 @@
+gitignore_generator/__init__.py,sha256=KrtilrrVjzd0_OpW9a5IKgS4rLwv5h1Ncs7T_-P7Sj8,23
+gitignore_generator/main.py,sha256=b2-VHwMOgRHY31BKCBG9rRlj89dEcsjgOFzOztA1J2A,4398
+gitignore_generator-0.1.0.data/data/templates/javascript.txt,sha256=QJDOur87veLcyh4L896_z_QI70NfTDchD-JB5U0AJVo,1287
+gitignore_generator-0.1.0.data/data/templates/python.txt,sha256=fPHT6Aw5r64KRMM47FKcyfa2faoh4mwcrd-tqSPONWU,1176
+gitignore_generator-0.1.0.dist-info/METADATA,sha256=Rzj2cO3svjQJJDk9vRsKfioRXNo_TFSlA0ski5heBKk,1479
+gitignore_generator-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gitignore_generator-0.1.0.dist-info/entry_points.txt,sha256=VO5OImXNOjvjI2_QrB57ZDfMjyW4qb_sskav8cgeR_I,59
+gitignore_generator-0.1.0.dist-info/top_level.txt,sha256=uCe-sTg2jlnDZ4SzxqcGFulPuVo3p_qB7XxVjKI1qxM,20
+gitignore_generator-0.1.0.dist-info/RECORD,,
