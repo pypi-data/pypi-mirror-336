@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: ffmpeg_toolkit
+Version: 0.1.1
+Summary: A toolkit for working with FFmpeg
+Home-page: https://github.com/superyngo/ffmpeg_toolkit
+Author: Wenyang Tai
+Author-email: superyngo@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=1.10.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FFmpeg Converter Toolkit
+
+This project offers tools to enhance your experience with FFmpeg. It includes scripts for tasks such as speeding up videos, removing silence/motionless, performing jump cuts, and probing encoding information. Simplify your video processing workflows with these solutions.
+
+

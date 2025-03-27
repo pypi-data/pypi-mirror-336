@@ -1,0 +1,4 @@
+include README.MD
+include LICENSE
+exclude bin/*
+recursive-include src/ffmpeg_toolkit *.py
