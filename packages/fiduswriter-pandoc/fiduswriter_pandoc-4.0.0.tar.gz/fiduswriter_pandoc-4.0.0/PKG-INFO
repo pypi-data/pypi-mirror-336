@@ -1,0 +1,100 @@
+Metadata-Version: 2.4
+Name: fiduswriter-pandoc
+Version: 4.0.0
+Summary: A Fidus Writer plugin to connect to Pandoc.
+Author-email: Johannes Wilm <johannes@fiduswriter.org>
+License: AGPL-3.0-or-later
+Project-URL: repository, https://github.com/fiduswriter/fiduswriter-pandoc
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 5.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# FidusWriter-Pandoc
+
+FidusWriter-Pandoc is a Fidus writer plugin to connect a Fidus Writer instance
+with Pandoc for document conversion.
+
+**NOTE:** There are two ways to run this: Either A) with pandoc running as a wasm executable in the user's browser, or B) connecting to pandoc running on a server. A is easier to set up and requires fewer resources on the server. B requires
+fewer resources by users and their browsers. A is the default.
+
+## A. Installation running as a wasm executable
+
+1. Install Fidus Writer with the correct version of the plugin like this:
+
+```
+pip install fiduswriter[pandoc]
+```
+
+2. Add "pandoc" to your INSTALLED_APPS setting in the configuration.py file
+   like this::
+
+```python
+INSTALLED_APPS += (
+    ...
+    'pandoc',
+)
+```
+
+3. Create the needed JavaScript files by running this::
+
+```
+python manage.py transpile
+```
+
+4. (Re)start your Fidus Writer server.
+
+
+## B. Installation running on a server
+
+
+1. Install Pandoc and make it run as a server.
+
+2. Install Fidus Writer with the correct version of the plugin like this:
+
+```
+pip install fiduswriter[pandoc]
+```
+
+3. Add "pandoc_on_server" to your INSTALLED_APPS setting in the configuration.py file
+   like this::
+
+```python
+INSTALLED_APPS += (
+    ...
+    'pandoc_on_server',
+)
+```
+
+4. Add a setting for the URL where you are running Pandoc in the configuration.py file like this:
+
+```python
+PANDOC_URL = 'http://localhost:3030'
+```
+
+5. Create the needed JavaScript files by running this::
+
+```
+python manage.py transpile
+```
+
+6. (Re)start your Fidus Writer server.
+
+## Running pandoc as a server
+
+To run pandoc as a server just type:
+
+```
+pandoc server
+```
+
+This will start it in server mode running on port 3030.
