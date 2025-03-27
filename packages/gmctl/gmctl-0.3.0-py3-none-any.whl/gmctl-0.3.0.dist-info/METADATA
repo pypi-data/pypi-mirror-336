@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gmctl
+Version: 0.3.0
+Requires-Dist: python-dotenv
+Requires-Dist: Click
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: tabulate
+
