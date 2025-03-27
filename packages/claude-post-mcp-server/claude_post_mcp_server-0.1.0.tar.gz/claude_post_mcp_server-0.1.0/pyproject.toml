@@ -1,0 +1,15 @@
+[project]
+name = "claude-post-mcp-server"
+version = "0.1.0"
+description = "Email search and management tool using MCP protocol"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=3.4.3",
+    "httpx>=0.28.1",
+    "mcp>=1.5.0",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+claude-post-mcp-server = "email_client.server:main"

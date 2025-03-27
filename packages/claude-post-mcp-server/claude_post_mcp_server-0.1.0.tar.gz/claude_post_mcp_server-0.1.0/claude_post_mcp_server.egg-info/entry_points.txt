@@ -1,0 +1,2 @@
+[console_scripts]
+claude-post-mcp-server = email_client.server:main
