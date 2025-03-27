@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nonebot_plugin_animepush/__init__.py
+nonebot_plugin_animepush/config.py
+nonebot_plugin_animepush/model.py
+nonebot_plugin_animepush/utils.py
+nonebot_plugin_animepush.egg-info/PKG-INFO
+nonebot_plugin_animepush.egg-info/SOURCES.txt
+nonebot_plugin_animepush.egg-info/dependency_links.txt
+nonebot_plugin_animepush.egg-info/not-zip-safe
+nonebot_plugin_animepush.egg-info/requires.txt
+nonebot_plugin_animepush.egg-info/top_level.txt
+nonebot_plugin_animepush/templates/anime_schedule.html
+nonebot_plugin_animepush/templates/footer.html
+nonebot_plugin_animepush/templates/header.html
