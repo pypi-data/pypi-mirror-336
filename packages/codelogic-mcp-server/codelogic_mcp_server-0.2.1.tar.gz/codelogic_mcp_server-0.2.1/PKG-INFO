@@ -1,0 +1,181 @@
+Metadata-Version: 2.4
+Name: codelogic-mcp-server
+Version: 0.2.1
+Summary: Integrates CodeLogic's powerful codebase knowledge graphs with a Model Context Protocol (MCP) server
+Author-email: garrmark <mgarrison@codelogic.com>
+Requires-Python: >=3.13
+Requires-Dist: debugpy>=1.8.12
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.3.0
+Requires-Dist: neo4j>=5.28.1
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: tenacity>=9.0.0
+Description-Content-Type: text/markdown
+
+# codelogic-mcp-server MCP server
+
+An MCP Server to pull Codelogic context data
+
+## Components
+
+### Tools
+
+The server implements one tool:
+
+- get-impact: Pulls an impact assessment from the codelogic server for your code
+  - Takes "method" and the associated "class"
+
+## Configuration
+
+[TODO: Add configuration details specific to your implementation]
+
+## Quickstart
+
+### Install
+
+#### Claude Desktop
+
+On MacOS: `~/Library/Application\ Support/Claude/claude_desktop_config.json`
+On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
+On Linux: `~/.config/Claude/claude_desktop_config.json`
+
+<details>
+  <summary>Development/Unpublished Servers Configuration</summary>
+  ```
+  "mcpServers": {
+    "codelogic-mcp-server": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "<your_dir>/codelogic-mcp-server",
+        "run",
+        "codelogic-mcp-server"
+      ]
+    }
+  }
+  ```
+</details>
+
+<details>
+  <summary>Published Servers Configuration</summary>
+  ```
+  "mcpServers": {
+    "codelogic-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "codelogic-mcp-server"
+      ]
+    }
+  }
+  ```
+</details>
+
+## Running with Windsurf IDE
+
+To run this MCP server with [Windsurf IDE](https://codeium.com/windsurf), follow these steps:
+
+1. **Setup the `.env` file**:
+
+   Create a `.env` file in the root directory of this project with the following content:
+
+   ```
+   CODELOGIC_SERVER_HOST=<your_codelogic_server_host>
+   CODELOGIC_USERNAME=<your_codelogic_username>
+   CODELOGIC_PASSWORD=<your_codelogic_password>
+   CODELOGIC_MV_NAME=<your_materialized_view_name>
+   ```
+
+   Replace the placeholders with your actual configuration values.
+
+2. **Configure Windsurf IDE**:
+
+   To configure Windsurf IDE, you need to create or modify the `~/.codeium/windsurf/mcp_config.json` configuration file.
+
+   Add the following configuration to your file:
+
+   ```json
+   {
+     "mcpServers": {
+       "codelogic-mcp-server": {
+         "command": "uv",
+         "args": [
+           "--directory",
+           "<your_dir>/codelogic-mcp-server",
+           "run",
+           "codelogic-mcp-server"
+         ]
+       }
+     }
+   }
+   ```
+
+   Replace `<your_dir>` with the actual directory path where your `codelogic-mcp-server` is located.
+
+   Add a global rule to help windsurf call the tool, create or modify the `~/.codeium/windsurf/memories/global_rules.md` markdown file.
+
+   Add the following or something similar:
+
+   ```markdown
+   When I ask you to modify existing code, try running the get-impact mcp tool against the code I've provided and any methods or functions that you are changing.  Make sure the results sent back from the tool are highlighted as impacts for the given method or function.
+   ```
+
+   After adding the configuration, restart Windsurf IDE or refresh the tools to apply the changes.
+
+
+
+## Astral UV
+
+### Install
+https://docs.astral.sh/uv/getting-started/installation/
+
+## Running the Server
+```
+cd /<your_dir>/codelogic-mcp-server
+uv venv
+uv run codelogic-mcp-server
+```
+Replace `<your_dir>` with the actual directory path where your `codelogic-mcp-server` is located.
+
+## Development
+
+### Building and Publishing
+
+To prepare the package for distribution:
+
+1. Sync dependencies and update lockfile:
+
+```bash
+uv sync
+```
+
+2. Build package distributions:
+
+```bash
+uv build
+```
+
+This will create source and wheel distributions in the `dist/` directory.
+
+3. Publish to PyPI:
+
+```bash
+uv publish
+```
+
+Note: You'll need to set PyPI credentials via environment variables or command flags:
+
+- Token: `--token` or `UV_PUBLISH_TOKEN`
+- Or username/password: `--username`/`UV_PUBLISH_USERNAME` and `--password`/`UV_PUBLISH_PASSWORD`
+
+### Debugging
+
+Since MCP servers run over stdio, debugging can be challenging. For the best debugging
+experience, we strongly recommend using the [MCP Inspector](https://github.com/modelcontextprotocol/inspector).
+
+You can launch the MCP Inspector via [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) with this command:
+
+```bash
+npx @modelcontextprotocol/inspector python run_server.py
+```
+
+Upon launching, the Inspector will display a URL that you can access in your browser to begin debugging.
