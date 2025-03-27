@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+phenofetch/__init__.py
+phenofetch/daily_links.py
+phenofetch/phenofetch.py
+phenofetch/site_info.py
+phenofetch/site_stats.py
+phenofetch/size_estimate.py
+phenofetch.egg-info/PKG-INFO
+phenofetch.egg-info/SOURCES.txt
+phenofetch.egg-info/dependency_links.txt
+phenofetch.egg-info/entry_points.txt
+phenofetch.egg-info/requires.txt
+phenofetch.egg-info/top_level.txt
