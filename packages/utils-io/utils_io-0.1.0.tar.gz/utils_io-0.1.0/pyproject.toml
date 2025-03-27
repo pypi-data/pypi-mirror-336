@@ -1,0 +1,22 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+	name = "utils-io"
+	version = "0.1.0"
+	description = "utils-io"
+	readme = "README.md"
+	requires-python = ">=3.11"
+	keywords = []
+	authors = [
+		{name = "overgodofchaos", email = "vezonzzzzzz@gmail.com"}
+	]
+	dependencies = [
+	]
+	packages = [
+		{ include = "utils_io" }
+	]
+
+[tool.poetry]
+    package-mode = true
