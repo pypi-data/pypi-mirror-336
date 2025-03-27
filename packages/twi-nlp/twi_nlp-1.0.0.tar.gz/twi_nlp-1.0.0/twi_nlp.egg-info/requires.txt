@@ -1,0 +1,5 @@
+pandas
+nltk
+regex
+chardet
+urllib3

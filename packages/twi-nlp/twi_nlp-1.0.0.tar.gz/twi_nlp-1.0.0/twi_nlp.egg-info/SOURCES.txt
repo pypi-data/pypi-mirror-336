@@ -1,0 +1,10 @@
+README.md
+setup.py
+twi_nlp/__init__.py
+twi_nlp/twi_nlp.py
+twi_nlp/utils.py
+twi_nlp.egg-info/PKG-INFO
+twi_nlp.egg-info/SOURCES.txt
+twi_nlp.egg-info/dependency_links.txt
+twi_nlp.egg-info/requires.txt
+twi_nlp.egg-info/top_level.txt
