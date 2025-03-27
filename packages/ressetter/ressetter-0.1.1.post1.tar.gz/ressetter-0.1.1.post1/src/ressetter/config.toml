@@ -1,0 +1,14 @@
+# ResSetter Configuration
+
+[display]
+# Display resolution and refresh rate settings
+width = 3840
+height = 2160
+refresh_rate = 120
+
+[background]
+# Background mode settings
+timeout = 300        # Inactivity timeout in seconds
+set_delay = 5        # Delay before setting display after inactivity
+retry_delay = 10     # Delay between retries in seconds
+max_retries = 3      # Maximum number of retries
