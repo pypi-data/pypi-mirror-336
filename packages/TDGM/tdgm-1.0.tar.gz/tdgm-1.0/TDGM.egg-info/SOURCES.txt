@@ -1,0 +1,7 @@
+setup.py
+TDGM.egg-info/PKG-INFO
+TDGM.egg-info/SOURCES.txt
+TDGM.egg-info/dependency_links.txt
+TDGM.egg-info/entry_points.txt
+TDGM.egg-info/requires.txt
+TDGM.egg-info/top_level.txt
