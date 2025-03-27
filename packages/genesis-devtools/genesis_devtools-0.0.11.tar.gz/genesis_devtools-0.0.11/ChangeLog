@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.0.11
+------
+
+* Added compression option for backup command (#35)
