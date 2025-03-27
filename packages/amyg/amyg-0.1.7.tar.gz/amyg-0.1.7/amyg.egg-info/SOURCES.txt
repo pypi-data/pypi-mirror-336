@@ -1,0 +1,9 @@
+LICENSE
+README.md
+amyg.py
+setup.py
+amyg.egg-info/PKG-INFO
+amyg.egg-info/SOURCES.txt
+amyg.egg-info/dependency_links.txt
+amyg.egg-info/entry_points.txt
+amyg.egg-info/top_level.txt
