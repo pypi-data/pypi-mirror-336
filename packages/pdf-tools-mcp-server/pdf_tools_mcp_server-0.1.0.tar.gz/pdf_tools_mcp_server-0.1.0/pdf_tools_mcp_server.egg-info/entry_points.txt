@@ -1,0 +1,2 @@
+[console_scripts]
+pdf-tools-mcp-server = pdf_tools.server:main

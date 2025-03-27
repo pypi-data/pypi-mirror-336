@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+pdf_tools/__init__.py
+pdf_tools/server.py
+pdf_tools_mcp_server.egg-info/PKG-INFO
+pdf_tools_mcp_server.egg-info/SOURCES.txt
+pdf_tools_mcp_server.egg-info/dependency_links.txt
+pdf_tools_mcp_server.egg-info/entry_points.txt
+pdf_tools_mcp_server.egg-info/requires.txt
+pdf_tools_mcp_server.egg-info/top_level.txt

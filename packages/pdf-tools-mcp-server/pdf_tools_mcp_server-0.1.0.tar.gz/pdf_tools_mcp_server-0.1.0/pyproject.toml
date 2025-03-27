@@ -1,0 +1,22 @@
+[project]
+name = "pdf-tools-mcp-server"
+version = "0.1.0"
+description = "MCP server for PDF manipulation"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [
+    { name = "Your Name", email = "hanwegaltimer@outlook.com" }
+]
+dependencies = [
+    "asyncio>=3.4.3",
+    "mcp>=1.5.0",
+    "pypdf2>=3.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/hanweg/mcp-pdf-tools"
+Repository = "https://github.com/hanweg/mcp-pdf-tools.git"
+
+[project.scripts]
+pdf-tools-mcp-server = "pdf_tools.server:main"
