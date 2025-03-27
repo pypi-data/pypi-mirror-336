@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastapi-starter-template"
+version = "0.1.0"
+description = "Um template para iniciar projetos FastAPI rapidamente"
+authors = ["Kaue Curti <kauecurti@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_starter_template"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+
+[tool.poetry.scripts]
+fastapi-starter-template = "fastapi_starter_template.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
