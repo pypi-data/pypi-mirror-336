@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: bscommon
+Version: 0.0.3
+Summary: 冰鼠常用操作库
+Author: bs
+License-File: LICENSE
+Requires-Dist: requests>=2.25
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
