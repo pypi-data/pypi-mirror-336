@@ -1,0 +1,12 @@
+llm_commit_generator/__init__.py,sha256=bn2di7weHSPBqTd_4DcB4hbnAN-2i7kkE7zbRHEXOp8,93
+llm_commit_generator/__main__.py,sha256=ps_Sk-NNUuLrNYkXnlgI816Qc3mHZr5hkthvE5QZc_c,146
+llm_commit_generator/ai_service.py,sha256=5ToOW6uojsBXMsszRGoaA1DWTxRv_7PsPqePa_h2ptg,6210
+llm_commit_generator/cli.py,sha256=eM1ZrDYIEz-MvgZJ9UNEaZNQ9fMH8sRfv7W1urcDmyI,7309
+llm_commit_generator/commit_generator.py,sha256=U6ZwKKQVtaDJbvvnlv2joZyMPCQ7qm5adwACOD-8WWQ,12519
+llm_commit_generator/prompts.py,sha256=y7T4Hd32T-IQkpbLJ2XMTc1Ss3s3-pvTl77VbSGyPz0,825
+llm_commit_generator-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+llm_commit_generator-0.1.1.dist-info/METADATA,sha256=s7EDcLvBx4m6ehMPBkbTiTaMmGB9gX42YclumyUl8DQ,3673
+llm_commit_generator-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+llm_commit_generator-0.1.1.dist-info/entry_points.txt,sha256=wRaaTV-2Wp4NAd29DkRe7UZ-sAMr7eraNVWe07KwqXQ,43
+llm_commit_generator-0.1.1.dist-info/top_level.txt,sha256=BC-nTz7F1rwq1mA_pvOTUCy-3b6IlLX7nEbIyt4FPaU,21
+llm_commit_generator-0.1.1.dist-info/RECORD,,
