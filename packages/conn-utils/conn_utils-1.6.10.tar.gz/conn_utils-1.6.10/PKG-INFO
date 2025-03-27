@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: conn_utils
+Version: 1.6.10
+Summary: conn_utils
+Home-page: https://upload.pypi.org/legacy/
+Download-URL: https://upload.pypi.org/legacy/
+Author: Zhang Yong
+Author-email: zyong@yubitusoft.com
+Project-URL: Documentation, https://upload.pypi.org/legacy/
+Description-Content-Type: text/plain
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: summary
