@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = 'black'
+line_length = 79
+known_first_party = [
+    "flask_inputfilter/Condition/BaseCondition",
+    "flask_inputfilter/Filter/BaseFilter",
+    "flask_inputfilter/Validator/BaseValidator"
+]
+
+[tool.docformatter]
+wrap-summaries = 79
+wrap-descriptions = 79
+recursive = true
+in_place = true
+pre_summary_newline = true
