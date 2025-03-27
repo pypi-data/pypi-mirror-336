@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "wowool/danish-entity@dev"
+  ],
+  "concepts": [
+    "TopicCandidate"
+  ],
+  "short_description": "Topics for danish. The topic domain provides TopicCandidate to the topics app.",
+  "examples": [
+    {
+      "concept": "TopicCandidate",
+      "sample": " Pyongyang er hovedstad i Nordkorea",
+      "desc": "TopicCandidates, such as proper names or nouns."
+    }
+  ]
+}

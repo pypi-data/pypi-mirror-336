@@ -1,0 +1,29 @@
+{
+  "concepts": [
+    "Definition",
+    "Descriptor",
+    "DescriptorMarker"
+  ],
+  "dependencies": [
+    "wowool/danish-syntax@dev",
+    "wowool/danish-entity@dev"
+  ],
+  "short_description": "Descriptors for knowledge discovery. A descriptor is something like 'painter' to classify an item as a Person.",
+  "examples": [
+    {
+      "concept": "Definition",
+      "sample": " Pyongyang er hovedstad i Nordkorea",
+      "desc": "A definition. A sentence that explains what something or someone is."
+    },
+    {
+      "concept": "Descriptor",
+      "sample": "Birgitte Olufsdatter Thott var datter af Oluf Axelsen Thott",
+      "desc": "Descriptor is something like 'painter', which will allow us to classify an concept as a Person when it appears in certain definition context. In the sample above 'datter' is the descriptor"
+    },
+    {
+      "concept": "DescriptorMarker",
+      "sample": "bilist, computere, gourmetrestaurant",
+      "desc": "A DescriptorMarker is a descriptor no matter the context"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "concepts": [
+    "Theme"
+  ],
+  "dependencies": [
+    "wowool/danish-syntax@dev",
+    "wowool/danish-entity@dev"
+  ],
+  "short_description": "Theme annotation, that has as an attribute the semantic field to which a word belongs to.",
+  "examples": [
+    {
+      "concept": "Theme",
+      "sample": "Grammy, rapkoncerter",
+      "desc": "Theme, in this case music."
+    }
+  ]
+}

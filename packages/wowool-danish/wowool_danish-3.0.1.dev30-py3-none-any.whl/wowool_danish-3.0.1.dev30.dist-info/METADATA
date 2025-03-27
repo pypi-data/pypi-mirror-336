@@ -1,0 +1,179 @@
+Metadata-Version: 2.4
+Name: wowool-danish
+Version: 3.0.1.dev30
+Summary: Wowool NLP danish Package
+Description-Content-Type: text/markdown
+
+# Wowool NLP danish Package
+This package contains the language file and domains for danish.
+To use this package, you need to install the wowool-sdk package and request a license file at info@wowool.com
+
+## Usage
+
+```python
+from wowool.sdk import Pipeline
+from pathlib import Path
+input_text = Path("input.txt").read_text()
+pipeline = Pipeline("danish,entity")
+doc = pipeline(input_text)
+print(doc)
+```
+
+## Domains
+
+### danish-syntax.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| AdjP |Adjective phrase. | seriøs og troværdig |
+| AdvP |Adverb phrase. | lørdag, i 35 år |
+| NP |Noun phrase. | 18 kilo metalaffald, møbler, SparEnergi.dk |
+| PronPhrase |Pronoun phrase. | du, man |
+| TimeWord |Word related to time. | minutter, eftermiddag |
+| TimePhrase |Time phrase. | til næste års, på mandag |
+| VP |Verb phrase. | kommer, vil blive brugt |
+
+
+### danish-unknown.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| UnknownThing |Unknown concept | Yttrium  |
+
+
+### danish-topics.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| TopicCandidate |TopicCandidates, such as proper names or nouns. |  Pyongyang er hovedstad i Nordkorea |
+
+
+### danish-anonymizer.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Address |Captures the Street, City and the complete Address | Vestergade 16, 8000 Aarhus |
+| City |Name of a City | København |
+| Company |Name of a Company | Novo Nordisk |
+| Country |Name of a Country | Danmark |
+| Email |Email address | info@wowool.com |
+| Person |Name of a Person, it captures as well the PersonGiv (first name) and PersonFam (family name) | Lars Løkke Rasmussen |
+| PersonFam |Surname of a Person. Subannotation of the Person annotation | Rasmussen |
+| PersonGiv |Given name of a Person. Subannotation of the Person annotation | Lars |
+| PhoneNr |A phone number | +45 12 34 56 78 |
+| Position |Subclass of PersonMention. The professional occupation of a person. | Statsminister |
+| Street |The name of a street with or without number. | Nørregade 4 |
+| Url |Url | https://www.wowool.com |
+
+
+### danish-semantic-theme.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Theme |Theme, in this case music. | Grammy, rapkoncerter |
+
+
+### danish-event.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Event |An event, in very general terms. | femicid |
+
+
+### danish-contact-info.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Address |Captures the Street, City and the complete Address | Vestergade 16, 8000 Aarhus |
+| City |Name of a City | Aalborg, Odense |
+| Company |Name of a Company | Jyske Bank, Motorola |
+| Country |Name of a Country | Storbritannien, Tyskland, Danmark |
+| Email |Email address | info@wowool.com |
+| Person |Name of a Person, it captures as well the PersonGiv (first name) and PersonFam (family name) | Lars Rasmussen |
+| PersonFam |Surname of a Person. Subannotation of the Person annotation | Bojesens |
+| PersonGiv |Given name of a Person. Subannotation of the Person annotation | Søren |
+| PhoneNr |A phone number | +45 77 33 44 77 |
+| Position |Subclass of PersonMention. The professional occupation of a person. | Statsminister, chefredaktør |
+| Street |The name of a street with or without number. | Valby Langgade 36 2500 Valby |
+| Url |Url | https://www.wowool.com |
+
+
+### danish-entity-extended.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Address |Captures the Street, City and the complete Address | Vestergade 16, 8000 Aarhus  |
+| Animal |Names of common animals. | hunde, fisk, ulv |
+| Automobile |A car brand or reference to a car. | Jeep Renegade |
+| BaseballTeam |US baseball team | Houston Astros |
+| City |Name of a City | Palermo, København, Aarhus |
+| Company |Name of a Company | Rheinmetall, Ekstra Bladet |
+| CurrencyUnit |A currency unit | krone, euro |
+| Country |Name of a Country | Egypten, Norge, Grækenland, Spanien, Danmark |
+| Date |Date and Month | november 2022 |
+| Drink |Name of a drink | kaffe, champagne |
+| Email |Email address | info@wowool.com |
+| Event |Something that happens | kritik, pressemeddelelse, krig |
+| Facility |A building or place that provides a particular service or is used for a particular industry | klinik, katedral |
+| Food |Name of food, ingredients as well as dishes | gulerod, pizza, hummus |
+| Measure |Unit of measure | 150 meter, 75ml, hundrede kilometer |
+| MoneyAmount |Amount of money | 750.000 kroner |
+| Month |Name of a month | august, oktober |
+| Organization |Name of an Organization | regeringen, Det Konservative Folkeparti, Amnesty International |
+| Percent |A percentage | 10 procents |
+| Person |Name of a Person, it captures as well the PersonGiv (first name) and PersonFam (family name) | Ejner Thomassen |
+| PersonMention |A mention of a person in a general way | formand, patient |
+| PhoneNr |Phone number | +45 12 34 56 78 |
+| PlaceAdj |Adjective of geographical origin. | tyske kansler, danske model |
+| Position |Subclass of PersonMention. The professional occupation of a person. | Premierminister, direktør, Statsrevisor |
+| SoccerTeam |European soccer team | FC Copenhagen |
+| Sports |Sports | tennis, fodbold, rugby |
+| Street |The name of a street with or without number. | Nørregade 4 |
+| Url |Url | https://www.wowool.com |
+| Vehicle |Name of a vehicle | drone, bil, Toyota Yaris |
+| Weapon |Name of a weapon | pistol, gevær |
+| WeekDay |Day of the week | onsdag |
+| WorldRegion |A geographical place, like a continent, a region, a county, etc. | Mellemøsten, Jylland, Europa |
+
+
+### danish-discovery.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Definition |A definition. A sentence that explains what something or someone is. |  Pyongyang er hovedstad i Nordkorea |
+| Descriptor |Descriptor is something like 'painter', which will allow us to classify an concept as a Person when it appears in certain definition context. In the sample above 'datter' is the descriptor | Birgitte Olufsdatter Thott var datter af Oluf Axelsen Thott |
+| DescriptorMarker |A DescriptorMarker is a descriptor no matter the context | bilist, computere, gourmetrestaurant |
+
+
+### danish-entity.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Address |Captures the Street, City and the complete Address | Carl Jacobsens Vej 999 , 2500 Valby |
+| City |Name of a City | København |
+| Company |Name of a Company | Amagerbanken |
+| Country |Name of a Country | Belgien, England, Tyskland, Danmark, Sverige |
+| Date |Date and Month | 11. november 2019 |
+| Email |Email address | info@wowool.com |
+| Event |Something that happens | massakre,coronavirus,musikfestival |
+| Facility |A building or place that provides a particular service or is used for a particular industry | lufthavn |
+| MoneyAmount |Amount of money | 80.000 krone, 4,9 million krone |
+| Month |Name of a month | oktober |
+| Organization |Name of an Organization | Dansk Folkeparti |
+| Person |Name of a Person, it captures as well the PersonGiv (first name) and PersonFam (family name) | Kristina Kristiansen |
+| PersonMention |A mention of a person in a general way | turist |
+| Position |Subclass of PersonMention. The professional occupation of a person. | chefjurist |
+| Street |Subclass of Address. The name of a street. | Jagtvej 69 |
+| Url |Url | https://www.wowool.com |
+| WorldRegion |A geographical place, like a continent, a region, a county, etc. | Mellemøsten |
+
+
+### danish-dates.dom_info
+
+| Entity | Description | Sample |
+| ------ | ----------- | ------ |
+| Date |An attribute will resolve the absolute date from the date that has been set | 18. december |
+| TimePhrase |A phrase expressing time, including dates | over to dage, i 1997 |
+
+
+

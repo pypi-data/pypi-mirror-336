@@ -1,0 +1,50 @@
+{
+  "concepts": [
+    "NP",
+    "PronPhrase",
+    "VP",
+    "AdjP",
+    "AdvP",
+    "TimeWord",
+    "TimePhrase",
+    "WeekDay"
+  ],
+  "short_description": "Syntax annotations: NP (den kontroversielle forskning), VP (vil blive brugt) and PronPhrase (man). ",
+  "examples": [
+    {
+      "concept": "AdjP",
+      "sample": "seri\u00f8s og trov\u00e6rdig",
+      "desc": "Adjective phrase."
+    },
+    {
+      "concept": "AdvP",
+      "sample": "l\u00f8rdag, i 35 \u00e5r",
+      "desc": "Adverb phrase."
+    },
+    {
+      "concept": "NP",
+      "sample": "18 kilo metalaffald, m\u00f8bler, SparEnergi.dk",
+      "desc": "Noun phrase."
+    },
+    {
+      "concept": "PronPhrase",
+      "sample": "du, man",
+      "desc": "Pronoun phrase."
+    },
+    {
+      "concept": "TimeWord",
+      "sample": "minutter, eftermiddag",
+      "desc": "Word related to time."
+    },
+    {
+      "concept": "TimePhrase",
+      "sample": "til n\u00e6ste \u00e5rs, p\u00e5 mandag",
+      "desc": "Time phrase."
+    },
+    {
+      "concept": "VP",
+      "sample": "kommer, vil blive brugt",
+      "desc": "Verb phrase."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "tokenizer": "wowool/danish@dev.tkz",
+  "conditions": [
+    {
+      "type": "pos",
+      "value": "Num",
+      "action": "merge",
+      "input": "stem"
+    },
+    {
+      "type": "property",
+      "value": "nf",
+      "action": "merge",
+      "input": "stem"
+    }
+  ],
+  "morph_chain": [
+    {
+      "file": "wowool/danish-numbers-writ@dev.morph",
+      "lookup": "plain"
+    },
+    {
+      "file": "wowool/danish-numbers-writ@dev.morph",
+      "lookup": "compound_v2",
+      "transform": "none"
+    }
+  ],
+  "short_description": "A language module that enriches words with root forms, part of speech and properties for danish-numbers"
+}

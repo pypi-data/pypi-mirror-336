@@ -1,0 +1,23 @@
+{
+  "dependencies": [
+    "wowool/danish-syntax@dev",
+    "wowool/danish-entity@dev"
+  ],
+  "concepts": [
+    "Date",
+    "TimePhrase"
+  ],
+  "short_description": "Solving time adverbials into absolute dates.",
+  "examples": [
+    {
+      "concept": "Date",
+      "sample": "18. december",
+      "desc": "An attribute will resolve the absolute date from the date that has been set"
+    },
+    {
+      "concept": "TimePhrase",
+      "sample": "over to dage, i 1997",
+      "desc": "A phrase expressing time, including dates"
+    }
+  ]
+}
