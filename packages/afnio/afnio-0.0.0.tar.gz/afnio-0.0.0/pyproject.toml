@@ -1,0 +1,6 @@
+[project]
+name = "afnio"
+version = "0.0.0"
+description = "Coming soon"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+

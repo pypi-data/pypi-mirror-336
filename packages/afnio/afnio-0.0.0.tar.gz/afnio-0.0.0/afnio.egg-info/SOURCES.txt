@@ -1,0 +1,6 @@
+pyproject.toml
+afnio/__init__.py
+afnio.egg-info/PKG-INFO
+afnio.egg-info/SOURCES.txt
+afnio.egg-info/dependency_links.txt
+afnio.egg-info/top_level.txt
