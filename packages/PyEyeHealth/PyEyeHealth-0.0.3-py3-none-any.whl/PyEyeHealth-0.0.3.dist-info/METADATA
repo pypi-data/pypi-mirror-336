@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PyEyeHealth
+Version: 0.0.3
+Summary: PyEyeHealth, göz sağlığını analiz etmeye yönelik bir araçtır.
+Home-page: https://github.com/kullanici/PyEyeHealth
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt6
+Requires-Dist: imutils
+
+
+wintitle = "Your title"
+wincolor = "your own color"
+ok_button_color = "your own color"
+stop_button_color = "your own color"
+default_text = "⚠️ Your eyes are too close to the screen!\nProlonged exposure can lead to complications."
+predictor_path = r"shape_predictor_68_face_landmarks.dat"
