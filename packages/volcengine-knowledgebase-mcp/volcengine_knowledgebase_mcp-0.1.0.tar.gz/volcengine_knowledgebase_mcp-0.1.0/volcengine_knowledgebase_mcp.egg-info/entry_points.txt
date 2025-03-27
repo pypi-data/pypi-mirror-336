@@ -1,0 +1,2 @@
+[console_scripts]
+volcengine-knowledgebase-mcp = server.kb_mcp_server:main

@@ -1,0 +1,13 @@
+[project]
+name = "volcengine-knowledgebase-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.5.0",
+    "requests>=2.31.0",
+    "volcengine>=1.0.0",
+]
+[project.scripts]
+volcengine-knowledgebase-mcp = "server.kb_mcp_server:main"
