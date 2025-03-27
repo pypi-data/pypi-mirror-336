@@ -1,0 +1,2 @@
+[console_scripts]
+aqicn-mcp-server = aqicn_server.aqicn_server:main
