@@ -1,0 +1,4 @@
+dbt-common<2.0,>=1.14.0
+dbt-adapters<2.0,>=1.10.4
+trino~=0.331
+dbt-core>=1.8.0
