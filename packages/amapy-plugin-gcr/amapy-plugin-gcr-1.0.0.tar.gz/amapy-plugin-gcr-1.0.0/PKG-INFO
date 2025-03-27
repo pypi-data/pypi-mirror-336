@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: amapy-plugin-gcr
+Version: 1.0.0
+Summary: The GCR plugin for the asset-manager project. It provides functionalities to manage and integrate Google Cloud Registry (GCR) within the asset management system.
+Author-email: Swarup Mahanti <swarup.mahanti@roche.com>
+Maintainer-email: Swarup Mahanti <swarup.mahanti@roche.com>
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: amapy-contents==1.*
+Requires-Dist: amapy-pluggy==1.*
+Requires-Dist: amapy-utils==1.*
+Requires-Dist: backoff==2.2.*
+Requires-Dist: google-auth==2.15.*
+Requires-Dist: pyopenssl==24.0.*
+Requires-Dist: speedtest-cli==2.1.*
+
+asset-plugin-gcr

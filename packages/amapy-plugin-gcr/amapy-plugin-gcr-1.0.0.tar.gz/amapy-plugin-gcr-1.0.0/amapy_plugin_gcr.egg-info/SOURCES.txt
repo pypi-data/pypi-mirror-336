@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+amapy_plugin_gcr.egg-info/PKG-INFO
+amapy_plugin_gcr.egg-info/SOURCES.txt
+amapy_plugin_gcr.egg-info/dependency_links.txt
+amapy_plugin_gcr.egg-info/requires.txt
+amapy_plugin_gcr.egg-info/top_level.txt
+asset_plugin_gcr/__init__.py
+asset_plugin_gcr/gcr_blob.py
+asset_plugin_gcr/gcr_mixin.py
+asset_plugin_gcr/gcr_storage.py
+asset_plugin_gcr/gcr_url.py
+asset_plugin_gcr/tests/__init__.py
+asset_plugin_gcr/tests/test_gcr_storage.py
+asset_plugin_gcr/tests/test_gcr_url.py
+asset_plugin_gcr/transporter/__init__.py
+asset_plugin_gcr/transporter/gcr_transporter.py
