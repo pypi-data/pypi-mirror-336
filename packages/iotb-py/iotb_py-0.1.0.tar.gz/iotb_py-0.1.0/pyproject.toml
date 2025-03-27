@@ -1,0 +1,27 @@
+[project]
+name = "iotb-py"
+version = "0.1.0"
+description = "A library for interfacing to Tartabit IoT Bridge"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Tartabit, LLC", email = "noreply@tartabit.com"}
+]
+dependencies = [
+    "requests"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+urls = { "Homepage" = "https://github.com/tartabit/iotb-py" }
+
+[project.scripts]
+trigger-comparison = "iotb.scripts.trigger_comparison:main"
+download-logs = "iotb.scripts.download_logs:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

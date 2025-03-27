@@ -1,0 +1,3 @@
+[console_scripts]
+download-logs = iotb.scripts.download_logs:main
+trigger-comparison = iotb.scripts.trigger_comparison:main
