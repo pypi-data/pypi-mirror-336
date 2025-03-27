@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: chat_ui
+Version: 1.2.0
+Requires-Dist: anywidget
+Requires-Dist: markdown
+Requires-Dist: pandas
+Requires-Dist: traitlets
+Provides-Extra: api
+Requires-Dist: flask>=3.0.0; extra == 'api'
