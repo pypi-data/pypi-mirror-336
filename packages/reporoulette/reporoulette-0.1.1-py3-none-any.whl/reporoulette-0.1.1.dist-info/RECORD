@@ -1,0 +1,14 @@
+reporoulette/__init__.py,sha256=JppBvD252s33uMqIDagERUal6CcGz9foHdcnDgRP-zk,2326
+reporoulette/samplers/__init__.py,sha256=JOptlmRDXVPnb4raU1hR3KP0Z50KA-F763OQBTz0lWo,286
+reporoulette/samplers/base.py,sha256=-w7cQMnBYb1ht7zorSZqa00yea3j4Pm3KBBPNr3vR3c,2083
+reporoulette/samplers/bigquery_sampler.py,sha256=yRXuY4u60xk8FWL93-nJC7dxd_Mk48Igeiud3OvkG2w,24993
+reporoulette/samplers/gh_sampler.py,sha256=Ljml6UpAixeC2bBEGDgJaY9KeSwGn0ZAWUDLGpdN7f8,12916
+reporoulette/samplers/id_sampler.py,sha256=B3XMT7LetENgDT-bacdHhZZUJENR29LBjDXGPQUn-8c,10828
+reporoulette/samplers/temporal_sampler.py,sha256=pV1iXWct6AA636KfBzH1jkuhMYfkU6Y_uyyXDyX2h7k,22756
+reporoulette/tests/test_gharchive_sampler.py,sha256=ct5NNtZmIPZFhPlBMkyoH70h2CSM1ztxcp0dfIIDso0,4750
+reporoulette/tests/test_id_sampler.py,sha256=Avt_KrrjJtPslv3yV6wyJL7Ic3Pee2SEtKzkqEKivbk,2762
+reporoulette-0.1.1.dist-info/licenses/LICENSE,sha256=1lEVJHoI_KaH3uSjhc_l0-zGye3qvFOppbj0DTaQQrY,1063
+reporoulette-0.1.1.dist-info/METADATA,sha256=JLN7EsUqJ5dcPvnyHpcROKZrvgVyuSxECs26h3pVqCA,5769
+reporoulette-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+reporoulette-0.1.1.dist-info/top_level.txt,sha256=Jqkc1iz1dUMOZsS1S4FyEwHJZfRfy2le4ktHVEVjU0Q,13
+reporoulette-0.1.1.dist-info/RECORD,,
