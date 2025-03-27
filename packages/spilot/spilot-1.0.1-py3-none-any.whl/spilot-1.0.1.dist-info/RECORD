@@ -1,0 +1,10 @@
+spilot/__init__.py,sha256=3Hdc5JhYU6SHeSKCxuAtiDkkaTjdHRcWq63_h9L3Zuk,67
+spilot/app.py,sha256=CSG8R19zDBSdFnlLjzHX-XoC_yel08G7BX2Yp_uVo6M,53261
+spilot/cli.py,sha256=80StIkAk5Q4kn4iqMduCgePf2n-qk9qPTwUWMoYYBAE,560
+spilot/style.css,sha256=egBgcpj7pLGU4RR90mW9GCdykj-JhiUHCBISePReEGo,539
+spilot-1.0.1.dist-info/licenses/LICENSE,sha256=L9n-cxWkh-PfnxmWp5vt92CLlfT9cXtXArCPT4EJrDE,11310
+spilot-1.0.1.dist-info/METADATA,sha256=4EtMLQ99lBivPeO5HVfrk6pKzt_5IOg6Zj5UAFO45nk,3881
+spilot-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spilot-1.0.1.dist-info/entry_points.txt,sha256=mWotDjfYUp7k_K8CGNWtJtcKp3iwE3xwBGTZ-NWgckI,43
+spilot-1.0.1.dist-info/top_level.txt,sha256=Ae6-1T-8Sl91RhyagYXWqF4YQf4pBSaBOpUKh08J5-U,7
+spilot-1.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+spilot = spilot.cli:main
