@@ -1,0 +1,17 @@
+ocular/__init__.py,sha256=8hEqYQ6JGG0vY9CVsVWCzbIhhnIuR_Yv1ifIFcTSkpg,3246
+ocular/api.py,sha256=-NNMpL389h6x0rh9UL9deGO_In5FAnufq_Q_w-RnR3g,7134
+ocular/config.py,sha256=Os-0fAhAPZxJ64yIwfcyP9jqgt6ScvZiXoI_De7VMjs,483
+ocular/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocular/core/export.py,sha256=eD0XsseRMde39IffFNDx9scQ83c4b4925PS6LpCajRc,5030
+ocular/core/project.py,sha256=3rn9Nhcax75etp_55M5zqk5JetgXNXTr_CeeL3Y7lwk,2061
+ocular/core/version.py,sha256=kWzS8kU5vsehWfvSbuYOZ6gOMR3cCFQyjrjWdxV2dDk,2374
+ocular/core/workspace.py,sha256=zLCkIRKwt56-47s9_a81kQ8uzn0DsGP6_sNcz8oF-vA,3697
+ocular/utils/__init__.py,sha256=8NNV6o12w1HKsd0u4deqlZysEN6gfKrOSUtU3GuyOKk,498
+ocular/utils/config.py,sha256=WTTITRKx5mX0t9u28QBxmRL9Ckz91YitUuLLb6uDqAs,3965
+ocular/utils/errors.py,sha256=bFpKeiJxBzrbox79b-0IFO2TOML8_9RBNft-84Z-_lA,2720
+ocular/utils/http_client.py,sha256=8F46CdCgLSogtxrKkM5Wr3YcUQM46kbz--Z-8D5Plyo,7293
+ocular/utils/logging.py,sha256=_-EK3ivrMewOUprSdrj8Lxvqwh96WK2vJzDQj6PSAbc,2882
+ocular_ai-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ocular_ai-0.0.5.dist-info/METADATA,sha256=kA96JgmuAHQ9wcK0TEf3mUtokvB__0y_FFKlbtAU-Og,3955
+ocular_ai-0.0.5.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+ocular_ai-0.0.5.dist-info/RECORD,,
