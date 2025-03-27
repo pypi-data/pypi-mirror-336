@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Amisynth
+Version: 0.0.2
+Summary: Descripción de mi paquete
+Home-page: https://github.com/tu_usuario/mi_paquete
+Author: Amisinth
+Author-email: tuemail@dominio.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: discord.py
+Requires-Dist: asyncio
+Requires-Dist: xfox
+
+# Amisynth
+
+Amisynth es un paquete para integrar funciones personalizadas en Discord.
+
+## InstalaciÃ³n
+
+Para instalar este paquete, usa `pip`:
+
+```bash
+pip install amisynth
