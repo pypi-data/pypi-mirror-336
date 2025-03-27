@@ -1,0 +1,19 @@
+[project]
+name    = "automa-bot-sdk"
+version = "0.0.1"
+
+authors         = [{ name = "Automa, Inc.", email = "engineering@automa.app" }]
+description     = "Bot helpers for Automa"
+license         = "MIT"
+readme          = "README.md"
+requires-python = ">=3.11"
+
+dependencies = []
+
+[project.urls]
+Homepage   = "https://automa.app"
+Repository = "https://github.com/automa/sdk-python"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths  = ["tests"]
