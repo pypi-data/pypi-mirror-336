@@ -1,0 +1,6 @@
+setup.py
+module/__init__.py
+pyutils_spirit.egg-info/PKG-INFO
+pyutils_spirit.egg-info/SOURCES.txt
+pyutils_spirit.egg-info/dependency_links.txt
+pyutils_spirit.egg-info/top_level.txt
