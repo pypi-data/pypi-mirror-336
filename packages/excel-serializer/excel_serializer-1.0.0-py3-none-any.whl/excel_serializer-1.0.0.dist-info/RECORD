@@ -1,0 +1,11 @@
+excel_serializer/__init__.py,sha256=Ie7IhwjgVMTUQD1B5oTOLWpuE2B-WI9-Kay00xn8eZM,10052
+excel_serializer/__main__.py,sha256=Yd5m60ETrnSOLg4m7yI28bOLT8G9MpQHIKblawmpSow,688
+excel_serializer/decoder.py,sha256=MjCKagaKvDaJpjefi9txO06FrrC1zBYdAcgxwVrMo5Y,7385
+excel_serializer/defaults.py,sha256=GW18jORSpZ_W2iuEg_28sKLOx_tlY00Z3QufezT6K2o,354
+excel_serializer/encoder.py,sha256=paFKXqwrnO4En2HbzeUtVFkMWERjUj7DMUDiaTWx87w,12373
+excel_serializer-1.0.0.dist-info/licenses/LICENSE,sha256=S5fdtXqnU6Q11YR3H8H8Cj02NkywVDfQ-PbRktwfES0,1073
+excel_serializer-1.0.0.dist-info/METADATA,sha256=LWmUZ1p2334aIV3mQS67ROkg27WqtjhLr00d6quy5gg,5901
+excel_serializer-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+excel_serializer-1.0.0.dist-info/entry_points.txt,sha256=2Ob1vSmqWgQPFMRoaw3EjkUhC5k5DrioBdzdcgHkOhE,104
+excel_serializer-1.0.0.dist-info/top_level.txt,sha256=73tnhSTEc0JCizxxXQlUYUlTneVQG9_xlEVzXjJb0fg,17
+excel_serializer-1.0.0.dist-info/RECORD,,
