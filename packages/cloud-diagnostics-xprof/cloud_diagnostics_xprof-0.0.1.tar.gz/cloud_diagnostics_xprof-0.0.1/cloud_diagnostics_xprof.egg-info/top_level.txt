@@ -1,0 +1,7 @@
+actions
+dist
+docs
+myproject
+src
+tests
+venv

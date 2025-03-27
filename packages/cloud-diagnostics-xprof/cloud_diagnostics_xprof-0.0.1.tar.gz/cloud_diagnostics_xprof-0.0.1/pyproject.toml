@@ -1,0 +1,33 @@
+[project]
+name = "cloud-diagnostics-xprof"
+version = "0.0.1"
+authors = [
+  { name="Hypercompute Diagon", email="hypercompute-diagon@google.com" },
+]
+description = "Abstraction over profile session locations and infrastructure running the analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = []
+
+[project.urls]
+Homepage = "https://github.com/AI-Hypercomputer/cloud-diagnostics-xprof"
+Issues = "https://github.com/AI-Hypercomputer/cloud-diagnostics-xprof/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]  # Optional, specifies where to search for packages
+exclude = [
+  # Do not release tests files on PyPI
+  "tests/*_test.py",
+]
