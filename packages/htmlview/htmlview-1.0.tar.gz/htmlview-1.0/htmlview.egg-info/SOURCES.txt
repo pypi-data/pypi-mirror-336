@@ -1,0 +1,7 @@
+setup.py
+htmlview.egg-info/PKG-INFO
+htmlview.egg-info/SOURCES.txt
+htmlview.egg-info/dependency_links.txt
+htmlview.egg-info/entry_points.txt
+htmlview.egg-info/requires.txt
+htmlview.egg-info/top_level.txt
