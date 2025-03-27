@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: amapy-core
+Version: 1.0.0
+Summary: The Core package for asset-manager. It provides the core functionalities like creating, midifying, downloading and uploading of the digital assets.
+Author-email: Swarup Mahanti <swarup.mahanti@roche.com>
+Maintainer-email: Swarup Mahanti <swarup.mahanti@roche.com>
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: amapy-contents==1.*
+Requires-Dist: amapy-db==1.*
+Requires-Dist: amapy-pluggy==1.*
+Requires-Dist: amapy-utils==1.*
+Requires-Dist: google-auth-oauthlib==0.4.*
+Requires-Dist: jinja2==3.1.*
+Requires-Dist: packaging==23.1.*
+Requires-Dist: pathspec==0.12.*
+
+# gdm_asset_manager
