@@ -1,0 +1,11 @@
+qml_essentials/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qml_essentials/ansaetze.py,sha256=b9HVP8q4N-zW6MaLpsai8hDJBz4XS9KRRNNIH_S5kuk,53534
+qml_essentials/coefficients.py,sha256=x1QjVkiYIg1z8mZ4X7_9v5NJxiwJ1wzmIDQub8mBS3I,25513
+qml_essentials/entanglement.py,sha256=kKidm9oz2uMA_VYRCHkISKSq8AUG8v5OGVAv1Jk8L-s,6387
+qml_essentials/expressibility.py,sha256=BJyexwmwF7ismLBqMZwkY8VpPDgY4smm6apLyhLwWUY,8953
+qml_essentials/model.py,sha256=dVOHwy7UoHt4hItx-YoB0lSfpotJALb3PJ2k4sFLi70,36325
+qml_essentials/utils.py,sha256=153fvNP6jyOWTEMs59mjfiffn5rdAADsEmHp10vzZKo,28052
+qml_essentials-0.1.28.dist-info/LICENSE,sha256=GYdULImK3JDmk-8LKrdmcELALedYR3Vhb9J-lVxWJuU,1276
+qml_essentials-0.1.28.dist-info/METADATA,sha256=vnbYWPdxpIBoyDZq_Bq3cgGktuJoYQnZWiIyHKqNJjw,2347
+qml_essentials-0.1.28.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+qml_essentials-0.1.28.dist-info/RECORD,,
