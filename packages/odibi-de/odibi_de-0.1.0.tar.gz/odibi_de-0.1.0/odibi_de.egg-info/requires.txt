@@ -1,0 +1,8 @@
+pandas
+numpy
+fastavro
+fsspec
+pyarrow
+azure-storage-blob
+pyspark
+pyodbc
