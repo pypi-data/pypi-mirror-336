@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uv-mcp"
+version = "0.3.0"
+description = "Model Context Protocol (MCP) server for interacting with Python installations via uv"
+readme = "README.md"
+authors = [
+    {name = "uv-mcp Contributors", email = "dmclain@gmail.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.5.0",
+    "uv>=0.6.9",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "mypy",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dmclain/uv-mcp"
+"Bug Tracker" = "https://github.com/dmclain/uv-mcp/issues"
+
+[project.scripts]
+uv-mcp = "uv_mcp.cli:main"
+uv_mcp = "uv_mcp.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uv_mcp"]
+
+[tool.hatch.build.sources]
+"src" = "src"
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py" 
