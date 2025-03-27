@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: passwork-api
+Version: 0.3.0
+Summary: Passwork Python API SDK.
+Author-Email: Julius Koenig <julius.koenig@kds-kg.de>
+License: GPL-3.0
+Requires-Python: >=3.9
+Requires-Dist: requests>=2.32.3
+Requires-Dist: pydantic>=2.9.2
+Description-Content-Type: text/markdown
+
+# passwork-api
+Passwork Python API SDK.
