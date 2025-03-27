@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "duowen-huqie"
+version = "0.1.9"
+description = ""
+authors = ["liurui <liurui@asiainfo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+nltk = "^3.9.1"
+datrie = "^0.8.2"
+hanziconv = "^0.3.2"
+numpy = ">=1.23"
+chardet = "^5.2.0"
+
+
+[tool.poetry.group.ci.dependencies]
+twine = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
