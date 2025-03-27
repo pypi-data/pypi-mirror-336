@@ -1,0 +1,134 @@
+Metadata-Version: 2.4
+Name: SQLGetterSetter
+Version: 1.0.0
+Author: Kannan B
+Description-Content-Type: text/markdown
+Requires-Dist: mysql-connector-python==9.1.0
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+
+# README: MainClass SQL Query Builder
+
+## Overview
+`MainClass` is a Python class designed to build and execute SQL queries dynamically. It provides a fluent API for constructing complex SQL statements using method chaining.
+
+---
+
+## **Functions and Their Purpose**
+
+### **1. Database Management**
+- `create_db(dbname)`: Creates a new database.
+- `drop_db(dbname)`: Drops an existing database.
+- `backup_db(dbname, path)`: Backs up the database to a specified path.
+
+### **2. Table Management**
+- `create_table(table, *columns)`: Creates a table with specified columns.
+- `add_column(table, *columns)`: Adds new columns to an existing table.
+- `drop_column(table, *columns)`: Drops columns from an existing table.
+- `drop_table(table)`: Drops an existing table.
+- `truncate_table(table)`: Empties all rows from a table.
+- `create_index(table_name, *columns)`: Creates an index on specified columns.
+- `create_view(view_name)`: Creates a view based on a `SELECT` query.
+- `drop_view(view)`: Drops an existing view.
+
+### **3. Data Retrieval (SELECT Queries)**
+- `show(key)`: Retrieves database metadata (SHOW TABLES, SHOW COLUMNS, etc.).
+- `select(*columns)`: Selects specified columns; defaults to `*`.
+- `sub_select(*columns)`: Creates a subquery within a `SELECT` statement.
+- `distinct(*columns)`: Selects unique values from specified columns.
+- `where(*condition, operator=None)`: Adds filtering conditions to the query.
+- `orderby(*columns_with_order)`: Sorts the result set by specified columns.
+- `like(pattern)`: Filters results based on a pattern.
+- `isnull(key=None)`: Checks if values in a column are NULL.
+- `isnotnull()`: Checks if values in a column are NOT NULL.
+- `ifnull(key, value)`: Replaces NULL values with a specified value.
+- `nullif(key, value)`: Returns NULL if two values are equal.
+- `coalesce(*values)`: Returns the first non-null value from a list.
+- `between(start, end)`: Filters results within a range.
+- `IN(*values)`: Filters results based on a list of values.
+- `groupby(*columns)`: Groups results based on specified columns.
+- `table(table_name)`: Specifies the table to fetch data from.
+- `limit(n, offset=None)`: Limits the number of rows in the result.
+- `fetch(n, offset=None)`: Fetches a specific number of rows with an offset.
+- `top(n, percent=False)`: Retrieves a top percentage or number of rows.
+
+### **4. Aggregation Functions**
+- `avg(value)`: Calculates the average of a column.
+- `count(value)`: Counts the number of rows.
+- `max(value)`: Retrieves the maximum value.
+- `min(value)`: Retrieves the minimum value.
+- `sum(value)`: Calculates the sum of a column.
+
+### **5. Data Manipulation (INSERT, UPDATE, DELETE)**
+- `insert(table_name, values, columns=None)`: Inserts single/multiple rows into a table.
+- `insert_into_select(source, destination, source_columns=None, destination_columns=None)`: Inserts data into one table from another.
+- `update(table_name, changes)`: Updates specified columns in a table.
+- `delete(table_name)`: Deletes rows from a table.
+
+### **6. Operators and Utility Functions**
+- `and_operator()`: Adds an `AND` condition.
+- `or_operator()`: Adds an `OR` condition.
+- `add_operator()`: Adds a `+` operator.
+- `comma()`: Adds a `,` separator.
+- `AS(name)`: Assigns an alias to a column or table.
+
+---
+
+## **Example Usage**
+
+### **1. Creating a Table**
+```python
+query = MainClass().create_table("users", "id INT PRIMARY KEY", "name VARCHAR(255)").query
+print(query)
+```
+**Generated Query:**
+```sql
+CREATE TABLE users (id INT PRIMARY KEY, name VARCHAR(255))
+```
+
+### **2. Inserting Data**
+```python
+query = MainClass().insert("users", [(1, "John Doe"), (2, "Jane Doe")], ["id", "name"]).query
+print(query)
+```
+**Generated Query:**
+```sql
+INSERT INTO users (id, name) VALUES (1, 'John Doe'), (2, 'Jane Doe')
+```
+
+### **3. Selecting Data with Conditions**
+```python
+query = MainClass().select("id", "name").table("users").where("id = 1").query
+print(query)
+```
+**Generated Query:**
+```sql
+SELECT id, name FROM users WHERE id = 1
+```
+
+### **4. Updating Data**
+```python
+query = MainClass().update("users", [("name", "John Updated")]).where("id = 1").query
+print(query)
+```
+**Generated Query:**
+```sql
+UPDATE users SET name = 'John Updated' WHERE id = 1
+```
+
+### **5. Deleting Data**
+```python
+query = MainClass().delete("users").where("id = 2").query
+print(query)
+```
+**Generated Query:**
+```sql
+DELETE FROM users WHERE id = 2
+```
+
+---
+
+## **Conclusion**
+The `MainClass` provides a flexible and structured approach to building SQL queries dynamically. It eliminates the need for manually concatenating SQL strings and ensures query safety and consistency. You can use method chaining to construct complex queries efficiently.
