@@ -1,0 +1,13 @@
+duckduckgo-search>=4.1.1
+beautifulsoup4>=4.12.2
+requests>=2.31.0
+urllib3>=2.0.7
+tqdm>=4.66.1
+playwright>=1.42.0
+concurrent-futures-extra>=1.0.2
+fake-useragent>=1.4.0
+undetected-playwright>=0.0.4
+pypasser>=0.0.5
+pillow>=10.0.0
+SpeechRecognition>=3.10.0
+pydub>=0.25.1

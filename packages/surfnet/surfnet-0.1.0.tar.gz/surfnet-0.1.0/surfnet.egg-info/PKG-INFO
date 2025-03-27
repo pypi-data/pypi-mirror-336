@@ -1,0 +1,152 @@
+Metadata-Version: 2.4
+Name: surfnet
+Version: 0.1.0
+Summary: A powerful web scraping package with integrated search and captcha handling
+Home-page: https://github.com/yourusername/surfnet
+Author: Your Name
+Author-email: your.email@example.com
+Keywords: web scraping,search,captcha,crawler,parallel processing
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: duckduckgo-search>=4.1.1
+Requires-Dist: beautifulsoup4>=4.12.2
+Requires-Dist: requests>=2.31.0
+Requires-Dist: urllib3>=2.0.7
+Requires-Dist: tqdm>=4.66.1
+Requires-Dist: playwright>=1.42.0
+Requires-Dist: concurrent-futures-extra>=1.0.2
+Requires-Dist: fake-useragent>=1.4.0
+Requires-Dist: undetected-playwright>=0.0.4
+Requires-Dist: pypasser>=0.0.5
+Requires-Dist: pillow>=10.0.0
+Requires-Dist: SpeechRecognition>=3.10.0
+Requires-Dist: pydub>=0.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Surfnet
+
+A powerful Python web scraping package with integrated search capabilities, advanced captcha handling, and parallel processing.
+
+## Features
+
+- 🔍 **Integrated Search**: Built-in DuckDuckGo search functionality
+- 🚀 **Parallel Processing**: Scrape multiple URLs simultaneously for faster results
+- ⚡ **JavaScript Support**: Handle JavaScript-heavy websites with Playwright
+- 🤖 **Captcha Bypassing**: Intelligent captcha detection and solving capabilities
+- 🛡️ **Smart Detection**: Automatically avoids login/authentication pages
+- 📊 **Content Extraction**: Target specific HTML tags for precise data collection
+- 🧠 **Human-like Behavior**: Simulates natural browsing patterns to avoid detection
+
+## Installation
+
+```bash
+pip install surfnet
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/yourusername/surfnet.git
+cd surfnet
+pip install -e .
+```
+
+## Dependencies
+
+Surfnet requires the following main dependencies:
+
+- `duckduckgo-search`: For search functionality
+- `beautifulsoup4`: For HTML parsing
+- `requests`: For HTTP requests
+- `playwright`: For JavaScript-heavy websites
+- `concurrent-futures-extra`: For parallel processing
+- `fake-useragent`: For rotating user agents
+- `pydub`: For audio processing (captcha solving)
+- `SpeechRecognition`: For audio captcha solving
+
+## Usage Examples
+
+### Basic Usage
+
+```python
+from surfnet import Surfnet
+
+# Initialize the scraper
+scraper = Surfnet()
+
+# Search for content
+results = scraper.search("Python programming", max_results=5)
+for result in results:
+    print(f"Title: {result['title']}")
+    print(f"URL: {result['url']}")
+    print(f"Snippet: {result.get('snippet', '')}")
+    print("---")
+
+# Scrape a single URL
+data = scraper.scrapeurl("https://example.com", tags=["p", "h1", "article"])
+print(f"Title: {data['title']}")
+print(f"Content: {data['content'][:200]}...")
+```
+
+### Advanced Usage
+
+```python
+from surfnet import Surfnet
+
+# Initialize with parallel processing capabilities
+scraper = Surfnet(max_workers=4)
+
+# Scrape multiple URLs in parallel
+urls = [
+    "https://example.com",
+    "https://example.org",
+    "https://example.net"
+]
+results = scraper.scrape_urls_parallel(urls, tags=["article", "p", "h1", "h2"])
+
+# Crawl a website (max 5 pages)
+site_data = scraper.crawlwebsite("https://example.com", max_pages=5)
+
+# Handle JavaScript-heavy websites using Playwright
+js_site_data = scraper.scrapeurl("https://dynamic-site.com", use_playwright=True)
+```
+
+### Captcha Handling
+
+```python
+from surfnet import Surfnet
+
+# Initialize with captcha handling
+scraper = Surfnet()
+
+# The scraper will automatically detect and handle common captchas
+result = scraper.scrapeurl("https://site-with-captcha.com", use_playwright=True)
+
+# You can also explicitly crawl sites with captcha protection
+results = scraper.crawlwebsite("https://protected-site.com", max_pages=3)
+```
+
+## License
+
+MIT
