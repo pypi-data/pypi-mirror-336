@@ -1,0 +1,18 @@
+[project]
+name = "pdf2png-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=3.4.3",
+    "mcp>=1.5.0",
+    "pdf2image>=1.17.0",
+]
+
+[[project.authors]]
+name = "Kirk Truax"
+email = "kirktruax93@proton.me"
+
+[project.scripts]
+pdf2png-mcp-server = "pdfserver.server:main"
