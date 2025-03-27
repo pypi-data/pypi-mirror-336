@@ -1,0 +1,7 @@
+pyxtractors/__init__.py,sha256=3JlB8_bSFKGcMXTnYTtx6jMzVXvT4haqS3G10VkuNQM,198
+pyxtractors/extractor.py,sha256=AWsEhFcc8jne7VFGPZDhOHTLcb3Krc6lzk5X2GB30dA,3431
+pyxtractors/test_extractor.py,sha256=MpPNLpnhjjG3d8jHlvSPoJFAQP4tAvLBUuL-2sWGxck,1411
+pyxtractors-0.0.4.dist-info/METADATA,sha256=9LHZ1LMXlviWarL8xSOOrPArw4G6MLgeGcTOWnAkLIo,225
+pyxtractors-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyxtractors-0.0.4.dist-info/top_level.txt,sha256=4RP3BUn5v5m09KkC0pIIAKI-4j21jcZ_dHqnCBy2rVQ,12
+pyxtractors-0.0.4.dist-info/RECORD,,
