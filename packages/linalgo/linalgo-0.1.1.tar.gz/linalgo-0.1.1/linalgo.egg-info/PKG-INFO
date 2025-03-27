@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: linalgo
+Version: 0.1.1
+Summary: W3C Data Annotation for Natual Language Processing and Machine Leaning in Python.
+Author-email: Arnaud Rachez <arnaud@linalgo.com>
+Project-URL: Homepage, https://github.com/linalgo/linalgo
+Project-URL: Bug Reports, https://github.com/linalgo/linalgo/issues
+Project-URL: Source, https://github.com/linalgo/linalgo
+License-File: LICENSE
+Dynamic: license-file
