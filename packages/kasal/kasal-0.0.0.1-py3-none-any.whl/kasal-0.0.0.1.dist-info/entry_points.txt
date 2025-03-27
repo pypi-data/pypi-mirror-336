@@ -1,0 +1,6 @@
+[console_scripts]
+kasal = backendcrew.server:main
+kasal-replay = backendcrew.main:replay
+kasal-run = backendcrew.main:run
+kasal-test = backendcrew.main:test
+kasal-train = backendcrew.main:train
