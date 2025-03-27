@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homonculi"
+version = "0.1.0"
+description = "A simulation tool for emulating students taking quizzes."
+authors = [
+    { name="Austin Cory Bart", email="acbart@udel.edu" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "markdown",
+    "simple-parsing",
+    "canvasapi",
+    "python-docx",
+    "openai",
+    "tqdm~=4.66.2",
+    "pandas",
+    "matplotlib",
+    "pyyaml~=6.0.1",
+    "requests~=2.31.0",
+    "fpdf2",
+    "pytest",
+    "requests-cache",
+    "setuptools~=69.0.3",
+    "bakery",
+    "pedal"
+]
+
+[project.scripts]
+homonculi = "homonculi.simulate:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
