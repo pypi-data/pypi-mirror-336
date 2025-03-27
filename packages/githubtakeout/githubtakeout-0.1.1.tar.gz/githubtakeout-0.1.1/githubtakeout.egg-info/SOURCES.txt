@@ -1,0 +1,10 @@
+LICENSE
+README.md
+githubtakeout.py
+pyproject.toml
+githubtakeout.egg-info/PKG-INFO
+githubtakeout.egg-info/SOURCES.txt
+githubtakeout.egg-info/dependency_links.txt
+githubtakeout.egg-info/entry_points.txt
+githubtakeout.egg-info/requires.txt
+githubtakeout.egg-info/top_level.txt
