@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: evraz-knime-clients
+Version: 0.0.2
+Summary: Библиотека интеграций для KNIME
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic==2.10.6
+Requires-Dist: pydantic_settings==2.8.1
+Requires-Dist: jsonschema==4.23.0
+Requires-Dist: python-json-logger==2.0.7
+Requires-Dist: requests==2.31.0
+Provides-Extra: dev
+Requires-Dist: pytest==7.3.2; extra == "dev"
+Requires-Dist: pytest-cov==4.0.0; extra == "dev"
+Requires-Dist: isort==5.12.0; extra == "dev"
+Requires-Dist: yapf==0.32.0; extra == "dev"
+Requires-Dist: toml==0.10.2; extra == "dev"
+Requires-Dist: flake8==5.0.4; extra == "dev"
+Requires-Dist: Flake8-pyproject==1.1.0; extra == "dev"
+
+### Knime Clients
+Библиотека дает класс для запросов к SAP.
+
+### Пример использования
+```
+from evraz.knime_clients import create_sap_client
+
+sap = create_sap_client(
+    user='user',
+    password=password1!',
+    cache_path='metadata/',
+)
+
+report = sap.get_report_avl(
+    idrep=1,
+    month=3,
+    year=2025,
+)
+```
+### Сборка
+```
+python3 -m build
+python3 -m twine upload --repository testpypi dist/*
+```
