@@ -1,0 +1,5 @@
+git+https://Atsushi888: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@github.com/Atsushi888/an_DebugHelper>=1.2.4.git
+git+https://Atsushi888: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@github.com/Atsushi888/an_CudaUtility.git
+git+https://Atsushi888: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@github.com/Atsushi888/an_QuickViper2.git
+git+https://Atsushi888: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@github.com/Atsushi888/an_UniqueEnvVar.git
+git+https://Atsushi888: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@github.com/Atsushi888/an_EasyVen.git
