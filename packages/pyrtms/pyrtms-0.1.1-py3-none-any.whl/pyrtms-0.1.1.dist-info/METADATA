@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: pyrtms
+Version: 0.1.1
+Summary: A python rewrite of the R rtms package
+Author: Weimin
+Requires-Python: >=3.10
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
