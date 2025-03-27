@@ -1,0 +1,8 @@
+capm_metric/__init__.py,sha256=dVDaFXoWg4dsc09tzsDPaoyGqLoF5dGgXQn8BRK7cok,189
+capm_metric/capm.py,sha256=sCaEbKueRwtbJUJUIK80we0eVe_kWd-6tJFddwXDpz0,9657
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=lNTfp_1V6gqs0_CYyqhfhHmxa4zRw_iJ7qx6pICi-ko,5008
+capm_metrics-0.1.1.dist-info/METADATA,sha256=unessp_rg4cQMCRZGma2SyERcF1c_hY5dU_bR-QwecU,3558
+capm_metrics-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+capm_metrics-0.1.1.dist-info/top_level.txt,sha256=du4zEISFmCkClBZ5E2mvswg5nWcOEwo8OUoSSAb1YNY,18
+capm_metrics-0.1.1.dist-info/RECORD,,
