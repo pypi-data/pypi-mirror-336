@@ -1,0 +1,6 @@
+astropy
+katdal<1
+katpoint<1
+numpy>=1.15
+scipy>=1.5.0
+cffi>=1.0.0

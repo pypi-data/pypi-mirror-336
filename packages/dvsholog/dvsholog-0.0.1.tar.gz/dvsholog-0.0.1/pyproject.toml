@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0","cffi>=1.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+ext-modules=[{name = "dvsholog.c_code", sources = ["src/dvsholog/c_code.c"], include-dirs = ["src/dvsholog"]}]
+
+[project]
+name = "dvsholog"
+version = "0.0.1"
+authors = [
+  { name="Mattieu de Villiers", email="mattieu@sarao.ac.za" },
+]
+description = "DVS holography package"
+readme = "README.md"
+requires-python = ">=3.6"
+license-files = ["LICENSE"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "astropy",
+    "katdal<1",
+    "katpoint<1",
+    "numpy>=1.15",
+    "scipy>=1.5.0",
+    "cffi>=1.0.0"
+]
