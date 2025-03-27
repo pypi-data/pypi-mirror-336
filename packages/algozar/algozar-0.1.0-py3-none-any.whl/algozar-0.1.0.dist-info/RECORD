@@ -1,0 +1,10 @@
+algozar/__init__.py,sha256=pz_Ym65p6EdfAUoOPp8Jl_wg8_zB6gQWcj8Xj8VgYjg,81
+algozar/print.py,sha256=DnfgBJOmJe27tsQiO2EI5REfnc3YMmFIXi5_FPcBl-w,598
+algozar/sorting/__init__.py,sha256=WHmU-cp5IhESfVCR4StrSfQRB5yjOrt0Jfg_k_qnYtQ,176
+algozar/sorting/bubble_sort.py,sha256=U4kPCWYzlTBt9vDoWjfRw6kg27Hu05BdCvWfuT5XF2g,202
+algozar/sorting/linear_search.py,sha256=2ETov7egpCY8p7tt8mFKdM3xX_ZoItvGaTlM8DpbUPs,130
+algozar/sorting/quick_sort.py,sha256=qJADGTGm_vvLxDRpoKhJRw71R2jQMufkWzUoU3YCsLs,298
+algozar-0.1.0.dist-info/METADATA,sha256=mAcmO5epTQih_MT3Ro4B6L7oFkh-sDGNWUwHhjBzx3w,2082
+algozar-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+algozar-0.1.0.dist-info/top_level.txt,sha256=ZngXqD0i6TC-3vQDd-zT5VIduy8zivDumrzX_or4AEE,8
+algozar-0.1.0.dist-info/RECORD,,
