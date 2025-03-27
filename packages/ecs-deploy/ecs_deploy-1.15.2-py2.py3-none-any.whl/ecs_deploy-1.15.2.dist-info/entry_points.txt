@@ -1,0 +1,2 @@
+[console_scripts]
+ecs = ecs_deploy.cli:ecs
