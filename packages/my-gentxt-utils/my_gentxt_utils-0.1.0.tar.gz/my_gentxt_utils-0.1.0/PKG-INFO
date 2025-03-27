@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: my-gentxt-utils
+Version: 0.1.0
+Summary: 
+Author: vpakala_euc
+Author-email: vpakala@omnissa.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: tiktoken
+Description-Content-Type: text/markdown
+
+
