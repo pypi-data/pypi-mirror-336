@@ -1,0 +1,8 @@
+my_utils/__init__.py,sha256=zSxjl640scCLD5jj9KvU4ffi9E7xcnDqYNpOd7sYaRA,155
+my_utils/dataset_utils.py,sha256=18wmjQ6FsDIg23ugWei1A9e96fQoAzY9zvySgwGtYNc,107
+my_utils/datasets.py,sha256=WpWEx5SfWjxV3gi5ggunuidUZYpAQM1xiWbMrj3lX2Y,1622
+my_utils/main.py,sha256=23AZ_d2cnpvit140kZVMcN95Tva0ILnZM5u2kKVh4EA,702
+my_utils/tokenize.py,sha256=jxtalk4M_xf4zEdlcJgkylNfYIgmH8kaQ0_RvUmWV5c,346
+my_gentxt_utils-0.1.1.dist-info/METADATA,sha256=yB0pdGfwkNMjwmoSdaPwTW4k7E2fvlrf3RlNAcYRahQ,354
+my_gentxt_utils-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+my_gentxt_utils-0.1.1.dist-info/RECORD,,
