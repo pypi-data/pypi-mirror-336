@@ -1,0 +1,55 @@
+; Start comment 0
+; Start comment 1
+begin new_htc_structure; new_htc_structure 1
+  ; new_htc_structure 2
+  begin main_body; main_body 00
+    ; main_body 01
+    name tower;
+    begin c2_def;
+      nsec 3;
+      sec 1 0.0 0.0 0.0 0.0;
+      sec 2 0.0 0.0 1.0 -10.0; c2_def 02
+      sec 3 0.0 0.0 100.0 5.0;
+    end c2_def; c2_def end 0
+    ; c2_def end 1
+  end main_body; main_body end 00
+  ; main_body end 10
+  begin main_body; main_body 10
+    name top; top
+    begin c2_def; c2_def 1
+      nsec 4;
+      sec 1 0.0 0.0 0.0 0.0;
+      sec 2 0.0 0.0 1.0 -10.0; sec 20
+      ; sec 21
+      sec 3 0.0 0.0 100.0 5.0;
+      sec 4 0.0 0.0 150.0 5.0; sec 40
+      ; sec 41
+    end c2_def;
+  end main_body;
+end new_htc_structure; new_htc_structure end 0
+; new_htc_structure end 1
+begin hawcstab2;
+  save_power ;
+end hawcstab2;
+begin output;
+  wind free_wind 1 0.0 0.0 -119; local wind at fixed position: coo (1=global,2=non-rotation rotor coo.), pos x, pos y, pos z
+  wind free_wind_hor 1 0 0 -119;  total U and dir
+  mbdy state pos blade3 26 1.0 blade3 # blade 3 tip pos;
+  ; - Monitor Aerodynamics - ;
+  aero power;
+  aero thrust; test
+  aero windspeed 3 1 2 72.5;
+  aero alfa 1 72.5;
+  aero alfa 2 72.5;
+end output;
+[test 1 tag] begin aero;
+[test 1 tag]   ae_filename [test_inline_tag].dat;
+[test 1 tag] end aero; end of aero block with tag
+begin hydro;
+[test 2 tag]   begin hydro_element;
+[test 2 tag]     mbdy_name test;
+[test 2 tag]   end hydro_element; end of hydro_element with tag
+  ; test tag 2 with new line comment
+end hydro;
+exit; end 0
+; end 1
