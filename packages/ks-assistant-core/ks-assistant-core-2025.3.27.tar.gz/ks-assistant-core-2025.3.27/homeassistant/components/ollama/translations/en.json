@@ -1,0 +1,39 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "download_failed": "Model downloading failed",
+            "unknown": "Unexpected error"
+        },
+        "progress": {
+            "download": "Please wait while the model is downloaded, which may take a very long time. Check your Ollama server logs for more details."
+        },
+        "step": {
+            "download": {
+                "title": "Downloading model"
+            },
+            "user": {
+                "data": {
+                    "model": "Model",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "keep_alive": "Keep alive",
+                    "llm_hass_api": "Control KS Assistant",
+                    "max_history": "Max history messages",
+                    "prompt": "Instructions"
+                },
+                "data_description": {
+                    "keep_alive": "Duration in seconds for Ollama to keep model in memory. -1 = indefinite, 0 = never.",
+                    "prompt": "Instruct how the LLM should respond. This can be a template."
+                }
+            }
+        }
+    }
+}
