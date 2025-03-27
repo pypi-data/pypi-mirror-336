@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: spear-ai-sqlfluff-config
+Version: 1.0.2
+Summary: Spear AI SQLFluff config
+Keywords: ai,config,SQLFluff,spear
+Author: Spear AI
+Author-email: org@spear.ai
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: sqlfluff (>=3.0.6,<4.0.0)
+Project-URL: Repository, https://github.com/spear-ai/citizen
+Description-Content-Type: text/markdown
+
+# @spear-ai/sqlfluff-config
+
+A [SQLFluff](https://sqlfluff.com) config.
+
+## Installation
+
+```shell
+poetry add -D spear_ai_sqlfluff_config
+```
+
+## Usage
+
+Configure `poetry.toml` to save the virtual environment to your local project:
+
+```
+[virtualenvs]
+in-project = true
+```
+
+Copy the following to your `.sqluff` file:
+
+```shell
+cp ./.venv/lib/python3.11/site-packages/spear-ai-sqlfluff-config/.sqlfluff .sqlfluff
+```
+
