@@ -1,0 +1,47 @@
+#search_base_fields {
+    height: auto;
+}
+
+TabbedContent {
+    border: none;
+}
+
+TabPane {
+    border: none;
+}
+
+#selections {
+    height: auto;
+    border: panel darkturquoise;
+}
+
+#root_element {
+    height: auto;
+    border: panel darkturquoise;
+}
+
+#search_base_fields.remove {
+    display: none;
+}
+
+#query_button {
+    width: 100%;
+    border: round olivedrab;
+}
+
+#query_input {
+    width: 1fr;
+    height: 1fr;
+    border: panel limegreen;
+}
+
+#data_table {
+    width: 1fr;
+    height: 1fr;
+    border: panel limegreen;
+}
+
+#rich_log {
+    border: panel mediumvioletred;
+    height: 20%;
+}
