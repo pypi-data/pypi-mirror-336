@@ -1,0 +1,65 @@
+
+[tool.poetry]
+name = "ekuru_ltn"
+
+packages = [
+    { include = "ltn_imp" },
+]
+
+version = "3.1.0"
+description = "A parser for FOL that utilizes NLTK Logic Module to parse and fuzzify FOL rules."
+authors = ["Emre Kuru <emre.kuru@ozu.edu.tr>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">= 3.11.0, < 4.0.0"
+torch = "^2.3.1"
+nbconvert = "^7.16.4"
+nbformat = "^5.10.4"
+pyparsing = "^3.1.2"
+torchviz = "^0.0.3"
+pyyaml = "^6.0.2"
+tatsu = "^5.12.1"
+setuptools = "^78.0.0"
+seaborn = "^0.13.2"
+hyperopt = "^0.2.7"
+ucimlrepo = "^0.0.7"
+pykeen = "^1.10.2"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^2.0.0"
+pytest = "^8.1.0"
+coverage = "^7.4.0"
+mypy = "^1.9.0"
+gitpython = "^3.1.43"
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.0"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.0"
+poethepoet = "^0.33.0"
+
+[tool.poe.tasks]
+create-reg-dataset-dir = { shell = "mkdir -p examples/classification/datasets" }
+create-class-dataset-dir = { shell = "mkdir -p examples/regression/datasets" }
+create-medical-dataset-dir = { shell = "mkdir -p examples/medical/datasets" }
+
+download-real_estate = { shell = "curl -L -o examples/regression/datasets/real_estate.csv https://raw.githubusercontent.com/tommasocarraro/LTNtorch/main/examples/datasets/real-estate.csv" }
+download-iris-training = { shell = "curl -L -o examples/classification/datasets/iris_training.csv https://raw.githubusercontent.com/tommasocarraro/LTNtorch/main/examples/datasets/iris_training.csv" }
+download-iris-test = { shell = "curl -L -o examples/classification/datasets/iris_test.csv https://raw.githubusercontent.com/tommasocarraro/LTNtorch/main/examples/datasets/iris_test.csv" }
+download-medical = { shell = "curl -L -o examples/medical/datasets/pima_indians_imputed.csv https://raw.githubusercontent.com/ChristelSirocchi/hybrid-ML/main/pima_indians_imputed.csv" }
+
+download-class-datasets = { sequence = ["create-class-dataset-dir", "download-iris-training", "download-iris-test"] }
+download-reg-datasets = { sequence = ["create-reg-dataset-dir", "download-real_estate"] }
+download-medical-datasets =  { sequence = ["create-medical-dataset-dir", "download-medical"] }
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
