@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/udalmap/__init__.py
+src/udalmap/base.py
+src/udalmap/utils.py
+src/udalmap.egg-info/PKG-INFO
+src/udalmap.egg-info/SOURCES.txt
+src/udalmap.egg-info/dependency_links.txt
+src/udalmap.egg-info/requires.txt
+src/udalmap.egg-info/top_level.txt
+tests/test_base.py
+tests/test_utils.py
