@@ -1,0 +1,18 @@
+[package]
+name = "protectionstnd"
+version = "0.1.1"
+edition = "2021"
+authors = ["Alejandro Martinez <aegloszenit@protonmail.com>"]
+description = "Security Protections, from sql injection to country specific protections"
+repository = "https://github.com/zenitaeglos/protectionstnd.git"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "protectionstnd"
+crate-type = ["cdylib"]
+
+
+[dependencies]
+pyo3 = "0.24.0"
+regex = "1"
