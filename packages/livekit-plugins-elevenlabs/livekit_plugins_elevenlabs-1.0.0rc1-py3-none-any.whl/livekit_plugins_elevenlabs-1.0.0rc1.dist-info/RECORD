@@ -1,0 +1,9 @@
+livekit/plugins/elevenlabs/__init__.py,sha256=YZVadomFq3JWiZN6GWXJbuE4vaNNWq1CmdH25du8qwg,1249
+livekit/plugins/elevenlabs/log.py,sha256=hIuXqDsEB5GBa7rQY3z4Uqi1oCqc_lRmCHZEmXz0LHw,73
+livekit/plugins/elevenlabs/models.py,sha256=nB43wLS1ilzS7IxLYVSQxBjKPnbiPl4AHpHAOlG2i00,273
+livekit/plugins/elevenlabs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/elevenlabs/tts.py,sha256=NrW-xONOPOHXycmX9mL1m0wrQjwfb_3ZIxy9Jf0oVf4,19568
+livekit/plugins/elevenlabs/version.py,sha256=pF0lh6G9GYL7Mj7EnfhjFifzlzdWx6u3RvB0Itch4UE,604
+livekit_plugins_elevenlabs-1.0.0rc1.dist-info/METADATA,sha256=KaLRiJ7Q7Ei1YH5mlkRmiNAR9nmln-kQsuINM_QeAM4,1321
+livekit_plugins_elevenlabs-1.0.0rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_elevenlabs-1.0.0rc1.dist-info/RECORD,,
