@@ -1,0 +1,15 @@
+iiiflow/__init__.py,sha256=rp6Tji0RYdB7LyUHcr2oJ-ZV0Fu8DinJuGpQrbPF0YM,3831
+iiiflow/conversions.py,sha256=dn_Q3TZ1m_p6vLj8g3dHm7D_872_On_qBi3045UZpMc,2151
+iiiflow/manifest.py,sha256=tHAQwEQEmNgI6xX1SMnj-wwG6_JeLSUsUgrxciR1evg,21614
+iiiflow/metadata.py,sha256=3LpLcdsh2K8PdxpOv_RWMSUgY0t7hu_FpBsW7rwJoCs,7805
+iiiflow/pdf.py,sha256=-G-ju518PspAhWYAbmrw2AcGmitDyCbAUd3OXJW529w,4349
+iiiflow/ptif.py,sha256=nbZnEP2seEA4iKvXnsoT6HNAcYXFZhWF_JBR-W7L_sA,2619
+iiiflow/tesseract.py,sha256=yF3x9IfILLn6eH3Y7eR5_gci8MqC9-RnDbcq8q8E0ik,4197
+iiiflow/thumbnail.py,sha256=7lQj1coZ4sEhGbtoWsozJ_--H2fmFG1d15rhutINR68,5049
+iiiflow/transcribe.py,sha256=APPLp4bYj12cwkT_s5nJpRFc5PvD4Qy814GOYsgAnj0,4887
+iiiflow/utils.py,sha256=IH9GsZXHgTluUL3w23gJbj6WyddDdeHs0KxB9vnO6Pw,8215
+iiiflow-0.4.0.dist-info/licenses/LICENSE,sha256=ViOkPDejYjm1WCQpQngFvllDAt85z1lJsTTxYzVxEpU,1145
+iiiflow-0.4.0.dist-info/METADATA,sha256=gZTJs2sbcGnTt_jPrhxf5Tj7GPEUswEfpqF1MpFfIw4,1084
+iiiflow-0.4.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+iiiflow-0.4.0.dist-info/top_level.txt,sha256=IuHBCBjU9d1ggmSaGUAEEbrAhyhscpNLJR97YxBHscI,8
+iiiflow-0.4.0.dist-info/RECORD,,
