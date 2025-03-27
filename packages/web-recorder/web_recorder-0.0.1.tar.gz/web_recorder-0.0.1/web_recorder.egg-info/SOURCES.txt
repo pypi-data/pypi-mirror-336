@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+web_recorder.egg-info/PKG-INFO
+web_recorder.egg-info/SOURCES.txt
+web_recorder.egg-info/dependency_links.txt
+web_recorder.egg-info/top_level.txt
