@@ -1,0 +1,3 @@
+avocado-framework==110.0
+jinja2
+markupsafe<3.0.0
