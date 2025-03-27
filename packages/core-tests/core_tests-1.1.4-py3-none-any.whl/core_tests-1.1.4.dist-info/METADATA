@@ -1,0 +1,106 @@
+Metadata-Version: 2.4
+Name: core-tests
+Version: 1.1.4
+Summary: It contains common elements for testing purposes...
+Author-email: Alejandro Cora González <alek.cora.glez@gmail.com>
+Maintainer: Alejandro Cora González
+License: MIT
+Project-URL: Homepage, https://gitlab.com/bytecode-solutions/core/core-tests
+Project-URL: Repository, https://gitlab.com/bytecode-solutions/core/core-tests
+Project-URL: Documentation, https://core-tests.readthedocs.io/en/latest/
+Project-URL: Issues, https://gitlab.com/bytecode-solutions/core/core-tests/-/issues
+Project-URL: Changelog, https://gitlab.com/bytecode-solutions/core/core-tests/-/blob/master/CHANGELOG.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click>=8.1.8
+Requires-Dist: coverage>=7.7.1; python_version >= "3.9"
+Requires-Dist: coverage>=7.3.0; python_version >= "3.8" and python_version < "3.9"
+Requires-Dist: coverage>=7.0.0; python_version >= "3.7" and python_version < "3.8"
+Requires-Dist: environs>=14.1.1; python_version >= "3.9"
+Requires-Dist: environs>=11.2.0; python_version >= "3.8" and python_version < "3.9"
+Requires-Dist: environs>=10.1.0; python_version >= "3.7" and python_version < "3.8"
+Provides-Extra: docs
+Requires-Dist: pydata-sphinx-theme==0.16.1; extra == "docs"
+Requires-Dist: Sphinx==8.2.3; extra == "docs"
+Dynamic: license-file
+
+# core-tests
+_______________________________________________________________________________
+
+This project contains basic elements for testing purposes and the ability 
+to run (via console commands) tests and code coverage (unittest-based). This way, we can 
+stick to the `DRY -- Don't Repeat Yourself` principle and avoid code duplication
+in each python project where tests coverage and tests execution are
+expected...
+
+## How to Use
+
+### Install the package
+```shell
+pip install core-tests
+```
+
+### Create entry-point
+```python
+# manager.py
+
+from click.core import CommandCollection
+from core_tests.tests.runner import cli_tests
+
+if __name__ == "__main__":
+    cli = CommandCollection(sources=[cli_tests()])
+    cli()
+```
+
+### Shell commands
+```shell
+python manager.py run-tests --test-type unit
+python manager.py run-tests --test-type integration
+python manager.py run-tests --test-type "another folder that contains test cases under ./tests"
+python manager.py run-tests --test-type functional --pattern "*.py"
+python manager.py run-coverage
+```
+
+## Execution Environment
+
+### Install libraries
+```shell
+pip install --upgrade pip 
+pip install virtualenv
+```
+
+### Create the Python Virtual Environment
+```shell
+virtualenv --python={{python-version}} .venv
+virtualenv --python=python3.11 .venv
+```
+
+### Activate the Virtual Environment
+```shell
+source .venv/bin/activate
+```
+
+### Install required libraries
+```shell
+pip install .
+```
+
+### Check tests and coverage...
+```shell
+python manager.py run-tests
+python manager.py run-coverage
+```
