@@ -1,0 +1,8 @@
+asset_tags_service
+commons
+depot_service
+gateway
+heimdall
+poros
+sink_service
+stack_service
