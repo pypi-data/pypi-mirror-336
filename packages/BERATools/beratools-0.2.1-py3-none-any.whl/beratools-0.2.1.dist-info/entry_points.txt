@@ -1,0 +1,2 @@
+[console_scripts]
+BERATools = beratools.gui:gui_main
