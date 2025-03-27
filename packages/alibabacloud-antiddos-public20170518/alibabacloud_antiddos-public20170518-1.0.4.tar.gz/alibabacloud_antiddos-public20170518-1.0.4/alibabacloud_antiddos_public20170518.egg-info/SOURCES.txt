@@ -1,0 +1,15 @@
+ChangeLog.md
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_antiddos_public20170518/__init__.py
+alibabacloud_antiddos_public20170518/client.py
+alibabacloud_antiddos_public20170518/models.py
+alibabacloud_antiddos_public20170518.egg-info/PKG-INFO
+alibabacloud_antiddos_public20170518.egg-info/SOURCES.txt
+alibabacloud_antiddos_public20170518.egg-info/dependency_links.txt
+alibabacloud_antiddos_public20170518.egg-info/requires.txt
+alibabacloud_antiddos_public20170518.egg-info/top_level.txt
