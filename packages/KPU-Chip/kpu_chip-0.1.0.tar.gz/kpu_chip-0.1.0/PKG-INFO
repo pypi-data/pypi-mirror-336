@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: KPU_chip
+Version: 0.1.0
+Summary: Quantum-inspired neural processing module (KPUChip) with quantum operations and benchmarking.
+Author: N V R K SAI KAMESH YADAVALLI
+Author-email: saikamesh.y@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: tensorflow>=2.0
+Requires-Dist: rich
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
