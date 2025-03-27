@@ -1,0 +1,10 @@
+finatic_client_python-0.1.0.dist-info/METADATA,sha256=UWA-6dHU7MezEBwyNDfni4D8F78t2ZjVhGX5fACWWF8,1761
+finatic_client_python-0.1.0.dist-info/WHEEL,sha256=6gg8M7kMeWmDzkhJuJzWLhBYdt7OGDF81wlSJjN85_E,96
+finatic/client.py,sha256=nT2-Nu_jy06XhbLjhsAlX3omPzUMRxNxwzSJvmdPris,4859
+finatic/exceptions.py,sha256=BPLlEV8CAN5mHb46wbu8bcCDwJ70mtJI4UNQv4LuztU,610
+finatic/models.py,sha256=wlZNOxpqpERKwleKVsOUpeRX1LOIWrZC-BxuLFa6Nbc,2104
+finatic/_core.pyi,sha256=UhmI3QG3PamYQ_nB5heBVTtpVYjdEm_JUIyVZhG1528,1301
+finatic/_core.rs,sha256=yO1JIBB5Xu7KFyOhQmbE2cdUr8fOkuIAbzbCuNUH7Ck,3216
+finatic/__init__.py,sha256=ivtZLLDvsUlrgn7MzlspqT0v0q_ufgW53O1S__rQ4Ks,149
+finatic/_core.cp313-win_amd64.pyd,sha256=QhWYYbF9Hl7jW3YGkgq70JofE4VdNmpirdOBtKo8yFY,3675648
+finatic_client_python-0.1.0.dist-info/RECORD,,
