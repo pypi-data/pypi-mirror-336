@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - paths: default
+  - postprocess: null
+  - metrics: null
+  # disable hydra saving logs to the output directory
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: custom
+
+exp_name: null
+console_logging_level: INFO
+
+hydra:
+  # disables saving .hydra directory to the output directory
+  output_subdir: null
+  run:
+    # https://github.com/facebookresearch/hydra/issues/910
+    # run_dir is usually `.` so this disables changing the working directory
+    dir: ${paths.run_dir}

@@ -1,0 +1,23 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: custom
+
+console_logging_level: INFO
+data_path: null         # TODO: Fill in
+                        # Path to the dataset
+model_path: null        # TODO: Fill in
+                        # Path of the model. If a directory then the 'best_ckpt.pt' from that directory will be used.
+save_path: null         # TODO: Fill in.
+                        # Location where to save the evaluation logs
+model_info_path: null   # TODO: Fill in.
+                        # If the model-path is directory with 'best_ckpt.pt' then the corresponding 'best.json' log will be used as default
+run_dir: ${model_path}  # defaults to the model directory (model_path)
+rf_weight_id: 0         # should not be used in most cases
+
+hydra:
+  output_subdir: null
+  run:
+    dir: ${run_dir}
