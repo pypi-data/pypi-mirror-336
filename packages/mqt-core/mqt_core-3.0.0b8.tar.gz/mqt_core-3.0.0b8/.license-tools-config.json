@@ -1,0 +1,34 @@
+{
+  "author": {
+    "name": "Chair for Design Automation, TUM"
+  },
+  "force_author": true,
+  "license": "MIT",
+  "title": false,
+  "include": ["**/*"],
+  "style_override_for_suffix": {
+    ".pyi": "DOCSTRING_STYLE",
+    ".in": "POUND_STYLE",
+    ".mlir": "SLASH_STYLE",
+    ".td": "SLASH_STYLE"
+  },
+  "exclude": [
+    "^\\.[^/]+",
+    "/\\.[^/]+",
+    ".*\\.qasm",
+    ".*\\.md",
+    ".*\\.bib",
+    ".*\\.css",
+    ".*\\.json",
+    ".*\\.html",
+    ".*\\.tfc",
+    ".*\\.qc",
+    ".*\\.real",
+    ".*\\.tex",
+    ".*\\.toml",
+    ".*\\.yaml",
+    "uv\\.lock",
+    "py\\.typed",
+    ".*build.*"
+  ]
+}
