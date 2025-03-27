@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/vnmapping/__init__.py
+src/vnmapping/dlt.py
+src/vnmapping/set_config.py
+src/vnmapping.egg-info/PKG-INFO
+src/vnmapping.egg-info/SOURCES.txt
+src/vnmapping.egg-info/dependency_links.txt
+src/vnmapping.egg-info/top_level.txt
+src/vnmapping/include/VnHardwareConf.dll
