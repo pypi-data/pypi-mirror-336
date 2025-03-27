@@ -1,0 +1,22 @@
+[project]
+name = "powerpoint-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "argparse>=1.4.0",
+    "asyncio>=3.4.3",
+    "mcp>=1.5.0",
+    "pillow>=11.1.0",
+    "python-pptx>=1.0.2",
+    "requests>=2.32.3",
+    "together>=1.5.3",
+]
+
+[[project.authors]]
+name = "Russell Ashby"
+email = "158164671+supercurses@users.noreply.github.com"
+
+[project.scripts]
+powerpoint-mcp-server = "powerpoint.server:main"

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+powerpoint/__init__.py
+powerpoint/chart_manager.py
+powerpoint/presentation_manager.py
+powerpoint/server.py
+powerpoint/vision_manager.py
+powerpoint_mcp_server.egg-info/PKG-INFO
+powerpoint_mcp_server.egg-info/SOURCES.txt
+powerpoint_mcp_server.egg-info/dependency_links.txt
+powerpoint_mcp_server.egg-info/entry_points.txt
+powerpoint_mcp_server.egg-info/requires.txt
+powerpoint_mcp_server.egg-info/top_level.txt
