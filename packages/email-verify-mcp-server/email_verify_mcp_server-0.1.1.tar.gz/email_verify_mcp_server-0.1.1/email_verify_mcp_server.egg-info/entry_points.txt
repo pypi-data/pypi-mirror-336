@@ -1,0 +1,2 @@
+[console_scripts]
+email-verify-mcp-server = email_verify.server:main
