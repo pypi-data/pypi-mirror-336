@@ -1,0 +1,251 @@
+Metadata-Version: 2.4
+Name: cubicpy
+Version: 0.1.3
+Summary: A Python library for creating 3D basic shape models and animations with Physics.
+Home-page: https://github.com/creativival/CubicPy
+Author: creativival
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education :: Computer Aided Instruction (CAI)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: panda3d>=1.10.15
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CubicPy
+
+*日本語 | [English](README.md)*
+
+![CubicPy Logo](./assets/cubicpy_logo.png)
+
+CubicPy - コードで物理オブジェクトを配置・構築する3Dプログラミング学習アプリ
+
+「キュービックパイ」 - 略して「キューパイ」と呼んでください！
+
+## アプリの説明
+
+CubicPyは、Pythonコードを使って3D空間にオブジェクトを配置し、リアルな物理演算で動作する世界を構築できるアプリケーションです。ボックスや球体などの物体を自由に配置して建築物を作り、重力や衝突などの物理法則を体験しながらプログラミングを学べます。
+
+![CubicPy Sample Animation Gif](./assets/cubicpy_sample.gif)
+
+作成したオブジェクト建築物は、地面を傾けることで物理演算を使ったリアルな崩壊過程を観察できます。また、重力係数を変更することで、異なる重力環境下での物理挙動を確認できます。
+
+## インストール方法
+
+```
+pip install cubicpy
+```
+
+## cubicpyコマンドの使用方法
+
+インストール後、コマンドラインから簡単に実行できます：
+
+```
+# サンプルコードをランダムに選択して実行
+cubicpy
+
+# ヘルプを表示
+cubicpy --help
+cubicpy -h
+
+# サンプル一覧を表示
+cubicpy --list
+cubicpy -l
+
+# 特定のサンプルを実行
+cubicpy --example box_tower_sample
+cubicpy -e box_tower_sample
+
+# 自作のPythonファイルを実行
+cubicpy my_script.py
+
+# 重力係数を変更して実行（重力に10の何乗倍を掛けるか指定する）
+cubicpy --gravity -6 --example box_tower_sample
+cubicpy -g -6 -e box_tower_sample
+
+# カスタムウィンドウサイズ(1280x720)で実行
+cubicpy -e box_tower_sample -w 1280,720
+cubicpy --window-size 1280,720 -e box_tower_sample
+```
+
+## サンプルコードの解説
+
+### 箱の塔を作る (box_tower_sample.py)
+
+![Sample box tower](./assets/box_tower.png)
+
+```python
+# 物体データの配列を作成
+body_data = []
+
+# 10段の箱を積み上げる
+for i in range(10):
+    body_data.append({
+        'type': 'box',
+        'pos': (0, 0, i),  # 位置: x, y, z
+        'scale': (1, 1, 1),  # サイズ: 幅, 奥行き, 高さ
+        'color': (i/10, 0, 1-i/10),  # 色: 赤, 緑, 青 (0〜1)
+        'mass': 1  # 質量（省略可）
+    })
+```
+
+## オブジェクト定義の詳細（cubicコマンド用）
+
+`body_data`リストに追加するオブジェクト定義の詳細：
+
+| パラメータ | 説明 | 必須 | デフォルト値 |
+|------------|------|------|--------|
+| `type` | オブジェクトの種類: 'box', 'sphere', 'cylinder' | 必須 | - |
+| `pos` | 位置座標 (x, y, z) | 必須 | - |
+| `scale` | 大きさ (幅, 奥行き, 高さ) | 任意 | (1, 1, 1) |
+| `color` | 色 (赤, 緑, 青) - 各値は0〜1 | 任意 | (0.5, 0.5, 0.5) |
+| `mass` | 質量 (0: 固定物体) | 任意 | 1 |
+| `color_alpha` | 透明度 (0: 透明 〜 1: 不透明) | 任意 | 1 |
+| `hpr` | 回転角度 (heading, pitch, roll) | 任意 | (0, 0, 0) |
+| `position_mode` | 位置基準 | 任意 | 'corner_near_origin' |
+
+※ `position_mode`は以下の値が指定可能:
+- `'corner_near_origin'`: 原点に近い角が基準
+- `'bottom_center'`: 底面の中心が基準
+- `'gravity_center'`: 立方体の重心が基準
+
+## cubicpyコマンドでワールドをビルドする方法
+
+1. サンプルのような形式でPythonファイルを作成
+2. `cubicpy your_file.py`コマンドで実行
+
+## APIモードでビルドするサンプルコード
+
+![Sample api mode](./assets/sample_api_mode.png)
+
+```python
+from cubicpy import CubicPyApp
+
+# インスタンス化
+app = CubicPyApp(gravity_factor=-4)
+
+# 単独オブジェクトの追加
+# APIを使ってオブジェクトを追加
+app.add_box(position=(0, 0, 0), scale=(1, 1, 1), color=(1, 0, 0))
+app.add_sphere(position=(2, 0, 0),  scale=(1, 1, 1), color=(0, 1, 0))
+app.add_cylinder(position=(4, 0, 0),  scale=(1, 1, 1), color=(0, 0, 1))
+
+# 複数オブジェクトの追加（ループ）
+for i in range(10):
+    app.add_box(
+        position=(0, 5, i),
+        color=(i/10, 0, 1-i/10)
+    )
+
+# cubicpyコマンドと互換性を保つbody_dataの追加
+body_data = []
+for i in range(10):
+    body_data.append({
+        'type': 'box',
+        'pos': (0, 10, i),
+        'scale': (1, 1, 1),
+        'color': (i / 10, 0, 1 - i / 10),
+        'mass': 1,
+        'color_alpha': 1,
+    })
+
+app.from_body_data(body_data)
+
+# シミュレーション実行
+app.run()
+```
+
+## APIモードのメソッド詳細
+
+### CubicPyAppクラス
+
+```python
+CubicPyApp(code_file=None, gravity_factor=-6)
+```
+- `code_file`: 実行するPythonファイルのパス（任意）
+- `gravity_factor`: 重力係数（任意、デフォルト: -4）
+
+### オブジェクト追加メソッド
+
+#### 箱を追加
+```python
+add_box(position=(0, 0, 0), scale=(1, 1, 1), color=(0.5, 0.5, 0.5), mass=1, color_alpha=1)
+```
+- `position`: 位置座標 (x, y, z)
+- `scale`: 大きさ (幅, 奥行き, 高さ)
+- `color`: 色 (赤, 緑, 青) - 各値は0〜1
+- `mass`: 質量 (0: 固定物体)
+- `color_alpha`: 透明度 (0: 透明 〜 1: 不透明)
+
+#### 球体を追加
+```python
+add_sphere(position=(0, 0, 0), scale=(1, 1, 1), color=(0.5, 0.5, 0.5), mass=1, color_alpha=1)
+```
+- パラメータは`add_box`と同様
+
+#### 円柱を追加
+```python
+add_cylinder(position=(0, 0, 0), scale=(1, 1, 1), color=(0.5, 0.5, 0.5), mass=1, color_alpha=1)
+```
+- パラメータは`add_box`と同様
+
+#### body_dataリストからオブジェクトを構築
+```python
+from_body_data(body_data) 
+```
+- `body_data`: cubicpyコマンドのオブジェクト定義（辞書形式）のリスト
+
+### ワールド操作メソッド
+
+```python
+run()  # ワールドを構築して実行
+reset()  # ワールドをリセット
+```
+
+## APIモードでワールドを構築する方法
+
+1. Pythonスクリプトで`CubicPyApp`のインスタンスを作成
+2. `add_box()`、`add_sphere()`などのメソッドでオブジェクトを追加
+3. `run()`メソッドを呼び出してワールドを構築・実行
+4. 必要に応じて`reset()`メソッドで再構築可能
+5. `python your_script.py`で実行
+
+## アプリの操作方法
+
+- **矢印キー**: カメラ角度の変更
+- **マウスホイール**: ズームイン/アウト
+- **W/S/A/D**: 地面を傾ける
+- **F/G**: 重力の強さを変更
+- **R**: リセット
+- **F1**: デバッグ表示切替
+- **ESC**: 終了
+
+## 必須条件
+
+- Python 3.9以上
+- Panda3D
+- Panda3D-Bullet物理エンジン
+- NumPy
+
+これらの依存パッケージは`pip install cubicpy`で自動的にインストールされます。
+
+## 著作権
+
+MITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+
+## 貢献
+
+バグ報告や機能改善の提案は、GitHubのIssueやPull Requestでお願いします。また、新しいサンプルの作成や、ドキュメントの改善なども歓迎します。
+
+---
+
+CubicPyで楽しくプログラミングを学びましょう！
