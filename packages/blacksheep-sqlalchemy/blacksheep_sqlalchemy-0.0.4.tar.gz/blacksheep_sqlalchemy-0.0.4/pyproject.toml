@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "blacksheep-sqlalchemy"
+version = "0.0.4"
+authors = [{ name = "Roberto Prevato", email = "roberto.prevato@gmail.com" }]
+description = "Extension for BlackSheep to use SQLAlchemy."
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+keywords = ["blacksheep", "sqlalchemy", "orm", "database"]
+
+dependencies = ["blacksheep", "SQLAlchemy~=2.0.24"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["blacksheepsqlalchemy"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["tests"]
+
+[tool.hatch.build]
+only-packages = true
+
+[project.urls]
+"Homepage" = "https://github.com/Neoteroi/BlackSheep-SQLAlchemy"
+"Bug Tracker" = "https://github.com/Neoteroi/BlackSheep-SQLAlchemy/issues"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
