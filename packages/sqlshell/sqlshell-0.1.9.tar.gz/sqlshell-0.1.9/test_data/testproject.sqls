@@ -1,0 +1,139 @@
+{
+    "tables": {
+        "sample_sales_data": {
+            "file_path": "database",
+            "columns": [
+                "OrderID",
+                "Date",
+                "ProductID",
+                "Quantity",
+                "CustomerID",
+                "Region",
+                "Price",
+                "TotalAmount"
+            ]
+        },
+        "product_catalog": {
+            "file_path": "database",
+            "columns": [
+                "ProductID",
+                "ProductName",
+                "Category",
+                "Brand",
+                "StockQuantity",
+                "MinPrice",
+                "MaxPrice",
+                "Weight_kg",
+                "WarrantyMonths"
+            ]
+        },
+        "customer_data": {
+            "file_path": "database",
+            "columns": [
+                "CustomerID",
+                "FirstName",
+                "LastName",
+                "Email",
+                "JoinDate",
+                "CustomerType",
+                "CreditScore"
+            ]
+        },
+        "weather_measurements": {
+            "file_path": "/home/user/SQLShell/test_data/weather_measurements.xlsx",
+            "columns": [
+                "date",
+                "temperature",
+                "humidity",
+                "pressure",
+                "wind_speed"
+            ]
+        },
+        "sales": {
+            "file_path": "database",
+            "columns": [
+                "OrderID",
+                "Date",
+                "ProductID",
+                "Quantity",
+                "CustomerID",
+                "Region",
+                "Price",
+                "TotalAmount"
+            ]
+        },
+        "customers": {
+            "file_path": "database",
+            "columns": [
+                "CustomerID",
+                "FirstName",
+                "LastName",
+                "Email",
+                "JoinDate",
+                "CustomerType",
+                "CreditScore"
+            ]
+        },
+        "products": {
+            "file_path": "database",
+            "columns": [
+                "ProductID",
+                "ProductName",
+                "Category",
+                "Brand",
+                "StockQuantity",
+                "MinPrice",
+                "MaxPrice",
+                "Weight_kg",
+                "WarrantyMonths"
+            ]
+        },
+        "product_catalog_1": {
+            "file_path": "database",
+            "columns": [
+                "ProductID",
+                "ProductName",
+                "Category",
+                "Brand",
+                "StockQuantity",
+                "MinPrice",
+                "MaxPrice",
+                "Weight_kg",
+                "WarrantyMonths"
+            ]
+        },
+        "test2": {
+            "file_path": "database",
+            "columns": [
+                "Category",
+                "avg(((maxprice - minprice) / maxprice))"
+            ]
+        },
+        "product_catalog_2": {
+            "file_path": "database",
+            "columns": [
+                "productid",
+                "productname",
+                "category",
+                "baseprice",
+                "instock"
+            ]
+        }
+    },
+    "tabs": [
+        {
+            "title": "catalog",
+            "query": "SELECT * FROM product_catalog pc INNER JOIN sample_sales_data sd on sd.productid = pc.productid"
+        },
+        {
+            "title": "yeah",
+            "query": "select avg(temperature ) from weather_measurements "
+        },
+        {
+            "title": "test2",
+            "query": "select* from test2,(select 'hey' union all select 'ho')"
+        }
+    ],
+    "connection_type": "sqlite",
+    "database_path": "/home/user/SQLShell/test_data/test.db"
+}
