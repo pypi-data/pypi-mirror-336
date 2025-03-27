@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "auth-proxy-jwt"
+version = "0.2.0"
+description = "JWT authentication plugin for python-auth-proxy"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Kumi Mitterer", email = "auth-proxy@kumi.email"},
+]
+dependencies = [
+    "python-auth-proxy>=0.2.0",
+    "pyjwt",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Security",
+]
+
+[project.urls]
+"Homepage" = "https://git.private.coffee/kumi/auth-proxy-jwt"
+"Bug Tracker" = "https://git.private.coffee/kumi/auth-proxy-jwt/issues"
+
+[project.entry-points."auth_proxy.plugins"]
+jwt = "auth_proxy_jwt.plugin:JWTAuthPlugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["auth_proxy_jwt"]
