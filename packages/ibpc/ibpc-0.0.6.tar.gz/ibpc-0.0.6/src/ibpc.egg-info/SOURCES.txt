@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/ibpc/__init__.py
+src/ibpc/ibpc.py
+src/ibpc.egg-info/PKG-INFO
+src/ibpc.egg-info/SOURCES.txt
+src/ibpc.egg-info/dependency_links.txt
+src/ibpc.egg-info/entry_points.txt
+src/ibpc.egg-info/not-zip-safe
+src/ibpc.egg-info/requires.txt
+src/ibpc.egg-info/top_level.txt
