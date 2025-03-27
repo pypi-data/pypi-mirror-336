@@ -1,0 +1,6 @@
+# 排除 requirements.txt 和 setup.py 文件
+exclude requirements.txt
+exclude setup.py
+
+# 如果有其他文件夹要排除，可以使用如下的排除方式
+recursive-exclude build *
