@@ -1,0 +1,5 @@
+requests>=2.25.0
+
+[bigquery]
+google-cloud-bigquery>=2.0.0
+google-auth>=1.30.0
