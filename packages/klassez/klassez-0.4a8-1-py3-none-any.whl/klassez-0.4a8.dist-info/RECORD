@@ -1,0 +1,15 @@
+klassez/Spectra.py,sha256=6VXpQLiez7DQ5UXHRjrXw4Xa37LDhWs38hrcgG0NTKY,123990
+klassez/__init__.py,sha256=jjwGZsDrdRIW8RgXiPuk8hqYR74_oZHTiHf4taEtObI,524
+klassez/config.py,sha256=4JTYTlxTg1fVTqyGJXkBCrWP7psHpm6OkOckj-4rEZM,2995
+klassez/figures.py,sha256=JqhzUWFcu40trh_GoPIqwnFassHfirnuW5GJ6d-QDpY,60908
+klassez/fit.py,sha256=TzLEqq9X8DS2TVzYoW4n40IluLViXgXyAvQM04fXVYU,266247
+klassez/misc.py,sha256=5pV591l6QKhFNw55wqBeoc08C2gCWA8OWRW7U2SPc3M,60126
+klassez/processing.py,sha256=-4OOdbe4ou9p8NotIxthTK1kWIy7V3DZ-QcmSVwOTuc,174742
+klassez/sim.py,sha256=KGts-rKCWVVxDkW-KURvVLHhErNAQk-POjvbLQ7-kr4,27413
+klassez/tables/gamma.dic,sha256=LIL8pSm6qNQaNe9vsBDIOMYu86AggCxOL1cXUM1w2Jk,3071
+klassez/tables/nuclei_jeol.dic,sha256=QA6QaS3qWRBxeGqgZB-xmN0tCieUd5Mj968Pc03EGKI,3651
+klassez-0.4a8.dist-info/LICENSE.txt,sha256=32XIIeXICyXXJGzWS0m_8zV3ebN6RACNkDoHRlWLVwM,1072
+klassez-0.4a8.dist-info/METADATA,sha256=ipfQc_r4Ps-_CzIeWKTPhEKrqqDLcx8vIPXOzmLoTtk,1404
+klassez-0.4a8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+klassez-0.4a8.dist-info/top_level.txt,sha256=qLM9K74pFAGnzl137XXJqTkZD0i2nyxrfjiYraI1nMM,8
+klassez-0.4a8.dist-info/RECORD,,
