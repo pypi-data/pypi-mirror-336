@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+varqa/__init__.py
+varqa.egg-info/PKG-INFO
+varqa.egg-info/SOURCES.txt
+varqa.egg-info/dependency_links.txt
+varqa.egg-info/top_level.txt
