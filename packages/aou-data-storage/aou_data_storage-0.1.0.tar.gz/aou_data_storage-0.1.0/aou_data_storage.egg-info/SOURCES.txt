@@ -1,0 +1,5 @@
+setup.py
+aou_data_storage.egg-info/PKG-INFO
+aou_data_storage.egg-info/SOURCES.txt
+aou_data_storage.egg-info/dependency_links.txt
+aou_data_storage.egg-info/top_level.txt
