@@ -1,0 +1,14 @@
+asset_plugin_gcr/__init__.py,sha256=PLcwxHYHiFJl_lZgSa4ag4hexq-5g6flaMwbex0TRDM,42
+asset_plugin_gcr/gcr_blob.py,sha256=fyf-HwxUCqZL2Pl4JZDgzSeAxZkfqNJQGjIte0MOlKg,1038
+asset_plugin_gcr/gcr_mixin.py,sha256=BYhVdxgvmUN_ZSo9p190t6K-FddLY8X3kdVwydd9em0,4045
+asset_plugin_gcr/gcr_storage.py,sha256=yJxkJtuk8eWF_AZVxu3ksvseZPWQ0JbaobL5AYaWdLM,1998
+asset_plugin_gcr/gcr_url.py,sha256=tmbeTwMtG6-5A5bjXQVKzoidXheuCx507GgV20OQV1M,2002
+asset_plugin_gcr/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asset_plugin_gcr/tests/test_gcr_storage.py,sha256=6VzA0GdNZtCjrV_5IGHT88rCFSRwt58h3skqG2T0cyM,2404
+asset_plugin_gcr/tests/test_gcr_url.py,sha256=u-pPssaNKJ1HJ2-rEPCuMoCw9MQ0Hu2HImt-Z-Zn7kw,3103
+asset_plugin_gcr/transporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asset_plugin_gcr/transporter/gcr_transporter.py,sha256=9B_CU19HzJzpw9Vtbz7vFNuxsECQFexmDXXO-4t_mbw,565
+amapy_plugin_gcr-1.0.0.dist-info/METADATA,sha256=3vs9kMEUrkdHYs9z5ijxUYs9rod1dNjyOlho153jfRQ,749
+amapy_plugin_gcr-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+amapy_plugin_gcr-1.0.0.dist-info/top_level.txt,sha256=bUBpD1QiZErYTYpIGFz9JM0oqyxpBGS0tEfZt6N2crM,17
+amapy_plugin_gcr-1.0.0.dist-info/RECORD,,
