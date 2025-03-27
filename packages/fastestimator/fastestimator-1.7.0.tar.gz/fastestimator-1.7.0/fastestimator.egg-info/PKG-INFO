@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fastestimator
+Version: 1.7.0
+Summary: Deep learning framework
+Home-page: https://github.com/fastestimator/fastestimator
+Author: FastEstimator Dev
+License: Apache License 2.0
+Keywords: fastestimator tensorflow pytorch
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.0
+License-File: LICENSE
+
+FastEstimator is a high-level deep learning API. With the help of FastEstimator, you can easily                     build a high-performance deep learning model and run it anywhere.
