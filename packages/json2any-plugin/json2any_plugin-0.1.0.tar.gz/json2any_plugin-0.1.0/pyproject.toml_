@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "json2any_plugin"
+version = "1.0.0"
+description = "plugin interfaces for json2any"
+authors = ["Maciej Matuszak <maciej.matuszak@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "json2any_plugin", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+argparse = "^1.4.0"
+jinja2 = "^3.1.6"
+
+
+[tool.poetry.group.dev.dependencies]
+bump2version = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
