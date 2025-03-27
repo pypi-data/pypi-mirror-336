@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+email_verify/__init__.py
+email_verify/server.py
+email_verify_mcp_server.egg-info/PKG-INFO
+email_verify_mcp_server.egg-info/SOURCES.txt
+email_verify_mcp_server.egg-info/dependency_links.txt
+email_verify_mcp_server.egg-info/requires.txt
+email_verify_mcp_server.egg-info/top_level.txt
