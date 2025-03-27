@@ -1,0 +1,5 @@
+[console_scripts]
+SPACEconfig = SPACEtomo.setup_config:main
+SPACEmodel = SPACEtomo.setup_model:main
+SPACEmonitor = SPACEtomo.run_monitor:main
+SPACEtomo = SPACEtomo.CLI:main

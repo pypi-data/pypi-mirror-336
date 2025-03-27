@@ -1,0 +1,35 @@
+
+[:python_version < "3.7"]
+matplotlib>=3.3
+mrcfile>=1.5
+numpy>=1.19
+Pillow>=8.0
+scipy>=1.5
+scikit-image>=0.17
+imageio==2.15.0
+
+[:python_version >= "3.9"]
+matplotlib>=3.5
+mrcfile>=1.5.0
+numpy>=1.26.4
+Pillow>=10.4.0
+scipy>=1.12.0
+scikit-image>=0.22.0
+
+[gui]
+
+[gui:python_version >= "3.9"]
+dearpygui>=1.10.0
+
+[predict]
+
+[predict:python_version == "3.9"]
+ultralytics<8.3.10,>=8.1.12
+
+[predict:python_version >= "3.10"]
+ultralytics>=8.1.12
+
+[predict:python_version >= "3.9"]
+torch>=2.2.0
+torchvision>=0.17.0
+nnunetv2>=2.2.1
