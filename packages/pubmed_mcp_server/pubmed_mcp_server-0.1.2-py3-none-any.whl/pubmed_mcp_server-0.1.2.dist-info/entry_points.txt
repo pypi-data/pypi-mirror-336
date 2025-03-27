@@ -1,0 +1,3 @@
+[console_scripts]
+pubmed_mcp_server=pubmed_mcp_server.main:main
+
