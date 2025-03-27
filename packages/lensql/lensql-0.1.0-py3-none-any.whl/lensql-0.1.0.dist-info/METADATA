@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: lensql
+Version: 0.1.0
+Summary: Various utilies to aid in program development.
+Project-URL: Repository, https://github.com/DavidePonzini/dav-utils
+Project-URL: Documentation, https://dav-tools.readthedocs.io/en/latest/index.html
+Project-URL: Bug Tracker, https://github.com/DavidePonzini/dav-utils/issues
+Author-email: Davide Ponzini <davide.ponzini95@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: argparse
+Requires-Dist: elevate
+Requires-Dist: openai
+Requires-Dist: psycopg2
+Description-Content-Type: text/markdown
+
+# lenSQL
+`lenSQL` is an AI-powered tutor for learning SQL.
