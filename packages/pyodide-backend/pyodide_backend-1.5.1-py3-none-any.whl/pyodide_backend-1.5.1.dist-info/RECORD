@@ -1,0 +1,13 @@
+pyodide_backend/__init__.py,sha256=5nVo2otpAoTOWuM8u0gci44dhbR-QwltU4Jl9OLQHkA,71
+pyodide_backend/display_hook.py,sha256=PA-keSbi9AK1Jg1KEJ0n2OUMPWgHp_lCX_06mwm580g,485
+pyodide_backend/exercise.py,sha256=obV_hG_2bMytQncKLBsyKI3yQy2YP_zmIrAXOXeO2UQ,3010
+pyodide_backend/interactive_shell.py,sha256=BUTiNpJZswiPEvnplg4kOANGLYPp1mofWddnBY81tOo,1799
+pyodide_backend/matplotlib_custom_backend.py,sha256=AXOJg22e2c7RUQ6PN0ASSXVBhwmV5kB6GGbbCy_LsUk,815
+pyodide_backend/matplotlib_plots.py,sha256=BsH2zijdW_coTp-HXOzrlr8TV8W625V1-_ZeNO7LCw0,1078
+pyodide_backend/process.py,sha256=Sa0OmdS6ndxAkHUQSWBP8ZKtRhLSaWrj9HC2y5LkEtc,615
+pyodide_backend/task.py,sha256=fan5bJn5pEjZlkF2yzZUOR01Wt4M10w6JZHcqIl1t1g,2783
+pyodide_backend/version.py,sha256=Ubtw-6mKAm4RvkEVBiLAkg4UZw0Dy60WCcFsv09nqzc,167
+pyodide_backend-1.5.1.dist-info/METADATA,sha256=-z2D02o4R0ZKb91DV6Wi2IiHH8PhQXT1UhOKCXSbw0k,400
+pyodide_backend-1.5.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyodide_backend-1.5.1.dist-info/top_level.txt,sha256=yK6CBpKC5Fw7bk7ARTPhi3q06S_oYeU7rpBypDSoDuA,16
+pyodide_backend-1.5.1.dist-info/RECORD,,
