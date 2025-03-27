@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+euroradscraper/__init__.py
+euroradscraper/euroscraper.py
+euroradscraper.egg-info/PKG-INFO
+euroradscraper.egg-info/SOURCES.txt
+euroradscraper.egg-info/dependency_links.txt
+euroradscraper.egg-info/requires.txt
+euroradscraper.egg-info/top_level.txt
