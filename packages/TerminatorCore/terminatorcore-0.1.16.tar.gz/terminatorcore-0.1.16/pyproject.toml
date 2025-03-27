@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TerminatorCore"
+version = "0.1.16"
+description = "django增强"
+readme = "TerminatorBaseCore/README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "bw.song", email = "tyj003@163.com" }
+]
+keywords = ["Terminator", "SONG"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+requires-python = ">=3.8"
+dependencies = [
+  "annotated-types==0.7.0",
+  "asgiref==3.8.1",
+  "django-cors-headers==4.6.0",
+  "django-redis==5.4.0",
+  "djangorestframework==3.15.2",
+  "ecdsa==0.19.0",
+  "PyMySQL==1.1.1",
+  "mysqlclient==2.2.5",
+  "pyasn1==0.6.1",
+  "PyJWT==2.10.1",
+  "redis==5.2.0",
+  "requests==2.32.3",
+  "rsa==4.9",
+  "setuptools==75.6.0",
+  "six==1.16.0",
+  "sqlparse==0.5.1",
+  "tzdata==2024.2"
+]
+
+[tool.setuptools.packages.find]
+include = ["TerminatorBaseCore", "TerminatorBaseCore.*"]
