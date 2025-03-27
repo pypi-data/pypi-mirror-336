@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: freeflock-contraptions
+Version: 0.10
+Summary: A collection of contraptions
+Home-page: https://github.com/freeflock/contraptions
+Author: (~)
+Requires-Dist: openai==1.68.2
+Requires-Dist: loguru==0.7.3
+Requires-Dist: neo4j==5.28.1
+Requires-Dist: azure-identity==1.21.0
+Requires-Dist: azure-keyvault-secrets==4.9.0
+Requires-Dist: aiohttp==3.11.14
