@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: astro-SPLASH
+Version: 2.2.0
+Summary: SPLASH (Supernova classification Pipeline Leveraging Attributes of Supernova Hosts)
+Author: Adam Boesky
+Author-email: apboesky@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scikit-learn>=0.22.0
+Requires-Dist: pooch
+Requires-Dist: astro-prost>=1.2.6
