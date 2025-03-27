@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-starter-template=fastapi_starter_template.cli:cli
+
