@@ -1,0 +1,7 @@
+requests<3.0.0,>=2.32.3
+pandas<3.0.0,>=2.2.0
+sentence-transformers<4.0.0,>=3.4.1
+scikit-learn<2.0.0,>=1.6.1
+matplotlib<4.0.0,>=3.10.1
+seaborn<1.0.0,>=0.13.2
+plotly>=5.0.0
