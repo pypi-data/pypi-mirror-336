@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: mnm4m
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Tim Hendriksen <tim.hendriksen@wur.nl>
+Requires-Python: >=3.10
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: ruff>=0.11.2
