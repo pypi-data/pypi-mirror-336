@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: morpc
+Version: 0.2.0
+Summary: Data managment tools used by MORPC
+Author-email: MORPC data team <dataandmaps@morpc.org>
+License-Expression: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: json
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: geopandas
+Requires-Dist: os
+Requires-Dist: math
+Requires-Dist: random
+Requires-Dist: hashlib
+Requires-Dist: frictionless
+Requires-Dist: shapely
+Requires-Dist: re
+Requires-Dist: shutil
+Requires-Dist: IPython
+Requires-Dist: xlsxwriter
+
+# MORPC Python package
+
+Work in progress
