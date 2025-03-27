@@ -1,0 +1,12 @@
+odibi_de/__init__.py,sha256=wGm1PQuXn08RJJDcBnzSP3YZ5wzNfQyBt6a2uTZOvu4,2440
+odibi_de/azure_cloud_connector.py,sha256=FpQEJIc4MGRrjoVshcYHIavqTbXKgi9cneOuPu4J6ms,6337
+odibi_de/core_types.py,sha256=XODJ0JvQKmWw9eYdCVWKi6Clgq8DIJghJj1PA7qKkr4,46109
+odibi_de/pandas_engine.py,sha256=CwGIa1OrP7Af5gchpeZKXrxviJEbPB8U4o-QRrsZUwM,275863
+odibi_de/spark_engine.py,sha256=chBz15rLhQsAZjigMPwqzHtqaquVkWQDFQOE0lxFL0g,351299
+odibi_de/utils.py,sha256=ORDiNCm_gSL1efZFWRI6j-PB5DxrYUWJ_ywUM1DJUl4,230633
+odibi_de/version.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+odibi_de-0.1.0.dist-info/licenses/LICENSE,sha256=eITS9FrWz0_YaHnznMtHm_G1jLTmqC5bycQ6SPM3Zpk,523
+odibi_de-0.1.0.dist-info/METADATA,sha256=iIXvoZZaTV75Y-aD7IOfCQTOM_Vfm5uaZCsaeLv8LLg,4457
+odibi_de-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+odibi_de-0.1.0.dist-info/top_level.txt,sha256=KkCcsxFEqh3tNR05RozxorFq0fnPv4HoWoRzohGSi4w,9
+odibi_de-0.1.0.dist-info/RECORD,,
