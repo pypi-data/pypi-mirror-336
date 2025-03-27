@@ -1,0 +1,4 @@
+[console_scripts]
+approx = capablanca.app:main
+batch_approx = capablanca.batch:main
+test_approx = capablanca.test:main
