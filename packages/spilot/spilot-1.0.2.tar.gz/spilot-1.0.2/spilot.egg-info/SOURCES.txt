@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+spilot/__init__.py
+spilot/app.py
+spilot/cli.py
+spilot/style.css
+spilot.egg-info/PKG-INFO
+spilot.egg-info/SOURCES.txt
+spilot.egg-info/dependency_links.txt
+spilot.egg-info/entry_points.txt
+spilot.egg-info/requires.txt
+spilot.egg-info/top_level.txt
