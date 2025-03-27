@@ -1,0 +1,2 @@
+[console_scripts]
+kube-sec = kube_secure.cli:cli
