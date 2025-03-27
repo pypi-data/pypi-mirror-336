@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+CodeLingo/CodeLingo.py
+CodeLingo/__init__.py
+codelingo.egg-info/PKG-INFO
+codelingo.egg-info/SOURCES.txt
+codelingo.egg-info/dependency_links.txt
+codelingo.egg-info/top_level.txt
