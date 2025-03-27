@@ -1,0 +1,31 @@
+# @package _global_
+
+defaults:
+  - default
+
+franken:
+  gnn_backbone_id: "MACE-L0"
+  interaction_block: 2
+  kernel_type: "multiscale-gaussian"
+  jac_chunk_size: 128
+
+hyperparameters:
+  solver:
+    L2_penalty:
+      _target_: numpy.logspace
+      start: -6
+      stop: -11
+      num: 10
+    loss_lerp_weight: 
+      _target_: numpy.linspace
+      start: 0.01
+      stop: 0.99
+      num: 10
+  random_features:
+    num_random_features: 1024
+    length_scale_low: 8
+    length_scale_high: 32
+    length_scale_num: 4
+    chemically_informed_ratio: 0.5
+
+run_dir: ${paths.root_dir}/experiments/${dataset.dataset_name}/MP0/sample_complexity/${franken.gnn_backbone_id}/${hyperparameters.random_features.num_random_features}_rfs/${dataset.train_subsample.num}_subsamples/${franken.kernel_type}
