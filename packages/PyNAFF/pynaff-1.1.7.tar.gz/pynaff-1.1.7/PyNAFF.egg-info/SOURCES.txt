@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+PyNAFF/PyNAFF.py
+PyNAFF/__init__.py
+PyNAFF.egg-info/PKG-INFO
+PyNAFF.egg-info/SOURCES.txt
+PyNAFF.egg-info/dependency_links.txt
+PyNAFF.egg-info/requires.txt
+PyNAFF.egg-info/top_level.txt
