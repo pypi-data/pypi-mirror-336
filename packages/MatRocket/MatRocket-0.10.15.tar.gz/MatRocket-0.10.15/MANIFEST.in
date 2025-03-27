@@ -1,0 +1,2 @@
+recursive-exclude MatRocket *.blend *.blend1
+recursive-include MatRocket *.m *.stl *.txt
