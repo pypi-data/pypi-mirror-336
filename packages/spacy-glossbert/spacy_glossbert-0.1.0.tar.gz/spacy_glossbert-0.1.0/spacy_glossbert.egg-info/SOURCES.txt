@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+spacy_glossbert/__init__.py
+spacy_glossbert/glossbert_component.py
+spacy_glossbert/py.typed
+spacy_glossbert/utils.py
+spacy_glossbert.egg-info/PKG-INFO
+spacy_glossbert.egg-info/SOURCES.txt
+spacy_glossbert.egg-info/dependency_links.txt
+spacy_glossbert.egg-info/requires.txt
+spacy_glossbert.egg-info/top_level.txt
+tests/test_glossbert.py
