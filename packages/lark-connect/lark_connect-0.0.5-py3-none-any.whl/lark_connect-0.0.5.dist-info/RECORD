@@ -1,0 +1,10 @@
+lark_connect/__init__.py,sha256=5wlwK3hwjQIzTdT5Nph5F886AaodhbILONCnZ0qaiP8,139
+lark_connect/core.py,sha256=-IIPzStCPRO4ybj3ezQJhlls1QN6ELGOXiWt3q_jSD8,4160
+lark_connect/doc_manager.py,sha256=MBSGIrJiioll-McKP7xhTgU9uedv_j_LYFL-7n3XsbU,3571
+lark_connect/exceptions.py,sha256=Jm2zQ2ko0-kG9vcsCYdHyEaR2IBQTKuuDNJ-a79HduI,495
+lark_connect/sheet_manager.py,sha256=POgYMvEyOVvKTgTQ6DscrOa-GEOrR-TSWa5wzlmGML8,10485
+lark_connect/typings.py,sha256=s-XhwnsIoubpvCgq4SrgjW2zYyt7_5zcrotdCxLJlDI,719
+lark_connect-0.0.5.dist-info/METADATA,sha256=ShtzE1pYsNDNRC8eoudi9CCDlr4F1__2MwzO38Ugq2Y,1538
+lark_connect-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lark_connect-0.0.5.dist-info/top_level.txt,sha256=E1QbERSx6wPS2MoY40AqN2Aifc9pqF5pCcv-3lp9_us,13
+lark_connect-0.0.5.dist-info/RECORD,,
