@@ -1,0 +1,2 @@
+[console_scripts]
+dwell = open_dwell.__main__:main
