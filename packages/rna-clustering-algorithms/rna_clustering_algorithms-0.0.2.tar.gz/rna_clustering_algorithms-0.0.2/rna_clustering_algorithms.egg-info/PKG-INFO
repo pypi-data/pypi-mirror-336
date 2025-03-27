@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: rna_clustering_algorithms
+Version: 0.0.2
+Summary: A small example package
+Author: Daniel Sutton, Laurits Madsen, Sebastian Svendsen, Valdemar Fuglsang
+License-Expression: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+Dynamic: requires-python
