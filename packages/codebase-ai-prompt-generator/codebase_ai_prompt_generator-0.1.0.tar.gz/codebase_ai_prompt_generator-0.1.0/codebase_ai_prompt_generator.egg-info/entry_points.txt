@@ -1,0 +1,2 @@
+[console_scripts]
+codebase-prompt = codebase_prompt_gen.cli.main:main

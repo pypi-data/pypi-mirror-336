@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+codebase_ai_prompt_generator.egg-info/PKG-INFO
+codebase_ai_prompt_generator.egg-info/SOURCES.txt
+codebase_ai_prompt_generator.egg-info/dependency_links.txt
+codebase_ai_prompt_generator.egg-info/entry_points.txt
+codebase_ai_prompt_generator.egg-info/top_level.txt
+codebase_prompt_gen/__init__.py
+codebase_prompt_gen/core.py
+codebase_prompt_gen/cli/__init__.py
+codebase_prompt_gen/cli/main.py
