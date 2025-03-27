@@ -1,0 +1,16 @@
+babs/_version.py,sha256=nRHnY4cYTie4C_U5AupbYyxKGqnHXSrVxwkX9X2ih6k,514
+babs/templates/babs_proj_config.yaml.jinja2,sha256=0Y07air4cdABwNcAqOlJKGir_DHnhTQ5q0N3ff4Pz3M,433
+babs/templates/bidsapp_run.sh.jinja2,sha256=njnwhW0aT6864QOz98_aWOq1xTCDlGgGUyFq4btIFjI,2544
+babs/templates/datalad_run.sh.jinja2,sha256=kPjnvCcxXn05S2RN0o9y6_EHLJCCuQGH4eAOt3QNRQU,987
+babs/templates/determine_zipfilename.sh.jinja2,sha256=3SgejCBsshLJlOYzNyQgD9H0OBlxMKsQliv00rl1vk4,1082
+babs/templates/filter_file.sh.jinja2,sha256=tJjE83-kaetAPfIYDTT8oXVTwDe282gYOLkQiuNGTfQ,1134
+babs/templates/job_submit.yaml.jinja2,sha256=h1Wh9ErHjphESmaxq_7tujdfGt2cIBvTquArnFR1n24,423
+babs/templates/participant_job.sh.jinja2,sha256=L0osH2cxX_FTPdHZ4POiTDsW-PgX3l2R4d-y2agiQck,3030
+babs/templates/test_job.sh.jinja2,sha256=jxAfmkGUuSbNiT1juq_gmaImgD6jpGlnOwB962XNVF8,594
+babs/templates/unzip_inputds.sh.jinja2,sha256=pvRthARW3T7RVcS0AvW0jHW3z4mbr2-tW9m-jcmLv-w,263
+babs/templates/zipping.sh.jinja2,sha256=rbIj-CEgG_0WfSNHuHRWEgDKvwJsPd6_h1ED6wS80uc,301
+babs-0.1.0rc0.dist-info/METADATA,sha256=WYZiFPy5onI_YkX502JDCfjBe8u5LR-TuKR1M9MEBYY,3390
+babs-0.1.0rc0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+babs-0.1.0rc0.dist-info/entry_points.txt,sha256=7HvzCTSg4ryBhrNCm_S5RMRhQ6OUFXeJWySMz6H84i8,264
+babs-0.1.0rc0.dist-info/licenses/LICENSE,sha256=8l3i-3xqi_4ViA63MpzOuCI1ZMR86vnffKVlWZLUeV4,1102
+babs-0.1.0rc0.dist-info/RECORD,,

@@ -1,0 +1,20 @@
+datalad run \
+	-i "code/{{ container.container_name }}_zip.sh" \
+{% for dataset in input_datasets %}
+{% if not dataset.is_zipped %}
+	-i "{{ dataset.path }}/{% if processing_level == 'session' %}${subid}/${sesid}{% else %}${subid}{% endif %}" \
+	-i "{{ dataset.path }}/*json" \
+{% else %}
+	-i ${ {{ dataset.name }}_ZIP} \
+{% endif %}
+{% endfor %}
+	-i "{{ container.container_path_relToAnalysis }}" \
+{% if flag_expand_inputs %}
+	--expand inputs \
+{% endif %}
+	--explicit \
+{% for key, value in container.config['zip_foldernames'].items() %}
+	-o "${subid}{% if processing_level == 'session' %}_${sesid}{% endif %}_{{ key }}-{{ value }}.zip" \
+{% endfor %}
+	-m "{{ container.container_name }} ${subid}{% if processing_level == 'session' %} ${sesid}{% endif %}" \
+	"bash ./code/{{ container.container_name }}_zip.sh ${subid}{% if processing_level == 'session' %} ${sesid}{% endif %} {% for dataset in input_datasets %}{% if dataset.is_zipped %} ${ {{ dataset.name }}_ZIP}{%endif%}{%endfor%}"
