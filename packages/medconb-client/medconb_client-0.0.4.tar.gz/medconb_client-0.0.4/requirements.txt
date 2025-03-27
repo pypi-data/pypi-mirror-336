@@ -1,0 +1,5 @@
+pandas
+pydantic
+aiohttp
+gql
+requests_toolbelt
