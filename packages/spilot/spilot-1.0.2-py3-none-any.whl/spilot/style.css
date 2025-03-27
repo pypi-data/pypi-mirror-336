@@ -1,0 +1,42 @@
+.hidden {
+    display: none;
+}
+
+/* Form styling */
+Input {
+    margin: 1 0;
+    width: 100%;
+}
+
+Select {
+    margin: 1 0;
+    width: 100%;
+}
+
+/* Table styling */
+DataTable {
+    height: 100%;
+}
+
+/* Status message styling */
+#status_message {
+    dock: top;
+    padding: 1 2;
+    background: $primary-background;
+    color: $text;
+}
+
+/* Hardware view styling */
+#partition_container {
+    height: 30%;
+}
+
+#node_container {
+    height: 70%;
+}
+
+/* Monitor view styling */
+#stdout_content, #stderr_content {
+    height: 100%;
+    padding: 1;
+}
