@@ -1,0 +1,10 @@
+tap_mailchimp/__init__.py,sha256=9jNeQvN8MbI_sUdY_2yHVL6NG6N6VxO-FYNOO_5cHSs,25
+tap_mailchimp/__main__.py,sha256=3tuAQlhtQpBFcedgpn6ERQFAm0tJukmw_tuBZSn-BDw,129
+tap_mailchimp/client.py,sha256=aQzmTnlCDKl5-58NqNxppgAwA9FHs_rE4q0dlcCqQ-4,2748
+tap_mailchimp/schemas/__init__.py,sha256=4L_j2w9G0RLeNu1IvmrlYD685cMULZhpvOezBL0leR8,42
+tap_mailchimp/streams.py,sha256=doZFIgmQI5Q7AxIbVUq7LFGi54Apvqhy4sZCFzCLsPM,31385
+tap_mailchimp/tap.py,sha256=n4PZxOAEDioF5UBIABmDt2usZFAy0y_KcTAVt5_iYxU,1347
+oviond_tap_mailchimp-0.0.4.dist-info/METADATA,sha256=K4g_0tgZc8h2YJrQjOWy166k6l9_aicKrm0gQ4BBh3M,4017
+oviond_tap_mailchimp-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oviond_tap_mailchimp-0.0.4.dist-info/entry_points.txt,sha256=h2dnYgLWiV9RyhHd76Zfv5vnkcCk8Oz4y-0zlV9ePo8,68
+oviond_tap_mailchimp-0.0.4.dist-info/RECORD,,
