@@ -1,0 +1,7 @@
+markitdown
+markdown_it_py==3.0.0
+pymupdf==1.25.1
+img2pdf==0.6.0
+pillow==11.0.0
+gradio
+termcolor
