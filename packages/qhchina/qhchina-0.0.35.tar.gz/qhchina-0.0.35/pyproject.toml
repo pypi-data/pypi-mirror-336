@@ -1,0 +1,40 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]  # Use setuptools as the build backend
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qhchina"
+version = "0.0.35"  # Updated version
+authors = [
+  { name = "Maciej Kurzynski", email = "makurz@gmail.com" },
+]
+description = "A Python package for NLP tasks related to Chinese text."
+readme = "README.md"
+requires-python = ">=3.8"  # Specify the minimum Python version
+keywords = ["digital humanities", "nlp", "Chinese", "text analysis", "corpus linguistics", "topic modeling"]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "scipy",
+    "numpy",
+    "matplotlib",
+    "pandas",
+    "scikit-learn"
+]
+
+[tool.setuptools.packages.find]
+exclude = ["tests"]
+
+[tool.setuptools.package-data]
+"qhchina" = ["analytics/cython_ext/*.pyx", "data/**/*"]
+
+[project.urls]
+"Homepage" = "https://github.com/mcjkurz/qhchina"  # Replace with your repo URL
+"Documentation" = "https://mcjkurz.github.io/qhchina/"
+"Bug Tracker" = "https://github.com/mcjkurz/qhchina/issues"
