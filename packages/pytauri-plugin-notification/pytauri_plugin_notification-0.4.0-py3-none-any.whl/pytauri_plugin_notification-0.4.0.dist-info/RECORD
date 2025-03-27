@@ -1,0 +1,6 @@
+pytauri_plugin_notification/__init__.py,sha256=I1cUrSQIVIef8Q8BvrwRruIfM8F-_2bnXpPyXZUV9S4,339
+pytauri_plugin_notification/ffi.py,sha256=umHaDeTu_tNT_JDM1q8AEWwiqx1kU4KLuSUO1eNfUpw,2891
+pytauri_plugin_notification/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytauri_plugin_notification-0.4.0.dist-info/METADATA,sha256=W5pXH1P6QBh5hYIVOTuTtxY6Mhtkc3_ENo0dLooPy_Q,434
+pytauri_plugin_notification-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytauri_plugin_notification-0.4.0.dist-info/RECORD,,
