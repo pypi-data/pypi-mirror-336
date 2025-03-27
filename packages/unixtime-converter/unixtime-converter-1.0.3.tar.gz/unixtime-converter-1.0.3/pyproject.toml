@@ -1,0 +1,54 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'unixtime-converter'
+version = '1.0.3'
+dependencies = [
+    'datetime',
+    'pytz',
+    'zoneinfo',
+    'tkhtmlview'
+]
+requires-python = '>=3.7'
+authors = [
+    {name = 'Franz Wiesinger', email = 'py@roadrunnerserver.com'}
+]
+maintainers = [
+    {name = 'Franz Wiesinger', email = 'py@roadrunnerserver.com'}
+]
+description = 'Unixtime converter'
+readme = 'README.md'
+classifiers=[
+    'Environment :: X11 Applications',
+    'Environment :: Win32 (MS Windows)',
+    'Intended Audience :: Customer Service',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'Intended Audience :: Information Technology',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3.0',
+    'Topic :: Desktop Environment',
+    'Topic :: Software Development',
+    'Topic :: Utilities'
+]
+keywords=[
+    'unixtime', 'utc', 'local time', 'the epoch', 'converter', 'tkinter',
+    'GUI', 'timezone', 'datetime'
+]
+
+
+[project.optional-dependencies]
+gui = ['tkinter']
+
+
+[project.urls]
+Repository = 'https://github.com/WiesingF/UnixtimeConverter'
+Changelog = 'https://github.com/WiesingF/UnixtimeConverter/blob/main/changes.rst'
+Homepage = 'https://www.roadrunnerserver.com/'
+Documentation = 'https://docs.roadrunnerserver.com/unixtime/html/index.html'

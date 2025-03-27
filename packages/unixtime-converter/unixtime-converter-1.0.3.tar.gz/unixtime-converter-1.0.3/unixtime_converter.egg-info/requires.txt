@@ -1,0 +1,7 @@
+datetime
+pytz
+tkhtmlview
+zoneinfo
+
+[gui]
+tkinter
