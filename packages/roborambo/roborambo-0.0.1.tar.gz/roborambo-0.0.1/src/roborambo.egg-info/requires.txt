@@ -1,0 +1,7 @@
+python-dotenv
+pandoc
+chromadb
+psycopg2-binary
+
+[zulip]
+zulip

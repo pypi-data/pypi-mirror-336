@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: roborambo
+Version: 0.0.1
+Summary: Dead simple framework to turn LLMs into potentially useful chatbots
+Author: Keyton Stanier
+License: idfk yet
+Keywords: assistant,agent,bot,chatbot,rag,vectorstore,gpt,nothingburger,nothing,burger,llm,chain,text-generation
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+Requires-Dist: pandoc
+Requires-Dist: chromadb
+Requires-Dist: psycopg2-binary
+Provides-Extra: zulip
+Requires-Dist: zulip; extra == "zulip"
+
+# roborambo
+
+Dead simple LLM-augmented Assistant/Bot system
+
+```sh
+git clone https://gacrc-sourcecontrol-01.gacrc.uga.edu/stanier/nothingburger.git
+git clone https://gacrc-sourcecontrol-01.gacrc.uga.edu/stanier/roborambo.git
+
+mkdir -p ~/.config/{nothingburger,roborambo}
+cp -R ./nothingburger/examples/config/* ~/.config/nothingburger/
+cp -R ./roborambo/examples/config/* ~/.config/roborambo
+
+pip install --user ./nothingburger ./roborambo ./roborambo[zulip]
+
+rambo-cli --assistant "Son of Rambo"
+```
+![alt text](assets/image.png)
