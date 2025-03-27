@@ -1,0 +1,2 @@
+[console_scripts]
+s2shores = s2shores.bathylauncher.bathy_processing:process_command
