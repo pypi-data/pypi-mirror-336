@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: django-pluralize-ru
+Version: 0.1.1
+Summary: This is a Django-template filter for declension of russian words.
+License: MIT
+Author: Nail Einzelgänger
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Django (>=3.0)
+Project-URL: Repository, https://github.com/JobsLament/django-pluralize-ru.git
+Description-Content-Type: text/markdown
+
+# Django-pluralize-ru
+
+`django-pluralize-ru` — это фильтр для Django-шаблонов, который
+позволяет склонять русские слова после числительных. Этот пакет 
+полезен для корректного отображения числительных в русском языке в 
+шаблонах Django.
+
+## Особенности
+- **Корректное склонение числительных**: Пакет гарантирует правильное склонение русских слов в зависимости от 
+числительных, что важно для правильного отображения текста в интерфейсах и отчетах.
+- **Учет особенностей русского языка**: Фильтр учитывает все нюансы, связанные с русским языком, 
+такие как правила склонения числительных в зависимости от их последней цифры и исключения для чисел от 11 до 19.
+
+
+## Установка
+
+Чтобы установить пакет, используйте `pip` или `poetry`.
+
+## Установка с помощью pip:
+
+```bash
+pip install django-pluralize-ru
+```
+
+## Использование
+
+В вашем Django-шаблоне используйте фильтр pluralize_ru для склонения числительных.
+
+#### Не забудьте про:
+{% load pluralize_ru %}
+
+#### Пример использования в шаблоне:
+<p>{{ some_number }} минут{{ some_number|pluralize_ru:"а,ы,т" }} чтения</p>
+
+
