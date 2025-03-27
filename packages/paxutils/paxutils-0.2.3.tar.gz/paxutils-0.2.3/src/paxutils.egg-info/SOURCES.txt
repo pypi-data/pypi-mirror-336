@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/paxutils/__init__.py
+src/paxutils/path.py
+src/paxutils.egg-info/PKG-INFO
+src/paxutils.egg-info/SOURCES.txt
+src/paxutils.egg-info/dependency_links.txt
+src/paxutils.egg-info/top_level.txt
+tests/test_path.py
