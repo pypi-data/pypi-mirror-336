@@ -1,0 +1,11 @@
+README.md
+setup.py
+PyToOs.egg-info/PKG-INFO
+PyToOs.egg-info/SOURCES.txt
+PyToOs.egg-info/dependency_links.txt
+PyToOs.egg-info/entry_points.txt
+PyToOs.egg-info/top_level.txt
+pytoos/__init__.py
+pytoos/creator.py
+pytoos/editor.py
+pytoos/remover.py

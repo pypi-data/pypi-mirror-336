@@ -1,0 +1,2 @@
+[console_scripts]
+pytoos = pytoos.cli:main
