@@ -1,0 +1,8 @@
+sphinx_ifelse/__init__.py,sha256=0KndSdXTRAVPnV4nMJMa2Eqw1PSC9vKxWecbDSPEQdk,241
+sphinx_ifelse/directives.py,sha256=pJ__CBbU-FRXweI-z2wn2aW1LgJFreF18gTS8fOMtO4,7077
+sphinx_ifelse/ifelse.py,sha256=UXdA8EKtPlx7FaGNHfJE9HFZukKhjN2Cdxqp0FUTHsI,1323
+sphinx_ifelse/utils.py,sha256=8_0cmcq_GPqG5n8mwJ8-nDexX-9uSCcLNpUgoIHOgeg,695
+sphinx_ifelse-0.11.2.dist-info/licenses/LICENSE,sha256=_ayTYmkpTpobm3VNdSPuIl9ey-tDTU7cZONraY0LzEo,14316
+sphinx_ifelse-0.11.2.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+sphinx_ifelse-0.11.2.dist-info/METADATA,sha256=kWXCrWkYZvSB38oP2J3J_F9-M93p19j7jVuRDILBYso,1204
+sphinx_ifelse-0.11.2.dist-info/RECORD,,
