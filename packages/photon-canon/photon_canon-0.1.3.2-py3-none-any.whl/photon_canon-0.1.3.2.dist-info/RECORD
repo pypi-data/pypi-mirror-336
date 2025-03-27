@@ -1,0 +1,13 @@
+photon_canon/__init__.py,sha256=YW5FgaQIH3DJ51mvpUMMNYlgZ86YJCwv1HvwUmVpPnA,66
+photon_canon/hardware.py,sha256=NqSBbSI7-6xABeSBlObBx5nKmmSQ5NxPNNjjGwxbgnw,3699
+photon_canon/optics.py,sha256=6PoWs7BzemrH3FUQMqvXb5eN75BeKCsKgBtzKYw-vGE,61753
+photon_canon/utils.py,sha256=N29AaHwbEjOfLUZMFvql4ISLopi_PcV6TytT0pROwVU,6534
+photon_canon/lut/__init__.py,sha256=n5u_wZIVNGmyk_s7pMOLDNruR5TymmJA76tauvrqlKo,29
+photon_canon/lut/lut.py,sha256=7dMh7Hnia7AH3uhVGqrkiZ82y-AOgj7m0suKbTbFECA,2873
+photon_canon/lut/utils.py,sha256=FcDwE_tzeeg88Q9qm_BabU56cxZevRKN3OhkPWN20K4,3919
+photon_canon/scripts/generate_lut.py,sha256=q2VUWd9cHTB-WuLg0QtUX5yvg-pYwv_wk57clexadMg,5053
+photon_canon-0.1.3.2.dist-info/licenses/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+photon_canon-0.1.3.2.dist-info/METADATA,sha256=3ZZp-hp3DaTcqcDg5i4IRgkfvj0LasCXst0WtLYT5SU,51153
+photon_canon-0.1.3.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+photon_canon-0.1.3.2.dist-info/top_level.txt,sha256=G_hIq15fxzDlkLGvSc8o389bqUJWPJISnirPqDt0r8s,13
+photon_canon-0.1.3.2.dist-info/RECORD,,
