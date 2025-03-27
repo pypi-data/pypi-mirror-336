@@ -1,0 +1,3 @@
+[console_scripts]
+uv-mcp = uv_mcp.cli:main
+uv_mcp = uv_mcp.cli:main
