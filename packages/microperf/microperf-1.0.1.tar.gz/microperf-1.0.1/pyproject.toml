@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "microperf"
+version = "1.0.1"
+authors = [
+  { name="Nicolas van Kempen", email="nvankemp@gmail.com" },
+]
+dependencies = [
+  "docker==7.1.0",
+  "presto-python-client==0.8.4",
+  "rich==13.9.4",
+]
+description = "A small tool using perf to provide more performance insights."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.scripts]
+microperf = "microperf.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/nicovank/microperf"
+"Bug Tracker" = "https://github.com/nicovank/microperf/issues"
