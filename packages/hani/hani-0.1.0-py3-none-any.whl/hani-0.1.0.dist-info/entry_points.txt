@@ -1,0 +1,2 @@
+[console_scripts]
+hani = hani.run:main
