@@ -1,0 +1,17 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devices/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devices/device_type.py,sha256=UBLBjerSVQpqi486rS5zaWaUkzwAMFS0oJL3hwFLDlg,530
+devices/air_purifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devices/air_purifier/h7126.py,sha256=FNbgrTRvuHdVCm0b7bwdNJO1XjCSc3eQX7fAAsfbSZk,4348
+devices/fan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devices/fan/h7102.py,sha256=vC1t9sxjgXR9RO4YyGt2QA5sUrZtpstN25kkCW8Qa0g,5251
+devices/thermometer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devices/thermometer/h5179.py,sha256=RBgCTEPNNoTS_F7Xu5H1cd5lVz_bRt_8R-Ur6A87RQA,1782
+govee_cloud-20250326234928.dev0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+util/govee_api.py,sha256=u-zs6ifJo8g8W7sCgtYXIOELLYztoR6MIPZ34DrrHMM,7464
+util/govee_appliance_api.py,sha256=oiMH1UcalnZwpDj_2T4JNGW6sDLi8mGzc3TZLebNdvM,2524
+govee_cloud-20250326234928.dev0.dist-info/METADATA,sha256=SL47jPajX2pUIBw2VbYS1b2GXaQTknf7ICwfOtsrt8Y,1750
+govee_cloud-20250326234928.dev0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+govee_cloud-20250326234928.dev0.dist-info/top_level.txt,sha256=XvZtETL1PrRB7_LrLYYotiu5nMYCG4hBRu_6nCERGn0,22
+govee_cloud-20250326234928.dev0.dist-info/RECORD,,
