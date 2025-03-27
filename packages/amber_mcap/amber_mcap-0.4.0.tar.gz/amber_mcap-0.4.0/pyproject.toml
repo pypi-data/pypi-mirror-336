@@ -1,0 +1,161 @@
+[tool.poetry]
+name = "amber_mcap"
+version = "0.4.0"
+description = "Annotation and Multimodal Bag Extraction for Robotics"
+authors = ["Masaya Kataoka <ms.kataoka@gmail.com>"]
+license = "Apache 2.0"
+
+include = [
+    # Source files for C extensions must be included in the source distribution.
+    { path = "CMakeLists.txt", format = "sdist" },
+    { path = "amber_mcap/**/*.cpp", format = "sdist" },
+    # C extensions must be included in the wheel distribution.
+    { path = "amber_mcap/**/*.pyd", format = "wheel" },
+    { path = "amber_mcap/**/*.so", format = "wheel" },
+]
+exclude = [
+    "amber_mcap/**/*.cpp",
+    "amber_mcap/**/*.pyd",
+    "amber_mcap/**/*.so",
+]
+
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
+
+[tool.poetry.dependencies]
+addict = "^2.4.0"
+boto3 = "^1.20.0"
+dataclass-wizard = "^0.22.2"
+datetime = "^5.3"
+docker = "^6.1.2"
+download = "^0.3.5"
+ftfy = "^6.1.1"
+gradio = "^3.35.0"
+gradio_client = "^0.2.5"
+huggingface-hub = "0.25.2"
+mcap-ros2-support= "^0.3.0"
+numpy= "1.26.4" # This version comes from Genesis. https://github.com/Genesis-Embodied-AI/Genesis/blob/163e4138d32df139d83fb9dee927f3418fe67ee0/pyproject.toml#L18
+onnxruntime-gpu = "^1.15.1"
+open3d = "^0.18.0"
+opencv-python = "~4.10.0"
+pandas = "^2.0.3"
+Pillow = ">=9.2.0,<11.0" # This version comes from Genesis. https://github.com/Genesis-Embodied-AI/Genesis/blob/163e4138d32df139d83fb9dee927f3418fe67ee0/pyproject.toml#L32
+pybind11 = "^2.13.6"
+pyparsing = "*"
+python = ">=3.10,<3.13"
+pyyaml = "^6.0.0"
+pyzstd = "^0.16.2"
+qdrant-client = "^1.12.0"
+regex = "^2023.3.23"
+salesforce-lavis = "^1.0.2"
+scikit-learn = "^1.6.0"
+scipy="^1.9.0"
+sentence-transformers = "^2.2.2"
+setuptools= "58.2.0"
+tensorboard = "^2.14.0"
+tensorboardx = "^2.6.2.2"
+threadpoolctl = "^3.2.0"
+torch = {version = "2.5.0+cu124", source = "torch_cu124"}
+torchaudio = {version = "2.5.0+cu124", source = "torch_cu124"}
+torchvision = {version = "0.20.0+cu124", source = "torch_cu124"}
+transformers = ">=4.25.0,<4.27"
+urllib3 = "^1.26.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+appdirs = "^1.4.4"
+black = "^23.3.0"
+click = "8.0.4"
+cmake = "^3.22.5"
+coverage = "^7.2.7"
+lark = "^1.1.5"
+pip = "^23.1.2"
+pre-commit = "^3.5.0"
+pytest = "^7.4.0"
+pytest-cov = "^3.0.0"
+python = "^3.10"
+scikit-build = "^0.15.0"
+taskipy = "^1.10.2"
+toml = "^0.10.2"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4"
+mkdocs-material = "^9.1"
+fontawesome_markdown = "*"
+markdown = "3.3.0"
+mkdocs-mermaid2-plugin = "^1.0.0"
+pymdown-extensions = "*"
+mkdocs-git-revision-date-localized-plugin = "*"
+mkdocs-gitsnippet-plugin = "*"
+plantuml-markdown = "^3.9.2"
+plantuml = "^0.3.0"
+
+[tool.poetry.scripts]
+amber = "amber_mcap.cli:main"
+
+[[tool.poetry.source]]
+name = "torch_cu124"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "scikit-build", "cmake", "ninja", "pybind11"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.html]
+directory = "_htmlcov"
+
+[tool.coverage.xml]
+output = "_htmlcov/coverage.xml"
+
+[tool.coverage.report]
+exclude_lines = [
+    "@overload",
+    "if TYPE_CHECKING:",
+    "pragma: no cover",
+    "raise AssertionError()",
+    "return NotImplemented",
+]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = [
+    "E203", # for black
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+pretty = true
+show_error_codes = true
+strict = true
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov-report=html",
+    "--cov-report=xml",
+    "--cov-report=term",
+    "--cov=amber",
+    "--doctest-modules",
+    "--ignore=_skbuild",
+    "--ignore=build.py",
+    "--import-mode=importlib",
+]
+testpaths = ["tests",]
+
+[tool.taskipy.tasks]
+prepare.cmd = "pre-commit install && pre-commit install --hook-type commit-msg"
+prepare.help = "sets up a development environment"
+
+lint.cmd = "pre-commit run --all-files"
+lint.help = "runs linters (+ fix)"
+
+test.cmd  = "pytest"
+test.help = "runs tests"
