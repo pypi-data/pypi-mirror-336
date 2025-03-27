@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elucid"
+version = "0.0.1"
+authors = [
+  { name="Yangyao Chen", email="yangyaochen.astro@foxmail.com" }
+]
+description = "Exploring the local Universe with reconstructed initial density field"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyhipp", "flake8", "pytest>=7.0.0", "pyhipp-sims"
+]
+
+[project.urls]
+Repository = "https://github.com/ChenYangyao/elucid.git"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src"
+]

@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: elucid
+Version: 0.0.1
+Summary: Exploring the local Universe with reconstructed initial density field
+Author-email: Yangyao Chen <yangyaochen.astro@foxmail.com>
+Project-URL: Repository, https://github.com/ChenYangyao/elucid.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyhipp
+Requires-Dist: flake8
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: pyhipp-sims
+Dynamic: license-file
+
+# elucid
+Exploring the local Universe with reconstructed initial density field
