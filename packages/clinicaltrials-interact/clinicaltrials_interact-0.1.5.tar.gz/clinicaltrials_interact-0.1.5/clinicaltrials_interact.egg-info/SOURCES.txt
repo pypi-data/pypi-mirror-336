@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+clinicaltrials_interact/__init__.py
+clinicaltrials_interact/clustering.py
+clinicaltrials_interact/ctg_api.py
+clinicaltrials_interact/navigation.py
+clinicaltrials_interact.egg-info/PKG-INFO
+clinicaltrials_interact.egg-info/SOURCES.txt
+clinicaltrials_interact.egg-info/dependency_links.txt
+clinicaltrials_interact.egg-info/requires.txt
+clinicaltrials_interact.egg-info/top_level.txt
+tests/test_clustering.py
