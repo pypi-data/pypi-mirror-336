@@ -1,0 +1,10 @@
+fastcore
+fasttransform
+torch
+transformers
+tensorflow
+numpy
+soundfile
+torch<2.7,>=1.10
+
+[dev]
