@@ -1,0 +1,3 @@
+[console_scripts]
+unit-text = unit_text:app
+unit-text-api = unit_text.api:run
