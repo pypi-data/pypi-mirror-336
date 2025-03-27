@@ -1,0 +1,3 @@
+[console_scripts]
+fume=fume.cli.app:main
+
