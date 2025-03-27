@@ -1,0 +1,10 @@
+improving_transformers_world_model/__init__.py,sha256=4atydXAhloIr1Rn3tsmqB9KR4B9Avg3LrQtL77eOhWA,230
+improving_transformers_world_model/agent.py,sha256=TVQXUxSr2c2PZSrPVDZ-M3Q19ji7N3H8uQRplqNp-88,16005
+improving_transformers_world_model/distributed.py,sha256=gL-LSaJP0v-0b_iS5-oyvkZso77P_FGpwEy86lcbQ8Q,2062
+improving_transformers_world_model/mock_env.py,sha256=tXdi45-SywL8NKl24ZCn-013NQzITGo0stCySfR9MFE,1025
+improving_transformers_world_model/tensor_typing.py,sha256=wEgx8YnLDW-u_4vOQR-B6BtUqUkTLtPzRVHv1TfUFQ8,348
+improving_transformers_world_model/world_model.py,sha256=MZkOGe-HN00hZZ2YD7sN1NZJqd2TRt1OErdTfMqbTxE,24350
+improving_transformers_world_model-0.0.31.dist-info/METADATA,sha256=lFRwrwRjtVxyYthylJ2B3vIaQ9ri_-swVebnW2ormYs,4290
+improving_transformers_world_model-0.0.31.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+improving_transformers_world_model-0.0.31.dist-info/licenses/LICENSE,sha256=1yCiA9b5nhslTavxPjsQAO-wpOnwJR9-l8LTVi7GJuk,1066
+improving_transformers_world_model-0.0.31.dist-info/RECORD,,
