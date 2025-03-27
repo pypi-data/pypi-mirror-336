@@ -1,0 +1,26 @@
+[project]
+name = "ressetter"
+version = "0.1.1"
+description = "Set resolution and refresh rate"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "dsbase (>=0.4.1,<0.5.0)",
+    "psutil (>=7.0.0)",
+    "pynput (>=1.8.1)",
+    "pywin32 (>=310) ; platform_system == \"Windows\"",
+    "toml (>=0.10.2)",
+]
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = ">=6.12.0"
+mypy = ">=1.15.0"
+ruff = ">=0.11.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ressetter = "ressetter.main:main"
