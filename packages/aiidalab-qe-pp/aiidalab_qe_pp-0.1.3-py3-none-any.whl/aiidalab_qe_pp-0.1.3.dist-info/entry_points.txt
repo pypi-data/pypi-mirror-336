@@ -1,0 +1,15 @@
+[aiida.calculations]
+critic2=aiidalab_qe_pp.aiida_critic2.calculations:Critic2Calculation
+
+[aiida.parsers]
+critic2=aiidalab_qe_pp.aiida_critic2.parsers:Critic2Parser
+
+[aiida.workflows]
+pp_app.pp=aiidalab_qe_pp.workflows.ppworkchain:PPWorkChain
+
+[aiidalab_qe.properties]
+pp=aiidalab_qe_pp.app:pp
+
+[console_scripts]
+aiidalab-qe-pp=aiidalab_qe_pp.__main__:cli
+
