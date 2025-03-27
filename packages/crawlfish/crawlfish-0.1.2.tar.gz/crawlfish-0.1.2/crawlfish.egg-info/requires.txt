@@ -1,0 +1,9 @@
+art
+ascii-magic
+openpyxl
+selenium
+requests
+tabulate
+tldextract
+bs4
+tqdm
