@@ -1,0 +1,6 @@
+mosek_license/__init__.py,sha256=sTr2pQ1BAykg9hv5KtygvPk3qw6TnyJeDhBLyMhrNVQ,579
+mosek_license/license.py,sha256=2ycMmTsOBZ3Be17ts3erAYXBJ7DlqzA4VgmyFbzsza4,1354
+mosek_license_server-1.6.12.dist-info/METADATA,sha256=nlmkPrnu4x0TY2fq4WpaOmqlduBw3fSPvBiomm2IIRw,5522
+mosek_license_server-1.6.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mosek_license_server-1.6.12.dist-info/licenses/LICENSE,sha256=DxftDMCxul77VF5JNFZA6VCxEQYo4kEz6vrLci4JwO4,1083
+mosek_license_server-1.6.12.dist-info/RECORD,,
