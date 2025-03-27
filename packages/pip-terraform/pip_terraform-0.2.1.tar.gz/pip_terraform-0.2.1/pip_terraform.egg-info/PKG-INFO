@@ -1,0 +1,102 @@
+Metadata-Version: 2.4
+Name: pip-terraform
+Version: 0.2.1
+Summary: A cross-platform Terraform installation utility
+Home-page: https://github.com/yourusername/pip-terraform
+Author: Jaimin Raval
+Author-email: jaiminraval100@gmail.com
+Keywords: terraform installation devops infrastructure
+Platform: Darwin
+Platform: Linux
+Platform: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# pip-terraform
+
+## Overview
+
+`pip-terraform` is a cross-platform utility for installing Terraform across different operating systems. It provides a simple, unified method to install Terraform using various package managers and installation techniques.
+
+## Features
+
+- 🖥️ Cross-platform support (Windows, macOS, Linux)
+- 🚀 Multiple installation methods
+- 🔧 Automatic architecture detection
+- 🛡️ Fallback installation mechanisms
+
+## Installation
+
+```bash
+pip install pip-terraform
+```
+
+## Usage
+
+Simply run:
+
+```bash
+pip-terraform
+```
+
+### Installation Methods
+
+#### Windows
+- Chocolatey
+- Winget
+- Manual download
+
+#### macOS
+- Homebrew
+- MacPorts
+- Manual download
+
+#### Linux
+- APT
+- YUM
+- Snap
+- Manual download
+
+## Requirements
+
+- Python 3.7+
+- Administrative/sudo privileges recommended
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License
+
+Copyright (c) 2024 Your Name
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...

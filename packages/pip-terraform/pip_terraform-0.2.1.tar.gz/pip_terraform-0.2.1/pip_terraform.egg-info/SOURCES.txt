@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pip_terraform.egg-info/PKG-INFO
+pip_terraform.egg-info/SOURCES.txt
+pip_terraform.egg-info/dependency_links.txt
+pip_terraform.egg-info/entry_points.txt
+pip_terraform.egg-info/requires.txt
+pip_terraform.egg-info/top_level.txt
+terraform_install/__init__.py
+terraform_install/cli.py
