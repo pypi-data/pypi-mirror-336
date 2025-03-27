@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aou_data_storage
+Version: 0.1.1
+Summary: aou_data_storage is a package that contains functions to move data from a Google Cloud Workspace persistent disk to its bucket or between two different Workspace buckets.
+Author: Aymone Jeanne Kouame
+Author-email: aymone.jk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
