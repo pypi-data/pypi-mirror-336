@@ -1,0 +1,4 @@
+SiEPIC>=0.5.20
+SiEPIC_EBeam_PDK
+numpy
+packaging
