@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+getDataCVM/__init__.py
+getDataCVM/getDataCVM.py
+getDataCVM.egg-info/PKG-INFO
+getDataCVM.egg-info/SOURCES.txt
+getDataCVM.egg-info/dependency_links.txt
+getDataCVM.egg-info/requires.txt
+getDataCVM.egg-info/top_level.txt
