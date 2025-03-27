@@ -1,0 +1,10 @@
+superduper_sql/__init__.py,sha256=Q_DI7s-IqtoINcuMLCtVZVWgYaaBsa3PSOvLSMgJI1g,106
+superduper_sql/data_backend.py,sha256=GYQNn9EGU0jVJHNnrrERkW7Zo0xtGoHC3fBhvYJvR-k,11885
+superduper_sql/db_helper.py,sha256=Bve_ArtPWCODxVUjzf-oOkPPhk_S-eJj5hbonM9sj2w,4366
+superduper_sql/field_types.py,sha256=b91sf2yUh9IKRHrdllhyvF9GoIIArXBA-g7EWXQEsYI,736
+superduper_sql/utils.py,sha256=D6DVCRTxGOgaYOxMeaPg6X1UK0LomuvjSchylcGvtWc,1148
+superduper_sql-0.6.0.dist-info/licenses/LICENSE,sha256=fq2WxmjewRN4VfDClVl-6CiVFZedp4y5_iGqQiXHBN8,11353
+superduper_sql-0.6.0.dist-info/METADATA,sha256=iCG2QTYdmQa_wl3wqwTY-lckA2IhxhV0Z_b79qNk3jQ,16717
+superduper_sql-0.6.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+superduper_sql-0.6.0.dist-info/top_level.txt,sha256=Rz8y5vDY-kZu0djCpW6WqZidZ7Ju8Jth9yhmMXGe9WE,15
+superduper_sql-0.6.0.dist-info/RECORD,,
