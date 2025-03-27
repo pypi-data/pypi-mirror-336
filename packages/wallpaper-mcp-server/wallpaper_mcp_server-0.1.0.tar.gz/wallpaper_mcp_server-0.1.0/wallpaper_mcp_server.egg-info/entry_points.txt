@@ -1,0 +1,2 @@
+[console_scripts]
+wallpaper-mcp-server = wallpaper.server:main

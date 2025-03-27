@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: wallpaper-mcp-server
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: logging>=0.4.9.6
+Requires-Dist: lumaai>=1.7.0
+Requires-Dist: mcp[cli]>=1.5.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: uuid>=1.30
+Dynamic: license-file

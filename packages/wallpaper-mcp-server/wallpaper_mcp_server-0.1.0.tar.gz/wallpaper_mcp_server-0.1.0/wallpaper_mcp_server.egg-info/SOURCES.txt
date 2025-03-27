@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+wallpaper/server.py
+wallpaper_mcp_server.egg-info/PKG-INFO
+wallpaper_mcp_server.egg-info/SOURCES.txt
+wallpaper_mcp_server.egg-info/dependency_links.txt
+wallpaper_mcp_server.egg-info/entry_points.txt
+wallpaper_mcp_server.egg-info/requires.txt
+wallpaper_mcp_server.egg-info/top_level.txt
