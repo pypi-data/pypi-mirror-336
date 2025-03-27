@@ -1,0 +1,10 @@
+vikor_ufpe/__init__.py,sha256=2Tea5XpehRKKUADnZuBv393P4NHsWcjvI8puDgYlBnA,1010
+vikor_ufpe/decision.py,sha256=ekkNhDCXR_UKnb_W35VKqKS1CCyhapkD3m_yracceyA,5612
+vikor_ufpe/exceptions.py,sha256=kjLXpOqSQ8x0Ibxwc1UXpqHFmF02bUa4Me-QFgQdo2w,2018
+vikor_ufpe/main.py,sha256=_aYEYpMvM7629BjyOTdi_hFVP0bMC4tOrbKTW6kT-Hc,9022
+vikor_ufpe/models.py,sha256=vY1LjbIy7HDFgf7sN7Z6Gk9h6zUfkJ_SyBTmgeLDIFs,3738
+vikor_ufpe/utils.py,sha256=c9eJjNiVE0PaKAeFUT80mqBq8PHYF2XF52lpgHe5E3M,1753
+vikor_ufpe-0.1.2.dist-info/LICENCE,sha256=OGQnEBd_7crQJ1ortkvgrGsncH4LYwur8Jn2GpuY238,1086
+vikor_ufpe-0.1.2.dist-info/METADATA,sha256=esW4fsHU47fHLqv4T3Dp305eR5hmgf5VRncW4v2JWX0,4424
+vikor_ufpe-0.1.2.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+vikor_ufpe-0.1.2.dist-info/RECORD,,
