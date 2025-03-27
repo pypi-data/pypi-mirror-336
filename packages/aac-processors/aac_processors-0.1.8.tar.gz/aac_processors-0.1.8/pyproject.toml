@@ -1,0 +1,85 @@
+[project]
+name = "aac-processors"
+version = "0.1.8"
+description = "Process and convert between different AAC file formats"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "AGPL-3.0-or-later" }
+authors = [
+    { name = "Will Wade", email = "willwade@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "lxml>=4.9.3",
+    "beautifulsoup4>=4.12.2",
+    "pandas>=2.1.1",
+    "openpyxl>=3.1.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.2",
+    "pytest-cov>=4.1.0",
+    "black>=23.9.1",
+    "mypy>=1.5.1",
+    "ruff>=0.0.291",
+    "cssselect",
+    "types-lxml",
+    "types-beautifulsoup4",
+    "pandas-stubs",
+    "types-openpyxl",
+    "types-html5lib",
+]
+screenshot = [
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "pytesseract>=0.3.10",
+    "pillow>=10.0.0",
+    "easyocr>=1.7.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/willwade/AACProcessors"
+Repository = "https://github.com/willwade/AACProcessors.git"
+
+[project.scripts]
+aac-processors = "aac_processors.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = "--cov=aac_processors --cov-report=xml --cov-report=term-missing"
+testpaths = ["tests"]
+markers = [
+    "integration: mark test as an integration test",
+    "screenshot: mark test as requiring screenshot dependencies",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "B", "UP"]
+ignore = ["F821","E501"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
