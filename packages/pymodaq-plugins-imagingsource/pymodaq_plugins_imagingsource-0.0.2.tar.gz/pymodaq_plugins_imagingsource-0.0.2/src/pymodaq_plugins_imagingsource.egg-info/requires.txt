@@ -1,0 +1,3 @@
+toml
+pymodaq>=5.0.2
+imagingcontrol4
