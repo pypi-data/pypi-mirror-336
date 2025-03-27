@@ -1,0 +1,559 @@
+  Submitting predictions for sbm-gold-preds-test - (swe-bench-m test)
+⠧ Submitting predictions...                                          0.2% 0:01:02
+Error during task: Error submitting prediction for instance grommet__grommet-6690: API request failed with status code 429: Are you trying to submit to the SWE-bench Multimodal leaderboard? 
+If so, send us an email at support@swebench.org to authorize a test evaluation.
+
+╭───────────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ─────────────────────────────────────────────────────────────────────────────╮
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/submit.py:144 in task_func                                                                                                                        │
+│                                                                                                                                                                                             │
+│   141 │   │   │   }                                                                                                                                                                         │
+│   142 │   │   │   for future in as_completed(future_to_prediction):                                                                                                                         │
+│   143 │   │   │   │   try:                                                                                                                                                                  │
+│ ❱ 144 │   │   │   │   │   launch_data = future.result()                                                                                                                                     │
+│   145 │   │   │   │   │   if launch_data["launched"]:                                                                                                                                       │
+│   146 │   │   │   │   │   │   all_new_ids.append(launch_data['instance_id'])                                                                                                                │
+│   147 │   │   │   │   │   else:                                                                                                                                                             │
+│                                                                                                                                                                                             │
+│ ╭──────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────╮                                          │
+│ │    all_completed_ids = []                                                                                                                      │                                          │
+│ │          all_new_ids = []                                                                                                                      │                                          │
+│ │             executor = <concurrent.futures.thread.ThreadPoolExecutor object at 0x7fe155fa6d80>                                                 │                                          │
+│ │           failed_ids = ['grommet__grommet-6690']                                                                                               │                                          │
+│ │               future = <Future at 0x7fe155815f70 state=finished raised RequestException>                                                       │                                          │
+│ │ future_to_prediction = {                                                                                                                       │                                          │
+│ │                        │   <Future at 0x7fe15581ae40 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6282',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/DataTable/buildState.js b/src/js/components/DataT'+852,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe15581b680 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6749',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 48eca61682..74244bd326 100644\n---'+10382,      │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1558142c0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-5243',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 839750c946..ca3c4bfa84 100644\n---'+2910,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe155815220 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2695',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Meter/StyledMeter.js b/src/js/components/Meter/St'+1646,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe155815f70 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6690',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1558169f0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6227',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Form/Form.js b/src/js/components/Form/Form.js\nind'+655,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1558174d0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-7025',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Data/Data.js b/src/js/components/Data/Data.js\nind'+22971,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1556680b0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2061',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/TextInput/StyledTextInput.js b/src/js/components/'+408,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe155668bf0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6490',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/StyledBox.js b/src/js/components/Box/StyledBo'+472,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1556697f0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2124',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/Box.js b/src/js/components/Box/Box.js\nindex 1'+11447,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   ... +507                                                                                                            │                                          │
+│ │                        }                                                                                                                       │                                          │
+│ │              headers = {'x-api-key': 'swb_09HOmPMzs_kqjnEUE4B2jGDjGaSySYY_2vC9Mfulb-0_67893e3e'}                                               │                                          │
+│ │         payload_base = {'split': 'test', 'subset': <Subset.swe_bench_m: 'swe-bench-m'>, 'instance_ids': None, 'run_id': 'sbm-gold-preds-test'} │                                          │
+│ │                 pred = {                                                                                                                       │                                          │
+│ │                        │   'instance_id': 'grommet__grommet-6690',                                                                             │                                          │
+│ │                        │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,             │                                          │
+│ │                        │   'model_name_or_path': 'goldddd'                                                                                     │                                          │
+│ │                        }                                                                                                                       │                                          │
+│ │          predictions = [                                                                                                                       │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6282',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/DataTable/buildState.js b/src/js/components/DataT'+852,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6749',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 48eca61682..74244bd326 100644\n---'+10382,      │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-5243',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 839750c946..ca3c4bfa84 100644\n---'+2910,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2695',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Meter/StyledMeter.js b/src/js/components/Meter/St'+1646,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6690',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6227',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Form/Form.js b/src/js/components/Form/Form.js\nind'+655,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-7025',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Data/Data.js b/src/js/components/Data/Data.js\nind'+22971,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2061',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/TextInput/StyledTextInput.js b/src/js/components/'+408,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6490',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/StyledBox.js b/src/js/components/Box/StyledBo'+472,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2124',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/Box.js b/src/js/components/Box/Box.js\nindex 1'+11447,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   ... +507                                                                                                            │                                          │
+│ │                        ]                                                                                                                       │                                          │
+│ │             progress = <rich.progress.Progress object at 0x7fe15581a9c0>                                                                       │                                          │
+│ │                 task = 0                                                                                                                       │                                          │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                          │
+│                                                                                                                                                                                             │
+│ /opt/miniconda3/envs/bitbop/lib/python3.12/concurrent/futures/_base.py:449 in result                                                                                                        │
+│                                                                                                                                                                                             │
+│   446 │   │   │   │   if self._state in [CANCELLED, CANCELLED_AND_NOTIFIED]:                   ╭──── locals ────╮                                                                           │
+│   447 │   │   │   │   │   raise CancelledError()                                               │    self = None │                                                                           │
+│   448 │   │   │   │   elif self._state == FINISHED:                                            │ timeout = None │                                                                           │
+│ ❱ 449 │   │   │   │   │   return self.__get_result()                                           ╰────────────────╯                                                                           │
+│   450 │   │   │   │                                                                                                                                                                         │
+│   451 │   │   │   │   self._condition.wait(timeout)                                                                                                                                         │
+│   452                                                                                                                                                                                       │
+│                                                                                                                                                                                             │
+│ /opt/miniconda3/envs/bitbop/lib/python3.12/concurrent/futures/_base.py:401 in __get_result                                                                                                  │
+│                                                                                                                                                                                             │
+│   398 │   def __get_result(self):                                                              ╭── locals ───╮                                                                              │
+│   399 │   │   if self._exception:                                                              │ self = None │                                                                              │
+│   400 │   │   │   try:                                                                         ╰─────────────╯                                                                              │
+│ ❱ 401 │   │   │   │   raise self._exception                                                                                                                                                 │
+│   402 │   │   │   finally:                                                                                                                                                                  │
+│   403 │   │   │   │   # Break a reference cycle with the exception in self._exception                                                                                                       │
+│   404 │   │   │   │   self = None                                                                                                                                                           │
+│                                                                                                                                                                                             │
+│ /opt/miniconda3/envs/bitbop/lib/python3.12/concurrent/futures/thread.py:58 in run                                                                                                           │
+│                                                                                                                                                                                             │
+│    55 │   │   │   return                                                                       ╭── locals ───╮                                                                              │
+│    56 │   │                                                                                    │ self = None │                                                                              │
+│    57 │   │   try:                                                                             ╰─────────────╯                                                                              │
+│ ❱  58 │   │   │   result = self.fn(*self.args, **self.kwargs)                                                                                                                               │
+│    59 │   │   except BaseException as exc:                                                                                                                                                  │
+│    60 │   │   │   self.future.set_exception(exc)                                                                                                                                            │
+│    61 │   │   │   # Break a reference cycle with the exception 'exc'                                                                                                                        │
+│                                                                                                                                                                                             │
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/submit.py:23 in submit_prediction                                                                                                                 │
+│                                                                                                                                                                                             │
+│    20 │   payload = payload_base.copy()                                                                                                                                                     │
+│    21 │   payload["prediction"] = prediction                                                                                                                                                │
+│    22 │   response = requests.post(f'{API_BASE_URL}/submit', json=payload, headers=headers)                                                                                                 │
+│ ❱  23 │   verify_response(response)                                                                                                                                                         │
+│    24 │   return response.json()                                                                                                                                                            │
+│    25                                                                                                                                                                                       │
+│    26 # Prediction Processing                                                                                                                                                               │
+│                                                                                                                                                                                             │
+│ ╭──────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────╮                                                  │
+│ │      headers = {'x-api-key': 'swb_09HOmPMzs_kqjnEUE4B2jGDjGaSySYY_2vC9Mfulb-0_67893e3e'}                                               │                                                  │
+│ │      payload = {                                                                                                                       │                                                  │
+│ │                │   'split': 'test',                                                                                                    │                                                  │
+│ │                │   'subset': <Subset.swe_bench_m: 'swe-bench-m'>,                                                                      │                                                  │
+│ │                │   'instance_ids': None,                                                                                               │                                                  │
+│ │                │   'run_id': 'sbm-gold-preds-test',                                                                                    │                                                  │
+│ │                │   'prediction': {                                                                                                     │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-6690',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,         │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   }                                                                                                                   │                                                  │
+│ │                }                                                                                                                       │                                                  │
+│ │ payload_base = {'split': 'test', 'subset': <Subset.swe_bench_m: 'swe-bench-m'>, 'instance_ids': None, 'run_id': 'sbm-gold-preds-test'} │                                                  │
+│ │   prediction = {                                                                                                                       │                                                  │
+│ │                │   'instance_id': 'grommet__grommet-6690',                                                                             │                                                  │
+│ │                │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,             │                                                  │
+│ │                │   'model_name_or_path': 'goldddd'                                                                                     │                                                  │
+│ │                }                                                                                                                       │                                                  │
+│ │     response = <Response [429]>                                                                                                        │                                                  │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                  │
+│                                                                                                                                                                                             │
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/utils.py:6 in verify_response                                                                                                                     │
+│                                                                                                                                                                                             │
+│   3 def verify_response(response):                                                                                                                                                          │
+│   4 │   if response.status_code != 200:                                                                                                                                                     │
+│   5 │   │   message = response.json().get("message", "No message provided")                                                                                                                 │
+│ ❱ 6 │   │   raise requests.RequestException(f"API request failed with status code {response.                                                                                                │
+│   7                                                                                                                                                                                         │
+│                                                                                                                                                                                             │
+│ ╭───────────────────────────────────────────── locals ─────────────────────────────────────────────╮                                                                                        │
+│ │  message = 'Are you trying to submit to the SWE-bench Multimodal leaderboard? If so, send us'+65 │                                                                                        │
+│ │ response = <Response [429]>                                                                      │                                                                                        │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                                        │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+RequestException: API request failed with status code 429: Are you trying to submit to the SWE-bench Multimodal leaderboard? If so, send us an email at support@swebench.org to authorize a 
+test evaluation.
+
+During handling of the above exception, another exception occurred:
+
+╭───────────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ─────────────────────────────────────────────────────────────────────────────╮
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/submit.py:309 in submit                                                                                                                           │
+│                                                                                                                                                                                             │
+│   306 │                                                                                                                                                                                     │
+│   307 │   console.print(f"[yellow]  Submitting predictions for {run_id} - ({subset.value} {spl                                                                                              │
+│   308 │                                                                                                                                                                                     │
+│ ❱ 309 │   new_ids, all_completed_ids = submit_predictions_with_progress(predictions, headers,                                                                                               │
+│   310 │   all_ids = new_ids + all_completed_ids                                                                                                                                             │
+│   311 │                                                                                                                                                                                     │
+│   312 │   run_metadata = {                                                                                                                                                                  │
+│                                                                                                                                                                                             │
+│ ╭─────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────╮                                    │
+│ │                    api_key = 'swb_09HOmPMzs_kqjnEUE4B2jGDjGaSySYY_2vC9Mfulb-0_67893e3e'                                                              │                                    │
+│ │                    console = <console width=191 None>                                                                                                │                                    │
+│ │                 gen_report = 1                                                                                                                       │                                    │
+│ │                    headers = {'x-api-key': 'swb_09HOmPMzs_kqjnEUE4B2jGDjGaSySYY_2vC9Mfulb-0_67893e3e'}                                               │                                    │
+│ │               instance_ids = None                                                                                                                    │                                    │
+│ │                 output_dir = 'sb-cli-reports'                                                                                                        │                                    │
+│ │                  overwrite = 0                                                                                                                       │                                    │
+│ │               payload_base = {'split': 'test', 'subset': <Subset.swe_bench_m: 'swe-bench-m'>, 'instance_ids': None, 'run_id': 'sbm-gold-preds-test'} │                                    │
+│ │                predictions = [                                                                                                                       │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-6282',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/components/DataTable/buildState.js b/src/js/components/DataT'+852,          │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-6749',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 48eca61682..74244bd326 100644\n---'+10382,      │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-5243',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 839750c946..ca3c4bfa84 100644\n---'+2910,       │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-2695',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/components/Meter/StyledMeter.js b/src/js/components/Meter/St'+1646,         │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-6690',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,         │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-6227',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/components/Form/Form.js b/src/js/components/Form/Form.js\nind'+655,         │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-7025',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/components/Data/Data.js b/src/js/components/Data/Data.js\nind'+22971,       │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-2061',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/components/TextInput/StyledTextInput.js b/src/js/components/'+408,          │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-6490',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/components/Box/StyledBox.js b/src/js/components/Box/StyledBo'+472,          │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   {                                                                                                                   │                                    │
+│ │                              │   │   'instance_id': 'grommet__grommet-2124',                                                                         │                                    │
+│ │                              │   │   'model_patch': 'diff --git a/src/js/components/Box/Box.js b/src/js/components/Box/Box.js\nindex 1'+11447,       │                                    │
+│ │                              │   │   'model_name_or_path': 'goldddd'                                                                                 │                                    │
+│ │                              │   },                                                                                                                  │                                    │
+│ │                              │   ... +507                                                                                                            │                                    │
+│ │                              ]                                                                                                                       │                                    │
+│ │           predictions_path = PosixPath('sbm-gold-preds-test/preds.json')                                                                             │                                    │
+│ │                     run_id = 'sbm-gold-preds-test'                                                                                                   │                                    │
+│ │ should_wait_for_evaluation = 1                                                                                                                       │                                    │
+│ │                      split = 'test'                                                                                                                  │                                    │
+│ │                     subset = <Subset.swe_bench_m: 'swe-bench-m'>                                                                                     │                                    │
+│ │          verify_submission = 1                                                                                                                       │                                    │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                    │
+│                                                                                                                                                                                             │
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/submit.py:162 in submit_predictions_with_progress                                                                                                 │
+│                                                                                                                                                                                             │
+│   159 │   │   │   "failed_ids": failed_ids                                                                                                                                                  │
+│   160 │   │   }                                                                                                                                                                             │
+│   161 │   console = Console()                                                                                                                                                               │
+│ ❱ 162 │   result = run_progress_task(                                                                                                                                                       │
+│   163 │   │   console,                                                                                                                                                                      │
+│   164 │   │   "Submitting predictions",                                                                                                                                                     │
+│   165 │   │   len(predictions),                                                                                                                                                             │
+│                                                                                                                                                                                             │
+│ ╭──────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────╮                                                  │
+│ │      console = <console width=191 None>                                                                                                │                                                  │
+│ │      headers = {'x-api-key': 'swb_09HOmPMzs_kqjnEUE4B2jGDjGaSySYY_2vC9Mfulb-0_67893e3e'}                                               │                                                  │
+│ │ payload_base = {'split': 'test', 'subset': <Subset.swe_bench_m: 'swe-bench-m'>, 'instance_ids': None, 'run_id': 'sbm-gold-preds-test'} │                                                  │
+│ │  predictions = [                                                                                                                       │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-6282',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/components/DataTable/buildState.js b/src/js/components/DataT'+852,          │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-6749',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 48eca61682..74244bd326 100644\n---'+10382,      │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-5243',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 839750c946..ca3c4bfa84 100644\n---'+2910,       │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-2695',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/components/Meter/StyledMeter.js b/src/js/components/Meter/St'+1646,         │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-6690',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,         │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-6227',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/components/Form/Form.js b/src/js/components/Form/Form.js\nind'+655,         │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-7025',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/components/Data/Data.js b/src/js/components/Data/Data.js\nind'+22971,       │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-2061',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/components/TextInput/StyledTextInput.js b/src/js/components/'+408,          │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-6490',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/components/Box/StyledBox.js b/src/js/components/Box/StyledBo'+472,          │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   {                                                                                                                   │                                                  │
+│ │                │   │   'instance_id': 'grommet__grommet-2124',                                                                         │                                                  │
+│ │                │   │   'model_patch': 'diff --git a/src/js/components/Box/Box.js b/src/js/components/Box/Box.js\nindex 1'+11447,       │                                                  │
+│ │                │   │   'model_name_or_path': 'goldddd'                                                                                 │                                                  │
+│ │                │   },                                                                                                                  │                                                  │
+│ │                │   ... +507                                                                                                            │                                                  │
+│ │                ]                                                                                                                       │                                                  │
+│ │    task_func = <function submit_predictions_with_progress.<locals>.task_func at 0x7fe1557df880>                                        │                                                  │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                  │
+│                                                                                                                                                                                             │
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/submit.py:105 in run_progress_task                                                                                                                │
+│                                                                                                                                                                                             │
+│   102 │   │   │   progress.stop()                                                                                                                                                           │
+│   103 │   │   │   if exception:                                                                                                                                                             │
+│   104 │   │   │   │   console.print(f"[red]Error during task: {str(exception)}[/]")                                                                                                         │
+│ ❱ 105 │   │   │   │   raise exception                                                                                                                                                       │
+│   106 │   │   │   final_percentage = progress.tasks[task].completed / progress.tasks[task].tot                                                                                              │
+│   107 │   │   │   completed = progress.tasks[task].completed                                                                                                                                │
+│   108 │   │   │   total = progress.tasks[task].total                                                                                                                                        │
+│                                                                                                                                                                                             │
+│ ╭──────────────────────────────────────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────────────────────────────────────╮ │
+│ │         args = ()                                                                                                                                                                       │ │
+│ │    completed = 0                                                                                                                                                                        │ │
+│ │      console = <console width=191 None>                                                                                                                                                 │ │
+│ │ elapsed_time = 62.181780099868774                                                                                                                                                       │ │
+│ │    exception = RuntimeError('Error submitting prediction for instance grommet__grommet-6690: API request failed with status code 429: Are you trying to submit to the SWE-bench         │ │
+│ │                Multimodal leaderboard? If so, send us an email at support@swebench.org to authorize a test evaluation.')                                                                │ │
+│ │       kwargs = {}                                                                                                                                                                       │ │
+│ │     progress = <rich.progress.Progress object at 0x7fe15581a9c0>                                                                                                                        │ │
+│ │   start_time = 1739468732.5271118                                                                                                                                                       │ │
+│ │         task = 0                                                                                                                                                                        │ │
+│ │    task_func = <function submit_predictions_with_progress.<locals>.task_func at 0x7fe1557df880>                                                                                         │ │
+│ │    task_name = 'Submitting predictions'                                                                                                                                                 │ │
+│ │      timeout = None                                                                                                                                                                     │ │
+│ │        total = 517                                                                                                                                                                      │ │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                                                             │
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/submit.py:97 in run_progress_task                                                                                                                 │
+│                                                                                                                                                                                             │
+│    94 │   │   task = progress.add_task("", total=total)                                                                                                                                     │
+│    95 │   │   try:                                                                                                                                                                          │
+│    96 │   │   │   # Run the task function with a timeout                                                                                                                                    │
+│ ❱  97 │   │   │   result = task_func(progress, task, *args, **kwargs)                                                                                                                       │
+│    98 │   │   except Exception as e:                                                                                                                                                        │
+│    99 │   │   │   exception = e                                                                                                                                                             │
+│   100 │   │   finally:                                                                                                                                                                      │
+│                                                                                                                                                                                             │
+│ ╭──────────────────────────────────────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────────────────────────────────────╮ │
+│ │         args = ()                                                                                                                                                                       │ │
+│ │    completed = 0                                                                                                                                                                        │ │
+│ │      console = <console width=191 None>                                                                                                                                                 │ │
+│ │ elapsed_time = 62.181780099868774                                                                                                                                                       │ │
+│ │    exception = RuntimeError('Error submitting prediction for instance grommet__grommet-6690: API request failed with status code 429: Are you trying to submit to the SWE-bench         │ │
+│ │                Multimodal leaderboard? If so, send us an email at support@swebench.org to authorize a test evaluation.')                                                                │ │
+│ │       kwargs = {}                                                                                                                                                                       │ │
+│ │     progress = <rich.progress.Progress object at 0x7fe15581a9c0>                                                                                                                        │ │
+│ │   start_time = 1739468732.5271118                                                                                                                                                       │ │
+│ │         task = 0                                                                                                                                                                        │ │
+│ │    task_func = <function submit_predictions_with_progress.<locals>.task_func at 0x7fe1557df880>                                                                                         │ │
+│ │    task_name = 'Submitting predictions'                                                                                                                                                 │ │
+│ │      timeout = None                                                                                                                                                                     │ │
+│ │        total = 517                                                                                                                                                                      │ │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                                                             │
+│ /home/carlosejimenez/GitHub/sb-cli/sb_cli/submit.py:153 in task_func                                                                                                                        │
+│                                                                                                                                                                                             │
+│   150 │   │   │   │   │   # Retrieve the prediction associated with the failed future                                                                                                       │
+│   151 │   │   │   │   │   pred = future_to_prediction[future]                                                                                                                               │
+│   152 │   │   │   │   │   failed_ids.append(pred['instance_id'])                                                                                                                            │
+│ ❱ 153 │   │   │   │   │   raise RuntimeError(f"Error submitting prediction for instance {pred[                                                                                              │
+│   154 │   │   │   │   finally:                                                                                                                                                              │
+│   155 │   │   │   │   │   progress.update(task, advance=1)                                                                                                                                  │
+│   156 │   │   return {                                                                                                                                                                      │
+│                                                                                                                                                                                             │
+│ ╭──────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────╮                                          │
+│ │    all_completed_ids = []                                                                                                                      │                                          │
+│ │          all_new_ids = []                                                                                                                      │                                          │
+│ │             executor = <concurrent.futures.thread.ThreadPoolExecutor object at 0x7fe155fa6d80>                                                 │                                          │
+│ │           failed_ids = ['grommet__grommet-6690']                                                                                               │                                          │
+│ │               future = <Future at 0x7fe155815f70 state=finished raised RequestException>                                                       │                                          │
+│ │ future_to_prediction = {                                                                                                                       │                                          │
+│ │                        │   <Future at 0x7fe15581ae40 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6282',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/DataTable/buildState.js b/src/js/components/DataT'+852,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe15581b680 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6749',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 48eca61682..74244bd326 100644\n---'+10382,      │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1558142c0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-5243',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 839750c946..ca3c4bfa84 100644\n---'+2910,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe155815220 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2695',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Meter/StyledMeter.js b/src/js/components/Meter/St'+1646,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe155815f70 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6690',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1558169f0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6227',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Form/Form.js b/src/js/components/Form/Form.js\nind'+655,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1558174d0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-7025',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Data/Data.js b/src/js/components/Data/Data.js\nind'+22971,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1556680b0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2061',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/TextInput/StyledTextInput.js b/src/js/components/'+408,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe155668bf0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6490',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/StyledBox.js b/src/js/components/Box/StyledBo'+472,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   <Future at 0x7fe1556697f0 state=finished raised RequestException>: {                                                │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2124',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/Box.js b/src/js/components/Box/Box.js\nindex 1'+11447,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   ... +507                                                                                                            │                                          │
+│ │                        }                                                                                                                       │                                          │
+│ │              headers = {'x-api-key': 'swb_09HOmPMzs_kqjnEUE4B2jGDjGaSySYY_2vC9Mfulb-0_67893e3e'}                                               │                                          │
+│ │         payload_base = {'split': 'test', 'subset': <Subset.swe_bench_m: 'swe-bench-m'>, 'instance_ids': None, 'run_id': 'sbm-gold-preds-test'} │                                          │
+│ │                 pred = {                                                                                                                       │                                          │
+│ │                        │   'instance_id': 'grommet__grommet-6690',                                                                             │                                          │
+│ │                        │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,             │                                          │
+│ │                        │   'model_name_or_path': 'goldddd'                                                                                     │                                          │
+│ │                        }                                                                                                                       │                                          │
+│ │          predictions = [                                                                                                                       │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6282',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/DataTable/buildState.js b/src/js/components/DataT'+852,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6749',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 48eca61682..74244bd326 100644\n---'+10382,      │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-5243',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/package.json b/package.json\nindex 839750c946..ca3c4bfa84 100644\n---'+2910,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2695',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Meter/StyledMeter.js b/src/js/components/Meter/St'+1646,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6690',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/themes/base.js b/src/js/themes/base.js\nindex 28d4ef45fe..455'+379,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6227',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Form/Form.js b/src/js/components/Form/Form.js\nind'+655,         │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-7025',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Data/Data.js b/src/js/components/Data/Data.js\nind'+22971,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2061',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/TextInput/StyledTextInput.js b/src/js/components/'+408,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-6490',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/StyledBox.js b/src/js/components/Box/StyledBo'+472,          │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   {                                                                                                                   │                                          │
+│ │                        │   │   'instance_id': 'grommet__grommet-2124',                                                                         │                                          │
+│ │                        │   │   'model_patch': 'diff --git a/src/js/components/Box/Box.js b/src/js/components/Box/Box.js\nindex 1'+11447,       │                                          │
+│ │                        │   │   'model_name_or_path': 'goldddd'                                                                                 │                                          │
+│ │                        │   },                                                                                                                  │                                          │
+│ │                        │   ... +507                                                                                                            │                                          │
+│ │                        ]                                                                                                                       │                                          │
+│ │             progress = <rich.progress.Progress object at 0x7fe15581a9c0>                                                                       │                                          │
+│ │                 task = 0                                                                                                                       │                                          │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                          │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+RuntimeError: Error submitting prediction for instance grommet__grommet-6690: API request failed with status code 429: Are you trying to submit to the SWE-bench Multimodal leaderboard? If so,
+send us an email at support@swebench.org to authorize a test evaluation.
