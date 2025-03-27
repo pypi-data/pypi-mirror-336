@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: tomoAO
+Version: 0.0.1
+Summary: Python package with atmospheric tomography generic functions and tools
+Home-page: https://github.com/cmcorreia/PyTomo
+Author: SpaceODT
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aotools
+Requires-Dist: numpy
+Requires-Dist: astropy
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# tomoAO
+Python package with atmospheric tomography generic functions and tools
+
+## Installation
+
+1. Install OOPAO
+    ```sh
+    pip install git+https://github.com/cheritier/OOPAO
+    ```
+
+2. Install cupy according to your cuda version (Optional)
+    ```sh
+    pip install cupy-cuda11x
+    ```
+    ```sh
+    pip install cupy-cuda12x
+    ```
+
+3. Install tomoAO via pip
+    ```sh
+    pip install tomoAO
+    ```
+
+    Or clone the repository
+    ```sh
+    git clone https://github.com/cmcorreia/PyTomo
+    pip install -e 'path to tomoAO'
+    ```
