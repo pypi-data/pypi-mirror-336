@@ -1,0 +1,5 @@
+recursive-include tmo/cli/metadata_files *
+include tmo/cli/run_model.R
+include tmo/docs/*
+recursive-include tmo/examples *
+recursive-include tmo/ *
