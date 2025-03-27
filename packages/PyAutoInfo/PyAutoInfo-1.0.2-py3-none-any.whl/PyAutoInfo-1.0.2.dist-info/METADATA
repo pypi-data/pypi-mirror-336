@@ -1,0 +1,234 @@
+Metadata-Version: 2.1
+Name: PyAutoInfo
+Version: 1.0.2
+Summary: Infopy is a Python module that provides a collection of methods to retrieve essential system information. With this module, you can easily get details about your system's hardware and software, such as the CPU, GPU, RAM, battery status, network information, uptime, and more. It also supports retrieving public IP addresses, Wi-Fi profiles, clipboard contents, and system OS information.
+Home-page: https://github.com/froxxy1011/PyInfo
+Author: Jamil Formuly
+Author-email: Jamilformuly12345@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: psutil
+Requires-Dist: pyperclip
+Requires-Dist: wmi
+
+Infopy - System Information Retrieval Module
+Infopy is a powerful Python library that allows users to easily retrieve detailed system information across various platforms (mainly Windows) through simple function calls. Whether you need to gather hardware details like CPU, GPU, RAM, and disk usage, or monitor system status like battery health, uptime, or network configuration, Infopy provides a comprehensive solution.
+
+Features
+System Information: Retrieve details about your system's OS, hostname, username, and more.
+
+Hardware Information: Fetch detailed information about the CPU, GPU, RAM, and battery status.
+
+Network Information: Get public IP address and local network configuration.
+
+Wi-Fi Information: Retrieve Wi-Fi profiles and passwords (Windows only).
+
+System Monitoring: Check CPU and RAM usage, temperature, battery health, and disk space.
+
+Installation
+Prerequisites
+Python 3.6 or higher
+
+The following libraries will be installed automatically when you install Infopy:
+
+requests
+
+psutil
+
+pyperclip
+
+wmi
+
+Install via pip
+To install Infopy, simply run the following command:
+
+bash
+Copy
+Edit
+pip install infopy
+Install from Source
+To install Infopy from source, clone the repository and use the following steps:
+
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/froxxy1011/infopy.git
+cd infopy
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Install Infopy:
+
+bash
+Copy
+Edit
+python setup.py install
+Usage
+Here are some examples of how to use Infopy in your Python projects.
+
+Get Public IP Address
+python
+Copy
+Edit
+import infopy
+
+ip = infopy.getip()
+print(f"Public IP Address: {ip}")
+Get System Information
+python
+Copy
+Edit
+system_info = infopy.osinfo()
+print(f"Operating System: {system_info}")
+Get GPU Information
+python
+Copy
+Edit
+gpu = infopy.gpuname()
+print(f"GPU: {gpu}")
+Get CPU Information
+python
+Copy
+Edit
+cpu_name = infopy.cpuname()
+print(f"CPU: {cpu_name}")
+Get Battery Status
+python
+Copy
+Edit
+battery_status = infopy.Powerplugged()
+battery_percent = infopy.battery()
+print(f"Battery Status: {battery_status}")
+print(f"Battery Percentage: {battery_percent}%")
+Get Wi-Fi Information (Windows Only)
+python
+Copy
+Edit
+wifi_profiles = infopy.wifinames()
+print(f"Wi-Fi Profiles: {wifi_profiles}")
+Functions
+getip()
+Returns the public IP address of the machine.
+
+pcname()
+Returns the hostname of the machine.
+
+username()
+Returns the username of the current user.
+
+osinfo()
+Returns the OS name and version.
+
+gpuname()
+Returns a list of GPU names installed on the machine (Windows only).
+
+gpudriverversion()
+Returns a list of GPU driver versions installed on the machine (Windows only).
+
+macaddress()
+Returns the MAC address of the machine (Windows only).
+
+clipboard()
+Returns the current content of the clipboard.
+
+Powerplugged()
+Returns the battery charging status (whether the machine is plugged in or not).
+
+battery()
+Returns the battery percentage of the machine.
+
+manumodel()
+Returns the manufacturer and model information of the machine (Windows only).
+
+wifinames()
+Returns a list of Wi-Fi profiles saved on the machine (Windows only).
+
+wifipass()
+Returns the Wi-Fi password for each saved Wi-Fi profile (Windows only).
+
+cpuname()
+Returns the name of the CPU.
+
+logicalprocessors()
+Returns the number of logical CPU cores.
+
+cores()
+Returns the number of physical CPU cores.
+
+currentcpufrequency()
+Returns the current CPU frequency in MHz.
+
+totalcpufrequency()
+Returns the maximum CPU frequency in MHz.
+
+diskinfo()
+Returns the total, used, and free disk space.
+
+cputemperature()
+Returns the CPU temperature if available.
+
+raminfo()
+Returns the total, used, and available RAM in GB.
+
+networkinfo()
+Returns the IP addresses of all active network interfaces.
+
+uptime()
+Returns the system uptime in HH:MM:SS format.
+
+systemdatetime()
+Returns the current date and time along with the timezone.
+
+Development
+Infopy is an open-source project, and contributions are always welcome!
+
+Setting Up the Development Environment
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/froxxy1011/infopy.git
+Create a virtual environment:
+
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Make your changes, and create a pull request!
+
+License
+Infopy is released under the MIT License. See the LICENSE file for more details.
+
+Acknowledgements
+requests: HTTP library for fetching the public IP address.
+
+psutil: For retrieving system and hardware statistics.
+
+pyperclip: For interacting with the system clipboard.
+
+wmi: For querying Windows Management Instrumentation (WMI) for system and hardware info.
+
+Contact
+Author: Jamil Formuly
+
+Email: Jamilformuly12345@gmail.com
+
+GitHub: https://github.com/froxxy1011
