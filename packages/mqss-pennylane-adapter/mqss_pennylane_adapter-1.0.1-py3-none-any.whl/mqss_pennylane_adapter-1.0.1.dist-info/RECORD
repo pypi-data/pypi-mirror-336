@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mqss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mqss/pennylane_adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mqss/pennylane_adapter/adapter.py,sha256=Jex-2mckTuqTdCsx3gmpaZc0LpGpUquhp6bZZ1c3SsQ,883
+mqss/pennylane_adapter/backend.py,sha256=HRPSpBOaIafGZfieNHg0k9CtQBC34HfApZLmKceLFCY,2312
+mqss/pennylane_adapter/config.py,sha256=hOxnuhrO8J3Yr3fPHlHpaF8HWePrGWa6TJDPnuec1aI,410
+mqss/pennylane_adapter/device.py,sha256=mXZqRSK1BqKiEoOtV6FcC2XMM1mzepvQ_fjfB0lffjA,10452
+mqss/pennylane_adapter/job.py,sha256=IYOOEpVZ-R4V3xrhaWpyfZJ2vZdsDFjYAnpOethBaMA,2172
+mqss/pennylane_adapter/mqp_resources.py,sha256=vM9vq7HEHq4OOIwrnmyfOtlnf0MKIBoy4Fh_NP6ZMHM,1883
+mqss/pennylane_adapter/utils.py,sha256=Zh7ltTqUd1gmuyYFY950djbJ0FwWnKsWfcBLuIyeeFE,1047
+mqss_pennylane_adapter-1.0.1.dist-info/METADATA,sha256=ZyynU0YjqkTRd4p6b0fkvyif9EAjpifpbZxLi_Na_Cc,4549
+mqss_pennylane_adapter-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mqss_pennylane_adapter-1.0.1.dist-info/top_level.txt,sha256=jsE_dT-Yn0LmhVvfk1_PoM0o3AfDraeFsp78SHaJnfw,14
+mqss_pennylane_adapter-1.0.1.dist-info/RECORD,,
