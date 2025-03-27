@@ -1,0 +1,2 @@
+[console_scripts]
+klaviyo = kcli.kcli:cli
