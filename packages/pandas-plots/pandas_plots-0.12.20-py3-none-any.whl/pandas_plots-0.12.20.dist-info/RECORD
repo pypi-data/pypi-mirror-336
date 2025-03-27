@@ -1,0 +1,11 @@
+pandas_plots/hlp.py,sha256=TxduvDztLtMuVg7rRS5mEnhktc-eHf5vI9SG1ppAbxk,20299
+pandas_plots/pii.py,sha256=2WKE-W9s285jPdsTqCgt1uxuW4lj1PYCVOYB2fYDNwQ,2195
+pandas_plots/pls.py,sha256=S9hKQTPp8XIL9RmzvfeSQE4t2jm18bG4bejwcd-dJF4,48236
+pandas_plots/tbl.py,sha256=LxMKJh4qkGuQZ1DdCZIq1tMS26F6elsqbe_uabvQx4E,32535
+pandas_plots/ven.py,sha256=2x3ACo2vSfO3q6fv-UdDQ0h1SJyt8WChBGgE5SDCdCk,11673
+pandas_plots-0.12.20.dist-info/licenses/LICENSE,sha256=6KQ5KVAAhRaB-JJKpX4cefKvRZRgI7GUPc92_2d31XY,1051
+pandas_plots-0.12.20.dist-info/METADATA,sha256=E64_SFyau96op38X5-Ld-8mVJkRr9xBKY9cJr2lu5-o,7564
+pandas_plots-0.12.20.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pandas_plots-0.12.20.dist-info/pii.py,sha256=2WKE-W9s285jPdsTqCgt1uxuW4lj1PYCVOYB2fYDNwQ,2195
+pandas_plots-0.12.20.dist-info/top_level.txt,sha256=XnaNuIHBqMmCeh_U7nKOYTwFue_SIA0wxuDgdPmnnSk,13
+pandas_plots-0.12.20.dist-info/RECORD,,
