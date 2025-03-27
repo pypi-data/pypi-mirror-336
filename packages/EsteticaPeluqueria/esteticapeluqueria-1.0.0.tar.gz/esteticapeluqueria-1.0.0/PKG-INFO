@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: EsteticaPeluqueria
+Version: 1.0.0
+Summary: Sistema de gestión para estética y peluquería
+Author: Ugo Gianino
+Author-email: tu@email.com
+License: MIT
+Project-URL: Source, https://github.com/ugogianino/EsteticaPeluqueria
+Project-URL: Bug Reports, https://github.com/ugogianino/EsteticaPeluqueria/issues
+Keywords: estetica peluqueria gestion
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt6>=6.4.0
+Requires-Dist: pandas>=2.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Gestión Estética
+
+Aplicación de gestión para centros de estética
+
+## Requisitos
+- Python 3.8+
+- PyQt6
+
+## Instalación
+```bash
+pip install -r requirements.txt
