@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lightem/EntityMatcher.py
+lightem/__init__.py
+lightem.egg-info/PKG-INFO
+lightem.egg-info/SOURCES.txt
+lightem.egg-info/dependency_links.txt
+lightem.egg-info/requires.txt
+lightem.egg-info/top_level.txt
+lightem/modules/Clusterer.py
+lightem/modules/Embedder.py
+lightem/modules/Matcher.py
+lightem/modules/Table.py
+lightem/modules/__init__.py
+lightem/modules/args.py

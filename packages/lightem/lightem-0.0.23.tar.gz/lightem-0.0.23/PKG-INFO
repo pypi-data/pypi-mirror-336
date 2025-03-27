@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lightem
+Version: 0.0.23
+Summary: A light-weight python package for multi-table entity matching.
+Home-page: https://github.com/PedroPampolini/lightEM
+Author: Pedro Pampolini Mendicino
+Author-email: <pedromendicino25@gmail.com>
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# lightEM
+
