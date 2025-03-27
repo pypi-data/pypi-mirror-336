@@ -1,0 +1,2 @@
+[console_scripts]
+lcd-setup = lcd_16x2.lcd_install:run_install
