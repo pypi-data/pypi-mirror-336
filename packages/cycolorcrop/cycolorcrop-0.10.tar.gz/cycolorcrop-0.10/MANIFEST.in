@@ -1,0 +1,8 @@
+include cycolorcrop/requirements.txt
+include cycolorcrop/thirdparty.json
+include cycolorcrop/uiev_compile.py
+include cycolorcrop/colorcrop.hpp
+include cycolorcrop/imagecrop.png
+include cycolorcrop/LICENSE
+include cycolorcrop/README.md
+include cycolorcrop/uiev.pyx
