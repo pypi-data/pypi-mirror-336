@@ -1,0 +1,7 @@
+setup.py
+licensifylib/__init__.py
+licensifylib/licensifylib.c
+licensifylib.egg-info/PKG-INFO
+licensifylib.egg-info/SOURCES.txt
+licensifylib.egg-info/dependency_links.txt
+licensifylib.egg-info/top_level.txt
