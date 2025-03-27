@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+bscommon.egg-info/PKG-INFO
+bscommon.egg-info/SOURCES.txt
+bscommon.egg-info/dependency_links.txt
+bscommon.egg-info/requires.txt
+bscommon.egg-info/top_level.txt
