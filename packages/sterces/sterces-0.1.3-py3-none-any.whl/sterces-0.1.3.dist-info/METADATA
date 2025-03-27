@@ -1,0 +1,77 @@
+Metadata-Version: 2.3
+Name: sterces
+Version: 0.1.3
+Summary: Wrapper for pykeepass library
+License: MIT
+Keywords: secrets,keepass
+Author: Quien Sabe
+Author-email: qs5579@mail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: dateparser (>=1.2.1,<2.0.0)
+Requires-Dist: loguru (>=0.7.3,<0.8.0)
+Requires-Dist: pykeepass (>=4.1.1.post1,<5.0.0)
+Requires-Dist: pyotp (>=2.9.0,<3.0.0)
+Project-URL: Documentation, https://sterces.readthedocs.io/en/stable
+Project-URL: Homepage, https://github.com/wtfo-guru/sterces
+Description-Content-Type: text/markdown
+
+# sterces
+
+[![Build Status](https://github.com/wtfo-guru/sterces/workflows/Sterces/badge.svg)](https://github.com/wtfo-guru/sterces/actions?query=workflow%3ASterces)
+[![codecov](https://codecov.io/gh/wtfo-guru/sterces/branch/main/graph/badge.svg)](https://codecov.io/gh/wtfo-guru/sterces)
+[![Python Version](https://img.shields.io/pypi/pyversions/sterces.svg)](https://pypi.org/project/sterces/)
+[![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
+
+## Rationale
+
+I am a retired software engineer. I have a small home lab of less than 10 servers and
+workstations. I also manage a very small number of cloud instances. Having a networked
+secrets system is not a viable solution for me for several reasons, so I needed a local
+secrets tool that could be managed easily via ansible.
+
+Before you mention how insecure this tool is, I must say that it is protected by file
+permissions in the home directory of my concierge user account. I take normal
+precautions to protect access to this (and other user accounts) so if the concierge or
+root account is breached, the contents of my secrets files are the least of my worries.
+
+## Features
+
+- Wrapper functions to allow adding, updating, and looking up data from a keepass database file
+
+- Fully typed with annotations and checked with mypy, [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
+
+## Installation
+
+```bash
+pip install sterces
+```
+
+## Documentation
+
+- [Stable](https://sterces.readthedocs.io/en/stable)
+
+- [Latest](https://sterces.readthedocs.io/en/latest)
+
+## License
+
+[MIT](https://github.com/wtfo-guru/sterces/blob/main/LICENSE)
+
+## Credits
+
+This project uses [`pykeepass`](https://github.com/libkeypass/pykeepass).
+This project was tested with [`wemake-python-package`](https://github.com/wemake-services/wemake-python-package).
+
