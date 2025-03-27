@@ -1,0 +1,16 @@
+poromics/__init__.py,sha256=_5DPFQRcrPOLRpt0E6pZQVjUDrfxaedckpmUwYhqbwk,91
+poromics/_metrics.py,sha256=NdOndsvnhw1p_4ZTnuVLQSGb1tPiZx-QP4G0scKTj8s,1684
+poromics/cli.py,sha256=WYy-zqyPQ33eRpqwgItdkpRW3QTNFA4xkLAT-lIKqpw,602
+poromics/julia_helpers.py,sha256=DfIWH78p2w5Exho-ABZ73rkp0TacyrblM55vmhMC9BE,5736
+poromics/juliapkg.json,sha256=NDHFPDtvempgYnsB7AMzRceQwCN0XyBq1PDehjTn6UY,206
+poromics/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poromics/settings.py,sha256=T4_-mUVUIDUot97eJCiCnGOUjJZkHzTIoJ7iAElej8Y,59
+poromics/utils.py,sha256=9S_7DmUU23eAU-ayAKSHIgzpHFPx53oYsQblpiazYwQ,1663
+poromics/version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+poromics/conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poromics/conf/settings.py,sha256=9_YiPlK4zGUzXY025WGl2wjb6mh_E8zQWC4nlyLmRZs,134
+poromics-0.0.3.dist-info/METADATA,sha256=mtGyYWJqKbWohV--EXu1pEhTD1droJAIdTpmMbJ0cNE,3048
+poromics-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+poromics-0.0.3.dist-info/entry_points.txt,sha256=UnKJMiVBILA6aJN7xzX_7xXPHoAbOnXAj9ovUKUFl2g,46
+poromics-0.0.3.dist-info/licenses/LICENSE,sha256=B3JwxDpBQsz4vFLPTid9mO_-4Mdnxrm-M4s73SEokl0,1070
+poromics-0.0.3.dist-info/RECORD,,
