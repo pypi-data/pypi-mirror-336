@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: pyutils_spirit
+Version: 1.1.7
+Summary: A Small Python package
+Author: Spirit
+Author-email: 2969643689@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
