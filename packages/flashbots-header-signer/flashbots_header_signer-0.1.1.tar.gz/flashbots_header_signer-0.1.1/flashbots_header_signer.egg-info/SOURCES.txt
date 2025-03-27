@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+flashbots_header_signer/__init__.py
+flashbots_header_signer/flashbots_signer.py
+flashbots_header_signer.egg-info/PKG-INFO
+flashbots_header_signer.egg-info/SOURCES.txt
+flashbots_header_signer.egg-info/dependency_links.txt
+flashbots_header_signer.egg-info/requires.txt
+flashbots_header_signer.egg-info/top_level.txt
+tests/test_flashbots_signer.py
