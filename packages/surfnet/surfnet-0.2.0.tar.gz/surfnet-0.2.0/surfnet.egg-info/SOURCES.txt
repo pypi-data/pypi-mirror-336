@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+surfnet/__init__.py
+surfnet/captcha_solver.py
+surfnet/scraper.py
+surfnet/system_profiler.py
+surfnet.egg-info/PKG-INFO
+surfnet.egg-info/SOURCES.txt
+surfnet.egg-info/dependency_links.txt
+surfnet.egg-info/requires.txt
+surfnet.egg-info/top_level.txt
