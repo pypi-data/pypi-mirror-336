@@ -1,0 +1,137 @@
+Metadata-Version: 2.4
+Name: kasal
+Version: 0.0.0.1
+Summary: A modern web application with AI capabilities
+Author-email: Nehme Tohme <nehmetohme@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Nehme Tohme
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+Project-URL: Homepage, https://github.com/yourusername/kasal
+Project-URL: Documentation, https://github.com/yourusername/kasal/docs
+Project-URL: Repository, https://github.com/yourusername/kasal.git
+Project-URL: Issues, https://github.com/yourusername/kasal/issues
+Keywords: databricks,ai,web-interface,fastapi,react
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <=3.13,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-api-python-client
+Requires-Dist: databricks
+Requires-Dist: databricks.sdk
+Requires-Dist: crewai-tools
+Requires-Dist: youtube-transcript-api
+Requires-Dist: aiosqlite>=0.19.0
+Requires-Dist: sqlalchemy[asyncio]>=2.0.0
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: croniter==2.0.1
+Requires-Dist: weaviate-client
+Requires-Dist: pysendpulse
+Requires-Dist: snowflake
+Requires-Dist: snowflake-connector-python
+Requires-Dist: cryptography<44.0.0
+Requires-Dist: flask==3.0.0
+Requires-Dist: flask_cors
+Requires-Dist: crewai[tools]
+Requires-Dist: psutil
+Requires-Dist: requests>=2.31.0
+Requires-Dist: fastapi
+Requires-Dist: browser-use
+Requires-Dist: pytest-asyncio
+Requires-Dist: pytest-cov
+Requires-Dist: litellm
+Requires-Dist: baml-py
+Requires-Dist: python-multipart
+Dynamic: license-file
+
+# Kasal
+
+
+## ✨ Features
+
+- Modern React frontend with Material-UI
+- Python FastAPI backend
+- AI-powered features with multiple LLM integrations
+- Real-time task monitoring
+- PDF report generation
+- Internationalization support
+- Automated testing
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+pip install kasal
+```
+
+### Running the Application
+
+```bash
+kasal
+```
+
+The application will be available at:
+- Frontend: http://localhost:8000
+- API Documentation: http://localhost:8000/docs
+
+## 🔧 Configuration
+
+Create a `.env` file with your API keys:
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+DEEPSEEK_API_KEY=your_deepseek_api_key
+SERPER_API_KEY=your_serper_api_key
+PERPLEXITY_API_KEY=your_perplexity_api_key
+```
+
+## 📝 License
+
+MIT License
+
+Copyright (c) 2024 Nehme Tohme
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
