@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: ipysim
+Version: 0.0.5
+Summary: Quizzes for Jupyter
+Author-email: Jørgen Galdal <jorgen.4@live.no>, Raviksan Navaratnarajah <raviksan@stud.ntnu.no>
+License-Expression: MIT
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: jupyter-bokeh
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+# ipsim
+
+## Install dependencies
+
+```bash
+python -m venv ".venv"
+python -m pip install -r requirements.txt
+```
