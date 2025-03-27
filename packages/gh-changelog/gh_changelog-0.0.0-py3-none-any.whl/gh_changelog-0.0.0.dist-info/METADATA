@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: gh-changelog
+Version: 0.0.0
+Project-URL: homepage, https://todo.com
+Project-URL: source, https://todo.com
+Project-URL: download, https://todo.com
+Project-URL: changelog, https://todo.com
+Project-URL: releasenotes, https://todo.com
+Project-URL: documentation, https://todo.com
+Project-URL: issues, https://todo.com
+Project-URL: funding, https://todo.com
+Author-email: Austin Yu <yuxm.austin1023@gmail.com>
+Maintainer-email: Austin Yu <yuxm.austin1023@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# gh-changelog
+
+This is a Python project scaffolded with scaffoldpy. Here is what you need to do next:
+1. Install the dependencies: `uv sync`
+2. Install the pre-commit hooks: `pre-commit install`
+3. Create repo on Github
+4. Run `git remote add origin https://github.com/austinyu/<repo-name>.git`
+5. Push to remote: `git push -u origin main`
+
