@@ -1,0 +1,13 @@
+MANIFEST.in
+VERSION
+setup.py
+libtensorshield/package.json
+libtensorshield.egg-info/PKG-INFO
+libtensorshield.egg-info/SOURCES.txt
+libtensorshield.egg-info/dependency_links.txt
+libtensorshield.egg-info/requires.txt
+libtensorshield.egg-info/top_level.txt
+libtensorshield/types/__init__.py
+libtensorshield/types/_ss58address.py
+tests/unit/test_bittensor_compat.py
+tests/unit/test_type_ss58address.py

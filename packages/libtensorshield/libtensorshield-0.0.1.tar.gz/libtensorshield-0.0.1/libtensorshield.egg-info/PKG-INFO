@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: libtensorshield
+Version: 0.0.1
+Summary: Development library for Bittensor applications.
+Home-page: https://github.com/tensorshield/python-tensorshield
+Author: Immortal Izzy
+Author-email: immortal.izzy@tensorshield.ai
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: pydantic>2
+Requires-Dist: substrate-interface
+Provides-Extra: develop
+Requires-Dist: bittensor>=9.0.0; extra == "develop"
+Requires-Dist: pytest; extra == "develop"
+Requires-Dist: pytest_asyncio; extra == "develop"
+Requires-Dist: coverage; extra == "develop"
+Requires-Dist: twine; extra == "develop"
