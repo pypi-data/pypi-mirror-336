@@ -1,0 +1,8 @@
+README.md
+setup.py
+controlversion/Controller.py
+controlversion/__init__.py
+controlversion.egg-info/PKG-INFO
+controlversion.egg-info/SOURCES.txt
+controlversion.egg-info/dependency_links.txt
+controlversion.egg-info/top_level.txt

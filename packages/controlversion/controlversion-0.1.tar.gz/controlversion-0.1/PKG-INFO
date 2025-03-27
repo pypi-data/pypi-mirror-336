@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: controlversion
+Version: 0.1
+Summary: Esta es la descripcion de mi paquete
+Home-page: https://github.com/BlackByted/ControlVersion
+Download-URL: https://github.com/BlackByted/ControlVersion/tarball/0.1
+Author: David Flores
+Author-email: 
+License: MIT
+Keywords: testing,logging,example
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
+
+import ControlVersion as Ctrl
+
+p = Ctrl.Controller(url_git,key)
