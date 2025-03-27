@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# 获取标签名称
+TAG_NAME=$(git describe --abbrev=0 --tags 2>/dev/null || echo "")
+
+# 检查标签是否以 v 开头并且后面跟着版本号
+if [[ $TAG_NAME =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+    # 提取版本号
+    VERSION=${TAG_NAME#v}
+
+    # 检查当前版本号
+    CURRENT_VERSION=$(grep 'version = ' pyproject.toml | sed 's/version = "\(.*\)"/\1/')
+
+    # 如果版本号不同，则更新
+    if [ "$VERSION" != "$CURRENT_VERSION" ]; then
+        echo "更新版本号从 $CURRENT_VERSION 到 $VERSION"
+
+        # 使用 bump2version 更新版本号
+        bump2version --new-version $VERSION --allow-dirty --no-commit --no-tag patch
+
+        # 提交更改
+        git add pyproject.toml asmr_toolkit/__init__.py README.md
+        git commit -m "❓chore: update version to $VERSION"
+    fi
+fi
+
+exit 0
