@@ -1,0 +1,14 @@
+LICENCE
+README.md
+pyproject.toml
+tests/test_base.py
+wagtail_neuralyzer/__init__.py
+wagtail_neuralyzer/action.py
+wagtail_neuralyzer/menu_item.py
+wagtail_neuralyzer/views.py
+wagtail_neuralyzer/wagtail_hooks.py
+wagtail_neuralyzer.egg-info/PKG-INFO
+wagtail_neuralyzer.egg-info/SOURCES.txt
+wagtail_neuralyzer.egg-info/dependency_links.txt
+wagtail_neuralyzer.egg-info/requires.txt
+wagtail_neuralyzer.egg-info/top_level.txt
