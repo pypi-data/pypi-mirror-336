@@ -1,0 +1,186 @@
+Metadata-Version: 2.3
+Name: mujoco-toolbox
+Version: 0.1.8
+Summary: A modern package to handle MuJoCo environments
+License: MIT
+Keywords: MuJoCo,robotics,simulation,toolbox,wrapper
+Author: MGross21
+Author-email: MGross21@TODO.com
+Requires-Python: >=3.10
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: dev
+Requires-Dist: ffmpeg
+Requires-Dist: ipywidgets
+Requires-Dist: matplotlib
+Requires-Dist: mediapy
+Requires-Dist: mujoco
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: numpy
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pyyaml
+Requires-Dist: ruff ; extra == "dev"
+Requires-Dist: scipy
+Requires-Dist: screeninfo
+Requires-Dist: tqdm
+Requires-Dist: trimesh
+Project-URL: Documentation, https://github.com/MGross21/mujoco-toolbox
+Project-URL: Homepage, https://github.com/MGross21/mujoco-toolbox
+Project-URL: Repository, https://github.com/MGross21/mujoco-toolbox
+Project-URL: bug-tracker, https://github.com/MGross21/mujoco-toolbox/issues
+Description-Content-Type: text/markdown
+
+![Build](https://github.com/MGross21/mujoco-toolbox/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/python-3.10%20|%203.11%20|%203.12%20|%203.13-blue)
+![License](https://img.shields.io/github/license/MGross21/mujoco-toolbox)
+[![PyPI](https://github.com/MGross21/mujoco-toolbox/actions/workflows/publish.yml/badge.svg)](https://github.com/MGross21/mujoco-toolbox/actions/workflows/publish.yml)
+
+# Mujoco Toolbox
+
+Streamlines the MuJoCo Physics Simulator
+
+## PyPI Package
+
+```bash
+pip install -U mujoco-toolbox
+```
+
+## For Local Install
+
+*Navigate to the Directory that you wish to place the package*
+
+<details>
+<summary><b>JUPYTER NOTEBOOK</b></summary>
+</br>
+*Place Commands Inside Cell*
+
+One-Time Install:
+
+```python
+!git clone https://github.com/MGross21/mujoco-toolbox
+!pip install -U ./mujoco-toolbox
+```
+
+Check for Updates:
+
+```python
+!git pull origin main
+```
+
+Install/Check for Updates:
+
+```python
+folder = "mujoco-toolbox"
+repo_url = f"https://github.com/MGross21/{folder}"
+
+!if [ -d "{folder}" ]; then cd {folder} && git pull && cd ..; else git clone {repo_url}; fi
+!pip install -U ./{folder}
+```
+
+</details>
+</br>
+
+<details>
+<summary><b>BASH WINDOW</b></summary>
+</br>
+One-Time Install:
+
+```bash
+git clone https://github.com/MGross21/mujoco-toolbox
+pip install -U ./mujoco-toolbox
+```
+
+Check for Updates:
+```bash
+git pull origin main
+```
+
+Install/Check for Updates:
+
+```bash
+REPO_DIR="mujoco-toolbox"
+REPO_URL="https://github.com/MGross21/mujoco-toolbox"
+
+if [ -d "$REPO_DIR" ]; then
+  cd "$REPO_DIR" && git fetch origin && git pull origin main
+else
+  git clone $REPO_URL
+  cd "$REPO_DIR"
+fi
+
+pip install -U ./mujoco-toolbox
+```
+
+</details>
+
+## Extra Packages
+
+<details>
+<summary><b>FFMPEG</b></summary>
+
+</br>
+
+*Required for [mediapy](https://google.github.io/mediapy/mediapy.html) dependency*
+
+**Windows**
+
+```bash
+winget install ffmpeg
+ffmpeg -version
+```
+
+**Linux**
+
+```bash
+sudo apt update && sudo apt install ffmpeg
+ffmpeg -version
+```
+
+**MacOS**
+
+*Using Homebrew*
+
+```bash
+brew install ffmpeg
+ffmpeg -version
+```
+
+*Using MacPorts*
+
+```bash
+sudo port install ffmpeg
+ffmpeg -version
+```
+
+</details>
+
+## To Run in Scripts
+
+```python
+import mujoco_toolbox as mjtb
+from mujoco_toolbox import Wrapper
+
+# Optional Global Variables
+mjtb.VERBOSITY = True # Additional Performance and Debugging Print Statements (Default=False)
+mjtb.CAPTURE_PARAMETERS = "all" # MjData Simulation Parameters (Default = ['time', 'qpos', 'qvel', 'act', 'qacc', 'xpos', 'xquat', 'xmat', 'ctrl', 'sensordata']) 
+
+# Example Code
+Wrapper("path/to/your/xml").runSim(render=True).renderMedia()
+```
+
+## Pre-Made Controllers
+
+```python
+import mujoco_toolbox as mjtb
+
+mjtb.sineController(m,d,**kwargs)
+mjtb.cosineController(m,d,**kwargs)
+mjtb.stepController(m,d,**kwargs)
+mjtb.randomController(m,d,**kwargs)
+
+# Wrapper can use custom controllers as well!
+```
+
