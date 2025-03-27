@@ -1,0 +1,3 @@
+[console_scripts]
+camel = camel.cli:camel
+cpm = camel.cli:cpm

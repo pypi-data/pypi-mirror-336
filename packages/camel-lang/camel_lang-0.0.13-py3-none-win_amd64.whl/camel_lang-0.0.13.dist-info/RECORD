@@ -1,0 +1,11 @@
+camel/__init__.py,sha256=JPrRpRhybE_U54L-5UsELJMozesx98Tf2OtjUsyGz0k,232
+camel/cli.py,sha256=TOAhShwEJup_Lmm9UVHqXQMlZ1ihBaAt9gwGc96HQ3Y,3180
+camel/.cmlenv/bin/camel.exe,sha256=j1lXG4D1pPtL_X2eQtRIL5wP5SfZ1lRlFhGCcNITgBo,1785856
+camel/.cmlenv/lib/std/ctrl.cml,sha256=FEbbs7BPN-qkx9T_8T1EZOj1X7_cVSMh5cuYZu1Z95c,677
+camel/.cmlenv/lib/std/std.cml,sha256=xvXMRqf0x3s28h25GZJ_VyBQyH8EGk7SaKj3EZTSd8g,2798
+camel_lang-0.0.13.dist-info/licenses/LICENSE,sha256=Cl4b4QErFXO8HJgToDqpkgLvlRo3HsvqHqYNQY5Ksug,1089
+camel_lang-0.0.13.dist-info/METADATA,sha256=Bn_Cx1Lgo1EAJBjSvfxs07s18kh9aZa0FKGTC5kQGg4,2413
+camel_lang-0.0.13.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+camel_lang-0.0.13.dist-info/entry_points.txt,sha256=cPSxC7H6icY3IVmdEPESAdChtLQV9ZH7mty9HwUK4D4,62
+camel_lang-0.0.13.dist-info/top_level.txt,sha256=MVQUVnAwZRgPB-vAFV0O3cppLVp-cKCJX-VAG-o8wJ8,6
+camel_lang-0.0.13.dist-info/RECORD,,

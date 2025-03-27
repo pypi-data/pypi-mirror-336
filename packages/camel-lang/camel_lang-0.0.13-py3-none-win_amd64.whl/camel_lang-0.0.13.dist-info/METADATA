@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: camel-lang
+Version: 0.0.13
+Summary: Camel: A Next-Generation Language for AI and High-Performance Computing
+Author-email: Zhenjie Wei <kogler_s@outlook.com>
+Maintainer-email: Zhenjie Wei <kogler_s@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2023 Wei Zhenjie
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://www.opencml.com
+Project-URL: Documentation, https://docs.opencml.com
+Project-URL: Repository, https://github.com/OpenCML/Camel
+Project-URL: Issues, https://github.com/OpenCML/Camel/issues
+Keywords: language,camel,ai,dsl,graph,opencml
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Other
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Interpreters
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
