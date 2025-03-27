@@ -1,0 +1,25 @@
+# MAFw steering file generated on 2024-11-24 22:13:38.248423
+
+# uncomment the line below and insert the processors you want to run from the available processor list
+processors_to_run = ["FillFileTableProcessor"]
+
+# customise the name of the analysis
+analysis_name = "mafw analysis"
+analysis_description = "Using the DB"
+available_processors = ["AccumulatorProcessor", "GaussAdder", "ModifyLoopProcessor", "FillFileTableProcessor", "PrimeFinder"]
+
+[DBConfiguration]
+URL = "sqlite:///file-db.db" # Change the protocol depending on the DB type. Update this file to the path of your DB.
+
+[DBConfiguration.pragmas] # Leave these default values, unless you know what you are doing!
+journal_mode = "wal"
+cache_size = -64000
+foreign_keys = 1
+synchronous = 0
+
+[FillFileTableProcessor] # Processor to fill a table with the content of a directory
+root_folder = 'C:\Users\bulghao\PycharmProjects\mafw' # The root folder for the file listing
+
+[UserInterface] # Specify UI options
+interface = "rich" # Default "rich", backup "console"
+
