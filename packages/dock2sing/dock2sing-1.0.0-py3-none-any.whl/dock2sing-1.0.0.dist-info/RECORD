@@ -1,0 +1,8 @@
+dock2sing/__init__.py,sha256=slBmcHUj96eOarMvB4PSxm9QFS4kqaUM95JdDCAbZG4,325
+dock2sing/docker_to_singularity.py,sha256=JSP6XwVBA5sKrXasY5BwHWLQ7RzvLkttmURzh7T6_qU,7781
+dock2sing/singularity_compose_validator.py,sha256=wnEl7Bh-KD8EezsJTa8wSPWJADeoujBiZ6e5myzxfnY,9186
+dock2sing-1.0.0.dist-info/LICENSE,sha256=-finXjsSUA5LKzdCAGoWjKfk27oLC5UhXN7hyvHOlGk,1079
+dock2sing-1.0.0.dist-info/METADATA,sha256=gXMfZm9oSTrfrXL4uIQnw86IikLR83frcdJBMhu0R3U,4858
+dock2sing-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dock2sing-1.0.0.dist-info/entry_points.txt,sha256=0xHNpMiMv9MkrLAxPouGVztE_4O_nRlo-L1oreQ8nEI,132
+dock2sing-1.0.0.dist-info/RECORD,,

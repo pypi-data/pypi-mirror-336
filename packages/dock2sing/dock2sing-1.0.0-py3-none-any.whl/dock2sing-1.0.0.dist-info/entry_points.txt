@@ -1,0 +1,4 @@
+[console_scripts]
+dock2sing=dock2sing.docker_to_singularity:main
+validate-singularity=dock2sing.singularity_compose_validator:main
+
