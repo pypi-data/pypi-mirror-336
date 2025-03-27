@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "orchestron"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Sam Foreman", email = "saforem2@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "torch>=2.6.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/Sam Foreman/orchestron#readme"
+Issues = "https://github.com/Sam Foreman/orchestron/issues"
+Source = "https://github.com/Sam Foreman/orchestron"
+
+[tool.hatch.version]
+path = "src/orchestron/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/orchestron tests}"
+
+[tool.coverage.run]
+source_pkgs = ["orchestron", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/orchestron/__about__.py",
+]
+
+[tool.coverage.paths]
+orchestron = ["src/orchestron", "*/orchestron/src/orchestron"]
+tests = ["tests", "*/orchestron/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[dependency-groups]
+dev = [
+    "hatch>=1.14.0",
+    "hatch-semver>=2.0.2",
+    "twine>=6.1.0",
+]
