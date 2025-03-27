@@ -1,0 +1,2 @@
+[console_scripts]
+termind = termind.cli:main

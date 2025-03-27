@@ -1,0 +1,11 @@
+termind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+termind/cli.py,sha256=Iek9OJgxOfed0eGSsVCQkz0LPWmKiF1g_81H8tDC4iM,7109
+termind/config.py,sha256=l__UUS30JT8wNGnOKPaaxdKIpGAB2RiW5C19EcP3yJs,2913
+termind/conversation.py,sha256=FaqxpQgt9TSNiS3SfWEHXADRDxM1tE4Yi8dJ0BRu9P8,666
+termind/models.py,sha256=oh_CUZC2bXO1Sv3Spp6SPalOYAL6a2HlJuZNjPlcF3I,3542
+termind-0.1.0.dist-info/LICENSE,sha256=GqUCqFhs30qBADCdlAaWBjlted2HQQlH0tgw3oGqrEc,1069
+termind-0.1.0.dist-info/METADATA,sha256=ITT92-SBSOr83eO4rPadvGfBwYAIkgtdFll2-QaWcGI,4898
+termind-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+termind-0.1.0.dist-info/entry_points.txt,sha256=-C-WHwxlBXpW-U9K8e-74SvNhmhmPCSu8Ft5eQYv3ng,45
+termind-0.1.0.dist-info/top_level.txt,sha256=rJDfQ4A0YdWZRj-ANP76Q_KOAjkVgHxIilCLZ2UtzLk,8
+termind-0.1.0.dist-info/RECORD,,
