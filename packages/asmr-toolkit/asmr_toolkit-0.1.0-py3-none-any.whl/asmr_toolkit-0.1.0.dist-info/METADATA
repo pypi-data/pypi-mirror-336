@@ -1,0 +1,83 @@
+Metadata-Version: 2.4
+Name: asmr-toolkit
+Version: 0.1.0
+Summary: A modern CLI tool for audio conversion and processing
+License: MIT
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: click>=8.0.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: rich>=10.0.0
+Description-Content-Type: text/markdown
+
+# ASMR Toolkit
+
+[![Tests](https://github.com/xiao-cold/asmr-toolkit/workflows/Tests/badge.svg)](https://github.com/xiao-cold/asmr-toolkit/actions?query=workflow%3ATests)
+[![Lint](https://github.com/xiao-cold/asmr-toolkit/workflows/Lint/badge.svg)](https://github.com/xiao-cold/asmr-toolkit/actions?query=workflow%3ALint)
+[![codecov](https://codecov.io/gh/xiao-cold/asmr-toolkit/graph/badge.svg?token=QWZT1Q3S0D)](https://codecov.io/gh/xiao-cold/asmr-toolkit)
+[![PyPI version](https://badge.fury.io/py/asmr-toolkit.svg)](https://badge.fury.io/py/asmr-toolkit)
+
+一个现代化的命令行工具，用于音频转换和处理。
+
+## 特性
+
+- 高质量音频转换为 Opus 格式
+- 批量处理支持
+- 多线程并行转换
+- 保持目录结构
+- 简单直观的命令行界面
+
+## 安装
+
+### 依赖
+
+- Python 3.8+（推荐 Python 3.13）
+- FFmpeg
+
+### 使用 pip 或 uv 安装
+
+```bash
+# 使用 pip
+pip install asmr-toolkit
+
+# 或使用 uv（推荐）
+uv pip install asmr-toolkit
+```
+
+## 快速开始
+
+### 转换单个文件
+
+```bash
+asmr convert music.mp3
+```
+
+这将在同一目录下创建 `music.opus.ogg` 文件。
+
+### 批量转换
+
+```bash
+# 转换目录中的所有音频文件（输出到 music_folder/out/）
+asmr convert --recursive music_folder/
+
+# 指定输出目录
+asmr convert --output-dir converted/ --recursive music_folder/
+
+# 设置比特率
+asmr convert --bitrate 192k music.mp3
+
+# 使用多线程加速处理
+asmr convert --jobs 4 --recursive music_folder/
+```
+
+## 文档
+
+完整文档请访问 [docs/README.md](docs/README.md)。
+
+## 贡献
+
+欢迎贡献！请查看 [docs/CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与项目开发。本项目使用 uv 进行包管理，使用 Ruff 进行代码格式化。
+
+## 许可证
+
+本项目采用 MIT 许可证 - 详情请参阅 [LICENSE](LICENSE) 文件。
