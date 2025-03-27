@@ -1,0 +1,8 @@
+livekit/plugins/assemblyai/__init__.py,sha256=yWbnjtklt2T8TtdYJ-tR2pY4Dm8LH88vlIaVwPxo7uI,915
+livekit/plugins/assemblyai/log.py,sha256=M8-evrshBHVdlkeKoVQ7im0zGL4Ljm74P922me_RKY8,73
+livekit/plugins/assemblyai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/assemblyai/stt.py,sha256=cAY8ruundHXc2ZecJ2a9gIx5IK4eVvZeNt1igJn3HE8,15455
+livekit/plugins/assemblyai/version.py,sha256=pF0lh6G9GYL7Mj7EnfhjFifzlzdWx6u3RvB0Itch4UE,604
+livekit_plugins_assemblyai-1.0.0rc1.dist-info/METADATA,sha256=kWfYwnTsn_HBt_kYMLE3y8eue3kSaPOdfMgC7fWHkKQ,1277
+livekit_plugins_assemblyai-1.0.0rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_assemblyai-1.0.0rc1.dist-info/RECORD,,
