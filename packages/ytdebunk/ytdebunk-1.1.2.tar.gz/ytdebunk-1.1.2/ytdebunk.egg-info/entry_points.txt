@@ -1,0 +1,2 @@
+[console_scripts]
+ytdebunk = ytdebunk.ytdebunk:main
