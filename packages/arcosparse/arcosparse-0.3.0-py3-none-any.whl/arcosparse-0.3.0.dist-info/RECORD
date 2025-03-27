@@ -1,0 +1,13 @@
+arcosparse/__init__.py,sha256=Gt0cWwsuGiy26I6mTvu8-WARK6Rtd_-Rvf8J1_9q_yE,335
+arcosparse/chunk_selector.py,sha256=4-PNFFC52ndZ_ET2Pcnvrv-2gtOkVPtKOsk6qwKgLxM,9667
+arcosparse/downloader.py,sha256=pBV2JpAuIUc_ZoKGN5rlIFP9Nz509hCsG-Tdmd-z3Do,3205
+arcosparse/environment_variables.py,sha256=Md5YD1VrGZilBUmDZSOrZsteK0aHF0prNQxZEFFdBKE,87
+arcosparse/logger.py,sha256=BDC2QRRcQvZeQA1arr420B6hVDaACzD9zJd_asUp9fM,1018
+arcosparse/models.py,sha256=RusEWgdTlGZfjp6tKxZkM93Et29AFpjcTuJZD8y8yBk,6806
+arcosparse/sessions.py,sha256=M67nSpqRw0eIQPXSZy53xMy3faa-CmiFVIpZq01EyuI,1705
+arcosparse/subsetter.py,sha256=F1DEmepumlOrnhnqdkyIUtqYMsplXkyHXfWnmtYHY8U,15269
+arcosparse/utils.py,sha256=qEzt6UegObY_yHrKluKhF1x_fcrNkjK_cY4foW_5v8c,1833
+arcosparse-0.3.0.dist-info/LICENSE,sha256=KJSMQzgGjdLcXAgf5SDAkF02fN_B2dqZ7KQm1MkYEFg,363
+arcosparse-0.3.0.dist-info/METADATA,sha256=YvyrgBCiPEJdzJFN642sWmkpMcRl5BZl5MGA6LC_1pc,1204
+arcosparse-0.3.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+arcosparse-0.3.0.dist-info/RECORD,,
