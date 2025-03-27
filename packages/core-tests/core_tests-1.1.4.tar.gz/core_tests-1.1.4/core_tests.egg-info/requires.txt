@@ -1,0 +1,17 @@
+click>=8.1.8
+
+[:python_version >= "3.7" and python_version < "3.8"]
+coverage>=7.0.0
+environs>=10.1.0
+
+[:python_version >= "3.8" and python_version < "3.9"]
+coverage>=7.3.0
+environs>=11.2.0
+
+[:python_version >= "3.9"]
+coverage>=7.7.1
+environs>=14.1.1
+
+[docs]
+pydata-sphinx-theme==0.16.1
+Sphinx==8.2.3
