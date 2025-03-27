@@ -1,0 +1,2 @@
+[console_scripts]
+aac-processors = aac_processors.cli:main
