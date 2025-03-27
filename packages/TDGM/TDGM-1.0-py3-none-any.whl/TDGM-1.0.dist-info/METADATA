@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: TDGM
+Version: 1.0
+Summary: Μια απλή βιβλιοθήκη Python για προβολή HTML αρχείων με pywebview
+Author: panoscodergr
+License: MIT
+Requires-Dist: pywebview
+Dynamic: author
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
