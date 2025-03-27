@@ -1,0 +1,9 @@
+MyPMFs_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MyPMFs_py/module.py,sha256=MKTazCEd-3kvk5E4rtj6oRjZaZPFBu5FULhgB2EI1RI,739
+MyPMFs_py/bin/batch_download.sh,sha256=hRsINZLK5M8FQ7xUzb_OnbWxb04DwLzp2v0atUSjtf4,2580
+MyPMFs_py/bin/scoring,sha256=KgDuW1V9UHcfQRpIyMeKkTCLC7aiRorCPdNwb1IXjUQ,146408
+MyPMFs_py/bin/training,sha256=mSzIJpuy1KEKC_UA3EXiKNl9g5V24bnRVkFfXd6XyK4,160528
+MyPMFs_py-0.0.13.dist-info/METADATA,sha256=IxBMnsnkXiPXADN57EXkMURboT2gVckNAc9UTLVuW0w,1167
+MyPMFs_py-0.0.13.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+MyPMFs_py-0.0.13.dist-info/top_level.txt,sha256=N7mpyxnZOCMi4lsPPPHWFymJhs1y_LtBk0wUd68duC0,10
+MyPMFs_py-0.0.13.dist-info/RECORD,,
