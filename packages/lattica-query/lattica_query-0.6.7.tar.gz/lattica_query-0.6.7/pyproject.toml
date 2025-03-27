@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "lattica-query"
+version = "0.6.7"
+description = "Lattica client"
+authors = ["LatticaAI Inc. <hello@lattica.ai>"]
+homepage = "https://www.lattica.ai/"
+license = "Proprietary"
+readme = "README.md"
+packages = [{include = "lattica_query"}]
+
+# Package includes
+# include = [{ path = "lattica_query/cpp_sdk.cpython*.so", format = "wheel" }, "LICENSE.txt"]
+include = [
+    # For Linux (*.so files)
+    { path = "lattica_query/cpp_sdk*.so", format = "wheel" },
+    # For macOS (*.so on macOS)
+    { path = "lattica_query/cpp_sdk*_macos_*.so", format = "wheel" },
+    # For Windows (*.pyd files)
+    { path = "lattica_query/cpp_sdk*.pyd", format = "wheel" },
+    # License file
+    "LICENSE.txt"
+]
+
+# include = [{ path = "lattica_query/cpp_sdk.cpython*_windows*.pyd", format = "wheel" }, "LICENSE.txt"]
+
+# Exclude internal demos from the wheel package
+# exclude = ["lattica_query/internal_demos/**/*"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+lattica-common = "~0.5.0"
+timeit-decorator = "*"
+python-dotenv = "1.0.1"
+protobuf = "5.27.1"
+numpy = "~2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+lattica-common = {path = "../lattica_common_src", develop = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
