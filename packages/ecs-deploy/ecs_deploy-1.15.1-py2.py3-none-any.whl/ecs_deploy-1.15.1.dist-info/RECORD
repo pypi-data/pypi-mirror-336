@@ -1,0 +1,11 @@
+ecs_deploy/__init__.py,sha256=DuPoFd3oRVEe9gtEcAtqDCQzHVBUGKlH2Mm6ChnqsBE,19
+ecs_deploy/cli.py,sha256=pbQvqjqVM5cs_y9SNScOF6xfIHdHlDRiMD1UmhRiByw,44364
+ecs_deploy/ecs.py,sha256=50rIosT1v7G1Ur_T8QIDk0uvFiVIuN0vn_JhObbCkh0,56541
+ecs_deploy/newrelic.py,sha256=aX6m-ZQrwSubfzxzpn-15DqYSVfkYowx75EOKej_ZUo,1800
+ecs_deploy/slack.py,sha256=VSjCQwLWFHQwvIVeP7YDO7J388aXij0pQbDbD4NMG9E,3718
+ecs_deploy-1.15.1.dist-info/licenses/LICENSE.rst,sha256=qOJcAJVW0XKqm73gfacpQCb7juquPF0ztg4v9N0ua9s,1511
+ecs_deploy-1.15.1.dist-info/METADATA,sha256=yF9O2lnLVyaHFnZulOBTT3jRwPtB_jVZ-ppS6Z-AuWU,25323
+ecs_deploy-1.15.1.dist-info/WHEEL,sha256=MAQBAzGbXNI3bUmkDsiV_duv8i-gcdnLzw7cfUFwqhU,109
+ecs_deploy-1.15.1.dist-info/entry_points.txt,sha256=0M-SYCxlJe0mNaGJN-cgs4iISqBDhJDHUr3H7i7cK24,43
+ecs_deploy-1.15.1.dist-info/top_level.txt,sha256=ZGbI1pAyijoNe9k-7cw24vDYyWhFy-NXgrckdutIaT8,11
+ecs_deploy-1.15.1.dist-info/RECORD,,
