@@ -1,0 +1,2 @@
+[package_tools]
+zcwsearch = zcwsearch.tools.utils:list_package_tools

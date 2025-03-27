@@ -1,0 +1,13 @@
+zcwsearch.tools.zcwsearch.search:
+  function: search
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_text:
+      type:
+      - string
+  module: zcwsearch.tools.zcwsearch
+  name: ZCW Search
+  description: This is hello world tool
+  type: python
