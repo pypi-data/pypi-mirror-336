@@ -1,0 +1,7 @@
+custom_salesforce_bulk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_salesforce_bulk/source.py,sha256=SFGZxRMeoK5O_sXj-uaSY7DFLUHVigfV_CjB0Xv8qwk,3014
+custom_salesforce_bulk/source_salesforce_bulk.py,sha256=csdV8eIQMAzZ8ZlhwCYIO79-GC5EXJ2HPu_h_f5p4jM,487
+custom_salesforce_bulk-0.1.0.dist-info/METADATA,sha256=hCqj3BVumhGb_tuJZ9S4_PZ64rkPs3L8gJmXlJi0KKg,775
+custom_salesforce_bulk-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+custom_salesforce_bulk-0.1.0.dist-info/top_level.txt,sha256=thV_FEfUTNPD_WR0HHBLEgWaO88ZBq1q1V6T_c_fYCI,23
+custom_salesforce_bulk-0.1.0.dist-info/RECORD,,
