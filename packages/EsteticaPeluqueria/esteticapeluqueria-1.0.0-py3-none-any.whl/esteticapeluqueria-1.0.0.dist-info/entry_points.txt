@@ -1,0 +1,5 @@
+[console_scripts]
+estetica-pelu = main:main
+
+[gui_scripts]
+estetica-pelu-gui = main:main
