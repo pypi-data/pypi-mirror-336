@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: orkz
+Version: 0.0.1
+Summary: 🎶 `orkz`: your devices, your symphony. Library for large scale orchestration of accelerators. 
+Project-URL: Documentation, https://github.com/saforem2/orkz#readme
+Project-URL: Issues, https://github.com/saforem2/orkz/issues
+Project-URL: Source, https://github.com/saforem2/orkz
+Author-email: Sam Foreman <saforem2@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# orkz
+
+[![PyPI - Version](https://img.shields.io/pypi/v/orkz.svg)](https://pypi.org/project/orkz)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/orkz.svg)](https://pypi.org/project/orkz)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install orkz
+```
+
+## License
+
+`orkz` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
