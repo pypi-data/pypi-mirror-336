@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: golding_NEURON
+Version: 0.1.2
+Summary: Golding Lab NEURON project library
+Project-URL: Project, https://www.github.com/jaredcasarez/golding_NEURON
+Project-URL: Lab, https://goldinglab.org
+Author-email: Jared Casarez <jaredcasarez1@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: dill
+Requires-Dist: matplotlib>=3.4
+Requires-Dist: neuron>=8.0
+Requires-Dist: numpy>=1.21
+Requires-Dist: pandas>=1.3
+Requires-Dist: pytest>=6.2
+Requires-Dist: pyyaml>=5.4
+Requires-Dist: requests>=2.25
+Requires-Dist: scipy>=1.7
+Description-Content-Type: text/markdown
+
+
+## <p style="text-align:center;"> A package of tools and files from the Golding lab @ UT Austin for compartmental modeling, using the simulation software, NEURON. </p>
+## [<p style="text-align:center;">Github</p>](https://github.com/jaredcasarez/golding-NEURON)
+## [<p style="text-align:center;">Golding lab</p>](https://goldinglab.org) 
+## [<p style="text-align:center;">NEURON</p>](https://www.neuron.yale.edu/neuron/) 
