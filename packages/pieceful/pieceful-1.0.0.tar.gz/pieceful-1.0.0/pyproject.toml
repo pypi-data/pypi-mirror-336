@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pieceful"
+version = "1.0.0"
+description = "Simple python package to solve dependency injections"
+authors = ["Josef Cernik"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=6.2.5,<7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
