@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+screenshot/__init__.py
+screenshot/__main__.py
+screenshot/clint.py
+screenshot/screenshot.py
+screenshot_server.egg-info/PKG-INFO
+screenshot_server.egg-info/SOURCES.txt
+screenshot_server.egg-info/dependency_links.txt
+screenshot_server.egg-info/entry_points.txt
+screenshot_server.egg-info/requires.txt
+screenshot_server.egg-info/top_level.txt

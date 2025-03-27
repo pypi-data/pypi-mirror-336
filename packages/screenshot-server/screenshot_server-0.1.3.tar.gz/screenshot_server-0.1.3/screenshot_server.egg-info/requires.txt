@@ -1,0 +1,4 @@
+mcp[cli]>=1.4.1
+pillow>=11.1.0
+pyautogui>=0.9.54
+pyscreeze>=1.0.1
