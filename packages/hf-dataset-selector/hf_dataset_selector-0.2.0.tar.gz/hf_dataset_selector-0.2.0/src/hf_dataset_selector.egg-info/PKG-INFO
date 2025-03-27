@@ -1,0 +1,368 @@
+Metadata-Version: 2.4
+Name: hf-dataset-selector
+Version: 0.2.0
+Summary: A convenient and fast Python package to find the best datasets for intermediate fine-tuning for your task.
+Author-email: David Schulte <davidsiriusschulte@gmail.com>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datasets>=3.2.0
+Requires-Dist: huggingface-hub>=0.27.0
+Requires-Dist: numba>=0.60.0
+Requires-Dist: numpy==2.0.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: torch>=2.5.1
+Requires-Dist: tqdm>=4.67.1
+Requires-Dist: transformers>=4.48.0
+Dynamic: license-file
+
+# hf-dataset-selector
+[![PyPI version](https://img.shields.io/pypi/v/hf-dataset-selector.svg)](https://pypi.org/project/hf-dataset-selector)
+
+A convenient and fast Python package to find the best datasets for intermediate fine-tuning for your task.
+
+## Why hf-dataset-selector?
+### You don't have enough training data for your problem
+If you don't have a enough training data for your problem, just use hf-dataset-selector to find more.
+You can supplement model training by including publicly available datasets in the training process. 
+
+1. Fine-tune a language model on suitable intermediate dataset.
+2. Fine-tune the resulting model on your target dataset.
+
+This workflow is called intermediate task transfer learning and it can significantly improve the target performance.
+
+But what is a suitable dataset for your problem? hf-dataset-selector enables you to quickly rank thousands of datasets on the Hugging Face Hub by how well they are exptected to transfer to your target task. Just specify a base language model and your target dataset, and hf-dataset-selector produces a ranking of intermediate datasets.
+
+### You want to find similar datasets to your target dataset
+hf-dataset-selector can be used like search engine on the Hugging Face Hub. You can find similar tasks to your target task without having to rely on heuristics. hf-dataset-selector estimates how language models fine-tuned on each intermediate task would benefinit your target task. This quantitative approach combines the effects of domain similarity and task similarity. 
+
+## How to install
+
+**hf-dataset-selector** is available on PyPi:
+
+```bash
+$ pip install hf-dataset-selector
+```
+
+
+## Quickstart
+
+### How to find suitable datasets for your problem
+
+```python
+from hfselect import Dataset, compute_task_ranking
+
+# Load target dataset from the Hugging Face Hub
+dataset = Dataset.from_hugging_face(
+    name="stanfordnlp/imdb",
+    split="train",
+    text_col="text",
+    label_col="label",
+    is_regression=False,
+    num_examples=1000,
+    seed=42
+)
+
+# Fetch ESMs and rank tasks
+task_ranking = compute_task_ranking(
+    dataset=dataset,
+    model_name="bert-base-multilingual-uncased"
+)
+
+# Display top 5 recommendations
+print(task_ranking[:5])
+```
+```python
+1.   davanstrien/test_imdb_embedd2                     Score: -0.618529
+2.   davanstrien/test_imdb_embedd                      Score: -0.618644
+3.   davanstrien/test1                                 Score: -0.619334
+4.   stanfordnlp/imdb                                  Score: -0.619454
+5.   stanfordnlp/sst                                   Score: -0.62995
+```
+
+|   Rank | Task ID                       | Task Subset     | Text Column   | Label Column   | Task Split   |   Num Examples | ESM Architecture   |     Score |
+|-------:|:------------------------------|:----------------|:--------------|:---------------|:-------------|---------------:|:-------------------|----------:|
+|      1 | davanstrien/test_imdb_embedd2 | default         | text          | label          | train        |          10000 | linear             | -0.618529 |
+|      2 | davanstrien/test_imdb_embedd  | default         | text          | label          | train        |          10000 | linear             | -0.618644 |
+|      3 | davanstrien/test1             | default         | text          | label          | train        |          10000 | linear             | -0.619334 |
+|      4 | stanfordnlp/imdb              | plain_text      | text          | label          | train        |          10000 | linear             | -0.619454 |
+|      5 | stanfordnlp/sst               | dictionary      | phrase        | label          | dictionary   |          10000 | linear             | -0.62995  |
+|      6 | stanfordnlp/sst               | default         | sentence      | label          | train        |           8544 | linear             | -0.63312  |
+|      7 | kuroneko5943/snap21           | CDs_and_Vinyl_5 | sentence      | label          | train        |           6974 | linear             | -0.634365 |
+|      8 | kuroneko5943/snap21           | Video_Games_5   | sentence      | label          | train        |           6997 | linear             | -0.638787 |
+|      9 | kuroneko5943/snap21           | Movies_and_TV_5 | sentence      | label          | train        |           6989 | linear             | -0.639068 |
+|     10 | fancyzhx/amazon_polarity      | amazon_polarity | content       | label          | train        |          10000 | linear             | -0.639718 |
+## Tutorials
+We provide tutorials for finding intermediate datasets, and for training your own ESM for others to rank.
+
+- [Tutorial 1: Rank  intermediate datasets](tutorials/01_find_datasets.ipynb)
+- [Tutorial 2: Filter the pool of intermediate datasets / ESMs](tutorials/02_filter_esms.ipynb)
+- [Tutorial 3: Train your own ESM](tutorials/03_train_esm.ipynb)
+- [Tutorial 4: Advanced ESM training with hyper-parameter optimization](tutorials/04_advanced_esm_training.ipynb)
+
+## Documentation
+We host a [documentation on Read the Docs](https://hf-dataset-selector.readthedocs.io/en/latest/).
+
+## How it works
+hf-dataset-selector enables you to find good datasets from the Hugging Face Hub for intermediate fine-tuning before training on your task. It downloads small (~2.4MB each) neural networks for each intermediate task from the Hugging Face Hub. These neural networks are called Embedding Space Maps (ESMs) and transform embeddings produced by the language model. The transformed embeddings are ranked using LogME.
+
+hf-dataset-selector ranks only datasets with a corresponding ESM on the Hugging Face Hub. We encourage you to train and publish your own ESMs for your datasets to enable others to rank them.
+
+
+### What are Embedding Space Maps?
+
+Embedding Space Maps (ESMs) are neural networks that approximate the effect of fine-tuning a language model on a task. They can be used to quickly transform embeddings from a base model to approximate how a fine-tuned model would embed the the input text.
+ESMs can be used for intermediate task selection with the ESM-LogME workflow.
+
+<div style="text-align: center;">
+  <img src="esm_illustration.png" width="300" height="300" />
+</div>
+
+
+## How to cite
+
+
+<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
+If you are using this hf-dataset-selector, please cite our [paper](https://aclanthology.org/2024.emnlp-main.529/).
+
+**BibTeX:**
+
+
+```
+@inproceedings{schulte-etal-2024-less,
+    title = "Less is More: Parameter-Efficient Selection of Intermediate Tasks for Transfer Learning",
+    author = "Schulte, David  and
+      Hamborg, Felix  and
+      Akbik, Alan",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.529/",
+    doi = "10.18653/v1/2024.emnlp-main.529",
+    pages = "9431--9442",
+    abstract = "Intermediate task transfer learning can greatly improve model performance. If, for example, one has little training data for emotion detection, first fine-tuning a language model on a sentiment classification dataset may improve performance strongly. But which task to choose for transfer learning? Prior methods producing useful task rankings are infeasible for large source pools, as they require forward passes through all source language models. We overcome this by introducing Embedding Space Maps (ESMs), light-weight neural networks that approximate the effect of fine-tuning a language model. We conduct the largest study on NLP task transferability and task selection with 12k source-target pairs. We find that applying ESMs on a prior method reduces execution time and disk space usage by factors of 10 and 278, respectively, while retaining high selection performance (avg. regret@5 score of 2.95)."
+}
+```
+
+
+**APA:**
+
+```
+Schulte, D., Hamborg, F., & Akbik, A. (2024, November). Less is More: Parameter-Efficient Selection of Intermediate Tasks for Transfer Learning. In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (pp. 9431-9442).
+```
+
+## How to reproduce the results from the paper
+For reproducing the results of our paper, please refer to the [`emnlp-submission` branch](https://github.com/davidschulte/hf-dataset-selector/tree/emnlp-submission).
+
+
+## Acknowledgements
+
+Our methods extends the LogME method for intermediate task selection. We adapt the implementation by the authors.
+https://github.com/tuvuumass/task-transferability
