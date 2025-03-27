@@ -1,0 +1,7 @@
+torch
+transformers
+huggingface_hub
+flair
+seqeval
+tqdm
+datasets
