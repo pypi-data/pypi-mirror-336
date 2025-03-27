@@ -1,0 +1,8 @@
+__pycache__
+dist/
+*.aux
+*.log
+*.log.?
+*.pdf
+*.pkl
+1_tags.json
