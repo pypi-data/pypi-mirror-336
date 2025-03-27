@@ -1,0 +1,11 @@
+spotify_ws-1.0.0.dist-info/licenses/LICENSE,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+spotifyws/__init__.py,sha256=BZMoHK1rGdUOKVpxILxmFZW-Pvxq7i3VO6p2BstW64E,30
+spotifyws/config.py,sha256=Em56SO74RdlcQUV8hNBDczx1AJ2H2eo-B5Jgl0aN0kU,1438
+spotifyws/logger.py,sha256=dAdx0GwsMggGw9IKALlYrR0sfJUfN2dIxkFur1f_8yQ,318
+spotifyws/spotify.py,sha256=VfStg_uZVC5q4INnTZpDuQNnFKRMSByvjApfBEQpnbU,9702
+spotifyws/utils.py,sha256=6s2XIqTMczlcr_vsAHwqRjRzZaHJss4jmnDP4DjmTpw,1044
+spotifyws/ws.py,sha256=1dtP69bYec2Alh1dKOvE6CHabTeFSRoMMIS-LZVvmZg,5275
+spotify_ws-1.0.0.dist-info/METADATA,sha256=5-awNEIUb_yUt4XR2H8v_YM9gctR7WzAxf8tRBPA34o,4236
+spotify_ws-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spotify_ws-1.0.0.dist-info/top_level.txt,sha256=W2qDf7-sRD_JXYuywKCLDHuP2ylKY7kjAseM4J0UuO8,10
+spotify_ws-1.0.0.dist-info/RECORD,,
