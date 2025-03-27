@@ -1,0 +1,8 @@
+README.md
+setup.py
+Ghanisthmath14147.egg-info/PKG-INFO
+Ghanisthmath14147.egg-info/SOURCES.txt
+Ghanisthmath14147.egg-info/dependency_links.txt
+Ghanisthmath14147.egg-info/top_level.txt
+Module/Math_module.py
+Module/__init__.py
