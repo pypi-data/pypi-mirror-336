@@ -1,0 +1,13 @@
+auth_proxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_proxy/config.py,sha256=AT-jhXLJHDrzKwIHLBKyPx9U5Y4gCp-pAg9MvukURS0,1657
+auth_proxy/main.py,sha256=wMAo98OltDo25BvbTbedUTcpR3Mn4i7I3UBgpbQoEs4,1763
+auth_proxy/proxy.py,sha256=B91ad_Ml80DA2eJobgjJqJJ0mvsm74J2v31wDYXS8wk,18205
+auth_proxy/validate.py,sha256=B-OyVkZIJbFlffFDeX3AOpn5AQves0Dcnn7L-dZI7VE,6433
+auth_proxy/auth_plugins/__init__.py,sha256=bczOUCW3CBcuzQlaEhmM1XnqJbfCxrXXC_6YRRGWR3Y,4116
+auth_proxy/auth_plugins/base.py,sha256=EXjOkVG9uUaqE5tj4i6jbCKrHGqe0RNx9P0h3NLO4ZM,3922
+auth_proxy/auth_plugins/basic.py,sha256=rkTnU_iVAGn9DSJEtb5OZXgZ-74Qs7M-qvICyeDReHM,2540
+python_auth_proxy-0.2.0.dist-info/METADATA,sha256=uUrQkn2_QOk8cjXi5rZwjno6fNHDH65t0K6tLslnLcg,15425
+python_auth_proxy-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+python_auth_proxy-0.2.0.dist-info/entry_points.txt,sha256=rsZL4E-UFcQ9rGWc2butyqgdtL6yYTEeDAtf_E7xHzc,175
+python_auth_proxy-0.2.0.dist-info/licenses/LICENSE,sha256=hM7rX9N4fbvJbE6TE9iz746L0W6F1TRTGUno7j5gNR4,1089
+python_auth_proxy-0.2.0.dist-info/RECORD,,
