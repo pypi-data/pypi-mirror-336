@@ -1,0 +1,11 @@
+request_session/__init__.py,sha256=ZdxiEVT7WIsa0Gx03KUV0J5YEpjFCgdlevNuEqmuAs8,148
+request_session/_compat.py,sha256=YNvhVDFvN8bu83HrXSHGrY64hoOsLrSlvmmn4OvqOJU,268
+request_session/exceptions.py,sha256=pWt9SOsqufcu7a522bvPKfeghaXVYyVD8ucnKw5lZWQ,723
+request_session/protocols.py,sha256=E2ib3T08Jhyy80QA_TGLZh_gAzD2OX0_Ml9j_zLgi5w,7532
+request_session/request_session.py,sha256=c2mUmC7-DHg2QAOCx9_6Xj7SOdTlxawyiTfvhHyCejE,27309
+request_session/utils.py,sha256=y3Fx2x6GO7QAGpeBevPa7vyUX9nlnEr8KtUPTPX25p0,1864
+request_session-0.16.3.dist-info/LICENSE,sha256=OiwLh7cQDd4ywZKZigSUcd_l5DHv1jj7TVO53n44Bu4,1065
+request_session-0.16.3.dist-info/METADATA,sha256=3FGymgTw8wtTwpStgdAuQMLQwNyzYUHmaYJwX9jpggo,3324
+request_session-0.16.3.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+request_session-0.16.3.dist-info/top_level.txt,sha256=S3Jpc7PrAaBEphqUbFjpVzuTb0KxZcB3ES42VHo4bEg,16
+request_session-0.16.3.dist-info/RECORD,,
