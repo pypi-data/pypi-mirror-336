@@ -1,0 +1,2 @@
+[console_scripts]
+gotoball = gotoball:gotoball
