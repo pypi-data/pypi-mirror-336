@@ -1,0 +1,9 @@
+README.md
+license
+setup.py
+karan90988pdf.egg-info/PKG-INFO
+karan90988pdf.egg-info/SOURCES.txt
+karan90988pdf.egg-info/dependency_links.txt
+karan90988pdf.egg-info/top_level.txt
+karanpdf/__init__.py
+karanpdf/pdf2text.py
