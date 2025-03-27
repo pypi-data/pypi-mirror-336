@@ -1,0 +1,16 @@
+.vscode
+.idea
+*__pycache__*
+*.egg-info
+.cache/
+build/
+dist/
+.pytest_cache
+_build
+.run
+wheelhouse
+
+/docs/source/word.log
+/skplatform/_version.py
+/src/skplatform/_version.py
+/src/skplatform/_version.py
