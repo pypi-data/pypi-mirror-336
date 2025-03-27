@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pygifconvt_test_sejinprk/__init__.py
+pygifconvt_test_sejinprk/converter.py
+pygifconvt_test_sejinprk.egg-info/PKG-INFO
+pygifconvt_test_sejinprk.egg-info/SOURCES.txt
+pygifconvt_test_sejinprk.egg-info/dependency_links.txt
+pygifconvt_test_sejinprk.egg-info/not-zip-safe
+pygifconvt_test_sejinprk.egg-info/requires.txt
+pygifconvt_test_sejinprk.egg-info/top_level.txt
