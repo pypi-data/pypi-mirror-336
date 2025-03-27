@@ -1,0 +1,77 @@
+# todo:
+# 1. consider adding a build stage, moving the wheel build from the
+#    unittest to there
+# 2. understand why the caching is not working. I guess it has to do with
+#    the container
+
+stages:
+  - test
+  - scans
+  - deploy
+
+include:
+  - project: 'jrc-templates/ci-cd/helm'
+    ref: master
+    file: 'liso/dojo-ci.yaml'
+
+
+pages:
+  tags:
+    - openshift-test
+  image: quay.apps.ocpt.jrc.ec.europa.eu/public/dockerhub/python:3.10
+  stage: deploy
+  cache:
+    paths:
+      - .pip-cache
+  variables:
+    HOME: "/tmp"
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+  # Functions that should be executed before the build script is run
+  before_script:
+    - export PATH="$HOME/.local/bin:$PATH"
+    - cat /etc/*-release
+    - python --version
+    - python -m pip install --proxy $PROXY --upgrade pip
+    - pip install --proxy $PROXY hatch
+  script:
+    - export HTTPS_PROXY=$PROXY
+    - export HTTP_PROXY=$PROXY
+    - hatch run dev.py3.12:doc clean
+    - hatch run dev.py3.12:doc html
+    - cp -r docs/build/ public/
+  artifacts:
+    paths:
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+
+
+unitest:
+  tags:
+    - openshift-test
+  image: quay.apps.ocpt.jrc.ec.europa.eu/public/dockerhub/python:3.10
+  stage: test
+  cache:
+    paths:
+      - .pip-cache
+  variables:
+    HOME: "/tmp"
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+  script:
+    - export PATH="$HOME/.local/bin:$PATH"
+    - echo $PROXY
+    - python --version
+    - python -m pip install --proxy $PROXY --upgrade pip
+    - pip install --proxy $PROXY hatch
+    - dir
+    - dir $PIP_CACHE_DIR
+    - export HTTPS_PROXY=$PROXY
+    - export HTTP_PROXY=$PROXY
+    - hatch build
+    - dir dist/*whl
+    - hatch test -a -c
+    - hatch run dev.py3.12:mypy
