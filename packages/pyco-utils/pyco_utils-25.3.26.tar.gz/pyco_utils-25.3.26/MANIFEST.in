@@ -1,0 +1,6 @@
+global-exclude *.pyc
+global-exclude __pycache__/
+global-exclude **/*.bak.*
+global-exclude **/_.*
+
+include README.md
