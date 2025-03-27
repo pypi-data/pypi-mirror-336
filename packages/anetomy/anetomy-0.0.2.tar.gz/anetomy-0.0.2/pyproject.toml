@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anetomy"
+version = "0.0.2"
+description = "A neat instrument designed for visualizing neural networks."
+                # + " v0.0.2: add exempted and prohibited functions.",
+                # + " v0.0.1: initial publication.",
+                # python _cleanup.py && python -m build && twine upload dist/*
+authors = [{name = "Seria", email = "zzqsummerai@yeah.net"}]
+readme = "README.md"
+dependencies = ['graphviz',
+                'torch>=1.0']
