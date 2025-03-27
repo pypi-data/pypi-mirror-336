@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: weights-bias-haystack
+Version: 0.0.3
+Summary: An integration of Weight and Bias Weave tracer with Haystack
+Project-URL: Source, https://github.com/deepset-ai/haystack-core-integrations
+Project-URL: Documentation, https://github.com/deepset-ai/haystack-core-integrations/blob/main/integrations/weights_bias/README.md
+Project-URL: Issues, https://github.com/deepset-ai/haystack-core-integrations/issues
+Author-email: deepset GmbH <info@deepset.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: haystack-ai
+Requires-Dist: weave>=0.51.33
+Description-Content-Type: text/markdown
+
+# weights_biases-haystack
+
+⚠️ **This project has been archived**
+
+This project has been moved to a new package called `weave-haystack`. Please use the new package instead:
+
+- PyPI: https://pypi.org/project/weave-haystack/
+- Installation: `pip install weave-haystack`
+
+For more information and documentation, please visit the new package's repository.
