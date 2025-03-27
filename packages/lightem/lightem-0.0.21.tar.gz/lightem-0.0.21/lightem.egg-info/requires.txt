@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+gensim
+sentence-transformers
+
+[dev]
+twine>=6.1.0
