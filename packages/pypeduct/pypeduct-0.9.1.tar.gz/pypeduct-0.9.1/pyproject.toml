@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypeduct"
+version = "0.9.1"
+description = "Pypes >> Python 3."
+authors = [
+    { name = "Anselm Kiefner", email = "pypeduct-github@anselm.kiefner.de" }
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+
+[project.urls]
+"Homepage" = "https://github.com/amogorkon/pypeduct"
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.rst"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.pyc"]
+
+[tool.mypy]
+ignore_missing_imports = true
+warn_unused_ignores = true
+
+[tool.mypy.tests.test_pyping]
+disable_error_code = ["operator"]
+
+[tool.pyright]
+reportOperatorIssue = false
+reportArgumentType = false
+reportReturnType = false
+reportCallIssue = false
+
+[tool.ruff]
+target-version = "py312"
