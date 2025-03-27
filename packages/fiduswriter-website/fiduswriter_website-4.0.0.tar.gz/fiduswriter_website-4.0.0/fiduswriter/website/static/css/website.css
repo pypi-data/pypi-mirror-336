@@ -1,0 +1,250 @@
+:root {
+    overflow: hidden;
+}
+
+body {
+    background-color: white;
+    font-size: 12pt;
+    min-width: initial;
+    overflow: hidden auto;
+    max-height: 100vh;
+    width: initial;
+    height: initial;
+    line-height: 1.6em;
+    position: relative;
+}
+
+nav.header {
+    background-color: #b73717;
+    width: 100%;
+    left: 0;
+    padding: 5px 20px;
+    font-size: smaller;
+    color: #ffffff;
+}
+
+nav.header a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+nav.header * + * {
+    border-left: 1px solid #ffffff;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+nav.header + div#body {
+    margin-top: 28px;
+}
+
+div.article-title {
+    font-size: 25pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-top: 20px;
+}
+
+p {
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h3 {
+    font-size: 16pt;
+}
+
+h4 {
+    font-size: 14pt;
+}
+
+h5 {
+    font-size: 12pt;
+}
+
+h6 {
+    font-size: 10pt;
+}
+
+div.headers h1.site-name {
+    font-family: Roboto, sans-serif;
+    font-size: 65px;
+    font-weight: 650;
+    text-align: center;
+}
+
+div.articles {
+    width: calc(80vw - 30px);
+    max-width: 940px;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+nav.header + h1.site-name,
+nav.header + div.articles {
+    margin-top: 36px;
+}
+
+div.content {
+    margin-top: 42px;
+    max-width: calc(15vw + 980px);
+    width: calc(95vw - 60px);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body.article div.articles {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+div.filters {
+    width: calc(15vw - 30px);
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    color: #1f1e1f;
+    font-size: 16px;
+    margin-top: 31px;
+    margin-right: 4vh;
+    position: sticky;
+    top: 10px;
+}
+
+div.filters div.filter {
+    margin-bottom: 16px;
+}
+
+div.filters div.filter h3.filter-title {
+    font-weight: 650;
+    border-bottom: 2px dotted #1f1e1f;
+}
+
+div.filters div.filter span.keyword,
+div.filters div.filter span.author {
+    display: block;
+    padding: 4px 0;
+    border-bottom: 1px solid #cecece;
+    cursor: pointer;
+}
+
+div.filters div.filter span.keyword.selected,
+div.filters div.filter span.author.selected {
+    background-color: #1f1e1f;
+    color: white;
+}
+
+div.articles a.article {
+    color: black;
+    border-bottom: 1px dotted #cecece;
+    padding: 10px;
+    display: block;
+}
+
+div.articles a.article:hover {
+    background-color: #cecece;
+}
+
+div.keywords div.keyword {
+    display: inline-block;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #b73717;
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+h1.article-title,
+div.article-title {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    line-height: 1.8em;
+}
+
+div.articles a.article h1.article-title {
+    font-size: 18px;
+}
+
+div.articles h3.article-updated,
+div.articles div.article-authors {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    display: inline-block;
+}
+
+div.articles a.article div.article-authors div.author {
+    display: inline-block;
+}
+
+div.articles a.article div.article-authors div.author + div.author::before {
+    content: ", ";
+}
+
+div.abstract {
+    font-size: 12pt;
+}
+
+a.footnote,
+a.affiliation {
+    vertical-align: super;
+    font-size: 70%;
+}
+
+aside.footnote,
+aside.affiliation {
+    position: relative;
+}
+
+aside.footnote > label,
+aside.affiliation > label {
+    position: absolute;
+    left: 0;
+    font-size: 80%;
+}
+
+aside.footnote > label {
+    top: 10px;
+}
+
+div.popup > * + * {
+    border-top: 1px black dashed;
+}
+
+aside.footnote > *:not(label),
+aside.affiliation > *:not(label) {
+    margin-left: 30px;
+}
+
+div.popup {
+    background-color: white;
+    display: block;
+    border: 1px solid black;
+    padding: 0 5px 4px;
+    border-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+}
