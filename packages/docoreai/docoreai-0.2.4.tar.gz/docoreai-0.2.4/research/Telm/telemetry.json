@@ -1,0 +1,28 @@
+{
+    "upgrades": [
+        {
+            "version": "0.1.9",
+            "python_version": "3.13.0",
+            "timestamp": "2025-03-22T17:39:21.547663Z",
+            "notes": "Upgrade"
+        },
+        {
+            "version": "0.1.9",
+            "python_version": "3.13.0",
+            "timestamp": "2025-03-23T12:20:14.166765Z",
+            "notes": "Upgrade"
+        },
+        {
+            "version": "0.2.0",
+            "python_version": "3.13.0",
+            "timestamp": "2025-03-24T04:18:18.975194Z",
+            "notes": "Upgrade"
+        },
+        {
+            "version": "0.2.1",
+            "python_version": "3.13.0",
+            "timestamp": "2025-03-26T23:34:45.862411Z",
+            "notes": "Upgrade"
+        }
+    ]
+}
