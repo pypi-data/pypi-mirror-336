@@ -1,0 +1,44 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnPaste": false,
+        "editor.formatOnSaveMode": "file"
+    },
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+        {
+            "color": "#ddd",
+            "column": 120
+        }
+    ],
+    "editor.tabSize": 4,
+    "esbonio.sphinx.confDir": "${workspaceFolder}/docs/source",
+    "files.insertFinalNewline": true,
+    "files.watcherExclude": {
+        "**/.venv/**": true
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ],
+    "notebook.cellFocusIndicator": "gutter",
+    "notebook.formatOnSave.enabled": true,
+    "notebook.lineNumbers": "on",
+    "python.analysis.exclude": [
+        "**/.venv/**",
+        "**/__pycache__/**"
+    ],
+    "python.analysis.extraPaths": [
+        "examples",
+        "pytximport",
+        "test"
+    ],
+    "python.analysis.typeCheckingMode": "off",
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.languageServer": "Pylance",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "ruff.organizeImports": true,
+    "trailing-spaces.trimOnSave": true
+}
