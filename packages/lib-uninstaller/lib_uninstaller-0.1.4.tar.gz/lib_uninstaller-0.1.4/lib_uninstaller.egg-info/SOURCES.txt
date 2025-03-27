@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+lib_uninstaller/__init__.py
+lib_uninstaller/installer.py
+lib_uninstaller/main.py
+lib_uninstaller/upgrader.py
+lib_uninstaller.egg-info/PKG-INFO
+lib_uninstaller.egg-info/SOURCES.txt
+lib_uninstaller.egg-info/dependency_links.txt
+lib_uninstaller.egg-info/entry_points.txt
+lib_uninstaller.egg-info/top_level.txt
