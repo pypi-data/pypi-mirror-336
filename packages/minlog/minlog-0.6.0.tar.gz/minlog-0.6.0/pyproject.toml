@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "minlog"
+version = "0.6.0"
+description = "a neat and simple minimalistic logging library for python"
+authors = ["redthing1 <redthing1@alt.icu>"]
+readme = "README.md"
+homepage = "https://github.com/redthing1/minlog_python"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+rich = "^13.4.1"
+colorama = "^0.4.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
