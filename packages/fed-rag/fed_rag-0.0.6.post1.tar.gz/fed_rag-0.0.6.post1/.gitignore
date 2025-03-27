@@ -1,0 +1,21 @@
+# Local development
+venv/
+.venv/
+.ipynb_checkpoints
+.__pycache__
+__pycache__
+dev_notebooks/
+.vscode
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.env
+fed-rag.code-workspace
+
+# datasets for running examples
+data/
+!src/fed_rag/utils/data
+!tests/utils/data
+
+# HF training artifacts
+tmp_trainer/
