@@ -1,0 +1,6 @@
+pyproject.toml
+tellurio/__init__.py
+tellurio.egg-info/PKG-INFO
+tellurio.egg-info/SOURCES.txt
+tellurio.egg-info/dependency_links.txt
+tellurio.egg-info/top_level.txt
