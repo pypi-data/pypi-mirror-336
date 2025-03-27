@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+pdf_extraction_mcp_server.egg-info/PKG-INFO
+pdf_extraction_mcp_server.egg-info/SOURCES.txt
+pdf_extraction_mcp_server.egg-info/dependency_links.txt
+pdf_extraction_mcp_server.egg-info/entry_points.txt
+pdf_extraction_mcp_server.egg-info/requires.txt
+pdf_extraction_mcp_server.egg-info/top_level.txt
+pdf_extractor/__init__.py
+pdf_extractor/pdf_extractor.py
+pdf_extractor/server.py
