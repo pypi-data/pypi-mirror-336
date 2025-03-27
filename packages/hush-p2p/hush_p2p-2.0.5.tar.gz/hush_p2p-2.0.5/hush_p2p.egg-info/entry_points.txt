@@ -1,0 +1,2 @@
+[console_scripts]
+hush = hush.cli:cli
