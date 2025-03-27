@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: readerCoerente
+Version: 0.3.0
+Summary: Python library to load data from Cohaerentia Interferometer sensor.
+Author: Marco Brunero
+Author-email: marco.brunero@cohaerentia.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: h5py (>=3.13.0,<4.0.0)
+Requires-Dist: nptdms (>=1.10.0,<2.0.0)
+Requires-Dist: scipy (>=1.15.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Sensore Coerente Cohaerentia - lettore file TDMS
+
+Pacchetto per lettura e visualizzazione delle misure salvate da software per sensore Coerente sviluppato da Cohaerentia.
+
+## Installazione
+
+Da cartella locale dove è stato scaricato il pacchetto è possibile installare tramite:
+
+```bash
+pip install .
+```
+
+In questo modo i files dovrebbero essere ancora editabili e la versione installata dovrebbe automaticamente aggiornarsi. Nota bene: se si sta usando un jupyter notebook, è necessario riavviare il kernel, non è sufficiente re importare il pacchetto.
+
+## Utilizzo
+
+Fare riferimento a file `example.ipynb`.
+
