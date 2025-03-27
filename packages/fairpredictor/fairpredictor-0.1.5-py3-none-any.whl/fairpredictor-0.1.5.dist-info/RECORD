@@ -1,0 +1,12 @@
+predictor/__init__.py,sha256=JfuShvyFR7PfPismLPL7rJ9Js06DiyqpR97Z9fxaFks,455
+predictor/app.py,sha256=XoNt-ZOs4rmZtbiY3JFq2dpU39mOIlbmCvaYPlPMbPQ,3973
+predictor/prediction.py,sha256=45swyBXxWxmjKGBI95lDjEM270bKZonKm2mbXRSMtUo,9071
+predictor/utils.py,sha256=oMIvzZkzfPE-w12TMbpIQpCfWoEeplKYNpC4kFu4wVs,5299
+predictor/yoloseg/Readme.md,sha256=OKl1YK5HrYRfuqLcKNuTaZnobtJu2kyxcBbL_xsZ-AM,111
+predictor/yoloseg/YOLOSeg.py,sha256=SbzLptucXLOugjeiNvENMBm30zSGQqqltTcheXpZeqM,7562
+predictor/yoloseg/__init__.py,sha256=SWTTSE_KIdhhmxqSwWpiTK6Hcir2LiKpQtkgaeGHKtk,29
+predictor/yoloseg/utils.py,sha256=1Rm8pKeu7M5ZC9y00jkBTMMHvB2bNAHQpqWOPgPgs7k,6021
+fairpredictor-0.1.5.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fairpredictor-0.1.5.dist-info/METADATA,sha256=bJKUYktwAXas5x-9w_dhBLXbhE-oYAOSEK6VwJMugJc,2595
+fairpredictor-0.1.5.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+fairpredictor-0.1.5.dist-info/RECORD,,
