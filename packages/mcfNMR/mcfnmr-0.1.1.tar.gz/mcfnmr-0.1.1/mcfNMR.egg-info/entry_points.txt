@@ -1,0 +1,3 @@
+[console_scripts]
+mcfNMR = mcfnmr.__main__:main
+spec2csv = mcfnmr.utils.spec2csv:main
