@@ -1,0 +1,2 @@
+[console_scripts]
+ldif2json = ldif2json.cli:main

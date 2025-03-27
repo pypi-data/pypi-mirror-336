@@ -1,0 +1,83 @@
+Metadata-Version: 2.4
+Name: ldif2json
+Version: 1.0.0
+Summary: Convert LDIF files to JSON with hierarchical nesting
+Author-email: Jairsinho Ramirez Ruiz <jairsinho@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/jairsinho/ldif2json
+Project-URL: Documentation, https://github.com/jairsinho/ldif2json#readme
+Project-URL: BugTracker, https://github.com/jairsinho/ldif2json/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# LDIF to JSON Converter
+
+[![PyPI version](https://badge.fury.io/py/ldif2json.svg)](https://pypi.org/project/ldif2json/)
+[![Python versions](https://img.shields.io/pypi/pyversions/ldif2json.svg)](https://pypi.org/project/ldif2json/)
+
+A Python tool to convert LDIF files to JSON format with optional hierarchical nesting.
+
+## Features
+
+- Convert LDIF to JSON format
+- Handle multivalued attributes
+- Optional hierarchical nesting of entries
+- Support for stdin/stdout
+- Configurable JSON indentation
+
+## Installation
+
+```bash
+pip install ldif2json
+```
+
+## Usage
+
+Basic conversion:
+```bash
+ldif2json input.ldif -o output.json
+```
+
+With hierarchical nesting:
+```bash
+ldif2json input.ldif --nest -o output.json
+```
+
+Using pipes:
+```bash
+ldapsearch -x -b "dc=example,dc=com" | ldif2json --nest children
+```
+
+## Options
+
+```
+usage: ldif2json [-h] [-o OUTPUT] [-i INDENT] [-n [ATTR]] [input_file]
+
+positional arguments:
+  input_file            LDIF input file (use - for stdin)
+
+options:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        Output JSON file (default: stdout)
+  -i INDENT, --indent INDENT
+                        Indentation level for JSON output (default: 2)
+  -n [ATTR], --nest [ATTR]
+                        Enable hierarchical nesting using specified attribute (default: "subEntries" when flag used without value)
+```
+
+## License
+
+MIT
