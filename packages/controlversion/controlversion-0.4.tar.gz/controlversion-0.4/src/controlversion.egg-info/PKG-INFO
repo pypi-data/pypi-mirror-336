@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: controlversion
+Version: 0.4
+Summary: Esta es la descripcion de mi paquete
+Home-page: https://github.com/BlackByted/ControlVersion
+Download-URL: https://github.com/BlackByted/ControlVersion/tarball/0.1
+Author: David Flores
+Author-email: 
+License: MIT
+Keywords: testing,logging,example
+Description-Content-Type: text/markdown
+Requires-Dist: GitPython==3.1.44
+Requires-Dist: python-gitlab==5.6.0
+
+import ControlVersion as Ctrl
+
+p = Ctrl.Controller(url_git,key)
