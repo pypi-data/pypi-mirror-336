@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: wetext
+Version: 0.0.4
+Summary: WeTextProcessing Runtime
+Home-page: https://github.com/pengzhendong/wetext
+Author: Zhendong Peng
+Author-email: pzd17@tsinghua.org.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kaldifst
+Requires-Dist: modelscope
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# wetext
+
+Python runtime for WeTextProcessing (does not depend on Pynini).
+
+## Usage
+
+``` bash
+$ pip install wetext
+$ python
+```
+
+``` python
+>>> from wetext import Normalizer
+>>> normalizer = Normalizer(lang="zh", operator="tn", remove_erhua=True)
+>>> normalizer.normalize("你好 WeTextProcessing 1.0，全新版本儿，全新体验儿，简直666")
+你好 WeTextProcessing 一点零，全新版本，全新体验，简直六六六
+```

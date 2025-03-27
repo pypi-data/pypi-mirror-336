@@ -1,0 +1,10 @@
+wetext/__init__.py,sha256=mfFf7dQQJu9UrF7ElE1ZmMSFoPbQKmgLrlCe1MBuzy8,663
+wetext/cli.py,sha256=rmKfllpMp43ttf2bvOpUQN1tZjmnAHT-mjhFWrws57E,1348
+wetext/token_parser.py,sha256=FytMFEjWxGfMNMetbeCT8zK3JXgkG8q_oDHsWo3-jmA,4571
+wetext/wetext.py,sha256=qtjtrd6qFdUd08-Ysl9vhfqvkoKDJ3D3gWgQOPlSETA,2970
+wetext-0.0.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wetext-0.0.4.dist-info/METADATA,sha256=7xLgv7Iun_t4qQ5MNLNW-gtZAat4braOjiDt9Ip9fbs,1076
+wetext-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+wetext-0.0.4.dist-info/entry_points.txt,sha256=_8qJuIE-qAv69p1DLSB8D6zGftAT0lUeJwAFFpYWsPY,43
+wetext-0.0.4.dist-info/top_level.txt,sha256=u68RI6ba-MQ0snwbUYfGqgKCjq7v7dhA5dePkmZOdaI,7
+wetext-0.0.4.dist-info/RECORD,,
