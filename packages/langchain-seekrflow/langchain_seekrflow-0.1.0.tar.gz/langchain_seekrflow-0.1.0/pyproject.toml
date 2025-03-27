@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "langchain-seekrflow"
+version = "0.1.0"
+description = "LangChain integration for SeekrFlow chat models"
+authors = ["Ben Faircloth <bfaircloth@seekr.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "langchain_seekrflow" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+langchain = "^0.3.21"
+seekrai = "^0.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
