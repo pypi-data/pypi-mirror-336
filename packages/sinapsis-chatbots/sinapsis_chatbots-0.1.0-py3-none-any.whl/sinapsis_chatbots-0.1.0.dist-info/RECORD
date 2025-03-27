@@ -1,0 +1,15 @@
+sinapsis_chatbots-0.1.0.dist-info/licenses/LICENSE,sha256=6fUgoQx5VO5qzq-krozOaZaGkURxvcZsqdwV0789B-s,34525
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/helpers/llama_init_model.py,sha256=57XxEXCOzk9L5sKKRb4_g996_PPGoH-Cqd4fnryA6Ic,2585
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/helpers/llama_keys.py,sha256=xYu_1xNfCSFYlkMx-USXvvvQ8KrzLNUIIv7KN_01NNY,1941
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/helpers/postprocess_text.py,sha256=m5ph3SapaNa3VlbHwaaGlkmebHIAv-o0ybPDAN8O62Y,1226
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/templates/__init__.py,sha256=bv95k9L_NWsLyJcwcSKdwqr2t40yHzt35gjzw3ybUt0,757
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/templates/llama_text_completion.py,sha256=1YSsgUhyi7ex1qG6kEiaqy6jkcxqI05tZRgNRswcCpQ,5142
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/templates/llm_text_completion_base.py,sha256=tc0BF_FuWRcN_l7DUPvZ5NEGg1ZJb2w6L_SK60lsUmU,8685
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/templates/query_contextualize.py,sha256=HHokTeAe_C1WyrzVZtZEgekbrjzcJj7MZ7bfMZBP_7w,3901
+sinapsis_llama_cpp/src/sinapsis_llama_cpp/templates/query_contextualize_from_file.py,sha256=8K2DJHk3hI_fCAuDxNUlFcrZoX5o7KQDUS5uDVCP1SA,3736
+sinapsis_chatbots-0.1.0.dist-info/METADATA,sha256=mHYG1ERBe0Wq5nR8bBaASYWYEkW9Eff85X9JpyjJ6TQ,8706
+sinapsis_chatbots-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sinapsis_chatbots-0.1.0.dist-info/top_level.txt,sha256=mG-fdqpj70druzoqgUesXbjUoebf_Lg1H3Kw2k4dIeg,19
+sinapsis_chatbots-0.1.0.dist-info/RECORD,,
