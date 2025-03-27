@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synker"
+version = "0.0.3"
+description = "A Python package for generating synthetic data."
+authors = [
+    {name = "Danial Haselibozchaloee", email = "dhaselib@gmail.com"}
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["synker"]
