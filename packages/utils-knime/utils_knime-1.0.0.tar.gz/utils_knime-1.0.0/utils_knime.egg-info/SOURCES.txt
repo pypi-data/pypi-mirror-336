@@ -1,0 +1,8 @@
+README.md
+setup.py
+utils_knime/__init__.py
+utils_knime.egg-info/PKG-INFO
+utils_knime.egg-info/SOURCES.txt
+utils_knime.egg-info/dependency_links.txt
+utils_knime.egg-info/requires.txt
+utils_knime.egg-info/top_level.txt
