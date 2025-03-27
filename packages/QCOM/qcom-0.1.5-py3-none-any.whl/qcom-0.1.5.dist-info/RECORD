@@ -1,0 +1,13 @@
+qcom/__init__.py,sha256=F9xikKTdgVYDJTjUMwOis4V6wcdk5LV7OFSTN_98Y6Y,479
+qcom/classical_info.py,sha256=q97WP7XI-OYIhyuKzjOBTvAwnf7GRU6hLDnL19sJazc,7432
+qcom/data.py,sha256=jk32Vt70-mk_2veY05328FNvv-mZcbjj0l1Ieg-nvdw,7367
+qcom/hamiltonians.py,sha256=4CEG8tZ3C44Rm7zrvifjt2RZorAbBy2SkhZVge0a97g,14644
+qcom/io.py,sha256=cyBl7cwc5c0M5MEJPDQr7vYvVPiZrrDWaPaICo5SfzQ,5602
+qcom/progress.py,sha256=YTZMWzZ1cir9RqEAVi1_KKcJeNaqoImZU1CIf6mwIFM,2519
+qcom/quantum_info.py,sha256=7DVl6pQfmbQ9h0HHfi2Ousg_T2zZJLIk8o4hI8pCy7E,6532
+qcom/utils.py,sha256=GBGqbpy6e95JnHcMjj55cuZwh0M5uwSXNtcPL2f8xWw,2639
+qcom-0.1.5.dist-info/licenses/LICENSE.txt,sha256=RoCSNGdLUoV9zudLjCC6AJGq9JCniqJTHpzUG9epIKQ,1068
+qcom-0.1.5.dist-info/METADATA,sha256=YWOziOnOI6WBMyMiXKjxmFN3pUqe1Y506hFHLPyiuXU,2379
+qcom-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+qcom-0.1.5.dist-info/top_level.txt,sha256=Hdf6nF6PZkbCwLqLcEuM-l0_HrHTQ8kIh_DO9ZAzeuU,5
+qcom-0.1.5.dist-info/RECORD,,
