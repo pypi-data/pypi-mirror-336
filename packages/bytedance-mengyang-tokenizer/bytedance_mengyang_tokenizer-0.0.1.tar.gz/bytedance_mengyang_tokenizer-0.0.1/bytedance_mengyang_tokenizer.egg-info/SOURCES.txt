@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedance_mengyang_tokenizer.egg-info/PKG-INFO
+bytedance_mengyang_tokenizer.egg-info/SOURCES.txt
+bytedance_mengyang_tokenizer.egg-info/dependency_links.txt
+bytedance_mengyang_tokenizer.egg-info/top_level.txt
