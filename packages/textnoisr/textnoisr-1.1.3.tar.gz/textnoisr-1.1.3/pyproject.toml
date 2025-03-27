@@ -1,0 +1,90 @@
+[tool.poetry]
+name = "textnoisr"
+version = "1.1.3"
+description = "Add noise to text at the character level"
+authors = [
+    "Lilian Sanselme <lilian.sanselme@preligens.com>"
+]
+maintainers = [
+    "Félix Martel <felix.martel@preligens.com>",
+    "Romain Keramitas <romain.keramitas@preligens.com>",
+    "Valentin Masdeu <valentin.masdeu@preligens.com>"
+]
+
+readme = "README.md"
+license = "BSD-2-Clause"
+
+homepage = "https://preligens-lab.github.io/textnoisr"
+repository = "https://github.com/preligens-lab/textnoisr"
+documentation = "https://preligens-lab.github.io/textnoisr"
+
+keywords = ["nlp", "natural language processing", "text", "augmentation", "ocr", "typo"]
+
+classifiers = ["Topic :: Text Processing :: General"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/preligens-lab/textnoisr/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+datasets = ">=2.14.5"
+numpy = ">=1.26.1"
+scipy = ">=1.11.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.1.0"
+pydocstyle = "^6.3.0"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.4.6"
+mkdocstrings = "^0.26.1"
+mkdocstrings-python = "^1.11.1"
+pymdown-extensions = "^10.3"
+black = ">=23.10,<25.0"
+flake8 = "^6.1.0"
+flake8-print = "^5.0.0"
+flake8-use-fstring = "^1.4"
+isort = "^5.12.0"
+mypy = "^1.6.1"
+pre-commit = "^3.5.0"
+pytest = "^7.4.2"
+evaluate = "^0.4.1"
+jiwer = "^3.0.3"
+
+
+[tool.black]
+string-processing = true
+
+[tool.ruff]
+# Select: Flake rules (E, F, W), isort (I), pydocstyle (D), flake8-bandit (S)
+select = ["E", "F", "W", "I", "D", "S"]
+ignore = ["D100", "D101", "D102", "D103", "D104", "D106", "D107"]
+
+[tool.ruff.per-file-ignores]
+# Do not harass people writing tests with docstring rules. Ignore the S101 (assert detected) rule.
+"cli.py" = ["D"]
+"*tests/*" = ["D", "S101"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bandit]
+skips = ["B311"]
+
+[mypy]
+plugins = "numpy.typing.mypy_plugin"
+
+[[tool.mypy.overrides]]
+module = "datasets"
+implicit_reexport = true
+
+[tool.pylint]
+good-names="p,q,i,N,P,v,n"
+
+
+[tool.pytest.ini_options]
+marker= "nigthly"
