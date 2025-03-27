@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: linecode
+Version: 0.1.2
+Summary: A simple python based language.It can be embedded in python projects
+Home-page: https://github.com/xystudio889/linecode
+Author: xystudio
+Author-email: 173288240@qq.com
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# linecode
+
+A simple python based language.It can be embedded in python projects
