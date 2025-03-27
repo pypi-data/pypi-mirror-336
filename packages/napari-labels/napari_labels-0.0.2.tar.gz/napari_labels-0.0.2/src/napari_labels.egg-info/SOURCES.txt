@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+imgs/Logos/DKFZ_Logo.png
+imgs/Logos/HI_Logo.png
+src/napari_labels/__init__.py
+src/napari_labels/_widget.py
+src/napari_labels/napari.yaml
+src/napari_labels.egg-info/PKG-INFO
+src/napari_labels.egg-info/SOURCES.txt
+src/napari_labels.egg-info/dependency_links.txt
+src/napari_labels.egg-info/entry_points.txt
+src/napari_labels.egg-info/requires.txt
+src/napari_labels.egg-info/top_level.txt
