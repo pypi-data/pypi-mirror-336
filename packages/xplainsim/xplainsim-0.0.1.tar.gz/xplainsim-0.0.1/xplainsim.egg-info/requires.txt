@@ -1,0 +1,5 @@
+torch
+transformers
+transformers[torch]
+sentence-transformers
+datasets
