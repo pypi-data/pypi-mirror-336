@@ -1,0 +1,6 @@
+airflow_operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_operators/kafka.py,sha256=K2mKciD_d1_H2ewQjMXnw4O8lUfvyv6h50Agg5qnotk,3118
+airflow_operators/sqlaclhemy.py,sha256=ZK_cfD6jA5cgwStFKG822AEE7tAl7oJ1VfyQz1wWKG0,1056
+airflow_operators-0.2.1.dist-info/METADATA,sha256=plfY-gi-V1sasG4hYzYV4mxOWeZwtLWDG38zmYty9VM,1154
+airflow_operators-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airflow_operators-0.2.1.dist-info/RECORD,,
