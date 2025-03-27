@@ -1,0 +1,6 @@
+discord_framework/__init__.py,sha256=UVJMEFhDOgJAZfN7xIZGzEHqV4opYgKqH06GwdT45yw,142
+discord_framework/api.py,sha256=-RokThu5K0hwHxhKbeRCoIe4eComJiBHVzBA77TP800,1130
+discord_framework/discord_framework.py,sha256=zReR-aQNxFzX_2xSdNXLwjv01So6UJ38SJVweCdtzc0,9230
+discord_framework-1.13.0.dist-info/METADATA,sha256=Ddv820yfu1CbbehLQaHOTtRiYNhe7m1sK8BSUIkhvSs,649
+discord_framework-1.13.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+discord_framework-1.13.0.dist-info/RECORD,,
