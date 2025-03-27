@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: skplatform
+Version: 0.2.16
+Summary: Attitude solutions for optical, remote sensing instruments  flying on, or simulating, balloons, aircraft and satellites
+Author-email: Nick Lloyd <nick.lloyd@usask.ca>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: sktimeutils>=2.0.9
+Requires-Dist: skconfig>=0.3.5
+Requires-Dist: sgp4>=2.9
+Requires-Dist: jplephem
+Requires-Dist: astropy
+Dynamic: license-file
+
+# skplatform #
+This package is used for the attitude solution of optical instruments remote sensing the atmosphere from space,
+balloons, aircraft or the ground. The package can be used to generate lines of sight for simulations or real instruments. 
+
+## Installation
+
+    pip install skplatform
+
+### Building a wheel
+The python wheel can also be built from source code,
+
+    conda install setuptools build
+    python -m build --wheel
+
+## Documentation
+Documentation can be found at ReadTheDocs [skplatform](https://skplatform.readthedocs.io/en/latest/index.html)
+
+## Unit Testing
+
+    python -m unittest discover -s skplatform.tests
+
+The tests take around 90 seconds to run, so be patient. 
+
+## License
+This project is licensed under the MIT license.
+
