@@ -1,0 +1,3 @@
+[console_scripts]
+ama = asset_manager.app:run
+asset = asset_manager.app:run
