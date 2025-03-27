@@ -1,0 +1,3 @@
+[console_scripts]
+msac=msac.cli:main
+
