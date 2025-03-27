@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+med_interact/__init__.py
+med_interact/api_client.py
+med_interact/interactions.py
+med_interact/precautions.py
+med_interact/utils.py
+med_interact.egg-info/PKG-INFO
+med_interact.egg-info/SOURCES.txt
+med_interact.egg-info/dependency_links.txt
+med_interact.egg-info/requires.txt
+med_interact.egg-info/top_level.txt
