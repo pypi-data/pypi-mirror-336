@@ -1,0 +1,11 @@
+saroj_dongol/__init__.py,sha256=m7fLrrp7Yf1-h6MTgJYIoixukxzIMvfGwtIEAdFfN8Q,56
+saroj_dongol/__main__.py,sha256=AMZnmeZr_-ZJ6hz1YeScDJAjSYb6NUdZ8iYJvrgrbKE,105
+saroj_dongol/speaker.py,sha256=fIyASN9wHdso5K7Hqb4QghiA0-QyHJ-2LINxmYFR-hI,234
+saroj_dongol/speakers/__init__.py,sha256=p1dy6t_YINqN8qYEo6GlNeVLqxA3-iothSYG0SrLpqw,24
+saroj_dongol/speakers/saroj.py,sha256=yQZlCwKfttVapQLy6wzmV3iuS-JOcNXfUHgt54eZpF8,81
+saroj_dongol-0.2.0.dist-info/licenses/LICENSE.txt,sha256=COxaPjIcZg08mKgr0kuuQ0ZjD3oBsjDoqK6KiKQGinA,1460
+saroj_dongol-0.2.0.dist-info/METADATA,sha256=xyeXX7vuGqTmCdq-UEgstcJptnq5FWagKqeDRyOIEts,2085
+saroj_dongol-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+saroj_dongol-0.2.0.dist-info/entry_points.txt,sha256=u06FJHAdH15z0sr_iMgojMGtCI-B3jJA4hrnNgOTlfw,63
+saroj_dongol-0.2.0.dist-info/top_level.txt,sha256=3CFP_N35GCDEslzXa5eVxasaA6ssmlC-6STYUYT8Xo0,13
+saroj_dongol-0.2.0.dist-info/RECORD,,
