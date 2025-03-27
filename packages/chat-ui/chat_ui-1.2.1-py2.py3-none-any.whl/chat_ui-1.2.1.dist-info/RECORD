@@ -1,0 +1,9 @@
+chat_ui/__init__.py,sha256=rGIHqzVuzT0vHtm9tGvpbKtG6zsFdKiHV2FjIqiQ60Q,618
+chat_ui/chat_widget.py,sha256=V59KFXl9Qq7mgoXEpBdodbLaukrvG_jlIxB7EpHHiYE,12086
+chat_ui/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chat_ui/api/api_handler.py,sha256=Fh__bp9cIDHe-ewUYikIkTaZmzR4rHfW2EIkXaCqErE,15774
+chat_ui/static/index.js,sha256=YyJRaGXV24LGr_PoO8xq7kQCbJY8vS9cUczBjkkaMUM,22399
+chat_ui/static/styles.css,sha256=xkx6YSm8zZgiwzBK80NwVtcrCbvBOvlm2YeBIKQNus8,15105
+chat_ui-1.2.1.dist-info/METADATA,sha256=d1JGOPZ5O7WC5mHxw4h5-ID0QPXvkVvB7b927S7kfwI,16669
+chat_ui-1.2.1.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+chat_ui-1.2.1.dist-info/RECORD,,
