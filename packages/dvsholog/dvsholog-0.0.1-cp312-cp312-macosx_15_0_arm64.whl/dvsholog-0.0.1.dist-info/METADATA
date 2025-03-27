@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: dvsholog
+Version: 0.0.1
+Summary: DVS holography package
+Author-email: Mattieu de Villiers <mattieu@sarao.ac.za>
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: katdal<1
+Requires-Dist: katpoint<1
+Requires-Dist: numpy>=1.15
+Requires-Dist: scipy>=1.5.0
+Requires-Dist: cffi>=1.0.0
+Dynamic: license-file
+
+# dvsholog
+
+This is package is used by SARAO's DVS (Dish Verification System) team to process single-channel holography data.
