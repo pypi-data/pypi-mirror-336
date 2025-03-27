@@ -1,0 +1,2 @@
+[console_scripts]
+flumut = flumut.cli:cli
