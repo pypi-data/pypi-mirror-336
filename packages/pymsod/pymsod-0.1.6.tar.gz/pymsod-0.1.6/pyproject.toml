@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pymsod"
+version = "0.1.6"
+description = "Automatically detects the location of OneDrive folders and returns its parent location"
+authors = ["Dominik Braun <dome.braun@fau.de>"]
+license = "GNU 3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aenum = "^3.1.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
