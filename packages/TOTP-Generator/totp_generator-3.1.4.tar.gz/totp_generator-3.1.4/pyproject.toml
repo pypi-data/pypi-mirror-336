@@ -1,0 +1,47 @@
+[project]
+name = "TOTP-Generator"
+version = "3.1.4"
+authors = [{name="Jeremy Falling"}]
+license = "GPL-3.0-only"
+description = "Utility that generates TOTP codes and stores the TOTP secrets in your system keyring."
+readme = "README.md"
+
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "keyring>=23.0.0,<26.0.0",
+    "keyrings.alt>=4.1,<6.0",
+    "pyotp>=2.6.0,<3.0.0",
+    "pyclip>=0.5.4,<1.0.0"
+]
+
+[project.urls]
+Homepage = "https://codeberg.org/jjfalling/TOTP-Generator"
+Issues = "https://codeberg.org/jjfalling/TOTP-Generator/issues"
+
+[project.scripts]
+totp_generator = "totp_generator.cli:main"
+
+[project.optional-dependencies]
+proctitle = ["setproctitle>=1.2.2,<1.4.0"]
+test =  [
+    "pytest",
+    "pytest-cov>2.6",
+    "mock",
+    "wheel",
+    "codecov",
+    "pylint"
+]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=61.0",
+    "twine",
+    "wheel",
+]

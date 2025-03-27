@@ -1,0 +1,15 @@
+keyring<26.0.0,>=23.0.0
+keyrings.alt<6.0,>=4.1
+pyotp<3.0.0,>=2.6.0
+pyclip<1.0.0,>=0.5.4
+
+[proctitle]
+setproctitle<1.4.0,>=1.2.2
+
+[test]
+pytest
+pytest-cov>2.6
+mock
+wheel
+codecov
+pylint
