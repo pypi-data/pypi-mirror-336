@@ -1,0 +1,15 @@
+msac/__init__.py,sha256=EAlUPIXr0Pbd9ZRa1DSYUI3oCNYGHVgb2wRYU_yWfiI,89
+msac/calculate_adduct_mz.py,sha256=E8p55CFPrPmrjFGHtC_Esuu6Ue8XTTXmVz4O1-XYmp8,8037
+msac/calculate_input_mz.py,sha256=G-p04rGNdtUMXkH57lwLGaNhtnhHl6wdLBrBCWpbkWE,3648
+msac/check.py,sha256=jg5W0ez2Dk-VHpuc7Ys0aR-ohSfOk-1HYn66jjG0ktY,5019
+msac/cli.py,sha256=mgedqx9b3PgkMcc8W51BZlcGMzIOXGRQUgyZAOn2Ij8,1661
+msac/example_data/Example_script.ipynb,sha256=fdSZacc0OpcLgvIfjk--j-zLZUv0Gzc87t1wapoJC9A,37191
+msac/example_data/adduct_list_full.csv,sha256=o_P3F5EOp3LWn_02xnNVBSYxvLUvCl-1buTdaQdh16k,55111
+msac/example_data/adduct_only_list.csv,sha256=b-rPPGVfDRwZlLvAGElEBZSEsxtWz-8FpSmjAhxMjFY,2909
+msac/example_data/example_inputs.csv,sha256=tNO3XqP-N2g-D8sdxJvXkMfQW00ZQfcV-NCfxiCD1S0,436
+msac/process.py,sha256=h0YU7OYZcwLCQqY9UjcVNPUWrI9cvjCwJi9n6_tZuGY,2076
+msac-0.1.1.dist-info/LICENSE.txt,sha256=IRZ934Xc23BXWPovnCRCvd-SzZbBAx1JJYwj83h01DY,1274
+msac-0.1.1.dist-info/METADATA,sha256=l7i_4Ca9gj-8bOPMfs3uSqUs9kMy7HUZrhRfnwKRyT0,4120
+msac-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+msac-0.1.1.dist-info/entry_points.txt,sha256=FAK0-LWf02Ukeg7UIilo-GCZIwQTQ4bZrlJ1i2TMBS4,38
+msac-0.1.1.dist-info/RECORD,,
