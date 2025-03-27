@@ -1,0 +1,11 @@
+quadrantrecon-1.0.4.dist-info/METADATA,sha256=T7LFkIkFWK2mbXmLmeBysb83IGAVWJ_LlYvhYNkbp30,5784
+quadrantrecon-1.0.4.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+quadrantrecon-1.0.4.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+quadrantrecon-1.0.4.dist-info/licenses/LICENSE.md,sha256=8nWRGaxd1YX2gzCwIdPyLkeX6zEROlNi6BaFAkpXdlM,1066
+quadrantrecon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quadrantrecon/__main__.py,sha256=FuY-agemJPrtH5-WuFH-iN7Gsrt_fjynsvQQuGwuNgU,9410
+quadrantrecon/get_image_size.py,sha256=fodXJOzjk30C23Weu3j6JNvKxrfeZ36b7CsR0lkCdDY,13757
+quadrantrecon/metadata.py,sha256=E-sMztKnfsORxW0iXRUuSkGpf8k2r71scV0QDfOEBMI,2877
+quadrantrecon/qr.py,sha256=ZPaAmIOmlPjWvG_mcpGKbggmDHPs4VpAK4Ilocfie6A,23722
+quadrantrecon/utils.py,sha256=DrEERf5xedGCJYbW_57YcS04-GLkq9UiTASPeL3f3C8,4770
+quadrantrecon-1.0.4.dist-info/RECORD,,
