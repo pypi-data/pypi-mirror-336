@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: amber_mcap
+Version: 0.4.0
+Summary: Annotation and Multimodal Bag Extraction for Robotics
+License: Apache 2.0
+Author: Masaya Kataoka
+Author-email: ms.kataoka@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (>=9.2.0,<11.0)
+Requires-Dist: addict (>=2.4.0,<3.0.0)
+Requires-Dist: boto3 (>=1.20.0,<2.0.0)
+Requires-Dist: dataclass-wizard (>=0.22.2,<0.23.0)
+Requires-Dist: datetime (>=5.3,<6.0)
+Requires-Dist: docker (>=6.1.2,<7.0.0)
+Requires-Dist: download (>=0.3.5,<0.4.0)
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Requires-Dist: gradio (>=3.35.0,<4.0.0)
+Requires-Dist: gradio_client (>=0.2.5,<0.3.0)
+Requires-Dist: huggingface-hub (==0.25.2)
+Requires-Dist: mcap-ros2-support (>=0.3.0,<0.4.0)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: onnxruntime-gpu (>=1.15.1,<2.0.0)
+Requires-Dist: open3d (>=0.18.0,<0.19.0)
+Requires-Dist: opencv-python (>=4.10.0,<4.11.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: pybind11 (>=2.13.6,<3.0.0)
+Requires-Dist: pyparsing
+Requires-Dist: pyyaml (>=6.0.0,<7.0.0)
+Requires-Dist: pyzstd (>=0.16.2,<0.17.0)
+Requires-Dist: qdrant-client (>=1.12.0,<2.0.0)
+Requires-Dist: regex (>=2023.3.23,<2024.0.0)
+Requires-Dist: salesforce-lavis (>=1.0.2,<2.0.0)
+Requires-Dist: scikit-learn (>=1.6.0,<2.0.0)
+Requires-Dist: scipy (>=1.9.0,<2.0.0)
+Requires-Dist: sentence-transformers (>=2.2.2,<3.0.0)
+Requires-Dist: setuptools (==58.2.0)
+Requires-Dist: tensorboard (>=2.14.0,<3.0.0)
+Requires-Dist: tensorboardx (>=2.6.2.2,<3.0.0.0)
+Requires-Dist: threadpoolctl (>=3.2.0,<4.0.0)
+Requires-Dist: torch (==2.5.0+cu124)
+Requires-Dist: torchaudio (==2.5.0+cu124)
+Requires-Dist: torchvision (==0.20.0+cu124)
+Requires-Dist: transformers (>=4.25.0,<4.27)
+Requires-Dist: urllib3 (>=1.26.0,<2.0.0)
