@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: amapy-db
+Version: 1.0.0
+Summary: The Database plugin for asset-manager project. It provides functionalities to manage and store metadata related to digital assets, such as storing MD5 hashes of asset files and managing these records efficiently.
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: amapy-pluggy==1.*
+Requires-Dist: amapy-utils==1.*
+
+asset-db
