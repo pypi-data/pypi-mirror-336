@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: anyone_protocol_sdk
+Version: 0.0.1b0
+Summary: Python SDK for Anon
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
