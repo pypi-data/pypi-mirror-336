@@ -1,0 +1,2 @@
+[console_scripts]
+excelj = excelj.excelj:main

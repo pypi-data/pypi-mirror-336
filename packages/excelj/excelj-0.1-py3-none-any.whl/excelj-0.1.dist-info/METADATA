@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: excelj
+Version: 0.1
+Summary: excel to json
+Home-page: https://github.com/qq292
+Author: qq292000799
+Requires-Python: >=3.6
+Requires-Dist: openpyxl>=3.1.5
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
