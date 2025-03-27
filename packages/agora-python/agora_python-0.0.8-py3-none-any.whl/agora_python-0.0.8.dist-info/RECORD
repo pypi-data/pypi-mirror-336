@@ -1,0 +1,11 @@
+agora/__init__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+agora/_modidx.py,sha256=SI7qrKi_LhvS8yZCfwq1TJwyhLEJQjAErA5ZfItOgTA,2569
+agora/client.py,sha256=xX4xaaiefbiE17Am5nSEg3GS19BpsqVDdlR3C-U-1Wk,7785
+agora/config.py,sha256=2fIyYsWuJE1vXrCSirN_eMgOYlGLFFdhDyxt4l59Pak,1132
+agora/crypto.py,sha256=RHxejB1Shoc-RJgx5pzJoAQz05k4XNM9D6R5Pg-WJD4,739
+agora_python-0.0.8.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+agora_python-0.0.8.dist-info/METADATA,sha256=M9-miPFWX-E2s2B8RfSpDQmErCcYPRbDR58Y0Ct7heQ,2321
+agora_python-0.0.8.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+agora_python-0.0.8.dist-info/entry_points.txt,sha256=OgxRCYcICo4Iub0JrNtl4b5F1yMWHqfAWA5RFSSoDlE,32
+agora_python-0.0.8.dist-info/top_level.txt,sha256=GcpBsStK9t9TzVgn_3vjdfUxGk6F_ea6rvbgkieZUug,6
+agora_python-0.0.8.dist-info/RECORD,,
