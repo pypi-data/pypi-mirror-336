@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Fidus Writer payment\n"
+"Language: es\n"
+
+#: payment/static/js/modules/payment/documents_overview.js:14
+msgid "Subscription warning"
+msgstr "Advertencia de suscripción"
+
+#: payment/static/js/modules/payment/documents_overview.js:15
+msgid "You have run out of free documents. Sign up for a subscription to create more documents."
+msgstr "Te has quedado sin documentos gratis. Regístrese para obtener una suscripción para crear más documentos."
+
+#: payment/static/js/modules/payment/documents_overview.js:17
+msgid "Go to subscription page"
+msgstr "Ir a la página de suscripción"
+
+#: payment/static/js/modules/payment/menu.js:11
+msgid "Subscription"
+msgstr "Suscripción"
+
+#: payment/static/js/modules/payment/page.js:33
+msgid "Plan overview"
+msgstr "Planes"
+
+#: payment/static/js/modules/payment/menu.js:9
+#: payment/static/js/modules/payment/page.js:53
+msgid "Modify subscription"
+msgstr "Modificar suscripción"
+
+#: payment/static/js/modules/payment/page.js:54
+msgid "Please choose whether to update payment details or to cancel your subscription."
+msgstr "Elija si desea actualizar los detalles del pago o cancelar su suscripción."
+
+#: payment/static/js/modules/payment/page.js:56
+msgid "Update payment details"
+msgstr "Actualizar detalles de pago"
+
+#: payment/static/js/modules/payment/page.js:63
+msgid "Cancel subscription"
+msgstr "Cancelar suscripción"
+
+#: payment/static/js/modules/payment/page.js:76
+msgid "Plan change not possible"
+msgstr "No es posible realizar el cambio de plan"
+
+#: payment/static/js/modules/payment/page.js:77
+msgid "Unfortunately it is not possible to switch plans during the trial period."
+msgstr "Lamentablemente, no es posible cambiar de plan durante el periodo de prueba."
+
+#: payment/static/js/modules/payment/page.js:86
+msgid "Switch subscription"
+msgstr "Cambiar suscripción"
+
+#: payment/static/js/modules/payment/page.js:87
+msgid "Do you really want to switch your subscription type?"
+msgstr "¿Realmente quiere cambiar su tipo de suscripción?"
+
+#: payment/static/js/modules/payment/page.js:89
+msgid "Yes"
+msgstr "Sí"
+
+#: payment/static/js/modules/payment/prelogin.js:10
+#: payment/static/js/modules/payment/pricing.js:7
+msgid "Pricing"
+msgstr "Precios"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Pricing Guide"
+msgstr "Guía de precios"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "You can write 2 documents on the Free Plan without any trial period."
+msgstr "Puede escribir 2 documentos en el Plan gratuito sin ningún periodo de prueba."
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "If you want to write more documents, you can upgrade your plan below."
+msgstr "Si desea escribir más documentos, puede elegir un plan a continuación."
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Basic"
+msgstr "Básico"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Free Plan"
+msgstr "Plan gratuito"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "2 free documents"
+msgstr "2 documentos gratis"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Unlimited collaborators"
+msgstr "Colaboradores ilimitados"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Unlimited bibliography items"
+msgstr "Artículos de bibliografía ilimitados"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Unlimited exports"
+msgstr "Exportaciones ilimitadas"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Default"
+msgstr "Gratuito"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Downgrade on "
+msgstr "Se activa el "
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Current"
+msgstr "Actual"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Premium"
+msgstr "Premium\n"
+""
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Paid Plan"
+msgstr "Plan pagado"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Monthly payments"
+msgstr "Pagos mensuales"
+
+#: payment/static/js/modules/payment/templates.js:8
+#, fuzzy
+msgid "Resubscribe"
+msgstr "Volver a suscribirse"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Modify"
+msgstr "Modificar"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Sign up"
+msgstr "Regístrate"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Trial"
+msgstr "Prueba"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "days"
+msgstr "días"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Semiannual payments"
+msgstr "Pagos semestrales"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Annual payments"
+msgstr "Pagos anuales"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Refunds and cancellation"
+msgstr "Reembolsos y cancelaciones"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Subscriptions can be cancelled at any time. If a cancellation took place during the trial period, no charge will be made. Thereafter, subscriptions are charged in advance and no refunds will be made."
+msgstr "Las suscripciones se pueden cancelar en cualquier momento. Si la cancelación se produce durante el período de prueba, no se realizará ningún cargo. Posteriormente, las suscripciones se cobran por adelantado y no se realizarán reembolsos."
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "See"
+msgstr "Ver"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Terms and Conditions"
+msgstr "Términos y Condiciones"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Our order process is conducted by our online reseller Paddle.com. Paddle.com is the Merchant of Record for all our orders. Paddle provides all customer service inquiries and handles returns."
+msgstr "Nuestro proceso de pedido es realizado por nuestro revendedor en línea Paddle.com. La empresa Paddle.com es la comerciante de registro para todos nuestros pedidos. Paddle proporciona todas las consultas de servicio al cliente y maneja las devoluciones."
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Unlimited documents"
+msgstr "Documentos ilimitados"
+
+#: payment/static/js/modules/payment/templates.js:8
+msgid "Switch"
+msgstr "Cambiar"
+

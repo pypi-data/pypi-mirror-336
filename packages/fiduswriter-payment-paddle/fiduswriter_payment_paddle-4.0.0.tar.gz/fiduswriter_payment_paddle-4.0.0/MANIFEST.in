@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+include requirements.txt
+recursive-include fiduswriter/payment/static *
+recursive-include fiduswriter/payment/locale *
+prune ci
+prune fiduswriter/venv
+prune venv
+prune fiduswriter/configuration.py
