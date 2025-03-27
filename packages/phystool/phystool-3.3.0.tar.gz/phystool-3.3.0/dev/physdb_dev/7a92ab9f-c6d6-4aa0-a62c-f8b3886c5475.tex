@@ -1,0 +1,14 @@
+\begin{theory}[title=Intégration à git]
+	Pour interfacer \verb|phystool| à \verb|git|, il suffit de crée un
+	répertoire vide sur BitBucket (ou autre plateforme similaire) et de copier
+	l'url dans le champ de configuration proposé dans le menu $\mathrm{Git} \to
+	\mathrm{Configure}$.
+
+    If the database is already managed by git (i.e. the database's directory
+    contains a `.git` directory), no automatic action will be performed.
+
+    Otherwise, the program will automatically attempt to initialise a new git
+    repository. The remote repository can be set interactively but, to ensure that
+    nothing is overwritten, it must be totally empty during for the initialization
+    process to succeed. 
+\end{theory}
