@@ -1,0 +1,2 @@
+requests>=2.27.0
+pip-system-certs>=4.0
