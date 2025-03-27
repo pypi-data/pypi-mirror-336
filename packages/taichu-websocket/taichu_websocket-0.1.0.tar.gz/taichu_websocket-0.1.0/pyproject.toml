@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taichu_websocket"
+version = "0.1.0"
+description = "一个灵活的 WebSocket 服务器库，支持自定义处理逻辑"
+readme = "README.md"
+requires-python = ">=3.6"
+license = "MIT"
+
+authors = [
+    { name = "taichugolden", email = "taichugolden@outlook.com" }
+]
+
+dependencies = [
+    "websockets"
+]
+
+[project.urls]
+Homepage = "https://github.com/TaichuGolden/taichu_websocket"
+
+[tool.setuptools.packages.find]
+where = ["."]

@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+taichu_websocket/__init__.py
+taichu_websocket/client.py
+taichu_websocket/server.py
+taichu_websocket.egg-info/PKG-INFO
+taichu_websocket.egg-info/SOURCES.txt
+taichu_websocket.egg-info/dependency_links.txt
+taichu_websocket.egg-info/requires.txt
+taichu_websocket.egg-info/top_level.txt
