@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: naufal-pyfunc-ensembler-job
+Version: 1.21.2.dev28
+Requires-Python: >=3.8,<3.11
