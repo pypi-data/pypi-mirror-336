@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: jainam-pytrade-sdk-test
+Version: 1.0.6
+Summary: Python SDK for integrating with Jainam trading platform.
+Home-page: https://protrade.jainam.in/
+Download-URL: https://github.com/Periyasamy-Dev/jainam_sdk.git
+Author: Codifi
+Author-email: periyasamy@codifi.in
+License: MIT
+Project-URL: Documentation, https://protrade.jainam.in/apidocs/
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: websocket-client
+Requires-Dist: rel
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+readme
