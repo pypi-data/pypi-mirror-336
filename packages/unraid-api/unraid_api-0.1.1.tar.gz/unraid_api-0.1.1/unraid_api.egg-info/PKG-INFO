@@ -1,0 +1,107 @@
+Metadata-Version: 2.4
+Name: unraid-api
+Version: 0.1.1
+Summary: Python library for controlling and monitoring Unraid servers via GraphQL API
+Home-page: https://github.com/domalab/pyunraid
+Author: Ruaan Deysel
+Author-email: ruaan.deysel@gmail.com
+Project-URL: Documentation, https://github.com/domalab/pyunraid
+Project-URL: Source, https://github.com/domalab/pyunraid
+Project-URL: Bug Tracker, https://github.com/domalab/pyunraid/issues
+Keywords: unraid,api,graphql,home-assistant,automation,nas
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.23.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: graphql-core>=3.2.0
+Requires-Dist: typeguard>=2.13.0
+Requires-Dist: websockets>=10.3
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.18.0; extra == "dev"
+Requires-Dist: pytest-cov>=3.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
+Requires-Dist: mypy>=0.950; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PyUnraid: Python Library for Unraid GraphQL API
+
+A comprehensive Python library that provides a clean, intuitive interface to Unraid's GraphQL API. It enables developers to programmatically control and monitor Unraid servers with both synchronous and asynchronous support, strong typing, and intelligent error handling.
+
+## Installation
+
+```bash
+pip install pyunraid
+```
+
+## Usage
+
+### Simple Synchronous Example
+
+```python
+from pyunraid import UnraidClient
+
+# Connect to Unraid server
+client = UnraidClient("192.168.1.10")
+client.login("username", "password")
+
+# Get system info
+system_info = client.get_system_info()
+print(f"System version: {system_info.version}")
+
+# Start the array
+client.system.start_array()
+```
+
+### Async Example
+
+```python
+import asyncio
+from pyunraid.async_client import AsyncUnraidClient
+
+async def main():
+    client = AsyncUnraidClient("192.168.1.10")
+    await client.login("username", "password")
+    
+    # Get all Docker containers
+    containers = await client.docker.get_containers()
+    for container in containers:
+        print(f"Container: {container.name}, Status: {container.status}")
+    
+    # Perform a parity check
+    await client.system.start_parity_check()
+
+asyncio.run(main())
+```
+
+## Features
+
+- Complete access to Unraid GraphQL API endpoints
+- Both synchronous and asynchronous interfaces
+- Automatic token refresh and management
+- Strongly-typed Python classes using Pydantic
+- Comprehensive error handling
+- Request/response logging for debugging
+
+## License
+
+MIT License
