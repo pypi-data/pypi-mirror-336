@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+RandomAKA.egg-info/PKG-INFO
+RandomAKA.egg-info/SOURCES.txt
+RandomAKA.egg-info/dependency_links.txt
+RandomAKA.egg-info/top_level.txt
+randomaka/__init__.py
+randomaka/randomaka.py
