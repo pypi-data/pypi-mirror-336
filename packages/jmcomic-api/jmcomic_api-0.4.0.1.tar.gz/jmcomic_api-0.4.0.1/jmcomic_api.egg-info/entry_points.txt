@@ -1,0 +1,2 @@
+[console_scripts]
+jmcomic-api-server = jmcomic_api:main
