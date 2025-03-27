@@ -1,0 +1,8 @@
+scanpy_cli/__init__.py,sha256=xSYfqaLvKRX_aGc8x5oGGWn_Bjt6CFfyJCtjFMltYMA,340
+scanpy_cli/pl.py,sha256=8BEv9PqNxGSdtUKes456ZsQKDjLLZuZkPASLtCUHeX4,376
+scanpy_cli/pp.py,sha256=CMYv4Jkh2SqhCRwSbl379vdtFBxK2Kx5vKL25misHgM,1913
+scanpy_cli/tl.py,sha256=OTBn8-fKixaNdpPIFPJULofOGhHcGXRyDiDnjLxxkH4,405
+scanpy_cli-0.1.0.dist-info/METADATA,sha256=vGyRvhOzf3kbPsqO7HsHvw8CB3yRTHnS7Q7Ri_rxicA,1809
+scanpy_cli-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scanpy_cli-0.1.0.dist-info/entry_points.txt,sha256=lG8hcXY84qhWc_NILvIaEV2Ur_G_Lr0PCuqO7-9ROTs,47
+scanpy_cli-0.1.0.dist-info/RECORD,,
