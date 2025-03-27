@@ -1,0 +1,12 @@
+aignostics/__init__.py,sha256=SMLhuH3bLPpgGuQ4qRRVbsnv3s3kaSJ7JPclAlsrmik,397
+aignostics/api.py,sha256=upZgJuwxcuyj-x90HitRxhbJb2spFU-V0s6fQiVwMks,4976
+aignostics/cli.py,sha256=B3yzp2-I4yZiVacPRZW1BQGpYMiG7S70fc4rXRH4D8Q,3730
+aignostics/constants.py,sha256=7kqUdabmtRqxal_ZIx_0wVhzVHI4dicOVoHQ9h4P3qk,353
+aignostics/models.py,sha256=Qg1Z2rxu7U579vVNrRC3eWkQgj49whf9D-GxDjNNMXk,841
+aignostics/service.py,sha256=eICt58H4DTYKA37v_LG7B23uNygCaY2YZo2ihoPJwKQ,1640
+aignostics/settings.py,sha256=YBzTG7ydsQleKhmrVTSNupoOknfA0aQ-5Hu4IydCW5k,746
+aignostics-0.0.7.dist-info/METADATA,sha256=-RgkhfQHu3VuN-CpzwvNNwmgIiW12MvU5GHSK_U_FI0,26026
+aignostics-0.0.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aignostics-0.0.7.dist-info/entry_points.txt,sha256=wjAm-SIqSt9_1YU6UodhOpduT0OGvohSEJp5FbuUMqk,50
+aignostics-0.0.7.dist-info/licenses/LICENSE,sha256=-M3GfV1uL55s46W22-zcZMDRT5SRGij3RDbn4xDp0gQ,1101
+aignostics-0.0.7.dist-info/RECORD,,
