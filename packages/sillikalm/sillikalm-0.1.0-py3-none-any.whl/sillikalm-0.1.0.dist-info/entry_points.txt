@@ -1,0 +1,6 @@
+[console_scripts]
+sillikalm = project.main:start_sillikalm
+
+[gui_scripts]
+sillikalm-gui = project.main:start_sillikalm
+

@@ -1,0 +1,17 @@
+project/.env,sha256=kBBGmxN5tLoCFszxFEde71qX4Mt7cqTee2Ig0BJ2CRY,50
+project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project/import/models.pkl,sha256=BhDa8TXCPRdKBIqLwuDTk1P2FgdNQTJS5_CAPD-Ypao,30044
+project/main.py,sha256=xxXa-hzI30CtqpaF03nAhoLXr1iT7D6auC71nPLvZco,960
+project/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project/src/api.py,sha256=0UVSKeEJHYgK7iTt-g_bdBQjOcuFkAPbMeht8KOXFm0,15040
+project/src/logger.py,sha256=LzTWnx4H_Kd18YF3ooi3OMzyfKw3f7_ro25f-0BqdgA,3377
+project/static/fonts/CascadiaCode.woff2,sha256=PsH35yUMBV01UEoVAOipuhKybyUhSobaZTfiirxg3Mw,218824
+project/static/index.html,sha256=Q7WjzzGX4Aip6uFfKCW95C1SiNwcsOInM9i3xDrPHyU,4180
+project/static/license.html,sha256=qL6SweOzhIuCQ1GPt8ElBkyAu-KpSC9PsvjC8NDZAwo,1710
+project/static/scripts.js,sha256=FPbdRTMULKusr51m9ak21G-e-CzIIFfQcUMzrQnTSOc,11785
+project/static/styles.css,sha256=XL4ND21wKDGJaoTYESDmUbM5L9SGPbEJOOx3TjOUADQ,6532
+sillikalm-0.1.0.dist-info/METADATA,sha256=deEGXAakSPlCGQ8FQGPou_hN9TLLi1MAVIYbzzz2Pp4,6044
+sillikalm-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+sillikalm-0.1.0.dist-info/entry_points.txt,sha256=S5UyQcHXQkafOEuC6W4niOiJoavWr9NB6CKV1EyEHYc,120
+sillikalm-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sillikalm-0.1.0.dist-info/RECORD,,
