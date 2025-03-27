@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: binaryrain-helper-cloud-aws
+Version: 0.0.1
+Summary: Aims to simplify and help with commonly used functions in the aws cloud data areas.
+Author: Binary Rain
+Author-email: "Marcel T.O" <marcel@turobin-ort.at>
+Project-URL: Homepage, https://github.com/binaryrain-net
+Keywords: binary rain,common,help,functions,aws
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aws-lambda-powertools[all]>=3.8.0
+Requires-Dist: boto3>=1.37.18
+Dynamic: license-file
