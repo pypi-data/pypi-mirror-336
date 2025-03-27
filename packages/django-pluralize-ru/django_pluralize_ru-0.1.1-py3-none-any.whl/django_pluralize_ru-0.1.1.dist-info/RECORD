@@ -1,0 +1,7 @@
+django_pluralize_ru/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pluralize_ru/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pluralize_ru/templatetags/pluralize_ru.py,sha256=ThCWOgpKCoOtb0sCT9ZUBAy-Rxo9ZnMKf1jzwpTl8yw,929
+django_pluralize_ru-0.1.1.dist-info/LICENSE.txt,sha256=gJi1lNwYGI1KNExhs8J2Tb4jqaPWKQBuThTQtgQdRgQ,1094
+django_pluralize_ru-0.1.1.dist-info/METADATA,sha256=97H6SpA_PlyDRuhHYP2pV-UBANVU4BRDN8iLLQLegO8,2593
+django_pluralize_ru-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+django_pluralize_ru-0.1.1.dist-info/RECORD,,
