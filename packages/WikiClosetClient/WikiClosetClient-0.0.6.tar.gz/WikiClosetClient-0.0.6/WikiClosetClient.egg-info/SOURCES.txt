@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+WikiClosetClient/__init__.py
+WikiClosetClient/skip_wikis.py
+WikiClosetClient/test.py
+WikiClosetClient/wiki_closet_client.py
+WikiClosetClient.egg-info/PKG-INFO
+WikiClosetClient.egg-info/SOURCES.txt
+WikiClosetClient.egg-info/dependency_links.txt
+WikiClosetClient.egg-info/requires.txt
+WikiClosetClient.egg-info/top_level.txt
