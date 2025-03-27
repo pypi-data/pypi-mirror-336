@@ -1,0 +1,17 @@
+bert-score>=0.3.13
+black>=25.1.0
+dspy>=2.6.2
+einops>=0.8.0
+ipykernel>=6.29.5
+ipywidgets>=8.1.5
+litellm>=1.57.4
+llms-txt>=0.0.4
+matplotlib>=3.10.0
+pandas>=2.2.3
+polars>=1.21.0
+python-dotenv>=1.0.1
+ruff>=0.9.4
+seaborn>=0.13.2
+tiktoken>=0.8.0
+torch>=2.6.0
+transformers>=4.48.2
