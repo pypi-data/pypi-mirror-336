@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: DocuGoggles
+Version: 0.3.1
+Summary: A tool for scanning and analyzing files in directories
+Home-page: https://github.com/Duquesne-Spring-2025-COSC-481/Naif-ALqurashi
+Author: Naif ALqurashi
+Author-email: Naif.cen@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+DocuGoggles - A File Search and Analysis Tool
