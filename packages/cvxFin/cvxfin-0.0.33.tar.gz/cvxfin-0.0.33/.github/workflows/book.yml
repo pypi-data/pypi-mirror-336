@@ -1,0 +1,40 @@
+name: "book"
+
+on:
+- push
+
+jobs:
+  pdoc:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Build the virtual environment for ${{ github.repository }}"
+        uses: tschm/cradle/actions/environment@v0.1.57
+
+      - uses: tschm/cradle/actions/pdoc@v0.1.57
+
+  test:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Build the virtual environment for ${{ github.repository }}"
+        uses: tschm/cradle/actions/environment@v0.1.57
+
+      - uses: cvxgrp/.github/actions/coverage@v2.2.8
+
+  jupyter:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Build the virtual environment for ${{ github.repository }}"
+        uses: tschm/cradle/actions/environment@v0.1.57
+
+      - uses: cvxgrp/.github/actions/jupyter@v2.2.8
+
+
+  book:
+    runs-on: "ubuntu-latest"
+    needs: [test, pdoc, jupyter]
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: cvxgrp/.github/actions/book@v2.2.8
