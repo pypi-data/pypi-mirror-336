@@ -1,0 +1,10 @@
+passwork_api-0.3.0.dist-info/METADATA,sha256=Yx7veZmTqpiqqMc6UfwgOzBjL9BMDcx7s5En8HAHcHY,327
+passwork_api-0.3.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+passwork_api-0.3.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+passwork_api/__init__.py,sha256=nbRsRTwm5DKJ_3c-Xij93eRejFmQPrdqfODgvtwJRZI,487
+passwork_api/models/__init__.py,sha256=JFBBlaNUoHBBbHI43vMmrWPYGrc5fEvoHF_Vt5MSD3E,278
+passwork_api/models/folder.py,sha256=U1QQ_oezkmpHYv8S9EtG3j8uBwOSw8akYWrYyhNAzm4,600
+passwork_api/models/password.py,sha256=gi8jbk4K3Ge0mqYg0shiYSRhcoMtloOOGG8FI_rwTOE,4380
+passwork_api/models/path.py,sha256=BFO5LIvDfV_6iRcuB3XKWEfFHdorDqotPCS5_6SfPeA,528
+passwork_api/passwork_api.py,sha256=CQ1oYi4DUAM6-9ZGTFEtX_ZeduJEjZ3m2_0DD05Bv2M,7318
+passwork_api-0.3.0.dist-info/RECORD,,
