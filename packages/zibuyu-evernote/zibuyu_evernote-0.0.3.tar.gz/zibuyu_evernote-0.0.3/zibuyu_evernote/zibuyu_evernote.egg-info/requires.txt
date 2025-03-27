@@ -1,0 +1,16 @@
+certifi
+charset-normalizer
+html2text
+httplib2
+idna
+Markdown
+oauth2
+oauthlib
+pip
+Pygments
+pyparsing
+requests
+requests-oauthlib
+setuptools
+urllib3
+wheel
