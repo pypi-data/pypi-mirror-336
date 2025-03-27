@@ -1,0 +1,17 @@
+mbti/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mbti/calculator.py,sha256=-wRD4dkRaTIMQQNgUt2LYAoXBrqG8Vkp6tOyS0uEf0k,1648
+mbti/entry_point.py,sha256=vXK9ml2x5RQskQ2hMkI-IaXxvzx0IaaC12Sht2C6la4,2257
+mbti/questions.py,sha256=tIq_hefkZnq-UKfsKUlotjLeconXtfHFunXBcPldN7c,1635
+mbti/results.py,sha256=d9qcHO6RNmPqbDnDrk3llDF6onqPHb4QXdDpzAMkQtc,3641
+mbti/test.py,sha256=VdoG2aOptWUxcpqrDOdtrnZfs4qohc3bgvIvCdzXakI,3903
+mbti/data/questions_28.json,sha256=6IutOi8iLo7mcMCb3wwo_VqmI8An_twGPeUri8nMGq4,11111
+mbti/data/questions_40.json,sha256=SSzM9UuqsRpV436gEurEZooE9oKlXtGW55hCJCdHYW8,14834
+mbti/data/questions_93.json,sha256=sUh1BjzWBmTDbmJkd3_P9ZcTun_c6doHLqzh9IjQ5Hk,38276
+mbti/i18n/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mbti/i18n/core.py,sha256=2l38TERnI9fgX_DoEKQF3RGDEat-MdK39j2FMB_5z2k,1421
+mbti_test-0.3.0.dist-info/LICENSE,sha256=GqUCqFhs30qBADCdlAaWBjlted2HQQlH0tgw3oGqrEc,1069
+mbti_test-0.3.0.dist-info/METADATA,sha256=v8JrQ1Mneh_1DcG3G5VT_W1TgF8QbqOrkGWyGiGvAkc,2315
+mbti_test-0.3.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+mbti_test-0.3.0.dist-info/entry_points.txt,sha256=VoOb5_W6nIRDhw3uqVJdr6GkiiKMBuzR1RwOxLIubKA,52
+mbti_test-0.3.0.dist-info/top_level.txt,sha256=mZ89AKsMph7dDVXUYvYkGOx_esLyuSayS-9oM64aW-Y,5
+mbti_test-0.3.0.dist-info/RECORD,,
