@@ -1,0 +1,13 @@
+shard_llm/__init__.py,sha256=uohXlFjaxpQJdnVXNMmK_Dq927WCCH2n8whADOhCE9w,398
+shard_llm/collator.py,sha256=TYbCTqJgx4iLeH9ivNCXVboxVAPvIS4u_z9gwn3Iz3Q,1923
+shard_llm/converter.py,sha256=rTD0QQrqO8P4yt0NeGgBKfQK46LHzTGkP6sMH-Z5na4,6129
+shard_llm/dataset.py,sha256=7YVRfZxtCwdkQ1M-aHtu3yuTAjzUy8Z92dbmbfe5fbs,5045
+shard_llm/generator.py,sha256=ibFkOm7ekdWXsx5eY-bjih_9Am764E8mkfuDBIvw50Y,3853
+shard_llm/logo.png,sha256=hUFT1tSu507LP83R_IDvEcUDC_WnBA1r811oy37_MjE,156176
+shard_llm/README.md,sha256=u08mTt0gMe5mej9kcNDx7EaYC-xkDuqvkhwRbzkr1VE,3436
+shard_llm/setup.py,sha256=Kdt6JAqT0OATrqNtfjdxdy6hIbEQgj0-MW_cLYwGuTY,935
+shard_llm/tuner.py,sha256=VhykDwyU-1gl7vWTjub_e_7B_1M5kbBatAj3zU5MyuE,7787
+shard_llm-1.0.1.dist-info/LICENSE,sha256=5Vfg4wgXGhgsX195rAaV5jFwPjJufKWAP3KcwccfepA,1091
+shard_llm-1.0.1.dist-info/METADATA,sha256=TtMKkIvcjOfT-OUWPDGKQZZGt9DQ4ASp3V_Q-U3C1Fo,3949
+shard_llm-1.0.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+shard_llm-1.0.1.dist-info/RECORD,,
