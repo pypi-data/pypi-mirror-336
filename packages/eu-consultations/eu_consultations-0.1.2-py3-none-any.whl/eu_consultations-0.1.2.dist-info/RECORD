@@ -1,0 +1,10 @@
+eu_consultations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eu_consultations/consultation_data.py,sha256=Oxyk5e2yA6cs3jbygmz_E9fW8gG-9Pg617pBEyeNgvw,2031
+eu_consultations/extract_filetext.py,sha256=KRNpRCx-jwqZQ408cAM7tvyrK5jg8iFAEWzT3qn1cEU,4833
+eu_consultations/scrape.py,sha256=dtBY1AQ2arpkF88hAyuwQnqEqC0MiDbg7bWCVRVsgMs,6214
+eu_consultations/utils_scraping.py,sha256=nzrVS7YIgaO9zhkQFR6WGZcos0BYIGOREsWB6jD0xJY,11361
+eu_consultations-0.1.2.dist-info/licenses/LICENSE,sha256=FdCTAbjMAS68yB6eWeo2RlnY_9X1WLymMNIdU0xi2I4,1068
+eu_consultations-0.1.2.dist-info/METADATA,sha256=YwDBoBIHP_eePdsG11hRpqu9ykW8H5THNa5xWhhwhio,5524
+eu_consultations-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+eu_consultations-0.1.2.dist-info/top_level.txt,sha256=w-Nh6bOiEW-Xgx6zZZh5vTbXKNZkVhkMN9wC6Q8m5Jk,17
+eu_consultations-0.1.2.dist-info/RECORD,,
