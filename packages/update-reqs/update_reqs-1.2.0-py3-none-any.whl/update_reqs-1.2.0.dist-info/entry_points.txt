@@ -1,0 +1,2 @@
+[console_scripts]
+update-reqs = update_reqs.cli:main
