@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+doc_scraper_mcp_server.egg-info/PKG-INFO
+doc_scraper_mcp_server.egg-info/SOURCES.txt
+doc_scraper_mcp_server.egg-info/dependency_links.txt
+doc_scraper_mcp_server.egg-info/entry_points.txt
+doc_scraper_mcp_server.egg-info/requires.txt
+doc_scraper_mcp_server.egg-info/top_level.txt
+scraper/__init__.py
+scraper/server.py
