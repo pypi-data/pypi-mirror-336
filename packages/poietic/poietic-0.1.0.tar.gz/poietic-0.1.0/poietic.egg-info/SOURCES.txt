@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+poietic/__init__.py
+poietic.egg-info/PKG-INFO
+poietic.egg-info/SOURCES.txt
+poietic.egg-info/dependency_links.txt
+poietic.egg-info/top_level.txt
