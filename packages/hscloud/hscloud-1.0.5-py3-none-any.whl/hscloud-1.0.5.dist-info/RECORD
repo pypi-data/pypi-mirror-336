@@ -1,0 +1,11 @@
+hscloud/__init__.py,sha256=6qvdMJaSzNhwqDHj4ni7xpgqhDMU2HoKNkNvS0Hgm_8,252
+hscloud/const.py,sha256=byXrz7XECupCKX7cmxWYB4yQvK7pEpw8qiAhmfdiqpE,1598
+hscloud/helpers.py,sha256=VJ7pQiy7mM-BAOfvJLkOvyN5HbFT0t3G5Ej8UkgKLms,3947
+hscloud/hscloud.py,sha256=8u726p_wyiOMZ9dNO6xh-aPeX5o3s7_I4lIL7rZXFp8,999
+hscloud/hscloudexception.py,sha256=-xvmM6uzdD4pejaE3aj5Pn94QVNS4_Ghm_nOb07S22M,590
+hscloud-1.0.5.dist-info/licenses/LICENSE,sha256=rLs4dKDVMuGJTp9F_eX1-R_PA7erNL8n6HZvGVzFMAQ,1066
+hscloud-1.0.5.dist-info/METADATA,sha256=qDija5kgCUfGtmS1rauYe1FMS7OPdlFrC3zQaNy58gY,585
+hscloud-1.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hscloud-1.0.5.dist-info/entry_points.txt,sha256=-mqI7YxouOxDJKC5vtqd3nFnMmEF-EXGz1OteCRW86o,44
+hscloud-1.0.5.dist-info/top_level.txt,sha256=CRRgB_Y9i1zbBYnGLy7vZK9eKmUykT2bIb3bpDjkerI,8
+hscloud-1.0.5.dist-info/RECORD,,
