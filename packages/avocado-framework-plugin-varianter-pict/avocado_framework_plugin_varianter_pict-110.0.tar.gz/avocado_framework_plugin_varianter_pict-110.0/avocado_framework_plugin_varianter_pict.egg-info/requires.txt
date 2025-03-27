@@ -1,0 +1,1 @@
+avocado-framework==110.0
