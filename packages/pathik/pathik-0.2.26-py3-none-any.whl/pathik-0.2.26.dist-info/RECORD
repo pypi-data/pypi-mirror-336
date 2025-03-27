@@ -1,0 +1,11 @@
+pathik/__init__.py,sha256=_gC0SDKgE_br46OLQxVLT8MDlii3ToLbKqRorC9WjPQ,9404
+pathik/cli.py,sha256=S8SxMiWlsYccdFLtk741bIgL1E4zaj_HTCYkxoji7LA,20955
+pathik/crawler.py,sha256=fZFo6IgsKY00bXnCnq0jkEajb2fgVvWbLtK_864-Nq8,28998
+pathik/simple.py,sha256=wYLYmt3u3QcJsm-S3bAgj5bkUef5V35_WrmvzuFmLOs,2474
+pathik/bin/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pathik-0.2.26.dist-info/licenses/LICENSE,sha256=EMjtxTWW877NZLz6ky3lARHF-l27J1ep6JVtqxjAi2A,11355
+pathik-0.2.26.dist-info/METADATA,sha256=pgJNyN--nAvi9lDWav5GuVgqtSv91CMRAlxck_CoXF8,9571
+pathik-0.2.26.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pathik-0.2.26.dist-info/entry_points.txt,sha256=87K-779oxQS_g-TapDiCjOiuuKASEOcOkInEjhvkHc4,43
+pathik-0.2.26.dist-info/top_level.txt,sha256=hnSwZDvErRxkkf2lnCFlxr3qFd8fxdiPBMJvc7sRmFI,7
+pathik-0.2.26.dist-info/RECORD,,
