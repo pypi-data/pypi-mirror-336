@@ -1,0 +1,35 @@
+{
+  "name": "canonical.ext.bittensor",
+  "description": "A library to build Bittensor applications.",
+  "author": "Cochise Ruhulessin",
+  "author_email": "cochiseruhulessin@gmail.com",
+  "url": "https://github.com/cochiseruhulessin",
+  "licenses": {"text": "MIT"},
+  "install_requires": [
+    "bittensor>=9.0.0",
+    "packaging",
+    "canonical.ext.fastapi>=0.0.4",
+    "libcanonical>=0.0.35",
+    "substrate-interface"
+  ],
+  "extras_require": {
+    "google": [
+      "canonical.ext.google>=0.0.14"
+    ],
+    "test": [
+      "canonical.ext.datasets>=0.0.4",
+      "bittensor>=9.0.0"
+    ]
+  },
+  "classifiers": [
+     "Development Status :: 4 - Beta",
+     "Intended Audience :: Developers",
+     "License :: OSI Approved :: MIT License",
+     "Operating System :: POSIX",
+     "Operating System :: POSIX :: Linux",
+     "Programming Language :: Python :: 3.11",
+     "Programming Language :: Python :: 3.12",
+     "Programming Language :: Python :: 3 :: Only",
+     "Topic :: Software Development :: Libraries"
+  ]
+}

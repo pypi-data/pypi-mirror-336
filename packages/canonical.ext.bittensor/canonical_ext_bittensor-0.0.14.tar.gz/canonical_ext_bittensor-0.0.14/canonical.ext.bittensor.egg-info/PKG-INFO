@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: canonical.ext.bittensor
+Version: 0.0.14
+Summary: A library to build Bittensor applications.
+Home-page: https://github.com/cochiseruhulessin
+Author: Cochise Ruhulessin
+Author-email: cochiseruhulessin@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: bittensor>=9.0.0
+Requires-Dist: packaging
+Requires-Dist: canonical.ext.fastapi>=0.0.4
+Requires-Dist: libcanonical>=0.0.35
+Requires-Dist: substrate-interface
+Provides-Extra: google
+Requires-Dist: canonical.ext.google>=0.0.14; extra == "google"
+Provides-Extra: test
+Requires-Dist: canonical.ext.datasets>=0.0.4; extra == "test"
+Requires-Dist: bittensor>=9.0.0; extra == "test"

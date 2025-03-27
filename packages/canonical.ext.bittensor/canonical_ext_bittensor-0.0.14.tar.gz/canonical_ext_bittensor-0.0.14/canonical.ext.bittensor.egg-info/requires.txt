@@ -1,0 +1,12 @@
+bittensor>=9.0.0
+packaging
+canonical.ext.fastapi>=0.0.4
+libcanonical>=0.0.35
+substrate-interface
+
+[google]
+canonical.ext.google>=0.0.14
+
+[test]
+canonical.ext.datasets>=0.0.4
+bittensor>=9.0.0
