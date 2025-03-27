@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/nto218145.egg-info/PKG-INFO
+src/nto218145.egg-info/SOURCES.txt
+src/nto218145.egg-info/dependency_links.txt
+src/nto218145.egg-info/entry_points.txt
+src/nto218145.egg-info/requires.txt
+src/nto218145.egg-info/top_level.txt
+src/reader/__init__.py
+src/reader/__main__.py
+src/reader/config.toml
+src/reader/feed.py
+src/reader/viewer.py
