@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: protectionstnd
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Security Protections, from sql injection to country specific protections
+Author: Alejandro Martinez <aegloszenit@protonmail.com>
+Author-email: Alejandro Martinez <aegloszenit@protonmail.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/zenitaeglos/protectionstnd.git
+
+
