@@ -1,0 +1,2 @@
+[console_scripts]
+mnm4m = mnm4m:main
