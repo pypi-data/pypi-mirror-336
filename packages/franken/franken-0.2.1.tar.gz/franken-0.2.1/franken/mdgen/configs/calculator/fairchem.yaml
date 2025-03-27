@@ -1,0 +1,3 @@
+calc_type: fairchem
+model_path: null                # This needs to be overridden
+# For additional possible arguments see :class:`fairchem.core.common.relaxation.ase_utils.OCPCalculator`

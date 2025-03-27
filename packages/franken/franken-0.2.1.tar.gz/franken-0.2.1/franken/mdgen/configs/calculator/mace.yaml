@@ -1,0 +1,5 @@
+calc_type: MACE
+default_dtype: ""   # can be float32, float64 or "" and the model's dtype will be used
+compile_mode: null  # the 'mode' for `torch.compile`. If null model is not compiled.
+model_path: null    # This needs to be overridden
+# For additional possible arguments see :class:`mace.calculators.MACECalculator`

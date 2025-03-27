@@ -1,0 +1,19 @@
+# @package _global_
+
+defaults:
+  - default
+
+franken:
+  gnn_backbone_id: "SchNet-S2EF-OC20-All"
+  interaction_block: 3
+  kernel_type: "linear"
+  jac_chunk_size: "auto"
+
+hyperparameters:
+  random_features:
+    num_random_features: 0
+    length_scale:
+      _target_: numpy.linspace
+      start: 1
+      stop: 10
+      num: 10

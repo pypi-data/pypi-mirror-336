@@ -1,0 +1,44 @@
+# @package _global_
+
+defaults:
+  - default
+
+seed: 1
+console_logging_level: DEBUG
+distributed: True
+
+dataset:
+  dataset_name: "TM23/Co"   # 53 atoms
+  dataset.train_subsample.num: 1000
+  dataset.train_subsample.rng_seed: 1
+
+franken:
+  gnn_backbone_id: "MACE-L0"
+  interaction_block: 2
+  kernel_type: "gaussian"
+  jac_chunk_size: "auto"
+
+trainer:
+  dtype: "float64"
+  random_features_normalization: "leading_eig"
+  save_fmaps: False
+
+hyperparameters:
+  solver:
+    L2_penalty:
+      _target_: numpy.logspace
+      start: -7
+      stop: -6
+      num: 10
+    loss_lerp_weight:
+      _target_: numpy.linspace
+      start: 0.5
+      stop: 0.5
+      num: 1
+  random_features:
+    num_random_features: 1024
+    length_scale:
+      _target_: numpy.linspace
+      start: 10
+      stop: 10
+      num: 1

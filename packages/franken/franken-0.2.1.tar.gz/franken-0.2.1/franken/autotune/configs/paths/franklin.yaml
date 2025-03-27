@@ -1,0 +1,4 @@
+defaults:
+  - default
+
+root_dir: /projects/mlcompchem/franken/data_repo
