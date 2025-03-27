@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/kasha/__init__.py
+src/kasha.egg-info/PKG-INFO
+src/kasha.egg-info/SOURCES.txt
+src/kasha.egg-info/dependency_links.txt
+src/kasha.egg-info/requires.txt
+src/kasha.egg-info/top_level.txt
