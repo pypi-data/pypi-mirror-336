@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chrono_features"
+description = "Generate features for TimeSeries"
+readme = "README.md"
+authors = [
+  { name = "Pritchin Ivan", email = "ispritchin@gmail.com" },
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+version = "0.0.7"
+
+keywords = ["timeseries", "features"]
+
+[project.urls]
+"Homepage" = "https://github.com/ISPritchin/chrono_features"
+
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+markers = [
+    "performance: for compare several implementations"
+]
+addopts = "-v -s --strict-markers"
