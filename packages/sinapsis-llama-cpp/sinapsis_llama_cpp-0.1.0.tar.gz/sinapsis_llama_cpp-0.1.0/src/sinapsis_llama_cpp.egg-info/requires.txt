@@ -1,0 +1,12 @@
+llama-index-llms-llama-cpp>=0.4.0
+ninja>=1.11.1.3
+sinapsis>=0.1.1
+
+[all]
+sinapsis-llama-cpp[chatbot]
+
+[chatbot]
+gradio>=5.22.0
+llvmlite>=0.44.0
+sinapsis-data-readers[all]>=0.1.0
+sinapsis-langchain-readers[all]>=0.1.0
