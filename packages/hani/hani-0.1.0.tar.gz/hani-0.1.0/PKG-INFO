@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: hani
+Version: 0.1.0
+Summary: Run Human-Agent Negotiations
+Author-email: Yasser Mohammad <yasserfarouk@gmail.com>
+License: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: hvplot>=0.11.2
+Requires-Dist: negmas>=0.10.23
+Requires-Dist: panel>=1.6.1
+Requires-Dist: plotly>=6.0.0
+Requires-Dist: sqlalchemy>=2.0.39
+Provides-Extra: dev
+Requires-Dist: bumpversion>=0.6.0; extra == "dev"
+Requires-Dist: watchfiles>=1.0.4; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: mkdocs-gen-files>=0.5.0; extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin>=7.1.4; extra == "doc"
+Requires-Dist: mkdocs-material>=9.6.5; extra == "doc"
+Requires-Dist: mkdocs>=1.6.1; extra == "doc"
+Requires-Dist: mkdocstrings-python>=1.16.1; extra == "doc"
+Provides-Extra: docs
+Requires-Dist: mkdocs-jupyter>=0.25.1; extra == "docs"
+
+# Human-Agent Negotiation Interface (HANI)
+![hani](src/hani/images/hani1.JPG)
+
+
+## Installation
+
+You can install the interface from pypi using:
+
+```bash
+pip install hani
+```
+
+## Contribution
+
+To contribute, clone this repo then run:
+
+```bash
+uv sync --dev
+```
+
