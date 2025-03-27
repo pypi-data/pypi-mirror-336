@@ -1,0 +1,72 @@
+[project]
+name = "duniterpy"
+version = "1.2.1"
+description = "Python library for developers of Duniter clients"
+license = { text = "GPL-3.0-or-later" }
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+authors = [
+    { name = "inso", email = "insomniak.fr@gmail.com"},
+    { name = "canercandan"},
+]
+maintainers = [
+    { name = "vit, Vincent Texier", email = "vit@free.fr"},
+    { name = "Moul, Maël Azimi", email = "moul@moul.re"}
+]
+keywords = ["g1", "duniter", "cryptocurrency", "librecurrency", "library"]
+dynamic = ["classifiers", "dependencies"]
+
+[tool.urls]
+repository = "https://git.duniter.org/clients/python/duniterpy"
+documentation = "https://clients.pages.duniter.org/python/duniterpy/index.html"
+"changelog" = "https://git.duniter.org/clients/python/duniterpy/-/blob/main/CHANGELOG.md"
+
+[tool.poetry]
+requires-poetry = ">=2.0"
+include = [{path="examples/*.py", format=["sdist", "wheel"]}]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+]
+
+[tool.poetry.dependencies]
+graphql-core = "^3.2.3"
+websocket-client = "^1.5.2"
+jsonschema = "^4.17.3"
+pypeg2 = "^2.15.2"
+base58 = "^2.1.1"
+libnacl = "^2.1.0"
+pyaes = "^1.6.1"
+mnemonic = "^0.20"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+pytest-sugar = "^1.0.0"
+pytest-clarity = "^1.0.1"
+
+[tool.poetry.group.doc]
+optional = true
+
+[tool.poetry.group.doc.dependencies]
+sphinx = "^6.2.1"
+sphinx_rtd_theme = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+src_paths = ["duniterpy", "tests", "examples"]
+
+[tool.pylint.messages_control]
+disable = "C,E0401,R0801,R0902,R0903,R0912,R0913,R0914,R0915,W0613"
+enable = "C0121,C0202,C0321"
+jobs = 0
+
+[tool.mypy]
+ignore_missing_imports = true
