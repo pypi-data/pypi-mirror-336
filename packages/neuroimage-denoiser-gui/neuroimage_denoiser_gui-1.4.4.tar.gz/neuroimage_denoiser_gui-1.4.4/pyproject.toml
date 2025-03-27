@@ -1,0 +1,38 @@
+[project]
+name = "neuroimage_denoiser_gui"
+version = "1.4.4"
+authors = [
+  { name="Andreas Brilka"},
+  { name="Stephan Weißbach"}
+]
+
+description = "GUI Implementation for Neuorimage Denoiser (https://github.com/s-weissbach/neuroimage_denoiser)"
+license = "MIT"
+readme = "readme.md"
+requires-python = ">=3.10"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Image Processing"
+]
+keywords = ["bioinformatics", "python", "denoising", "neuroimage", "torch"]
+
+dependencies = [
+  "neuroimage_denoiser>=0.1.5",
+  "gpustat>=1.1.1",
+  "platformdirs>=4.3",
+  "psutil>=6.1"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/andreasmz/neuroimage_denoiser_gui"
+Repository = "https://github.com/andreasmz/neuroimage_denoiser_gui"
+Issues = "https://github.com/andreasmz/neuroimage_denoiser_gui/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
