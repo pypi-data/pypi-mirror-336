@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf_parser_header_footer"
+version = "0.1.12"
+description = "A Python package for processing PDFs with header and footer detection"
+readme = "README.md"
+authors = [
+    {name = "Tamara Orlich", email = "tamara.orlich@borah.agency"}
+]
+keywords = ["pdf", "parser", "text-extraction", "document-processing"]
+license = { file = "LICENSE" }
+dependencies = [
+    "pymupdf>=1.24.0",
+    "pymupdf4llm>=0.0.17",
+    "tqdm>=4.65.0",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/BorahLabs/pdf_parser_with_header_footer/"
+Repository = "https://github.com/BorahLabs/pdf_parser_with_header_footer/"
+"Documentation" = "https://github.com/BorahLabs/pdf_parser_with_header_footer/#readme"
