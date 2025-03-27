@@ -1,0 +1,7 @@
+setup.py
+serverhackgr.egg-info/PKG-INFO
+serverhackgr.egg-info/SOURCES.txt
+serverhackgr.egg-info/dependency_links.txt
+serverhackgr.egg-info/entry_points.txt
+serverhackgr.egg-info/requires.txt
+serverhackgr.egg-info/top_level.txt
