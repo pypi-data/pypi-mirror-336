@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: VarDiff
+Version: 0.2.2
+Summary: A Python package for comparing variables and files.
+Author: QTI
+Author-email: kohanmathersmcgonnell@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
