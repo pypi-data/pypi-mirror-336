@@ -1,0 +1,14 @@
+kloud-services/__init__.py,sha256=oDm-KYUsYRchK80dLct5lmLJjhs_1PAOygMcLW7GRjw,277
+kloud-services/claude/__init__.py,sha256=Pp3Yo1lUrxwNe08t4CRZ95fpEw6zdscCsAD3wnuLfVo,121
+kloud-services/claude/api.py,sha256=orVkrTs3-XEGsuXYHaOXg7Q8X_vkr8vPEOvYpk7UFsM,1621
+kloud-services/claude/models.py,sha256=U7V3w2JvRo6qTlBMiL_rSSWYOUcFsq4zfaXVZQ8txDI,573
+kloud-services/claude/utils.py,sha256=KuD7xZr6IXt5Mog2bgAgA4iiJVNP_cu2Sbz-O4xavrg,560
+kloud-services/openai/__init__.py,sha256=CwdBg_yLAfios5jiG2mC4rpFLuPwgppQWUbt-lGmzxA,121
+kloud-services/openai/api.py,sha256=lH_mnuUAyLQJoM0XwObtCijrhYWl4f781JbQRK1mzOQ,4420
+kloud-services/openai/models.py,sha256=WcMfvfTLXzAWtQB0PjRtcO0XrNHBleTYkl2Fp6ibyy4,877
+kloud-services/openai/utils.py,sha256=KuD7xZr6IXt5Mog2bgAgA4iiJVNP_cu2Sbz-O4xavrg,560
+kloud_services-1.0.0.dist-info/licenses/LICENSE,sha256=bFU-q6MV44uAKmWF1ccWP2WQ0SBugsfbuMIYXtq_DFE,1085
+kloud_services-1.0.0.dist-info/METADATA,sha256=mWJHtQHMatj6KbWtEFPTtRgtokpCK98Iw1QcReYk5HQ,4973
+kloud_services-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kloud_services-1.0.0.dist-info/top_level.txt,sha256=R1Gmcavrx8uYFY1mzV4TkzABGcsMMv-u9qhb9l7xmtk,15
+kloud_services-1.0.0.dist-info/RECORD,,
