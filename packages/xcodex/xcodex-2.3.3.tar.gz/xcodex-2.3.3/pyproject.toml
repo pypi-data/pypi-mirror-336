@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+"fastparquet>=2024.11.0",
+"h5netcdf>=1.6.1",
+"jupyter>=1.1.1",
+"netcdf4>=1.7.2",
+"numpy>=1.26.4",
+"openpyxl>=3.1.5",
+"pandas>=2.2.3",
+"pyarrow>=19.0.1",
+"requests>=2.32.3",
+"scipy>=1.15.2",
+"setuptools>=78.1.0",
+"tables>=3.10.2",
+"tqdm>=4.67.1",
+"wheel>=0.45.1",
+"xarray>=2025.3.0"]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xcodex"
+version = "2.3.3"
+dynamic = ["keywords", "dependencies"]
+authors = [
+  {name="Henrique Fontellas Laurito", email="henrique.f.laurito@unesp.br" }
+]
+description = """This package will download and extract daily data of XCO2 from the NASA Goddard Earth Sciences (GES)
+                 Data and Information Services Center (DISC)"
+
+              Source citation: Brad Weir, Lesley Ott and OCO-2 Science Team (2022), OCO-2 GEOS Level 3 daily,
+              0.5x0.625 assimilated CO2 V10r, Greenbelt, MD, USA, Goddard Earth Sciences Data
+              and Information Services Center (GES DISC), Accessed: 10/31/2022,
+              doi: 10.5067/Y9M4NM9MPCGH"""
+
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    	"Intended Audience :: Developers",
+    	"License :: OSI Approved :: MIT License",
+		"Programming Language :: Python :: 3.12",
+    	"Operating System :: Unix",
+    	"Operating System :: MacOS :: MacOS X",
+    	"Operating System :: Microsoft :: Windows"]
+
+[project.urls]
+"Homepage" = "https://github.com/henriquefl24/xcodex"
+"Bug Tracker" = "https://github.com/henriquefl24/xcodex/issues"

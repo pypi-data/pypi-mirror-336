@@ -1,0 +1,15 @@
+fastparquet
+h5netcdf
+jupyter
+netcdf4
+numpy
+openpyxl
+pandas
+pyarrow
+requests
+scipy
+setuptools
+tables
+tqdm
+wheel
+xarray
