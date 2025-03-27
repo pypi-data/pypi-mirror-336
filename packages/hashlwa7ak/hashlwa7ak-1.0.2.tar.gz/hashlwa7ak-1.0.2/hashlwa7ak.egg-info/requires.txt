@@ -1,0 +1,4 @@
+requests
+paramiko
+beautifulsoup4
+rich

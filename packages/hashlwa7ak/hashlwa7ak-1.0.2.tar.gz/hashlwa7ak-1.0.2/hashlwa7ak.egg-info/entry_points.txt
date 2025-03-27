@@ -1,0 +1,2 @@
+[console_scripts]
+hashlwa7ak = hashlwa7ak_pkg.cli_main:main
