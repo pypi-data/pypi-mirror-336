@@ -1,0 +1,13 @@
+.gitignore,sha256=RVSan_2ZY_hV1ygp6XijHAW4KJSxSx2PvdQwg7IMLYY,3
+lrspline-1.15.1.dist-info/METADATA,sha256=VmQKKtYTg94GSrezFp_xqEzVSE6tKtfuMvFHO8GOoH0,1260
+lrspline-1.15.1.dist-info/WHEEL,sha256=2Zh1hSij1CcuTi5FPp6vVhLsvi0ka9-3AJ48UDvGbvc,100
+lrspline-1.15.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+lrspline-1.15.1.dist-info/licenses/COPYING,sha256=qi61oagjT2wQ7PSbyEt-fdXlMiyzPjIT05ziV-rqRKU,36192
+lrspline-1.15.1.dist-info/licenses/LICENSE,sha256=16WO35CzGF64znRquFqZ-nCdui-ubKfAtDhhrL-BZso,36220
+lrspline/__init__.py,sha256=cfQUvQTmjVx_5LyFY6DGU4lX6PRSXl_OoNkC1tJ91jg,34209
+lrspline/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lrspline/raw.cp311-win_amd64.pyd,sha256=w2yU9olPzywqzRH0Xrfn6IuLZGgQ4_JjYBOI8_boQ10,495616
+lrspline/raw.cpp,sha256=KK-I3saWtD1-TubD58upQsQn9r04V69sVENFDAl3CLQ,1698828
+lrspline/raw.pyi,sha256=0S6oH57VgtCHnNFFIfwDcRHOnw2J8a-ac-rjFdJPZnU,8224
+lrspline/raw.pyx,sha256=a_3uoEn44LrXEizfIzpXgJSRa4fwNrYdy3iSEj89-Nw,28315
+lrspline-1.15.1.dist-info/RECORD,,
