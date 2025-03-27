@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: bokehgraph
+Version: 1.1.0
+Summary: Interactive Graph visualization for networkX Graphs
+Project-URL: Homepage, https://github.com/luerhard/bokehgraph
+Author-email: Lukas Erhard <luerhard@googlemail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: <4.0,>=3.9
+Requires-Dist: bokeh<4.0,>=3.4.2
+Requires-Dist: networkx>=3
+Requires-Dist: numpy>=1.26; python_version >= '3.12'
+Requires-Dist: numpy>=1.7; python_version <= '3.12'
+Description-Content-Type: text/markdown
+
+# bokeh-graph
+Interactive Graph visualization for networkX Graphs
+
+# Basic Usage
+```python
+from bokehgraph import BokehGraph
+import networkx as nx
+
+graph = nx.karate_club_graph()
+
+plot = BokehGraph(graph)
+plot.draw()
+```
+
+## Jupyter Notebooks
+To show graphs inlined in Jupyter Notebooks set the `inline` parameter
+```python
+plot = BokehGraph(graph, width=300, height=300, inline=True)
+```
+
+# Full documentation
+
+I am going to write a better documentation (at some point).
+Please open issues if you do not understand the instructions.
+
+Find documentation [here](https://luerhard.github.io/bokehgraph)
