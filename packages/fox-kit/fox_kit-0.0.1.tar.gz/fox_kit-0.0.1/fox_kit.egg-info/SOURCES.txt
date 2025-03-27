@@ -1,0 +1,12 @@
+README.md
+setup.py
+fox_kit.egg-info/._PKG-INFO
+fox_kit.egg-info/._SOURCES.txt
+fox_kit.egg-info/._dependency_links.txt
+fox_kit.egg-info/._requires.txt
+fox_kit.egg-info/._top_level.txt
+fox_kit.egg-info/PKG-INFO
+fox_kit.egg-info/SOURCES.txt
+fox_kit.egg-info/dependency_links.txt
+fox_kit.egg-info/requires.txt
+fox_kit.egg-info/top_level.txt
