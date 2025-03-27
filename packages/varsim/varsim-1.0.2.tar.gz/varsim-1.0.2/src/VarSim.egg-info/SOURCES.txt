@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/VarSim/__init__.py
+src/VarSim.egg-info/PKG-INFO
+src/VarSim.egg-info/SOURCES.txt
+src/VarSim.egg-info/dependency_links.txt
+src/VarSim.egg-info/top_level.txt
+src/varsim/__init__.py
+src/varsim.egg-info/PKG-INFO
+src/varsim.egg-info/SOURCES.txt
+src/varsim.egg-info/dependency_links.txt
+src/varsim.egg-info/top_level.txt
