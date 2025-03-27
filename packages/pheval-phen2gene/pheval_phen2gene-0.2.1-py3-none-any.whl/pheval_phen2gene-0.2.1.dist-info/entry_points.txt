@@ -1,0 +1,6 @@
+[console_scripts]
+pheval-phen2gene=pheval_phen2gene.cli:main
+
+[pheval.plugins]
+phen2gene=pheval_phen2gene.runner:Phen2GenePhEvalRunner
+
