@@ -1,0 +1,138 @@
+Metadata-Version: 2.4
+Name: langmem-adapter
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Muhammad Junaid <mr.junaidshaukat@gmail.com>
+Requires-Python: >=3.13
+Requires-Dist: openai-agents>=0.0.7
+Description-Content-Type: text/markdown
+
+# langmem-adapter
+
+**langmem-adapter** is a lightweight, generic adapter for LangMem tools. It seamlessly integrates LangMem tools into your openai agents sdk agents by supporting both static (pre‑injected store) and dynamic store injection. 
+
+With dynamic mode, you can have per-invocation store creation (e.g. for database connections) and dynamically formatted namespaces based on your context.
+
+## Features
+
+- **Dynamic & Static Modes:**  
+  - *Static Mode*: Use an already‑constructed tool instance with a fixed (static) namespace.  
+  - *Dynamic Mode*: Provide a store provider (async context manager) and a factory callable so that each call gets a fresh store from a connection pool.
+- **Context-Based Namespace Formatting:**  
+  Format namespaces dynamically using a tuple of template strings. For example:  
+  `("email_assistant", "{langgraph_user_id}", "collection")`  
+  The placeholders are filled from a Pydantic context.
+- **Type Safety:**  
+  Uses Pydantic for argument validation and ensures UUIDs and JSON fields are correctly converted.
+- **Generic Context Support:**  
+  The adapter is generic over a context type (bounded to Pydantic’s `BaseModel`), ensuring your context data is correctly typed.
+
+## Installation
+
+Install via pip (assuming you publish it on PyPI):
+
+```bash
+pip install langmem-adapter
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/mjunaidca/langmem-adapter.git
+cd langmem-adapter
+pip install .
+```
+
+## Usage
+
+### Dynamic Mode Example
+
+In dynamic mode, you provide:
+- A factory callable that takes a store and a namespace and returns a new LangMem tool instance.
+- A `store_provider` that returns an async context manager yielding a fresh store.
+- A namespace template as a tuple of strings with placeholders to be filled from the context.
+
+```python
+from langmem import create_manage_memory_tool, create_search_memory_tool
+from langmem_adapter import LangMemToolAdapter  # import from your package
+from your_store_module import get_store  # your async context manager
+from pydantic import BaseModel
+
+# Define your context model.
+class UserContext(BaseModel):
+    langgraph_user_id: str
+    # add other fields as needed
+
+# Initialize the adapter for the manage memory tool.
+manage_adapter = LangMemToolAdapter(
+    lambda store, namespace=None: create_manage_memory_tool(namespace=namespace, store=store),
+    store_provider=get_store,
+    namespace_template=("email_assistant", "{langgraph_user_id}", "collection")
+)
+manage_memory_tool = manage_adapter.as_tool()
+
+# Similarly, for the search memory tool.
+search_adapter = LangMemToolAdapter(
+    lambda store, namespace=None: create_search_memory_tool(namespace=namespace, store=store),
+    store_provider=get_store,
+    namespace_template=("email_assistant", "{langgraph_user_id}", "search")
+)
+search_memory_tool = search_adapter.as_tool()
+
+# In your agent or wherever you need to use the tool, the dynamic namespace will be
+# formatted using the context (an instance of UserContext) passed in through the RunContextWrapper.
+```
+
+### Static Mode Example
+
+If you have a persistent store (with connection pooling) and a fixed namespace, you can use static mode:
+
+```python
+from langmem import create_manage_memory_tool
+from langmem_adapter import LangMemToolAdapter
+
+# Pre-create your store (with pooling) and tool.
+store = ...  # your pre-initialized store instance
+manage_memory_tool_instance = create_manage_memory_tool(namespace=("email_assistant", "collection"), store=store)
+
+adapter = LangMemToolAdapter(manage_memory_tool_instance)
+manage_memory_tool = adapter.as_tool()
+
+# This tool will use the static namespace you provided.
+```
+
+## API Reference
+
+### Class: `LangMemToolAdapter[TContext]`
+
+A generic adapter that binds a LangMem tool with a dynamic store provider and dynamic namespace formatting.
+
+**Constructor Parameters:**
+- `langmem_tool: Any`  
+  - In static mode, an already‑constructed tool instance.
+  - In dynamic mode, a factory callable that accepts a store (and optionally a namespace) and returns a tool instance.
+- `store_provider: Optional[Callable[[], Any]]`  
+  An async context manager that yields a store instance. If provided, dynamic mode is enabled.
+- `namespace_template: Optional[tuple[str, ...]]`  
+  A tuple of template strings used to dynamically construct the namespace. Placeholders in these strings (e.g. `"{langgraph_user_id}"`) are replaced with values from the context (which must be a Pydantic model).
+
+**Method: `as_tool() -> FunctionTool`**  
+Returns a FunctionTool instance that can be used by your agent.
+
+**Internal Method: `_on_invoke_tool(ctx: RunContextWrapper[TContext], args: str) -> str`**  
+Parses and validates the input arguments, converts types as needed, dynamically creates a new tool instance if in dynamic mode, and invokes the tool’s callable.
+
+## Contributing
+
+Contributions are welcome! Please submit issues or pull requests via [GitHub](https://github.com/mjunaidca/langmem-adapter).
+
+## License
+
+[MIT License](LICENSE)
+
+---
+
+This package abstracts away the complexities of dynamic store injection, context-based namespace formatting, and type-safe argument conversion. It’s small, reusable, and perfect for integrating LangMem tools into various projects.
+
+Happy coding!
+```

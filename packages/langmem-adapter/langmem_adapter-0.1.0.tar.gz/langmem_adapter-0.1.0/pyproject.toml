@@ -1,0 +1,19 @@
+[project]
+name = "langmem-adapter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Junaid", email = "mr.junaidshaukat@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.0.7",
+]
+
+[project.scripts]
+langmem-adapter = "langmem_adapter:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
