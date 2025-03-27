@@ -1,0 +1,9 @@
+pyperclip
+pyserial
+websocket-client
+nest_asyncio
+bleak
+prettytable
+keyboard_crossplatform
+requests
+psutil
