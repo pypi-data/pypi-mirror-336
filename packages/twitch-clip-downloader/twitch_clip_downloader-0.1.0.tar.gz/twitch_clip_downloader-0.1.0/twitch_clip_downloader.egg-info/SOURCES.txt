@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+twitch-clip-downloader/__init__.py
+twitch-clip-downloader/downloader.py
+twitch_clip_downloader.egg-info/PKG-INFO
+twitch_clip_downloader.egg-info/SOURCES.txt
+twitch_clip_downloader.egg-info/dependency_links.txt
+twitch_clip_downloader.egg-info/requires.txt
+twitch_clip_downloader.egg-info/top_level.txt
