@@ -1,0 +1,10 @@
+snpsnip/__init__.py,sha256=bvoLvgxlO5WuXE_3LDFR-HkvtKqK0nqe_QV3KeNIjVo,44336
+snpsnip/__main__.py,sha256=ubt6XyZvcHwdjCQ90B_U4MeP-3YJduz5GWUC9yOgkrg,27
+snpsnip/_version.py,sha256=EY1c6JeG6uVHQoQcoxYAagjmJgQQxJk7iQ23gAoevU4,511
+snpsnip/templates/index.html,sha256=VbEWEKl36w830__tSN-P07QGYZcBcXQ-q-oPCqBGXt0,77397
+snpsnip-0.0.4.dist-info/licenses/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+snpsnip-0.0.4.dist-info/METADATA,sha256=54Hi_720_YWBQ_mrd4IRa-hzsbyZrE00z9GQGqii3EA,1772
+snpsnip-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+snpsnip-0.0.4.dist-info/entry_points.txt,sha256=jX8rPe80ARYGLMT-IVUrNvtQxA150AP2TfGF59yMAdo,41
+snpsnip-0.0.4.dist-info/top_level.txt,sha256=S5SEb2LlJDcm1ZZoVTJE3gpNMHASlRZs2U-BK47OcRo,8
+snpsnip-0.0.4.dist-info/RECORD,,
