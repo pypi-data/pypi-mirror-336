@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: PyMolVis
+Version: 0.3.0
+Summary: A program to visualize, create, and generate high-quality images of molecules.
+Home-page: https://gitlab.com/williammorrillo/molvis
+Author: W. T. Morrillo
+Project-URL: Bug Tracker, https://gitlab.com/williammorrillo/molvis/-/issues
+Project-URL: Documentation, https://gitlab.com/williammorrillo.gitlab.io/molvis
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: PyQt5
+Requires-Dist: pyvista
+Requires-Dist: pyvistaqt
+Requires-Dist: xyz_py
+Requires-Dist: vasp_suite
+Requires-Dist: Cython
+Requires-Dist: spin_phonon_suite
+Requires-Dist: gaussian_suite
+Requires-Dist: mendeleev
+Requires-Dist: ase
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: pyscf
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# MolVis
+
+`MolVis` is a program for molecular structure visualisation, creation, and generation of high quality rendered figures
+
+# Installation
+
+Clone the repository and install using setup.py
+
+```
+pip install .
+```

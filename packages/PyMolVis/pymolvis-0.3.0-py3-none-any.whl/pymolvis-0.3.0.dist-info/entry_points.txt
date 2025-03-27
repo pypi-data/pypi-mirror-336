@@ -1,0 +1,2 @@
+[console_scripts]
+PyMolVis = pymolvis.PyMolVis:main
