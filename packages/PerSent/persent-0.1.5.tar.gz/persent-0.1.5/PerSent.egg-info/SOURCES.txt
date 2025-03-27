@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+PerSent/__init__.py
+PerSent/analyzer.py
+PerSent.egg-info/PKG-INFO
+PerSent.egg-info/SOURCES.txt
+PerSent.egg-info/dependency_links.txt
+PerSent.egg-info/requires.txt
+PerSent.egg-info/top_level.txt
+tests/test_basic.py
