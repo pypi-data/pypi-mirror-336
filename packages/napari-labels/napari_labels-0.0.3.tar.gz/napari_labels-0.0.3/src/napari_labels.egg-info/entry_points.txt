@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-labels = napari_labels:napari.yaml
