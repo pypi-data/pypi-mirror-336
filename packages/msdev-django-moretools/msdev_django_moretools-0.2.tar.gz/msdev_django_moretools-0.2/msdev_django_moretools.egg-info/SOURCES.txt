@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+django_shortcuts/__init__.py
+django_shortcuts/management/__init__.py
+django_shortcuts/management/comandos/__init__.py
+django_shortcuts/management/comandos/mm.py
+msdev_django_moretools.egg-info/PKG-INFO
+msdev_django_moretools.egg-info/SOURCES.txt
+msdev_django_moretools.egg-info/dependency_links.txt
+msdev_django_moretools.egg-info/requires.txt
+msdev_django_moretools.egg-info/top_level.txt
