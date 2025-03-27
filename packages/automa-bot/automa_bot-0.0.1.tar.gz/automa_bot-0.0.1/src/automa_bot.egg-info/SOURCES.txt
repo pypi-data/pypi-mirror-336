@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/automa/bot/__init__.py
+src/automa/bot/webhook.py
+src/automa_bot.egg-info/PKG-INFO
+src/automa_bot.egg-info/SOURCES.txt
+src/automa_bot.egg-info/dependency_links.txt
+src/automa_bot.egg-info/top_level.txt
+tests/test_webhook.py
