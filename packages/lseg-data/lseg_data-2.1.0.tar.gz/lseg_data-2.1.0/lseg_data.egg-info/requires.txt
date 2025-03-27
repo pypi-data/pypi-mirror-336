@@ -1,0 +1,15 @@
+appdirs~=1.4.4
+pyee<=12,>=9.0.4
+httpx<0.28,>=0.18.0
+httpcore<1.1.0
+numpy
+pandas
+python-dateutil
+requests
+scipy
+tenacity
+watchdog
+websocket-client!=1.5.0,!=1.5.2,>=1.5
+pyhumps<4.0.0,>=3.0.2
+jinja2<4.0.0,>=3.0.3
+simplejson
