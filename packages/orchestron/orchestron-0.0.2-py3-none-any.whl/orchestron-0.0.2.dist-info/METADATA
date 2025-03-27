@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: orchestron
+Version: 0.0.2
+Project-URL: Documentation, https://github.com/Sam Foreman/orchestron#readme
+Project-URL: Issues, https://github.com/Sam Foreman/orchestron/issues
+Project-URL: Source, https://github.com/Sam Foreman/orchestron
+Author-email: Sam Foreman <saforem2@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: torch>=2.6.0
+Description-Content-Type: text/markdown
+
+# orchestron
+
+[![PyPI - Version](https://img.shields.io/pypi/v/orchestron.svg)](https://pypi.org/project/orchestron)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/orchestron.svg)](https://pypi.org/project/orchestron)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install orchestron
+```
+
+## License
+
+`orchestron` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
