@@ -1,0 +1,10 @@
+dist/
+__pycache__/
+test.py
+venv/
+.ipynb_checkpoints/
+.env
+
+# documentation
+docs/_build
+.pytest_cache
