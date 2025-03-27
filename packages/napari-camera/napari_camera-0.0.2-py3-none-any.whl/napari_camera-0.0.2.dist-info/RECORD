@@ -1,0 +1,9 @@
+napari_camera/__init__.py,sha256=MmDbDuqjBFD2ahNilcHrhRjXTuxSZPCWumK3zzeFtdE,99
+napari_camera/_widget.py,sha256=kVmfnpKmyA-leW7itOjnlKYnu0GgadbcRYflFQ5EKjg,16846
+napari_camera/napari.yaml,sha256=t0LDtwOKBZqHjg9i7v58MWnjfjsm0apAktVkXpPQ_Hc,507
+napari_camera-0.0.2.dist-info/licenses/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+napari_camera-0.0.2.dist-info/METADATA,sha256=WTanvOmo8Qc4xAuhEa7PCixgCmJWhlyOVek085a-Xkc,15808
+napari_camera-0.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+napari_camera-0.0.2.dist-info/entry_points.txt,sha256=ks06Y6h6tzA8bhdiJcnwzhWHGoVD-pbL9KxQs-UxstA,60
+napari_camera-0.0.2.dist-info/top_level.txt,sha256=GQvQqRzj3q8WapTbXtmzPPi_dHZV3Z4rA5-10VYCZTQ,14
+napari_camera-0.0.2.dist-info/RECORD,,
