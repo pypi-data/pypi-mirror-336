@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: maravilla
+Version: 0.0.0
+Summary: A small and simple python library which provides basic to advanced math functionality
+License: MIT License
+        
+        Copyright (c) 2025 chouettevan
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: repository, https://github.com/chouettevan/Projet-LLL
+Keywords: math,integral,functions,calculus,derivative,fourier,gcd
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Algorithme LLL
+
+
+## Description:
+### Equipe:
+    Carlos-Ariel Vanegas,habile en pogrammation dans de multiples languages.  
+### Idee:
+    une Librairie implementant l'algorithme LLL et permettant de generer des Lattices
+### Utillite: 
+    Les Lattices sont etudies entres autres en cryptographie. leur comprehension pourrait permettre de 
+### Cas d'utillisation:
+    servira a visualiser des Lattices et a completer de la recherche sur le sujet
+### Public Cible:   
+    Chercheurs en mathemathiques et potentiellement en Cryptographie
+### Lien avec d'autres disciplines
+    Le projet a un fort lien avec les mathemathiques: il s'agit la de son utilite principale
+## Technologies utilises
+
+### Langages de programmation:
+  - [Python](https://python.org)
+  - C  pour certaines parties critiques
+  - [Taichi](https://www.taichi-lang.org) (Librairie) pour certains graphismes
+  - Librairie [PyQt6](https://pypi.org/project/PyQt6) pour les exemples d'utilisation
+### Difficultes
+  - Comprehension des mathemathiques necessaires
+  - Gestion de memoire et des interfaces entre langages de programmation
+  - Implementation performante des algorithmes
+ 
+
+
+ 
