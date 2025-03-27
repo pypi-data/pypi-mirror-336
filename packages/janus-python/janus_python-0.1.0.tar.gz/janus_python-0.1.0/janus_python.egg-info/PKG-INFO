@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: janus-python
+Version: 0.1.0
+Summary: Track and Verify LLM Actions
+Author-email: Jet Wu <jet@withjanus.com>
+Project-URL: Homepage, https://github.com/jw-source/janus-python
+Project-URL: Repository, https://github.com/jw-source/janus-python
+Project-URL: Issues, https://github.com/jw-source/janus-python/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.20.0
+Requires-Dist: psutil>=5.6.0
+
+# janus-python
+
+Track and Verify LLM function calls with Janus.
+
+## Installation
+
+```bash
+pip install janus-python
+```
+
+```python
+from janus import Janus
+
+load_dotenv()
+
+def add(x: int, y: int) -> int:
+    return x + y
+
+def multiply(x: int, y: int) -> int:
+    return x * y
+
+janus = Janus(
+    api_key=os.getenv("JANUS_API_KEY"), # Get this from withjanus.com
+    timeout=10, # Automatically reject in 10 seconds
+)
+
+add = janus.track(add)
+multiply = janus.verify(multiply)
+```

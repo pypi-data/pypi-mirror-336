@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+janus/__init__.py
+janus/janus.py
+janus_python.egg-info/PKG-INFO
+janus_python.egg-info/SOURCES.txt
+janus_python.egg-info/dependency_links.txt
+janus_python.egg-info/requires.txt
+janus_python.egg-info/top_level.txt
