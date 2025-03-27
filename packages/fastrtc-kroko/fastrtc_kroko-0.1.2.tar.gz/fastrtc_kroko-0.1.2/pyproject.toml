@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+  "hatchling",
+  "hatch-requirements-txt",
+  "hatch-fancy-pypi-readme>=22.5.0",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastrtc-kroko"
+version = "0.1.2"
+description = "The realtime communication library for Python. With support for Kroko-ASR model."
+license = "MIT"
+authors = [{"name" = "Siddharth Garg", email = "YOUREMAIL@domain.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+  "streaming",
+  "webrtc",
+  "realtime",
+  "machine learning",
+  "computer vision",
+  "audio",
+  "video",
+  "image",
+  "audio processing",
+  "video processing",
+  "gradio-custom-component",
+]
+dependencies = [
+    "fastrtc[vad, stt]",
+    "librosa",
+    "numpy>=2.0.2",
+    "sherpa-onnx",
+    "click",
+    "torch",
+    "python-dotenv"
+]
+
+[project.urls]
+repository = "https://github.com/sgarg26/fastrtc-kroko"
+issues = "https://github.com/sgarg26/fastrtc-kroko/issues"
