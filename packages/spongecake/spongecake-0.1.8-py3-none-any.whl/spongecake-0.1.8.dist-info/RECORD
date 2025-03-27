@@ -1,0 +1,9 @@
+spongecake/__init__.py,sha256=SgOfZZgOpR93p8JBsKmV9tX7eRxuVV8WUYhFUMs-nGI,135
+spongecake/_exceptions.py,sha256=o5HOrnY8b4fICt_edgpXTkqWEZkxtWKZGNTsJCT2qEk,46
+spongecake/agent.py,sha256=bDfkc4VJGrssbTv9JQkEreifQDSxfzu_B6HGtsEZMjw,41260
+spongecake/constants.py,sha256=HqP6IFd255eoaeuNbmVw2N9l0d8daMhMa4zW8d6W20Q,428
+spongecake/desktop.py,sha256=6tmraAVtKRtOPcqo4NX68or0MaXYzy3aFLAiO4ZbWuc,42022
+spongecake-0.1.8.dist-info/METADATA,sha256=H9SkryCIyl4ccWYHrMtILxOr0m0mhNW2X3Ux4oAP0Qc,25987
+spongecake-0.1.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spongecake-0.1.8.dist-info/top_level.txt,sha256=6cyFMT7Z2tf8z3HfIPXXIRFhgO97iQlFMUE-lRSo7i8,11
+spongecake-0.1.8.dist-info/RECORD,,
