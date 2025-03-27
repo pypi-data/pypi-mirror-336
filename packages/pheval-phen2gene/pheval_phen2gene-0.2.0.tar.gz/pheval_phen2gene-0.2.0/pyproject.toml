@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "pheval-phen2gene"
+version = "0.2.0"
+description = ""
+authors = ["Yasemin Bridges <y.bridges@qmul.ac.uk>"]
+readme = "README.md"
+packages = [{include = "pheval_phen2gene", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0.0"
+click = "^8.1.3"
+pandas = "^1.5.2"
+oaklib = ">=0.5.6"
+docker = "^6.0.1"
+matplotlib = "^3.7.1"
+numpy = "^1.24.2"
+wheel = "^0.40.0"
+pheval = "^0.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pylint = "^2.15.6"
+pycodestyle = "^2.10.0"
+coverage = "^6.5.0"
+
+
+[tool.pytest.ini_options]
+ pythonpath = [
+     "src"
+ ]
+
+[tool.poetry.scripts]
+pheval-phen2gene = "pheval_phen2gene.cli:main"
+
+[tool.poetry.plugins."pheval.plugins"]
+phen2gene = "pheval_phen2gene.runner:Phen2GenePhEvalRunner"
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+include_trailing_comma = true
+reverse_relative = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
