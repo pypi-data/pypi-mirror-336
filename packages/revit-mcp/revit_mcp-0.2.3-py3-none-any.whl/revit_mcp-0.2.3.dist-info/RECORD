@@ -1,0 +1,13 @@
+revit_mcp-0.2.3.dist-info/licenses/LICENSE,sha256=Q2nmhnMkeJbt3sOxk25h-h8g6fvlXg6UID75-UW2LWU,1090
+xml_revit_mcp/__init__.py,sha256=lZI-BSDr159KDI3ort4Who8wV8lPQbublmwklCsr_tw,777
+xml_revit_mcp/config.py,sha256=DCURQexiVAgowX2CnxDZTrxvcMk-LFtkqkTDwDmUldg,1778
+xml_revit_mcp/prompt.py,sha256=qDXRRJ2rIjdR_vpupZRgbbuwaBP6n-H9ZqAKH0wvCac,11766
+xml_revit_mcp/revit_connection.py,sha256=Tvx3c3pV28BLxC-vCG5-EC3bdI1SDwCuhEAJgRGrwdI,5725
+xml_revit_mcp/rpc.py,sha256=clVy6y6zyb6Jv7qW-ns6IjrmQwGpQScjaEte6KuGojA,1336
+xml_revit_mcp/server.py,sha256=ls97QsGE8yMA6M6QZWdxSN9Iykoq3pCCOn7aJykS_w4,3389
+xml_revit_mcp/tools.py,sha256=Dr4wY_JyQlgtrC2-AiJ-TEhq5bz0xllqEbdYMc5KTiY,48092
+revit_mcp-0.2.3.dist-info/METADATA,sha256=up1-v4uJb4WGn8nh1z4uFS3HtDtUUoVoRQEDl0F032I,3020
+revit_mcp-0.2.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+revit_mcp-0.2.3.dist-info/entry_points.txt,sha256=4Gs32GRlI3sfuSSJ19FJtvF1pxz4R-Lmi1vkIihXSPU,56
+revit_mcp-0.2.3.dist-info/top_level.txt,sha256=naVFaWlW4zypSgNk_RrdzNa4QUpcBDecFxOc0bVnAe0,14
+revit_mcp-0.2.3.dist-info/RECORD,,
