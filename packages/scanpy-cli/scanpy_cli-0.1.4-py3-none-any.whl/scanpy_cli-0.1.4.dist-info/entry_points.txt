@@ -1,0 +1,2 @@
+[console_scripts]
+scanpy-cli = scanpy_cli:main

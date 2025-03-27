@@ -1,0 +1,14 @@
+scanpy_cli/__init__.py,sha256=-L9eblPd8odCMLX5yjy0KQ1WWMOIGK8Ov9aGMxmy1fo,357
+scanpy_cli/pl/__init__.py,sha256=ZCwOunqPUZWLxk50gb7nBZx1APQ3uGV7gKFNOto8Kmc,167
+scanpy_cli/pl/umap.py,sha256=-xqsLNkNkHst1_6_31ioLqoSUS9C-5R7LRK4sao-4Ss,7989
+scanpy_cli/pp/__init__.py,sha256=2RtHMyyGOsQvrYEVSpV4tWzz1jEllT7ks2XBWzWrTxE,318
+scanpy_cli/pp/neighbors.py,sha256=jV7ZFgUD09JbTvxsSh1l8aR8mM7R6uw8CBmkUoamRR4,3301
+scanpy_cli/pp/pca.py,sha256=HuOW2ukChzNIO6WIJiLI0xsehfFAVN51MHC5yaksJd4,3550
+scanpy_cli/pp/regress_out.py,sha256=TW9LRPMBpB9gGhXzPXtySm9JOMsQxUw8t2F73yjooJM,1522
+scanpy_cli/tl/__init__.py,sha256=1o8RiN-Jq4DAM8fePGRZzopLTW4K9PPBai9oWTBzVys,227
+scanpy_cli/tl/leiden.py,sha256=bMQjQbmafMYqkH5pXxBlxrx2ZKHj6p4zUM-wFj3ansc,3837
+scanpy_cli/tl/umap.py,sha256=vDR0AGVJYJrgRbf45q7n1pnX_Y11vNc1dSSUA47FQAU,3861
+scanpy_cli-0.1.4.dist-info/METADATA,sha256=hY3quXhoSXWLN3MlXherEXoSF1AQLvJbAbX9A2Srwxc,4426
+scanpy_cli-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scanpy_cli-0.1.4.dist-info/entry_points.txt,sha256=lG8hcXY84qhWc_NILvIaEV2Ur_G_Lr0PCuqO7-9ROTs,47
+scanpy_cli-0.1.4.dist-info/RECORD,,
