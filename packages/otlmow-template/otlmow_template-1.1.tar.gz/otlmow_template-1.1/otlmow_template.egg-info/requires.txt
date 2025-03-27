@@ -1,0 +1,2 @@
+otlmow-converter>=1.10
+otlmow-modelbuilder>=0.25
