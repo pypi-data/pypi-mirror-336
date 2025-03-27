@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: groupdocs-watermark-net
+Version: 25.3
+Summary: GroupDocs.Watermark is a powerful document watermarking API that allows to add image and text watermarks. Additionally, it can search and remove the watermarks which were added to the documents by other third-party software.
+Home-page: https://products.groupdocs.com/watermark
+Author: GroupDocs
+License: Other/Proprietary License
+Keywords: watermark,digital-watermarking,text-watermark,image-watermark,pdf-watermark,pptx-docx-xlsx,png,word,excel,powerpoint,visio,image
+Platform: linux_x86_64
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5,<3.14
+Description-Content-Type: text/markdown
+
+# File Watermark Python API
+
+[Product Page](https://products.groupdocs.com/watermark/python-net/) | [Docs](https://docs.groupdocs.com/watermark/python-net/) | [Demos](https://products.groupdocs.app/watermark/family) | [API Reference](https://references.groupdocs.com/watermark/) | [Blog](https://blog.groupdocs.com/category/watermark/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/watermark) | [Temporary License](https://purchase.groupdocs.com/temporary-license) | [Release Notes](https://releases.groupdocs.com/watermark/python-net)
+
+[GroupDocs.Watermark for Python via .NET](https://products.groupdocs.com/watermark/python-net/) is a powerful document watermarking API that allows to add image and text watermarks. Additionally, API can search and remove the watermarks which were already added to the documents by other third-party software.
+
+>GroupDocs.Watermark for Python requires you to use python programming language. For Node.js, Java and .NET languages, we recommend you get [GroupDocs.Watermark for Node.js](https://products.groupdocs.com/watermark/nodejs-java/), [GroupDocs.Watermark for Java](https://products.groupdocs.com/watermark/java/) and [GroupDocs.Watermark for .NET](https://products.groupdocs.com/watermark/net/), respectively.
+
+## View API Features
+
+GroupDocs.Watermark for Python via .NET provides these popular features:
+- Add text and image watermark to supported document formats.
+- Search and remove text and image watermarks.
+- Search watermarks in particular objects.
+- Apply a watermark to images inside a document.
+- Work with existing watermark objects.
+- Extract information of watermark objects in a document.
+- Perform PDF document rasterization.
+- Fetch document basic information.
+- Search watermarks by text formatting (font, color, etc.).
+- Set background image for charts in Excel and PowerPoint documents.
+- Work with PDF and email attachments.
+
+
+## Supported File Formats
+
+With GroupDocs.Watermark for Python via .NET, developers and applications can process files of the following categories: 
+
+- Microsoft Word: DOC, DOT, DOCX, DOCM, DOTX, DOTM, RTF
+- Microsoft Excel: XLSX, XLSM, XLTM, XLT, XLTX, XLS
+- Microsoft PowerPoint: PPTX, PPTM, PPSX, PPSM, POTX, POTM, PPT, PPS
+- Microsoft Visio: VSD, VDX, VSDX, VSTX, VSS, VSSX, VSDM, VSSM, VSTM, VTX, VSX
+- OpenOffice: ODT
+- Email: EML, EMLX, OFT, MSG
+- Fixed Layout: PDF
+- Image: BMP, GIF, JPG/JPEG/JPE, JP2, PNG, TIFF, WEBP
+
+## Platform Independence
+
+GroupDocs.Watermark for Python via .NET can be used to develop 32-bit and 64-bit applications for different operating systems (such as Windows, Linux and macOS) where Python 3.5 or later is installed. 
+
+## Get Started
+
+Ready to try GroupDocs.Watermark for Python via .NET?
+
+Fetch the package and install **GroupDocs.Watermark**. Run this command: `pip install groupdocs-watermark-net`
+
+If you already have **GroupDocs.Watermark** installed and want to get the latest version, 
+you have to run `pip install --upgrade groupdocs-watermark-net` instead. 
+
+Check out GroupDocs.Watermark for Python for .NET [documentation](http://docs.groupdocs.com/watermark/python-net/)).  
+
+## Add a Text Watermark to a Document
+
+```py
+import groupdocs.watermark as gw
+import groupDocs.watermark.watermarks as gwo
+
+# Adding text watermark in the pdf file
+with gw.Watermarker("input.pdf") as watermarker:
+	font = gwo.Font("Arial", 36.0)
+	watermark = gwo.TextWatermark("top secret", font)
+	watermark.x = 100.0;
+	watermark.y = 250.0;
+
+    watermarker.add(watermark)
+    watermarker.save("out.pdf");
+```
+
+[Product Page](https://products.groupdocs.com/watermark/python-net/) | [Docs](https://docs.groupdocs.com/watermark/python-net/) | [Demos](https://products.groupdocs.app/watermark/family) | [API Reference](https://references.groupdocs.com/watermark/) | [Blog](https://blog.groupdocs.com/category/watermark/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/watermark) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
+
