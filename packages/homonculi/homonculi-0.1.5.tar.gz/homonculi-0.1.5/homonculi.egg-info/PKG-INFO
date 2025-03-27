@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: homonculi
+Version: 0.1.5
+Summary: A simulation tool for emulating students taking quizzes.
+Author-email: Austin Cory Bart <acbart@udel.edu>
+License: Copyright (c) 2025 Austin Cory bart
+        
+        This software is not currently licensed for public use.
+        
+        You may not copy, modify, distribute, or use this software, in whole or in part, for any purpose without explicit written permission from the author.
+        
+        A formal license will be provided in a future release.
+        
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: markdown
+Requires-Dist: canvasapi
+Requires-Dist: python-docx
+Requires-Dist: openai
+Requires-Dist: tqdm~=4.66.2
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml~=6.0.1
+Requires-Dist: requests~=2.31.0
+Requires-Dist: fpdf2
+Requires-Dist: pytest
+Requires-Dist: requests-cache
+Requires-Dist: setuptools~=69.0.3
+Requires-Dist: bakery
+Requires-Dist: pedal
+Requires-Dist: python-frontmatter
+Dynamic: license-file
+
+# Homonculi
+
+This project is meant for running quizzes through an LLM. We ask the LLM to take the quiz, grade them, and ask them to evaluate whether they agree with the feedback. This is mostly to help us identify issues in exams before we deploy them.
