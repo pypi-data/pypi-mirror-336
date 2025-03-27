@@ -1,0 +1,3 @@
+amapy-contents==1.*
+amapy-pluggy==1.*
+amapy-utils==1.*
