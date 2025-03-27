@@ -1,0 +1,5 @@
+dbnd==1.0.27.18
+luigi<=3.0.2
+
+[test]
+docutils
