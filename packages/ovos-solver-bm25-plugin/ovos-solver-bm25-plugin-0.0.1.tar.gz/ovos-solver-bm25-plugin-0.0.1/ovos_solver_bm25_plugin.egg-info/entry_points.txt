@@ -1,0 +1,15 @@
+[neon.plugin.solver]
+ovos-solver-bm25-freebase-plugin = ovos_bm25_solver.demo:BM25FreebaseQASolver
+ovos-solver-bm25-squad-plugin = ovos_bm25_solver.demo:BM25SquadQASolver
+
+[opm.embeddings]
+ovos-json-embeddings-plugin = ovos_bm25_solver.embed:JsonEmbeddingsDB
+
+[opm.embeddings.text]
+ovos-bm25-embeddings-plugin = ovos_bm25_solver.embed:BM25TextEmbeddingsStore
+
+[opm.solver.multiple_choice]
+ovos-choice-solver-bm25 = ovos_bm25_solver.base:BM25MultipleChoiceSolver
+
+[opm.solver.reading_comprehension]
+ovos-evidence-solver-bm25 = ovos_bm25_solver.base:BM25SolverPlugin
