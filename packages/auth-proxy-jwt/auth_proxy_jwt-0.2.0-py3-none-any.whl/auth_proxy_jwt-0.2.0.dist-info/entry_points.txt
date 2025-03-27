@@ -1,0 +1,2 @@
+[auth_proxy.plugins]
+jwt = auth_proxy_jwt.plugin:JWTAuthPlugin
