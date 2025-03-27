@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: Raney
+Version: 1.0.0.6
+Summary: Essa biblioteca foi desenvolvida para ser mais fácil a criação de combinações rápidas.
+Home-page: https://github.com/R0htg0r
+Author: Botocudo
+Author-email: osvaldo.pedreiro.ecaminhoneiro@gmail.com
+License: MIT
+Keywords: Python3,Python2,Python,Raney,Password,Combinações,API Password
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
+
+## Nivel de possiveis combinacoes.
+* Classe A = Minusculo
+* Classe B = Numerico.
+* Classe C = Maiusculo, Minusculo e Numero.
+
+## Tamanho e Unidade das frases.
+* Tamanho = Se nao for fornecido o tamanho da frase, logo sera 20 caracteres.
+* Unidades = Se nao for fornecido a unidade da frase, logo sera 1 combinacao.
+
+## Como usar, exemplo:
+```
+import Raney
+
+Password = Raney.criar(0, classe="C")
+print(" Sua senha: " + Password)
+```
+``` Sua senha: vPgZYy7g4MNFiuyhb2m3 ```
+
+## Segundo exemplo:
+```
+import Raney
+
+Password = Raney.criar(0, classe="C", tamanho=40, unidades=1)
+print(" Sua senha: " + Password)
+```
+``` Seu senha: vPgZYy7g4MNFiuyhb2m3VuEHPqbedzIidW5QoXPc ```
+
+## Terceiro exemplo:
+```
+import Raney
+
+Password = Raney.criar(0, classe="B", tamanho=40, unidades=1)
+print(" Sua senha: " + Password)
+```
+``` Seu senha: 7953534152702352984373528086301837196322 ```
+
+# Saiba mais:
+* Discord: https://discord.gg/CHsnjZB3Ec
