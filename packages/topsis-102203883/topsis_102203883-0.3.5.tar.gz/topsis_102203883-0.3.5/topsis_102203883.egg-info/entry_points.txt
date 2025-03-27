@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-102203883 = topsis_102203883.__main__:result
