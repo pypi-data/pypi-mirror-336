@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: pos-json-decoder
+Version: 0.0.1
+Summary: A JSON Decoder with document position annotated elements
+Author-email: Andrew Allen <a2intl@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/a2intl/pos-json-decoder
+Project-URL: Issues, https://github.com/a2intl/pos-json-decoder/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: File Formats :: JSON
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# pos-json-decoder: A JSON Decoder with document position annotated elements
+
+An adaptation of JSONDecoder that records the document position of every JSON element parsed,
+which can be accessed via a `.jsonpos` attribute on the parsed elements.
+ 
+See [the python source](src/pos_json_decoder/__init__.py) for full documentation and usage.
