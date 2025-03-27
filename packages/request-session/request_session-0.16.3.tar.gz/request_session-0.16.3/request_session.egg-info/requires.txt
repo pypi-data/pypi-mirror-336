@@ -1,0 +1,12 @@
+requests
+simplejson
+structlog
+
+[test]
+flask
+pytest
+pytest-cov
+pytest-mock
+more-itertools
+structlog
+werkzeug
