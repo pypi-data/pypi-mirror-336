@@ -1,0 +1,3 @@
+[console_scripts]
+tap-mailchimp=tap_mailchimp.tap:TapMailchimp.cli
+
