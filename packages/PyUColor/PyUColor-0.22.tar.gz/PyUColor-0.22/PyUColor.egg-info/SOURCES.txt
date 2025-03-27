@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyUColor/__init__.py
+PyUColor/color.py
+PyUColor.egg-info/PKG-INFO
+PyUColor.egg-info/SOURCES.txt
+PyUColor.egg-info/dependency_links.txt
+PyUColor.egg-info/top_level.txt
