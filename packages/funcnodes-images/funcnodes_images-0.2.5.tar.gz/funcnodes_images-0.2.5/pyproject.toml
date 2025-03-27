@@ -1,0 +1,55 @@
+[project]
+name = "funcnodes-images"
+version = "0.2.5"
+description = "Basic functionalities to work with images in Funcnodes"
+readme = "README.md"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Intended Audience :: Education", "Intended Audience :: Science/Research", "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",]
+requires-python = ">=3.11"
+dependencies = [
+ "funcnodes>=0.5.36",
+ "numpy",
+ "pillow",
+ "funcnodes-numpy",
+]
+[[project.authors]]
+name = "Julian Kimmig"
+email = "julian.kimmig@linkdlab.de"
+
+[dependency-groups]
+dev = [
+ "funcnodes-module>=0.2.9",
+ "pre-commit>=4.2.0",
+ "pytest>=8.3.5",
+]
+
+[build-system]
+requires = [ "setuptools>=42",]
+build-backend = "setuptools.build_meta"
+
+[project.license]
+text = "AGPL-3.0"
+
+[project.urls]
+homepage = "https://github.com/Linkdlab/funcnodes_images"
+source = "https://github.com/Linkdlab/funcnodes_images"
+tracker = "https://github.com/Linkdlab/funcnodes_images/issues"
+download = "https://pypi.org/project/funcnodes-images/#files"
+
+[project.entry-points."funcnodes.module"]
+module = "funcnodes_images"
+shelf = "funcnodes_images:NODE_SHELF"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.poetry.plugins."funcnodes.module"]
+module = "funcnodes_images"
+shelf = "funcnodes_images:NODE_SHELF"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+funcnodes-module = "^0.1.22"

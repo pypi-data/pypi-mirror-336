@@ -1,0 +1,4 @@
+funcnodes>=0.5.36
+numpy
+pillow
+funcnodes-numpy
