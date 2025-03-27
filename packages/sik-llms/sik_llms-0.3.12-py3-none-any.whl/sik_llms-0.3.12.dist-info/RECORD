@@ -1,0 +1,13 @@
+sik_llms/__init__.py,sha256=nvvg-O9Sichq1p4vVfRZQhAcds2wW5HZlESjd4Q0bug,3415
+sik_llms/anthropic.py,sha256=aDxro6743oniHLUhs-L11y1gPey0D5DobZNoO580z5w,24012
+sik_llms/mcp_manager.py,sha256=kKfp0lej87c0Lwpa0pB_aeJZfXcArUYY20oQrCblaTQ,12463
+sik_llms/models_base.py,sha256=joqMHOyPxn1JRGCy_Q9wkizMN2wOJbIzW1X5wvAExP0,35250
+sik_llms/openai.py,sha256=84z2a74E342bcorTQvdH2fD8Xb_y6371Yp4_xIsPqDg,22802
+sik_llms/reasoning_agent.py,sha256=4W0r8wqjUAoC8Pb0g4Sw9Mjdm9_aHVIr0j8SrHBLZlE,25292
+sik_llms/utilities.py,sha256=iC1cRpP8Ud9Vq3ZdRjtQ7jAeAUIToQumQH_d4g8Um7w,9336
+sik_llms/prompts/final_answer_prompt.txt,sha256=yylphFcWihSk-oW3L4mjLyHCf1aF6Fb0s6nF2SXmoAg,163
+sik_llms/prompts/reasoning_prompt.txt,sha256=BpBr0S5q4WvjI4PLe80l6jy66ABnjAFwpFhUrO14Cv0,1221
+sik_llms-0.3.12.dist-info/METADATA,sha256=Hgvh612YY_Q9ISuBdbFz_0GS-9w2QBK3B63UQ4y4BYo,1743
+sik_llms-0.3.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sik_llms-0.3.12.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sik_llms-0.3.12.dist-info/RECORD,,
