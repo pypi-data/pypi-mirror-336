@@ -1,0 +1,12 @@
+nonebot_plugin_animepush/__init__.py,sha256=hn0LXaNUhdjVS4fGIZwnrMHUGB-lxgOJGcUDJFr7SjQ,4421
+nonebot_plugin_animepush/config.py,sha256=sgLMSOjXfspgS4voUeXqMtma_vhiw55fuQm2m1oCpjo,679
+nonebot_plugin_animepush/model.py,sha256=BHCuNkldcLchYObNXD03OW8b2W7HKsRHXMb8IP2q1Og,1199
+nonebot_plugin_animepush/utils.py,sha256=ViOJ7nzZxybj0bFCE9Z8E77L2DYG4kDIcdQfAOZxOqQ,24820
+nonebot_plugin_animepush/templates/anime_schedule.html,sha256=JHDYmJSLPAkqYR3knUpYlUMnA3qVJTs2pbAvMFP5N5I,10794
+nonebot_plugin_animepush/templates/footer.html,sha256=BY3Z1jZid38pBeg6nVH4KzdyMu4Xx13-HZNwSiy1jyA,1912
+nonebot_plugin_animepush/templates/header.html,sha256=OXmXzGQgSEywgxafXqrJLKcAXptKHZbUzV4x7YbRz7w,7539
+nonebot_plugin_animepush-0.0.3.dist-info/LICENSE,sha256=Zt-M7kXrrNe-7DRSqZOxoOnnyA5C8fT_L0lbwAP51yI,1085
+nonebot_plugin_animepush-0.0.3.dist-info/METADATA,sha256=O3CpNLU1TD2MrCaVzxfNzPS3gPXHw2ZlV28cQsFfLJA,2686
+nonebot_plugin_animepush-0.0.3.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+nonebot_plugin_animepush-0.0.3.dist-info/top_level.txt,sha256=R67-Ofq6va-o0csMXcEv7u41WDbNQfYPIDdamo3w0Tk,25
+nonebot_plugin_animepush-0.0.3.dist-info/RECORD,,
