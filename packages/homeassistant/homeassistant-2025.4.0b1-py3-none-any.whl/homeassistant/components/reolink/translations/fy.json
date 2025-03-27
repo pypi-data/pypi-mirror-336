@@ -1,0 +1,90 @@
+{
+    "entity": {
+        "binary_sensor": {
+            "crossline_dog_cat": {
+                "state": {
+                    "off": "Net detektearre"
+                }
+            },
+            "crossline_person": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "crossline_vehicle": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "forgotten_item": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "intrusion_dog_cat": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "intrusion_person": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "intrusion_vehicle": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "linger_dog_cat": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "linger_person": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "linger_vehicle": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            },
+            "taken_item": {
+                "state": {
+                    "off": "Net detektearre",
+                    "on": "Detektearre"
+                }
+            }
+        },
+        "select": {
+            "scene_mode": {
+                "state": {
+                    "off": "\u00dat"
+                }
+            }
+        },
+        "sensor": {
+            "day_night_state": {
+                "state": {
+                    "night": "Swart & wyt"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "config_entry_not_ready": {
+            "message": "Flater bij it ynstellen fan {host}: {err}"
+        }
+    }
+}

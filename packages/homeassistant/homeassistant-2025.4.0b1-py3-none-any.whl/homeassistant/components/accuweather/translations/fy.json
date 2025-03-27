@@ -1,0 +1,18 @@
+{
+    "entity": {
+        "sensor": {
+            "air_quality": {
+                "state": {
+                    "very_unhealthy": "Tige \u00fbns\u00fbn"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "very_unhealthy": "Tige \u00fbns\u00fbn"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "exceptions": {
+        "item_not_found": {
+            "message": "Unable to find to-do list item: {item}"
+        },
+        "update_field_not_supported": {
+            "message": "Entity does not support setting field: {service_field}"
+        }
+    },
+    "services": {
+        "add_item": {
+            "fields": {
+                "description": {
+                    "description": "A more complete description of the to-do item than provided by the item name.",
+                    "name": "Description"
+                },
+                "due_date": {
+                    "description": "The date the to-do item is expected to be completed.",
+                    "name": "Due date"
+                },
+                "due_datetime": {
+                    "description": "The date and time the to-do item is expected to be completed.",
+                    "name": "Due date and time"
+                }
+            }
+        },
+        "remove_completed_items": {
+            "description": "Removes all to-do list items that have been completed.",
+            "name": "Remove completed items"
+        },
+        "update_item": {
+            "fields": {
+                "description": {
+                    "description": "A more complete description of the to-do item than provided by the item name.",
+                    "name": "Description"
+                },
+                "due_date": {
+                    "description": "The date the to-do item is expected to be completed.",
+                    "name": "Due date"
+                },
+                "due_datetime": {
+                    "description": "The date and time the to-do item is expected to be completed.",
+                    "name": "Due date and time"
+                }
+            }
+        }
+    }
+}

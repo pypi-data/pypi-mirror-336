@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paslauga jau sukonfig\u016bruota"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_ics_file": "Netinkamas .ics failas"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "calendar_name": "Kalendoriaus pavadinimas",
+                    "url": "Kalendoriaus URL"
+                },
+                "data_description": {
+                    "calendar_name": "NS rodomo kalendoriaus pavadinimas.",
+                    "url": "Nuotolinio kalendoriaus URL."
+                },
+                "description": "Pasirinkite importuojamo kalendoriaus pavadinim\u0105"
+            }
+        }
+    },
+    "exceptions": {
+        "unable_to_fetch": {
+            "message": "Nepavyko gauti kalendoriaus duomen\u0173: {err}"
+        },
+        "unable_to_parse": {
+            "message": "Nepavyko i\u0161analizuoti kalendoriaus duomen\u0173: {err}"
+        }
+    },
+    "title": "Nuotolinis kalendorius"
+}

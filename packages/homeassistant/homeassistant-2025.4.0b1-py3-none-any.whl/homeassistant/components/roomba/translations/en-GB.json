@@ -1,0 +1,29 @@
+{
+    "config": {
+        "step": {
+            "manual": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Roomba or Braava."
+                }
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Roomba or Braava."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "canceled_missions": {
+                "name": "Cancelled missions"
+            },
+            "last_mission": {
+                "name": "Last mission start time"
+            },
+            "total_cleaned_area": {
+                "name": "Total cleaned area"
+            }
+        }
+    }
+}

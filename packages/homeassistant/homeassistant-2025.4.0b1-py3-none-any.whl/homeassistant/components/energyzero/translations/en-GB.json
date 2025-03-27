@@ -1,0 +1,34 @@
+{
+    "exceptions": {
+        "invalid_config_entry": {
+            "message": "Invalid config entry provided. Got {config_entry}"
+        },
+        "invalid_date": {
+            "message": "Invalid date provided. Got {date}"
+        },
+        "unloaded_config_entry": {
+            "message": "Invalid config entry provided. {config_entry} is not loaded."
+        }
+    },
+    "services": {
+        "get_energy_prices": {
+            "description": "Requests energy prices from EnergyZero.",
+            "fields": {
+                "config_entry": {
+                    "description": "The config entry to use for this action.",
+                    "name": "Config entry"
+                }
+            },
+            "name": "Get energy prices"
+        },
+        "get_gas_prices": {
+            "description": "Requests gas prices from EnergyZero.",
+            "fields": {
+                "config_entry": {
+                    "description": "The config entry to use for this action.",
+                    "name": "Config entry"
+                }
+            }
+        }
+    }
+}
