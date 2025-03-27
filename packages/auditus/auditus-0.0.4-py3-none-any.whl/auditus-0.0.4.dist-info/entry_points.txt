@@ -1,0 +1,2 @@
+[nbdev]
+auditus = auditus._modidx:d
