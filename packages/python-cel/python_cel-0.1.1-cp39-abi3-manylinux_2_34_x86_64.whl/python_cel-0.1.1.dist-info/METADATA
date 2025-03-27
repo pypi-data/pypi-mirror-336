@@ -1,0 +1,77 @@
+Metadata-Version: 2.4
+Name: python-cel
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings for the cel-rust crate
+Author-email: Tim Pogue <tim@emergentmethods.ai>
+License: MIT
+Requires-Python: >=3.10, <4.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://gitlab.com/emergentmethods/python-cel
+
+# Python CEL
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-pickaxe?style=flat-square)
+![PyPI - Version](https://img.shields.io/pypi/v/python-pickaxe?style=flat-square)
+
+Python CEL are Python bindings for the [Common Expression Language (CEL)](https://github.com/google/cel-spec) rust implementation found [here](https://github.com/clarkmcc/cel-rust). CEL is a language designed to allow non-sandboxed evaluation of expressions and scripts.
+
+## Features
+
+- **Written in Rust**: The underlying library and bindings are written in Rust, which makes it fast and memory-efficient.
+- **Safe**: The Rust implementation is memory-safe and thread-safe.
+- **Extensible**: The library is designed to be easily extensible with custom functions and variables.
+
+## Quick Start
+
+### Installation
+
+```bash
+pip install python-cel
+```
+
+### Basic Usage
+
+```python
+from cel import Context, Program, evaluate_expression
+
+# Quickly evaluate an expression
+result = evaluate_expression("1 + 2")
+print(result)  # 3
+
+result = evaluate_expression("x + y", variables={"x": 1, "y": 3})
+print(result)  # 4
+
+result = evaluate_expression("add_nums(1, 2)", functions={"add_nums": lambda x, y: x + y})
+print(result)  # 3
+
+# Manually create a context and program
+context = Context()
+context.add_variables({"x": 1, "y": 2})
+context.add_functions({"add_nums": lambda x, y: x + y})
+
+# OR
+context = Context(
+    variables={"x": 1, "y": 2},
+    functions={"add_nums": lambda x, y: x + y}
+)
+
+program = Program("add_nums(x, y)")
+result = program.evaluate(context)
+print(result)  # 3
+```
+
+## License
+This project is licensed under MIT License.
+
+## Support & Feedback
+If you encounter any issues or have feedback, please open an issue. We'd love to hear from you!
+
+Made with ❤️ by Emergent Methods
+
+
+
+
+
