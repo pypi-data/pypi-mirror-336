@@ -1,0 +1,22 @@
+[project]
+name = "json2any-plugin"
+version = "1.0.2"
+description = "Json2Any plugin interfaces"
+readme = "README.md"
+authors = [
+    { name = "Maciej Matuszak", email = "maciej.matuszak@gmail.com" }
+]
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = [
+    "jinja2>=3.1.6",
+]
+
+[dependency-groups]
+dev = [
+    "bump2version>=1.0.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
