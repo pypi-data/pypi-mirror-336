@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: YJKAPI
+Version: 0.0.0.8
+Summary: YJK_Python_API
+Home-page: https://gitee.com/yjk-opensource/yjkapi_-python/
+Author: lme
+License: UNKNOWN
+Description: # YJKAPI
+        
+        ## Install
+        pip install YJKAPI
+        pip uninstall YJKAPI
+        
+        ## Description
+        YJK_Python_API
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
