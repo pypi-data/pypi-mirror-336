@@ -1,0 +1,8 @@
+setup.py
+hurst_calc/__init__.py
+hurst_calc/hurst.py
+hurst_calc.egg-info/PKG-INFO
+hurst_calc.egg-info/SOURCES.txt
+hurst_calc.egg-info/dependency_links.txt
+hurst_calc.egg-info/requires.txt
+hurst_calc.egg-info/top_level.txt
