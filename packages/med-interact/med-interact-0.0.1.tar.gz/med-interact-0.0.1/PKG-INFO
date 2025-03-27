@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: med-interact
+Version: 0.0.1
+Summary: Python library to check drug interactions, side effects and harmful effects.
+Home-page: https://github.com/isranetoo/med-interact
+Author: DrugXpert
+Author-email: contact@medinteract.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MedInteract
+
+MedInteract Ã© uma biblioteca Python para consultar interaÃ§Ãµes medicamentosas, efeitos colaterais e precauÃ§Ãµes ao combinar medicamentos.
+
+## InstalaÃ§Ã£o
+
+```bash
+pip install med-interact
