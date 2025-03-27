@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: omnilearned
+Version: 0.1.0
+Summary: OmniLearned: A unified deep learning approach for particle physics
+Project-URL: Homepage, https://github.com/ViniciusMikuni/OmniLearned
+Project-URL: Bug Tracker, https://github.com/ViniciusMikuni/OmniLearned/issues
+Author-email: Vinicius Mikuni <vmikuni@gmail.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Requires-Dist: einops>=0.8.1
+Requires-Dist: h5py>=3.13.0
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pytorch-optimizer>=3.5.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: scikit-learn>=1.6.1
+Requires-Dist: torch>=2.5.1
+Requires-Dist: typer>=0.15.2
+Provides-Extra: dev
+Requires-Dist: black>=22.0.0; extra == 'dev'
+Requires-Dist: flake8>=4.0.0; extra == 'dev'
+Requires-Dist: hatch-vcs>=0.3.0; extra == 'dev'
+Requires-Dist: isort>=5.10.0; extra == 'dev'
+Requires-Dist: pytest>=7.0.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# OmniLearn v2 Repository
+
+## Install
+
+```bash
+pip install .
+```
+
+## Data
+
+A few standard datasets can be directly downloaded using the command:
+
+```bash
+omnilearned dataloader -d DATASET -f OUTPUT/PATH
+```
+Datasets available are: top/qg/aspen/atlas/jetclass/h1
+If ```--d pretrain``` is used instead, aspen, atlas, jetclass, and h1 datasets will be downloaded. The total size of the pretrain dataset is around 4T so be sure to have enough space available.
+
+
+## Training:
+
+Single GPU training can be started using:
+
+```bash
+omnilearned train  -o ./ --save_tag test --dataset DATASET --path OUTPUT/PATH
+```
+
+For multiple GPUs and SLURM you can use the ```train.sh``` example script
+
+```bash
+#Inside an interactive session run
+./train.sh
+```
