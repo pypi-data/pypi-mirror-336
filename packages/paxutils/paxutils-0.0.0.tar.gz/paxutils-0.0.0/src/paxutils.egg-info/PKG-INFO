@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: paxutils
+Version: 0.0.0
+Summary: Miscellaneous utilities for PAX notebooks.
+Author-email: Marc Parizeau <marc@parizeau.org>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/pax-ul/paxutils
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# paxutils
+Miscellaneous utilities for PAX notebooks.
+
+The `path.Path` class is a dropin replacement for `pathlib.Path` in the context of the PAX platform. Use the standard `pathlib` in any other context.
+
+# Usage
+```python
+from paxutils.path import Path
+
+# define path for file `myfile` in the context of the PAX course `GIF-U014`
+path = Path('myfile', course='GIF-U014')
+...
+```
+
+# build distribution
+python -m build
+
+# upload to pypi
+twine upload dist/*
