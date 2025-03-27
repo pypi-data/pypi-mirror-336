@@ -1,0 +1,12 @@
+livekit/plugins/aws/__init__.py,sha256=Ea-hK7QdutnwdZvvs9K2fiR8RWJqz2JcONxXnV1kXF0,977
+livekit/plugins/aws/llm.py,sha256=2wdIZhjume5ukSkNHe3L1QLhBN6MyrtNuxHefEUM104,11050
+livekit/plugins/aws/log.py,sha256=jFief0Xhv0n_F6sp6UFu9VKxs2bXNVGAfYGmEYfR_2Q,66
+livekit/plugins/aws/models.py,sha256=Nf8RFmDulW7h03dG2lERTog3mgDK0TbLvW0eGOncuEE,704
+livekit/plugins/aws/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/aws/stt.py,sha256=j2vEsoixFcsyTbCNhW5EWea5CEv3K-DzL9wmweebf3o,8030
+livekit/plugins/aws/tts.py,sha256=4EOI4VabvhjCcDyp_QoDhlXOdrMrKpnmNIDTeoJ8kcU,7601
+livekit/plugins/aws/utils.py,sha256=AiLzvztT635oF_DW4LQiKAL5wq_2nwBL6zBnyvdKB90,4978
+livekit/plugins/aws/version.py,sha256=pF0lh6G9GYL7Mj7EnfhjFifzlzdWx6u3RvB0Itch4UE,604
+livekit_plugins_aws-1.0.0rc1.dist-info/METADATA,sha256=BK464NnvrztaIc7bJFOwxGRjhBZec7BMFIhbL6y-6B8,1485
+livekit_plugins_aws-1.0.0rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_aws-1.0.0rc1.dist-info/RECORD,,
