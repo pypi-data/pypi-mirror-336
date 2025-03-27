@@ -1,0 +1,70 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "mcp-client-jupyter-chat",
+  "description": "mcp-client-jupyter-chat settings.",
+  "type": "object",
+  "properties": {
+    "mcpServers": {
+      "type": "array",
+      "title": "Additional MCP Servers",
+      "description": "List of additional MCP servers to connect to (beyond the default server at localhost:3002)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Server Name",
+            "description": "Name of the MCP server"
+          },
+          "url": {
+            "type": "string",
+            "title": "Server URL",
+            "description": "URL of the MCP server's SSE endpoint"
+          }
+        },
+        "required": ["name", "url"]
+      },
+      "default": []
+    },
+    "models": {
+      "type": "array",
+      "title": "LLM Models",
+      "description": "List of available language models and their API keys",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Model Name",
+            "description": "Name of the language model"
+          },
+          "apiKey": {
+            "type": "string",
+            "title": "API Key",
+            "description": "API key for this model"
+          },
+          "isDefault": {
+            "type": "boolean",
+            "title": "Default Model",
+            "description": "Whether this model should be used as default",
+            "default": false
+          }
+        },
+        "required": ["name", "apiKey"]
+      },
+      "default": [
+        {
+          "name": "claude-3-5-sonnet-20241022",
+          "apiKey": "please-set-your-api-key",
+          "isDefault": true
+        },
+        {
+          "name": "other-model-to-use",
+          "apiKey": "please-set-your-api-key",
+          "isDefault": false
+        }
+      ]
+    }
+  },
+  "additionalProperties": false
+}
