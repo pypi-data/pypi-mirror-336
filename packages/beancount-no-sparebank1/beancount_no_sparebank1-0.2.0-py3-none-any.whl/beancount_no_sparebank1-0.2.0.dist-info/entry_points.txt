@@ -1,0 +1,2 @@
+[console_scripts]
+beancount-no-sparebank1 = beancount_no_sparebank1.deposit:main
