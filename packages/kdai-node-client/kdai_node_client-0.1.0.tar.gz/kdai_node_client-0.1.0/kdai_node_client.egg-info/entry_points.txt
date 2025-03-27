@@ -1,0 +1,2 @@
+[console_scripts]
+kdai-node = kdai_node_client.cli:main
