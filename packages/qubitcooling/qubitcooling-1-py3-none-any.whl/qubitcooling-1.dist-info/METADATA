@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: qubitcooling
+Version: 1
+Author: GiulianoWasHere
+Project-URL: Source, https://github.com/GiulianoWasHere/QuL
+Keywords: python,quantum,cooling,qubit,quantumcomputing
+License-File: LICENSE
+Requires-Dist: qiskit
+Requires-Dist: scipy
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: description
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+
+QuL is a python package to generate, analyze and test quantum circuits for various computational cooling protocols.
