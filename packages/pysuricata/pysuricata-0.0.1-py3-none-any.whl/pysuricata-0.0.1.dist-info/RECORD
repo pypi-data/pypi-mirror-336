@@ -1,0 +1,10 @@
+pysuricata/__init__.py,sha256=Kix8oXc12cRoUslvlR727w6D3VirVfTFzsS_jjfxALo,179
+pysuricata/analysis.py,sha256=ygi1UODb5nZi7do9440FDXa8YMNav7bRXR8vQZ9JeBo,3641
+pysuricata/logger.py,sha256=SkEEE1KTmK-XjEyMjVCFRrC1JYyVN7svFi0qb4I0hwQ,638
+pysuricata/report.py,sha256=GVtXql7fDN_HWxc7FRgym5IGfnCZJC-RkcveKV_72Z8,3832
+pysuricata/utils.py,sha256=6hxSJ52VtzMFs4zlf6xOHFbw7ATSNULo8i9sXj54mZ4,2564
+pysuricata-0.0.1.dist-info/licenses/LICENSE,sha256=BRE5pDd3jzV-8X3YwidYiK1Cs89q2BqPkOtz520QAHc,1069
+pysuricata-0.0.1.dist-info/METADATA,sha256=gQwYSicAVrZA66VR0g2MaUIsBd5om-KXzpJOUJIM6Eg,2037
+pysuricata-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pysuricata-0.0.1.dist-info/top_level.txt,sha256=00VWGnPa2z7cDlE_zX0WcNV30y_d1VgNPCqrXKTRxW0,11
+pysuricata-0.0.1.dist-info/RECORD,,
