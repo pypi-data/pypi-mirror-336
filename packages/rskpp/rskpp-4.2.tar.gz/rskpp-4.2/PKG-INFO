@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: rskpp
+Version: 4.2
+Summary: Rejection Sampling Approach to k-means++ seeding
+Author: Anonymous
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
