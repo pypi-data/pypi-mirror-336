@@ -1,0 +1,6 @@
+sphinx>4.0
+lxml
+sphinx-needs>=1.0.1
+
+[development]
+wheel
