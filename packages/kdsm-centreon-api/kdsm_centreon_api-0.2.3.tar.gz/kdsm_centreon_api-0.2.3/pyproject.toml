@@ -1,0 +1,159 @@
+[project]
+name = "kdsm-centreon-api"
+dynamic = []
+description = "Centreon Python API SDK."
+authors = [
+    { name = "Julius Koenig", email = "julius.koenig@kds-kg.de" },
+]
+dependencies = [
+    "requests>=2.32.3",
+    "pydantic>=2.9.1",
+]
+requires-python = ">=3.8.1"
+readme = "README.md"
+version = "0.2.3"
+
+[project.license]
+text = "GPL-3.0"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "src/kdsm_centreon_api/__init__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "tox>=4.18.1",
+    "pytest>=8.3.2",
+    "toml>=0.10.2",
+    "pytest-html>=4.1.1",
+    "tox-pdm>=0.7.2",
+    "coverage[toml]>=7.6.1",
+    "genbadge[tests]>=1.1.1",
+    "mkdocs-material>=9.5.34",
+    "mkdocstrings[python]>=0.26.1",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocs-literate-nav>=0.6.1",
+    "mkdocs-section-index>=0.3.9",
+]
+lint = [
+    "flake8>=7.1.1",
+    "Flake8-pyproject>=1.2.3",
+]
+
+[tool.pdm.scripts]
+test = "tox"
+coverage-run = "coverage run"
+coverage-report = "coverage report"
+coverage-html = "coverage html"
+coverage-xml = "coverage xml"
+lint = "flake8"
+docs-serve = "mkdocs serve"
+docs-build = "mkdocs build -d dist/docs"
+badge-tests = "genbadge tests -o reports/badges/tests.svg"
+badge-coverage = "genbadge coverage -o reports/badges/coverage.svg"
+
+[tool.pdm.scripts.push-tags]
+shell = "git push origin --tags"
+
+[tool.pdm.scripts.coverage]
+composite = [
+    "coverage-run",
+    "coverage-report",
+    "coverage-html",
+    "coverage-xml",
+]
+
+[tool.pdm.scripts.badge]
+composite = [
+    "badge-tests",
+    "badge-coverage",
+]
+
+[tool.pdm.scripts.aio]
+composite = [
+    "test",
+    "lint",
+    "coverage",
+    "badge",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--html=reports/tests/report.html",
+    "--self-contained-html",
+    "--junitxml=reports/junit/junit.xml",
+]
+testpaths = [
+    "tests",
+]
+
+[tool.pytest.env.v24_04]
+hostname = "cent24-04-cloud.bastelquartier.de"
+port = 80
+ssl = false
+ssl_verify = false
+username = "admin"
+password = "6Sh_nj_RLUBy"
+
+[tool.pytest.env.v23_10]
+hostname = "cent23-10-cloud.bastelquartier.de"
+port = 80
+ssl = false
+ssl_verify = false
+username = "admin"
+password = "b7pmTKx_TXiR"
+
+[tool.pytest.env.v23_04]
+hostname = "cent23-04-cloud.bastelquartier.de"
+port = 80
+ssl = false
+ssl_verify = false
+username = "admin"
+password = "aJq6OpM_R0XX"
+
+[tool.pytest.env.v22_10]
+hostname = "cent22-10-cloud.bastelquartier.de"
+port = 80
+ssl = false
+ssl_verify = false
+username = "admin"
+password = "C3Kj5H_u3KmH"
+
+[tool.tox]
+legacy_tox_ini = "[tox]\nenvlist = py{38,39,310,311,312},lint\n\n[testenv]\ngroups = dev\ncommands = pytest\n\n[testenv:lint]\ngroups = lint\ncommands = flake8\n"
+
+[tool.coverage.run]
+command_line = "-m pytest"
+source = [
+    "src",
+]
+data_file = "reports/coverage/.coverage"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__(self):",
+    "def __str__(self):",
+    "if __name__ == .__main__.:",
+]
+
+[tool.coverage.html]
+title = "Centreon Python API SDK"
+directory = "reports/coverage"
+
+[tool.coverage.xml]
+output = "reports/coverage/coverage.xml"
+
+[tool.flake8]
+count = true
+exclude = ".idea,.pdm-build,.tox,.venv,dist,reports"
+max-line-length = 180

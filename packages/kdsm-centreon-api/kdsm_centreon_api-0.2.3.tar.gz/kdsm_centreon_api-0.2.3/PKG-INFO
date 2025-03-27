@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kdsm-centreon-api
+Version: 0.2.3
+Summary: Centreon Python API SDK.
+Author-Email: Julius Koenig <julius.koenig@kds-kg.de>
+License: GPL-3.0
+Requires-Python: >=3.8.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: pydantic>=2.9.1
+Description-Content-Type: text/markdown
+
+# kdsm-centreon-api
+[![Coverage Status](./reports/badges/coverage.svg)](./reports/coverage/index.html)
+[![Tests Status](./reports/badges/tests.svg)](./reports/tests/report.html)
+
+Centreon Python API SDK.
+
