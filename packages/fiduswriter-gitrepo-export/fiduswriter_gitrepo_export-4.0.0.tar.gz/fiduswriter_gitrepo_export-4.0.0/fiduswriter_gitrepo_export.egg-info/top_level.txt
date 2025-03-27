@@ -1,0 +1,4 @@
+ci
+dist
+fiduswriter
+lint
