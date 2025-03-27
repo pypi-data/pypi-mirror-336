@@ -1,0 +1,62 @@
+name: Linting
+
+on:
+    pull_request:
+        types: [opened, reopened, synchronize]
+    push:
+        branches:
+            - main
+
+permissions:
+    contents: read
+
+
+jobs:
+    # see https://docs.astral.sh/uv/guides/integration/github/
+    run-tests:
+        name: Python linters
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+        strategy:
+            matrix:
+                python-version:
+                - "3.8"
+                - "3.9"
+                - "3.10"
+                - "3.11"
+                - "3.12"
+                - "3.13"
+        steps:
+        - uses: actions/checkout@v4
+          with:
+              persist-credentials: false
+              fetch-depth: 0
+
+        - name: Remove sitecustomize.py
+          run: |
+            sudo rm -f /usr/lib/python3.*/sitecustomize.py
+            sudo rm -f /etc/python3.*/sitecustomize.py
+
+        - name: Install the latest version of uv
+          uses: astral-sh/setup-uv@v5
+          with:
+              python-version: ${{ matrix.python-version }}
+              version: "latest"
+
+        - name: Set up Python ${{ matrix.python-version }}
+          run: uv python install ${{ matrix.python-version }}
+
+        - name: Install the project
+          run: uv sync --all-groups
+
+        - name: Pre-commit
+          run: uv run pre-commit run --all-files
+
+        # - name: Ruff check
+        #   run: uv run ruff check src tests
+
+        # - name: Pylint
+        #   run: uv run pylint src
+
+        - name: Pyroma
+          run: uv run pyroma .
