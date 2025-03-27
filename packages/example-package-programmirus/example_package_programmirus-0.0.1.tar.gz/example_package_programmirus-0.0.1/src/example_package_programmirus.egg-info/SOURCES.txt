@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/example_package_programmirus/__init__.py
+src/example_package_programmirus/example.py
+src/example_package_programmirus.egg-info/PKG-INFO
+src/example_package_programmirus.egg-info/SOURCES.txt
+src/example_package_programmirus.egg-info/dependency_links.txt
+src/example_package_programmirus.egg-info/top_level.txt
