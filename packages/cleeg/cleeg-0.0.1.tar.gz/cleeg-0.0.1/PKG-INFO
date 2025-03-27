@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cleeg
+Version: 0.0.1
+Summary: python library for cleaning EEG signals using ICA.
+Home-page: https://github.com/simonkojima/cleeg
+Author: Simon Kojima
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: mne>=1.8
+
+# cleeg

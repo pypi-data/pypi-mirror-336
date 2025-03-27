@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cleeg/__init__.py
+cleeg/core.py
+cleeg.egg-info/PKG-INFO
+cleeg.egg-info/SOURCES.txt
+cleeg.egg-info/dependency_links.txt
+cleeg.egg-info/requires.txt
+cleeg.egg-info/top_level.txt
