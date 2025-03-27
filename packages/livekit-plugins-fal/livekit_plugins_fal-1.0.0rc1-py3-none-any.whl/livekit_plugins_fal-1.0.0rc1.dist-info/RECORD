@@ -1,0 +1,8 @@
+livekit/plugins/fal/__init__.py,sha256=2yFGbnRBL846WEDry3a4CTTwWSiLSI4Otqhlo6g4Lf4,1476
+livekit/plugins/fal/log.py,sha256=E03cKaUVgXY2O7RpX33IQIaRCpFJ_nJMSkRCvCxX5fc,66
+livekit/plugins/fal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/fal/stt.py,sha256=i7kWKvftNbOZFaJzsrTz3gcO06m1dUnfQaWG8vAGSBo,2688
+livekit/plugins/fal/version.py,sha256=mbN7S69VD5tTGStpaCy8CAkLdTyAlDhFhkCh1z5RH0w,603
+livekit_plugins_fal-1.0.0rc1.dist-info/METADATA,sha256=OmWsZkhpuUQplh2Zm29STrC2ZatmDDYL0LN-nDvwUa4,1286
+livekit_plugins_fal-1.0.0rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_fal-1.0.0rc1.dist-info/RECORD,,
