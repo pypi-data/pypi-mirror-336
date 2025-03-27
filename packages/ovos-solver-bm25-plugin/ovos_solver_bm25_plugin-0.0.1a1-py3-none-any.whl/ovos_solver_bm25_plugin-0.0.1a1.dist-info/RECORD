@@ -1,0 +1,12 @@
+ovos_bm25_solver/__init__.py,sha256=U9Qw5Q3f-jG3fKIatniLiPF78oA9nEH-eqO8Ub0je24,309
+ovos_bm25_solver/base.py,sha256=QatuqbeSD8X_mWubDgvDSmHWVco61sAMlcmU7AyEftI,9432
+ovos_bm25_solver/corpus.py,sha256=MDIj10AkLolYVZfw2pYlHsHZjWAOiytujO1Zpp1N8x0,5507
+ovos_bm25_solver/demo.py,sha256=1adK3M345CYYGXKHUUPZiz0VJ_XSJy6_qWKqXBeLy2I,4696
+ovos_bm25_solver/embed.py,sha256=zsWyr27q86os0pq9JIo-9AySrEYthlv6Vc7CK9B9i7k,6656
+ovos_bm25_solver/version.py,sha256=bNAgeuunrAuqqTHQ6aL8PuYgpU_pmqDADvHLxvFez88,114
+ovos_solver_bm25_plugin-0.0.1a1.dist-info/METADATA,sha256=vCQ6AKPvjJO4EwliSSSsXma-KidL33nnvVYzoz9XHnk,17577
+ovos_solver_bm25_plugin-0.0.1a1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+ovos_solver_bm25_plugin-0.0.1a1.dist-info/entry_points.txt,sha256=NRT8-qpGwh1rpOBnA_uS0yZ0cUJlT5NcnfkU1VyNqTU,565
+ovos_solver_bm25_plugin-0.0.1a1.dist-info/top_level.txt,sha256=AVGCOfJCv2a9Vyo7dbgszHSjM_hLnwXaUcX9Ox1srrI,17
+ovos_solver_bm25_plugin-0.0.1a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ovos_solver_bm25_plugin-0.0.1a1.dist-info/RECORD,,
