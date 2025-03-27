@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+aqicn_mcp_server.egg-info/PKG-INFO
+aqicn_mcp_server.egg-info/SOURCES.txt
+aqicn_mcp_server.egg-info/dependency_links.txt
+aqicn_mcp_server.egg-info/entry_points.txt
+aqicn_mcp_server.egg-info/requires.txt
+aqicn_mcp_server.egg-info/top_level.txt
+aqicn_server/__init__.py
+aqicn_server/aqicn_server.py
