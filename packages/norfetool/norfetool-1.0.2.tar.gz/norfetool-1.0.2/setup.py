@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+from setuptools import setup, find_packages
+
+setup(
+    name='norfetool',
+    version="1.0.2",
+    description=(
+        'Easier creation of SCI figures using PIL and pkl file tools, along with a simplified approach to setting plt styles. Added a management function for slurm scripts, facilitating easy content replacement within specified base files.'
+    ),
+    # long_description=open('README.rst').read(),
+    author='norfe',
+    author_email='21121598@bjtu.edu.cn',
+    maintainer='norfe',
+    maintainer_email='21121598@bjtu.edu.cn',
+    license='BSD License',
+    # packages=find_packages(),
+    py_modules=["norfetool"],
+    platforms=["all"],
+    url='https://github.com/liftes/PythonDraw',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Operating System :: OS Independent',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: Implementation',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Software Development :: Libraries'
+    ],
+    install_requires=[
+        'matplotlib',
+        'numpy',
+    ]
+)
+
+# twine upload -u __token__ -p pypi-AgEIcHlwaS5vcmcCJGM0NjE0MjcyLTNiNTItNDg5MS1iYzI0LWJmMDU2Yjc1OTBiYQACEVsxLFsibm9yZmV0b29sIl1dAAIsWzIsWyJlN2ZkMTk0Ni1jMDZhLTQ0MDUtOTY1NC0zYWM4Yjk0NGIyMWEiXV0AAAYgYYN8qIy4-1ZGn3zBRy626lhRRCtkqtnLv7ubGnXD0NM dist/*
