@@ -1,0 +1,5 @@
+arsenal
+build
+dist
+docs
+tests
