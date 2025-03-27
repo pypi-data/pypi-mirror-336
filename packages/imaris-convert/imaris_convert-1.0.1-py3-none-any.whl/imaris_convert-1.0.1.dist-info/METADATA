@@ -1,0 +1,79 @@
+Metadata-Version: 2.4
+Name: imaris-convert
+Version: 1.0.1
+Summary: A tool for converting images to Imaris format
+Author: Guanhao Sun
+Author-email: sgh4132@outlook.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tifffile
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Imaris Convert
+
+一个用于将图像转换为 Imaris 格式的 Python 工具包。
+
+## 安装
+
+```bash
+pip install imaris-convert
+```
+
+## 使用方法
+
+### 命令行使用
+
+```bash
+# 基本用法
+imaris-convert input.tiff
+
+# 指定输出目录
+imaris-convert input.tiff -o /path/to/output/directory
+```
+
+### Python API 使用
+
+```python
+# 转换图像文件(.tiff)
+from imaris_convert import tiff_to_imaris
+
+tif_path = r'your_tiff_path'
+tiff_to_imaris(tiff_path=tif_path)
+# tiff_to_imaris(tiff_path=tif_path,out_path=out_path)
+
+# 转换 np.ndarray 到 ims
+from imaris_convert import numpy_to_imaris
+import numpy as np
+
+your_np_data = np.ones((100,100,100),dtype=np.uint16)
+numpy_to_imaris(np_data=your_np_data,out_path='your_save_path')
+```
+
+## 依赖项
+
+- Python >= 3.6
+- numpy
+- tifffile
+- tqdm
+
+## 许可证
+
+MIT License 

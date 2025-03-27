@@ -1,0 +1,12 @@
+imaris_convert/ImarisWriterCtypes.py,sha256=RDtatc1oq1AITDLHug1gl_JsyE4-JbfAt5GjSRP3x0s,7824
+imaris_convert/PyImarisWriter.py,sha256=FM_M6dK8X5SKo2neB2QJo4ijV48b6wFwR9URJ1GnZs4,28019
+imaris_convert/__init__.py,sha256=hJFlMwGKLheo01n7Rs2GgxBdC8a3-iEHcHWzv3wKKt4,267
+imaris_convert/bpImarisWriter96.dll,sha256=5tSRKWxUpmoeM5z3U0i7KcIu0-ZdNrWp-EOi2P3veU0,577536
+imaris_convert/hdf5.dll,sha256=_XY23Gt_GhXB3SMCm2EGhackC-4JW7yQEC-unpKyAKA,3066880
+imaris_convert/imaris_convert.py,sha256=uG9NqmJFbly1Kt4H6jvnQBMdBVh6pzAPT_LMP_j_cmw,5537
+imaris_convert/zlib.dll,sha256=4YvVZ5SdE-Rhl1-pVXQ0MIp6gq7pXDNYFgxYhOZnvB8,82432
+imaris_convert-1.0.1.dist-info/METADATA,sha256=Yn1_8-ZpW-bf7MVB7es82P_4rDXIJprEDeKa0-O9mwU,1840
+imaris_convert-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+imaris_convert-1.0.1.dist-info/entry_points.txt,sha256=EQOzaiVxC5Q7sJjtpKahqe6SW1BDbezv5WRJYeSXjr0,74
+imaris_convert-1.0.1.dist-info/top_level.txt,sha256=qhmVMQrsbZlTgoM16gkvUwZzcQ0kpRotF_LpTZE-E0s,15
+imaris_convert-1.0.1.dist-info/RECORD,,
