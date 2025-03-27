@@ -1,0 +1,16 @@
+fexcel/__init__.py,sha256=tjpReHuviolPwCgiSs49Hz2RNZa-Kl1U-jazpwn2d54,99
+fexcel/__main__.py,sha256=EQ-0JJsbV7gsdP5VEgMqF-vz-iiq8XB2dIofUdorJaQ,1120
+fexcel/generator.py,sha256=s6n-mxhl5uWh67DCPfVfxOEfRmv49Hy-l1Xh3BGCLow,3772
+fexcel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fexcel/fields/__init__.py,sha256=D3dyu4VlBY5PUgjWRER70lH5vKM_KQuwhvzsSwWGIVs,902
+fexcel/fields/base.py,sha256=q_qHxiusNXcC2MqlCJp2gwfw-QPMSp-r6zqpZydEWVc,4694
+fexcel/fields/boolean.py,sha256=rWOGHxqTJyGpiYmaOUNrA2O77rKqKdkZGgzxSGi0P_0,641
+fexcel/fields/choice.py,sha256=dTE1vDl9KP1uQzJM5kS7I7z4Q21n_Qv89DIenAjRXHU,2033
+fexcel/fields/network.py,sha256=BfGzitCsx31P12a4AaxaiiKRIErGYe-Ug5QAZ8TuBKg,429
+fexcel/fields/numeric.py,sha256=EnyNPx5UXPvTolyExKVdIqmjikCei6RQS-udbPQJaEc,3083
+fexcel/fields/temporal.py,sha256=3wq2O7JWvYw3HHh0rrWX2hD-JjQBpU-tCBJ8V68RKyY,2099
+fexcel/fields/text.py,sha256=B4nxrwLsGuz6WML0ujn1sWi89vpFwVSYUiP5meERBEw,941
+fexcel-0.0.1.dist-info/METADATA,sha256=6-g-sv5bC5OQ1rZSwwoBeagn4y5DpDD0IX3MnK8JqUE,10366
+fexcel-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fexcel-0.0.1.dist-info/entry_points.txt,sha256=ORiEfqXpBZW7Y3_EZUurN1fUGH32adoUv4c8n7uDKPc,48
+fexcel-0.0.1.dist-info/RECORD,,
