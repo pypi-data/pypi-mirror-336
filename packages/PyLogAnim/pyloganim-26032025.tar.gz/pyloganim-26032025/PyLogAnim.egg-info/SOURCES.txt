@@ -1,0 +1,12 @@
+README.md
+setup.py
+PyLogAnim/__init__.py
+PyLogAnim/__main__.py
+PyLogAnim/colormodes.py
+PyLogAnim/demo_logos.py
+PyLogAnim/termcheck.py
+PyLogAnim.egg-info/PKG-INFO
+PyLogAnim.egg-info/SOURCES.txt
+PyLogAnim.egg-info/dependency_links.txt
+PyLogAnim.egg-info/requires.txt
+PyLogAnim.egg-info/top_level.txt
