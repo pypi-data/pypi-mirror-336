@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+DNApy/__init__.py
+DNApy/clustering.py
+DNApy/common.py
+DNApy/foo.py
+DNApy/parsers.py
+DNApy.egg-info/PKG-INFO
+DNApy.egg-info/SOURCES.txt
+DNApy.egg-info/dependency_links.txt
+DNApy.egg-info/top_level.txt
