@@ -1,0 +1,68 @@
+[project]
+name = "milvus-correctness"
+version = "0.1.0"
+description = "A framework for testing Milvus data correctness at scale"
+dependencies = [
+    "pymilvus>=2.3.6",
+    "persist-queue>=0.8.1",
+    "numpy>=1.26.4",
+    "pydantic>=2.6.4",
+    "loguru>=0.7.2",
+    "rich>=13.7.1",
+    "tqdm>=4.66.2",
+    "rocksdict>=0.3.25",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+authors = [
+    { name = "zhuwenxing", email = "wenxing.zhu@zilliz.com" },
+]
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "B",
+    "C4",
+    "UP",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+python_files = [
+    "test_*.py",
+]
+addopts = "-v -s --tb=short"
+log_cli = true
+log_cli_level = "INFO"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+    "detect-secrets>=1.5.0",
+]

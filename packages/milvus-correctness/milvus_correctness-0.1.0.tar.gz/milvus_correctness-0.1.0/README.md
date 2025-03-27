@@ -1,0 +1,165 @@
+# Milvus Correctness Testing Framework
+
+A testing framework specifically designed to verify data correctness in Milvus vector database under large-scale write operations. This framework supports processing billions of data entries and provides reliable verification mechanisms.
+
+## Key Features
+
+- Support for large-scale data processing (1B+ entries)
+- Real workload simulation based on Markov chains
+- Efficient disk storage backend (RocksDB/LMDB)
+- Batch processing optimization
+- Configurable sampling verification
+- Detailed progress tracking and statistics
+
+## System Requirements
+
+- Python >= 3.10
+- Milvus >= 2.5.0
+- PDM (Python package manager)
+- Sufficient disk space for storing request queues and state data
+
+## Project Structure
+
+```
+src/milvus_correctness/
+├── core/                # Core framework components
+│   ├── framework.py     # Main framework coordination
+│   ├── milvus_client.py # Enhanced Milvus client wrapper
+│   └── models.py        # Data models and configurations
+├── calculators/         # State calculation and verification
+├── generators/          # Request generation components
+├── processors/          # Request processing components
+├── storage/             # Storage backend implementations
+└── utils/               # Utility functions
+```
+
+## Installation
+
+```bash
+# Install dependencies using PDM
+pdm install
+```
+
+## Quick Start
+
+1. Ensure Milvus service is running and test collection is created
+
+2. Run example test:
+
+```bash
+pdm run examples/small_scale_test.py
+```
+
+## Framework Components
+
+### 1. Core Framework (core/)
+
+- `CorrectnessFramework`: Main coordination class
+- `MilvusClientWrapper`: Enhanced Milvus client with auto-reconnection
+- Configuration models and data structures
+
+### 2. Request Generator (generators/)
+
+- Markov chain-based operation sequence generation
+- Probabilistic primary key selection
+- Configurable operation distributions
+- Efficient PK tracking with Bloom filters
+
+### 3. Request Processor (processors/)
+
+- Batch processing optimization
+- Automatic retry mechanism
+- Concurrent request handling
+- Progress tracking and statistics
+
+### 4. State Calculator (calculators/)
+
+- Disk-based state tracking
+- Stream processing of success logs
+- Sampling-based verification
+- Detailed consistency checks
+
+### 5. Storage Backend (storage/)
+
+- Persistent queue implementation
+- State storage interface
+
+## Configuration Example
+
+```python
+from milvus_correctness.core.models import (
+    GeneratorConfig,
+    MilvusConfig,
+    StorageConfig
+)
+
+# Milvus configuration
+milvus_config = MilvusConfig(
+    host="localhost",
+    port=19530,
+    collection_name="test_collection"
+)
+
+# Generator configuration
+generator_config = GeneratorConfig(
+    op_states=["INSERT", "UPSERT", "DELETE"],
+    transition_matrix={
+        "INSERT": {"INSERT": 0.7, "UPSERT": 0.2, "DELETE": 0.1},
+        "UPSERT": {"INSERT": 0.3, "UPSERT": 0.6, "DELETE": 0.1},
+        "DELETE": {"INSERT": 0.6, "UPSERT": 0.3, "DELETE": 0.1}
+    },
+    pk_field_name="id",
+    vector_field_name="vector",
+    vector_dim=128,
+    data_schema={
+        "metadata": "str"
+    }
+)
+
+# Storage configuration
+storage_config = StorageConfig(
+    request_queue_path="data/request_queue",
+    success_log_path="data/success_log",
+    storage_type="rocksdb",
+    clear_on_start=True
+)
+```
+
+## Usage Example
+
+```python
+from milvus_correctness.core.framework import CorrectnessFramework
+
+# Initialize framework
+framework = CorrectnessFramework(
+    milvus_config=milvus_config,
+    generator_config=generator_config,
+    storage_config=storage_config,
+    batch_size=1000,
+    max_retries=3
+)
+
+# Generate requests
+framework.generate_requests(1_000_000)
+
+# Process requests
+framework.process_requests()
+
+# Calculate and verify state
+framework.calculate_expected_state()
+is_consistent, stats = framework.verify_state(sample_size=10000)
+
+# Get statistics
+print(framework.get_statistics())
+
+# Cleanup resources
+framework.cleanup()
+```
+
+## Contributing
+
+Issues and Pull Requests are welcome!
+
+## License
+
+MIT License
