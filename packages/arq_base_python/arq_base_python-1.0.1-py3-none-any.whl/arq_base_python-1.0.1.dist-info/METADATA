@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: arq_base_python
+Version: 1.0.1
+Summary: Arquitectura Base Python para microservicios
+License: Proprietary
+Project-URL: Homepage, https://vostpmde37.proteccion.com.co:10443/ARQ_Referencia/arq_base_python.git
+Project-URL: Source, https://vostpmde37.proteccion.com.co:10443/ARQ_Referencia/arq_base_python.git
+Project-URL: Documentation, https://vostpmde37.proteccion.com.co:10443/ARQ_Referencia/arq_base_python/-/blob/certification/README.md
+Project-URL: Changelog, https://vostpmde37.proteccion.com.co:10443/ARQ_Referencia/arq_base_python/-/releases
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: aioboto3==13.2.0
+Requires-Dist: aiobotocore==2.15.2
+Requires-Dist: alembic==1.13.3
+Requires-Dist: boto3==1.35.36
+Requires-Dist: coverage==7.6.4
+Requires-Dist: dataclass-wizard==0.22.3
+Requires-Dist: dependency-injector[yaml]==4.42.0
+Requires-Dist: faker==29.0.0
+Requires-Dist: fastapi[standard]==0.115.4
+Requires-Dist: psycopg[binary,pool]==3.2.3
+Requires-Dist: pydantic-settings==2.5.2
+Requires-Dist: pytest==8.3.3
+Requires-Dist: pytest-asyncio==0.24.0
+Requires-Dist: pytest-cov==5.0.0
+Requires-Dist: pytest-mock==3.14.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: reactivex==4.0.4
+Requires-Dist: sqlmodel==0.0.22
+Requires-Dist: tenacity==9.0.0
+
+# Arquitectura de Referencia Python
+
+
+## Tabla de Contenido
+
+- [Despliegue en local](/configuration/microservice/docs/despliegue_local.md)
+- [SonarQube en local](/configuration/microservice/docs/sonar_local.md)
+- [Adaptador PostgreSQL](/configuration/microservice/docs/adaptador_db.md)
+- [Comandos y Controladores](/configuration/microservice/docs/comandos.md)
+- [Archivos de despliegue](/configuration/microservice/docs/despliegue_archivos.md)
+- [Codigo Fuente, Sonar y Jenkins](/configuration/microservice/docs/links.md)
+- [Documentacion Arquitectura Base](./configuration/microservice/docs/arq_base_python.md#1-arquitectura)
+<!-- 5. [Servicios Web](#4-servicios-web) -->
