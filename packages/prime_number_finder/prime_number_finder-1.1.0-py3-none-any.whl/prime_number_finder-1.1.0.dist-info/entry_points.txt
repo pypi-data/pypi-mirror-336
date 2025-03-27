@@ -1,0 +1,2 @@
+[gui_scripts]
+prime-number-finder = prime_number_finder.app:main
