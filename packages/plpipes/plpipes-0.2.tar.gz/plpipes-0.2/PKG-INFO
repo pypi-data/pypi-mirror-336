@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: plpipes
+Version: 0.2
+Summary: PredictLand Data Science Framwork
+Author-email: PredictLand <info@predictland.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: requests >=2.0
+Requires-Dist: duckdb >=0.6
+Requires-Dist: duckdb-engine >=0.6
+Requires-Dist: numpy >=1.14
+Requires-Dist: PyYAML >=6.0
+Requires-Dist: Jinja2 >=3.1
+Requires-Dist: pandas >=1.5
+Requires-Dist: SQLAlchemy >=1.4, <2.0
+Requires-Dist: prql-python >=0.3
+Requires-Dist: httpx >=0.23
+Requires-Dist: sqlparse >= 0.5
+Requires-Dist: friendlydateparser > 0.2.2
+Requires-Dist: findapp >= 0.0.1
+Requires-Dist: azure-identity ; extra == "azure"
+Requires-Dist: jupyterlab >=1.0 ; extra == "jupyter"
+Requires-Dist: pyprql >=0.5 ; extra == "jupyter"
+Requires-Dist: ipython-sql >=0.4 ; extra == "jupyter"
+Requires-Dist: azure-identity ; extra == "msgraph"
+Requires-Dist: ms-graph-client ; extra == "msgraph"
+Requires-Dist: pyodbc >=4.0 ; extra == "odbc"
+Project-URL: Home, https://github.com/PredictLand/PL-TEC-PLPipes
+Provides-Extra: azure
+Provides-Extra: jupyter
+Provides-Extra: msgraph
+Provides-Extra: odbc
+
+# PLPipes Overview
+
+PLPipes is a flexible and scalable Data Science framework designed to
+simplify the development of data processing pipelines, integrate
+various technologies, and automate routine tasks in Data Science
+projects.
+
+Whether you're working on a small local setup or deploying to a cloud
+environment, PLPipes provides a standardized approach to streamline
+your workflow.
+
+For comprehensive documentation, including the installation guide,
+visit our GitHub Pages:
+
+- PLPipes [Documentation](https://predictland.github.io/PL-TEC-PLPipes)
+
+- [Installation](https://predictland.github.io/PL-TEC-PLPipes/install/)
+
+## About PredictLand
+
+[**PredictLand**](https://www.predictland.com/) is a consultancy firm
+specializing in AI projects, offering expertise in Data Science and
+related fields. For inquiries, please contact us at
+info@predictland.com.
+
+## Copyright
+
+© PredictLand 2023, 2024, 2025. Distributed under the [MIT
+License](https://predictland.github.io/PL-TEC-PLPipes/license/).
+
+
