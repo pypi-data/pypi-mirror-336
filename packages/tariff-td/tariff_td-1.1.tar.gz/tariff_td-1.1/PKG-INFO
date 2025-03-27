@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: tariff-td
+Version: 1.1
+Summary: Calcula el periodo actual según las Tarifas Españolas TD 2.0 y 3.0
+Home-page: https://github.com/miguelangellv/python-tariff-td
+License: MIT
+Author: Miguel Ángel López
+Author-email: miguel.angel.lopez.vicente@gmail.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.7.4.post0)
+Requires-Dist: async_timeout (>=3.0.1)
+Requires-Dist: holidays (>0.18)
+Project-URL: Repository, https://github.com/miguelangellv/python-tariff-td
+Description-Content-Type: text/markdown
+
+# Tariff TD
+
+Tariff TD es una biblioteca para Python que permite determinar el periodo de las tarifas 2.0 TD y 3.0 TD españolas en una fecha determinada así como obtener el precio correspondiente.
+
+Esta biblioteca usa los festivos proporcionados por la biblioteca `hollidays` pero elimina los `Viernes Santos`, puesto que dicho festivo,
+al cambiar de fecha cada año, no es considerado valle.
+
+## Ejemplo de suo
+
+```python
+
+from datetime import datetime
+
+from src.tariff_td import Tariff20TD
+
+FORMAT = "%Y-%m-%d %H:%M:%S"
+
+# Creamos la instancia especificando los precios.
+# En caso de la Tarifa 3.0, se usaría Tariff30TD
+tariff = Tariff20TD(p1=0.17, p2=0.15, p3=0.10)
+
+# Creamos una fecha
+date = datetime.strptime("2024-01-02 06:00:00", FORMAT)
+
+# Obtenemos el periodo
+period = tariff.get_period(date)
+
+# Obtenemos el precio
+price = tariff.get_price(date)
+```
+
