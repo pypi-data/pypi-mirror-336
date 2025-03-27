@@ -1,0 +1,3 @@
+[console_scripts]
+tracelite=tracelite.cli.main:app
+
