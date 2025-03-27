@@ -1,0 +1,9 @@
+superduper_mongodb/__init__.py,sha256=jfb7p0SYfSv4yTsMtisWon-YyVtZO3hR7ZDuxE2XnSE,209
+superduper_mongodb/data_backend.py,sha256=9Mh80W84_JFmMCRezktrwt90j_2Dk5kYjUDBku4-iGk,10470
+superduper_mongodb/utils.py,sha256=9m-B8noQVwa1xkYftkPK3FDKb62qG-ASU1f-KwRsjYg,2703
+superduper_mongodb/vector_search.py,sha256=5QNPX9t8MDXSh8tZGSaVQkMMx5pec1644XbAgTw6jhs,6773
+superduper_mongodb-0.6.1.dist-info/licenses/LICENSE,sha256=fq2WxmjewRN4VfDClVl-6CiVFZedp4y5_iGqQiXHBN8,11353
+superduper_mongodb-0.6.1.dist-info/METADATA,sha256=00sAJNm7xam1_GVwoJm1k2Iisi9KDUuXtkv4XM_V8L4,15033
+superduper_mongodb-0.6.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+superduper_mongodb-0.6.1.dist-info/top_level.txt,sha256=3z7JkQI3NSDQhHhn9RnQ-NfWCJTxyn5gP0RtLA85Bik,19
+superduper_mongodb-0.6.1.dist-info/RECORD,,
