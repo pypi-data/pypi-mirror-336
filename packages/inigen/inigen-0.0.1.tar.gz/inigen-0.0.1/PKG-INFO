@@ -1,0 +1,248 @@
+Metadata-Version: 2.4
+Name: inigen
+Version: 0.0.1
+Summary: Intrinsic and neighborhood-induced gene expression generation
+Project-URL: Documentation, https://inigen.readthedocs.io/
+Project-URL: Source, https://github.com/Lotfollahi-lab/inigen
+Project-URL: Home-page, https://github.com/Lotfollahi-lab/inigen
+Author: Amir Hossein Hosseini Akbarnejad, Sebastian Birk
+Maintainer-email: Amir Hossein Hosseini Akbarnejad <aa36@sanger.ac.uk>, Sebastian Birk <sebastian.birk@outlook.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2025, Amir Hossein Hosseini Akbarnejad, Sebastian Birk, Mohammad Lotfollahi
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: <3.12,>=3.10
+Requires-Dist: anndata
+Requires-Dist: gdown
+Requires-Dist: ipython
+Requires-Dist: linformer-pytorch
+Requires-Dist: pillow
+Requires-Dist: pyyaml
+Requires-Dist: scib-metrics
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: scvi-tools
+Requires-Dist: squidpy
+Requires-Dist: torch
+Requires-Dist: torch-geometric
+Requires-Dist: torchcfm
+Requires-Dist: torchdyn
+Requires-Dist: wandb
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: twine>=4.0.2; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: docutils!=0.18.*,!=0.19.*,>=0.8; extra == 'docs'
+Requires-Dist: ipykernel; extra == 'docs'
+Requires-Dist: ipython; extra == 'docs'
+Requires-Dist: myst-nb; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: pandas; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx-book-theme>=1.0.0; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx-design; extra == 'docs'
+Requires-Dist: sphinx-hoverxref; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Requires-Dist: sphinx>=4.1; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex>=1.0.0; extra == 'docs'
+Requires-Dist: sphinxext-opengraph; extra == 'docs'
+Provides-Extra: docsbuild
+Requires-Dist: docutils!=0.18.*,!=0.19.*,>=0.8; extra == 'docsbuild'
+Requires-Dist: ipykernel; extra == 'docsbuild'
+Requires-Dist: ipython; extra == 'docsbuild'
+Requires-Dist: myst-nb; extra == 'docsbuild'
+Requires-Dist: myst-parser; extra == 'docsbuild'
+Requires-Dist: pandas; extra == 'docsbuild'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docsbuild'
+Requires-Dist: sphinx-book-theme>=1.0.0; extra == 'docsbuild'
+Requires-Dist: sphinx-copybutton; extra == 'docsbuild'
+Requires-Dist: sphinx-design; extra == 'docsbuild'
+Requires-Dist: sphinx-hoverxref; extra == 'docsbuild'
+Requires-Dist: sphinx-rtd-theme; extra == 'docsbuild'
+Requires-Dist: sphinx>=4.1; extra == 'docsbuild'
+Requires-Dist: sphinxcontrib-bibtex>=1.0.0; extra == 'docsbuild'
+Requires-Dist: sphinxext-opengraph; extra == 'docsbuild'
+Provides-Extra: tests
+Requires-Dist: coverage; extra == 'tests'
+Requires-Dist: pytest; extra == 'tests'
+Provides-Extra: tutorials
+Requires-Dist: jupyter; extra == 'tutorials'
+Description-Content-Type: text/markdown
+
+# Inigen
+
+[![Tests][badge-tests]][link-tests]
+[![Documentation][badge-docs]][link-docs]
+
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://github.com/Lotfollahi-lab/inigen/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/Lotfollahi-lab/inigen?logo=GitHub&color=yellow)](https://github.com/Lotfollahi-lab/inigen/stargazers)
+[![PyPI](https://img.shields.io/pypi/v/inigen.svg)](https://pypi.org/project/inigen)
+[![PyPIDownloads](https://static.pepy.tech/badge/inigen)](https://pepy.tech/project/inigen)
+[![Docs](https://readthedocs.org/projects/inigen/badge/?version=latest)](https://inigen.readthedocs.io/en/stable/?badge=stable)
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PyPI](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+Inigen (**I**ntrinsic and **N**eighborhood-**I**nduced **G**ene **E**xpression generatio**N**)
+
+## Resources
+- An installation guide, tutorials and API documentation is available in the [documentation](https://inigen.readthedocs.io/).
+- Please use [issues](https://github.com/Lotfollahi-lab/inigen/issues) to submit bug reports.
+- If you would like to contribute, check out the [contributing guide](https://inigen.readthedocs.io/en/latest/contributing.html).
+- If you find Inigen useful for your research, please consider citing the Inigen manuscript.
+
+## Reference
+```
+```
+
+## Installing the Python Environment
+ **SANGER INTERNAL**: The environment is already available on farm.
+
+To activate it:
+```commandline
+module load cellgen/conda
+conda activate /nfs/team361/aa36/PythonEnvs_2/envinigendec27/
+```
+
+Alternatively, you can create the python environment yourself:
+```commandline
+git clone https://github.com/Lotfollahi-lab/inigen.git  # clone the repo
+cd ./inigen/
+conda env create -f environment.yml --prefix SOME_EMPTY_PATH
+```
+
+## Installing WandB
+It's highly recommended to setup wandb before proceeding.
+
+To do so:
+- Go to https://wandb.ai/ and create an account.
+- Create a project called "inigen".
+
+## Quick Start
+You can use inigen as a local package, because it's not pip installable at the moment.
+
+To do so:
+```commandline
+git clone https://github.com/Lotfollahi-lab/inigen.git  # clone the repo
+cd ./inigen/
+```
+The easiest way to run inigen is through the command line interface (CLI).
+This involves two steps
+1. Creating four config files (you duplicate/modify template config files).
+2. Running inigen with a single command line.
+
+### Rule of thumbs §1 for modifying the config files
+In the template config files, there are `TODO`-s of different types that you may need to modify
+- Category 1: `TODO:ESSENTIAL:TUNE`: the basic/essential parts to run inigen.
+- Category 2: `TODO:TUNE`: less essneitial and/or technical details.
+- Category 3: `TODO:check`: parameters of even less importance compared to category 1 and category 2.
+
+If you are, for example, a biologist with no interest/experience in computational methods, you can only modify "Category 1" above and leave the rest of configurations untouched.
+"Category 2" and "Category 3" come next in both priority and the level of details.
+
+### Step 1 of Using the CLI: Making 4 config files
+Please follow these steps
+- Training data config file:
+    - Make a copy of `./cli/SampleConfigFiles/config_data_train.yml` and rename it to `YOUR_CONFIG_DATA_TRAIN.yml`
+    - Read the block of comments tarting with *"# inigen expects a list of .h5ad files stored on disk, ..."*.
+    - Modify some parts marked by `TODO:...` and according to *"Rule of thumbs §1"* explained above.
+
+
+- Testing data config file:
+    - Make a copy of `YOUR_CONFIG_DATA_TRAIN.yml` and rename it to `YOUR_CONFIG_DATA_TEST.yml`
+    - Rename all ocrrences of `config_dataloader_train` to `config_dataloader_test`
+
+
+- Model config file:
+    - Make a copy of `./cli/SampleConfigFiles/config_model.yml` and rename it to `YOUR_CONFIG_MODEL.yml`.
+    - Modify some parts marked by `TODO:...` and according to *"Rule of thumbs §1"* explained above.
+
+
+- Training config file:
+    - Make a copy of `./cli/SampleConfigFiles/config_training.yml` and rename it to `YOUR_CONFIG_TRAINING.yml`.
+    - Modify some parts marked by `TODO:...` and according to *"Rule of thumbs §1"* explained above.
+
+### Step 2 of Using the CLI: Running inigen
+
+```commandline
+cd ./inigen/  # if you haven't already done it above.
+cd ./cli/
+
+python inigen_cli.py \
+--file_config_data_train YOUR_CONFIG_DATA_TRAIN.yml \
+--file_config_data_test YOUR_CONFIG_DATA_TEST.yml \
+--file_config_model YOUR_CONFIG_MODEL.yml \
+--file_config_training YOUR_CONFIG_TRAINING.yml \
+--path_output "./Your/Output/Path/ToDump/Results/" \
+--flag_verbose "True" \
+```
+The recommended way of accessing inigen predictions is by `adata_inigenOutput_norm.h5ad` and `adata_inigenOutput_unnorm.h5ad` created in the provided `--path_output`and `adata.obsm` and `adata.uns` in these files.
+In the former file `..._norm.h5ad` the readcount matrix `adata.X` as well as inigen predictions Xint and Xspl are row normalised, while in the latter file `_unnorm.h5ad` they are not.
+
+inigen dumps a README file in the provided `--path_output`, as well as each subfolder therein.
+
+## Common Issues
+- Use absolute paths (and not relative paths like `../../some/path/`) in the config files, as well as when running `python inigen_cli.py ...`.
+- TODO: intro to the script for tune window width.
+- It's common to face out of memory issue in the very last step where the big anndata objects `adata_inigenOutput_norm.h5ad` and `adata_inigenOutput_unnorm.h5ad` are created and dumped.
+If that step fails, the results are still accesible in the output path the subfolder `CheckpointAndPredictions/`.
+One can laod the `.pt` files by
+```python
+import torch
+dict_results = torch.load(
+    "the/output/path/CheckpointAndPredictions/predictions_slice_1.pt",
+    map_location='cpu'
+)
+```
+
+## Release notes
+TODOTODO
+See the [changelog][changelog].
+
+## Contact
+
+For questions and help requests, you can reach out in the [scverse discourse][scverse-discourse].
+If you found a bug, please use the [issue tracker][issue-tracker].
+
+## Citation
+
+> t.b.a
+
+[scverse-discourse]: https://discourse.scverse.org/
+[issue-tracker]: https://github.com/sebastianbirk/celldino/issues
+[changelog]: https://celldino.readthedocs.io/latest/changelog.html
+[link-docs]: https://celldino.readthedocs.io
+[link-api]: https://celldino.readthedocs.io/latest/api.html
