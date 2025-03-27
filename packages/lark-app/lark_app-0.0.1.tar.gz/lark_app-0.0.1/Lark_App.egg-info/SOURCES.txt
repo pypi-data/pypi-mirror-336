@@ -1,0 +1,7 @@
+setup.py
+Lark_App.egg-info/PKG-INFO
+Lark_App.egg-info/SOURCES.txt
+Lark_App.egg-info/dependency_links.txt
+Lark_App.egg-info/not-zip-safe
+Lark_App.egg-info/requires.txt
+Lark_App.egg-info/top_level.txt
