@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt_batch_api"
+version = "1.0.3"
+authors = [{name = "Philipp Allgeuer"}]
+maintainers = [{name = "Philipp Allgeuer"}]
+description = "Efficiently and robustly use the OpenAI Batch API in Python"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.12"
+keywords = ["OpenAI", "ChatGPT", "Batch API", "LLM", "NLP", "Python"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "filelock",
+    "openai",
+    "pillow",
+    "pydantic>=2",
+    "requests",
+    "tiktoken",
+    "wandb",
+    "wandb-workspaces"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pallgeuer/gpt_batch_api"
+"Source Code" = "https://github.com/pallgeuer/gpt_batch_api"
+"Issue Tracker" = "https://github.com/pallgeuer/gpt_batch_api/issues"
+
+[tool.setuptools]
+include-package-data = true
