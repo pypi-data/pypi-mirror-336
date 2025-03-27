@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: topsis_102203883
+Version: 0.3.5
+Summary: a package to calculate topsis
+Description-Content-Type: text/markdown
+
+# topsis python package
+a python package to choose the best alternative from a finite set of decision alternatives using TOPSIS.
+
+## overview
+the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) library provides an implementation of the TOPSIS decision-making method. this technique is used to rank alternatives based on multiple criteria by comparing their distance from an ideal best and an ideal worst solution.
+
+## features
+<ul>
+  <li>normalize decision matrices</li>
+  <li>apply weights and impacts to criteria</li>
+  <li>calculate performance scores and rankings</li>
+</ul>
+
+## usage 
+```from topsis_102203883 import main```
+
+## sample 
+```python <your_file> <input_file> <weights> <impacts>```
