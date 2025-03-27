@@ -1,0 +1,8 @@
+numpy>=2.0.2
+pandas>=2.2.3
+yfinance>=0.2.46
+
+[dev]
+pytest
+pylint
+pytest-cov
