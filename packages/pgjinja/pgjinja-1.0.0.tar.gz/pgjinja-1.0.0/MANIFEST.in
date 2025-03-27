@@ -1,0 +1,10 @@
+# Include documentation
+include README.md
+include LICENSE
+include CHANGELOG.md
+
+# Include examples
+include examples/*.py
+
+# Include type information
+include py.typed

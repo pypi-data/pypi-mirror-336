@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="982f88b4-8bbe-4cc8-add8-dec7d24d3c47" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Rename PostgresAsync to PgJinja and update references for consistency" />
+        <option name="rewordedMessage" value="Rename PostgresAsync to PgJinja and update references for consistency" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="507e6a3ea9e64fcf7fce0f04c54b296d64745df8" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2uodlmO5R9BvLe1BdXv9mTAhznK" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.merchant_example.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.merchant_example">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pgjinja" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="merchant_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pgjinja" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/merchant_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.merchant_example" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="982f88b4-8bbe-4cc8-add8-dec7d24d3c47" name="Changes" comment="" />
+      <created>1742919014228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742919014228</updated>
+      <workItem from="1742919015447" duration="3736000" />
+      <workItem from="1742922911542" duration="16008000" />
+      <workItem from="1742999231926" duration="2531000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update README.md for improved readability&#10;&#10;The README.md file was modified to enhance readability by adjusting line breaks in the project description. This change ensures that the text is more accessible and easier to read, especially in environments with limited line width.">
+      <option name="closed" value="true" />
+      <created>1742919039422</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742919039422</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Enhance README and add async database interaction&#10;&#10;The README.md file has been expanded to include detailed usage instructions, installation steps, and configuration options for the pgjinja package. This update aims to provide users with a comprehensive guide on how to leverage the package's capabilities for asynchronous database operations using PostgreSQL, Jinja2 templates, and Pydantic models. Additionally, new files and code examples have been added to demonstrate the package's functionality, including a sample SQL template and an asynchronous query execution setup.">
+      <option name="closed" value="true" />
+      <created>1742926586913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742926586913</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improve README code examples for clarity&#10;&#10;The README.md file has been updated to enhance the clarity and readability of the code examples. Import statements were reordered for better organization, and additional comments were added to guide users on extending database operations. These changes aim to provide a clearer understanding of the code structure and usage.">
+      <option name="closed" value="true" />
+      <created>1742927015822</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742927015822</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactor SQL query in select_merchant.sql.jinja and update .gitignore and pyproject.toml for improved project structure and dependencies">
+      <option name="closed" value="true" />
+      <created>1742928041546</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742928041546</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor PostgreSQL connection handling and update Makefile for dependency installation using uv">
+      <option name="closed" value="true" />
+      <created>1742929715722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742929715722</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactor database connection handling to use configuration from config.ini and update Makefile for improved dependency management">
+      <option name="closed" value="true" />
+      <created>1742980219765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742980219765</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update README and configure Ruff for linting&#10;&#10;Updated the README.md to include instructions for setting up the development environment and running tests. The pyproject.toml was modified to configure Ruff for linting, replacing flake8 and black. The Makefile was updated to reflect these changes, ensuring that Ruff is used for both linting and formatting tasks. These changes aim to streamline the development workflow and improve code quality.">
+      <option name="closed" value="true" />
+      <created>1742982975436</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742982975436</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Linting&#10;&#10;Refactored imports and standardized string quotes across multiple files for consistency and readability. Updated the Makefile to include a default target for streamlined project setup and execution.">
+      <option name="closed" value="true" />
+      <created>1742983359540</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742983359540</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Remove redundant help target from Makefile">
+      <option name="closed" value="true" />
+      <created>1742983432164</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742983432164</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Rename PostgresAsync to PgJinja and update references for consistency">
+      <option name="closed" value="true" />
+      <created>1743001538147</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743001538147</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Rename PostgresAsync to PgJinja and update references for consistency">
+      <option name="closed" value="true" />
+      <created>1743001551502</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743001551502</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update README.md for improved readability&#10;&#10;The README.md file was modified to enhance readability by adjusting line breaks in the project description. This change ensures that the text is more accessible and easier to read, especially in environments with limited line width." />
+    <MESSAGE value="Enhance README and add async database interaction&#10;&#10;The README.md file has been expanded to include detailed usage instructions, installation steps, and configuration options for the pgjinja package. This update aims to provide users with a comprehensive guide on how to leverage the package's capabilities for asynchronous database operations using PostgreSQL, Jinja2 templates, and Pydantic models. Additionally, new files and code examples have been added to demonstrate the package's functionality, including a sample SQL template and an asynchronous query execution setup." />
+    <MESSAGE value="Improve README code examples for clarity&#10;&#10;The README.md file has been updated to enhance the clarity and readability of the code examples. Import statements were reordered for better organization, and additional comments were added to guide users on extending database operations. These changes aim to provide a clearer understanding of the code structure and usage." />
+    <MESSAGE value="The README.md has been enhanced for better readability and clarity of code examples, and expanded with comprehensive instructions for asynchronous database interactions using the pgjinja package." />
+    <MESSAGE value="Refactor SQL query in select_merchant.sql.jinja and update .gitignore and pyproject.toml for improved project structure and dependencies" />
+    <MESSAGE value="Refactor PostgreSQL connection handling and update Makefile for dependency installation using uv" />
+    <MESSAGE value="Refactor database connection handling to use configuration from config.ini and update Makefile for improved dependency management" />
+    <MESSAGE value="Update README and configure Ruff for linting&#10;&#10;Updated the README.md to include instructions for setting up the development environment and running tests. The pyproject.toml was modified to configure Ruff for linting, replacing flake8 and black. The Makefile was updated to reflect these changes, ensuring that Ruff is used for both linting and formatting tasks. These changes aim to streamline the development workflow and improve code quality." />
+    <MESSAGE value="Linting&#10;&#10;Refactored imports and standardized string quotes across multiple files for consistency and readability. Updated the Makefile to include a default target for streamlined project setup and execution." />
+    <MESSAGE value="Remove redundant help target from Makefile" />
+    <MESSAGE value="Rename PostgresAsync to PgJinja and update references for consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename PostgresAsync to PgJinja and update references for consistency" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pgjinja$main.coverage" NAME="main Coverage Results" MODIFIED="1742925284357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pgjinja$merchant_example.coverage" NAME="merchant_example Coverage Results" MODIFIED="1743001566333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+  </component>
+</project>
