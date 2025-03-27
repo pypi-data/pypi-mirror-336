@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ntsulib
+Version: 1.0.1
+Summary: ntsulib
+Home-page: 
+Author: NTsukine
+Author-email: 398339897@qq.com
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: ntsulib==1.0.1
+Requires-Dist: PyMySQL==1.1.1
+Requires-Dist: PyQt5==5.15.11
+Requires-Dist: PyQt5-Qt5==5.15.2
+Requires-Dist: PyQt5_sip==12.17.0
+
+# NTsukine的工具包
+## 用法
+    from ntsulib import *
