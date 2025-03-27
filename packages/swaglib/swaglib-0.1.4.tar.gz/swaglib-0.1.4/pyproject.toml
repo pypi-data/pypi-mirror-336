@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swaglib"
+version = "0.1.4"
+description = "swaglib."
+authors = [
+    { name = "nomaakip", email = "nomaakip@gmail.com" }
+]
+dependencies = [
+    "requests", 
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.13"
+
+[project.urls]
+Homepage = "https://github.com/nomaakip/swaglib"
+Documentation = "https://github.com/nomaakip/swaglib"
+Repository = "https://github.com/nomaakip/swaglib"
+Issues = "https://github.com/nomaakip/swaglib/issues"
+
+[tool.setuptools]
+packages = ["swaglib"]
