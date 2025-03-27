@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/hubspot_mcp_server/__init__.py
+src/hubspot_mcp_server/server.py
+src/hubspot_mcp_server.egg-info/PKG-INFO
+src/hubspot_mcp_server.egg-info/SOURCES.txt
+src/hubspot_mcp_server.egg-info/dependency_links.txt
+src/hubspot_mcp_server.egg-info/entry_points.txt
+src/hubspot_mcp_server.egg-info/requires.txt
+src/hubspot_mcp_server.egg-info/top_level.txt
+tests/test_api_communication.py
+tests/test_hubspot_contacts.py
+tests/test_hubspot_deals.py
+tests/test_hubspot_engagement.py
+tests/test_mcp_server.py
+tests/test_server.py

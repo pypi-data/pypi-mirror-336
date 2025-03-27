@@ -1,0 +1,2 @@
+[console_scripts]
+hubspot-mcp-server = hubspot_mcp_server.server:mcp.run
