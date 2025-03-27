@@ -1,0 +1,2 @@
+[console_scripts]
+pyidevice = ios_device.main:cli
