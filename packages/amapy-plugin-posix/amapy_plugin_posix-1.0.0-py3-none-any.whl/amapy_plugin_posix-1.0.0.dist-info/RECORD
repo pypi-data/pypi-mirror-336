@@ -1,0 +1,17 @@
+asset_plugin_posix/__init__.py,sha256=6gqw05fHNJfer6IW2byxTehXzyaBpIMhtkfmHzlEGeE,46
+asset_plugin_posix/posix_blob.py,sha256=OdRlaNZgByXFs3bgod5orxVQnS3o3lo93t8s7y45CeA,2334
+asset_plugin_posix/posix_mixin.py,sha256=iAAPKBxLal2WBlcpVaHmQmw1uK8s8kCJKXZzINGhf2Q,1255
+asset_plugin_posix/posix_storage.py,sha256=VSzV5gcPcC8e-Ex_0kOXVAT1xLLlU0AIzg56GYllkLg,3758
+asset_plugin_posix/posix_url.py,sha256=I5ZZXAmqxEOGHNXwzG1jpq9xD-fOjuNJdapZq68F7zE,909
+asset_plugin_posix/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asset_plugin_posix/tests/test_posix_storage.py,sha256=Zb4w-Y7ap2g9lxhpH9ji0QsIPXU4aryeolvT8jKzSQU,2642
+asset_plugin_posix/transporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asset_plugin_posix/transporter/async_posix_transporter.py,sha256=DfeQUCUR9Zb4TS8hqRHo_FtXnnxcW929725Sax06Z1I,653
+asset_plugin_posix/transporter/async_shutil.py,sha256=OBAHgY-K-CA8xZWD1SVpiIBjW9HMVXs7tOvDv4dB9Fk,1071
+asset_plugin_posix/transporter/posix_transport_resource.py,sha256=ivn0o_3CMFzSKLWErf-jeywR5aF6qQniKPH35WD7Few,600
+asset_plugin_posix/transporter/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asset_plugin_posix/transporter/tests/test_async_posix_transporter.py,sha256=mjIIB6bwJM6XZ21Dp2ql9dD3epLpJYRakvb7odFnSOU,2472
+amapy_plugin_posix-1.0.0.dist-info/METADATA,sha256=e4l2zXpQw-0hngrrvuNO92avvpvR9Ln2MivknSSPXYo,622
+amapy_plugin_posix-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+amapy_plugin_posix-1.0.0.dist-info/top_level.txt,sha256=ELhKU_9-hAX49cPQ_UdpH9UVTAsKDo9KT9kclakOPb8,19
+amapy_plugin_posix-1.0.0.dist-info/RECORD,,
