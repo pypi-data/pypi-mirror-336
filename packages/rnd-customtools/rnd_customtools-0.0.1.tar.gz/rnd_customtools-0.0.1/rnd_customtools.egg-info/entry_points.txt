@@ -1,0 +1,2 @@
+[package_tools]
+aif_llm_tool = rnd_customtools.tools.utils:list_package_tools

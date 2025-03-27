@@ -1,0 +1,24 @@
+rnd_customtools.tools.aif_llm_tool.call_llm:
+module: rnd_customtools.tools.aif_llm_tool
+name: AIF LLM Tool
+description: This is AIF LLM  tool to demonstrate how to customize the LLM tool
+type: custom_llm
+function: call_llm
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    api:
+      type:
+      - string
+    deployment_name:
+      type:
+      - string
+    temperature:
+      type:
+      - double  
+    input_text:
+      type:
+      - string
+
+  
