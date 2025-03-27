@@ -1,0 +1,94 @@
+Metadata-Version: 2.2
+Name: mkl_umath
+Version: 0.1.4
+Summary: MKL-based universal functions for NumPy arrays
+Home-page: http://github.com/IntelPython/mkl_umath
+Download-URL: http://github.com/IntelPython/mkl_umath
+Author: Intel Corporation
+Maintainer: Intel Corp.
+Maintainer-email: scripting@intel.com
+License: BSD
+Keywords: mkl_umath
+Platform: Linux
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.26.4,<1.27.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: summary
+Requires-Dist: mkl-service
+Requires-Dist: mkl
+Requires-Dist: intel-cmplr-lib-rt
+
+[![Conda package](https://github.com/IntelPython/mkl_umath/actions/workflows/conda-package.yml/badge.svg)](https://github.com/IntelPython/mkl_umath/actions/workflows/conda-package.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/IntelPython/mkl_umath/badge)](https://securityscorecards.dev/viewer/?uri=github.com/IntelPython/mkl_umath)
+
+# `mkl_umath`
+
+`mkl_umath._ufuncs` exposes [Intel(R) Math Kernel Library](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html)
+powered version of loops used in the patched version of [NumPy](https://numpy.org), that used to be included in
+[Intel(R) Distribution for Python*](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html).
+
+Patches were factored out per community feedback ([NEP-36](https://numpy.org/neps/nep-0036-fair-play.html)).
+
+`mkl_umath` started as a part of Intel (R) Distribution for Python* optimizations to NumPy, and is now being released 
+as a stand-alone package. It can be installed into conda environment using 
+
+```
+   conda install -c https://software.repos.intel.com/python/conda mkl_umath
+```
+
+---
+
+To install mkl_umath Pypi package please use following command:
+
+```
+   python -m pip install --i https://software.repos.intel.com/python/pypi -extra-index-url https://pypi.org/simple mkl_umath
+```
+
+If command above installs NumPy package from the Pypi, please use following command to install Intel optimized NumPy wheel package from Intel Pypi Cloud:
+
+```
+   python -m pip install --i https://software.repos.intel.com/python/pypi -extra-index-url https://pypi.org/simple mkl_umath numpy==<numpy_version>
+```
+
+Where `<numpy_version>` should be the latest version from https://software.repos.intel.com/python/conda/
+
+---
+
+## Building
+
+Intel(R) C compiler and Intel(R) Math Kernel Library are required to build `mkl_umath` from source:
+
+```sh
+# ensure that MKL is installed into Python prefix, Intel LLVM compiler is activated
+export MKLROOT=$CONDA_PREFIX
+CC=icx pip install --no-build-isolation --no-deps -e .
+```
