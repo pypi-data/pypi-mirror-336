@@ -1,0 +1,36 @@
+{
+    "entity": {
+        "sensor": {
+            "current_a": {
+                "name": "Current A"
+            },
+            "current_b": {
+                "name": "Current B"
+            },
+            "pf_b": {
+                "name": "PF B"
+            },
+            "pf_c": {
+                "name": "PF C"
+            },
+            "power_a": {
+                "name": "Power A"
+            },
+            "power_b": {
+                "name": "Power B"
+            },
+            "power_c": {
+                "name": "Power C"
+            },
+            "voltage_a": {
+                "name": "Voltage A"
+            },
+            "voltage_b": {
+                "name": "Voltage B"
+            },
+            "voltage_c": {
+                "name": "Voltage C"
+            }
+        }
+    }
+}

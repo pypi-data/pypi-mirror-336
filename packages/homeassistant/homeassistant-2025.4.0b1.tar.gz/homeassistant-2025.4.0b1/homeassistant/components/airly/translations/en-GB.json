@@ -1,0 +1,10 @@
+{
+    "exceptions": {
+        "no_station": {
+            "message": "An error occurred while retrieving data from the Airly API for {entry}: no measuring stations in this area"
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from the Airly API for {entry}: {error}"
+        }
+    }
+}

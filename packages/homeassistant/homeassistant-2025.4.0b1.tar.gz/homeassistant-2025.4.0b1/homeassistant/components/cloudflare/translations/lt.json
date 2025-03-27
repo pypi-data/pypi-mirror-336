@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Pakartotinis autentifikavimas buvo s\u0117kmingas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_auth": "Neteisingas autentifikavimas",
+            "unknown": "Netik\u0117ta klaida"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API prieigos raktas",
+                    "description": "I\u0161 naujo autentifikuokite naudodami \u201eCloudflare\u201c paskyr\u0105."
+                }
+            },
+            "records": {
+                "data": {
+                    "records": "\u012era\u0161ai"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_token": "API prieigos raktas"
+                },
+                "title": "Prisijunkite prie \u201eCloudflare\u201c."
+            },
+            "zone": {
+                "data": {
+                    "zone": "Zona"
+                }
+            }
+        }
+    },
+    "services": {
+        "update_records": {
+            "name": "Atnaujinti \u012fra\u0161us"
+        }
+    }
+}

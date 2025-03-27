@@ -1,0 +1,60 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "Re-configuration was successful"
+        },
+        "step": {
+            "reconfigure": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Vodafone Station.",
+                    "password": "The password for your Vodafone Station.",
+                    "username": "The username for your Vodafone Station."
+                }
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Vodafone Station.",
+                    "password": "The password for your Vodafone Station.",
+                    "username": "The username for your Vodafone Station."
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "fiber_reconnect": {
+                "name": "Fibre reconnect"
+            }
+        },
+        "sensor": {
+            "active_connection": {
+                "state": {
+                    "fiber": "Fibre"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_authenticate": {
+            "message": "Error authenticating: {error}"
+        },
+        "cannot_execute_action": {
+            "message": "Cannot execute requested action: {error}"
+        },
+        "update_failed": {
+            "message": "Error fetching data: {error}"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "Seconds to consider a device at 'home'"
+                },
+                "data_description": {
+                    "consider_home": "The number of seconds to wait until marking a device as not home after it disconnects from the network."
+                }
+            }
+        }
+    }
+}

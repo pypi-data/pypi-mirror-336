@@ -1,0 +1,9 @@
+{
+    "config": {
+        "abort": {
+            "authorize_url_timeout": "Timeout generating authorise URL.",
+            "oauth_failed": "Error while obtaining access token.",
+            "oauth_unauthorized": "OAuth authorisation error while obtaining access token."
+        }
+    }
+}

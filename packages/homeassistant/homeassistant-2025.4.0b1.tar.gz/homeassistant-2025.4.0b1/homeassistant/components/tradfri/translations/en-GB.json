@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "auth": {
+                "data_description": {
+                    "host": "Hostname or IP address of your Tr\u00e5dfri gateway."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "aqi": {
+                "name": "Air quality"
+            },
+            "filter_life_remaining": {
+                "name": "Filter time left"
+            }
+        }
+    }
+}

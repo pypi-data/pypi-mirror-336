@@ -1,0 +1,31 @@
+{
+    "config": {
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "encrypt_token": "Use an encrypted token for authentication."
+                }
+            },
+            "user": {
+                "data": {
+                    "encrypt_token": "Use an encrypted token for authentication."
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Nuki bridge. For example: 192.168.1.25."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "ring_action": {
+                "name": "Ring Action"
+            }
+        }
+    },
+    "services": {
+        "lock_n_go": {
+            "description": "Unlocks the door, waits a few seconds then re-locks. The wait period can be customised through the app."
+        }
+    }
+}

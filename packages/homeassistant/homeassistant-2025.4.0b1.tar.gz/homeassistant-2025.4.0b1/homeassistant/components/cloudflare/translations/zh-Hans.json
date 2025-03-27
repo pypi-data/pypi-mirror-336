@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "\u91cd\u65b0\u8ba4\u8bc1\u6210\u529f"
+        },
+        "error": {
+            "cannot_connect": "\u8fde\u63a5\u5931\u8d25",
+            "invalid_auth": "\u8eab\u4efd\u9a8c\u8bc1\u65e0\u6548",
+            "unknown": "\u610f\u5916\u9519\u8bef"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API \u4ee4\u724c",
+                    "description": "\u91cd\u65b0\u9a8c\u8bc1\u60a8\u7684 Cloudflare \u8d26\u6237\u3002"
+                }
+            },
+            "records": {
+                "data": {
+                    "records": "\u8bb0\u5f55"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_token": "API \u4ee4\u724c"
+                },
+                "title": "\u8fde\u63a5\u81f3 Cloudflare"
+            },
+            "zone": {
+                "data": {
+                    "zone": "\u533a\u57df"
+                }
+            }
+        }
+    },
+    "services": {
+        "update_records": {
+            "name": "\u66f4\u65b0\u8bb0\u5f55"
+        }
+    }
+}
