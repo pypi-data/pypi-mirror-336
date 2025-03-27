@@ -1,0 +1,75 @@
+<!-- Summary: This HTML file defines the user interface for the SillikaLM application. 
+It includes sections for selecting and installing base models, listing and deleting models, 
+and viewing logs. The footer contains copyright and license information. 
+Copyright © 2025 Krishnakanth Allika. 
+Licensed under the GNU General Public License v3 (GPLv3). 
+This program is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, or 
+any later version. 
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+You should have received a copy of the GNU General Public License 
+along with this program. If not, see https://www.gnu.org/licenses/gpl-3.0-standalone.html. 
+For inquiries, contact: speed-acorn-whiff@duck.com 
+Full license details: See LICENSE file. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SillikaLM - Allika's Silly Language Models</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>SillikaLM - Allika's Silly Language Models</h1>
+    <div class="main-container">
+        <div class="container">
+            <div class="operations">
+                <div class="section">
+                    <select id="baseModelDropdown">
+                        <option value="" disabled selected>Select base model to add</option>
+                    </select>
+                    <button id="installModelsButton" onclick="createModels()">Install Models</button>
+                </div>
+                <div class="section">
+                    <button onclick="listModels()">List Models</button>
+                    <button id="chatButton" onclick="startWebUI()" disabled>Chat with SillikaLMs</button> <!-- Initially disabled -->
+                </div>
+                <div class="section">
+                    <select id="modelNameDropdown">
+                        <option value="" disabled selected>Select model to delete</option>
+                    </select>
+                    <button id="deleteModelButton" onclick="deleteModels()">Delete Model</button>
+                </div>
+                <div class="section">
+                    <button onclick="deleteAllModels()" class="delete-all-button">Delete all SillikaLMs</button> <!-- Apply the new class -->
+                    <button onclick="shutdownSystem()" class="shutdown-button">Shutdown</button>
+                </div>
+            </div>
+            <div class="output">
+                <div class="response" id="response"></div>
+                <div class="spinner" id="spinner"></div> <!-- Spinner element -->
+                <div class="note" id="installNote">Patience, young padawan! This might take a while depending on your internet speed and system configuration.</div>
+            </div>
+        </div>
+
+        <!-- New section for logs -->
+        <div class="logs" style="padding-top: 10px; padding-bottom: 10px; position: relative;">
+            <h2>Logs</h2>
+            <button id="copyLogsButton" onclick="copyLogsToClipboard()" style="position: absolute; top: 10px; right: 10px; border: none; background: none; cursor: pointer;">📋</button>
+            <pre id="logOutput" style="white-space: pre-wrap;"></pre>
+        </div>
+    </div>
+
+    <!-- Footer with small print -->
+    <footer style="text-align: center; margin-top: 20px; font-size: 0.8em; color: #ffcc00;">
+        <p>&copy; 2025 <a href="https://www.allika.eu.org" target="_blank" style="color: #ffcc00;">Krishnakanth Allika</a>. <a href="https://go.allika.eu.org/SillikaLM" target="_blank" style="color: #ffcc00;">SillikaLM</a> is a copyrighted trademark and is licensed under the <a href="/static/license.html" target="_blank" style="color: #ffcc00;">GNU General Public License v3 (GPLv3)</a>.</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

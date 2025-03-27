@@ -1,0 +1,52 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "sillikalm"
+version = "0.1.0"
+description = "Silly Language Models by Allika"
+authors = [
+    { name = "Krishnakanth Allika", email = "upside-had-matcher@duck.com" },
+]
+keywords = [
+    "LLM",
+    "Large Language Model",
+    "open-webui",
+    "ollama",
+    "sillikalm",
+    "FastAPI",
+]
+dependencies = [
+    "cryptography>=44.0.2",
+    "fastapi>=0.115.7",
+    "ollama>=0.4.7",
+    "open-webui>=0.5.20",
+    "python-dotenv>=1.0.1",
+    "uvicorn>=0.34.0",
+]
+requires-python = ">=3.11,<3.12"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://go.allika.eu.org/sillikalm"
+Repository = "https://go.allika.eu.org/sillikalmrepo"
+Documentation = "https://go.allika.eu.org/sillikalmdocs"
+CHangelog = "https://go.allika.eu.org/sillikalmchangelog"
+
+[project.scripts]
+sillikalm = "project.main:start_sillikalm"
+
+[project.gui-scripts]
+sillikalm-gui = "project.main:start_sillikalm"
+
+[tool.uv]
+link-mode = "copy"
