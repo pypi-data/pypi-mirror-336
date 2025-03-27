@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+environ_composition/__init__.py
+environ_composition/config.py
+environ_composition/parser.py
+environ_composition.egg-info/PKG-INFO
+environ_composition.egg-info/SOURCES.txt
+environ_composition.egg-info/dependency_links.txt
+environ_composition.egg-info/top_level.txt
+tests/test_config.py
+tests/test_parser.py
