@@ -1,0 +1,7 @@
+setup.py
+pyrtms/__init__.py
+pyrtms/rtmsBrukerMCFReader.py
+pyrtms.egg-info/PKG-INFO
+pyrtms.egg-info/SOURCES.txt
+pyrtms.egg-info/dependency_links.txt
+pyrtms.egg-info/top_level.txt
