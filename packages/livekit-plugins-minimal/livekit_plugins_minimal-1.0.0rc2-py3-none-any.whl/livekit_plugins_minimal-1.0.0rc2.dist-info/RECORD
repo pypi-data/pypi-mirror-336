@@ -1,0 +1,6 @@
+livekit/plugins/minimal/__init__.py,sha256=Y_C9_IjZIIdsSuuSR-MCkT90iX2FPCHMS6SA0HIhsr0,836
+livekit/plugins/minimal/log.py,sha256=R79onaxt-SdxLujJ3yk5P-xnevz-vh_5RAY0uZ0ds-4,70
+livekit/plugins/minimal/version.py,sha256=9dPToS7uQhNVGiqP6fLx_l0Akub-11rRUoyDaiS4_CU,603
+livekit_plugins_minimal-1.0.0rc2.dist-info/METADATA,sha256=Xpo4p5OPKDkW3gjk9TUZZwkCda_fTMlLuPpdgf73v3E,1371
+livekit_plugins_minimal-1.0.0rc2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_minimal-1.0.0rc2.dist-info/RECORD,,
