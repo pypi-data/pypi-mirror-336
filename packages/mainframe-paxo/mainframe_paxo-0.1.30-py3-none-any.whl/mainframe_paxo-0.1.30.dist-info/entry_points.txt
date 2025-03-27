@@ -1,0 +1,7 @@
+[console_scripts]
+paxo = mainframe_paxo.paxo:paxo
+paxo-uvs = mainframe_paxo.uvs:main
+ue-version-selector = mainframe_paxo.uvs:main
+
+[gui_scripts]
+paxo-uvs-gui = mainframe_paxo.uvs:main

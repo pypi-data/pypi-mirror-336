@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mainframe-paxo
+Version: 0.1.30
+Summary: A simple CLI for paxing
+Author-email: Kristján Valur Jónsson <sweskman@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Requires-Python: >=3.11.0
+Requires-Dist: click>=8.1.8
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+We would like to be read.
