@@ -1,0 +1,7 @@
+README.md
+setup.py
+Mathmodule14750.egg-info/PKG-INFO
+Mathmodule14750.egg-info/SOURCES.txt
+Mathmodule14750.egg-info/dependency_links.txt
+Mathmodule14750.egg-info/top_level.txt
+module/__init__.py
