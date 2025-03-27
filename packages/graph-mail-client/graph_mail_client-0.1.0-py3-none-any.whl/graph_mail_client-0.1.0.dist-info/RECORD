@@ -1,0 +1,8 @@
+graph_mail_client/__init__.py,sha256=1u6BveR8hm-VpksYn3c75d8rYLT1WAmX2EWj-gCmRbk,399
+graph_mail_client/client.py,sha256=J75CtVASvkBJXlkrsXWmrgcitOTZPCX2Wa5X7eQwJFk,10395
+graph_mail_client/code_utils.py,sha256=X6AjyFOiht8UZVm4UchEo6N_H4p1a4cWWx3K6YcXMCc,1673
+graph_mail_client/config.py,sha256=oyW7cO78Cd-WZBQLXVXmFZIFoKplp7VweyH94CdUFc4,2559
+graph_mail_client-0.1.0.dist-info/METADATA,sha256=_-aYZSjXpxsgCxeej3y_NSnMrgKzgvxhn4by4UF1v0E,720
+graph_mail_client-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+graph_mail_client-0.1.0.dist-info/top_level.txt,sha256=nNVbcLFf82loa55aZg4I4g8G9LqRfyYwK1dqXtL9rJI,18
+graph_mail_client-0.1.0.dist-info/RECORD,,
