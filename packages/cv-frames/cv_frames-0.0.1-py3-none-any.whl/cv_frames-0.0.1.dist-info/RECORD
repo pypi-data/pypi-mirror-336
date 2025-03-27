@@ -1,0 +1,8 @@
+cvframes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvframes/cli.py,sha256=e91Kp7GIO0PlRF5mKeWRfehUZfNwp25oabBZq2lp4M4,516
+cvframes/iterate.py,sha256=s0B2gPQV42l3eACagjMVzOdKYE6iyOX2lVTN86__zD4,2707
+cv_frames-0.0.1.dist-info/METADATA,sha256=m7T4w71OtytFtHf1yq_ll9909uTDygn09bpk5El5iZ4,169
+cv_frames-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cv_frames-0.0.1.dist-info/entry_points.txt,sha256=zRXgHAXc7aXolDpPfgR1fy7S8WXkcIGtgxAZ77xDj7M,48
+cv_frames-0.0.1.dist-info/top_level.txt,sha256=GJnY7NlV_RqhT_FG8XHpzTfSdF4GlYJR6pWj8iJ0BSk,9
+cv_frames-0.0.1.dist-info/RECORD,,
