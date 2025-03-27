@@ -1,0 +1,2 @@
+[console_scripts]
+lcd-setup = lcd_install:run_install
