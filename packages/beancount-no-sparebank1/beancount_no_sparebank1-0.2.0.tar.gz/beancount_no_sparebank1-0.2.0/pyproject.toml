@@ -1,0 +1,29 @@
+[project]
+name = "beancount-no-sparebank1"
+dynamic = ["version"]
+description = "A library that converts financial data from SpareBank 1 into structured Beancount accounting format."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beangulp",
+    "pypdf>=5.4.0",
+]
+
+[tool.uv]
+package = true
+
+[tool.uv.sources]
+beangulp = { git = "https://github.com/beancount/beangulp" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+packages = ["src/beancount_no_sparebank1"]
+
+[tool.hatch.version]
+path = "src/beancount_no_sparebank1/version.py"
+
+[project.scripts]
+beancount-no-sparebank1 = "beancount_no_sparebank1.deposit:main"
