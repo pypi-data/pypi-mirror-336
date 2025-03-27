@@ -1,0 +1,43 @@
+[project]
+name = "wsd"
+version = "0.0.1rc0"
+description = "Multi-lingual Word Sense Disambiguation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+authors = [
+  { name = "Arnaud Rachez", email = "arnaud@linalgo.com" },
+  { name = "Farid Taba", email = "farid.t@gmail.com" },
+  { name = "Jack Dryvers", email = "j.dryvers@proton.me" },
+  { name = "Jean Cadic", email = "me@cadic.jp" },
+]
+
+dependencies = [
+  "fugashi[unidic]",
+  "google-cloud-bigquery",
+  "linalgo",
+  "mesop",
+  "numpy",
+  "pillow",
+  "rich",
+  "typer",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pre-commit"]
+
+[project.urls]
+Homepage = "https://github.com/linalgo/wsd"
+Issues = "https://github.com/linalgo/wsd/issues"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["wsd"]

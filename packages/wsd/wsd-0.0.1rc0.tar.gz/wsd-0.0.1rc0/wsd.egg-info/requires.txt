@@ -1,0 +1,12 @@
+fugashi[unidic]
+google-cloud-bigquery
+linalgo
+mesop
+numpy
+pillow
+rich
+typer
+
+[dev]
+pytest
+pre-commit
