@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/__init__.py
+src/simple_lexical_search.py
+src/simple_vector_store.py
+src/simple_vector_store.egg-info/PKG-INFO
+src/simple_vector_store.egg-info/SOURCES.txt
+src/simple_vector_store.egg-info/dependency_links.txt
+src/simple_vector_store.egg-info/requires.txt
+src/simple_vector_store.egg-info/top_level.txt
