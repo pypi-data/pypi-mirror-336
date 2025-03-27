@@ -1,0 +1,9 @@
+include/pybind11_json/pybind11_json.hpp,sha256=ycNMrjBBpmzNwIuszG-Ni7YWHzHHCivVvNzvgEBNk14,8095
+PyMKF.cp39-win_amd64.pyd,sha256=cgSHNC4xlkeIoV0parQ4IoGznF9d6d5pZb3CQYk0Oxk,14279680
+share/cmake/pybind11_json/pybind11_jsonConfig.cmake,sha256=yqt4qHnKv1yQ3mG7vu4zmPMDXQQ0GZUXwt0yr8_Epic,2058
+share/cmake/pybind11_json/pybind11_jsonConfigVersion.cmake,sha256=wJpbsnHNM9IdCw8SYdh07PgYQyMH_p9E6374xgrfpo4,1435
+share/cmake/pybind11_json/pybind11_jsonTargets.cmake,sha256=VmPQsaHVtGFWpcyfXv_XgvQw289tMGeK1wdzKFi6WEA,4141
+pymkf-0.9.25.dist-info/METADATA,sha256=rQzYrF3SHrXRtodkoW6jh5z5CMF75FT0QgzUFGc4FRI,762
+pymkf-0.9.25.dist-info/WHEEL,sha256=k3r5zLv1t8z7JCqYC2-rKkfvrw2hvjPkH6-V2Jw00vI,104
+pymkf-0.9.25.dist-info/licenses/LICENSE,sha256=n5beBRUVTrqihyXW7-COpKNiKVZiNzdYn9yUGtLcvZE,1091
+pymkf-0.9.25.dist-info/RECORD,,
