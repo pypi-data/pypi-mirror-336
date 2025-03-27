@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: long-utils
+Version: 0.7.1
+Summary: A utility library for everyday use.
+Home-page: https://codeup.aliyun.com/zheniz0322/Python/packages/long-utils
+Author: zhenzi0322
+Author-email: 82131529@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: oss2
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: requests
+
+
+安装:
+```bash
+pip install long-utils
+```
+
+## 图像
+
+### 图中找图
+```python
+from long_utils.image.search import ImgFindImg
+
+img = ImgFindImg(img_source='static/big.png', img_search='static/small.png')
+img.find_coord(is_debug=True)
+
+# 或者只拿取小图在原图中的坐标rectangle, 小图在原图中的大小result，confidence表示准确率
+res = img.find_coord()
+# [{'result': (539.0, 21.5), 'rectangle': ((524, 10), (524, 33), (554, 10), (554, 33)), 'confidence': 1.0}]
+print(res)
+```
+
+## 其他
+
+### 日志输出
+
+```python
+from long_utils import Log
+
+logger = Log(show_line=True, show_file_name=True, show_time=True)
+
+logger.error(message="xxxx")
+logger.success(message="xxxx")
+logger.warning(message="xxxx")
+logger.info(message="xxxx")
+logger.debug(message="xxxx")
+
+logger.success_bg('xxxx')
+logger.error_bg('xxxx')
+logger.warning_bg('xxxx')
+logger.debug_bg('xxxx')
+logger.info_bg('xxxx')
+logger.color('xxxx', fg='blue', bg='black')
+```
+
+## 对象存储OSS
+
+### 配置
+
+```python
+from long_utils.storage.config import SSconfig
+from long_utils.storage.aliyun.oss import AliyumOss
+
+access_key = 'xxx'
+access_key_secret = 'xxx'
+endpoint = 'https://oss-cn-shanghai.aliyuncs.com'
+bucket_name = 'xxx'
+ss_config = SSconfig(
+    access_key_id=access_key,
+    access_key_secret=access_key_secret,
+    bucket_url=endpoint,
+    bucket_name=bucket_name
+)
+aliyun_client = AliyumOss(
+    config=ss_config
+)
+```
+
+### 分片下载文件到本地
+
+```python
+aliyun_client.multipart_upload_file(key='xxx.pth', local_file='xxx.pth')
+```
+
+如果需要知道下载进度,可以:
+
+```python
+def progress_callback(block_size, total_size):
+    print(f"正在下载: {block_size / total_size * 100:.2f}%")
+
+aliyun_client.multipart_upload_file(key='xxx.pth', local_file='xxx.pth', progress_callback=progress_callback)
+```
+
+### 分片上传本地文件
+
+```python
+aliyun_client.multipart_upload_file(key='xxx.pth', file='xxxx.pth')
+```
+
+如果需要知道上传进度,可以:
+
+```python
+def progress_callback(block_size, total_size):
+    print(f"正在上传: {block_size / total_size * 100:.2f}%")
+
+aliyun_client.multipart_upload_file(key='xxx.pth', file='xxx.pth', progress_callback=progress_callback)
+```
