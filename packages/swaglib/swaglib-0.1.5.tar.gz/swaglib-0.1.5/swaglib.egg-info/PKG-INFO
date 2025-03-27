@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: swaglib
+Version: 0.1.5
+Summary: swaglib.
+Author-email: nomaakip <nomaakip@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/nomaakip/swaglib
+Project-URL: Documentation, https://github.com/nomaakip/swaglib
+Project-URL: Repository, https://github.com/nomaakip/swaglib
+Project-URL: Issues, https://github.com/nomaakip/swaglib/issues
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: license-file
+
+# swaglib
