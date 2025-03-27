@@ -1,0 +1,9 @@
+sinapsis>=0.1.1
+
+[all]
+sinapsis-chatbots[gradio-app]
+sinapsis-huggingface-transformers>=0.1.0
+sinapsis-llama-cpp[all]
+
+[gradio-app]
+gradio>=5.22.0
