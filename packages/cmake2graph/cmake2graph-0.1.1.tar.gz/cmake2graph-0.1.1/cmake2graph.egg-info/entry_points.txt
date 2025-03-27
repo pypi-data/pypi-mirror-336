@@ -1,0 +1,2 @@
+[console_scripts]
+cmake2graph = cmake2graph.cli:main

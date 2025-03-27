@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cmake2graph/__init__.py
+cmake2graph/cli.py
+cmake2graph.egg-info/PKG-INFO
+cmake2graph.egg-info/SOURCES.txt
+cmake2graph.egg-info/dependency_links.txt
+cmake2graph.egg-info/entry_points.txt
+cmake2graph.egg-info/requires.txt
+cmake2graph.egg-info/top_level.txt
+tests/test_cmake2graph.py
