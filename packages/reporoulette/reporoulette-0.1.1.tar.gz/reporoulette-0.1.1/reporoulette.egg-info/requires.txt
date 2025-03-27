@@ -1,0 +1,17 @@
+requests>=2.25.0
+
+[bigquery]
+google-cloud-bigquery>=2.0.0
+google-auth>=1.30.0
+
+[dev]
+pytest>=7.0.0
+pytest-cov>=3.0.0
+black>=22.0.0
+isort>=5.10.0
+flake8>=4.0.0
+
+[docs]
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+myst-parser>=0.15.0
