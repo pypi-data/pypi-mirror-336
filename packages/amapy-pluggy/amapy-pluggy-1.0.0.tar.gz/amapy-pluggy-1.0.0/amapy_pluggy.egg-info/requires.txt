@@ -1,0 +1,2 @@
+amapy-utils==1.*
+pluggy==1.5.*

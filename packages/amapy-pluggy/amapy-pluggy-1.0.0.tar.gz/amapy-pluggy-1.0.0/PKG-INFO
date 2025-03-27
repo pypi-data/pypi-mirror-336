@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: amapy-pluggy
+Version: 1.0.0
+Summary: A Plugin handler for asset-manager project.  It provides functionalities to manage and integrate various plugins within the asset management system.
+Author-email: Swarup Mahanti <swarup.mahanti@roche.com>
+Maintainer-email: Swarup Mahanti <swarup.mahanti@roche.com>
+License: Copyright (c) 2024 Roche Diagnostics Computation Science & Informatics
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: amapy-utils==1.*
+Requires-Dist: pluggy==1.5.*
+
+asset-pluggy
