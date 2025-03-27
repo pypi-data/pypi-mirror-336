@@ -1,0 +1,2 @@
+[console_scripts]
+coze-mcp-server = coze_mcp_server:main
