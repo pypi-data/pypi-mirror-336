@@ -1,0 +1,8 @@
+jetpwmon/__init__.py,sha256=L840CEgOd1SEGwWJMt09hJb-mHjXcwAH_mI3_bbNVjE,922
+jetpwmon/_core.cpython-313-aarch64-linux-gnu.so,sha256=X1CvSlbenVevGSC7iUrYOu35wKXAa8-bVNVmVJYeSi4,455512
+jetpwmon/cli.py,sha256=5gYqKpZsXWX8nzHvy_wrpBgl-4rMSPYu4N0mfftnwcQ,10032
+jetpwmon-0.1.1.dist-info/METADATA,sha256=lej4KSg4HPXbxeBl0J-reUkyvsJItyh_cvoGoQMHWXA,69145
+jetpwmon-0.1.1.dist-info/WHEEL,sha256=78Ydk8uhU-xi59xREigtJhObz27LqK1yITicZuH3lLI,153
+jetpwmon-0.1.1.dist-info/top_level.txt,sha256=c0c7l3qYwlHRnc3RCLQTGVAmTm5cF3Aq_5SpoA7gG0w,9
+jetpwmon-0.1.1.dist-info/RECORD,,
+jetpwmon-0.1.1.dist-info/licenses/LICENSE,sha256=TunCy98Bof324CZ2sEGk2CHPuTGJ4x_KlUSs15q5c78,1493
