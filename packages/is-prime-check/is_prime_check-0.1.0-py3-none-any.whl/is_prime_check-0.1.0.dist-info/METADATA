@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: is-prime-check
+Version: 0.1.0
+Summary: A simple package to check if a number is prime
+Home-page: https://github.com/imsomdev/is_prime
+Author: Somdev Das
+Author-email: somdev4g@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# is_prime
+
+A simple Python package to check if a number is prime.
+
+## Installation
+
+```bash
+pip install is_prime_check
+```
+
+## Usage
+
+```python
+from is_prime import is_prime, get_primes
+
+# Check if a single number is prime
+print(is_prime(17))  # True
+print(is_prime(4))   # False
+
+# Get primes in a range
+print(get_primes(10, 20))  # [11, 13, 17, 19]
+```
+
+## Features
+
+- Check primality of integers
+- Generate lists of prime numbers
+- Efficient algorithm with O(sqrt(n)) time complexity
+
+## License
+
+MIT License
