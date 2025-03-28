@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: km-plugin-interface-api
+Version: 1.2
+Summary: 知识管理系统插件-通用API对接
+Author: KnowledgeManagement
+Requires-Dist: km-sdk
+Requires-Dist: requests

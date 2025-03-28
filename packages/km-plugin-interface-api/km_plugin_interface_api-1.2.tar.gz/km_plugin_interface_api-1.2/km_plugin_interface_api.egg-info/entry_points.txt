@@ -1,0 +1,2 @@
+[knowledge_management_plugin]
+INTERFACE = km_plugin_interface_api.interface_api:InterfaceApi
