@@ -1,0 +1,5 @@
+[console_scripts]
+mcp_smarthub = mcp_smarthub.server:run_server
+
+[mcp.v1]
+mcp_smarthub = mcp_smarthub.server:mcp
