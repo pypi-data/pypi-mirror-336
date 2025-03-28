@@ -1,0 +1,7 @@
+[project]
+name = "Topsis_AbhirajSinghJhajj"
+version = "0.1.0"
+description = "A Python package for TOPSIS method"
+authors = [{ name = "Abhiraj Singh Jhajj", email = "your-email@example.com" }]
+dependencies = ["numpy", "pandas"]
+requires-python = ">=3.7"
