@@ -1,0 +1,5 @@
+[console_scripts]
+reflectdetect-apriltag=reflectdetect.apriltag_main:main
+reflectdetect-converter=reflectdetect.converter_main:main
+reflectdetect-geolocation=reflectdetect.geolocation_main:main
+
