@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: cross-service-auth
+Version: 1.0.2
+Summary: Package for authentication between microservices
+Classifier: Programming Language :: Python :: 3
