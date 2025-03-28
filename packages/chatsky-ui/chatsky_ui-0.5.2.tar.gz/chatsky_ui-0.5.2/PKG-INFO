@@ -1,0 +1,76 @@
+Metadata-Version: 2.3
+Name: chatsky-ui
+Version: 0.5.2
+Summary: Chatsky-UI is GUI for Chatsky Framework, that is a free and open-source software stack for creating chatbots, released under the terms of Apache License 2.0.
+License: Apache-2.0
+Keywords: chatbots
+Author: Denis Kuznetsov
+Author-email: kuznetsov.den.p@gmail.com
+Requires-Python: >=3.9, !=2.7.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*, !=3.7.*, !=3.8.*
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: chatsky[telegram,yaml] (==0.9.0.dev1)
+Requires-Dist: cookiecutter (>=2.6.0,<3.0.0)
+Requires-Dist: fastapi (>=0.110.0,<0.111.0)
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: httpx-ws (>=0.6.0,<0.7.0)
+Requires-Dist: omegaconf (>=2.3.0,<3.0.0)
+Requires-Dist: pydantic (>=2.6.3,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.2.1,<3.0.0)
+Requires-Dist: pylint (>=3.2.3,<4.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Requires-Dist: uvicorn[standard] (>=0.28.0,<0.29.0)
+Project-URL: Homepage, https://github.com/deeppavlov/chatsky-ui
+Description-Content-Type: text/markdown
+
+# Quick Start
+## System Requirements
+Ensure you have Python version 3.9 or higher installed (Excluding 3.9.7).
+
+## Installation
+To install the package and necessary dependencies, run the following command:
+```bash
+pip install chatsky-ui
+```
+
+## Project Initiation
+💡 You are encouraged to run `chatsky.ui --help` to explore the available CLI options.
+
+Initialize your project by running:
+```bash
+chatsky.ui init
+```
+The `chatsky.ui init` command will start an interactive `cookiecutter` process to create a project based on a predefined template. The resulting project will be a simple example template that you can customize to suit your needs.
+
+## Running Your Project
+To start your project, use the following command:
+```bash
+chatsky.ui run_app --project-dir <PROJECT-SLUG>  # Replace <PROJECT-SLUG> with the slug you specified during initialization
+```
+
+## Configuring the chatsky-ui app
+You may add a `.env` file in the root directory and configure any of following environment variables. The values shown below are the default ones.
+```.env
+HOST=0.0.0.0
+PORT=8000
+CONF_RELOAD=False
+LOG_LEVEL=info
+
+GRACEFUL_TERMINATION_TIMEOUT=2  # Waiting for process to stop
+PING_PONG_TIMEOUT=0.5  # Waiting the process to response before it mark it as still `running`
+
+# For tests:
+BUILD_COMPLETION_TIMEOUT=10
+RUN_RUNNING_TIMEOUT=5
+```
+
+## Documentation
+You can refer to the [documentaion](https://deeppavlov.github.io/chatsky-ui/) to dig into the application code understanding.
+
