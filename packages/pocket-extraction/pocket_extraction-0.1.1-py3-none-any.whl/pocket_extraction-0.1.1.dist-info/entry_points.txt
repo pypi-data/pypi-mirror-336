@@ -1,0 +1,4 @@
+[console_scripts]
+extract_ligand = extract_ligand:main
+extract_ligand_and_pocket = extract_ligand_and_pocket:main
+extract_pocket = extract_pocket:main
