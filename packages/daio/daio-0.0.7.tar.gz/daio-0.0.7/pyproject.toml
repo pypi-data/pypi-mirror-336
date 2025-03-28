@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daio"
+version = "0.0.7"
+description = "video and data IO tools for Python"
+authors = [
+    { name = "jlab.berlin" },
+]
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["python", "HDF5", "data IO", "video IO"]
+requires-python = ">=3.8"
+dependencies = ["numpy","av<14","h5py","hdf5plugin"]
+
+[project.urls]
+Homepage = "https://github.com/danionella/daio"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["daio*"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/daio/__init__.py
+src/daio/h5.py
+src/daio/video.py
+src/daio.egg-info/PKG-INFO
+src/daio.egg-info/SOURCES.txt
+src/daio.egg-info/dependency_links.txt
+src/daio.egg-info/requires.txt
+src/daio.egg-info/top_level.txt
+tests/test_all.py
