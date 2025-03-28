@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bamboxo2go-devlib"
+version = "0.1.0"
+description = "Development support library"
+readme = "README.md"
+authors = [{ name = "Qiang", email = "qiang@bamboox2go.com" }]
+license = { file = "LICENSE" }
+dependencies = [
+    # List your dependencies here, e.g.,
+    # "requests>=2.25.1",
+]
+requires-python = ">=3.7"
+
+[tool.setuptools]
+packages = ["devlib"]  # Ensure it finds your package
+
+[project.urls]
+Homepage = "https://github.com/bamboox2go/devlib"
+Repository = "https://github.com/bamboox2go/devlib"
+
+[tool.pytest.ini_options]  # If you use pytest for testing
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+

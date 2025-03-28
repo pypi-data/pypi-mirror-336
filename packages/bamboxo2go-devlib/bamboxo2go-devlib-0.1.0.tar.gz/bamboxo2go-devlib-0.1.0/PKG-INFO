@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bamboxo2go-devlib
+Version: 0.1.0
+Summary: Development support library
+Home-page: https://github.com/bamboox2go/devlib
+Author: Qiang Zhou
+Author-email: Qiang <qiang@bamboox2go.com>
+Project-URL: Homepage, https://github.com/bamboox2go/devlib
+Project-URL: Repository, https://github.com/bamboox2go/devlib
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# devlib
+
+Devlib is a library for developing and testing software.
+
+## Installation
+
+```bash
+pip install devlib

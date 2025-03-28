@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+bamboxo2go_devlib.egg-info/PKG-INFO
+bamboxo2go_devlib.egg-info/SOURCES.txt
+bamboxo2go_devlib.egg-info/dependency_links.txt
+bamboxo2go_devlib.egg-info/top_level.txt
+devlib/__init__.py
+devlib/util_file.py
