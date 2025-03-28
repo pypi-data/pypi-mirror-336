@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-sentry-xhs = mcp_server_sentry_xhs:main
