@@ -1,0 +1,10 @@
+fetch_houston2013/__about__.py,sha256=8hfzCdwLpSIQHJKyg_8cWtkO5zgasU23GTEtEn1uc8M,139
+fetch_houston2013/__init__.py,sha256=9bOFQYuYMgh1w0nRzbddM07Q7a2XI-I17F-lBOQX43Q,225
+fetch_houston2013/fetch_houston2013.py,sha256=-PDy-j5TTmDVNwgJ0NHX8ajfkbZBsfvH3Jg3xi5nLYA,10837
+fetch_houston2013/fetch_muufl.py,sha256=P8AkiJR5QxdwcypOiVJjZY8bVU3hR142oCu8lNldb78,5252
+fetch_houston2013/fetch_trento.py,sha256=jSXNp676eSyGu6OthKF_WYZRxtu_lQFSjvbxYJhwi2w,5056
+fetch_houston2013/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fetch_houston2013-0.5.0.dist-info/METADATA,sha256=VdZMK49TG4H9cuqo757TpYIgE6lUcE3p82D8TJhmqS0,5080
+fetch_houston2013-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fetch_houston2013-0.5.0.dist-info/licenses/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+fetch_houston2013-0.5.0.dist-info/RECORD,,
