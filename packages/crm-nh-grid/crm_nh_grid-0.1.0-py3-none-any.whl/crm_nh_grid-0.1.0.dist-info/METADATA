@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: crm-nh-grid
+Version: 0.1.0
+Summary: The Core of Resource Model (CRM) of NH-Grid, implemented by python.
+License: BSD-2-Clause license
+Author: YcSoku
+Author-email: dsssyc02@gmail.com
+Requires-Python: >=3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: numpy (>=2.2.4,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pyarrow (>=19.0.1,<20.0.0)
+Requires-Dist: redis (>=5.2.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# crm-nh-grid
+The Core of Resource Model (CRM) of NH-Grid, implemented by python.
+
