@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+serper_wrapper/__init__.py
+serper_wrapper/client.py
+serper_wrapper.egg-info/PKG-INFO
+serper_wrapper.egg-info/SOURCES.txt
+serper_wrapper.egg-info/dependency_links.txt
+serper_wrapper.egg-info/requires.txt
+serper_wrapper.egg-info/top_level.txt
+serper_wrapper/cache/__init__.py
+serper_wrapper/cache/base.py
+serper_wrapper/cache/disk_cache.py
+serper_wrapper/cache/mongo_cache.py
+serper_wrapper/exceptions/__init__.py
+serper_wrapper/exceptions/exceptions.py
+tests/test_serper_client.py
