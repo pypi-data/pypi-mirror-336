@@ -1,0 +1,103 @@
+[project]
+name = "regelum"
+version = "0.1.0"
+description = "Regelum is a flexibly configurable framework for computational graph construction and execution."
+authors = [
+    {name = "Georgiy Malaniya", email = "pwlsd.gm@gmail.com"},
+    {name = "Anton Bolychev", email = "bolychev.anton@gmail.com"},
+    {name = "Grigoriy Yaremenko", email = "yaremenko8@gmail.com"},
+    {name = "Pavel Osinenko", email = "p.osinenko@yandex.ru"}
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = [
+    "opencv-python>=4.11.0.86",
+    "pygame>=2.6.1",
+    "casadi>=3.6.7",
+    "torch>=2.4.1",
+    "pandas>=2.2.3",
+    "omegaconf>=2.3.0",
+    "scipy>=1.14.1",
+    "matplotlib>=3.9.2",
+    "loguru>=0.7.3",
+    "dask[complete]>=2024.12.1",
+    "graphviz>=0.20.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=4.1.0",
+    "pre-commit>=3.6.0",
+    "mkdocs-material>=9.5.47",
+    "mkdocs-autorefs>=1.2.0",
+    "mkdocs-macros-plugin>=1.0.5",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocs-literate-nav>=0.6.1",
+    "mkdocs-section-index>=0.3.8",
+    "mkdocs-jupyter>=0.25.1",
+    "black>=24.3.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+    "pylint>=3.0.3",
+    "types-PyYAML>=6.0.12",
+    "types-setuptools>=75.6.0.20241223",
+    "types-requests>=2.32.0.20241016",
+]
+
+
+[tool.poetry.extras]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pre-commit",
+    "mkdocs-material",
+    "black",
+    "ruff",
+    "mypy",
+    "pylint",
+    "types-PyYAML",
+    "types-setuptools",
+    "types-requests",
+    "mkdocs-autorefs",
+    "mkdocs-macros-plugin",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-section-index",
+    "mkdocs-jupyter"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "mkdocstrings>=0.29.0",
+    "mkdocstrings-python>=1.16.8",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=regelum --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["regelum"]
+omit = [
+    "regelum/utils/*",
+    "regelum/node/visualization/*",
+    "regelum/node/classic_control/*",
+    "tests/*",
+    "examples/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+    "raise ImportError",
+]
