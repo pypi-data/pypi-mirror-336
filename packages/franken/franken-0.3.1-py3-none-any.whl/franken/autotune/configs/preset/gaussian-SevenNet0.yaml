@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - default
+
+franken:
+  gnn_backbone_id: "SevenNet0"
+  interaction_block: 2
+  kernel_type: "gaussian"
+  jac_chunk_size: "auto"
+  extract_after_act: True
+  append_layers: True
+
+hyperparameters:
+  random_features:
+    num_random_features: 1024
+    length_scale:
+      _target_: numpy.linspace
+      start: 1
+      stop: 10
+      num: 10

@@ -1,0 +1,25 @@
+# @package _global_
+
+exp_name: liquid 
+init_config_index: 0
+init_config_path: null
+log_every: 200
+md_length_ns: 0.1
+output_format: extxyz
+save_every: 200
+temperature_K: 325.0
+timestep_fs: 0.5
+#hydrogen_mass: 1.008
+calculator:
+    calc_type: franken
+    forces_mode: torch.autograd
+    model_path: best_ckpt.pt
+    rf_weight_id: null
+initial_velocity: null
+integrator:
+    _target_: ase.md.verlet.VelocityVerlet
+    timestep: ${fs_to_ase:${timestep_fs}}
+paths:
+    root_dir: .
+    run_dir: md/diffusion/${temperature_K}
+seed: 0

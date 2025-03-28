@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - override /integrator: langevin  # use the langevin integrator
+  - override /calculator: franken   # A franken model
+  - override /observables:          # which observables to be used
+    - bond_stability
+
+initial_configuration: null   # TODO: set this
+initial_dataset: null         # or set this instead to use the dataset registry.
+md_length_ns: 0.005
+timestep_fs: 1                # Time step in femtoseconds
+temperature_K: 300
+num_replicas: 2               # Number of replicas
+save_every: 100
+log_every: 100
+seed: 41
+output_format: extxyz        # TODO: Check if output_format can be anything else?
+
+initial_velocity:
+  _target_: ase.md.velocitydistribution.MaxwellBoltzmannDistribution
+  temperature_K: ${temperature_K}
+
+calculator:
+  model_path: null    # TODO: This needs to be overridden from the command line.
+
+exp_name: null        # Experiment name. TODO: Override from command line.

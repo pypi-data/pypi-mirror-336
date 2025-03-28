@@ -1,0 +1,11 @@
+rdf:
+  _target_: "franken.mdgen.postprocess.postprocessing_rdf"
+
+  ref_traj_path: null
+  timestep_fs: null
+  nbins_per_angstrom: 50
+  stability_threshold: 1.0
+  equilibration_fs: 10000
+  stability_interval: 20
+  rdf_version: "fast"
+  distance_version: "fast"

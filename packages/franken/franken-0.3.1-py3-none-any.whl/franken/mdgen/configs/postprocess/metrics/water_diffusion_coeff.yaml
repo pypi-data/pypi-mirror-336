@@ -1,0 +1,5 @@
+water_diffusion_coeff:
+  _target_: "franken.mdgen.postprocess.postprocessing_water_diffusion_coef"
+
+  timestep_fs: null
+  t_min_fs: 0.0

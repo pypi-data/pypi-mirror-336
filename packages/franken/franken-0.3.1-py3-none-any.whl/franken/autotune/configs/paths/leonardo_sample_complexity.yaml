@@ -1,0 +1,5 @@
+defaults:
+  - default
+
+root_dir: /leonardo_work/IIT24_AtomSim/franken_data/sample_complexity
+run_dir: ${paths.root_dir}/experiments/${dataset.dataset_name}/${franken.gnn_backbone_id}/${hyperparameters.random_features.num_random_features}_rfs/${dataset.train_subsample.num}_subsamples/${franken.kernel_type}
