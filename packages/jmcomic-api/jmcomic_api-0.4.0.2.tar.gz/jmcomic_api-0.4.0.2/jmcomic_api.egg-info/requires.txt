@@ -1,0 +1,9 @@
+fastapi>=0.115.12
+jmcomic>=2.5.32
+PyYAML>=6.0
+uvicorn>=0.34.0
+img2pdf>=0.6.0
+colorlog>=6.7.0
+pydantic>=2.10.6
+pypdf>=5.4.0
+requests>=2.32.3
