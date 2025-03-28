@@ -1,0 +1,3 @@
+/v?/*.py linguist-generated=true
+/v?/__init__.py linguist-generated=false
+/spec linguist-vendored=true
