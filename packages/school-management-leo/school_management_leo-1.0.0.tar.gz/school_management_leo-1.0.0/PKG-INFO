@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: school-management-leo
+Version: 1.0.0
+Summary: Read the latest Real Python tutorials
+Author-email: Real Python <info@realpython.com>
+Project-URL: Homepage, https://github.com/realpython/reader
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+
+```markdown
++----------------+         +----------------+        +----------------+
+|    Student     |         |    Teacher     |        |     Course     |
++----------------+         +----------------+        +----------------+
+| - studentID    |         | - teacherID    |        | - courseID     |
+| - name         |         | - name         |        | - courseName   |
+| - dob          |         | - dob          |        | - department   |
+| - address      |         | - email        |        | - creditHours  |
+| - email        |         | - department   |        +----------------+
++----------------+         +----------------+        | + addStudent() |
+| + enroll()     |         | + assignGrade()|        | + removeStudent()|
+| + dropCourse() |         | + createCourse()|       +----------------+
+| + viewGrades() |         +----------------+
++----------------+         +----------------+
+        |                       | 1..*  
+        |                       | 
+        |1                      | 
+        |                       | 
+        V                       V
+  +----------------+     +------------------+
+  |   Department  |     |   Classroom      |
+  +----------------+     +------------------+
+  | - departmentID |     | - roomNumber     |
+  | - departmentName|     | - capacity       |
+  | - location     |     +------------------+
+  +----------------+     | + assignCourse() |
+  | + addCourse()  |     | + removeCourse() |
+  | + removeCourse()|     +------------------+
+  +----------------+      
+```

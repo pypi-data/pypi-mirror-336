@@ -1,0 +1,2 @@
+[console_scripts]
+school = __main__:main
