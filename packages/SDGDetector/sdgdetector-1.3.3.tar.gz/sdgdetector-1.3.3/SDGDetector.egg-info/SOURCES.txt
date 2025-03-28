@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+SDGDetector/SDGDetector.py
+SDGDetector/__init__.py
+SDGDetector.egg-info/PKG-INFO
+SDGDetector.egg-info/SOURCES.txt
+SDGDetector.egg-info/dependency_links.txt
+SDGDetector.egg-info/not-zip-safe
+SDGDetector.egg-info/requires.txt
+SDGDetector.egg-info/top_level.txt
