@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyvoa-full/__init__.py
+pyvoa_full.egg-info/PKG-INFO
+pyvoa_full.egg-info/SOURCES.txt
+pyvoa_full.egg-info/dependency_links.txt
+pyvoa_full.egg-info/requires.txt
+pyvoa_full.egg-info/top_level.txt
