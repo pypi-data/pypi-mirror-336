@@ -1,0 +1,2 @@
+[console_scripts]
+langmem-adapter = langmem_adapter:main
