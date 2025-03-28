@@ -1,0 +1,173 @@
+@@grammar::FOLParser
+@@whitespace::/\s+/
+
+start = expression $;
+
+expression
+    = quantified
+    | logical_expression
+    ;
+
+logical_expression
+    = logical_operators
+    | comparison_expression
+    ;
+
+logical_operators
+    = equivalence
+    | implication
+    | disjunction
+    | conjunction
+    ;
+
+comparison_expression
+    = comparison_operators
+    | arithmetic_expression
+    ;
+
+comparison_operators
+    = less_than
+    | more_than
+    | less_equal
+    | more_equal
+    | equality
+    | direct
+    ;
+
+arithmetic_expression
+    = addition_subtraction
+    ;
+
+addition_subtraction
+    = addition
+    | subtraction
+    | multiplication_division
+    ;
+
+multiplication_division
+    = multiplication
+    | division
+    | exponentiation
+    ;
+
+exponentiation
+    = primary_expression '^' primary_expression
+    | primary_expression
+    ;
+
+primary_expression
+    = negation
+    | index
+    | negative
+    | predicate
+    | atom
+    ;
+
+equivalence
+    = logical_expression '<->' logical_expression
+    ;
+
+implication
+    = logical_expression '->' logical_expression
+    ;
+
+disjunction
+    = logical_expression ( '|' | 'or' ) logical_expression
+    ;
+
+conjunction
+    = logical_expression ( '&' | 'and' ) logical_expression
+    ;
+
+less_than
+    = comparison_expression '<' comparison_expression
+    ;
+
+more_than
+    = comparison_expression '>' comparison_expression
+    ;
+
+less_equal
+    = comparison_expression '<=' comparison_expression
+    ;
+
+more_equal
+    = comparison_expression '>=' comparison_expression
+    ;
+
+equality
+    = comparison_expression '=' comparison_expression
+    ;
+
+direct
+    = comparison_expression '==' comparison_expression
+    ;
+
+addition
+    = addition_subtraction '+' multiplication_division
+    ;
+
+subtraction
+    = addition_subtraction '-' multiplication_division
+    ;
+
+multiplication
+    = multiplication_division '*' primary_expression
+    ;
+
+division
+    = multiplication_division '/' primary_expression
+    ;
+
+negation
+    = ('~' | 'not') primary_expression
+    ;
+
+negative
+    = '-' primary_expression
+    ;
+
+index
+    = @:variable '[' @:feature ']'
+    ;
+    
+quantified
+    = quantifier variables '.' expression
+    ;
+
+quantifier
+    = 'forall' | 'exists' | 'all' 
+    ;
+
+predicate
+    = @:/[A-Z][a-zA-Z0-9_]*/ '(' @:variables ')'
+    ;
+
+variables
+    = @:variable {@:parameter}*
+    ;
+
+parameter
+    = (',' @:variable)
+    ;
+
+atom
+    = constant
+    | variable
+    | '(' @:expression ')'
+    ;
+
+constant
+    = /\d+\.\d+/  # Matches floating-point numbers like 1.0, 123.45
+    | /\d+/       # Matches integers like 1, 42, 123
+    | /\.\d+/     # Matches floating-point numbers without leading digits like .5, .123
+    ;
+
+variable
+    = /[a-z][a-z0-9]*/
+    ;
+
+feature
+    = /[a-zA-Z_][a-zA-Z0-9_]*/  # Matches lowercase, uppercase, underscores, and alphanumeric strings
+    | /\d+/                     # Matches integers like 1, 42, 123
+    ;
