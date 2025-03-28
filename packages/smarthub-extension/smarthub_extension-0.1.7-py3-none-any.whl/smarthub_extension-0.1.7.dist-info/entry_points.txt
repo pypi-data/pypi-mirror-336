@@ -1,0 +1,2 @@
+[console_scripts]
+mcp_smarthub = smarthub_extension.server:run_server
