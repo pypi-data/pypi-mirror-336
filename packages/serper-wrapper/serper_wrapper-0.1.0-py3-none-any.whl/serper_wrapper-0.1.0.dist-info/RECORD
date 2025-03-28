@@ -1,0 +1,12 @@
+serper_wrapper/__init__.py,sha256=_cjXrl62-HCDKZ19BgTtsR11Qup50v7ZwJSROXLUltA,97
+serper_wrapper/client.py,sha256=A00ZOeugc2WwTWhCPUggV7DTBICGL_1EoGg16hs3HDA,16137
+serper_wrapper/cache/__init__.py,sha256=mvRSXJ_xsNMfdBJZgcQVGe1tj2uLSdE4cyBjSAE0-ec,220
+serper_wrapper/cache/base.py,sha256=6wbiA7K-jQe9grYFGPiWBrnS1Zh-SKUNxn8rb9bbiKM,1605
+serper_wrapper/cache/disk_cache.py,sha256=QNC3-ClUxu2_oakXvZ1g_F2i-haC44Hd-w8twg8dU_U,5512
+serper_wrapper/cache/mongo_cache.py,sha256=Hj_8bPppTWLZNEcwcs7Qp4kXJzlyp4HNYh0KNvwo8no,6917
+serper_wrapper/exceptions/__init__.py,sha256=KWTxm_SICFiozN7Ef36RwOkzrAwg0_A9E9J4MwfLTTA,173
+serper_wrapper/exceptions/exceptions.py,sha256=h-z7FyqwzaTNAzR3VPbwX5gvQ32VLsNmupQ2dUHGlXM,635
+serper_wrapper-0.1.0.dist-info/METADATA,sha256=dWaDenNgkvrPyq1rgqKJVSfqwAyHzfGgf3rTBu53dTE,5666
+serper_wrapper-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+serper_wrapper-0.1.0.dist-info/top_level.txt,sha256=V_VDcHvtHVF2NQwF64bhJNR718aM8yiFYvKfkez-ZFk,15
+serper_wrapper-0.1.0.dist-info/RECORD,,
