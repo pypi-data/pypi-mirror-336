@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "authorize_url_timeout": "Timeout generating authorise URL.",
+            "oauth_failed": "Error while obtaining access token.",
+            "oauth_unauthorized": "OAuth authorisation error while obtaining access token.",
+            "user_rejected_authorize": "Account linking rejected: {error}"
+        }
+    },
+    "entity": {
+        "calendar": {
+            "birthdays": {
+                "name": "Birthdays"
+            },
+            "working_location": {
+                "name": "Working location"
+            }
+        }
+    }
+}

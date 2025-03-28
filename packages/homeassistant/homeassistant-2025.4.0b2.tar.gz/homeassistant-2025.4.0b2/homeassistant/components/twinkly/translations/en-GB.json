@@ -1,0 +1,27 @@
+{
+    "config": {
+        "flow_title": "{name}",
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "Hostname or IP address of your Twinkly device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mode": {
+                "name": "Mode",
+                "state": {
+                    "color": "Colour",
+                    "demo": "Demo",
+                    "effect": "Effect",
+                    "movie": "Uploaded effect",
+                    "playlist": "Playlist",
+                    "rt": "Real time"
+                }
+            }
+        }
+    }
+}

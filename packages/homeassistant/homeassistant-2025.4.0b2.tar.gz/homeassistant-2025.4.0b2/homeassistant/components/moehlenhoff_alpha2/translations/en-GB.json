@@ -1,0 +1,11 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your M\u00f6hlenhoff Alpha2 system."
+                }
+            }
+        }
+    }
+}

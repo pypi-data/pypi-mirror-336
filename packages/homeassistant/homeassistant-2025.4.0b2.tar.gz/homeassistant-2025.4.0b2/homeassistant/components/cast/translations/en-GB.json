@@ -1,0 +1,20 @@
+{
+    "config": {
+        "step": {
+            "config": {
+                "data_description": {
+                    "known_hosts": "Hostnames or IP-addresses of cast devices, use if mDNS discovery is not working"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "basic_options": {
+                "data_description": {
+                    "known_hosts": "Hostnames or IP-addresses of cast devices, use if mDNS discovery is not working"
+                }
+            }
+        }
+    }
+}

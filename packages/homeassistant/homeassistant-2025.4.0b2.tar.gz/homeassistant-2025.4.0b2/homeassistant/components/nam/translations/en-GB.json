@@ -1,0 +1,37 @@
+{
+    "config": {
+        "abort": {
+            "another_device": "The IP address/hostname of another Nettigo Air Monitor was used.",
+            "reconfigure_successful": "Re-configuration was successful"
+        },
+        "step": {
+            "reconfigure": {
+                "description": "Update configuration for {device_name}."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "bh1750_illuminance": {
+                "name": "BH1750 illuminance"
+            },
+            "ds18b20_temperature": {
+                "name": "DS18B20 temperature"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_error": {
+            "message": "Authentication failed for {device}, please update your credentials"
+        },
+        "device_communication_action_error": {
+            "message": "An error occurred while calling action for {entity} for {device}"
+        },
+        "device_communication_error": {
+            "message": "An error occurred while communicating with {device}"
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from {device}"
+        }
+    }
+}

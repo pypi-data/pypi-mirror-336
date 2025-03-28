@@ -1,0 +1,51 @@
+{
+    "entity": {
+        "sensor": {
+            "download": {
+                "state_attributes": {
+                    "bytes_received": {
+                        "name": "Bytes received"
+                    },
+                    "server_country": {
+                        "name": "Server country"
+                    },
+                    "server_id": {
+                        "name": "Server ID"
+                    },
+                    "server_name": {
+                        "name": "Server name"
+                    }
+                }
+            },
+            "ping": {
+                "state_attributes": {
+                    "server_country": {
+                        "name": "Server country"
+                    },
+                    "server_id": {
+                        "name": "Server ID"
+                    },
+                    "server_name": {
+                        "name": "Server name"
+                    }
+                }
+            },
+            "upload": {
+                "state_attributes": {
+                    "bytes_sent": {
+                        "name": "Bytes sent"
+                    },
+                    "server_country": {
+                        "name": "Server country"
+                    },
+                    "server_id": {
+                        "name": "Server ID"
+                    },
+                    "server_name": {
+                        "name": "Server name"
+                    }
+                }
+            }
+        }
+    }
+}

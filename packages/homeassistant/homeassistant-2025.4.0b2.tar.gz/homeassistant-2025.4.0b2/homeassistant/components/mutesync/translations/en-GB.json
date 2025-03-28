@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your mutesync device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "in_meeting": {
+                "name": "In meeting"
+            },
+            "muted": {
+                "name": "Muted"
+            }
+        }
+    }
+}
