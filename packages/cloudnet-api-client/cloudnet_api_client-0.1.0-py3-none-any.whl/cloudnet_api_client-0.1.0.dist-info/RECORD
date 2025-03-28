@@ -1,0 +1,10 @@
+cloudnet_api_client/__init__.py,sha256=JPAo-7s_m8hOaUoo3dD2y4-1adnWRc3cDlPYZZ4iCBQ,80
+cloudnet_api_client/client.py,sha256=XCD7fDiccuZK0svHjpdKg-Xlk4tIy_S_DTZM85fozKs,7673
+cloudnet_api_client/containers.py,sha256=ZiFYajBJSqozPidtSNMWNirLW28EgLIK9nBVhUcmbPE,1633
+cloudnet_api_client/dl.py,sha256=DIKAmufx4CHFHwbkNlMf8ewAvyDvk7R9yPXe44ljsIg,2846
+cloudnet_api_client/utils.py,sha256=bsaXzBTdfWxtmNnFV0TCjguoMs7Lg5O7Zr1Zqg1mhmQ,668
+cloudnet_api_client/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+cloudnet_api_client-0.1.0.dist-info/METADATA,sha256=EhiSJaEAC_yBblDyEZBzK11I0prHhY5m7qiYasAR0ZU,4525
+cloudnet_api_client-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cloudnet_api_client-0.1.0.dist-info/licenses/LICENSE,sha256=Y6pKDExM0r2aQQ6V2hHcb08_nqD7KutrC-aUhKuxDH4,1089
+cloudnet_api_client-0.1.0.dist-info/RECORD,,

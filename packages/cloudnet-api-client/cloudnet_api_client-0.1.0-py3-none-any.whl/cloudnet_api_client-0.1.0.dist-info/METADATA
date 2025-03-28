@@ -1,0 +1,115 @@
+Metadata-Version: 2.4
+Name: cloudnet-api-client
+Version: 0.1.0
+Summary: Cloudnet API client
+Author-email: Simo Tukiainen <simo.tukiainen@fmi.fi>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.10
+Requires-Dist: aiohttp
+Requires-Dist: numpy
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: release-version; extra == 'dev'
+Requires-Dist: types-requests; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: mypy; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+[![CI](https://github.com/actris-cloudnet/cloudnet-api-client/actions/workflows/test.yml/badge.svg)](https://github.com/actris-cloudnet/cloudnet-api-client/actions/workflows/test.yml)
+
+# cloudnet-api-client
+
+Official Python package for using Cloudnet API
+
+## Quickstart
+
+```python
+import cloudnet_api_client as cac
+
+client = cac.APIClient()
+
+sites = client.sites(type="cloudnet")
+products = client.products()
+
+metadata = client.metadata("hyytiala", "2021-01-01", product=["mwr", "radar"])
+cac.download(metadata, "data")
+
+raw_metadata = client.metadata("hyytiala", "2021-01-01")
+cac.download(raw_metadata, "data_raw")
+```
+
+## Documentation
+
+### `APIClient().metadata()` and `raw_metadata()` &rarr; `[Metadata]`
+
+Fetch product and raw file metadata from the Cloudnet data portal.
+
+Parameters:
+
+| name           | type                     | default | example                                              |
+| -------------- | ------------------------ | ------- | ---------------------------------------------------- |
+| site_id        | `str`                    |         | "hyytiala"                                           |
+| date           | `str` or `datetime.date` | `None`  | "2024-01-01"                                         |
+| date_from      | `str` or `datetime.date` | `None`  | "2025-01-01"                                         |
+| date_to        | `str` or `datetime.date` | `None`  | "2025-01-01"                                         |
+| instrument_id  | `str` or `[str]`         | `None`  | "rpg-fmcw-94"                                        |
+| instrument_pid | `str` or `[str]`         | `None`  | "https://hdl.handle.net/21.12132/3.191564170f8a4686" |
+| product\*      | `str` or `[str]`         | `None`  | "classification"                                     |
+| show_legacy\*  | `bool`                   | `False` |                                                      |
+
+\* = only in `metadata()`
+
+**Date Handling**
+
+The `date` parameter supports:
+
+- "YYYY-MM-DD" — a specific date
+- "YYYY-MM" — the entire month
+- "YYYY" — the entire year
+- Or directly as `datetime.date` object
+
+The `date_from` and `date_to` parameters should be "YYYY-MM-DD" or `datetime.date`. If `date` is defined, `date_from` and `date_to` have no effect.
+
+**Return value**
+
+Both methods return a list of `dataclass` instances, `ProductMetadata` and `RawMetadata`, respectively.
+
+### `APIClient().filter([Metadata])` &rarr; `[Metadata]`
+
+Additional filtering of fetched metadata.
+
+Parameters:
+
+| name               | type                                   | default |
+| ------------------ | -------------------------------------- | ------- |
+| metadata           | `[RawMetadata]` or `[ProductMetadata]` |         |
+| include_pattern    | `str`                                  | `None`  |
+| exclude_pattern    | `str`                                  | `None`  |
+| filename_prefix    | `str`                                  | `None`  |
+| filename_suffix    | `str`                                  | `None`  |
+| include_tag_subset | `{str}`                                | `None`  |
+| exclude_tag_subset | `{str}`                                | `None`  |
+
+### `cloudnet_api_client.download([Metadata])`
+
+Function to download files from fetched metadata.
+
+Parameters:
+
+| name              | type                                   | default |
+| ----------------- | -------------------------------------- | ------- |
+| metadata          | `[RawMetadata]` or `[ProductMetadata]` |         |
+| output_directory  | `PathLike`                             |         |
+| concurrency_limit | `int`                                  | 5       |
+
+## License
+
+MIT
