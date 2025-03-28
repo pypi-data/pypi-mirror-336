@@ -1,0 +1,3 @@
+[console_scripts]
+chatsky.ui=chatsky_ui.cli:cli
+
