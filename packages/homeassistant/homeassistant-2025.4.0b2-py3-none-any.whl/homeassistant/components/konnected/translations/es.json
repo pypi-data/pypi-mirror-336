@@ -1,0 +1,86 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado",
+            "already_in_progress": "El flujo de configuraci\u00f3n ya est\u00e1 en curso",
+            "cannot_connect": "No se pudo conectar",
+            "not_konn_panel": "No es un dispositivo Konnected.io reconocido",
+            "unknown": "Error inesperado"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Direcci\u00f3n IP",
+                    "port": "Puerto"
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "not_konn_panel": "No es un dispositivo Konnected.io reconocido"
+        },
+        "step": {
+            "options_binary": {
+                "data": {
+                    "inverse": "Invertir el estado de apertura/cierre",
+                    "name": "Nombre"
+                },
+                "description": "Opciones de {zone}"
+            },
+            "options_digital": {
+                "data": {
+                    "name": "Nombre"
+                },
+                "description": "Opciones de {zone}"
+            },
+            "options_io": {
+                "data": {
+                    "1": "Zona 1",
+                    "2": "Zona 2",
+                    "3": "Zona 3",
+                    "4": "Zona 4",
+                    "5": "Zona 5",
+                    "6": "Zona 6",
+                    "7": "Zona 7",
+                    "out": "OUT"
+                },
+                "description": "Descubierto un {model} en {host}. Selecciona la configuraci\u00f3n base de cada E/S a continuaci\u00f3n; seg\u00fan la E/S, puedes permitir sensores binarios (contactos abiertos/cerrados), sensores digitales (dht y ds18b20) o salidas conmutables. Podr\u00e1s configurar opciones detalladas en los siguientes pasos.",
+                "title": "Configurar E/S"
+            },
+            "options_io_ext": {
+                "data": {
+                    "10": "Zona 10",
+                    "11": "Zona 11",
+                    "12": "Zona 12",
+                    "8": "Zona 8",
+                    "9": "Zona 9",
+                    "alarm1": "ALARM1",
+                    "alarm2_out2": "OUT2/ALARM2",
+                    "out1": "OUT1"
+                }
+            },
+            "options_misc": {
+                "data": {
+                    "blink": "Parpadear el LED del panel al enviar un cambio de estado",
+                    "discovery": "Responder a las solicitudes de descubrimiento en tu red"
+                },
+                "description": "Por favor, selecciona el comportamiento deseado para tu panel"
+            },
+            "options_switch": {
+                "data": {
+                    "activation": "Salida cuando est\u00e1 activada",
+                    "momentary": "Duraci\u00f3n del pulso (ms)",
+                    "more_states": "Configura estados adicionales para esta zona",
+                    "name": "Nombre",
+                    "pause": "Pausa entre pulsos (ms)",
+                    "repeat": "Veces que se repite (-1=infinito)"
+                },
+                "description": "Opciones de {zone}: estado {state}"
+            }
+        }
+    }
+}

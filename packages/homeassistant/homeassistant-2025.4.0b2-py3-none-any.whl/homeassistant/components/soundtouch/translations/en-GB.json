@@ -1,0 +1,16 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Bose SoundTouch device."
+                }
+            }
+        }
+    },
+    "services": {
+        "create_zone": {
+            "description": "Creates a SoundTouch multi-room zone."
+        }
+    }
+}

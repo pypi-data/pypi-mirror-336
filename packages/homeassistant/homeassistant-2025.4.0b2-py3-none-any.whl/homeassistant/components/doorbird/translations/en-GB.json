@@ -1,0 +1,57 @@
+{
+    "config": {
+        "step": {
+            "reauth_confirm": {
+                "description": "Re-authenticate DoorBird device {name} at {host}"
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your DoorBird device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "ir": {
+                "name": "IR"
+            },
+            "reset_favorites": {
+                "name": "Reset favourites"
+            }
+        },
+        "event": {
+            "doorbell": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "ring": "Ring"
+                        }
+                    }
+                }
+            },
+            "motion": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "motion": "Motion"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "error_registering_events": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Configuring DoorBird {name} failed with error: `{error}`. Please enable the API Operator permission for the DoorBird user and continue to reload the integration.",
+                        "title": "DoorBird {name} configuration failure"
+                    }
+                }
+            },
+            "title": "DoorBird {name} configuration failure"
+        }
+    }
+}

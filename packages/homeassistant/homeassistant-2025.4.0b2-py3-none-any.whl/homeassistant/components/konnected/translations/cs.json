@@ -1,0 +1,86 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Za\u0159\u00edzen\u00ed je ji\u017e nastaveno",
+            "already_in_progress": "Nastaven\u00ed ji\u017e prob\u00edh\u00e1",
+            "cannot_connect": "Nepoda\u0159ilo se p\u0159ipojit",
+            "not_konn_panel": "Nejedn\u00e1 se o rozpoznan\u00e9 za\u0159\u00edzen\u00ed Konnected.io",
+            "unknown": "Neo\u010dek\u00e1van\u00e1 chyba"
+        },
+        "error": {
+            "cannot_connect": "Nepoda\u0159ilo se p\u0159ipojit"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "IP adresa",
+                    "port": "Port"
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "not_konn_panel": "Nejedn\u00e1 se o rozpoznan\u00e9 za\u0159\u00edzen\u00ed Konnected.io"
+        },
+        "step": {
+            "options_binary": {
+                "data": {
+                    "inverse": "Prohodit stav otev\u0159en\u00ed/zav\u0159en\u00ed",
+                    "name": "N\u00e1zev"
+                },
+                "description": "Volby {zone}"
+            },
+            "options_digital": {
+                "data": {
+                    "name": "N\u00e1zev"
+                },
+                "description": "Volby {zone}"
+            },
+            "options_io": {
+                "data": {
+                    "1": "Z\u00f3na 1",
+                    "2": "Z\u00f3na 2",
+                    "3": "Z\u00f3na 3",
+                    "4": "Z\u00f3na 4",
+                    "5": "Z\u00f3na 5",
+                    "6": "Z\u00f3na 6",
+                    "7": "Z\u00f3na 7",
+                    "out": "VENKU"
+                },
+                "description": "Zji\u0161t\u011bn {model} na {host} . N\u00ed\u017ee vyberte z\u00e1kladn\u00ed nastaven\u00ed ka\u017ed\u00e9ho vstupu/v\u00fdstupu - v z\u00e1vislosti na vstupu/v\u00fdstupu m\u016f\u017ee umo\u017e\u0148ovat bin\u00e1rn\u00ed senzory (otev\u0159en\u00e9/zav\u0159en\u00e9 kontakty), digit\u00e1ln\u00ed senzory (dht a ds18b20) nebo p\u0159ep\u00ednateln\u00e9 v\u00fdstupy. V dal\u0161\u00edch kroc\u00edch budete moci nastavit podrobn\u00e9 volby.",
+                "title": "Nastaven\u00ed vstupu/v\u00fdstupu"
+            },
+            "options_io_ext": {
+                "data": {
+                    "10": "Z\u00f3na 10",
+                    "11": "Z\u00f3na 11",
+                    "12": "Z\u00f3na 12",
+                    "8": "Z\u00f3na 8",
+                    "9": "Z\u00f3na 9",
+                    "alarm1": "ALARM 1",
+                    "alarm2_out2": "VENKU 2/ALARM 2",
+                    "out1": "VENKU 1"
+                }
+            },
+            "options_misc": {
+                "data": {
+                    "blink": "Blikat LED p\u0159i odes\u00edl\u00e1n\u00ed zm\u011bny stavu",
+                    "discovery": "Reagovat na po\u017eadavky zji\u0161\u0165ov\u00e1n\u00ed v s\u00edti"
+                },
+                "description": "Vyberte po\u017eadovan\u00e9 chov\u00e1n\u00ed pro v\u00e1\u0161 panel"
+            },
+            "options_switch": {
+                "data": {
+                    "activation": "V\u00fdstup p\u0159i zapnut\u00ed",
+                    "momentary": "D\u00e9lka pulzu (ms)",
+                    "more_states": "Nastavit dal\u0161\u00ed stavy t\u00e9to z\u00f3ny",
+                    "name": "N\u00e1zev",
+                    "pause": "Pauza mezi pulzy (ms)",
+                    "repeat": "Po\u010det opakov\u00e1n\u00ed (-1=nekone\u010dn\u011b)"
+                },
+                "description": "Volby {zone}: stav {state}"
+            }
+        }
+    }
+}

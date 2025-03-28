@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Servi\u00e7o j\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_ics_file": "Ficheiro .ics inv\u00e1lido"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "calendar_name": "Nome do calend\u00e1rio",
+                    "url": "URL do calend\u00e1rio"
+                },
+                "data_description": {
+                    "calendar_name": "O nome do calend\u00e1rio apresentado na IU.",
+                    "url": "O URL do calend\u00e1rio remoto."
+                },
+                "description": "Por favor, escolha um nome para o calend\u00e1rio a importar"
+            }
+        }
+    },
+    "exceptions": {
+        "unable_to_fetch": {
+            "message": "N\u00e3o \u00e9 poss\u00edvel obter dados do calend\u00e1rio: {err}"
+        },
+        "unable_to_parse": {
+            "message": "N\u00e3o \u00e9 poss\u00edvel analisar os dados do calend\u00e1rio: {err}"
+        }
+    },
+    "title": "Calend\u00e1rio remoto"
+}

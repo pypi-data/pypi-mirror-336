@@ -1,0 +1,18 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your myStrom device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "avg_consumption": {
+                "name": "Average consumption"
+            }
+        }
+    }
+}

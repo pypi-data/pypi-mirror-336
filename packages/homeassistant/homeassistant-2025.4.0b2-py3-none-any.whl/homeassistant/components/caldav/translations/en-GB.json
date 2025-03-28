@@ -1,0 +1,15 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "The password for {username} is invalid."
+            },
+            "user": {
+                "description": "Please enter your CalDAV server credentials"
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "Re-configuration was successful",
+            "unique_id_mismatch": "The serial number of the device does not match the previous serial number"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "protocol": "Protocol"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the Axis device.",
+                    "username": "The user name you set up on your Axis device. It is recommended to create a user specifically for Home Assistant."
+                },
+                "description": "Set up an Axis device"
+            }
+        }
+    }
+}

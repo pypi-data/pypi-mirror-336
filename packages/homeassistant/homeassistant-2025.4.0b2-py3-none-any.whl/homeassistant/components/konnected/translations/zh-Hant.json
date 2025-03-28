@@ -1,0 +1,86 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u88dd\u7f6e\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210",
+            "already_in_progress": "\u8a2d\u5b9a\u5df2\u7d93\u9032\u884c\u4e2d",
+            "cannot_connect": "\u9023\u7dda\u5931\u6557",
+            "not_konn_panel": "\u4e26\u975e\u53ef\u8b58\u5225 Konnected.io \u88dd\u7f6e",
+            "unknown": "\u672a\u9810\u671f\u932f\u8aa4"
+        },
+        "error": {
+            "cannot_connect": "\u9023\u7dda\u5931\u6557"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "IP \u4f4d\u5740",
+                    "port": "\u901a\u8a0a\u57e0"
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "not_konn_panel": "\u4e26\u975e\u53ef\u8b58\u5225 Konnected.io \u88dd\u7f6e"
+        },
+        "step": {
+            "options_binary": {
+                "data": {
+                    "inverse": "\u53cd\u8f49\u958b\u555f/\u95dc\u9589\u72c0\u614b",
+                    "name": "\u540d\u7a31"
+                },
+                "description": "{zone}\u9078\u9805"
+            },
+            "options_digital": {
+                "data": {
+                    "name": "\u540d\u7a31"
+                },
+                "description": "{zone}\u9078\u9805"
+            },
+            "options_io": {
+                "data": {
+                    "1": "\u5340\u57df 1",
+                    "2": "\u5340\u57df 2",
+                    "3": "\u5340\u57df 3",
+                    "4": "\u5340\u57df 4",
+                    "5": "\u5340\u57df 5",
+                    "6": "\u5340\u57df 6",
+                    "7": "\u5340\u57df 7",
+                    "out": "OUT"
+                },
+                "description": "\u65bc {host} \u767c\u73fe {model}\u3002\u8acb\u65bc\u4e0b\u65b9\u6bcf\u4e00\u500b I/O \u9078\u64c7\u57fa\u672c\u8a2d\u5b9a - \u96a8\u8457 I/O \u4e0d\u540c\uff0c\u53ef\u5141\u8a31\u4e8c\u9032\u4f4d\u611f\u6e2c\u5668\uff08\u958b\u555f/\u95dc\u9589\u72c0\u614b\uff09\u3001\u6578\u4f4d\u611f\u6e2c\u5668\uff08DHT \u53ca ds18b20\uff09\uff0c\u6216\u8005\u53ef\u5207\u63db\u8f38\u51fa\u3002\u53ef\u4ee5\u65bc\u4e0b\u4e00\u6b65\u8a2d\u5b9a\u8a73\u7d30\u9078\u9805\u3002",
+                "title": "\u8a2d\u5b9a I/O"
+            },
+            "options_io_ext": {
+                "data": {
+                    "10": "\u5340\u57df 10",
+                    "11": "\u5340\u57df 11",
+                    "12": "\u5340\u57df 12",
+                    "8": "\u5340\u57df 8",
+                    "9": "\u5340\u57df 9",
+                    "alarm1": "ALARM1",
+                    "alarm2_out2": "OUT2/ALARM2",
+                    "out1": "OUT1"
+                }
+            },
+            "options_misc": {
+                "data": {
+                    "blink": "\u7576\u50b3\u9001\u72c0\u614b\u8b8a\u66f4\u6642\u3001\u9583\u720d\u9762\u677f LED",
+                    "discovery": "\u56de\u61c9\u7db2\u8def\u4e0a\u7684\u63a2\u7d22\u8acb\u6c42"
+                },
+                "description": "\u8acb\u9078\u64c7\u9762\u677f\u671f\u671b\u884c\u70ba"
+            },
+            "options_switch": {
+                "data": {
+                    "activation": "\u958b\u555f\u6642\u8f38\u51fa",
+                    "momentary": "\u6301\u7e8c\u6642\u9593\uff08ms\uff09",
+                    "more_states": "\u8a2d\u5b9a\u6b64\u5340\u57df\u7684\u9644\u52a0\u72c0\u614b",
+                    "name": "\u540d\u7a31",
+                    "pause": "\u66ab\u505c\u9593\u8ddd\uff08ms\uff09",
+                    "repeat": "\u91cd\u8907\u6642\u9593\uff08-1=\u7121\u9650\uff09"
+                },
+                "description": "{zone}\u9078\u9805\uff1a\u72c0\u614b {state}"
+            }
+        }
+    }
+}

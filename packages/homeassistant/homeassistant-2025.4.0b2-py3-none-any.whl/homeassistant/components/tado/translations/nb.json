@@ -1,0 +1,25 @@
+{
+    "entity": {
+        "climate": {
+            "tado": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "fallback": "Velg reservemodus."
+                },
+                "title": "Juster Tado-alternativene."
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "config_subentries": {
+        "device": {
+            "step": {
+                "device": {
+                    "data": {
+                        "name": "Namme",
+                        "sw_version": "Software ferzje"
+                    }
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "broker": {
+                "title": "Broker opsjes"
+            },
+            "options": {
+                "title": "MQTT-opsjes"
+            }
+        }
+    }
+}

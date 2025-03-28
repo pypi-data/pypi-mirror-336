@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Deluge device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "protocol_traffic_download_speed": {
+                "name": "Protocol traffic download speed"
+            },
+            "protocol_traffic_upload_speed": {
+                "name": "Protocol traffic upload speed"
+            }
+        }
+    }
+}

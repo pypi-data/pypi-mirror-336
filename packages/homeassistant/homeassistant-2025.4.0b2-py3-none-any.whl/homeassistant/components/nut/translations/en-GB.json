@@ -1,0 +1,68 @@
+{
+    "config": {
+        "abort": {
+            "no_ups_found": "There are no UPS devices available on the NUT server."
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "Re-authenticate NUT server at {host}:{port}"
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your NUT server."
+                },
+                "description": "Connect to the NUT server"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "outlet_number_load_cycle": {
+                "name": "Power cycle socket {outlet_name}"
+            }
+        },
+        "sensor": {
+            "ambient_humidity_status": {
+                "name": "Ambient humidity status"
+            },
+            "ambient_temperature_status": {
+                "name": "Ambient temperature status"
+            },
+            "input_current_status": {
+                "name": "Input current status"
+            },
+            "input_load": {
+                "name": "Input load"
+            },
+            "input_power": {
+                "name": "Input power"
+            },
+            "input_voltage_status": {
+                "name": "Input voltage status"
+            },
+            "outlet_number_current": {
+                "name": "Socket {outlet_name} current"
+            },
+            "outlet_number_current_status": {
+                "name": "Socket {outlet_name} current status"
+            },
+            "outlet_number_desc": {
+                "name": "Socket {outlet_name} description"
+            },
+            "outlet_number_power": {
+                "name": "Socket {outlet_name} power"
+            },
+            "outlet_number_realpower": {
+                "name": "Socket {outlet_name} real power"
+            },
+            "outlet_voltage": {
+                "name": "Socket voltage"
+            }
+        },
+        "switch": {
+            "outlet_number_load_poweronoff": {
+                "name": "Power socket {outlet_name}"
+            }
+        }
+    }
+}

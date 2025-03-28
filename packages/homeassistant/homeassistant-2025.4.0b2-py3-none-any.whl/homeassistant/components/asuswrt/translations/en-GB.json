@@ -1,0 +1,65 @@
+{
+    "config": {
+        "error": {
+            "pwd_required": "Password is required for selected protocol"
+        },
+        "step": {
+            "legacy": {
+                "data": {
+                    "mode": "Router operating mode"
+                },
+                "description": "Set required parameters to connect to your router"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "cpu_core_usage": {
+                "name": "CPU core {core_id} usage"
+            },
+            "cpu_usage": {
+                "name": "CPU usage"
+            },
+            "devices_connected": {
+                "name": "Devices connected"
+            },
+            "download": {
+                "name": "Download"
+            },
+            "download_speed": {
+                "name": "Download speed"
+            },
+            "last_boot": {
+                "name": "Last boot"
+            },
+            "memory_free": {
+                "name": "Memory free"
+            },
+            "memory_usage": {
+                "name": "Memory usage"
+            },
+            "memory_used": {
+                "name": "Memory used"
+            },
+            "upload": {
+                "name": "Upload"
+            },
+            "upload_speed": {
+                "name": "Upload speed"
+            },
+            "uptime": {
+                "name": "Uptime"
+            }
+        }
+    },
+    "selector": {
+        "protocols": {
+            "options": {
+                "http": "HTTP",
+                "https": "HTTPS",
+                "ssh": "SSH",
+                "telnet": "Telnet"
+            }
+        }
+    }
+}

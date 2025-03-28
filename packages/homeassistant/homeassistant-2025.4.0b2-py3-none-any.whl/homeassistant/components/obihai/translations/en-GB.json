@@ -1,0 +1,16 @@
+{
+    "config": {
+        "step": {
+            "dhcp_confirm": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Obihai device."
+                }
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Obihai device."
+                }
+            }
+        }
+    }
+}

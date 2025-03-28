@@ -1,0 +1,33 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "Hostname or IP address of your Venstar thermostat."
+                },
+                "description": "Connect to the Venstar thermostat"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "active_stage": {
+                "name": "Active stage",
+                "state": {
+                    "first_stage": "First stage",
+                    "idle": "Idle",
+                    "second_stage": "Second stage"
+                }
+            },
+            "filter_install_time": {
+                "name": "Filter installation time"
+            },
+            "filter_usage": {
+                "name": "Filter usage"
+            },
+            "schedule_part": {
+                "name": "Schedule Part"
+            }
+        }
+    }
+}

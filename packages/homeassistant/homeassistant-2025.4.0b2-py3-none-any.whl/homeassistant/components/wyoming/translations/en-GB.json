@@ -1,0 +1,29 @@
+{
+    "entity": {
+        "number": {
+            "auto_gain": {
+                "name": "Auto gain"
+            },
+            "volume_multiplier": {
+                "name": "Mic volume"
+            }
+        },
+        "select": {
+            "noise_suppression_level": {
+                "name": "Noise suppression level",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "max": "Max",
+                    "medium": "Medium",
+                    "off": "Off"
+                }
+            }
+        },
+        "switch": {
+            "mute": {
+                "name": "Mute"
+            }
+        }
+    }
+}
