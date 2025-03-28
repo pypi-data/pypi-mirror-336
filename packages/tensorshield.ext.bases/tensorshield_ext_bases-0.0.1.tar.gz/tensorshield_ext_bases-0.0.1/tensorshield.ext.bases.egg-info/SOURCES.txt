@@ -1,0 +1,11 @@
+MANIFEST.in
+VERSION
+setup.py
+tensorshield.ext.bases.egg-info/PKG-INFO
+tensorshield.ext.bases.egg-info/SOURCES.txt
+tensorshield.ext.bases.egg-info/dependency_links.txt
+tensorshield.ext.bases.egg-info/requires.txt
+tensorshield.ext.bases.egg-info/top_level.txt
+tensorshield/ext/bases/__init__.py
+tensorshield/ext/bases/_soma.py
+tensorshield/ext/bases/package.json

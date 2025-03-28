@@ -1,0 +1,9 @@
+fastapi
+pydantic>2
+
+[develop]
+pytest
+pytest_asyncio
+coverage
+twine
+watchdog
