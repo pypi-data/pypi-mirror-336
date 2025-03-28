@@ -1,0 +1,4 @@
+_target_: ase.md.npt.NPT
+timestep: ${fs_to_ase:${timestep_fs}}
+ttime: ${fs_to_ase:25}
+temperature_K: ${temperature_K}

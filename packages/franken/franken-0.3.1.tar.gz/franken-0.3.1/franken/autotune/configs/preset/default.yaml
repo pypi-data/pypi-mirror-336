@@ -1,0 +1,50 @@
+# @package _global_
+
+seed: 1337 # Random Number Generator Seed for RF heads initialization
+
+console_logging_level: INFO # Logs to show in the console. The full logs are always saved to file in the run directory.
+distributed: True
+
+dataset:
+  dataset_name: null  # Used to create the run directory
+  train_path: null    # Required. Should be a .xyz file with a list of ASE atoms.
+  test_path: null     # Optional
+  val_path: null      # Optional
+  train_subsample:
+    num: null         # If not null, takes a random subsample of the training data
+    rng_seed: null    # Random number generator seed to subsample the training data
+
+trainer:
+  _target_: franken.trainers.RandomFeaturesTrainer
+  random_features_normalization: "leading_eig"
+  save_every_model: false # If true saves a checkpoint for every trial, otherwise it saves only the best model.
+  dtype: float64
+  save_fmaps: false
+
+franken:
+  scale_by_Z: True    # how to scale the GNN features, whether globally (across species) or individually per species.
+  gnn_backbone_id: null     # See the "model registry" section in the docs.
+  interaction_block: null   # GNN layer out of which the features are extracted.
+  kernel_type: null         # Must be "poly" or "gaussian"
+  atomic_energies: null     # Dictionary mapping atomic numbers to atomic energies.
+  jac_chunk_size: "auto"
+
+hyperparameters:
+# Hyperparameters are split into groups.
+# Each hyperparameter should be an iterable, or must be insantiable as an iterable.
+# This should happen even if don't want to sweep over a specific parameter, see e.g. num_random_features.
+
+  random_features:
+    num_random_features: 256
+
+  solver:
+    L2_penalty:
+      _target_: numpy.logspace
+      start: -11
+      stop: -6
+      num: 6
+    loss_lerp_weight: # loss = loss_lerp_weight * loss_energy + (1 - loss_lerp_weight) * loss_forces
+      _target_: numpy.linspace
+      start: 0.01
+      stop: 0.99
+      num: 3

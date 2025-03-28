@@ -1,0 +1,7 @@
+version: 1
+formatters: []
+handlers: []
+root:
+  handlers: []
+
+disable_existing_loggers: false

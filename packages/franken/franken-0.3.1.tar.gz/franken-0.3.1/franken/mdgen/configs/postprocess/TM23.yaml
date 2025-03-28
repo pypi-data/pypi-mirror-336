@@ -1,0 +1,16 @@
+# @package _global_
+
+defaults:
+  - metrics:
+    - rdf
+
+# These two MUST be overridden from the command line.
+element: null
+temperature_label: null
+exp_name: ${temperature_label}
+
+metrics:
+  rdf:
+    ref_traj_path: ${paths.dataset_dir}/TM23/${element}_${temperature_label}_nequip_test.xyz
+    timestep_fs: 50  # 0.5 * 100
+    equilibration_fs: 10000  # 200 saved time-steps

@@ -1,0 +1,15 @@
+# @package _global_
+
+defaults:
+  - metrics:
+    - rdf
+
+exp_name: liquid
+
+metrics:
+  rdf:
+    ref_traj_path: null
+    timestep_fs: 50  # 0.5 * 100
+    equilibration_fs: 5000  # 100 saved time-steps
+    stability_threshold: 1.0
+    stability_interval: 20

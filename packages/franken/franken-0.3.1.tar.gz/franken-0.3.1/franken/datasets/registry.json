@@ -1,0 +1,511 @@
+{
+    "FeBulk": {
+        "train": "FeBulk/FeBulk_train.extxyz",
+        "test": "FeBulk/FeBulk_test.extxyz",
+        "val": "FeBulk/FeBulk_val.extxyz"
+    },
+    "D1": {
+        "train": "Fe_N2/1_abinitio-md_Fe45N2_random-true_train.extxyz",
+        "test": "Fe_N2/1_abinitio-md_Fe45N2_random-true_test.extxyz",
+        "val": "Fe_N2/1_abinitio-md_Fe45N2_random-true_val.extxyz",
+        "full": "Fe_N2/1_abinitio-md_Fe45N2.extxyz"
+    },
+    "D2": {
+        "train": "Fe_N2/2_abinitio-metad_Fe45N2_random-true_train.extxyz",
+        "test": "Fe_N2/2_abinitio-metad_Fe45N2_random-true_test.extxyz",
+        "val": "Fe_N2/2_abinitio-metad_Fe45N2_random-true_val.extxyz",
+        "full": "Fe_N2/Fe_N2/2_abinitio-metad_Fe45N2.extxyz"
+    },
+    "D3": {
+        "train": "Fe_N2/3_active-metad_Fe45N2_random-true_train.extxyz",
+        "test": "Fe_N2/3_active-metad_Fe45N2_random-true_test.extxyz",
+        "val": "Fe_N2/3_active-metad_Fe45N2_random-true_val.extxyz",
+        "full": "Fe_N2/3_active-metad_Fe45N2.extxyz"
+    },
+    "D4": {
+        "train": "Fe_N2/4_active-metad_Fe72N2_random-true_train.extxyz",
+        "test": "Fe_N2/4_active-metad_Fe72N2_random-true_test.extxyz",
+        "val": "Fe_N2/4_active-metad_Fe72N2_random-true_val.extxyz",
+        "full": "Fe_N2/4_active-metad_Fe72N2.extxyz"
+    },
+    "Dx": {
+        "train": "Fe_N2/D123_train.xyz",
+        "test": "Fe_N2/D123_test.xyz",
+        "val": "Fe_N2/D123_val.xyz"
+    },
+    "Fe4N": {
+        "train": "Fe4N/train.xyz",
+        "val": "Fe4N/val.xyz",
+        "test": "Fe4N/test.xyz",
+        "full": "Fe4N/bulk.xyz"
+    },
+    "test": {
+        "train": "test/train.xyz",
+        "val": "test/validation.xyz",
+        "test": "test/test.xyz",
+        "md": "test/md.xyz",
+        "long": "test/long.xyz"
+    },
+    "water": {
+        "train": "water/ML_AB_dataset_1.xyz",
+        "val": "water/ML_AB_dataset_2-val.xyz"
+    },
+    "MD22-Ala": {
+        "train": "MD22/Ala3_train_eV_pbc.xyz",
+        "test": "MD22/Ala3_test_eV_pbc.xyz",
+        "val": "MD22/Ala3_val_eV_pbc.xyz"
+    },
+    "LiPS": {
+        "train": "LiPS/train.xyz",
+        "val": "LiPS/val.xyz"
+    },
+    "ala3": {
+        "train": "ala3/amber14_metad/train.xyz",
+        "val": "ala3/amber14_metad/valid.xyz"
+    },
+    "chignolin": {
+        "train": "chignolin/AIMD-chig_train.extxyz",
+        "val": "chignolin/AIMD-chig_valid.extxyz"
+    },
+    "PtH2O": {
+        "train": "PtH2O/train.extxyz",
+        "val": "PtH2O/valid.extxyz",
+        "test": "PtH2O/test.extxyz"
+    },
+    "CuFormate": {
+        "train": "CuFormate/fcu_train.xyz",
+        "val": "CuFormate/fcu_val.xyz"
+    },
+    "TM23/Ag": {
+        "train": "TM23/Ag_2700cwm_train.xyz",
+        "val": "TM23/Ag_2700cwm_test.xyz"
+    },
+    "TM23/Au": {
+        "train": "TM23/Au_2700cwm_train.xyz",
+        "val": "TM23/Au_2700cwm_test.xyz"
+    },
+    "TM23/Cd": {
+        "train": "TM23/Cd_2700cwm_train.xyz",
+        "val": "TM23/Cd_2700cwm_test.xyz"
+    },
+    "TM23/Co": {
+        "train": "TM23/Co_2700cwm_train.xyz",
+        "val": "TM23/Co_2700cwm_test.xyz"
+    },
+    "TM23/Cr": {
+        "train": "TM23/Cr_2700cwm_train.xyz",
+        "val": "TM23/Cr_2700cwm_test.xyz"
+    },
+    "TM23/Cu": {
+        "train": "TM23/Cu_2700cwm_train.xyz",
+        "val": "TM23/Cu_2700cwm_test.xyz"
+    },
+    "TM23/Fe": {
+        "train": "TM23/Fe_2700cwm_train.xyz",
+        "val": "TM23/Fe_2700cwm_test.xyz"
+    },
+    "TM23/Hf": {
+        "train": "TM23/Hf_2700cwm_train.xyz",
+        "val": "TM23/Hf_2700cwm_test.xyz"
+    },
+    "TM23/Hg": {
+        "train": "TM23/Hg_2700cwm_train.xyz",
+        "val": "TM23/Hg_2700cwm_test.xyz"
+    },
+    "TM23/Ir": {
+        "train": "TM23/Ir_2700cwm_train.xyz",
+        "val": "TM23/Ir_2700cwm_test.xyz"
+    },
+    "TM23/Mn": {
+        "train": "TM23/Mn_2700cwm_train.xyz",
+        "val": "TM23/Mn_2700cwm_test.xyz"
+    },
+    "TM23/Mo": {
+        "train": "TM23/Mo_2700cwm_train.xyz",
+        "val": "TM23/Mo_2700cwm_test.xyz"
+    },
+    "TM23/Nb": {
+        "train": "TM23/Nb_2700cwm_train.xyz",
+        "val": "TM23/Nb_2700cwm_test.xyz"
+    },
+    "TM23/Ni": {
+        "train": "TM23/Ni_2700cwm_train.xyz",
+        "val": "TM23/Ni_2700cwm_test.xyz"
+    },
+    "TM23/Os": {
+        "train": "TM23/Os_2700cwm_train.xyz",
+        "val": "TM23/Os_2700cwm_test.xyz"
+    },
+    "TM23/Pd": {
+        "train": "TM23/Pd_2700cwm_train.xyz",
+        "val": "TM23/Pd_2700cwm_test.xyz"
+    },
+    "TM23/Pt": {
+        "train": "TM23/Pt_2700cwm_train.xyz",
+        "val": "TM23/Pt_2700cwm_test.xyz"
+    },
+    "TM23/Re": {
+        "train": "TM23/Re_2700cwm_train.xyz",
+        "val": "TM23/Re_2700cwm_test.xyz"
+    },
+    "TM23/Rh": {
+        "train": "TM23/Rh_2700cwm_train.xyz",
+        "val": "TM23/Rh_2700cwm_test.xyz"
+    },
+    "TM23/Ru": {
+        "train": "TM23/Ru_2700cwm_train.xyz",
+        "val": "TM23/Ru_2700cwm_test.xyz"
+    },
+    "TM23/Ta": {
+        "train": "TM23/Ta_2700cwm_train.xyz",
+        "val": "TM23/Ta_2700cwm_test.xyz"
+    },
+    "TM23/Tc": {
+        "train": "TM23/Tc_2700cwm_train.xyz",
+        "val": "TM23/Tc_2700cwm_test.xyz"
+    },
+    "TM23/Ti": {
+        "train": "TM23/Ti_2700cwm_train.xyz",
+        "val": "TM23/Ti_2700cwm_test.xyz"
+    },
+    "TM23/V": {
+        "train": "TM23/V_2700cwm_train.xyz",
+        "val": "TM23/V_2700cwm_test.xyz"
+    },
+    "TM23/W": {
+        "train": "TM23/W_2700cwm_train.xyz",
+        "val": "TM23/W_2700cwm_test.xyz"
+    },
+    "TM23/Zn": {
+        "train": "TM23/Zn_2700cwm_train.xyz",
+        "val": "TM23/Zn_2700cwm_test.xyz"
+    },
+    "TM23/Zr": {
+        "train": "TM23/Zr_2700cwm_train.xyz",
+        "val": "TM23/Zr_2700cwm_test.xyz"
+    },
+    "TM23/Ag-cold": {
+        "train": "TM23/Ag_cold_nequip_train.xyz",
+        "val": "TM23/Ag_cold_nequip_test.xyz"
+    },
+    "TM23/Ag-warm": {
+        "train": "TM23/Ag_warm_nequip_train.xyz",
+        "val": "TM23/Ag_warm_nequip_test.xyz"
+    },
+    "TM23/Ag-melt": {
+        "train": "TM23/Ag_melt_nequip_train.xyz",
+        "val": "TM23/Ag_melt_nequip_test.xyz"
+    },
+    "TM23/Au-cold": {
+        "train": "TM23/Au_cold_nequip_train.xyz",
+        "val": "TM23/Au_cold_nequip_test.xyz"
+    },
+    "TM23/Au-warm": {
+        "train": "TM23/Au_warm_nequip_train.xyz",
+        "val": "TM23/Au_warm_nequip_test.xyz"
+    },
+    "TM23/Au-melt": {
+        "train": "TM23/Au_melt_nequip_train.xyz",
+        "val": "TM23/Au_melt_nequip_test.xyz"
+    },
+    "TM23/Cd-cold": {
+        "train": "TM23/Cd_cold_nequip_train.xyz",
+        "val": "TM23/Cd_cold_nequip_test.xyz"
+    },
+    "TM23/Cd-warm": {
+        "train": "TM23/Cd_warm_nequip_train.xyz",
+        "val": "TM23/Cd_warm_nequip_test.xyz"
+    },
+    "TM23/Cd-melt": {
+        "train": "TM23/Cd_melt_nequip_train.xyz",
+        "val": "TM23/Cd_melt_nequip_test.xyz"
+    },
+    "TM23/Co-cold": {
+        "train": "TM23/Co_cold_nequip_train.xyz",
+        "val": "TM23/Co_cold_nequip_test.xyz"
+    },
+    "TM23/Co-warm": {
+        "train": "TM23/Co_warm_nequip_train.xyz",
+        "val": "TM23/Co_warm_nequip_test.xyz"
+    },
+    "TM23/Co-melt": {
+        "train": "TM23/Co_melt_nequip_train.xyz",
+        "val": "TM23/Co_melt_nequip_test.xyz"
+    },
+    "TM23/Cr-cold": {
+        "train": "TM23/Cr_cold_nequip_train.xyz",
+        "val": "TM23/Cr_cold_nequip_test.xyz"
+    },
+    "TM23/Cr-warm": {
+        "train": "TM23/Cr_warm_nequip_train.xyz",
+        "val": "TM23/Cr_warm_nequip_test.xyz"
+    },
+    "TM23/Cr-melt": {
+        "train": "TM23/Cr_melt_nequip_train.xyz",
+        "val": "TM23/Cr_melt_nequip_test.xyz"
+    },
+    "TM23/Cu-cold": {
+        "train": "TM23/Cu_cold_nequip_train.xyz",
+        "val": "TM23/Cu_cold_nequip_test.xyz"
+    },
+    "TM23/Cu-warm": {
+        "train": "TM23/Cu_warm_nequip_train.xyz",
+        "val": "TM23/Cu_warm_nequip_test.xyz"
+    },
+    "TM23/Cu-melt": {
+        "train": "TM23/Cu_melt_nequip_train.xyz",
+        "val": "TM23/Cu_melt_nequip_test.xyz"
+    },
+    "TM23/Fe-cold": {
+        "train": "TM23/Fe_cold_nequip_train.xyz",
+        "val": "TM23/Fe_cold_nequip_test.xyz"
+    },
+    "TM23/Fe-warm": {
+        "train": "TM23/Fe_warm_nequip_train.xyz",
+        "val": "TM23/Fe_warm_nequip_test.xyz"
+    },
+    "TM23/Fe-melt": {
+        "train": "TM23/Fe_melt_nequip_train.xyz",
+        "val": "TM23/Fe_melt_nequip_test.xyz"
+    },
+    "TM23/Hf-cold": {
+        "train": "TM23/Hf_cold_nequip_train.xyz",
+        "val": "TM23/Hf_cold_nequip_test.xyz"
+    },
+    "TM23/Hf-warm": {
+        "train": "TM23/Hf_warm_nequip_train.xyz",
+        "val": "TM23/Hf_warm_nequip_test.xyz"
+    },
+    "TM23/Hf-melt": {
+        "train": "TM23/Hf_melt_nequip_train.xyz",
+        "val": "TM23/Hf_melt_nequip_test.xyz"
+    },
+    "TM23/Hg-cold": {
+        "train": "TM23/Hg_cold_nequip_train.xyz",
+        "val": "TM23/Hg_cold_nequip_test.xyz"
+    },
+    "TM23/Hg-warm": {
+        "train": "TM23/Hg_warm_nequip_train.xyz",
+        "val": "TM23/Hg_warm_nequip_test.xyz"
+    },
+    "TM23/Hg-melt": {
+        "train": "TM23/Hg_melt_nequip_train.xyz",
+        "val": "TM23/Hg_melt_nequip_test.xyz"
+    },
+    "TM23/Ir-cold": {
+        "train": "TM23/Ir_cold_nequip_train.xyz",
+        "val": "TM23/Ir_cold_nequip_test.xyz"
+    },
+    "TM23/Ir-warm": {
+        "train": "TM23/Ir_warm_nequip_train.xyz",
+        "val": "TM23/Ir_warm_nequip_test.xyz"
+    },
+    "TM23/Ir-melt": {
+        "train": "TM23/Ir_melt_nequip_train.xyz",
+        "val": "TM23/Ir_melt_nequip_test.xyz"
+    },
+    "TM23/Mn-cold": {
+        "train": "TM23/Mn_cold_nequip_train.xyz",
+        "val": "TM23/Mn_cold_nequip_test.xyz"
+    },
+    "TM23/Mn-warm": {
+        "train": "TM23/Mn_warm_nequip_train.xyz",
+        "val": "TM23/Mn_warm_nequip_test.xyz"
+    },
+    "TM23/Mn-melt": {
+        "train": "TM23/Mn_melt_nequip_train.xyz",
+        "val": "TM23/Mn_melt_nequip_test.xyz"
+    },
+    "TM23/Mo-cold": {
+        "train": "TM23/Mo_cold_nequip_train.xyz",
+        "val": "TM23/Mo_cold_nequip_test.xyz"
+    },
+    "TM23/Mo-warm": {
+        "train": "TM23/Mo_warm_nequip_train.xyz",
+        "val": "TM23/Mo_warm_nequip_test.xyz"
+    },
+    "TM23/Mo-melt": {
+        "train": "TM23/Mo_melt_nequip_train.xyz",
+        "val": "TM23/Mo_melt_nequip_test.xyz"
+    },
+    "TM23/Nb-cold": {
+        "train": "TM23/Nb_cold_nequip_train.xyz",
+        "val": "TM23/Nb_cold_nequip_test.xyz"
+    },
+    "TM23/Nb-warm": {
+        "train": "TM23/Nb_warm_nequip_train.xyz",
+        "val": "TM23/Nb_warm_nequip_test.xyz"
+    },
+    "TM23/Nb-melt": {
+        "train": "TM23/Nb_melt_nequip_train.xyz",
+        "val": "TM23/Nb_melt_nequip_test.xyz"
+    },
+    "TM23/Ni-cold": {
+        "train": "TM23/Ni_cold_nequip_train.xyz",
+        "val": "TM23/Ni_cold_nequip_test.xyz"
+    },
+    "TM23/Ni-warm": {
+        "train": "TM23/Ni_warm_nequip_train.xyz",
+        "val": "TM23/Ni_warm_nequip_test.xyz"
+    },
+    "TM23/Ni-melt": {
+        "train": "TM23/Ni_melt_nequip_train.xyz",
+        "val": "TM23/Ni_melt_nequip_test.xyz"
+    },
+    "TM23/Os-cold": {
+        "train": "TM23/Os_cold_nequip_train.xyz",
+        "val": "TM23/Os_cold_nequip_test.xyz"
+    },
+    "TM23/Os-warm": {
+        "train": "TM23/Os_warm_nequip_train.xyz",
+        "val": "TM23/Os_warm_nequip_test.xyz"
+    },
+    "TM23/Os-melt": {
+        "train": "TM23/Os_melt_nequip_train.xyz",
+        "val": "TM23/Os_melt_nequip_test.xyz"
+    },
+    "TM23/Pd-cold": {
+        "train": "TM23/Pd_cold_nequip_train.xyz",
+        "val": "TM23/Pd_cold_nequip_test.xyz"
+    },
+    "TM23/Pd-warm": {
+        "train": "TM23/Pd_warm_nequip_train.xyz",
+        "val": "TM23/Pd_warm_nequip_test.xyz"
+    },
+    "TM23/Pd-melt": {
+        "train": "TM23/Pd_melt_nequip_train.xyz",
+        "val": "TM23/Pd_melt_nequip_test.xyz"
+    },
+    "TM23/Pt-cold": {
+        "train": "TM23/Pt_cold_nequip_train.xyz",
+        "val": "TM23/Pt_cold_nequip_test.xyz"
+    },
+    "TM23/Pt-warm": {
+        "train": "TM23/Pt_warm_nequip_train.xyz",
+        "val": "TM23/Pt_warm_nequip_test.xyz"
+    },
+    "TM23/Pt-melt": {
+        "train": "TM23/Pt_melt_nequip_train.xyz",
+        "val": "TM23/Pt_melt_nequip_test.xyz"
+    },
+    "TM23/Re-cold": {
+        "train": "TM23/Re_cold_nequip_train.xyz",
+        "val": "TM23/Re_cold_nequip_test.xyz"
+    },
+    "TM23/Re-warm": {
+        "train": "TM23/Re_warm_nequip_train.xyz",
+        "val": "TM23/Re_warm_nequip_test.xyz"
+    },
+    "TM23/Re-melt": {
+        "train": "TM23/Re_melt_nequip_train.xyz",
+        "val": "TM23/Re_melt_nequip_test.xyz"
+    },
+    "TM23/Rh-cold": {
+        "train": "TM23/Rh_cold_nequip_train.xyz",
+        "val": "TM23/Rh_cold_nequip_test.xyz"
+    },
+    "TM23/Rh-warm": {
+        "train": "TM23/Rh_warm_nequip_train.xyz",
+        "val": "TM23/Rh_warm_nequip_test.xyz"
+    },
+    "TM23/Rh-melt": {
+        "train": "TM23/Rh_melt_nequip_train.xyz",
+        "val": "TM23/Rh_melt_nequip_test.xyz"
+    },
+    "TM23/Ru-cold": {
+        "train": "TM23/Ru_cold_nequip_train.xyz",
+        "val": "TM23/Ru_cold_nequip_test.xyz"
+    },
+    "TM23/Ru-warm": {
+        "train": "TM23/Ru_warm_nequip_train.xyz",
+        "val": "TM23/Ru_warm_nequip_test.xyz"
+    },
+    "TM23/Ru-melt": {
+        "train": "TM23/Ru_melt_nequip_train.xyz",
+        "val": "TM23/Ru_melt_nequip_test.xyz"
+    },
+    "TM23/Ta-cold": {
+        "train": "TM23/Ta_cold_nequip_train.xyz",
+        "val": "TM23/Ta_cold_nequip_test.xyz"
+    },
+    "TM23/Ta-warm": {
+        "train": "TM23/Ta_warm_nequip_train.xyz",
+        "val": "TM23/Ta_warm_nequip_test.xyz"
+    },
+    "TM23/Ta-melt": {
+        "train": "TM23/Ta_melt_nequip_train.xyz",
+        "val": "TM23/Ta_melt_nequip_test.xyz"
+    },
+    "TM23/Tc-cold": {
+        "train": "TM23/Tc_cold_nequip_train.xyz",
+        "val": "TM23/Tc_cold_nequip_test.xyz"
+    },
+    "TM23/Tc-warm": {
+        "train": "TM23/Tc_warm_nequip_train.xyz",
+        "val": "TM23/Tc_warm_nequip_test.xyz"
+    },
+    "TM23/Tc-melt": {
+        "train": "TM23/Tc_melt_nequip_train.xyz",
+        "val": "TM23/Tc_melt_nequip_test.xyz"
+    },
+    "TM23/Ti-cold": {
+        "train": "TM23/Ti_cold_nequip_train.xyz",
+        "val": "TM23/Ti_cold_nequip_test.xyz"
+    },
+    "TM23/Ti-warm": {
+        "train": "TM23/Ti_warm_nequip_train.xyz",
+        "val": "TM23/Ti_warm_nequip_test.xyz"
+    },
+    "TM23/Ti-melt": {
+        "train": "TM23/Ti_melt_nequip_train.xyz",
+        "val": "TM23/Ti_melt_nequip_test.xyz"
+    },
+    "TM23/V-cold": {
+        "train": "TM23/V_cold_nequip_train.xyz",
+        "val": "TM23/V_cold_nequip_test.xyz"
+    },
+    "TM23/V-warm": {
+        "train": "TM23/V_warm_nequip_train.xyz",
+        "val": "TM23/V_warm_nequip_test.xyz"
+    },
+    "TM23/V-melt": {
+        "train": "TM23/V_melt_nequip_train.xyz",
+        "val": "TM23/V_melt_nequip_test.xyz"
+    },
+    "TM23/W-cold": {
+        "train": "TM23/W_cold_nequip_train.xyz",
+        "val": "TM23/W_cold_nequip_test.xyz"
+    },
+    "TM23/W-warm": {
+        "train": "TM23/W_warm_nequip_train.xyz",
+        "val": "TM23/W_warm_nequip_test.xyz"
+    },
+    "TM23/W-melt": {
+        "train": "TM23/W_melt_nequip_train.xyz",
+        "val": "TM23/W_melt_nequip_test.xyz"
+    },
+    "TM23/Zn-cold": {
+        "train": "TM23/Zn_cold_nequip_train.xyz",
+        "val": "TM23/Zn_cold_nequip_test.xyz"
+    },
+    "TM23/Zn-warm": {
+        "train": "TM23/Zn_warm_nequip_train.xyz",
+        "val": "TM23/Zn_warm_nequip_test.xyz"
+    },
+    "TM23/Zn-melt": {
+        "train": "TM23/Zn_melt_nequip_train.xyz",
+        "val": "TM23/Zn_melt_nequip_test.xyz"
+    },
+    "TM23/Zr-cold": {
+        "train": "TM23/Zr_cold_nequip_train.xyz",
+        "val": "TM23/Zr_cold_nequip_test.xyz"
+    },
+    "TM23/Zr-warm": {
+        "train": "TM23/Zr_warm_nequip_train.xyz",
+        "val": "TM23/Zr_warm_nequip_test.xyz"
+    },
+    "TM23/Zr-melt": {
+        "train": "TM23/Zr_melt_nequip_train.xyz",
+        "val": "TM23/Zr_melt_nequip_test.xyz"
+    }
+}

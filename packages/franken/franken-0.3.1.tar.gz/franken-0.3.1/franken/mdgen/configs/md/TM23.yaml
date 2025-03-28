@@ -1,0 +1,34 @@
+# @package _global_
+
+defaults:
+  - override /calculator: franken
+
+# These two MUST be overridden from the command line.
+element: null
+temperature_label: null
+
+init_config_path: ${paths.dataset_dir}/TM23/${element}_${temperature_label}_nequip_test.xyz
+init_config_index: 0
+md_length_ns: 0.050
+timestep_fs: 0.5
+temperature_K: "${tm23_temp:${element}, ${temperature_label}}"
+save_every: 100
+log_every: 100
+seed: [0,1,2,3,4]
+output_format: extxyz
+
+integrator:
+  _target_: ase.md.nvtberendsen.NVTBerendsen
+  taut: ${fs_to_ase:500}
+  timestep: ${fs_to_ase:${timestep_fs}}
+  temperature_K: ${temperature_K}
+
+initial_velocity:
+  _target_: ase.md.velocitydistribution.MaxwellBoltzmannDistribution
+  temperature_K: ${temperature_K}
+
+# This must also be overridden from command line
+calculator:
+  model_path: null
+
+exp_name: ${temperature_label}

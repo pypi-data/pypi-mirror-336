@@ -1,0 +1,14 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - paths: default
+  - preset: default
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: custom
+
+
+hydra:
+  output_subdir: null
+  run:
+    dir: ${paths.run_dir}
