@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyvoa-full
+Version: 0.1.1
+Summary: Python virus open analysis, full version. See more on pyvoa.org
+Home-page: https://github.com/pyvoa/pyvoa_full
+Author: pyvoa.org
+Author-email: contact@pyvoa.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bokeh
+Requires-Dist: pyvoa
+
+# pyvoa_full
+
+Go to pyvoa.org to know more about the project
+
+
