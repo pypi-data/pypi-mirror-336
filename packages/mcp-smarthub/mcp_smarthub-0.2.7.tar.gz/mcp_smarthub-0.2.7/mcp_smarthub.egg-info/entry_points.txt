@@ -1,0 +1,2 @@
+[mcp.v1]
+mcp_smarthub = mcp_smarthub.server:mcp
