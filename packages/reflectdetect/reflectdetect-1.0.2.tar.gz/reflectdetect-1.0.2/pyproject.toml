@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "reflectdetect"
+version = "v1.0.2"
+description = "An automated workflow for in-flight radiometric calibration of UAV imagery"
+authors = ["Luca Francis <lucajoshua.francis@stud.uni-goettingen.de>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/reflectdetect/reflectdetect"
+
+[tool.poetry.scripts]
+reflectdetect-apriltag = "reflectdetect.apriltag_main:main"
+reflectdetect-geolocation = "reflectdetect.geolocation_main:main"
+reflectdetect-converter = "reflectdetect.converter_main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2"
+rasterio = "^1"
+typed-argument-parser = "^1"
+opencv-python = "^4"
+shapely = "^2"
+pyexiftool = "^0.5.6"
+robotpy-apriltag = "^2025"
+fiona = "^1"
+geopandas = "^1"
+matplotlib = "^3"
+pydantic = "^2"
+tifffile = "^2025"
+tqdm = "^4"
+rich = "^13"
+rich-argparse = "^1"
+
+[tool.poetry.group.dev.dependencies]
+ipywidgets = "^8.1.5"
+prettytable = "^3.16.0"
+mypy = "^1.11.2"
+sphinx-rtd-theme = "^3"
+pytest = "^8.3.3"
+hypothesis = "^6.112.2"
+pytest-cov = "^6"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+files = ["reflectdetect/"]
+python_version="3.10"
+strict = true
+warn_unreachable = true
+pretty = true
+ignore_missing_imports=true
+plugins = "numpy.typing.mypy_plugin"
+exclude = ["reflectdetect/manufacturer/", "reflectdetect/utils/test"]
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = 20
